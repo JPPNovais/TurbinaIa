@@ -77,7 +77,7 @@ async function run() {
     console.log('Nenhum tema foi fornecido. Solicitando uma sugestão de tendência à IA via busca na internet...');
     try {
       const suggestResponse = await ai.models.generateContent({
-        model: 'gemini-2.5-flash',
+        model: 'gemini-2.5-pro',
         contents: `Pesquise na internet as notícias mais importantes, recentes e impactantes de hoje (${today}) sobre Inteligência Artificial, tecnologia ou novas ferramentas. Com base nas notícias reais encontradas, sugira um único título/tema para um artigo de blog focado em atrair tráfego e otimizado para SEO. Retorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais. Exemplo de retorno: Lançamento do Gemini 1.5 Pro: A nova IA do Google com janela de contexto histórica`,
         config: {
           tools: [{ googleSearch: {} }]
@@ -121,7 +121,7 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-2.5-pro',
       contents: prompt,
       config: {
         tools: [{ googleSearch: {} }]

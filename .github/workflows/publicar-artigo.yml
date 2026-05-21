@@ -2,16 +2,12 @@ name: Autopublicar Artigo Turbina IA
 
 on:
   schedule:
-    # Executa toda segunda e quinta-feira às 09:00 UTC (06:00 Horário de Brasília)
-    #
-    # DICA: Para alterar a frequência de execução, edite a expressão cron abaixo.
-    # Exemplos de expressões cron:
-    # - Rodar DIARIAMENTE às 06h00 (Brasília): '0 9 * * *'
-    # - Rodar SEMANALMENTE aos Domingos às 06h00 (Brasília): '0 9 * * 0'
-    # - Rodar A CADA 12 HORAS: '0 */12 * * *'
-    # - Rodar A CADA HORA: '0 * * * *'
-    #
-    - cron: '0 9 * * 1,4'
+    # Executa DIARIAMENTE 3 vezes ao dia:
+    # - 06:00 Horário de Brasília (09:00 UTC)
+    # - 12:00 Horário de Brasília (15:00 UTC)
+    # - 18:00 Horário de Brasília (21:00 UTC)
+    # Esses são os melhores horários de pico comercial no Brasil para tráfego e SEO.
+    - cron: '0 9,15,21 * * *'
   workflow_dispatch:
     # Permite disparar manualmente pelo painel do GitHub Actions
 
@@ -32,22 +28,24 @@ jobs:
       - name: Instalar Dependências
         run: npm ci || npm install
 
-      - name: Executar Gerador de Artigos por IA
+      - name: Executar Atualizações por IA
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/generate-article.js
+        run: |
+          node scripts/update-models.js
+          node scripts/generate-article.js
 
-      - name: Commitar e Enviar novo Artigo
+      - name: Commitar e Enviar Artigo e Modelos Atualizados
         run: |
           git config --global user.name "Turbina IA Bot"
           git config --global user.email "bot@turbinaia.com.br"
           
-          # Verifica se há alterações na pasta de artigos
-          if [ -n "$(git status --porcelain content/articles)" ]; then
-            git add content/articles/
-            git commit -m "chore: novo artigo gerado automaticamente por IA [skip ci]"
+          # Verifica se há alterações (artigos ou dados dos modelos de IA)
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "chore: atualizações automáticas de artigos e modelos de IA [skip ci]"
             git push
-            echo "✅ Novo artigo publicado com sucesso!"
+            echo "✅ Alterações publicadas com sucesso!"
           else
-            echo "⚠️ Nenhum novo artigo foi gerado ou alterado."
+            echo "⚠️ Nenhuma alteração detectada."
           fi

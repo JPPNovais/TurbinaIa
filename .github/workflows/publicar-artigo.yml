@@ -41,7 +41,7 @@ jobs:
       - name: Commitar e Enviar Artigo e Modelos Atualizados
         run: |
           git config --global user.name "Turbina IA Bot"
-          git config --global user.email "bot@turbinaia.com.br"
+          git config --global user.email "jppnovais@gmail.com"
           
           # Verifica se há alterações (artigos ou dados dos modelos de IA)
           if [ -n "$(git status --porcelain)" ]; then

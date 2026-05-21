@@ -131,6 +131,37 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
     const rawContent = response.text;
     let cleanContent = cleanMarkdownResponse(rawContent);
 
+    // Ensure title and description are wrapped in quotes in the frontmatter to prevent YAML parse errors
+    let lines = cleanContent.split('\n');
+    let inFrontmatter = false;
+    let frontmatterBoundaries = 0;
+    
+    for (let i = 0; i < lines.length; i++) {
+      const trimmed = lines[i].trim();
+      if (trimmed === '---') {
+        frontmatterBoundaries++;
+        if (frontmatterBoundaries === 1) inFrontmatter = true;
+        if (frontmatterBoundaries === 2) inFrontmatter = false;
+      }
+      
+      if (inFrontmatter) {
+        if (lines[i].startsWith('title:')) {
+          let value = lines[i].replace('title:', '').trim();
+          if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+            value = value.substring(1, value.length - 1);
+          }
+          lines[i] = `title: "${value.replace(/"/g, '\\"')}"`;
+        } else if (lines[i].startsWith('description:')) {
+          let value = lines[i].replace('description:', '').trim();
+          if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+            value = value.substring(1, value.length - 1);
+          }
+          lines[i] = `description: "${value.replace(/"/g, '\\"')}"`;
+        }
+      }
+    }
+    cleanContent = lines.join('\n');
+
     // Parse the generated title from frontmatter or fall back to the prompt
     let titleLine = cleanContent.split('\n').find(line => line.startsWith('title:'));
     let titleVal = topic;

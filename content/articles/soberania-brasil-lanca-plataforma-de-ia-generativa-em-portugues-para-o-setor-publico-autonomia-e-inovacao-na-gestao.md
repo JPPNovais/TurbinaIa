@@ -1,5 +1,5 @@
 ---
-title: SoberanIA: Brasil Lança Plataforma de IA Generativa em Português para o Setor Público – Autonomia e Inovação na Gestão
+title: "SoberanIA: Brasil Lança Plataforma de IA Generativa em Português para o Setor Público – Autonomia e Inovação na Gestão"
 description: Descubra a SoberanIA, a nova plataforma brasileira de IA generativa em português para o setor público. Inovação, autonomia digital e eficiência para a gestão. Saiba mais!
 category: noticias
 tags:

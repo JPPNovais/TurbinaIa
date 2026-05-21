@@ -34,6 +34,8 @@ Produzir conteúdo em vídeo é vital para atrair tráfego, mas editar e legenda
 
 A IA faz tudo e entrega o vídeo editado e pronto para postar no Reels, TikTok ou YouTube Shorts.
 
+![Criação de Vídeo com IA](https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&w=800&q=80)
+
 ## 3. ChatGPT Plus & Claude 3.5 Sonnet - O Core de Redação
 
 O uso combinado de modelos como o **ChatGPT Plus** (OpenAI) e o **Claude** (Anthropic) continua sendo indispensável para brainstorms, redação de código e análise avançada de dados em 2026. A principal dica é utilizar a engenharia de contexto: alimente os modelos com o seu estilo de escrita para obter artigos ou e-mails que pareçam genuinamente seus.
@@ -53,6 +55,8 @@ Esqueça o PowerPoint tradicional. O **Gamma App** cria apresentações corporat
 ## 5. Notion IA - Organização e Base de Conhecimento
 
 O Notion evoluiu e sua IA integrada agora funciona como um cérebro digital corporativo. Ela consegue resumir atas de reuniões enormes, extrair tarefas prioritárias de anotações desorganizadas e traduzir documentos instantaneamente.
+
+![Organização e Produtividade Notion](https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=800&q=80)
 
 ## 🛡️ Como Usar Links de Afiliado com Segurança
 

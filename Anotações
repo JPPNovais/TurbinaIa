@@ -1,0 +1,6 @@
+🛠️ O que você precisa fazer apenas uma vez para ativar?
+Acesse o Google AI Studio e clique em Get API Key para criar uma chave gratuita.
+No seu repositório do GitHub, vá em Settings -> Secrets and variables -> Actions -> clique no botão New repository secret.
+Em Name, digite exatamente: GEMINI_API_KEY.
+Em Secret, cole a chave que você gerou no passo 1 e salve.
+Pronto! A partir desse momento, o ciclo de postagens inteligentes estará totalmente ativo e rodando sozinho sem que você precise executar ou pagar nada.

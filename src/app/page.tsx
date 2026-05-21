@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import PostCard from '@/components/PostCard';
 import Sidebar from '@/components/Sidebar';
 import AdSense from '@/components/AdSense';
@@ -20,10 +21,17 @@ export default async function Home({ searchParams }: HomeProps) {
     ? allArticles.filter(art => art.category.toLowerCase() === selectedCategory.toLowerCase())
     : allArticles;
 
-  // Separate the featured article (only if no category is filtered, otherwise show standard grid)
-  const featuredArticle = !selectedCategory
-    ? allArticles.find(art => art.isFeatured) || allArticles[0]
-    : null;
+  // Rotation logic for the featured article:
+  // Find all articles marked as featured.
+  const featuredPool = allArticles.filter(art => art.isFeatured);
+
+  // We rotate daily. Day index is calculated deterministically based on days since Unix Epoch.
+  const daysSinceEpoch = Math.floor(Date.now() / 86400000);
+
+  // Pick the featured article from the pool based on the day index
+  const featuredArticle = !selectedCategory && featuredPool.length > 0
+    ? featuredPool[daysSinceEpoch % featuredPool.length]
+    : (!selectedCategory && allArticles.length > 0 ? allArticles[0] : null);
 
   // Articles for the grid (excluding the featured one if showing)
   const gridArticles = featuredArticle
@@ -74,11 +82,13 @@ export default async function Home({ searchParams }: HomeProps) {
 
               <Link href={`/blog/${featuredArticle.slug}`} className="hero-card">
                 {featuredArticle.coverImage ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img 
+                  <Image 
                     src={featuredArticle.coverImage} 
                     alt={featuredArticle.title} 
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                    style={{ objectFit: 'cover' }}
+                    priority
                   />
                 ) : (
                   <div className="card-img-placeholder" style={{ fontSize: '1.5rem' }}>
@@ -118,6 +128,11 @@ export default async function Home({ searchParams }: HomeProps) {
         <div className="main-layout">
           {/* Articles Grid Column */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            <h2 className="section-title">
+              {selectedCategory 
+                ? `Publicações em ${categories.find(c => c.value === selectedCategory.toLowerCase())?.label || selectedCategory}` 
+                : 'Últimas Publicações'}
+            </h2>
             {gridArticles.length > 0 ? (
               <div className="articles-grid">
                 {gridArticles.map((article) => (
@@ -139,7 +154,10 @@ export default async function Home({ searchParams }: HomeProps) {
           </div>
 
           {/* Sidebar Column */}
-          <Sidebar recentArticles={allArticles} />
+          <Sidebar 
+            recentArticles={allArticles} 
+            featuredArticles={featuredPool.filter(art => !featuredArticle || art.slug !== featuredArticle.slug)}
+          />
         </div>
       </section>
     </main>

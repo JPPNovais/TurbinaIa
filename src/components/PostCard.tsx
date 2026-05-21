@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArticleMetadata } from '@/lib/articles';
 
 interface PostCardProps {
@@ -33,8 +34,14 @@ export default function PostCard({ article }: PostCardProps) {
     <article className="article-card">
       <Link href={`/blog/${slug}`} className="card-media">
         {coverImage ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={coverImage} alt={title} loading="lazy" />
+          <Image 
+            src={coverImage} 
+            alt={title} 
+            fill 
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            style={{ objectFit: 'cover' }}
+            loading="lazy"
+          />
         ) : (
           <div className="card-img-placeholder">
             <span>🌀 Turbina IA</span>

@@ -230,6 +230,96 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1rem;
 }
 
+/* Mobile Menu Toggle & Overlay */
+.menu-toggle {
+  display: none;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  z-index: 110;
+}
+
+.menu-toggle:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 7, 18, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 102;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--bg-secondary);
+    border-left: 1px solid var(--border-color);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: calc(var(--header-height) + 2rem) 2.5rem 2rem;
+    gap: 1.5rem;
+    transition: right var(--transition-normal);
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.4);
+    z-index: 105;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-link {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+  
+  .hero {
+    padding-top: calc(var(--header-height) + 1.5rem);
+    padding-bottom: 2rem;
+  }
+  
+  .article-header {
+    padding-top: calc(var(--header-height) + 1.5rem);
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-header-title {
+    font-size: 1.85rem !important;
+  }
+}
+
 /* Theme Switcher Button */
 .theme-toggle {
   background: var(--bg-tertiary);
@@ -286,6 +376,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Hero Section */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.section-title::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1.5rem;
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  border-radius: 2px;
+}
+
 .hero {
   padding-top: calc(var(--header-height) + 3rem);
   padding-bottom: 3rem;
@@ -811,6 +920,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .article-hero-media {
+  position: relative;
   max-width: 900px;
   margin: 2rem auto;
   border-radius: var(--border-radius-lg);

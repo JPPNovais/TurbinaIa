@@ -13,7 +13,7 @@ tags:
   - inovação
   - tecnologia
 author: Redação Turbina IA
-isFeatured: false
+isFeatured: true
 date: "2026-05-21"
 coverImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80"
 ---

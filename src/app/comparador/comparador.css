@@ -225,8 +225,21 @@
 /* Pros and Cons */
 .pros-cons-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .pros-cons-grid {
+    grid-template-columns: 1fr;
+  }
+  .comparison-card {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  .model-name {
+    font-size: 1.5rem;
+  }
 }
 
 .pros-list, .cons-list {

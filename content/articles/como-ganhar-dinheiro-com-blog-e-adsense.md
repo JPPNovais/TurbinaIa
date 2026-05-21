@@ -9,7 +9,7 @@ tags:
   - SEO
   - Blogs
 author: Especialista Turbina
-isFeatured: false
+isFeatured: true
 coverImage: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80"
 ---
 

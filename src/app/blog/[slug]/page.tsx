@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 import ReadingProgressBar from '@/components/ReadingProgressBar';
 import AdSense from '@/components/AdSense';
@@ -102,8 +103,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <div className="container">
         <div className="article-hero-media">
           {article.coverImage ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={article.coverImage} alt={article.title} />
+            <Image 
+              src={article.coverImage} 
+              alt={article.title} 
+              fill
+              sizes="(max-width: 768px) 100vw, 900px"
+              style={{ objectFit: 'cover' }}
+              priority
+            />
           ) : (
             <div className="card-img-placeholder" style={{ fontSize: '2rem' }}>
               <span>🌀 Turbina IA</span>

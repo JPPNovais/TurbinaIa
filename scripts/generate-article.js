@@ -198,27 +198,80 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
       categoryVal = categoryLine.replace('category:', '').replace(/['"]/g, '').trim().toLowerCase();
     }
 
-    // Curated Unsplash images for each category
+    // Curated Unsplash images for each category (expanded to 10 unique, high-quality images per category)
     const curatedImages = {
       noticias: [
         'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80'
+        'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80'
       ],
       tutoriais: [
         'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80'
+        'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1516116211223-5c359a36298a?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80'
       ],
       ferramentas: [
         'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80'
+        'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80'
       ]
     };
 
+    // Scan existing articles to extract all coverImage URLs currently in use
+    const articlesDir = path.resolve(process.cwd(), 'content/articles');
+    const usedImages = new Set();
+    if (fs.existsSync(articlesDir)) {
+      const files = fs.readdirSync(articlesDir);
+      for (const file of files) {
+        if (file.endsWith('.md')) {
+          const filePath = path.join(articlesDir, file);
+          const content = fs.readFileSync(filePath, 'utf8');
+          const coverImageMatch = content.match(/coverImage:\s*["']([^"']+)["']/);
+          if (coverImageMatch) {
+            usedImages.add(coverImageMatch[1].trim());
+          }
+        }
+      }
+    }
+
     const imagesList = curatedImages[categoryVal] || curatedImages.noticias;
-    const coverImageUrl = imagesList[Math.floor(Math.random() * imagesList.length)];
+    
+    // Filter out used images to guarantee we don't repeat them
+    let availableImages = imagesList.filter(img => !usedImages.has(img));
+    
+    // Fallback: If all images for the category are in use, look for unused images from other categories
+    if (availableImages.length === 0) {
+      const allCuratedImages = Object.values(curatedImages).flat();
+      availableImages = allCuratedImages.filter(img => !usedImages.has(img));
+      
+      // If absolutely every single curated image is already used, fallback to the initial category list
+      if (availableImages.length === 0) {
+        availableImages = imagesList;
+      }
+    }
+
+    const coverImageUrl = availableImages[Math.floor(Math.random() * availableImages.length)];
 
     // Inject coverImage into the frontmatter before the closing ---
     const frontmatterEndIndex = cleanContent.indexOf('---', 4);

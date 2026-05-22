@@ -50,6 +50,21 @@ export default function Footer() {
                   Biblioteca de Prompts ⚡
                 </Link>
               </li>
+              <li>
+                <Link href="/gerador" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                  Gerador de Prompts ⚡
+                </Link>
+              </li>
+              <li>
+                <Link href="/glossario" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                  Glossário de IA ⚡
+                </Link>
+              </li>
+              <li>
+                <Link href="/changelog" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                  Monitor de Modelos ⚡
+                </Link>
+              </li>
             </ul>
           </div>
 

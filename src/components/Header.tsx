@@ -61,14 +61,14 @@ export default function Header() {
             <Link href="/prompts" className={`nav-link ${pathname === '/prompts' ? 'active' : ''}`}>
               Prompts
             </Link>
-            <Link href="/?category=tutoriais" className={`nav-link ${pathname === '/?category=tutoriais' ? 'active' : ''}`}>
-              Tutoriais
+            <Link href="/gerador" className={`nav-link ${pathname === '/gerador' ? 'active' : ''}`}>
+              Gerador
             </Link>
-            <Link href="/?category=noticias" className={`nav-link ${pathname === '/?category=noticias' ? 'active' : ''}`}>
-              Notícias
+            <Link href="/glossario" className={`nav-link ${pathname === '/glossario' ? 'active' : ''}`}>
+              Glossário
             </Link>
-            <Link href="/?category=ferramentas" className={`nav-link ${pathname === '/?category=ferramentas' ? 'active' : ''}`}>
-              Ferramentas
+            <Link href="/changelog" className={`nav-link ${pathname === '/changelog' ? 'active' : ''}`}>
+              Novidades
             </Link>
           </nav>
 

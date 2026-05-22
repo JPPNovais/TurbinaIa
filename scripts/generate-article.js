@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+const http = require('http');
 
 // Pure JS function to load .env variables without external dependency
 try {
@@ -114,6 +115,127 @@ function fetchUnsplashImage(query, usedImages) {
   });
 }
 
+// Strip HTML tags and boilerplate, return clean plain text
+function stripHtml(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<nav[\s\S]*?<\/nav>/gi, '')
+    .replace(/<header[\s\S]*?<\/header>/gi, '')
+    .replace(/<footer[\s\S]*?<\/footer>/gi, '')
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+    .substring(0, 5000);
+}
+
+// Fetch plain text content from a URL, following up to 3 redirects
+function fetchPageContent(url, redirectCount = 0) {
+  return new Promise((resolve) => {
+    if (redirectCount > 3) { resolve(null); return; }
+
+    let protocol;
+    try {
+      protocol = new URL(url).protocol === 'https:' ? https : http;
+    } catch {
+      resolve(null);
+      return;
+    }
+
+    const req = protocol.get(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; TurbinaIA/1.0; +https://turbinaia.com.br)',
+        'Accept': 'text/html,application/xhtml+xml,*/*;q=0.8',
+        'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+      },
+      timeout: 12000,
+    }, (res) => {
+      if ([301, 302, 307, 308].includes(res.statusCode) && res.headers.location) {
+        const next = res.headers.location.startsWith('http')
+          ? res.headers.location
+          : new URL(res.headers.location, url).href;
+        resolve(fetchPageContent(next, redirectCount + 1));
+        return;
+      }
+
+      if (res.statusCode !== 200) { resolve(null); return; }
+
+      const ct = res.headers['content-type'] || '';
+      if (!ct.includes('text/html') && !ct.includes('text/plain')) { resolve(null); return; }
+
+      let data = '';
+      let truncated = false;
+      res.on('data', (chunk) => {
+        if (truncated) return;
+        data += chunk;
+        if (data.length > 400000) { truncated = true; res.destroy(); }
+      });
+      const finish = () => {
+        const text = stripHtml(data);
+        resolve(text.length > 150 ? text : null);
+      };
+      res.on('end', finish);
+      res.on('close', () => { if (truncated) finish(); });
+    });
+
+    req.on('error', () => resolve(null));
+    req.on('timeout', () => { req.destroy(); resolve(null); });
+  });
+}
+
+// Ask Gemini (with search) for the best source URLs on the topic, then fetch them
+async function researchSources(topic) {
+  console.log('🔍 Pesquisando fontes confiáveis sobre o tema...');
+  let urls = [];
+  try {
+    const res = await withRetry(() => ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: `Pesquise em inglês E em português sobre "${topic}" e retorne de 6 a 8 URLs de artigos originais de fontes altamente confiáveis. Inclua fontes de diferentes regiões do mundo para ter perspectivas variadas. Priorize (nesta ordem):
+1) Blogs e releases oficiais dos laboratórios de IA: anthropic.com, openai.com, blog.google/technology/ai, deepmind.google, ai.meta.com, mistral.ai, x.ai
+2) Revistas científicas e acadêmicas: arxiv.org, technologyreview.com (MIT), nature.com, science.org
+3) Jornalismo tecnológico internacional de referência: techcrunch.com, theverge.com, wired.com, arstechnica.com, ars.electronica.art, reuters.com, bloomberg.com, apnews.com, bbc.com/news/technology, theguardian.com/technology, ft.com, economist.com
+4) Relatórios de analistas: gartner.com, mckinsey.com, statista.com
+Tente trazer ao menos 2 fontes que confirmem os mesmos fatos principais para permitir cruzamento de informações.
+Retorne SOMENTE as URLs completas, uma por linha, sem texto adicional, bullet points ou numeração.`,
+      config: { tools: [{ googleSearch: {} }] },
+    }));
+    urls = res.text
+      .split('\n')
+      .map(l => l.replace(/^[-*\d.)\s]+/, '').trim())
+      .filter(l => /^https?:\/\/.+\..+/.test(l))
+      .slice(0, 8);
+  } catch (err) {
+    console.log('⚠️  Não foi possível obter URLs de fontes:', err.message);
+  }
+
+  if (urls.length === 0) return '';
+
+  console.log(`📡 Baixando conteúdo de ${urls.length} fonte(s) em paralelo...`);
+  const fetched = await Promise.all(urls.map(async (url) => {
+    const content = await fetchPageContent(url);
+    if (content) {
+      console.log(`  ✅ ${url}`);
+      return `### Fonte: ${url}\n${content}`;
+    } else {
+      console.log(`  ⚠️  Não acessível: ${url}`);
+      return null;
+    }
+  }));
+
+  const valid = fetched.filter(Boolean);
+  if (valid.length === 0) return '';
+
+  console.log(`📄 ${valid.length} fonte(s) carregada(s) com sucesso.`);
+  return valid.join('\n\n---\n\n');
+}
+
 async function withRetry(fn, maxRetries = 4, baseDelayMs = 20000) {
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
@@ -157,42 +279,50 @@ async function run() {
     }
   }
 
-  console.log(`📝 Gerando artigo completo sobre: "${topic}" (com suporte a busca em tempo real)...`);
+  // Step 2: Research — fetch actual content from trusted sources
+  const sourceContext = await researchSources(topic);
 
-  // Step 2: Generate the article using Gemini 2.5 Flash with search tools
+  console.log(`📝 Gerando artigo completo sobre: "${topic}" (com busca em tempo real + fontes verificadas)...`);
+
+  // Step 3: Generate the article using Gemini 2.5 Flash with search tools + pre-fetched source content
+  const sourceBlock = sourceContext
+    ? `\n\n## CONTEÚDO REAL EXTRAÍDO DAS FONTES PRIMÁRIAS\n\nOs textos abaixo foram baixados diretamente dos sites das fontes originais. Use-os como base principal das informações do artigo. Ao cruzar informações que aparecem em múltiplas fontes, você pode afirmar com mais confiança — indique isso com expressões como "confirmado por X e Y" ou "tanto a [Fonte A] quanto a [Fonte B] relatam que...".\n\n${sourceContext}\n\n---\n`
+    : '';
+
   const prompt = `Você é o redator-chefe do blog Turbina IA (turbinaia.com.br), especializado em Inteligência Artificial, ferramentas de produtividade e tendências tecnológicas.
 
-Sua missão é escrever um artigo em português impecável, com jornalismo de qualidade, sobre o tema: "${topic}".
+Sua missão é escrever um artigo em português impecável, com jornalismo de qualidade, sobre o tema: "${topic}".${sourceBlock}
 
 ## REGRAS DE QUALIDADE DAS FONTES (OBRIGATÓRIO)
 
-Você tem acesso à pesquisa Google em tempo real. Use-a ativamente, mas siga rigorosamente estas regras:
+Você tem acesso à pesquisa Google em tempo real E ao conteúdo real extraído das fontes acima. Use ambos, mas siga estas regras:
 
-**Fontes PERMITIDAS (priorize estas):**
-- Blogs e anúncios oficiais dos laboratórios de IA: anthropic.com, openai.com, blog.google/technology/ai, deepmind.google, ai.meta.com, mistral.ai, x.ai, cohere.com, stability.ai
-- Revistas científicas e de pesquisa: arxiv.org, nature.com, science.org, technologyreview.com (MIT)
-- Jornalismo tecnológico reconhecido: techcrunch.com, theverge.com, wired.com, arstechnica.com, reuters.com, bloomberg.com, apnews.com, ft.com, wsj.com, forbes.com
-- Relatórios de analistas: gartner.com, mckinsey.com, pwc.com, statista.com, idc.com
+**Fontes PERMITIDAS:**
+- Conteúdo extraído das fontes primárias fornecidas acima (prioridade máxima)
+- Blogs e anúncios oficiais dos laboratórios de IA: anthropic.com, openai.com, blog.google/technology/ai, deepmind.google, ai.meta.com, mistral.ai, x.ai, cohere.com
+- Revistas científicas: arxiv.org, nature.com, science.org, technologyreview.com (MIT)
+- Jornalismo internacional reconhecido: techcrunch.com, theverge.com, wired.com, arstechnica.com, reuters.com, bloomberg.com, apnews.com, bbc.com/news/technology, theguardian.com/technology, ft.com, economist.com
+- Relatórios de analistas: gartner.com, mckinsey.com, statista.com, idc.com
 - Documentação técnica oficial: developers.google.com, platform.openai.com, docs.anthropic.com
 
-**Fontes PROIBIDAS (não cite nem mencione dados originados de):**
+**Fontes PROIBIDAS:**
 - Blogs pessoais, Medium, Substack, LinkedIn Articles sem autoria verificada
-- Sites de agregação de clickbait (makeuseof.com, beebom.com, sites com "top 10 tools" sem credibilidade editorial)
+- Sites de agregação sem editorial (makeuseof.com, beebom.com e similares)
 - Fóruns (Reddit, Quora) como fonte primária de afirmações factuais
-- Sites que reproduzem conteúdo sem acrescentar análise original
-- Qualquer fonte que não você consiga verificar a credibilidade editorial
+- Sites que apenas reproduzem conteúdo sem análise original
 
-**Regra de ouro:** Se não encontrou a informação em uma fonte confiável, NÃO a inclua no artigo. Prefira um artigo com menos informações, porém 100% verificadas e citadas.
+**Regra de ouro:** Se não encontrou a informação em uma fonte confiável — incluindo as fontes já extraídas — NÃO a inclua. Prefira um artigo com menos dados, porém 100% verificados.
 
-## CITAÇÕES (OBRIGATÓRIO)
+## CITAÇÕES E CRUZAMENTO DE FONTES (OBRIGATÓRIO)
 
-- Toda afirmação factual importante (estatísticas, datas de lançamento, benchmarks, preços, capacidades técnicas) deve ter uma citação inline no formato de link Markdown apontando para a fonte original: [nome da fonte](URL real encontrada na busca)
-- Exemplo correto: "O Claude Sonnet 4 foi lançado em março de 2025 e apresenta melhorias de 30% em raciocínio segundo a [Anthropic](https://anthropic.com/news/claude-4)"
-- Ao final do artigo, inclua uma seção "## Fontes e Referências" listando todas as URLs utilizadas no formato: - [Título da página ou publicação](URL)
+- Toda afirmação factual deve ter citação inline como link Markdown: [nome da fonte](URL real)
+- Exemplo: "O modelo alcança 87% no MMLU segundo a [Anthropic](https://anthropic.com/news/...)"
+- Quando o mesmo fato aparecer em 2 ou mais fontes, indique o cruzamento: "tanto a [TechCrunch](URL) quanto a [Reuters](URL) confirmam que..."
+- Ao final, inclua "## Fontes e Referências" listando todos os links no formato: - [Título](URL)
 
 ## FORMATO DO ARQUIVO
 
-Retorne APENAS o arquivo Markdown cru, com frontmatter YAML no topo. Não envolva em blocos de código.
+Retorne APENAS o Markdown cru com frontmatter YAML no topo. Sem blocos de código envolvendo o arquivo inteiro.
 
 ---
 title: [Título chamativo e otimizado para SEO]
@@ -210,21 +340,23 @@ date: "${today}"
 ## DIRETRIZES DE CONTEÚDO (GEO — Otimização para Mecanismos de IA)
 
 1. **TL;DR obrigatório:** Após a introdução, insira:
-   > **Resposta Rápida (TL;DR):** [2–3 frases diretas respondendo à principal pergunta do tema, em negrito. Buscadores de IA priorizam esse bloco para citação direta.]
+   > **Resposta Rápida (TL;DR):** [2–3 frases diretas respondendo à principal pergunta do tema. Buscadores de IA priorizam esse bloco.]
 
 2. **Cabeçalhos:** Use apenas ## e ### para organizar seções.
 
-3. **Tabelas para comparações:** Sempre que houver dados comparativos (preços, benchmarks, recursos, prós/contras), crie uma tabela Markdown limpa — buscadores de IA preferem dados tabulares.
+3. **Tabelas:** Para dados comparativos (preços, benchmarks, recursos, prós/contras), crie tabelas Markdown limpas.
 
-4. **Densidade factual:** Inclua nomes exatos, datas, versões, números e estatísticas com suas fontes. Prefira especificidade a generalidade.
+4. **Densidade factual:** Nomes exatos, datas, versões, números e estatísticas — sempre com a fonte citada.
 
-5. **FAQ ao final:** Seção "## Perguntas Frequentes" com 3 perguntas e respostas ultra-diretas sobre o tema.
+5. **Perspectiva internacional:** Quando houver diferentes pontos de vista de veículos de diferentes países ou regiões, inclua-os para enriquecer a análise.
 
-6. **Links internos:** Quando relevante, inclua ao menos um link para ferramentas do próprio site: [Comparador de IAs](/comparador), [Calculadora de Custos de IA](/calculadora), [Biblioteca de Prompts](/prompts), [Gerador de Prompts](/gerador), [Glossário de IA](/glossario) ou [Monitor de Modelos](/changelog).
+6. **FAQ:** Seção "## Perguntas Frequentes" com 3 perguntas e respostas ultra-diretas.
 
-7. **Seção de fontes:** Ao final (após o FAQ), inclua "## Fontes e Referências" com todos os links utilizados.
+7. **Links internos:** Inclua ao menos um link para: [Comparador de IAs](/comparador), [Calculadora de Custos](/calculadora), [Prompts](/prompts), [Gerador de Prompts](/gerador), [Glossário de IA](/glossario) ou [Monitor de Modelos](/changelog).
 
-Escreva um artigo longo (mínimo de 900 palavras), com profundidade jornalística real, baseado exclusivamente em informações verificadas e citadas de fontes confiáveis.`;
+8. **Fontes:** Seção "## Fontes e Referências" ao final com todos os links.
+
+Escreva um artigo longo (mínimo de 1000 palavras), com profundidade jornalística real, baseado nas fontes primárias fornecidas e em pesquisa adicional verificada.`;
 
   try {
     const response = await withRetry(() => ai.models.generateContent({

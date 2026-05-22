@@ -37,6 +37,8 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: |
           node scripts/update-models.js
+          node scripts/update-calculator.js
+          node scripts/update-changelog.js
           node scripts/generate-article.js
 
       - name: Commitar e Enviar Artigo e Modelos Atualizados

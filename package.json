@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate-article": "node scripts/generate-article.js"
+    "generate-article": "node scripts/generate-article.js",
+    "update-models": "node scripts/update-models.js",
+    "update-calculator": "node scripts/update-calculator.js",
+    "update-changelog": "node scripts/update-changelog.js"
   },
   "dependencies": {
     "@google/genai": "^2.5.0",

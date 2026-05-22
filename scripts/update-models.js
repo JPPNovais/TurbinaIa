@@ -34,6 +34,24 @@ if (!apiKey) {
 
 const ai = new GoogleGenAI({ apiKey });
 
+async function withRetry(fn, maxRetries = 3, baseDelayMs = 20000) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      return await fn();
+    } catch (error) {
+      const isRetryable = error?.status === 503 || error?.status === 429 ||
+        (error?.message && (error.message.includes('503') || error.message.includes('UNAVAILABLE') || error.message.includes('high demand')));
+      if (isRetryable && attempt < maxRetries) {
+        const delay = baseDelayMs * attempt;
+        console.log(`⏳ Gemini indisponível (tentativa ${attempt}/${maxRetries}). Aguardando ${delay / 1000}s...`);
+        await new Promise(r => setTimeout(r, delay));
+      } else {
+        throw error;
+      }
+    }
+  }
+}
+
 function cleanMarkdownResponse(text) {
   let cleaned = text.trim();
   if (cleaned.startsWith('```typescript')) {
@@ -77,13 +95,13 @@ Instruções:
 4. Retorne APENAS o código completo do arquivo TypeScript pronto para ser gravado, sem comentários explicativos externos ou blocos markdown envolvendo todo o arquivo.`;
 
   try {
-    const response = await ai.models.generateContent({
+    const response = await withRetry(() => ai.models.generateContent({
       model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         tools: [{ googleSearch: {} }]
       }
-    });
+    }));
     
     const updatedContent = cleanMarkdownResponse(response.text);
     

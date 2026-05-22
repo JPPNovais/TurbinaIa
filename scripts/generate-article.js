@@ -114,7 +114,7 @@ function fetchUnsplashImage(query, usedImages) {
   });
 }
 
-async function withRetry(fn, maxRetries = 3, baseDelayMs = 15000) {
+async function withRetry(fn, maxRetries = 4, baseDelayMs = 20000) {
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
       return await fn();

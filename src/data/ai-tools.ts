@@ -13,6 +13,8 @@ export interface AITool {
   tags: string[];
   isNew?: boolean;
   isFeatured?: boolean;
+  popularityRank?: number;
+  updatedAt?: string;
 }
 
 export interface AIToolCategory {

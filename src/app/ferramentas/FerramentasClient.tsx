@@ -31,12 +31,21 @@ function getPricingClass(pricing: AITool['pricing']): string {
   return 'pricing-badge pricing-badge-paid';
 }
 
-function ToolCard({ tool, index }: { tool: AITool; index: number }) {
-  const color = getIconColor(index);
+const toolColorMap: Map<string, string> = new Map(
+  AI_TOOLS.map((t, i) => [t.id, getIconColor(i)])
+);
+
+function ToolCard({ tool }: { tool: AITool }) {
+  const color = toolColorMap.get(tool.id) ?? ICON_COLORS[0];
   const initials = getInitials(tool.name);
+  const [pricingOpen, setPricingOpen] = useState(false);
 
   return (
     <article className="tool-card">
+      {tool.popularityRank !== undefined && tool.popularityRank <= 10 && (
+        <span className="tool-rank-badge">#{tool.popularityRank}</span>
+      )}
+
       <div className="tool-card-top">
         <div className="tool-card-icon" style={{ backgroundColor: color }}>
           {initials}
@@ -62,18 +71,75 @@ function ToolCard({ tool, index }: { tool: AITool; index: number }) {
       </ul>
 
       <div className="tool-card-footer">
-        <span className={getPricingClass(tool.pricing)}>{tool.pricing}</span>
-        <a
-          href={tool.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="tool-visit-btn"
-          aria-label={`Conhecer ${tool.name}`}
-        >
-          Conhecer ferramenta →
-        </a>
+        <div className="tool-card-footer-row">
+          <button
+            className={getPricingClass(tool.pricing)}
+            onClick={() => setPricingOpen((o) => !o)}
+            title="Ver detalhes de preço"
+            aria-expanded={pricingOpen}
+          >
+            {tool.pricing} {pricingOpen ? '▲' : '▼'}
+          </button>
+          <a
+            href={tool.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tool-visit-btn"
+            aria-label={`Conhecer ${tool.name}`}
+          >
+            Conhecer →
+          </a>
+        </div>
+        {pricingOpen && (
+          <p className="tool-pricing-details">{tool.pricingDetails}</p>
+        )}
       </div>
     </article>
+  );
+}
+
+function RankingSection({ tools }: { tools: AITool[] }) {
+  const ranked = useMemo(
+    () =>
+      tools
+        .filter((t) => t.popularityRank !== undefined)
+        .sort((a, b) => (a.popularityRank ?? 99) - (b.popularityRank ?? 99))
+        .slice(0, 10),
+    [tools]
+  );
+
+  if (ranked.length < 3) return null;
+
+  return (
+    <section className="ranking-section">
+      <h2 className="ranking-title">
+        <span>🏆</span> Ranking de Popularidade
+      </h2>
+      <p className="ranking-subtitle">As IAs mais utilizadas no mundo, baseado em dados de uso ativo</p>
+      <div className="ranking-list">
+        {ranked.map((tool) => {
+          const color = toolColorMap.get(tool.id) ?? ICON_COLORS[0];
+          const initials = getInitials(tool.name);
+          return (
+            <a
+              key={tool.id}
+              href={tool.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ranking-item"
+              aria-label={`${tool.name} — posição #${tool.popularityRank}`}
+            >
+              <span className="ranking-pos">#{tool.popularityRank}</span>
+              <span className="ranking-icon" style={{ backgroundColor: color }}>
+                {initials}
+              </span>
+              <span className="ranking-name">{tool.name}</span>
+              <span className={getPricingClass(tool.pricing)}>{tool.pricing}</span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
   );
 }
 
@@ -97,20 +163,35 @@ export default function FerramentasClient() {
     });
   }, [search, selectedCategory]);
 
+  const latestUpdate = useMemo(() => {
+    const dates = AI_TOOLS.map((t) => t.updatedAt).filter(Boolean) as string[];
+    if (!dates.length) return null;
+    return dates.sort().reverse()[0];
+  }, []);
+
+  const formattedDate = useMemo(() => {
+    if (!latestUpdate) return 'maio 2026';
+    const [year, month] = latestUpdate.split('-');
+    const months = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+    return `${months[parseInt(month, 10) - 1]} ${year}`;
+  }, [latestUpdate]);
+
   return (
     <main className="ferramentas-section">
       <div className="container">
         <header className="ferramentas-header">
           <h1>Guia de Ferramentas de IA</h1>
           <p>
-            {AI_TOOLS.length}+ ferramentas organizadas por finalidade para você escolher a certa
+            Descubra qual IA usar para cada tarefa — {AI_TOOLS.length} ferramentas organizadas por finalidade
           </p>
           <div className="ferramentas-badges">
             <span className="ferramentas-badge">{AI_TOOLS.length} ferramentas</span>
             <span className="ferramentas-badge">{CATEGORIES.length} categorias</span>
-            <span className="ferramentas-badge">Atualizado maio 2026</span>
+            <span className="ferramentas-badge">Atualizado {formattedDate}</span>
           </div>
         </header>
+
+        <RankingSection tools={AI_TOOLS} />
 
         <div className="ferramentas-controls">
           <div className="search-wrapper">
@@ -168,8 +249,8 @@ export default function FerramentasClient() {
               <p>Nenhuma ferramenta encontrada para &quot;{search}&quot;</p>
             </div>
           ) : (
-            filtered.map((tool, index) => (
-              <ToolCard key={tool.id} tool={tool} index={index} />
+            filtered.map((tool) => (
+              <ToolCard key={tool.id} tool={tool} />
             ))
           )}
         </div>

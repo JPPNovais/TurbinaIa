@@ -62,6 +62,9 @@ export default function Header() {
             <Link href="/prompts" className={`nav-link ${pathname === '/prompts' ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
               Prompts
             </Link>
+            <Link href="/ferramentas" className={`nav-link ${pathname === '/ferramentas' ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
+              Ferramentas
+            </Link>
             <Link href="/gerador" className={`nav-link ${pathname === '/gerador' ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
               Gerador
             </Link>

@@ -64,86 +64,90 @@ function cleanMarkdownResponse(text) {
 }
 
 async function run() {
-  console.log('🗓️ Iniciando atualização do Monitor de Modelos (Changelog)...');
+  console.log('📖 Iniciando atualização do Glossário de IA...');
 
-  const filePath = path.resolve(process.cwd(), 'src/data/changelog.ts');
+  const filePath = path.resolve(process.cwd(), 'src/data/glossario.ts');
 
   if (!fs.existsSync(filePath)) {
-    console.error('❌ Arquivo src/data/changelog.ts não encontrado.');
+    console.error('❌ Arquivo src/data/glossario.ts não encontrado.');
     process.exit(1);
   }
 
   const currentContent = fs.readFileSync(filePath, 'utf8');
 
-  // Extract the most recent date and existing IDs
-  const dateMatches = currentContent.match(/date:\s*['"](\d{4}-\d{2})['"]/g) || [];
-  const dates = dateMatches
-    .map(d => d.match(/['"](\d{4}-\d{2})['"]/)?.[1])
-    .filter(Boolean)
-    .sort()
-    .reverse();
-  const mostRecentDate = dates[0] || '2025-01';
-
+  // Extract existing IDs and terms
   const existingIds = (currentContent.match(/id:\s*['"]([^'"]+)['"]/g) || [])
     .map(m => m.match(/['"]([^'"]+)['"]/)?.[1])
     .filter(Boolean);
 
+  const existingTerms = (currentContent.match(/term:\s*['"]([^'"]+)['"]/g) || [])
+    .map(m => m.match(/['"]([^'"]+)['"]/)?.[1])
+    .filter(Boolean);
+
+  const categoriesMatch = currentContent.match(/export const GLOSSARIO_CATEGORIES\s*=\s*\[([^\]]+)\]/);
+  const categories = categoriesMatch
+    ? categoriesMatch[1].match(/['"]([^'"]+)['"]/g)?.map(s => s.replace(/['"]/g, '')).filter(c => c !== 'Todos') || []
+    : ['Fundamentos', 'Modelos & Arquitetura', 'Treinamento', 'Aplicações', 'Segurança & Ética', 'Ferramentas & APIs'];
+
+  // Extract a sample term as format reference
+  const sampleMatch = currentContent.match(/\{[\s\S]*?id:[\s\S]*?definition:[\s\S]*?\}/);
+  const sampleEntry = sampleMatch ? sampleMatch[0].substring(0, 600) : '';
+
   const currentMonth = new Date().toISOString().slice(0, 7);
 
-  // Extract the first 3 existing entries as examples (without sending the whole file)
-  const entriesMatch = currentContent.match(/export const CHANGELOG[^=]*=\s*\[([\s\S]*)/);
-  const firstEntriesRaw = entriesMatch
-    ? entriesMatch[1].split(/(?<=\},)\s*\{/).slice(0, 3).join('},\n  {').trimEnd()
-    : '';
-  const exampleEntries = firstEntriesRaw.substring(0, 2000);
+  const prompt = `Você é um especialista em Inteligência Artificial e linguagem técnica acessível, escrevendo para o público brasileiro.
 
-  const prompt = `Você é o editor de tecnologia da Turbina IA, especializado em lançamentos de modelos de IA.
-
-O changelog atual já cobre eventos até: ${mostRecentDate}
 Data atual: ${currentMonth}
+Categorias disponíveis: ${categories.join(', ')}
 
-IDs já existentes (NÃO repita nenhum desses):
+Termos já existentes (NÃO repita nenhum):
+${existingTerms.join(', ')}
+
+IDs já existentes (NÃO repita nenhum):
 ${existingIds.join(', ')}
 
-Exemplos do formato usado no changelog (primeiras entradas):
+Exemplo do formato usado:
 \`\`\`typescript
-${exampleEntries}
+${sampleEntry}
 \`\`\`
 
 ## Sua tarefa
-Pesquise os principais lançamentos de modelos de IA entre ${mostRecentDate} e ${currentMonth}.
-Foque em eventos de alto impacto de: OpenAI, Anthropic, Google DeepMind, Meta AI, Mistral AI, DeepSeek, xAI (Grok), Cohere.
+Pesquise termos e conceitos de IA que surgiram ou se tornaram populares recentemente (2024-2026) e que ainda NÃO estão na lista acima.
 
-Retorne APENAS um array TypeScript com as novas entradas (sem export const, sem interface, apenas o array):
+Crie 4 a 6 novos termos para o glossário. Priorize:
+- Termos novos de agentes de IA (Agentic AI, MCP, Tool Use, etc.)
+- Conceitos de modelos multimodais recentes
+- Terminologia de raciocínio (Chain-of-Thought, Reasoning Models, etc.)
+- Conceitos de segurança e alinhamento de IA modernos
+- Termos de APIs e infraestrutura de IA usados por desenvolvedores
+
+Cada definição deve ser:
+- Clara e acessível para leigos, mas tecnicamente precisa
+- Em português do Brasil
+- Com exemplo concreto sempre que possível
+
+Retorne APENAS um array TypeScript (sem export const):
 \`\`\`typescript
 [
   {
-    id: 'exemplo-id-2026',
-    date: 'YYYY-MM',
-    title: 'Título em português',
-    developer: 'Nome da Empresa',
-    category: 'Lançamento',
-    description: '1-2 frases descrevendo o evento em português.',
-    highlights: [
-      'Destaque 1 com dado concreto',
-      'Destaque 2',
-      'Destaque 3',
-    ],
-    impact: 'Alto',
+    id: 'nome-do-termo',
+    term: 'Nome do Termo (Sigla)',
+    category: 'UmaDasCategorias',
+    definition: 'Definição clara e acessível em português.',
+    example: 'Exemplo prático e concreto (opcional mas recomendado).',
+    relatedTerms: ['Termo Relacionado 1', 'Termo Relacionado 2'],
   },
 ]
 \`\`\`
 
 Regras:
-- category: APENAS 'Lançamento' | 'Atualização' | 'Descontinuado' | 'Pesquisa'
-- impact: APENAS 'Alto' | 'Médio' | 'Baixo'
-- id: kebab-case único, diferente de todos os IDs listados acima
-- date: 'YYYY-MM' (apenas ano-mês)
-- Se não há eventos novos relevantes desde ${mostRecentDate}, retorne um array vazio: []
+- category: APENAS um dos valores: ${categories.map(c => `'${c}'`).join(', ')}
+- id: kebab-case único, diferente dos IDs listados acima
+- relatedTerms: deve referenciar termos que já existem na lista de termos existentes ou outros novos que você esteja criando
 - Retorne APENAS o array TypeScript, sem texto explicativo`;
 
   try {
-    console.log('🔍 Pesquisando novos lançamentos de IA com Google Search...');
+    console.log('🔍 Pesquisando novos termos de IA com Google Search...');
 
     const response = await withRetry(() =>
       ai.models.generateContent({
@@ -154,65 +158,55 @@ Regras:
     );
 
     const rawResponse = cleanMarkdownResponse(response.text);
-
-    // Parse the array from the response
     const arrayMatch = rawResponse.match(/\[\s*[\s\S]*\]/);
+
     if (!arrayMatch) {
-      console.log('ℹ️ Nenhum evento novo encontrado ou resposta inválida.');
+      console.error('❌ Resposta não contém um array válido.');
       console.log('Prévia:', rawResponse.substring(0, 300));
       return;
     }
 
     const arrayText = arrayMatch[0].trim();
 
-    // Check if it's an empty array
     if (arrayText === '[]' || arrayText.replace(/\s/g, '') === '[]') {
-      console.log('✅ Changelog verificado — nenhum evento novo desde ' + mostRecentDate + '.');
+      console.log('ℹ️ Nenhum termo novo gerado.');
       return;
     }
 
-    // Count new entries
-    const newEntryCount = (arrayText.match(/id:\s*['"][^'"]+['"]/g) || []).length;
-
-    if (newEntryCount === 0) {
-      console.log('ℹ️ Nenhuma entrada válida encontrada na resposta.');
-      return;
-    }
-
-    // Validate that no existing IDs are reused
     const newIds = (arrayText.match(/id:\s*['"]([^'"]+)['"]/g) || [])
       .map(m => m.match(/['"]([^'"]+)['"]/)?.[1])
       .filter(Boolean);
+
+    if (newIds.length === 0) {
+      console.log('ℹ️ Nenhuma entrada válida encontrada.');
+      return;
+    }
+
     const duplicateIds = newIds.filter(id => existingIds.includes(id));
     if (duplicateIds.length > 0) {
       console.warn(`⚠️ IDs duplicados detectados: ${duplicateIds.join(', ')} — ignorando.`);
       return;
     }
 
-    // Inject new entries at the start of the CHANGELOG array
-    const insertionPoint = currentContent.indexOf('export const CHANGELOG');
-    const arrayStart = currentContent.indexOf('[', insertionPoint);
-
-    if (arrayStart === -1) {
-      console.error('❌ Não foi possível encontrar o array CHANGELOG no arquivo.');
+    // Append new terms before the closing ]; of GLOSSARIO array
+    const closingBracket = currentContent.lastIndexOf('];');
+    if (closingBracket === -1) {
+      console.error('❌ Não foi possível encontrar o fechamento do array GLOSSARIO.');
       return;
     }
 
-    // Build new entries block (remove outer brackets, add indentation)
     const innerEntries = arrayText.slice(1, -1).trim();
     const updatedContent =
-      currentContent.slice(0, arrayStart + 1) +
-      '\n  ' +
-      innerEntries +
-      ',\n  ' +
-      currentContent.slice(arrayStart + 1).trimStart();
+      currentContent.slice(0, closingBracket) +
+      '  ' + innerEntries + ',\n' +
+      currentContent.slice(closingBracket);
 
     fs.writeFileSync(filePath, updatedContent, 'utf8');
-    console.log(`✅ Changelog atualizado! ${newEntryCount} novo(s) evento(s) adicionado(s).`);
+    console.log(`✅ Glossário atualizado! ${newIds.length} novo(s) termo(s) adicionado(s).`);
     newIds.forEach(id => console.log(`   ✚ ${id}`));
 
   } catch (error) {
-    console.error('❌ Erro ao atualizar changelog:', error);
+    console.error('❌ Erro ao atualizar glossário:', error);
   }
 }
 

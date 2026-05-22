@@ -40,6 +40,8 @@ jobs:
           node scripts/update-calculator.js
           node scripts/update-changelog.js
           node scripts/update-tools.js
+          node scripts/update-prompts.js
+          node scripts/update-glossario.js
           node scripts/generate-article.js
 
       - name: Commitar e Enviar Artigo e Modelos Atualizados

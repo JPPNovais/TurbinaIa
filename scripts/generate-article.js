@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const https = require('https');
 
 // Pure JS function to load .env variables without external dependency
 try {
@@ -41,26 +42,23 @@ const ai = new GoogleGenAI({ apiKey });
 // Helper to clean markdown block wrappers from LLM response
 function cleanMarkdownResponse(text) {
   let cleaned = text.trim();
-  
-  // Strip code block fence at the start (e.g. ```yaml, ```markdown, ```md, or just ```)
+
   const startMatch = cleaned.match(/^```([a-zA-Z0-9+-]+)?/);
   if (startMatch) {
     const fenceLength = startMatch[0].length;
     cleaned = cleaned.substring(fenceLength).trim();
   }
-  
-  // Strip code block fence at the end
+
   if (cleaned.endsWith('```')) {
     cleaned = cleaned.substring(0, cleaned.length - 3).trim();
   }
-  
-  // Sometimes the model outputs a lone 'yaml' or 'markdown' line at the very beginning of the text
+
   if (cleaned.toLowerCase().startsWith('yaml\n')) {
     cleaned = cleaned.substring(5).trim();
   } else if (cleaned.toLowerCase().startsWith('markdown\n')) {
     cleaned = cleaned.substring(9).trim();
   }
-  
+
   return cleaned.trim();
 }
 
@@ -69,12 +67,51 @@ function slugify(text) {
   return text
     .toString()
     .toLowerCase()
-    .normalize('NFD') // separate accent marks from letters
-    .replace(/[\u0300-\u036f]/g, '') // remove accent marks
-    .replace(/[^\w\s-]/g, '') // remove all non-word chars
-    .replace(/\s+/g, '-') // replace spaces with hyphens
-    .replace(/-+/g, '-') // remove duplicate hyphens
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
     .trim();
+}
+
+// Fetch a relevant image from Unsplash API (free tier: 50 req/hour)
+// Requires UNSPLASH_ACCESS_KEY in .env — register at unsplash.com/developers
+function fetchUnsplashImage(query, usedImages) {
+  return new Promise((resolve) => {
+    const accessKey = process.env.UNSPLASH_ACCESS_KEY;
+    if (!accessKey) {
+      resolve(null);
+      return;
+    }
+
+    const searchQuery = encodeURIComponent(`${query} artificial intelligence technology`);
+    const url = `https://api.unsplash.com/search/photos?query=${searchQuery}&per_page=15&orientation=landscape&client_id=${accessKey}`;
+
+    https.get(url, (res) => {
+      let data = '';
+      res.on('data', (chunk) => { data += chunk; });
+      res.on('end', () => {
+        try {
+          const json = JSON.parse(data);
+          const results = json.results || [];
+          // Find the first result whose URL hasn't been used yet
+          const available = results.find(r => {
+            const imgUrl = r.urls.regular;
+            return !usedImages.has(imgUrl);
+          });
+          if (available) {
+            console.log(`🖼️  Imagem Unsplash encontrada para o tema: "${available.description || available.alt_description || query}"`);
+            resolve(available.urls.regular);
+          } else {
+            resolve(null);
+          }
+        } catch {
+          resolve(null);
+        }
+      });
+    }).on('error', () => resolve(null));
+  });
 }
 
 async function run() {
@@ -133,6 +170,7 @@ date: "${today}"
 3. **Tabelas de Comparação e Dados Estruturados:** Sempre que o artigo envolver comparações de preços, prós/contras, recursos ou benchmarks, crie uma **Tabela em Markdown** limpa. Os modelos de linguagem de buscadores de IA dão preferência extrema a dados em tabelas na hora de sintetizar respostas.
 4. **Fatos Densos e Fontes:** Diga nomes exatos, datas, estatísticas e versões.
 5. **Seção de FAQ no final:** Adicione uma seção "## Perguntas Frequentes" ao final do post, respondendo de forma ultra direta e sucinta a 3 principais dúvidas comuns do usuário sobre o tema.
+6. **Links Internos:** Quando o conteúdo for relevante, inclua ao menos um link interno para outras ferramentas do próprio site: [Comparador de IAs](/comparador), [Calculadora de Custos de IA](/calculadora) ou [Biblioteca de Prompts](/prompts). Isso ajuda os leitores a descobrirem mais recursos e melhora o ranqueamento do site.
 
 Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos reais da atualidade coletados da internet, com dicas práticas e que entregue muito valor real para quem está lendo.`;
 
@@ -148,7 +186,7 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
     const rawContent = response.text;
     let cleanContent = cleanMarkdownResponse(rawContent);
 
-    // Ensure frontmatter starts with '---' if it's missing but we have frontmatter elements
+    // Ensure frontmatter starts with '---'
     if (!cleanContent.startsWith('---')) {
       const firstDashIndex = cleanContent.indexOf('---');
       if (firstDashIndex > 0) {
@@ -159,11 +197,11 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
       }
     }
 
-    // Ensure title and description are wrapped in quotes in the frontmatter to prevent YAML parse errors
+    // Ensure title and description are wrapped in quotes to prevent YAML parse errors
     let lines = cleanContent.split('\n');
     let inFrontmatter = false;
     let frontmatterBoundaries = 0;
-    
+
     for (let i = 0; i < lines.length; i++) {
       const trimmed = lines[i].trim();
       if (trimmed === '---') {
@@ -171,7 +209,7 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
         if (frontmatterBoundaries === 1) inFrontmatter = true;
         if (frontmatterBoundaries === 2) inFrontmatter = false;
       }
-      
+
       if (inFrontmatter) {
         if (lines[i].startsWith('title:')) {
           let value = lines[i].replace('title:', '').trim();
@@ -190,21 +228,20 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
     }
     cleanContent = lines.join('\n');
 
-    // Parse the generated title from frontmatter or fall back to the prompt
+    // Parse title and category from frontmatter
     let titleLine = cleanContent.split('\n').find(line => line.startsWith('title:'));
     let titleVal = topic;
     if (titleLine) {
       titleVal = titleLine.replace('title:', '').replace(/['"]/g, '').trim();
     }
 
-    // Parse category from frontmatter
     let categoryLine = cleanContent.split('\n').find(line => line.startsWith('category:'));
-    let categoryVal = 'noticias'; // default
+    let categoryVal = 'noticias';
     if (categoryLine) {
       categoryVal = categoryLine.replace('category:', '').replace(/['"]/g, '').trim().toLowerCase();
     }
 
-    // Curated Unsplash images for each category (expanded to 10 unique, high-quality images per category)
+    // Curated Unsplash images as fallback (used when UNSPLASH_ACCESS_KEY is not set)
     const curatedImages = {
       noticias: [
         'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80',
@@ -216,7 +253,12 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
         'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80'
+        'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1655720828018-edd2daec9349?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1684163761691-f2ff5477e4ea?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1676277791608-ac54525aa94d?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1686191129040-a1da773aba47?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1680474569854-81216b34417a?auto=format&fit=crop&w=1200&q=80'
       ],
       tutoriais: [
         'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
@@ -228,7 +270,12 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
         'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1516116211223-5c359a36298a?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80'
+        'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1593720213428-28a5b9e94613?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80'
       ],
       ferramentas: [
         'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
@@ -240,11 +287,16 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
         'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
         'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
-        'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80'
+        'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1624953587687-daf255b6b80a?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1535378620166-273708d44e4c?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=1200&q=80',
+        'https://images.unsplash.com/photo-1640158615573-cd28feb1bf4e?auto=format&fit=crop&w=1200&q=80'
       ]
     };
 
-    // Scan existing articles to extract all coverImage URLs currently in use
+    // Scan existing articles to collect all cover images already in use
     const articlesDir = path.resolve(process.cwd(), 'content/articles');
     const usedImages = new Set();
     if (fs.existsSync(articlesDir)) {
@@ -253,33 +305,34 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
         if (file.endsWith('.md')) {
           const filePath = path.join(articlesDir, file);
           const content = fs.readFileSync(filePath, 'utf8');
-          const coverImageMatch = content.match(/coverImage:\s*["']([^"']+)["']/);
-          if (coverImageMatch) {
-            usedImages.add(coverImageMatch[1].trim());
-          }
+          const match = content.match(/coverImage:\s*["']([^"']+)["']/);
+          if (match) usedImages.add(match[1].trim());
         }
       }
     }
 
-    const imagesList = curatedImages[categoryVal] || curatedImages.noticias;
-    
-    // Filter out used images to guarantee we don't repeat them
-    let availableImages = imagesList.filter(img => !usedImages.has(img));
-    
-    // Fallback: If all images for the category are in use, look for unused images from other categories
-    if (availableImages.length === 0) {
-      const allCuratedImages = Object.values(curatedImages).flat();
-      availableImages = allCuratedImages.filter(img => !usedImages.has(img));
-      
-      // If absolutely every single curated image is already used, fallback to the initial category list
-      if (availableImages.length === 0) {
-        availableImages = imagesList;
+    // Try Unsplash API first; fall back to curated list
+    let coverImageUrl = await fetchUnsplashImage(titleVal, usedImages);
+
+    if (!coverImageUrl) {
+      if (process.env.UNSPLASH_ACCESS_KEY) {
+        console.log('⚠️  Unsplash API não retornou imagem disponível, usando lista curada.');
       }
+      const imagesList = curatedImages[categoryVal] || curatedImages.noticias;
+      let available = imagesList.filter(img => !usedImages.has(img));
+
+      if (available.length === 0) {
+        const allCurated = Object.values(curatedImages).flat();
+        available = allCurated.filter(img => !usedImages.has(img));
+      }
+      if (available.length === 0) {
+        available = curatedImages[categoryVal] || curatedImages.noticias;
+      }
+
+      coverImageUrl = available[Math.floor(Math.random() * available.length)];
     }
 
-    const coverImageUrl = availableImages[Math.floor(Math.random() * availableImages.length)];
-
-    // Inject coverImage into the frontmatter before the closing ---
+    // Inject coverImage into frontmatter before the closing ---
     const frontmatterEndIndex = cleanContent.indexOf('---', 4);
     if (frontmatterEndIndex !== -1) {
       const beforeEnd = cleanContent.substring(0, frontmatterEndIndex);
@@ -287,14 +340,11 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
       cleanContent = `${beforeEnd}coverImage: "${coverImageUrl}"\n${afterEnd}`;
     }
 
-    const slug = slugify(titleVal);
-    const articlesDir = path.resolve(process.cwd(), 'content/articles');
-    
-    // Ensure the folder exists
     if (!fs.existsSync(articlesDir)) {
       fs.mkdirSync(articlesDir, { recursive: true });
     }
 
+    const slug = slugify(titleVal);
     const filePath = path.join(articlesDir, `${slug}.md`);
     fs.writeFileSync(filePath, cleanContent, 'utf8');
 

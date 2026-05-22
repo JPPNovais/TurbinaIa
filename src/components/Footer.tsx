@@ -36,11 +36,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/?category=negocios" className="footer-link">
-                  IA nos Negócios
-                </Link>
-              </li>
-              <li>
                 <Link href="/comparador" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
                   Comparador de IAs ⚡
                 </Link>

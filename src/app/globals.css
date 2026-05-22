@@ -1023,6 +1023,72 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2rem 0;
 }
 
+.prose a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.prose a:hover {
+  color: var(--primary-hover);
+}
+
+.prose strong {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 2.5rem 0;
+}
+
+/* Table styles — used by AI-generated comparison tables */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.prose thead {
+  background: var(--bg-tertiary);
+}
+
+.prose th {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  font-weight: 700;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.prose td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.prose tbody tr:nth-child(odd) td {
+  background: var(--bg-primary);
+}
+
+.prose tbody tr:nth-child(even) td {
+  background: var(--bg-secondary);
+}
+
+.prose tbody tr:hover td {
+  background: rgba(var(--primary-rgb), 0.04);
+}
+
 /* Reading Progress Bar */
 .progress-bar-container {
   position: fixed;

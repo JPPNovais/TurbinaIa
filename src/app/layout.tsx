@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
+import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import './globals.css';
@@ -60,20 +61,17 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR" className={`${inter.variable} ${outfit.variable}`}>
-      <head>
-        {/* Google AdSense Script Integration */}
-        {adClientId !== 'ca-pub-placeholder' && (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClientId}`}
-            crossOrigin="anonymous"
-          />
-        )}
-      </head>
       <body>
         <Header />
         {children}
         <Footer />
+        {adClientId !== 'ca-pub-placeholder' && (
+          <Script
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClientId}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );

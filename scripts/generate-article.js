@@ -106,7 +106,7 @@ async function run() {
 
   // Step 2: Generate the article using Gemini 2.5 Flash with search tools
   const prompt = `Você é o redator principal do blog Turbina IA (turbinaia.com.br), especializado em inteligência artificial, ferramentas de produtividade e monetização online.
-Seu objetivo é escrever um artigo em português impecável, envolvente, detalhado e altamente estruturado para SEO e Google AdSense sobre o tema: "${topic}".
+Seu objetivo é escrever um artigo em português impecável, envolvente, detalhado e altamente estruturado para SEO tradicional e otimizado para buscadores de IA (como Perplexity, SearchGPT, Gemini e Copilot) sobre o tema: "${topic}".
 
 Como você tem acesso à pesquisa do Google em tempo real, use os resultados da busca para citar dados verídicos, especificações reais, nomes corretos de desenvolvedores, datas de lançamentos recentes e links reais para as ferramentas, se aplicável. Evite quaisquer informações fictícias ou inventadas sobre o tema.
 
@@ -126,7 +126,13 @@ isFeatured: false
 date: "${today}"
 ---
 
-[Corpo do artigo em Markdown. Use títulos ## e ###, listas ordenadas ou não ordenadas, negritos para destacar conceitos, links de referência reais e citações marcantes (blockquote usando >) para enriquecer a leitura. NÃO utilize títulos de nível # no corpo do artigo, use apenas ## e ### para as seções.]
+[Corpo do artigo em Markdown. Siga estas diretrizes de Otimização para Mecanismos de IA (GEO):]
+1. **Introdução Direta e Resposta Rápida (TL;DR):** Inicie o artigo com uma introdução curta. Logo em seguida, crie um bloco de citação do tipo:
+   > **Resposta Rápida (TL;DR):** [Escreva um resumo executivo direto e em negrito de 2 a 3 frases respondendo à principal pergunta do tema. Buscadores de IA utilizam esse bloco para citar o site diretamente.]
+2. **Uso de Cabeçalhos e Subtítulos:** Use apenas ## e ### para as seções.
+3. **Tabelas de Comparação e Dados Estruturados:** Sempre que o artigo envolver comparações de preços, prós/contras, recursos ou benchmarks, crie uma **Tabela em Markdown** limpa. Os modelos de linguagem de buscadores de IA dão preferência extrema a dados em tabelas na hora de sintetizar respostas.
+4. **Fatos Densos e Fontes:** Diga nomes exatos, datas, estatísticas e versões.
+5. **Seção de FAQ no final:** Adicione uma seção "## Perguntas Frequentes" ao final do post, respondendo de forma ultra direta e sucinta a 3 principais dúvidas comuns do usuário sobre o tema.
 
 Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos reais da atualidade coletados da internet, com dicas práticas e que entregue muito valor real para quem está lendo.`;
 

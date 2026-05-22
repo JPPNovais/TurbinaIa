@@ -144,7 +144,7 @@ async function run() {
     try {
       const suggestResponse = await withRetry(() => ai.models.generateContent({
         model: 'gemini-2.5-flash',
-        contents: `Pesquise na internet as notícias mais importantes, recentes e impactantes de hoje (${today}) sobre Inteligência Artificial, tecnologia ou novas ferramentas. Com base nas notícias reais encontradas, sugira um único título/tema para um artigo de blog focado em atrair tráfego e otimizado para SEO. Retorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais. Exemplo de retorno: Lançamento do Gemini 1.5 Pro: A nova IA do Google com janela de contexto histórica`,
+        contents: `Pesquise na internet as notícias mais importantes, recentes e impactantes de hoje (${today}) sobre Inteligência Artificial, tecnologia ou novas ferramentas de IA, priorizando publicações de fontes de alta credibilidade como: blogs oficiais dos laboratórios de IA (anthropic.com, openai.com, deepmind.google, ai.meta.com, mistral.ai, blog.google/technology/ai), revistas especializadas (technologyreview.com, wired.com, nature.com, science.org), veículos de jornalismo tecnológico com editorial reconhecido (techcrunch.com, theverge.com, reuters.com, bloomberg.com, apnews.com) ou papers do arxiv.org. Com base nas notícias reais encontradas nessas fontes, sugira um único título/tema para um artigo de blog focado em atrair tráfego e otimizado para SEO. Retorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais. Exemplo de retorno: Lançamento do Gemini 1.5 Pro: A nova IA do Google com janela de contexto histórica`,
         config: {
           tools: [{ googleSearch: {} }]
         }
@@ -160,18 +160,44 @@ async function run() {
   console.log(`📝 Gerando artigo completo sobre: "${topic}" (com suporte a busca em tempo real)...`);
 
   // Step 2: Generate the article using Gemini 2.5 Flash with search tools
-  const prompt = `Você é o redator principal do blog Turbina IA (turbinaia.com.br), especializado em inteligência artificial, ferramentas de produtividade e monetização online.
-Seu objetivo é escrever um artigo em português impecável, envolvente, detalhado e altamente estruturado para SEO tradicional e otimizado para buscadores de IA (como Perplexity, SearchGPT, Gemini e Copilot) sobre o tema: "${topic}".
+  const prompt = `Você é o redator-chefe do blog Turbina IA (turbinaia.com.br), especializado em Inteligência Artificial, ferramentas de produtividade e tendências tecnológicas.
 
-Como você tem acesso à pesquisa do Google em tempo real, use os resultados da busca para citar dados verídicos, especificações reais, nomes corretos de desenvolvedores, datas de lançamentos recentes e links reais para as ferramentas, se aplicável. Evite quaisquer informações fictícias ou inventadas sobre o tema.
+Sua missão é escrever um artigo em português impecável, com jornalismo de qualidade, sobre o tema: "${topic}".
 
-O artigo gerado deve retornar no formato de um arquivo Markdown contendo um bloco YAML frontmatter no topo e o conteúdo do post logo abaixo. Não inclua blocos de código com a palavra "markdown" em volta do arquivo todo, retorne apenas o texto cru.
+## REGRAS DE QUALIDADE DAS FONTES (OBRIGATÓRIO)
 
-Instruções cruciais do formato:
+Você tem acesso à pesquisa Google em tempo real. Use-a ativamente, mas siga rigorosamente estas regras:
+
+**Fontes PERMITIDAS (priorize estas):**
+- Blogs e anúncios oficiais dos laboratórios de IA: anthropic.com, openai.com, blog.google/technology/ai, deepmind.google, ai.meta.com, mistral.ai, x.ai, cohere.com, stability.ai
+- Revistas científicas e de pesquisa: arxiv.org, nature.com, science.org, technologyreview.com (MIT)
+- Jornalismo tecnológico reconhecido: techcrunch.com, theverge.com, wired.com, arstechnica.com, reuters.com, bloomberg.com, apnews.com, ft.com, wsj.com, forbes.com
+- Relatórios de analistas: gartner.com, mckinsey.com, pwc.com, statista.com, idc.com
+- Documentação técnica oficial: developers.google.com, platform.openai.com, docs.anthropic.com
+
+**Fontes PROIBIDAS (não cite nem mencione dados originados de):**
+- Blogs pessoais, Medium, Substack, LinkedIn Articles sem autoria verificada
+- Sites de agregação de clickbait (makeuseof.com, beebom.com, sites com "top 10 tools" sem credibilidade editorial)
+- Fóruns (Reddit, Quora) como fonte primária de afirmações factuais
+- Sites que reproduzem conteúdo sem acrescentar análise original
+- Qualquer fonte que não você consiga verificar a credibilidade editorial
+
+**Regra de ouro:** Se não encontrou a informação em uma fonte confiável, NÃO a inclua no artigo. Prefira um artigo com menos informações, porém 100% verificadas e citadas.
+
+## CITAÇÕES (OBRIGATÓRIO)
+
+- Toda afirmação factual importante (estatísticas, datas de lançamento, benchmarks, preços, capacidades técnicas) deve ter uma citação inline no formato de link Markdown apontando para a fonte original: [nome da fonte](URL real encontrada na busca)
+- Exemplo correto: "O Claude Sonnet 4 foi lançado em março de 2025 e apresenta melhorias de 30% em raciocínio segundo a [Anthropic](https://anthropic.com/news/claude-4)"
+- Ao final do artigo, inclua uma seção "## Fontes e Referências" listando todas as URLs utilizadas no formato: - [Título da página ou publicação](URL)
+
+## FORMATO DO ARQUIVO
+
+Retorne APENAS o arquivo Markdown cru, com frontmatter YAML no topo. Não envolva em blocos de código.
+
 ---
 title: [Título chamativo e otimizado para SEO]
-description: [Meta descrição cativante com menos de 160 caracteres]
-category: [Escolha uma destas categorias: tutoriais, noticias, ferramentas]
+description: [Meta descrição com menos de 160 caracteres]
+category: [tutoriais | noticias | ferramentas]
 tags:
   - [Tag 1]
   - [Tag 2]
@@ -181,16 +207,24 @@ isFeatured: false
 date: "${today}"
 ---
 
-[Corpo do artigo em Markdown. Siga estas diretrizes de Otimização para Mecanismos de IA (GEO):]
-1. **Introdução Direta e Resposta Rápida (TL;DR):** Inicie o artigo com uma introdução curta. Logo em seguida, crie um bloco de citação do tipo:
-   > **Resposta Rápida (TL;DR):** [Escreva um resumo executivo direto e em negrito de 2 a 3 frases respondendo à principal pergunta do tema. Buscadores de IA utilizam esse bloco para citar o site diretamente.]
-2. **Uso de Cabeçalhos e Subtítulos:** Use apenas ## e ### para as seções.
-3. **Tabelas de Comparação e Dados Estruturados:** Sempre que o artigo envolver comparações de preços, prós/contras, recursos ou benchmarks, crie uma **Tabela em Markdown** limpa. Os modelos de linguagem de buscadores de IA dão preferência extrema a dados em tabelas na hora de sintetizar respostas.
-4. **Fatos Densos e Fontes:** Diga nomes exatos, datas, estatísticas e versões.
-5. **Seção de FAQ no final:** Adicione uma seção "## Perguntas Frequentes" ao final do post, respondendo de forma ultra direta e sucinta a 3 principais dúvidas comuns do usuário sobre o tema.
-6. **Links Internos:** Quando o conteúdo for relevante, inclua ao menos um link interno para outras ferramentas do próprio site: [Comparador de IAs](/comparador), [Calculadora de Custos de IA](/calculadora), [Biblioteca de Prompts](/prompts), [Gerador de Prompts](/gerador), [Glossário de IA](/glossario) ou [Monitor de Modelos](/changelog). Isso ajuda os leitores a descobrirem mais recursos e melhora o ranqueamento do site.
+## DIRETRIZES DE CONTEÚDO (GEO — Otimização para Mecanismos de IA)
 
-Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos reais da atualidade coletados da internet, com dicas práticas e que entregue muito valor real para quem está lendo.`;
+1. **TL;DR obrigatório:** Após a introdução, insira:
+   > **Resposta Rápida (TL;DR):** [2–3 frases diretas respondendo à principal pergunta do tema, em negrito. Buscadores de IA priorizam esse bloco para citação direta.]
+
+2. **Cabeçalhos:** Use apenas ## e ### para organizar seções.
+
+3. **Tabelas para comparações:** Sempre que houver dados comparativos (preços, benchmarks, recursos, prós/contras), crie uma tabela Markdown limpa — buscadores de IA preferem dados tabulares.
+
+4. **Densidade factual:** Inclua nomes exatos, datas, versões, números e estatísticas com suas fontes. Prefira especificidade a generalidade.
+
+5. **FAQ ao final:** Seção "## Perguntas Frequentes" com 3 perguntas e respostas ultra-diretas sobre o tema.
+
+6. **Links internos:** Quando relevante, inclua ao menos um link para ferramentas do próprio site: [Comparador de IAs](/comparador), [Calculadora de Custos de IA](/calculadora), [Biblioteca de Prompts](/prompts), [Gerador de Prompts](/gerador), [Glossário de IA](/glossario) ou [Monitor de Modelos](/changelog).
+
+7. **Seção de fontes:** Ao final (após o FAQ), inclua "## Fontes e Referências" com todos os links utilizados.
+
+Escreva um artigo longo (mínimo de 900 palavras), com profundidade jornalística real, baseado exclusivamente em informações verificadas e citadas de fontes confiáveis.`;
 
   try {
     const response = await withRetry(() => ai.models.generateContent({

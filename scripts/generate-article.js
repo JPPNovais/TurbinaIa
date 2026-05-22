@@ -114,6 +114,24 @@ function fetchUnsplashImage(query, usedImages) {
   });
 }
 
+async function withRetry(fn, maxRetries = 3, baseDelayMs = 15000) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      return await fn();
+    } catch (error) {
+      const isRetryable = error?.status === 503 || error?.status === 429 ||
+        (error?.message && (error.message.includes('503') || error.message.includes('UNAVAILABLE') || error.message.includes('high demand')));
+      if (isRetryable && attempt < maxRetries) {
+        const delay = baseDelayMs * attempt;
+        console.log(`⏳ Gemini indisponível (tentativa ${attempt}/${maxRetries}). Aguardando ${delay / 1000}s antes de tentar novamente...`);
+        await new Promise(r => setTimeout(r, delay));
+      } else {
+        throw error;
+      }
+    }
+  }
+}
+
 async function run() {
   let topic = process.argv[2];
   const today = new Date().toISOString().split('T')[0];
@@ -124,13 +142,13 @@ async function run() {
   if (!topic) {
     console.log('Nenhum tema foi fornecido. Solicitando uma sugestão de tendência à IA via busca na internet...');
     try {
-      const suggestResponse = await ai.models.generateContent({
+      const suggestResponse = await withRetry(() => ai.models.generateContent({
         model: 'gemini-2.5-flash',
         contents: `Pesquise na internet as notícias mais importantes, recentes e impactantes de hoje (${today}) sobre Inteligência Artificial, tecnologia ou novas ferramentas. Com base nas notícias reais encontradas, sugira um único título/tema para um artigo de blog focado em atrair tráfego e otimizado para SEO. Retorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais. Exemplo de retorno: Lançamento do Gemini 1.5 Pro: A nova IA do Google com janela de contexto histórica`,
         config: {
           tools: [{ googleSearch: {} }]
         }
-      });
+      }));
       topic = suggestResponse.text.trim();
       console.log(`🤖 Tema sugerido pela IA (baseado em buscas reais): "${topic}"`);
     } catch (error) {
@@ -175,13 +193,13 @@ date: "${today}"
 Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos reais da atualidade coletados da internet, com dicas práticas e que entregue muito valor real para quem está lendo.`;
 
   try {
-    const response = await ai.models.generateContent({
+    const response = await withRetry(() => ai.models.generateContent({
       model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         tools: [{ googleSearch: {} }]
       }
-    });
+    }));
 
     const rawContent = response.text;
     let cleanContent = cleanMarkdownResponse(rawContent);

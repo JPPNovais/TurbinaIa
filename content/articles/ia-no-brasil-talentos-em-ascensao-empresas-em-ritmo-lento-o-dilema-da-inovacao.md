@@ -11,7 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-22"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80"
+coverImage: "https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1200"
 ---
 
 ## IA no Brasil: Talentos em Ascensão, Empresas em Ritmo Lento – O Dilema da Inovação

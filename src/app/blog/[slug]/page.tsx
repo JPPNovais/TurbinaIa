@@ -6,6 +6,7 @@ import ReadingProgressBar from '@/components/ReadingProgressBar';
 import AdSense from '@/components/AdSense';
 import PostCard from '@/components/PostCard';
 import { getArticleData, getAllArticlesMetadata } from '@/lib/articles';
+import { formatDateLong } from '@/lib/date';
 
 interface ArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -71,11 +72,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const recommendations = [...relatedArticles, ...fallbackArticles];
 
   // Format date nicely
-  const formattedDate = new Date(article.date).toLocaleDateString('pt-BR', {
-    day: '2-digit',
-    month: 'long',
-    year: 'numeric',
-  });
+  const formattedDate = formatDateLong(article.date);
 
   return (
     <main>

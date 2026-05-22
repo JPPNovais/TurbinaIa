@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import AdSense from './AdSense';
 import { ArticleMetadata } from '@/lib/articles';
+import { formatDateShort } from '@/lib/date';
 
 interface SidebarProps {
   recentArticles: ArticleMetadata[];
@@ -43,10 +44,7 @@ export default function Sidebar({ recentArticles, featuredArticles = [] }: Sideb
           <h3 className="widget-title">Nossas Recomendações 🌟</h3>
           <div className="popular-posts-list">
             {featuredArticles.slice(0, 3).map((article) => {
-              const formattedDate = new Date(article.date).toLocaleDateString('pt-BR', {
-                day: '2-digit',
-                month: 'short',
-              });
+              const formattedDate = formatDateShort(article.date);
 
               return (
                 <Link href={`/blog/${article.slug}`} key={`featured-${article.slug}`} className="popular-post-item">
@@ -85,10 +83,7 @@ export default function Sidebar({ recentArticles, featuredArticles = [] }: Sideb
         <h3 className="widget-title">Mais Recentes</h3>
         <div className="popular-posts-list">
           {recentArticles.slice(0, 3).map((article) => {
-            const formattedDate = new Date(article.date).toLocaleDateString('pt-BR', {
-              day: '2-digit',
-              month: 'short',
-            });
+            const formattedDate = formatDateShort(article.date);
 
             return (
               <Link href={`/blog/${article.slug}`} key={article.slug} className="popular-post-item">

@@ -4,6 +4,7 @@ import PostCard from '@/components/PostCard';
 import Sidebar from '@/components/Sidebar';
 import AdSense from '@/components/AdSense';
 import { getAllArticlesMetadata } from '@/lib/articles';
+import { formatDateLong } from '@/lib/date';
 
 interface HomeProps {
   searchParams: Promise<{ category?: string }>;
@@ -48,11 +49,7 @@ export default async function Home({ searchParams }: HomeProps) {
 
   // Helper for formatting hero date
   const formatHeroDate = (dateStr: string) => {
-    return new Date(dateStr).toLocaleDateString('pt-BR', {
-      day: '2-digit',
-      month: 'long',
-      year: 'numeric',
-    });
+    return formatDateLong(dateStr);
   };
 
   return (

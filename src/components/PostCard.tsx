@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArticleMetadata } from '@/lib/articles';
+import { formatDateMedium } from '@/lib/date';
 
 interface PostCardProps {
   article: ArticleMetadata;
@@ -10,11 +11,7 @@ export default function PostCard({ article }: PostCardProps) {
   const { title, description, date, category, coverImage, author, slug, readingTime } = article;
 
   // Format date nicely
-  const formattedDate = new Date(date).toLocaleDateString('pt-BR', {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric',
-  });
+  const formattedDate = formatDateMedium(date);
 
   // Assign category badge color class
   const getBadgeClass = (cat: string) => {

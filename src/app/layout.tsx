@@ -3,6 +3,7 @@ import { Inter, Outfit } from 'next/font/google';
 import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import CookieBanner from '@/components/CookieBanner';
 import './globals.css';
 
 const inter = Inter({
@@ -66,6 +67,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <CookieBanner />
         {adClientId !== 'ca-pub-placeholder' && (
           <Script
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClientId}`}

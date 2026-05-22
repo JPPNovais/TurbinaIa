@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import LogoIcon from './LogoIcon';
 
 export default function Header() {
   const [theme, setTheme] = useState<'dark' | 'light'>('light');
@@ -44,30 +45,30 @@ export default function Header() {
       <header className="header">
         <div className="container header-container">
           <Link href="/" className="logo" onClick={() => setIsMenuOpen(false)}>
-            <span className="logo-icon">🌀</span>
+            <LogoIcon size={28} className="logo-icon" />
             <span>Turbina IA</span>
           </Link>
 
           <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-            <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>
+            <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
               Home
             </Link>
-            <Link href="/comparador" className={`nav-link ${pathname === '/comparador' ? 'active' : ''}`}>
+            <Link href="/comparador" className={`nav-link ${pathname === '/comparador' ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
               Comparador
             </Link>
-            <Link href="/calculadora" className={`nav-link ${pathname === '/calculadora' ? 'active' : ''}`}>
+            <Link href="/calculadora" className={`nav-link ${pathname === '/calculadora' ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
               Calculadora
             </Link>
-            <Link href="/prompts" className={`nav-link ${pathname === '/prompts' ? 'active' : ''}`}>
+            <Link href="/prompts" className={`nav-link ${pathname === '/prompts' ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
               Prompts
             </Link>
-            <Link href="/gerador" className={`nav-link ${pathname === '/gerador' ? 'active' : ''}`}>
+            <Link href="/gerador" className={`nav-link ${pathname === '/gerador' ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
               Gerador
             </Link>
-            <Link href="/glossario" className={`nav-link ${pathname === '/glossario' ? 'active' : ''}`}>
+            <Link href="/glossario" className={`nav-link ${pathname === '/glossario' ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
               Glossário
             </Link>
-            <Link href="/changelog" className={`nav-link ${pathname === '/changelog' ? 'active' : ''}`}>
+            <Link href="/changelog" className={`nav-link ${pathname === '/changelog' ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
               Novidades
             </Link>
           </nav>

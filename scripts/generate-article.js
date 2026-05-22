@@ -41,15 +41,26 @@ const ai = new GoogleGenAI({ apiKey });
 // Helper to clean markdown block wrappers from LLM response
 function cleanMarkdownResponse(text) {
   let cleaned = text.trim();
-  // Remove ```markdown ... ``` tags if the model enclosed the whole file in them
-  if (cleaned.startsWith('```markdown')) {
-    cleaned = cleaned.substring(11);
-  } else if (cleaned.startsWith('```')) {
-    cleaned = cleaned.substring(3);
+  
+  // Strip code block fence at the start (e.g. ```yaml, ```markdown, ```md, or just ```)
+  const startMatch = cleaned.match(/^```([a-zA-Z0-9+-]+)?/);
+  if (startMatch) {
+    const fenceLength = startMatch[0].length;
+    cleaned = cleaned.substring(fenceLength).trim();
   }
+  
+  // Strip code block fence at the end
   if (cleaned.endsWith('```')) {
-    cleaned = cleaned.substring(0, cleaned.length - 3);
+    cleaned = cleaned.substring(0, cleaned.length - 3).trim();
   }
+  
+  // Sometimes the model outputs a lone 'yaml' or 'markdown' line at the very beginning of the text
+  if (cleaned.toLowerCase().startsWith('yaml\n')) {
+    cleaned = cleaned.substring(5).trim();
+  } else if (cleaned.toLowerCase().startsWith('markdown\n')) {
+    cleaned = cleaned.substring(9).trim();
+  }
+  
   return cleaned.trim();
 }
 
@@ -130,6 +141,17 @@ Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos
 
     const rawContent = response.text;
     let cleanContent = cleanMarkdownResponse(rawContent);
+
+    // Ensure frontmatter starts with '---' if it's missing but we have frontmatter elements
+    if (!cleanContent.startsWith('---')) {
+      const firstDashIndex = cleanContent.indexOf('---');
+      if (firstDashIndex > 0) {
+        const headerPart = cleanContent.substring(0, firstDashIndex);
+        if (headerPart.includes('title:') || headerPart.includes('description:')) {
+          cleanContent = '---\n' + cleanContent;
+        }
+      }
+    }
 
     // Ensure title and description are wrapped in quotes in the frontmatter to prevent YAML parse errors
     let lines = cleanContent.split('\n');

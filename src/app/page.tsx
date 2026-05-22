@@ -29,17 +29,13 @@ export default async function Home({ searchParams }: HomeProps) {
     ? allArticles.filter(art => art.category.toLowerCase() === selectedCategory.toLowerCase())
     : allArticles;
 
-  // Rotation logic for the featured article:
   // Find all articles marked as featured.
   const featuredPool = allArticles.filter(art => art.isFeatured);
 
-  // We rotate daily. Day index is calculated deterministically based on days since Unix Epoch.
-  const daysSinceEpoch = Math.floor(Date.now() / 86400000);
-
-  // Pick the featured article from the pool based on the day index
-  const featuredArticle = !selectedCategory && featuredPool.length > 0
-    ? featuredPool[daysSinceEpoch % featuredPool.length]
-    : (!selectedCategory && allArticles.length > 0 ? allArticles[0] : null);
+  // The featured article is always the latest published article (index 0)
+  const featuredArticle = !selectedCategory && allArticles.length > 0
+    ? allArticles[0]
+    : null;
 
   // Articles for the grid (excluding the featured one if showing)
   const gridArticles = featuredArticle

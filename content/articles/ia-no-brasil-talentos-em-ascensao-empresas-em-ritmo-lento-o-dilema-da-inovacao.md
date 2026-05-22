@@ -1,4 +1,4 @@
-yaml
+---
 title: "IA no Brasil: Talentos em Ascensão, Empresas em Ritmo Lento – O Dilema da Inovação"
 description: "Desvende o paradoxo da IA no Brasil: profissionais se destacam enquanto empresas lutam para inovar. Explore causas, impactos e soluções para acelerar a adoção tecnológica."
 category: noticias

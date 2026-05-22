@@ -1,92 +1,139 @@
 ---
-title: "Google I/O 2026: Como a IA Redefine a Busca e a Experiência Online"
-description: "Descubra as inovações em IA na Busca do Google, seus impactos em SEO, produtividade e monetização online após o Google I/O 2026."
+title: "Google I/O 2026: Gemini 3.5, Agentes de IA e a Maior Revolução da Busca em 25 Anos"
+description: "Google I/O 2026 trouxe Gemini 3.5 Flash, agentes de IA na busca, óculos inteligentes e investimento de US$ 180 bi em infraestrutura. Confira o que realmente foi anunciado."
 category: noticias
 tags:
-  - Inteligência Artificial
   - Google I/O
+  - Gemini
+  - Inteligência Artificial
   - Busca com IA
-  - SEO
-  - Monetização Online
+  - Android XR
+  - Agentes de IA
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-21"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80"
 ---
 
-## Google I/O 2026: A Nova Busca com IA Redefine Sua Experiência Online
+O Google I/O 2026 aconteceu em 20 de maio e foi um dos eventos mais densos da história da empresa. Em um único dia, o Google anunciou novos modelos de IA, reformulou completamente a caixa de busca pela primeira vez em 25 anos, revelou óculos inteligentes com Gemini, lançou agentes de IA autônomos e divulgou um plano de investimento em infraestrutura de US$ 180 a 190 bilhões para 2026. Este artigo reúne apenas o que foi efetivamente anunciado, com links para as fontes oficiais.
 
-À medida que o Google I/O 2026 conclui, o mundo digital foca em uma certeza: a Inteligência Artificial não é mais uma ferramenta auxiliar, mas o coração pulsante da busca online. Este ano, as discussões e as demonstrações deixaram claro que a forma como interagimos com a informação está sendo redefinida, impulsionada por avanços sem precedentes em modelos de linguagem e capacidades de raciocínio. Para criadores de conteúdo, empresas e usuários, entender essa transformação é crucial para navegar e prosperar no novo ecossistema digital.
+> **Resposta Rápida (TL;DR):** **O Google lançou o Gemini 3.5 Flash como modelo padrão na busca global, reformulou a caixa de pesquisa com suporte multimodal, apresentou o Gemini Spark (agente pessoal 24/7) e anunciou óculos inteligentes com Android XR para o outono de 2026. O processamento de tokens da empresa saltou de 480 trilhões por mês em 2025 para 3,2 quatrilhões em 2026.**
 
-### A Evolução da Busca com IA: Além do Search Generative Experience (SGE)
+## Novos Modelos: Gemini 3.5 Flash e Gemini Omni
 
-O Search Generative Experience (SGE), lançado inicialmente de forma experimental, tem sido a base para a evolução da busca com IA, transformando a maneira como os usuários encontram e interagem com a informação. Em vez de simplesmente exibir uma lista de links, o SGE oferece resumos gerados por IA, que combinam insights de várias fontes da web para fornecer respostas diretas a perguntas complexas. Esta funcionalidade permite aos usuários absorver informações rapidamente, reduzindo a necessidade de clicar em múltiplos links para obter uma compreensão abrangente de um tópico.
+O anúncio central do I/O 2026 foi o lançamento do **Gemini 3.5 Flash**, descrito pelo Google como o primeiro modelo da nova família que combina "inteligência de fronteira com ação". De acordo com o [blog oficial do Google](https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/), o modelo processa 289 tokens por segundo — quatro vezes mais rápido do que modelos concorrentes de nível equivalente — e custa menos da metade do que opções comparáveis no mercado.
 
-Durante o I/O 2026, ficou evidente que o SGE amadureceu significativamente, com o Google enfatizando a precisão e a utilidade dos resumos gerados. A empresa tem focado em refinar a capacidade de seus modelos de IA para compreender a intenção do usuário de forma mais profunda, oferecendo respostas ainda mais personalizadas e contextualmente relevantes. Uma das melhorias destacadas foi a integração mais fluida de elementos visuais e interativos nos snapshots de IA, enriquecendo a experiência do usuário.
+O Gemini 3.5 Flash superou o Gemini 3.1 Pro em benchmarks de codificação e tarefas agentivas, segundo o próprio Google. Para empresas que processam 1 trilhão de tokens diários, a migração de 80% da carga de trabalho para o novo modelo representaria uma economia superior a US$ 1 bilhão por ano, de acordo com dados apresentados por Sundar Pichai no keynote e reportados pelo [The Register](https://www.theregister.com/ai-ml/2026/05/19/google-touts-tokenmaxxing-huge-capex-and-ai-agents-at-i/o/5242983).
 
-> "Nosso objetivo com a busca com IA é criar uma experiência onde a informação venha até você de forma mais natural e inteligente, permitindo que você explore o mundo de novas maneiras." - Sundar Pichai, CEO do Google.
+Junto com o 3.5 Flash, o Google lançou o **Gemini Omni**, um novo modelo de geração de vídeo que aceita qualquer tipo de entrada (imagem, áudio, vídeo e texto) e produz vídeos editáveis com compreensão de física e marcação SynthID. O modelo foi integrado ao YouTube Shorts Remix e ao aplicativo YouTube Create desde o dia do evento, segundo o [TechCrunch](https://techcrunch.com/2026/05/19/ask-youtube-brings-ai-powered-conversational-search-to-video-adds-gemini-omni-to-shorts/).
 
-Esta evolução tem um impacto direto no comportamento do usuário. Com respostas mais completas e contextualizadas diretamente na página de resultados, a jornada do usuário pode ser mais curta e direta. Isso exige que criadores de conteúdo pensem além do clique, focando em fornecer valor substancial e autorizado que a IA possa referenciar e sintetizar com confiança.
+| Modelo | Velocidade | Destaque | Disponibilidade |
+|---|---|---|---|
+| Gemini 3.5 Flash | 289 tokens/s | 4x mais rápido, metade do custo | Lançado em maio/2026 |
+| Gemini Omni Flash | — | Geração de vídeo a partir de qualquer input | Disponível no Google Flow e YouTube Shorts |
+| Gemini 3.5 Pro | — | Testes internos | Previsto para junho/2026 |
 
-### Gemini na Busca: Uma Nova Conversa com a Informação
+## A Maior Atualização da Busca em 25 Anos
 
-A integração aprofundada do modelo Gemini, a família de modelos de IA mais avançada do Google, na Busca é, sem dúvida, um dos pontos mais impactantes do I/O 2026. O Gemini potencializa a busca com capacidades multimodais avançadas, permitindo que os usuários não apenas digitem suas perguntas, mas também as façam por voz, imagem ou até vídeo. Esta inovação visa tornar a interação com a busca mais intuitiva e humana.
+O Google anunciou "a maior atualização na caixa de busca em mais de 25 anos", conforme descrito no [blog oficial do Google Search](https://blog.google/products-and-platforms/products/search/search-io-2026/). A nova interface expande dinamicamente ao digitar, oferece sugestões com IA e aceita texto, imagens, arquivos, vídeos e abas do Chrome como entrada de busca.
 
-Com o Gemini, a busca transcende as palavras-chave. Imagine perguntar ao Google "Como consertar essa peça?" e mostrar um vídeo do componente danificado. A IA do Gemini seria capaz de analisar o vídeo, identificar a peça e fornecer instruções passo a passo relevantes, extraídas de tutoriais, manuais e fóruns, apresentando a informação de forma concisa e útil. Esta capacidade multimodal é um divisor de águas, abrindo portas para uma infinidade de novas aplicações e cenários de uso.
+O AI Mode — já utilizado por mais de 1 bilhão de usuários mensais — passou a usar o Gemini 3.5 Flash como modelo padrão globalmente. A [9to5Google](https://9to5google.com/2026/05/19/google-io-2026-news/) detalhou que os usuários agora podem iniciar conversas a partir de qualquer AI Overview e continuar a troca de mensagens com o AI Mode mantendo o contexto ao longo de toda a sessão.
 
-A equipe por trás da integração do Gemini tem trabalhado para garantir que a IA não apenas responda a perguntas, mas também compreenda nuances, gere ideias e até mesmo ajude na resolução de problemas complexos. "A capacidade de dialogar com a busca, não apenas perguntar, mas ter uma conversa real para refinar suas necessidades de informação, é o futuro", afirmou um dos engenheiros seniores do Google durante uma sessão de painel.
+### Agentes de Informação: o Novo Google Alerts
 
-Para o usuário comum, isso significa uma busca mais poderosa e flexível. Para o profissional de marketing e SEO, significa uma necessidade urgente de otimizar o conteúdo não apenas para texto, mas também para contextos visuais e de voz, pensando em como a IA interpretará e apresentará essa informação.
+Um dos anúncios mais significativos para o comportamento do usuário foram os **Agentes de Informação na Busca**. Segundo o [TechCrunch](https://techcrunch.com/2026/05/19/how-to-use-googles-new-ai-agents-to-go-beyond-your-standard-searches/), esses agentes funcionam continuamente em segundo plano, monitorando blogs, portais de notícias, redes sociais e dados em tempo real de finanças, esportes e varejistas. Eles sintetizam informações de múltiplas fontes, explicam o contexto e permitem que o usuário tome ações diretamente.
 
-### Impacto para Criadores de Conteúdo e Empresas: SEO, Produtividade e Monetização
+Exemplos de uso citados pelo Google: monitorar o preço de passagens aéreas, acompanhar ingressos de cinema para um filme específico, rastrear movimentações do mercado financeiro ou receber alertas sobre vagas de emprego em uma cidade específica. O recurso será lançado no verão de 2026 (hemisfério norte) para assinantes do Google AI Pro e Ultra nos Estados Unidos, com expansão posterior para outros mercados.
 
-A redefinição da busca com IA traz desafios e oportunidades significativas para criadores de conteúdo e empresas.
+### Interface Generativa e Mini-aplicativos na Busca
 
-#### SEO na Era da IA Generativa
+Também foi anunciada a **Interface Generativa (Generative UI)** na busca: o sistema pode criar layouts personalizados com tabelas interativas, gráficos e simulações em tempo real, conforme descrito no [blog oficial do Google Search](https://blog.google/products-and-platforms/products/search/search-io-2026/). Os usuários poderão criar dashboards persistentes para acompanhar rotinas de fitness, projeções financeiras ou qualquer tarefa recorrente. O recurso estará disponível gratuitamente para todos os usuários no verão de 2026.
 
-O SEO tradicional, focado em palavras-chave e backlinks, está evoluindo. Com a IA gerando resumos diretos, o "zero-click search" (buscas que não resultam em cliques para sites externos) tende a aumentar. Isso não significa o fim do SEO, mas uma mudança de foco:
+## Gemini Spark: Agente Pessoal que Funciona 24/7
 
-1.  **Autoridade e Confiabilidade:** A IA prioriza fontes confiáveis e bem referenciadas. Construir autoridade temática e demonstrar expertise (E-E-A-T: Experience, Expertise, Authoritativeness, Trustworthiness) é mais crítico do que nunca.
-2.  **Conteúdo Abrangente e Profundo:** Embora a IA resuma, ela precisa de conteúdo detalhado para extrair informações. Artigos que abordam um tópico de forma exaustiva e respondem a múltiplas facetas de uma pergunta têm maior probabilidade de serem referenciados.
-3.  **Otimização para Respostas Diretas:** Entender as perguntas comuns dos usuários e estruturar o conteúdo para fornecer respostas claras e concisas, muitas vezes em formato de perguntas e respostas, listas ou tabelas, pode aumentar a chance de seu conteúdo ser selecionado pela IA.
-4.  **SEO Multimodal:** Com o Gemini, otimizar imagens com alt text descritivos, transcrições de vídeo e metadados detalhados se torna essencial para a descoberta por IA.
+O **Gemini Spark** foi apresentado como um agente pessoal de IA que opera continuamente em máquinas virtuais no Google Cloud — mesmo com o telefone bloqueado ou desligado. Segundo o [TechCrunch](https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/), o Spark pode executar tarefas no Gmail, Google Docs e outros aplicativos do Workspace de forma autônoma e criar fluxos de trabalho personalizados.
 
-#### Produtividade Aprimorada com Ferramentas de IA
+O recurso chegará aos assinantes do Google AI Ultra na semana seguinte ao evento (apenas nos EUA). O plano AI Ultra, que custava US$ 250/mês, foi reduzido para US$ 100/mês com o dobro dos limites de uso em relação ao plano Pro e 20 TB de armazenamento.
 
-O Google I/O 2026 também destacou como as ferramentas de produtividade estão sendo infundidas com IA avançada. Desde o Google Workspace, com aprimoramentos no Duet AI que agora pode gerar apresentações completas a partir de prompts simples ou resumir longas cadeias de e-mails, até novas integrações que facilitam a pesquisa e a organização de informações, a IA está se tornando um copiloto indispensável.
+## Óculos Inteligentes com Android XR para o Outono de 2026
 
-Para empresas, isso significa a possibilidade de automatizar tarefas rotineiras, gerar insights mais rapidamente e permitir que as equipes se concentrem em trabalhos mais estratégicos. A Turbina IA recomenda explorar ferramentas como o Bard (agora com funcionalidades ainda mais integradas ao ecossistema Google) e o próprio Duet AI no Workspace para otimizar fluxos de trabalho.
+O Google revelou sua linha de **óculos inteligentes com Gemini**, desenvolvidos em parceria com Samsung (hardware), Qualcomm (chip) e as marcas Gentle Monster e Warby Parker (design das armações). De acordo com o [blog oficial do Android XR](https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/), os óculos de áudio chegam ao mercado no outono de 2026 como parte das coleções regulares das marcas parceiras.
 
-#### Monetização Online na Nova Paisagem
+As funcionalidades confirmadas incluem:
 
-A monetização via Google AdSense e outras plataformas também será impactada. Com mais respostas diretas na busca, a visibilidade de anúncios de display pode mudar. No entanto, o Google está inovando na forma como os anúncios são apresentados dentro dos próprios snapshots de IA, garantindo que os anunciantes possam alcançar seus públicos de forma relevante e não intrusiva.
+- Navegação passo a passo com consciência de localização e orientação
+- Reconhecimento visual do ambiente (avaliações de restaurantes, sinais de trânsito, formações de nuvem)
+- Chamadas e mensagens mãos-livres com resumos automáticos
+- Tradução em tempo real de fala e texto
+- Captura de fotos e vídeos com edição por IA
+- Automação de tarefas em múltiplos passos via apps de terceiros (ex: Uber, Mondly)
 
-Estratégias para se adaptar:
-*   **Anúncios em Conteúdo de Qualidade:** Focar na produção de conteúdo de alta qualidade que ainda atrai tráfego direto é vital, pois esses visitantes são mais propensos a interagir com anúncios contextuais.
-*   **Modelos de Assinatura e Conteúdo Premium:** Para mitigar a dependência de cliques em anúncios, considerar modelos de assinatura ou oferecer conteúdo premium exclusivo pode ser uma alternativa sustentável.
-*   **Parcerias com IA:** Desenvolver conteúdo otimizado para ser referenciado pela IA pode, indiretamente, aumentar a autoridade de sua marca, levando a outras oportunidades de monetização.
+Os óculos são compatíveis com Android e iOS. Os modelos com display visual, que sobrepõem informações no campo de visão, foram mencionados como uma etapa futura. Preços não foram divulgados.
 
-### Novas Ferramentas para Desenvolvedores e Inovadores
+## Novidades no Workspace, YouTube e Shopping
 
-Para a comunidade de desenvolvedores, o Google I/O 2026 trouxe uma série de atualizações nas APIs do Gemini, tornando mais fácil para os desenvolvedores integrar capacidades de IA generativa em seus próprios aplicativos e serviços. A API Gemini agora oferece maior flexibilidade e controle, permitindo a criação de experiências de usuário altamente personalizadas.
+### Gmail Live e Docs Live
 
-Ferramentas como o Vertex AI, a plataforma de Machine Learning unificada do Google Cloud, continuam a ser aprimoradas, oferecendo recursos robustos para treinamento e implantação de modelos de IA. "Nossa meta é democratizar o acesso à IA, dando aos desenvolvedores as ferramentas para inovar e construir o futuro", destacou um engenheiro da equipe de Cloud AI.
+O Google anunciou o **Gmail Live**, que permite busca conversacional no e-mail, e o **Docs Live**, que cria e edita documentos por voz, puxando contexto do Gmail, Drive e Google Chat. Ambos chegam no verão de 2026 para assinantes Pro e Ultra. O **Daily Brief** — um resumo diário personalizado com prioridades do inbox, calendário e tarefas — foi lançado no dia do evento para assinantes nos EUA.
 
-Essas ferramentas abrem caminho para a criação de assistentes de IA especializados, ferramentas de análise de dados avançadas e novas formas de interação com a informação, permitindo que startups e grandes empresas construam a próxima geração de aplicativos inteligentes.
+### Ask YouTube
 
-### Dicas Práticas para Otimizar Sua Presença Online
+O **Ask YouTube** transforma a busca do YouTube em uma interface conversacional. Segundo o [TechCrunch](https://techcrunch.com/2026/05/19/ask-youtube-brings-ai-powered-conversational-search-to-video-adds-gemini-omni-to-shorts/), os usuários podem fazer perguntas complexas como "quero dicas de como ensinar meu filho a andar de bicicleta" e receber respostas compiladas de Shorts e vídeos longos, com suporte a perguntas de acompanhamento. Disponível para assinantes Premium nos EUA via desktop como feature de teste opcional.
 
-Para se adaptar a essa nova era da busca com IA, siga estas dicas:
+### Universal Cart
 
-1.  **Foque na Experiência do Usuário (UX):** Sites rápidos, responsivos e fáceis de navegar são sempre valorizados, tanto pelos usuários quanto pela IA.
-2.  **Crie Conteúdo 'AI-Friendly':** Estruture seu conteúdo com títulos claros, subtítulos, listas e parágrafos curtos. Use schema markup para ajudar a IA a entender o contexto.
-3.  **Priorize Conteúdo de Vídeo e Áudio:** Com a multimodalidade do Gemini, transcrições detalhadas, legendas e descrições ricas são cruciais para a descoberta.
-4.  **Construa Autoridade de Marca:** Invista em relações públicas, crie conteúdo original e seja uma fonte confiável em seu nicho. A IA valoriza a reputação.
-5.  **Monitore as Mudanças:** O cenário da busca com IA está em constante evolução. Mantenha-se atualizado com as últimas notícias do Google e adapte suas estratégias conforme necessário.
-6.  **Experimente as Ferramentas de IA:** Use o Google Bard ou outras ferramentas de IA para brainstorming de conteúdo, otimização de títulos e descrições, e análise de tendências de busca.
+O **Universal Cart** é um carrinho de compras unificado que funciona enquanto o usuário navega no Search, conversa com Gemini, assiste ao YouTube ou lê e-mails no Gmail. O sistema monitora quedas de preço, alerta sobre disponibilidade em estoque, exibe histórico de preços e identifica incompatibilidades entre produtos. O lançamento está previsto para o verão de 2026 no Search e no app Gemini, com YouTube e Gmail em seguida, conforme o [blog do Google I/O 2026](https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/).
 
-### Conclusão
+## Infraestrutura: US$ 180 Bilhões e TPU de 8ª Geração
 
-O Google I/O 2026 marcou um ponto de inflexão na evolução da busca com Inteligência Artificial. A fusão do SGE com o poder multimodal do Gemini está redefinindo a experiência online, tornando-a mais inteligente, intuitiva e personalizada. Para a equipe da Turbina IA, é claro que este não é o fim da busca ou da monetização online, mas uma transformação que exige adaptabilidade, criatividade e um compromisso renovado com a produção de conteúdo de alta qualidade e autoridade.
+No keynote, Sundar Pichai citou números que ilustram a escala da aposta do Google em IA. O processamento interno saltou de 9,7 trilhões de tokens por mês dois anos atrás para 480 trilhões em 2025 e chegou a **3,2 quadrilhões por mês** em 2026 — um crescimento de 7 vezes em um ano, segundo o [blog oficial do keynote de Pichai](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/). Sobre o ritmo de crescimento, Pichai reconheceu: *"Some out there might call this tokenmaxxing and there's probably some truth to it."*
 
-Abrace as mudanças, explore as novas ferramentas e prepare-se para um futuro onde a IA não apenas responde às suas perguntas, mas o ajuda a descobrir, criar e inovar de maneiras que antes eram inimagináveis. O futuro da busca é agora, e ele é alimentado por IA.
+O investimento em infraestrutura passou de US$ 31 bilhões anuais em 2022 para uma projeção de **US$ 180 a 190 bilhões em 2026** — um aumento de seis vezes. Para suportar essa demanda, o Google anunciou a **8ª geração de TPUs (Tensor Processing Units)**, com uma arquitetura de dois chips especializados: o TPU 8t (para pré-treinamento em larga escala, com três vezes o poder computacional da geração anterior) e o TPU 8i (para inferência, com o dobro da eficiência energética).
+
+## Gemini para Ciência e Plataforma de Desenvolvimento
+
+O **Gemini for Science** é uma coleção de ferramentas para pesquisa científica, incluindo geração de hipóteses, descoberta computacional e síntese de literatura acadêmica. A plataforma conecta agentes a mais de 30 bancos de dados de ciências da vida via "Science Skills", de acordo com o [blog do Google sobre o tema](https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/).
+
+Para desenvolvedores, o **Google Antigravity 2.0** é a plataforma agentiva do Google com app desktop, CLI e SDK. A API Gemini passou a oferecer **Managed Agents**: com uma única chamada de API, é possível provisionar um ambiente Linux remoto onde o agente pode raciocinar, executar código, gerenciar arquivos e navegar na web em uma sandbox isolada. O Google AI Studio ganhou suporte nativo a Kotlin, integração com Google Workspace e deploy com um clique para o Cloud Run.
+
+O **Project Genie** foi expandido com quase 20 anos de imagens do Google Street View, permitindo que usuários transformem qualquer local nos EUA em cenários fantásticos ("deserto de areia", "era da pedra") e insiram personagens gerados por IA nesses ambientes, conforme reportado pelo [TechCrunch](https://techcrunch.com/2026/05/19/googles-genie-world-model-can-now-simulate-real-streets-with-street-view/).
+
+## Segurança e Autenticidade de Conteúdo
+
+O Google expandiu o **SynthID**, sua tecnologia de marca d'água digital, para mais de 100 bilhões de imagens e vídeos produzidos com IA, com verificação agora integrada ao Search e ao Chrome. OpenAI, Kakao e Eleven Labs foram anunciados como novos parceiros que adotarão o padrão. O sistema de **C2PA Content Credentials** também foi integrado, permitindo verificar se uma imagem é original ou foi modificada.
+
+---
+
+## Perguntas Frequentes
+
+### 1. O Gemini 3.5 Flash já está disponível no Brasil?
+O modelo foi lançado globalmente em 20 de maio de 2026 como padrão no AI Mode do Google Search. O acesso ao app Gemini com Gemini 3.5 Flash está disponível em mais de 230 países e mais de 70 idiomas, incluindo o português.
+
+### 2. O que é o Gemini Spark e como posso acessar?
+O Gemini Spark é um agente pessoal de IA que opera 24/7 em servidores do Google Cloud, mesmo quando o usuário não está usando o dispositivo. O acesso inicial é para assinantes do Google AI Ultra (US$ 100/mês) nos Estados Unidos, com expansão prevista para outros países.
+
+### 3. Os óculos com Android XR terão versão para o Brasil?
+O Google não divulgou planos de lançamento por país. Os óculos de áudio chegam ao mercado no outono de 2026 (outubro-novembro no hemisfério norte) pelas marcas Gentle Monster e Warby Parker. Nenhum preço ou data para o Brasil foi confirmado.
+
+### 4. Os Agentes de Informação na Busca são gratuitos?
+O lançamento inicial no verão de 2026 (hemisfério norte) será exclusivo para assinantes do Google AI Pro e Ultra nos EUA. O Google indicou expansão posterior para outros mercados, mas não confirmou previsão de acesso gratuito.
+
+### 5. O que muda para quem faz SEO com o novo Google Search?
+A busca conversacional, os agentes de informação e a interface generativa ampliam o "zero-click search" — respostas completas dentro do próprio Google, sem necessidade de clicar em um site externo. Conteúdos com autoridade comprovada, dados verificáveis e profundidade temática têm maior chance de ser referenciados pelos modelos de IA.
+
+---
+
+## Fontes e Referências
+
+- [100 things we announced at Google I/O 2026 — blog.google](https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/)
+- [Google I/O 2026: Sundar Pichai's opening keynote — blog.google](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/)
+- [Google Search's I/O 2026 updates: AI agents and more — blog.google](https://blog.google/products-and-platforms/products/search/search-io-2026/)
+- [Intelligent eyewear with Gemini is coming this fall — blog.google](https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/)
+- [Gemini for Science: AI experiments and tools for a new era of discovery — blog.google](https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/)
+- [Google updates its Gemini app to take on ChatGPT and Claude at IO 2026 — TechCrunch](https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/)
+- [How to use Google's new AI agents to go beyond your standard searches — TechCrunch](https://techcrunch.com/2026/05/19/how-to-use-googles-new-ai-agents-to-go-beyond-your-standard-searches/)
+- [Ask YouTube brings AI-powered conversational search to video — TechCrunch](https://techcrunch.com/2026/05/19/ask-youtube-brings-ai-powered-conversational-search-to-video-adds-gemini-omni-to-shorts/)
+- [Google's Genie world model can now simulate real streets with Street View — TechCrunch](https://techcrunch.com/2026/05/19/googles-genie-world-model-can-now-simulate-real-streets-with-street-view/)
+- [Everything Google announced at I/O 2026 — 9to5Google](https://9to5google.com/2026/05/19/google-io-2026-news/)
+- [Google touts tokenmaxxing, huge capex, and AI agents at I/O — The Register](https://www.theregister.com/ai-ml/2026/05/19/google-touts-tokenmaxxing-huge-capex-and-ai-agents-at-i/o/5242983)
+- [All the news from the Google I/O 2026 Developer keynote — Google Developers Blog](https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/)

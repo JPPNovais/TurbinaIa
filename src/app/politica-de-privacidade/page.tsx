@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Política de Privacidade - Turbina IA',
   description: 'Conheça os termos de privacidade, políticas de cookies e diretrizes do portal Turbina IA.',
+  alternates: {
+    canonical: '/politica-de-privacidade',
+  },
 };
 
 export default function PoliticaPrivacidadePage() {

@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Turbina IA Team' }],
   creator: 'Turbina IA',
   metadataBase: new URL('https://turbinaia.com.br'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Turbina IA - O Portal Definitivo de Inteligência Artificial',
     description: 'Notícias diárias, tutoriais de monetização, guias práticos e tendências sobre Inteligência Artificial.',
@@ -28,11 +31,20 @@ export const metadata: Metadata = {
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',
+    images: [
+      {
+        url: '/icon.png',
+        width: 512,
+        height: 512,
+        alt: 'Turbina IA',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Turbina IA - O Portal Definitivo de Inteligência Artificial',
     description: 'Notícias diárias, tutoriais de monetização, guias práticos e tendências sobre Inteligência Artificial.',
+    images: ['/icon.png'],
   },
 };
 

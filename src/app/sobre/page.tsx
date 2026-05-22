@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Sobre - Turbina IA',
   description: 'Conheça o Turbina IA, o seu portal definitivo para notícias, tutoriais de monetização e comparativos de Inteligência Artificial.',
+  alternates: {
+    canonical: '/sobre',
+  },
 };
 
 export default function SobrePage() {

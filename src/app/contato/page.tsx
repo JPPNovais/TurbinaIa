@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Contato - Turbina IA',
   description: 'Entre em contato com a equipe do Turbina IA para sugestões de pauta, parcerias, anúncios ou feedbacks.',
+  alternates: {
+    canonical: '/contato',
+  },
 };
 
 export default function ContatoPage() {

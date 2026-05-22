@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Comparador de Inteligências Artificiais - Turbina IA',
   description: 'Compare as principais inteligências artificiais do mercado (ChatGPT, Claude, Gemini, Midjourney e mais) lado a lado. Veja preços, prós, contras e notas em programação, escrita e raciocínio.',
   keywords: ['Comparador de IA', 'ChatGPT vs Claude', 'Gemini vs ChatGPT', 'Melhor IA para programar', 'Inteligência Artificial'],
+  alternates: {
+    canonical: '/comparador',
+  },
   openGraph: {
     title: 'Comparador de Inteligências Artificiais - Turbina IA',
     description: 'Compare as principais inteligências artificiais do mercado lado a lado em recursos, preços, prós e contras.',
@@ -12,6 +15,20 @@ export const metadata: Metadata = {
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',
+    images: [
+      {
+        url: '/icon.png',
+        width: 512,
+        height: 512,
+        alt: 'Comparador de IA - Turbina IA',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Comparador de Inteligências Artificiais - Turbina IA',
+    description: 'Compare as principais inteligências artificiais do mercado lado a lado em recursos, preços, prós e contras.',
+    images: ['/icon.png'],
   },
 };
 

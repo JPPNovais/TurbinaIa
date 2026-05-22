@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import PostCard from '@/components/PostCard';
@@ -5,6 +6,12 @@ import Sidebar from '@/components/Sidebar';
 import AdSense from '@/components/AdSense';
 import { getAllArticlesMetadata } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
 
 interface HomeProps {
   searchParams: Promise<{ category?: string }>;
@@ -54,6 +61,11 @@ export default async function Home({ searchParams }: HomeProps) {
 
   return (
     <main>
+      {/* Acessibilidade e SEO: H1 oculto para identificar a página inicial do portal */}
+      <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 }}>
+        Turbina IA - O Portal Definitivo de Inteligência Artificial
+      </h1>
+
       {/* 1. Hero Section for Featured Article */}
       {featuredArticle && (
         <section className="hero">
@@ -61,7 +73,7 @@ export default async function Home({ searchParams }: HomeProps) {
             <div className="hero-grid">
               <div className="hero-content">
                 <span className="badge badge-secondary">Artigo em Destaque</span>
-                <h1 className="hero-title">{featuredArticle.title}</h1>
+                <h2 className="hero-title">{featuredArticle.title}</h2>
                 <p className="hero-description">{featuredArticle.description}</p>
                 <div className="hero-meta">
                   <span>Por {featuredArticle.author}</span>

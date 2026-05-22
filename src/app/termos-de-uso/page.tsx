@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Termos de Uso - Turbina IA',
   description: 'Leia os termos de uso e condições para utilização do portal Turbina IA.',
+  alternates: {
+    canonical: '/termos-de-uso',
+  },
 };
 
 export default function TermosUsoPage() {

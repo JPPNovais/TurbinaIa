@@ -35,15 +35,21 @@ const toolColorMap: Map<string, string> = new Map(
   AI_TOOLS.map((t, i) => [t.id, getIconColor(i)])
 );
 
-function ToolCard({ tool }: { tool: AITool }) {
+function ToolCard({ tool, categoryRank }: { tool: AITool; categoryRank?: number }) {
   const color = toolColorMap.get(tool.id) ?? ICON_COLORS[0];
   const initials = getInitials(tool.name);
   const [pricingOpen, setPricingOpen] = useState(false);
 
   return (
     <article className="tool-card">
-      {tool.popularityRank !== undefined && tool.popularityRank <= 10 && (
-        <span className="tool-rank-badge">#{tool.popularityRank}</span>
+      {categoryRank !== undefined ? (
+        categoryRank <= 10 && (
+          <span className="tool-rank-badge">#{categoryRank}</span>
+        )
+      ) : (
+        tool.popularityRank !== undefined && tool.popularityRank <= 10 && (
+          <span className="tool-rank-badge">#{tool.popularityRank}</span>
+        )
       )}
 
       <div className="tool-card-top">
@@ -149,7 +155,7 @@ export default function FerramentasClient() {
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
-    return AI_TOOLS.filter((tool) => {
+    const result = AI_TOOLS.filter((tool) => {
       const matchCategory =
         selectedCategory === 'Todas' || tool.category === selectedCategory;
       const matchSearch =
@@ -161,6 +167,16 @@ export default function FerramentasClient() {
         tool.useCases.some((uc) => uc.toLowerCase().includes(q));
       return matchCategory && matchSearch;
     });
+
+    if (selectedCategory !== 'Todas') {
+      result.sort((a, b) => {
+        const ra = a.popularityRank ?? 999;
+        const rb = b.popularityRank ?? 999;
+        return ra - rb;
+      });
+    }
+
+    return result;
   }, [search, selectedCategory]);
 
   const latestUpdate = useMemo(() => {
@@ -249,8 +265,12 @@ export default function FerramentasClient() {
               <p>Nenhuma ferramenta encontrada para &quot;{search}&quot;</p>
             </div>
           ) : (
-            filtered.map((tool) => (
-              <ToolCard key={tool.id} tool={tool} />
+            filtered.map((tool, index) => (
+              <ToolCard
+                key={tool.id}
+                tool={tool}
+                categoryRank={selectedCategory !== 'Todas' ? index + 1 : undefined}
+              />
             ))
           )}
         </div>

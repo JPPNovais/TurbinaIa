@@ -6,46 +6,7 @@
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Outfit', 'Inter', sans-serif;
 
-  /* Color Palette - Dark Mode (Default) */
-  --bg-primary: #030712;
-  --bg-secondary: #0b1329;
-  --bg-tertiary: #111a36;
-  --text-primary: #f3f4f6;
-  --text-secondary: #9ca3af;
-  --text-muted: #6b7280;
-  
-  --primary: #06b6d4; /* Neon Cyan */
-  --primary-rgb: 6, 182, 212;
-  --primary-hover: #0891b2;
-  
-  --secondary: #a855f7; /* Purple Cyber */
-  --secondary-rgb: 168, 85, 247;
-  --secondary-hover: #9333ea;
-  
-  --accent: #10b981; /* Emerald */
-  --accent-rgb: 16, 185, 129;
-  
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(6, 182, 212, 0.3);
-  --shadow-color: rgba(0, 0, 0, 0.5);
-  --glass-bg: rgba(11, 19, 41, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.05);
-  
-  /* Layout */
-  --max-width: 1200px;
-  --header-height: 70px;
-  --border-radius-sm: 8px;
-  --border-radius-md: 16px;
-  --border-radius-lg: 24px;
-  
-  /* Transitions */
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Light Theme Variables */
-[data-theme="light"] {
+  /* Color Palette - Light Mode (Default) */
   --bg-primary: #f8fafc;
   --bg-secondary: #ffffff;
   --bg-tertiary: #f1f5f9;
@@ -69,6 +30,45 @@
   --shadow-color: rgba(15, 23, 42, 0.08);
   --glass-bg: rgba(255, 255, 255, 0.85);
   --glass-border: rgba(0, 0, 0, 0.05);
+  
+  /* Layout */
+  --max-width: 1200px;
+  --header-height: 70px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --bg-primary: #030712;
+  --bg-secondary: #0b1329;
+  --bg-tertiary: #111a36;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  
+  --primary: #06b6d4; /* Neon Cyan */
+  --primary-rgb: 6, 182, 212;
+  --primary-hover: #0891b2;
+  
+  --secondary: #a855f7; /* Purple Cyber */
+  --secondary-rgb: 168, 85, 247;
+  --secondary-hover: #9333ea;
+  
+  --accent: #10b981; /* Emerald */
+  --accent-rgb: 16, 185, 129;
+  
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(6, 182, 212, 0.3);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --glass-bg: rgba(11, 19, 41, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.05);
 }
 
 /* Reset & Base Styles */

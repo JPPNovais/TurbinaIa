@@ -5,20 +5,17 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function Header() {
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const [theme, setTheme] = useState<'dark' | 'light'>('light');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  // Initialize theme from localStorage or system settings
+  // Initialize theme from localStorage or default to light
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as 'dark' | 'light' | null;
-    let initialTheme: 'dark' | 'light' = 'dark';
+    let initialTheme: 'dark' | 'light' = 'light';
     
     if (savedTheme) {
       initialTheme = savedTheme;
-    } else {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      initialTheme = prefersDark ? 'dark' : 'light';
     }
 
     document.documentElement.setAttribute('data-theme', initialTheme);

@@ -48,7 +48,7 @@ export default function ChangelogClient() {
   const highImpactCount = CHANGELOG.filter((e) => e.impact === 'Alto').length;
 
   return (
-    <main style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
+    <main style={{ paddingTop: 'calc(var(--header-height) + 2rem)', paddingBottom: '4rem' }}>
       <div className="container">
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>

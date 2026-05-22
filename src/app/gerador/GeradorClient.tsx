@@ -135,7 +135,7 @@ export default function GeradorClient() {
   const isReady = form.tarefa && form.contexto.trim().length > 10;
 
   return (
-    <main style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
+    <main style={{ paddingTop: 'calc(var(--header-height) + 2rem)', paddingBottom: '4rem' }}>
       <div className="container" style={{ maxWidth: '900px' }}>
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>

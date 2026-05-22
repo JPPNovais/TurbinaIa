@@ -1,23 +1,56 @@
 import type { Metadata } from 'next';
 import CalculatorClient from './CalculatorClient';
 
+const OG_TITLE = 'Calculadora de Custos de APIs de IA';
+const OG_DESC = 'Simule e compare os custos de tokens das principais APIs: Gemini 2.5, GPT-4.1, Claude Sonnet e DeepSeek. Encontre a mais barata para seu projeto.';
+const OG_IMAGE = `https://turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Calculadora Gratuita')}`;
+
 export const metadata: Metadata = {
   title: 'Calculadora de Custos de APIs de IA (Gemini, Claude, GPT, DeepSeek) | Turbina IA',
-  description: 'Compare preços de tokens de entrada/saída das principais APIs de Inteligência Artificial do mercado: Gemini 1.5 & 2.5, Claude 3.5, GPT-4o e DeepSeek V3/R1.',
-  alternates: {
-    canonical: '/calculadora',
-  },
+  description: OG_DESC,
+  keywords: ['calculadora custo IA', 'preço API GPT', 'custo token Claude', 'API Gemini preço', 'DeepSeek custo'],
+  alternates: { canonical: '/calculadora' },
   openGraph: {
-    title: 'Calculadora de Custos de APIs de IA | Turbina IA',
-    description: 'Compare preços de tokens das principais APIs de Inteligência Artificial: Gemini, Claude, GPT e DeepSeek.',
+    title: OG_TITLE + ' | Turbina IA',
+    description: OG_DESC,
     url: 'https://turbinaia.com.br/calculadora',
+    siteName: 'Turbina IA',
+    locale: 'pt_BR',
     type: 'website',
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: OG_TITLE }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: OG_TITLE + ' | Turbina IA',
+    description: OG_DESC,
+    images: [OG_IMAGE],
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: OG_TITLE,
+  description: OG_DESC,
+  url: 'https://turbinaia.com.br/calculadora',
+  applicationCategory: 'FinanceApplication',
+  operatingSystem: 'Web',
+  inLanguage: 'pt-BR',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://turbinaia.com.br' },
+  featureList: [
+    'Simulação de custo por volume de tokens',
+    'Comparação de 13+ modelos de IA',
+    'Conversão automática USD/BRL',
+    'Preços atualizados automaticamente',
+  ],
 };
 
 export default function CalculatorPage() {
   return (
-    <main style={{ minHeight: '80vh' }}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <main style={{ minHeight: '80vh' }}>
       {/* Interactive Calculator */}
       <CalculatorClient />
 
@@ -74,5 +107,6 @@ export default function CalculatorPage() {
         </article>
       </section>
     </main>
+    </>
   );
 }

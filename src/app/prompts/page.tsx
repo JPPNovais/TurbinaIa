@@ -1,23 +1,55 @@
 import type { Metadata } from 'next';
 import PromptsClient from './PromptsClient';
 
+const OG_TITLE = 'Biblioteca de Prompts Prontos para IA';
+const OG_DESC = '30 prompts profissionais para ChatGPT, Claude e Gemini em Marketing, Desenvolvimento, Carreira, Finanças e mais. Personalize e copie em segundos.';
+const OG_IMAGE = `https://turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('30 Prompts Grátis')}`;
+
 export const metadata: Metadata = {
   title: 'Biblioteca de Prompts Prontos para IA (ChatGPT, Claude, Gemini) | Turbina IA',
-  description: 'Acesse prompts avançados e prontos para uso em marketing, desenvolvimento, redação e produtividade. Insira suas variáveis e copie na hora!',
-  alternates: {
-    canonical: '/prompts',
-  },
+  description: OG_DESC,
+  keywords: ['prompts ChatGPT', 'prompts Claude', 'prompts Gemini', 'prompt marketing', 'prompt programação', 'biblioteca prompts IA'],
+  alternates: { canonical: '/prompts' },
   openGraph: {
-    title: 'Biblioteca de Prompts Prontos para IA | Turbina IA',
-    description: 'Comandos avançados personalizáveis para ChatGPT, Claude e Gemini.',
+    title: OG_TITLE + ' | Turbina IA',
+    description: OG_DESC,
     url: 'https://turbinaia.com.br/prompts',
+    siteName: 'Turbina IA',
+    locale: 'pt_BR',
     type: 'website',
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: OG_TITLE }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: OG_TITLE + ' | Turbina IA',
+    description: OG_DESC,
+    images: [OG_IMAGE],
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: OG_TITLE,
+  description: OG_DESC,
+  url: 'https://turbinaia.com.br/prompts',
+  numberOfItems: 30,
+  inLanguage: 'pt-BR',
+  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://turbinaia.com.br' },
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Copy com Método AIDA', description: 'Gere textos de vendas persuasivos usando a estrutura AIDA.' },
+    { '@type': 'ListItem', position: 2, name: 'Esboço de Artigo SEO', description: 'Crie esqueletos de artigos otimizados para ranquear no Google.' },
+    { '@type': 'ListItem', position: 3, name: 'Roteiro de Carrossel Instagram', description: 'Monte carrosséis educativos para Instagram e LinkedIn.' },
+    { '@type': 'ListItem', position: 4, name: 'Refatoração de Código', description: 'Receba sugestões de melhoria para qualquer trecho de código.' },
+    { '@type': 'ListItem', position: 5, name: 'Plano de Aprendizado 80/20', description: 'Aprenda qualquer assunto focando nos 20% que geram 80% do resultado.' },
+  ],
 };
 
 export default function PromptsPage() {
   return (
-    <main style={{ minHeight: '80vh' }}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <main style={{ minHeight: '80vh' }}>
       {/* Prompts Client Component */}
       <PromptsClient />
 
@@ -64,5 +96,6 @@ export default function PromptsPage() {
         </article>
       </section>
     </main>
+    </>
   );
 }

@@ -188,7 +188,7 @@ date: "${today}"
 3. **Tabelas de Comparação e Dados Estruturados:** Sempre que o artigo envolver comparações de preços, prós/contras, recursos ou benchmarks, crie uma **Tabela em Markdown** limpa. Os modelos de linguagem de buscadores de IA dão preferência extrema a dados em tabelas na hora de sintetizar respostas.
 4. **Fatos Densos e Fontes:** Diga nomes exatos, datas, estatísticas e versões.
 5. **Seção de FAQ no final:** Adicione uma seção "## Perguntas Frequentes" ao final do post, respondendo de forma ultra direta e sucinta a 3 principais dúvidas comuns do usuário sobre o tema.
-6. **Links Internos:** Quando o conteúdo for relevante, inclua ao menos um link interno para outras ferramentas do próprio site: [Comparador de IAs](/comparador), [Calculadora de Custos de IA](/calculadora) ou [Biblioteca de Prompts](/prompts). Isso ajuda os leitores a descobrirem mais recursos e melhora o ranqueamento do site.
+6. **Links Internos:** Quando o conteúdo for relevante, inclua ao menos um link interno para outras ferramentas do próprio site: [Comparador de IAs](/comparador), [Calculadora de Custos de IA](/calculadora), [Biblioteca de Prompts](/prompts), [Gerador de Prompts](/gerador), [Glossário de IA](/glossario) ou [Monitor de Modelos](/changelog). Isso ajuda os leitores a descobrirem mais recursos e melhora o ranqueamento do site.
 
 Escreva um artigo longo (mínimo de 800 palavras), aprofundado, baseado em fatos reais da atualidade coletados da internet, com dicas práticas e que entregue muito valor real para quem está lendo.`;
 

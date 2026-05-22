@@ -177,6 +177,27 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       {/* 3. Main Article Content */}
       <article className="article-container">
+        {/* Table of Contents (Sumário) */}
+        {article.headings && article.headings.length > 0 && (
+          <div className="table-of-contents">
+            <h3 className="toc-title">🌀 Sumário do Artigo</h3>
+            <ul className="toc-list">
+              {article.headings.map((heading) => (
+                <li 
+                  key={heading.slug} 
+                  className={`toc-item toc-depth-${heading.depth}`}
+                  style={{ paddingLeft: `${(heading.depth - 2) * 1.25}rem` }}
+                >
+                  <a href={`#${heading.slug}`} className="toc-link">
+                    {heading.depth === 3 && <span className="toc-sub-indicator">•</span>}
+                    {heading.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <div 
           className="prose" 
           dangerouslySetInnerHTML={{ __html: article.contentHtml }} 
@@ -200,7 +221,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               aria-label="Twitter"
               style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}
             >
-              X
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
             </a>
             <a 
               href={linkedinShareUrl} 
@@ -211,7 +234,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               aria-label="LinkedIn"
               style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}
             >
-              In
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
             </a>
             <a 
               href={whatsappShareUrl} 
@@ -222,7 +247,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               aria-label="WhatsApp"
               style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}
             >
-              Wa
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.019-5.114-2.877-6.974-1.858-1.859-4.337-2.88-6.971-2.881-5.439 0-9.865 4.42-9.87 9.865-.001 1.702.443 3.361 1.292 4.811l-.994 3.63 3.731-.978zm11.23-7.293c-.3-.15-1.771-.875-2.046-.975-.276-.1-.477-.15-.677.15-.199.3-.777.976-.952 1.176-.176.2-.351.225-.651.075-.3-.15-1.265-.467-2.41-1.485-.89-.795-1.49-1.777-1.665-2.077-.176-.3-.019-.462.13-.611.135-.135.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.677-1.632-.927-2.232-.244-.588-.492-.51-.677-.52-.175-.008-.375-.01-.575-.01-.2 0-.525.075-.8.375-.276.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.224 5.11 4.525.714.31 1.27.495 1.705.633.717.228 1.37.196 1.887.119.577-.087 1.771-.724 2.021-1.425.25-.7.25-1.3.175-1.425-.075-.125-.275-.2-.575-.35z"/>
+              </svg>
             </a>
           </div>
 

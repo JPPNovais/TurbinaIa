@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Turbina IA Team' }],
   creator: 'Turbina IA',
   metadataBase: new URL('https://turbinaia.com.br'),
+  verification: {
+    google: 'EP3JHK-_xrYKdBTEfycV8vruws7Y3O9Mj71XlhAOBGQ',
+  },
   alternates: {
     canonical: '/',
   },

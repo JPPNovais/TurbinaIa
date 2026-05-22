@@ -53,7 +53,13 @@ export default function Header() {
               Home
             </Link>
             <Link href="/comparador" className={`nav-link ${pathname === '/comparador' ? 'active' : ''}`}>
-              Comparador de IAs
+              Comparador
+            </Link>
+            <Link href="/calculadora" className={`nav-link ${pathname === '/calculadora' ? 'active' : ''}`}>
+              Calculadora
+            </Link>
+            <Link href="/prompts" className={`nav-link ${pathname === '/prompts' ? 'active' : ''}`}>
+              Prompts
             </Link>
             <Link href="/?category=tutoriais" className={`nav-link ${pathname === '/?category=tutoriais' ? 'active' : ''}`}>
               Tutoriais

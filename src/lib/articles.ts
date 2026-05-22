@@ -3,6 +3,12 @@ import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 
+export interface ArticleHeading {
+  text: string;
+  slug: string;
+  depth: number;
+}
+
 export interface ArticleMetadata {
   title: string;
   description: string;
@@ -18,6 +24,34 @@ export interface ArticleMetadata {
 
 export interface Article extends ArticleMetadata {
   contentHtml: string;
+  headings: ArticleHeading[];
+}
+
+function slugifyHeading(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/<[^>]*>/g, '')
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .trim();
+}
+
+function extractHeadings(markdownContent: string): ArticleHeading[] {
+  const headingRegex = /^(##|###)\s+(.+)$/gm;
+  const headings: ArticleHeading[] = [];
+  let match;
+  while ((match = headingRegex.exec(markdownContent)) !== null) {
+    const depth = match[1].length;
+    const text = match[2].trim();
+    // remove markdown links and bold formatting from the heading text for cleaner display
+    const cleanText = text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_`]/g, '');
+    const slug = slugifyHeading(cleanText);
+    headings.push({ text: cleanText, slug, depth });
+  }
+  return headings;
 }
 
 const articlesDirectory = path.join(process.cwd(), 'content/articles');
@@ -81,8 +115,19 @@ export async function getArticleData(slug: string): Promise<Article | null> {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
   
+  // Configure renderer to add custom ID attributes to H2 and H3 tags
+  const renderer = new marked.Renderer();
+  renderer.heading = function({ text, depth }) {
+    if (depth === 2 || depth === 3) {
+      const slug = slugifyHeading(text);
+      return `<h${depth} id="${slug}">${text}</h${depth}>\n`;
+    }
+    return `<h${depth}>${text}</h${depth}>\n`;
+  };
+
   // Parse markdown content to HTML
-  const contentHtml = await marked.parse(content);
+  const contentHtml = await marked.parse(content, { renderer });
+  const headings = extractHeadings(content);
   
   const metadata: Article = {
     title: data.title || 'Sem título',
@@ -96,6 +141,7 @@ export async function getArticleData(slug: string): Promise<Article | null> {
     readingTime: calculateReadingTime(content),
     isFeatured: !!data.isFeatured,
     contentHtml,
+    headings,
   };
   
   return metadata;

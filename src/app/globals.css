@@ -1075,3 +1075,56 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--primary);
   transform: translateY(-2px);
 }
+
+/* Table of Contents (Sumário) */
+.table-of-contents {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.toc-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.toc-item {
+  display: flex;
+  align-items: center;
+}
+
+.toc-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.toc-link:hover {
+  color: var(--primary);
+  transform: translateX(3px);
+}
+
+.toc-sub-indicator {
+  margin-right: 0.5rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+

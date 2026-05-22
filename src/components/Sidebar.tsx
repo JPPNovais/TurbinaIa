@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import AdSense from './AdSense';
@@ -12,27 +13,102 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ recentArticles, featuredArticles = [] }: SidebarProps) {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setStatus('loading');
+    setMessage('');
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setStatus('success');
+        setMessage(data.message);
+        setEmail('');
+      } else {
+        setStatus('error');
+        setMessage(data.message || 'Ocorreu um erro ao processar a inscrição.');
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus('error');
+      setMessage('Ocorreu um erro de rede. Tente novamente mais tarde.');
+    }
+  };
+
   return (
     <aside className="sidebar">
       {/* Newsletter Widget */}
       <div className="widget">
         <h3 className="widget-title">Assine a Newsletter</h3>
-        <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+        <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5, marginBottom: '1rem' }}>
           Receba os novos tutoriais de IA e resumos semanais de tecnologia direto na sua caixa de entrada.
         </p>
-        <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-          <div className="input-group">
-            <input 
-              type="email" 
-              placeholder="Seu melhor e-mail" 
-              required 
-              className="input-field"
-            />
+
+        {status === 'success' ? (
+          <div style={{
+            padding: '1rem',
+            background: 'rgba(var(--accent-rgb), 0.1)',
+            border: '1px solid var(--accent)',
+            borderRadius: 'var(--border-radius-sm)',
+            color: 'var(--accent)',
+            fontSize: '0.9rem',
+            lineHeight: '1.4',
+            textAlign: 'center'
+          }}>
+            {message}
           </div>
-          <button type="submit" className="btn btn-primary">
-            Inscrever Turbina ⚡
-          </button>
-        </form>
+        ) : (
+          <form className="newsletter-form" onSubmit={handleSubmit}>
+            <div className="input-group" style={{ marginBottom: '0.75rem' }}>
+              <input 
+                type="email" 
+                placeholder="Seu melhor e-mail" 
+                required 
+                className="input-field"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={status === 'loading'}
+                style={{ width: '100%' }}
+              />
+            </div>
+            
+            <button 
+              type="submit" 
+              className="btn btn-primary" 
+              disabled={status === 'loading'}
+              style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+            >
+              {status === 'loading' ? 'Inscrevendo...' : 'Inscrever Turbina ⚡'}
+            </button>
+
+            {status === 'error' && (
+              <p style={{ 
+                color: '#ef4444', 
+                fontSize: '0.8rem', 
+                marginTop: '0.5rem', 
+                lineHeight: '1.3',
+                textAlign: 'center'
+              }}>
+                {message}
+              </p>
+            )}
+          </form>
+        )}
       </div>
 
       {/* AdSense Widget */}

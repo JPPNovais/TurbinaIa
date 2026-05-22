@@ -45,6 +45,16 @@ export default function Footer() {
                   Comparador de IAs ⚡
                 </Link>
               </li>
+              <li>
+                <Link href="/calculadora" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                  Calculadora de Custos ⚡
+                </Link>
+              </li>
+              <li>
+                <Link href="/prompts" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                  Biblioteca de Prompts ⚡
+                </Link>
+              </li>
             </ul>
           </div>
 

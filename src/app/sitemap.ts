@@ -45,6 +45,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'monthly' as const,
       priority: 0.6,
     },
+    {
+      url: `${baseUrl}/politica-de-privacidade`,
+      lastModified: new Date('2026-05-22'),
+      changeFrequency: 'yearly' as const,
+      priority: 0.4,
+    },
+    {
+      url: `${baseUrl}/termos-de-uso`,
+      lastModified: new Date('2026-05-22'),
+      changeFrequency: 'yearly' as const,
+      priority: 0.4,
+    },
   ];
 
   return [

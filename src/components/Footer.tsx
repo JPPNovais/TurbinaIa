@@ -66,6 +66,11 @@ export default function Footer() {
                   Monitor de Modelos ⚡
                 </Link>
               </li>
+              <li>
+                <Link href="/ferramentas" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                  Guia de Ferramentas ⚡
+                </Link>
+              </li>
             </ul>
           </div>
 

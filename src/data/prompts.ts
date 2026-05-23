@@ -429,5 +429,5 @@ Sua revisão deve cobrir os seguintes pontos:
 
 Apresente o feedback de forma clara, utilizando marcadores, explicando a razão por trás de cada sugestão e, se possível, forneça exemplos de como a mudança pode ser implementada.`,
     tags: ['revisão', 'código', 'otimização', 'melhores-práticas'],
-  },,
+  },
 ];

@@ -11,7 +11,7 @@ export interface ChangelogEntry {
   modelId?: string;
 }
 
-export const CHANGELOG: ChangelogEntry[
+export const CHANGELOG: ChangelogEntry[] = [
   {
     id: 'gemini-3-1-flash-lite-2026',
     date: '2026-05',
@@ -109,8 +109,7 @@ export const CHANGELOG: ChangelogEntry[
       'Oferece geração de citações nativas para rastreabilidade, crucial para indústrias regulamentadas.',
     ],
     impact: 'Alto',
-  },,
-  ] = [
+  },
   {
     id: 'gemini-3-5-flash-omni-2026',
     date: '2026-05',

@@ -396,5 +396,5 @@ export const GLOSSARIO: GlossarioTerm[] = [
     definition: 'O processo de coordenação e gerenciamento de múltiplos Agentes de IA que trabalham em conjunto para alcançar um objetivo comum. Isso envolve a definição de papéis, a comunicação entre os agentes, o gerenciamento do fluxo de trabalho e a resolução de conflitos, otimizando a colaboração para a execução de tarefas complexas de forma autônoma.',
     example: 'Em um sistema de atendimento ao cliente, um agente pode ser responsável por triar a solicitação, outro por buscar informações relevantes no banco de dados e um terceiro por redigir a resposta, todos coordenados por um sistema de orquestração para garantir um fluxo de trabalho eficiente e contínuo.',
     relatedTerms: ['Agente de IA', 'LangChain', 'API de IA', 'RAG'],
-  },,
+  },
 ];

@@ -323,7 +323,23 @@ Não basta listar as fontes ao final — o texto principal precisa estar ancorad
 - Quando citar um número ou benchmark ("o modelo atinge 87%", "consumo de 945 TWh", "investimento de US$ 5 bi"), a fonte do número DEVE estar como link inline.
 - Quando o mesmo fato aparecer em 2+ fontes, indique o cruzamento: "tanto a [Guardian](URL) quanto a [MIT Technology Review](URL) confirmam que...".
 - **Meta mínima: 1 link inline a cada 2 parágrafos do corpo.** Se ficar abaixo disso, o artigo será rejeitado.
-- Ao final, inclua "## Fontes e Referências" listando todos os links no formato: \`- [Título](URL)\`. As URLs aqui devem ser as MESMAS já usadas inline — não uma lista paralela.
+- **Meta máxima: NUNCA repita a mesma URL em links consecutivos dentro do mesmo parágrafo.** Se um parágrafo cita 5 fatos vindos da mesma fonte, use \`[Nome da Fonte](URL)\` UMA vez logo no início ("De acordo com a [Fonte X](URL), ...") e depois apenas mencione o nome sem link (ou use pronomes: "a empresa", "o estudo", "o relatório"). Encadear \`[X](url) ... [X](url) ... [X](url)\` no mesmo parágrafo é spam de links e será rejeitado.
+- Ao final, inclua "## Fontes e Referências" listando todos os links no formato: \`- [Título](URL)\`. As URLs aqui devem ser as MESMAS já usadas inline — não uma lista paralela. Cada URL aparece UMA vez na lista (sem repetição).
+
+## QUALIDADE MÍNIMA DAS FONTES (rejeição automática se não cumprir)
+
+A lista de Referências DEVE conter pelo menos 3 fontes do "tier 1" abaixo. Artigos cuja lista de fontes seja composta apenas por blogs pessoais, newsletters anônimas ou sites desconhecidos serão **automaticamente despublicados** (\`isFeatured: false\`) pelo pós-processamento até revisão humana.
+
+**Tier 1 (priorize ao máximo, repita a busca se necessário):**
+- Blogs e releases oficiais dos laboratórios: \`anthropic.com\`, \`openai.com\`, \`cdn.openai.com\`, \`blog.google\`, \`deepmind.google\`, \`ai.meta.com\`, \`mistral.ai\`, \`x.ai\`, \`cohere.com\`, \`huggingface.co\`
+- Pesquisa científica: \`arxiv.org\`, \`nature.com\`, \`science.org\`
+- Jornalismo de referência: \`technologyreview.com\` (MIT), \`wired.com\`, \`theverge.com\`, \`techcrunch.com\`, \`arstechnica.com\`, \`reuters.com\`, \`bloomberg.com\`, \`apnews.com\`, \`bbc.com\`, \`theguardian.com\`, \`ft.com\`, \`economist.com\`, \`nytimes.com\`, \`wsj.com\`, \`forbes.com\`
+- Análise e relatórios: \`gartner.com\`, \`mckinsey.com\`, \`statista.com\`, \`idc.com\`
+- Brasil: \`folha.uol.com.br\`, \`globo.com\`, \`estadao.com.br\`, \`cnnbrasil.com.br\`, \`mittechreview.com.br\`
+
+**Se a busca inicial só retornou blogs desconhecidos**, refaça a busca priorizando explicitamente os domínios acima — não publique com fontes fracas só porque foi mais fácil encontrá-las.
+
+**Domínios fracos que NÃO contam como fonte** (e serão removidos automaticamente pelo postprocess): \`ajeet.me\`, \`automely.com\`, \`clawpod.com\`, \`stackdecode.com\`, \`genaicoding.com\`, \`aisuperskills.com\`, \`therundown.ai\`, \`letsdatascience.com\`, \`quantumzeitgeist.com\`, \`startuphub.ai\`, \`kucoin.com\`, \`cryptobriefing.com\`, \`incrypted.com\`, \`digg.com\`, \`biggo.finance\`, \`pasqualepillitteri.it\`, \`vietnam.vn\`, \`ocafezinho.com\`, \`yourstory.com\`, qualquer \`*.medium.com\` ou \`*.substack.com\` sem autoria reconhecida.
 
 ## ESTRUTURA DE HEADINGS (obrigatório)
 

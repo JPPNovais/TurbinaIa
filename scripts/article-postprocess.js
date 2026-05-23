@@ -79,20 +79,73 @@ function removeDuplicateTitleHeading(text) {
 // Same precedent as `stripDeadVertexRedirects` — bullet line removed, inline link
 // degraded to plain text.
 const WEAK_SOURCE_DOMAINS = [
+  // Crypto / aggregator / clickbait
   'kucoin.com',
   'cryptobriefing.com',
   'incrypted.com',
   'digg.com',
   'biggo.finance',
+  // Anonymous newsletters and SEO blogs
   'therundown.ai',
   'letsdatascience.com',
   'quantumzeitgeist.com',
   'startuphub.ai',
+  'genaicoding.com',
+  'aisuperskills.com',
+  'clawpod.com',
+  'stackdecode.com',
+  'automely.com',
+  // Personal blogs and translation mirrors
+  'ajeet.me',
   'pasqualepillitteri.it',
   'vietnam.vn',
   'ocafezinho.com',
   'yourstory.com',
 ];
+
+// Positive list — sources that *do* count as serious journalism / primary research.
+// Used by `assessSourceQuality` to flag articles whose Referências section is full of
+// unknown blogs only.
+const TIER_1_DOMAINS = [
+  // Primary: AI lab blogs and official documentation
+  'anthropic.com', 'openai.com', 'cdn.openai.com', 'blog.google', 'deepmind.google',
+  'ai.meta.com', 'mistral.ai', 'x.ai', 'cohere.com',
+  'developers.google.com', 'platform.openai.com', 'docs.anthropic.com', 'huggingface.co',
+  'codeassist.google',
+  // Other primary product/company sources for major dev tools
+  'github.com', 'github.blog', 'cursor.com', 'windsurf.com', 'jetbrains.com',
+  'stackoverflow.com', 'stackoverflow.co',
+  // Security research (authoritative on AI code security)
+  'snyk.io', 'sonarsource.com', 'owasp.org',
+  // Academic
+  'stanford.edu', 'mit.edu', 'harvard.edu', 'princeton.edu',
+  'berkeley.edu', 'ox.ac.uk', 'cam.ac.uk', 'cmu.edu',
+  'crfm.stanford.edu', 'mitsloan.mit.edu',
+  // Scientific
+  'arxiv.org', 'nature.com', 'science.org',
+  // Tier 1 tech journalism
+  'technologyreview.com', 'mittechreview.com.br',
+  'wired.com', 'theverge.com', 'techcrunch.com', 'arstechnica.com',
+  'reuters.com', 'bloomberg.com', 'apnews.com',
+  'bbc.com', 'theguardian.com', 'ft.com', 'economist.com',
+  'nytimes.com', 'wsj.com', 'washingtonpost.com',
+  // Analyst reports
+  'gartner.com', 'mckinsey.com', 'statista.com', 'idc.com',
+  // Brazilian tier 1
+  'folha.uol.com.br', 'globo.com', 'estadao.com.br', 'valor.globo.com',
+  'cnnbrasil.com.br', 'forbes.com', 'forbes.com.br',
+  // International references frequently cited
+  'iea.org', 'pewresearch.org',
+];
+
+function isTier1Url(url) {
+  try {
+    const host = new URL(url).hostname.toLowerCase().replace(/^www\./, '');
+    return TIER_1_DOMAINS.some((d) => host === d || host.endsWith('.' + d));
+  } catch {
+    return false;
+  }
+}
 
 function isWeakSourceUrl(url) {
   try {
@@ -281,7 +334,90 @@ function stripDeadVertexRedirects(text, { verbose = false } = {}) {
   return kept.join('\n');
 }
 
-// Full pipeline: cleanup + redirect resolution + dead-link removal + weak-source pruning.
+// Collapse repeated citations of the same URL inside one paragraph. The Gemini model,
+// after we tightened the "1 link per 2 paragraphs" rule, sometimes overshoots and stamps
+// `[Same Source](same-url)` 5+ times in the same paragraph, which looks like spam.
+// Behavior: keep the first occurrence of each URL per paragraph as a real link;
+// every later occurrence in that same paragraph is degraded to plain text.
+function collapseRepeatedCitations(text, { verbose = false } = {}) {
+  // Split on blank lines (paragraph boundary). Headings/lists are their own "paragraphs"
+  // for this purpose, which is fine — repetition there is also bad.
+  const paragraphs = text.split(/\n\s*\n/);
+  let stripped = 0;
+
+  const cleaned = paragraphs.map((p) => {
+    const seen = new Set();
+    return p.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (full, label, url) => {
+      // Normalize URL for comparison (strip trailing punctuation/fragment differences are kept)
+      const key = url.replace(/[.,;:!?)]+$/, '');
+      if (seen.has(key)) {
+        stripped++;
+        return label;
+      }
+      seen.add(key);
+      return full;
+    });
+  });
+
+  if (verbose && stripped > 0) {
+    console.log(`🔁 ${stripped} citação(ões) duplicada(s) colapsada(s) (mesma URL no mesmo parágrafo).`);
+  }
+
+  return cleaned.join('\n\n');
+}
+
+// Inspect the Referências section to decide whether the article has any tier-1 sources.
+// Returns { total, tier1, tier1Pct, allWeak }.
+function assessSourceQuality(text) {
+  // Find the references section. Match common headings: "Fontes", "Referências", "Sources".
+  const refMatch = text.match(/##\s+(?:Fontes\s+e\s+Refer[êe]ncias|Refer[êe]ncias|Fontes|Sources)\b[\s\S]*$/i);
+  const refsBlock = refMatch ? refMatch[0] : text;
+
+  const urls = [];
+  const urlRegex = /\[[^\]]+\]\((https?:\/\/[^)]+)\)/g;
+  let m;
+  while ((m = urlRegex.exec(refsBlock)) !== null) {
+    urls.push(m[1]);
+  }
+
+  // Deduplicate by hostname so multiple links to the same outlet don't inflate the score.
+  const uniqueHosts = new Set();
+  for (const u of urls) {
+    try { uniqueHosts.add(new URL(u).hostname.toLowerCase().replace(/^www\./, '')); } catch {}
+  }
+  const hosts = [...uniqueHosts];
+  const tier1 = hosts.filter((h) => TIER_1_DOMAINS.some((d) => h === d || h.endsWith('.' + d))).length;
+  const total = hosts.length;
+  const tier1Pct = total ? tier1 / total : 0;
+
+  return { total, tier1, tier1Pct, allWeak: total > 0 && tier1 === 0 };
+}
+
+// If the article has no tier-1 sources, flip `isFeatured` to false in the frontmatter so
+// it doesn't get pushed to the homepage hero before a human reviews it.
+function demoteIfNoTier1Sources(text, { verbose = false } = {}) {
+  const quality = assessSourceQuality(text);
+  if (!quality.allWeak) return text;
+
+  if (verbose) {
+    console.log(`⚠️  Nenhuma fonte tier 1 reconhecida entre as ${quality.total} referências do artigo.`);
+    console.log(`   Forçando isFeatured: false até revisão manual.`);
+  }
+  // Only touch frontmatter
+  const fmMatch = text.match(/^---\n([\s\S]*?)\n---/);
+  if (!fmMatch) return text;
+  const original = fmMatch[0];
+  let fm = fmMatch[1];
+  if (/^isFeatured:\s*true/m.test(fm)) {
+    fm = fm.replace(/^isFeatured:\s*true/m, 'isFeatured: false');
+  } else if (!/^isFeatured:/m.test(fm)) {
+    fm = fm + '\nisFeatured: false';
+  }
+  return text.replace(original, `---\n${fm}\n---`);
+}
+
+// Full pipeline: cleanup + redirect resolution + dead-link removal + weak-source pruning
+// + repeated-citation collapse + tier-1 quality check.
 async function postprocessArticle(markdown, { verbose = false } = {}) {
   let out = cleanGroundingArtifacts(markdown);
   out = fixCommonTypos(out);
@@ -290,6 +426,8 @@ async function postprocessArticle(markdown, { verbose = false } = {}) {
   out = await resolveVertexRedirects(out, { verbose });
   out = stripDeadVertexRedirects(out, { verbose });
   out = stripWeakSources(out, { verbose });
+  out = collapseRepeatedCitations(out, { verbose });
+  out = demoteIfNoTier1Sources(out, { verbose });
   return out;
 }
 
@@ -302,8 +440,13 @@ module.exports = {
   resolveVertexRedirects,
   stripDeadVertexRedirects,
   stripWeakSources,
+  collapseRepeatedCitations,
+  assessSourceQuality,
+  demoteIfNoTier1Sources,
   isWeakSourceUrl,
+  isTier1Url,
   WEAK_SOURCE_DOMAINS,
+  TIER_1_DOMAINS,
   postprocessArticle,
 };
 

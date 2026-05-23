@@ -314,12 +314,21 @@ Você tem acesso à pesquisa Google em tempo real E ao conteúdo real extraído 
 
 **Regra de ouro:** Se não encontrou a informação em uma fonte confiável — incluindo as fontes já extraídas — NÃO a inclua. Prefira um artigo com menos dados, porém 100% verificados.
 
-## CITAÇÕES E CRUZAMENTO DE FONTES (OBRIGATÓRIO)
+## CITAÇÕES INLINE OBRIGATÓRIAS (regra mais importante deste documento)
 
-- Toda afirmação factual deve ter citação inline como link Markdown: [nome da fonte](URL real)
-- Exemplo: "O modelo alcança 87% no MMLU segundo a [Anthropic](https://anthropic.com/news/...)"
-- Quando o mesmo fato aparecer em 2 ou mais fontes, indique o cruzamento: "tanto a [TechCrunch](URL) quanto a [Reuters](URL) confirmam que..."
-- Ao final, inclua "## Fontes e Referências" listando todos os links no formato: - [Título](URL)
+Não basta listar as fontes ao final — o texto principal precisa estar ancorado em links. Use esta regra como métrica de qualidade: **se um parágrafo cita uma pessoa, uma empresa, um número ou um fato verificável e não tem nenhum link Markdown, o parágrafo está incompleto e precisa ser reescrito.**
+
+- Toda afirmação factual deve ter citação inline como link Markdown: \`[nome da fonte](URL real)\`.
+- Quando você atribuir uma fala ("Sundar Pichai disse...", "Tim Gowers qualificou...", "a OpenAI anunciou..."), o nome ou o veículo que reportou DEVE estar como link na própria frase.
+- Quando citar um número ou benchmark ("o modelo atinge 87%", "consumo de 945 TWh", "investimento de US$ 5 bi"), a fonte do número DEVE estar como link inline.
+- Quando o mesmo fato aparecer em 2+ fontes, indique o cruzamento: "tanto a [Guardian](URL) quanto a [MIT Technology Review](URL) confirmam que...".
+- **Meta mínima: 1 link inline a cada 2 parágrafos do corpo.** Se ficar abaixo disso, o artigo será rejeitado.
+- Ao final, inclua "## Fontes e Referências" listando todos os links no formato: \`- [Título](URL)\`. As URLs aqui devem ser as MESMAS já usadas inline — não uma lista paralela.
+
+## ESTRUTURA DE HEADINGS (obrigatório)
+
+- O \`title\` do frontmatter já vira o H1 da página automaticamente. **NÃO repita o título como \`##\` no início do corpo** — comece direto pela introdução (parágrafo de texto), seguida do TL;DR, e só depois use \`##\` para a primeira seção.
+- Use \`##\` para seções de primeiro nível e \`###\` para subseções. Não use \`#\` em lugar nenhum.
 
 ## PROIBIÇÕES ABSOLUTAS NO TEXTO PUBLICADO
 
@@ -328,6 +337,8 @@ Estes padrões NÃO podem aparecer no Markdown final em nenhuma hipótese — el
 - **NUNCA escreva marcadores tipo \`[cite: 1, 5, 23]\`, \`[cite: 27]\` ou similares.** Se quiser indicar a fonte, use sempre um link Markdown completo: \`[nome da fonte](URL)\`.
 - **NUNCA escreva \`[Fonte: Nome do Veículo]\` como anotação seca.** Em vez disso, transforme em link inline: \`segundo a [Nome do Veículo](URL)\`.
 - **NUNCA use URLs intermediárias** do tipo \`vertexaisearch.cloud.google.com/grounding-api-redirect/...\`. Sempre use a URL canônica final do site original (ex.: \`https://www.reuters.com/technology/...\`, \`https://blog.google/...\`).
+- **NUNCA cite agregadores de conteúdo, exchanges de criptomoeda, newsletters anônimas ou blogs pessoais.** Domínios proibidos incluem (mas não se limitam a): \`kucoin.com\`, \`cryptobriefing.com\`, \`incrypted.com\`, \`digg.com\`, \`biggo.finance\`, \`therundown.ai\`, \`letsdatascience.com\`, \`quantumzeitgeist.com\`, \`startuphub.ai\`, qualquer subdomínio \`*.medium.com\` ou \`*.substack.com\` sem autoria reconhecida, qualquer site que pareça tradução automática (\`vietnam.vn\`, etc.), e blogs com nome de pessoa (\`pasqualepillitteri.it\` e similares). Esses domínios diluem a credibilidade da lista de Referências.
+- **NUNCA termine uma frase com pontuação dupla** como \`?.\`, \`!.\`, \`.?\`, \`?,\`. Use exatamente um sinal terminal por frase.
 - Se você não tem a URL canônica de uma fonte, **não inclua a citação** — prefira omitir o link a deixar um marcador interno visível.
 
 ## FORMATO DO ARQUIVO

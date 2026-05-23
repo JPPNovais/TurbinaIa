@@ -27,6 +27,107 @@ function fixCommonTypos(text) {
     .replace(/\bagenticos\b/gi, (m) => m[0] === 'A' ? 'Agênticos' : 'agênticos');
 }
 
+// Collapse double terminal punctuation that the model sometimes emits:
+//   "...um do outro?." → "...um do outro?"
+//   "...impressionante!." → "...impressionante!"
+// We only touch ?/! followed by `.`, since `?,` / `!,` are legitimate inside quotes.
+function fixDoublePunctuation(text) {
+  return text
+    .replace(/([?!])\./g, '$1')
+    .replace(/\.{4,}/g, '...'); // 4+ dots → ellipsis
+}
+
+// Remove a H2 (or H3) whose text equals the article title from the frontmatter.
+// Many runs of the Gemini model open the body with `## <title>`, which duplicates the
+// page H1 that Next.js already renders from the frontmatter.
+function removeDuplicateTitleHeading(text) {
+  const titleMatch = text.match(/^---[\s\S]*?\ntitle:\s*["']?([^"'\n]+)["']?\s*\n[\s\S]*?\n---/);
+  if (!titleMatch) return text;
+  const title = titleMatch[1].trim();
+  if (!title) return text;
+
+  // Normalize for comparison (lowercase, collapse whitespace, strip terminal punctuation)
+  const normalize = (s) => s.toLowerCase().replace(/\s+/g, ' ').replace(/[.!?:,;]+$/, '').trim();
+  const normalizedTitle = normalize(title);
+
+  // Find the body (after the closing ---)
+  const bodyStart = text.indexOf('---', 4);
+  if (bodyStart === -1) return text;
+  const afterFrontmatter = text.indexOf('\n', bodyStart + 3) + 1;
+
+  const before = text.substring(0, afterFrontmatter);
+  let body = text.substring(afterFrontmatter);
+
+  // Find the first H2 or H3 in the body. If it matches the title (allowing minor punctuation
+  // differences), strip the entire line (and any trailing blank line that becomes orphan).
+  const firstHeadingMatch = body.match(/^\s*(#{2,3})\s+(.+)$/m);
+  if (firstHeadingMatch && normalize(firstHeadingMatch[2]) === normalizedTitle) {
+    const headingLine = firstHeadingMatch[0];
+    const idx = body.indexOf(headingLine);
+    let after = body.substring(idx + headingLine.length);
+    if (after.startsWith('\n\n')) after = after.substring(1);
+    body = body.substring(0, idx) + after;
+    // Trim leading blank lines from body so it starts at first paragraph
+    body = body.replace(/^\s*\n+/, '');
+  }
+
+  return before + body;
+}
+
+// Drop references whose URLs come from blacklisted domains: content aggregators,
+// crypto exchanges, anonymous newsletters, machine-translated mirrors, personal blogs.
+// Same precedent as `stripDeadVertexRedirects` — bullet line removed, inline link
+// degraded to plain text.
+const WEAK_SOURCE_DOMAINS = [
+  'kucoin.com',
+  'cryptobriefing.com',
+  'incrypted.com',
+  'digg.com',
+  'biggo.finance',
+  'therundown.ai',
+  'letsdatascience.com',
+  'quantumzeitgeist.com',
+  'startuphub.ai',
+  'pasqualepillitteri.it',
+  'vietnam.vn',
+  'ocafezinho.com',
+  'yourstory.com',
+];
+
+function isWeakSourceUrl(url) {
+  try {
+    const host = new URL(url).hostname.toLowerCase().replace(/^www\./, '');
+    return WEAK_SOURCE_DOMAINS.some((d) => host === d || host.endsWith('.' + d));
+  } catch {
+    return false;
+  }
+}
+
+function stripWeakSources(text, { verbose = false } = {}) {
+  const lines = text.split('\n');
+  const kept = [];
+  let droppedBullets = 0;
+  let strippedInline = 0;
+
+  for (const line of lines) {
+    const bulletMatch = line.match(/^\s*[-*]\s*\[[^\]]+\]\(([^)]+)\)\s*$/);
+    if (bulletMatch && isWeakSourceUrl(bulletMatch[1])) {
+      droppedBullets++;
+      continue;
+    }
+    const after = line.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (full, label, url) =>
+      isWeakSourceUrl(url) ? (strippedInline++, label) : full
+    );
+    kept.push(after);
+  }
+
+  if (verbose && (droppedBullets || strippedInline)) {
+    console.log(`🚫 Fontes fracas: ${droppedBullets} bullet(s) removido(s), ${strippedInline} link(s) inline degradado(s) a texto.`);
+  }
+
+  return kept.join('\n');
+}
+
 // HEAD-follow (with GET fallback) to discover the final URL a redirect resolves to.
 function resolveRedirectUrl(url, redirectCount = 0) {
   return new Promise((resolve) => {
@@ -180,21 +281,29 @@ function stripDeadVertexRedirects(text, { verbose = false } = {}) {
   return kept.join('\n');
 }
 
-// Full pipeline: cleanup + redirect resolution + dead-link removal.
+// Full pipeline: cleanup + redirect resolution + dead-link removal + weak-source pruning.
 async function postprocessArticle(markdown, { verbose = false } = {}) {
   let out = cleanGroundingArtifacts(markdown);
   out = fixCommonTypos(out);
+  out = fixDoublePunctuation(out);
+  out = removeDuplicateTitleHeading(out);
   out = await resolveVertexRedirects(out, { verbose });
   out = stripDeadVertexRedirects(out, { verbose });
+  out = stripWeakSources(out, { verbose });
   return out;
 }
 
 module.exports = {
   cleanGroundingArtifacts,
   fixCommonTypos,
+  fixDoublePunctuation,
+  removeDuplicateTitleHeading,
   resolveRedirectUrl,
   resolveVertexRedirects,
   stripDeadVertexRedirects,
+  stripWeakSources,
+  isWeakSourceUrl,
+  WEAK_SOURCE_DOMAINS,
   postprocessArticle,
 };
 

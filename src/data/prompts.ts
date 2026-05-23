@@ -430,4 +430,96 @@ Sua revisão deve cobrir os seguintes pontos:
 Apresente o feedback de forma clara, utilizando marcadores, explicando a razão por trás de cada sugestão e, se possível, forneça exemplos de como a mudança pode ser implementada.`,
     tags: ['revisão', 'código', 'otimização', 'melhores-práticas'],
   },
+  {
+    id: 'ai-agente-pesquisa',
+    title: 'Agente de Pesquisa Autônomo com IA',
+    category: 'IA & Automação',
+    description: 'Cria um plano de pesquisa detalhado e executa a busca de informações sobre um tópico específico, simulando um agente autônomo de IA.',
+    template: `Atue como um Agente de Pesquisa com IA. Sua tarefa é elaborar e executar um plano de pesquisa sobre o seguinte tópico: "[Tópico da Pesquisa]".
+
+Objetivo da Pesquisa: [Qual informação específica você busca ou qual problema quer resolver com esta pesquisa? Ex: "Entender o mercado de IA no Brasil", "Analisar as tendências de consumo da Geração Z".]
+Público-alvo da informação (quem vai ler): [Gerente, cliente, colega, público geral, investidor]
+Fontes preferenciais (se houver): [Artigos acadêmicos, notícias de mercado, blogs técnicos, relatórios de indústria, entrevistas, pesquisas de opinião. Se não souber, deixe em branco.]
+Restrições ou pontos de atenção: [Ex: Evitar fontes não verificadas, focar em dados dos últimos 2 anos, considerar apenas o mercado brasileiro, ignorar opiniões pessoais.]
+Formato de saída desejado: [Resumo executivo, lista de pontos-chave, análise comparativa, relatório completo, tabela de dados, apresentação de slides (esqueleto).]
+
+Passos que você deve seguir:
+1.  **Planejamento**: Apresente um plano de pesquisa detalhado, incluindo palavras-chave, possíveis fontes e a estrutura do relatório final.
+2.  **Execução (Simulada)**: Com base no plano, "simule" a pesquisa, apresentando os principais achados e dados relevantes que você encontraria.
+3.  **Síntese**: Organize as informações coletadas no formato de saída desejado, destacando os insights mais importantes e respondendo ao objetivo da pesquisa.
+
+Inicie o plano de pesquisa.`,
+    tags: ['Pesquisa', 'Automação', 'Agente IA', 'Informação'],
+  },
+  {
+    id: 'negocios-analise-cenarios',
+    title: 'Análise de Cenários para Tomada de Decisão',
+    category: 'Negócios',
+    description: 'Ajuda a analisar uma decisão de negócio complexa, explorando diferentes cenários, seus riscos e oportunidades, com base em dados e premissas fornecidas.',
+    template: `Atue como um consultor estratégico especializado em análise de cenários. Estou enfrentando uma decisão importante e preciso explorar suas implicações em diferentes contextos.
+
+A Decisão em Questão: [Descreva a decisão que precisa ser tomada, por exemplo: "Lançar um novo produto X no mercado Y", "Expandir para uma nova região Z", "Adotar uma nova tecnologia A", "Alterar o modelo de preços B".]
+Objetivo Principal: [Qual resultado você espera alcançar com a decisão? Ex: "Aumentar faturamento em 20%", "Reduzir custos operacionais em 15%", "Aumentar participação de mercado em 5%", "Melhorar a satisfação do cliente".]
+Fatores Relevantes: [Liste os fatores mais importantes que influenciam a decisão e seus resultados. Ex: "Custo de matéria-prima", "Taxa de juros", "Regulamentação governamental", "Comportamento do consumidor", "Ações da concorrência", "Avanços tecnológicos".]
+Dados e Premissas Atuais: [Forneça quaisquer dados ou premissas importantes que você já tenha. Ex: "Custo atual de produção é R$ X", "Crescimento de mercado esperado de Y% ao ano", "Budget disponível de R$ Z", "Nosso market share atual é de K%".]
+Cenários a serem explorados: [Liste os tipos de cenários que você gostaria de analisar. Ex: "Otimista", "Realista", "Pessimista", "Cenário de recessão econômica", "Cenário de alta concorrência". Se não souber, pode pedir para a IA sugerir.]
+
+Com base nestas informações, para cada cenário, eu preciso que você:
+1.  Descreva o cenário em termos de como os fatores relevantes podem se comportar.
+2.  Identifique os riscos e desafios associados à decisão dentro desse cenário.
+3.  Identifique as oportunidades e potenciais benefícios.
+4.  Sugira ações estratégicas ou planos de mitigação/contingência para cada cenário.
+5.  Apresente um resumo comparativo dos cenários, destacando os prós e contras de cada um em relação à decisão.`,
+    tags: ['Decisão', 'Estratégia', 'Análise', 'Negócios'],
+  },
+  {
+    id: 'produtividade-workflow-optimizer',
+    title: 'Otimizador de Fluxo de Trabalho (Workflow)',
+    category: 'Produtividade',
+    description: 'Analisa seu fluxo de trabalho atual (pessoal ou de equipe) e sugere melhorias, automações e ferramentas para aumentar a eficiência e reduzir gargalos.',
+    template: `Atue como um especialista em otimização de processos e automação. Meu objetivo é melhorar a eficiência de um fluxo de trabalho específico.
+
+Descreva o fluxo de trabalho atual:
+[Liste as etapas do fluxo de trabalho em ordem cronológica. Ex:
+1.  Receber solicitação de cliente por e-mail (Gmail).
+2.  Classificar solicitação (tipo A, B ou C) e inserir em planilha (Excel).
+3.  Atribuir a membro da equipe X ou Y (Trello).
+4.  Membro da equipe executa tarefa e atualiza status no Trello.
+5.  Revisão do gerente, que envia feedback por Slack.
+6.  Enviar feedback final e status ao cliente por e-mail.]
+
+Ferramentas e sistemas atualmente utilizados: [Ex: Gmail, Trello, Slack, Planilha Excel, CRM, Software ERP, Asana, Monday.com]
+Principais problemas ou gargalos observados: [Ex: Demora na classificação, muitas interrupções por mensagens, tarefas manuais repetitivas, falta de comunicação entre as etapas, atrasos nas revisões, erros de digitação.]
+Objetivo da otimização: [Ex: Reduzir tempo de execução em X%, diminuir erros em Y%, liberar tempo da equipe para tarefas mais estratégicas, melhorar a experiência do cliente, aumentar a capacidade de processamento.]
+Restrições ou recursos disponíveis: [Ex: Budget limitado para novas ferramentas (máx. R$500/mês), equipe não tem tempo para treinamento complexo, integração com sistemas existentes é prioritária, preferência por ferramentas de código aberto.]
+
+Com base nas informações acima, por favor:
+1.  Identifique os 3 a 5 pontos mais críticos para otimização no fluxo de trabalho.
+2.  Para cada ponto, sugira melhorias específicas, detalhando como elas poderiam ser implementadas (ex: mudança de processo, adoção de uma nova rotina).
+3.  Proponha ferramentas ou automações de IA/software que poderiam ser integradas para aumentar a eficiência, justificando o porquê.
+4.  Estime o potencial impacto dessas melhorias no objetivo da otimização (ex: "redução de X% no tempo da etapa Y").
+5.  Apresente um plano de ação gradual para implementação das mudanças, com prioridades.`,
+    tags: ['Eficiência', 'Automação', 'Processos', 'Otimização'],
+  },
+  {
+    id: 'marketing-tendencias-mercado',
+    title: 'Gerador de Insights de Tendências de Mercado',
+    category: 'Marketing',
+    description: 'Identifica e analisa tendências emergentes em um setor específico, fornecendo insights sobre oportunidades e ameaças para seu negócio ou produto.',
+    template: `Atue como um analista de tendências de mercado com IA. Sua tarefa é pesquisar e gerar insights sobre tendências emergentes que afetam o seguinte setor: "[Setor ou nicho de mercado]".
+
+Produto/Serviço Específico (se houver): [Se você tem um produto ou serviço em mente, mencione-o. Ex: "Software de gestão para pequenas empresas", "Alimentos plant-based", "Tecnologia wearable para saúde", "Plataformas de educação a distância".]
+Período de Análise: [Ex: Próximos 1-3 anos, 2026-2030, tendências atuais.]
+Objetivo da Análise: [Ex: "Identificar novas oportunidades de produto", "Entender o comportamento do consumidor", "Prever mudanças na concorrência", "Validar uma nova estratégia de marketing", "Avaliar o impacto de novas regulamentações".]
+Geografia de interesse: [Ex: Brasil, América Latina, Global, Cidades específicas como São Paulo, Rio de Janeiro.]
+Quais aspectos focar: [Ex: Tecnológicos, sociais, econômicos, ambientais, regulatórios, culturais, demográficos.]
+
+Com base nestas informações, por favor, realize as seguintes análises:
+1.  **Identificação de Tendências**: Identifique as 3 a 5 principais tendências emergentes no setor, com uma breve descrição de cada uma.
+2.  **Impacto no Mercado e Consumidores**: Para cada tendência, explique seu impacto potencial no mercado (oferta, demanda, concorrência) e nos comportamentos dos consumidores.
+3.  **Oportunidades**: Destaque oportunidades concretas que essas tendências podem gerar para um negócio ou produto como o meu (ou para o setor em geral, se não houver um produto específico).
+4.  **Ameaças e Desafios**: Sinalize possíveis ameaças ou desafios que essas tendências podem apresentar, incluindo riscos competitivos ou operacionais.
+5.  **Recomendações Estratégicas**: Sugira ações estratégicas ou adaptações que um negócio poderia considerar para capitalizar as oportunidades ou mitigar as ameaças.`,
+    tags: ['Marketing', 'Tendências', 'Mercado', 'Estratégia'],
+  },,
 ];

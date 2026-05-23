@@ -11,7 +11,51 @@ export interface ChangelogEntry {
   modelId?: string;
 }
 
-export const CHANGELOG: ChangelogEntry[] = [
+export const CHANGELOG: ChangelogEntry[
+  {
+    id: 'google-co-scientist-2026',
+    date: '2026-05',
+    title: 'Co-Scientist, um parceiro de IA multi-agente para pesquisa, lançado',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Google DeepMind lançou o Co-Scientist, um parceiro de IA multi-agente para acelerar a pesquisa científica, oferecendo insights e ferramentas experimentais.',
+    highlights: [
+      'Parceiro de IA multi-agente focado em pesquisa científica.',
+      'Acelera a descoberta científica com ferramentas experimentais para insights de literatura, geração de hipóteses e descoberta computacional.',
+      'Anunciado em maio de 2026 como parte das inovações de IA para a ciência.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'anthropic-agentes-servicos-financeiros-2026',
+    date: '2026-05',
+    title: 'Anthropic lança Agentes para Serviços Financeiros',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Anthropic lançou dez modelos de agentes prontos para uso, projetados para automatizar tarefas demoradas no setor de serviços financeiros, utilizando modelos Claude.',
+    highlights: [
+      'Dez modelos de agentes pré-configurados para o setor financeiro.',
+      'Automatiza tarefas como criação de pitchbooks, triagem de arquivos KYC e fechamento contábil.',
+      'Disponível como plugins no Claude Cowork e Claude Code, e como cookbooks para Claude Managed Agents.',
+      'Potencializado pelo Claude Opus 4.7, com desempenho líder em tarefas financeiras.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-imagine-1-0-2026',
+    date: '2026-05',
+    title: 'xAI lança Grok Imagine 1.0 para geração de vídeo',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'xAI lançou o Grok Imagine 1.0, um modelo de IA focado na geração de vídeo a partir de texto, que já está disponível.',
+    highlights: [
+      'Primeiro modelo de geração de vídeo da xAI.',
+      'Capaz de gerar e editar vídeos a partir de prompts de texto.',
+      'Introduz o API Grok Imagine Quality Mode para maior realismo e controle criativo.',
+    ],
+    impact: 'Médio',
+  },,
+  ] = [
   {
     id: 'gemini-3-1-flash-lite-2026',
     date: '2026-05',

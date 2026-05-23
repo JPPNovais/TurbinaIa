@@ -27,6 +27,7 @@ try {
 }
 
 const { GoogleGenAI } = require('@google/genai');
+const { postprocessArticle } = require('./article-postprocess');
 
 const apiKey = process.env.GEMINI_API_KEY;
 
@@ -320,6 +321,15 @@ Você tem acesso à pesquisa Google em tempo real E ao conteúdo real extraído 
 - Quando o mesmo fato aparecer em 2 ou mais fontes, indique o cruzamento: "tanto a [TechCrunch](URL) quanto a [Reuters](URL) confirmam que..."
 - Ao final, inclua "## Fontes e Referências" listando todos os links no formato: - [Título](URL)
 
+## PROIBIÇÕES ABSOLUTAS NO TEXTO PUBLICADO
+
+Estes padrões NÃO podem aparecer no Markdown final em nenhuma hipótese — eles são artefatos internos da ferramenta de grounding e quebram a confiança do leitor:
+
+- **NUNCA escreva marcadores tipo \`[cite: 1, 5, 23]\`, \`[cite: 27]\` ou similares.** Se quiser indicar a fonte, use sempre um link Markdown completo: \`[nome da fonte](URL)\`.
+- **NUNCA escreva \`[Fonte: Nome do Veículo]\` como anotação seca.** Em vez disso, transforme em link inline: \`segundo a [Nome do Veículo](URL)\`.
+- **NUNCA use URLs intermediárias** do tipo \`vertexaisearch.cloud.google.com/grounding-api-redirect/...\`. Sempre use a URL canônica final do site original (ex.: \`https://www.reuters.com/technology/...\`, \`https://blog.google/...\`).
+- Se você não tem a URL canônica de uma fonte, **não inclua a citação** — prefira omitir o link a deixar um marcador interno visível.
+
 ## FORMATO DO ARQUIVO
 
 Retorne APENAS o Markdown cru com frontmatter YAML no topo. Sem blocos de código envolvendo o arquivo inteiro.
@@ -527,6 +537,11 @@ Escreva um artigo longo (mínimo de 1000 palavras), com profundidade jornalísti
     if (!fs.existsSync(articlesDir)) {
       fs.mkdirSync(articlesDir, { recursive: true });
     }
+
+    // Strip Gemini grounding artifacts ([cite:], [Fonte:]), fix common typos,
+    // and resolve vertexaisearch.cloud.google.com redirects to canonical URLs.
+    console.log('🧼 Pós-processando artigo (limpeza + resolução de redirects)...');
+    cleanContent = await postprocessArticle(cleanContent, { verbose: true });
 
     const slug = slugify(titleVal);
     const filePath = path.join(articlesDir, `${slug}.md`);

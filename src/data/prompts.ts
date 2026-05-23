@@ -289,4 +289,145 @@ export const PROMPTS: Prompt[] = [
     template: 'Ajude-me a criar um orçamento pessoal mensal e estratégias para melhorar minhas finanças.\n\n**Renda mensal líquida:** R$ [Valor]\n\n**Gastos fixos mensais:**\n- Moradia (aluguel/financiamento): R$ [Valor]\n- Transporte: R$ [Valor]\n- Alimentação: R$ [Valor]\n- Planos (saúde, telefone, streaming): R$ [Valor]\n- Outros: R$ [Valor]\n\n**Gastos variáveis estimados:**\n- Lazer: R$ [Valor]\n- Compras: R$ [Valor]\n- Outros: R$ [Valor]\n\n**Objetivo financeiro:** [Ex: Criar reserva de emergência de 6 meses, Quitar dívida de R$ X em Y meses, Investir R$ X por mês]\n\nCom base nisso:\n1. Calcule o balanço atual (receita - despesas)\n2. Aplique a regra 50-30-20 e compare com minha realidade\n3. Aponte os 3 maiores cortes possíveis\n4. Monte um plano de ação de 3 meses para atingir meu objetivo',
     tags: ['Orçamento', 'Finanças Pessoais', 'Economia'],
   },
+  {
+    id: 'ai-conteudo-multiformato',
+    title: 'Gerador de Conteúdo Multiformato com IA',
+    category: 'IA & Automação',
+    description: 'Reúna um conteúdo principal e gere automaticamente variações otimizadas para diferentes plataformas, economizando tempo na criação.',
+    template: `Você é um especialista em reaproveitamento de conteúdo e criação para múltiplas plataformas. Seu objetivo é pegar um conteúdo base e transformá-lo em formatos otimizados para diferentes canais, garantindo coerência na mensagem e adaptação ao público e características de cada plataforma.
+
+O conteúdo base é:
+"""
+[Conteúdo Principal - Texto do artigo, script de vídeo, resumo de podcast, etc.]
+"""
+
+As plataformas desejadas são:
+[Lista de plataformas, ex: LinkedIn, Instagram (stories e feed), Twitter/X (thread), E-mail Marketing, TikTok, YouTube (shorts), Blog post resumido]
+
+Público-alvo principal: [Público-alvo geral do conteúdo]
+Tom de voz desejado: [Ex: Formal, informal, inspirador, educativo, divertido, profissional]
+
+Para cada plataforma listada, crie:
+1.  **LinkedIn Post:** Um post profissional e conciso, com foco em valor e engajamento, idealmente com uma pergunta ou CTA. Inclua 2-3 hashtags relevantes.
+2.  **Instagram Post (Carrossel ou Imagem Única):**
+    *   Sugestão de título/gancho visual para a primeira imagem.
+    *   Legenda com no máximo 2200 caracteres, quebre em parágrafos curtos, utilize emojis relevantes e inclua uma CTA clara.
+    *   Liste 5-8 hashtags populares e específicas.
+3.  **Twitter/X Thread:** Uma sequência de 3-5 tweets que desdobra o conteúdo principal, com ganchos para manter o interesse, utilizando linguagem concisa e com CTAs/perguntas.
+4.  **Email Marketing (segmento de newsletter):** Um trecho de 100-150 palavras que resume o conteúdo e convida o leitor a saber mais, com um título chamativo e um CTA para a fonte original.
+
+Formate a saída de forma clara, separando o conteúdo por plataforma.`,
+    tags: ['reaproveitamento', 'conteúdo', 'automação', 'marketing'],
+  },
+  {
+    id: 'education-plano-estudo-personalizado',
+    title: 'Criador de Plano de Estudo Personalizado',
+    category: 'Educação',
+    description: 'Obtenha um plano de estudo estruturado e adaptado aos seus objetivos e tempo disponível para aprender qualquer tema.',
+    template: `Você é um tutor inteligente e organizador de planos de estudo personalizado. Seu objetivo é criar um plano de estudo semanal estruturado e eficaz para [seu nome], com base nas informações fornecidas. O plano deve ser realista, abrangente e focado em resultados.
+
+Informações do aluno:
+*   **Nome:** [Seu nome]
+*   **Tópico/Matéria a ser estudada:** [Ex: Machine Learning para iniciantes, Marketing Digital Avançado, História do Brasil Colônia, Inglês para negócios]
+*   **Objetivo de aprendizagem:** [Ex: Compreender os conceitos básicos de redes neurais, ser capaz de criar e otimizar campanhas de Google Ads, passar na prova de certificação A1 de inglês, dominar o uso de SQL para análise de dados]
+*   **Conhecimento prévio sobre o tópico:** [Ex: Nenhum, básico, intermediário, já tenho alguma experiência]
+*   **Tempo disponível por dia (média):** [Ex: 1 hora, 2 horas e 30 minutos, 45 minutos]
+*   **Dias da semana preferenciais para estudar:** [Ex: Segunda a Sexta, Fins de semana, Terças e Quintas à noite]
+*   **Recursos preferenciais (se houver):** [Ex: Vídeos no YouTube, artigos, livros didáticos, cursos online (mencionar plataforma), exercícios práticos]
+*   **Dificuldades ou preferências de aprendizado:** [Ex: Prefiro aprender com exemplos práticos, tenho dificuldade em memorizar datas, preciso de pausas frequentes, gosto de mapas mentais]
+
+Com base nessas informações, crie um plano de estudo semanal detalhado que inclua:
+
+1.  **Visão Geral do Objetivo:** Reafirme o objetivo principal e como o plano ajudará a alcançá-lo.
+2.  **Estrutura Semanal:** Divida o conteúdo em módulos ou tópicos menores, distribuídos pelos dias de estudo.
+3.  **Sugestões de Atividades por Dia:** Para cada dia de estudo, liste tarefas específicas (ex: "Assistir aulas X e Y do curso", "Ler capítulos 1-3 do livro", "Fazer exercícios do módulo Z", "Revisar anotações").
+4.  **Sugestões de Recursos:** Indique tipos de recursos (e se possível, exemplos genéricos ou dicas de onde encontrar) para cada tarefa.
+5.  **Dicas de Produtividade/Estudo:** Inclua sugestões personalizadas com base nas dificuldades ou preferências mencionadas.
+6.  **Marco/Revisão Semanal:** Proponha um pequeno resumo ou teste no final da semana para consolidar o aprendizado.
+
+Formate a saída de forma clara, usando títulos e marcadores para facilitar a leitura.`,
+    tags: ['aprendizagem', 'personalizado', 'autodesenvolvimento', 'habilidades'],
+  },
+  {
+    id: 'finance-planejador-metas-ia',
+    title: 'Planejador de Metas Financeiras com Cenários',
+    category: 'Finanças',
+    description: 'Defina uma meta financeira e receba um plano de ação detalhado, explorando diferentes cenários para atingir seu objetivo.',
+    template: `Você é um consultor financeiro com IA, especializado em planejamento e análise de cenários. Seu objetivo é ajudar o usuário a criar um plano realista para atingir uma meta financeira específica, considerando suas condições atuais e projetando diferentes cenários.
+
+Informações para o planejamento:
+*   **Meta Financeira:** [Ex: Comprar um carro de R$80.000, aposentar-se com R$5.000 mensais em 20 anos, dar entrada em um imóvel de R$300.000 em 5 anos, viajar para a Europa em 2 anos com R$20.000]
+*   **Valor Total Necessário (se aplicável):** [Ex: R$80.000 (se a meta for um carro, por exemplo)]
+*   **Prazo Desejado:** [Ex: 3 anos, 18 meses, 20 anos]
+*   **Economia Mensal Atual/Disponível:** [Ex: R$500, R$1.200, R$200]
+*   **Valor já economizado para a meta (se houver):** [Ex: R$10.000, R$0]
+*   **Renda Mensal Total:** [Ex: R$4.500]
+*   **Despesas Mensais Fixas:** [Ex: R$2.000]
+*   **Despesas Mensais Variáveis:** [Ex: R$1.000]
+*   **Nível de Tolerância a Risco (para investimentos):** [Ex: Conservador, Moderado, Arrojado]
+*   **Inflação Média Anual Estimada (Brasil):** [Ex: 4% (use um valor realista para 2026 e ajuste se necessário)]
+*   **Expectativa de Rendimento Anual Bruto (antes de impostos) de Investimento (se houver):** [Ex: 8% para conservador, 12% para moderado, 18% para arrojado - ajuste conforme cenário de 2026 e tolerância a risco]
+
+Com base nessas informações, elabore um plano financeiro que inclua:
+
+1.  **Resumo da Meta:** Reafirme a meta e o prazo.
+2.  **Análise de Viabilidade Inicial:** Calcule se a economia mensal atual é suficiente para atingir a meta no prazo desejado, sem considerar rendimentos.
+3.  **Plano de Ação Sugerido:**
+    *   **Economia Mensal Recomendada:** Qual seria o valor ideal para economizar mensalmente.
+    *   **Sugestões de Corte de Gastos/Aumento de Renda:** Ideias práticas para atingir a economia recomendada.
+    *   **Sugestão de Investimento:** Recomende tipos de investimento alinhados com a tolerância a risco e o prazo (ex: CDB, Tesouro Direto, Fundos de Investimento, Ações) e uma estimativa de rendimento líquido anual.
+4.  **Cenários Projetados (considerando rendimentos):**
+    *   **Cenário 1: Otimista:** Com aumento de [ex: 20%] na economia mensal e rendimento anual bruto um pouco acima da expectativa [ex: +1%]. Calcule o novo prazo ou o valor final acumulado.
+    *   **Cenário 2: Base:** Com a economia mensal sugerida e a expectativa de rendimento anual bruto. Detalhe o cronograma de acúmulo e o valor final.
+    *   **Cenário 3: Pessimista:** Com diminuição de [ex: 10%] na economia mensal e rendimento anual bruto um pouco abaixo da expectativa [ex: -1%]. Calcule o novo prazo ou o valor final acumulado.
+5.  **Próximos Passos e Monitoramento:** Dicas para acompanhar o progresso e ajustar o plano.
+
+Use tabelas ou listas para apresentar os cenários de forma clara. Inclua a fórmula básica para cálculo de juros compostos para transparência.`,
+    tags: ['investimento', 'poupança', 'planejamento', 'metas'],
+  },
+  {
+    id: 'dev-code-review-assistant',
+    title: 'Assistente de Revisão de Código com IA',
+    category: 'Desenvolvimento',
+    description: 'Obtenha feedback detalhado sobre seu código, incluindo sugestões de melhoria, otimização e identificação de potenciais problemas.',
+    template: `Você é um engenheiro de software experiente e um revisor de código meticuloso. Sua tarefa é analisar o código fornecido abaixo e oferecer um feedback construtivo e detalhado, focado em melhorias, otimização, segurança, legibilidade e conformidade com boas práticas.
+
+Informações para a revisão:
+*   **Linguagem de Programação:** [Ex: Python, JavaScript, Java, C#, Go, PHP, TypeScript]
+*   **Contexto/Propósito do Código:** [Ex: Uma API REST para gerenciamento de usuários, um script para processamento de dados, um componente de UI em React, uma função de validação de formulário]
+*   **Problemas/Dúvidas Específicas (opcional):** [Ex: "Estou preocupado com a performance desta parte", "Há alguma vulnerabilidade aqui?", "Como posso deixar este código mais modular?"]
+*   **Boas Práticas a Seguir (opcional):** [Ex: Padrões de projeto SOLID, Clean Code, Test-Driven Development (TDD)]
+
+O código a ser revisado é:
+\`\`\`[Linguagem de Programação]
+[Cole o código aqui]
+\`\`\`
+
+Sua revisão deve cobrir os seguintes pontos:
+
+1.  **Melhorias de Legibilidade e Manutenibilidade:**
+    *   Nomenclatura de variáveis, funções e classes.
+    *   Comentários e documentação (necessidade, clareza).
+    *   Estrutura do código, modularidade e organização.
+    *   Uso de padrões de projeto (se aplicável).
+2.  **Otimização de Performance:**
+    *   Identificação de gargalos ou operações custosas.
+    *   Sugestões para algoritmos mais eficientes ou estruturas de dados.
+3.  **Segurança e Tratamento de Erros:**
+    *   Potenciais vulnerabilidades (ex: injeção de SQL, XSS, exposição de dados sensíveis).
+    *   Manejo de exceções e erros (robustez do código).
+    *   Validação de entrada de dados.
+4.  **Conformidade com Boas Práticas da Linguagem:**
+    *   Idiomaticidades da linguagem.
+    *   Uso correto de recursos e bibliotecas padrão.
+5.  **Testabilidade:**
+    *   Sugestões para tornar o código mais fácil de testar unitariamente.
+6.  **Sugestões de Refatoração:**
+    *   Pontos onde o código pode ser simplificado ou organizado de forma mais elegante.
+7.  **Respostas a Dúvidas Específicas:**
+    *   Aborde qualquer problema ou dúvida que o usuário tenha levantado.
+
+Apresente o feedback de forma clara, utilizando marcadores, explicando a razão por trás de cada sugestão e, se possível, forneça exemplos de como a mudança pode ser implementada.`,
+    tags: ['revisão', 'código', 'otimização', 'melhores-práticas'],
+  },,
 ];

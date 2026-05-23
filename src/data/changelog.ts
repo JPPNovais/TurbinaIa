@@ -11,7 +11,106 @@ export interface ChangelogEntry {
   modelId?: string;
 }
 
-export const CHANGELOG: ChangelogEntry[] = [
+export const CHANGELOG: ChangelogEntry[
+  {
+    id: 'gemini-3-1-flash-lite-2026',
+    date: '2026-05',
+    title: 'Gemini 3.1 Flash Lite lançado',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Google lançou Gemini 3.1 Flash Lite, uma variante leve do Gemini 3.1.',
+    highlights: [
+      'Variante leve do Gemini 3.1.',
+      'Otimizado para eficiência e como uma opção leve do Gemini 3.1.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'gemini-spark-2026',
+    date: '2026-05',
+    title: 'Gemini Spark lançado para inferência on-device',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Google lançou Gemini Spark, um novo modelo pequeno otimizado para inferência em dispositivos Android e ChromeOS, sem a necessidade de conexão de rede.',
+    highlights: [
+      'Otimizado para inferência on-device em Android e ChromeOS.',
+      'Opera localmente sem conexão de rede.',
+      'Introduz o Adaptive Context, que ajusta o processamento com base na memória do dispositivo.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'gemini-for-science-2026',
+    date: '2026-05',
+    title: 'Gemini for Science lançado para pesquisa científica',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Google lançou Gemini for Science, uma coleção de ferramentas experimentais de pesquisa em IA no Google Labs e novas Science Skills no Google Antigravity, expandindo o trabalho agentico de IA para a descoberta científica.',
+    highlights: [
+      'Inclui ferramentas experimentais para insights de literatura, geração de hipóteses e descoberta computacional.',
+      'Integra insights de mais de 30 bancos de dados de ciências da vida.',
+      'Acesso gradual a partir de maio de 2026 através do Google Labs.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-gpt-5-5-instant-2026',
+    date: '2026-05',
+    title: 'GPT-5.5 Instant se torna o padrão do ChatGPT',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'OpenAI tornou GPT-5.5 Instant o novo modelo padrão para o ChatGPT em todas as camadas, substituindo o GPT-5.3 Instant e focando em respostas mais rápidas e precisas.',
+    highlights: [
+      'Novo modelo padrão para ChatGPT em camadas gratuitas e pagas.',
+      'Produz 52% menos alucinações que seu predecessor.',
+      'Oferece respostas mais rápidas, concisas e precisas para tarefas cotidianas.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-4-3-2026',
+    date: '2026-05',
+    title: 'xAI lança Grok 4.3',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'xAI lançou Grok 4.3, um modelo de fronteira mais inteligente e econômico, com uma janela de contexto de 1 milhão de tokens e entrada de vídeo nativa.',
+    highlights: [
+      'Modelo de fronteira mais inteligente e econômico.',
+      'Janela de contexto de 1 milhão de tokens e entrada de vídeo nativa.',
+      'Pontuação de 53 no Intelligence Index e ganhou mais de 300 pontos Elo no GDPval-AA em comparação com Grok 4.20.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-build-2026',
+    date: '2026-05',
+    title: 'xAI lança Grok Build, agente de codificação',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'xAI lançou Grok Build, seu primeiro agente de codificação de IA em beta, disponível para assinantes SuperGrok Heavy para engenharia de software profissional e trabalho de codificação complexo.',
+    highlights: [
+      'Primeiro agente de codificação de IA da xAI.',
+      'Projetado para engenharia de software profissional e trabalho de codificação complexo.',
+      'Possui um "plan mode" para aprovação de planos e suporta plugins e fluxos de trabalho existentes.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'cohere-command-a-plus-2026',
+    date: '2026-05',
+    title: 'Cohere lança Command A+, modelo open-source para infraestrutura soberana',
+    developer: 'Cohere',
+    category: 'Lançamento',
+    description: 'Cohere lançou Command A+, um poderoso modelo open-source Mixture-of-Experts (MoE) sob licença Apache 2.0, construído especificamente para infraestrutura crítica soberana e indústrias regulamentadas.',
+    highlights: [
+      'Modelo open-source Mixture-of-Experts (MoE) com licença Apache 2.0.',
+      'Otimizado para raciocínio, fluxos de trabalho agenticos, RAG, e processamento multimodal e multilíngue (suporta 48 idiomas).',
+      'Possui 218 bilhões de parâmetros totais com 25 bilhões de parâmetros ativos.',
+      'Oferece geração de citações nativas para rastreabilidade, crucial para indústrias regulamentadas.',
+    ],
+    impact: 'Alto',
+  },,
+  ] = [
   {
     id: 'gemini-3-5-flash-omni-2026',
     date: '2026-05',

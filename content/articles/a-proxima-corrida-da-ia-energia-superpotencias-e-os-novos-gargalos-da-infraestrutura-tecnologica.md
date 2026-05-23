@@ -3,11 +3,11 @@ title: "A Próxima Corrida da IA: Energia, Superpotências e os Novos Gargalos d
 description: "Explore como a demanda colossal por energia da IA está redefinindo a infraestrutura global e a ascensão do Brasil como polo estratégico de data centers sustentáveis."
 category: noticias
 tags:
- - Inteligência Artificial
- - Energia
- - Data Centers
- - Infraestrutura Tecnológica
- - Sustentabilidade
+  - Inteligência Artificial
+  - Energia
+  - Data Centers
+  - Infraestrutura Tecnológica
+  - Sustentabilidade
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-23"

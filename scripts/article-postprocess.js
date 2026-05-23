@@ -8,13 +8,15 @@ const http = require('http');
 //   [Fonte: Comex do Brasil]
 //   [Fonte: Comex do Brasil, cite: 10, 21]
 // These never refer to anything the reader can act on — strip them.
-// Safe vs Markdown links: real links are [text](url); these never have `(` right after `]`,
-// and we only match when the bracket starts with `cite`/`Fonte`/`Source`.
+//
+// IMPORTANT: do NOT touch legitimate Markdown links like `[Fonte: Nome](https://...)`.
+// We use a negative lookahead `(?!\()` to skip any bracket immediately followed by `(`.
+// Whitespace is only tidied before punctuation — never collapse runs of spaces,
+// which would destroy YAML indentation in the frontmatter.
 function cleanGroundingArtifacts(text) {
   return text
-    .replace(/\s*\[\s*(?:cite|Fonte|Source|Fontes|Sources)\b[^\]]*\]/gi, '')
-    .replace(/[ \t]+([.,;:!?])/g, '$1')  // tidy whitespace before punctuation
-    .replace(/[ \t]{2,}/g, ' ');
+    .replace(/\s*\[\s*(?:cite|Fonte|Source|Fontes|Sources)\b[^\]]*\](?!\()/gi, '')
+    .replace(/[ \t]+([.,;:!?])/g, '$1');
 }
 
 // Common Gemini PT-BR slips

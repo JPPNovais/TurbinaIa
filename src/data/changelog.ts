@@ -11,7 +11,7 @@ export interface ChangelogEntry {
   modelId?: string;
 }
 
-export const CHANGELOG: ChangelogEntry[
+export const CHANGELOG: ChangelogEntry[] = [
   {
     id: 'google-co-scientist-2026',
     date: '2026-05',
@@ -54,8 +54,7 @@ export const CHANGELOG: ChangelogEntry[
       'Introduz o API Grok Imagine Quality Mode para maior realismo e controle criativo.',
     ],
     impact: 'Médio',
-  },,
-  ] = [
+  },
   {
     id: 'gemini-3-1-flash-lite-2026',
     date: '2026-05',

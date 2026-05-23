@@ -444,5 +444,5 @@ export const GLOSSARIO: GlossarioTerm[] = [
     definition: 'É a prática de gerenciar e encadear múltiplos prompts e/ou interações com um ou mais modelos de IA para alcançar um objetivo complexo. Isso envolve a definição de fluxos de trabalho, condicionais e a integração de resultados de um prompt como entrada para o próximo, muitas vezes utilizando frameworks e ferramentas específicas para otimizar o processo e a coerência das respostas.',
     example: 'Para criar um relatório de mercado detalhado, um sistema pode usar orquestração de prompt: primeiro, um prompt para extrair dados brutos, depois outro para resumir os dados, um terceiro para analisar tendências e, finalmente, um quarto para gerar recomendações, encadeando os resultados de cada etapa.',
     relatedTerms: ['Prompt Engineering', 'Chain of Thought', 'Agente de IA', 'LangChain', 'Uso de Ferramentas'],
-  },,
+  },
 ];

@@ -21,6 +21,7 @@ try {
 }
 
 const { GoogleGenAI } = require('@google/genai');
+const { safeWriteDataFile } = require('./data-update-utils');
 const apiKey = process.env.GEMINI_API_KEY;
 
 if (!apiKey) {
@@ -195,13 +196,14 @@ Regras:
       return;
     }
 
-    const innerEntries = arrayText.slice(1, -1).trim();
+    // Strip any trailing comma from the model output to avoid `},,` when we add ours below.
+    const innerEntries = arrayText.slice(1, -1).trim().replace(/,\s*$/, '');
     const updatedContent =
       currentContent.slice(0, closingBracket) +
       '  ' + innerEntries + ',\n' +
       currentContent.slice(closingBracket);
 
-    fs.writeFileSync(filePath, updatedContent, 'utf8');
+    if (!safeWriteDataFile(fs, filePath, currentContent, updatedContent)) return;
     console.log(`✅ Glossário atualizado! ${newIds.length} novo(s) termo(s) adicionado(s).`);
     newIds.forEach(id => console.log(`   ✚ ${id}`));
 

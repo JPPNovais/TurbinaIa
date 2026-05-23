@@ -21,6 +21,7 @@ try {
 }
 
 const { GoogleGenAI } = require('@google/genai');
+const { safeWriteDataFile } = require('./data-update-utils');
 const apiKey = process.env.GEMINI_API_KEY;
 
 if (!apiKey) {
@@ -189,17 +190,19 @@ Regras:
       return;
     }
 
-    // Inject new entries at the start of the CHANGELOG array
-    const insertionPoint = currentContent.indexOf('export const CHANGELOG');
-    const arrayStart = currentContent.indexOf('[', insertionPoint);
-
-    if (arrayStart === -1) {
+    // Inject new entries at the start of the CHANGELOG array.
+    // Match the `[` that ACTUALLY opens the array (after `=`), not the `[` from
+    // the `ChangelogEntry[]` type annotation that comes earlier in the declaration.
+    const openerMatch = currentContent.match(/export\s+const\s+CHANGELOG\b[^=]*=\s*\[/);
+    if (!openerMatch) {
       console.error('❌ Não foi possível encontrar o array CHANGELOG no arquivo.');
       return;
     }
+    const arrayStart = openerMatch.index + openerMatch[0].length - 1; // index of the `[` itself
 
-    // Build new entries block (remove outer brackets, add indentation)
-    const innerEntries = arrayText.slice(1, -1).trim();
+    // Build new entries block. Strip any trailing comma from the model output so we don't
+    // accidentally emit `},,` when concatenated with the `,` separator below.
+    const innerEntries = arrayText.slice(1, -1).trim().replace(/,\s*$/, '');
     const updatedContent =
       currentContent.slice(0, arrayStart + 1) +
       '\n  ' +
@@ -207,7 +210,7 @@ Regras:
       ',\n  ' +
       currentContent.slice(arrayStart + 1).trimStart();
 
-    fs.writeFileSync(filePath, updatedContent, 'utf8');
+    if (!safeWriteDataFile(fs, filePath, currentContent, updatedContent)) return;
     console.log(`✅ Changelog atualizado! ${newEntryCount} novo(s) evento(s) adicionado(s).`);
     newIds.forEach(id => console.log(`   ✚ ${id}`));
 

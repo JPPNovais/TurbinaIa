@@ -521,5 +521,5 @@ Com base nestas informações, por favor, realize as seguintes análises:
 4.  **Ameaças e Desafios**: Sinalize possíveis ameaças ou desafios que essas tendências podem apresentar, incluindo riscos competitivos ou operacionais.
 5.  **Recomendações Estratégicas**: Sugira ações estratégicas ou adaptações que um negócio poderia considerar para capitalizar as oportunidades ou mitigar as ameaças.`,
     tags: ['Marketing', 'Tendências', 'Mercado', 'Estratégia'],
-  },,
+  },
 ];

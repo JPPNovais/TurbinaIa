@@ -445,4 +445,44 @@ export const GLOSSARIO: GlossarioTerm[] = [
     example: 'Para criar um relatório de mercado detalhado, um sistema pode usar orquestração de prompt: primeiro, um prompt para extrair dados brutos, depois outro para resumir os dados, um terceiro para analisar tendências e, finalmente, um quarto para gerar recomendações, encadeando os resultados de cada etapa.',
     relatedTerms: ['Prompt Engineering', 'Chain of Thought', 'Agente de IA', 'LangChain', 'Uso de Ferramentas'],
   },
+  {
+    id: 'mixture-of-experts',
+    term: 'Mixture of Experts (MoE)',
+    category: 'Modelos & Arquitetura',
+    definition: 'Uma técnica arquitetural em que um modelo de IA é composto por múltiplas sub-redes especializadas (chamadas "especialistas") e uma "rede de roteamento" (gating network) que decide qual ou quais especialistas devem processar uma determinada entrada. Isso permite que os modelos aumentem sua capacidade e número de parâmetros, ativando apenas um subconjunto deles para cada tarefa, o que melhora a eficiência computacional durante a inferência.',
+    example: 'Imagine um Large Language Model (LLM) que precisa responder a perguntas sobre culinária e programação. Um modelo MoE pode ter "especialistas" diferentes para cada área, e a rede de roteamento direcionaria a pergunta para o especialista mais adequado, ativando apenas os parâmetros necessários para aquela tarefa específica, em vez de todo o modelo.',
+    relatedTerms: ['LLM (Large Language Model)', 'Transformer', 'Parâmetro (Peso do Modelo)', 'Rede Neural Artificial']
+  },
+  {
+    id: 'guardrails-ia',
+    term: 'Guardrails de IA',
+    category: 'Segurança & Ética',
+    definition: 'Mecanismos e políticas que guiam e restringem o comportamento de sistemas de Inteligência Artificial, especialmente modelos generativos, para garantir que suas saídas sejam seguras, éticas, em conformidade com regulamentações e alinhadas aos valores organizacionais. Atuam como barreiras de proteção para prevenir falhas, usos indevidos e comportamentos indesejados.',
+    example: 'Um chatbot de atendimento ao cliente pode ter "guardrails" que o impedem de fornecer aconselhamento médico ou financeiro, ou de usar linguagem ofensiva, bloqueando ou modificando respostas que violariam essas regras predefinidas.',
+    relatedTerms: ['Alinhamento de IA (AI Alignment)', 'IA Responsável (Responsible AI)', 'Viés (Bias) em IA', 'Jailbreak']
+  },
+  {
+    id: 'dados-sinteticos',
+    term: 'Dados Sintéticos',
+    category: 'Treinamento',
+    definition: 'Informações geradas artificialmente por algoritmos e simulações de computador, que imitam as propriedades estatísticas e características dos dados do mundo real, mas sem conter observações concretas de pessoas ou eventos reais. São usados para treinar modelos de IA, testar sistemas, proteger a privacidade e superar a escassez de dados.',
+    example: 'Para treinar um carro autônomo, em vez de coletar milhões de horas de filmagens reais (que seriam caras e com pouca variedade de cenários de risco), podem-se gerar "dados sintéticos" que simulam diversas condições de direção, obstáculos e situações extremas.',
+    relatedTerms: ['Dataset (Conjunto de Dados)', 'IA Generativa', 'Pré-treinamento']
+  },
+  {
+    id: 'ia-neuro-simbolica',
+    term: 'IA Neuro-Simbólica',
+    category: 'Fundamentos',
+    definition: 'Uma abordagem híbrida que integra a capacidade de aprendizado estatístico de redes neurais (excelentes para reconhecimento de padrões) com o raciocínio estruturado e baseado em regras da IA simbólica (que lida com lógica e conhecimento explícito). O objetivo é criar sistemas de IA mais robustos, explicáveis e capazes de raciocinar de forma mais próxima à humana.',
+    example: 'Em diagnósticos médicos, um sistema de IA Neuro-Simbólica pode usar redes neurais para analisar imagens médicas e identificar padrões de doenças e, em seguida, aplicar regras lógicas e conhecimento médico explícito para inferir um diagnóstico e justificar sua decisão, oferecendo explicações claras para suas recomendações.',
+    relatedTerms: ['Rede Neural Artificial', 'Deep Learning (Aprendizado Profundo)', 'IA Explicável (XAI - Explainable AI)']
+  },
+  {
+    id: 'arquitetura-agentes',
+    term: 'Arquitetura de Agentes',
+    category: 'Ferramentas & APIs',
+    definition: 'Refere-se à estrutura e ao design de frameworks ou sistemas de IA agêntica, que definem como um ou múltiplos Agentes de IA tomam decisões, utilizam ferramentas, mantêm um estado (memória), se recuperam de erros e interagem com o ambiente ou entre si para perseguir objetivos complexos.',
+    example: 'Um "framework de agentes" pode definir como um agente de atendimento ao cliente decide qual ferramenta usar (um banco de dados para buscar informações do pedido, uma API para enviar um e-mail), como ele planeja uma sequência de ações e como se adapta se uma ferramenta falhar.',
+    relatedTerms: ['Agente de IA (AI Agent)', 'Orquestração de Agentes (Agent Orchestration)', 'Uso de Ferramentas (Tool Use)', 'Agente Autônomo', 'LangChain']
+  },
 ];

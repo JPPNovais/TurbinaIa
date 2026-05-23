@@ -40,6 +40,15 @@ function findStructuralBreakage(originalContent, updatedContent) {
     issues.push('declaração `XxxEntry[` quebrada — provavelmente o tipo foi confundido com o array');
   }
 
+  // 5. File must start with TypeScript code, not LLM prose. A valid .ts file opens with
+  //    `import`, `export`, `//`, `/*` or a directive — anything else (e.g. "I have completed
+  //    the search for...") means the LLM returned conversational text instead of code.
+  const head = updatedContent.replace(/^﻿/, '').trimStart();
+  if (!/^(import\b|export\b|\/\/|\/\*|"use |type\b|const\b|let\b|var\b|function\b|class\b|interface\b|enum\b)/.test(head)) {
+    const preview = head.split('\n')[0].slice(0, 80);
+    issues.push(`arquivo não começa com TypeScript válido (provavelmente prosa do LLM): "${preview}..."`);
+  }
+
   return issues;
 }
 

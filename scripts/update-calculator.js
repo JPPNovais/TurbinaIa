@@ -21,6 +21,7 @@ try {
 }
 
 const { GoogleGenAI } = require('@google/genai');
+const { safeWriteDataFile } = require('./data-update-utils');
 const apiKey = process.env.GEMINI_API_KEY;
 
 if (!apiKey) {
@@ -110,7 +111,7 @@ Instruções:
       updatedContent.includes('export interface CalculatorModel') &&
       updatedContent.includes('export const AI_MODELS')
     ) {
-      fs.writeFileSync(filePath, updatedContent, 'utf8');
+      if (!safeWriteDataFile(fs, filePath, currentContent, updatedContent)) return;
       console.log('✅ src/data/calculator-models.ts atualizado com preços em tempo real!');
     } else {
       console.error('❌ Resposta da IA não contém a estrutura esperada. Arquivo não alterado.');

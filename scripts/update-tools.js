@@ -21,6 +21,7 @@ try {
 }
 
 const { GoogleGenAI } = require('@google/genai');
+const { safeWriteDataFile } = require('./data-update-utils');
 const apiKey = process.env.GEMINI_API_KEY;
 
 if (!apiKey) {
@@ -165,7 +166,7 @@ interface AITool {
       const newToolCount = (updatedContent.match(/^\s*id:\s*'/gm) || []).length;
       const updatedCount = (updatedContent.match(/updatedAt:/g) || []).length;
 
-      fs.writeFileSync(filePath, updatedContent, 'utf8');
+      if (!safeWriteDataFile(fs, filePath, currentContent, updatedContent)) return;
 
       const addedCount = newToolCount - oldToolCount;
       console.log(`✅ Guia de Ferramentas atualizado!`);

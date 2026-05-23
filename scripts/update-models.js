@@ -25,6 +25,7 @@ try {
 }
 
 const { GoogleGenAI } = require('@google/genai');
+const { safeWriteDataFile } = require('./data-update-utils');
 const apiKey = process.env.GEMINI_API_KEY;
 
 if (!apiKey) {
@@ -104,15 +105,17 @@ Instruções:
     }));
     
     const updatedContent = cleanMarkdownResponse(response.text);
-    
-    // Safety check: make sure the response contains the export const aiModels and export interface AIModel
-    if (updatedContent.includes('export const aiModels') && updatedContent.includes('export interface AIModel')) {
-      fs.writeFileSync(filePath, updatedContent, 'utf8');
-      console.log('✅ Arquivo src/data/ai-models.ts atualizado com sucesso com dados em tempo real!');
-    } else {
-      console.error('❌ Erro: O código gerado pela IA não parece conter a estrutura correta.');
-      console.log('Resposta recebida:', updatedContent.substring(0, 500) + '...');
+
+    // Structural check: the response must contain the expected declarations AND not have
+    // any prose before/after them (which `safeWriteDataFile` enforces by checking the
+    // file opens with valid TypeScript and has no double commas / duplicate exports).
+    if (!updatedContent.includes('export const aiModels') || !updatedContent.includes('export interface AIModel')) {
+      console.error('❌ Erro: A resposta do LLM não contém `export const aiModels` ou `export interface AIModel`.');
+      console.log('Prévia:', updatedContent.substring(0, 500) + '...');
+      return;
     }
+    if (!safeWriteDataFile(fs, filePath, currentContent, updatedContent)) return;
+    console.log('✅ Arquivo src/data/ai-models.ts atualizado com sucesso com dados em tempo real!');
   } catch (error) {
     console.error('❌ Erro ao atualizar os modelos de IA:', error);
   }

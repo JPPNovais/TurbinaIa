@@ -13,6 +13,48 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-gpt-5-2026',
+    date: '2026-05',
+    title: 'OpenAI lança GPT-5 com acesso gradual estendido',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'OpenAI lançou o GPT-5 em março de 2026, com acesso gradual estendido a usuários Pro, Plus e desenvolvedores via API em maio de 2026, representando um salto significativo em capacidade de raciocínio.',
+    highlights: [
+      'Lançado em março de 2026, com acesso gradual aprimorado em maio para usuários Pro, Plus e via API.',
+      'Supera o GPT-4 em raciocínio complexo, permitindo a automação de tarefas mais sofisticadas.',
+      'Capaz de decompor problemas, considerar múltiplas perspectivas e validar conclusões antes de responder.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'mistral-large-3-2026',
+    date: '2026-05',
+    title: 'Mistral AI lança Mistral Large 3, modelo de IA soberano europeu',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'Mistral AI lançou o Mistral Large 3, um modelo de IA que se destaca pela conformidade com GDPR e o EU AI Act, focado em soberania de dados e capacidades multilíngues nativas.',
+    highlights: [
+      'Lançamento em 20 de maio de 2026, como alternativa europeia aos modelos de IA dos EUA.',
+      'Conformidade nativa com GDPR e EU AI Act, oferecendo soberania de dados.',
+      'Capacidades multilíngues nativas em mais de 80 idiomas com qualidade de Nível 1, incluindo português do Brasil.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-imagine-2-0-2026',
+    date: '2026-05',
+    title: 'xAI atualiza Grok Imagine para versão 2.0 com modo de qualidade',
+    developer: 'xAI',
+    category: 'Atualização',
+    description: 'xAI lançou o Grok Imagine 2.0, uma atualização com um novo Modo de Qualidade via API, oferecendo maior realismo, renderização de texto mais forte e melhor controle criativo para geração de imagens e vídeo.',
+    highlights: [
+      'Lançado em 6 de maio de 2026, aprimorando a versão anterior do Grok Imagine.',
+      'Inclui um Modo de Qualidade API para maior realismo e renderização de texto.',
+      'Oferece maior controle criativo na geração e edição de imagens e vídeos.',
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'google-co-scientist-2026',
     date: '2026-05',
     title: 'Co-Scientist, um parceiro de IA multi-agente para pesquisa, lançado',

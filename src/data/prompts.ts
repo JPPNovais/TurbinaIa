@@ -729,4 +729,144 @@ Por favor, elabore um plano acionável e personalizado para minha situação.`,
 Por favor, forneça uma análise de concorrência abrangente e acionável.`,
     tags: ['estratégia', 'concorrência', 'negócios', 'análise de mercado'],
   },
+  {
+    id: 'negocios-cold-email-hiperpersonalizado',
+    title: 'Cold Email Hiper-Personalizado com IA',
+    category: 'Negócios',
+    description: 'Crie um cold email que realmente se conecta com o prospect, usando insights específicos gerados por IA para personalizar a mensagem e aumentar a taxa de resposta.',
+    template: `Assuma o papel de um especialista em vendas B2B e IA, com profundo conhecimento em gatilhos mentais e personalização. Seu objetivo é criar um cold email altamente persuasivo e personalizado para um potencial cliente.
+
+Para isso, utilize as seguintes informações sobre o prospect e a sua empresa:
+
+**Informações do Prospect:**
+- Nome do Prospect: [Nome do Prospect]
+- Cargo do Prospect: [Cargo do Prospect]
+- Empresa do Prospect: [Empresa do Prospect]
+- Detalhe Específico do Prospect/Empresa (ex: postagem recente no LinkedIn sobre 'X', projeto inovador 'Y', notícia sobre 'Z', desafio comum do setor): [Detalhe Específico do Prospect/Empresa]
+
+**Informações sobre Seu Produto/Serviço:**
+- Seu Produto/Serviço: [Nome do Seu Produto/Serviço]
+- Principal Benefício que resolve o problema do prospect: [Principal Benefício do Seu Produto/Serviço]
+- Prova Social (opcional, ex: "Similar ao que fizemos para a empresa [Empresa Cliente], resultando em [Resultado]"): [Prova Social, se aplicável]
+- Call to Action (CTA) Desejado (ex: "Agendar uma rápida conversa de 15 minutos", "Demonstração gratuita", "Acesso a um estudo de caso"): [Call to Action Desejado]
+
+**Instruções:**
+1.  Comece o email referenciando diretamente o [Detalhe Específico do Prospect/Empresa], mostrando que você fez sua lição de casa e que a mensagem é relevante.
+2.  Conecte este detalhe com um problema ou desafio que o [Seu Produto/Serviço] pode resolver, de forma empática e sem ser excessivamente comercial.
+3.  Apresente brevemente o [Principal Benefício do Seu Produto/Serviço] como a solução para este desafio.
+4.  Inclua a [Prova Social] de forma concisa, se fornecida.
+5.  Finalize com um [Call to Action Desejado] claro e de baixo compromisso.
+6.  Use uma linguagem profissional, concisa e amigável.
+
+**Estrutura do Email:**
+- Assunto: Personalizado e intrigante, relacionado ao [Detalhe Específico do Prospect/Empresa].
+- Abertura: Reconhecimento e conexão imediata.
+- Corpo: Problema, solução (seu produto/serviço), benefício.
+- Prova Social (opcional).
+- Fechamento: CTA claro.
+
+Gere o email completo, incluindo uma linha de assunto persuasiva.`,
+    tags: ['vendas', 'prospecção', 'email marketing', 'personalização'],
+  },
+  {
+    id: 'ai-gerador-ideias-criativas',
+    title: 'Gerador de Ideias Criativas com IA',
+    category: 'IA & Automação',
+    description: 'Gere ideias inovadoras para qualquer desafio, projeto ou tópico, usando técnicas avançadas de brainstorming e criatividade assistida por IA.',
+    template: `Você é um facilitador de brainstorming criativo e um especialista em gerar ideias inovadoras, utilizando diversas técnicas de criatividade (ex: SCAMPER, associações forçadas, inversão).
+
+Seu objetivo é gerar uma lista de ideias criativas e práticas baseadas no [Tópico/Desafio Principal] e no [Objetivo do Brainstorming], considerando o [Público-alvo (se aplicável)].
+
+**Detalhes para a geração de ideias:**
+- Tópico/Desafio Principal: [Tópico/Desafio Principal (ex: "Como aumentar o engajamento na nossa comunidade online", "Ideias para um novo produto de bem-estar", "Soluções para reduzir o desperdício de alimentos")]
+- Objetivo do Brainstorming: [Objetivo do Brainstorming (ex: "Gerar 10 conceitos de produtos", "Desenvolver 5 estratégias de marketing inovadoras", "Encontrar 3 soluções para um problema específico")]
+- Público-alvo (se aplicável): [Público-alvo (ex: "Jovens adultos entre 18-25 anos", "Profissionais de marketing digital", "Famílias com crianças pequenas")]
+- Tipo de ideias desejadas (ex: marketing, produto, serviço, conteúdo, solução de problema, automação): [Tipo de ideias desejadas]
+- Restrições/Limitações (se houver, ex: "baixo orçamento", "uso de tecnologias existentes", "foco em sustentabilidade"): [Restrições/Limitações]
+- Número de ideias desejado: [Número de ideias desejado (ex: 5, 10, 15)]
+
+**Instruções:**
+1.  Aplique pelo menos duas técnicas de criatividade (que você pode citar brevemente) para expandir o escopo das ideias.
+2.  Gere o número de ideias solicitado, listando cada uma de forma clara e concisa.
+3.  Para cada ideia, forneça uma breve descrição e sugira como ela se alinha ao [Objetivo do Brainstorming] e às [Restrições/Limitações].
+4.  Certifique-se de que as ideias sejam relevantes para o [Público-alvo (se aplicável)].
+
+Apresente as ideias em um formato de lista numerada, com título e breve descrição para cada uma.`,
+    tags: ['brainstorming', 'inovação', 'criatividade', 'ideias'],
+  },
+  {
+    id: 'finance-simulador-cenarios',
+    title: 'Simulador de Cenários Financeiros Pessoais',
+    category: 'Finanças',
+    description: 'Explore o impacto de diferentes decisões financeiras (investimentos, dívidas, poupança) em seu futuro, analisando múltiplos cenários com projeções detalhadas.',
+    template: `Você é um planejador financeiro com IA, especializado em modelagem e simulação de cenários. Seu papel é analisar a situação financeira de um indivíduo e projetar o impacto de diferentes decisões e eventos em seu futuro financeiro.
+
+**Detalhes da Situação Financeira Atual:**
+- Renda Mensal Líquida: [Renda Mensal Líquida (ex: R$5.000)]
+- Despesas Mensais Fixas: [Despesas Mensais Fixas (ex: R$2.500)]
+- Despesas Mensais Variáveis: [Despesas Mensais Variáveis (ex: R$1.000)]
+- Poupança/Investimentos Atuais: [Valor de Poupança/Investimentos Atuais (ex: R$10.000 em um CDB, R$20.000 em ações)]
+- Dívidas Atuais (tipo, valor, juros, parcela mensal): [Dívidas Atuais (ex: Cartão de Crédito R$3.000, 10% a.m., R$300/mês; Financiamento Imobiliário R$200.000, 0.8% a.m., R$1.800/mês)]
+- Taxa de Retorno Média Esperada dos Investimentos (anual): [Taxa de Retorno Média Esperada (ex: 8% a.a.)]
+- Inflação Média Esperada (anual): [Inflação Média Esperada (ex: 4% a.a.)]
+
+**Objetivo Financeiro Principal:** [Objetivo Financeiro Principal (ex: "Aposentar-se em 20 anos com R$2.000.000", "Comprar um imóvel de R$500.000 em 5 anos", "Quitar todas as dívidas em 2 anos")]
+**Horizonte de Tempo da Simulação:** [Horizonte de Tempo (em anos, ex: 5, 10, 20)]
+
+**Cenários a Simular:**
+1.  **Cenário Base (Manutenção da Situação Atual):** Projeção mantendo as condições atuais.
+2.  **Cenário 1: [Descrição da decisão/evento do Cenário 1 (ex: "Aumento de 15% na renda em 1 ano e investimento de 50% do valor adicional", "Redução de despesas variáveis em R$500/mês", "Investimento extra de R$1.000/mês em um ativo com 10% a.a.")]**
+3.  **Cenário 2: [Descrição da decisão/evento do Cenário 2 (ex: "Corte de uma dívida com juros altos, redirecionando o pagamento para o objetivo", "Perda de 20% da renda por 6 meses", "Compra de um carro de R$80.000 com financiamento de R$1.500/mês")]**
+4.  **Cenário 3 (Opcional): [Descrição da decisão/evento do Cenário 3]**
+
+**Instruções:**
+1.  Para cada cenário, calcule e apresente uma projeção anual do patrimônio líquido, do fluxo de caixa e do progresso em relação ao [Objetivo Financeiro Principal] ao longo do [Horizonte de Tempo].
+2.  Descreva brevemente as premissas e os impactos de cada cenário.
+3.  Compare os resultados dos cenários, destacando os pontos fortes e fracos de cada abordagem em relação ao objetivo.
+4.  Forneça uma recomendação final, indicando o cenário mais favorável e as ações chave para alcançá-lo.
+
+Apresente os resultados de forma clara, utilizando tabelas ou listas para as projeções e texto explicativo para as análises e recomendações.`,
+    tags: ['finanças', 'planejamento', 'simulação', 'decisões'],
+  },
+  {
+    id: 'career-case-study-creator',
+    title: 'Criador de Case Study para Portfólio',
+    category: 'Carreira',
+    description: 'Desenvolva um case study impactante para seu portfólio, destacando o problema, sua solução, o processo e os resultados, ideal para designers, desenvolvedores, profissionais de marketing e mais.',
+    template: `Você é um especialista em storytelling de carreira e branding pessoal, com experiência em criar cases de sucesso que capturam a atenção de recrutadores e clientes. Seu objetivo é estruturar um case study persuasivo para um portfólio profissional.
+
+**Detalhes do Projeto/Trabalho:**
+- Título do Projeto/Trabalho: [Título do Projeto/Trabalho (ex: "Redesign da Interface do Aplicativo X", "Campanha de Marketing Digital para Marca Y", "Desenvolvimento de Ferramenta Interna Z")]
+- Empresa/Cliente (se aplicável): [Empresa/Cliente]
+- Seu Papel no Projeto: [Seu Papel no Projeto (ex: "UI/UX Designer", "Gerente de Projeto", "Desenvolvedor Full-stack", "Especialista em SEO")]
+- Período do Projeto: [Período do Projeto (ex: "Março a Junho de 2025")]
+
+**O Desafio/Problema:**
+- Problema Inicial/Desafio Principal: [Problema Inicial/Desafio Principal (ex: "Baixa taxa de conversão no site", "Dificuldade dos usuários em encontrar funcionalidades", "Processo manual ineficiente")]
+- Consequências do Problema (antes da sua intervenção): [Consequências do Problema (ex: "Perda de receita", "Insatisfação do cliente", "Aumento de custos operacionais")]
+
+**Sua Abordagem/Solução:**
+- Processo ou Metodologia Utilizada (ex: Design Thinking, Metodologia Ágil, Testes A/B, Pesquisa de Mercado): [Processo ou Metodologia Utilizada]
+- Suas Ações e Decisões Chave: [Suas Ações e Decisões Chave (ex: "Realizei pesquisa com usuários", "Implementei nova arquitetura de código", "Criei campanha multicanal")]
+- Ferramentas e Tecnologias Usadas: [Ferramentas e Tecnologias Usadas (ex: Figma, React, Google Analytics, Salesforce)]
+
+**Resultados e Impacto:**
+- Resultados Quantitativos (se houver, ex: "Aumento de X% na conversão", "Redução de Y% no tempo de carregamento", "Geração de Z leads"): [Resultados Quantitativos]
+- Resultados Qualitativos (ex: "Melhora significativa na experiência do usuário", "Feedback positivo da equipe", "Reconhecimento da diretoria"): [Resultados Qualitativos]
+- Como os resultados resolveram o problema inicial: [Como os resultados resolveram o problema inicial]
+
+**Conclusão e Aprendizados:**
+- Lições Aprendidas: [Lições Aprendidas (ex: "Importância da validação contínua", "Desafios na comunicação interdisciplinar")]
+- Próximos Passos/Recomendações (se aplicável): [Próximos Passos/Recomendações]
+- Público-alvo do portfólio (ex: "Recrutadores de startups", "Diretores de agências de marketing", "Clientes potenciais para freelances"): [Público-alvo do portfólio]
+
+**Instruções:**
+1.  Estruture o case study com as seguintes seções claras: "Título", "Visão Geral", "O Desafio", "A Solução", "Os Resultados", "Conclusão e Aprendizados".
+2.  Use uma linguagem profissional e orientada a resultados, destacando o impacto do seu trabalho.
+3.  Mantenha o texto conciso e focado, utilizando bullet points para facilitar a leitura onde apropriado.
+4.  Adapte o tom e o nível de detalhe para o [Público-alvo do portfólio].
+
+Gere o case study completo no formato solicitado.`,
+    tags: ['portfólio', 'carreira', 'marketing pessoal', 'cases'],
+  },
 ];

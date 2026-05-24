@@ -554,4 +554,179 @@ Com base nestas informações, por favor, realize as seguintes análises:
     template: "Você é um moderador de debates e um gerador de argumentos. Vamos simular um debate focado em aprimorar minhas habilidades de argumentação e pensamento crítico sobre o tema [Tópico do Debate: ex. 'É a inteligência artificial uma ameaça ou uma oportunidade para a sociedade?', 'A educação a distância é tão eficaz quanto a presencial?', 'Governos deveriam implementar uma renda básica universal?'].\n\n**Minha Posição:** [Sua Posição: ex. 'Sou a favor', 'Sou contra', 'Acredito que é uma oportunidade', 'Penso que não é tão eficaz']\n**Meu Objetivo no Debate:** [O que você quer alcançar com este debate? Ex. 'Refinar meus argumentos a favor', 'Entender os contra-argumentos para me preparar melhor', 'Explorar nuances da questão']\n**Nível de Profundidade:** [Ex. 'Introdução', 'Intermediário', 'Avançado - com dados e referências']\n**Persona do Oponente (Opcional):** [Ex. 'Um cético conservador', 'Um entusiasta tecnológico otimista', 'Um especialista em economia social']\n\nSua tarefa é agir como meu oponente virtual. Siga estas etapas:\n\n1.  **Apresente a Posição Inicial do Oponente:** Com base no meu tópico e posição, gere 3-4 argumentos iniciais fortes e bem fundamentados para a posição contrária à minha. Se eu não especificar a 'Persona do Oponente', adote uma persona de um especialista bem-informado e com visão oposta à minha.\n2.  **Solicite Minha Réplica:** Após apresentar seus argumentos, me peça para refutar cada um deles ou apresentar meus próprios argumentos iniciais.\n3.  **Análise e Contra-Argumentação:** Uma vez que eu apresentar meus pontos, você deverá:\n    *   Analisar a força dos meus argumentos.\n    *   Apresentar 2-3 contra-argumentos ou questionamentos que desafiem meus pontos.\n    *   Sugerir áreas onde minha argumentação poderia ser fortalecida (se aplicável).\n4.  **Loop do Debate:** Continuaremos este ciclo, onde você me desafia e eu respondo, aprofundando a discussão.\n\nA cada turno, mantenha uma linguagem formal e respeitosa, mas desafiadora. O foco é a troca de ideias e o aprimoramento da argumentação, não a vitória.",
     tags: ['debate', 'argumentação', 'pensamento crítico', 'educação'],
   },
+  {
+    id: 'marketing-case-study-b2b',
+    title: 'Gerador de Estudo de Caso B2B',
+    category: 'Marketing',
+    description: 'Crie um estudo de caso persuasivo para marketing B2B, destacando o problema do cliente, a solução fornecida e os resultados obtidos, com foco na geração de leads.',
+    template: `Atue como um redator de marketing B2B. Meu objetivo é criar um estudo de caso detalhado e persuasivo para atrair [Tipo de Cliente Ideal] e demonstrar o valor da nossa [Seu Produto/Serviço].
+
+Use o seguinte formato e informações:
+
+**Título do Estudo de Caso:** (Um título que capture a atenção e o benefício principal)
+
+**1. O Desafio do Cliente:**
+*   **Nome do Cliente:** [Nome do Cliente]
+*   **Indústria do Cliente:** [Indústria do Cliente]
+*   **Problema Principal:** [Descreva o problema ou a dor que o cliente enfrentava antes da sua solução. Ex: Baixa eficiência, altos custos, falta de visibilidade, etc.]
+*   **Impacto do Problema:** [Qual o impacto negativo desse problema no negócio do cliente? Ex: Perda de receita, insatisfação de clientes, tempo desperdiçado.]
+
+**2. A Solução da [Sua Empresa]:**
+*   **Nosso Produto/Serviço:** [Descreva como o seu produto/serviço [Seu Produto/Serviço] foi implementado para resolver o problema.]
+*   **Como a Solução Funcionou:** [Explique as etapas, recursos ou funcionalidades específicas que foram utilizadas.]
+*   **Diferencial:** [Por que nossa solução foi a ideal para este cliente?]
+
+**3. Os Resultados Obtidos:**
+*   **Principais Métricas de Sucesso:** [Liste 2-3 métricas concretas e quantificáveis. Ex: Aumento de X% na eficiência, redução de Y% nos custos, Z% de melhoria na satisfação.]
+*   **Depoimento do Cliente:** [Insira um depoimento real ou fictício que valide os resultados. Ex: "Graças à [Sua Empresa], vimos uma melhoria significativa em [Área de Melhoria]..."]
+*   **Impacto Geral no Negócio:** [Como os resultados impactaram positivamente o negócio do cliente a longo prazo?]
+
+**4. Conclusão e Chamada para Ação:**
+*   **Resumo dos Benefícios:** [Reafirme brevemente os principais benefícios da solução.]
+*   **Chamada para Ação (CTA):** [Qual ação você quer que o leitor tome? Ex: "Agende uma demonstração", "Baixe nosso e-book", "Fale com um especialista".]
+
+**Observações Adicionais (contexto para o prompt, não para o estudo de caso final):**
+*   **Tom de Voz:** [Profissional, autoritário, empático, direto]
+*   **Extensão Desejada:** [Curta (500 palavras), Média (800 palavras), Longa (1200+ palavras)]
+
+Por favor, crie o estudo de caso completo seguindo estas diretrizes.`,
+    tags: ['B2B', 'marketing de conteúdo', 'vendas', 'estudo de caso'],
+  },
+  {
+    id: 'ai-plano-desenvolvimento-habilidade',
+    title: 'IA para Plano de Desenvolvimento de Habilidades',
+    category: 'IA & Automação',
+    description: 'Crie um plano de aprendizado estratégico e personalizado para adquirir uma nova habilidade, usando a IA para recomendar recursos e etapas práticas.',
+    template: `Você é um especialista em planejamento de aprendizado e desenvolvimento pessoal assistido por IA. Minha meta é adquirir a habilidade de [Habilidade Específica que deseja aprender].
+
+Com base nas minhas informações, crie um plano de desenvolvimento de habilidade detalhado, com foco em resultados práticos e aplicação no mundo real.
+
+**Minhas informações:**
+*   **Habilidade Alvo:** [Habilidade específica, ex: "Programação Python para análise de dados", "Gestão de Projetos Ágeis", "Marketing Digital para PMEs"]
+*   **Nível de Conhecimento Atual:** [Iniciante, Intermediário, Avançado. Forneça detalhes se houver, ex: "Sei o básico de Python, mas não para análise de dados."]
+*   **Tempo Disponível por Semana:** [Número de horas, ex: "5 horas", "10 horas"]
+*   **Estilo de Aprendizagem Preferido:** [Visual (vídeos, diagramas), Auditivo (podcasts, palestras), Leitura/Escrita (livros, artigos), Cinestésico (projetos práticos, exercícios)]
+*   **Objetivo ao Aprender a Habilidade:** [Ex: "Conseguir uma promoção", "Mudar de carreira", "Iniciar um projeto pessoal", "Melhorar desempenho no trabalho atual"]
+*   **Recursos Atuais/Preferências:** [Ex: "Tenho acesso a Coursera", "Prefiro livros gratuitos", "Busco certificações", "Gosto de aprender com mentores"]
+
+**Formato do Plano de Desenvolvimento:**
+
+**1. Visão Geral e Objetivo SMART:**
+*   Defina um objetivo SMART (Específico, Mensurável, Atingível, Relevante, Temporal) para a aquisição da habilidade.
+
+**2. Módulos/Etapas de Aprendizado (progressivo):**
+*   Divida a habilidade em módulos lógicos, do fundamental ao avançado.
+*   Para cada módulo, sugira:
+    *   **Tópicos Chave:** O que precisa ser aprendido.
+    *   **Recursos Recomendados:** (Ex: Cursos online, livros, artigos, tutoriais, podcasts, projetos práticos). Seja específico com exemplos se possível (ex: "Curso X da plataforma Y", "Livro Z").
+    *   **Atividades Práticas/Projetos:** Sugira exercícios ou projetos para aplicar o conhecimento.
+    *   **Tempo Estimado:** Quanto tempo dedicar a este módulo.
+
+**3. Estratégias de Reforço e Avaliação:**
+*   Como revisar o conteúdo? (Ex: Flashcards, resumos, discussões).
+*   Como medir o progresso? (Ex: Quizzes, feedback de projetos, simulações).
+
+**4. Cronograma Sugerido:**
+*   Um cronograma semanal ou mensal para os primeiros [Número de semanas/meses, ex: "3 meses"] meses.
+
+**5. Próximos Passos e Otimização Contínua:**
+*   Sugestões para manter a motivação e ajustar o plano conforme o progresso.
+
+Crie o plano de desenvolvimento de habilidade, focando em um caminho claro e acionável.`,
+    tags: ['aprendizado', 'carreira', 'IA', 'planejamento', 'desenvolvimento pessoal'],
+  },
+  {
+    id: 'produtividade-foco-digital',
+    title: 'Plano de Foco Profundo e Desintoxicação Digital',
+    category: 'Produtividade',
+    description: 'Crie um plano de ação personalizado para otimizar períodos de foco intenso e implementar uma desintoxicação digital eficaz, visando aumentar a produtividade e o bem-estar.',
+    template: `Atue como um coach de produtividade e bem-estar digital. Meu objetivo é criar um plano prático para melhorar meu foco em tarefas importantes e reduzir a distração digital, seja em períodos de trabalho intenso ou para uma desintoxicação regular.
+
+**Minhas informações e desafios:**
+*   **Período/Contexto:** [Período específico (ex: "Jornada de trabalho diária", "Fim de semana para desintoxicação", "Sessão de estudo intensivo") ou tipo de desafio (ex: "Muitas notificações", "Dificuldade em desconectar")]
+*   **Duração Desejada do Foco/Desintoxicação:** [Ex: "2 horas de foco por manhã", "4 horas no sábado", "Um dia completo por semana"]
+*   **Principais Fontes de Distração:** [Ex: "Redes sociais (Instagram, TikTok)", "Emails constantes", "Notificações do celular", "Notícias online", "Multitarefas"]
+*   **Ferramentas Atuais/Disponíveis:** [Ex: "App de bloqueio de sites", "Modo Não Perturbe do celular", "Fone de ouvido com cancelamento de ruído"]
+*   **Objetivo Final:** [Ex: "Concluir projeto X com qualidade", "Reduzir estresse e ansiedade", "Ter mais tempo para hobbies", "Melhorar a qualidade do sono"]
+
+**Crie um plano de foco profundo e/ou desintoxicação digital com as seguintes seções:**
+
+**1. Preparação (Pré-Foco/Desintoxicação):**
+*   Como preparar o ambiente físico e digital.
+*   Definição de objetivos claros para o período.
+*   Configurações de dispositivos (notificações, apps).
+
+**2. Estratégias Durante o Período de Foco/Desintoxicação:**
+*   Técnicas de Foco (Ex: Pomodoro, Time Blocking, Deep Work).
+*   Como lidar com interrupções inevitáveis.
+*   Atividades alternativas para preencher o tempo (se for desintoxicação).
+*   Sugestões para "recompensas" e pausas significativas.
+
+**3. Pós-Período (Retorno/Integração):**
+*   Como reavaliar o progresso e ajustar o plano.
+*   Estratégias para um retorno consciente ao ambiente digital.
+*   Manutenção de hábitos saudáveis.
+
+**4. Ferramentas e Recursos Recomendados:**
+*   Sugestões de aplicativos, softwares ou métodos que possam auxiliar.
+
+**Observações Adicionais:**
+*   **Tom de Voz:** [Prático, motivador, encorajador]
+*   **Nível de Detalhe:** [Básico, Moderado, Detalhado]
+
+Por favor, elabore um plano acionável e personalizado para minha situação.`,
+    tags: ['bem-estar', 'produtividade', 'foco', 'desintoxicação digital'],
+  },
+  {
+    id: 'negocios-analise-concorrencia-ia',
+    title: 'Análise de Concorrência com IA Assistida',
+    category: 'Negócios',
+    description: 'Realize uma análise detalhada dos principais concorrentes, incluindo suas estratégias de mercado, pontos fortes, fracos, oportunidades e ameaças (SWOT), para informar sua própria estratégia de negócios.',
+    template: `Atue como um analista de estratégia de negócios e IA, capaz de simular a análise de grandes volumes de dados de mercado para identificar insights competitivos. Meu objetivo é entender melhor meus concorrentes e posicionar meu negócio de forma mais eficaz.
+
+**Informações sobre o Meu Negócio:**
+*   **Nome do Meu Negócio/Produto:** [Nome da Sua Empresa/Produto]
+*   **Meu Principal Produto/Serviço:** [Descrição breve do que você oferece]
+*   **Meu Mercado-Alvo:** [Quem são seus clientes ideais? Demografia, psicografia, necessidades]
+*   **Meus Principais Diferenciadores (atuais):** [O que já te faz único ou melhor que a concorrência?]
+
+**Informações sobre os Concorrentes (forneça para 2-3 concorrentes):**
+*   **Concorrente 1:**
+    *   **Nome:** [Nome do Concorrente 1]
+    *   **Principal Produto/Serviço:** [O que eles oferecem?]
+    *   **Mercado-Alvo:** [Quem são os clientes deles?]
+    *   **Pontos Fortes Percebidos:** [Ex: Marca forte, tecnologia avançada, excelente atendimento ao cliente, preço baixo]
+    *   **Pontos Fracos Percebidos:** [Ex: Má reputação, falta de inovação, serviço ao cliente deficiente, preço alto]
+    *   **Estratégias Conhecidas:** [Marketing, vendas, precificação, inovação, canais de distribuição]
+*   **Concorrente 2:** (Mesmas informações acima)
+*   **Concorrente 3:** (Mesmas informações acima, se aplicável)
+
+**Sua Análise Deve Incluir:**
+
+**1. Perfil de Cada Concorrente:**
+*   Um resumo conciso do modelo de negócios, proposta de valor e posicionamento de mercado de cada concorrente.
+
+**2. Análise SWOT Detalhada para Cada Concorrente:**
+*   **Strengths (Forças):** Internas, vantagens competitivas.
+*   **Weaknesses (Fraquezas):** Internas, desvantagens competitivas.
+*   **Opportunities (Oportunidades):** Externas, favoráveis ao concorrente.
+*   **Threats (Ameaças):** Externas, desafios ao concorrente.
+
+**3. Identificação de Padrões e Tendências:**
+*   Quais são as estratégias comuns ou distintivas entre os concorrentes?
+*   Há lacunas no mercado que nenhum concorrente está atendendo efetivamente?
+
+**4. Recomendações Estratégicas para o Meu Negócio:**
+*   **Diferenciação:** Como meu negócio pode se diferenciar ou se posicionar de forma única?
+*   **Oportunidades a Explorar:** Onde posso ganhar vantagem competitiva?
+*   **Ameaças a Mitigar:** Como devo me proteger contra as estratégias dos concorrentes?
+*   **Melhores Práticas a Adotar:** O que posso aprender e adaptar dos meus concorrentes?
+
+**Observações Adicionais:**
+*   **Tom da Análise:** [Objetivo, estratégico, analítico]
+*   **Nível de Detalhe:** [Apresente uma análise aprofundada, com justificativas para as observações.]
+
+Por favor, forneça uma análise de concorrência abrangente e acionável.`,
+    tags: ['estratégia', 'concorrência', 'negócios', 'análise de mercado'],
+  },
 ];

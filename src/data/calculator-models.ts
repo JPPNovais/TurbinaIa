@@ -10,7 +10,7 @@ export interface CalculatorModel {
 export const AI_MODELS: CalculatorModel[] = [
   // Google
   {
-    name: 'Gemini 2.5 Flash', // Atualizado para a versão 2.5 estável de maio de 2026.
+    name: 'Gemini 2.5 Flash', // Preço e janela de contexto atualizados para Gemini 2.5 Flash em maio de 2026.
     provider: 'Google',
     inputPricePerM: 0.30, // Preço atualizado para Gemini 2.5 Flash.
     outputPricePerM: 2.50, // Preço atualizado para Gemini 2.5 Flash.
@@ -18,7 +18,7 @@ export const AI_MODELS: CalculatorModel[] = [
     description: 'Modelo equilibrado para velocidade e capacidade da nova geração Gemini 2.5.',
   },
   {
-    name: 'Gemini 2.5 Pro',
+    name: 'Gemini 2.5 Pro', // Preço e janela de contexto atualizados para Gemini 2.5 Pro em maio de 2026.
     provider: 'Google',
     inputPricePerM: 2.50, // Preço atualizado para contextos acima de 200K tokens para Gemini 2.5 Pro.
     outputPricePerM: 15.00, // Preço atualizado para contextos acima de 200K tokens para Gemini 2.5 Pro.
@@ -26,11 +26,11 @@ export const AI_MODELS: CalculatorModel[] = [
     description: 'Topo de linha da Google com 1M de contexto (preço para >200K tokens) e raciocínio avançado (versão 2.5).',
   },
   {
-    name: 'Gemini 2.5 Flash-Lite', // Atualizado para a versão 2.5 estável de maio de 2026.
+    name: 'Gemini 2.5 Flash-Lite', // Preço e janela de contexto atualizados para Gemini 2.5 Flash-Lite em maio de 2026.
     provider: 'Google',
     inputPricePerM: 0.10, // Preço atualizado do Gemini 2.5 Flash-Lite.
     outputPricePerM: 0.40, // Preço atualizado do Gemini 2.5 Flash-Lite.
-    contextWindow: '128K tokens', // Janela de contexto para o modelo 'Lite'.
+    contextWindow: '1M tokens', // Janela de contexto atualizada para o modelo 'Lite'.
     description: 'Modelo econômico e de alta velocidade da nova geração Gemini 2.5, com suporte multimodal.',
   },
   // OpenAI
@@ -43,23 +43,15 @@ export const AI_MODELS: CalculatorModel[] = [
     description: 'Modelo flagship da OpenAI com raciocínio avançado e capacidade multimodal.',
   },
   {
-    name: 'GPT-4o mini',
+    name: 'GPT-5.4 Mini', // Atualizado de GPT-4o mini para GPT-5.4 Mini, relevante em maio de 2026.
     provider: 'OpenAI',
-    inputPricePerM: 0.15, // Preço atualizado do GPT-4o mini.
-    outputPricePerM: 0.60, // Preço atualizado do GPT-4o mini.
-    contextWindow: '128K tokens', // Janela de contexto atual do GPT-4o mini.
-    description: 'Versão compacta do GPT-4o — rápida e econômica para tarefas do dia a dia.',
+    inputPricePerM: 0.75, // Preço atualizado do GPT-5.4 Mini.
+    outputPricePerM: 4.50, // Preço atualizado do GPT-5.4 Mini.
+    contextWindow: '128K tokens', // Janela de contexto para o GPT-5.4 Mini.
+    description: 'Versão compacta do GPT-5.4 — rápida e econômica para tarefas do dia a dia.',
   },
   {
-    name: 'GPT-4o',
-    provider: 'OpenAI',
-    inputPricePerM: 2.50, // Preço atual confirmado.
-    outputPricePerM: 10.00, // Preço atual confirmado.
-    contextWindow: '128K tokens', // Janela de contexto atual confirmada.
-    description: 'Modelo multimodal de ponta — texto, áudio e visão em tempo real.',
-  },
-  {
-    name: 'GPT-5.5', // Adicionado como o modelo flagship mais recente da OpenAI para maio de 2026.
+    name: 'GPT-5.5', // Modelo flagship mais recente da OpenAI para maio de 2026.
     provider: 'OpenAI',
     inputPricePerM: 5.00, // Preço do GPT-5.5.
     outputPricePerM: 30.00, // Preço do GPT-5.5.
@@ -93,12 +85,20 @@ export const AI_MODELS: CalculatorModel[] = [
   },
   // DeepSeek
   {
-    name: 'DeepSeek V3.2', // Preço e nome mantidos, conforme ausência de dados mais recentes específicos para V3.2 ou V4 em maio de 2026.
+    name: 'DeepSeek V4 Flash', // Atualizado de DeepSeek V3.2 para DeepSeek V4 Flash.
     provider: 'DeepSeek',
-    inputPricePerM: 0.14,
-    outputPricePerM: 0.28,
-    contextWindow: '128K tokens',
-    description: 'Performance de GPT-4 por uma fração do custo com 128K tokens de contexto.',
+    inputPricePerM: 0.14, // Preço atualizado do DeepSeek V4 Flash (cache miss).
+    outputPricePerM: 0.28, // Preço atualizado do DeepSeek V4 Flash.
+    contextWindow: '1M tokens', // Janela de contexto atualizada para DeepSeek V4 Flash.
+    description: 'Versão Flash do DeepSeek V4 com alta performance e 1M de contexto.',
+  },
+  {
+    name: 'DeepSeek V4 Pro', // Novo modelo adicionado.
+    provider: 'DeepSeek',
+    inputPricePerM: 1.74, // Preço do DeepSeek V4 Pro (cache miss).
+    outputPricePerM: 3.48, // Preço do DeepSeek V4 Pro.
+    contextWindow: '1M tokens', // Janela de contexto do DeepSeek V4 Pro.
+    description: 'Versão Pro do DeepSeek V4 com raciocínio de ponta e 1M de contexto.',
   },
   // Meta (via API)
   {
@@ -110,16 +110,16 @@ export const AI_MODELS: CalculatorModel[] = [
     description: 'Open source poderoso — pode ser usado local ou via API (preço via Together AI).',
   },
   {
-    name: 'Llama 3.1 8B',
+    name: 'Llama 3.1 8B Instruct', // Atualizado de Llama 3.1 8B para Llama 3.1 8B Instruct.
     provider: 'Meta (via API)',
     inputPricePerM: 0.02, // Preço do Llama 3.1 8B Instruct.
     outputPricePerM: 0.05, // Preço do Llama 3.1 8B Instruct.
     contextWindow: '16K tokens', // Janela de contexto do Llama 3.1 8B Instruct.
-    description: 'Versão leve e econômica da família Llama 3.1.',
+    description: 'Versão leve e econômica da família Llama 3.1 Instruct.',
   },
   // Mistral AI
   {
-    name: 'Mistral Large 3', // Adicionado como modelo flagship da Mistral AI.
+    name: 'Mistral Large 3', // Adicionado como modelo flagship da Mistral AI, com preços para maio de 2026.
     provider: 'Mistral AI',
     inputPricePerM: 0.50, // Preço do Mistral Large 3.
     outputPricePerM: 1.50, // Preço do Mistral Large 3.

@@ -1142,4 +1142,139 @@ Gere o case study completo no formato solicitado.`,
 `,
     tags: ['ia generativa', 'prompt engineering', 'arte digital', 'imagens'],
   },
+  {
+    id: 'produtividade-plano-projeto-ia',
+    title: 'Gerador de Plano de Projeto Detalhado com IA',
+    category: 'Produtividade',
+    description: 'Transforma uma ideia complexa de projeto em um plano de ação detalhado, incluindo fases, tarefas, estimativas de prazo, recursos e riscos.',
+    template: `Atue como um especialista em gerenciamento de projetos e IA. Meu objetivo é que você me ajude a criar um plano de projeto detalhado para [nome do projeto].
+
+Considere as seguintes informações:
+- **Objetivo principal do projeto:** [Qual é o resultado final desejado? Ex: Lançar um novo produto, otimizar um processo interno, organizar um evento.]
+- **Metas específicas:** [Liste 2-3 metas SMART (Específicas, Mensuráveis, Atingíveis, Relevantes, Temporizáveis) para o projeto. Ex: Aumentar as vendas em 15% em 6 meses, reduzir o tempo de onboarding em 20%.]
+- **Prazo total desejado:** [Ex: 3 meses, 6 semanas, até 2026-12-31.]
+- **Recursos disponíveis (humanos e financeiros):** [Ex: Equipe de 3 pessoas (1 dev, 1 designer, 1 PM), orçamento de R$10.000, acesso a ferramentas X, Y, Z.]
+- **Principais desafios ou restrições conhecidas:** [Ex: Dependência de terceiros para aprovações, falta de conhecimento técnico em área específica, alta complexidade de integração.]
+- **Entregáveis esperados:** [Liste os principais produtos ou resultados que o projeto deve gerar. Ex: MVP funcional, relatório de mercado, campanha de marketing lançada.]
+
+Com base nisso, por favor, gere um plano de projeto que inclua:
+1.  **Fases do Projeto:** Divida o projeto em fases lógicas (Ex: Iniciação, Planejamento, Execução, Monitoramento e Controle, Encerramento).
+2.  **Tarefas Detalhadas por Fase:** Para cada fase, liste as tarefas específicas necessárias para completá-la, com breve descrição.
+3.  **Estimativa de Prazo:** Estime um prazo para cada fase e para tarefas críticas (em dias/semanas).
+4.  **Recursos Sugeridos:** Indique quais recursos (habilidades, ferramentas) seriam ideais para cada fase ou tarefa, se diferentes dos disponíveis.
+5.  **Potenciais Riscos e Estratégias de Mitigação:** Identifique pelo menos 3 riscos principais e como mitigá-los ou gerenciá-los.
+6.  **Métricas de Sucesso:** Como o sucesso do projeto será medido? (Ex: KPIs, feedback do cliente).
+7.  **Próximos Passos Imediatos:** Quais as 3-5 primeiras ações a serem tomadas para iniciar o projeto após a aprovação deste plano?
+
+Formate a saída de forma clara, usando listas e seções, fácil de ser compreendida e implementada.`,
+    tags: ['gerenciamento de projetos', 'planejamento', 'automação', 'eficiência'],
+  },
+  {
+    id: 'negocios-analise-mercado-expansao-ia',
+    title: 'Especialista em Análise de Expansão de Mercado com IA',
+    category: 'Negócios',
+    description: 'Avalia a viabilidade de entrada em novos mercados, identificando oportunidades, desafios e estratégias para seu produto ou serviço.',
+    template: `Atue como um consultor de estratégia de negócios com expertise em análise de mercado e IA. Meu objetivo é avaliar a viabilidade de expandir [meu produto/serviço: ex: software de gestão financeira, rede de academias, consultoria de marketing digital] para um novo mercado.
+
+Considere as seguintes informações:
+- **Produto/Serviço:** [Descreva brevemente o que você oferece, seu valor único e seu público-alvo atual, se houver. Ex: Plataforma SaaS para pequenas empresas com foco em automação financeira.]
+- **Mercado Alvo Potencial:** [País, região, segmento demográfico ou setor industrial específico que você está considerando. Ex: Mercado de PMEs na Colômbia, Geração Z no Nordeste do Brasil, setor de agronegócios.]
+- **Objetivos de Expansão:** [Ex: Aumentar faturamento em X% no novo mercado em 2 anos, conquistar Y% de market share, diversificar base de clientes, testar aceitação internacional.]
+- **Recursos Disponíveis:** [Ex: Orçamento de R$X para entrada no mercado, equipe de vendas interna, capacidade de produção escalável, parcerias potenciais.]
+- **Principais Preocupações/Dúvidas:** [Ex: Regulação local, intensidade da concorrência, necessidade de adaptação cultural do produto, desafios logísticos, custo de aquisição de clientes.]
+
+Com base nisso, por favor, gere uma análise detalhada que inclua:
+1.  **Visão Geral do Mercado Potencial:** Tamanho do mercado, tendências de crescimento, dados demográficos/econômicos relevantes, perfil do consumidor.
+2.  **Análise da Concorrência:** Quem são os principais players, seus pontos fortes e fracos, e como seu produto/serviço se diferencia no mercado potencial.
+3.  **Barreiras de Entrada:** Regulações governamentais, custos iniciais (marketing, infraestrutura, legal), requisitos de infraestrutura, desafios culturais e de linguagem.
+4.  **Oportunidades de Mercado:** Lacunas, nichos inexplorados, tendências favoráveis (tecnológicas, sociais, econômicas), sinergias com produtos/serviços existentes.
+5.  **Análise SWOT para o Novo Mercado:** Pontos Fortes e Fracos (internos da sua empresa em relação ao novo mercado), Oportunidades e Ameaças (externas do novo mercado).
+6.  **Estratégias de Entrada Sugeridas:** Modelos de negócios (ex: parceria, aquisição, exportação direta), canais de distribuição, estratégias de precificação, posicionamento de marca adaptado.
+7.  **Métricas de Sucesso:** Como o progresso e o sucesso da expansão serão medidos e quais KPIs seriam relevantes.
+
+Formate a saída de forma profissional, com seções claras, dados (se puder simular) e insights acionáveis para uma tomada de decisão estratégica.`,
+    tags: ['estratégia de negócios', 'expansão', 'pesquisa de mercado', 'inovação'],
+  },
+  {
+    id: 'escrita-especialista-reaproveitamento-conteudo',
+    title: 'Especialista em Reaproveitamento de Conteúdo Multicanal com IA',
+    category: 'Escrita',
+    description: 'Transforma um conteúdo fonte em formatos otimizados para diversas plataformas (blog, redes sociais, email, vídeo), mantendo a coerência e a mensagem.',
+    template: `Atue como um estrategista de conteúdo e especialista em IA para reaproveitamento de material. Meu objetivo é adaptar um conteúdo fonte para diferentes plataformas, maximizando seu alcance e impacto junto ao meu público.
+
+Aqui está o conteúdo fonte:
+[COLE AQUI O CONTEÚDO ORIGINAL. Pode ser um artigo de blog completo, roteiro de podcast, transcrição de vídeo, ebook, etc. Quanto mais detalhado, melhor.]
+
+Considere as seguintes informações para o reaproveitamento:
+- **Público-alvo principal:** [Descreva brevemente seu público para este conteúdo. Ex: Empreendedores iniciantes, desenvolvedores back-end, mães de primeira viagem.]
+- **Objetivo da adaptação:** [Ex: Gerar leads, aumentar engajamento, educar sobre um tópico, construir autoridade da marca, direcionar tráfego para o site.]
+- **Plataformas de destino:** [Liste as plataformas que deseja atingir. Ex: Instagram (Stories, Reels, Carrossel), LinkedIn (Post, Artigo), Twitter/X (Thread), YouTube (Shorts), Newsletter por Email, Blog, TikTok.]
+- **Tom de voz:** [Ex: Formal, informal, inspirador, técnico, divertido, autoritário, amigável.]
+- **Palavras-chave principais (se houver):** [Liste até 3-5 palavras-chave relevantes que devem ser incorporadas. Ex: "produtividade com IA", "marketing digital para PMEs".]
+
+Por favor, gere as seguintes adaptações, otimizadas para cada plataforma e com chamada para ação (CTA) relevante:
+
+1.  **Para Instagram:**
+    *   Um roteiro curto para um Reel/Story de [duração estimada, ex: 30-60 segundos] com gancho inicial, desenvolvimento dos pontos-chave do conteúdo fonte e um CTA visual e claro.
+    *   Sugestões de 3-5 frases impactantes para um post de carrossel, com tópicos ou dicas visuais, incluindo a estrutura do carrossel (slide 1: título, slides 2-4: conteúdo, slide 5: CTA).
+    *   5-7 hashtags relevantes para o nicho.
+2.  **Para LinkedIn:**
+    *   Um post breve com gancho que capture a atenção, valor do conteúdo e um CTA para engajamento (comentários) ou direcionamento para o conteúdo completo.
+    *   Sugestões de 3-5 perguntas ou pontos de debate inspirados no conteúdo para iniciar uma discussão.
+3.  **Para Twitter/X:**
+    *   Uma thread de 3-5 tweets com os pontos-chave condensados do conteúdo e um CTA claro para aprofundamento ou interação.
+4.  **Para Newsletter por Email:**
+    *   Um rascunho de email de [tamanho, ex: curto/médio] com linha de assunto atraente, introdução envolvente, um breve resumo dos pontos principais e um CTA forte para ler o conteúdo completo ou agir.
+5.  **Para YouTube Shorts / TikTok (se aplicável):**
+    *   Um roteiro super curto de [duração estimada, ex: 15-30 segundos] com uma dica rápida ou um "momento aha!" do conteúdo fonte, com foco em retenção e um CTA verbal/textual.
+
+Mantenha a essência do conteúdo original, mas adapte a linguagem, a estrutura e o estilo para as expectativas de cada formato e plataforma, maximizando o valor para o público.`,
+    tags: ['criação de conteúdo', 'marketing digital', 'copywriting', 'otimização'],
+  },
+  {
+    id: 'ia-gerador-cenarios-teste',
+    title: 'Gerador Inteligente de Cenários de Teste para Sistemas e IAs',
+    category: 'IA & Automação',
+    description: 'Cria cenários de teste abrangentes, incluindo casos de uso padrão, extremos e de falha, para sistemas de software ou modelos de IA.',
+    template: `Atue como um engenheiro de QA (Quality Assurance) com profundo conhecimento em IA e criação de cenários de teste. Meu objetivo é que você gere cenários de teste detalhados para [nome do sistema/funcionalidade/modelo de IA] para garantir sua robustez e confiabilidade.
+
+Aqui estão as informações sobre o sistema/funcionalidade:
+- **Nome do Sistema/Funcionalidade:** [Ex: Sistema de recomendação de produtos e-commerce, chatbot de atendimento ao cliente para suporte técnico, módulo de cálculo de impostos para sistema ERP, modelo de IA de detecção de fraude bancária.]
+- **Descrição Breve:** [O que o sistema faz? Quais são seus principais inputs (entradas) e outputs (saídas) esperados? Ex: Recebe histórico de compras do usuário e retorna 5 produtos relevantes.]
+- **Casos de Uso Principais Conhecidos:** [Liste os cenários de uso mais comuns ou esperados. Ex: Usuário logado compra item X, usuário não logado busca item Y.]
+- **Tecnologias Envolvidas (Opcional):** [Ex: Python, TensorFlow, SQL, API REST, Web frontend.]
+- **Público-alvo/Usuários:** [Quem irá usar este sistema? Ex: Clientes finais, funcionários internos, analistas de fraude.]
+- **Restrições/Requisitos (se houver):** [Ex: Tempo de resposta máximo de 2 segundos, precisão mínima de 95% para detecção, segurança de dados em conformidade com a LGPD.]
+
+Com base nessas informações, por favor, gere os seguintes tipos de cenários de teste:
+
+1.  **Casos de Teste Positivos (Uso Comum):**
+    *   Detalhe pelo menos 3 cenários de uso normal e bem-sucedido, com inputs esperados e outputs desejados.
+2.  **Casos de Teste Negativos (Erros Esperados/Tratamento de Exceções):**
+    *   Detalhe pelo menos 3 cenários onde a entrada é inválida, faltante, fora dos limites aceitáveis ou mal-formatada, e o sistema deve se comportar de forma controlada (ex: exibir mensagens de erro claras, realizar validações).
+3.  **Casos de Teste de Borda/Extremos:**
+    *   Detalhe pelo menos 2 cenários com inputs nos limites máximos/mínimos (valores muito grandes, muito pequenos, strings muito longas), ou situações que raramente ocorrem, mas são possíveis e cruciais para a estabilidade.
+4.  **Casos de Teste de Performance/Carga (Ideias):**
+    *   Sugira tipos de testes para avaliar o desempenho do sistema sob diferentes níveis de carga (ex: múltiplos usuários simultâneos, grande volume de dados processados, estresse do sistema).
+5.  **Casos de Teste de Segurança (Ideias):**
+    *   Sugira tipos de testes para identificar vulnerabilidades de segurança (ex: injeção de SQL, cross-site scripting (XSS), acessos não autorizados, falhas de autenticação/autorização).
+6.  **Casos de Teste Específicos para IA (se aplicável):**
+    *   Se for um modelo de IA, sugira testes para:
+        *   **Vieses:** Entradas que podem expor vieses no modelo (ex: dados demográficos específicos).
+        *   **Robustez:** Comportamento do modelo com entradas "adversariais" (pequenas perturbações que mudam a saída).
+        *   **Explicabilidade:** Como o modelo justifica suas decisões em casos críticos.
+        *   **Degradação:** Como o modelo se comporta com dados sujos ou ausentes.
+
+Para cada cenário, inclua (quando relevante):
+*   **ID do Cenário:** (Ex: CT-001, CT-NEG-001)
+*   **Descrição:** Breve explicação do cenário a ser testado.
+*   **Pré-condições:** O que deve ser verdade ou configurado antes do teste ser executado.
+*   **Passos do Teste:** Ações detalhadas a serem realizadas pelo testador.
+*   **Dados de Entrada:** Exemplos concretos de inputs a serem usados.
+*   **Resultados Esperados:** O que o sistema deve produzir ou como deve se comportar.
+*   **Pós-condições:** O estado do sistema após a execução bem-sucedida do teste.
+
+Formate a saída de forma clara e estruturada, utilizando listas aninhadas ou um formato tabular para cada cenário, facilitando a implementação por uma equipe de QA.`,
+    tags: ['engenharia de software', 'QA', 'inteligência artificial', 'automação de testes'],
+  },
 ];

@@ -621,4 +621,52 @@ export const GLOSSARIO: GlossarioTerm[] = [
     example: 'Se muitos usuários fazem o mesmo `Prompt` pedindo uma definição comum, a resposta pode ser armazenada em `Cache de Prompt` para que futuras solicitações idênticas recebam uma resposta imediata e mais barata.',
     relatedTerms: ['Prompt', 'Prompt Engineering', 'Inferência de IA (AI Inference)', 'API de IA'],
   },
+  {
+    id: 'auto-reflexao',
+    term: 'Auto-Reflexão',
+    category: 'Fundamentos',
+    definition: 'Capacidade de um modelo de Inteligência Artificial, especialmente um agente de IA, de analisar e avaliar seu próprio desempenho, raciocínio, ou resultados gerados. Essa avaliação é usada para melhorar ou corrigir futuras ações, respostas ou planos, envolvendo uma análise mais profunda do processo subjacente.',
+    example: 'Um agente de IA de planejamento pode usar a auto-reflexão para revisar um plano que falhou, identificar a causa do erro e gerar um novo plano mais eficaz.',
+    relatedTerms: ['Agente de IA (AI Agent)', 'Auto-Refinamento (Self-Correction)', 'Árvore de Pensamento (Tree of Thought - ToT)', 'Mecanismo de Raciocínio (Reasoning Engine)']
+  },
+  {
+    id: 'modelo-audio-linguagem',
+    term: 'Modelo de Áudio-Linguagem (ALM)',
+    category: 'Modelos & Arquitetura',
+    definition: 'Um tipo de modelo de IA multimodal treinado para processar, entender e gerar informações que combinam áudio e texto. Ele consegue interpretar fala, sons e o contexto linguístico para realizar tarefas como transcrição avançada, tradução de áudio e texto, e geração de áudio a partir de comandos textuais.',
+    example: 'Um ALM pode transcrever uma reunião, identificar os diferentes oradores e resumir os pontos principais, ou gerar uma narração com a entonação correta a partir de um script.',
+    relatedTerms: ['Multimodal', 'LLM (Large Language Model)', 'Modelo de Linguagem Visual (VLM)', 'Geração Multimodal']
+  },
+  {
+    id: 'ia-borda',
+    term: 'IA de Borda (Edge AI)',
+    category: 'Aplicações',
+    definition: 'Abordagem onde o processamento de dados e a inferência de modelos de IA ocorrem localmente em dispositivos de borda, como smartphones, câmeras de segurança, sensores IoT ou veículos autônomos. Isso permite análise em tempo real e tomada de decisão no local onde os dados são gerados, reduzindo latência, aumentando a privacidade e economizando largura de banda.',
+    example: 'Um sistema de reconhecimento facial em uma câmera de segurança que processa as imagens diretamente no dispositivo para identificar pessoas, sem precisar enviar cada imagem para a nuvem.',
+    relatedTerms: ['Inferência de IA (AI Inference)', 'IA Incorporada (Embodied AI)']
+  },
+  {
+    id: 'orquestracao-fluxo-trabalho-ia',
+    term: 'Orquestração de Fluxo de Trabalho de IA',
+    category: 'Ferramentas & APIs',
+    definition: 'O processo de coordenação e gerenciamento estratégico de múltiplas etapas, modelos de IA, ferramentas externas e até intervenções humanas para completar uma tarefa complexa. Vai além da orquestração de agentes individuais, focando no fluxo completo de trabalho que integra diversos componentes de IA e não-IA para escalar de forma eficiente e segura.',
+    example: 'Um sistema de atendimento ao cliente que orquestra um LLM para entender a pergunta, um sistema RAG para buscar informações em uma base de conhecimento, um agente para realizar uma ação (como agendar um serviço) e um humano para aprovar a etapa final.',
+    relatedTerms: ['Agente de IA (AI Agent)', 'Orquestração de Agentes (Agent Orchestration)', 'Uso de Ferramentas (Tool Use)', 'API de IA', 'RAG (Retrieval-Augmented Generation)']
+  },
+  {
+    id: 'ataque-envenenamento-dados',
+    term: 'Ataque de Envenenamento de Dados',
+    category: 'Segurança & Ética',
+    definition: 'Um tipo de ataque adversário onde dados maliciosos ou enganosos são injetados intencionalmente no conjunto de dados de treinamento de um modelo de IA. O objetivo é manipular o comportamento do modelo, levando-o a aprender padrões indesejados, introduzir viés ou criar vulnerabilidades que podem ser exploradas posteriormente.',
+    example: 'Inserir deliberadamente imagens incorretamente rotuladas em um dataset de treinamento de um sistema de reconhecimento de objetos para que ele consistentemente classifique um objeto específico de forma errada no futuro.',
+    relatedTerms: ['Ataque Adversário (Adversarial Attack)', 'Viés (Bias) em IA', 'Red Teaming (Teste de Adversidade)', 'Dados Sintéticos']
+  },
+  {
+    id: 'fusao-modelos',
+    term: 'Fusão de Modelos (Model Merging)',
+    category: 'Modelos & Arquitetura',
+    definition: 'Técnica que combina os pesos ou parâmetros de dois ou mais modelos de IA previamente treinados (ou ajustados) em um único modelo unificado. Isso permite que o novo modelo herde as capacidades dos modelos originais, crie modelos multitarefas, ou melhore o desempenho sem a necessidade de re-treinamento completo ou de manter múltiplos modelos em execução para inferência.',
+    example: 'Combinar um modelo especializado em respostas a perguntas com outro especialista em sumarização para criar um único modelo proficiente em ambas as tarefas.',
+    relatedTerms: ['Pré-treinamento', 'Fine-tuning (Ajuste Fino)', 'LoRA (Low-Rank Adaptation)', 'Modelo Base (Foundation Model)']
+  },
 ];

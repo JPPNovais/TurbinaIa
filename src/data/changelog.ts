@@ -13,6 +13,35 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-gemini-3-5-flash-2026',
+    date: '2026-05',
+    title: 'Google lança Gemini 3.5 Flash',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Google lançou o Gemini 3.5 Flash, um novo modelo de IA otimizado para agentes e codificação, que supera o Gemini 3.1 Pro em desempenho e é quatro vezes mais rápido em tokens de saída por segundo.',
+    highlights: [
+      'Lançado em 19 de maio de 2026 durante o Google I/O.',
+      'É o primeiro modelo da família Gemini 3.5.',
+      'Destaca-se na implantação de múltiplos agentes simultaneamente e na execução de tarefas de longo prazo com melhorias significativas em codificação e uso de ferramentas.',
+      'Oferece uma velocidade de resposta quatro vezes maior em tokens de saída por segundo em comparação com outros modelos de ponta.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'anthropic-claude-small-business-2026',
+    date: '2026-05',
+    title: 'Anthropic lança Claude para Pequenas Empresas com fluxos de trabalho agenticos',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Anthropic lançou o Claude para Pequenas Empresas, um novo pacote de conectores, fluxos de trabalho agenticos pré-construídos e habilidades de IA reutilizáveis, desenvolvido para transformar o Claude em um "colega de trabalho digital" que se integra a softwares de uso diário em pequenas empresas.',
+    highlights: [
+      'Anunciado em maio de 2026.',
+      'Inclui conectores nativos para ferramentas como Intuit QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace e Microsoft 365.',
+      'Apresenta 15 fluxos de trabalho agenticos pré-construídos e 15 habilidades reutilizáveis cobrindo áreas como finanças, operações, vendas e marketing.',
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'openai-realtime-audio-api-2026',
     date: '2026-05',
     title: 'OpenAI lança modelos de áudio em tempo real para API',

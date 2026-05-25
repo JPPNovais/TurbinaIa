@@ -281,8 +281,8 @@ async function run() {
       console.log(`🤖 Tema sugerido pela IA (baseado em buscas reais): "${topic}"`);
     } catch (error) {
       if (error.isSpendingCap) {
-        console.warn('⚠️ Limite de gastos da API Gemini atingido. Geração de artigo pulada.');
-        process.exit(0);
+        console.error('❌ Limite de gastos da API Gemini atingido. Nenhum artigo foi publicado.');
+        process.exit(1);
       }
       console.error('Erro ao obter sugestão de tema:', error);
       process.exit(1);

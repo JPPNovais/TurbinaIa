@@ -68,7 +68,6 @@ jobs:
         run: node scripts/update-glossario.js
 
       - name: Gerar Artigo
-        continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}

@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Termos de Uso - Turbina IA',
   description: 'Leia os Termos de Uso do portal Turbina IA. Condições de acesso, propriedade intelectual, conteúdo gerado por IA, newsletter e limitação de responsabilidade.',
   alternates: {
-    canonical: 'https://turbinaia.com.br/termos-de-uso',
+    canonical: 'https://www.turbinaia.com.br/termos-de-uso',
   },
 };
 

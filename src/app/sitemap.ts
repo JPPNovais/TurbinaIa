@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllArticlesMetadata } from '@/lib/articles';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://turbinaia.com.br';
+  const baseUrl = 'https://www.turbinaia.com.br';
   
   // Fetch all articles
   const articles = await getAllArticlesMetadata();

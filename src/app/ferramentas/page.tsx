@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Guia de Ferramentas de IA 2026: Qual IA usar para cada tarefa?',
     description:
       'Descubra as melhores ferramentas de inteligência artificial organizadas por finalidade. Compare ChatGPT, Claude, Midjourney, GitHub Copilot e mais de 30 IAs.',
-    url: 'https://turbinaia.com.br/ferramentas',
+    url: 'https://www.turbinaia.com.br/ferramentas',
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       'Descubra as melhores ferramentas de inteligência artificial organizadas por finalidade. Compare mais de 30 IAs por categoria de uso.',
   },
   alternates: {
-    canonical: 'https://turbinaia.com.br/ferramentas',
+    canonical: 'https://www.turbinaia.com.br/ferramentas',
   },
 };
 
@@ -45,13 +45,13 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'WebPage',
-      '@id': 'https://turbinaia.com.br/ferramentas',
-      url: 'https://turbinaia.com.br/ferramentas',
+      '@id': 'https://www.turbinaia.com.br/ferramentas',
+      url: 'https://www.turbinaia.com.br/ferramentas',
       name: 'Guia de Ferramentas de IA 2026 | Turbina IA',
       description:
         'Descubra as melhores ferramentas de inteligência artificial organizadas por finalidade.',
       inLanguage: 'pt-BR',
-      isPartOf: { '@id': 'https://turbinaia.com.br' },
+      isPartOf: { '@id': 'https://www.turbinaia.com.br' },
     },
     {
       '@type': 'ItemList',

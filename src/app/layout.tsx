@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   keywords: ['Inteligência Artificial', 'IA', 'AdSense', 'Tecnologia', 'Produtividade', 'Automatização'],
   authors: [{ name: 'Turbina IA Team' }],
   creator: 'Turbina IA',
-  metadataBase: new URL('https://turbinaia.com.br'),
+  metadataBase: new URL('https://www.turbinaia.com.br'),
   verification: {
     google: 'EP3JHK-_xrYKdBTEfycV8vruws7Y3O9Mj71XlhAOBGQ',
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Turbina IA - O Portal Definitivo de Inteligência Artificial',
     description: 'Notícias diárias, tutoriais de monetização, guias práticos e tendências sobre Inteligência Artificial.',
-    url: 'https://turbinaia.com.br',
+    url: 'https://www.turbinaia.com.br',
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',

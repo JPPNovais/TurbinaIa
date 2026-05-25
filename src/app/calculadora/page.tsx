@@ -3,7 +3,7 @@ import CalculatorClient from './CalculatorClient';
 
 const OG_TITLE = 'Calculadora de Custos de APIs de IA';
 const OG_DESC = 'Simule e compare os custos de tokens das principais APIs: Gemini 2.5, GPT-4.1, Claude Sonnet e DeepSeek. Encontre a mais barata para seu projeto.';
-const OG_IMAGE = `https://turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Calculadora Gratuita')}`;
+const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Calculadora Gratuita')}`;
 
 export const metadata: Metadata = {
   title: 'Calculadora de Custos de APIs de IA (Gemini, Claude, GPT, DeepSeek) | Turbina IA',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: OG_TITLE + ' | Turbina IA',
     description: OG_DESC,
-    url: 'https://turbinaia.com.br/calculadora',
+    url: 'https://www.turbinaia.com.br/calculadora',
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',
@@ -32,12 +32,12 @@ const jsonLd = {
   '@type': 'WebApplication',
   name: OG_TITLE,
   description: OG_DESC,
-  url: 'https://turbinaia.com.br/calculadora',
+  url: 'https://www.turbinaia.com.br/calculadora',
   applicationCategory: 'FinanceApplication',
   operatingSystem: 'Web',
   inLanguage: 'pt-BR',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
-  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://turbinaia.com.br' },
+  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://www.turbinaia.com.br' },
   featureList: [
     'Simulação de custo por volume de tokens',
     'Comparação de 13+ modelos de IA',

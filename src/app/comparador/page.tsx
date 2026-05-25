@@ -3,7 +3,7 @@ import ComparatorClient from './ComparatorClient';
 
 const OG_TITLE = 'Comparador de Inteligências Artificiais';
 const OG_DESC = 'Compare ChatGPT, Claude, Gemini e mais lado a lado: preços, prós, contras e notas em programação, escrita e raciocínio.';
-const OG_IMAGE = `https://turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Ferramenta Gratuita')}`;
+const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Ferramenta Gratuita')}`;
 
 export const metadata: Metadata = {
   title: 'Comparador de IAs - ChatGPT vs Claude vs Gemini | Turbina IA',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: OG_TITLE + ' | Turbina IA',
     description: OG_DESC,
-    url: 'https://turbinaia.com.br/comparador',
+    url: 'https://www.turbinaia.com.br/comparador',
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',
@@ -32,12 +32,12 @@ const jsonLd = {
   '@type': 'WebApplication',
   name: OG_TITLE,
   description: OG_DESC,
-  url: 'https://turbinaia.com.br/comparador',
+  url: 'https://www.turbinaia.com.br/comparador',
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Web',
   inLanguage: 'pt-BR',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
-  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://turbinaia.com.br' },
+  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://www.turbinaia.com.br' },
   featureList: [
     'Comparação lado a lado de modelos de IA',
     'Avaliação de raciocínio, escrita e programação',

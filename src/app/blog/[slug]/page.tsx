@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     };
   }
 
-  const imageUrl = article.coverImage || 'https://turbinaia.com.br/icon.png';
+  const imageUrl = article.coverImage || 'https://www.turbinaia.com.br/icon.png';
 
   return {
     title: `${article.title} - Turbina IA`,
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       title: `${article.title} - Turbina IA`,
       description: article.description,
       type: 'article',
-      url: `https://turbinaia.com.br/blog/${resolvedParams.slug}`,
+      url: `https://www.turbinaia.com.br/blog/${resolvedParams.slug}`,
       publishedTime: article.date,
       authors: [article.author],
       tags: article.tags,
@@ -90,7 +90,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const formattedDate = formatDateLong(article.date);
 
   // Social sharing links
-  const articleUrl = `https://turbinaia.com.br/blog/${article.slug}`;
+  const articleUrl = `https://www.turbinaia.com.br/blog/${article.slug}`;
   const shareText = `Confira este artigo no Turbina IA: ${article.title}`;
   const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(articleUrl)}`;
   const linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`;
@@ -102,7 +102,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     '@type': 'BlogPosting',
     headline: article.title,
     description: article.description,
-    image: article.coverImage || 'https://turbinaia.com.br/icon.png',
+    image: article.coverImage || 'https://www.turbinaia.com.br/icon.png',
     datePublished: article.date,
     dateModified: article.date,
     author: {
@@ -114,7 +114,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       name: 'Turbina IA',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://turbinaia.com.br/icon.png',
+        url: 'https://www.turbinaia.com.br/icon.png',
       },
     },
     mainEntityOfPage: {

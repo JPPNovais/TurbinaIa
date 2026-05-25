@@ -4,7 +4,7 @@ import { GLOSSARIO } from '@/data/glossario';
 
 const OG_TITLE = 'Glossário de IA — Termos de Inteligência Artificial';
 const OG_DESC = `${GLOSSARIO.length} termos de Inteligência Artificial explicados em português. De LLM a RAG, de Token a Embeddings — sem jargão desnecessário.`;
-const OG_IMAGE = `https://turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent(`${GLOSSARIO.length} Termos Grátis`)}`;
+const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent(`${GLOSSARIO.length} Termos Grátis`)}`;
 
 export const metadata: Metadata = {
   title: 'Glossário de IA - Termos de Inteligência Artificial em Português | Turbina IA',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: OG_TITLE + ' | Turbina IA',
     description: OG_DESC,
-    url: 'https://turbinaia.com.br/glossario',
+    url: 'https://www.turbinaia.com.br/glossario',
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',
@@ -33,15 +33,15 @@ const jsonLd = {
   '@type': 'DefinedTermSet',
   name: 'Glossário de Inteligência Artificial',
   description: OG_DESC,
-  url: 'https://turbinaia.com.br/glossario',
+  url: 'https://www.turbinaia.com.br/glossario',
   inLanguage: 'pt-BR',
-  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://turbinaia.com.br' },
+  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://www.turbinaia.com.br' },
   hasDefinedTerm: GLOSSARIO.slice(0, 15).map((term) => ({
     '@type': 'DefinedTerm',
     name: term.term,
     description: term.definition,
-    url: `https://turbinaia.com.br/glossario#${term.id}`,
-    inDefinedTermSet: 'https://turbinaia.com.br/glossario',
+    url: `https://www.turbinaia.com.br/glossario#${term.id}`,
+    inDefinedTermSet: 'https://www.turbinaia.com.br/glossario',
   })),
 };
 

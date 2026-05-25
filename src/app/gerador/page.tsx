@@ -3,7 +3,7 @@ import GeradorClient from './GeradorClient';
 
 const OG_TITLE = 'Gerador de Prompts Interativo para IA';
 const OG_DESC = 'Preencha um formulário simples e receba um prompt profissional pronto para ChatGPT, Claude ou Gemini. Grátis, sem cadastro.';
-const OG_IMAGE = `https://turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Gerador Grátis')}`;
+const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Gerador Grátis')}`;
 
 export const metadata: Metadata = {
   title: 'Gerador de Prompts Interativo para IA | Turbina IA',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: OG_TITLE + ' | Turbina IA',
     description: OG_DESC,
-    url: 'https://turbinaia.com.br/gerador',
+    url: 'https://www.turbinaia.com.br/gerador',
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',
@@ -32,12 +32,12 @@ const jsonLd = {
   '@type': 'WebApplication',
   name: OG_TITLE,
   description: OG_DESC,
-  url: 'https://turbinaia.com.br/gerador',
+  url: 'https://www.turbinaia.com.br/gerador',
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Web',
   inLanguage: 'pt-BR',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
-  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://turbinaia.com.br' },
+  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://www.turbinaia.com.br' },
   featureList: [
     'Geração de prompts para 8 tipos de tarefas',
     'Personalização de tom, formato e público-alvo',

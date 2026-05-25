@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Política de Privacidade - Turbina IA',
   description: 'Entenda como o Turbina IA coleta, usa e protege seus dados pessoais, em conformidade com a LGPD (Lei 13.709/2018) e as políticas do Google AdSense.',
   alternates: {
-    canonical: 'https://turbinaia.com.br/politica-de-privacidade',
+    canonical: 'https://www.turbinaia.com.br/politica-de-privacidade',
   },
 };
 

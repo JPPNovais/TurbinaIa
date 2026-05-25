@@ -3,7 +3,7 @@ import PromptsClient from './PromptsClient';
 
 const OG_TITLE = 'Biblioteca de Prompts Prontos para IA';
 const OG_DESC = '30 prompts profissionais para ChatGPT, Claude e Gemini em Marketing, Desenvolvimento, Carreira, Finanças e mais. Personalize e copie em segundos.';
-const OG_IMAGE = `https://turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('30 Prompts Grátis')}`;
+const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('30 Prompts Grátis')}`;
 
 export const metadata: Metadata = {
   title: 'Biblioteca de Prompts Prontos para IA (ChatGPT, Claude, Gemini) | Turbina IA',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: OG_TITLE + ' | Turbina IA',
     description: OG_DESC,
-    url: 'https://turbinaia.com.br/prompts',
+    url: 'https://www.turbinaia.com.br/prompts',
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',
@@ -32,10 +32,10 @@ const jsonLd = {
   '@type': 'ItemList',
   name: OG_TITLE,
   description: OG_DESC,
-  url: 'https://turbinaia.com.br/prompts',
+  url: 'https://www.turbinaia.com.br/prompts',
   numberOfItems: 30,
   inLanguage: 'pt-BR',
-  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://turbinaia.com.br' },
+  publisher: { '@type': 'Organization', name: 'Turbina IA', url: 'https://www.turbinaia.com.br' },
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Copy com Método AIDA', description: 'Gere textos de vendas persuasivos usando a estrutura AIDA.' },
     { '@type': 'ListItem', position: 2, name: 'Esboço de Artigo SEO', description: 'Crie esqueletos de artigos otimizados para ranquear no Google.' },

@@ -260,6 +260,23 @@ async function withRetry(fn, maxRetries = 4, baseDelayMs = 20000) {
   }
 }
 
+function getRecentArticleTitles(daysBack = 30) {
+  const articlesDir = path.resolve(process.cwd(), 'content/articles');
+  if (!fs.existsSync(articlesDir)) return [];
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - daysBack);
+  const titles = [];
+  for (const file of fs.readdirSync(articlesDir).filter(f => f.endsWith('.md'))) {
+    const content = fs.readFileSync(path.join(articlesDir, file), 'utf8');
+    const dateMatch = content.match(/^date:\s*"?(\d{4}-\d{2}-\d{2})"?/m);
+    const titleMatch = content.match(/^title:\s*"?(.+?)"?\s*$/m);
+    if (dateMatch && titleMatch && new Date(dateMatch[1]) >= cutoff) {
+      titles.push(titleMatch[1].replace(/^"|"$/g, ''));
+    }
+  }
+  return titles;
+}
+
 async function run() {
   let topic = process.argv[2];
   const today = new Date().toISOString().split('T')[0];
@@ -269,10 +286,16 @@ async function run() {
   // Step 1: Suggest a trend topic if none is supplied
   if (!topic) {
     console.log('Nenhum tema foi fornecido. Solicitando uma sugestão de tendência à IA via busca na internet...');
+
+    const recentTitles = getRecentArticleTitles(30);
+    const avoidBlock = recentTitles.length > 0
+      ? `\n\nTEMAS JÁ COBERTOS (NÃO repita nem aborde de ângulo similar — canibalizariam o conteúdo existente):\n${recentTitles.map(t => `- ${t}`).join('\n')}\n\nEscolha um tema DIFERENTE, com fato ou notícia nova que não se sobreponha aos listados acima.`
+      : '';
+
     try {
       const suggestResponse = await withRetry(() => ai.models.generateContent({
         model: 'gemini-2.5-flash',
-        contents: `Pesquise na internet as notícias mais importantes, recentes e impactantes de hoje (${today}) sobre Inteligência Artificial, tecnologia ou novas ferramentas de IA, priorizando publicações de fontes de alta credibilidade como: blogs oficiais dos laboratórios de IA (anthropic.com, openai.com, deepmind.google, ai.meta.com, mistral.ai, blog.google/technology/ai), revistas especializadas (technologyreview.com, wired.com, nature.com, science.org), veículos de jornalismo tecnológico com editorial reconhecido (techcrunch.com, theverge.com, reuters.com, bloomberg.com, apnews.com) ou papers do arxiv.org. Com base nas notícias reais encontradas nessas fontes, sugira um único título/tema para um artigo de blog focado em atrair tráfego e otimizado para SEO. Retorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais. Exemplo de retorno: Lançamento do Gemini 1.5 Pro: A nova IA do Google com janela de contexto histórica`,
+        contents: `Pesquise na internet as notícias mais importantes, recentes e impactantes de hoje (${today}) sobre Inteligência Artificial, tecnologia ou novas ferramentas de IA, priorizando publicações de fontes de alta credibilidade como: blogs oficiais dos laboratórios de IA (anthropic.com, openai.com, deepmind.google, ai.meta.com, mistral.ai, blog.google/technology/ai), revistas especializadas (technologyreview.com, wired.com, nature.com, science.org), veículos de jornalismo tecnológico com editorial reconhecido (techcrunch.com, theverge.com, reuters.com, bloomberg.com, apnews.com) ou papers do arxiv.org. Com base nas notícias reais encontradas nessas fontes, sugira um único título/tema ESPECÍFICO para um artigo de blog focado em atrair tráfego e otimizado para SEO. O tema deve ter um fato ou notícia concreta como gancho — EVITE temas genéricos como "evolução da IA em 2026" ou resumos semanais do tipo "a semana da IA". Prefira temas como "OpenAI lança X", "Google anuncia Y", "estudo revela Z".${avoidBlock}\n\nRetorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais. Exemplo de retorno: Lançamento do Gemini 1.5 Pro: A nova IA do Google com janela de contexto histórica`,
         config: {
           tools: [{ googleSearch: {} }]
         }
@@ -402,7 +425,9 @@ date: "${today}"
 
 8. **Fontes:** Seção "## Fontes e Referências" ao final com todos os links.
 
-Escreva um artigo longo (mínimo de 1000 palavras), com profundidade jornalística real, baseado nas fontes primárias fornecidas e em pesquisa adicional verificada.`;
+Escreva um artigo longo (mínimo de 1500 palavras, idealmente entre 1800 e 2500 palavras), com profundidade jornalística real, baseado nas fontes primárias fornecidas e em pesquisa adicional verificada.
+
+**PROIBIDO:** artigos no estilo "resumo da semana", "as melhores notícias de IA desta semana" ou qualquer compilação de múltiplos eventos sem aprofundamento. Cada artigo deve ter UM tema central concreto e aprofundá-lo com análise, dados e contexto.`;
 
   try {
     const response = await withRetry(() => ai.models.generateContent({

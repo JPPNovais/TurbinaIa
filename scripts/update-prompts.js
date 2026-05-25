@@ -21,7 +21,7 @@ try {
 }
 
 const { GoogleGenAI } = require('@google/genai');
-const { safeWriteDataFile } = require('./data-update-utils');
+const { safeWriteDataFile, withRetry } = require('./data-update-utils');
 const apiKey = process.env.GEMINI_API_KEY;
 
 if (!apiKey) {
@@ -31,28 +31,6 @@ if (!apiKey) {
 
 const ai = new GoogleGenAI({ apiKey });
 
-async function withRetry(fn, maxRetries = 4, baseDelayMs = 20000) {
-  for (let attempt = 1; attempt <= maxRetries; attempt++) {
-    try {
-      return await fn();
-    } catch (error) {
-      const isRetryable =
-        error?.status === 503 || error?.status === 429 ||
-        (error?.message && (
-          error.message.includes('503') ||
-          error.message.includes('UNAVAILABLE') ||
-          error.message.includes('high demand')
-        ));
-      if (isRetryable && attempt < maxRetries) {
-        const delay = baseDelayMs * attempt;
-        console.log(`⏳ Gemini indisponível (tentativa ${attempt}/${maxRetries}). Aguardando ${delay / 1000}s...`);
-        await new Promise(r => setTimeout(r, delay));
-      } else {
-        throw error;
-      }
-    }
-  }
-}
 
 function cleanMarkdownResponse(text) {
   let cleaned = text.trim();

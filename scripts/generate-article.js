@@ -242,6 +242,11 @@ async function withRetry(fn, maxRetries = 4, baseDelayMs = 20000) {
     try {
       return await fn();
     } catch (error) {
+      const isSpendingCap = error?.message && error.message.includes('spending cap');
+      if (isSpendingCap) {
+        error.isSpendingCap = true;
+        throw error;
+      }
       const isRetryable = error?.status === 503 || error?.status === 429 ||
         (error?.message && (error.message.includes('503') || error.message.includes('UNAVAILABLE') || error.message.includes('high demand')));
       if (isRetryable && attempt < maxRetries) {
@@ -275,6 +280,10 @@ async function run() {
       topic = suggestResponse.text.trim();
       console.log(`🤖 Tema sugerido pela IA (baseado em buscas reais): "${topic}"`);
     } catch (error) {
+      if (error.isSpendingCap) {
+        console.warn('⚠️ Limite de gastos da API Gemini atingido. Geração de artigo pulada.');
+        process.exit(0);
+      }
       console.error('Erro ao obter sugestão de tema:', error);
       process.exit(1);
     }

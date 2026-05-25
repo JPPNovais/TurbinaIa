@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:turbinaia.com.br)",
+      "WebFetch(domain:techcrunch.com)",
+      "WebFetch(domain:blog.google)",
+      "WebSearch",
+      "WebFetch(domain:9to5google.com)",
+      "WebFetch(domain:www.weforum.org)",
+      "WebFetch(domain:exame.com)",
+      "WebFetch(domain:www.mckinsey.com)",
+      "WebFetch(domain:www.bain.com)",
+      "WebFetch(domain:kpmg.com)",
+      "WebFetch(domain:www.engadget.com)",
+      "WebFetch(domain:cybernews.com)",
+      "WebFetch(domain:www.eweek.com)",
+      "WebFetch(domain:multifaculdade.com.br)",
+      "WebFetch(domain:startups.com.br)",
+      "WebFetch(domain:learn.g2.com)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:www.ranktracker.com)",
+      "WebFetch(domain:promptbuilder.cc)",
+      "WebFetch(domain:adsenseaudit.net)",
+      "WebFetch(domain:sitepd.org.br)",
+      "WebFetch(domain:efficient.app)",
+      "WebFetch(domain:sia.pi.gov.br)",
+      "WebFetch(domain:www.mobiletime.com.br)",
+      "WebFetch(domain:coursiv.io)",
+      "WebFetch(domain:tiinside.com.br)"
+    ]
+  }
+}

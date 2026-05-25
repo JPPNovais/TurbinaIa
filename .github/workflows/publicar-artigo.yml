@@ -31,18 +31,48 @@ jobs:
       - name: Instalar Dependências
         run: npm ci || npm install
 
-      - name: Executar Atualizações por IA
+      - name: Atualizar Modelos de IA
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/update-models.js
+
+      - name: Atualizar Calculadora
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/update-calculator.js
+
+      - name: Atualizar Changelog
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/update-changelog.js
+
+      - name: Atualizar Ferramentas
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/update-tools.js
+
+      - name: Atualizar Prompts
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/update-prompts.js
+
+      - name: Atualizar Glossário
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/update-glossario.js
+
+      - name: Gerar Artigo
+        continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
-        run: |
-          node scripts/update-models.js
-          node scripts/update-calculator.js
-          node scripts/update-changelog.js
-          node scripts/update-tools.js
-          node scripts/update-prompts.js
-          node scripts/update-glossario.js
-          node scripts/generate-article.js
+        run: node scripts/generate-article.js
 
       - name: Commitar e Enviar Artigo e Modelos Atualizados
         run: |

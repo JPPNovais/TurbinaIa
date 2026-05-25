@@ -66,7 +66,34 @@ function safeWriteDataFile(fs, filePath, originalContent, updatedContent) {
   return true;
 }
 
+// Retries transient Gemini errors (503, rate-limit 429).
+// Spending-cap 429s are NOT retried — they won't recover until next month.
+// On spending cap, throws an error with `isSpendingCap: true` so callers can exit 0.
+async function withRetry(fn, maxRetries = 4, baseDelayMs = 20000) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      return await fn();
+    } catch (error) {
+      const isSpendingCap = error?.message && error.message.includes('spending cap');
+      if (isSpendingCap) {
+        error.isSpendingCap = true;
+        throw error;
+      }
+      const isRetryable = error?.status === 503 || error?.status === 429 ||
+        (error?.message && (error.message.includes('503') || error.message.includes('UNAVAILABLE') || error.message.includes('high demand')));
+      if (isRetryable && attempt < maxRetries) {
+        const delay = baseDelayMs * attempt;
+        console.log(`⏳ Gemini indisponível (tentativa ${attempt}/${maxRetries}). Aguardando ${delay / 1000}s...`);
+        await new Promise(r => setTimeout(r, delay));
+      } else {
+        throw error;
+      }
+    }
+  }
+}
+
 module.exports = {
   findStructuralBreakage,
   safeWriteDataFile,
+  withRetry,
 };

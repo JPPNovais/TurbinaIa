@@ -40,7 +40,17 @@ function findStructuralBreakage(originalContent, updatedContent) {
     issues.push('declaração `XxxEntry[` quebrada — provavelmente o tipo foi confundido com o array');
   }
 
-  // 5. File must start with TypeScript code, not LLM prose. A valid .ts file opens with
+  // 5. Unescaped backtick inside a template literal — LLM often writes `code` in markdown
+  //    style inside a template string, which terminates the literal prematurely.
+  //    Strategy: count template literal delimiters. An odd count means one is unclosed.
+  //    We strip escaped backticks (\`) first so they don't skew the count.
+  const strippedForBacktickCheck = updatedContent.replace(/\\`/g, '');
+  const backtickCount = (strippedForBacktickCheck.match(/`/g) || []).length;
+  if (backtickCount % 2 !== 0) {
+    issues.push('número ímpar de backticks não escapados — provavelmente um template literal está aberto/fechado incorretamente');
+  }
+
+  // 6. File must start with TypeScript code, not LLM prose. A valid .ts file opens with
   //    `import`, `export`, `//`, `/*` or a directive — anything else (e.g. "I have completed
   //    the search for...") means the LLM returned conversational text instead of code.
   const head = updatedContent.replace(/^﻿/, '').trimStart();

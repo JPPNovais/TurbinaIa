@@ -1109,7 +1109,7 @@ Gere o case study completo no formato solicitado.`,
 **Instruções:**
 1.  **Prompt Principal Otimizado:** Crie um prompt único, coeso e detalhado que combine todos os elementos fornecidos, utilizando uma linguagem descritiva e específica para ferramentas de IA de imagem.
 2.  **Variações de Prompt:** Crie 2-3 variações do prompt principal, alterando ligeiramente o estilo, a atmosfera ou adicionando/removendo um elemento para explorar diferentes resultados.
-3.  **Parâmetros Técnicos Sugeridos (se aplicável à ferramenta):** Liste sugestões de parâmetros como aspect ratio (`--ar`), stylize (`--s`), chaos (`--c`), seed (`--seed`), negative prompt, etc., conforme a ferramenta de IA preferida.
+3.  **Parâmetros Técnicos Sugeridos (se aplicável à ferramenta):** Liste sugestões de parâmetros como aspect ratio (\`--ar\`), stylize (\`--s\`), chaos (\`--c\`), seed (\`--seed\`), negative prompt, etc., conforme a ferramenta de IA preferida.
 
 **Formato da Resposta:**
 
@@ -1133,12 +1133,12 @@ Gere o case study completo no formato solicitado.`,
 ---
 
 **Parâmetros Técnicos Sugeridos (Baseados em [Ferramenta de IA Escolhida, ou Geral]):**
--   **Proporção de Aspecto (Aspect Ratio):** `--ar [Ex: 16:9 para paisagem, 9:16 para retrato, 1:1 para quadrado]`
--   **Estilização (Stylize):** `--s [Ex: 250 (baixa), 750 (média), 1000 (alta) - para Midjourney]`
--   **Caos (Chaos):** `--c [Ex: 0 (pouco), 50 (moderado), 100 (muito) - para Midjourney]`
--   **Seed:** `--seed [Um número específico se desejar reproduzir resultados ou explorar variações menores]`
--   **Negative Prompt (Opcional):** `[Ex: "low quality, blurry, mutated, ugly, bad anatomy, deformed"]`
--   **Qualidade:** `[Ex: "detailed, ultra high resolution, 8k, photorealistic"]`
+-   **Proporção de Aspecto (Aspect Ratio):** \`--ar [Ex: 16:9 para paisagem, 9:16 para retrato, 1:1 para quadrado]\`
+-   **Estilização (Stylize):** \`--s [Ex: 250 (baixa), 750 (média), 1000 (alta) - para Midjourney]\`
+-   **Caos (Chaos):** \`--c [Ex: 0 (pouco), 50 (moderado), 100 (muito) - para Midjourney]\`
+-   **Seed:** \`--seed [Um número específico se desejar reproduzir resultados ou explorar variações menores]\`
+-   **Negative Prompt (Opcional):** \`[Ex: "low quality, blurry, mutated, ugly, bad anatomy, deformed"]\`
+-   **Qualidade:** \`[Ex: "detailed, ultra high resolution, 8k, photorealistic"]\`
 `,
     tags: ['ia generativa', 'prompt engineering', 'arte digital', 'imagens'],
   },

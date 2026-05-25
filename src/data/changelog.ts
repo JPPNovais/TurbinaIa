@@ -13,6 +13,34 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-realtime-audio-api-2026',
+    date: '2026-05',
+    title: 'OpenAI lança modelos de áudio em tempo real para API',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'OpenAI disponibilizou o GPT-Realtime-2, GPT-Realtime-Translate e GPT-Realtime-Whisper através de sua API Realtime, agora geralmente disponível para agentes de voz em produção, permitindo interações de voz mais avançadas.',
+    highlights: [
+      'Lançamento em 9 de maio de 2026, com foco em agentes de voz de produção.',
+      'Inclui GPT-Realtime-2 (baseado em raciocínio de classe GPT-5), GPT-Realtime-Translate (suporte a mais de 70 idiomas de entrada e 13 de saída), e GPT-Realtime-Whisper (extensão do Whisper para sistema de streaming).',
+      'Permite que a IA ouça, raciocine, traduza e atue em uma única conversa ao vivo.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-gemini-3-1-ultra-2026',
+    date: '2026-05',
+    title: 'Google lança Gemini 3.1 Ultra com janela de contexto de 2 milhões de tokens',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Google lançou o Gemini 3.1 Ultra, um modelo com uma janela de contexto massiva de 2 milhões de tokens, capaz de trabalhar nativamente com texto, imagem, áudio e vídeo, marcando um avanço significativo em compreensão multimodal.',
+    highlights: [
+      'Lançado em maio de 2026.',
+      'Apresenta uma janela de contexto de 2 milhões de tokens.',
+      'Trabalha nativamente com texto, imagem, áudio e vídeo em uma única entrada.',
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'openai-gpt-5-2026',
     date: '2026-05',
     title: 'OpenAI lança GPT-5 com acesso gradual estendido',

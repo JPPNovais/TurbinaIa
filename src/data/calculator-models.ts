@@ -10,28 +10,28 @@ export interface CalculatorModel {
 export const AI_MODELS: CalculatorModel[] = [
   // Google
   {
-    name: 'Gemini 2.5 Flash', // Preço e janela de contexto atualizados para Gemini 2.5 Flash em maio de 2026.
+    name: 'Gemini 3.5 Flash', // Preço e janela de contexto atualizados para Gemini 3.5 Flash em maio de 2026.
     provider: 'Google',
-    inputPricePerM: 0.30, // Preço atualizado para Gemini 2.5 Flash.
-    outputPricePerM: 2.50, // Preço atualizado para Gemini 2.5 Flash.
-    contextWindow: '1M tokens', // Janela de contexto para Gemini 2.5 Flash.
-    description: 'Modelo equilibrado para velocidade e capacidade da nova geração Gemini 2.5.',
+    inputPricePerM: 1.50, // Preço atualizado para Gemini 3.5 Flash.
+    outputPricePerM: 9.00, // Preço atualizado para Gemini 3.5 Flash.
+    contextWindow: '1M tokens', // Janela de contexto para Gemini 3.5 Flash.
+    description: 'Modelo equilibrado para velocidade e capacidade da nova geração Gemini 3.5.',
   },
   {
-    name: 'Gemini 2.5 Pro', // Preço e janela de contexto atualizados para Gemini 2.5 Pro em maio de 2026.
+    name: 'Gemini 3.1 Pro', // Preço e janela de contexto atualizados para Gemini 3.1 Pro em maio de 2026.
     provider: 'Google',
-    inputPricePerM: 2.50, // Preço atualizado para contextos acima de 200K tokens para Gemini 2.5 Pro.
-    outputPricePerM: 15.00, // Preço atualizado para contextos acima de 200K tokens para Gemini 2.5 Pro.
-    contextWindow: '1M tokens', // Janela de contexto atualizada para Gemini 2.5 Pro.
-    description: 'Topo de linha da Google com 1M de contexto (preço para >200K tokens) e raciocínio avançado (versão 2.5).',
+    inputPricePerM: 4.00, // Preço atualizado para contextos acima de 200K tokens para Gemini 3.1 Pro.
+    outputPricePerM: 18.00, // Preço atualizado para contextos acima de 200K tokens para Gemini 3.1 Pro.
+    contextWindow: '1M tokens', // Janela de contexto atualizada para Gemini 3.1 Pro.
+    description: 'Topo de linha da Google com 1M de contexto (preço para >200K tokens) e raciocínio avançado (versão 3.1).',
   },
   {
-    name: 'Gemini 2.5 Flash-Lite', // Preço e janela de contexto atualizados para Gemini 2.5 Flash-Lite em maio de 2026.
+    name: 'Gemini 3.1 Flash-Lite', // Preço e janela de contexto atualizados para Gemini 3.1 Flash-Lite em maio de 2026.
     provider: 'Google',
-    inputPricePerM: 0.10, // Preço atualizado do Gemini 2.5 Flash-Lite.
-    outputPricePerM: 0.40, // Preço atualizado do Gemini 2.5 Flash-Lite.
+    inputPricePerM: 0.25, // Preço atualizado do Gemini 3.1 Flash-Lite.
+    outputPricePerM: 1.50, // Preço atualizado do Gemini 3.1 Flash-Lite.
     contextWindow: '1M tokens', // Janela de contexto atualizada para o modelo 'Lite'.
-    description: 'Modelo econômico e de alta velocidade da nova geração Gemini 2.5, com suporte multimodal.',
+    description: 'Modelo econômico e de alta velocidade da nova geração Gemini 3.1, com suporte multimodal.',
   },
   // OpenAI
   {
@@ -106,14 +106,14 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'Meta (via API)',
     inputPricePerM: 0.88, // Preço atualizado do Llama 3.3 70B via Together AI.
     outputPricePerM: 0.88, // Preço atualizado do Llama 3.3 70B via Together AI.
-    contextWindow: '128K tokens', // Janela de contexto atualizada do Llama 3.3 70B.
+    contextWindow: '131K tokens', // Janela de contexto atualizada do Llama 3.3 70B.
     description: 'Open source poderoso — pode ser usado local ou via API (preço via Together AI).',
   },
   {
     name: 'Llama 3.1 8B Instruct', // Atualizado de Llama 3.1 8B para Llama 3.1 8B Instruct.
     provider: 'Meta (via API)',
-    inputPricePerM: 0.02, // Preço do Llama 3.1 8B Instruct.
-    outputPricePerM: 0.05, // Preço do Llama 3.1 8B Instruct.
+    inputPricePerM: 0.18, // Preço do Llama 3.1 8B Instruct via Together AI.
+    outputPricePerM: 0.18, // Preço do Llama 3.1 8B Instruct via Together AI.
     contextWindow: '16K tokens', // Janela de contexto do Llama 3.1 8B Instruct.
     description: 'Versão leve e econômica da família Llama 3.1 Instruct.',
   },
@@ -130,8 +130,8 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'Command R+', // Adicionado como modelo de ponta da Cohere.
     provider: 'Cohere',
-    inputPricePerM: 2.50, // Preço do Command R+.
-    outputPricePerM: 10.00, // Preço do Command R+.
+    inputPricePerM: 3.00, // Preço do Command R+.
+    outputPricePerM: 15.00, // Preço do Command R+.
     contextWindow: '128K tokens', // Janela de contexto do Command R+.
     description: 'Modelo robusto da Cohere, otimizado para RAG e tarefas empresariais.',
   },

@@ -869,4 +869,277 @@ Apresente os resultados de forma clara, utilizando tabelas ou listas para as pro
 Gere o case study completo no formato solicitado.`,
     tags: ['portfólio', 'carreira', 'marketing pessoal', 'cases'],
   },
+  {
+    id: 'escrita-gerador-conteudo-longo',
+    title: 'Gerador de Conteúdo Longo (Artigo/Ebook)',
+    category: 'Escrita',
+    description: 'Cria um rascunho detalhado e uma estrutura para um artigo longo, post de blog, ebook ou material semelhante, com base em um tema e público-alvo.',
+    template: `Você é um especialista em marketing de conteúdo e escrita. Sua tarefa é criar um plano detalhado e um rascunho para um conteúdo longo.
+
+**Informações:**
+- **Tipo de Conteúdo:** [Ex: Artigo de blog, eBook, Whitepaper, Guia completo]
+- **Tema Principal:** [Ex: "Os impactos da IA na produtividade de pequenas empresas"]
+- **Público-Alvo:** [Ex: Empreendedores e gerentes de pequenas e médias empresas no Brasil, interessados em otimizar processos.]
+- **Objetivo do Conteúdo:** [Ex: Educar sobre a IA, gerar leads, posicionar a marca como líder de pensamento.]
+- **Tom de Voz:** [Ex: Informativo, autoritário, amigável, inspirador.]
+- **Palavras-chave (opcional):** [Ex: IA para pequenas empresas, produtividade IA, automação empresarial.]
+
+**Instruções:**
+1.  **Título Sugerido:** Crie 3-5 opções de títulos otimizados para o tema e público.
+2.  **Introdução:** Desenvolva um parágrafo introdutório que capture a atenção do leitor e apresente o problema ou a questão central.
+3.  **Estrutura Detalhada:** Crie uma estrutura de tópicos hierárquica (H2, H3, H4) para o conteúdo. Para cada seção, forneça uma breve descrição do que deve ser abordado e sugira pontos-chave, exemplos ou dados a serem incluídos.
+4.  **Conclusão e Chamada para Ação (CTA):** Escreva um parágrafo de conclusão que resuma os pontos principais e uma CTA clara e relevante para o objetivo do conteúdo.
+5.  **Sugestões Adicionais:** Inclua ideias para elementos visuais, links internos/externos ou recursos adicionais que poderiam enriquecer o conteúdo.
+
+**Formato da Resposta:**
+
+**Títulos Sugeridos:**
+- [Título 1]
+- [Título 2]
+- ...
+
+**Introdução:**
+[Parágrafo introdutório]
+
+**Estrutura do Conteúdo:**
+## [H2 Tópico Principal 1]
+    - Descrição: [Breve descrição do que será abordado.]
+    - Pontos-chave:
+        - [Ponto 1]
+        - [Ponto 2]
+        - [Ponto 3]
+    ### [H3 Subtópico 1.1]
+        - Descrição: [Breve descrição.]
+        - Exemplos/Dados: [Sugestões específicas.]
+    ### [H3 Subtópico 1.2]
+        - Descrição: [Breve descrição.]
+
+## [H2 Tópico Principal 2]
+    - Descrição: ...
+    - Pontos-chave: ...
+    ### [H3 Subtópico 2.1]
+    ...
+
+**Conclusão:**
+[Parágrafo de conclusão]
+
+**Chamada para Ação (CTA):**
+[Frase de CTA clara]
+
+**Sugestões Adicionais:**
+- Elementos Visuais: [Ex: Infográficos, gráficos, imagens relevantes.]
+- Recursos: [Ex: links para estudos, outras publicações.]
+- Otimização SEO: [Ex: Sugestões de linkagem interna.]
+`,
+    tags: ['conteúdo', 'escrita', 'marketing', 'seo'],
+  },
+  {
+    id: 'education-plano-aula-curso',
+    title: 'Criador de Plano de Aula/Módulo de Curso',
+    category: 'Educação',
+    description: 'Gera um plano de aula detalhado ou a estrutura de um módulo de curso, incluindo objetivos, tópicos, atividades e recursos, para um tema e público específicos.',
+    template: `Você é um especialista em design instrucional e criação de conteúdo educacional. Sua tarefa é desenvolver um plano de aula ou um módulo de curso detalhado.
+
+**Informações:**
+- **Tipo:** [Ex: Plano de aula, Módulo de curso, Workshop.]
+- **Título do Módulo/Aula:** [Ex: "Introdução à Programação Python para Iniciantes"]
+- **Público-Alvo:** [Ex: Estudantes do ensino médio, Profissionais em transição de carreira, Crianças de 8-10 anos.]
+- **Nível de Dificuldade:** [Ex: Básico, Intermediário, Avançado.]
+- **Duração Estimada:** [Ex: 1 hora, 4 semanas (com 2 aulas por semana), 8 horas de workshop.]
+- **Objetivo Geral de Aprendizagem:** [Ex: Ao final do módulo/aula, o aluno será capaz de compreender os fundamentos da IA e aplicar ferramentas básicas para otimizar suas tarefas diárias.]
+- **Recursos Disponíveis (opcional):** [Ex: Acesso à internet, sala de aula, livros didáticos, software específico.]
+
+**Instruções:**
+1.  **Objetivos de Aprendizagem Específicos:** Liste 3-5 objetivos específicos e mensuráveis que os alunos devem alcançar ao final do módulo/aula. Use verbos de ação (ex: "Identificar", "Descrever", "Aplicar").
+2.  **Pré-requisitos:** Indique qualquer conhecimento ou habilidade prévia que os alunos devem possuir.
+3.  **Estrutura do Conteúdo:** Divida o módulo/aula em seções lógicas com tópicos e subtópicos. Para cada seção, sugira os principais conceitos a serem abordados.
+4.  **Metodologia e Atividades:** Para cada seção ou tópico principal, descreva as atividades de aprendizagem propostas (ex: leitura, discussão em grupo, exercícios práticos, estudos de caso, projetos).
+5.  **Recursos e Materiais:** Sugira materiais de apoio necessários ou recomendados (ex: links para artigos, vídeos, livros, ferramentas online).
+6.  **Avaliação:** Proponha métodos de avaliação para verificar a compreensão e o alcance dos objetivos (ex: quiz, projeto final, discussão, apresentação).
+7.  **Dicas para o Facilitador (opcional):** Inclua qualquer dica pedagógica ou de gerenciamento de tempo.
+
+**Formato da Resposta:**
+
+**Título do Módulo/Aula:** [Título Gerado]
+
+**Público-Alvo:** [Público-Alvo]
+**Nível de Dificuldade:** [Nível]
+**Duração Estimada:** [Duração]
+
+**Objetivo Geral de Aprendizagem:**
+[Objetivo Geral]
+
+**Objetivos de Aprendizagem Específicos:**
+- [Objetivo 1]
+- [Objetivo 2]
+- ...
+
+**Pré-requisitos:**
+[Lista de pré-requisitos ou "Nenhum"]
+
+**Estrutura do Conteúdo e Atividades:**
+
+### Seção 1: [Título da Seção] ([Tempo estimado, ex: 15 min])
+    - **Tópicos:**
+        - [Tópico 1.1]
+        - [Tópico 1.2]
+    - **Atividades Propostas:** [Ex: Discussão inicial, Leitura de artigo X.]
+    - **Materiais/Recursos:** [Ex: Slide 1-5, Artigo "Título do Artigo".]
+
+### Seção 2: [Título da Seção] ([Tempo estimado, ex: 30 min])
+    - **Tópicos:**
+        - [Tópico 2.1]
+        - [Tópico 2.2]
+    - **Atividades Propostas:** [Ex: Exercício prático Y, Estudo de caso.]
+    - **Materiais/Recursos:** [Ex: Ferramenta Z, Arquivo de dados.]
+
+... (Continue para as demais seções)
+
+**Avaliação:**
+- [Método de Avaliação 1]
+- [Método de Avaliação 2]
+
+**Dicas para o Facilitador:**
+- [Dica 1]
+- [Dica 2]
+`,
+    tags: ['educação', 'ensino', 'aprendizagem', 'didática'],
+  },
+  {
+    id: 'social-media-campanha-lancamento',
+    title: 'Plano de Campanha de Lançamento em Redes Sociais',
+    category: 'Redes Sociais',
+    description: 'Desenvolve um plano estratégico para o lançamento de um produto ou serviço em redes sociais, incluindo fases, tipos de conteúdo e canais recomendados.',
+    template: `Você é um especialista em marketing digital e gestão de redes sociais, com foco em campanhas de lançamento. Sua tarefa é criar um plano detalhado para o lançamento de um novo produto ou serviço nas redes sociais.
+
+**Informações:**
+- **Nome do Produto/Serviço:** [Ex: "App FitLife: Treinos Personalizados com IA"]
+- **Breve Descrição do Produto/Serviço:** [Ex: Um aplicativo móvel que usa IA para criar rotinas de treino e planos de nutrição personalizados para o usuário, com acompanhamento de progresso.]
+- **Público-Alvo Principal:** [Ex: Pessoas de 25-45 anos, interessadas em saúde, fitness e tecnologia, que buscam praticidade.]
+- **Objetivo Principal da Campanha:** [Ex: Gerar 10.000 downloads do app no primeiro mês, Aumentar o reconhecimento da marca, Gerar leads qualificados.]
+- **Data de Lançamento Oficial:** [Ex: 15 de julho de 2026]
+- **Principais Redes Sociais a Serem Usadas:** [Ex: Instagram, TikTok, Facebook, LinkedIn.]
+- **Orçamento (opcional):** [Ex: Médio, Alto (para anúncios pagos), Baixo (orgânico).]
+- **Diferencial Competitivo:** [Ex: Planos realmente personalizados pela IA, biblioteca de exercícios em vídeo 3D.]
+
+**Instruções:**
+1.  **Visão Geral da Campanha:** Um parágrafo conciso sobre o objetivo e a abordagem geral da campanha.
+2.  **Fases da Campanha:** Divida a campanha em 3 fases principais: Pré-Lançamento, Lançamento e Pós-Lançamento.
+3.  **Para cada fase, detalhe:**
+    *   **Objetivos Específicos da Fase:** O que se espera alcançar nesta fase.
+    *   **Tipos de Conteúdo e Formatos:** Ideias de posts, stories, vídeos, carrosséis, lives, etc., específicos para as redes sociais escolhidas.
+    *   **Mensagens Chave:** Quais mensagens devem ser comunicadas.
+    *   **Chamadas para Ação (CTAs):** Exemplos de CTAs relevantes para a fase.
+    *   **Métricas/KPIs Sugeridos:** Como medir o sucesso de cada fase.
+4.  **Sugestões Adicionais:** Inclua ideias para parcerias com influenciadores, promoções ou anúncios pagos.
+
+**Formato da Resposta:**
+
+**Plano de Campanha de Lançamento: [Nome do Produto/Serviço]**
+
+**Visão Geral:**
+[Parágrafo com a visão geral da campanha.]
+
+---
+
+### Fase 1: Pré-Lançamento (Aquecimento e Antecipação)
+-   **Duração Sugerida:** [Ex: 2-3 semanas antes do lançamento]
+-   **Objetivos:** [Ex: Gerar curiosidade, construir lista de e-mails, educar sobre o problema que o produto resolve.]
+-   **Tipos de Conteúdo e Formatos:**
+    -   Instagram: [Ex: Teasers em Stories, carrosséis com "problema x solução", Reels com "bastidores".]
+    -   TikTok: [Ex: Vídeos curtos com humor ou desafios relacionados ao problema.]
+    -   Facebook: [Ex: Posts com perguntas engajadoras, enquetes.]
+    -   LinkedIn (se aplicável): [Ex: Artigos curtos sobre a inovação por trás do produto.]
+-   **Mensagens Chave:** [Ex: "Prepare-se para uma revolução", "Diga adeus a X", "Uma nova era está chegando".]
+-   **CTAs:** [Ex: "Cadastre-se na lista VIP", "Siga para não perder as novidades", "Qual seu maior desafio em X?"]
+-   **Métricas/KPIs:** [Ex: Crescimento de seguidores, engajamento (curtidas, comentários, compartilhamentos), cadastros de e-mail.]
+
+---
+
+### Fase 2: Lançamento (Impacto e Conversão)
+-   **Duração Sugerida:** [Ex: 1 semana após o lançamento]
+-   **Objetivos:** [Ex: Gerar downloads/vendas, maximizar o alcance, criar urgência.]
+-   **Tipos de Conteúdo e Formatos:**
+    -   Instagram: [Ex: Live de lançamento, tutoriais rápidos em Reels/Stories, depoimentos de primeiros usuários.]
+    -   TikTok: [Ex: Vídeos mostrando o produto em ação, desafios de uso.]
+    -   Facebook: [Ex: Anúncios direcionados, posts com link direto para o produto, eventos online.]
+    -   LinkedIn (se aplicável): [Ex: Post oficial de lançamento, cases de uso.]
+-   **Mensagens Chave:** [Ex: "Chegou o [Nome do Produto]!", "Experimente agora", "Oferta especial de lançamento."]
+-   **CTAs:** [Ex: "Baixe o app agora!", "Compre aqui", "Agende sua demonstração gratuita!"]
+-   **Métricas/KPIs:** [Ex: Número de downloads/vendas, tráfego para a página do produto, cliques nos CTAs, alcance e impressões dos posts de lançamento.]
+
+---
+
+### Fase 3: Pós-Lançamento (Engajamento e Retenção)
+-   **Duração Sugerida:** [Ex: Contínua, 3-4 semanas após o lançamento inicial]
+-   **Objetivos:** [Ex: Manter o engajamento, coletar feedback, incentivar o uso contínuo, criar comunidade.]
+-   **Tipos de Conteúdo e Formatos:**
+    -   Instagram: [Ex: Dicas de uso, Q&A com os desenvolvedores, conteúdo gerado pelo usuário (UGC), enquetes sobre novas funcionalidades.]
+    -   TikTok: [Ex: Tutoriais avançados, desafios com o produto, interação com comentários.]
+    -   Facebook: [Ex: Criação de grupo de usuários, posts de suporte, novidades e atualizações.]
+    -   LinkedIn (se aplicável): [Ex: Artigos sobre o impacto do produto, entrevistas com usuários.]
+-   **Mensagens Chave:** [Ex: "Aproveite ao máximo seu [Nome do Produto]", "Seu feedback importa", "Junte-se à nossa comunidade."]
+-   **CTAs:** [Ex: "Deixe sua avaliação", "Participe do nosso grupo", "Envie suas sugestões!"]
+-   **Métricas/KPIs:** [Ex: Engajamento contínuo, feedback de usuários, menções da marca, retenção de usuários.]
+
+**Sugestões Adicionais:**
+-   **Influenciadores:** [Ex: Parceria com influenciadores fitness para o lançamento.]
+-   **Anúncios Pagos:** [Ex: Campanha de tráfego e conversão no Facebook/Instagram Ads focada na Fase de Lançamento.]
+-   **Email Marketing:** [Ex: Sequência de e-mails para nutrir leads cadastrados no pré-lançamento.]
+`,
+    tags: ['redes sociais', 'marketing', 'lançamento', 'estratégia'],
+  },
+  {
+    id: 'ai-prompt-geracao-imagens',
+    title: 'Criador de Prompt para Geração de Imagens',
+    category: 'IA & Automação',
+    description: 'Gera prompts detalhados e otimizados para ferramentas de IA de geração de imagens (ex: Midjourney, DALL-E, Stable Diffusion), a partir de uma ideia simples.',
+    template: `Você é um prompt engineer especializado em IA generativa de imagens, como Midjourney, DALL-E ou Stable Diffusion. Sua tarefa é transformar uma ideia simples em prompts de alta qualidade e detalhados para obter resultados visuais impressionantes.
+
+**Informações da Imagem Desejada:**
+- **Ideia Central/Objeto Principal:** [Ex: "Um astronauta flutuando no espaço."]
+- **Estilo Artístico:** [Ex: "Realismo fotográfico", "Pintura a óleo de Van Gogh", "Cyberpunk neon", "Desenho animado 3D Pixar", "Aquarela minimalista", "Vaporwave estético", "Fantasia épica".]
+- **Detalhes Específicos/Elementos Chave:** [Ex: "Com um capacete reflexivo mostrando a Terra", "Luzes neon azuis e roxas", "Flores de cerejeira caindo", "Robô amigável ao lado".]
+- **Atmosfera/Emoção:** [Ex: "Misteriosa e serena", "Energética e futurista", "Calma e introspectiva", "Grandiosa e épica".]
+- **Cores Predominantes (opcional):** [Ex: "Tons de azul e dourado", "Paleta pastel", "Cores vibrantes e contrastantes".]
+- **Composição/Perspectiva (opcional):** [Ex: "Close-up", "Visão panorâmica", "Ângulo holandês", "Retrato", "Paisagem".]
+- **Iluminação (opcional):** [Ex: "Luz dourada do pôr do sol", "Iluminação dramática com sombras fortes", "Luz ambiente suave".]
+- **Ferramenta de IA (se tiver preferência):** [Ex: Midjourney V6, DALL-E 3, Stable Diffusion XL.]
+
+**Instruções:**
+1.  **Prompt Principal Otimizado:** Crie um prompt único, coeso e detalhado que combine todos os elementos fornecidos, utilizando uma linguagem descritiva e específica para ferramentas de IA de imagem.
+2.  **Variações de Prompt:** Crie 2-3 variações do prompt principal, alterando ligeiramente o estilo, a atmosfera ou adicionando/removendo um elemento para explorar diferentes resultados.
+3.  **Parâmetros Técnicos Sugeridos (se aplicável à ferramenta):** Liste sugestões de parâmetros como aspect ratio (`--ar`), stylize (`--s`), chaos (`--c`), seed (`--seed`), negative prompt, etc., conforme a ferramenta de IA preferida.
+
+**Formato da Resposta:**
+
+**Ideia Original:** [Ideia Central/Objeto Principal]
+
+---
+
+**Prompt Principal Otimizado:**
+[Seu prompt detalhado aqui, ex: "An astronaut floating gracefully in deep space, hyperrealistic photography, intricate details on the reflective helmet showing a vibrant Earth, surrounded by ethereal nebulae in shades of cosmic blues and purples, serene and mysterious atmosphere, cinematic lighting, ultra-high resolution, 8k --ar 16:9 --v 6"]
+
+---
+
+**Variações de Prompt:**
+
+1.  **Variação 1 (Estilo Diferente):**
+    [Ex: "An astronaut floating in space, stylized as a retro 80s vaporwave aesthetic painting, neon glow from the visor, pastel pinks and blues, mysterious and serene, synthwave art --ar 16:9"]
+
+2.  **Variação 2 (Elemento Adicional/Removido):**
+    [Ex: "Close-up of an astronaut's helmet in space, detailed reflections of distant galaxies, a single cherry blossom petal floating past, ethereal lighting, mysterious and serene, photo realistic, 8k --ar 2:3"]
+
+---
+
+**Parâmetros Técnicos Sugeridos (Baseados em [Ferramenta de IA Escolhida, ou Geral]):**
+-   **Proporção de Aspecto (Aspect Ratio):** `--ar [Ex: 16:9 para paisagem, 9:16 para retrato, 1:1 para quadrado]`
+-   **Estilização (Stylize):** `--s [Ex: 250 (baixa), 750 (média), 1000 (alta) - para Midjourney]`
+-   **Caos (Chaos):** `--c [Ex: 0 (pouco), 50 (moderado), 100 (muito) - para Midjourney]`
+-   **Seed:** `--seed [Um número específico se desejar reproduzir resultados ou explorar variações menores]`
+-   **Negative Prompt (Opcional):** `[Ex: "low quality, blurry, mutated, ugly, bad anatomy, deformed"]`
+-   **Qualidade:** `[Ex: "detailed, ultra high resolution, 8k, photorealistic"]`
+`,
+    tags: ['ia generativa', 'prompt engineering', 'arte digital', 'imagens'],
+  },
 ];

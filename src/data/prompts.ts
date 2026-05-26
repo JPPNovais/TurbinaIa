@@ -1277,4 +1277,159 @@ Para cada cenário, inclua (quando relevante):
 Formate a saída de forma clara e estruturada, utilizando listas aninhadas ou um formato tabular para cada cenário, facilitando a implementação por uma equipe de QA.`,
     tags: ['engenharia de software', 'QA', 'inteligência artificial', 'automação de testes'],
   },
+  {
+    id: 'ia-design-workflow-agente',
+    title: 'Design de Workflow para Agentes de IA',
+    category: 'IA & Automação',
+    description: 'Ajuda a planejar e estruturar um workflow complexo de IA, definindo etapas, ferramentas e interações para automatizar um processo específico.',
+    template: `Você é um especialista em arquitetura de agentes de IA e automação de processos. Sua tarefa é criar um design detalhado de workflow para um agente de IA, descrevendo cada etapa, as ações a serem tomadas, as ferramentas envolvidas e os resultados intermediários.
+
+**Objetivo Principal do Workflow:** [Exemplo: Automatizar o processo de triagem e resposta inicial a leads de vendas]
+**Entrada Inicial de Dados:** [Exemplo: Novos leads recebidos via formulário web com nome, email, telefone, empresa e mensagem]
+**Ferramentas/APIs disponíveis (se houver):** [Exemplo: CRM (HubSpot), Ferramenta de enriquecimento de dados (Clearbit), Gerador de texto de IA (GPT-4), Sistema de e-mail (SendGrid)]
+**Restrições ou Considerações Específicas:** [Exemplo: Deve priorizar leads de empresas com mais de 50 funcionários. Respostas devem ser personalizadas e em tom formal.]
+**Exemplo de Resultado Esperado:** [Exemplo: Lead classificado, enriquecido com dados adicionais, e-mail inicial personalizado enviado, tarefa criada no CRM para o vendedor.]
+
+---
+
+**Sua Saída Deverá Conter:**
+
+1.  **Visão Geral do Workflow:** Uma breve descrição do fluxo de ponta a ponta.
+2.  **Passos Detalhados do Workflow:**
+    *   **Etapa 1: [Nome da Etapa]**
+        *   **Ação:** O que o agente de IA faz nesta etapa.
+        *   **Entrada:** Quais dados ou informações são utilizados.
+        *   **Ferramentas Envolvidas:** Quais ferramentas são acionadas.
+        *   **Saída/Resultado Intermediário:** O que é produzido ou para onde os dados são encaminhados.
+        *   **Lógica de Decisão (se houver):** Condições para avançar ou ramificar o fluxo.
+    *   ... (Repita para as etapas seguintes, pensando em no mínimo 5-7 etapas para um workflow complexo)
+3.  **Mapeamento de Ferramentas:** Um resumo de quais ferramentas são usadas em quais etapas.
+4.  **Pontos de Monitoramento e Otimização:** Onde o workflow pode ser avaliado e melhorado.
+5.  **Recomendações para Implementação:** Sugestões para colocar este workflow em prática.`,
+    tags: ['automação', 'agentes de ia', 'workflow', 'estratégia'],
+  },
+  {
+    id: 'marketing-analise-sentimento-feedback',
+    title: 'Análise de Sentimento e Feedback do Cliente com IA',
+    category: 'Marketing',
+    description: 'Processa e analisa grandes volumes de feedback de clientes ou dados de redes sociais para identificar sentimentos, temas e insights acionáveis.',
+    template: `Você é um analista de marketing com expertise em inteligência artificial para insights de clientes. Sua tarefa é analisar um conjunto de dados de feedback para extrair sentimentos, temas recorrentes e recomendações acionáveis.
+
+**Fonte dos Dados:** [Exemplo: Comentários de usuários em um aplicativo de delivery]
+**Contexto dos Dados:** [Exemplo: Avaliações e críticas na App Store e Google Play Store sobre a versão 3.0 do aplicativo]
+**Volume de Dados (aproximado):** [Exemplo: 500 avaliações recentes]
+**Período de Análise:** [Exemplo: Últimos 3 meses (2026-02 a 2026-05)]
+**Aspectos Chave a Analisar:** [Exemplo: Usabilidade do app, velocidade de entrega, qualidade da comida, atendimento ao cliente, preço, novas funcionalidades]
+**Formato de Saída Desejado:** [Exemplo: Relatório com tópicos principais, tabela de sentimentos, recomendações]
+
+---
+
+**Sua Análise Deve Incluir:**
+
+1.  **Resumo Executivo:** Uma visão geral dos principais achados e do sentimento geral.
+2.  **Análise de Sentimento Agregada:**
+    *   Porcentagem de sentimentos (positivo, negativo, neutro).
+    *   Principais termos e frases associados a cada sentimento.
+3.  **Identificação de Tópicos e Temas Recorrentes:**
+    *   Lista dos 5-10 temas mais mencionados.
+    *   Para cada tema, o sentimento predominante associado e exemplos de citações.
+4.  **Insights Acionáveis por Categoria:**
+    *   Para cada um dos "Aspectos Chave a Analisar", forneça:
+        *   Um resumo do feedback.
+        *   O sentimento dominante.
+        *   Sugestões concretas para a equipe de produto, marketing ou suporte.
+5.  **Identificação de "Pain Points" e Oportunidades:**
+    *   Quais são as maiores dores dos clientes?
+    *   Onde há oportunidades claras para melhoria ou inovação?
+6.  **Recomendações Estratégicas:** Sugestões de ações de curto e médio prazo baseadas nos insights.
+7.  **Pontos Fortes a Serem Reforçados:** O que os clientes amam e deve ser comunicado ou expandido.`,
+    tags: ['análise de dados', 'feedback', 'marketing digital', 'insights'],
+  },
+  {
+    id: 'dev-gerador-testes-ia',
+    title: 'Gerador de Testes de Unidade e Integração com IA',
+    category: 'Desenvolvimento',
+    description: 'Cria testes de unidade e/ou integração para um bloco de código fornecido, garantindo cobertura e identificando casos de borda e sucesso.',
+    template: `Você é um engenheiro de software especialista em testes automatizados. Sua tarefa é criar testes robustos de unidade e/ou integração para o trecho de código fornecido.
+
+**Trecho de Código ou Função:**
+\`\`\`[Linguagem de Programação]
+[Cole o trecho de código aqui. Exemplo:
+function calculateTotalPrice(items, discountRate) {
+  let total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  if (discountRate) {
+    total -= total * discountRate;
+  }
+  return total;
+}
+]
+\`\`\`
+
+**Linguagem de Programação:** [Exemplo: JavaScript, Python, Java, C#]
+**Framework de Testes Desejado:** [Exemplo: Jest (para JS), Pytest (para Python), JUnit (para Java), NUnit (para C#)]
+**Contexto Adicional (se houver):** [Exemplo: Funções dependentes, estruturas de dados de entrada/saída esperadas, mocks necessários.]
+**Tipo de Teste Desejado:** [Unidade, Integração, Ambos]
+**Nível de Cobertura Desejado:** [Básico (caminhos principais), Médio (inclui alguns casos de borda), Abrangente (todos os caminhos, erros, borda)]
+
+---
+
+**Sua Saída Deverá Incluir:**
+
+1.  **Explicação da Função:** Uma breve descrição do que a função/código faz.
+2.  **Testes de Unidade (se solicitado):**
+    *   **Setup:** Quaisquer configurações necessárias para rodar os testes.
+    *   **Testes de Sucesso:** Múltiplos cenários de uso normal com entradas e saídas esperadas.
+    *   **Testes de Casos de Borda:** Entradas vazias, nulas, valores máximos/mínimos, formatos inesperados (se aplicável).
+    *   **Testes de Erro (se aplicável):** Comportamento esperado para entradas inválidas ou condições de falha.
+3.  **Testes de Integração (se solicitado):**
+    *   **Setup:** Simular a integração com dependências externas (ex: chamadas a API, banco de dados, mocks).
+    *   **Cenários de Integração:** Como a função interage com outros componentes ou serviços.
+4.  **Mocks e Stubs (se necessário):** Definições de como simular dependências externas para isolar o código em teste.
+5.  **Recomendações:** Sugestões para melhorar a testabilidade do código ou adicionar mais testes.
+
+**Formato da Saída:** O código dos testes deve ser fornecido no framework e linguagem especificados, pronto para ser copiado e executado.
+`,
+    tags: ['testes', 'qualidade de código', 'automação', 'desenvolvimento'],
+  },
+  {
+    id: 'negocios-estrategia-esg-ia',
+    title: 'Estratégia ESG Assistida por IA',
+    category: 'Negócios',
+    description: 'Desenvolve uma estratégia Ambiental, Social e de Governança (ESG) personalizada para sua empresa, identificando riscos, oportunidades e métricas de impacto.',
+    template: `Você é um consultor de sustentabilidade e negócios com profunda expertise em ESG e aplicação de IA. Sua tarefa é criar uma estratégia ESG personalizada para uma empresa, identificando pilares, ações, métricas e recomendações para implementação.
+
+**Nome da Empresa:** [Exemplo: Soluções Verdes Ltda.]
+**Setor de Atuação:** [Exemplo: Tecnologia de energias renováveis]
+**Tamanho da Empresa:** [Exemplo: Pequena a média (50 funcionários)]
+**Principais Produtos/Serviços:** [Exemplo: Software de otimização para painéis solares, consultoria em eficiência energética]
+**Valores e Missão da Empresa (se houver):** [Exemplo: Inovar para um futuro sustentável, com transparência e responsabilidade social]
+**Recursos Disponíveis para ESG (financeiros, humanos):** [Exemplo: Orçamento limitado, equipe de 2 pessoas dedicada a projetos de impacto, parceria com universidade]
+**Objetivos ESG Atuais (se houver):** [Exemplo: Reduzir a pegada de carbono, melhorar a diversidade na liderança, aumentar o engajamento comunitário]
+**Legislação ou Padrões Relevantes (se conhecido):** [Exemplo: Regulamentações brasileiras de resíduos sólidos, padrões ISO 14001, ODS da ONU]
+
+---
+
+**Sua Saída Deverá Conter:**
+
+1.  **Análise de Materialidade (IA-driven):**
+    *   Identificação dos temas ESG mais relevantes para o setor e para a empresa, considerando riscos e oportunidades.
+    *   Como a IA pode ajudar a monitorar e analisar esses temas.
+2.  **Pilares da Estratégia ESG:**
+    *   Definição clara dos principais pilares ESG (Ambiental, Social, Governança) para a empresa.
+    *   Para cada pilar, os objetivos estratégicos específicos e alinhados com os ODS da ONU, se aplicável.
+3.  **Plano de Ação Detalhado (3-5 Ações por Pilar):**
+    *   Para cada pilar, liste ações concretas e implementáveis (ex: adoção de energia limpa, programa de voluntariado, política de diversidade).
+    *   Para cada ação, inclua: Responsável, Prazo estimado, Recursos necessários.
+4.  **Métricas de Desempenho (KPIs ESG):**
+    *   Sugestão de KPIs mensuráveis para cada pilar, utilizando abordagens baseadas em IA para coleta e análise de dados (ex: monitoramento de consumo de energia, análise de sentimento de clima organizacional).
+    *   Metas quantitativas e qualitativas para cada KPI.
+5.  **Comunicação e Transparência:**
+    *   Recomendações sobre como comunicar o progresso ESG a stakeholders internos e externos.
+    *   Sugestões de formatos de relatório (ex: relatório de sustentabilidade, seção no site).
+6.  **Gerenciamento de Riscos e Oportunidades:**
+    *   Identificação de riscos ESG específicos e como mitigá-los.
+    *   Oportunidades de inovação e vantagem competitiva através da estratégia ESG.
+7.  **Recomendações para Integração da IA:** Como a inteligência artificial pode ser utilizada para otimizar o monitoramento, a análise e a tomada de decisões relacionadas à estratégia ESG.`,
+    tags: ['sustentabilidade', 'esg', 'negócios', 'estratégia'],
+  },
 ];

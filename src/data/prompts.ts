@@ -1432,4 +1432,108 @@ function calculateTotalPrice(items, discountRate) {
 7.  **Recomendações para Integração da IA:** Como a inteligência artificial pode ser utilizada para otimizar o monitoramento, a análise e a tomada de decisões relacionadas à estratégia ESG.`,
     tags: ['sustentabilidade', 'esg', 'negócios', 'estratégia'],
   },
+  {
+    id: 'ai-base-conhecimento-pessoal',
+    title: 'Construtor de Base de Conhecimento Pessoal com IA',
+    category: 'IA & Automação',
+    description: 'Crie uma base de conhecimento pessoal estruturada a partir de seus documentos e notas, otimizada para consulta e aprendizado.',
+    template: `Você é um assistente de IA especialista em gerenciamento de conhecimento e construção de bases de dados. Seu objetivo é me ajudar a criar uma base de conhecimento pessoal otimizada e fácil de consultar, extraindo informações de diversas fontes e organizando-as de forma lógica.
+
+As fontes de informação que você deve considerar são: [Lista de tipos de documentos/mídias, ex: notas de reunião, artigos científicos, trechos de livros, transcrições de vídeos, e-mails, etc.].
+
+O tema central da base de conhecimento será: [Tema principal, ex: "Produtividade Pessoal e Hábitos", "Desenvolvimento Frontend", "Estratégias de Marketing Digital"].
+
+Meu objetivo principal ao construir esta base é: [Objetivo, ex: "Ter um repositório centralizado para consulta rápida", "Organizar meus estudos para uma certificação", "Gerar novas ideias a partir da conexão de conceitos"].
+
+Por favor, crie uma estrutura sugerida para a base de conhecimento, incluindo categorias principais e subcategorias. Para cada categoria/subcategoria, liste os tipos de informação que seriam armazenados e sugira metadados relevantes (tags, autores, datas, links, etc.) que ajudariam na recuperação.
+
+Além disso, descreva como a IA pode processar os dados brutos de cada tipo de fonte (ex: resumir artigos, extrair pontos-chave de reuniões, identificar termos técnicos) e como essa informação seria indexada para facilitar buscas complexas.
+
+No final, forneça 3 exemplos de perguntas complexas que eu poderia fazer à minha base de conhecimento para obter insights valiosos, e como a IA utilizaria a estrutura que você propôs para respondê-las.`,
+    tags: ['Conhecimento', 'Organização', 'Aprendizado', 'Dados'],
+  },
+  {
+    id: 'marketing-calendario-conteudo-ia',
+    title: 'Calendário de Conteúdo Preditivo com IA',
+    category: 'Marketing',
+    description: 'Gere um calendário de conteúdo otimizado por IA, prevendo tópicos e formatos com base em tendências e desempenho.',
+    template: `Você é um estrategista de marketing digital e especialista em IA, encarregado de criar um calendário de conteúdo preditivo para o próximo [Período, ex: "trimestre", "mês"].
+
+O nicho/indústria do meu negócio é: [Nicho/Indústria].
+Minha persona principal é: [Breve descrição da persona ou link para documento de persona].
+Meus principais canais de distribuição de conteúdo são: [Ex: Instagram, LinkedIn, Blog, YouTube, Newsletter].
+Meus objetivos de conteúdo para este período são: [Ex: Aumentar engajamento em 15%, Gerar 100 leads qualificados, Aumentar tráfego orgânico em 20%].
+Dados de desempenho anteriores (se disponíveis): [Ex: Tópicos mais populares, formatos com maior engajamento, horários de pico, conteúdo de concorrentes com bom desempenho. Se não tiver, diga "Nenhum dado anterior"].
+
+Com base nessas informações, e considerando as tendências atuais e futuras de [Ano atual + 1 ou 2, ex: "2026-2027"] para [Nicho/Indústria], crie um calendário de conteúdo detalhado.
+
+Para cada [Número] semanas, inclua:
+1.  **Tópicos Sugeridos:** 3-5 ideias de tópicos altamente relevantes e com potencial de alto engajamento/conversão.
+2.  **Formato:** Para cada tópico, sugira o formato ideal (ex: Carrossel no Instagram, Artigo de Blog, Vídeo Curto, Thread no LinkedIn, Infográfico).
+3.  **Chamada para Ação (CTA):** Uma CTA específica e alinhada ao objetivo.
+4.  **Justificativa Preditiva:** Explique *por que* a IA sugere este tópico/formato, referenciando tendências, dados da persona ou objetivos.
+5.  **Palavras-chave/Hashtags:** Sugestões de SEO e alcance.
+6.  **Sugestão de Data/Hora de Publicação:** Otimizada para o público.
+
+Apresente o resultado em formato de tabela Markdown, fácil de visualizar.`,
+    tags: ['Marketing', 'Conteúdo', 'Estratégia', 'Previsão'],
+  },
+  {
+    id: 'dev-design-arquitetura-microsservicos',
+    title: 'Design de Arquitetura de Microsserviços com IA',
+    category: 'Desenvolvimento',
+    description: 'Obtenha um design de arquitetura de microsserviços detalhado e otimizado para um novo projeto ou refatoração.',
+    template: `Você é um arquiteto de software sênior com vasta experiência em design de sistemas distribuídos e microsserviços, utilizando as melhores práticas do mercado e considerando as capacidades de IA para otimização.
+
+Estou projetando um novo sistema (ou refatorando um existente) para [Descreva o sistema/aplicação, ex: "uma plataforma de e-commerce de produtos artesanais", "um sistema de gestão de frota para logística", "uma aplicação de streaming de vídeo"].
+
+Os principais requisitos funcionais são: [Liste os requisitos funcionais, ex: "Autenticação de usuário", "Catálogo de produtos", "Processamento de pedidos", "Gestão de inventário", "Notificações em tempo real", "Análise de dados de uso"].
+
+Os requisitos não funcionais incluem: [Liste requisitos não funcionais, ex: "Alta disponibilidade (99.9%)", "Escalabilidade para X usuários/transações por segundo", "Latência abaixo de Y ms", "Segurança robusta", "Manutenibilidade", "Custo-efetividade"].
+
+As tecnologias preferenciais (ou restrições) são: [Ex: "Backend em Python/Django, Frontend em React", "Banco de dados PostgreSQL e Redis", "Mensageria Kafka", "Orquestração com Kubernetes", "Cloud AWS"].
+
+Com base nestas informações, por favor, elabore um plano de design de arquitetura de microsserviços que inclua:
+
+1.  **Identificação de Microsserviços:** Sugira a divisão funcional em microsserviços lógicos, justificando cada um.
+2.  **Responsabilidades de Cada Microsserviço:** Descreva as principais funções e dados gerenciados por cada microsserviço.
+3.  **Comunicação entre Microsserviços:** Proponha os padrões de comunicação (ex: REST, gRPC, Event-Driven, filas de mensagens) e tecnologias para cada interação.
+4.  **Gerenciamento de Dados:** Como os dados seriam persistidos e acessados por cada microsserviço (ex: banco de dados por serviço, data lake).
+5.  **Estratégias de Escalabilidade e Resiliência:** Sugira padrões como Circuit Breaker, Retries, Load Balancing, Autoscating.
+6.  **Observabilidade:** Como monitorar e depurar (ex: logging, tracing distribuído, métricas).
+7.  **Considerações de Segurança:** Recomendações para autenticação, autorização e proteção de dados.
+8.  **Fluxo de Dados:** Um exemplo de fluxo de dados para um cenário chave (ex: "realizar um pedido").
+
+Apresente sua resposta de forma clara e estruturada, como se fosse um documento de design inicial.`,
+    tags: ['Arquitetura', 'Microsserviços', 'Desenvolvimento', 'Sistemas'],
+  },
+  {
+    id: 'education-rota-aprendizagem-adaptativa',
+    title: 'Gerador de Rota de Aprendizagem Adaptativa com IA',
+    category: 'Educação',
+    description: 'Crie um plano de estudo personalizado e adaptável com base em seus objetivos, conhecimentos atuais e estilo de aprendizado.',
+    template: `Você é um tutor de IA especializado em design instrucional e neurociência da aprendizagem, com foco em rotas de estudo adaptativas.
+
+Meu objetivo principal de aprendizagem é: [Ex: "Dominar Python para análise de dados", "Preparar para o exame PMP", "Aprender marketing digital do zero", "Aprofundar em Machine Learning"].
+
+Meu nível de conhecimento atual sobre o tema é: [Ex: "Iniciante absoluto", "Conhecimento básico, sei alguns conceitos", "Intermediário, já programei um pouco", "Avançado em outras áreas, mas novo nesta"].
+
+Meu estilo de aprendizado preferencial é (selecione um ou mais): [Ex: "Visual (diagramas, vídeos)", "Auditivo (podcasts, palestras)", "Leitura/Escrita (livros, artigos, anotações)", "Cinestésico (projetos práticos, exercícios)", "Social (grupos de estudo, discussões)"].
+
+Quanto tempo disponível tenho por dia/semana para dedicar aos estudos? [Ex: "1 hora por dia", "3 horas nos finais de semana", "Flexível, mas quero concluir em 3 meses"].
+
+Com base nessas informações, e considerando que o plano deve ser adaptável e dinâmico, crie uma "Rota de Aprendizagem Adaptativa" detalhada, incluindo:
+
+1.  **Módulos de Aprendizagem:** Divida o objetivo em módulos lógicos, com uma sequência recomendada.
+2.  **Recursos Sugeridos por Módulo:** Para cada módulo, liste 3-5 tipos de recursos alinhados ao meu estilo de aprendizado (ex: livros específicos, cursos online, tutoriais em vídeo, exercícios práticos, projetos open source, artigos).
+3.  **Avaliações e Feedback:** Sugira formas de autoavaliação ou projetos práticos para verificar o progresso em cada módulo.
+4.  **Estratégias de Adaptação:** Descreva como a rota pode se adaptar se eu:
+    *   Tiver dificuldades em um tópico (recursos adicionais, exercícios mais simples).
+    *   Demonstrar domínio rápido (saltar tópicos básicos, avançar para desafios).
+    *   Mudar meu tempo disponível (sugestões para compactar ou estender o plano).
+5.  **Dicas de Produtividade:** Sugestões para manter o foco e otimizar o tempo de estudo.
+
+Apresente o plano de forma estruturada, com títulos e marcadores, facilitando a visualização.`,
+    tags: ['Educação', 'Aprendizado', 'Personalização', 'Estudo'],
+  },
 ];

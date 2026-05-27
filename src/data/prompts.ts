@@ -1536,4 +1536,194 @@ Com base nessas informações, e considerando que o plano deve ser adaptável e 
 Apresente o plano de forma estruturada, com títulos e marcadores, facilitando a visualização.`,
     tags: ['Educação', 'Aprendizado', 'Personalização', 'Estudo'],
   },
+  {
+    id: 'ia-design-agente-tarefas',
+    title: 'Design de Agente de IA para Gestão de Projetos e Tarefas',
+    category: 'IA & Automação',
+    description: 'Crie um perfil detalhado para um agente de IA autônomo focado em otimizar sua gestão de projetos e tarefas diárias.',
+    template: `Você é um especialista em design de agentes de IA para produtividade. Preciso que você crie um perfil detalhado para um agente de IA autônomo que me auxiliará na gestão de projetos e tarefas.
+
+Considere os seguintes parâmetros:
+
+1.  **Nome do Agente:** [Nome do Agente, ex: "Orchestrator", "TaskMaster Pro"]
+2.  **Objetivo Principal:** [Otimizar a execução de projetos, garantir o cumprimento de prazos, aumentar a eficiência da equipe, etc.]
+3.  **Persona/Estilo de Comunicação:** [Formal e direto, amigável e motivador, analítico e baseado em dados, etc.]
+4.  **Capacidades Essenciais:**
+    *   **Análise de Tarefas:** [Descrever como ele deve analisar tarefas, ex: quebrar tarefas complexas em subtarefas, identificar pré-requisitos.]
+    *   **Priorização Inteligente:** [Descrever critérios de priorização, ex: urgência, impacto, dependências, esforço.]
+    *   **Gerenciamento de Prazos:** [Como ele deve monitorar e alertar sobre prazos, ex: lembretes proativos, recalibrar cronogramas.]
+    *   **Identificação de Gargalos:** [Como ele deve identificar e sugerir soluções para gargalos, ex: sobrecarga de um membro da equipe, dependências não resolvidas.]
+    *   **Geração de Relatórios:** [Que tipo de relatórios ele deve gerar, ex: progresso semanal, distribuição de carga de trabalho, riscos potenciais.]
+    *   **Integração de Ferramentas (Opcional):** [Quais ferramentas externas ele deve simular integração, ex: Trello, Asana, Google Calendar, Slack.]
+5.  **Entradas Esperadas do Usuário:** [Ex: Lista de projetos, descrição de tarefas, prazos, membros da equipe, status atual.]
+6.  **Saídas Desejadas do Agente:** [Ex: Planos de ação detalhados, sugestões de realocação de recursos, alertas de atraso, sumários de progresso, perguntas para esclarecimento.]
+7.  **Restrições/Considerações:** [Ex: Deve operar com autonomia limitada, sempre pedir confirmação para ações críticas, priorizar a privacidade dos dados.]
+
+Com base nessas informações, estruture o perfil do agente, suas funções, fluxo de interação e como ele agrega valor para o usuário.
+
+**Minha entrada:**
+1.  **Nome do Agente:** [Meu Agente Produtivo]
+2.  **Objetivo Principal:** [Otimizar a gestão diária de tarefas e auxiliar na progressão de projetos pessoais e profissionais, focando em entregas contínuas.]
+3.  **Persona/Estilo de Comunicação:** [Direto, objetivo, mas com um tom encorajador. Fornece feedback construtivo e sugestões proativas.]
+4.  **Capacidades Essenciais:**
+    *   **Análise de Tarefas:** [Decompor grandes tarefas em passos acionáveis, estimar tempo e identificar recursos necessários.]
+    *   **Priorização Inteligente:** [Utilizar a Matriz de Eisenhower (Urgência/Importância) e considerar impacto nos objetivos de longo prazo.]
+    *   **Gerenciamento de Prazos:** [Monitorar prazos de tarefas e projetos, enviar lembretes com 24h e 4h de antecedência, e sugerir reagendamentos inteligentes em caso de atraso.]
+    *   **Identificação de Gargalos:** [Alertar quando uma tarefa depende de outra que está atrasada ou quando minha carga de trabalho está desequilibrada.]
+    *   **Geração de Relatórios:** [Relatórios diários com "Top 3 Prioridades" e "Progresso do Dia", e um resumo semanal de conquistas e desafios.]
+    *   **Integração de Ferramentas (Opcional):** [Simular integração com meu Google Calendar para bloqueio de tempo e Notion para listas de tarefas.]
+5.  **Entradas Esperadas do Usuário:** [Lista de afazeres diários, objetivos de projeto (SMART), eventos de calendário, e feedback sobre o progresso das tarefas.]
+6.  **Saídas Desejadas do Agente:** [Lista de tarefas priorizadas para o dia, um plano de ação para cada projeto, alertas e lembretes proativos, e perguntas para refinar meu entendimento de tarefas.]
+7.  **Restrições/Considerações:** [Deve aprender com meu estilo de trabalho e preferências ao longo do tempo. Não deve sobrecarregar com notificações, mas sim otimizar a atenção.]`,
+    tags: ['IA', 'Agentes', 'Automação', 'Produtividade'],
+  },
+  {
+    id: 'marketing-conteudo-multimodal-lancamento',
+    title: 'Plano de Conteúdo Multimodal para Lançamento de Produto/Serviço',
+    category: 'Marketing',
+    description: 'Gere um plano de conteúdo detalhado para o lançamento de um produto/serviço, abrangendo diversos formatos e plataformas.',
+    template: `Você é um estrategista de marketing digital especializado em lançamentos e conteúdo multimodal. Crie um plano de conteúdo abrangente para o lançamento de [Nome do Produto/Serviço], considerando uma abordagem multimodal em diferentes plataformas.
+
+**Informações do Produto/Serviço:**
+*   **Nome:** [Nome do Produto/Serviço, ex: "Plataforma IA para Pequenas Empresas"]
+*   **Descrição:** [Breve descrição do que o produto/serviço faz, ex: "Uma ferramenta de IA que automatiza o atendimento ao cliente e gera relatórios de vendas para PMEs."]
+*   **Benefícios Principais:** [Lista de 3-5 benefícios para o cliente, ex: "Redução de custos, otimização de tempo, insights de dados."]
+*   **Diferenciais:** [O que o torna único no mercado, ex: "Interface intuitiva, integração com 50+ ferramentas, suporte 24/7."]
+*   **Público-Alvo:** [Detalhes do público-alvo, ex: "Pequenos e médios empresários, gestores de e-commerce, equipes de marketing."]
+*   **Data de Lançamento (Alvo):** [Data ou período do lançamento, ex: "Meio de julho de 2026."]
+*   **Fases do Lançamento:** [Pré-Lançamento (Teaser), Lançamento (Anúncio Oficial), Pós-Lançamento (Sustentação).]
+
+**Plataformas de Distribuição:**
+*   [Ex: Instagram, LinkedIn, YouTube, Blog do site, E-mail Marketing, TikTok, Podcast.]
+
+**Tom de Voz da Marca:**
+*   [Ex: Inovador, profissional, acessível, divertido, autoritário.]
+
+Com base nessas informações, crie um plano de conteúdo em formato de tabela (ou lista estruturada), com as seguintes colunas para cada fase do lançamento:
+*   **Fase do Lançamento**
+*   **Plataforma**
+*   **Formato do Conteúdo (Multimodal)**
+*   **Ideia Central/Título**
+*   **Chamada para Ação (CTA)**
+*   **Objetivo da Peça de Conteúdo**
+
+Sugira uma variedade de formatos multimodais (texto, imagem, vídeo curto, vídeo longo, áudio, infográfico, quiz interativo, etc.).
+
+**Minha entrada:**
+*   **Nome:** "App EcoConnect"
+*   **Descrição:** "Um aplicativo móvel que conecta consumidores a produtores locais de alimentos orgânicos e sustentáveis, facilitando compras diretas e entregas."
+*   **Benefícios Principais:** "Alimentos frescos e saudáveis, apoio à economia local, redução da pegada de carbono, praticidade."
+*   **Diferenciais:** "Mapa interativo com produtores, sistema de avaliação de sustentabilidade, rota otimizada de entrega."
+*   **Público-Alvo:** "Consumidores urbanos conscientes, famílias jovens, entusiastas da alimentação saudável e sustentável."
+*   **Data de Lançamento (Alvo):** "Início de setembro de 2026."
+*   **Fases do Lançamento:** "Pré-Lançamento (1 mês antes), Lançamento (1ª semana de Setembro), Pós-Lançamento (1º mês após)."
+*   **Plataformas de Distribuição:** "Instagram, Blog, E-mail Marketing, YouTube Shorts, Podcast (participação como convidado)."
+*   **Tom de Voz da Marca:** "Inspirador, comunitário, educativo, transparente."`,
+    tags: ['Marketing', 'Conteúdo', 'Lançamento', 'Multimodal'],
+  },
+  {
+    id: 'finance-fluxo-caixa-pequenas-empresas',
+    title: 'Análise e Projeção de Fluxo de Caixa com IA para [Nome da Empresa]',
+    category: 'Finanças',
+    description: 'Realize uma análise detalhada do fluxo de caixa atual e projete cenários futuros para sua pequena empresa com base em dados fornecidos.',
+    template: `Você é um consultor financeiro com expertise em análise de dados e projeção de fluxo de caixa para pequenas e médias empresas, utilizando capacidades de IA. Analise o fluxo de caixa da [Nome da Empresa] e forneça insights e projeções.
+
+**Dados da Empresa:**
+*   **Nome da Empresa:** [Nome da Empresa]
+*   **Setor de Atuação:** [Ex: Varejo online, Serviços de TI, Consultoria, Restaurante]
+*   **Tipo de Negócio:** [Ex: Produto físico, Serviço recorrente, SaaS, Projeto único]
+*   **Dados de Receitas (últimos 3-6 meses):**
+    *   [Mês 1]: R$ [Valor]
+    *   [Mês 2]: R$ [Valor]
+    *   [Mês 3]: R$ [Valor]
+    *   *(Adicione mais meses se tiver)*
+*   **Dados de Despesas (últimos 3-6 meses):**
+    *   **Despesas Fixas Mensais:** [Ex: Aluguel R$X, Salários R$Y, Licenças R$Z. Liste os principais.]
+    *   **Despesas Variáveis Mensais (estimativa ou média):** [Ex: Custo de Mercadoria Vendida (CMV) X% da receita, Marketing R$Y, Transporte R$Z. Liste os principais.]
+    *   [Mês 1 (Total)]: R$ [Valor]
+    *   [Mês 2 (Total)]: R$ [Valor]
+    *   [Mês 3 (Total)]: R$ [Valor]
+    *   *(Adicione mais meses se tiver)*
+*   **Saldo Atual em Caixa/Banco:** R$ [Valor]
+*   **Metas de Crescimento (próximos 6-12 meses):** [Ex: Aumentar vendas em 20%, lançar novo produto, expandir equipe em 2 pessoas.]
+*   **Desafios Atuais (Opcional):** [Ex: Flutuação de vendas, sazonalidade, altos custos de aquisição de clientes.]
+
+Com base nessas informações, forneça:
+
+1.  **Análise do Fluxo de Caixa Atual:**
+    *   Avaliação da saúde financeira com base nos dados fornecidos.
+    *   Identificação de padrões (sazonalidade, picos/quedas).
+    *   Principais categorias de despesas e onde há oportunidade de otimização.
+2.  **Projeção de Fluxo de Caixa (próximos 6 meses):**
+    *   Cenário Base (Manutenção do status quo ou crescimento moderado conforme metas).
+    *   Cenário Otimista (Com base em [Fator positivo, ex: aumento de vendas em X%]).
+    *   Cenário Pessimista (Com base em [Fator negativo, ex: queda de vendas em Y%, aumento de custos]).
+    *   Para cada cenário, apresente uma estimativa de saldo final de caixa por mês.
+3.  **Recomendações Estratégicas:**
+    *   Sugestões para melhorar a gestão do fluxo de caixa.
+    *   Conselhos para alcançar as metas de crescimento de forma sustentável.
+    *   Alertas sobre riscos potenciais e como mitigá-los.
+
+Formate a resposta de forma clara e estruturada, utilizando listas e talvez uma tabela simples para as projeções.
+
+**Minha entrada:**
+*   **Nome da Empresa:** "Café Aroma Puro"
+*   **Setor de Atuação:** "Cafeteria e Produtos de Café Artesanal"
+*   **Tipo de Negócio:** "Varejo físico e e-commerce de produtos"
+*   **Dados de Receitas (últimos 3 meses):**
+    *   Fevereiro: R$ 15.000
+    *   Março: R$ 18.000
+    *   Abril: R$ 17.500
+*   **Dados de Despesas (últimos 3 meses):**
+    *   **Despesas Fixas Mensais:** Aluguel R$2.500, Salários (2 func.) R$4.000, Contas de consumo R$800.
+    *   **Despesas Variáveis Mensais (média):** Custo de Ingredientes e Produtos 35% da receita, Marketing R$500, Manutenção R$200.
+    *   Fevereiro (Total): R$ 12.000
+    *   Março (Total): R$ 13.500
+    *   Abril (Total): R$ 13.000
+*   **Saldo Atual em Caixa/Banco:** R$ 8.000
+*   **Metas de Crescimento (próximos 6 meses):** "Aumentar vendas em 15%, lançar um novo blend de café exclusivo, otimizar estoque."
+*   **Desafios Atuais:** "Aumento do preço dos grãos, concorrência local acirrada."`,
+    tags: ['Finanças', 'Negócios', 'PME', 'Análise de Dados'],
+  },
+  {
+    id: 'education-microlearning-personalizado',
+    title: 'Criação de Módulo de Microlearning Personalizado',
+    category: 'Educação',
+    description: 'Desenvolva um módulo de microlearning interativo e personalizado para um tópico específico, focado em retenção rápida e aplicação prática.',
+    template: `Você é um especialista em design instrucional e criador de conteúdo educacional com IA, focado em metodologias de microlearning. Crie um módulo de microlearning personalizado para o tópico [Tópico do Módulo], visando a máxima retenção e aplicação prática.
+
+**Informações para Personalização:**
+*   **Tópico do Módulo:** [Tópico específico, ex: "Fundamentos de Python para Ciência de Dados", "Boas Práticas de Gestão de Tempo", "Introdução à Culinária Vegana"]
+*   **Público-Alvo:** [Quem vai aprender, ex: "Profissionais iniciantes em tecnologia", "Estudantes universitários", "Amadores de cozinha"]
+*   **Objetivo de Aprendizado:** [O que o aluno deve ser capaz de fazer após o módulo, ex: "Escrever scripts Python básicos para manipulação de dados", "Aplicar 3 técnicas de gestão de tempo no dia a dia", "Preparar 2 pratos veganos simples."]
+*   **Duração Desejada:** [Tempo estimado para o módulo, ex: "15-20 minutos", "30 minutos (com atividades)", "1 hora (dividida em sessões curtas)."]
+*   **Formatos Preferidos (escolha 2-3):** [Ex: Vídeos curtos, texto conciso, infográficos, quizzes interativos, flashcards, simulações rápidas, estudos de caso.]
+*   **Conhecimento Prévio dos Alunos (Opcional):** [O que eles já sabem sobre o tópico, ex: "Básico de programação", "Nenhuma experiência em gestão de tempo", "Conhecimento superficial de culinária."]
+*   **Contexto de Aplicação (Opcional):** [Como eles aplicarão o conhecimento, ex: "No trabalho diário", "Para melhorar a vida pessoal", "Para um hobby."]
+
+Com base nessas informações, estruture o módulo de microlearning, incluindo:
+
+1.  **Título do Módulo e Introdução (gancho):** Breve e envolvente.
+2.  **Conteúdo Dividido em 'Microsessões' (3-5):** Para cada microsessão, forneça:
+    *   Um subtítulo claro.
+    *   O principal conceito a ser abordado.
+    *   Sugestão de formato de conteúdo (conforme preferência).
+    *   Um breve resumo do conteúdo a ser transmitido.
+3.  **Atividade Prática/Exercício Rápido:** Para cada microsessão ou ao final do módulo, sugira uma atividade que reforce o aprendizado e a aplicação.
+4.  **Avaliação Rápida/Quiz:** Um pequeno teste de conhecimento para verificar a compreensão.
+5.  **Recursos Adicionais (Opcional):** Sugestões para aprofundamento.
+6.  **Chamada para Ação:** O que o aluno deve fazer a seguir.
+
+Formate a resposta de forma clara e didática, com marcadores e títulos para facilitar a leitura.
+
+**Minha entrada:**
+*   **Tópico do Módulo:** "Noções Básicas de Investimento em Ações"
+*   **Público-Alvo:** "Adultos que nunca investiram em ações e buscam começar de forma consciente."
+*   **Objetivo de Aprendizado:** "Compreender os conceitos fundamentais de ações, como funcionam as bolsas de valores e identificar os primeiros passos para investir com segurança."
+*   **Duração Desejada:** "20-25 minutos (com pequena atividade)."
+*   **Formatos Preferidos:** "Vídeos curtos animados, texto conciso (com exemplos), quiz interativo."
+*   **Conhecimento Prévio dos Alunos:** "Nenhum, ou muito superficial sobre finanças e investimentos."
+*   **Contexto de Aplicação:** "Para começar a planejar seus próprios investimentos financeiros pessoais."`,
+    tags: ['Educação', 'Microlearning', 'Personalização', 'Aprendizado'],
+  },
 ];

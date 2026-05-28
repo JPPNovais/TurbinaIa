@@ -1726,4 +1726,157 @@ Formate a resposta de forma clara e didática, com marcadores e títulos para fa
 *   **Contexto de Aplicação:** "Para começar a planejar seus próprios investimentos financeiros pessoais."`,
     tags: ['Educação', 'Microlearning', 'Personalização', 'Aprendizado'],
   },
+  {
+    id: 'ia-design-assistente-personalizado',
+    title: 'Design de Assistente IA Personalizado',
+    category: 'IA & Automação',
+    description: 'Crie um perfil detalhado para seu assistente IA (Custom GPT ou agente) para uma tarefa ou função específica, otimizando seu desempenho e estilo.',
+    template: `Você é um especialista em design de sistemas de IA. Sua tarefa é me ajudar a criar um perfil completo para um assistente IA personalizado, que atuará como [papel do assistente, ex: "meu coach de escrita criativa", "gerente de projetos ágil", "analista de tendências de mercado"].
+
+Eu quero que o assistente tenha as seguintes características e execute as seguintes tarefas:
+
+**1. Nome do Assistente (Opcional):** [Nome do assistente, ex: "Arcanjo", "Muse", "MentorIA"]
+**2. Objetivo Principal:** Qual é o propósito central deste assistente? O que ele deve otimizar ou alcançar para mim?
+   - [Ex: Aumentar minha produtividade na escrita, auxiliar na gestão de tarefas de projetos, identificar novas oportunidades de mercado.]
+**3. Público-Alvo / Usuário Principal:** Quem sou eu e quais são minhas necessidades/desafios que o assistente resolverá?
+   - [Ex: Sou um escritor freelancer com bloqueio criativo, sou um gerente de projetos sobrecarregado, sou um empreendedor buscando inovação.]
+**4. Funções e Capacidades Essenciais:** Quais são as 3-5 principais coisas que este assistente precisa ser capaz de fazer?
+   - [Ex: Gerar ideias de enredo, criar outlines de artigos, revisar gramática, sugerir melhorias de estilo, acompanhar o progresso das tarefas, criar relatórios de status, pesquisar dados de mercado, analisar concorrência.]
+**5. Estilo de Interação / Personalidade:** Como o assistente deve se comunicar? Formal, informal, motivador, analítico, criativo, etc.?
+   - [Ex: Direto e objetivo, criativo e inspirador, empático e encorajador, analítico e baseado em dados.]
+**6. Conhecimento Necessário / Base de Dados:** Que tipo de informação ele precisa ter acesso ou conhecimento aprofundado?
+   - [Ex: Técnicas de escrita criativa, metodologias ágeis (Scrum, Kanban), relatórios de mercado específicos (tech, finanças).]
+**7. Restrições e Limitações:** Há algo que o assistente NÃO deve fazer ou sobre o que não deve opinar?
+   - [Ex: Não escrever conteúdo final sem minha aprovação, não tomar decisões financeiras, não gerar respostas com teor político.]
+**8. Métricas de Sucesso (Opcional):** Como medirei o sucesso deste assistente?
+   - [Ex: Redução de 20% no tempo de brainstorming, aumento de 15% na taxa de conclusão de tarefas, identificação de 3 novas tendências por mês.]
+
+Com base nessas informações, crie um "System Prompt" inicial para este assistente, incluindo instruções de personalidade, conhecimento e tarefas principais, além de sugestões de "Conversation Starters" (inícios de conversa) para mim.`,
+    tags: ['AI Agente', 'Custom GPT', 'Automação', 'Produtividade'],
+  },
+  {
+    id: 'negocios-inovacao-estrategica-ia',
+    title: 'Inovação Estratégica com IA',
+    category: 'Negócios',
+    description: 'Utilize a IA para identificar oportunidades de inovação e aplicar soluções baseadas em inteligência artificial para desafios de negócio específicos.',
+    template: `Você é um consultor de inovação estratégica com expertise em inteligência artificial e transformação digital. Sua tarefa é me ajudar a identificar oportunidades de inovação e propor soluções concretas baseadas em IA para o meu negócio.
+
+Forneça as seguintes informações sobre o meu negócio e o desafio/oportunidade em questão:
+
+**1. Nome da Empresa:** [Nome da Empresa]
+**2. Setor de Atuação:** [Ex: Varejo de moda, SaaS para saúde, Consultoria financeira, Indústria manufatureira]
+**3. Produto/Serviço Principal:** [Descreva brevemente o que sua empresa oferece]
+**4. Público-Alvo Principal:** [Ex: Pequenas e médias empresas, Consumidores finais (B2C), Profissionais liberais]
+**5. Desafio Atual ou Oportunidade Identificada:** (Escolha um ou ambos)
+   - **Desafio:** [Ex: Alta rotatividade de clientes, Dificuldade em prever demanda, Processos internos ineficientes, Falta de personalização no atendimento.]
+   - **Oportunidade:** [Ex: Expansão para novo mercado, Lançamento de novo produto, Otimização de custos, Melhoria da experiência do cliente.]
+**6. Recursos Disponíveis (Opcional):** [Ex: Equipe de TI interna, orçamento para novas ferramentas, grande volume de dados de clientes.]
+
+Com base nessas informações, siga os seguintes passos:
+
+**Passo 1: Análise e Contextualização**
+Analise o setor e o desafio/oportunidade, identificando tendências de mercado relevantes e como a IA tem sido aplicada em contextos similares.
+
+**Passo 2: Geração de Ideias de Soluções com IA**
+Proponha 3 a 5 ideias concretas de como a IA poderia ser aplicada para resolver o desafio ou capitalizar a oportunidade. Para cada ideia, inclua:
+   - **Nome da Solução:** (Ex: "Sistema de Recomendação Personalizada", "Chatbot de Suporte Inteligente", "Otimizador de Cadeia de Suprimentos")
+   - **Tecnologias de IA Envolvidas:** (Ex: Machine Learning, Processamento de Linguagem Natural, Visão Computacional, Análise Preditiva)
+   - **Benefícios Esperados:** (Quantificáveis se possível, Ex: Redução de 15% na rotatividade, Aumento de 10% nas vendas, Otimização de tempo em 20%)
+   - **Exemplo de Aplicação Prática:** Como essa solução funcionaria no dia a dia da empresa.
+
+**Passo 3: Avaliação Preliminar e Requisitos**
+Para cada ideia proposta, discuta brevemente:
+   - **Principais Desafios de Implementação:** (Ex: Coleta de dados, Integração de sistemas, Custo inicial)
+   - **Dados Necessários:** Que tipo de dados seriam cruciais para o sucesso da solução?
+   - **Métricas de Sucesso:** Como a empresa mediria o impacto da solução?
+
+Seja pragmático e focado em resultados tangíveis.`,
+    tags: ['Estratégia', 'Inovação', 'Negócios', 'IA'],
+  },
+  {
+    id: 'marketing-estrategia-conteudo-multimodal-ia',
+    title: 'Estratégia de Conteúdo Multimodal com IA',
+    category: 'Marketing',
+    description: 'Desenvolva uma estratégia de conteúdo abrangente e multimodal, otimizada por IA, para o lançamento de um produto ou serviço em diversas plataformas.',
+    template: `Você é um estrategista de marketing digital e especialista em IA para conteúdo, com foco em campanhas de lançamento. Sua missão é me ajudar a criar uma estratégia de conteúdo multimodal detalhada para o lançamento de [Nome do Produto/Serviço] no dia [Data de Lançamento ou Período].
+
+Forneça as seguintes informações:
+
+**1. Nome do Produto/Serviço:** [Nome do seu produto ou serviço]
+**2. Principal Benefício/Proposta de Valor:** [O que o produto resolve ou o valor único que ele oferece]
+**3. Público-Alvo Principal:** [Quem você quer alcançar? Ex: Millennials empreendedores, PMEs do setor de tecnologia, Professores de ensino médio]
+**4. Objetivos do Lançamento:** [Ex: Gerar 500 leads qualificados, Atingir 10.000 pré-inscrições, Vender 1000 unidades no primeiro mês]
+**5. Canais de Distribuição Prioritários:** [Escolha 3-5: Instagram, LinkedIn, YouTube, TikTok, Blog, Email Marketing, Facebook Ads, Google Ads, Podcast]
+**6. Principais Concorrentes (Opcional):** [Nomes de 2-3 concorrentes para análise de diferenciação]
+**7. Tom de Voz da Marca:** [Ex: Informativo e profissional, Jovem e divertido, Inspirador e aspiracional]
+
+Com base nessas informações, crie uma estratégia de conteúdo que inclua:
+
+**A. Mensagem Central e Temas Chave:**
+   - Qual a mensagem principal a ser comunicada?
+   - Quais são 3-5 temas de conteúdo que se desdobram da mensagem central e que a IA pode adaptar para diferentes formatos?
+
+**B. Plano de Conteúdo Multimodal por Plataforma:**
+   Para CADA canal de distribuição prioritário listado, sugira 3-5 tipos de conteúdo específicos e como a IA pode otimizar ou auxiliar na criação de cada um. Inclua como a IA pode adaptar a mensagem central para o formato e público de cada plataforma.
+
+   *Exemplos de Conteúdo e Otimização com IA:*
+   - **Instagram:** [Carrosséis educacionais (IA gera microtextos e CTAs), Reels com tutoriais rápidos (IA gera roteiro e legendas), Stories de enquetes (IA sugere perguntas interativas).]
+   - **LinkedIn:** [Artigos curtos sobre o impacto do produto (IA gera bullet points e título), Posts com insights do setor (IA analisa tendências), Vídeos de depoimentos (IA sugere perguntas para entrevistas).]
+   - **Blog:** [Artigos aprofundados (IA gera estrutura e otimização SEO), Estudos de caso (IA auxilia na narrativa e análise de dados), Infográficos (IA sugere dados e pontos-chave).]
+   - **Email Marketing:** [Sequência de boas-vindas para pré-lançamento (IA personaliza baseada em interesse), Newsletter com atualizações (IA gera tópicos relevantes).]
+   - **YouTube/TikTok:** [Vídeos curtos de "como fazer" (IA sugere roteiros e hooks), Desafios (IA sugere ideias de engajamento).]
+
+**C. Sugestões de CTA (Call to Action) por Etapa:**
+   Proponha CTAs que a IA pode personalizar para cada fase do lançamento (pré-lançamento, lançamento, pós-lançamento) e para diferentes plataformas.
+
+**D. Métricas de Sucesso com IA:**
+   Como a IA pode ajudar a monitorar e otimizar o desempenho do conteúdo em tempo real? Sugira 2-3 métricas-chave para cada tipo de conteúdo/plataforma.`,
+    tags: ['Marketing Digital', 'Conteúdo Multimodal', 'Lançamento', 'IA'],
+  },
+  {
+    id: 'career-plano-desenvolvimento-ia',
+    title: 'Plano de Desenvolvimento de Carreira com IA',
+    category: 'Carreira',
+    description: 'Crie um plano de desenvolvimento de carreira personalizado e estratégico, identificando lacunas de habilidades e sugerindo caminhos de aprendizado otimizados por IA.',
+    template: `Você é um consultor de carreira e especialista em IA para desenvolvimento profissional. Sua tarefa é me ajudar a criar um plano de desenvolvimento de carreira detalhado, aproveitando a inteligência artificial para identificar minhas lacunas e sugerir os melhores caminhos.
+
+Forneça as seguintes informações:
+
+**1. Posição Atual e Empresa:** [Seu cargo atual e o setor/empresa]
+**2. Objetivo de Carreira (Curto Prazo - 1 ano):** [Ex: Ser promovido a gerente, Mudar para área de dados, Dominar uma nova tecnologia]
+**3. Objetivo de Carreira (Longo Prazo - 3-5 anos):** [Ex: Se tornar líder de equipe, Abrir meu próprio negócio, Ser um especialista renomado na área X]
+**4. Minhas Habilidades Atuais (lista 5-7):** [Ex: Liderança, Programação Python, Marketing Digital, Gestão de Projetos, Comunicação Eficaz, Análise de Dados]
+**5. Habilidades Desejadas para o Objetivo de Carreira (lista 5-7):** [Quais habilidades são cruciais para atingir seus objetivos? Ex: Machine Learning, Estratégia de Negócios, Inglês Fluente, Mentoria, Vendas B2B]
+**6. Preferências de Aprendizado (Opcional):** [Ex: Cursos online, Livros, Mentoria, Projetos práticos, Eventos e workshops]
+**7. Tempo Disponível para Estudo/Desenvolvimento por Semana:** [Ex: 5 horas, 10 horas, 2 horas]
+
+Com base nessas informações, crie um "Plano de Desenvolvimento de Carreira Otimizado por IA" que inclua:
+
+**A. Análise de Lacunas de Habilidades:**
+   - Com base nas habilidades atuais e desejadas, identifique as principais lacunas.
+   - Justifique brevemente por que cada lacuna é crítica para o seu objetivo de carreira.
+
+**B. Rota de Aprendizagem Personalizada (com Sugestões de IA):**
+   Para cada lacuna de habilidade identificada, sugira 2-3 recursos de aprendizado concretos e otimizados por IA (pensando em cursos online, livros, projetos, etc.). Considere as preferências e o tempo disponível.
+   - **Habilidade 1 (Ex: Machine Learning):**
+     - Recurso 1: [Ex: Curso "Machine Learning Engineer" da Coursera - IA avalia o currículo do curso e sua relevância.]
+     - Recurso 2: [Ex: Livro "Hands-On Machine Learning" - IA sugere capítulos chave ou projetos práticos complementares.]
+     - Recurso 3: [Ex: Projeto prático de análise de sentimentos em Python - IA pode sugerir APIs ou datasets.]
+   - **Habilidade 2 (Ex: Estratégia de Negócios):**
+     - ... (seguindo o mesmo formato)
+
+**C. Plano de Ação em Marcos Temporais (Curto e Médio Prazo):**
+   Crie um plano de ação para os próximos 6-12 meses, dividindo as ações em marcos mensais ou trimestrais. Para cada marco, inclua:
+   - **Mês/Trimestre:** [Ex: Mês 1-3, Trimestre 1]
+   - **Foco Principal:** [Ex: Fundamentos de Machine Learning]
+   - **Ações Específicas:** [Ex: Concluir Módulo 1 do curso X, Ler livro Y, Iniciar projeto Z, Conectar com mentor na área.]
+   - **Como a IA pode Ajudar:** [Ex: IA pode monitorar progresso, sugerir exercícios práticos, resumir materiais complexos, identificar oportunidades de networking.]
+
+**D. Estratégias de Visibilidade e Networking:**
+   Sugira 3-5 ações para aumentar sua visibilidade profissional e expandir sua rede, como a IA pode auxiliar (ex: identificar eventos, otimizar perfil LinkedIn, gerar scripts para cold outreach).
+
+**E. Métricas de Sucesso:**
+   Como você vai medir o progresso e o sucesso do seu plano de desenvolvimento? (Ex: Conclusão de X cursos, Aplicação de Y habilidades em projetos, Feedback positivo em avaliações de desempenho).`,
+    tags: ['Carreira', 'Desenvolvimento Pessoal', 'IA', 'Educação'],
+  },
 ];

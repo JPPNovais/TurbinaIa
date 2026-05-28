@@ -13,6 +13,21 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-deepmind-alphaproof-nexus-2026',
+    date: '2026-05',
+    title: 'Google DeepMind lança AlphaProof Nexus',
+    developer: 'Google DeepMind',
+    category: 'Pesquisa',
+    description: 'Google DeepMind lançou o AlphaProof Nexus, um novo agente matemático de IA que resolveu nove problemas de Erdős de longa data, alguns não resolvidos por 56 anos, com provas formalmente verificadas.',
+    highlights: [
+      'Lançado em 25 de maio de 2026.',
+      'Resolveu 9 problemas abertos de Erdős, incluindo um que permaneceu sem solução por 56 anos.',
+      'As provas foram formalmente verificadas pelo compilador Lean, sem alucinações.',
+      'O custo computacional para resolver cada problema foi de algumas centenas de dólares.',
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'google-gemini-3-5-flash-2026',
     date: '2026-05',
     title: 'Google lança Gemini 3.5 Flash',

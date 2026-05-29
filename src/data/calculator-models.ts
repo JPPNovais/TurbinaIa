@@ -12,33 +12,33 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'Gemini 1.5 Flash',
     provider: 'Google',
-    inputPricePerM: 0.075, // Preço atualizado para Gemini 1.5 Flash.
-    outputPricePerM: 0.30, // Preço atualizado para Gemini 1.5 Flash.
+    inputPricePerM: 0.075, // Preço atualizado para Gemini 1.5 Flash (preservado conforme indicado no prompt).
+    outputPricePerM: 0.30, // Preço atualizado para Gemini 1.5 Flash (preservado conforme indicado no prompt).
     contextWindow: '1M tokens', // Janela de contexto confirmada para Gemini 1.5 Flash.
     description: 'Modelo equilibrado para velocidade e capacidade da nova geração Gemini 1.5 Flash.',
   },
   {
     name: 'Gemini 1.5 Pro',
     provider: 'Google',
-    inputPricePerM: 1.25, // Preço atualizado para Gemini 1.5 Pro (1M de contexto).
-    outputPricePerM: 5.00, // Preço atualizado para Gemini 1.5 Pro (1M de contexto).
+    inputPricePerM: 1.25, // Preço atualizado para Gemini 1.5 Pro (1M de contexto) (preservado conforme indicado no prompt).
+    outputPricePerM: 5.00, // Preço atualizado para Gemini 1.5 Pro (1M de contexto) (preservado conforme indicado no prompt).
     contextWindow: '1M tokens', // Janela de contexto atualizada para Gemini 1.5 Pro.
     description: 'Topo de linha da Google com 1M de contexto (preço para 1M tokens) e raciocínio avançado (versão 1.5).',
   },
   {
-    name: 'Gemini 1.5 Flash-8B',
+    name: 'Gemini 1.5 Flash (128K context)',
     provider: 'Google',
-    inputPricePerM: 0.0375, // Preço atualizado do Gemini 1.5 Flash-8B para 128K de contexto.
-    outputPricePerM: 0.15, // Preço atualizado do Gemini 1.5 Flash-8B para 128K de contexto.
-    contextWindow: '128K tokens', // Janela de contexto para a versão econômica do Gemini 1.5 Flash-8B.
-    description: 'Modelo econômico e de alta velocidade da nova geração Gemini 1.5 Flash-8B, otimizado para janelas de contexto menores.',
+    inputPricePerM: 0.0375, // Preço para Gemini 1.5 Flash com 128K de contexto (preservado conforme indicado no prompt).
+    outputPricePerM: 0.15, // Preço para Gemini 1.5 Flash com 128K de contexto (preservado conforme indicado no prompt).
+    contextWindow: '128K tokens', // Janela de contexto para a versão econômica do Gemini 1.5 Flash.
+    description: 'Modelo econômico e de alta velocidade da nova geração Gemini 1.5 Flash, otimizado para janelas de contexto menores.',
   },
   // OpenAI
   {
     name: 'GPT-4o',
     provider: 'OpenAI',
-    inputPricePerM: 2.50, // Preço atualizado do GPT-4o.
-    outputPricePerM: 10.00, // Preço atualizado do GPT-4o.
+    inputPricePerM: 5.00, // Preço atualizado do GPT-4o.
+    outputPricePerM: 15.00, // Preço atualizado do GPT-4o.
     contextWindow: '128K tokens', // Janela de contexto para o GPT-4o.
     description: 'Modelo flagship da OpenAI com raciocínio avançado e capacidade multimodal.',
   },
@@ -51,20 +51,20 @@ export const AI_MODELS: CalculatorModel[] = [
     description: 'Versão compacta do GPT-4o — rápida e econômica para tarefas do dia a dia.',
   },
   {
-    name: 'GPT-5.5',
+    name: 'GPT-4 Turbo', // Substituído de 'GPT-5.5'
     provider: 'OpenAI',
-    inputPricePerM: 5.00, // Preço atualizado do GPT-5.5.
-    outputPricePerM: 30.00, // Preço atualizado do GPT-5.5.
-    contextWindow: '1M tokens', // Janela de contexto para o GPT-5.5.
-    description: 'Flagship geral da OpenAI para tarefas complexas e codificação (nova geração GPT-5.5).',
+    inputPricePerM: 10.00, // Preço atualizado do GPT-4 Turbo.
+    outputPricePerM: 30.00, // Preço atualizado do GPT-4 Turbo.
+    contextWindow: '128K tokens', // Janela de contexto para o GPT-4 Turbo.
+    description: 'Modelo flagship da OpenAI com raciocínio avançado e capacidades multimodais (versão Turbo).',
   },
   // Anthropic
   {
     name: 'Claude 3 Opus',
     provider: 'Anthropic',
-    inputPricePerM: 5.00, // Preço atualizado do Claude 3 Opus.
-    outputPricePerM: 25.00, // Preço atualizado do Claude 3 Opus.
-    contextWindow: '1M tokens', // Janela de contexto atualizada do Claude 3 Opus.
+    inputPricePerM: 15.00, // Preço atualizado do Claude 3 Opus.
+    outputPricePerM: 75.00, // Preço atualizado do Claude 3 Opus.
+    contextWindow: '200K tokens', // Janela de contexto atualizada do Claude 3 Opus.
     description: 'O modelo mais inteligente da Anthropic para raciocínio complexo e tarefas agênticas.',
   },
   {
@@ -72,16 +72,16 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'Anthropic',
     inputPricePerM: 3.00, // Preço atualizado do Claude 3 Sonnet.
     outputPricePerM: 15.00, // Preço atualizado do Claude 3 Sonnet.
-    contextWindow: '1M tokens', // Janela de contexto atualizada do Claude 3 Sonnet.
+    contextWindow: '200K tokens', // Janela de contexto atualizada do Claude 3 Sonnet.
     description: 'Referência em geração de código e raciocínio lógico.',
   },
   {
-    name: 'Claude 3 Haiku (v4.5)',
+    name: 'Claude 3 Haiku', // Atualizado de 'Claude 3 Haiku (v4.5)'
     provider: 'Anthropic',
-    inputPricePerM: 1.00, // Preço atualizado do Claude 3 Haiku (v4.5).
-    outputPricePerM: 5.00, // Preço atualizado do Claude 3 Haiku (v4.5).
-    contextWindow: '200K tokens', // Janela de contexto atual do Claude 3 Haiku (v4.5).
-    description: 'O modelo rápido e econômico da Anthropic (versão 4.5).',
+    inputPricePerM: 0.25, // Preço atualizado do Claude 3 Haiku.
+    outputPricePerM: 1.25, // Preço atualizado do Claude 3 Haiku.
+    contextWindow: '200K tokens', // Janela de contexto atual do Claude 3 Haiku.
+    description: 'O modelo rápido e econômico da Anthropic.',
   },
   // DeepSeek
   {
@@ -89,42 +89,42 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'DeepSeek',
     inputPricePerM: 0.14, // Preço atualizado para DeepSeek-V4 Flash.
     outputPricePerM: 0.28, // Preço atualizado para DeepSeek-V4 Flash.
-    contextWindow: '128K tokens', // Janela de contexto para DeepSeek-V4 Flash.
+    contextWindow: '1M tokens', // Janela de contexto para DeepSeek-V4 Flash.
     description: 'Modelo eficiente da DeepSeek para alta velocidade (versão V4 Flash).',
   },
   {
     name: 'DeepSeek-V4 Pro',
     provider: 'DeepSeek',
-    inputPricePerM: 1.74, // Preço atualizado para DeepSeek-V4 Pro.
-    outputPricePerM: 3.48, // Preço atualizado para DeepSeek-V4 Pro.
-    contextWindow: '128K tokens', // Janela de contexto para DeepSeek-V4 Pro.
+    inputPricePerM: 0.435, // Preço atualizado para DeepSeek-V4 Pro (preço promocional).
+    outputPricePerM: 0.87, // Preço atualizado para DeepSeek-V4 Pro (preço promocional).
+    contextWindow: '1M tokens', // Janela de contexto para DeepSeek-V4 Pro.
     description: 'Modelo avançado da DeepSeek para raciocínio complexo (versão V4 Pro).',
   },
   // Meta (via API)
   {
-    name: 'Llama 3.3 70B Instruct (via Together AI)',
+    name: 'Llama 3 70B Instruct (via Together AI)', // Atualizado de 'Llama 3.3 70B Instruct'
     provider: 'Meta (via API)',
-    inputPricePerM: 0.88, // Preço atualizado para Llama 3.3 70B Instruct via Together AI.
-    outputPricePerM: 0.88, // Preço atualizado para Llama 3.3 70B Instruct via Together AI.
-    contextWindow: '131K tokens', // Janela de contexto atualizada para Llama 3.3 70B Instruct via Together AI.
-    description: 'Modelo open-source poderoso via API Together AI (Llama 3.3 70B Instruct-Turbo).',
+    inputPricePerM: 0.90, // Preço atualizado para Llama 3 70B Instruct via Together AI.
+    outputPricePerM: 0.90, // Preço atualizado para Llama 3 70B Instruct via Together AI.
+    contextWindow: '8K tokens', // Janela de contexto atualizada para Llama 3 70B Instruct via Together AI.
+    description: 'Modelo open-source poderoso via API Together AI (Llama 3 70B Instruct).',
   },
   {
-    name: 'Llama 3.1 8B Instruct (via Together AI)',
+    name: 'Llama 3 8B Instruct (via Together AI)', // Atualizado de 'Llama 3.1 8B Instruct'
     provider: 'Meta (via API)',
-    inputPricePerM: 0.18, // Preço atualizado do Llama 3.1 8B Instruct via Together AI.
-    outputPricePerM: 0.18, // Preço atualizado do Llama 3.1 8B Instruct via Together AI.
-    contextWindow: '8K tokens', // Janela de contexto atualizada para Llama 3.1 8B Instruct via Together AI.
-    description: 'Versão leve e econômica da família Llama 3.1 Instruct via API Together AI.',
+    inputPricePerM: 0.30, // Preço atualizado do Llama 3 8B Instruct via Together AI.
+    outputPricePerM: 0.30, // Preço atualizado do Llama 3 8B Instruct via Together AI.
+    contextWindow: '8K tokens', // Janela de contexto atualizada para Llama 3 8B Instruct via Together AI.
+    description: 'Versão leve e econômica da família Llama 3 Instruct via API Together AI.',
   },
   // Mistral AI
   {
-    name: 'Mistral Large 3',
+    name: 'Mistral Large', // Atualizado de 'Mistral Large 3'
     provider: 'Mistral AI',
-    inputPricePerM: 0.50, // Preço atualizado do Mistral Large 3.
-    outputPricePerM: 1.50, // Preço atualizado do Mistral Large 3.
-    contextWindow: '262K tokens', // Janela de contexto atualizada do Mistral Large 3.
-    description: 'Modelo flagship da Mistral AI (versão Large 3) com raciocínio e capacidades multimodais.',
+    inputPricePerM: 2.00, // Preço atualizado do Mistral Large.
+    outputPricePerM: 6.00, // Preço atualizado do Mistral Large.
+    contextWindow: '128K tokens', // Janela de contexto atualizada do Mistral Large.
+    description: 'Modelo flagship da Mistral AI com raciocínio e capacidades multimodais.',
   },
   // Cohere
   {

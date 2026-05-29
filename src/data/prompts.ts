@@ -1879,4 +1879,140 @@ Com base nessas informações, crie um "Plano de Desenvolvimento de Carreira Oti
    Como você vai medir o progresso e o sucesso do seu plano de desenvolvimento? (Ex: Conclusão de X cursos, Aplicação de Y habilidades em projetos, Feedback positivo em avaliações de desempenho).`,
     tags: ['Carreira', 'Desenvolvimento Pessoal', 'IA', 'Educação'],
   },
+  {
+    id: 'negocios-agente-pesquisa-mercado-ia',
+    title: 'Agente de IA para Análise de Mercado e Tendências',
+    category: 'Negócios',
+    description: 'Cria um plano detalhado para um agente de IA coletar, sintetizar e analisar informações de mercado para identificar tendências, oportunidades e desafios.',
+    template: `Você é um especialista em estratégia de negócios e IA. Seu objetivo é projetar um plano para um agente autônomo de IA que realize pesquisa de mercado contínua e análise de tendências.
+
+**Contexto:**
+- Indústria/Setor Foco: [Indústria/Setor Foco]
+- Tópico de Pesquisa Principal: [Tópico de Pesquisa Principal, ex: "ascensão da computação quântica", "demandas de consumidores por produtos sustentáveis"]
+- Mercados Geográficos Alvo: [Mercados Geográficos Alvo, ex: Brasil, América Latina, Global]
+- Público-alvo da análise (para quem o relatório é gerado): [Público-alvo da análise, ex: Consumidores, Investidores, Empresas B2B]
+
+**Funções e Capacidades do Agente:**
+1.  **Coleta de Dados:** Detalhe quais tipos de fontes o agente deve monitorar (ex: notícias, relatórios de mercado, redes sociais, publicações científicas, dados governamentais, fóruns). Liste 3-5 exemplos específicos de fontes.
+2.  **Processamento e Síntese:** Explique como o agente deve processar os dados (ex: extração de entidades, análise de sentimentos, identificação de palavras-chave, sumarização).
+3.  **Análise e Identificação de Tendências:** Descreva os tipos de insights que o agente deve gerar (ex: tendências emergentes, oportunidades de mercado, ameaças competitivas, mudanças no comportamento do consumidor, lacunas de produtos/serviços).
+4.  **Geração de Relatórios/Alertas:** Especifique o formato dos outputs (ex: relatórios semanais, alertas em tempo real, dashboards interativos) e o nível de detalhe.
+5.  **Adaptação e Aprendizagem:** Como o agente deve refinar sua pesquisa e análise ao longo do tempo (ex: feedback humano, ajuste de parâmetros de busca).
+
+**Parâmetros de Operação:**
+- Frequência de Atualização dos Relatórios: [Frequência de Atualização, ex: diário, semanal, mensal]
+- Idiomas de Pesquisa: [Idiomas de Pesquisa, ex: Português, Inglês, Espanhol]
+
+Crie um plano estruturado para este agente de IA, incluindo uma justificativa para cada funcionalidade e como ela agrega valor estratégico.`,
+    tags: ['Pesquisa de Mercado', 'Agente IA', 'Análise de Tendências', 'Estratégia'],
+  },
+  {
+    id: 'marketing-estrategia-lancamento-multimodal',
+    title: 'Estratégia de Lançamento Multimodal de Produto/Serviço com IA',
+    category: 'Marketing',
+    description: 'Desenvolve uma estratégia de marketing de conteúdo multimodal abrangente para o lançamento de um novo produto ou serviço, integrando diferentes formatos e canais para maximizar o impacto.',
+    template: `Você é um estrategista de marketing digital com expertise em lançamentos de produtos e conteúdo multimodal. Elabore uma estratégia de lançamento de produto/serviço que utilize IA para otimizar a criação e distribuição de conteúdo em múltiplos formatos e canais.
+
+**Detalhes do Lançamento:**
+- Nome do Produto/Serviço: [Nome do Produto/Serviço]
+- Breve Descrição: [Breve Descrição do Produto/Serviço e o que ele resolve]
+- Público-alvo Principal: [Público-alvo Principal, ex: PMEs, profissionais de marketing, desenvolvedores, pais, jovens adultos]
+- Principais Benefícios/Diferenciais: [Principais Benefícios/Diferenciais do produto]
+- Objetivos do Lançamento (ex: [Número]% de leads, [Número]% de conversões, reconhecimento de marca): [Objetivos do Lançamento]
+- Orçamento Estimado para Conteúdo e Promoção: [Orçamento Estimado, ex: Baixo, Médio, Alto]
+
+**Estratégia de Conteúdo Multimodal:**
+Para cada fase do lançamento (Pré-Lançamento, Lançamento, Pós-Lançamento), proponha 2-3 formatos de conteúdo multimodal, detalhando como a IA pode ser usada para auxiliar na sua criação e otimização.
+
+**1. Pré-Lançamento (Consciência e Antecipação):**
+    - Canais Sugeridos: [Canais para Pré-Lançamento, ex: blog, e-mail marketing, redes sociais]
+    - Conteúdos Multimodais e Uso da IA:
+        - Ex: Postagens de blog (IA para otimização de SEO e ideias de tópicos), Enquetes interativas nas redes sociais (IA para análise de feedback), Vídeos curtos (IA para roteiro e edição básica).
+        - Conteúdo 1: [Formato do Conteúdo 1] - Como a IA ajuda: [Uso da IA]
+        - Conteúdo 2: [Formato do Conteúdo 2] - Como a IA ajuda: [Uso da IA]
+
+**2. Lançamento (Conversão e Engajamento):**
+    - Canais Sugeridos: [Canais para Lançamento, ex: landing pages, webinars, anúncios pagos, lives]
+    - Conteúdos Multimodais e Uso da IA:
+        - Ex: Copy de landing page (IA para otimização de conversão), Scripts para webinars (IA para estrutura), Anúncios criativos (IA para variação de texto e imagem).
+        - Conteúdo 1: [Formato do Conteúdo 1] - Como a IA ajuda: [Uso da IA]
+        - Conteúdo 2: [Formato do Conteúdo 2] - Como a IA ajuda: [Uso da IA]
+
+**3. Pós-Lançamento (Retenção e Advocacia):**
+    - Canais Sugeridos: [Canais para Pós-Lançamento, ex: e-mail de nutrição, comunidade online, tutoriais, cases de sucesso]
+    - Conteúdos Multimodais e Uso da IA:
+        - Ex: Sequências de e-mail (IA para personalização), FAQs e bases de conhecimento (IA para geração de respostas), Testemunhos (IA para sumarização de feedback de clientes).
+        - Conteúdo 1: [Formato do Conteúdo 1] - Como a IA ajuda: [Uso da IA]
+        - Conteúdo 2: [Formato do Conteúdo 2] - Como a IA ajuda: [Uso da IA]
+
+**Métricas de Sucesso:**
+- Proponha 3-5 métricas chave para avaliar o sucesso desta estratégia.
+
+Apresente a estratégia de forma organizada e clara, destacando a inovação trazida pela IA.`,
+    tags: ['Marketing Digital', 'Lançamento de Produto', 'Conteúdo Multimodal', 'Estratégia de IA'],
+  },
+  {
+    id: 'produtividade-assistente-ia-personalizado',
+    title: 'Design de um Assistente Pessoal de Produtividade com IA',
+    category: 'Produtividade',
+    description: 'Desenha um assistente de IA personalizado para otimizar a produtividade e o fluxo de trabalho de um indivíduo, especificando funcionalidades e integrações.',
+    template: `Você é um designer de sistemas de IA e especialista em produtividade. Sua tarefa é criar um design detalhado para um assistente de IA pessoal, focado em maximizar a produtividade e o bem-estar de um usuário específico.
+
+**Perfil do Usuário:**
+- Perfil Principal do Usuário: [Perfil Principal do Usuário, ex: Empreendedor Solo, Gerente de Projetos, Desenvolvedor de Software, Estudante Universitário, Freelancer Criativo]
+- Principais Desafios de Produtividade Atuais: [Principais Desafios, ex: Procrastinação, Gestão de Tempo, Excesso de Informação, Foco, Organização de Tarefas]
+- Ferramentas e Plataformas Atualmente Utilizadas: [Ferramentas Atuais, ex: Google Calendar, Notion, Slack, Asana, E-mail (Gmail/Outlook), WhatsApp]
+
+**Funcionalidades Essenciais do Assistente (proponha no mínimo 5):**
+Para cada funcionalidade, descreva como a IA seria utilizada.
+1.  **Ex: Gestão Inteligente de Tarefas:** O assistente prioriza tarefas automaticamente com base em prazos, dependências e nível de energia do usuário (IA aprende com histórico).
+    - Funcionalidade 1: [Nome da Funcionalidade] - Como a IA Ajuda: [Detalhes da Assistência da IA]
+    - Funcionalidade 2: [Nome da Funcionalidade] - Como a IA Ajuda: [Detalhes da Assistência da IA]
+    - Funcionalidade 3: [Nome da Funcionalidade] - Como a IA Ajuda: [Detalhes da Assistência da IA]
+    - Funcionalidade 4: [Nome da Funcionalidade] - Como a IA Ajuda: [Detalhes da Assistência da IA]
+    - Funcionalidade 5: [Nome da Funcionalidade] - Como a IA Ajuda: [Detalhes da Assistência da IA]
+
+**Interação e Interface:**
+- Preferências de Interação: [Preferências de Interação, ex: Comando de Voz, Chat de Texto, Interface Gráfica, Resumos diários por e-mail]
+- Notificações: Como o assistente deve notificar o usuário (ex: discretas, urgentes, personalizáveis).
+
+**Integrações Chave:**
+- Quais ferramentas e serviços o assistente deve se integrar para ser mais eficaz (ex: Calendário, E-mail, Ferramentas de Gestão de Projetos, Armazenamento em Nuvem, Aplicativos de Mensagens). Liste 3-5 exemplos específicos.
+
+**Considerações de Privacidade e Ética:**
+- Como garantir a segurança dos dados e a privacidade do usuário?
+
+Estruture o design de forma clara, focando na utilidade prática e na personalização profunda para o perfil do usuário descrito.`,
+    tags: ['Produtividade Pessoal', 'Assistente IA', 'Otimização Workflow', 'Automação'],
+  },
+  {
+    id: 'dev-documentacao-diagramas-ia',
+    title: 'Gerador de Documentação Técnica e Diagramas de Arquitetura com IA',
+    category: 'Desenvolvimento',
+    description: 'Cria um blueprint para uma solução de IA que automatiza a geração de documentação técnica (códigos, APIs, módulos) e diagramas de arquitetura a partir de um projeto de software ou especificações.',
+    template: `Você é um arquiteto de software e especialista em IA, focado em otimização de processos de desenvolvimento. Elabore um blueprint para um sistema de IA capaz de gerar automaticamente documentação técnica e diagramas de arquitetura para projetos de software.
+
+**Contexto do Projeto de Software:**
+- Linguagens de Programação Principais: [Linguagens de Programação Principais, ex: Python, Java, JavaScript, Go, C#]
+- Frameworks/Bibliotecas Utilizados: [Frameworks/Bibliotecas Utilizados, ex: React, Spring Boot, FastAPI, .NET Core]
+- Arquitetura Principal (ex: Microsserviços, Monolítica, Serverless, Event-Driven): [Arquitetura Principal]
+- Ferramentas de Controle de Versão (ex: Git, SVN): [Ferramentas de Controle de Versão]
+
+**Requisitos da Documentação Gerada pela IA:**
+1.  **Tipos de Documentação:** Especifique quais seções de documentação devem ser geradas (ex: Visão Geral do Projeto, Instalação, Uso de APIs, Estrutura de Módulos, Classes e Funções, Configuração, Testes).
+2.  **Formato de Saída:** [Formato de Saída Desejado, ex: Markdown, Confluence Wiki, Javadoc/Sphinx/Swagger/OpenAPI YAML, HTML estático]
+3.  **Estilo e Tom:** [Estilo e Tom da Documentação, ex: Formal e técnico, Amigável para desenvolvedores, Orientado a tutoriais]
+4.  **Integração com Código:** Como a IA deve extrair informações do código (ex: comentários, assinaturas de funções, estrutura de pastas, uso de variáveis).
+
+**Requisitos dos Diagramas de Arquitetura Gerados pela IA:**
+1.  **Tipos de Diagramas:** Quais diagramas o sistema deve ser capaz de gerar (ex: Diagrama de Componentes, Diagrama de Fluxo de Dados, Diagrama de Sequência, Diagrama de Implantação, Diagrama de Rede, Diagrama de Entidade-Relacionamento).
+2.  **Ferramentas/Formato de Saída para Diagramas:** [Ferramentas/Formato de Saída para Diagramas, ex: PlantUML, Mermaid, Draw.io (XML), Imagem PNG/SVG]
+3.  **Fonte para Geração dos Diagramas:** A IA deve gerar os diagramas a partir do código, de arquivos de configuração, ou de uma descrição textual de alto nível?
+
+**Fluxo de Trabalho da Solução de IA:**
+Descreva o processo passo a passo de como a IA receberia os inputs, processaria e geraria os outputs (ex: 1. Input do repositório de código, 2. Análise da estrutura, 3. Geração de texto, 4. Geração de diagramas, 5. Revisão opcional).
+
+Apresente o blueprint de forma clara e estruturada, destacando o valor agregado da automação.`,
+    tags: ['Desenvolvimento de Software', 'Documentação', 'Arquitetura de TI', 'Automação IA'],
+  },
 ];

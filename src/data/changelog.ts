@@ -13,6 +13,23 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'anthropic-claude-opus-4-8-2026',
+    date: '2026-05',
+    title: 'Anthropic lança Claude Opus 4.8',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'A Anthropic lançou o Claude Opus 4.8, a nova versão do seu modelo de IA mais avançado, com melhorias significativas em programação, raciocínio e honestidade, superando concorrentes em testes voltados a tarefas de agente.',
+    highlights: [
+      'Lançado em 28 de maio de 2026.',
+      'É a nova versão do modelo de IA mais avançado da Anthropic.',
+      'Apresenta ganhos notáveis em programação, raciocínio e honestidade.',
+      'Supera concorrentes como GPT-5.5 e Gemini 3.1 Pro em testes de tarefas de agente.',
+      'Disponível no claude.ai, na Claude API e nas principais plataformas de nuvem, mantendo o mesmo preço do Opus 4.7.',
+      'Inclui recursos inéditos, como controle de esforço e fluxos de trabalho dinâmicos.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'google-deepmind-alphaproof-nexus-2026',
     date: '2026-05',
     title: 'Google DeepMind lança AlphaProof Nexus',

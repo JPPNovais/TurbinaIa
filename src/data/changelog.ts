@@ -13,6 +13,21 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-deepmind-gemma-4-2026',
+    date: '2026-05',
+    title: 'Google DeepMind lança a família de modelos abertos Gemma 4',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Google DeepMind lançou Gemma 4, uma família de quatro modelos abertos (E2B, E4B, 26B MoE, 31B Dense) desenvolvidos para raciocínio avançado e fluxos de trabalho de agentes, todos licenciados sob Apache 2.0.',
+    highlights: [
+      'Lançada em maio de 2026.',
+      'Compreende quatro modelos abertos: E2B, E4B, 26B MoE e 31B Dense.',
+      'Projetada especificamente para raciocínio avançado e fluxos de trabalho de agentes.',
+      'Todos os modelos são licenciados sob a licença Apache 2.0.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'anthropic-claude-opus-4-8-2026',
     date: '2026-05',
     title: 'Anthropic lança Claude Opus 4.8',

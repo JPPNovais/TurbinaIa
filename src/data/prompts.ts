@@ -2015,4 +2015,173 @@ Descreva o processo passo a passo de como a IA receberia os inputs, processaria 
 Apresente o blueprint de forma clara e estruturada, destacando o valor agregado da automação.`,
     tags: ['Desenvolvimento de Software', 'Documentação', 'Arquitetura de TI', 'Automação IA'],
   },
+  {
+    id: 'ia-design-multiagente-otimizacao',
+    title: 'Design de Sistema Multiagente para Otimização',
+    category: 'IA & Automação',
+    description: 'Crie um blueprint detalhado para um sistema de agentes de IA colaborativos, focado em otimizar um processo de negócio específico, definindo papéis, interações e fluxos.',
+    template: `Você é um especialista em design de sistemas multiagentes. Sua tarefa é criar um blueprint detalhado para um sistema de agentes de IA colaborativos, visando otimizar o processo de [Nome do Processo a Otimizar, ex: Onboarding de Clientes, Desenvolvimento de Produto, Gestão de Campanhas de Marketing].
+
+**Objetivo Principal do Sistema Multiagente:**
+[Descreva o objetivo geral que o sistema deve alcançar, ex: Reduzir o tempo de onboarding em 30% e aumentar a satisfação do cliente; Acelerar o ciclo de desenvolvimento de novas features; Otimizar o ROI de campanhas de marketing.]
+
+**Etapas Atuais do Processo (Opcional, mas recomendado para contexto):**
+[Liste as principais etapas do processo como ele é hoje, ex: 1. Cadastro, 2. Verificação, 3. Primeiro contato, 4. Ativação. Isso ajudará a identificar gargalos e oportunidades.]
+
+**Recursos e Ferramentas Disponíveis (se houver):**
+[Mencione quaisquer ferramentas, APIs ou bases de dados que os agentes possam acessar ou integrar, ex: CRM, ERP, Plataforma de Marketing, Base de Conhecimento Interna, Ferramentas de Comunicação.]
+
+**Público/Usuários Envolvidos (se houver):**
+[Quem são as pessoas ou outros sistemas que interagem com este processo ou serão afetados por ele? Ex: Clientes, Equipe de Vendas, Suporte, Desenvolvedores.]
+
+Com base nas informações acima, por favor, forneça um design detalhado que inclua:
+
+1.  **Identificação e Descrição dos Agentes:**
+    *   Para cada agente, defina seu nome, seu papel principal, suas responsabilidades e as capacidades necessárias (ex: processamento de linguagem natural, análise de dados, integração com [ferramenta X]).
+    *   Sugira 3-5 agentes, cada um com um papel distinto e complementar.
+
+2.  **Fluxo de Interação entre os Agentes:**
+    *   Descreva como os agentes se comunicarão e colaborarão entre si para alcançar o objetivo.
+    *   Apresente cenários de uso onde os agentes trabalham juntos passo a passo.
+
+3.  **Mecanismos de Tomada de Decisão e Aprendizado:**
+    *   Explique como cada agente tomará decisões dentro de seu escopo e como o sistema geral aprenderá e melhorará ao longo do tempo.
+
+4.  **Pontos de Integração e Dados:**
+    *   Quais dados cada agente precisa acessar ou gerar?
+    *   Quais sistemas externos serão integrados e como?
+
+5.  **Desafios Potenciais e Estratégias de Mitigação:**
+    *   Identifique possíveis problemas no design ou implementação e como eles podem ser abordados.
+
+Formate a saída com títulos claros para cada seção.`,
+    tags: ['Automação Inteligente', 'Agentes Autônomos', 'Otimização Processos', 'Design de IA'],
+  },
+  {
+    id: 'escrita-roteiro-experiencia-imersiva',
+    title: 'Roteiro Detalhado para Experiência Imersiva com IA',
+    category: 'Escrita',
+    description: 'Crie um roteiro completo para uma experiência digital imersiva (ex: treinamento, tour, marketing) que utilize elementos de IA para personalização e engajamento.',
+    template: `Você é um roteirista especializado em experiências digitais imersivas e interativas, com profundo conhecimento em como integrar capacidades de IA para personalização. Sua tarefa é criar um roteiro detalhado para uma experiência imersiva sobre [Tema da Experiência Imersiva, ex: Treinamento em Liderança para Novos Gerentes, Tour Virtual pela Floresta Amazônica, Lançamento de um Produto de Tecnologia Sustentável].
+
+**Tipo de Experiência Imersiva:**
+[Escolha entre: Treinamento, Tour Virtual, Jogo Interativo, Storytelling Narrativo, Demonstração de Produto, Outro (especifique)]
+
+**Objetivo da Experiência:**
+[Qual é o resultado desejado para o usuário após interagir com a experiência? Ex: Aprender X habilidade, Sentir Y emoção, Entender Z conceito, Ser convencido a comprar/agir.]
+
+**Público-Alvo:**
+[Descreva o público-alvo em termos de idade, interesses, nível de conhecimento prévio e expectativas.]
+
+**Duração Estimada:**
+[Ex: 15-20 minutos, 1 hora, Segmentado em módulos de 5 minutos.]
+
+**Principais Elementos de Interação Desejados:**
+[Ex: Escolhas do usuário que afetam a narrativa, Respostas a perguntas abertas, Manipulação de objetos virtuais, Feedback em tempo real.]
+
+**Como a IA será integrada para personalização/engajamento:**
+[Ex: IA adapta o conteúdo com base no progresso do usuário; IA analisa respostas para dar feedback personalizado; IA gera cenários dinâmicos com base em escolhas; IA sugere caminhos de aprendizado.]
+
+Com base nas informações acima, por favor, forneça um roteiro detalhado que inclua:
+
+1.  **Estrutura da Experiência:**
+    *   Divida a experiência em seções ou capítulos lógicos, com títulos e objetivos claros para cada um.
+
+2.  **Descrição Detalhada das Cenas/Módulos:**
+    *   Para cada seção, descreva o ambiente visual, a atmosfera, os elementos de áudio (narração, música, efeitos sonoros) e a duração estimada.
+    *   Identifique os pontos de interação do usuário e as ramificações possíveis.
+
+3.  **Conteúdo Narrativo e Diálogos:**
+    *   Escreva exemplos de textos de narração, diálogos entre personagens (se houver) e prompts para o usuário.
+    *   Indique onde o conteúdo gerado por IA ou adaptado por IA entrará.
+
+4.  **Feedback e Personalização via IA:**
+    *   Descreva como o sistema de IA coletará dados do usuário (ex: escolhas, respostas, tempo gasto) e como esses dados serão usados para personalizar a experiência.
+    *   Exemplos de feedback ou adaptações específicas que a IA fará.
+
+5.  **Recursos Visuais e Sonoros Chave:**
+    *   Sugira os tipos de recursos visuais (animações, vídeos, modelos 3D) e sonoros (trilha sonora, dublagem, SFX) necessários para cada momento.
+
+Formate a saída com títulos claros para cada seção e use um formato de script (CENA X, AÇÃO, DIÁLOGO/NARRADOR).`,
+    tags: ['Conteúdo Interativo', 'Design UX', 'Storytelling IA', 'Engajamento Digital'],
+  },
+  {
+    id: 'negocios-estrategia-desenvolvimento-talentos-ia',
+    title: 'Estratégia de Desenvolvimento de Talentos Impulsionada por IA',
+    category: 'Negócios',
+    description: 'Desenvolva um plano estratégico para identificar lacunas de habilidades, criar trilhas de aprendizado personalizadas e reter talentos usando inteligência artificial.',
+    template: `Você é um consultor de RH e IA, especializado em otimizar estratégias de desenvolvimento de talentos. Sua tarefa é elaborar um plano estratégico para [Nome da Empresa ou Tipo de Empresa, ex: Startup de Tecnologia, Indústria de Manufatura, Empresa de Serviços Financeiros], focado em identificar lacunas de habilidades, criar trilhas de aprendizado personalizadas e melhorar a retenção de talentos, tudo isso impulsionado por inteligência artificial.
+
+**Contexto da Empresa:**
+[Descreva brevemente a empresa: setor, tamanho (nº de funcionários), principais desafios atuais de talentos (ex: alta rotatividade, dificuldade em encontrar habilidades específicas, baixo engajamento em treinamentos).]
+
+**Objetivos Chave da Estratégia:**
+[Defina 2-3 objetivos SMART para esta iniciativa, ex: Reduzir a rotatividade de talentos em 15% nos próximos 12 meses; Aumentar a proficiência em X habilidade em 20% para a equipe de Y; Melhorar o engajamento em programas de desenvolvimento em Z%.]
+
+**Dados Disponíveis para a IA (se houver):**
+[Mencione os tipos de dados que a IA poderia analisar, ex: Avaliações de desempenho, histórico de treinamentos, feedback de 360 graus, descrições de cargos, dados de mercado de trabalho, projetos concluídos.]
+
+Com base nas informações fornecidas, por favor, desenvolva uma estratégia detalhada que inclua:
+
+1.  **Identificação de Lacunas de Habilidades com IA:**
+    *   Como a IA pode analisar dados existentes para mapear as habilidades atuais dos funcionários e compará-las com as necessidades futuras da empresa e do mercado.
+    *   Sugira ferramentas ou abordagens de IA (ex: processamento de linguagem natural em descrições de cargo, análise preditiva de performance).
+
+2.  **Trilhas de Aprendizado Personalizadas via IA:**
+    *   Como a IA pode recomendar cursos, módulos e recursos de aprendizado específicos para cada funcionário, com base em suas lacunas, estilo de aprendizado e objetivos de carreira.
+    *   Descreva o papel da IA na curadoria de conteúdo e adaptação do ritmo.
+
+3.  **Engajamento e Retenção de Talentos Aprimorados por IA:**
+    *   Estratégias para usar a IA no monitoramento do engajamento dos funcionários, identificação de sinais de insatisfação ou risco de saída.
+    *   Como a IA pode sugerir intervenções proativas, como oportunidades de mentoria, projetos desafiadores ou reconhecimento.
+
+4.  **Métricas de Sucesso e Monitoramento:**
+    *   Quais KPIs devem ser monitorados para avaliar o sucesso da estratégia?
+    *   Como a IA pode ajudar no acompanhamento e ajuste contínuo da estratégia.
+
+5.  **Desafios de Implementação e Considerações Éticas:**
+    *   Identifique possíveis obstáculos (ex: privacidade de dados, resistência à mudança) e como superá-los.
+    *   Aborde a importância da transparência e justiça no uso da IA.
+
+Formate a saída com títulos claros para cada seção e use listas para os pontos principais.`,
+    tags: ['Recursos Humanos', 'Gestão de Talentos', 'Treinamento', 'Inovação RH'],
+  },
+  {
+    id: 'produtividade-analise-vies-cognitivo',
+    title: 'Análise de Viés Cognitivo para Tomada de Decisão com IA',
+    category: 'Produtividade',
+    description: 'Use a IA para identificar potenciais vieses cognitivos em um processo de decisão, analisar seu impacto e sugerir estratégias para mitigar esses vieses, melhorando a qualidade das escolhas.',
+    template: `Você é um especialista em psicologia cognitiva e inteligência artificial, focado em otimizar a tomada de decisões. Sua tarefa é analisar um processo de decisão específico para identificar potenciais vieses cognitivos, analisar o impacto desses vieses e sugerir estratégias concretas para mitigá-los, resultando em escolhas mais racionais e eficazes.
+
+**Contexto da Decisão:**
+[Descreva a situação ou o problema que exige uma decisão. Seja o mais detalhado possível, incluindo o cenário, os stakeholders envolvidos, os dados disponíveis e o prazo.]
+
+**Opções Consideradas (se houver):**
+[Liste as opções ou cursos de ação que estão sendo avaliados, se aplicável.]
+
+**Informações e Dados Relevantes (se houver):**
+[Quais informações foram coletadas para embasar a decisão? Ex: Pesquisas de mercado, relatórios financeiros, opiniões de especialistas, experiências passadas.]
+
+**Objetivo da Decisão:**
+[Qual é o resultado ideal ou o propósito principal desta decisão?]
+
+Com base nas informações acima, por favor, forneça uma análise detalhada:
+
+1.  **Identificação de Vieses Cognitivos Potenciais:**
+    *   Análise dos elementos do contexto e das informações fornecidas para identificar quais vieses cognitivos são mais prováveis de influenciar a decisão (ex: Viés de Confirmação, Viés de Ancoragem, Efeito Manada, Viés de Disponibilidade, Aversão à Perda, Excesso de Confiança).
+    *   Para cada viés identificado, explique brevemente por que ele pode ser relevante nesta situação.
+
+2.  **Impacto dos Vieses na Decisão:**
+    *   Descreva como cada viés identificado pode distorcer a percepção da realidade, a avaliação das opções ou a previsão dos resultados, levando a uma decisão subótima.
+
+3.  **Estratégias de Mitigação Baseadas em IA e Comportamento:**
+    *   Para cada viés identificado, sugira estratégias práticas e aplicáveis para mitigar seu impacto. Inclua tanto abordagens cognitivas/comportamentais quanto como a IA poderia auxiliar (ex: IA pode gerar contra-argumentos, IA pode apresentar dados diversificados, IA pode simular cenários alternativos).
+    *   Exemplos de perguntas que a IA pode fazer para desafiar o pensamento, ou dados que a IA pode buscar para fornecer uma perspectiva diferente.
+
+4.  **Plano de Ação para Melhorar a Tomada de Decisão Futura:**
+    *   Recomendações gerais para incorporar a conscientização e a mitigação de vieses nos processos de decisão da empresa ou pessoal.
+
+Formate a saída com títulos claros para cada seção e use bullet points para as estratégias e recomendações.`,
+    tags: ['Decisão Estratégica', 'Pensamento Crítico', 'Melhora Contínua', 'Psicologia Cognitiva'],
+  },
 ];

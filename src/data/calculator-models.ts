@@ -89,7 +89,7 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'DeepSeek',
     inputPricePerM: 0.14, // Preço atualizado para DeepSeek-V4 Flash.
     outputPricePerM: 0.28, // Preço atualizado para DeepSeek-V4 Flash.
-    contextWindow: '1M tokens', // Janela de contexto para DeepSeek-V4 Flash.
+    contextWindow: '128K tokens', // Janela de contexto para DeepSeek-V4 Flash, baseado em DeepSeek-V2.
     description: 'Modelo eficiente da DeepSeek para alta velocidade (versão V4 Flash).',
   },
   {
@@ -97,7 +97,7 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'DeepSeek',
     inputPricePerM: 0.435, // Preço atualizado para DeepSeek-V4 Pro (preço promocional).
     outputPricePerM: 0.87, // Preço atualizado para DeepSeek-V4 Pro (preço promocional).
-    contextWindow: '1M tokens', // Janela de contexto para DeepSeek-V4 Pro.
+    contextWindow: '128K tokens', // Janela de contexto para DeepSeek-V4 Pro, baseado em DeepSeek-V2.
     description: 'Modelo avançado da DeepSeek para raciocínio complexo (versão V4 Pro).',
   },
   // Meta (via API)
@@ -121,9 +121,9 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'Mistral Large', // Atualizado de 'Mistral Large 3'
     provider: 'Mistral AI',
-    inputPricePerM: 2.00, // Preço atualizado do Mistral Large.
-    outputPricePerM: 6.00, // Preço atualizado do Mistral Large.
-    contextWindow: '128K tokens', // Janela de contexto atualizada do Mistral Large.
+    inputPricePerM: 8.00, // Preço atualizado do Mistral Large.
+    outputPricePerM: 24.00, // Preço atualizado do Mistral Large.
+    contextWindow: '32K tokens', // Janela de contexto atualizada do Mistral Large.
     description: 'Modelo flagship da Mistral AI com raciocínio e capacidades multimodais.',
   },
   // Cohere

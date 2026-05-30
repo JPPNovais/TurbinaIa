@@ -23,40 +23,40 @@ export const aiModels: AIModel[] = [
     name: 'ChatGPT Plus (GPT-5.5, GPT-5.5 Instant, GPT-5.4)',
     developer: 'OpenAI',
     category: 'Texto & Código',
-    pricing: 'Plano gratuito disponível (acesso a GPT-5.5 Instant limitado, com anúncios nos EUA e recursos básicos); ChatGPT Go: US$ 8/mês (acesso limitado a GPT-5.4 Thinking, uploads de arquivo, criação de imagem, anúncios); ChatGPT Plus: US$ 20/mês (acesso prioritário a GPT-5.5, GPT-5.5 Instant, GPT-5.4 e GPT Image 2.0; inclui Deep Research (10 runs/mês), Sora video, Codex, Agent Mode, Custom GPTs, navegação web, Advanced Data Analysis, e voz real-time ChatGPT Voice). ChatGPT Pro US$ 100/mês (lançado em abril de 2026, 5x o uso do Plus, acesso a GPT-5.5 Pro, o1 Pro mode) e US$ 200/mês (20x o uso do Plus, 1M token de contexto, acesso a GPT-5.5 Pro). ChatGPT Business: US$ 20-30/mês por usuário (anual/mensal, mínimo de 2 usuários). API para GPT-5.5: US$ 5.00/milhão de tokens de entrada e US$ 30.00/milhão de tokens de saída (Batch/Flex pricing: US$ 2.50/milhão de tokens de entrada e US$ 15.00/milhão de tokens de saída). API para GPT-5.4: US$ 2.50/milhão de tokens de entrada e US$ 15.00/milhão de tokens de saída (para até 272K tokens de entrada; preços mais altos para prompts maiores).',
+    pricing: 'Plano gratuito disponível (acesso a GPT-5.5 Instant limitado, com anúncios nos EUA e recursos básicos); ChatGPT Go: US$ 8/mês (lançado globalmente em janeiro de 2026, com acesso a GPT-5.3 Instant ilimitado, upload de arquivos, criação de imagens no Instant Mode, memória aprimorada, Custom GPTs, e GPT-5.5 no Codex com 400K de contexto; usuários dos EUA veem anúncios e acesso limitado ao GPT-5.4 Thinking); ChatGPT Plus: US$ 20/mês (acesso prioritário a GPT-5.5, GPT-5.5 Instant, GPT-5.4 e GPT Image 2.0; inclui Deep Research (10 runs/mês), Sora video (acesso limitado/preview), Codex, Agent Mode, Custom GPTs, navegação web, Advanced Data Analysis, e voz real-time ChatGPT Voice). ChatGPT Pro US$ 100/mês (lançado em abril de 2026, 5x o uso do Plus, acesso a GPT-5.5 Pro) e US$ 200/mês (20x o uso do Plus, 1M token de contexto, acesso a GPT-5.5 Pro). ChatGPT Business: US$ 20/mês por usuário (cobrança anual, mínimo de 2 usuários; preço reduzido de US$ 25 em abril de 2026) ou US$ 25/mês (cobrança mensal). API para GPT-5.5: US$ 5.00/milhão de tokens de entrada e US$ 30.00/milhão de tokens de saída (prompts >272K tokens de entrada têm custo 2x para entrada e 1.5x para saída). API para GPT-5.4: US$ 2.50/milhão de tokens de entrada e US$ 15.00/milhão de tokens de saída (para até 272K tokens de entrada; preços mais altos para prompts maiores). API para GPT Image 2.0: US$ 8.00/milhão de tokens de entrada (imagem) e US$ 30.00/milhão de tokens de saída (imagem).',
     pros: [
-      'GPT-5.5 (lançado em abril de 2026) é o modelo mais inteligente e capaz da OpenAI, destacando-se em codificação agentica, uso de computador, trabalho de conhecimento e pesquisa científica.',
-      'GPT-5.5 Instant (lançado em maio de 2026) é o novo padrão do ChatGPT, oferecendo respostas mais rápidas, inteligentes, precisas (52.5% menos alucinações em prompts de alto risco), mais concisas e personalizadas, e é o modelo padrão para usuários gratuitos.',
-      'GPT-5.4 (lançado em março de 2026) oferece capacidades robustas de raciocínio, codificação e uso de computador, com janela de contexto de 1M+ tokens (com custo adicional para prompts maiores).',
+      'GPT-5.5 (lançado em abril de 2026) é o modelo mais inteligente e capaz da OpenAI, destacando-se em codificação agentica, uso de computador, trabalho de conhecimento e pesquisa científica, sendo nativamente omnimodal (texto, imagem, áudio e vídeo em uma arquitetura unificada).',
+      'GPT-5.5 Instant (lançado em maio de 2026) é o novo padrão do ChatGPT para todos os usuários (incluindo gratuitos), oferecendo respostas mais rápidas, inteligentes, precisas (52.5% menos alucinações em prompts de alto risco), mais concisas e personalizadas.',
+      'GPT-5.4 (lançado em março de 2026) oferece capacidades robustas de raciocínio, codificação e uso de computador, com janela de contexto de 1M+ tokens (922K de entrada, 128K de saída) e funcionalidade de busca de ferramentas.',
       'O modo "Thinking" do GPT-5.4 permite visualizar um plano de raciocínio pré-geração, possibilitando ajustar o curso no meio da resposta.',
-      'Acesso a recursos como Advanced Data Analysis (anteriormente Code Interpreter), navegação web, Custom GPTs, Deep Research (no Plus), Sora (geração de vídeo) e Agent Mode (automação multi-passo).',
-      'GPT Image 2.0 (lançado em abril de 2026) integrado, com renderização de texto multilíngue aprimorada, raciocínio visual avançado e resolução 2K, disponível nos planos pagos.'
+      'Acesso a recursos como Advanced Data Analysis (anteriormente Code Interpreter), navegação web, Custom GPTs, Deep Research (no Plus e superior), Sora (geração de vídeo, acesso limitado), e Agent Mode (automação multi-passo).',
+      'GPT Image 2.0 (lançado em abril de 2026) integrado, com renderização de texto multilíngue aprimorada (99% de precisão), raciocínio visual avançado (Thinking-First Composition), resolução nativa de 4K (API até 2K) e capacidade de gerar até oito imagens consistentes por prompt.'
     ],
     cons: [
-      'Usuários gratuitos e do plano Go podem ver anúncios e têm acesso limitado a modelos mais avançados.',
-      'O Canvas não está mais disponível no GPT-5.5 Instant ou GPT-5.5 Thinking.',
-      'O custo da API para GPT-5.5 é significativamente mais alto que o do GPT-5.4 por token.',
-      'GPT-5.4 possui um cutoff de conhecimento de 31 de agosto de 2025.',
-      'Modelos GPT-4o, GPT-4.1, GPT-4.1 mini, OpenAI o4-mini e GPT-5 (Instant e Thinking) foram aposentados do ChatGPT em fevereiro de 2026 para usuários pagos. OpenAI o3 e GPT-4.5 serão aposentados em agosto e junho de 2026, respectivamente.'
+      'Usuários gratuitos e do plano Go podem ver anúncios (nos EUA) e têm acesso limitado a modelos e recursos mais avançados.',
+      'O Canvas não está mais disponível no GPT-5.5 Instant ou GPT-5.5 Thinking, com tarefas de escrita e codificação sendo tratadas diretamente no chat.',
+      'O custo da API para GPT-5.5 é significativamente mais alto que o do GPT-5.4 por token, embora seja mais eficiente para tarefas complexas.',
+      'GPT-5.4 tem um cutoff de conhecimento de dezembro de 2025.',
+      'Modelos como GPT-4o, GPT-4.1, GPT-4.1 mini, o4-mini e o GPT-5 original (Instant e Thinking) foram aposentados do ChatGPT em fevereiro de 2026. OpenAI o3 e GPT-4.5 serão aposentados em agosto e junho de 2026, respectivamente.'
     ],
     score: {
       reasoning: 5.0,
       writing: 5.0,
       coding: 5.0,
       speed: 5.0,
-      value: 4.7 // Value slightly adjusted due to high API costs for GPT-5.5 Pro and increased general API pricing for frontier models.
+      value: 4.7
     },
     affiliateUrl: 'https://chatgpt.com',
-    description: 'ChatGPT Plus, agora impulsionado pelos modelos GPT-5.5 (lançado em abril de 2026) e GPT-5.5 Instant (lançado em maio de 2026), representa o auge da inteligência artificial generativa da OpenAI. O GPT-5.5 é o modelo mais inteligente e capaz da empresa, otimizado para tarefas complexas de codificação, pesquisa e análise de dados. O GPT-5.5 Instant, o novo padrão do ChatGPT, oferece respostas mais rápidas, precisas e personalizadas, com alucinações reduzidas, sendo o modelo padrão para usuários gratuitos. A plataforma também oferece acesso ao GPT-5.4 (lançado em março de 2026), que unifica recursos de raciocínio, codificação e uso de computador com uma vasta janela de contexto de 1M+ tokens. Assinantes do ChatGPT Plus (US$ 20/mês) recebem acesso prioritário e ilimitado aos modelos mais recentes, juntamente com recursos como Advanced Data Analysis, navegação web, Custom GPTs, Deep Research, Sora (geração de vídeo) e geração de imagens através do GPT Image 2.0 (lançado em abril de 2026). Novos planos Pro (US$ 100/mês e US$ 200/mês) oferecem opções com limites e capacidades superiores para usuários intensivos e corporativos, com custos de API variáveis por modelo.'
+    description: 'ChatGPT Plus, agora impulsionado pelos modelos GPT-5.5 (lançado em abril de 2026) e GPT-5.5 Instant (lançado em maio de 2026), representa o auge da inteligência artificial generativa da OpenAI. O GPT-5.5 é o modelo mais inteligente e capaz da empresa, otimizado para tarefas complexas de codificação, pesquisa e análise de dados, sendo também nativamente omnimodal. O GPT-5.5 Instant, o novo padrão do ChatGPT para todos os usuários, oferece respostas mais rápidas, precisas e personalizadas, com alucinações reduzidas. A plataforma também oferece acesso ao GPT-5.4 (lançado em março de 2026), que unifica recursos de raciocínio, codificação e uso de computador com uma vasta janela de contexto de 1M+ tokens e modo "Thinking" para planejamento. Assinantes do ChatGPT Plus (US$ 20/mês) recebem acesso prioritário e ilimitado aos modelos mais recentes, juntamente com recursos como Advanced Data Analysis, navegação web, Custom GPTs, Deep Research, Sora (geração de vídeo) e geração de imagens através do GPT Image 2.0 (lançado em abril de 2026). Novos planos Pro (US$ 100/mês e US$ 200/mês) oferecem opções com limites e capacidades superiores para usuários intensivos e corporativos, com custos de API variáveis por modelo.'
   },
   {
     id: 'claude-sonnet-4-6',
     name: 'Claude Sonnet 4.6 (e Claude Opus 4.8, Haiku 4.5)',
     developer: 'Anthropic',
     category: 'Texto & Código',
-    pricing: 'Plano gratuito disponível no Claude.ai e no aplicativo iOS (com acesso a Claude Haiku 4.5 e Claude Sonnet 4.6, com limites de uso diários). Plano Pro: US$ 20/mês (ou US$ 17/mês anual) com acesso a todos os modelos (incluindo Claude Opus 4.8), Claude Code, e limites de taxa significativamente mais altos. Plano Max: US$ 100/mês (5x uso do Pro, 500K tokens de contexto) ou US$ 200/mês (20x uso do Pro, 500K tokens de contexto). API para Claude Haiku 4.5: US$ 1.00/milhão de tokens de entrada e US$ 5.00/milhão de tokens de saída. API para Claude Sonnet 4.6: US$ 3.00/milhão de tokens de entrada e US$ 15.00/milhão de tokens de saída, com janela de contexto de 1M tokens. API para Claude Opus 4.7/4.8: US$ 5.00/milhão de tokens de entrada e US$ 25.00/milhão de tokens de saída.',
+    pricing: 'Plano gratuito disponível no Claude.ai e no aplicativo iOS (com acesso a Claude Haiku 4.5 e Claude Sonnet 4.6, com limites de uso diários). Plano Pro: US$ 20/mês (ou US$ 17/mês anual) com acesso a todos os modelos (incluindo Claude Opus 4.8), Claude Code, e limites de taxa significativamente mais altos. Plano Max: US$ 100/mês (5x uso do Pro, 500K tokens de contexto) ou US$ 200/mês (20x uso do Pro, 500K tokens de contexto). API para Claude Haiku 4.5: US$ 1.00/milhão de tokens de entrada e US$ 5.00/milhão de tokens de saída. API para Claude Sonnet 4.6: US$ 3.00/milhão de tokens de entrada e US$ 15.00/milhão de tokens de saída, com janela de contexto de 1M tokens. API para Claude Opus 4.8: US$ 5.00/milhão de tokens de entrada e US$ 25.00/milhão de tokens de saída.',
     pros: [
-      'Claude Opus 4.8 (lançado em maio de 2026) é o modelo mais avançado da Anthropic, oferecendo raciocínio de ponta e suporte a imagens de alta resolução (até 2576px/3.75MP).',
+      'Claude Opus 4.8 (lançado em maio de 2026) é o modelo mais avançado da Anthropic, oferecendo raciocínio de ponta, suporte a imagens de alta resolução (até 2576px/3.75MP) e capacidades multimodais aprimoradas.',
       'Claude Opus 4.7 (lançado em abril de 2026) mostra melhorias em engenharia de software e tarefas complexas de codificação, bem como visão aprimorada.',
       'Claude Sonnet 4.6 (lançado em fevereiro de 2026) oferece um excelente equilíbrio entre custo e qualidade, sendo o modelo padrão para a maioria das equipes em produção, com janela de contexto de 1M tokens (beta).',
       'Claude Haiku 4.5 (lançado em outubro de 2025) é o modelo mais rápido e econômico, ideal para tarefas de alto volume e classificação.',
@@ -67,15 +67,15 @@ export const aiModels: AIModel[] = [
       'Claude Opus 4.7/4.8 utiliza um novo tokenizer que pode consumir até 35% mais tokens para o mesmo texto, impactando o custo efetivo.',
       'Claude Code v2.1.100+ tem um bug que pode inflar o consumo de tokens em ~40% devido a cache de prompt quebrado.',
       'Não possui geração de imagem nativa (foco em compreensão visual e texto/código), embora Opus 4.7/4.8 tenha visão aprimorada.',
-      'Pode ser excessivamente cauteloso em algumas respostas devido a filtros de segurança. [current data]',
+      'Pode ser excessivamente cauteloso em algumas respostas devido a filtros de segurança.',
       'O plano gratuito não inclui acesso ao Claude Code ou modelos Opus.'
     ],
     score: {
       reasoning: 5.0,
       writing: 5.0,
-      coding: 4.7, // Adjusted slightly down due to token inflation bug in Claude Code.
+      coding: 4.7,
       speed: 5.0,
-      value: 4.7 // Adjusted slightly down due to potential token inflation impacting cost-effectiveness.
+      value: 4.7
     },
     affiliateUrl: 'https://claude.ai',
     description: 'Claude Sonnet 4.6 (lançado em fevereiro de 2026) é o modelo mid-tier mais avançado da Anthropic, oferecendo um desempenho robusto em raciocínio, codificação e compreensão multimodal, incluindo capacidades de visão e função de chamada. Para tarefas mais complexas e fluxos de trabalho agenticos, o Claude Opus 4.8 (lançado em maio de 2026) é o modelo carro-chefe da Anthropic, alcançando alta pontuação em benchmarks de inteligência e codificação, com suporte a imagens de alta resolução e uma janela de contexto de 1M tokens. Ambos os modelos, juntamente com o Claude Haiku 4.5 (modelo mais rápido e custo-efetivo, lançado em outubro de 2025), estão disponíveis via planos gratuitos, Pro e Max, e API. A Anthropic continua a focar em segurança e alinhamento em seus modelos, embora o novo tokenizer do Opus 4.7/4.8 possa aumentar o consumo de tokens e um bug no Claude Code possa inflar os custos.'
@@ -88,14 +88,14 @@ export const aiModels: AIModel[] = [
     pricing: 'Plano gratuito disponível (com acesso ao Gemini app, Gemini 1.5 Flash e recursos básicos); Google AI Premium (anteriormente Google One AI Premium/Gemini Advanced): US$ 19.99/mês (acesso a Gemini 1.5 Pro, Gemini 1.5 Flash, Gemini 3.5 Flash, 5 TB de armazenamento, integração com Workspace). API para Gemini 3.5 Flash: US$ 1.50/milhão de tokens de entrada e US$ 9.00/milhão de tokens de saída. Tokens de entrada em cache para Gemini 3.5 Flash: US$ 0.15/milhão de tokens. API para Gemini 1.5 Pro: US$ 7.00/milhão de tokens de entrada e US$ 21.00/milhão de tokens de saída para prompts com menos de 128K tokens, com janela de contexto de 2 milhões de tokens. API para Gemini 1.5 Flash: US$ 3.75/milhão de tokens de entrada e US$ 15.00/milhão de tokens de saída para prompts com menos de 128K tokens, com janela de contexto de 1 milhão de tokens. Tokens de entrada em cache para Gemini 1.5 Flash: US$ 0.01/milhão de tokens (<128K prompts).',
     pros: [
       'Gemini 3.5 Flash (lançado em maio de 2026) é um modelo de ponta que oferece desempenho de nível de fronteira em velocidades Flash para tarefas agenticas e de codificação, superando o Gemini 3.1 Pro e sendo 4x mais rápido que modelos concorrentes com custo reduzido.',
-      'Gemini 1.5 Pro (lançado em fevereiro de 2024) é o modelo mais poderoso e versátil do Google para raciocínio complexo, multimodalidade e capacidades agenticas, com janela de contexto de 2 milhões de tokens. [current data]',
-      'Gemini 1.5 Flash (lançado em maio de 2024) é o modelo mais rápido e eficiente do Gemini, otimizado para tarefas de alto volume e frequência, com janela de contexto de 1 milhão de tokens. [current data]',
+      'Gemini 1.5 Pro (lançado em fevereiro de 2024) é o modelo mais poderoso e versátil do Google para raciocínio complexo, multimodalidade e capacidades agenticas, com janela de contexto de 2 milhões de tokens.',
+      'Gemini 1.5 Flash (lançado em maio de 2024) é o modelo mais rápido e eficiente do Gemini, otimizado para tarefas de alto volume e frequência, com janela de contexto de 1 milhão de tokens.',
       'Capacidades multimodais avançadas para processar e analisar vídeo, áudio, imagens e texto em uma única requisição, incluindo geração de vídeo para imagem com os novos modelos Gemini 3.1 Flash Image e 3.1 Pro Image.',
-      'Integração profunda com o ecossistema Google (Workspace, Search, Android, Chrome). [current data]'
+      'Integração profunda com o ecossistema Google (Workspace, Search, Android, Chrome).'
     ],
     cons: [
-      'A API para Gemini 1.5 Pro é mais cara que a 1.5 Flash, especialmente para prompts mais longos. [current data]',
-      'A segmentação de imagem não é suportada nos modelos Gemini 1.5. [current data]',
+      'A API para Gemini 1.5 Pro é mais cara que a 1.5 Flash, especialmente para prompts mais longos.',
+      'A segmentação de imagem não é suportada nos modelos Gemini 1.5.',
       'O modelo Gemini 3.5 Pro está atualmente em testes internos e não foi lançado publicamente (previsão para o próximo mês).'
     ],
     score: {
@@ -121,7 +121,7 @@ export const aiModels: AIModel[] = [
       'Modelos "open-weight" que permitem uso local gratuito e fine-tuning, com um ecossistema robusto de provedores de API terceirizados que oferecem custos competitivos (Deepinfra como o mais barato e Groq como o mais rápido).'
     ],
     cons: [
-      'Requer hardware potente (GPU) para rodar localmente com alta velocidade e para modelos maiores. [current data]',
+      'Requer hardware potente (GPU) para rodar localmente com alta velocidade e para modelos maiores.',
       'A migração de fine-tuning do Llama 3.1 para o Llama 4 requer o re-treinamento do modelo.',
       'O modelo Llama 4 Behemoth ainda está em treinamento e não foi lançado publicamente.'
     ],
@@ -140,17 +140,17 @@ export const aiModels: AIModel[] = [
     name: 'GPT Image 2.0 (via ChatGPT Plus)',
     developer: 'OpenAI',
     category: 'Geração de Imagem',
-    pricing: 'Incluso no ChatGPT Plus (US$ 20/mês, com acesso a GPT-5.5, GPT-5.5 Instant e limites de uso). API para GPT Image 2.0 (lançado em abril de 2026): US$ 8.00/milhão de tokens de entrada e US$ 30.00/milhão de tokens de saída para imagem.',
+    pricing: 'Incluso no ChatGPT Plus (US$ 20/mês, com acesso a GPT-5.5, GPT-5.5 Instant e limites de uso). API para GPT Image 2.0 (lançado em abril de 2026): US$ 8.00/milhão de tokens de entrada (para imagem) e US$ 30.00/milhão de tokens de saída (para imagem). Preços por imagem variam de US$ 0.006 (baixa qualidade, 1024x1024) a US$ 0.211 (alta qualidade, 1024x1024).',
     pros: [
-      'GPT Image 2.0 (lançado em abril de 2026) é o modelo de geração de imagens mais avançado da OpenAI.',
-      'Primeiro modelo de imagem com raciocínio nativo ("Thinking Mode"), permitindo pesquisa pré-geração, planejamento e autocorreção, gerando até oito imagens coerentes a partir de um único prompt. [current data]',
-      'Melhora significativa na renderização de texto multilíngue (incluindo CJK, Hindi, Bengali e Árabe) e suporte a resolução 2K (até 2048px). [current data]',
+      'GPT Image 2.0 (lançado em abril de 2026) é o modelo de geração de imagens mais avançado da OpenAI, também conhecido como ChatGPT Images 2.0.',
+      'Primeiro modelo de imagem com raciocínio nativo ("Thinking Mode"), permitindo pesquisa pré-geração, planejamento e autocorreção, gerando até oito imagens coerentes a partir de um único prompt.',
+      'Melhora significativa na renderização de texto multilíngue (incluindo CJK, Hindi, Bengali e Árabe) com 99% de precisão e suporte a resolução nativa de 4K (API até 2K).',
       'Integração perfeita com ChatGPT, permitindo criação e modificação de imagens via conversação.'
     ],
     cons: [
-      'Ainda pode apresentar resultados que parecem "falsos" ou não atingir o fotorrealismo de alguns concorrentes em certos casos, embora tenha melhorado significativamente. [current data]',
+      'Ainda pode apresentar resultados que parecem "falsos" ou não atingir o fotorrealismo de alguns concorrentes em certos casos, embora tenha melhorado significativamente.',
       'O acesso completo e ilimitado requer assinatura do ChatGPT Plus ou planos superiores, com recursos avançados (Thinking Mode) restritos a assinantes pagos.',
-      'Preços da API podem ser elevados, especialmente para alta qualidade e resoluções maiores.'
+      'Preços da API podem ser elevados, especialmente para alta qualidade e resoluções maiores, com o consumo de tokens variando com tamanho, qualidade e edições.'
     ],
     score: {
       reasoning: 4.9,
@@ -160,7 +160,7 @@ export const aiModels: AIModel[] = [
       value: 4.7
     },
     affiliateUrl: 'https://chatgpt.com',
-    description: 'GPT Image 2.0, lançado pela OpenAI em abril de 2026, é a mais recente geração de modelos de geração de imagens da empresa, também podendo ser referido como DALL-E 4. Totalmente integrado ao ChatGPT, ele se destaca pela sua capacidade de interpretar prompts complexos e conversacionais para criar imagens de alta qualidade com renderização aprimorada de texto multilíngue e raciocínio visual avançado (através do "Thinking Mode"). Este modelo oferece resolução 2K e a capacidade de realizar pesquisa pré-geração para maior precisão. Disponível via assinatura ChatGPT Plus, a geração de imagens da OpenAI oferece uma experiência intuitiva e poderosa para designers, criadores de conteúdo e qualquer pessoa que busque gerar visuais criativos de alto nível, apesar do custo da API para uso em larga escala.'
+    description: 'GPT Image 2.0, lançado pela OpenAI em abril de 2026, é a mais recente geração de modelos de geração de imagens da empresa, também podendo ser referido como ChatGPT Images 2.0. Totalmente integrado ao ChatGPT, ele se destaca pela sua capacidade de interpretar prompts complexos e conversacionais para criar imagens de alta qualidade com renderização aprimorada de texto multilíngue e raciocínio visual avançado (através do "Thinking Mode"). Este modelo oferece resolução nativa de 4K (API até 2K) e a capacidade de realizar pesquisa pré-geração para maior precisão. Disponível via assinatura ChatGPT Plus, a geração de imagens da OpenAI oferece uma experiência intuitiva e poderosa para designers, criadores de conteúdo e qualquer pessoa que busque gerar visuais criativos de alto nível, apesar do custo da API para uso em larga escala.'
   },
   {
     id: 'midjourney-v8-1',
@@ -169,9 +169,8 @@ export const aiModels: AIModel[] = [
     category: 'Geração de Imagem',
     pricing: 'Sem plano gratuito no site oficial. Planos pagos: Basic US$ 10/mês (US$ 96/ano) com ~3.3 horas de GPU rápida (equivalente a ~200 imagens). Standard US$ 30/mês (US$ 288/ano) com ~15 horas de GPU rápida e gerações ilimitadas no modo Relax. Pro US$ 60/mês (US$ 576/ano) com ~30 horas de GPU rápida, modo Relax ilimitado, modo Stealth (privacidade) e gerações ilimitadas de vídeo SD no modo Relax. Mega US$ 120/mês (US$ 1152/ano) com ~60 horas de GPU rápida, modo Relax ilimitado e modo Stealth.',
     pros: [
-      'Midjourney V7 (lançado em abril de 2025, padrão desde junho de 2025) oferece qualidade de imagem excepcional, alta resolução, estética marcante e maior precisão na compreensão de prompts.',
-      'Introduziu o "Draft Mode" (10x mais rápido, 50% de custo reduzido) para iteração rápida de ideias e "Omni Reference".',
-      'A versão V8.1 (mencionada em março de 2026) continua a aprimorar as capacidades.',
+      'Midjourney V8.1 (lançado em março de 2026) continua a aprimorar a qualidade de imagem excepcional, alta resolução, estética marcante e maior precisão na compreensão de prompts.',
+      'Introduziu o "Draft Mode" (10x mais rápido, 50% de custo reduzido) para iteração rápida de ideias e "Omni Reference" para consistência visual.',
       'Disponibiliza um Editor Web completo, eliminando a dependência do Discord, com funcionalidades de Inpaint, Outpaint e Retexture.',
       'Possui recurso de Consistência de Personagem (--cref) para manter faces consistentes em diferentes estilos e poses.',
       'Gera imagens fotorrealistas e artísticas de altíssima qualidade, sendo o "padrão ouro" para muitos usuários.'
@@ -182,7 +181,7 @@ export const aiModels: AIModel[] = [
       'O modo Relax, que oferece gerações ilimitadas mais lentas, não está disponível para jobs rápidos.',
       'O modo Stealth (privacidade) e geração de vídeo SD estão disponíveis apenas nos planos Pro e Mega.',
       'Requer a criação de um estilo personalizado V7 antes do uso.',
-      'Curva de aprendizado para prompt engineering avançado. [current data]',
+      'Curva de aprendizado para prompt engineering avançado.',
       'Horas de GPU rápida não se acumulam (não são transferidas para o próximo mês).'
     ],
     score: {
@@ -193,7 +192,7 @@ export const aiModels: AIModel[] = [
       value: 4.5
     },
     affiliateUrl: 'https://midjourney.com',
-    description: 'Midjourney V7, que se tornou o modelo padrão em junho de 2025, representa um salto significativo em qualidade visual, alta resolução e coerência, sendo amplamente reconhecido por seu fotorrealismo e habilidades artísticas. [current data] Com a introdução do "Draft Mode" para iteração rápida e o novo Editor Web que elimina a dependência do Discord (incluindo Inpaint, Outpaint e Consistência de Personagem), o Midjourney continua a liderar a geração de imagens. A versão V8.1 (mencionada em março de 2026) segue aprimorando estas capacidades. Apesar de não ter plano gratuito oficial ou uma API pública, o Midjourney continua a ser uma ferramenta líder para designers e criadores que buscam resultados visuais de altíssimo nível.'
+    description: 'Midjourney V7, que se tornou o modelo padrão em junho de 2025, e a versão V8.1 (lançada em março de 2026) representam um salto significativo em qualidade visual, alta resolução e coerência, sendo amplamente reconhecido por seu fotorrealismo e habilidades artísticas. Com a introdução do "Draft Mode" para iteração rápida e o novo Editor Web que elimina a dependência do Discord (incluindo Inpaint, Outpaint e Consistência de Personagem), o Midjourney continua a liderar a geração de imagens. Apesar de não ter plano gratuito oficial ou uma API pública, o Midjourney continua a ser uma ferramenta líder para designers e criadores que buscam resultados visuais de altíssimo nível.'
   },
   {
     id: 'stable-diffusion-3-medium',
@@ -202,18 +201,18 @@ export const aiModels: AIModel[] = [
     category: 'Geração de Imagem',
     pricing: 'Código "open-weight" (Gratuito para uso local com licença comunitária Stability AI para uso não comercial e comercial até US$ 1M de receita anual, exige hardware); para empresas com mais de US$ 1M de receita anual, licença Enterprise é necessária. API (sistema de créditos): Stable Diffusion 3 Medium: US$ 0.035/imagem (1024x1024) via Replicate. Stable Diffusion 3 (base): 6.5 créditos/imagem (~US$ 0.065/imagem). Stable Diffusion 3 Turbo: 4 créditos/imagem (~US$ 0.04/imagem). Stable Audio 2.0: 20 créditos gratuitos por mês, 2 créditos por geração.',
     pros: [
-      'Stable Diffusion 3 (lançado em abril de 2024) utiliza arquitetura Multimodal Diffusion Transformer (MMDiT), oferecendo controle aprimorado e melhorias notáveis na compreensão de prompts complexos, renderização de texto e qualidade fotorrealista. [current data]',
-      'Modelos "open-weight" que podem rodar localmente (com hardware adequado), permitindo controle absoluto, privacidade e fine-tuning (LoRAs, ControlNet). [current data]',
-      'Stable Diffusion 3 Medium oferece um equilíbrio entre qualidade de geração e eficiência de recursos. [current data]',
-      'Stable Audio 2.0 (lançado em abril de 2024) para geração de música e efeitos sonoros, capaz de criar peças de até 3 minutos, com funcionalidades de texto-para-áudio e áudio-para-áudio, disponível gratuitamente. [current data]',
-      'Gera outputs diversos e representativos de diferentes tons de pele e características. [current data]'
+      'Stable Diffusion 3 (lançado em abril de 2024) utiliza arquitetura Multimodal Diffusion Transformer (MMDiT), oferecendo controle aprimorado e melhorias notáveis na compreensão de prompts complexos, renderização de texto e qualidade fotorrealista.',
+      'Modelos "open-weight" que podem rodar localmente (com hardware adequado), permitindo controle absoluto, privacidade e fine-tuning (LoRAs, ControlNet).',
+      'Stable Diffusion 3 Medium oferece um equilíbrio entre qualidade de geração e eficiência de recursos.',
+      'Stable Audio 2.0 (lançado em abril de 2024) para geração de música e efeitos sonoros, capaz de criar peças de até 3 minutos, com funcionalidades de texto-para-áudio e áudio-para-áudio, disponível gratuitamente.',
+      'Gera outputs diversos e representativos de diferentes tons de pele e características.'
     ],
     cons: [
-      'Curva de aprendizado acentuada para uso avançado e configuração técnica para uso local eficiente. [current data]',
-      'Exige uma placa de vídeo dedicada potente para uso local eficiente. [current data]',
-      'Ainda pode apresentar dificuldades em renderizar anatomia humana de forma perfeita. [current data]',
-      'A qualidade da saída pode variar mais sem fine-tuning em comparação com soluções gerenciadas. [current data]',
-      'Preços da API podem ser mais complicados de prever devido ao sistema de créditos e variáveis. [current data]'
+      'Curva de aprendizado acentuada para uso avançado e configuração técnica para uso local eficiente.',
+      'Exige uma placa de vídeo dedicada potente para uso local eficiente.',
+      'Ainda pode apresentar dificuldades em renderizar anatomia humana de forma perfeita.',
+      'A qualidade da saída pode variar mais sem fine-tuning em comparação com soluções gerenciadas.',
+      'Preços da API podem ser mais complicados de prever devido ao sistema de créditos e variáveis.'
     ],
     score: {
       reasoning: 4.0,
@@ -232,20 +231,20 @@ export const aiModels: AIModel[] = [
     category: 'Automação',
     pricing: 'Plano grátis: 1.000 créditos/mês, 2 cenários ativos, inclui Make AI Agents (beta), intervalo de 15 minutos. Plano Core: US$ 10.59/mês (ou US$ 9/mês anual) para 10.000 créditos (cenários ilimitados, intervalo de 1 minuto, inclui Make AI Agents). Plano Pro: US$ 18.82/mês (ou US$ 16/mês anual) para 10.000+ créditos (prioridade de execução, variáveis personalizadas, logs completos). Plano Teams: US$ 34.12/mês por usuário (ou US$ 29/mês por usuário anual) para 10.000+ créditos (colaboração, gestão de equipes, prioridade de execução). Plano Enterprise: precificação personalizada. Créditos adicionais podem ser comprados (10.000 créditos por US$ 9). Créditos não utilizados são transferidos por um mês em planos pagos.',
     pros: [
-      'Interface visual de arrastar e soltar intuitiva e robusta para criar roteiros condicionais complexos. [current data]',
-      'Os "Make AI Agents" (nova app lançada em fevereiro de 2026, disponível em todos os planos) permitem automação inteligente e adaptativa com tomada de decisões em tempo real dentro do canvas, com visibilidade total do processo. [current data]',
+      'Interface visual de arrastar e soltar intuitiva e robusta para criar roteiros condicionais complexos.',
+      'Os "Make AI Agents" (nova app lançada em fevereiro de 2026, disponível em todos os planos) permitem automação inteligente e adaptativa com tomada de decisões em tempo real dentro do canvas, com visibilidade total do processo.',
       'Integração nativa com os principais modelos de IA (OpenAI GPT-5.5, Anthropic Claude Opus 4.8, Google Gemini 3.5 Flash) e milhares de APIs (3.000+ apps, mais integração via módulo HTTP).',
-      'Suporte multimodal para AI Agents, permitindo entrada e saída de arquivos como PDFs, imagens e CSVs diretamente no fluxo de trabalho. [current data]',
-      'Registros detalhados de execução (Make Grid) e busca de texto completo em logs (planos Pro e Teams) para depuração e visibilidade aprimoradas. [current data]',
-      'Altamente competitivo em termos de custo-benefício para automações complexas em comparação com alternativas como Zapier (3-5x mais barato por operação). [current data]',
-      'Funcional plano gratuito para prototipar automações. [current data]'
+      'Suporte multimodal para AI Agents, permitindo entrada e saída de arquivos como PDFs, imagens e CSVs diretamente no fluxo de trabalho.',
+      'Registros detalhados de execução (Make Grid) e busca de texto completo em logs (planos Pro e Teams) para depuração e visibilidade aprimoradas.',
+      'Altamente competitivo em termos de custo-benefício para automações complexas em comparação com alternativas como Zapier (3-5x mais barato por operação).',
+      'Funcional plano gratuito para prototipar automações.'
     ],
     cons: [
-      'O consumo de créditos pode ser imprevisível e rápido em cenários complexos com muitos módulos e Agentes de IA. [current data]',
-      'Requer conceitos básicos de lógica de programação (JSON, arrays) para fluxos avançados e agentes de IA complexos, resultando em uma curva de aprendizado mais acentuada. [current data]',
-      'Os recursos de colaboração e equipe são limitados nos planos Core e Pro, exigindo o plano Teams para funcionalidade completa. [current data]',
-      'Cenários no plano Core podem entrar em fila durante picos de uso. [current data]',
-      'Limites de transferência de dados podem ser rapidamente atingidos em fluxos que processam conteúdo de vídeo. [current data]'
+      'O consumo de créditos pode ser imprevisível e rápido em cenários complexos com muitos módulos e Agentes de IA.',
+      'Requer conceitos básicos de lógica de programação (JSON, arrays) para fluxos avançados e agentes de IA complexos, resultando em uma curva de aprendizado mais acentuada.',
+      'Os recursos de colaboração e equipe são limitados nos planos Core e Pro, exigindo o plano Teams para funcionalidade completa.',
+      'Cenários no plano Core podem entrar em fila durante picos de uso.',
+      'Limites de transferência de dados podem ser rapidamente atingidos em fluxos que processam conteúdo de vídeo.'
     ],
     score: {
       reasoning: 4.9,

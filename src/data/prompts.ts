@@ -2184,4 +2184,129 @@ Com base nas informações acima, por favor, forneça uma análise detalhada:
 Formate a saída com títulos claros para cada seção e use bullet points para as estratégias e recomendações.`,
     tags: ['Decisão Estratégica', 'Pensamento Crítico', 'Melhora Contínua', 'Psicologia Cognitiva'],
   },
+  {
+    id: 'career-negociacao-salarial-ia',
+    title: 'Simulação de Negociação Salarial com IA',
+    category: 'Carreira',
+    description: 'Simula uma negociação salarial detalhada para ajudar você a se preparar, oferecendo estratégias e feedback em tempo real.',
+    template: `Você atuará como um gerente de RH experiente, negociando uma proposta de emprego. Meu objetivo é me preparar para uma negociação salarial real.
+
+Detalhes da Oferta:
+- Cargo: [Nome do Cargo, ex: Desenvolvedor Sênior]
+- Salário Base Oferecido: [Valor Salarial Anual ou Mensal, ex: R$ 8.000/mês]
+- Benefícios Oferecidos: [Lista de benefícios, ex: Plano de saúde completo, VR R$ 30/dia, auxílio creche]
+- Expectativa Salarial (min-max): [Sua expectativa, ex: R$ 9.500 - R$ 11.000/mês]
+- Motivos para Minha Expectativa: [Pontos fortes, experiências relevantes, valor de mercado, ex: 10 anos de experiência, certificações X, mercado paga Y para essa função]
+- Aspectos Não-Salariais Importantes: [Flexibilidade, home office, desenvolvimento, ex: 3 dias home office, budget para cursos]
+
+Comece a simulação como o gerente de RH apresentando a oferta e aguardando minha resposta. A cada rodada, você deve:
+1. Reagir à minha proposta/contraproposta.
+2. Apresentar um argumento ou nova oferta.
+3. Focar em negociar o salário e os benefícios.
+4. Fornecer feedback construtivo sobre minha abordagem após cada rodada, indicando o que foi bom e o que poderia ser melhorado.
+5. A simulação deve ter no mínimo 3 rodadas de negociação.
+
+Minha primeira resposta será: [Sua primeira abordagem, ex: "Agradeço a oferta. Fiquei muito animado com a posição, mas gostaria de discutir o pacote salarial. Minha expectativa é de R$ 10.000/mês, considerando minha experiência e o valor que posso agregar."]\n`,
+    tags: ['Negociação', 'Salário', 'Entrevista', 'Preparação'],
+  },
+  {
+    id: 'finance-orcamento-familiar-otimizado',
+    title: 'Analisador de Orçamento Familiar e Otimizador de Gastos com IA',
+    category: 'Finanças',
+    description: 'Analisa seu orçamento familiar detalhado, identifica padrões de gastos e propõe estratégias inteligentes para economizar, investir e alcançar metas financeiras.',
+    template: `Atue como um consultor financeiro pessoal especializado em otimização de orçamentos familiares. Analise os dados fornecidos e gere um relatório com:
+1. Uma visão geral da saúde financeira atual.
+2. Identificação de categorias de gastos onde a economia é mais viável.
+3. Sugestões de estratégias de corte de custos realistas e personalizadas.
+4. Recomendações para aumento de receita (se aplicável).
+5. Orientações sobre onde e como investir as economias, alinhadas com as metas.
+6. Um plano de ação de 3 meses com passos concretos.
+
+Dados do Orçamento Familiar:
+
+**1. Rendas (Mensal):**
+- [Salário 1]: [Valor, ex: R$ 7.000]
+- [Salário 2]: [Valor, ex: R$ 5.000]
+- [Renda Extra (Freelance, Aluguel, etc.)]: [Valor, ex: R$ 1.000]
+- Total: [Soma Total da Renda]
+
+**2. Despesas Fixas (Mensal):**
+- Aluguel/Prestação Imóvel: [Valor, ex: R$ 2.500]
+- Condomínio: [Valor, ex: R$ 500]
+- Contas de Consumo (Luz, Água, Gás, Internet): [Valor, ex: R$ 600]
+- Escola/Creche: [Valor, ex: R$ 1.200]
+- Plano de Saúde: [Valor, ex: R$ 800]
+- Seguro (Carro, Vida, etc.): [Valor, ex: R$ 300]
+- Financiamentos/Empréstimos: [Valor, ex: R$ 1.000]
+- Assinaturas (Streaming, Academia): [Valor, ex: R$ 200]
+- Outras despesas fixas: [Lista, ex: Manutenção carro R$ 150]
+- Total: [Soma Total das Despesas Fixas]
+
+**3. Despesas Variáveis (Mensal):**
+- Alimentação (Mercado, Restaurantes): [Valor, ex: R$ 2.000]
+- Transporte (Combustível, App): [Valor, ex: R$ 400]
+- Lazer/Entretenimento: [Valor, ex: R$ 500]
+- Roupas/Calçados: [Valor, ex: R$ 300]
+- Cuidados Pessoais: [Valor, ex: R$ 200]
+- Presentes/Doações: [Valor, ex: R$ 100]
+- Outras despesas variáveis: [Lista, ex: Pet shop R$ 150]
+- Total: [Soma Total das Despesas Variáveis]
+
+**4. Metas Financeiras:**
+- [Meta 1, ex: Construir reserva de emergência]: [Prazo, ex: 12 meses] [Valor Alvo, ex: R$ 30.000]
+- [Meta 2, ex: Comprar apartamento]: [Prazo, ex: 5 anos] [Valor de Entrada, ex: R$ 100.000]
+- [Meta 3, ex: Viagem Internacional]: [Prazo, ex: 24 meses] [Custo Estimado, ex: R$ 15.000]
+
+Analise estes dados e apresente as otimizações, com foco em sugestões práticas e personalizadas para minha realidade.\n`,
+    tags: ['Orçamento', 'Finanças Pessoais', 'Economia', 'Investimento'],
+  },
+  {
+    id: 'social-media-roteiro-stories-ia',
+    title: 'Roteirizador de Stories Interativos com IA',
+    category: 'Redes Sociais',
+    description: 'Gera um roteiro detalhado para uma sequência de stories interativos (Instagram, TikTok) para engajar a audiência, incluindo ideias de elementos visuais e chamadas para ação.',
+    template: `Atue como um estrategista de conteúdo para redes sociais, especializado em criar roteiros de stories altamente engajadores e interativos.
+
+Meu objetivo é criar uma sequência de stories para [Plataforma, ex: Instagram ou TikTok] sobre [Tópico principal do story, ex: "Os 5 melhores hábitos para produtividade" ou "Lançamento do meu novo produto X"].
+
+Forneça um roteiro detalhado para uma sequência de 5 a 7 stories, incluindo para cada story:
+1.  **Número do Story:** (ex: Story 1/7)
+2.  **Visual Sugerido:** (ex: Vídeo curto meu sorrindo, Imagem de estatística, Enquete com opções)
+3.  **Texto/Fala:** (Frases curtas e impactantes para cada story)
+4.  **Elemento Interativo:** (Poll, Quiz, Pergunta aberta, Slider, Link para Ação - CTA)
+5.  **Objetivo do Story:** (Informar, Engajar, Gerar Curiosidade, Direcionar Tráfego)
+
+Detalhes do Conteúdo:
+- **Público-alvo:** [Descreva seu público, ex: Empreendedores digitais iniciantes, Jovens interessados em moda sustentável]
+- **Tom de Voz:** [Ex: Inspirador e informal, Profissional e direto, Divertido e criativo]
+- **Chamada para Ação Final (se houver):** [Ex: "Visite o link na bio", "Compartilhe este story", "Deixe sua opinião nos comentários"]
+- **Informações Adicionais/Pontos Chave:** [Qualquer informação extra relevante que deve ser incluída, ex: "Mencionar o desconto de 15% por tempo limitado"]
+
+Comece o roteiro com o Story 1.\n`,
+    tags: ['Instagram', 'TikTok', 'Conteúdo', 'Engajamento'],
+  },
+  {
+    id: 'ia-design-agente-fluxo-pesquisa',
+    title: 'Designer de Fluxo de Trabalho para Agente de Pesquisa Autônomo',
+    category: 'IA & Automação',
+    description: 'Ajuda a conceber um fluxo de trabalho detalhado para um agente de IA autônomo que realiza pesquisas complexas, definindo etapas, ferramentas e critérios de decisão.',
+    template: `Você é um especialista em design de sistemas de agentes de IA. Meu objetivo é criar um fluxo de trabalho robusto e autônomo para um agente de IA que realizará pesquisas complexas.
+
+Descreva o fluxo de trabalho passo a passo para um agente autônomo de pesquisa, incluindo:
+1.  **Nome do Agente (Opcional):** [Sugira um nome, ex: "Athena Researcher"]
+2.  **Objetivo Principal da Pesquisa:** [Descreva o que o agente deve investigar, ex: "Analisar as tendências emergentes em energia renovável na América Latina para os próximos 5 anos."]
+3.  **Parâmetros Iniciais:** [Informações que o agente receberá para iniciar a pesquisa, ex: "Palavras-chave: energia solar, eólica, hidrogênio verde, Brasil, Chile, Argentina; Fontes preferenciais: artigos científicos, relatórios de mercado, notícias financeiras."]
+4.  **Etapas do Fluxo de Trabalho (em formato de lista numerada):** Para cada etapa, inclua:
+    *   **Nome da Etapa:** (ex: Coleta de Dados Primários)
+    *   **Descrição:** O que o agente fará nesta etapa.
+    *   **Ferramentas/APIs Necessárias:** (ex: Google Scholar API, Scrapy para web scraping, API de notícias financeiras)
+    *   **Critérios de Sucesso/Decisão:** Como o agente sabe que a etapa foi concluída ou se precisa de ajustes (ex: "X resultados relevantes encontrados", "Nível de redundância abaixo de Y%").
+    *   **Saída Desta Etapa:** O formato ou tipo de dado que esta etapa gerará.
+5.  **Mecanismos de Autocorreção/Feedback Loop:** Como o agente lidará com falhas, dados irrelevantes ou necessidade de refinar a pesquisa.
+6.  **Formato de Saída Final:** Como o agente apresentará o resultado da pesquisa (ex: Relatório consolidado em PDF, Apresentação de slides, Dashboard interativo).
+7.  **Considerações Éticas/Limitações:** Quais precauções devem ser tomadas ou limitações conhecidas do sistema.
+
+Comece a descrever o fluxo de trabalho em detalhes.\n`,
+    tags: ['Agentes IA', 'Automação', 'Pesquisa', 'Fluxo de Trabalho'],
+  },
 ];

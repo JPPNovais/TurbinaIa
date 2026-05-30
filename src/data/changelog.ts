@@ -13,6 +13,124 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'mistral-vibe-ai-agent-2026',
+    date: '2026-05',
+    title: 'Mistral lança Vibe, um agente de IA unificado para trabalho e código',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'A Mistral lançou Vibe, um agente de IA unificado para trabalho e código, apresentando modos dedicados para tarefas de longo prazo e codificação remota, além de uma extensão para VS Code e atualizações de linha de comando (CLI).',
+    highlights: [
+      'Lançado em 28 de maio de 2026.',
+      'Vibe substitui Le Chat como um agente unificado para gerenciar tarefas de trabalho e código.',
+      'Inclui Work Mode para tarefas de longo alcance e Code Mode para codificação remota.',
+      'Disponível com uma nova extensão Mistral Vibe para VS Code e atualizações de CLI.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-deepmind-health-ai-foundations-2026',
+    date: '2026-05',
+    title: 'Google DeepMind e Google Research lançam Health AI Developer Foundations com MedGemma e MedASR',
+    developer: 'Google DeepMind, Google Research',
+    category: 'Lançamento',
+    description: 'O Google DeepMind e o Google Research lançaram a suite Health AI Developer Foundations, que inclui MedGemma, um modelo de código aberto para texto médico multimodal e raciocínio clínico, e MedASR, para capacidades de áudio médico especializado.',
+    highlights: [
+      'Lançado em 28 de maio de 2026.',
+      'É uma suite de modelos de fundação de código aberto projetada para desenvolvedores de IA em saúde.',
+      'MedGemma é especializado em texto médico multimodal, raciocínio clínico e compreensão de imagens.',
+      'MedASR oferece capacidades de áudio médico especializado.',
+      'MedGemma já acumulou mais de 5 milhões de downloads até o momento.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'meta-hatch-ai-agent-2026',
+    date: '2026-05',
+    title: 'Meta desenvolve agente de IA Hatch para ações digitais autônomas',
+    developer: 'Meta AI',
+    category: 'Pesquisa',
+    description: 'A Meta está desenvolvendo o Hatch, um novo agente de inteligência artificial focado em executar ações digitais e interagir com aplicativos de terceiros de forma autônoma, com testes recentes focados no mercado para compras no Instagram e uso de apps.',
+    highlights: [
+      'O desenvolvimento e os testes foram iniciados recentemente, com foco no mercado, em maio de 2026.',
+      'Projetado para realizar compras no Instagram e interagir com aplicativos de terceiros de forma autônoma.',
+      'Descrito como uma versão acessível e voltada ao consumidor, inspirada no OpenClaw.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'deepseek-v4-pro-reducao-preco-2026',
+    date: '2026-05',
+    title: 'DeepSeek torna permanente a redução de preços para tokens do modelo V4-Pro',
+    developer: 'DeepSeek',
+    category: 'Atualização',
+    description: 'A DeepSeek anunciou que a redução drástica de preços para os tokens do seu modelo V4-Pro, inicialmente promocional, será mantida de forma permanente a partir de 31 de maio de 2026, visando competir agressivamente no mercado de IA.',
+    highlights: [
+      'A redução de preços foi anunciada em 25 de maio de 2026.',
+      'Os novos preços para tokens de entrada e saída do modelo V4-Pro foram tornados permanentes a partir de 31 de maio de 2026.',
+      'A estratégia visa competir com plataformas como ChatGPT, Gemini e Claude.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'openai-codex-windows-remote-2026',
+    date: '2026-05',
+    title: 'OpenAI lança atualizações do Codex com uso de computador no Windows e controle remoto',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'O OpenAI Codex agora oferece suporte ao uso de computador no Windows, permitindo que usuários peçam ao Codex para interagir com aplicativos Windows. A atualização também inclui controle remoto e perfis de uso para usuários elegíveis.',
+    highlights: [
+      'Lançado em 29 de maio de 2026.',
+      'Codex agora suporta Computer Use no Windows, possibilitando interação com aplicativos Windows.',
+      'Permite controle remoto do Codex em máquinas Windows via ChatGPT (iOS/Android) ou Codex (Mac).',
+      'Inclui atualizações de infraestrutura para melhorar a capacidade de resposta e a estabilidade do navegador no aplicativo.',
+      'O recurso de uso de computador no Windows não está disponível na Área Econômica Europeia, Reino Unido e Suíça no lançamento.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-imagine-quality-api-2026',
+    date: '2026-05',
+    title: 'xAI lança atualização para Grok Imagine Quality Mode API',
+    developer: 'xAI',
+    category: 'Atualização',
+    description: 'A xAI lançou uma atualização para o Grok Imagine Quality Mode API, oferecendo maior realismo, renderização de texto mais forte e melhor controle criativo para a geração e edição de imagens.',
+    highlights: [
+      'Lançado em 6 de maio de 2026.',
+      'Aprimora o realismo e a renderização de texto nas imagens geradas.',
+      'Oferece melhor controle criativo sobre as criações.',
+      'Suporta edição em linguagem natural, composição de 3 imagens, seis transferências de estilo e vídeo.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'google-antigravity-2-0-2026',
+    date: '2026-05',
+    title: 'Google DeepMind apresenta Google Antigravity 2.0',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'O Google DeepMind introduziu o Google Antigravity 2.0, uma plataforma de desenvolvimento focada em IA que visa capacitar qualquer pessoa a ser um construtor, com novas funcionalidades para acelerar a era das descobertas científicas.',
+    highlights: [
+      'Introduzido em maio de 2026.',
+      'É a plataforma de desenvolvimento "AI-first" do Google, projetada para aumentar a escala e a precisão da pesquisa.',
+      'Visa impulsionar o método científico e conectar pontos entre grandes volumes de conhecimento.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-project-genie-street-view-2026',
+    date: '2026-05',
+    title: 'Google DeepMind integra Project Genie com Street View para simulação de lugares do mundo real',
+    developer: 'Google DeepMind',
+    category: 'Atualização',
+    description: 'O Google DeepMind lançou a integração do Project Genie com o Street View, permitindo simular lugares do mundo real e criar mundos interativos, como parte de suas inovações para empresas globais e acelerar a criação de conteúdo.',
+    highlights: [
+      'Lançado em maio de 2026.',
+      'Permite a simulação de lugares do mundo real utilizando dados do Street View.',
+      'Combina Genie 3, Nano Banana Pro e Gemini para geração, exploração e remixagem de mundos.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'google-deepmind-gemma-4-2026',
     date: '2026-05',
     title: 'Google DeepMind lança a família de modelos abertos Gemma 4',

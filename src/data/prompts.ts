@@ -2309,4 +2309,133 @@ Descreva o fluxo de trabalho passo a passo para um agente autônomo de pesquisa,
 Comece a descrever o fluxo de trabalho em detalhes.\n`,
     tags: ['Agentes IA', 'Automação', 'Pesquisa', 'Fluxo de Trabalho'],
   },
+  {
+    id: 'finance-planejador-aposentadoria-ia',
+    title: 'Planejador de Aposentadoria Otimizado por IA',
+    category: 'Finanças',
+    description: 'Cria um plano de aposentadoria detalhado e personalizado, considerando suas finanças atuais, objetivos futuros e perfil de risco.',
+    template: `Atue como um planejador financeiro especializado em aposentadoria, utilizando IA para otimizar estratégias.
+
+Meu objetivo é criar um plano de aposentadoria detalhado e personalizado. Por favor, forneça o plano com as seguintes seções:
+1.  **Análise de Dados Atuais:** Um resumo dos meus dados fornecidos.
+2.  **Projeção Financeira Atual:** Uma estimativa do meu capital na aposentadoria e renda mensal esperada, caso eu mantenha o ritmo atual.
+3.  **Recomendações Otimizadas:** Estratégias claras e acionáveis para atingir meus objetivos, incluindo:
+    *   Sugestões de aportes mensais ajustados.
+    *   Alocação de investimentos recomendada (ex: percentual em renda fixa, variável, fundos).
+    *   Considerações sobre impostos e inflação.
+    *   Marcos temporais (ex: "Aos [Idade X], revise o plano").
+4.  **Simulação de Cenários:** Dois cenários (otimista e pessimista) mostrando o impacto de variáveis (ex: retorno de investimento ligeiramente menor, aumento da expectativa de vida).
+5.  **Próximos Passos:** Um guia com as ações imediatas que devo tomar.
+
+Aqui estão meus dados:
+- Idade Atual: [Sua idade atual em anos]
+- Idade Desejada para Aposentadoria: [Idade em que deseja se aposentar em anos]
+- Expectativa de Vida Desejada na Aposentadoria: [Por quantos anos após a aposentadoria deseja ter renda, em anos]
+- Capital Atual para Aposentadoria (Investimentos): R$ [Valor atual dos seus investimentos para aposentadoria]
+- Aporte Mensal Atual: R$ [Valor que você contribui mensalmente para aposentadoria/investimentos]
+- Renda Mensal Desejada na Aposentadoria (em valores atuais): R$ [Valor da renda mensal que você deseja ter na aposentadoria, para manter seu padrão de vida]
+- Perfil de Risco: [Conservador, Moderado, Arrojado]
+- Outras Informações/Observações: [Qualquer outra informação relevante, como dívidas significativas, outras fontes de renda, dependentes, etc.]
+
+Considere uma taxa de inflação anual de [Taxa de Inflação Média Anual, ex: 3.5%] e um retorno médio anual de investimento (real, descontada a inflação) de [Taxa de Retorno Real Média Anual, ex: 5% para moderado]. Ajuste a taxa de retorno baseada no perfil de risco.`,
+    tags: ['Aposentadoria', 'Investimento', 'Planejamento Financeiro', 'Longevidade'],
+  },
+  {
+    id: 'dev-otimizacao-performance-codigo-ia',
+    title: 'Otimizador de Performance de Código com IA',
+    category: 'Desenvolvimento',
+    description: 'Analisa um trecho de código em busca de gargalos de performance e sugere melhorias com base em boas práticas e padrões de otimização.',
+    template: `Você é um engenheiro de software especialista em otimização de performance. Sua tarefa é analisar o código fornecido, identificar potenciais gargalos de desempenho e sugerir melhorias práticas e eficientes.
+
+Por favor, estruture sua análise nas seguintes seções:
+1.  **Visão Geral do Problema:** Um breve resumo do código e seu propósito.
+2.  **Identificação de Gargalos:** Pontos específicos no código que podem estar impactando negativamente a performance (ex: complexidade de algoritmo, uso ineficiente de recursos, loops redundantes, chamadas de I/O).
+3.  **Sugestões de Otimização:** Para cada gargalo identificado, proponha uma ou mais soluções com exemplos de código, se aplicável. Inclua:
+    *   Alterações Algorítmicas (se houver).
+    *   Melhorias de Estrutura de Dados.
+    *   Uso de Recursos da Linguagem/Framework mais eficientes.
+    *   Estratégias de Caching ou Concorrência (se pertinente).
+4.  **Considerações Adicionais:** Recomendações sobre monitoramento, testes de performance ou trade-offs.
+
+Aqui estão os detalhes:
+- Linguagem de Programação: [Nome da linguagem, ex: Python, JavaScript, Java, C#]
+- Trecho de Código:
+  \`\`\`
+  [Cole o código aqui]
+  \`\`\`
+- Contexto de Uso (Opcional): [Descreva brevemente onde e como este código é usado, ex: "Parte de um serviço web que processa N requisições por segundo", "Algoritmo de processamento de dados para um volume X de dados", "Função crítica de um aplicativo mobile"]
+- Critérios de Otimização (Opcional): [Foco principal da otimização, ex: Tempo de execução, Uso de memória, Latência, Consumo de CPU]`,
+    tags: ['Desenvolvimento', 'Código', 'Performance', 'Otimização', 'Engenharia de Software'],
+  },
+  {
+    id: 'career-transicao-estrategica-ia',
+    title: 'Estratégia de Transição de Carreira com IA',
+    category: 'Carreira',
+    description: 'Guia você através de um processo de transição de carreira, desde a autoanálise até um plano de ação detalhado para alcançar seus novos objetivos profissionais.',
+    template: `Atue como um coach de carreira especializado em transição e desenvolvimento profissional, auxiliando na criação de uma estratégia robusta.
+
+Meu objetivo é planejar uma transição de carreira bem-sucedida. Por favor, gere um plano de transição abrangente, estruturado nas seguintes etapas:
+1.  **Autoavaliação e Definição de Novos Objetivos:**
+    *   Análise de habilidades transferíveis do meu papel atual para o desejado.
+    *   Identificação de minhas paixões, valores e motivações para a mudança.
+    *   Definição clara dos objetivos da nova carreira (tipo de função, setor, cultura, nível salarial).
+2.  **Análise de Lacunas e Desenvolvimento de Habilidades:**
+    *   Mapeamento das habilidades essenciais para a carreira desejada e comparação com minhas habilidades atuais.
+    *   Plano de desenvolvimento para preencher lacunas (cursos, certificações, projetos, voluntariado).
+    *   Recursos recomendados para aprendizado.
+3.  **Estratégia de Mercado e Networking:**
+    *   Como pesquisar o novo mercado e identificar empresas/funções-alvo.
+    *   Plano de networking (quem contatar, como abordar, plataformas).
+    *   Otimização de perfil no LinkedIn e outras plataformas relevantes.
+4.  **Materiais de Candidatura e Preparação para Entrevistas:**
+    *   Sugestões para adaptar meu currículo e carta de apresentação.
+    *   Dicas para storytelling focado na transição.
+    *   Preparação para perguntas de entrevista sobre a mudança de carreira.
+5.  **Plano de Ação e Cronograma:**
+    *   Um cronograma realista com marcos e prazos para cada etapa.
+    *   Ações concretas e mensuráveis para começar imediatamente.
+
+Aqui estão minhas informações:
+- Cargo Atual: [Seu cargo atual]
+- Setor Atual: [Seu setor de atuação atual]
+- Anos de Experiência: [Número de anos de experiência profissional]
+- Principais Habilidades Atuais: [Liste 3-5 habilidades que você domina, ex: "Gestão de Projetos", "Análise de Dados", "Marketing Digital"]
+- Carreira Desejada/Setor de Interesse: [Cargo ou área que você almeja, ex: "Engenheiro de Software", "Consultor de Sustentabilidade", "Empreendedor no setor X"]
+- Razões para a Transição: [Motivações para a mudança, ex: "Busca por maior impacto", "Paixão por nova área", "Melhores oportunidades de crescimento"]
+- Tempo Desejado para a Transição: [Prazo realista para a transição, ex: "6-12 meses", "1-2 anos"]
+- Orçamento para Desenvolvimento (Opcional): [Se há algum orçamento para cursos/certificações]
+- Outras Informações Relevantes: [Qualquer outro detalhe importante sobre sua situação, ex: "Disposto a começar em uma posição júnior na nova área", "Necessidade de manter o salário atual"]`,
+    tags: ['Carreira', 'Transição', 'Planejamento', 'Habilidades', 'Networking'],
+  },
+  {
+    id: 'negocios-relatorio-executivo-ia',
+    title: 'Gerador de Relatórios Executivos e Insights com IA',
+    category: 'Negócios',
+    description: 'Transforma dados brutos ou resumos em relatórios executivos concisos, destacando insights críticos, tendências e recomendações acionáveis.',
+    template: `Atue como um analista de negócios e estrategista, especializado em transformar dados complexos em insights acionáveis para executivos.
+
+Meu objetivo é gerar um relatório executivo conciso e impactante a partir das informações fornecidas. Por favor, estruture o relatório nas seguintes seções:
+1.  **Sumário Executivo:** Uma visão geral do desempenho, destacando os pontos mais relevantes (positivos e negativos).
+2.  **Principais Descobertas e Tendências:** Análise dos dados para identificar padrões, tendências significativas e o que eles implicam para o negócio.
+3.  **Análise de Causas Raiz (se aplicável):** Quando houver desvios ou resultados inesperados, uma breve análise das possíveis causas.
+4.  **Recomendações e Próximos Passos:** Sugestões práticas e estratégicas para capitalizar oportunidades ou mitigar riscos, com ações claras.
+5.  **Métricas-Chave e Desempenho (Opcional):** Tabela ou lista das métricas mais importantes e seu desempenho (se dados brutos forem fornecidos).
+
+Aqui estão os detalhes para o relatório:
+- Tipo de Relatório: [Ex: Relatório de Vendas, Desempenho de Marketing, Financeiro Trimestral, Produtividade da Equipe, Feedback de Clientes]
+- Período de Análise: [Ex: Último trimestre, Ano fiscal de 2025, Mês de Abril]
+- Informações/Dados Brutos (ou links para):
+  \`\`\`
+  [Cole aqui os dados brutos, uma lista de pontos importantes, ou um resumo de um relatório mais extenso. Ex:
+  - Vendas: Mês 1: R$100k, Mês 2: R$120k, Mês 3: R$90k
+  - Custo de Aquisição de Clientes (CAC): Mês 1: R$50, Mês 2: R$60, Mês 3: R$75
+  - NPS (Net Promoter Score): Mês 1: 70, Mês 2: 65, Mês 3: 50
+  - Comentários de clientes: "problema com o suporte", "gostei do produto A", "preço elevado"
+  ]
+  \`\`\`
+- Público-Alvo do Relatório: [Ex: C-level, Gerentes de Departamento, Investidores]
+- Objetivo Principal do Relatório: [Ex: Tomar decisões de investimento, Ajustar estratégia de marketing, Avaliar desempenho de vendas]
+- Destaques Específicos a Incluir (Opcional): [Algum ponto que você quer garantir que seja abordado no relatório]`,
+    tags: ['Negócios', 'Relatórios', 'Análise de Dados', 'Estratégia', 'Gestão'],
+  },
 ];

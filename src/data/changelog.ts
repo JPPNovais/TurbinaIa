@@ -13,6 +13,80 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-gpt-5-5-instant-update-2026',
+    date: '2026-05',
+    title: 'OpenAI atualiza GPT-5.5 Instant com melhorias na qualidade e estilo de resposta',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'A OpenAI lançou uma atualização para o GPT-5.5 Instant, focando em melhorar o estilo e a qualidade das respostas, tornando-as mais naturais e diretas em conversas e tarefas práticas.',
+    highlights: [
+      'Lançado em 28 de maio de 2026.',
+      'Melhorias no estilo e qualidade das respostas em ChatGPT e API.',
+      'Respostas mais fáceis de ler, naturais em conversas diárias e melhor ritmo em tarefas práticas.',
+      'Redução de respostas excessivamente longas ou com muitas listas.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-rosalind-biodefense-2026',
+    date: '2026-05',
+    title: 'OpenAI lança Rosalind Biodefesa, expandindo acesso a GPT-Rosalind para biodefesa',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'A OpenAI lançou o Rosalind Biodefesa, expandindo o acesso confiável ao GPT-Rosalind para desenvolvedores e parceiros do governo dos EUA focados em biodefesa, saúde pública e prontidão para pandemias.',
+    highlights: [
+      'Lançado em 29 de maio de 2026.',
+      'Expande o acesso ao GPT-Rosalind para desenvolvedores e parceiros do governo dos EUA.',
+      'Focado em avançar na biodefesa, saúde pública e prontidão para pandemias com IA de fronteira.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-deepmind-gemini-embedding-2-2026',
+    date: '2026-05',
+    title: 'Google DeepMind lança Gemini Embedding 2 para busca multimodal de IA',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'O Google DeepMind lançou o Gemini Embedding 2, um modelo de embedding multimodal nativo disponível via API Gemini e Google Cloud Vertex AI, projetado para busca e recuperação de informações em texto, imagem, vídeo, áudio, documentos e código.',
+    highlights: [
+      'Lançado em 29 de maio de 2026.',
+      'Modelo de embedding multimodal nativo para busca e recuperação de informações.',
+      'Permite buscar em texto, imagem, vídeo, áudio, documentos e código através de um único sistema.',
+      'Disponível via API Gemini e Google Cloud Vertex AI.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-deepmind-ai-enabled-pointer-2026',
+    date: '2026-05',
+    title: 'Google DeepMind revela pesquisa sobre "ponteiro habilitado para IA" para interação contextual',
+    developer: 'Google DeepMind',
+    category: 'Pesquisa',
+    description: 'O Google DeepMind apresentou um novo projeto de pesquisa sobre um "ponteiro habilitado para IA", visando transformar a interação do usuário ao permitir que os sistemas de IA compreendam não apenas para onde os usuários apontam, mas também sua intenção.',
+    highlights: [
+      'Revelado em maio de 2026.',
+      'Projeto de pesquisa visa tornar as interações com IA mais contínuas e contextuais.',
+      'O ponteiro habilitado para IA entenderia o contexto diretamente da interação do usuário na tela.',
+      'Alimentado por modelos Gemini, combina consciência do cursor, interação por voz e raciocínio contextual.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'mistral-industrial-ai-stack-2026',
+    date: '2026-05',
+    title: 'Mistral AI lança stack de IA integrada para Engenharia Industrial',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'A Mistral AI lançou uma stack de IA totalmente integrada para engenharia industrial, combinando seus grandes modelos de linguagem com capacidades de simulação física, focada em setores como aeroespacial, automotivo e semicondutores.',
+    highlights: [
+      'Anunciado em 28 de maio de 2026 no AI Now Summit.',
+      'Combina LLMs da Mistral com capacidades de simulação física (adquiridas via Emmi AI).',
+      'Destina-se a acelerar o design de produtos, validar simulações e otimizar a produção.',
+      'Parcerias com Airbus, BMW Group e ASML como clientes de lançamento.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'mistral-vibe-ai-agent-2026',
     date: '2026-05',
     title: 'Mistral lança Vibe, um agente de IA unificado para trabalho e código',

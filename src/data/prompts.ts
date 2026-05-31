@@ -2438,4 +2438,130 @@ Aqui estão os detalhes para o relatório:
 - Destaques Específicos a Incluir (Opcional): [Algum ponto que você quer garantir que seja abordado no relatório]`,
     tags: ['Negócios', 'Relatórios', 'Análise de Dados', 'Estratégia', 'Gestão'],
   },
+  {
+    id: 'negocios-agente-inteligencia-competitiva',
+    title: 'Agente de IA para Inteligência Competitiva',
+    category: 'Negócios',
+    description: 'Atua como um agente de IA para pesquisar e sintetizar informações sobre concorrentes, tendências de mercado e oportunidades, fornecendo uma análise estratégica.',
+    template: `Você atuará como um Agente de Inteligência Competitiva. Seu objetivo é coletar, analisar e sintetizar informações relevantes para me ajudar a tomar decisões estratégicas sobre [Seu Objetivo Estratégico, ex: Lançamento de um novo produto no mercado X, Expansão para o setor Y, Otimização da nossa estratégia de precificação].
+
+Minha empresa: [Nome da Sua Empresa]
+Nosso setor/nicho: [Setor da Sua Empresa]
+Nosso principal produto/serviço: [Produto/Serviço Foco]
+Nossos principais concorrentes (se conhecidos): [Concorrente 1, Concorrente 2, ...]
+
+Para atingir o objetivo [Seu Objetivo Estratégico], preciso que você siga estas etapas:
+
+1.  **Identificação de Concorrentes Chave**: Além dos listados, identifique outros 3-5 concorrentes relevantes (diretos e indiretos) para o contexto de [Seu Objetivo Estratégico].
+2.  **Análise de Produtos/Serviços**: Para cada concorrente, analise seu portfólio de produtos/serviços, características distintivas e propostas de valor.
+3.  **Estratégia de Marketing e Vendas**: Investigue as principais táticas de marketing (canais, mensagens, branding) e vendas (modelo, parcerias) dos concorrentes.
+4.  **Precificação e Modelos de Negócio**: Colete dados sobre as estratégias de precificação, pacotes e modelos de negócio (ex: assinatura, freemium, SaaS) praticados.
+5.  **Pontos Fortes e Fracos**: Faça uma análise SWOT (Pontos Fortes, Fracos, Oportunidades, Ameaças) para os 3 concorrentes mais relevantes em relação ao [Seu Objetivo Estratégico].
+6.  **Tendências e Oportunidades de Mercado**: Identifique 3-5 tendências emergentes no setor que podem impactar [Seu Objetivo Estratégico], e sugira 2-3 oportunidades não exploradas.
+7.  **Recomendações Estratégicas**: Com base em toda a análise, forneça 3-5 recomendações acionáveis e estratégicas para [Nome da Sua Empresa] em relação a [Seu Objetivo Estratégico].
+
+Apresente sua análise de forma clara e estruturada, utilizando bullet points, tabelas e parágrafos curtos.`,
+    tags: ['inteligência competitiva', 'análise de mercado', 'tomada de decisão', 'negócios'],
+  },
+  {
+    id: 'marketing-roteiro-video-podcast',
+    title: 'Roteiro de Conteúdo Multimodal (Vídeo Curto/Podcast)',
+    category: 'Marketing',
+    description: 'Transforma um conteúdo textual existente em um roteiro otimizado para vídeo curto (Reels, TikTok) ou um episódio de podcast, adaptando a linguagem e estrutura.',
+    template: `Você é um especialista em criação de conteúdo multimodal e roteiros envolventes para mídias sociais e podcasts. Seu objetivo é transformar o conteúdo textual fornecido em um roteiro otimizado para [Formato de Saída: "vídeo curto para redes sociais (Reels/TikTok)" ou "episódio de podcast (5-10 minutos)"] sobre [Tópico Principal do Conteúdo Original].
+
+**Conteúdo Original (Texto Completo):**
+[Cole aqui o artigo, post de blog, ou texto base que você quer adaptar.]
+
+**Público-alvo:** [Descreva seu público-alvo, ex: empreendedores iniciantes, desenvolvedores front-end, pais de primeira viagem]
+**Tom de voz desejado:** [Ex: informativo, inspirador, divertido, técnico e objetivo]
+**Duração Alvo:** [Ex: 30-60 segundos para vídeo, 5-10 minutos para podcast]
+**Plataforma (para vídeo):** [Ex: Instagram Reels, TikTok, YouTube Shorts] (Ignorar se for podcast)
+
+**Instruções para o Roteiro:**
+
+**Para Vídeo Curto (Reels/TikTok):**
+1.  **Gancho (0-3s):** Crie uma frase impactante que prenda a atenção imediatamente.
+2.  **Introdução/Problema (3-10s):** Apresente o problema ou a pergunta que o vídeo irá resolver.
+3.  **Solução/Dica Principal (10-25s):** Adapte os pontos mais relevantes do conteúdo original em 1-3 dicas rápidas e acionáveis. Use linguagem visualmente descritiva para as ações.
+4.  **Chamada para Ação (25-30s):** Incentive o engajamento (curtir, comentar, seguir, link na bio).
+5.  **Formato:** Divida o roteiro em cenas curtas com descrições de texto na tela e sugestões de elementos visuais/sonoros.
+
+**Para Episódio de Podcast (5-10 minutos):**
+1.  **Introdução (0-1 min):** Apresente o tópico, por que ele é relevante para o público e o que eles aprenderão.
+2.  **Desenvolvimento (1-7 min):** Adapte os pontos principais do conteúdo original em uma narrativa fluida, com exemplos, explicações e insights. Divida em 2-3 segmentos lógicos.
+3.  **Conclusão/Key Takeaways (7-9 min):** Resuma os principais aprendizados e reforce a mensagem central.
+4.  **Chamada para Ação (9-10 min):** O que o ouvinte deve fazer a seguir (visitar site, baixar material, assinar podcast)?
+5.  **Formato:** Divida o roteiro em seções claras (Introdução, Ponto 1, Ponto 2, Conclusão, CTA) com sugestões de transições.
+
+**Requisitos Adicionais:**
+*   Mantenha a essência e os dados importantes do conteúdo original.
+*   Use uma linguagem natural e conversacional, adequada ao formato e público.
+*   Garanta que a mensagem seja clara e concisa.
+
+Apresente o roteiro completo, incluindo sugestões para [elementos visuais/sonoros para vídeo, ou estrutura de fala para podcast].`,
+    tags: ['conteúdo multimodal', 'roteiro', 'marketing digital', 'reaproveitamento de conteúdo'],
+  },
+  {
+    id: 'dev-gerador-dados-sinteticos',
+    title: 'Gerador de Dados Sintéticos para Testes e Prototipagem',
+    category: 'Desenvolvimento',
+    description: 'Gera um conjunto de dados sintéticos realistas para testes de software, prototipagem ou simulações, com base nas especificações fornecidas.',
+    template: `Você é um especialista em geração de dados e sistemas, capaz de criar conjuntos de dados sintéticos realistas para fins de desenvolvimento, teste e prototipagem. Seu objetivo é gerar um arquivo JSON (ou CSV, se preferir) contendo [Número de Registros] registros fictícios, que sigam a estrutura e as regras que detalharei abaixo.
+
+**Propósito da Geração de Dados:** [Ex: Testar uma API de usuários, popular um banco de dados de produtos, simular transações financeiras, criar dados para análise de RH]
+**Formato de Saída Desejado:** [JSON ou CSV]
+**Número de Registros:** [Ex: 100, 500, 1000]
+
+**Especificação dos Campos (para cada campo, forneça o nome, tipo de dado esperado e quaisquer regras ou exemplos):**
+
+Exemplo de campo:
+-   \`id\`: string, UUID único.
+-   \`nomeCompleto\`: string, Nome e Sobrenome de pessoa brasileira.
+-   \`email\`: string, formato de e-mail válido, baseado no \`nomeCompleto\`.
+-   \`idade\`: number, entre 18 e 65.
+-   \`dataCadastro\`: datetime, nos últimos 2 anos.
+-   \`status\`: enum, valores possíveis ['ativo', 'inativo', 'pendente'].
+
+**Meus Campos Específicos:**
+[Nome do Campo 1]: [Tipo de dado (string, number, boolean, date, enum, array)], [Regras/Restrições/Exemplos - ex: entre X e Y, formato de CPF/CNPJ, valores específicos, relacionamentos com outros campos, se pode ser nulo]
+[Nome do Campo 2]: ...
+[Nome do Campo 3]: ...
+... (continue listando todos os campos necessários)
+
+**Instruções Adicionais:**
+*   Os dados devem ser o mais realistas possível, mesmo sendo fictícios.
+*   Garanta que as regras de cada campo sejam estritamente seguidas.
+*   Se houver campos relacionados (ex: \`cidade\` e \`estado\` devem ser consistentes), mantenha essa consistência.
+*   Para campos de texto, varie o comprimento e o conteúdo.
+
+Comece a gerar os dados. Se for JSON, coloque tudo em um array de objetos. Se for CSV, inclua o cabeçalho.`,
+    tags: ['dados sintéticos', 'testes', 'prototipagem', 'desenvolvimento de software'],
+  },
+  {
+    id: 'finance-analise-tendencias-investimento-ia',
+    title: 'Análise de Tendências de Mercado para Investimentos (com IA)',
+    category: 'Finanças',
+    description: 'Atua como um analista de mercado com IA para identificar tendências, riscos e oportunidades em um tipo de ativo/mercado específico, auxiliando na tomada de decisões de investimento.',
+    template: `Você é um analista financeiro especializado em inteligência artificial, com a capacidade de identificar padrões e tendências de mercado. Meu objetivo é obter uma análise aprofundada sobre [Tipo de Ativo/Mercado para Análise, ex: Ações de tecnologia no Brasil, Criptomoedas, Fundos Imobiliários, Mercado de commodities agrícolas] para auxiliar minhas decisões de investimento.
+
+**Meu Perfil de Investidor:** [Ex: Conservador, Moderado, Agressivo]
+**Horizonte de Investimento:** [Ex: Curto prazo (< 1 ano), Médio prazo (1-5 anos), Longo prazo (> 5 anos)]
+**Objetivo com a Análise:** [Ex: Encontrar oportunidades de compra, Avaliar riscos de uma posição existente, Identificar setores promissores para diversificação]
+
+**Etapas da Análise:**
+
+1.  **Visão Geral do Mercado/Ativo:** Forneça um resumo do status atual de [Tipo de Ativo/Mercado para Análise], incluindo performance recente e eventos macroeconômicos relevantes.
+2.  **Identificação de Tendências (com IA):**
+    *   Utilize sua capacidade de IA para identificar as 3-5 principais tendências de alta ou baixa que estão se consolidando ou emergindo em [Tipo de Ativo/Mercado para Análise] nos últimos [Período de Análise, ex: 6 meses, 1 ano, 3 anos].
+    *   Diferencie entre tendências de curto, médio e longo prazo, se aplicável.
+3.  **Fatores de Risco e Oportunidades:**
+    *   Liste os 3-5 principais riscos (políticos, econômicos, setoriais, tecnológicos) que podem impactar negativamente [Tipo de Ativo/Mercado para Análise].
+    *   Liste 3-5 oportunidades potenciais que podem gerar valor.
+4.  **Ativos/Empresas Relevantes:** Sugira 3-5 ativos específicos (ex: empresas listadas, tokens de cripto, fundos) dentro de [Tipo de Ativo/Mercado para Análise] que se alinham ou são impactados pelas tendências identificadas. Justifique brevemente cada sugestão.
+5.  **Recomendações Estratégicas (alinhadas ao meu perfil):** Com base na análise, forneça 2-3 recomendações estratégicas acionáveis para [Meu Perfil de Investidor] e [Horizonte de Investimento], considerando meu [Objetivo com a Análise].
+
+Apresente a análise de forma clara e objetiva, utilizando bullet points e destacando os insights mais importantes. Lembre-se que esta é uma análise para fins educacionais e informativos, e não deve ser considerada um conselho financeiro direto.`,
+    tags: ['investimentos', 'análise financeira', 'tendências de mercado', 'finanças pessoais'],
+  },
 ];

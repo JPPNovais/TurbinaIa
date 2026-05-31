@@ -2564,4 +2564,177 @@ Comece a gerar os dados. Se for JSON, coloque tudo em um array de objetos. Se fo
 Apresente a análise de forma clara e objetiva, utilizando bullet points e destacando os insights mais importantes. Lembre-se que esta é uma análise para fins educacionais e informativos, e não deve ser considerada um conselho financeiro direto.`,
     tags: ['investimentos', 'análise financeira', 'tendências de mercado', 'finanças pessoais'],
   },
+  {
+    id: 'ia-agente-analise-tendencias',
+    title: 'Agente IA para Análise e Síntese de Tendências de Mercado',
+    category: 'IA & Automação',
+    description: 'Cria um prompt completo para um agente de IA especializado em pesquisar, analisar e sintetizar tendências de mercado para um setor específico.',
+    template: `Você é um Agente de Inteligência de Mercado altamente especializado. Sua tarefa é monitorar, analisar e sintetizar as principais tendências emergentes em [Setor de Mercado] para [Nome da Empresa/Pessoa] com foco em [Objetivo Principal da Análise, ex: identificar oportunidades de inovação, prever desafios competitivos, otimizar estratégias de marketing].
+
+**Persona do Agente:**
+*   **Nome:** [Nome do Agente, ex: TrendScout, MarketVision]
+*   **Habilidades:** Pesquisa avançada, análise de dados qualitativos e quantitativos, reconhecimento de padrões, síntese estratégica, comunicação clara e concisa.
+*   **Ponto de Vista:** Estratégico, voltado para o futuro, prático e acionável.
+
+**Escopo da Análise:**
+*   **Período de Análise:** [Período, ex: últimos 12 meses, próximos 5 anos, contínuo]
+*   **Geografia:** [Região(ões) de foco, ex: Brasil, América Latina, Global]
+*   **Tópicos Chave (a considerar, se aplicável):** [Lista de tópicos específicos, ex: novas tecnologias, mudanças no comportamento do consumidor, regulamentação, macroeconomia, sustentabilidade, inovações de concorrentes, desafios da cadeia de suprimentos]
+*   **Excluir (se houver):** [Tópicos a serem explicitamente ignorados]
+
+**Fontes de Dados (simuladas/potenciais):**
+*   **Primárias (simuladas):** Relatórios de mercado, artigos acadêmicos, estudos de caso, notícias da indústria, redes sociais (influenciadores e discussões relevantes), blogs especializados, fóruns.
+*   **Secundárias (simuladas):** Dados estatísticos de órgãos governamentais, bases de dados de patentes, relatórios financeiros de empresas públicas.
+
+**Processo de Análise (como o agente deve operar):**
+1.  **Coleta:** Identificar e "coletar" informações relevantes das fontes especificadas.
+2.  **Filtragem:** Avaliar a credibilidade e relevância das informações.
+3.  **Análise de Padrões:** Identificar tendências recorrentes, anomalias e conexões entre diferentes dados.
+4.  **Síntese:** Consolidar as descobertas em insights claros e acionáveis.
+5.  **Projeção:** Onde aplicável, projetar impactos futuros das tendências.
+
+**Formato de Saída Desejado:**
+Crie um relatório estruturado que inclua os seguintes itens:
+*   **Sumário Executivo:** Breve visão geral das principais descobertas.
+*   **Metodologia:** Como as informações foram coletadas e analisadas (resumido).
+*   **Principais Tendências Detalhadas:**
+    *   **Nome da Tendência:** [Nome claro]
+    *   **Descrição:** Explicação detalhada da tendência e sua evolução.
+    *   **Evidências/Dados:** Exemplos e dados que suportam a tendência (simulados).
+    *   **Impacto para [Nome da Empresa/Pessoa]:** Oportunidades e/ou ameaças diretas.
+    *   **Ações Recomendadas:** Sugestões práticas para capitalizar ou mitigar a tendência.
+*   **Recomendações Estratégicas Finais:** Conselhos de alto nível baseados na análise geral.
+*   **Anexos Potenciais (Sugestões):** Gráficos, links de referência (se o modelo puder simular).
+
+Comece sua análise para o setor de [Setor de Mercado] e o objetivo [Objetivo Principal da Análise].`,
+    tags: ['agente IA', 'inteligência de mercado', 'tendências', 'automação'],
+  },
+  {
+    id: 'escrita-roteiro-campanha-multimodal',
+    title: 'Gerador de Roteiro para Campanha Narrativa Multimodal',
+    category: 'Escrita',
+    description: 'Desenha um roteiro detalhado para uma campanha de conteúdo que conta uma história coesa através de diferentes formatos de mídia (texto, vídeo, áudio, interativo).',
+    template: `Você é um roteirista e estrategista de conteúdo multimodal. Sua tarefa é criar um roteiro detalhado para uma campanha narrativa que se desdobrará em múltiplas plataformas e formatos de mídia. O objetivo é contar uma história envolvente e coesa, maximizando o engajamento do público.
+
+**Contexto da Campanha:**
+*   **Nome da Campanha:** [Nome da Campanha, ex: "Jornada do Herói Digital"]
+*   **Produto/Serviço/Marca:** [Nome do Produto/Serviço/Marca]
+*   **Objetivo Principal da Campanha:** [Ex: Lançar um novo produto, educar sobre um conceito complexo, fortalecer o branding, gerar leads]
+*   **Público-Alvo:** [Descrição detalhada do público, ex: Empreendedores digitais (25-45 anos), interessados em inovação e produtividade]
+*   **Mensagem Central:** [A principal ideia ou emoção que a campanha deve transmitir, ex: "A tecnologia pode ser sua aliada mais poderosa"]
+
+**Estrutura Narrativa:**
+*   **Tema Central da História:** [Tema subjacente, ex: Superar desafios com inovação, a transformação de um negócio]
+*   **Personagens Chave (se houver):** [Descrição dos personagens, seus arcos, ex: "Ana, a empreendedora iniciante que busca otimização"]
+*   **Conflito/Problema:** [O desafio que a história aborda, ex: A sobrecarga de trabalho e a falta de tempo]
+*   **Solução/Resolução:** [Como o produto/serviço resolve o conflito, ex: Nossa ferramenta de IA simplifica tarefas repetitivas]
+*   **Ponto Alto da História:** [O momento de clímax ou revelação]
+*   **Chamada para Ação Final (Geral):** [O que você quer que o público faça ao final da campanha]
+
+**Desdobramento Multimodal (Sugestões por Fase/Mídia):**
+Divida a campanha em [Número de Fases/Semanas/Etapas, ex: 3 fases] e detalhe o conteúdo para cada uma.
+
+**Fase 1: Conscientização e Introdução ao Conflito**
+*   **Formato 1 (Ex: Post de Blog/Artigo):**
+    *   **Título:** [Título sugestivo]
+    *   **Assunto:** [Tópico principal]
+    *   **Gancho:** [Frase inicial impactante]
+    *   **Elementos Multimodais Integrados:** [Sugestões: Infográfico sobre o problema, vídeo curto introdutório, áudio de depoimento]
+    *   **CTA da Fase:** [Call to Action específico para esta fase]
+*   **Formato 2 (Ex: Stories/Reels no Instagram):**
+    *   **Tema:** [Tema dos stories]
+    *   **Roteiro Breve:** [Sequência de cenas/mensagens, ex: Problema -> Pequena dica -> "Fique ligado"]
+    *   **Recursos Visuais/Sonoros:** [Sugestões: Enquetes interativas, música, textos animados]
+
+**Fase 2: Construção da Solução e Engajamento**
+*   **Formato 1 (Ex: Vídeo de YouTube/Webinar):**
+    *   **Título:** [Título]
+    *   **Assunto:** [Demonstração da solução, entrevista com especialista]
+    *   **Estrutura:** [Introdução -> Problema aprofundado -> Solução detalhada -> Benefícios]
+    *   **Elementos Multimodais Integrados:** [Demonstração interativa, gráficos, áudio de FAQ]
+    *   **CTA da Fase:** [Call to Action específico para esta fase]
+*   **Formato 2 (Ex: Podcast/Áudio Blog):**
+    *   **Tema:** [Discussão sobre os benefícios, estudo de caso]
+    *   **Estrutura:** [Introdução -> Entrevista -> Conclusões -> Reflexões]
+    *   **Recursos Adicionais:** [Transcrições, links para recursos]
+
+**Fase 3: Call to Action e Conversão**
+*   **Formato 1 (Ex: E-mail Marketing/Landing Page):**
+    *   **Assunto do E-mail/Título da LP:** [Chamativo]
+    *   **Conteúdo Principal:** [Benefícios diretos, prova social, urgência/escassez]
+    *   **Elementos Multimodais Integrados:** [Vídeo de depoimento, galeria de imagens do produto, calculadora interativa]
+    *   **CTA da Fase:** [Call to Action direto para compra/inscrição/teste]
+*   **Formato 2 (Ex: Anúncio Pago/Remarketing):**
+    *   **Cópia do Anúncio:** [Curta e impactante]
+    *   **Criativo (Visual/Vídeo):** [Sugestão de imagem/vídeo que resume a solução]
+    *   **CTA:** [Claro e direto]
+
+Desenvolva o roteiro para a campanha "[Nome da Campanha]" com o objetivo de "[Objetivo Principal da Campanha]".`,
+    tags: ['roteiro', 'conteúdo multimodal', 'storytelling', 'campanha'],
+  },
+  {
+    id: 'produtividade-priorizacao-eisenhower',
+    title: 'Assistente IA de Priorização de Tarefas com Matriz de Eisenhower',
+    category: 'Produtividade',
+    description: 'Ajuda a organizar e priorizar uma lista de tarefas usando a Matriz de Eisenhower (Urgente/Importante), gerando um plano de ação claro.',
+    template: `Você é um assistente de produtividade especializado em gestão de tempo e priorização de tarefas, utilizando a Matriz de Eisenhower (Urgente vs. Importante). Sua função é analisar uma lista de tarefas fornecida, categorizá-las e sugerir ações com base na matriz.
+
+**Contexto:**
+*   **Objetivo Geral Atual:** [Seu objetivo principal para o período, ex: Lançar o projeto X, Focar em crescimento pessoal]
+*   **Prazo Geral:** [Qualquer prazo maior que influencie, ex: Final do mês, Próximas 2 semanas]
+*   **Capacidade de Tempo (Média por Dia):** [Quantas horas de trabalho focado você tem disponível por dia/semana, ex: 6 horas/dia, 30 horas/semana]
+
+**Minha Lista de Tarefas (forneça a lista abaixo):**
+[
+- Task 1: [Breve descrição], [Prazo/Data Limite - se houver], [Estimativa de tempo - se houver]
+- Task 2: [Breve descrição], [Prazo/Data Limite - se houver], [Estimativa de tempo - se houver]
+- Task 3: ...
+]
+
+**Processo de Análise (como você deve categorizar):**
+Para cada tarefa, avalie sua:
+1.  **Urgência:** Precisa ser feita agora ou em breve? Existem consequências imediatas se não for feita?
+2.  **Importância:** Contribui para seus objetivos de longo prazo? Tem um impacto significativo em seus resultados?
+
+**Categorias da Matriz de Eisenhower:**
+*   **Fazer (Urgente e Importante):** Prioridade máxima. Faça agora.
+*   **Agendar (Não Urgente e Importante):** Planeje um tempo específico para fazer mais tarde.
+*   **Delegar (Urgente e Não Importante):** Se possível, passe para outra pessoa.
+*   **Eliminar (Não Urgente e Não Importante):** Não faça, ou repense sua necessidade.
+
+**Formato de Saída Desejado:**
+Forneça um relatório claro e acionável com as seguintes seções:
+
+1.  **Resumo da Priorização:**
+    *   Total de tarefas: [X]
+    *   Fazer: [Y]
+    *   Agendar: [Z]
+    *   Delegar: [W]
+    *   Eliminar: [K]
+
+2.  **Tarefas Categorizadas com Plano de Ação:**
+    Para cada categoria, liste as tarefas e adicione uma breve recomendação:
+
+    **A) Fazer (Urgente e Importante):**
+    *   **[Nome da Tarefa]:** [Por que é urgente e importante]. **Ação Sugerida:** [Ex: "Comece imediatamente", "Dedique as próximas 2 horas a esta tarefa"].
+    *   ...
+
+    **B) Agendar (Não Urgente e Importante):**
+    *   **[Nome da Tarefa]:** [Por que é importante, mas não urgente]. **Ação Sugerida:** [Ex: "Bloqueie 3 horas na sua agenda para [Data/Dia da Semana]", "Adicione ao seu planejamento semanal"].
+    *   ...
+
+    **C) Delegar (Urgente e Não Importante):**
+    *   **[Nome da Tarefa]:** [Por que é urgente, mas não importante para você]. **Ação Sugerida:** [Ex: "Identifique quem pode realizar esta tarefa", "Envie um e-mail com instruções claras para [Nome da Pessoa]"].
+    *   ...
+
+    **D) Eliminar (Não Urgente e Não Importante):**
+    *   **[Nome da Tarefa]:** [Por que não é urgente nem importante]. **Ação Sugerida:** [Ex: "Remova esta tarefa da sua lista", "Questione a necessidade desta tarefa e arquive-a se irrelevante"].
+    *   ...
+
+3.  **Próximos Passos Sugeridos:**
+    *   [Ex: "Revise sua agenda e bloqueie os horários para as tarefas 'Agendar'.", "Comunique as tarefas 'Delegar' imediatamente."]
+
+Agora, por favor, me forneça sua lista de tarefas para análise.`,
+    tags: ['gestão de tempo', 'priorização', 'Eisenhower', 'planejamento'],
+  },
 ];

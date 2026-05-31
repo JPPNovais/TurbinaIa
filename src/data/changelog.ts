@@ -13,6 +13,19 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-deepmind-gemini-3-5-pro-2026',
+    date: '2026-05',
+    title: 'Google DeepMind lança Gemini 3.5 Pro',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'O Google DeepMind introduziu o Gemini 3.5 Pro durante o Google I/O 2026, expandindo sua linha de modelos com uma nova versão que oferece capacidades avançadas.',
+    highlights: [
+      'Anunciado em maio de 2026, no evento Google I/O 2026.',
+      'Nova adição à família de modelos Gemini, indicando melhorias na performance geral.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'openai-gpt-5-5-instant-update-2026',
     date: '2026-05',
     title: 'OpenAI atualiza GPT-5.5 Instant com melhorias na qualidade e estilo de resposta',

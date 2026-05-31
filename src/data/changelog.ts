@@ -13,6 +13,35 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'xai-grok-image-generation-aurora-2026',
+    date: '2026-05',
+    title: 'xAI lança modelo de geração de imagens Grok (codinome Aurora)',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI atualizou as capacidades do Grok com um novo modelo de geração de imagens autorregressivo, com o codinome Aurora, disponível na plataforma 𝕏.',
+    highlights: [
+      'Lançado em 29 de maio de 2026.',
+      'Novo modelo de geração de imagens autorregressivo.',
+      'Codinome "Aurora".',
+      'Disponível na plataforma 𝕏.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'xai-grok-code-fast-1-2026',
+    date: '2026-05',
+    title: 'xAI introduz Grok Code Fast 1, um modelo de raciocínio rápido para codificação agêntica',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI lançou o grok-code-fast-1, um modelo de raciocínio rápido e econômico que se destaca na codificação agêntica.',
+    highlights: [
+      'Introduzido em 29 de maio de 2026.',
+      'Modelo de raciocínio especializado para codificação agêntica.',
+      'Descrito como "rápido e econômico".'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'google-deepmind-gemini-3-5-pro-2026',
     date: '2026-05',
     title: 'Google DeepMind lança Gemini 3.5 Pro',

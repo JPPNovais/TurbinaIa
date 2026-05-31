@@ -2737,4 +2737,101 @@ Forneça um relatório claro e acionável com as seguintes seções:
 Agora, por favor, me forneça sua lista de tarefas para análise.`,
     tags: ['gestão de tempo', 'priorização', 'Eisenhower', 'planejamento'],
   },
+  {
+    id: 'ia-agente-aprendizagem-adaptativa',
+    title: 'Agente de Aprendizagem Adaptativa com IA',
+    category: 'IA & Automação',
+    description: 'Crie o design de um agente de IA que personaliza e adapta rotas de aprendizado com base no seu perfil, progresso e estilo de aprendizagem.',
+    template: `Você é um especialista em design de agentes de IA para educação. Sua tarefa é criar um "System Prompt" detalhado para um agente de aprendizagem adaptativa.
+
+**Objetivo do Aprendizado:** [Ex: Aprender Python para análise de dados, Dominar marketing digital para e-commerce, Entender Machine Learning do zero]
+**Meu Nível Atual:** [Ex: Iniciante, Intermediário, Avançado, Zero conhecimento]
+**Minhas Preferências de Aprendizado (selecione uma ou mais):** [Ex: Visual (vídeos, diagramas, infográficos), Auditivo (podcasts, explicações em áudio), Cinestésico (projetos práticos, exercícios), Leitura/Escrita (artigos, livros, resumos), Social (discussões, mentoria)]
+**Disponibilidade Diária (horas):** [Ex: 1 hora, 30 minutos, 2 horas, Fim de semana]
+**Recursos Atuais Disponíveis (opcional):** [Ex: Curso X na Udemy, Livro Y, Assinatura Coursera, Acesso a artigos científicos]
+**Formato de Saída Desejado do Agente:** [Ex: Estrutura JSON com módulos, atividades e materiais; Texto corrido com recomendações e explicação da lógica do agente; Um plano de estudo detalhado por semanas]
+
+**Tarefas Essenciais do Agente de Aprendizagem:**
+1.  **Diagnóstico Inicial:** Avaliar o nível atual do usuário no tópico e sugerir um ponto de partida ideal.
+2.  **Personalização de Conteúdo:** Recomendar materiais de aprendizado (artigos, vídeos, exercícios, projetos) alinhados às preferências de aprendizado e disponibilidade.
+3.  **Adaptação em Tempo Real:** Ajustar a rota de aprendizado com base no desempenho simulado do usuário (por exemplo, se o usuário encontrar dificuldade em um tópico, o agente deve sugerir recursos adicionais ou diferentes).
+4.  **Sugestão de Projetos Práticos:** Propor projetos ou exercícios para aplicar o conhecimento adquirido, sempre que relevante.
+5.  **Revisão e Reforço:** Agendar e sugerir atividades de revisão espaçada para consolidar o aprendizado a longo prazo.
+6.  **Feedback e Motivação:** (Opcional) Incluir um mecanismo de feedback e encorajamento para manter o usuário engajado.
+
+**Crie o "System Prompt" para este agente, incluindo:**
+*   A persona do agente.
+*   As diretrizes de como ele deve realizar cada uma das tarefas essenciais.
+*   Como ele deve interpretar as preferências de aprendizado e a disponibilidade.
+*   A estrutura detalhada do output no formato desejado.
+*   Instruções para ser encorajador e adaptável.`,
+    tags: ['Educação', 'Agentes IA', 'Personalização', 'Aprendizado']
+  },
+  {
+    id: 'negocios-agente-inovacao-ia',
+    title: 'Agente de Inovação e Tendências com IA',
+    category: 'Negócios',
+    description: 'Desenhe um agente de IA para identificar, analisar e reportar tendências emergentes, tecnologias disruptivas e potenciais oportunidades de inovação no seu setor.',
+    template: `Você é um especialista em estratégia de negócios e design de agentes de IA. Sua tarefa é criar um "System Prompt" detalhado para um agente de inovação e tendências com IA.
+
+**Setor de Foco:** [Ex: Fintech, Saúde Digital, Mobilidade Urbana, Agricultura Sustentável, E-commerce de Moda]
+**Objetivo Principal do Scouting:** [Ex: Encontrar startups para investimento, Identificar tecnologias para integrar em nossos produtos, Monitorar disrupções no mercado, Explorar novos modelos de negócio, Avaliar o cenário competitivo futuro]
+**Mercados Geográficos de Interesse:** [Ex: Brasil, América Latina, Global, EUA e Europa, Região Sudeste do Brasil]
+**Tipos de Inovação a Buscar (selecione uma ou mais):** [Ex: Tecnologias (blockchain, IA generativa, IoT, biotecnologia), Modelos de Negócio (assinatura, plataforma, economia circular), Produtos/Serviços (novas ofertas, funcionalidades disruptivas), Processos (otimização com IA, automação)]
+**Critérios de Avaliação (exemplo para startups/tecnologias, personalize conforme necessário):**
+*   Potencial de Mercado: Alto, Médio, Baixo
+*   Estágio de Desenvolvimento: Ideia, MVP, Tração Inicial, Crescimento, Maturidade
+*   Alinhamento Estratégico com [Nome da Empresa/Seu Negócio]: Alto, Médio, Baixo
+*   Barreira de Entrada ou Vantagem Competitiva: Alta, Média, Baixa
+*   Risco (Tecnológico, Mercado): Alto, Médio, Baixo
+
+**Fontes de Dados Preferenciais (simuladas para o agente buscar):** [Ex: Relatórios de mercado (Gartner, Forrester, CB Insights), Bases de dados de startups (Crunchbase, PitchBook), Notícias de tecnologia (TechCrunch, Wired), Publicações acadêmicas (arXiv, Google Scholar), Patentes, Redes sociais de especialistas (LinkedIn, Twitter), Eventos do setor]
+**Formato de Output Desejado:** [Ex: Relatório executivo resumido com top 5 inovações e análises, Tabela comparativa de empresas/tecnologias com scores, Dashboard de tendências com links para fontes originais, Apresentação em slides com os principais insights]
+
+**Tarefas Essenciais do Agente de Inovação:**
+1.  **Monitoramento Contínuo:** Varredura proativa das fontes de dados para novas informações relevantes ao setor e objetivo.
+2.  **Identificação e Filtragem:** Filtrar e categorizar inovações e tendências, descartando ruído e focando no que é realmente disruptivo.
+3.  **Análise Aprofundada:** Avaliar as inovações identificadas com base nos critérios fornecidos, justificando os scores.
+4.  **Síntese de Insights:** Gerar insights acionáveis, destacando oportunidades e ameaças.
+5.  **Recomendações:** Propor ações estratégicas (ex: parcerias, aquisições, desenvolvimento interno) baseadas na análise.
+
+**Crie o "System Prompt" detalhado para este agente, incluindo:**
+*   A persona do agente (Ex: "Consultor Estratégico de Inovação").
+*   As diretrizes precisas para cada uma das tarefas essenciais.
+*   Como ele deve priorizar as informações e aplicar os critérios de avaliação.
+*   A estrutura e o tom do relatório final no formato desejado.
+*   Instruções para ser analítico, objetivo e focado em valor estratégico.`,
+    tags: ['Negócios', 'Inovação', 'Inteligência Competitiva', 'Tendências']
+  },
+  {
+    id: 'produtividade-gerenciador-conhecimento-ia',
+    title: 'Gerenciador Inteligente de Conhecimento Pessoal (PKM) com IA',
+    category: 'Produtividade',
+    description: 'Crie um sistema de IA para organizar, interconectar, sintetizar e recuperar insights de sua base de conhecimento pessoal (notas, documentos, artigos, ideias).',
+    template: `Você é um especialista em IA para produtividade e gestão de conhecimento. Sua tarefa é desenhar o "System Prompt" para um Gerenciador Inteligente de Conhecimento Pessoal (PKM) com IA.
+
+**Tipo de Conhecimento a Gerenciar:** [Ex: Notas de reunião, Artigos de pesquisa, Ideias de projeto, Livros lidos, Cursos feitos, Conhecimento técnico específico, Documentos financeiros, Experiências pessoais]
+**Objetivo Principal do PKM:** [Ex: Facilitar a criação de conteúdo, Apoiar a tomada de decisão estratégica, Acelerar o aprendizado e a retenção, Organizar informações para um projeto específico, Conectar ideias aparentemente díspares]
+**Fontes de Entrada (simuladas para o agente processar):** [Ex: Notas digitadas em [Aplicativo de notas], PDFs e documentos salvos em [Pasta], Transcrições de reuniões/áudios, Resumos de artigos web, E-mails importantes]
+**Formato de Interação Desejado (simulado):** [Ex: Interface de chat conversacional para perguntas e comandos, Dashboard interativo que mostra conexões, Relatórios gerados em texto por tópico, Notificações inteligentes]
+
+**Recursos-Chave Desejados do PKM com IA:**
+1.  **Indexação e Categorização Inteligente:** A IA deve processar o conteúdo, indexá-lo automaticamente, e sugerir categorias, tags ou tópicos-chave.
+2.  **Criação de Conexões Semânticas:** Identificar relações e links entre diferentes peças de informação (mesmo que não explicitamente ligadas) e sugerir "grafos de conhecimento".
+3.  **Geração de Resumos e Extração de Insights:** Criar resumos concisos de documentos longos ou coleções de notas, e extrair os insights mais relevantes.
+4.  **Recuperação de Informação Semântica:** Permitir buscar informações usando linguagem natural e consultas complexas, não apenas palavras-chave exatas, compreendendo o *significado* por trás da busca.
+5.  **Análise e Síntese de Tópicos:** Ajudar a analisar e sintetizar informações complexas ou multidisciplinares para gerar novos entendimentos ou propostas.
+6.  **Geração de Ideias e Brainstorming:** Baseado no conhecimento existente, sugerir novas ideias, abordagens ou soluções para um problema ou tópico.
+
+**Exemplo de Conteúdo para Processamento (forneça um pequeno parágrafo ou tópico para contextualizar):**
+"[Parágrafo/Tópico de exemplo sobre 'A importância da cultura ágil em startups de tecnologia' ou 'Benefícios da meditação para a produtividade' que você gostaria que o PKM processasse para demonstrar sua funcionalidade e capacidade de conexão. Ex: 'Notas da reunião de 15/04 sobre o projeto X: decisao de migrar para a nuvem A, preocupacao com seguranca. Email de fulano sobre as caracteristicas da nuvem A. Artigo da Ztech sobre desafios de seguranca em migracao de nuvem.']"
+
+**Crie o "System Prompt" detalhado para este assistente de IA, incluindo:**
+*   A persona do PKM (Ex: "Seu Curador de Conhecimento Pessoal").
+*   As diretrizes de como ele deve realizar cada um dos recursos-chave.
+*   Como ele deve processar as diferentes fontes de entrada.
+*   Como ele deve interagir com o usuário no formato desejado.
+*   Instruções para ser proativo na oferta de conexões e insights.`,
+    tags: ['Produtividade', 'Gestão de Conhecimento', 'IA Pessoal', 'Organização']
+  },
 ];

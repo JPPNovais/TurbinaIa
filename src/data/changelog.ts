@@ -13,6 +13,79 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'anthropic-claude-mythos-preview-2026',
+    date: '2026-06',
+    title: 'Anthropic revela Claude Mythos Preview, modelo com acesso restrito devido a capacidades perigosas em cibersegurança',
+    developer: 'Anthropic',
+    category: 'Pesquisa',
+    description: 'A Anthropic anunciou que seu novo modelo, Claude Mythos Preview, não será disponibilizado ao público em geral, restringindo o acesso a um consórcio de quarenta organizações devido às suas capacidades em testes de cibersegurança ofensiva.',
+    highlights: [
+      'Anunciado em 1º de junho de 2026.',
+      'Acesso restrito a um consórcio de cerca de quarenta organizações (Project Glasswing).',
+      'Capacidades demonstradas em testes de cibersegurança ofensiva foram consideradas perigosas pela própria empresa.',
+      'Em simulações, o Mythos executou todos os 32 passos de um ataque a uma rede empresarial.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'openai-o3-gpt-4-5-descontinuado-2026',
+    date: '2026-05',
+    title: 'OpenAI anuncia a descontinuação dos modelos o3 e GPT-4.5',
+    developer: 'OpenAI',
+    category: 'Descontinuado',
+    description: 'A OpenAI iniciou o processo de descontinuação dos modelos OpenAI o3 e GPT-4.5 no ChatGPT para focar em modelos mais recentes e capazes.',
+    highlights: [
+      'Anunciado em 28 de maio de 2026.',
+      'OpenAI o3 será descontinuado em 26 de agosto de 2026, com período de aviso de 90 dias.',
+      'GPT-4.5 será descontinuado em 27 de junho de 2026, com período de aviso de 30 dias.',
+      'As mudanças se aplicam apenas ao ChatGPT, sem alterações na API.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'xai-grok-1-5-2026',
+    date: '2026-05',
+    title: 'xAI anuncia Grok-1.5 com capacidades de raciocínio aprimoradas e contexto estendido',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI anunciou o Grok-1.5, uma nova versão do seu modelo que oferece capacidades de raciocínio aprimoradas e um comprimento de contexto significativamente maior.',
+    highlights: [
+      'Anunciado em 29 de maio de 2026.',
+      'Vem com capacidades de raciocínio aprimoradas.',
+      'Comprimento de contexto de 128.000 tokens.',
+      'Disponibilidade iminente na plataforma 𝕏.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'mistral-medium-3-1-2026',
+    date: '2026-05',
+    title: 'Mistral AI lança Mistral Medium 3.1',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'A Mistral AI lançou o Mistral Medium 3.1, expandindo sua linha de modelos com uma nova versão.',
+    highlights: [
+      'Lançado em 21 de maio de 2026.',
+      'Novo modelo na família Mistral Medium.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'deepseek-r1-0528-2026',
+    date: '2026-05',
+    title: 'DeepSeek lança DeepSeek-R1-0528, um modelo de raciocínio aprimorado por aprendizado por reforço',
+    developer: 'DeepSeek',
+    category: 'Lançamento',
+    description: 'A DeepSeek introduziu o DeepSeek-R1-0528, um modelo de raciocínio que utiliza aprendizado por reforço (RL) para melhorar a legibilidade e reduzir a repetição em suas respostas.',
+    highlights: [
+      'Disponível a partir de 28 de maio de 2026.',
+      'Modelo de raciocínio aprimorado por aprendizado por reforço (RL).',
+      'Destaca-se na redução de repetições e melhoria da legibilidade.',
+      'Apresenta desempenho comparável ao OpenAI-o1 em tarefas de matemática, código e raciocínio.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'xai-grok-image-generation-aurora-2026',
     date: '2026-05',
     title: 'xAI lança modelo de geração de imagens Grok (codinome Aurora)',

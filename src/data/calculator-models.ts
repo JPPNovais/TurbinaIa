@@ -12,35 +12,35 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'Gemini 1.5 Pro',
     provider: 'Google',
-    inputPricePerM: 7.00,
-    outputPricePerM: 21.00,
+    inputPricePerM: 3.50,
+    outputPricePerM: 10.50,
     contextWindow: '1M tokens',
-    description: 'O modelo flagship da Google (junho 2026), com raciocínio avançado e até 1M de contexto (preço para até 1M tokens).',
+    description: 'O modelo flagship da Google (fevereiro 2024), com raciocínio avançado e até 1M de contexto (preço para até 1M tokens).',
   },
   {
     name: 'Gemini 1.5 Flash',
     provider: 'Google',
-    inputPricePerM: 0.30,
-    outputPricePerM: 2.50,
+    inputPricePerM: 0.35,
+    outputPricePerM: 1.05,
     contextWindow: '1M tokens',
-    description: 'O novo modelo Flash padrão da Google (junho 2026), oferecendo um bom equilíbrio entre velocidade e capacidade.',
+    description: 'O novo modelo Flash padrão da Google (setembro 2024), oferecendo um bom equilíbrio entre velocidade e capacidade, com até 1M de contexto.',
   },
   // OpenAI
   {
     name: 'GPT-4o',
     provider: 'OpenAI',
-    inputPricePerM: 2.50,
-    outputPricePerM: 10.00,
+    inputPricePerM: 5.00,
+    outputPricePerM: 15.00,
     contextWindow: '128K tokens',
     description: 'Modelo flagship da OpenAI (maio 2024), versátil e otimizado para a maioria das tarefas, com 128K de contexto.',
   },
   {
     name: 'GPT-4o mini',
     provider: 'OpenAI',
-    inputPricePerM: 0.55,
-    outputPricePerM: 2.20,
+    inputPricePerM: 0.15,
+    outputPricePerM: 0.60,
     contextWindow: '128K tokens',
-    description: 'Um modelo econômico da OpenAI (maio 2026), otimizado para tarefas de alta demanda e baixo custo, com forte raciocínio e 128K de contexto.',
+    description: 'Um modelo econômico da OpenAI (maio 2024), otimizado para tarefas de alta demanda e baixo custo, com forte raciocínio e 128K de contexto.',
   },
   {
     name: 'GPT-5.4',
@@ -48,7 +48,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 2.50,
     outputPricePerM: 15.00,
     contextWindow: '1M tokens',
-    description: 'Modelo de produção recomendado pela OpenAI (abril 2026), oferecendo excelente equilíbrio entre custo e capacidade, com 1M de contexto.',
+    description: 'Modelo de produção recomendado pela OpenAI (maio 2026), oferecendo excelente equilíbrio entre custo e capacidade, com 1M de contexto.',
   },
   // Anthropic
   {
@@ -57,7 +57,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 5.00,
     outputPricePerM: 25.00,
     contextWindow: '1M tokens',
-    description: 'O modelo mais inteligente da Anthropic (maio 2026) para raciocínio complexo e tarefas agênticas, com 1M de contexto. Mesmos preços do Opus 4.7, com melhorias.',
+    description: 'O modelo mais inteligente da Anthropic (maio 28, 2026) para raciocínio complexo e tarefas agênticas, com 1M de contexto. Mesmos preços do Opus 4.7, com melhorias.',
   },
   {
     name: 'Claude Sonnet 4.6',
@@ -82,7 +82,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.14,
     outputPricePerM: 0.28,
     contextWindow: '1M tokens',
-    description: 'Modelo eficiente da DeepSeek para alta velocidade (junho 2026), com 1M de contexto.',
+    description: 'Modelo eficiente da DeepSeek para alta velocidade (maio 2026), com 1M de contexto.',
   },
   {
     name: 'DeepSeek-V4 Pro',
@@ -90,16 +90,16 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.435,
     outputPricePerM: 0.87,
     contextWindow: '1M tokens',
-    description: 'Modelo avançado da DeepSeek para raciocínio complexo (junho 2026), com 1M de contexto, e com preço promocional tornando-se oficial após maio de 2026.',
+    description: 'Modelo avançado da DeepSeek para raciocínio complexo (abril 2026), com 1M de contexto, e com preço promocional tornando-se oficial após maio de 2026.',
   },
   // Meta (via API)
   {
-    name: 'Llama 3.3 70B Instruct (via Together AI)',
+    name: 'Llama 3.1 70B Instruct (via Together AI)',
     provider: 'Meta (via API)',
-    inputPricePerM: 0.88,
-    outputPricePerM: 0.88,
+    inputPricePerM: 0.90,
+    outputPricePerM: 0.90,
     contextWindow: '131K tokens',
-    description: 'Modelo open-source poderoso via API Together AI (Llama 3.3 70B Instruct, junho 2026).',
+    description: 'Modelo open-source poderoso via API Together AI (Llama 3.1 70B Instruct, julho 2024).',
   },
   {
     name: 'Meta-Llama-3.1-8B-Instruct-Turbo (via Together AI)',
@@ -107,7 +107,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.18,
     outputPricePerM: 0.18,
     contextWindow: '131K tokens',
-    description: 'Versão leve e econômica da família Llama 3.1 Instruct via API Together AI (maio 2026), com 131K de contexto.',
+    description: 'Versão leve e econômica da família Llama 3.1 Instruct via API Together AI (julho 2024), com 131K de contexto.',
   },
   // Mistral AI
   {
@@ -133,6 +133,6 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 2.50,
     outputPricePerM: 10.00,
     contextWindow: '128K tokens',
-    description: 'Modelo robusto da Cohere (maio 2026), otimizado para RAG e tarefas empresariais, com 128K de contexto.',
+    description: 'Modelo robusto da Cohere (agosto 2024), otimizado para RAG e tarefas empresariais, com 128K de contexto.',
   },
 ];

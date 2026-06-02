@@ -114,7 +114,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://claude.ai',
     tags: ['redação', 'texto', 'anthropic', 'assistente', 'análise', 'longo contexto'],
     isFeatured: true,
-    popularityRank: 2,
+    popularityRank: 3,
     updatedAt: '2026-06',
   },
   {
@@ -136,7 +136,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (acesso a Gemini 3.5 Flash, uso limitado). Google One AI Premium a US$ 19,99/mês (acesso a Gemini 3.1 Pro, 2 TB de armazenamento, recursos de IA no Gmail, Docs, etc.). Google Gemini for Workspace Enterprise a US$ 30/usuário/mês (faturamento anual). Planos de API (pay-per-token): Gemini 3.5 Flash a US$ 0.35/M tokens entrada e US$ 1.05/M tokens saída; Gemini 3.1 Pro a US$ 2.00/M tokens entrada e US$ 12.00/M tokens saída (até 1M tokens). Um novo plano AI Ultra a US$ 99.99/mês (5x limites de uso do Pro, Gemini 3.5 Flash, acesso prioritário ao Google Antigravity, 20TB de armazenamento, YouTube Premium) e um plano Ultra de US$ 200/mês (anteriormente US$ 250/mês) com capacidades semelhantes.',
     url: 'https://gemini.google.com',
     tags: ['google', 'redação', 'texto', 'assistente', 'workspace', 'multimodal'],
-    popularityRank: 3,
+    popularityRank: 2,
     updatedAt: '2026-06',
   },
   {
@@ -180,7 +180,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Sem plano gratuito, apenas trial de 7 dias. Creator a US$ 49/mês (US$ 39/mês no plano anual) para 1 usuário; Teams a US$ 125/mês (US$ 99/mês no plano anual) para até 5 usuários; Business com preço customizado.',
     url: 'https://www.jasper.ai',
     tags: ['marketing', 'copywriting', 'seo', 'blog', 'anúncios', 'conteúdo', 'redação'],
-    popularityRank: 22,
+    popularityRank: 15,
     updatedAt: '2026-06',
   },
   {
@@ -202,7 +202,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Acesso exclusivo para assinantes X Premium+ (US$ 16/mês via web); X Premium a US$ 8/mês (sem Grok); Planos empresariais e API sob consulta. API a US$ 2/M tokens entrada e US$ 15/M tokens saída.',
     url: 'https://x.ai/grok',
     tags: ['twitter', 'x', 'tempo real', 'notícias', 'xai', 'chat', 'raciocínio'],
-    popularityRank: 27,
+    popularityRank: 18,
     updatedAt: '2026-06',
   },
   {
@@ -224,7 +224,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (com uso limitado de IA para tarefas básicas); Plus a US$ 10/mês (US$ 8/mês anual, uso ilimitado de IA); Business a US$ 18/mês (US$ 15/mês anual, recursos avançados de segurança e administração); Enterprise com preço customizado.',
     url: 'https://www.notion.so/ai',
     tags: ['produtividade', 'organização', 'escrita', 'workspace', 'assistente', 'notas'],
-    popularityRank: 21,
+    popularityRank: 16,
     updatedAt: '2026-06',
   },
   {
@@ -246,7 +246,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (300 palavras para teste, uso único). Basic a US$ 9/mês (US$ 8.25/mês anual, 30.000 palavras/mês); Pro a US$ 19/mês (US$ 14/mês anual, 100.000 palavras/mês); Ultra a US$ 39/mês (US$ 26/mês anual, 300.000 palavras/mês).',
     url: 'https://gpthuman.ai',
     tags: ['humanização', 'anti-detecção', 'conteúdo', 'redação', 'paráfrase'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
 
@@ -294,7 +293,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://cursor.com',
     tags: ['editor', 'código', 'ide', 'programação', 'vscode', 'refatoração'],
     isFeatured: true,
-    popularityRank: 6,
+    popularityRank: 19,
     updatedAt: '2026-06',
   },
   {
@@ -318,7 +317,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (25 prompt credits/mês, autocompletar ilimitado, acesso ao agente Cascade); Pro a US$ 15/mês (500 créditos); Teams a US$ 30/usuário/mês; Enterprise a US$ 60/usuário/mês (customizável). Todas as tiers incluem Cascade e Tab/Supercomplete. Opções de auto-hospedagem disponíveis.',
     url: 'https://codeium.com',
     tags: ['código', 'autocompletar', 'grátis', 'programação', 'múltiplas linguagens', 'ide', 'agente', 'windsurf'],
-    popularityRank: 23,
+    popularityRank: 24,
     updatedAt: '2026-06',
   },
   {
@@ -340,7 +339,8 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Starter, com créditos diários limitados, publicação de 1 app, Agent limitado). Core a US$ 25/mês (US$ 20/mês anual), inclui US$ 25 em créditos mensais, até 5 colaboradores, workspaces ilimitados, acesso a modelos AI avançados e Replit Agent. Pro a US$ 100/mês (lançado em Fev 2026, para até 15 builders, créditos com desconto por volume, rollover de créditos, suporte prioritário). Enterprise sob consulta.',
     url: 'https://replit.com',
     tags: ['ide online', 'programação', 'deploy', 'aprendizado', 'prototipagem'],
-    popularityRank: 24,
+    isNew: true,
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -362,7 +362,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Basic); Pro a US$ 12/mês (US$ 10/mês anual); Enterprise com preço customizado (a partir de US$ 59/usuário/mês para planos com mais recursos de segurança ou auto-hospedagem).',
     url: 'https://www.tabnine.com',
     tags: ['código', 'privacidade', 'local', 'segurança', 'empresarial', 'autocompletar'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -384,7 +383,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Não possui plano gratuito. Acesso via planos Claude API (pay-per-token: Haiku a US$ 0.25/M tokens entrada e US$ 1.25/M tokens saída; Sonnet a US$ 3.00/M tokens entrada e US$ 15.00/M tokens saída; Opus a US$ 5.00/M tokens entrada e US$ 25.00/M tokens saída) ou via planos de equipe: Team Standard a US$ 25/usuário/mês (mínimo de 5 usuários), Team Premium a US$ 125/usuário/mês (inclui Opus), Enterprise sob consulta. Também disponível via Claude Cowork (desktop app, pago).',
     url: 'https://claude.ai/code',
     tags: ['cli', 'terminal', 'agente', 'anthropic', 'desenvolvimento', 'autonomo', 'git'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -405,7 +403,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Codex foi descontinuado como modelo autônomo. Suas capacidades foram integradas em modelos mais recentes da OpenAI, como o GPT-4o, que são acessíveis via API (preços variam por modelo e uso) ou através de planos como o ChatGPT Plus (US$ 20/mês). Os créditos agora seguem a tabela de preços do Codex baseada em tokens.',
     url: 'https://openai.com/codex',
     tags: ['cli', 'terminal', 'openai', 'agente', 'o3', 'o4-mini', 'desenvolvimento'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -427,7 +424,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (com créditos diários limitados); Pro a US$ 20/mês (tokens diários maiores e projetos ilimitados); Teams sob consulta. Em 2025, atingiu US$ 40M ARR.',
     url: 'https://bolt.new',
     tags: ['web', 'full-stack', 'stackblitz', 'protótipo', 'react', 'deploy', 'no-code'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -449,7 +445,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (créditos mensais limitados); Pro a US$ 20/mês (mais créditos, acesso a modelos avançados e projetos privados).',
     url: 'https://v0.dev',
     tags: ['ui', 'react', 'componentes', 'vercel', 'tailwind', 'interface', 'shadcn', 'next.js'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -471,7 +466,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (5 mensagens/dia); Starter a US$ 20/mês; Pro a US$ 50/mês (mensagens e projetos ilimitados, domínio personalizado). Em 2024, atingiu US$ 17M ARR.',
     url: 'https://lovable.dev',
     tags: ['full-stack', 'mvp', 'supabase', 'no-code', 'saas', 'app builder', 'fundadores'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -493,7 +487,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Acesso por convite e planos empresariais sob consulta. Estimativas para equipes (Teams) a partir de US$ 500/mês (com limites de uso de "Agent Compute Units"); Planos Enterprise personalizados.',
     url: 'https://devin.ai',
     tags: ['agente', 'autônomo', 'engenheiro', 'cognition', 'desenvolvimento', 'github', 'issues'],
-    popularityRank: 30,
+    popularityRank: 26,
     updatedAt: '2026-06',
   },
   {
@@ -515,7 +509,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Individual tier com limites mensais de uso); Amazon Q Developer Pro a US$ 19/usuário/mês (uso ilimitado, auditoria e conformidade enterprise).',
     url: 'https://aws.amazon.com/q/developer/',
     tags: ['aws', 'amazon', 'cloud', 'infraestrutura', 'terraform', 'enterprise', 'codewhisperer'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -537,7 +530,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Gemini Code Assist Standard para uso pessoal e projetos open source); Enterprise a US$ 19/usuário/mês (recursos avançados de segurança e compliance, integração com Google Cloud).',
     url: 'https://cloud.google.com/gemini/docs/codeassist/overview',
     tags: ['google', 'vscode', 'jetbrains', 'gemini', 'cloud', 'enterprise', 'contexto longo'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -560,7 +552,6 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://ai.google/labs/antigravity',
     tags: ['ide', 'editor', 'agente', 'autônomo', 'google', 'vscode', 'desenvolvimento', 'new'],
     isNew: true,
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -582,7 +573,8 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis para uso pessoal e comercial, com acesso via API e para download dos pesos do modelo. Modelos maiores podem ter custos associados ao uso de APIs de terceiros. DeepSeek V4 é destacado como uma boa opção gratuita.',
     url: 'https://deepseek.com/coder/',
     tags: ['código', 'open source', 'programação', 'grátis', 'alternativa', 'llm', 'raciocínio', 'new'],
-    popularityRank: undefined,
+    isNew: true,
+    popularityRank: 20,
     updatedAt: '2026-06',
   },
 
@@ -607,7 +599,6 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://openai.com/dall-e-3',
     tags: ['imagem', 'geração', 'arte', 'ilustração', 'fotorrealismo', 'openai', 'integrado'],
     isFeatured: false,
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -630,7 +621,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://www.midjourney.com',
     tags: ['imagem', 'arte', 'design', 'ilustração', 'discord', 'artístico'],
     isFeatured: true,
-    popularityRank: 8,
+    popularityRank: 6,
     updatedAt: '2026-06',
   },
   {
@@ -652,7 +643,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Open source e gratuito para uso local; DreamStudio (API e web UI) a partir de US$ 10 para 1.000 créditos (aprox. 5.000 imagens).',
     url: 'https://stability.ai',
     tags: ['imagem', 'open source', 'local', 'gratuito', 'customizável', 'comunidade'],
-    popularityRank: 18,
+    popularityRank: 25,
     updatedAt: '2026-06',
   },
   {
@@ -674,7 +665,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis com 25 imagens/mês; Basic a US$ 8/mês; Pro a US$ 25/mês.',
     url: 'https://ideogram.ai',
     tags: ['imagem', 'texto em imagem', 'logo', 'pôster', 'tipografia', 'design'],
-    popularityRank: 29,
+    popularityRank: 28,
     updatedAt: '2026-06',
   },
   {
@@ -718,7 +709,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Acesso às capacidades do Nano Banana Pro estão incluídas nos planos Google One AI Premium (US$ 19,99/mês) e através da API do Google AI Studio/Vertex AI (preços variam por modelo e uso). Integração com o Google Pics.',
     url: 'https://ai.google/frontier/nano-banana/',
     tags: ['google', 'imagem', 'geração', 'texto em imagem', 'personagens consistentes', 'multimodal'],
-    popularityRank: 11,
+    popularityRank: 29,
     updatedAt: '2026-06',
   },
   {
@@ -740,7 +731,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (5 créditos 3D/mês); Creator a US$ 30/mês (50 créditos 3D/mês, exportação de alta resolução); Studio a US$ 100/mês (200 créditos 3D/mês, renderização em nuvem, API); Enterprise sob consulta.',
     url: 'https://polyforge.ai',
     tags: ['3d', 'modelagem', 'game dev', 'arquitetura', 'design', 'geração', 'metaverso'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -762,7 +752,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (acesso a recursos básicos de IA); Canva Pro a US$ 14.99/mês (US$ 119.99/ano) com acesso a recursos premium de IA e funcionalidades ilimitadas; Canva for Teams e Enterprise com preço customizado.',
     url: 'https://www.canva.com/ai-features/',
     tags: ['design', 'gráfico', 'edição', 'imagem', 'layout', 'marketing'],
-    popularityRank: 9,
+    popularityRank: 10,
     updatedAt: '2026-06',
   },
   {
@@ -785,7 +775,6 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://workspace.google.com/products/pics',
     tags: ['design', 'imagem', 'workspace', 'google', 'apresentação', 'new'],
     isNew: true,
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -807,7 +796,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (com créditos mensais limitados); Pro a US$ 15/mês (mais créditos, recursos avançados); Enterprise sob consulta.',
     url: 'https://stability.ai/magic-studio',
     tags: ['imagem', 'edição', 'geração', 'stability ai', 'retoque', 'upscale', 'design'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -830,7 +818,6 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://magnific.ai',
     tags: ['imagem', 'upscaling', 'edição', 'generative ai', 'freepik', 'qualidade'],
     isNew: true,
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
 
@@ -855,7 +842,6 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://openai.com/sora',
     tags: ['vídeo', 'geração', 'openai', 'cinematográfico', 'animação', 'descontinuado'],
     isFeatured: false,
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -877,7 +863,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis com 125 créditos (uso único); Standard a US$ 15/mês (US$ 12/mês anual, 625 créditos/mês); Pro a US$ 35/mês (US$ 28/mês anual, 2.250 créditos/mês, custom voice creation); Unlimited a US$ 95/mês (US$ 76/mês anual, 2.250 credits/mês + gerações ilimitadas em Explore Mode); Enterprise sob consulta. API a US$ 0.01 por crédito.',
     url: 'https://runwayml.com',
     tags: ['vídeo', 'geração', 'edição', 'efeitos', 'cinematográfico', 'profissional'],
-    popularityRank: 20,
+    popularityRank: 13,
     updatedAt: '2026-06',
   },
   {
@@ -899,7 +885,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Atualmente em acesso limitado (private beta). Previsão de Grátis (com créditos diários) e planos pagos a partir de US$ 9,99/mês. Preços exatos para acesso internacional podem variar após lançamento completo. Integrado ao plano Standard da Runway.',
     url: 'https://klingai.com',
     tags: ['vídeo', 'geração', 'longo', 'realista', 'animação', 'kuaishou'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -921,7 +906,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (3 vídeos/mês, 720p, marca d\'água, até 1 minuto/vídeo). Creator a US$ 29/mês (US$ 24/mês anual, 15 vídeos/mês, 1080p, sem marca d\'água, 1 custom avatar, 1 voice clone, até 5 minutos/vídeo). Business a US$ 89/mês (US$ 72/mês anual, vídeos ilimitados, 4K, 5 custom avatars, 5 voice clones, 40+ idiomas para lip-sync, API, 3 team seats, até 20 minutos/vídeo). Pro a US$ 49/mês. Enterprise sob consulta.',
     url: 'https://www.heygen.com',
     tags: ['vídeo', 'avatar', 'apresentação', 'tradução', 'corporativo', 'lip sync'],
-    popularityRank: 12,
+    popularityRank: 11,
     updatedAt: '2026-06',
   },
   {
@@ -943,7 +928,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (10 minutos de vídeo/mês, 9 avatares AI, marca d\'água). Starter a US$ 29/mês (US$ 18/mês anual, 10 minutos de vídeo/mês, 125+ avatares, 3 personal avatars, remoção de logo). Creator a US$ 89/mês (US$ 64/mês anual, 30 minutos de vídeo/mês, 180+ avatares, 5 personal avatars, acesso à API). Enterprise sob consulta (minutos ilimitados, 240+ avatares, SAML/SSO, exportação SCORM).',
     url: 'https://www.synthesia.io',
     tags: ['vídeo', 'avatar', 'corporativo', 'tradução', 'e-learning', 'apresentação'],
-    popularityRank: undefined,
+    popularityRank: 23,
     updatedAt: '2026-06',
   },
   {
@@ -965,7 +950,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Atualmente em acesso limitado (private preview). Disponível através de Google One AI Premium (US$ 19,99/mês, acesso a Veo). Planos de API do Google AI Studio/Vertex AI: Veo 1.0 (preços variam por resolução e duração, ex: US$ 0.05-US$ 0.60/segundo). Integrado ao plano Standard da Runway.',
     url: 'https://ai.google/frontier/veo/',
     tags: ['vídeo', 'geração', 'google', 'cinematográfico', 'animação', 'áudio', 'multimodal'],
-    popularityRank: 13,
+    popularityRank: 12,
     updatedAt: '2026-06',
   },
   {
@@ -987,7 +972,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (uso limitado com marca d\'água); Standard a US$ 8/mês; Pro a US$ 24/mês.',
     url: 'https://www.pika.art/',
     tags: ['vídeo', 'geração', 'animação', 'edição', 'discord'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1009,7 +993,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (créditos limitados); Planos pagos a partir de US$ 9.99/mês.',
     url: 'https://higgsfield.ai',
     tags: ['vídeo', 'imagem', 'geração', 'dinâmico', 'criativo', 'marketing'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1031,7 +1014,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (60 minutos de processamento/mês, vídeo 1080p, com marca d\'água, clips expiram em 3 dias). Starter a US$ 15/mês (150 minutos, sem marca d\'água, 30 dias de exportação). Pro a US$ 29/mês (US$ 14.50/mês no plano anual, 300 minutos/mês ou 3.600/ano, AI B-Roll, social scheduler, XML export, team workspace, 2 team seats). Business com preço customizado (API access, SSO, unlimited seats, dedicated support).',
     url: 'https://www.opus.pro',
     tags: ['vídeo', 'edição', 'redes sociais', 'viral', 'podcast', 'youtube shorts', 'reels', 'tiktok'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1053,7 +1035,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (30 gerações/mês, velocidade padrão, marca d\'água, uso não comercial). Plus a US$ 29.99/mês (~120 gerações/mês, direitos comerciais, sem marca d\'água, fila de alta prioridade). Pro a US$ 99.99/mês (~400 gerações/mês, maior velocidade, acesso a keyframes e extensão de imagem). Ultra a US$ 300/mês (aumento significativo de capacidade).',
     url: 'https://lumalabs.ai/dream-machine',
     tags: ['vídeo', 'geração', 'realista', 'animação', 'cinematográfico', 'consistência', 'new'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1075,7 +1056,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (10 minutos de geração AI/semana, com marca d\'água). Planos pagos baseados em créditos, a partir de US$ 17/mês (faturamento anual) para o plano Plus (75 créditos/mês, acesso a modelos avançados de IA como Veo, Kling, ElevenLabs). Planos Max, Generative e Elite com mais créditos e recursos.',
     url: 'https://invideo.io/ai/',
     tags: ['vídeo', 'geração', 'texto para vídeo', 'redes sociais', 'marketing', 'edição'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1098,7 +1078,6 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://openai.com/spud', // Placeholder URL
     tags: ['vídeo', 'geração', 'openai', 'successor sora', 'realismo', 'animação'],
     isNew: true,
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
 
@@ -1123,7 +1102,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://elevenlabs.io',
     tags: ['voz', 'narração', 'clone de voz', 'podcast', 'dublagem', 'tts', 'português'],
     isFeatured: true,
-    popularityRank: 14,
+    popularityRank: 8,
     updatedAt: '2026-06',
   },
   {
@@ -1145,7 +1124,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis com 50 créditos/dia (sem direitos comerciais e downloads restritos). Pro a US$ 10/mês (US$ 8/mês anual, 2.500 créditos/mês, direitos comerciais, downloads). Premier a US$ 30/mês (US$ 24/mês anual, 10.000 créditos/mês, direitos comerciais, Suno Studio). Planos anuais oferecem 20% de desconto. Suno v5.5.',
     url: 'https://suno.com',
     tags: ['música', 'geração', 'composição', 'trilha sonora', 'jingle', 'letra'],
-    popularityRank: 15,
+    popularityRank: 14,
     updatedAt: '2026-06',
   },
   {
@@ -1167,7 +1146,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (1 hora de transcrição/mês, marca d\'água); Creator a US$ 24/mês (US$ 12/mês anual, 10 horas de transcrição); Pro a US$ 30/mês (US$ 24/mês anual, 20 horas de transcrição); Business sob consulta.',
     url: 'https://www.descript.com',
     tags: ['podcast', 'edição de áudio', 'transcrição', 'legenda', 'vídeo', 'edição'],
-    popularityRank: 16,
+    popularityRank: 30,
     updatedAt: '2026-06',
   },
   {
@@ -1189,7 +1168,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Open source e gratuito para uso local; API da OpenAI a US$ 0,006/minuto.',
     url: 'https://openai.com/research/whisper',
     tags: ['transcrição', 'reconhecimento de voz', 'open source', 'áudio', 'legendas', 'stt'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1211,7 +1189,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (5 minutos de áudio/mês); Basic a US$ 8/mês; Standard a US$ 28/mês; Premium a US$ 88/mês.',
     url: 'https://fliki.ai/',
     tags: ['vídeo', 'áudio', 'tts', 'geração de vídeo', 'texto para vídeo', 'narração'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1233,7 +1210,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (10 minutos de tradução/mês); Pro a US$ 25/mês (600 minutos de tradução/mês, 5 clones de voz); Business a US$ 99/mês (3.000 minutos/mês, 20 clones de voz, API); Enterprise sob consulta.',
     url: 'https://lingua.ai',
     tags: ['tradução', 'voz', 'tempo real', 'dublagem', 'clonagem de voz', 'multilíngue', 'comunicação'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1255,7 +1231,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (150 créditos, vozes básicas, página compartilhável não-branded). Creator a US$ 25/mês (US$ 21/mês anual, 1.000 créditos, 1 clone de voz, 3 vozes personalizadas, 300+ vozes em 30 idiomas); Pro a US$ 45/mês (US$ 42/mês anual, 2.000-4.000 créditos, 5 clones de voz, 1.000+ vozes em 50 idiomas, efeitos sonoros e tradução por IA); Business a partir de US$ 60/seat/mês (800 créditos combinados, colaboração em equipe); Enterprise com preço customizado.',
     url: 'https://www.wondercraft.ai',
     tags: ['podcast', 'áudio', 'tts', 'clonagem de voz', 'edição de áudio', 'marketing', 'geração'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1277,7 +1252,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (2 horas de áudio processado/mês). Planos mensais a partir de US$ 11/mês; Créditos avulsos a US$ 12 por 5 horas; Planos anuais e Business com preços sob consulta.',
     url: 'https://auphonic.com',
     tags: ['áudio', 'pós-produção', 'podcast', 'edição', 'ruído', 'equalização', 'transcrição'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1299,7 +1273,29 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (10 minutos de geração de voz, sem downloads, sem direitos comerciais). Creator a US$ 29/mês (US$ 19/mês anual, 24 horas/ano de geração, 1 usuário, direitos comerciais); Business a US$ 99/mês (US$ 66/mês anual, 96 horas/ano de geração, 1 editor, suporte prioritário); Enterprise sob consulta (geração ilimitada, conformidade SOC 2/ISO 27001, gerente de conta, clonagem de voz). API com preços separados (ex: US$ 0.03/1.000 caracteres para TTS com qualidade de estúdio).',
     url: 'https://murf.ai',
     tags: ['tts', 'narração', 'voz', 'e-learning', 'marketing', 'clonagem de voz'],
-    popularityRank: undefined,
+    updatedAt: '2026-06',
+  },
+  {
+    id: 'hume-ai',
+    name: 'Hume AI',
+    developer: 'Hume AI',
+    category: 'Áudio & Voz',
+    emoji: '🗣️',
+    tagline: 'Geração de voz emocionalmente inteligente e detecção de emoções',
+    description:
+      'Hume AI oferece geração de voz com IA que entende e expressa emoções, além de um API para análise de emoções em áudio, vídeo e texto. Inclui o modelo Octave TTS e o recém-lançado TADA, um modelo open-source que gera fala sem alucinações de conteúdo.',
+    useCases: [
+      'Gerar vozes com entonação emocional para assistentes de IA',
+      'Criar narrações de áudio com expressividade para storytelling',
+      'Analisar emoções em interações de clientes para atendimento',
+      'Produzir conteúdo de áudio para jogos e experiências imersivas',
+    ],
+    pricing: 'Freemium',
+    pricingDetails: 'Grátis (10.000 caracteres/mês, 5 minutos de uso EVI, clonagem de voz ilimitada, sem licença comercial). Starter a US$ 3/mês (30.000 caracteres, 40 minutos EVI, sem licença comercial). Creator a US$ 14/mês (140.000 caracteres, 200 minutos EVI, licença comercial, 50% de desconto no primeiro mês). Pro a US$ 70/mês (1.000.000 caracteres). Business a US$ 500/mês (10.000.000 caracteres, 5 assentos de equipe). API de Medição de Expressão (pay-as-you-go): a partir de US$ 0.0639/minuto para áudio.',
+    url: 'https://www.hume.ai',
+    tags: ['voz', 'emoção', 'tts', 'detecção de emoções', 'agente conversacional', 'open source', 'new'],
+    isNew: true,
+    popularityRank: 30,
     updatedAt: '2026-06',
   },
 
@@ -1346,7 +1342,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (acesso a recursos de IA para análise de documentos, geração de resumos e podcasts). Requer uma conta Google.',
     url: 'https://notebooklm.google.com',
     tags: ['pesquisa', 'documentos', 'pdf', 'estudo', 'resumo', 'análise', 'google'],
-    popularityRank: 10,
+    popularityRank: 9,
     updatedAt: '2026-06',
   },
   {
@@ -1368,7 +1364,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis com recursos básicos; Pro a US$ 9.99/mês (US$ 7.50/mês no plano anual).',
     url: 'https://you.com',
     tags: ['busca', 'privacidade', 'pesquisa', 'agentes', 'web', 'análise'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1390,7 +1385,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Brave Search com resumos de IA básicos); Brave Leo Premium a US$ 15/mês (acesso a modelos LLM avançados e uso ilimitado).',
     url: 'https://search.brave.com/',
     tags: ['busca', 'privacidade', 'ai search', 'resumo', 'web', 'agente'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1412,7 +1406,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Trial grátis (2.000 créditos por 14 dias); Essential a US$ 10/mês (80.000 créditos/mês, detecção de IA e plágio, suporte por e-mail/chat, relatórios em PDF); Advanced a US$ 18/mês (200.000 créditos/mês, detecção de imagens/deepfake, até 5 membros de equipe); Elite a US$ 26/mês (créditos ilimitados/mês, certificação HUMN-1 website).',
     url: 'https://gowinston.ai',
     tags: ['detecção de ia', 'plágio', 'originalidade', 'conteúdo', 'educação', 'edição'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1435,7 +1428,6 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://comet.ai',
     tags: ['navegador', 'pesquisa', 'agente', 'automação', 'produtividade', 'web'],
     isNew: true,
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
 
@@ -1460,7 +1452,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://www.make.com',
     tags: ['automação', 'no-code', 'integração', 'workflow', 'zapier', 'api'],
     isFeatured: true,
-    popularityRank: 19,
+    popularityRank: 22,
     updatedAt: '2026-06',
   },
   {
@@ -1482,7 +1474,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis com 100 tarefas/mês; Starter a partir de US$ 19,99/mês; Team a partir de US$ 59/mês; Company sob consulta. Inclui Zapier Copilot, AI by Zapier, Zapier Agents e Chatbots by Zapier.',
     url: 'https://zapier.com',
     tags: ['automação', 'integração', 'workflow', 'no-code', 'agentes', 'produtividade'],
-    popularityRank: 18,
+    popularityRank: 21,
     updatedAt: '2026-06',
   },
   {
@@ -1504,7 +1496,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Open source e auto-hospedagem gratuita; Cloud Starter a €29/mês (aprox. US$ 31/mês, 2.500 execuções); Cloud Pro a €99/mês (aprox. US$ 107/mês, 10.000 execuções); Cloud Business a €499/mês (aprox. US$ 538/mês, 40.000 execuções); Enterprise sob consulta.',
     url: 'https://n8n.io',
     tags: ['automação', 'open source', 'self-hosted', 'workflow', 'agentes', 'código'],
-    popularityRank: 28,
+    popularityRank: 27,
     updatedAt: '2026-06',
   },
   {
@@ -1526,7 +1518,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (uso limitado, até 5 automações/dia); Personal a US$ 15/mês (automações ilimitadas, 100 horas de agente/mês); Family a US$ 25/mês (até 5 usuários, 250 horas de agente/mês); Enterprise sob consulta.',
     url: 'https://aura.ai',
     tags: ['automação', 'produtividade', 'agente', 'assistente pessoal', 'workflow', 'inteligência artificial'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1548,7 +1539,6 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (400 créditos/mês). Starter a US$ 19,99/mês (2.000 créditos/mês); Pro a US$ 49,99/mês (5.000 créditos/mês, automações ilimitadas); Max a US$ 199,99/mês (7x uso do plano Pro); Enterprise sob consulta.',
     url: 'https://lindy.ai/',
     tags: ['automação', 'agente', 'workflow', 'produtividade', 'personalizável', 'enterprise'],
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1571,7 +1561,6 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://manus.im',
     tags: ['agente', 'automação', 'web scraping', 'produtividade', 'desktop automation'],
     isNew: true,
-    popularityRank: undefined,
     updatedAt: '2026-06',
   },
 ];

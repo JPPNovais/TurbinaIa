@@ -2834,4 +2834,161 @@ Agora, por favor, me forneça sua lista de tarefas para análise.`,
 *   Instruções para ser proativo na oferta de conexões e insights.`,
     tags: ['Produtividade', 'Gestão de Conhecimento', 'IA Pessoal', 'Organização']
   },
+  {
+    id: 'social-media-agente-engajamento-ia',
+    title: 'Agente IA para Análise e Estratégia de Engajamento em Redes Sociais',
+    category: 'Redes Sociais',
+    description: 'Crie um plano de ação detalhado para um agente de IA monitorar, analisar e otimizar o engajamento do seu conteúdo em uma plataforma de rede social.',
+    template: `Você atuará como um Agente de IA especializado em estratégia e engajamento em redes sociais. Seu objetivo é ajudar a otimizar minha presença e resultados na plataforma [Plataforma de Rede Social, ex: Instagram, LinkedIn, TikTok].
+
+Com base nas informações abaixo, crie um plano de ação detalhado para um agente de IA, incluindo:
+1.  **Objetivos de Engajamento**: Quais são os objetivos específicos de engajamento (ex: aumentar comentários em 20%, cliques no link da bio em 15%)?
+2.  **Público-Alvo**: Descreva meu público-alvo principal (idade, interesses, dores, o que valorizam).
+3.  **Tipo de Conteúdo Atual**: Quais tipos de conteúdo eu publico atualmente (ex: posts estáticos, reels, stories, artigos)?
+4.  **Métricas Atuais**: Quais métricas de engajamento eu acompanho (ex: likes, comentários, salvamentos, compartilhamentos, tempo de visualização, alcance)?
+5.  **Acesso a Dados**: O agente terá acesso a dados de performance (sim/não) e, se sim, quais (ex: insights da plataforma, Google Analytics)?
+
+**Plano de Ação para o Agente de IA:**
+Detalhe as etapas que o agente deve seguir, incluindo:
+-   **Monitoramento**: Quais dados monitorar? Com que frequência?
+-   **Análise**: Como analisar os dados para identificar padrões, tendências de engajamento e conteúdo de alto/baixo desempenho? Quais ferramentas ou métodos usar?
+-   **Recomendações**: Que tipo de recomendações o agente deve gerar (ex: sugestões de temas, formatos, horários de postagem, otimização de legendas, CTAs)? Como essas recomendações devem ser apresentadas?
+-   **Experimentação**: Como o agente pode propor e monitorar testes A/B ou outras experiências para validar hipóteses?
+-   **Relatório**: Qual o formato e a frequência dos relatórios que o agente deve gerar?
+-   **Considerações Éticas**: Quais limitações ou considerações éticas o agente deve observar (ex: evitar manipulação, privacidade de dados)?
+
+Considere as melhores práticas para a plataforma [Plataforma de Rede Social] e as tendências de IA em 2026.`,
+    tags: ['Redes Sociais', 'Agente IA', 'Engajamento', 'Estratégia Digital'],
+  },
+  {
+    id: 'education-assistente-estudo-ia-multimodal',
+    title: 'Assistente de Estudo Personalizado com IA Multimodal',
+    category: 'Educação',
+    description: 'Crie um design para um assistente de estudo inteligente que utiliza diferentes modalidades de IA para adaptar o aprendizado ao estilo do usuário e gerar conteúdo relevante.',
+    template: `Você atuará como um designer de assistentes de IA para educação. Sua tarefa é conceber um "Assistente de Estudo Personalizado com IA Multimodal" que ajude estudantes a aprender de forma mais eficaz, adaptando-se às suas necessidades e estilo.
+
+Com base nas informações do usuário, detalhe a arquitetura e as funcionalidades do assistente:
+1.  **Público-Alvo do Estudante**: [Ex: Estudantes universitários de engenharia, alunos do ensino médio se preparando para o ENEM, profissionais buscando novas habilidades]
+2.  **Área de Conhecimento**: [Ex: Programação Python, História do Brasil, Física Quântica, Marketing Digital]
+3.  **Estilo de Aprendizagem Preferido (se conhecido)**: [Ex: Visual, Auditivo, Leitura/Escrita, Cinestésico - se desconhecido, o assistente deve descobrir]
+4.  **Objetivos de Aprendizagem**: [Ex: Dominar conceitos de cálculo, passar em um exame específico, desenvolver fluência em um idioma]
+
+**Design do Assistente de Estudo Multimodal:**
+Descreva as funcionalidades e como a IA será utilizada em diferentes modalidades:
+-   **Módulo de Diagnóstico Inicial**: Como o assistente avalia o nível atual de conhecimento e o estilo de aprendizagem do usuário? (Ex: quiz adaptativo, análise de interações)
+-   **Geração de Conteúdo Adaptativo**:
+    -   **Texto**: Como ele gera resumos, explicações aprofundadas, artigos?
+    -   **Visual**: Como ele cria diagramas, infográficos, mapas mentais, flashcards visuais?
+    -   **Áudio**: Como ele pode gerar explicações em áudio, podcasts curtos, leitura de textos?
+    -   **Interativo**: Como ele cria exercícios práticos, simuladores, cenários de problemas?
+-   **Caminho de Aprendizagem Dinâmico**: Como o assistente ajusta a rota de aprendizagem com base no progresso, dificuldades e feedback do usuário?
+-   **Mecanismo de Feedback e Reforço**: Como ele oferece feedback construtivo e reforça o aprendizado (ex: correção de exercícios, sugestões de revisão)?
+-   **Integração com Ferramentas Externas**: Quais integrações podem ser úteis (ex: calendários, plataformas de cursos, repositórios de artigos)?
+-   **Monitoramento de Progresso**: Como o assistente acompanha o desempenho e apresenta o progresso ao estudante?
+-   **Personalidade do Assistente**: Qual deve ser o tom e estilo de interação do assistente (ex: formal, amigável, incentivador)?
+
+Pense em como a IA pode ir além da simples apresentação de conteúdo, atuando como um verdadeiro mentor.`,
+    tags: ['Educação', 'Aprendizagem Adaptativa', 'IA Multimodal', 'Estudo Personalizado'],
+  },
+  {
+    id: 'ia-design-agente-gestao-projetos-ageis',
+    title: 'Design de Agente de IA para Gestão de Projetos Ágeis',
+    category: 'IA & Automação',
+    description: 'Projete um agente de IA especializado em auxiliar na gestão de projetos ágeis, otimizando sprints, identificando impedimentos e melhorando a comunicação da equipe.',
+    template: `Você é um arquiteto de sistemas de IA focado em otimização de processos de trabalho. Minha tarefa é projetar um "Agente de IA para Gestão de Projetos Ágeis" que complemente e otimize a equipe de desenvolvimento.
+
+Com base nas informações do projeto, crie um design detalhado para este agente:
+1.  **Metodologia Ágil Principal**: [Ex: Scrum, Kanban, Scrumban]
+2.  **Tamanho da Equipe**: [Ex: 5 desenvolvedores, 1 Scrum Master, 1 Product Owner]
+3.  **Ferramentas Atuais de Gestão**: [Ex: Jira, Trello, Asana, Azure DevOps, Slack]
+4.  **Desafios Atuais da Equipe**: [Ex: Atrasos em sprints, dificuldade em estimar tarefas, comunicação defasada, identificação tardia de impedimentos]
+5.  **Objetivos para o Agente**: [Ex: Acelerar a entrega de features em 15%, reduzir impedimentos em 20%, melhorar a visibilidade do projeto]
+
+**Design do Agente de IA para Projetos Ágeis:**
+Detalhe a arquitetura e as funcionalidades do agente:
+-   **Módulos de Integração**: Quais ferramentas o agente deve se integrar (API) para coletar dados (status de tarefas, logs de comunicação, etc.)?
+-   **Módulo de Análise de Sprint/Backlog**: Como o agente analisa o backlog, o progresso das tarefas e a capacidade da equipe para otimizar o planejamento de sprints? (Ex: Sugestão de priorização, identificação de gargalos)
+-   **Módulo de Detecção e Alerta de Impedimentos**: Como ele identifica potenciais impedimentos (ex: dependências não resolvidas, desvio de escopo, bloqueios técnicos) e alerta a equipe proativamente?
+-   **Módulo de Comunicação e Colaboração**: Como o agente pode facilitar a comunicação (ex: resumir discussões, agendar reuniões, lembrar de follow-ups em ferramentas de chat)?
+-   **Módulo de Otimização de Estimativas**: Como ele pode usar dados históricos para ajudar a equipe a refinar estimativas de tarefas futuras?
+-   **Módulo de Geração de Relatórios e Insights**: Que tipo de relatórios (ex: burndown charts, velocidade da equipe, análise de causas de atraso) e insights o agente deve gerar para o Scrum Master e Product Owner?
+-   **Módulo de Feedback e Melhoria Contínua**: Como o agente pode aprender com o feedback da equipe e adaptar suas sugestões?
+-   **Considerações de Segurança e Privacidade**: Como garantir a segurança dos dados do projeto e a privacidade da equipe?
+
+O agente deve atuar como um facilitador inteligente, não como um substituto para a interação humana.`,
+    tags: ['IA & Automação', 'Gestão de Projetos', 'Agile', 'Agente IA'],
+  },
+  {
+    id: 'career-plano-carreira-habilidades-ia',
+    title: 'Plano de Carreira e Desenvolvimento de Habilidades com IA',
+    category: 'Carreira',
+    description: 'Crie um plano de carreira personalizado, identificando lacunas de habilidades e sugerindo um roteiro de desenvolvimento baseado nas tendências do mercado e nos objetivos do usuário, utilizando análise de IA.',
+    template: `Você é um coach de carreira e especialista em mercado de trabalho impulsionado por IA. Seu objetivo é ajudar o usuário a traçar um plano de carreira estratégico e desenvolver as habilidades necessárias para alcançar seus objetivos.
+
+Com base nas informações abaixo, crie um plano de carreira detalhado, incluindo análise de lacunas de habilidades e um roteiro de desenvolvimento:
+1.  **Cargo/Área Atual**: [Ex: Analista de Marketing Digital, Desenvolvedor Backend Júnior, Gerente de Projetos]
+2.  **Experiência Profissional Relevante**: [Liste as principais experiências, responsabilidades e conquistas]
+3.  **Habilidades Atuais (hard e soft)**: [Ex: Python, SQL, Comunicação, Liderança, SEO, Edição de Vídeo]
+4.  **Objetivo de Carreira (Próximos 3-5 anos)**: [Ex: Tornar-se Gerente de Marketing, Transicionar para Engenharia de Dados, Abrir meu próprio negócio, Alcançar um cargo sênior em IA]
+5.  **Interesses Pessoais e Valores**: [O que te motiva, que tipo de cultura de trabalho você prefere, o que é importante para você na carreira?]
+
+**Plano de Carreira Otimizado por IA:**
+-   **Análise de Mercado e Tendências (por IA)**:
+    -   Quais são as tendências do mercado para a área de [Objetivo de Carreira]?
+    -   Quais cargos relacionados estão em alta e quais são as expectativas salariais médias?
+    -   Quais são as habilidades mais demandadas (hard e soft) para esses cargos em [Ano Atual ou Próximos 2 Anos]?
+-   **Identificação de Lacunas de Habilidades**:
+    -   Compare suas [Habilidades Atuais] com as habilidades demandadas. Quais são as principais lacunas?
+    -   Priorize as lacunas mais críticas e de maior impacto para seu objetivo.
+-   **Roteiro de Desenvolvimento de Habilidades (com Sugestões de Recursos)**:
+    -   Para cada lacuna identificada, sugira 2-3 recursos de aprendizagem (ex: cursos online, certificações, projetos práticos, livros, mentoria).
+    -   Crie um cronograma de desenvolvimento realista (ex: "Mês 1-3: Foco em [Habilidade X] com [Recurso Y]").
+-   **Estratégias de Networking e Visibilidade**:
+    -   Como você pode expandir sua rede de contatos na área? (ex: eventos, LinkedIn, comunidades online)
+    -   Como você pode aumentar sua visibilidade profissional para o objetivo desejado? (ex: portfólio, artigos, apresentações)
+-   **Plano de Ação de Curto Prazo (Próximos 6 meses)**:
+    -   Liste 3-5 ações concretas e mensuráveis para iniciar o plano.
+
+O plano deve ser ambicioso, mas também prático e adaptável, considerando que o mercado de trabalho está em constante evolução.`,
+    tags: ['Carreira', 'Desenvolvimento Profissional', 'Habilidades', 'IA no Trabalho'],
+  },
+  {
+    id: 'negocios-agente-inteligencia-competitiva-avancado',
+    title: 'Agente de IA para Inteligência Competitiva e Estratégia de Mercado Dinâmica',
+    category: 'Negócios',
+    description: 'Projete um agente de IA para monitorar continuamente o mercado, analisar a concorrência e as tendências, e gerar recomendações estratégicas proativas para o seu negócio.',
+    template: `Você é um arquiteto de agentes de IA focado em inteligência de negócios. Minha tarefa é projetar um "Agente de IA para Inteligência Competitiva e Estratégia de Mercado Dinâmica" que atue como um observador e consultor estratégico contínuo para o meu negócio.
+
+Com base nas informações abaixo, crie um design detalhado para este agente:
+1.  **Meu Negócio**: [Nome da Empresa, Setor, Produtos/Serviços Principais, Proposta de Valor Única]
+2.  **Principais Concorrentes**: [Liste 3-5 concorrentes diretos e indiretos]
+3.  **Mercado-Alvo**: [Descreva o perfil do cliente, tamanho do mercado, geografia]
+4.  **Canais de Informação Relevantes**: [Ex: Notícias do setor, blogs de tecnologia, relatórios de pesquisa de mercado, redes sociais de concorrentes, fóruns, patentes]
+5.  **Objetivos Estratégicos Atuais**: [Ex: Aumentar a participação de mercado em 10%, lançar um novo produto em X meses, otimizar custos, expandir para um novo segmento]
+
+**Design do Agente de IA para Inteligência e Estratégia:**
+Detalhe a arquitetura e as funcionalidades do agente:
+-   **Módulo de Coleta de Dados Contínua**:
+    -   Quais fontes de dados o agente deve monitorar (web scraping, APIs de notícias, bancos de dados específicos, feeds RSS, redes sociais)?
+    -   Com que frequência os dados devem ser coletados e atualizados?
+-   **Módulo de Análise Competitiva**:
+    -   Como o agente identificará novos produtos/serviços, estratégias de preços, campanhas de marketing, mudanças na comunicação dos concorrentes?
+    -   Como ele avalia o posicionamento dos concorrentes em relação ao meu negócio?
+-   **Módulo de Análise de Tendências de Mercado**:
+    -   Como ele detecta tendências emergentes no setor (tecnológicas, sociais, regulatórias, de consumo)?
+    -   Como ele analisa o impacto potencial dessas tendências no meu negócio?
+-   **Módulo de Análise SWOT Dinâmica**:
+    -   Como o agente pode manter uma análise SWOT (Forças, Fraquezas, Oportunidades, Ameaças) atualizada para o meu negócio com base nos dados coletados?
+-   **Módulo de Geração de Recomendações Estratégicas**:
+    -   Com base nas análises, que tipo de recomendações o agente deve gerar (ex: sugestões de novos recursos, ajustes de precificação, campanhas de marketing direcionadas, alertas sobre riscos)?
+    -   Como as recomendações devem ser priorizadas e apresentadas (ex: relatório executivo, alertas em tempo real)?
+-   **Módulo de Simulação de Cenários**:
+    -   Como o agente pode simular o impacto de diferentes decisões estratégicas ou mudanças no mercado?
+-   **Interface de Relatórios e Dashboard**:
+    -   Qual deve ser o formato e a frequência dos relatórios? Quais métricas-chave devem ser visualizadas?
+-   **Considerações de Viés e Confiabilidade**: Como o agente minimiza vieses nos dados ou na análise e como sua confiabilidade é mantida?
+
+O objetivo é fornecer insights acionáveis que permitam ao meu negócio reagir rapidamente e de forma estratégica às mudanças do mercado.`,
+    tags: ['Negócios', 'Inteligência Competitiva', 'Estratégia de Mercado', 'Agente IA'],
+  },
 ];

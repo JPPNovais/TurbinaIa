@@ -13,6 +13,36 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-gpt-5-6-2026',
+    date: '2026-06',
+    title: 'OpenAI lança GPT-5.6 com raciocínio avançado e fluxos de trabalho agenticos',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'A OpenAI lançou seu modelo GPT-5.6, que traz avanços notáveis em capacidades de IA, com foco em raciocínio avançado, fluxos de trabalho agenticos e eficiência de tokens.',
+    highlights: [
+      'Lançamento previsto para junho de 2026.',
+      'Avanços em raciocínio avançado e fluxos de trabalho agenticos, visando melhorar a precisão na tomada de decisões e reduzir a necessidade de supervisão humana.',
+      'Introdução de eficiência de tokens aprimorada, o que pode reduzir custos operacionais e otimizar o desempenho em diversas aplicações.',
+      'O modelo se posiciona como líder na indústria de IA, empurrando os limites em eficiência, raciocínio e interfaces amigáveis.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-composer-2-5-2026',
+    date: '2026-06',
+    title: 'xAI lança Grok Composer 2.5, modelo especializado para tarefas de codificação e instruções complexas',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI lançou o Composer 2.5, um novo modelo integrado ao Grok Build, otimizado para tarefas de longa duração e instruções complexas, com fortes capacidades em codificação e uso de ferramentas.',
+    highlights: [
+      'Anunciado em 1º de junho de 2026, o Composer 2.5 está disponível no Grok Build.',
+      'Posicionado como uma opção rápida e altamente inteligente, construída especificamente para tarefas de longa duração e seguir instruções complexas.',
+      'Demonstra pontos fortes em codificação, agentes, JSON e uso de ferramentas, incluindo chamada de função, uso de ferramentas e execução de código.',
+      'Construído a partir do checkpoint open-source do Kimi K2.5 da Moonshot e treinado com 25 vezes mais tarefas sintéticas que seu predecessor, Composer 2.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'anthropic-claude-mythos-preview-2026',
     date: '2026-06',
     title: 'Anthropic revela Claude Mythos Preview, modelo com acesso restrito devido a capacidades perigosas em cibersegurança',

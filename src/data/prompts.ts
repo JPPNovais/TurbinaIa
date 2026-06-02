@@ -2991,4 +2991,137 @@ Detalhe a arquitetura e as funcionalidades do agente:
 O objetivo é fornecer insights acionáveis que permitam ao meu negócio reagir rapidamente e de forma estratégica às mudanças do mercado.`,
     tags: ['Negócios', 'Inteligência Competitiva', 'Estratégia de Mercado', 'Agente IA'],
   },
+  {
+    id: 'ia-agente-faq-otimizacao',
+    title: 'Agente IA para Otimização de FAQ e Atendimento',
+    category: 'IA & Automação',
+    description: 'Cria um plano para um agente de IA que otimiza e automatiza a gestão de FAQs de atendimento ao cliente, identificando lacunas e sugerindo melhorias contínuas.',
+    template: `Você é um especialista em IA e atendimento ao cliente. Meu objetivo é desenvolver um agente de IA que possa otimizar continuamente nossa seção de FAQ e melhorar a eficiência do atendimento.
+
+Desenvolva um plano detalhado para este agente de IA, cobrindo os seguintes pontos:
+
+1.  **Objetivos Principais do Agente:** Quais resultados-chave o agente deve buscar (ex: redução de volume de chamados, aumento da satisfação do cliente, etc.)?
+2.  **Fontes de Dados para Análise:** Quais dados o agente deve monitorar e analisar?
+    *   Transcrições de conversas de [chat/email/voz] com clientes sobre [tópico principal].
+    *   Feedback direto de clientes sobre [produto/serviço].
+    *   Dados de busca na [página de FAQ/base de conhecimento].
+    *   [Outras fontes relevantes].
+3.  **Funcionalidades de Análise e Identificação de Lacunas:** Como o agente irá identificar:
+    *   Perguntas frequentes que não estão na FAQ.
+    *   Respostas existentes que são confusas ou incompletas.
+    *   Novos tópicos emergentes de dúvidas.
+    *   Tendências de problemas recorrentes.
+4.  **Mecanismos de Sugestão e Geração de Conteúdo:** Como o agente irá propor melhorias?
+    *   Sugestões de novas perguntas e respostas para a FAQ.
+    *   Edições para clarear respostas existentes.
+    *   Geração de rascunhos de artigos ou guias baseados em lacunas.
+    *   [Formato das sugestões: texto, mini-vídeo script, etc.].
+5.  **Ciclo de Melhoria Contínua:** Como o agente aprende e se adapta ao longo do tempo?
+    *   Feedback humano sobre as sugestões.
+    *   Monitoramento da eficácia das novas FAQs.
+    *   Integração com [sistema de CRM/base de conhecimento].
+6.  **Métricas de Sucesso:** Como vamos medir o impacto do agente?
+
+Nosso [produto/serviço] é: [Nome do produto/serviço].
+Nosso principal público-alvo tem [características do público].
+O tom de voz da nossa marca é: [tom de voz, ex: amigável, formal, técnico].
+
+Detalhe cada seção com etapas claras e exemplos de como o agente funcionaria.`,
+    tags: ['agente IA', 'automação', 'atendimento ao cliente', 'otimização', 'FAQ'],
+  },
+  {
+    id: 'career-ia-coach-habilidades-interpessoais',
+    title: 'AI Coach para Desenvolvimento de Soft Skills',
+    category: 'Carreira',
+    description: 'Desenha um programa de coaching com IA para aprimorar habilidades interpessoais cruciais para o sucesso profissional, com feedback e cenários práticos.',
+    template: `Você é um AI coach especializado em desenvolvimento de carreira e habilidades interpessoais. Meu objetivo é aprimorar minhas [habilidades interpessoais específicas, ex: comunicação eficaz, liderança, negociação, empatia, feedback construtivo] para impulsionar minha carreira em [área profissional, ex: gestão de projetos, vendas, desenvolvimento de software].
+
+Crie um plano de desenvolvimento personalizado, com duração de [duração, ex: 4 semanas, 3 meses], que inclua:
+
+1.  **Diagnóstico Inicial (Simulado):** Uma série de perguntas ou um mini-cenário interativo para avaliar meu nível atual nas habilidades escolhidas e identificar pontos fortes e fracos.
+2.  **Módulos de Aprendizagem:** Para cada habilidade, sugira módulos de aprendizado que incluam:
+    *   **Conceitos Chave:** Definições e importância da habilidade.
+    *   **Técnicas e Estratégias:** Ferramentas práticas para aplicar a habilidade.
+    *   **Recursos Complementares:** Sugestões de leituras, vídeos, cursos (exemplos genéricos).
+3.  **Exercícios Práticos e Cenários Simulados:**
+    *   Desenvolva [número] cenários práticos (role-playing textuais) onde eu possa aplicar as técnicas aprendidas, com feedback construtivo baseado nas minhas "respostas" ou "ações".
+    *   Exemplos de situações: [ex: como lidar com um conflito em equipe, como dar feedback difícil, como apresentar uma ideia a um executivo].
+4.  **Plano de Ação e Acompanhamento:**
+    *   Sugestões de como aplicar o aprendizado no meu dia a dia profissional em [meu contexto atual].
+    *   Métricas de progresso (qualitativas/quantitativas) e como o AI coach me ajudaria a monitorá-las.
+5.  **Reflexão e Ajuste:** Como o programa se adaptaria com base no meu progresso e feedback.
+
+Meu setor de atuação é: [setor].
+Meu cargo atual/nível de experiência: [cargo/nível].
+Meus principais desafios interpessoais são: [desafios, se houver].
+
+Apresente o plano de forma estruturada, com um cronograma sugerido e exemplos concretos para os cenários.`,
+    tags: ['desenvolvimento pessoal', 'soft skills', 'coaching IA', 'carreira', 'liderança'],
+  },
+  {
+    id: 'education-simulador-cenarios-complexos',
+    title: 'Simulador de Cenários Interativos com IA',
+    category: 'Educação',
+    description: 'Cria um roteiro para um simulador de cenários complexos (ex: gestão de crises, negociação) para treinamento, avaliando decisões e fornecendo feedback detalhado.',
+    template: `Você é um designer de treinamento e especialista em IA interativa. Meu objetivo é criar um simulador baseado em texto para treinar profissionais em [tipo de cenário complexo, ex: gestão de crises, negociação de alta performance, tomada de decisões éticas em IA, coordenação de equipes em projetos críticos].
+
+Desenvolva um roteiro detalhado para um módulo de simulação interativa que inclua:
+
+1.  **Título do Cenário e Contexto:** Uma breve descrição do cenário, seu propósito educacional e o público-alvo (ex: gerentes de projeto, líderes de equipe, estudantes de direito).
+2.  **Personagens e seus Papéis:** Os principais "atores" no cenário, suas motivações, desafios e como eles interagem.
+3.  **Início do Cenário:** A situação inicial, os desafios apresentados e as primeiras informações ou e-mails/mensagens que o participante recebe.
+4.  **Pontos de Decisão (Ramificações):** Identifique pelo menos [número] pontos cruciais onde o participante deve tomar uma decisão. Para cada ponto:
+    *   Descreva a situação.
+    *   Apresente [número] opções de escolha (A, B, C...).
+    *   Descreva as possíveis consequências imediatas e de longo prazo de cada escolha.
+5.  **Desenvolvimento Narrativo:** Como a história evolui com base nas decisões, levando a diferentes resultados ou "finais".
+6.  **Mecanismo de Feedback da IA:**
+    *   Como a IA avaliaria as escolhas do participante (ex: com base em princípios éticos, eficiência operacional, impacto financeiro, etc.).
+    *   Que tipo de feedback seria fornecido após cada decisão ou no final do cenário (ex: pontuação, análise SWOT das escolhas, pontos de melhoria, explicação das consequências não óbvias).
+7.  **Recursos Adicionais:** Sugestões de documentos (simulados), dashboards ou relatórios que o participante poderia consultar durante o cenário.
+
+O cenário deve ser focado em: [setor ou indústria, ex: tecnologia, saúde, finanças].
+O objetivo de aprendizado é: [objetivo de aprendizado claro].
+A complexidade esperada é: [baixa, média, alta].
+
+Detalhe a estrutura e exemplos para que o simulador seja engajador e educativo.`,
+    tags: ['treinamento', 'simulação', 'tomada de decisão', 'cenários', 'aprendizado interativo'],
+  },
+  {
+    id: 'finance-analise-preditiva-pequenos-negocios',
+    title: 'Análise Preditiva de Mercado para PMEs',
+    category: 'Finanças',
+    description: 'Gera um relatório de análise preditiva de mercado para um pequeno negócio, identificando tendências, riscos e oportunidades de crescimento com base em dados fornecidos.',
+    template: `Você é um analista financeiro e de mercado com expertise em inteligência artificial. Meu objetivo é obter uma análise preditiva do mercado para o meu pequeno negócio e identificar oportunidades e riscos futuros.
+
+Crie um relatório de análise preditiva baseado nas seguintes informações:
+
+**Informações do Negócio:**
+*   **Nome da Empresa:** [Nome da empresa]
+*   **Setor de Atuação:** [Setor, ex: varejo de moda online, serviços de consultoria digital, cafeteria artesanal]
+*   **Produtos/Serviços Oferecidos:** [Lista dos principais produtos/serviços]
+*   **Público-Alvo:** [Descrição do público, ex: jovens adultos urbanos, pequenas e médias empresas]
+*   **Faturamento Anual Médio (últimos 3 anos):** [Valores numéricos, ex: R$ 500k, R$ 650k, R$ 720k]
+*   **Localização Principal/Área de Atuação:** [Cidade, região, online nacional]
+*   **Principais Concorrentes (se souber):** [Nome de 2-3 concorrentes diretos]
+*   **Principais Desafios Atuais:** [Desafios, ex: alta concorrência, dificuldade de aquisição de clientes, custos operacionais]
+
+**Dados de Mercado (forneça se disponíveis, caso contrário a IA pode fazer suposições informadas):**
+*   **Taxa de Crescimento do Setor:** [%, ex: 8% ao ano]
+*   **Tendências Recentes do Consumidor no Setor:** [Ex: aumento da busca por produtos sustentáveis, personalização, digitalização]
+*   **Regulamentações Recentes ou Previstas:** [Ex: novas leis de privacidade de dados, incentivos fiscais para inovação]
+*   **Tecnologias Emergentes no Setor:** [Ex: IA em atendimento, automação logística, e-commerce social]
+*   **Dados Econômicos Locais/Nacionais Relevantes:** [Ex: taxa de juros, inflação, desemprego]
+
+O relatório preditivo deve incluir:
+
+1.  **Análise de Tendências:** Quais tendências de mercado são mais relevantes para o negócio nos próximos [período, ex: 12-24 meses] e como elas podem impactar.
+2.  **Identificação de Oportunidades:** Sugestões de novos nichos, produtos/serviços, estratégias de marketing ou expansão geográfica baseadas nas tendências.
+3.  **Avaliação de Riscos:** Quais são os principais riscos (econômicos, competitivos, tecnológicos, regulatórios) e como o negócio pode mitigá-los.
+4.  **Projeção de Cenários:** Dois a três cenários futuros (otimista, realista, pessimista) para o negócio com base nas variáveis e tendências.
+5.  **Recomendações Estratégicas:** Ações concretas que o negócio pode tomar para capitalizar as oportunidades e se proteger dos riscos.
+
+Apresente a análise de forma clara, com dados e raciocínio lógico que justifiquem as projeções.`,
+    tags: ['análise de mercado', 'previsão', 'PMEs', 'finanças', 'estratégia'],
+  },
 ];

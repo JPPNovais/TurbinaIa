@@ -3124,4 +3124,346 @@ O relatório preditivo deve incluir:
 Apresente a análise de forma clara, com dados e raciocínio lógico que justifiquem as projeções.`,
     tags: ['análise de mercado', 'previsão', 'PMEs', 'finanças', 'estratégia'],
   },
+  {
+    id: 'ia-framework-etica-ia',
+    title: 'Desenho de Framework de Ética para IA',
+    category: 'IA & Automação',
+    description: 'Cria um framework de diretrizes éticas para o desenvolvimento e uso de sistemas de IA em um contexto específico.',
+    template: `Você é um especialista em ética de IA. Sua tarefa é criar um framework detalhado de diretrizes éticas para o desenvolvimento e implantação de um sistema de IA em [Contexto da Empresa/Projeto].
+
+O framework deve abordar os seguintes pilares:
+1.  **Transparência e Explicabilidade:** Como o sistema de IA será compreensível e suas decisões justificáveis.
+2.  **Responsabilidade e Governança:** Quem é responsável por falhas e como a IA é monitorada.
+3.  **Justiça e Equidade:** Como evitar vieses e garantir tratamento justo para todos os usuários.
+4.  **Segurança e Privacidade:** Proteção de dados e prevenção de uso malicioso.
+5.  **Autonomia e Controle Humano:** Manter o controle humano sobre a IA.
+6.  **Beneficência e Não-Maleficência:** Garantir que a IA traga benefícios e minimize danos.
+
+Para cada pilar, forneça:
+*   Definição e sua importância no [Contexto da Empresa/Projeto].
+*   Princípios orientadores específicos.
+*   Recomendações práticas para implementação (ex: auditorias regulares, comitês de ética, diretrizes de design, etc.).
+*   Métricas ou indicadores de sucesso, se aplicável.
+
+Considere o tipo de IA a ser desenvolvida: [Tipo de Sistema de IA - ex: chatbot de atendimento, sistema de recomendação de produtos, ferramenta de análise preditiva financeira, etc.]
+Se houver desafios éticos específicos do setor, mencione-os: [Desafios Éticos Específicos do Setor, se houver]
+
+Formato da saída:
+## Framework de Ética para IA em [Contexto da Empresa/Projeto]
+
+### 1. Transparência e Explicabilidade
+[Conteúdo detalhado, incluindo definição, princípios, recomendações e métricas]
+
+### 2. Responsabilidade e Governança
+[Conteúdo detalhado, incluindo definição, princípios, recomendações e métricas]
+
+### 3. Justiça e Equidade
+[Conteúdo detalhado, incluindo definição, princípios, recomendações e métricas]
+
+### 4. Segurança e Privacidade
+[Conteúdo detalhado, incluindo definição, princípios, recomendações e métricas]
+
+### 5. Autonomia e Controle Humano
+[Conteúdo detalhado, incluindo definição, princípios, recomendações e métricas]
+
+### 6. Beneficência e Não-Maleficência
+[Conteúdo detalhado, incluindo definição, princípios, recomendações e métricas]`,
+    tags: ['ética ia', 'governança', 'sustentabilidade', 'design ia'],
+  },
+  {
+    id: 'negocios-ia-sustentabilidade-esg',
+    title: 'Otimização de Estratégia ESG com IA',
+    category: 'Negócios',
+    description: 'Identifica e propõe como a IA pode ser usada para melhorar a estratégia ESG (Ambiental, Social e Governança) de uma empresa.',
+    template: `Você é um consultor estratégico especializado em ESG e IA. Sua tarefa é analisar a empresa [Nome da Empresa] no setor de [Setor da Empresa] e identificar oportunidades concretas para a utilização da Inteligência Artificial na otimização de sua estratégia ESG.
+
+A empresa [Nome da Empresa] busca se tornar líder em sustentabilidade.
+
+Considere os seguintes pilares ESG e como a IA pode impactá-los:
+
+**1. Ambiental (E):**
+*   Otimização de consumo de recursos (energia, água, materiais).
+*   Redução de emissões e resíduos.
+*   Monitoramento ambiental e conformidade.
+*   Cadeia de suprimentos verde.
+
+**2. Social (S):**
+*   Engajamento de funcionários e bem-estar.
+*   Diversidade, Equidade e Inclusão (DEI).
+*   Impacto na comunidade e direitos humanos.
+*   Segurança e saúde no trabalho.
+
+**3. Governança (G):**
+*   Ética nos negócios e transparência.
+*   Gestão de riscos e conformidade regulatória.
+*   Estrutura do conselho e remuneração.
+*   Segurança cibernética e privacidade de dados.
+
+Para cada pilar, forneça:
+*   Uma breve análise de como a IA pode se alinhar com os objetivos do pilar.
+*   No mínimo 2-3 exemplos práticos e inovadores de aplicações de IA (ex: machine learning para previsão de consumo de energia, processamento de linguagem natural para análise de feedback de funcionários, visão computacional para monitoramento de resíduos).
+*   Benefícios esperados da implementação da IA em cada iniciativa.
+*   Desafios potenciais e como mitigá-los.
+
+O objetivo final é gerar um plano acionável para [Nome da Empresa] para integrar a IA em sua jornada ESG.
+
+**Informações adicionais da empresa (se disponíveis):**
+*   Desafios ESG atuais: [Desafios ESG Atuais]
+*   Tecnologias de IA já em uso: [Tecnologias de IA em Uso]
+*   Orçamento aproximado para inovação: [Orçamento Aproximado]
+
+Formato da saída:
+## Otimização da Estratégia ESG de [Nome da Empresa] com IA
+
+### 1. Pilar Ambiental (E)
+#### Análise e Oportunidades de IA:
+[Conteúdo da análise]
+#### Iniciativas Propostas com IA:
+*   **Iniciativa 1:** [Nome da Iniciativa, ex: Previsão e Otimização de Consumo Energético]
+    *   **Aplicação de IA:** [Detalhes de como a IA será usada, ex: Modelos de ML que analisam dados históricos e climáticos para prever consumo e ajustar sistemas automaticamente.]
+    *   **Benefícios:** [Detalhes dos benefícios, ex: Redução de custos de energia em 15%, diminuição da pegada de carbono.]
+    *   **Desafios:** [Detalhes dos desafios, ex: Integração com sistemas legados, necessidade de dados de alta qualidade.]
+*   **Iniciativa 2:** [Nome da Iniciativa]
+    *   **Aplicação de IA:** [Detalhes]
+    *   **Benefícios:** [Detalhes]
+    *   **Desafios:** [Detalhes]
+
+### 2. Pilar Social (S)
+#### Análise e Oportunidades de IA:
+[Conteúdo da análise]
+#### Iniciativas Propostas com IA:
+*   **Iniciativa 1:** [Nome da Iniciativa]
+    *   **Aplicação de IA:** [Detalhes]
+    *   **Benefícios:** [Detalhes]
+    *   **Desafios:** [Detalhes]
+*   **Iniciativa 2:** [Nome da Iniciativa]
+    *   **Aplicação de IA:** [Detalhes]
+    *   **Benefícios:** [Detalhes]
+    *   **Desafios:** [Detalhes]
+
+### 3. Pilar Governança (G)
+#### Análise e Oportunidades de IA:
+[Conteúdo da análise]
+#### Iniciativas Propostas com IA:
+*   **Iniciativa 1:** [Nome da Iniciativa]
+    *   **Aplicação de IA:** [Detalhes]
+    *   **Benefícios:** [Detalhes]
+    *   **Desafios:** [Detalhes]
+*   **Iniciativa 2:** [Nome da Iniciativa]
+    *   **Aplicação de IA:** [Detalhes]
+    *   **Benefícios:** [Detalhes]
+    *   **Desafios:** [Detalhes]`,
+    tags: ['esg', 'sustentabilidade', 'inovação', 'ia para negócios'],
+  },
+  {
+    id: 'dev-ia-migracao-nuvem',
+    title: 'Plano de Migração para Nuvem Otimizado por IA',
+    category: 'Desenvolvimento',
+    description: 'Gera um plano estratégico para migração de infraestrutura e aplicações para a nuvem, identificando riscos e otimizações com base em IA.',
+    template: `Você é um arquiteto de soluções em nuvem e especialista em IA. Sua tarefa é desenvolver um plano estratégico detalhado para a migração de [Infraestrutura Atual - ex: datacenter on-premise, servidores virtuais legados] e [Tipo de Aplicação - ex: aplicações monolíticas, microserviços existentes, banco de dados X] para uma plataforma de nuvem.
+
+**Objetivo da Migração:** [Objetivo Principal da Migração - ex: reduzir custos, aumentar escalabilidade, melhorar segurança, habilitar inovação com novos serviços, etc.]
+**Provedor de Nuvem Preferido (se houver):** [Provedor de Nuvem - ex: AWS, Azure, Google Cloud, OCI, etc. - se não tiver, diga "Indefinido"]
+**Escala da Migração:** [Pequena, Média, Grande, Portfólio Completo]
+
+O plano deve abordar os seguintes estágios, com a IA atuando como um elemento otimizador em cada um:
+
+**1. Avaliação e Descoberta (Assessment & Discovery):**
+*   Como a IA pode analisar o ambiente atual (recursos, dependências, performance) para identificar candidatos à migração, riscos e otimizações.
+*   Ferramentas ou abordagens de IA sugeridas para mapeamento de dependências.
+
+**2. Planejamento e Estratégia (Planning & Strategy):**
+*   Definição da estratégia de migração (ex: Rehost, Replatform, Refactor, Repurchase, Retain, Retire) para diferentes componentes, com justificação baseada em análise de IA (custo vs. benefício, esforço, impacto).
+*   Como a IA pode ajudar na estimativa de custos, cronogramas e requisitos de capacidade na nuvem.
+*   Critérios de priorização de migração guiados por IA.
+
+**3. Migração e Implementação (Migration & Implementation):**
+*   Papel da IA na automação de tarefas de migração (ex: conversão de código, configuração de infraestrutura como código).
+*   Estratégias para migração de dados com segurança e mínima interrupção.
+
+**4. Otimização e Operação (Optimization & Operation):**
+*   Como a IA pode monitorar e otimizar o ambiente pós-migração (custos, performance, segurança, escalabilidade).
+*   Identificação de oportunidades para refatoração e modernização contínua com serviços de nuvem nativos e IA.
+
+**5. Governança e Segurança (Governance & Security):**
+*   Uso de IA para garantir conformidade e detectar anomalias de segurança no novo ambiente de nuvem.
+
+Forneça um roteiro de alto nível com marcos principais.
+
+**Informações adicionais do ambiente atual (se disponíveis):**
+*   Número de aplicações: [Número de Aplicações]
+*   Número de servidores/VMs: [Número de Servidores/VMs]
+*   Tecnologias principais (linguagens, bancos de dados): [Tecnologias Principais]
+*   Regulamentações ou conformidades específicas: [Regulamentações/Conformidades]
+
+Formato da saída:
+## Plano de Migração para Nuvem Otimizado por IA para [Nome da Empresa/Projeto]
+
+### 1. Avaliação e Descoberta
+[Conteúdo detalhado, incluindo análise de IA e ferramentas sugeridas]
+
+### 2. Planejamento e Estratégia
+[Conteúdo detalhado, incluindo estratégias de migração, estimativas de custo/cronograma e critérios de priorização guiados por IA]
+
+### 3. Migração e Implementação
+[Conteúdo detalhado, incluindo papel da IA na automação e estratégias de migração de dados]
+
+### 4. Otimização e Operação
+[Conteúdo detalhado, incluindo como a IA monitora e otimiza o ambiente pós-migração e oportunidades de modernização]
+
+### 5. Governança e Segurança
+[Conteúdo detalhado, incluindo uso de IA para conformidade e detecção de segurança]
+
+### Roteiro de Alto Nível
+*   **Fase 1: [Nome da Fase, ex: Avaliação e Estratégia Inicial]** - [Duração Estimada, ex: 4 semanas]
+    *   Marco 1: [Descrição, ex: Mapeamento completo de dependências e custos atuais]
+    *   Marco 2: [Descrição, ex: Definição da estratégia "6 Rs" para as 10 aplicações mais críticas]
+*   **Fase 2: [Nome da Fase, ex: Piloto e Prova de Conceito]** - [Duração Estimada, ex: 8 semanas]
+    *   Marco 1: [Descrição, ex: Migração de 2 aplicações não-críticas para o ambiente de nuvem]
+    *   Marco 2: [Descrição, ex: Otimização de custos e performance das aplicações piloto com IA]
+*   **Fase 3: [Nome da Fase, ex: Migração em Larga Escala]** - [Duração Estimada, ex: 6 meses]
+    *   Marco 1: [Descrição, ex: Migração de 50% das aplicações seguindo a estratégia definida]
+    *   Marco 2: [Descrição, ex: Estabelecimento de dashboards de governança e segurança com IA]
+*   **Fase 4: [Nome da Fase, ex: Otimização Contínua e Modernização]** - [Duração Estimada, ex: Contínua]
+    *   Marco 1: [Descrição, ex: Implementação de automação de custos com IA]
+    *   Marco 2: [Descrição, ex: Identificação de 3 oportunidades de refatoração para serviços nativos de nuvem]`,
+    tags: ['cloud', 'migração', 'devops', 'arquitetura'],
+  },
+  {
+    id: 'education-microlearning-design-ia',
+    title: 'Design de Experiência de Microlearning com IA',
+    category: 'Educação',
+    description: 'Cria um plano detalhado para projetar uma experiência de microlearning interativa e engajadora sobre um tópico específico, usando princípios de IA.',
+    template: `Você é um designer instrucional e especialista em IA aplicada à educação. Sua tarefa é criar um plano detalhado para projetar uma experiência de microlearning interativa e altamente engajadora sobre o tópico "[Tópico do Microlearning]".
+
+**Público-alvo:** [Público-alvo - ex: profissionais de marketing iniciantes, desenvolvedores de software experientes, estudantes do ensino médio]
+**Objetivo de Aprendizagem:** Ao final do microlearning, o aluno deve ser capaz de [Ação Mensurável que o Aluno Realizará - ex: criar um prompt de IA eficaz, identificar as fases de um ciclo de vida de produto, resolver problemas de geometria básica, etc.].
+**Duração Estimada por Módulo:** [Duração - ex: 5-10 minutos, 15 minutos, etc.]
+**Plataforma de Entrega (Exemplos):** [Plataforma - ex: aplicativo móvel, plataforma LMS, chatbot interativo, web app responsivo]
+
+O plano deve incluir:
+
+**1. Definição de Módulos e Conteúdo (com suporte de IA):**
+*   Sugestão de 3-5 módulos chave para cobrir o [Tópico do Microlearning].
+*   Para cada módulo, exemplos de tópicos específicos e sub-tópicos a serem abordados.
+*   Como a IA pode ajudar na curadoria e sintetização de informações relevantes para o conteúdo.
+
+**2. Estratégias de Interação e Engajamento (potencializadas por IA):**
+*   Tipos de atividades interativas para cada módulo (ex: quizzes curtos, drag-and-drop, cenários de escolha múltipla, simulações rápidas, etc.).
+*   Como a IA pode personalizar o feedback do aluno e adaptar o caminho de aprendizagem em tempo real.
+*   Sugestões para elementos de gamificação (pontos, distintivos, rankings) gerados ou otimizados por IA.
+*   Uso de IA para gerar conteúdo multimodal (textos, imagens, áudios, vídeos curtos) que mantenha o aluno engajado.
+
+**3. Avaliação e Feedback (com IA):**
+*   Formas de avaliação rápida e contínua.
+*   Como a IA pode analisar o desempenho do aluno para identificar lacunas de conhecimento e sugerir reforços.
+*   Exemplos de feedback imediato e construtivo gerado por IA.
+
+**4. Requisitos Tecnológicos e Ferramentas (com foco em IA):**
+*   Tipos de ferramentas de autoria ou plataformas de desenvolvimento que facilitariam a implementação.
+*   Sugestão de APIs ou modelos de IA a serem integrados para personalização e geração de conteúdo.
+
+**5. Métricas de Sucesso:**
+*   Como medir a eficácia e o engajamento do microlearning.
+
+Formato da saída:
+## Plano de Design de Experiência de Microlearning para "[Tópico do Microlearning]"
+
+### 1. Definição de Módulos e Conteúdo
+#### Módulo 1: [Nome do Módulo, ex: Introdução à Programação Orientada a Objetos]
+*   **Tópicos:** [Lista de tópicos, ex: Conceitos de Classes e Objetos, Encapsulamento, Herança Básica]
+*   **Suporte de IA:** [Como a IA ajuda na curadoria/síntese, ex: IA para identificar os conceitos mais importantes e simplificar explicações complexas em textos curtos e focados.]
+#### Módulo 2: [Nome do Módulo]
+*   **Tópicos:** [Lista de tópicos]
+*   **Suporte de IA:** [Como a IA ajuda na curadoria/síntese]
+#### Módulo 3: [Nome do Módulo]
+*   **Tópicos:** [Lista de tópicos]
+*   **Suporte de IA:** [Como a IA ajuda na curadoria/síntese]
+
+### 2. Estratégias de Interação e Engajamento
+#### Interações por Módulo:
+*   **Módulo 1:** [Exemplos de atividades, ex: Quiz interativo de arrastar e soltar para associar termos a definições, cenário de código onde o aluno escolhe a melhor implementação de um objeto.]
+*   **Personalização IA:** [Detalhes, ex: O chatbot de IA adapta a dificuldade das perguntas e a profundidade das explicações com base no desempenho do aluno, oferecendo caminhos alternativos para quem tem dificuldade.]
+*   **Gamificação:** [Sugestões, ex: Pontos por cada acerto, distintivos virtuais ao completar módulos, um "placar" que mostra o progresso em relação a outros alunos (opcional).]
+*   **Conteúdo Multimodal IA:** [Detalhes, ex: Geração de pequenos vídeos explicativos animados para conceitos complexos, áudios com exemplos práticos, imagens interativas com hotspots para explorar elementos.]
+
+### 3. Avaliação e Feedback
+[Conteúdo detalhado, incluindo formas de avaliação, análise de IA do desempenho e exemplos de feedback gerado por IA]
+
+### 4. Requisitos Tecnológicos e Ferramentas
+[Conteúdo detalhado, incluindo tipos de ferramentas de autoria e APIs/modelos de IA sugeridos]
+
+### 5. Métricas de Sucesso
+[Conteúdo detalhado, incluindo como medir a eficácia e o engajamento do microlearning, ex: Taxa de conclusão de módulos, pontuação média em quizzes, tempo médio de engajamento por sessão, feedback qualitativo dos usuários.]`,
+    tags: ['microlearning', 'edtech', 'design instrucional', 'engajamento'],
+  },
+  {
+    id: 'marketing-funil-vendas-ia-multimodal',
+    title: 'Otimização de Funil de Vendas Multimodal com IA',
+    category: 'Marketing',
+    description: 'Desenha uma estratégia otimizada por IA para um funil de vendas que incorpora diferentes canais e formatos de conteúdo multimodal.',
+    template: `Você é um estrategista de marketing digital e especialista em IA para vendas. Sua tarefa é desenhar um plano detalhado para otimizar um funil de vendas multimodal para [Produto/Serviço] direcionado a [Público-alvo].
+
+**Objetivo Principal do Funil:** [Ex: Geração de Leads Qualificados, Vendas Diretas, Engajamento de Marca, Retenção de Clientes]
+**Canais Multimodais a Considerar:** [Ex: Redes Sociais (Instagram, TikTok, LinkedIn), Email Marketing, Blog/SEO, Vídeos (YouTube, Shorts), Podcasts, Anúncios Pagos (Google Ads, Meta Ads)]
+**Informações sobre o Produto/Serviço:** [Nome e Descrição Breve do Produto/Serviço, Dores que Resolve, Benefícios Principais]
+**Informações sobre o Público-alvo:** [Demografia, Interesses, Comportamento Online, Maiores Desafios]
+
+O plano deve abordar as seguintes fases do funil, detalhando como a IA será utilizada em cada uma:
+
+**1. Topo do Funil (Consciência/Descoberta):**
+*   **Estratégia de Conteúdo Multimodal:** Quais tipos de conteúdo (vídeos curtos, infográficos, posts interativos, artigos de blog) e canais serão usados para atrair a atenção do [Público-alvo].
+*   **Uso de IA:** Como a IA pode identificar tendências de conteúdo, otimizar títulos/descrições, e personalizar a entrega de anúncios para maximizar o alcance e a relevância. Sugestão de ferramentas de IA.
+
+**2. Meio do Funil (Consideração/Engajamento):**
+*   **Estratégia de Conteúdo Multimodal:** Conteúdo mais aprofundado (webinars, e-books, podcasts, estudos de caso, newsletters personalizadas) para educar e nutrir leads.
+*   **Uso de IA:** Como a IA pode segmentar leads com base em seu comportamento, personalizar sequências de e-mail e recomendar o próximo conteúdo mais relevante para mover o lead adiante. Sugestão de ferramentas de IA.
+
+**3. Fundo do Funil (Decisão/Conversão):**
+*   **Estratégia de Conteúdo Multimodal:** Conteúdo focado na conversão (demonstrações, avaliações gratuitas, depoimentos em vídeo, propostas personalizadas, chatbots de vendas).
+*   **Uso de IA:** Como a IA pode prever a propensão à compra, otimizar ofertas, personalizar o discurso de vendas, e automatizar o agendamento de demos. Sugestão de ferramentas de IA.
+
+**4. Pós-Venda (Retenção/Advocacia):**
+*   **Estratégia de Conteúdo Multimodal:** Conteúdo de suporte, tutoriais, comunidades, programas de fidelidade.
+*   **Uso de IA:** Como a IA pode prever churn, personalizar comunicações de retenção, e identificar defensores da marca para programas de indicação. Sugestão de ferramentas de IA.
+
+Para cada fase, especifique:
+*   Canais principais.
+*   Tipos de conteúdo multimodal.
+*   Ações esperadas do usuário.
+*   Métricas de sucesso.
+*   Como a IA será fundamental para a otimização.
+
+Formato da saída:
+## Otimização de Funil de Vendas Multimodal para [Produto/Serviço] com IA
+
+### 1. Topo do Funil (Consciência/Descoberta)
+*   **Canais Principais:** [Lista, ex: TikTok, Instagram Reels, Anúncios pagos (Meta Ads, Google Discovery)]
+*   **Conteúdo Multimodal:** [Exemplos, ex: Vídeos curtos com "how-to" e dicas rápidas, infográficos animados sobre tendências, posts interativos com perguntas sobre dores do público.]
+*   **Ações do Usuário:** [Exemplos, ex: Cliques em anúncios, visualizações completas de vídeo, compartilhamentos, comentários, visita à landing page inicial.]
+*   **Uso de IA:** [Detalhes, ex: IA para análise de sentimentos em comentários, identificação de horários de pico para posts, otimização de lances em anúncios, teste A/B automatizado de criativos para maior CTR.]
+*   **Métricas de Sucesso:** [Lista, ex: Alcance, Impressões, Engajamento (curtidas, comentários, compartilhamentos), CTR, Custo por Mille (CPM).]
+
+### 2. Meio do Funil (Consideração/Engajamento)
+*   **Canais Principais:** [Lista, ex: Email Marketing, Blog, YouTube, Podcasts, LinkedIn]
+*   **Conteúdo Multimodal:** [Exemplos, ex: Webinars gravados (vídeo), e-books temáticos, newsletters personalizadas com curadoria de conteúdo, episódios de podcast com entrevistas de especialistas, estudos de caso.]
+*   **Ações do Usuário:** [Exemplos, ex: Download de materiais ricos, inscrição em newsletter, assistir a webinars, tempo de leitura de artigos, interações em polls do LinkedIn.]
+*   **Uso de IA:** [Detalhes, ex: Segmentação de leads com base no interesse demonstrado (NLP em interações), personalização de assunto e corpo de e-mail (geração de texto), recomendação de conteúdo via IA baseado no histórico de navegação.]
+*   **Métricas de Sucesso:** [Lista, ex: Taxa de abertura de e-mail, Taxa de cliques, Leads gerados, Custo por Lead (CPL), Engajamento em conteúdo.]
+
+### 3. Fundo do Funil (Decisão/Conversão)
+*   **Canais Principais:** [Lista, ex: Páginas de Venda, Demos (vídeo/ao vivo), Chatbots de Vendas (site), Propostas personalizadas (PDF), Google Ads (termos de fundo de funil)]
+*   **Conteúdo Multimodal:** [Exemplos, ex: Vídeos de demonstração do produto, depoimentos de clientes em vídeo, simuladores interativos de ROI, propostas comerciais personalizadas geradas por IA, atendimento via chatbot com IA para FAQs e qualificação.]
+*   **Ações do Usuário:** [Exemplos, ex: Solicitação de demo, preenchimento de formulário de contato, uso de chatbot, compra do produto/serviço, agendamento de reunião.]
+*   **Uso de IA:** [Detalhes, ex: Previsão de propensão à compra, otimização de ofertas em tempo real, personalização de landing pages, roteiros de vendas dinâmicos para chatbots, análise de sentimento em interações de vendas para ajustar estratégia.]
+*   **Métricas de Sucesso:** [Lista, ex: Taxa de conversão, Custo por Aquisição (CPA), Receita gerada, Quantidade de demos agendadas, Qualidade dos leads.]
+
+### 4. Pós-Venda (Retenção/Advocacia)
+*   **Canais Principais:** [Lista, ex: Email Marketing (nutrição), Fóruns/Comunidades, Suporte ao Cliente (chatbot/humano), Redes Sociais]
+*   **Conteúdo Multimodal:** [Exemplos, ex: Tutoriais em vídeo de uso avançado, guias de melhores práticas (e-books), newsletters com dicas e novidades, mensagens personalizadas de "parabéns" por conquistas usando o produto, convites para comunidades exclusivas.]
+*   **Ações do Usuário:** [Exemplos, ex: Renovação de assinatura, participação em comunidade, indicação de novos clientes, feedback positivo, uso de novas funcionalidades.]
+*   **Uso de IA:** [Detalhes, ex: Previsão de churn (abandono) de clientes, personalização de mensagens de retenção, identificação de defensores da marca para programas de indicação, análise de feedback para melhorias de produto, roteamento inteligente de tickets de suporte.]
+*   **Métricas de Sucesso:** [Lista, ex: Taxa de retenção, Lifetime Value (LTV), NPS (Net Promoter Score), Referrals gerados, Satisfação do cliente.]`,
+    tags: ['funil de vendas', 'multimodal', 'marketing digital', 'ia para marketing'],
+  },
 ];

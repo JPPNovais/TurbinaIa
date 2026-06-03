@@ -13,6 +13,34 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'xai-grok-4-1-2026',
+    date: '2026-06',
+    title: 'xAI lança Grok 4.1, modelo com inteligência emocional e raciocínio aprimorados',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI disponibilizou o Grok 4.1 para todos os usuários em grok.com, 𝕏, e nos aplicativos iOS e Android, com foco em inteligência emocional aprimorada, desempenho criativo e raciocínio mais confiável.',
+    highlights: [
+      'Disponível a partir de junho de 2026 para todos os usuários em grok.com, 𝕏 e nos aplicativos iOS e Android.',
+      'Oferece inteligência emocional (EQ) mais forte, desempenho criativo aprimorado e raciocínio significativamente mais confiável.',
+      'Reduz as alucinações em 65%, tornando-o ideal para tarefas complexas e de alto risco que exigem precisão e nuance.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'mistral-voxtral-mini-transcribe-realtime-2026',
+    date: '2026-06',
+    title: 'Mistral AI lança Voxtral Mini Transcribe Realtime para transcrição de áudio ao vivo',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'A Mistral AI introduziu o Voxtral Mini Transcribe Realtime, um modelo de entrada de áudio eficiente e otimizado para fins de transcrição ao vivo.',
+    highlights: [
+      'Modelo de entrada de áudio otimizado para transcrição em tempo real.',
+      'Projetado para ser eficiente em suas operações.',
+      'Ideal para aplicações que exigem conversão rápida de fala em texto.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'openai-gpt-5-6-2026',
     date: '2026-06',
     title: 'OpenAI lança GPT-5.6 com raciocínio avançado e fluxos de trabalho agenticos',

@@ -20,29 +20,29 @@ export interface AIModel {
 export const aiModels: AIModel[] = [
   {
     id: 'chatgpt-plus',
-    name: 'ChatGPT Plus (GPT-5.4 Thinking, GPT-5.3 Instant, GPT-5.4 Pro)',
+    name: 'ChatGPT Plus (GPT-5.5 Thinking, GPT-5.5 Instant, GPT-5.5 Pro)',
     developer: 'OpenAI',
     category: 'Texto & Código',
-    pricing: 'Plano gratuito disponível (acesso limitado a GPT-5.3 Instant para funções básicas; inclui anúncios nos EUA). ChatGPT Go: US$ 8/mês (acesso a GPT-5.3 Instant, com anúncios nos EUA, Austrália, Nova Zelândia e Canadá). ChatGPT Plus: US$ 20/mês (acesso total a GPT-5.4 Thinking, GPT-5.3 Instant como padrão; inclui Deep Research - 25 execuções/mês, Codex com Computer Use no Windows, Agent Mode, Advanced Voice Mode, Custom GPTs, DALL-E 4; limite de 160 mensagens/3 horas para GPT-5.4 Thinking e 80 uploads de arquivos/3 horas). ChatGPT Pro $100: US$ 100/mês (acesso a GPT-5.4 Thinking, GPT-5.4 Pro e o1 Pro mode; 5x o uso do Plus, 250 execuções de Deep Research/mês). ChatGPT Pro $200: US$ 200/mês (acesso a GPT-5.4 Thinking, GPT-5.4 Pro e o1 Pro mode; 20x o uso do Plus, Deep Research ilimitado, janela de contexto de 1 milhão de tokens). ChatGPT Business: US$ 20/usuário/mês (cobrança anual, mínimo de 2 usuários) ou US$ 25-30/usuário/mês (cobrança mensal); inclui acesso ilimitado a GPT-5.4 Thinking e GPT-5.4 Pro, workspaces compartilhados. ChatGPT Enterprise: Preço personalizado (contato com vendas). API para GPT-5: US$ 1.25/milhão de tokens de entrada e US$ 10.00/milhão de tokens de saída. API para GPT-4o: US$ 2.50/milhão de tokens de entrada e US$ 10.00/milhão de tokens de saída. API para GPT-4o mini: US$ 0.15/milhão de tokens de entrada e US$ 0.60/milhão de tokens de saída. API para GPT-4.1 Nano: US$ 0.10/milhão de tokens de entrada e US$ 0.40/milhão de tokens de saída. API para Sora 2 (vídeo): Preços por segundo variam. Sora 2 Standard: US$ 0.10/segundo (720p) ou US$ 0.05/segundo em lote. Sora 2 Pro: US$ 0.30/segundo (720p), US$ 0.50/segundo (1024p), US$ 0.70/segundo (1080p) ou aproximadamente metade em lote.',
+    pricing: 'Plano gratuito disponível (acesso limitado a GPT-5.5 Instant para funções básicas; inclui anúncios nos EUA). ChatGPT Go: US$ 8/mês (acesso a GPT-5.5 Instant, com anúncios nos EUA, Austrália, Nova Zelândia e Canadá). ChatGPT Plus: US$ 20/mês (acesso total a GPT-5.5 Thinking, GPT-5.5 Instant como padrão; inclui Deep Research - 25 execuções/mês, Codex com Computer Use no Windows, Agent Mode, Advanced Voice Mode, Custom GPTs, DALL-E 4; limite de 160 mensagens/3 horas para GPT-5.5 Thinking e 80 uploads de arquivos/3 horas). ChatGPT Pro $100: US$ 100/mês (acesso a GPT-5.5 Thinking, GPT-5.5 Pro e o1 Pro mode; 5x o uso do Plus, 250 execuções de Deep Research/mês). ChatGPT Pro $200: US$ 200/mês (acesso a GPT-5.5 Thinking, GPT-5.5 Pro e o1 Pro mode; 20x o uso do Plus, Deep Research ilimitado, janela de contexto de 1 milhão de tokens). ChatGPT Business: US$ 20/usuário/mês (cobrança anual, mínimo de 2 usuários) ou US$ 25-30/usuário/mês (cobrança mensal); inclui acesso ilimitado a GPT-5.5 Thinking e GPT-5.5 Pro, workspaces compartilhados. ChatGPT Enterprise: Preço personalizado (contato com vendas). API para GPT-5.5: US$ 1.50/milhão de tokens de entrada e US$ 12.00/milhão de tokens de saída. API para GPT-4o: US$ 2.50/milhão de tokens de entrada e US$ 10.00/milhão de tokens de saída. API para GPT-4o mini: US$ 0.15/milhão de tokens de entrada e US$ 0.60/milhão de tokens de saída. API para GPT-4.1 Nano: US$ 0.10/milhão de tokens de entrada e US$ 0.40/milhão de tokens de saída. API para Sora 2 (vídeo): Preços por segundo variam. Sora 2 Standard: US$ 0.10/segundo (720p) ou US$ 0.05/segundo em lote. Sora 2 Pro: US$ 0.30/segundo (720p), US$ 0.50/segundo (1024p), US$ 0.70/segundo (1080p) ou aproximadamente metade em lote.',
     pros: [
-      'GPT-5.4 Thinking (lançado em março de 2026) é o modelo mais inteligente e intuitivo da OpenAI para usuários Plus e superiores, destacando-se em raciocínio complexo, codificação, uso de computador, pesquisa científica e segurança cibernética.',
-      'GPT-5.4 Thinking oferece uma janela de contexto de até 1 milhão de tokens, ideal para raciocínio complexo e análise de grandes volumes de informação.',
-      'GPT-5.3 Instant (lançado em março de 2026) é o modelo padrão do ChatGPT para todos os usuários, oferecendo respostas mais rápidas, precisas e com menos alucinações, com uma janela de contexto de 400.000 tokens.',
+      'GPT-5.5 Thinking (lançado em abril de 2026) é o modelo mais inteligente e intuitivo da OpenAI para usuários Plus e superiores, destacando-se em raciocínio complexo, codificação, uso de computador, pesquisa científica e segurança cibernética.',
+      'GPT-5.5 Thinking oferece uma janela de contexto de até 1 milhão de tokens, ideal para raciocínio complexo e análise de grandes volumes de informação.',
+      'GPT-5.5 Instant (lançado em maio de 2026) é o modelo padrão do ChatGPT para todos os usuários, oferecendo respostas mais rápidas, precisas e com menos alucinações, com uma janela de contexto de 400.000 tokens.',
       'Acesso a recursos avançados como Deep Research (agente de pesquisa autônomo com relatórios citados e escolha de fontes), Codex (agente de codificação com Computer Use no Windows), Agent Mode, Advanced Voice Mode e Custom GPTs.',
       'DALL-E 4 (integrado no ChatGPT Plus e superiores) oferece geração de imagens com renderização de texto aprimorada, suporte multilíngue, raciocínio visual avançado e saída em resolução 2K.',
       'Modelos como GPT-4o e GPT-4o mini ainda estão disponíveis via API a preços competitivos para casos de uso específicos.',
       'Advanced Voice Mode permite interação de voz natural e em tempo real, processando áudio diretamente para capturar nuances como tom e ritmo, e suporta compartilhamento de vídeo e tela, disponível em desktop e mobile.'
     ],
     cons: [
-      'Modelos mais antigos como GPT-4, GPT-3.5 Turbo, GPT-5.1 foram descontinuados ou é recomendado migrar; GPT-5.2 Instant está sendo aposentado.',
+      'Modelos mais antigos como GPT-4, GPT-3.5 Turbo, GPT-5.1, GPT-5.2 Instant foram descontinuados ou é recomendado migrar. GPT-4o, GPT-4.1, GPT-4.1 mini, OpenAI o4-mini, e GPT-5 (Instant and Thinking) foram descontinuados para uso em ChatGPT em fevereiro de 2026, embora o acesso via API permaneça. OpenAI o3 será aposentado de ChatGPT em agosto de 2026 e GPT-4.5 em junho de 2026.',
       'O acesso a Sora 2 (geração de vídeo) foi descontinuado para assinantes Plus e Pro em abril de 2026, e a API do Sora 2 será descontinuada em setembro de 2026.',
       'O plano Go (US$ 8/mês) exibe anúncios nos EUA, com testes de expansão para Austrália, Nova Zelândia e Canadá.',
-      'Usuários dos planos Free e Go não têm acesso aos modelos GPT-5.4 Thinking completos na interface principal do ChatGPT.',
-      'O custo da API para modelos de fronteira pode ser significativamente mais alto do que modelos mais eficientes em custo, como GPT-4.1 Nano; GPT-5.4 mini e GPT-5.4 nano são quatro vezes mais caros via API do que seus equivalentes GPT-5.',
+      'Usuários dos planos Free e Go não têm acesso aos modelos GPT-5.5 Thinking completos na interface principal do ChatGPT.',
+      'O custo da API para modelos de fronteira pode ser significativamente mais alto do que modelos mais eficientes em custo, como GPT-4.1 Nano; GPT-5.5 mini e GPT-5.5 nano são quatro vezes mais caros via API do que seus equivalentes GPT-5.',
       'Deep Research pode ocasionalmente apresentar alucinações factuais ou inferências incorretas.',
       'Agent Mode possui limites de uso e não é projetado para conversas casuais; a versão de consumidor não possui acesso via API.',
       'O uso de Computer Use no Windows não está disponível na Área Econômica Europeia, Reino Unido e Suíça no lançamento.',
-      'GPT-5.4 Thinking, embora poderoso, possui precificação mais alta e pode, em alguns casos, não seguir prompts com precisão ou "super-raciocinar".'
+      'GPT-5.5 Thinking, embora poderoso, possui precificação mais alta e pode, em alguns casos, não seguir prompts com precisão ou "super-raciocinar".'
     ],
     score: {
       reasoning: 5.0,
@@ -52,10 +52,10 @@ export const aiModels: AIModel[] = [
       value: 4.8
     },
     affiliateUrl: 'https://chatgpt.com',
-    description: 'ChatGPT Plus, agora impulsionado pelos modelos GPT-5.4 (incluindo GPT-5.4 Thinking e GPT-5.4 Pro) e GPT-5.3 Instant, representa o ápice da inteligência artificial generativa da OpenAI. O GPT-5.4 Thinking (lançado em março de 2026) é o modelo mais capaz da empresa, otimizado para tarefas complexas de codificação, pesquisa e análise de dados, com fortes capacidades agenticas e avanços em segurança cibernética. O GPT-5.3 Instant (lançado em março de 2026) é o modelo padrão do ChatGPT para todos os usuários, focado em velocidade, precisão, redução significativa de alucinações e uma janela de contexto expandida. A plataforma oferece acesso a recursos como Deep Research para relatórios citados, Codex com Computer Use no Windows, Agent Mode para automação proativa, Advanced Voice Mode para interações naturais, e Custom GPTs para personalização, além do modelo de imagem DALL-E 4. Embora o acesso ao Sora 2 para assinantes tenha sido descontinuado e sua API seja aposentada em breve, a OpenAI continua a evoluir sua oferta para atender a uma gama ampla de usuários, desde casuais até grandes empresas.'
+    description: 'ChatGPT Plus, agora impulsionado pelos modelos GPT-5.5 (incluindo GPT-5.5 Thinking e GPT-5.5 Pro) e GPT-5.5 Instant, representa o ápice da inteligência artificial generativa da OpenAI. O GPT-5.5 Thinking (lançado em abril de 2026) é o modelo mais capaz da empresa, otimizado para tarefas complexas de codificação, pesquisa e análise de dados, com fortes capacidades agenticas e avanços em segurança cibernética. O GPT-5.5 Instant (lançado em maio de 2026) é o modelo padrão do ChatGPT para todos os usuários, focado em velocidade, precisão, redução significativa de alucinações e uma janela de contexto expandida. A plataforma oferece acesso a recursos como Deep Research para relatórios citados, Codex com Computer Use no Windows, Agent Mode para automação proativa, Advanced Voice Mode para interações naturais, e Custom GPTs para personalização, além do modelo de imagem DALL-E 4. Embora o acesso ao Sora 2 para assinantes tenha sido descontinuado e sua API seja aposentada em breve, a OpenAI continua a evoluir sua oferta para atender a uma gama ampla de usuários, desde casuais até grandes empresas.'
   },
   {
-    id: 'claude-sonnet-4-6',
+    id: 'claude-opus-4-8',
     name: 'Claude Opus 4.8 (e Claude Opus 4.7, Claude Sonnet 4.6, Claude Haiku 4.5)',
     developer: 'Anthropic',
     category: 'Texto & Código',
@@ -68,15 +68,19 @@ export const aiModels: AIModel[] = [
       'Os modelos Opus (4.8, 4.7) e Sonnet 4.6 oferecem uma janela de contexto de 1 milhão de tokens via API a taxas padrão. Para uso conversacional no Claude.ai em planos pagos, a janela de contexto é de 500K tokens, e 1M tokens em Claude Code (requer créditos de uso para usuários Pro).',
       'Excelente em visão, interpretando gráficos, tabelas e transcrevendo texto de imagens imperfeitas.',
       'Apresenta o recurso "Artifacts" no Claude.ai para expandir a interação do usuário, permitindo criar, pré-visualizar e interagir com conteúdo gerado.',
-      'Recursos como "computer use" (beta público, desde outubro de 2024) permitem ao Claude interagir com computadores de forma mais autônoma.'
+      'Recursos como "computer use" (beta público, desde outubro de 2024) permitem ao Claude interagir com computadores de forma mais autônoma.',
+      'Persistent memory para todos os usuários (incluindo o nível gratuito) desde março de 2026.',
+      'Claude Code agent teams, introduzidos em 2026 como prévia de pesquisa, permitem que um agente líder delegue trabalho a agentes especialistas em segundo plano, trabalhando em paralelo.',
+      'Claude Cowork, um agente de desktop lançado em 12 de janeiro de 2026 em prévia de pesquisa, permite automação de fluxo de trabalho sem codificação.'
     ],
     cons: [
       'A janela de contexto conversacional dos modelos Claude Opus (500K tokens) em planos pagos é menor que a janela de 1 milhão de tokens disponível via API ou em Claude Code.',
       'Pode ser excessivamente cauteloso em algumas respostas devido a filtros de segurança (Constitutional AI).',
-      'O plano gratuito não inclui acesso a funcionalidades avançadas específicas como "computer use" ou modelos Opus.',
+      'O plano gratuito não inclui acesso a funcionalidades avançadas específicas como "computer use" ou modelos Opus completos.',
       'Modelos como Claude Sonnet 4 e Claude Opus 4 serão descontinuados em 15 de junho de 2026.',
       'O novo tokenizer do Claude Opus 4.7 pode inflacionar a contagem de tokens em até 35% para o mesmo texto em comparação com Opus 4.6, aumentando o custo efetivo, embora Opus 4.8 não tenha essa penalidade.',
-      'Em tarefas de codificação complexas, o Claude Opus 4.7/4.8 é, em média, mais lento para retornar uma resposta em comparação com o GPT-5, embora o modo rápido possa compensar. Além disso, Opus 4.8 pode ser verboso, gerando mais tokens.'
+      'Em tarefas de codificação complexas, o Claude Opus 4.7/4.8 é, em média, mais lento para retornar uma resposta em comparação com o GPT-5.5, embora o modo rápido possa compensar. Além disso, Opus 4.8 pode ser verboso, gerando mais tokens.',
+      'O modo rápido ("Fast Mode") está disponível apenas para organizações que fazem parte da prévia de pesquisa.'
     ],
     score: {
       reasoning: 5.0,
@@ -86,14 +90,14 @@ export const aiModels: AIModel[] = [
       value: 4.8
     },
     affiliateUrl: 'https://claude.ai',
-    description: 'Claude Opus 4.8 (lançado em 28 de maio de 2026) é o modelo mais avançado da Anthropic, oferecendo desempenho robusto em raciocínio, codificação e compreensão multimodal, incluindo capacidades de visão e função de chamada. Ele supera o GPT-5 em diversas avaliações de codificação e raciocínio agentico, sendo o novo líder no Artificial Analysis Intelligence Index. Ele oferece uma janela de contexto de 1 milhão de tokens via API, mas 500K para uso conversacional direto. Claude Sonnet 4.6 (lançado em 17 de fevereiro de 2026) oferece um desempenho de nível Opus 4.5 a um preço de Sonnet, tornando-o uma opção eficiente e capaz. Claude Haiku 4.5 (lançado em 15 de outubro de 2025) é o modelo mais rápido e econômico da família. A Anthropic continua a focar em segurança e alinhamento em seus modelos e introduziu recursos como "computer use" em beta público e "Effort Control" para automação complexa. Os modelos estão disponíveis via planos gratuitos (com acesso limitado), Pro, Max, Team e API.'
+    description: 'Claude Opus 4.8 (lançado em 28 de maio de 2026) é o modelo mais avançado da Anthropic, oferecendo desempenho robusto em raciocínio, codificação e compreensão multimodal, incluindo capacidades de visão e função de chamada. Ele supera o GPT-5.5 em diversas avaliações de codificação e raciocínio agentico, sendo um dos líderes no Artificial Analysis Intelligence Index. Ele oferece uma janela de contexto de 1 milhão de tokens via API, mas 500K para uso conversacional direto. Claude Sonnet 4.6 (lançado em 17 de fevereiro de 2026) oferece um desempenho de nível Opus 4.5 a um preço de Sonnet, tornando-o uma opção eficiente e capaz. Claude Haiku 4.5 (lançado em 15 de outubro de 2025) é o modelo mais rápido e econômico da família. A Anthropic continua a focar em segurança e alinhamento em seus modelos e introduziu recursos como "computer use" em beta público, "Effort Control" para automação complexa, persistent memory para todos os usuários e o agente de desktop Claude Cowork. Os modelos estão disponíveis via planos gratuitos (com acesso limitado), Pro, Max, Team e API.'
   },
   {
     id: 'gemini-models',
     name: 'Gemini 3.5 Flash, Gemini 3.1 Ultra, Gemini 3.1 Pro, Gemini Omni Flash',
     developer: 'Google',
     category: 'Texto & Código',
-    pricing: 'Plano gratuito disponível (com acesso ao aplicativo Gemini, Gemini 3.5 Flash e recursos básicos, com limites de uso). Google AI Plus: US$ 7.99/mês (inclui Omni em Gemini, Daily Brief, AI Inbox no Gmail, 200GB de armazenamento na nuvem, acesso a Flow para geração de vídeo). Google AI Pro (anteriormente Gemini Advanced): US$ 19.99/mês (acesso a Gemini 3.1 Pro, Gemini 3.5 Flash, Gemini 3.1 Flash-Lite; 5TB de armazenamento Google One, Deep Research, Gems - personas de IA personalizadas, integração com Workspace, YouTube Premium Lite). Google AI Ultra ($99.99): US$ 99.99/mês (inclui Gemini Ultra, 20TB de armazenamento, acesso superior a modelos Pro e Veo, YouTube Premium completo). Google AI Ultra ($199.99): US$ 199.99/mês (inclui Gemini Ultra, 30TB de armazenamento, acesso máximo a modelos Pro e Veo, Deep Think, acesso prioritário a novos recursos, Gemini Spark, YouTube Premium completo). API para Gemini 3.5 Flash: US$ 1.50/milhão de tokens de entrada e US$ 9.00/milhão de tokens de saída. API para Gemini 3.1 Flash: US$ 0.50/milhão de tokens de entrada e US$ 3.00/milhão de tokens de saída. API para Gemini 3.1 Pro: US$ 2.00/milhão de tokens de entrada e US$ 12.00/milhão de tokens de saída para prompts com até 200K tokens (dobra para US$ 4.00/milhão de entrada e US$ 18.00/milhão de saída para mais de 200K tokens). API para Gemini 3.1 Ultra: O custo para preencher a janela de contexto de 2 milhões de tokens varia de US$ 8 a US$ 12 por chamada de API. API para Gemini 3.1 Flash-Lite: US$ 0.25/milhão de tokens de entrada e US$ 1.50/milhão de tokens de saída. API para Gemini 3.1 Flash Image (Nano Banana 2): Preços por imagem variam (ex: US$ 0.045 por imagem 0.5K, US$ 0.067 por imagem 1K, US$ 0.151 por imagem 4K), com suporte a vídeo-para-imagem.',
+    pricing: 'Plano gratuito disponível (com acesso ao aplicativo Gemini, Gemini 3.5 Flash e recursos básicos, com limites de uso). Google AI Plus: US$ 7.99/mês (inclui Omni em Gemini, Daily Brief, AI Inbox no Gmail, 200GB de armazenamento na nuvem, acesso a Flow para geração de vídeo). Google AI Pro (anteriormente Gemini Advanced): US$ 19.99/mês (acesso a Gemini 3.1 Pro, Gemini 3.5 Flash, Gemini 3.1 Flash-Lite; 5TB de armazenamento Google One, Deep Research, Gems - personas de IA personalizadas, integração com Workspace, YouTube Premium Lite). Google AI Ultra ($99.99): US$ 99.99/mês (inclui Gemini Ultra, 20TB de armazenamento, acesso superior a modelos Pro e Veo, YouTube Premium completo). Google AI Ultra ($199.99): US$ 199.99/mês (inclui Gemini Ultra, 30TB de armazenamento, acesso máximo a modelos Pro e Veo, Deep Think, acesso prioritário a novos recursos, Gemini Spark, YouTube Premium completo). API para Gemini 3.5 Flash: US$ 1.50/milhão de tokens de entrada e US$ 9.00/milhão de tokens de saída. API para Gemini 3.1 Flash: US$ 0.50/milhão de tokens de entrada e US$ 3.00/milhão de tokens de saída. API para Gemini 3.1 Pro: US$ 2.00/milhão de tokens de entrada e US$ 12.00/milhão de tokens de saída para prompts com até 200K tokens (dobra para US$ 4.00/milhão de entrada e US$ 18.00/milhão de saída para mais de 200K tokens). API para Gemini 3.1 Ultra: O custo para preencher a janela de contexto de 2 milhões de tokens varia de US$ 8 a US$ 12 por chamada de API. API para Gemini 3.1 Flash-Lite: US$ 0.25/milhão de tokens de entrada e US$ 1.50/milhão de tokens de saída. API para Gemini 3.1 Flash Image (Nano Banana 2): Preços por imagem variam (ex: US$ 0.045 por imagem 0.5K, US$ 0.067 por imagem 1K, US$ 0.151 por imagem 4K), com suporte a vídeo-para-imagem. API para Gemini Omni Flash: Acesso via API planejado, mas não geralmente disponível ainda.',
     pros: [
       'Gemini 3.5 Flash (lançado em 19 de maio de 2026) é o novo modelo padrão para o aplicativo Gemini e o AI Mode do Google Search, oferecendo respostas 4x mais rápidas (TPS) e superando o Gemini 3.1 Pro em benchmarks de tarefas agenticas e codificação.',
       'Gemini Omni (anunciado e lançado em 19 de maio de 2026), com o primeiro modelo Gemini Omni Flash, é um novo "modelo de mundo" capaz de simular e raciocinar sobre a realidade física, com capacidades multimodais nativas de entrada e saída, incluindo geração e edição de vídeo.',
@@ -102,7 +106,8 @@ export const aiModels: AIModel[] = [
       'Integração profunda com o ecossistema Google (Workspace, Search, Android, Chrome, YouTube).',
       'Recursos avançados do Google AI Pro (anteriormente Gemini Advanced) como "Deep Research" (agente de pesquisa autônomo), "Gems" (personas de IA personalizadas) e "Reference past chats" para contextualização.',
       'Managed Agents na API Gemini (preview público, 19 de maio de 2026) permitem construir e implantar agentes autônomos e com estado em ambientes sandbox seguros.',
-      'Gemini 3.1 Flash-Lite (lançado em 7 de maio de 2026) é um modelo altamente eficiente em custo para tarefas de alto volume.'
+      'Gemini 3.1 Flash-Lite (lançado em 7 de maio de 2026) é um modelo altamente eficiente em custo para tarefas de alto volume.',
+      'Gemini Spark, impulsionado por Gemini 3.5 Flash, atua como um parceiro ativo que realiza tarefas em nome do usuário, com integração com serviços Google de primeira parte como Gmail e Docs.'
     ],
     cons: [
       'A API para Gemini 3.1 Pro é mais cara para prompts que excedem 200K tokens.',
@@ -111,7 +116,7 @@ export const aiModels: AIModel[] = [
       'O acesso a modelos Pro via API é pago, com planos gratuitos apenas para os modelos Flash e Flash-Lite.',
       'A segmentação de imagem não é explicitamente suportada nos modelos Gemini 3.1.',
       'Gemini 3.5 Flash é significativamente mais caro que seus predecessores (3x o preço do Gemini 3 Flash e 5x o do 2.5 Flash), e em algumas cargas de trabalho, pode ser mais caro de executar do que o Gemini 3.1 Pro.',
-      'Gemini Omni Flash é computacionalmente intensivo, e a geração de clipes complexos de alta fidelidade consome pesadamente os limites de uso diário do plano AI Pro.'
+      'Gemini Omni Flash é computacionalmente intensivo, e a geração de clipes complexos de alta fidelidade consome pesadamente os limites de uso diário do plano AI Pro. Além disso, a API para Gemini Omni Flash ainda não está geralmente disponível.'
     ],
     score: {
       reasoning: 5.0,
@@ -121,29 +126,33 @@ export const aiModels: AIModel[] = [
       value: 4.9
     },
     affiliateUrl: 'https://aistudio.google.com',
-    description: 'Gemini 3.5 Flash (lançado em 19 de maio de 2026) é o novo modelo padrão do Google, otimizado para velocidade e desempenho em tarefas agenticas e de codificação. A família Gemini Omni, com o Gemini Omni Flash (lançado em 19 de maio de 2026), introduz um "modelo de mundo" multimodal com capacidades de simulação e geração de vídeo. Os modelos Gemini 3.1 Ultra e Pro são os modelos de linguagem multimodal mais avançados do Google, oferecendo vasta janela de contexto de até 2 milhões de tokens para análise de grandes volumes de informações em texto, imagem, áudio e vídeo (principalmente via API). O Gemini 3.1 Ultra e Pro são projetados para raciocínio complexo e desempenho superior, enquanto o Gemini 3.5 Flash é otimizado para velocidade e custo-benefício em tarefas de alto volume. Ambos se destacam na análise multimodal e estão profundamente integrados ao ecossistema Google, disponíveis via assinatura Google AI Plus/Pro/Ultra e API.'
+    description: 'Gemini 3.5 Flash (lançado em 19 de maio de 2026) é o novo modelo padrão do Google, otimizado para velocidade e desempenho em tarefas agenticas e de codificação, superando o Gemini 3.1 Pro em benchmarks. A família Gemini Omni, com o Gemini Omni Flash (lançado em 19 de maio de 2026), introduz um "modelo de mundo" multimodal com capacidades de simulação e geração de vídeo de alta qualidade a partir de diversas entradas. Os modelos Gemini 3.1 Ultra e Pro são os modelos de linguagem multimodal mais avançados do Google, oferecendo vasta janela de contexto de até 2 milhões de tokens para análise de grandes volumes de informações em texto, imagem, áudio e vídeo (principalmente via API). O Gemini 3.1 Ultra e Pro são projetados para raciocínio complexo e desempenho superior, enquanto o Gemini 3.5 Flash é otimizado para velocidade e custo-benefício em tarefas de alto volume. Ambos se destacam na análise multimodal e estão profundamente integrados ao ecossistema Google, disponíveis via assinatura Google AI Plus/Pro/Ultra e API. O novo Gemini Spark, impulsionado por 3.5 Flash, atua como um parceiro ativo que executa tarefas em nome do usuário.'
   },
   {
     id: 'llama-models',
     name: 'Llama 4 (Maverick, Scout), Muse Spark, Llama 3 (8B, 70B, 3.1 405B)',
     developer: 'Meta',
     category: 'Texto & Código',
-    pricing: 'Código "open-weight" para uso local gratuito (requer hardware; licença comunitária Llama 4 para uso não comercial e comercial até US$ 700M de receita anual, exige que derivativos comecem com "Llama" e exibam "Built with Llama"; indivíduos domiciliados na UE excluídos para variantes multimodais do Llama 3.2). API para Llama 3 8B: A partir de US$ 0.05/milhão de tokens de entrada e US$ 0.08/milhão de tokens de saída (via provedores como Deepinfra/Groq). API para Llama 3.3 70B: Por exemplo, US$ 0.23/milhão de tokens de entrada e US$ 0.40/milhão de tokens de saída (via Deepinfra, mais barato) ou US$ 0.59/milhão de tokens de entrada e US$ 0.79/milhão de tokens de saída (via Groq, mais rápido). API para Llama 3.1 405B: Por exemplo, US$ 3.50/milhão de tokens de entrada e US$ 3.50/milhão de tokens de saída (via Together AI). API da Meta-llama (direta): US$ 4.00/milhão de tokens de entrada e US$ 4.00/milhão de tokens de saída, contexto de 33K tokens. API para Llama 4 Scout (10M contexto): A partir de US$ 0.08/milhão de tokens de entrada e US$ 0.30/milhão de tokens de saída (via OpenRouter). API para Llama 4 Maverick (1M contexto): Os preços podem ser mais altos que o Scout; o preço da API para Llama 4 Pro na entrada anterior era US$ 2.50/milhão de tokens de entrada e US$ 3.50/milhão de tokens de saída. Muse Spark: Preços via provedores de API terceirizados a serem confirmados.',
+    pricing: 'Código "open-weight" para uso local gratuito (requer hardware; licença comunitária Llama 4 para uso não comercial e comercial até US$ 700M de receita anual, exige que derivativos comecem com "Llama" e exibam "Built with Llama"; indivíduos domiciliados na UE excluídos para variantes multimodais do Llama 3.2). API para Llama 3 8B: A partir de US$ 0.05/milhão de tokens de entrada e US$ 0.08/milhão de tokens de saída (via provedores como Deepinfra/Groq). API para Llama 3.3 70B: Por exemplo, US$ 0.23/milhão de tokens de entrada e US$ 0.40/milhão de tokens de saída (via Deepinfra, mais barato) ou US$ 0.59/milhão de tokens de entrada e US$ 0.79/milhão de tokens de saída (via Groq, mais rápido). API para Llama 3.1 405B: Por exemplo, US$ 0.80/milhão de tokens de entrada e US$ 0.80/milhão de tokens de saída (via Deepinfra), ou US$ 0.90/milhão de tokens de entrada e US$ 0.90/milhão de tokens de saída (via Fireworks), ou US$ 4.00/milhão de tokens de entrada e US$ 4.00/milhão de tokens de saída (via Meta-llama direto). API da Meta-llama (direta para Llama 3.1 405B base): US$ 4.00/milhão de tokens de entrada e US$ 4.00/milhão de tokens de saída, contexto de 33K tokens. API para Llama 4 Scout (10M contexto): A partir de US$ 0.08/milhão de tokens de entrada e US$ 0.30/milhão de tokens de saída (via OpenRouter). API para Llama 4 Maverick (1M contexto): Os preços podem ser mais altos que o Scout; o preço da API para Llama 4 Pro na entrada anterior era US$ 2.50/milhão de tokens de entrada e US$ 3.50/milhão de tokens de saída. Preço para Llama 4 Maverick no AWS Bedrock é $0.50 por milhão de tokens de entrada. Muse Spark: Preços via provedores de API terceirizados a serem confirmados (private API preview).',
     pros: [
-      'Muse Spark (lançado em abril de 2026) da Meta Superintelligence Labs, é o novo modelo de ponta da Meta, substituindo o Llama em algumas aplicações.',
+      'Muse Spark (lançado em abril de 2026) da Meta Superintelligence Labs, é o novo modelo de ponta da Meta, substituindo o Llama em algumas aplicações, com multimodalidade nativa, raciocínio visual "chain-of-thought" e orquestração multi-agente. Requer 10x menos computação que Llama 4 Maverick para o mesmo desempenho.',
       'Llama 4 (Maverick e Scout, lançados em abril de 2025) oferece modelos open-weight com desempenho de ponta e capacidades multimodais avançadas (texto e imagem), além de serem multilíngues.',
       'Llama 4 Scout destaca-se por uma vasta janela de contexto de 10 milhões de tokens, uma das maiores da indústria.',
       'Llama 4 Maverick é considerado um modelo Llama de alto desempenho para tarefas amplas de assistente, codificação e multimodais.',
       'Llama 3.x (incluindo Llama 3.3 70B Instruct e Llama 3.1 405B) continua a oferecer modelos open-weight que permitem uso local gratuito e fine-tuning com total controle.',
       'Llama 3.1 405B (lançado em 23 de julho de 2024) é um modelo de fronteira open-source com 128K de contexto, uso de ferramentas expandido e capacidades multilíngues.',
-      'Ecossistema robusto de provedores de API terceirizados que oferecem custos competitivos e velocidade (Groq é conhecido pela inferência rápida, 250+ tokens/segundo para Llama 3.3 70B).'
+      'Ecossistema robusto de provedores de API terceirizados que oferecem custos competitivos e velocidade (Groq é conhecido pela inferência rápida, 250+ tokens/segundo para Llama 3.3 70B).',
+      'Muse Spark possui um "Contemplating Mode" que orquestra múltiplos agentes para raciocinar em paralelo, competindo com modos de raciocínio extremos de modelos de fronteira.',
+      'Muse Spark oferece assistência avançada em saúde e bem-estar, colaborando com mais de 1.000 médicos para insights precisos.',
+      'Muse Spark se destaca em codificação visual, permitindo criar websites e mini-jogos a partir de prompts.'
     ],
     cons: [
       'Requer hardware potente (GPU) para rodar localmente com alta velocidade e para modelos maiores.',
-      'A qualidade e o custo da API podem variar significativamente dependendo do provedor terceirizado.',
+      'A qualidade e o custo da API podem variar significativamente dependendo do provedor terceirizado (ex: Replicate é significativamente mais caro para Llama 3.1 405B).',
       'A licença de uso comercial (Llama 4 Community License) é limitada a empresas com receita anual inferior a US$ 700 milhões e exige requisitos de nomeação para derivativos. Não é "open source" no sentido da OSI.',
       'A licença para variantes multimodais do Llama 3.2 explicitamente exclui indivíduos domiciliados na UE de usar os pesos diretamente.',
-      'As janelas de contexto para modelos Llama 3.x (128K ou 33K) são menores que a do Llama 4 Scout e alguns concorrentes (Gemini 3.1 Pro com 2M).'
+      'As janelas de contexto para modelos Llama 3.x (128K ou 33K) são menores que a do Llama 4 Scout e alguns concorrentes (Gemini 3.1 Pro com 2M).',
+      'Muse Spark, embora competitivo em multimodalidade e raciocínio, pode ficar atrás de concorrentes em programação e raciocínio abstrato complexo, e atualmente só produz respostas em texto.'
     ],
     score: {
       reasoning: 5.0,
@@ -153,16 +162,16 @@ export const aiModels: AIModel[] = [
       value: 5.0
     },
     affiliateUrl: 'https://llama.meta.com/',
-    description: 'A família Llama da Meta, agora com Muse Spark (lançado em abril de 2026) como o novo modelo de ponta, e Llama 4 (Maverick e Scout, lançados em abril de 2025) e Llama 3 (incluindo Llama 3.3 70B Instruct e Llama 3.1 405B), oferece modelos "open-weight" que permitem uso local e personalização profunda via fine-tuning. O Llama 4 se destaca pelo desempenho de ponta, capacidades multimodais (texto e imagem) e uma vasta janela de contexto (10 milhões de tokens para Scout, 1 milhão para Maverick). Com uma comunidade ativa e um ecossistema de provedores de API que oferecem custos competitivos e alta velocidade de inferência (como Groq), os modelos Llama e Muse Spark são uma opção poderosa e flexível para desenvolvedores e empresas. Embora exija hardware robusto para execução local e a licença comercial tenha certas restrições, sua natureza open-weight o torna ideal para quem busca personalização e controle.'
+    description: 'A família Llama da Meta, agora com Muse Spark (lançado em abril de 2026) como o novo modelo de ponta da Meta Superintelligence Labs, e Llama 4 (Maverick e Scout, lançados em abril de 2025) e Llama 3 (incluindo Llama 3.3 70B Instruct e Llama 3.1 405B), oferece modelos "open-weight" que permitem uso local e personalização profunda via fine-tuning. O Muse Spark é um modelo multimodal nativo com raciocínio visual "chain-of-thought" e orquestração multi-agente, exigindo 10x menos computação que o Llama 4 Maverick. O Llama 4 se destaca pelo desempenho de ponta, capacidades multimodais (texto e imagem) e uma vasta janela de contexto (10 milhões de tokens para Scout, 1 milhão para Maverick). Com uma comunidade ativa e um ecossistema de provedores de API que oferecem custos competitivos e alta velocidade de inferência (como Groq), os modelos Llama e Muse Spark são uma opção poderosa e flexível para desenvolvedores e empresas. Embora exija hardware robusto para execução local e a licença comercial tenha certas restrições, sua natureza open-weight o torna ideal para quem busca personalização e controle. Muse Spark também introduz o "Contemplating Mode" e assistência avançada em saúde e codificação visual.'
   },
   {
-    id: 'dall-e-3',
+    id: 'dall-e-4',
     name: 'DALL-E 4 (ChatGPT Images 2.0)',
     developer: 'OpenAI',
     category: 'Geração de Imagem',
-    pricing: 'Incluso no ChatGPT Plus (US$ 20/mês, com acesso a GPT-5.4 Thinking e limites de uso; Plus users podem gerar até 50 imagens a cada 3 horas). API para DALL-E 4 (modelo gpt-image-2-2026-04-21): Preços por imagem variam, por exemplo, US$ 0.053 (1024x1024, medium quality). O modo instantâneo de geração de imagem é gratuito para todos os usuários do ChatGPT.',
+    pricing: 'Incluso no ChatGPT Plus (US$ 20/mês, com acesso a GPT-5.5 Thinking e limites de uso; Plus users podem gerar até 50 imagens a cada 3 horas). API para DALL-E 4 (modelo gpt-image-2-2026-04-21): Preços por imagem variam, por exemplo, US$ 0.053 (1024x1024, medium quality). O modo instantâneo de geração de imagem é gratuito para todos os usuários do ChatGPT.',
     pros: [
-      'DALL-E 4 (integrado no ChatGPT Plus e superiores) é o modelo de geração de imagens de última geração da OpenAI.',
+      'DALL-E 4 (integrado no ChatGPT Plus e superiores, agora com GPT-5.5) é o modelo de geração de imagens de última geração da OpenAI.',
       'Capacidade de interpretar prompts complexos e conversacionais de forma mais eficaz do que muitos concorrentes, resultando em imagens que correspondem melhor à descrição.',
       'Melhora significativa na renderização de texto dentro das imagens, com suporte multilíngue.',
       'Gera imagens de alta qualidade com diversos estilos, raciocínio visual avançado e saída em resolução 2K.',
@@ -184,16 +193,16 @@ export const aiModels: AIModel[] = [
       value: 4.7
     },
     affiliateUrl: 'https://chatgpt.com',
-    description: 'DALL-E 4, da OpenAI (integrado ao ChatGPT Plus), é a mais recente geração de modelos de geração de imagens da empresa. Ele se destaca pela sua capacidade de interpretar prompts complexos e conversacionais para criar imagens de alta qualidade com renderização aprimorada de texto, suporte multilíngue, e uma forte correspondência com a descrição. O modo instantâneo de geração de imagem é gratuito para todos os usuários do ChatGPT, enquanto o acesso aos recursos avançados é para Plus e superiores. Com gerações ultrarrápidas, o DALL-E 4 é uma ferramenta poderosa para designers, criadores de conteúdo e qualquer pessoa que busque gerar visuais criativos de alto nível, apesar do custo da API para uso em larga escala.'
+    description: 'DALL-E 4, da OpenAI (integrado ao ChatGPT Plus, agora impulsionado por GPT-5.5), é a mais recente geração de modelos de geração de imagens da empresa. Ele se destaca pela sua capacidade de interpretar prompts complexos e conversacionais para criar imagens de alta qualidade com renderização aprimorada de texto, suporte multilíngue, e uma forte correspondência com a descrição. O modo instantâneo de geração de imagem é gratuito para todos os usuários do ChatGPT, enquanto o acesso aos recursos avançados é para Plus e superiores. Com gerações ultrarrápidas, o DALL-E 4 é uma ferramenta poderosa para designers, criadores de conteúdo e qualquer pessoa que busque gerar visuais criativos de alto nível, apesar do custo da API para uso em larga escala.'
   },
   {
     id: 'midjourney-v8-1',
     name: 'Midjourney V8.1 (e V7, V8.2 Preview)',
     developer: 'Midjourney',
     category: 'Geração de Imagem',
-    pricing: 'Sem plano gratuito no site oficial. Planos pagos (com 20% de desconto na cobrança anual): Basic US$ 10/mês (US$ 96/ano) com ~3.3 horas de GPU rápida; Standard US$ 30/mês (US$ 288/ano) com ~15 horas de GPU rápida e gerações ilimitadas no modo Relax; Pro US$ 60/mês (US$ 576/ano) com ~30 horas de GPU rápida, modo Relax ilimitado, modo Stealth (privacidade) e gerações ilimitadas de vídeo SD no modo Relax; Mega US$ 120/mês (US$ 1152/ano) com ~60 horas de GPU rápida, modo Relax ilimitado e modo Stealth. HD images na V8.1 custam 1.33 minutos de GPU, SD custa menos de 1 minuto.',
+    pricing: 'Sem plano gratuito no site oficial. Planos pagos (com 20% de desconto na cobrança anual): Basic US$ 10/mês (US$ 96/ano) com ~3.3 horas de GPU rápida; Standard US$ 30/mês (US$ 288/ano) com ~15 horas de GPU rápida e gerações ilimitadas no modo Relax; Pro US$ 60/mês (US$ 576/ano) com ~30 horas de GPU rápida, modo Stealth (privacidade) e gerações ilimitadas de vídeo SD no modo Relax; Mega US$ 120/mês (US$ 1152/ano) com ~60 horas de GPU rápida, modo Relax ilimitado e modo Stealth. HD images na V8.1 custam 1.33 minutos de GPU, SD custa menos de 1 minuto. HD mode é agora o padrão e 3x mais barato.',
     pros: [
-      'Midjourney V8.1 (lançado em 30 de abril de 2026) aprimora a qualidade de imagem excepcional, alta resolução (HD 2K nativo), estética marcante e maior precisão na compreensão de prompts. É 4-5x mais rápido para jobs padrão.',
+      'Midjourney V8.1 (lançado em 30 de abril de 2026) aprimora a qualidade de imagem excepcional, alta resolução (HD 2K nativo), estética marcante e maior precisão na compreensão de prompts. É 4-5x mais rápido para jobs padrão, e o modo HD é 3x mais rápido e 3x mais barato, tornando-o o padrão.',
       'Midjourney V8.2 (previsto para junho de 2026) busca ser mais ousado, experimental e expressivo, com foco na direção artística e personalização aprimorada.',
       'Disponibiliza um Editor Web completo (previsto para junho de 2026), eliminando a dependência do Discord, com funcionalidades de Inpaint, Outpaint, pan e zoom para edição de imagens.',
       'Possui recurso de Consistência de Personagem (--cref) e Style Reference (--sref) para manter faces e estilos consistentemente em diferentes gerações (disponível em V7/V8).',
@@ -209,7 +218,8 @@ export const aiModels: AIModel[] = [
       'O modo Stealth (privacidade) e gerações de vídeo SD estão disponíveis apenas nos planos Pro e Mega.',
       'Curva de aprendizado para prompt engineering avançado.',
       'Horas de GPU rápida não se acumulam (não são transferidas para o próximo mês).',
-      'Mesmo com a velocidade aprimorada da V8.1, o uso de recursos de alta qualidade pode ser caro em termos de tempo de GPU.'
+      'Mesmo com a velocidade aprimorada da V8.1, o uso de recursos de alta qualidade pode ser caro em termos de tempo de GPU.',
+      'Ainda não possui aplicativo nativo para Mac.'
     ],
     score: {
       reasoning: 4.7,
@@ -219,23 +229,22 @@ export const aiModels: AIModel[] = [
       value: 4.6
     },
     affiliateUrl: 'https://midjourney.com',
-    description: 'Midjourney V8.1 (lançado em 30 de abril de 2026) e a próxima V8.2 (prevista para junho de 2026) representam um salto significativo em qualidade visual, alta resolução e coerência, sendo amplamente reconhecido por seu fotorrealismo e habilidades artísticas. Com a introdução do "Draft Mode" para iteração rápida e o próximo Editor Web que eliminará a dependência do Discord (incluindo Inpaint, Outpaint e Consistência de Personagem), o Midjourney continua a liderar a geração de imagens. Apesar de não ter plano gratuito oficial ou uma API pública, o Midjourney continua a ser uma ferramenta líder para designers e criadores que buscam resultados visuais de altíssimo nível.'
+    description: 'Midjourney V8.1 (lançado em 30 de abril de 2026) e a próxima V8.2 (prevista para junho de 2026) representam um salto significativo em qualidade visual, alta resolução (HD 2K nativo por padrão), velocidade (4-5x mais rápido para jobs padrão, HD 3x mais rápido e 3x mais barato) e coerência, sendo amplamente reconhecido por seu fotorrealismo e habilidades artísticas. Com a introdução do "Draft Mode" para iteração rápida e o próximo Editor Web que eliminará a dependência do Discord (incluindo Inpaint, Outpaint e Consistência de Personagem), o Midjourney continua a liderar a geração de imagens. Apesar de não ter plano gratuito oficial ou uma API pública, o Midjourney continua a ser uma ferramenta líder para designers e criadores que buscam resultados visuais de altíssimo nível.'
   },
   {
-    id: 'stable-diffusion-3-medium',
+    id: 'stability-ai-models',
     name: 'Stable Diffusion 3.5 (Medium, Large, Turbo), Stable Diffusion XL (Turbo), Stable Audio 3.0, Stable Video Diffusion',
     developer: 'Stability AI',
     category: 'Geração de Imagem',
     pricing: 'Código "open-weight" (Gratuito para uso local com licença comunitária Stability AI para uso não comercial e comercial até US$ 1M de receita anual, exige hardware); para empresas com mais de US$ 1M de receita anual, licença Enterprise é necessária. API (sistema de créditos): 1 crédito = US$ 0.01. Stable Diffusion XL 1.5: US$ 0.035/imagem (1024x1024) via Replicate. Stable Audio 3.0: 2 créditos por geração. Planos de assinatura Stable Audio: Free (10 faixas/mês, até 6 min); Pro (US$ 11.99/mês para 250 faixas); Studio (US$ 29.99/mês para 675 faixas); Max (US$ 89.99/mês para 2250 faixas). Outros provedores oferecem planos de imagem (ex: ~US$ 10/mês para 2000 gerações, ~US$ 20/mês para 4000 gerações).',
     pros: [
-      'Stable Audio 3.0 (lançado em 20 de maio de 2026) é uma família de modelos de difusão latente de pesos abertos para geração e edição de música e efeitos sonoros, capaz de criar peças de até 6 minutos e 20 segundos, com saída de comprimento variável, edição baseada em inpainting e inferência rápida.',
+      'Stable Audio 3.0 (lançado em 20 de maio de 2026) é uma família de modelos de difusão latente de pesos abertos para geração e edição de música e efeitos sonoros, capaz de criar peças de até 6 minutos e 20 segundos, com saída de comprimento variável, edição baseada em inpainting e inferência rápida. Os modelos são treinados em dados totalmente licenciados e usuários possuem seus outputs.',
       'Stable Diffusion 3.5 (Medium, Large, Large Turbo, como modelos Core em maio de 2026) são as últimas gerações de modelos de difusão da Stability AI, oferecendo controle aprimorado, qualidade fotorrealista superior, melhor compreensão de prompts complexos, anatomia e renderização de texto.',
       'Stable Diffusion XL (SDXL, incluindo SDXL Turbo) continua sendo um modelo de ponta, acessível e com ótima qualidade de imagem, alta resolução nativa (1024x1024), e é open-weight.',
       'Modelos "open-weight" que podem rodar localmente (com hardware adequado), permitindo controle absoluto, privacidade e fine-tuning (LoRAs, ControlNet), sem taxas por geração para uso próprio.',
       'A Stability AI oferece Stable Video Diffusion (SVD) para capacidades de texto-para-vídeo e imagem-para-vídeo.',
       'Ecossistema robusto de modelos fine-tuned pela comunidade.',
-      'Gera outputs diversos e representativos de diferentes tons de pele e características.',
-      'Modelos Stable Audio 3.0 foram treinados com dados totalmente licenciados, e sob a Stability AI Community License, os usuários possuem seus outputs.'
+      'Gera outputs diversos e representativos de diferentes tons de pele e características.'
     ],
     cons: [
       'Stable Diffusion 4.0 está em desenvolvimento com lançamento previsto para o final de 2026, não está geralmente disponível.',
@@ -244,7 +253,8 @@ export const aiModels: AIModel[] = [
       'Ainda pode apresentar dificuldades em renderizar anatomia humana de forma perfeita em alguns casos.',
       'A qualidade da saída pode variar mais sem fine-tuning em comparação com soluções gerenciadas.',
       'A licença comercial (Stability AI Community License) possui um limite de receita anual de US$ 1M para uso gratuito.',
-      'SDXL pode ter desempenho mais lento em resoluções mais baixas e requer mais VRAM.'
+      'SDXL pode ter desempenho mais lento em resoluções mais baixas e requer mais VRAM.',
+      'Stable Audio 3.0 é focado em instrumentais e efeitos sonoros, não oferecendo suporte a vocais, ao contrário de concorrentes como Suno e Udio.'
     ],
     score: {
       reasoning: 4.1,
@@ -254,7 +264,7 @@ export const aiModels: AIModel[] = [
       value: 4.9
     },
     affiliateUrl: 'https://stability.ai',
-    description: 'A Stability AI oferece uma gama de modelos "open-weight" para IA visual e de áudio, incluindo a família Stable Diffusion 3.5 (Medium, Large, Turbo) e Stable Diffusion XL (SDXL, incluindo Turbo) para geração de imagens, e Stable Audio 3.0 para geração de música e efeitos sonoros. Stable Diffusion 3.5 e SDXL se destacam pela qualidade da imagem, renderização de texto e compreensão de prompts complexos. Stable Audio 3.0 (lançado em maio de 2026) permite gerar áudios de alta qualidade de até 6 minutos e 20 segundos. Os modelos são "open-weight", permitindo uso local gratuito (com limites de receita para uso comercial) e personalização profunda via fine-tuning. A Stability AI oferece também Stable Video Diffusion para capacidades de vídeo. Embora exija investimento em aprendizado e hardware potente para as versões maiores, sua flexibilidade e o custo-benefício o tornam ideal para profissionais que buscam personalização, eficiência e controle.'
+    description: 'A Stability AI oferece uma gama de modelos "open-weight" para IA visual e de áudio, incluindo a família Stable Diffusion 3.5 (Medium, Large, Turbo) e Stable Diffusion XL (SDXL, incluindo Turbo) para geração de imagens, e Stable Audio 3.0 para geração e edição de música e efeitos sonoros. Stable Diffusion 3.5 e SDXL se destacam pela qualidade da imagem, renderização de texto e compreensão de prompts complexos. Stable Audio 3.0 (lançado em maio de 2026) permite gerar áudios de alta qualidade de até 6 minutos e 20 segundos, com modelos open-weight treinados em dados licenciados, e suporte a inpainting. Os modelos são "open-weight", permitindo uso local gratuito (com limites de receita para uso comercial) e personalização profunda via fine-tuning. A Stability AI oferece também Stable Video Diffusion para capacidades de vídeo. Embora exija investimento em aprendizado e hardware potente para as versões maiores, sua flexibilidade e o custo-benefício o tornam ideal para profissionais que buscam personalização, eficiência e controle.'
   },
   {
     id: 'make-com-ai-agents',
@@ -264,13 +274,14 @@ export const aiModels: AIModel[] = [
     pricing: 'Plano grátis: 1.000 créditos/mês, 2 cenários ativos, inclui Make AI Agents (beta), intervalo de 15 minutos. Plano Core: US$ 10.59/mês (ou US$ 9/mês anual) para 10.000 créditos (cenários ilimitados, intervalo de 1 minuto, inclui Make AI Agents). Plano Pro: US$ 18.82/mês (ou US$ 16/mês anual) para 10.000+ créditos (prioridade de execução, variáveis personalizadas, logs completos). Créditos adicionais podem ser comprados (10.000 créditos por US$ 9). Plano Teams: US$ 34.12/mês por usuário (ou US$ 29/mês por usuário anual) para 10.000+ créditos (colaboração, gestão de equipes, prioridade de execução). Plano Enterprise: precificação personalizada (oferta de segurança avançada, suporte 24/7, integrações empresariais e funções personalizadas). Operações não utilizadas acumulam por um mês nos planos pagos.',
     pros: [
       'Interface visual de arrastar e soltar intuitiva e robusta para criar roteiros condicionais complexos.',
-      'Os "Make AI Agents" (novo aplicativo lançado em 11 de fevereiro de 2026, com atualizações contínuas em maio de 2026) permitem automação inteligente e adaptativa com tomada de decisões em tempo real dentro do canvas, com visibilidade total do processo e logs de raciocínio detalhados.',
-      'Integração nativa com os principais modelos de IA (OpenAI GPT-5, Anthropic Claude Opus 4.8, Google Gemini 3.1 Pro/Flash) e milhares de APIs (3.000+ apps, mais integração via módulo HTTP).',
+      'Os "Make AI Agents" (novo aplicativo lançado em 11 de fevereiro de 2026, com atualizações contínuas em maio de 2026) permitem automação inteligente e adaptativa com tomada de decisões em tempo real dentro do canvas, com visibilidade total do processo e logs de raciocínio detalhados, e chat in-canvas para refinamento.',
+      'Integração nativa com os principais modelos de IA (OpenAI GPT-5.5, Anthropic Claude Opus 4.8, Google Gemini 3.5 Flash) e milhares de APIs (3.000+ apps, mais integração via módulo HTTP).',
       'Suporte multimodal para AI Agents, permitindo entrada e saída de arquivos como PDFs, imagens e CSVs diretamente no fluxo de trabalho.',
       'Registros detalhados de execução (histórico de cenários e replay de execução) e busca de texto completo em logs para depuração e visibilidade aprimoradas.',
       'Altamente competitivo em termos de custo-benefício para automações complexas em comparação com alternativas como Zapier (geralmente 3-5x mais barato por operação, 80% mais barato em muitos volumes).',
       'Funcional plano gratuito para prototipar automações.',
-      'Recursos como "If-else" e "Merge" (lançados em março de 2026) para lógica condicional avançada, e "Make Skills" para assistentes de IA.'
+      'Recursos como "If-else" e "Merge" (lançados em março de 2026) para lógica condicional avançada, e "Make Skills" para assistentes de IA.',
+      'Apresenta uma "Library of Agents" com exemplos de agentes pré-construídos para workflows reais.'
     ],
     cons: [
       'O consumo de créditos pode ser imprevisível e rápido em cenários complexos com muitos módulos e Agentes de IA, especialmente porque "créditos" são contados de forma diferente de "tarefas" em outras plataformas.',
@@ -287,6 +298,6 @@ export const aiModels: AIModel[] = [
       value: 4.6
     },
     affiliateUrl: 'https://www.make.com',
-    description: 'Make.com é uma plataforma de automação visual B2B que se consolidou como uma orquestradora poderosa para sistemas e IAs. Os "Make AI Agents" (recurso da plataforma, lançado em fevereiro de 2026) permitem a criação de fluxos de trabalho inteligentes e adaptativos diretamente no canvas visual, com suporte multimodal para processamento de arquivos como PDFs e imagens, e logs de raciocínio detalhados. A plataforma se integra nativamente com os modelos de IA mais recentes, como OpenAI GPT-5, Anthropic Claude Opus 4.8 e Google Gemini 3.5 Flash. Com uma interface altamente intuitiva e recursos aprimorados de controle de fluxo, é uma ferramenta versátil para automação de rotinas empresariais. Seus planos de preços, agora baseados em créditos, oferecem flexibilidade e são competitivos em termos de custo-benefício em comparação com alternativas, apesar do consumo de créditos poder ser imprevisível para tarefas de IA.'
+    description: 'Make.com é uma plataforma de automação visual B2B que se consolidou como uma orquestradora poderosa para sistemas e IAs. Os "Make AI Agents" (recurso da plataforma, com novo aplicativo lançado em fevereiro de 2026 e atualizações contínuas em maio de 2026) permitem a criação de fluxos de trabalho inteligentes e adaptativos diretamente no canvas visual, com suporte multimodal para processamento de arquivos como PDFs e imagens, chat in-canvas para refinamento e logs de raciocínio detalhados. A plataforma se integra nativamente com os modelos de IA mais recentes, como OpenAI GPT-5.5, Anthropic Claude Opus 4.8 e Google Gemini 3.5 Flash. Com uma interface altamente intuitiva e recursos aprimorados de controle de fluxo, é uma ferramenta versátil para automação de rotinas empresariais. Seus planos de preços, agora baseados em créditos, oferecem flexibilidade e são competitivos em termos de custo-benefício em comparação com alternativas, apesar do consumo de créditos poder ser imprevisível para tarefas de IA. Inclui uma "Library of Agents" para facilitar a criação.'
   }
 ];

@@ -10,20 +10,20 @@ export interface CalculatorModel {
 export const AI_MODELS: CalculatorModel[] = [
   // Google
   {
-    name: 'Gemini 2.5 Pro',
+    name: 'Gemini 1.5 Pro',
     provider: 'Google',
-    inputPricePerM: 1.25, // Base price for up to 128K tokens, higher for larger contexts
-    outputPricePerM: 10.00, // Base price for up to 128K tokens, higher for larger contexts
+    inputPricePerM: 7.00, // Reduced price for up to 128K tokens
+    outputPricePerM: 21.00, // Reduced price for up to 128K tokens
     contextWindow: '1M tokens',
-    description: 'O modelo Pro atual da Google (maio 2026), com raciocínio avançado e contexto de até 1M tokens. Preço base para até 128K tokens. Acima de 128K, preços podem ser maiores.',
+    description: 'O modelo Pro atual da Google (lançado em Maio de 2024, preços atualizados em Outubro de 2024), com raciocínio avançado e contexto de até 1M tokens. Preço base para até 128K tokens. Acima de 128K, preços podem ser maiores.',
   },
   {
-    name: 'Gemini 2.5 Flash',
+    name: 'Gemini 1.5 Flash',
     provider: 'Google',
-    inputPricePerM: 0.30,
-    outputPricePerM: 2.50,
+    inputPricePerM: 0.075,
+    outputPricePerM: 0.30,
     contextWindow: '1M tokens',
-    description: 'O modelo Flash padrão da Google (maio 2026), oferecendo um bom equilíbrio entre velocidade e capacidade, com até 1M de contexto.',
+    description: 'O modelo Flash padrão da Google (lançado em Maio de 2024, preços atualizados em Agosto de 2024), oferecendo um bom equilíbrio entre velocidade e capacidade, com até 1M de contexto.',
   },
   // OpenAI
   {
@@ -49,7 +49,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 5.00,
     outputPricePerM: 25.00,
     contextWindow: '1M tokens',
-    description: 'O modelo mais inteligente da Anthropic (lançado em maio 28, 2026) para raciocínio complexo e tarefas agênticas, com 1M de contexto.',
+    description: 'A versão mais recente do modelo Opus da Anthropic para raciocínio complexo e tarefas agênticas, com 1M de contexto.',
   },
   {
     name: 'Claude Sonnet 4.6',
@@ -57,7 +57,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 3.00,
     outputPricePerM: 15.00,
     contextWindow: '1M tokens',
-    description: 'Modelo equilibrado da Anthropic (junho 2026) entre inteligência e velocidade para cargas de trabalho empresariais, com 1M de contexto.',
+    description: 'A versão mais recente do modelo Sonnet da Anthropic (junho 2026), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 1M de contexto.',
   },
   {
     name: 'Claude Haiku 4.5',
@@ -65,7 +65,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 1.00,
     outputPricePerM: 5.00,
     contextWindow: '200K tokens',
-    description: 'O modelo mais rápido e econômico da Anthropic (junho 2026), com 200K de contexto.',
+    description: 'A versão mais recente do modelo Haiku da Anthropic (junho 2026), o mais rápido e econômico, com 200K de contexto.',
   },
   // DeepSeek
   {
@@ -91,7 +91,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.88,
     outputPricePerM: 0.88,
     contextWindow: '131K tokens',
-    description: 'Modelo open-source poderoso via API Together AI (junho 2026).',
+    description: 'Versão avançada do modelo open-source Llama 3 (Llama 3.3 70B Instruct), poderoso via API Together AI.',
   },
   {
     name: 'Meta-Llama-3.1-8B-Instruct-Turbo (via Together AI)',
@@ -103,12 +103,12 @@ export const AI_MODELS: CalculatorModel[] = [
   },
   // Mistral AI
   {
-    name: 'Mistral Large',
+    name: 'Mistral Large 3',
     provider: 'Mistral AI',
-    inputPricePerM: 2.00,
-    outputPricePerM: 6.00,
-    contextWindow: '128K tokens',
-    description: 'Modelo flagship mais recente da Mistral AI com raciocínio e capacidades multimodais (junho 2026), suportando 128K de contexto.',
+    inputPricePerM: 0.50,
+    outputPricePerM: 1.50,
+    contextWindow: '262K tokens',
+    description: 'Modelo flagship mais recente da Mistral AI (Mistral Large 3), com raciocínio e capacidades multimodais, suportando 262K de contexto.',
   },
   {
     name: 'Mistral Small 4',

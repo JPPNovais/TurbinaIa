@@ -13,6 +13,47 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'xai-grok-2-beta-2026',
+    date: '2026-06',
+    title: 'xAI lança Grok-2 Beta e Grok-2 mini, expandindo a família de modelos',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI anunciou o lançamento dos seus novos modelos Grok-2 Beta e Grok-2 mini, indicando uma nova iteração ou família dentro de seus modelos de IA, com foco em avanços de capacidade.',
+    highlights: [
+      'Disponibilidade dos novos modelos Grok-2 Beta e Grok-2 mini a partir de 1º de junho de 2026.',
+      'Representa uma evolução na linha de modelos Grok da xAI.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'xai-grok-1-open-source-2026',
+    date: '2026-06',
+    title: 'xAI libera pesos e arquitetura do modelo Grok-1 como código aberto',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI tornou público os pesos e a arquitetura do seu modelo Grok-1, um Mixture-of-Experts com 314 bilhões de parâmetros, marcando um movimento significativo no cenário de IA de código aberto.',
+    highlights: [
+      'Pesos e arquitetura do Grok-1 liberados como código aberto em 1º de junho de 2026.',
+      'Modelo de 314 bilhões de parâmetros, utilizando arquitetura Mixture-of-Experts.',
+      'Disponibiliza tecnologia avançada para pesquisa e desenvolvimento pela comunidade.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'anthropic-claude-mythos-expansao-acesso-2026',
+    date: '2026-06',
+    title: 'Anthropic expande o acesso global ao Claude Mythos para empresas e países',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'A Anthropic ampliou o acesso ao seu modelo Claude Mythos para mais de 150 empresas e mais de 15 países, marcando uma expansão significativa do Projeto Glasswing e sua disponibilidade.',
+    highlights: [
+      'Acesso expandido ao Claude Mythos para mais de 150 empresas parceiras a partir de 2 de junho de 2026.',
+      'Disponibilização do modelo em mais de 15 países globalmente, além dos EUA.',
+      'Inclui setores como energia, água, saúde e comunicações, com foco em cibersegurança e detecção de vulnerabilidades.'
+    ],
+    impact: 'Alto'
+  },
+  {
     id: 'xai-grok-4-1-2026',
     date: '2026-06',
     title: 'xAI lança Grok 4.1, modelo com inteligência emocional e raciocínio aprimorados',

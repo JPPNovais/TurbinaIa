@@ -3466,4 +3466,147 @@ Formato da saída:
 *   **Métricas de Sucesso:** [Lista, ex: Taxa de retenção, Lifetime Value (LTV), NPS (Net Promoter Score), Referrals gerados, Satisfação do cliente.]`,
     tags: ['funil de vendas', 'multimodal', 'marketing digital', 'ia para marketing'],
   },
+  {
+    id: 'ia-design-agente-otimizacao-fluxo-trabalho',
+    title: 'Design de Agente IA para Otimização de Fluxo de Trabalho',
+    category: 'IA & Automação',
+    description: 'Projete um sistema de agentes IA para analisar, otimizar e monitorar um fluxo de trabalho específico, identificando gargalos e sugerindo melhorias contínuas.',
+    template: `Você é um especialista em design de sistemas multi-agente e otimização de processos.
+Sua tarefa é projetar um sistema de agentes IA para otimizar o seguinte fluxo de trabalho:
+
+**Fluxo de Trabalho a Otimizar:**
+[Descreva detalhadamente o fluxo de trabalho atual, incluindo etapas, responsáveis, entradas, saídas e ferramentas utilizadas. Ex: "Processo de onboarding de novos clientes, desde a captação do lead até a primeira venda ativa."]
+
+**Objetivos de Otimização:**
+[Liste 2-3 objetivos claros para a otimização. Ex: "Reduzir o tempo de onboarding em 30%", "Aumentar a taxa de conversão em 15%", "Melhorar a satisfação do cliente na etapa inicial."]
+
+**Contexto e Restrições:**
+[Forneça informações adicionais, como tecnologias existentes, orçamentos, dados disponíveis e quaisquer outras restrições relevantes. Ex: "Utilizamos CRM Salesforce e um sistema de automação de marketing X.", "Temos dados históricos dos últimos 12 meses.", "A conformidade com LGPD é crucial."]
+
+Com base nas informações fornecidas, projete o sistema multi-agente, detalhando os seguintes pontos:
+
+1.  **Agente(s) Principal(is) e Suas Funções:**
+    *   Identifique os agentes IA necessários.
+    *   Para cada agente, descreva seu papel, responsabilidades e capacidades. (Ex: Agente Analítico, Agente Executor, Agente de Monitoramento).
+
+2.  **Interação entre Agentes:**
+    *   Descreva como os agentes se comunicarão e colaborarão para atingir os objetivos.
+
+3.  **Fontes de Dados e Mecanismos de Análise:**
+    *   Quais dados os agentes precisarão acessar?
+    *   Como eles coletarão e analisarão esses dados (Ex: NLP para feedback, ML para previsão, etc.)?
+
+4.  **Mecanismos de Otimização e Tomada de Decisão:**
+    *   Como os agentes identificarão gargalos e oportunidades?
+    *   Como eles proporão ou executarão otimizações?
+
+5.  **Interface de Usuário/Supervisão:**
+    *   Como os usuários humanos interagirão com o sistema de agentes?
+    *   Como a supervisão humana será integrada?
+
+6.  **Métricas de Sucesso:**
+    *   Quais KPIs serão monitorados para avaliar a eficácia da otimização?
+
+7.  **Considerações Éticas e de Segurança:**
+    *   Quais aspectos éticos (viés, transparência) e de segurança (privacidade de dados) devem ser considerados?
+
+Formate sua resposta de forma clara e estruturada, utilizando subtítulos para cada seção.`,
+    tags: ['IA', 'Multi-Agente', 'Otimização', 'Fluxo de Trabalho'],
+  },
+  {
+    id: 'marketing-agente-analise-campanha-multimodal',
+    title: 'Agente IA para Análise Preditiva de Campanhas Multimodais',
+    category: 'Marketing',
+    description: 'Projete um agente IA capaz de analisar dados de campanhas de marketing multimodais (texto, imagem, vídeo) para prever desempenho e otimizar estratégias em tempo real.',
+    template: `Você é um especialista em marketing digital e inteligência artificial, focado em análise preditiva e otimização de campanhas multimodais.
+Sua tarefa é projetar um agente IA que possa analisar o desempenho de campanhas de marketing que utilizam diversos formatos de conteúdo e canais, fornecendo insights preditivos e recomendações para otimização.
+
+**Campanha Alvo:**
+[Descreva a campanha de marketing para a qual o agente será projetado. Inclua: Nome da campanha, objetivo principal (Ex: "Aumentar vendas do produto X em 20%"), público-alvo, canais (Ex: Instagram, TikTok, YouTube Ads, Google Ads, Email Marketing), formatos de conteúdo (Ex: Vídeos curtos, imagens estáticas, carrosséis, textos longos, áudios).]
+
+**Dados Disponíveis:**
+[Liste os tipos de dados que o agente terá acesso. Ex: Métricas de engajamento (curtidas, comentários, compartilhamentos, visualizações), cliques, conversões, custo por clique/conversão, dados demográficos da audiência, histórico de campanhas passadas, transcrições de áudios/vídeos, textos de anúncios.]
+
+Com base nessas informações, projete o agente IA, detalhando:
+
+1.  **Módulos Principais do Agente:**
+    *   Identifique os módulos essenciais (Ex: Coletor de Dados, Processador Multimodal, Módulo Preditivo, Otimizador de Estratégia, Módulo de Geração de Relatórios).
+
+2.  **Capacidades de Processamento Multimodal:**
+    *   Como o agente irá integrar e analisar diferentes tipos de dados (texto, imagem, vídeo, áudio)?
+    *   Quais técnicas (Ex: NLP, Computer Vision, Speech-to-Text) serão empregadas?
+
+3.  **Mecanismos de Análise Preditiva:**
+    *   Que tipos de previsões o agente fará? (Ex: Previsão de ROI, taxa de conversão, engajamento para diferentes criativos ou canais).
+    *   Quais algoritmos de Machine Learning seriam mais adequados?
+
+4.  **Recomendações de Otimização:**
+    *   Que tipo de recomendações o agente fornecerá? (Ex: Ajuste de orçamento entre canais, otimização de copy, sugestões de novos formatos de conteúdo, identificação de público-alvo mais engajado).
+    *   Como essas recomendações serão priorizadas?
+
+5.  **Geração de Insights e Relatórios:**
+    *   Como os insights serão apresentados? (Ex: Dashboards interativos, alertas em tempo real).
+    *   Que tipo de relatórios o agente pode gerar (Ex: Relatório de desempenho semanal, análise de tendências de criativos)?
+
+6.  **Integração com Ferramentas Existentes:**
+    *   Como o agente se integraria com plataformas de anúncios, CRM ou sistemas de automação de marketing?
+
+7.  **Considerações sobre Viés e Ética:**
+    *   Como garantir que as análises e recomendações do agente não introduzam ou amplifiquem vieses indesejados (Ex: Viés demográfico)?
+
+Formate sua resposta de forma clara e estruturada, utilizando subtítulos para cada seção.`,
+    tags: ['Marketing', 'Agente IA', 'Multimodal', 'Análise Preditiva', 'Otimização'],
+  },
+  {
+    id: 'dev-agente-tdd-gerador-codigo',
+    title: 'Agente IA para Geração de Código Orientado a Testes (TDD)',
+    category: 'Desenvolvimento',
+    description: 'Projete um agente IA que auxilie desenvolvedores na prática de TDD, gerando testes unitários e o código da funcionalidade de forma iterativa e guiada pelos testes.',
+    template: `Você é um Engenheiro de Software sênior com vasta experiência em TDD (Test-Driven Development) e design de agentes de IA para automação de desenvolvimento.
+Sua tarefa é projetar um agente IA que atue como um "co-piloto" de TDD, gerando testes e código de forma iterativa, garantindo alta qualidade e adesão aos princípios do TDD.
+
+**Linguagem de Programação e Framework:**
+[Especifique a linguagem (Ex: Python, Java, JavaScript, C#) e o framework de testes (Ex: pytest, JUnit, Jest, NUnit) que o agente deve utilizar.]
+
+**Funcionalidade a Implementar:**
+[Descreva a funcionalidade que o agente deve ajudar a construir. Seja o mais específico possível, incluindo entradas, saídas, comportamentos esperados e qualquer regra de negócio. Ex: "Uma função de cálculo de impostos que recebe o valor bruto e a alíquota, retornando o valor líquido e o valor do imposto. Deve tratar casos de alíquota zero ou negativa com erro."]
+
+**Contexto de Desenvolvimento:**
+[Forneça informações sobre o ambiente. Ex: "Projeto backend, microserviço, sem dependências externas complexas nesta funcionalidade."]
+
+Com base nessas informações, projete o agente IA, detalhando:
+
+1.  **Ciclo de Interação TDD do Agente:**
+    *   Descreva passo a passo como o agente irá guiar o ciclo Red-Green-Refactor. (Ex: Primeiro gera um teste falho, depois o código para passar, depois refatora).
+
+2.  **Módulos Principais do Agente:**
+    *   Identifique os módulos (Ex: Módulo de Geração de Testes, Módulo de Geração de Código, Módulo de Refatoração, Módulo de Análise de Cobertura).
+
+3.  **Geração de Testes (Red):**
+    *   Como o agente irá propor e gerar testes unitários inicialmente falhos para a funcionalidade?
+    *   Quais critérios usará para criar casos de teste (Ex: Casos de uso normal, borda, erro, segurança)?
+    *   Como ele permitirá a interação do desenvolvedor para refinar/adicionar testes?
+
+4.  **Geração de Código (Green):**
+    *   Após a criação do teste, como o agente irá gerar o código mínimo necessário para fazer o teste passar?
+    *   Que estratégias ele usará para evitar "over-engineering" nesta fase?
+
+5.  **Refatoração (Refactor):**
+    *   Como o agente irá identificar oportunidades de refatoração no código (Ex: melhor legibilidade, performance, padrões de design)?
+    *   Que sugestões de refatoração ele poderá oferecer?
+
+6.  **Validação e Feedback:**
+    *   Como o agente validará o código e os testes?
+    *   Que feedback ele fornecerá ao desenvolvedor (Ex: Cobertura de testes, complexidade ciclomática, aderência a padrões)?
+
+7.  **Interface de Usuário/Integração:**
+    *   Como o desenvolvedor interagirá com o agente (Ex: Linha de comando, extensão de IDE, chatbot)?
+    *   Como ele se integrará com sistemas de controle de versão (Git)?
+
+8.  **Considerações de Escalabilidade e Adaptabilidade:**
+    *   Como o agente pode "aprender" e melhorar suas sugestões com o tempo e com base no feedback dos desenvolvedores?
+
+Formate sua resposta de forma clara e estruturada, utilizando subtítulos para cada seção.`,
+    tags: ['Desenvolvimento', 'TDD', 'Agente IA', 'Geração de Código', 'Testes'],
+  },
 ];

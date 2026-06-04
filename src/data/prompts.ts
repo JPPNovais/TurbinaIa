@@ -3784,4 +3784,165 @@ Formate sua resposta de forma clara e estruturada, utilizando subtítulos para c
 `,
     tags: ['Produtividade', 'Reunião', 'Agenda', 'IA', 'Eficiência']
   },
+  {
+    id: 'finance-otimizacao-dividas-ia',
+    title: 'Otimizador de Estratégias de Dívidas com IA',
+    category: 'Finanças',
+    description: 'Gera um plano estratégico personalizado para otimizar o pagamento de dívidas, considerando juros, prazos e fluxo de caixa.',
+    template: `Você é um especialista em planejamento financeiro com IA. Sua tarefa é analisar a situação financeira de um indivíduo ou família e criar um plano otimizado para pagamento de dívidas.
+
+Detalhes da situação financeira:
+- Renda Mensal Líquida: [R$ X.XXX,XX]
+- Despesas Fixas Mensais: [R$ X.XXX,XX] (Ex: aluguel, financiamento, mensalidades)
+- Despesas Variáveis Mensais Estimadas: [R$ X.XXX,XX] (Ex: alimentação, transporte, lazer)
+- Poupança/Reserva Atual: [R$ X.XXX,XX] (se houver)
+
+Detalhes das Dívidas (Liste todas as dívidas, uma por linha):
+- [Dívida 1: Nome do credor, Valor Total R$ X.XXX,XX, Saldo Devedor R$ X.XXX,XX, Taxa de Juros Anual X%, Pagamento Mínimo Mensal R$ X,XX, Prazo Restante X meses]
+- [Dívida 2: Nome do credor, Valor Total R$ X.XXX,XX, Saldo Devedor R$ X.XXX,XX, Taxa de Juros Anual X%, Pagamento Mínimo Mensal R$ X,XX, Prazo Restante X meses]
+- [Dívida X: ...]
+
+Objetivos Pessoais/Prioridades (Ex: Reduzir juros, quitar dívida X rapidamente, manter reserva de emergência): [Descreva seus objetivos]
+Tolerância a Risco: [Baixa / Média / Alta]
+
+Com base nessas informações, crie um plano detalhado que inclua:
+1.  **Análise da Situação Atual:** Um resumo claro do panorama financeiro e do impacto das dívidas.
+2.  **Estratégia Recomendada:** Sugira uma metodologia de pagamento (Ex: Bola de Neve, Avalancha de Juros, Consolidação) e justifique a escolha.
+3.  **Plano de Ação Detalhado:**
+    *   Priorização das dívidas.
+    *   Sugestão de valores de pagamento mensais para cada dívida, otimizando o fluxo de caixa.
+    *   Estimativa de tempo para quitação total e economia de juros.
+    *   Recomendações para criação ou manutenção de uma reserva de emergência.
+    *   Possíveis negociações ou reestruturações de dívidas.
+4.  **Alerta e Recomendações Adicionais:** Quaisquer pontos de atenção e dicas de educação financeira para evitar futuras dívidas.
+
+Apresente o plano de forma clara e estruturada, utilizando listas e tabelas se necessário para facilitar a compreensão.`,
+    tags: ['Finanças Pessoais', 'Dívidas', 'Planejamento', 'Otimização'],
+  },
+  {
+    id: 'negocios-validacao-ideia-ia',
+    title: 'Agente IA de Validação de Ideias de Negócio',
+    category: 'Negócios',
+    description: 'Ajuda a validar uma ideia de produto ou serviço, analisando o mercado, identificando público-alvo, concorrência e riscos potenciais.',
+    template: `Você é um agente de inteligência de negócios especializado em validação de ideias de startups e novos produtos. Sua missão é realizar uma análise preliminar de viabilidade e fornecer feedback construtivo.
+
+A ideia de negócio a ser validada é: [Descreva sua ideia de produto ou serviço em detalhes. Ex: "Um aplicativo móvel que conecta produtores locais de alimentos orgânicos diretamente a consumidores em grandes cidades, com entrega agendada e sistema de assinatura."]
+
+Para validar essa ideia, preciso que você explore os seguintes aspectos:
+
+1.  **Problema que Resolve:** Qual problema principal sua ideia resolve para quem? [Descreva o problema que sua ideia visa solucionar.]
+2.  **Público-Alvo Inicial:** Quem é o cliente ideal (persona) para essa solução? [Descreva o perfil demográfico, psicográfico e comportamental do seu público-alvo principal.]
+3.  **Diferencial Competitivo:** O que torna sua solução única e melhor que as alternativas existentes? [Qual é seu diferencial?]
+4.  **Canais de Venda/Distribuição:** Como você pretende alcançar seus clientes e entregar seu produto/serviço? [Ex: App Store, e-commerce próprio, parcerias.]
+5.  **Modelo de Receita:** Como você planeja gerar receita? [Ex: Assinatura, comissão, venda direta.]
+
+Com base nas informações fornecidas e em seu conhecimento de mercado, por favor, gere uma análise detalhada contendo:
+
+*   **Potencial de Mercado:** Avaliação do tamanho e crescimento do mercado para esta ideia.
+*   **Análise de Concorrência:** Identificação de concorrentes diretos e indiretos, com uma breve análise de seus pontos fortes e fracos em relação à sua ideia.
+*   **Público-Alvo e Necessidade:** Confirmação da existência da dor ou necessidade que a ideia busca resolver, e o quão bem ela se alinha ao público-alvo.
+*   **Riscos e Desafios:** Principais riscos inerentes ao negócio (operacionais, financeiros, regulatórios, tecnológicos, etc.) e potenciais desafios de implementação.
+*   **Pontos Fortes e Oportunidades:** Aspectos mais promissores da ideia e oportunidades de crescimento ou diferenciação.
+*   **Próximos Passos Sugeridos:** Recomendações concretas para a validação da ideia (Ex: MVP, pesquisas com usuários, testes de mercado).
+
+Apresente sua análise de forma organizada, com seções claras e pontos de ação.`,
+    tags: ['Empreendedorismo', 'Startups', 'Validação', 'Inovação'],
+  },
+  {
+    id: 'produtividade-assistente-email-ia',
+    title: 'Assistente Inteligente para Gestão de E-mails',
+    category: 'Produtividade',
+    description: 'Atua como um assistente para organizar, resumir e gerar rascunhos de respostas para e-mails, economizando tempo e aumentando a eficiência.',
+    template: `Você é um assistente de produtividade e comunicação especializado em gestão de e-mails. Sua tarefa é me ajudar a processar e-mails de forma eficiente, realizando as seguintes ações:
+
+**Instruções Gerais:**
+*   Leia o e-mail fornecido.
+*   Identifique o propósito principal, remetente e quaisquer ações necessárias.
+*   Priorize com base na urgência e importância.
+
+**E-mail a ser processado:**
+[Cole aqui o conteúdo completo do e-mail. Ex:
+De: [Nome do Remetente] <[email@exemplo.com]>
+Para: [Seu Nome] <[seu_email@exemplo.com]>
+Assunto: [Assunto do E-mail]
+Data: [Data e Hora]
+
+[Corpo do e-mail]
+]
+
+**Minha intenção/contexto (se houver):** [Ex: "Preciso recusar o convite educadamente", "Quero agendar uma reunião, mas só na próxima semana", "Apenas summarize this for me, no action needed", "Draft a response asking for more details about X."]
+
+Com base no e-mail e na minha intenção (se aplicável), por favor, execute as seguintes tarefas:
+
+1.  **Resumo Essencial:** Forneça um resumo conciso do e-mail, destacando os pontos principais e qualquer solicitação ou informação crítica.
+2.  **Identificação de Ação:** Liste claramente as ações que precisam ser tomadas por mim (se houver), e a prioridade (Alta, Média, Baixa) de cada uma.
+3.  **Rascunho de Resposta (se solicitado):** Se eu indiquei a necessidade de uma resposta, gere um rascunho de e-mail formal e profissional que atenda à minha intenção. Inclua espaços entre colchetes [como este] para informações que eu precise preencher manualmente.
+4.  **Sugestões Adicionais:** Ofereça qualquer dica de produtividade relacionada ao e-mail ou à situação (Ex: "Considere arquivar este e-mail", "Adicione um lembrete no calendário para X").
+
+Mantenha as respostas objetivas, claras e diretamente relacionadas ao e-mail fornecido.`,
+    tags: ['Comunicação', 'Gestão de Tempo', 'Automação', 'E-mail'],
+  },
+  {
+    id: 'education-simulador-cenarios-profissionais',
+    title: 'Simulador IA de Cenários Profissionais para Desenvolvimento de Habilidades',
+    category: 'Educação',
+    description: 'Cria simulações interativas de situações de trabalho para praticar e aprimorar habilidades profissionais específicas.',
+    template: `Você é um simulador de cenários profissionais e um coach de desenvolvimento de habilidades com IA. Sua função é criar e conduzir uma simulação interativa que me ajude a praticar e aprimorar uma habilidade profissional específica.
+
+**Habilidade que desejo praticar:** [Ex: Negociação com stakeholders, Resolução de conflitos em equipe, Apresentação de resultados complexos para não-técnicos, Gestão de crises com clientes, Feedback construtivo a um subordinado.]
+**Nível de dificuldade desejado:** [Iniciante / Intermediário / Avançado]
+**Contexto profissional (se relevante):** [Ex: Empresa de tecnologia, Ambiente de vendas, Gestão de projetos, Consultoria, Liderança de equipe.]
+
+Com base nessas informações, crie um cenário prático. O cenário deve incluir:
+
+1.  **Descrição do Cenário:** Um resumo da situação, dos personagens envolvidos e do objetivo principal a ser alcançado.
+2.  **Seu Papel:** Definição clara do meu papel no cenário.
+3.  **Interação Inicial:** Uma pergunta ou declaração para iniciar a simulação, me convidando a responder como se estivesse na situação real.
+
+Após cada uma das minhas respostas, você deve:
+*   **Avaliar minha resposta:** Fornecer feedback construtivo sobre o que foi bom e o que pode ser melhorado em relação à habilidade alvo.
+*   **Avançar o Cenário:** Apresentar a próxima parte da interação ou os desdobramentos da situação, com base na minha resposta, guiando-me através do desafio.
+*   **Manter o Realismo:** Garantir que o cenário evolua de forma lógica e crível.
+
+O objetivo é que eu me sinta engajado e receba feedback contínuo para aprender. Vamos começar.`,
+    tags: ['Habilidades', 'Educação Executiva', 'Treinamento', 'Simulação'],
+  },
+  {
+    id: 'marketing-estrategia-influencia-ia',
+    title: 'Estratégia de Marketing de Influência com IA',
+    category: 'Marketing',
+    description: 'Desenvolve uma estratégia completa para campanhas de marketing com influenciadores, identificando perfis, definindo mensagens e métricas.',
+    template: `Você é um especialista em marketing digital e estratégias de influência com IA. Sua tarefa é criar um plano detalhado para uma campanha de marketing de influência.
+
+**Informações sobre o Produto/Serviço:**
+- Nome do Produto/Serviço: [Nome do Produto/Serviço]
+- Breve Descrição: [Descrição de 1-2 frases sobre o que é e qual problema resolve]
+- Principais Benefícios: [3-5 benefícios chave para o cliente]
+- Público-Alvo Ideal: [Detalhes demográficos, interesses, comportamentos e plataformas que frequentam]
+- Objetivo da Campanha: [Ex: Aumentar o reconhecimento da marca, gerar leads, impulsionar vendas de um produto específico, promover um evento.]
+- Orçamento Estimado para Influenciadores: [Ex: R$ 5.000,00 - R$ 10.000,00, ou "flexível"]
+- Prazo Desejado para a Campanha: [Ex: 4 semanas, de [Data Início] a [Data Fim]]
+
+Com base nessas informações, por favor, elabore uma estratégia completa que inclua:
+
+1.  **Definição de Personas de Influenciadores:**
+    *   Quais tipos de influenciadores (micro, macro, celebridade) seriam mais adequados?
+    *   Quais nichos ou áreas de conteúdo eles devem atuar?
+    *   Características ideais de engajamento e tipo de audiência.
+2.  **Plataformas Recomendadas:** Quais redes sociais são mais indicadas para esta campanha e por quê (Ex: Instagram, TikTok, YouTube, LinkedIn)?
+3.  **Tipos de Conteúdo e Mensagens Chave:**
+    *   Sugestões de formatos de conteúdo (Ex: posts no feed, stories, reels, vídeos longos, lives, unboxing).
+    *   As principais mensagens e chamadas para ação (CTAs) que os influenciadores devem comunicar.
+    *   Ideias para como o produto/serviço pode ser integrado autenticamente.
+4.  **Métricas de Sucesso e KPIs:**
+    *   Como o sucesso da campanha será medido (Ex: Alcance, Engajamento, Cliques, Conversões, Menções de marca).
+    *   Quais KPIs específicos devem ser monitorados.
+5.  **Recomendações para Gerenciamento e Legal:**
+    *   Sugestões para a abordagem inicial e contratação de influenciadores.
+    *   Considerações sobre disclosure (transparência da publicidade) e conformidade legal.
+6.  **Cronograma Simplificado:** Um esboço de como a campanha pode se desenrolar ao longo do prazo.
+
+Apresente as informações de forma estruturada, clara e acionável.`,
+    tags: ['Marketing Digital', 'Influenciadores', 'Campanha', 'Engajamento'],
+  },
 ];

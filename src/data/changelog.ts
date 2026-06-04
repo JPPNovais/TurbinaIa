@@ -13,6 +13,34 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-codex-expansao-acesso-2026',
+    date: '2026-06',
+    title: 'OpenAI expande capacidades e acesso do Codex para diversas funções e AWS',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'A OpenAI ampliou as capacidades do seu modelo Codex para suportar uma variedade maior de funções e fluxos de trabalho, além de disponibilizá-lo nos serviços da AWS.',
+    highlights: [
+      'Codex agora suporta uma gama mais ampla de funções e fluxos de trabalho de desenvolvimento.',
+      'O modelo e outros modelos de fronteira da OpenAI estão agora disponíveis na Amazon Web Services (AWS).',
+      'Visa integrar inteligência artificial em todas as etapas de desenvolvimento e engenharia.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'meta-ai-muse-spark-api-adiado-2026',
+    date: '2026-06',
+    title: 'Meta Platforms adia lançamento da API para desenvolvedores do modelo Muse Spark',
+    developer: 'Meta AI',
+    category: 'Atualização',
+    description: 'A Meta Platforms adiou o lançamento da API para desenvolvedores de seu mais recente modelo de inteligência artificial, o Muse Spark, gerando dúvidas sobre o cronograma de suas principais inovações em IA.',
+    highlights: [
+      'O lançamento da API para desenvolvedores do Muse Spark foi adiado várias vezes, sem uma data confirmada.',
+      'O atraso se estende por quase dois meses desde que o chefe de IA da Meta indicou um lançamento "em breve".',
+      'A Meta está testando a API com parceiros selecionados e espera lançá-la ainda este mês.'
+    ],
+    impact: 'Alto'
+  },
+  {
     id: 'openai-gpt-rosalind-capacidades-2026',
     date: '2026-06',
     title: 'OpenAI introduz novas capacidades ao GPT-Rosalind para ciências da vida',

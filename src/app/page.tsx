@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import PostCard from '@/components/PostCard';
+import ArticlesGrid from '@/components/ArticlesGrid';
 import Sidebar from '@/components/Sidebar';
 import AdSense from '@/components/AdSense';
 import { getAllArticlesMetadata } from '@/lib/articles';
@@ -139,11 +139,7 @@ export default async function Home({ searchParams }: HomeProps) {
                 : 'Últimas Publicações'}
             </h2>
             {gridArticles.length > 0 ? (
-              <div className="articles-grid">
-                {gridArticles.map((article) => (
-                  <PostCard key={article.slug} article={article} />
-                ))}
-              </div>
+              <ArticlesGrid articles={gridArticles} />
             ) : (
               <div style={{ textAlign: 'center', padding: '4rem 2rem', background: 'var(--bg-secondary)', borderRadius: 'var(--border-radius-md)', border: '1px solid var(--border-color)' }}>
                 <span style={{ fontSize: '3rem' }}>🔍</span>

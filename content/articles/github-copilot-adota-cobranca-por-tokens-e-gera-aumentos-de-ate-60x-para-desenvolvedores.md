@@ -1,6 +1,6 @@
 ---
 title: "GitHub Copilot Adota Cobrança por Tokens e Gera Aumentos de Até 60x para Desenvolvedores"
-description: "A partir de 1º de junho de 2026, o GitHub Copilot migrou para um modelo de cobrança baseado em tokens, causando um aumento drástico nos custos para muitos desenvolvedores."
+description: "GitHub Copilot migrou para cobrança por tokens em junho de 2026, gerando aumentos de até 60x nos custos para desenvolvedores que usam recursos agênticos."
 category: noticias
 tags:
   - GitHub Copilot
@@ -14,11 +14,13 @@ date: "2026-06-03"
 coverImage: "https://images.unsplash.com/photo-1675557009483-e6cf3867976b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxHaXRIdWIlMjBDb3BpbG90JTIwQWRvdGElMjBDb2JyYW4lQzMlQTdhJTIwcG9yJTIwVG9rZW5zJTIwZSUyMEdlcmElMjBBdW1lbnRvcyUyMGRlJTIwQXQlQzMlQTklMjA2MHglMjBwYXJhJTIwRGVzZW52b2x2ZWRvcmVzJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc4MDUxMjYxOXww&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
-A inteligência artificial transformou radicalmente o desenvolvimento de software, e o GitHub Copilot tem sido um dos protagonistas dessa revolução, atuando como um assistente de codificação inteligente para milhões de desenvolvedores. No entanto, o cenário para os usuários do Copilot mudou drasticamente a partir de 1º de junho de 2026, com a transição para um novo sistema de cobrança baseado em tokens. Essa alteração, anunciada pelo GitHub em 27 de abril de 2026, está gerando um forte descontentamento na comunidade, com muitos desenvolvedores relatando aumentos de custo que variam de 10 a 60 vezes em relação aos valores anteriores.
+A inteligência artificial mudou o desenvolvimento de software em velocidade acelerada, e o GitHub Copilot tem sido um dos protagonistas desse processo, atuando como um assistente de codificação inteligente para milhões de desenvolvedores. No entanto, o cenário para os usuários do Copilot mudou drasticamente a partir de 1º de junho de 2026, com a transição para um novo sistema de cobrança baseado em tokens. Essa alteração, anunciada pelo GitHub em 27 de abril de 2026, está gerando um forte descontentamento na comunidade, com muitos desenvolvedores relatando aumentos de custo que variam de 10 a 60 vezes em relação aos valores anteriores.
 
 **Resposta Rápida (TL;DR):** O GitHub Copilot mudou para cobrança baseada em tokens a partir de 1º de junho de 2026, substituindo o modelo de "solicitações premium" por "Créditos de IA do GitHub". Essa transição, motivada pela crescente demanda computacional de recursos mais avançados ("agentic"), resultou em aumentos de custos projetados de 10 a 60 vezes para usuários intensivos, gerando um forte descontentamento na comunidade de desenvolvedores.
 
 ## A Virada para a Cobrança por Uso: O Fim das Unidades de Solicitação Premium
+
+![Tela de código mostrando integração de assistente de IA para desenvolvimento de software](https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80)
 
 Até o final de maio de 2026, os planos do GitHub Copilot operavam com um sistema que incluía "unidades de solicitação premium" (PRUs) para interações mais avançadas, enquanto a maioria das funcionalidades era acessada por uma taxa mensal fixa. Esse modelo, segundo o GitHub, tornou-se insustentável diante da evolução da ferramenta. Em 1º de junho de 2026, todos os planos do GitHub Copilot migraram para um sistema de cobrança baseado em uso, onde as PRUs foram substituídas por "Créditos de IA do GitHub".
 
@@ -50,7 +52,7 @@ Tanto o [TechTimes](https://www.techtimes.com/articles/307436/20260601/github-co
 
 ### Impacto para Usuários Individuais e Corporativos
 
-Para os usuários individuais, o impacto é imediato e palpável. Muitos sentem que o "paraíso" da precificação fixa, onde podiam usar o Copilot como um "Netflix" de código, acabou. A falta de previsibilidade nos custos é um ponto central da frustração, já que é difícil estimar quantos créditos uma sessão de codificação consumirá, especialmente com os recursos "agentic". Quando os créditos acabam, os recursos premium do Copilot são pausados, a menos que o usuário compre créditos adicionais ou faça upgrade para um plano superior.
+Para os usuários individuais, o impacto é imediato e palpável. Muitos sentem que o "paraíso" da precificação fixa, onde podiam usar o Copilot como um "Netflix" de código, acabou. Esse cenário faz parte de uma tendência mais ampla sobre o [futuro do trabalho com IA em 2026](/blog/futuro-do-trabalho-e-ia-2026), em que desenvolvedores precisam aprender a gerenciar custos de IA como uma nova disciplina profissional. A falta de previsibilidade nos custos é um ponto central da frustração, já que é difícil estimar quantos créditos uma sessão de codificação consumirá, especialmente com os recursos "agentic". Quando os créditos acabam, os recursos premium do Copilot são pausados, a menos que o usuário compre créditos adicionais ou faça upgrade para um plano superior.
 
 No cenário corporativo, embora haja a vantagem do agrupamento de créditos e controles de orçamento, as empresas também precisarão adaptar suas estratégias. O GitHub enfatiza que esse é um passo em direção à "economia de computação em nuvem" para ferramentas de codificação de IA, sugerindo que as empresas devem aplicar as mesmas práticas de governança de custos que usam para a nuvem. Isso inclui monitoramento, alertas e otimização para gerenciar o consumo do Copilot de forma mais ativa do que antes.
 
@@ -68,9 +70,11 @@ Os novos controles de orçamento para administradores e o agrupamento de crédit
 
 No entanto, a era do acesso ilimitado "all-you-can-eat" para a maioria dos recursos avançados do Copilot parece ter chegado ao fim. Desenvolvedores agora precisam ser mais intencionais sobre como e com que frequência usam os recursos do Copilot que consomem créditos. Essa mudança reflete uma tendência mais ampla no mercado de IA, onde o custo computacional real da execução de modelos avançados está sendo repassado aos usuários, marcando uma transição dos modelos de negócios de software como serviço (SaaS) para os de computação em nuvem (CaaS).
 
-A comunidade agora aguarda para ver como essa mudança se estabilizará. Será que os desenvolvedores se adaptarão, ou a frustração levará a uma migração em massa para outras ferramentas e modelos de IA? A previsibilidade e a comunicação transparente dos custos serão cruciais para que o GitHub Copilot mantenha sua relevância e valor no longo prazo.
+A comunidade agora aguarda para ver como essa mudança se estabilizará. Será que os desenvolvedores se adaptarão, ou a frustração levará a uma migração em massa para outras ferramentas e modelos de IA? A previsibilidade e a comunicação transparente dos custos serão cruciais para que o GitHub Copilot mantenha sua relevância e valor no longo prazo. Vale lembrar que o Claude Opus 4.8, um dos modelos disponíveis no Copilot, foi lançado pela Anthropic exatamente nesse período — o que explica em parte o aumento do consumo de tokens, como discutimos ao cobrir o [lançamento do Claude Opus 4.8 e a valorização da Anthropic](/blog/anthropic-supera-openai-em-valor-de-mercado-e-impulsiona-ia-de-ponta-com-claude-opus-48-e-mythos).
 
-Para entender melhor as diferentes ferramentas de IA disponíveis e comparar seus recursos e modelos de precificação, você pode visitar nosso [Comparador de IAs](/comparador).
+![Gráficos de análise de custos e dados de uso de ferramentas de IA por desenvolvedores](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80)
+
+Para entender melhor as diferentes ferramentas de IA disponíveis e comparar seus recursos e modelos de precificação, você pode visitar nosso [comparador de modelos de IA](/comparador). Para estimar o impacto financeiro direto no seu uso, experimente também nossa [calculadora de custo de APIs](/calculadora).
 
 ## Perguntas Frequentes (FAQ)
 

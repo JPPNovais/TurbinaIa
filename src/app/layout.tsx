@@ -61,9 +61,32 @@ export default function RootLayout({
   const adClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || 'ca-pub-placeholder';
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
+  const organizationLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Turbina IA',
+    url: 'https://www.turbinaia.com.br',
+    logo: 'https://www.turbinaia.com.br/icon.png',
+    description: 'Portal brasileiro de Inteligência Artificial: notícias, tutoriais, comparador de modelos e ferramentas práticas de IA.',
+    sameAs: [],
+  };
+
+  const websiteLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Turbina IA',
+    url: 'https://www.turbinaia.com.br',
+    inLanguage: 'pt-BR',
+    publisher: { '@type': 'Organization', name: 'Turbina IA' },
+  };
+
   return (
     <html lang="pt-BR" className={`${inter.variable} ${outfit.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationLd, websiteLd]) }}
+        />
         <Header />
         {children}
         <Footer />

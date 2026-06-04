@@ -1163,9 +1163,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .prose img {
+  display: block;
+  width: 100%;
+  height: auto;
   max-width: 100%;
   border-radius: var(--border-radius-md);
-  margin: 2rem 0;
+  margin: 2rem auto;
+}
+
+/* Caption: an italic line placed directly after an image in markdown */
+.prose p > img + em,
+.prose figcaption {
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+/* Article breadcrumb navigation */
+.article-breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.article-breadcrumb a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.article-breadcrumb a:hover {
+  color: var(--primary);
+}
+
+.article-breadcrumb-current {
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 22ch;
 }
 
 .prose a {

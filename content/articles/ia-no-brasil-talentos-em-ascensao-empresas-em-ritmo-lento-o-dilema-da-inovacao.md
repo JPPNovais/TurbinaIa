@@ -1,6 +1,6 @@
 ---
 title: "IA no Brasil: Líder na América Latina em Adoção, mas 72% das Empresas Ainda Engatinham"
-description: "71% dos profissionais brasileiros já usam IA no trabalho, acima da média global. Mas 72% das empresas ainda estão em estágio inicial. Entenda o paradoxo."
+description: "71% dos profissionais brasileiros usam IA no trabalho, líder global, mas 72% das empresas ainda estão no estágio inicial. Veja o paradoxo da inovação no Brasil."
 category: noticias
 tags:
   - IA no Brasil
@@ -36,7 +36,9 @@ Já o [Latin American Artificial Intelligence Index (ILIA) 2025](https://www.cep
 
 ## A Corrida por Talentos: Cargos em IA Lideram o Crescimento
 
-No mercado de trabalho, a tendência é inequívoca. O relatório [LinkedIn Empregos em Alta 2026](https://istoedinheiro.com.br/ia-e-planejamento-estrategico-dominam-lista-de-empregos), baseado em contratações entre janeiro de 2023 e julho de 2025, elege o cargo de **Engenheiro(a) de IA como o que mais cresce no Brasil**. O ranking inclui ainda Pesquisador(a) de IA, Cientista de Dados e Analista de Machine Learning entre as 25 funções de crescimento mais acelerado.
+![Profissionais de tecnologia e dados em ambiente de trabalho moderno](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80)
+
+No mercado de trabalho, a tendência é inequívoca. O relatório [LinkedIn Empregos em Alta 2026](https://istoedinheiro.com.br/ia-e-planejamento-estrategico-dominam-lista-de-empregos), baseado em contratações entre janeiro de 2023 e julho de 2025, elege o cargo de **Engenheiro(a) de IA como o que mais cresce no Brasil**. Esse movimento está diretamente ligado ao [futuro do trabalho com IA](/blog/futuro-do-trabalho-e-ia-2026), que aponta a requalificação profissional como o maior desafio da próxima década. O ranking inclui ainda Pesquisador(a) de IA, Cientista de Dados e Analista de Machine Learning entre as 25 funções de crescimento mais acelerado.
 
 A demanda se reflete nos salários. Dados do [Glassdoor Brasil (2026)](https://www.glassdoor.com.br/Sal%C3%A1rios/engenheiro-de-machine-learning-sal%C3%A1rio-SRCH_KO0,30.htm) mostram a seguinte faixa para Engenheiros de Machine Learning:
 
@@ -69,9 +71,11 @@ O [KPMG Global Tech Report 2024](https://kpmg.com/br/pt/home/insights/2025/02/gl
 
 ## Governança: O Elo Mais Fraco
 
-Um número que chama atenção é o da **Shadow AI**: 47,4% dos profissionais brasileiros admitem usar ferramentas de IA sem a aprovação ou conhecimento da empresa, de acordo com a pesquisa Abiacom/Lideres.ai. Esse fenômeno é reflexo direto da ausência de políticas internas — 59,1% das empresas não têm diretrizes formais para o tema.
+![Gráficos e indicadores de desempenho empresarial e tecnologia](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80)
 
-A pesquisa [KPMG "Confiança, Atitudes e Uso de IA" (2025)](https://kpmg.com/br/pt/home/insights/2025/04/confianca-atitudes-uso-inteligencia-artificial.html) reforça a preocupação: **70% dos respondentes brasileiros acreditam que é necessária uma legislação mais rigorosa** sobre IA, e **84% pedem leis específicas para combater desinformação gerada por inteligência artificial**. O uso está crescendo mais rápido do que as regras, tanto dentro das empresas quanto na sociedade.
+Um número que chama atenção é o da **Shadow AI**: 47,4% dos profissionais brasileiros admitem usar ferramentas de IA sem a aprovação ou conhecimento da empresa, de acordo com a pesquisa Abiacom/Lideres.ai. Esse fenômeno é reflexo direto da ausência de políticas internas — 59,1% das empresas não têm diretrizes formais para o tema. No setor público, o governo federal busca endereçar parte desse vazio com iniciativas como a [SoberanIA, plataforma brasileira de IA generativa em português](/blog/soberania-brasil-lanca-plataforma-de-ia-generativa-em-portugues-para-o-setor-publico-autonomia-e-inovacao-na-gestao).
+
+A pesquisa [KPMG "Confiança, Atitudes e Uso de IA" (2025)](https://kpmg.com/br/pt/home/insights/2025/04/confianca-atitudes-uso-inteligencia-artificial.html) reforça a preocupação: **70% dos respondentes brasileiros acreditam que é necessária uma legislação mais rigorosa** sobre IA, e **84% pedem leis específicas para combater desinformação gerada por inteligência artificial**. O uso está crescendo mais rápido do que as regras, tanto dentro das empresas quanto na sociedade. Para avaliar quais modelos de IA atendem melhor às necessidades da sua empresa, o [Comparador de IAs](/comparador) reúne as principais ferramentas disponíveis no mercado.
 
 ## O Ecossistema de Startups: Crescimento Real, Capitalização Ainda Tímida
 
@@ -105,7 +109,7 @@ Para a Bain & Company, os impactos de quem já implementou IA no Brasil são con
 - **+9%** de crescimento nos resultados financeiros
 - **95%** de redução no custo de uso de LLMs desde 2022
 
-A pergunta, portanto, não é se a IA vai transformar a economia brasileira — é quão rápido as empresas vão sair do piloto e entrar em escala.
+A pergunta, portanto, não é se a IA vai transformar a economia brasileira — é quão rápido as empresas vão sair do piloto e entrar em escala. Para entender o cenário completo de onde o Brasil se situa na competição global, vale acompanhar também o [resumo semanal dos principais eventos que redefinaram a IA em 2026](/blog/a-semana-que-redefiniu-a-ia-gemini-ipo-da-openai-e-desafios-globais-em-2026).
 
 ## Perguntas Frequentes
 

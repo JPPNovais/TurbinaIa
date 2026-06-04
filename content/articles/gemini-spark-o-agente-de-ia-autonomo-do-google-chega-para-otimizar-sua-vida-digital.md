@@ -17,11 +17,13 @@ coverImage: "https://images.unsplash.com/photo-1529612700005-e35377bf1415?crop=e
 
 A inteligência artificial deu mais um salto concreto em maio de 2026. No palco do Google I/O, Sundar Pichai apresentou o **Gemini Spark**, um agente de IA pessoal que opera na nuvem 24 horas por dia, 7 dias por semana — mesmo quando seu telefone está desligado ou o laptop fechado. Não se trata de mais um chatbot: é um sistema autônomo que recebe tarefas, planeja etapas, executa ações e reporta resultados, tudo sob a sua direção.
 
-O lançamento marca o que o Google chama de "Era Agêntica do Gemini": uma transição em que a IA deixa de responder perguntas passivamente e passa a agir proativamente como um parceiro de trabalho. Com a chegada do Spark, o Google entra diretamente em território que até então era ocupado pelo ChatGPT Agent, da OpenAI, e pelo Claude Cowork, da Anthropic — mas com a vantagem de uma integração nativa profunda com Gmail, Docs, Calendar e o restante do ecossistema Google Workspace.
+O lançamento marca o que o Google chama de "Era Agêntica do Gemini": uma transição em que a IA deixa de responder perguntas passivamente e passa a agir proativamente como um parceiro de trabalho. Para um panorama completo de tudo que foi apresentado no evento, veja o que aconteceu no [Google I/O 2026](/blog/google-io-2026-como-a-ia-redefine-a-busca-e-a-experiencia-online). Com a chegada do Spark, o Google entra diretamente em território que até então era ocupado pelo ChatGPT Agent, da OpenAI, e pelo Claude Cowork, da Anthropic — mas com a vantagem de uma integração nativa profunda com Gmail, Docs, Calendar e o restante do ecossistema Google Workspace.
 
 > **Resposta Rápida (TL;DR):** **O Gemini Spark é o agente de IA pessoal 24/7 do Google, anunciado no Google I/O 2026. Ele roda em máquinas virtuais na nuvem, integra-se ao Google Workspace e a serviços externos via MCP (Canva, OpenTable, Instacart), e é alimentado pelo Gemini 3.5 Flash com o harness Antigravity. O acesso beta está disponível para assinantes do Google AI Ultra nos EUA, a partir de US$ 99,99/mês.**
 
 ## O Que É o Gemini Spark e Por Que Ele é Diferente
+
+![Gemini Spark operando como agente de IA pessoal autônomo na nuvem do Google 24 horas por dia](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80)
 
 O Gemini Spark foi anunciado oficialmente pelo Google em 19 de maio de 2026 durante o Google I/O, conforme reportado pelo [TechCrunch](https://techcrunch.com/2026/05/19/google-introduces-gemini-spark-a-24-7-agentic-assistant-with-gmail-integration/). O próprio CEO Sundar Pichai o descreveu como um sistema que "ajuda você a navegar pela sua vida digital, tomando ações em seu nome e sob a sua direção."
 
@@ -64,7 +66,7 @@ Fontes: [TechCrunch](https://techcrunch.com/2026/05/19/google-introduces-gemini-
 
 ## Gemini 3.5 Flash: O Motor por Trás do Spark
 
-O Spark é impulsionado pelo **Gemini 3.5 Flash**, lançado em disponibilidade geral no Google I/O 2026. Segundo o [MarkTechPost](https://www.marktechpost.com/2026/05/20/google-introduces-gemini-3-5-flash-at-i-o-2026-a-faster-and-cheaper-model-for-ai-agents-and-coding/), o modelo foi projetado especificamente para tarefas agênticas e de programação, superando o Gemini 3.1 Pro nos seguintes benchmarks:
+O Spark é impulsionado pelo [**Gemini 3.5 Flash**](/blog/gemini-35-flash-a-nova-ia-do-google-acelera-a-era-agentica-com-poder-e-eficiencia), lançado em disponibilidade geral no Google I/O 2026. Segundo o [MarkTechPost](https://www.marktechpost.com/2026/05/20/google-introduces-gemini-3-5-flash-at-i-o-2026-a-faster-and-cheaper-model-for-ai-agents-and-coding/), o modelo foi projetado especificamente para tarefas agênticas e de programação, superando o Gemini 3.1 Pro nos seguintes benchmarks:
 
 - **Terminal-Bench 2.1:** 76,2% (benchmark de execução autônoma em terminal)
 - **MCP Atlas:** 83,6% (mede confiabilidade em uso de ferramentas em escala)
@@ -72,6 +74,8 @@ O Spark é impulsionado pelo **Gemini 3.5 Flash**, lançado em disponibilidade g
 - **CharXiv Reasoning:** 84,2% (compreensão multimodal)
 
 O modelo está disponível via Gemini API, Google AI Studio, Antigravity e Android Studio, com preço de API em **US$ 1,50 por milhão de tokens de entrada e US$ 9,00 por milhão de tokens de saída** — cerca de 25% mais barato que o Gemini 3.1 Pro, segundo o [LLM Stats](https://llm-stats.com/blog/research/gemini-3.5-flash-launch).
+
+![Arquitetura de agente de IA com camadas de inteligência, harness agêntico e persistência em nuvem](https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80)
 
 ## Antigravity 2.0: A Plataforma que Sustenta a Era Agêntica
 

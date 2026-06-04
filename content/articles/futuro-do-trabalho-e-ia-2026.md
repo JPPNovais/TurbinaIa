@@ -34,6 +34,8 @@ O [Future of Jobs Report 2025](https://www.weforum.org/press/2025/01/future-of-j
 
 A divisão atual de tarefas — 47% feitas exclusivamente por humanos, 22% por tecnologia e 30% em colaboração — deve caminhar para um equilíbrio quase tripartite entre humanos, sistemas de IA e automação física até o fim da década.
 
+![Profissionais analisando dados de mercado de trabalho e automação](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80)
+
 ### McKinsey: 57% das Horas de Trabalho Já São Automatizáveis
 
 O McKinsey Global Institute, em seu relatório de novembro de 2025 [Agents, Robots, and Us](https://www.mckinsey.com/mgi/our-research/agents-robots-and-us-skill-partnerships-in-the-age-of-ai), levantou dados que chamaram atenção no mundo corporativo:
@@ -44,7 +46,7 @@ O McKinsey Global Institute, em seu relatório de novembro de 2025 [Agents, Robo
 - Funções com maior potencial de automação somam **40% de todos os empregos nos EUA**, concentradas em serviços jurídicos e administrativos, além de funções físicas como motoristas e operadores de máquinas
 - Em um cenário de adoção mediana, agentes e robôs poderiam gerar **US$ 2,9 trilhões em valor econômico por ano** nos EUA até 2030
 
-A adoção de IA no ambiente de trabalho disparou: apenas **30% dos funcionários** usavam IA profissionalmente em 2023; esse número saltou para **76% em 2025**. A demanda por "fluência em IA" cresceu **sete vezes em dois anos**, tornando-se a habilidade de expansão mais rápida em toda a economia americana.
+A adoção de IA no ambiente de trabalho disparou: apenas **30% dos funcionários** usavam IA profissionalmente em 2023; esse número saltou para **76% em 2025**. A demanda por "fluência em IA" cresceu **sete vezes em dois anos**, tornando-se a habilidade de expansão mais rápida em toda a economia americana. Conheça as [melhores ferramentas de IA para produtividade em 2026](/blog/melhores-ferramentas-de-ia-produtividade-2026) que estão impulsionando essa transformação nas empresas.
 
 ### Goldman Sachs: Impacto Moderado, Mas Concentrado
 
@@ -72,6 +74,8 @@ A OIT reforça que a transformação — e não a eliminação — é o cenário
 ---
 
 ## Brasil e América Latina: Um Quadro de Vulnerabilidade e Oportunidade
+
+![Dashboard com indicadores de emprego e impacto da automação por região](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80)
 
 Para o Brasil e seus vizinhos, os números são ao mesmo tempo preocupantes e cheios de possibilidades. De acordo com levantamentos da OIT e do Banco Mundial:
 
@@ -139,7 +143,7 @@ A transição para um mercado de trabalho integrado com IA não é uma corrida p
 4. **Engenharia de contexto e prompts**: fornecer instruções precisas para que sistemas de IA gerem resultados alinhados ao negócio
 5. **Aprendizado contínuo e adaptabilidade**: 63% dos empregadores citam déficits de habilidades como principal barreira à transformação digital
 
-Para comparar quais ferramentas de IA podem te ajudar a desenvolver essas competências no dia a dia, confira o [Comparador de IAs do Turbina IA](/comparador) — com avaliações detalhadas dos principais modelos disponíveis.
+Para comparar quais ferramentas de IA podem te ajudar a desenvolver essas competências no dia a dia, confira o [Comparador de IAs do Turbina IA](/comparador) — com avaliações detalhadas dos principais modelos disponíveis. Entender como usar essas ferramentas começa pela escrita de boas instruções: o [guia de prompt engineering](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) explica as técnicas usadas por profissionais para extrair o máximo de cada modelo.
 
 ---
 
@@ -164,7 +168,7 @@ Nos EUA, o desemprego entre jovens de 20 a 30 anos em ocupações com alta expos
 
 **Ásia**: China e Japão apostam em IA industrial e robótica para compensar queda demográfica. Índia se posiciona como hub de desenvolvimento de IA, com crescimento acelerado de profissionais qualificados. Países do Sudeste Asiático enfrentam risco maior de automação em manufatura.
 
-**América Latina**: A divisão digital é o principal desafio. Enquanto México e Brasil têm ecossistemas de tecnologia em crescimento, a maioria dos países da região enfrenta déficits de infraestrutura e qualificação que podem aprofundar desigualdades.
+**América Latina**: A divisão digital é o principal desafio. Enquanto México e Brasil têm ecossistemas de tecnologia em crescimento, a maioria dos países da região enfrenta déficits de infraestrutura e qualificação que podem aprofundar desigualdades. Um panorama detalhado do cenário nacional está no artigo sobre [IA no Brasil: talentos em ascensão e empresas em ritmo lento](/blog/ia-no-brasil-talentos-em-ascensao-empresas-em-ritmo-lento-o-dilema-da-inovacao).
 
 ---
 
@@ -194,7 +198,7 @@ Sim, segundo as projeções mais amplas. O WEF projeta criação de **170 milhõ
 
 ## Conclusão: A Janela Está Aberta — Por Enquanto
 
-A transformação do mercado de trabalho pela IA não é catastrófica nem indolor. É uma transição estrutural que, como todas as revoluções tecnológicas, vai criar mais oportunidades do que destruir — mas de forma desigual, concentrada em quem souber se reposicionar.
+A transformação do mercado de trabalho pela IA não é catastrófica nem indolor. É uma transição estrutural que, como todas as revoluções tecnológicas, vai criar mais oportunidades do que destruir — mas de forma desigual, concentrada em quem souber se reposicionar. Para quem deseja capitalizar esse movimento, entender [como monetizar conteúdo sobre IA com AdSense](/blog/como-ganhar-dinheiro-com-blog-e-adsense) é um passo concreto nessa direção.
 
 Os dados são claros: **quem usa IA como parceira estratégica** ganha produtividade quatro vezes maior, salários 56% mais altos e se torna mais valioso para qualquer organização. **Quem ignora a transformação** enfrenta o risco real de ter suas funções automatizadas ou de perder espaço para profissionais mais adaptados.
 

@@ -1,6 +1,6 @@
 ---
 title: "Google I/O 2026: Gemini 3.5, Agentes de IA e a Maior Revolução da Busca em 25 Anos"
-description: "Google I/O 2026 trouxe Gemini 3.5 Flash, agentes de IA na busca, óculos inteligentes e investimento de US$ 180 bi em infraestrutura. Confira o que realmente foi anunciado."
+description: "Google I/O 2026: Gemini 3.5 Flash, agentes de IA na busca, óculos inteligentes e US$ 180 bi em infraestrutura. Tudo o que foi realmente anunciado."
 category: noticias
 tags:
   - Google I/O
@@ -21,7 +21,9 @@ O Google I/O 2026 aconteceu em 20 de maio e foi um dos eventos mais densos da hi
 
 ## Novos Modelos: Gemini 3.5 Flash e Gemini Omni
 
-O anúncio central do I/O 2026 foi o lançamento do **Gemini 3.5 Flash**, descrito pelo Google como o primeiro modelo da nova família que combina "inteligência de fronteira com ação". De acordo com o [blog oficial do Google](https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/), o modelo processa 289 tokens por segundo — quatro vezes mais rápido do que modelos concorrentes de nível equivalente — e custa menos da metade do que opções comparáveis no mercado.
+![Gemini 3.5 Flash e Gemini Omni lançados no Google I/O 2026 como modelos de IA de fronteira para agentes e geração de vídeo](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80)
+
+O anúncio central do I/O 2026 foi o lançamento do [**Gemini 3.5 Flash**](/blog/gemini-35-flash-a-nova-ia-do-google-acelera-a-era-agentica-com-poder-e-eficiencia), descrito pelo Google como o primeiro modelo da nova família que combina "inteligência de fronteira com ação". De acordo com o [blog oficial do Google](https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/), o modelo processa 289 tokens por segundo — quatro vezes mais rápido do que modelos concorrentes de nível equivalente — e custa menos da metade do que opções comparáveis no mercado.
 
 O Gemini 3.5 Flash superou o Gemini 3.1 Pro em benchmarks de codificação e tarefas agentivas, segundo o próprio Google. Para empresas que processam 1 trilhão de tokens diários, a migração de 80% da carga de trabalho para o novo modelo representaria uma economia superior a US$ 1 bilhão por ano, de acordo com dados apresentados por Sundar Pichai no keynote e reportados pelo [The Register](https://www.theregister.com/ai-ml/2026/05/19/google-touts-tokenmaxxing-huge-capex-and-ai-agents-at-i/o/5242983).
 
@@ -51,7 +53,7 @@ Também foi anunciada a **Interface Generativa (Generative UI)** na busca: o sis
 
 ## Gemini Spark: Agente Pessoal que Funciona 24/7
 
-O **Gemini Spark** foi apresentado como um agente pessoal de IA que opera continuamente em máquinas virtuais no Google Cloud — mesmo com o telefone bloqueado ou desligado. Segundo o [TechCrunch](https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/), o Spark pode executar tarefas no Gmail, Google Docs e outros aplicativos do Workspace de forma autônoma e criar fluxos de trabalho personalizados.
+O [**Gemini Spark**](/blog/gemini-spark-o-agente-de-ia-autonomo-do-google-chega-para-otimizar-sua-vida-digital) foi apresentado como um agente pessoal de IA que opera continuamente em máquinas virtuais no Google Cloud — mesmo com o telefone bloqueado ou desligado. Segundo o [TechCrunch](https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/), o Spark pode executar tarefas no Gmail, Google Docs e outros aplicativos do Workspace de forma autônoma e criar fluxos de trabalho personalizados.
 
 O recurso chegará aos assinantes do Google AI Ultra na semana seguinte ao evento (apenas nos EUA). O plano AI Ultra, que custava US$ 250/mês, foi reduzido para US$ 100/mês com o dobro dos limites de uso em relação ao plano Pro e 20 TB de armazenamento.
 
@@ -84,6 +86,8 @@ O **Ask YouTube** transforma a busca do YouTube em uma interface conversacional.
 
 O **Universal Cart** é um carrinho de compras unificado que funciona enquanto o usuário navega no Search, conversa com Gemini, assiste ao YouTube ou lê e-mails no Gmail. O sistema monitora quedas de preço, alerta sobre disponibilidade em estoque, exibe histórico de preços e identifica incompatibilidades entre produtos. O lançamento está previsto para o verão de 2026 no Search e no app Gemini, com YouTube e Gmail em seguida, conforme o [blog do Google I/O 2026](https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/).
 
+![TPUs de 8ª geração e infraestrutura de data centers do Google para suportar 3,2 quatrilhões de tokens mensais](https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80)
+
 ## Infraestrutura: US$ 180 Bilhões e TPU de 8ª Geração
 
 No keynote, Sundar Pichai citou números que ilustram a escala da aposta do Google em IA. O processamento interno saltou de 9,7 trilhões de tokens por mês dois anos atrás para 480 trilhões em 2025 e chegou a **3,2 quadrilhões por mês** em 2026 — um crescimento de 7 vezes em um ano, segundo o [blog oficial do keynote de Pichai](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/). Sobre o ritmo de crescimento, Pichai reconheceu: *"Some out there might call this tokenmaxxing and there's probably some truth to it."*
@@ -94,7 +98,7 @@ O investimento em infraestrutura passou de US$ 31 bilhões anuais em 2022 para u
 
 O **Gemini for Science** é uma coleção de ferramentas para pesquisa científica, incluindo geração de hipóteses, descoberta computacional e síntese de literatura acadêmica. A plataforma conecta agentes a mais de 30 bancos de dados de ciências da vida via "Science Skills", de acordo com o [blog do Google sobre o tema](https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/).
 
-Para desenvolvedores, o **Google Antigravity 2.0** é a plataforma agentiva do Google com app desktop, CLI e SDK. A API Gemini passou a oferecer **Managed Agents**: com uma única chamada de API, é possível provisionar um ambiente Linux remoto onde o agente pode raciocinar, executar código, gerenciar arquivos e navegar na web em uma sandbox isolada. O Google AI Studio ganhou suporte nativo a Kotlin, integração com Google Workspace e deploy com um clique para o Cloud Run.
+Para desenvolvedores, o **Google Antigravity 2.0** é a plataforma agentiva do Google com app desktop, CLI e SDK. A API Gemini passou a oferecer **Managed Agents**: com uma única chamada de API, é possível provisionar um ambiente Linux remoto onde o agente pode raciocinar, executar código, gerenciar arquivos e navegar na web em uma sandbox isolada. O Google AI Studio ganhou suporte nativo a Kotlin, integração com Google Workspace e deploy com um clique para o Cloud Run. Para comparar o Gemini 3.5 Flash com outros modelos disponíveis, acesse nosso [comparador de modelos de IA](/comparador).
 
 O **Project Genie** foi expandido com quase 20 anos de imagens do Google Street View, permitindo que usuários transformem qualquer local nos EUA em cenários fantásticos ("deserto de areia", "era da pedra") e insiram personagens gerados por IA nesses ambientes, conforme reportado pelo [TechCrunch](https://techcrunch.com/2026/05/19/googles-genie-world-model-can-now-simulate-real-streets-with-street-view/).
 

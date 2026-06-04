@@ -1,6 +1,6 @@
 ---
 title: "SoberanIA: Brasil lança primeiro ecossistema de IA generativa em português para o setor público"
-description: "Em 19 de maio de 2026, o Piauí apresentou em Brasília a SoberanIA — modelo com 30 bi de parâmetros treinado com 500 bi de tokens em português para gestão pública."
+description: "SoberanIA: Brasil lança LLM de 30 bi de parâmetros em português para o setor público, com apoio do MCTI e parceiros como Serpro e AWS."
 category: noticias
 tags:
   - inteligência artificial
@@ -21,11 +21,13 @@ coverImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=f
 
 No dia 19 de maio de 2026, o Governo do Estado do Piauí apresentou oficialmente em Brasília a **SoberanIA** — descrita como o primeiro ecossistema comercial brasileiro de inteligência artificial generativa em português voltado ao setor público. A iniciativa, liderada pelo governador Rafael Fonteles (PT-PI), conta com o apoio do Ministério da Ciência, Tecnologia e Inovação (MCTI) e do Ministério das Comunicações (MCom), e está alinhada ao [Plano Brasileiro de Inteligência Artificial (PBIA)](https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/transformacaodigital/plano-brasileiro-de-inteligencia-artificial), publicado em junho de 2025.
 
-No coração da plataforma está o **Soberano 1**, um modelo de linguagem (LLM) com 30 bilhões de parâmetros, desenvolvido por mais de 70 pesquisadores brasileiros e treinado sobre uma base com 500 bilhões de tokens inteiramente em português. Mais de 350 bilhões de palavras em língua portuguesa foram acumuladas nos conjuntos de dados do projeto.
+No coração da plataforma está o **Soberano 1**, um modelo de linguagem (LLM) com 30 bilhões de parâmetros, desenvolvido por mais de 70 pesquisadores brasileiros e treinado sobre uma base com 500 bilhões de tokens inteiramente em português. Mais de 350 bilhões de palavras em língua portuguesa foram acumuladas nos conjuntos de dados do projeto. O lançamento ocorre em um contexto em que [71% dos profissionais brasileiros já usam IA no trabalho, mas 72% das empresas ainda estão no estágio inicial](/blog/ia-no-brasil-talentos-em-ascensao-empresas-em-ritmo-lento-o-dilema-da-inovacao) — uma iniciativa pública como a SoberanIA pode catalisar essa transição.
 
 > **Resposta Rápida (TL;DR):** **A SoberanIA foi lançada em Brasília em 19 de maio de 2026 pelo Governo do Piauí. O modelo Soberano 1 tem 30 bilhões de parâmetros, foi treinado com 500 bilhões de tokens em português e inclui 6 ferramentas prontas para municípios, estados e autarquias, com apoio do MCTI e parcerias com Serpro, Telebras, AWS e Oracle.**
 
 ## O que é a SoberanIA e de onde veio
+
+![Rede neural e inteligência artificial — representação visual de processamento de dados](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80)
 
 A SoberanIA não surgiu do zero em 2026. Segundo a [Secretaria de Inteligência Artificial, Economia Digital, Ciência, Tecnologia e Inovação do Piauí (SIA)](https://sia.pi.gov.br/projetos/soberania/), o projeto tem raízes em fevereiro de 2025, quando foi estruturado com cronograma até dezembro de 2026.
 
@@ -79,6 +81,8 @@ Carlos Alexandria, Superintendente Nacional de Negócios do Serpro, foi direto n
 
 ## Contexto: o Plano Brasileiro de Inteligência Artificial
 
+![Laptop e tecnologia de desenvolvimento de software](https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80)
+
 A SoberanIA não é um projeto isolado. Ela se insere no quadro mais amplo do [Plano Brasileiro de Inteligência Artificial (PBIA 2024–2028)](https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2025/06/publicada-versao-final-do-plano-brasileiro-de-inteligencia-artificial-sob-coordenacao-do-mcti), coordenado pelo MCTI e publicado em sua versão final em junho de 2025, após contribuições de representantes de 117 instituições — incluindo governo, setor privado, academia e sociedade civil.
 
 O plano prevê investimentos de **R$ 23 bilhões** ao longo de quatro anos e está organizado em cinco eixos estratégicos:
@@ -107,7 +111,7 @@ O projeto enfrenta questões concretas que precisarão de resposta ao longo de 2
 
 O governador Fonteles sintetizou esse ponto no lançamento: *"O dado sensível exige uma infraestrutura computacional totalmente pública. A grande riqueza hoje de um país são os dados e a forma como esses dados são tratados."*
 
-Questões como adesão real dos municípios, capacidade de suporte técnico para órgãos de menor porte, e o alinhamento com a regulamentação de IA em tramitação no Congresso Nacional serão determinantes para a escala da iniciativa.
+Questões como adesão real dos municípios, capacidade de suporte técnico para órgãos de menor porte, e o alinhamento com a regulamentação de IA em tramitação no Congresso Nacional serão determinantes para a escala da iniciativa. O tema da ética e regulação de IA ganhou ainda mais atenção com as [novas diretrizes globais do Papa Leão XIV na encíclica Magnifica Humanitas](/blog/papa-leao-xiv-lanca-enciclica-magnifica-humanitas-novas-diretrizes-eticas-para-a-ia-global), que reforçam a soberania de dados como valor central.
 
 ---
 

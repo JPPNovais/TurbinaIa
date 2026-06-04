@@ -15,13 +15,15 @@ date: "2026-05-22"
 coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
 ---
 
-Uma pesquisa publicada no arXiv em 2025 mapeou **58 técnicas distintas de prompting para LLMs** — e a maioria das pessoas usa, no máximo, uma ou duas delas. A diferença entre um prompt genérico e um prompt bem engenheirado não é cosmética: é a diferença entre uma resposta que você descarta e uma que vai direto para o seu documento final. Plataformas de suporte ao cliente que adotaram prompt engineering estruturado relatam melhoras de 17% para 91% na taxa de resolução de problemas sem intervenção humana.
+Uma pesquisa publicada no arXiv em 2025 mapeou **58 técnicas distintas de prompting para LLMs** — e a maioria das pessoas usa, no máximo, uma ou duas delas. A diferença entre um prompt genérico e um prompt bem engenheirado não é cosmética: é a diferença entre uma resposta que você descarta e uma que vai direto para o seu documento final. Plataformas de suporte ao cliente que adotaram prompt engineering estruturado relatam melhoras de 17% para 91% na taxa de resolução de problemas sem intervenção humana. Para escolher qual modelo usar em cada caso, compare os pontos fortes de cada um no [comparador de IAs do Turbina IA](/comparador).
 
 > **Resposta Rápida (TL;DR):** Prompts de alta performance combinam três elementos: **contexto claro** (quem, para quê, em qual cenário), **instrução direta com verbo de ação** (Escreva, Analise, Resuma) e **exemplos de formato esperado** (few-shot prompting). Adicionar a frase "pense passo a passo" a problemas lógicos (chain-of-thought) é a técnica individual com melhor custo-benefício documentada pela pesquisa acadêmica.
 
 ---
 
 ## A Anatomia de um Bom Prompt
+
+![Laptop com código e interface de IA aberta para engenharia de prompts](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80)
 
 A documentação oficial da Anthropic descreve o modelo como "um funcionário brilhante que ainda não conhece seus processos internos". Quanto mais você contextualiza e delimita a tarefa, menos o modelo precisa adivinhar — e menos ele erra.
 
@@ -172,13 +174,15 @@ Esse padrão é especialmente útil porque permite **inspecionar e aprovar os re
 
 ## Diferenças Entre ChatGPT, Claude e Gemini
 
+![Tela de terminal com código e fluxo de trabalho automatizado com IA](https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1200&q=80)
+
 Cada modelo tem características distintas que afetam como os prompts devem ser estruturados. Conhecer essas diferenças evita frustração e permite aproveitar os pontos fortes de cada ferramenta.
 
 ### Claude (Anthropic)
 
 **Melhor para:** documentos longos, análise detalhada, revisão crítica, código com explicações.
 
-Claude processa janelas de contexto extensas com alta fidelidade. A Anthropic documenta que o modelo segue instruções de forma literal — se você não delimitar o escopo, ele vai além do solicitado. **Sempre defina tamanho máximo e restrições de formato.**
+Claude processa janelas de contexto extensas com alta fidelidade. A Anthropic documenta que o modelo segue instruções de forma literal — se você não delimitar o escopo, ele vai além do solicitado. **Sempre defina tamanho máximo e restrições de formato.** Para entender a evolução recente da Anthropic e o que esperar dos modelos Claude mais avançados, confira a [análise sobre Claude Opus 4.8 e a estratégia da Anthropic](/blog/anthropic-supera-openai-em-valor-de-mercado-e-impulsiona-ia-de-ponta-com-claude-opus-48-e-mythos).
 
 Técnicas que funcionam melhor no Claude:
 - Tags XML para separar contexto, instruções e exemplos
@@ -204,7 +208,7 @@ Técnicas que funcionam melhor no ChatGPT:
 
 **Melhor para:** pesquisa com fontes recentes, tarefas multimodais (texto + imagem), síntese de informações da web.
 
-Por ter integração nativa com a busca do Google, o Gemini é especialmente útil para tarefas que exigem dados atualizados. Defina sempre o escopo temporal ("dados de 2025") e solicite links para as fontes ("inclua URLs para cada afirmação").
+Por ter integração nativa com a busca do Google, o Gemini é especialmente útil para tarefas que exigem dados atualizados. Defina sempre o escopo temporal ("dados de 2025") e solicite links para as fontes ("inclua URLs para cada afirmação"). O lançamento do [Gemini 3.5 Flash](/blog/gemini-35-flash-a-nova-ia-do-google-acelera-a-era-agentica-com-poder-e-eficiencia) trouxe melhorias relevantes no raciocínio multimodal que impactam diretamente como os prompts são interpretados.
 
 Técnicas que funcionam melhor no Gemini:
 - Definir o escopo de pesquisa e período temporal

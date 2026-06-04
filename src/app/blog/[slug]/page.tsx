@@ -96,8 +96,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`;
   const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(`${shareText} - ${articleUrl}`)}`;
 
-  // Structured Data JSON-LD
-  const jsonLd = {
+  // Structured Data JSON-LD — BlogPosting + Breadcrumbs + FAQ rich results
+  const blogPostingLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: article.title,
@@ -105,9 +105,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     image: article.coverImage || 'https://www.turbinaia.com.br/icon.png',
     datePublished: article.date,
     dateModified: article.date,
+    inLanguage: 'pt-BR',
+    keywords: article.tags.join(', '),
+    articleSection: article.category,
+    wordCount: article.readingTime,
     author: {
-      '@type': 'Person',
+      '@type': 'Organization',
       name: article.author,
+      url: 'https://www.turbinaia.com.br/sobre',
     },
     publisher: {
       '@type': 'Organization',
@@ -123,6 +128,30 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     },
   };
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://www.turbinaia.com.br' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.turbinaia.com.br/#artigos' },
+      { '@type': 'ListItem', position: 3, name: article.title, item: articleUrl },
+    ],
+  };
+
+  const faqLd = article.faqs && article.faqs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: article.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+        })),
+      }
+    : null;
+
+  const jsonLd = [blogPostingLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
+
   return (
     <main>
       {/* Schema.org Structured Data */}
@@ -135,6 +164,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       {/* 1. Article Header */}
       <header className="article-header container">
+        <nav className="article-breadcrumb" aria-label="Trilha de navegação">
+          <Link href="/">Início</Link>
+          <span aria-hidden="true"> / </span>
+          <Link href={`/?category=${encodeURIComponent(article.category)}`}>{article.category}</Link>
+          <span aria-hidden="true"> / </span>
+          <span className="article-breadcrumb-current">{article.title}</span>
+        </nav>
         <span className="badge badge-secondary">{article.category}</span>
         <h1 className="article-header-title">{article.title}</h1>
         <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>

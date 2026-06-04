@@ -9,6 +9,11 @@ export interface ArticleHeading {
   depth: number;
 }
 
+export interface ArticleFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface ArticleMetadata {
   title: string;
   description: string;
@@ -25,6 +30,61 @@ export interface ArticleMetadata {
 export interface Article extends ArticleMetadata {
   contentHtml: string;
   headings: ArticleHeading[];
+  faqs: ArticleFAQ[];
+}
+
+// Extract FAQ pairs from the "Perguntas Frequentes" section so we can emit
+// FAQPage structured data (rich results in Google). Every article in this
+// project follows the convention of an `## Perguntas Frequentes` H2 followed
+// by `### question` H3s, each with an answer paragraph beneath it.
+function extractFAQs(markdownContent: string): ArticleFAQ[] {
+  const lines = markdownContent.split('\n');
+  const faqs: ArticleFAQ[] = [];
+  let inFaqSection = false;
+  let currentQuestion: string | null = null;
+  let answerLines: string[] = [];
+
+  const flush = () => {
+    if (currentQuestion && answerLines.length > 0) {
+      const answer = answerLines
+        .join(' ')
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // strip markdown links
+        .replace(/[*_`>]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+      if (answer) faqs.push({ question: currentQuestion, answer });
+    }
+    currentQuestion = null;
+    answerLines = [];
+  };
+
+  for (const line of lines) {
+    const h2 = line.match(/^##\s+(.+)$/);
+    if (h2) {
+      flush();
+      inFaqSection = /perguntas frequentes|faq/i.test(h2[1]);
+      continue;
+    }
+    if (!inFaqSection) continue;
+    const h3 = line.match(/^###\s+(.+)$/);
+    if (h3) {
+      flush();
+      currentQuestion = h3[1].replace(/[*_`]/g, '').trim();
+      continue;
+    }
+    if (currentQuestion) answerLines.push(line);
+  }
+  flush();
+  return faqs;
+}
+
+// Lazy-load and async-decode content images for better Core Web Vitals (LCP/CLS),
+// and mark external links as noopener for safety. The cover image stays eager
+// because it is rendered separately via next/image with priority.
+function enhanceContentHtml(html: string): string {
+  return html
+    .replace(/<img /g, '<img loading="lazy" decoding="async" ')
+    .replace(/<a href="http/g, '<a target="_blank" rel="noopener noreferrer nofollow" href="http');
 }
 
 function slugifyHeading(text: string): string {
@@ -126,8 +186,10 @@ export async function getArticleData(slug: string): Promise<Article | null> {
   };
 
   // Parse markdown content to HTML
-  const contentHtml = await marked.parse(content, { renderer });
+  const rawHtml = await marked.parse(content, { renderer });
+  const contentHtml = enhanceContentHtml(rawHtml);
   const headings = extractHeadings(content);
+  const faqs = extractFAQs(content);
   
   const metadata: Article = {
     title: data.title || 'Sem título',
@@ -142,8 +204,9 @@ export async function getArticleData(slug: string): Promise<Article | null> {
     isFeatured: !!data.isFeatured,
     contentHtml,
     headings,
+    faqs,
   };
-  
+
   return metadata;
 }
 

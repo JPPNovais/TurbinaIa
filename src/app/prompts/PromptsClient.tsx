@@ -98,10 +98,11 @@ export default function PromptsClient() {
     <section className="prompts-section container">
       {/* Header */}
       <div className="prompts-header">
-        <h1>Biblioteca de Prompts Prontos ⚡</h1>
+        <h1>Biblioteca de Prompts para IA: ChatGPT, Claude e Gemini ⚡</h1>
         <p>
-          Encontre e personalize comandos avançados para ChatGPT, Claude, Gemini e outros modelos. 
-          Basta preencher as variáveis e copiar o prompt ideal otimizado para suas necessidades.
+          Mais de 100 prompts prontos e gratuitos neste banco de prompts para ChatGPT, Claude, Gemini
+          e outros modelos de IA. Encontre por categoria, personalize as variáveis e copie o comando
+          ideal em segundos — sem cadastro.
         </p>
       </div>
 

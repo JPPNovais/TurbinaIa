@@ -3609,4 +3609,179 @@ Com base nessas informações, projete o agente IA, detalhando:
 Formate sua resposta de forma clara e estruturada, utilizando subtítulos para cada seção.`,
     tags: ['Desenvolvimento', 'TDD', 'Agente IA', 'Geração de Código', 'Testes'],
   },
+  {
+    id: 'marketing-estrategia-lancamento-omnichannel-ia',
+    title: 'Estratégia de Lançamento Omnichannel com IA',
+    category: 'Marketing',
+    description: 'Cria um plano estratégico detalhado para lançamento de produto/serviço, integrando diferentes canais e formatos de conteúdo multimodal, otimizado por IA para máxima ressonância e alcance.',
+    template: `Você é um estrategista de marketing digital com vasta experiência em lançamentos de produtos utilizando IA. Crie um plano de lançamento omnichannel detalhado para o seguinte produto/serviço:
+
+### Informações do Produto/Serviço:
+- **Nome:** [Nome do Produto/Serviço]
+- **Descrição Breve:** [Descrição do produto/serviço em 1-2 frases]
+- **Diferenciais Chave:** [Liste 3-5 diferenciais competitivos (ex: tecnologia exclusiva, preço acessível, suporte 24h)]
+- **Público-Alvo Principal:** [Descreva o público-alvo (demografia, psicografia, dores, desejos)]
+
+### Objetivos e Contexto do Lançamento:
+- **Objetivo Principal:** [Ex: Gerar X leads qualificados, Atingir Y vendas na primeira semana, Aumentar o reconhecimento da marca em Z% em 3 meses]
+- **Data de Lançamento Desejada:** [Ex: 15 de Setembro de 2026]
+- **Prazo da Campanha (pré e pós lançamento):** [Ex: 2 semanas de pré-lançamento, 4 semanas de pós-lançamento]
+- **Orçamento Estimado:** [Ex: R$10.000 para anúncios pagos, R$5.000 para criação de conteúdo]
+- **Tom de Voz da Marca:** [Ex: Inovador e aspiracional, Amigável e acessível, Profissional e técnico]
+
+### Canais de Marketing Disponíveis e Preferidos:
+- [Lista de canais que você planeja usar, ex: Instagram, LinkedIn, Facebook Ads, Google Ads, Email Marketing, Blog, YouTube, Podcast, WhatsApp Business]
+- **Importância de cada canal:** [Ex: Instagram (alta), LinkedIn (média), Email (alta), YouTube (baixa)]
+
+### Estrutura do Plano de Lançamento (Use a seguinte estrutura):
+1.  **Fase de Pré-Lançamento (Teaser e Aquecimento):**
+    *   Objetivos e KPIs específicos para esta fase.
+    *   Estratégias de conteúdo multimodal para cada canal (especifique tipo de conteúdo: reels, posts carrossel, artigos de blog, sequências de e-mail, stories interativos, teasers de vídeo, enquetes, etc.).
+    *   Plano de anúncios pagos (segmentação, copies, criativos).
+    *   Estratégia de engajamento da comunidade/influenciadores.
+2.  **Fase de Lançamento (Dia D e Impulso Inicial):**
+    *   Objetivos e KPIs específicos para esta fase.
+    *   Eventos de lançamento (lives, webinars, anúncios especiais, promoções de abertura).
+    *   Estratégias de conteúdo para cada canal, focadas na conversão e no impacto.
+    *   Plano de anúncios pagos, com foco em resultados.
+3.  **Fase Pós-Lançamento (Sustentação e Otimização):**
+    *   Objetivos e KPIs específicos para esta fase (ex: retenção, upsell, coleta de feedback).
+    *   Estratégias de conteúdo de longo prazo e nutrição de leads.
+    *   Coleta e análise de feedback de clientes.
+    *   Plano de otimização contínua baseado em IA (ex: A/B testing, personalização dinâmica de e-mails, análise preditiva de churn).
+
+### Solicitações Adicionais:
+-   Sugira pelo menos 3 KPIs para cada fase.
+-   Incorpore o uso de IA para otimização de segmentação, personalização de conteúdo, análise de desempenho e automação de fluxos de trabalho.
+-   Destaque como a estratégia é "omnichannel", garantindo uma experiência coesa e fluida para o usuário em todos os pontos de contato.
+-   Inclua um cronograma simplificado para cada fase.
+`,
+    tags: ['Marketing', 'Lançamento', 'Omnichannel', 'IA', 'Estratégia']
+  },
+  {
+    id: 'career-analise-skill-gap-ia',
+    title: 'Análise de Skill Gap e Rota de Carreira Otimizada por IA',
+    category: 'Carreira',
+    description: 'Gera um relatório detalhado de lacunas de habilidades para um objetivo de carreira específico e propõe um plano de desenvolvimento personalizado, com recursos e certificações sugeridos por IA.',
+    template: `Você é um coach de carreira com IA, especializado em desenvolvimento profissional e análise de mercado de trabalho em [Data atual: 2026-06]. Sua tarefa é analisar as habilidades de um usuário e seu objetivo de carreira para identificar lacunas e criar um plano de desenvolvimento.
+
+### Informações do Usuário:
+-   **Função/Cargo Atual:** [Sua função atual, ex: Desenvolvedor Front-end Júnior, Analista de Marketing Digital, Coordenador de Projetos]
+-   **Principais Habilidades Atuais (5-7):** [Liste suas principais habilidades técnicas e comportamentais, ex: JavaScript, React, HTML/CSS, Git, Comunicação, Resolução de Problemas, Análise de Dados, Gestão de Tempo]
+-   **Experiência Relevante (breve):** [Descreva brevemente sua experiência mais relevante, ex: 2 anos desenvolvendo interfaces web para e-commerce, 3 anos gerenciando campanhas de Google Ads e redes sociais]
+-   **Interesses e Paixões:** [Liste áreas de interesse que gostaria de explorar na carreira, ex: Inteligência Artificial, Experiência do Usuário (UX), Liderança de Equipes, Sustentabilidade]
+
+### Objetivo de Carreira:
+-   **Objetivo a Longo Prazo (3-5 anos): / Posição Desejada:** [Descreva seu objetivo de carreira, ex: Tornar-me um Especialista em IA para Aplicações Web, Atuar como Gerente de Produto Sênior em uma startup de tecnologia, Ser um Consultor de ESG]
+-   **Por que este objetivo?** [Explique brevemente a motivação por trás do objetivo (ex: paixão pela área, alta demanda de mercado, busca por maior impacto)]
+
+### Restrições e Preferências de Aprendizado:
+-   **Tempo Disponível para Estudo/Desenvolvimento por Semana:** [Ex: 5-10 horas, 2-3 horas, fins de semana]
+-   **Recursos Preferenciais:** [Ex: Cursos online (Coursera, Alura, Udemy), Bootcamps intensivos, Livros técnicos, Projetos práticos, Mentoria, Workshops]
+-   **Preferência de Custo:** [Ex: Gratuito, Baixo custo, Disposto a investir (valor aproximado)]
+
+### Estrutura do Relatório e Plano:
+1.  **Análise de Mercado e Tendências:**
+    *   Destaque as principais tendências e demandas do mercado para o objetivo de carreira especificado em [Data atual: 2026-06].
+    *   Liste as 5-7 habilidades mais críticas (técnicas e comportamentais) exigidas para a função desejada.
+2.  **Relatório de Skill Gap (Lacunas de Habilidades):**
+    *   Compare suas habilidades atuais com as exigidas para o objetivo, identificando as principais lacunas.
+    *   Priorize 3-5 lacunas mais importantes a serem preenchidas, justificando a prioridade.
+3.  **Plano de Desenvolvimento Personalizado (12 Meses):**
+    *   Para cada lacuna priorizada, sugira 2-3 ações concretas e específicas (ex: "Fazer o curso X na plataforma Y", "Participar do projeto open-source Z", "Ler o livro A", "Buscar mentor na área de B").
+    *   Indique a duração estimada e a prioridade (Alta, Média, Baixa) de cada ação.
+    *   Sugira recursos específicos (plataformas, livros, comunidades, certificações) alinhados às suas preferências.
+4.  **Próximos Passos e Recomendações:**
+    *   Conselhos práticos sobre como aplicar o aprendizado (ex: criar portfólio, networking estratégico, prática em projetos reais).
+    *   Como a IA pode te auxiliar na manutenção e ajuste contínuo do seu plano de carreira.
+    *   Sugestões para monitorar o progresso e manter a motivação.
+`,
+    tags: ['Carreira', 'Habilidades', 'Desenvolvimento', 'IA', 'Planejamento']
+  },
+  {
+    id: 'finance-analise-portifolio-pessoal-ia',
+    title: 'Análise Preditiva e Otimização de Portfólio de Investimentos Pessoais com IA',
+    category: 'Finanças',
+    description: 'Avalia seu portfólio de investimentos pessoais, projeta cenários futuros com base em dados de mercado e sugere ajustes para otimização de risco e retorno, utilizando IA para análise preditiva.',
+    template: `Você é um consultor financeiro com IA, especializado em análise de portfólio e estratégias de investimento personalizadas. Sua função é analisar o portfólio de investimentos de um usuário, fornecer insights preditivos e sugerir otimizações, considerando o contexto de mercado de [Data atual: 2026-06].
+
+### Informações do Usuário e Objetivos:
+-   **Seu Perfil de Risco:** [Ex: Conservador (baixa tolerância a risco), Moderado (equilíbrio entre risco/retorno), Agressivo (alta tolerância a risco, busca retornos elevados)]
+-   **Objetivo Principal do Investimento:** [Ex: Aposentadoria em 20 anos, Compra de imóvel em 5 anos, Crescimento de capital a longo prazo, Geração de renda passiva]
+-   **Horizonte de Investimento (em anos):** [Ex: 10, 25, 3]
+-   **Capital Adicional Disponível para Investir Mensalmente (opcional):** [Ex: R$ 500, R$ 2.000, Nenhum]
+-   **Restrições ou Preferências:** [Ex: Não investir em combustíveis fósseis, Foco em empresas de tecnologia, Quero liquidez para X% do capital, Investimentos ESG]
+
+### Detalhes do Portfólio Atual:
+-   **Lista de Ativos Atuais (adicione mais se necessário):**
+    *   **Ativo 1:** [Nome do Ativo (ex: Ações da Petrobras - PETR4, Tesouro Selic 2029, Fundo Imobiliário XPML11, Criptomoeda Bitcoin (BTC))]
+    *   **Quantidade/Valor Investido:** [Ex: 100 ações, R$ 5.000 no Fundo, 0.5 BTC]
+    *   **Preço Médio de Compra:** [Ex: R$ 30,00/ação, R$ 100/cota, R$ 200.000/BTC]
+    *   **Porcentagem Estimada do Portfólio (se souber):** [Ex: 20%, 5%]
+    *   **Data de Aquisição (aproximada):** [Ex: Janeiro 2023]
+-   **(Repita o formato acima para cada ativo relevante do seu portfólio. Mínimo de 3 ativos, se possível.)**
+-   **Valor Total Aproximado do Portfólio:** [Ex: R$ 50.000, R$ 250.000]
+
+### Estrutura da Análise e Recomendações:
+1.  **Análise do Portfólio Atual:**
+    *   Distribuição por tipo de ativo (renda fixa, renda variável, cripto, imóveis, etc.), setor e geografia.
+    *   Avaliação da adequação ao seu perfil de risco e objetivo de investimento.
+    *   Análise da diversificação atual e concentração de risco.
+2.  **Análise Preditiva de Cenários (3 Cenários):**
+    *   Utilizando dados de mercado e modelos preditivos baseados em IA, projete o desempenho potencial do seu portfólio em cenários otimista, realista e pessimista para o seu horizonte de investimento.
+    *   Estime o retorno esperado e o risco associado (ex: volatilidade) em cada cenário.
+    *   Discuta as premissas por trás de cada cenário.
+3.  **Recomendações de Otimização:**
+    *   Sugira ajustes específicos para alinhar o portfólio ao seu objetivo e perfil de risco (ex: compra/venda de ativos, realocação de capital, aumento da exposição a X, redução da exposição a Y).
+    *   Recomende novos ativos ou classes de ativos para melhorar a diversificação e o potencial de retorno.
+    *   Destaque estratégias para o capital adicional mensal (se houver).
+    *   Considerar as restrições e preferências do usuário (ex: ESG).
+4.  **Gestão Contínua e Ferramentas:**
+    *   Conselhos sobre como monitorar e rebalancear seu portfólio regularmente.
+    *   Sugestões de ferramentas e plataformas (incluindo soluções de IA) para auxiliar na gestão de investimentos e na tomada de decisões.
+    *   Dicas para lidar com a volatilidade do mercado.
+`,
+    tags: ['Finanças', 'Investimentos', 'Análise Preditiva', 'IA', 'Portfólio']
+  },
+  {
+    id: 'produtividade-pauta-reuniao-ia',
+    title: 'Gerador de Pauta de Reunião Dinâmica com Pré-leitura e IA',
+    category: 'Produtividade',
+    description: 'Cria uma pauta detalhada para sua reunião, sugerindo tópicos, tempo para cada item e materiais de pré-leitura relevantes para maximizar a eficiência e a tomada de decisão, otimizada por IA.',
+    template: `Você é um assistente de produtividade com IA, especializado em otimização de reuniões. Crie uma pauta de reunião dinâmica e eficiente, que inclua tópicos de discussão, alocação de tempo e sugestões de pré-leitura para os participantes, com base nas informações fornecidas.
+
+### Informações da Reunião:
+-   **Propósito Principal da Reunião:** [Ex: Decidir a estratégia de marketing para o próximo trimestre, Fazer brainstorm de novas funcionalidades para o produto X, Revisar o progresso do projeto Y e definir próximos passos, Alinhar a equipe sobre as metas de vendas para o Q3]
+-   **Participantes Esperados:** [Liste os nomes ou funções dos participantes, ex: Gerente de Marketing, Diretor de Vendas, Equipe de Produto, Fulano da Silva (UX Designer)]
+-   **Duração Estimada da Reunião:** [Ex: 30 minutos, 1 hora, 1 hora e 30 minutos]
+-   **Data/Hora da Reunião:** [Ex: 25 de Julho de 2026, 10h BRT (opcional, para contexto)]
+-   **Contexto ou Histórico Relevante:** [Ex: Reunião de acompanhamento da anterior que discutiu o problema Z, Necessidade urgente de resolver o gargalo de X na produção, Projeto está atrasado em duas semanas]
+-   **Resultados Esperados:** [Ex: Decisão sobre o fornecedor A ou B, Lista de 5 ideias aprovadas para a campanha, Plano de ação com responsáveis e prazos definidos, Próximos passos claros para o projeto]
+-   **Nível de Interação Desejado:** [Ex: Discussão aberta e colaborativa, Apresentação seguida de Q&A, Tomada de decisão por votação, Workshop interativo]
+
+### Estrutura da Pauta:
+1.  **Objetivo Claro da Reunião:** Reformule o propósito principal de forma concisa e orientada para a ação.
+2.  **Pré-Leitura/Materiais Preparatórios:**
+    *   Liste quaisquer documentos, relatórios, links ou dados que os participantes deveriam revisar ANTES da reunião.
+    *   Explique brevemente a relevância de cada material para a discussão.
+    *   Sugira como a IA pode ajudar na sumarização desses materiais para os participantes.
+3.  **Tópicos da Pauta com Alocação de Tempo, Responsáveis e Perguntas-Chave:**
+    *   Para cada tópico, especifique o tempo sugerido.
+    *   Indique o responsável por iniciar ou conduzir a discussão daquele tópico.
+    *   Descreva brevemente o objetivo de cada tópico (ex: "Atualização de status do Projeto X", "Brainstorm de Soluções para Y", "Decisão sobre Z").
+    *   Sugira 1-2 perguntas-chave para cada tópico para guiar a discussão e estimular a participação.
+4.  **Espaço para Anotações e Ações (Durante a Reunião):**
+    *   Um breve espaço para registrar decisões, ações concretas, responsáveis e prazos que surgirem ao final da discussão de cada tópico ou da reunião.
+5.  **Próximos Passos e Ações:**
+    *   Resumo das principais decisões tomadas e dos próximos passos definidos, com responsáveis e prazos.
+6.  **Dicas para uma Reunião Produtiva:**
+    *   Inclua 2-3 lembretes ou dicas para maximizar a eficiência da reunião (ex: "Começar e terminar no horário", "Focar nos resultados esperados", "Participação ativa").
+
+### Observações Finais:
+-   Garanta que a pauta seja prática, focada em resultados e que ajude a manter o tempo sob controle.
+-   A IA deve inferir a complexidade dos tópicos e a necessidade de pré-leitura com base nas informações fornecidas.
+-   Apresente a pauta em um formato fácil de ler e seguir.
+`,
+    tags: ['Produtividade', 'Reunião', 'Agenda', 'IA', 'Eficiência']
+  },
 ];

@@ -13,6 +13,95 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-gpt-rosalind-capacidades-2026',
+    date: '2026-06',
+    title: 'OpenAI introduz novas capacidades ao GPT-Rosalind para ciências da vida',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'A OpenAI introduziu novas capacidades ao seu modelo GPT-Rosalind, focado em pesquisa de ciências da vida, combinando inteligência do GPT-5.5 com expertise em química medicinal e genômica.',
+    highlights: [
+      'Atualização do modelo GPT-Rosalind em 3 de junho de 2026, com inteligência aprimorada.',
+      'Integra as capacidades de codificação e uso de ferramentas do GPT-5.5.',
+      'Aprimoramentos em domínios de descoberta de medicamentos, como química medicinal e genômica.',
+      'Melhora o desempenho em tarefas de pesquisa biológica e solução de problemas de laboratório.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'meta-ai-agente-negocios-2026',
+    date: '2026-06',
+    title: 'Meta Platforms lança agente de IA para operações empresariais',
+    developer: 'Meta AI',
+    category: 'Lançamento',
+    description: 'A Meta Platforms lançou um novo agente de inteligência artificial destinado a auxiliar empresas em operações diárias, expandindo seus serviços de mensagens para incluir capacidades de ação em nome das empresas.',
+    highlights: [
+      'Lançamento do agente de IA para empresas em 3 de junho de 2026.',
+      'Permite que o assistente realize ações como agendamento de compromissos e fechamento de vendas.',
+      'Expansão dos serviços de mensagens existentes no WhatsApp e Messenger, e será adicionado ao Instagram.',
+      'Posiciona a Meta como um player no mercado de IA empresarial.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'mistral-codestral-2026',
+    date: '2026-06',
+    title: 'Mistral AI lança Codestral, modelo especializado em codificação',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'A Mistral AI lançou o Codestral, um modelo de IA especializado para tarefas de codificação, reforçando sua presença no cenário de assistentes de código.',
+    highlights: [
+      'Lançamento do modelo Codestral em 1º de junho de 2026.',
+      'Focado e otimizado para tarefas de codificação.',
+      'Mantém a relevância da Mistral AI em casos de uso de desenvolvedores e codificação.'
+    ],
+    impact: 'Médio'
+  },
+  {
+    id: 'deepseek-coder-v2-0614-2026',
+    date: '2026-06',
+    title: 'DeepSeek atualiza modelo Coder para a versão V2-0614',
+    developer: 'DeepSeek',
+    category: 'Atualização',
+    description: 'O modelo DeepSeek-Coder foi atualizado para a versão V2-0614, apresentando melhorias significativas em suas capacidades de codificação.',
+    highlights: [
+      'Atualização do modelo DeepSeek-Coder para V2-0614, com data implicada de 14 de junho de 2026.',
+      'Aprimoramentos substanciais em geração, compreensão, depuração e completude de código.',
+      'Capacidades de código equivalentes ao GPT-4-Turbo-0409.',
+      'Habilidades matemáticas e de raciocínio excelentes, com capacidades gerais alinhadas ao DeepSeek-V2-0517.'
+    ],
+    impact: 'Médio'
+  },
+  {
+    id: 'xai-grok-imagine-video-1-5-preview-2026',
+    date: '2026-06',
+    title: 'xAI lança Grok Imagine Video 1.5 Preview para geração de vídeo',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI lançou o Grok Imagine Video 1.5 Preview via API, um novo modelo de geração de vídeo que se destaca em benchmarks e introduz áudio sincronizado nativo.',
+    highlights: [
+      'Lançamento do Grok Imagine Video 1.5 Preview em 4 de junho de 2026.',
+      'Debutou em primeiro lugar no ranking Artificial Analysis Video Arena Image-to-Video.',
+      'Gera áudio sincronizado (diálogo, sincronização labial, efeitos sonoros) juntamente com tokens de vídeo em uma única passagem de inferência.',
+      'Aumenta a duração dos clipes para até 15 segundos.',
+      'Disponível via API inicialmente para desenvolvedores.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'xai-grok-4-20-2026',
+    date: '2026-06',
+    title: 'xAI lança Grok 4.20, focando em arquiteturas multiagentes',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI lançou o Grok 4.20, uma nova variante da família Grok 4, que foca em arquiteturas multiagentes.',
+    highlights: [
+      'Lançamento do Grok 4.20 em 1º de junho de 2026.',
+      'Destinado a avançar a discussão para arquiteturas de agentes paralelos e multiagentes.',
+      'Representa melhorias e uma nova versão dentro da série Grok 4.'
+    ],
+    impact: 'Médio'
+  },
+  {
     id: 'xai-grok-2-beta-2026',
     date: '2026-06',
     title: 'xAI lança Grok-2 Beta e Grok-2 mini, expandindo a família de modelos',

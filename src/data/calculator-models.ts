@@ -14,8 +14,8 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'Google',
     inputPricePerM: 7.00, // Reduced price for up to 128K tokens
     outputPricePerM: 21.00, // Reduced price for up to 128K tokens
-    contextWindow: '1M tokens',
-    description: 'O modelo Pro atual da Google (lançado em Maio de 2024, preços atualizados em Outubro de 2024), com raciocínio avançado e contexto de até 1M tokens. Preço base para até 128K tokens. Acima de 128K, preços podem ser maiores.',
+    contextWindow: '2M tokens', // Updated context window
+    description: 'O modelo Pro atual da Google (lançado em Maio de 2024, preços atualizados em Outubro de 2024), com raciocínio avançado e contexto de até 2M tokens. Preço base para até 128K tokens. Acima de 128K, preços podem ser maiores.',
   },
   {
     name: 'Gemini 1.5 Flash',
@@ -98,8 +98,8 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'Meta (via API)',
     inputPricePerM: 0.18,
     outputPricePerM: 0.18,
-    contextWindow: '128K tokens',
-    description: 'Versão leve e econômica da família Llama 3.1 Instruct via API Together AI (junho 2026), com 128K de contexto.',
+    contextWindow: '131K tokens', // Updated context window
+    description: 'Versão leve e econômica da família Llama 3.1 Instruct via API Together AI (junho 2026), com 131K de contexto.',
   },
   // Mistral AI
   {
@@ -115,8 +115,8 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'Mistral AI',
     inputPricePerM: 0.15,
     outputPricePerM: 0.60,
-    contextWindow: '256K tokens',
-    description: 'Um modelo econômico da Mistral AI (março 2026), ideal para projetos sensíveis ao custo, com 256K de contexto.',
+    contextWindow: '262K tokens', // Updated context window
+    description: 'Um modelo econômico da Mistral AI (março 2026), ideal para projetos sensíveis ao custo, com 262K de contexto.',
   },
   // Cohere
   {

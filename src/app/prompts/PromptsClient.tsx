@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
+import { useProgressiveReveal } from '@/hooks/useProgressiveReveal';
 import { PROMPTS, Prompt } from '@/data/prompts';
 import './prompts.css';
 
@@ -34,6 +35,10 @@ export default function PromptsClient() {
       return matchesCategory && matchesSearch;
     });
   }, [search, selectedCategory]);
+
+  // Carrega os cards de prompt gradualmente para aliviar a renderização inicial
+  const { visibleItems: visiblePrompts, hasMore, remaining, sentinelRef, loadMore } =
+    useProgressiveReveal(filteredPrompts, 24, 24);
 
   // Extract placeholders from template whenever selectedPrompt changes
   const placeholders = useMemo(() => {
@@ -138,8 +143,9 @@ export default function PromptsClient() {
 
       {/* Prompts Grid */}
       {filteredPrompts.length > 0 ? (
+        <>
         <div className="prompts-grid">
-          {filteredPrompts.map((prompt) => (
+          {visiblePrompts.map((prompt) => (
             <article key={prompt.id} className="prompt-card">
               <div>
                 <div className="prompt-card-header">
@@ -165,6 +171,14 @@ export default function PromptsClient() {
             </article>
           ))}
         </div>
+        {hasMore && (
+          <div ref={sentinelRef} className="load-more-wrapper">
+            <button type="button" className="btn btn-secondary load-more-btn" onClick={loadMore}>
+              Carregar mais prompts ({remaining})
+            </button>
+          </div>
+        )}
+        </>
       ) : (
         <div style={{ textAlign: 'center', padding: '4rem 2rem', background: 'var(--bg-secondary)', borderRadius: 'var(--border-radius-md)', border: '1px solid var(--border-color)' }}>
           <span style={{ fontSize: '3rem' }}>🔍</span>

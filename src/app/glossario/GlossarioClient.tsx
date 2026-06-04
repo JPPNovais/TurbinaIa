@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { GLOSSARIO, GLOSSARIO_CATEGORIES, type GlossarioTerm } from '@/data/glossario';
+import { useProgressiveReveal } from '@/hooks/useProgressiveReveal';
 
 export default function GlossarioClient() {
   const [search, setSearch] = useState('');
@@ -21,15 +22,20 @@ export default function GlossarioClient() {
     });
   }, [search, selectedCategory]);
 
+  // Busca/filtro rodam sobre TODA a base (filtered). A revelação progressiva
+  // apenas recorta quantos termos do resultado são exibidos por vez.
+  const { visibleItems: visibleTerms, hasMore, remaining, sentinelRef, loadMore } =
+    useProgressiveReveal(filtered, 40, 40);
+
   const grouped = useMemo(() => {
     const map: Record<string, GlossarioTerm[]> = {};
-    filtered.forEach((item) => {
+    visibleTerms.forEach((item) => {
       const letter = item.term[0].toUpperCase();
       if (!map[letter]) map[letter] = [];
       map[letter].push(item);
     });
     return Object.entries(map).sort(([a], [b]) => a.localeCompare(b));
-  }, [filtered]);
+  }, [visibleTerms]);
 
   const impactColor: Record<string, string> = {
     'Fundamentos': '#6366f1',
@@ -186,6 +192,14 @@ export default function GlossarioClient() {
               </div>
             </div>
           ))
+        )}
+
+        {hasMore && (
+          <div ref={sentinelRef} className="load-more-wrapper">
+            <button type="button" className="btn btn-secondary load-more-btn" onClick={loadMore}>
+              Carregar mais termos ({remaining})
+            </button>
+          </div>
         )}
 
         {/* Modal */}

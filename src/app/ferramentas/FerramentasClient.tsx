@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { AI_TOOLS, CATEGORIES, type AITool } from '@/data/ai-tools';
+import { useProgressiveReveal } from '@/hooks/useProgressiveReveal';
 import './ferramentas.css';
 
 const ICON_COLORS = [
@@ -179,6 +180,10 @@ export default function FerramentasClient() {
     return result;
   }, [search, selectedCategory]);
 
+  // Revela os cards de ferramenta gradualmente para aliviar a renderização inicial
+  const { visibleItems: visibleTools, hasMore, remaining, sentinelRef, loadMore } =
+    useProgressiveReveal(filtered, 18, 18);
+
   const latestUpdate = useMemo(() => {
     const dates = AI_TOOLS.map((t) => t.updatedAt).filter(Boolean) as string[];
     if (!dates.length) return null;
@@ -265,7 +270,7 @@ export default function FerramentasClient() {
               <p>Nenhuma ferramenta encontrada para &quot;{search}&quot;</p>
             </div>
           ) : (
-            filtered.map((tool, index) => (
+            visibleTools.map((tool, index) => (
               <ToolCard
                 key={tool.id}
                 tool={tool}
@@ -274,6 +279,13 @@ export default function FerramentasClient() {
             ))
           )}
         </div>
+        {hasMore && (
+          <div ref={sentinelRef} className="load-more-wrapper">
+            <button type="button" className="btn btn-secondary load-more-btn" onClick={loadMore}>
+              Carregar mais ferramentas ({remaining})
+            </button>
+          </div>
+        )}
       </div>
     </main>
   );

@@ -110,11 +110,11 @@ export const AI_TOOLS: AITool[] = [
       'Brainstorming e criação de conteúdo',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (com Claude Sonnet 4.6 e Haiku 4.5, uso limitado, sem acesso a Claude Code ou Opus). Pro a US$ 20/mês (ou US$ 17/mês no plano anual, acesso a Claude Opus 4.6/4.7 e Sonnet 4.6, Claude Code incluído, limites de uso padrão). Max 5x a US$ 100/mês (5x capacidade do plano Pro). Max 20x a US$ 200/mês (20x capacidade do plano Pro). Team Standard a US$ 25/usuário/mês (ou US$ 20/usuário/mês no plano anual, mínimo de 5 usuários, Sonnet e Haiku apenas, Claude Code limitado). Team Premium a US$ 125/usuário/mês (ou US$ 100/usuário/mês no plano anual, mínimo de 5 usuários, inclui Opus e Claude Code completo). Enterprise sob consulta (a partir de US$ 20/usuário/mês + API, faturamento anual, conformidade, governança). API (pay-per-token): Claude Opus 4.7 a US$ 5/M tokens entrada e US$ 25/M tokens saída; Claude Sonnet 4.6 a US$ 3/M tokens entrada e US$ 15/M tokens saída; Claude Haiku 4.5 a US$ 1/M tokens entrada e US$ 5/M tokens saída. Batch API com 50% de desconto.',
+    pricingDetails: 'Grátis (com Claude Sonnet 4.6 e Haiku 4.5, uso limitado, sem acesso a Claude Code ou Opus). Pro a US$ 20/mês (ou US$ 17/mês no plano anual, acesso a Claude Opus 4.6/4.7 e Sonnet 4.6, Claude Code incluído, limites de uso padrão). Max 5x a US$ 100/mês (5x capacidade do plano Pro). Max 20x a US$ 200/mês (20x capacidade do plano Pro). Team Standard a US$ 25/usuário/mês (ou US$ 20/usuário/mês no plano anual, mínimo de 5 usuários, Sonnet e Haiku apenas, Claude Code limitado). Team Premium a US$ 125/usuário/mês (ou US$ 100/usuário/mês no plano anual, mínimo de 5 usuários, inclui Opus e Claude Code completo). Enterprise sob consulta (a partir de US$ 20/usuário/mês + API, faturamento anual, conformidade, governança). API (pay-per-token): Claude Opus 4.7 a US$ 5/M tokens entrada e US$ 25/M tokens saída; Claude Sonnet 4.6 a US$ 3/M tokens entrada e US$ 15/M tokens saída; Claude Haiku 4.5 a US$ 1/M tokens entrada e US$ 5/M tokens saída. Batch API com 50% de desconto. Em 15 de junho de 2026, o uso programático do Claude (Agent SDK, claude -p CLI, GitHub Actions) passa a ter um crédito mensal dedicado (US$ 20 para Pro, US$ 100 para Max 5x, US$ 200 para Max 20x), faturado a taxas de API após o esgotamento.',
     url: 'https://claude.ai',
     tags: ['redação', 'texto', 'anthropic', 'assistente', 'análise', 'longo contexto'],
     isFeatured: true,
-    popularityRank: 7,
+    popularityRank: 5,
     updatedAt: '2026-06',
   },
   {
@@ -177,10 +177,10 @@ export const AI_TOOLS: AITool[] = [
       'Manter consistência de tom de voz da marca',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Sem plano gratuito, apenas trial de 7 dias. Creator a US$ 49/mês (US$ 39/mês no plano anual) para 1 usuário; Teams a US$ 125/mês (US$ 99/mês no plano anual) para até 5 usuários; Business com preço customizado.',
+    pricingDetails: 'Sem plano gratuito, apenas trial de 7 dias. Pro a US$ 59/mês (US$ 49/mês no plano anual) para 1 usuário; Business com preço customizado (multi-assento, inclui Brand Voices ilimitados, agentes de IA avançados, API e SSO).',
     url: 'https://www.jasper.ai',
     tags: ['marketing', 'copywriting', 'seo', 'blog', 'anúncios', 'conteúdo', 'redação'],
-    popularityRank: 22,
+    popularityRank: 28,
     updatedAt: '2026-06',
   },
   {
@@ -198,11 +198,11 @@ export const AI_TOOLS: AITool[] = [
       'Analisar debates e conversas do X',
       'Usar raciocínio avançado com o modo Grok Think',
     ],
-    pricing: 'Pago',
-    pricingDetails: 'Grátis (uso limitado, 10 prompts a cada 2 horas, acesso a Grok 4 com variantes mais antigas). X Premium a US$ 8/mês (acesso básico a Grok dentro do X, recursos da plataforma X). SuperGrok Lite a US$ 10/mês (lançado em Março 2026, acesso a Grok 3.5, Grok Imagine 480p, 1 agente AI, 2x chats mais longos). SuperGrok a US$ 30/mês (ou US$ 300/ano, acesso total a Grok 4, DeepSearch, Big Brain, Voice, Grok Imagine ilimitado, vídeos diários). X Premium+ a US$ 40/mês (acesso prioritário a Grok, X sem anúncios). SuperGrok Heavy a US$ 300/mês (acesso exclusivo a Grok 4 Heavy). Grok Business a US$ 30/usuário/mês. API (a partir de US$ 0.20/M tokens entrada e US$ 0.50/M tokens saída para Grok 4.1 Fast; Grok 4.3 a US$ 1.25/M tokens entrada e US$ 2.50/M tokens saída com 1M tokens contexto).',
+    pricing: 'Freemium',
+    pricingDetails: 'Grátis (uso limitado de Grok 4, ~10 prompts a cada 2 horas, Aurora image generation limitada, voice mode, memory, DeepSearch limitado). X Premium a US$ 8/mês (acesso básico a Grok dentro do X). SuperGrok Lite a US$ 10/mês (lançado em Março 2026, Grok 3.5, Grok Imagine 480p, 1 agente AI, 2x chats mais longos). SuperGrok a US$ 30/mês (ou US$ 300/ano, acesso total a Grok 4, DeepSearch, Big Brain, Voice, Grok Imagine ilimitado, vídeos diários). X Premium+ a US$ 40/mês (acesso prioritário a Grok, X sem anúncios). SuperGrok Heavy a US$ 300/mês (acesso exclusivo a Grok 4 Heavy). Grok Business a US$ 30/usuário/mês. API (a partir de US$ 0.20/M tokens entrada e US$ 0.50/M tokens saída para Grok 4.1 Fast; Grok 4.3 a US$ 1.25/M tokens entrada e US$ 2.50/M tokens saída com 1M tokens contexto).',
     url: 'https://x.ai/grok',
     tags: ['twitter', 'x', 'tempo real', 'notícias', 'xai', 'chat', 'raciocínio'],
-    popularityRank: 24,
+    popularityRank: 6,
     updatedAt: '2026-06',
   },
   {
@@ -246,7 +246,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (300 palavras para teste, uso único). Basic a US$ 9/mês (US$ 8.25/mês anual, 30.000 palavras/mês); Pro a US$ 19/mês (US$ 14/mês anual, 100.000 palavras/mês); Ultra a US$ 39/mês (US$ 26/mês anual, 300.000 palavras/mês).',
     url: 'https://gpthuman.ai',
     tags: ['humanização', 'anti-detecção', 'conteúdo', 'redação', 'paráfrase'],
-    popularityRank: 30,
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
 
@@ -267,11 +267,11 @@ export const AI_TOOLS: AITool[] = [
       'Sugerir correções de bugs e refatorações',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (código completions e Next Edit inclusos). Copilot Pro a US$ 10/mês (inclui US$ 10 em créditos AI mensais). Copilot Business a US$ 19/usuário/mês (inclui US$ 19 por usuário em créditos AI mensais). Copilot Enterprise a US$ 39/usuário/mês (inclui US$ 39 por usuário em créditos AI mensais). Requisições premium adicionais podem ser compradas. Preços e sistema de créditos efetivos a partir de 1º de junho de 2026.',
+    pricingDetails: 'Grátis (código completions e Next Edit inclusos). Copilot Pro a US$ 10/mês (inclui US$ 10 em créditos AI mensais). Copilot Business a US$ 19/usuário/mês (inclui US$ 19 por usuário em créditos AI mensais, US$ 30/mês em créditos promocionais Jun-Ago 2026). Copilot Enterprise a US$ 39/usuário/mês (inclui US$ 39 por usuário em créditos AI mensais, US$ 70/mês em créditos promocionais Jun-Ago 2026). Requisições premium adicionais podem ser compradas. Preços e sistema de créditos efetivos a partir de 1º de junho de 2026.',
     url: 'https://github.com/features/copilot',
     tags: ['código', 'programação', 'vscode', 'autocompletar', 'developer', 'github'],
     isFeatured: true,
-    popularityRank: 5,
+    popularityRank: 2,
     updatedAt: '2026-06',
   },
   {
@@ -282,7 +282,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '💻',
     tagline: 'Editor de código com IA nativa e contexto completo do projeto',
     description:
-      'Cursor é um editor de código (fork do VS Code) com IA profundamente integrada que entende todo o contexto do seu projeto. Permite editar arquivos inteiros, refatorar bases de código e conversar sobre o código com Claude, GPT-4o e Gemini. Cruzando US$1 bilhão em receita anualizada e com mais de um milhão de desenvolvedores pagantes.',
+      'Cursor é um editor de código (fork do VS Code) com IA profundamente integrada que entende todo o contexto do seu projeto. Permite editar arquivos inteiros, refatorar bases de código e conversar sobre o código com Claude, GPT-4o e Gemini. Cruzando US$ 2 bilhões em receita anualizada e com mais de um milhão de desenvolvedores pagantes em Fevereiro de 2026.',
     useCases: [
       'Refatorar e editar múltiplos arquivos ao mesmo tempo',
       'Perguntar sobre a base de código inteira em linguagem natural',
@@ -290,11 +290,11 @@ export const AI_TOOLS: AITool[] = [
       'Gerar código a partir de especificações em texto',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (Hobby, requisições limitadas de Agente e Tab completions). Pro a US$ 20/mês (US$ 16/mês anual, inclui US$ 20 em uso de API de agente, autocompletar ilimitado, 500 requisições premium rápidas/mês). Pro+ a US$ 60/mês (US$ 48/mês anual, 3x créditos do Pro). Ultra a US$ 200/mês (20x créditos do Pro, acesso prioritário). Teams a US$ 40/usuário/mês (US$ 32/usuário/mês anual, inclui US$ 20 de crédito por usuário, faturamento centralizado, controles de privacidade). Enterprise com preço customizado.',
+    pricingDetails: 'Grátis (Hobby, requisições limitadas de Agente e Tab completions). Pro a US$ 20/mês (US$ 16/mês anual, inclui US$ 20 em uso de API de agente, autocompletar ilimitado, $20 em créditos para modelos premium). Pro+ a US$ 60/mês (US$ 48/mês anual, 3x créditos do Pro). Ultra a US$ 200/mês (US$ 160/mês anual, 20x créditos do Pro, acesso prioritário). Teams a US$ 40/usuário/mês (US$ 32/usuário/mês anual, inclui US$ 20 de crédito por usuário, faturamento centralizado, controles de privacidade). Enterprise com preço customizado. O sistema de preços baseado em créditos foi introduzido em Junho de 2025.',
     url: 'https://cursor.com',
     tags: ['editor', 'código', 'ide', 'programação', 'vscode', 'refatoração'],
     isFeatured: true,
-    popularityRank: undefined, // Removed from top 30 to make space for higher ranked tools
+    popularityRank: 7,
     updatedAt: '2026-06',
   },
   {
@@ -305,7 +305,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '💻',
     tagline: 'Autocompletar de código grátis para mais de 70 linguagens e IDE agentic',
     description:
-      'Windsurf (anteriormente Codeium) é uma ferramenta gratuita de autocompletar código que suporta mais de 70 linguagens de programação e se integra a todos os principais editores. Em novembro de 2024, Codeium lançou o Windsurf Editor, um IDE com IA que combina copilots e agentes. A versão plugin continua sendo uma alternativa gratuita robusta ao GitHub Copilot para desenvolvedores individuais.',
+      'Windsurf (anteriormente Codeium) é uma ferramenta gratuita de autocompletar código que suporta mais de 70 linguagens de programação e se integra a todos os principais editores. Em novembro de 2024, Codeium lançou o Windsurf Editor, um IDE com IA que combina copilots e agentes. A versão plugin continua sendo uma alternativa gratuita robusta ao GitHub Copilot para desenvolvedores individuais. Em Março de 2026, começou a gerar 70 milhões+ linhas de código por dia.',
     useCases: [
       'Autocompletar código em qualquer linguagem',
       'Integrar com VS Code, JetBrains, Vim e outros',
@@ -315,10 +315,10 @@ export const AI_TOOLS: AITool[] = [
       'Executar tarefas de engenharia multi-step com o agente Cascade',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (25 prompt credits/mês, autocompletar ilimitado, acesso ao agente Cascade); Pro a US$ 15/mês (500 créditos); Teams a US$ 30/usuário/mês; Enterprise a US$ 60/usuário/mês (customizável). Todas as tiers incluem Cascade e Tab/Supercomplete. Opções de auto-hospedagem disponíveis.',
+    pricingDetails: 'Grátis (25 prompt credits/mês, autocompletar ilimitado, acesso ao agente Cascade). Pro a US$ 15/mês (500 créditos); Teams a US$ 30/usuário/mês; Enterprise a US$ 60/usuário/mês (customizável). Todas as tiers incluem Cascade e Tab/Supercomplete. Opções de auto-hospedagem disponíveis.',
     url: 'https://codeium.com',
     tags: ['código', 'autocompletar', 'grátis', 'programação', 'múltiplas linguagens', 'ide', 'agente', 'windsurf'],
-    popularityRank: 26,
+    popularityRank: 8,
     updatedAt: '2026-06',
   },
   {
@@ -329,7 +329,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '💻',
     tagline: 'IDE online com IA para criar apps do zero no browser',
     description:
-      'Replit é um ambiente de desenvolvimento online com IA integrada que permite criar, executar e fazer deploy de aplicações diretamente no browser. O Replit AI ajuda a construir apps completos a partir de descrições em linguagem natural. Em fevereiro de 2026, reestruturou seus planos, lançando o plano Pro para equipes.',
+      'Replit é um ambiente de desenvolvimento online com IA integrada que permite criar, executar e fazer deploy de aplicações diretamente no browser. O Replit AI ajuda a construir apps completos a partir de descrições em linguagem natural. Em fevereiro de 2026, reestruturou seus planos e lançou o plano Pro para equipes. Em Março de 2026, o Agent 4 foi lançado, rodando 10x mais rápido.',
     useCases: [
       'Criar aplicações web completas sem configurar ambiente',
       'Prototipar apps rapidamente com IA',
@@ -340,7 +340,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Starter, com créditos diários limitados para Agente e AI, 1 app publicável, Agente limitado). Core a US$ 25/mês (US$ 20/mês anual), inclui US$ 25 em créditos mensais, até 5 colaboradores, workspaces ilimitados, acesso a modelos AI avançados e Replit Agent. Pro a US$ 100/mês (lançado em Fev 2026, para até 15 builders, créditos com desconto por volume, rollover de créditos, suporte prioritário, 50 Viewer seats, 8 vCPUs, 16 GiB memória, 256 GiB armazenamento por app, private deployments). Enterprise sob consulta.',
     url: 'https://replit.com',
     tags: ['ide online', 'programação', 'deploy', 'aprendizado', 'prototipagem'],
-    popularityRank: 23,
+    popularityRank: 9,
     updatedAt: '2026-06',
   },
   {
@@ -362,7 +362,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Basic); Pro a US$ 12/mês (US$ 10/mês anual); Enterprise com preço customizado (a partir de US$ 59/usuário/mês para planos com mais recursos de segurança ou auto-hospedagem).',
     url: 'https://www.tabnine.com',
     tags: ['código', 'privacidade', 'local', 'segurança', 'empresarial', 'autocompletar'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -373,7 +373,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '⚙️',
     tagline: 'Agente de codificação no terminal para engenharia de software completa',
     description:
-      'Claude Code é a CLI da Anthropic para engenharia de software, que lê o repositório inteiro, escreve código, executa testes, cria commits e abre PRs de forma autônoma. Opera diretamente no terminal, sem depender de uma IDE específica, e faz parte do ecossistema Claude.',
+      'Claude Code é a CLI da Anthropic para engenharia de software, que lê o repositório inteiro, escreve código, executa testes, cria commits e abre PRs de forma autônoma. Opera diretamente no terminal, sem depender de uma IDE específica, e faz parte do ecossistema Claude. A partir de 15 de junho de 2026, o uso programático do Claude Code (Agent SDK, claude -p CLI, GitHub Actions) passará a ter um crédito mensal dedicado, faturado a taxas de API após o esgotamento, enquanto o uso interativo permanece na assinatura existente.',
     useCases: [
       'Implementar features de ponta a ponta no repositório',
       'Debugar e corrigir bugs com contexto completo do projeto',
@@ -381,10 +381,10 @@ export const AI_TOOLS: AITool[] = [
       'Fazer refatorações em múltiplos arquivos de uma vez',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Acesso via planos Claude API (pay-per-token: Haiku a US$ 1/M tokens entrada e US$ 5/M tokens saída; Sonnet a US$ 3/M tokens entrada e US$ 15/M tokens saída; Opus a US$ 5/M tokens entrada e US$ 25/M tokens saída) ou via planos de equipe: Team Standard a US$ 25/usuário/mês (mínimo de 5 usuários), Team Premium a US$ 125/usuário/mês (inclui Opus), Enterprise sob consulta. Também disponível via Claude Cowork (desktop app, pago).',
+    pricingDetails: 'Acesso via planos Claude API (pay-per-token: Haiku a US$ 1/M tokens entrada e US$ 5/M tokens saída; Sonnet a US$ 3/M tokens entrada e US$ 15/M tokens saída; Opus a US$ 5/M tokens entrada e US$ 25/M tokens saída) ou via planos de equipe: Team Standard a US$ 25/usuário/mês (mínimo de 5 usuários), Team Premium a US$ 125/usuário/mês (inclui Opus e Claude Code completo), Enterprise sob consulta. Também disponível via Claude Cowork (desktop app, pago). Créditos programáticos adicionais a US$ 20 (Pro), US$ 100 (Max 5x), US$ 200 (Max 20x) a partir de 15 de junho de 2026.',
     url: 'https://claude.ai/code',
     tags: ['cli', 'terminal', 'agente', 'anthropic', 'desenvolvimento', 'autonomo', 'git'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 11,
     updatedAt: '2026-06',
   },
   {
@@ -393,29 +393,32 @@ export const AI_TOOLS: AITool[] = [
     developer: 'OpenAI',
     category: 'Código & Dev',
     emoji: '🖥️',
-    tagline: 'Tecnologia subjacente a assistentes de código, descontinuada como produto autônomo.',
+    tagline: 'Agente de IA da OpenAI para código e produtividade em geral',
     description:
-      'OpenAI Codex era um modelo de IA que potencializava ferramentas de engenharia de software, capaz de entender repositórios complexos e gerar código. Embora descontinuado como produto autônomo, suas capacidades foram integradas em modelos mais recentes da OpenAI, como o GPT-4o e GPT-5.5, que são a base para recursos de IA em outras ferramentas, como o GitHub Copilot.',
+      'OpenAI Codex evoluiu de um modelo para um sistema de agente de IA multifuncional. Lançado como CLI em Abril de 2025, agora possui um aplicativo de desktop (Fev 2026) e integra os modelos GPT-5.4 e GPT-5.4 mini (Março 2026). É capaz de entender repositórios complexos, gerar código, e ajudar em tarefas de conhecimento geral como criação de relatórios, planilhas e apresentações, com mais de 5 milhões de usuários ativos semanais em Junho de 2026.',
     useCases: [
-      'Compreensão de código complexo',
-      'Geração de código a partir de linguagem natural',
+      'Compreensão de código complexo e geração de código a partir de linguagem natural',
       'Base para ferramentas de autocompletar e agentes de software',
+      'Criação de relatórios, planilhas e apresentações',
+      'Pesquisa e análise de dados, automação de fluxos de trabalho',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Codex foi descontinuado como modelo autônomo. Suas capacidades foram integradas em modelos mais recentes da OpenAI, como o GPT-4o e GPT-5.5, que são acessíveis via API (preços variam por modelo e uso) ou através de planos como o ChatGPT Plus (US$ 20/mês).',
+    pricingDetails: 'Acesso via APIs da OpenAI (preços variam por modelo, como GPT-5.4 e GPT-5.4 mini) ou através de planos como o ChatGPT Plus (US$ 20/mês), ChatGPT Pro (US$ 100/mês, US$ 200/mês) e Enterprise. O modelo é fundamentalmente pago, sem um plano gratuito autônomo.',
     url: 'https://openai.com/codex',
-    tags: ['cli', 'terminal', 'openai', 'agente', 'o3', 'o4-mini', 'desenvolvimento'],
+    tags: ['cli', 'terminal', 'openai', 'agente', 'o3', 'o4-mini', 'desenvolvimento', 'produtividade'],
+    isNew: true,
+    popularityRank: 10,
     updatedAt: '2026-06',
   },
   {
     id: 'bolt-new',
-    name: 'Bolt.new',
+    name: 'Bolt',
     developer: 'StackBlitz',
     category: 'Código & Dev',
     emoji: '⚡',
     tagline: 'Crie e implante apps web completos com IA direto no navegador',
     description:
-      'Bolt.new é uma plataforma de desenvolvimento full-stack com IA que cria, executa e implanta aplicações web completas no navegador. Usa Claude e outros modelos para gerar código front-end e back-end, com preview em tempo real e deploy automático. Foi renomeado de Bolt.new para Bolt.',
+      'Bolt (anteriormente Bolt.new) é uma plataforma de desenvolvimento full-stack com IA que cria, executa e implanta aplicações web completas no navegador. Usa Claude e outros modelos para gerar código front-end e back-end, com preview em tempo real e deploy automático. Foi renomeado de Bolt.new para Bolt.',
     useCases: [
       'Criar aplicações web completas a partir de descrições',
       'Iterar rapidamente em protótipos com preview instantâneo',
@@ -426,7 +429,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (1M tokens/mês, 300K diários, 1 projeto, branding Bolt). Pro a US$ 25/mês (US$ 18/mês anual, 10M+ tokens/mês, sem limite diário, rollover de tokens, domínio personalizado, sem branding Bolt). Teams a US$ 30/membro/mês (US$ 27/membro/mês anual, inclui recursos do Pro, faturamento centralizado, controles de acesso). Enterprise sob consulta.',
     url: 'https://bolt.new',
     tags: ['web', 'full-stack', 'stackblitz', 'protótipo', 'react', 'deploy', 'no-code'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 18,
     updatedAt: '2026-06',
   },
   {
@@ -437,7 +440,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎨',
     tagline: 'Gere componentes React e UIs completas com prompts de texto',
     description:
-      'v0 é o gerador de UI da Vercel que transforma descrições em linguagem natural em componentes React prontos para produção usando Tailwind CSS e Shadcn UI. Permite iterar visualmente e integrar diretamente com projetos Next.js. Em fevereiro de 2026, adicionou integração Git, editor estilo VS Code, conectividade com banco de dados e fluxos de trabalho agentic.',
+      'v0 é o gerador de UI da Vercel que transforma descrições em linguagem natural em componentes React prontos para produção usando Tailwind CSS e Shadcn UI. Permite iterar visualmente e integrar diretamente com projetos Next.js. Em fevereiro de 2026, adicionou integração Git, editor estilo VS Code, conectividade com banco de dados e fluxos de trabalho agentic. Renomeado para v0.app em Janeiro de 2026.',
     useCases: [
       'Gerar componentes React a partir de wireframes ou descrições',
       'Criar interfaces completas com Tailwind e Shadcn UI',
@@ -445,10 +448,11 @@ export const AI_TOOLS: AITool[] = [
       'Implantar diretamente na infraestrutura Vercel',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (US$ 5 em créditos mensais, 30 gerações/mês, projetos públicos). Premium a US$ 20/mês (US$ 27/mês anual, US$ 20 em créditos, 300 gerações/mês, projetos ilimitados, overage de US$ 0.10/geração). Team a US$ 90/mês (US$ 81/mês anual, 1.200 gerações/mês compartilhadas, 5 assentos incluídos, overage de US$ 0.08/geração, 1.000 chamadas API). Business a US$ 100/usuário/mês (créditos compartilhados, IA privada). Enterprise com preço customizado.',
+    pricingDetails: 'Grátis (US$ 0/mês, US$ 5 de créditos mensais inclusos, deploy para Vercel, Design Mode, sincronização com GitHub, limite de 7 mensagens/dia). Team a US$ 30/usuário/mês (US$ 30 de créditos mensais inclusos por usuário, US$ 2 de créditos diários gratuitos no login por usuário, compra de créditos adicionais, faturamento centralizado, colaboração). Business a US$ 100/usuário/mês (US$ 30 de créditos mensais inclusos por usuário, US$ 2 de créditos diários gratuitos no login por usuário, opt-out de treinamento, compra de créditos adicionais, faturamento centralizado, colaboração). Enterprise com preço customizado (dados não usados para treinamento, SAML SSO, RBAC, acesso prioritário, SLAs). Preços da API do Modelo: v0 Mini (US$ 1/M tokens entrada, US$ 5/M tokens saída), v0 Pro (US$ 3/M tokens entrada, US$ 15/M tokens saída), v0 Max (US$ 5/M tokens entrada, US$ 25/M tokens saída), v0 Max Fast (US$ 10/M tokens entrada, US$ 50/M tokens saída).',
     url: 'https://v0.dev',
     tags: ['ui', 'react', 'componentes', 'vercel', 'tailwind', 'interface', 'shadcn', 'next.js'],
-    popularityRank: undefined, // Removed from top 30
+    isNew: true,
+    popularityRank: 13,
     updatedAt: '2026-06',
   },
   {
@@ -467,10 +471,10 @@ export const AI_TOOLS: AITool[] = [
       'Iterar rapidamente com feedback visual em tempo real',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (5 mensagens/dia); Starter a US$ 20/mês; Pro a US$ 50/mês (mensagens e projetos ilimitados, domínio personalizado). Em 2024, atingiu US$ 17M ARR.',
+    pricingDetails: 'Grátis (5 mensagens/dia, limite de 150/mês, projetos públicos, colaboração). Pro a US$ 25/mês (ou US$ 12.50/mês para estudantes verificados, 100 créditos mensais + 5 diários, até 150/mês, projetos privados, domínios personalizados, acesso ao código, remoção de branding). Business a US$ 50/mês (100 créditos, SSO, central de segurança, opt-out de dados). Enterprise com preço customizado. Custos adicionais de uso para Cloud e IA utilizados pelas apps implantadas.',
     url: 'https://lovable.dev',
     tags: ['full-stack', 'mvp', 'supabase', 'no-code', 'saas', 'app builder', 'fundadores'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 17,
     updatedAt: '2026-06',
   },
   {
@@ -492,7 +496,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (acesso limitado a Devin e recursos selecionados). Pro a US$ 20/mês (com cota incluída). Max a US$ 200/mês (com cota maior). Teams a partir de US$ 80/mês (baseado em uso, mínimo de US$ 80/mês). Enterprise com preço customizado. Os planos anteriores Core e Team foram aposentados.',
     url: 'https://devin.ai',
     tags: ['agente', 'autônomo', 'engenheiro', 'cognition', 'desenvolvimento', 'github', 'issues'],
-    popularityRank: 25,
+    popularityRank: 16,
     updatedAt: '2026-06',
   },
   {
@@ -514,7 +518,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Individual tier com limites mensais de uso); Amazon Q Developer Pro a US$ 19/usuário/mês (uso ilimitado, auditoria e conformidade enterprise).',
     url: 'https://aws.amazon.com/q/developer/',
     tags: ['aws', 'amazon', 'cloud', 'infraestrutura', 'terraform', 'enterprise', 'codewhisperer'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -533,10 +537,10 @@ export const AI_TOOLS: AITool[] = [
       'Revisar código e identificar vulnerabilidades de segurança',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (6.000 completions/dia, significativamente mais que outras ferramentas). Standard Edition a US$ 19/usuário/mês (US$ 228/usuário/ano com faturamento anual), inclui local codebase awareness, code transformation, agent mode, Gemini CLI. Enterprise Edition a US$ 45/usuário/mês (US$ 540/usuário/ano com faturamento anual), inclui personalização de código, Gemini em Apigee e Gemini Cloud Assist, aumento de limites de uso de agente.',
+    pricingDetails: 'Grátis (6.000 completions/dia). Standard Edition a US$ 19/usuário/mês (US$ 228/usuário/ano com faturamento anual), inclui local codebase awareness, code transformation, agent mode, Gemini CLI. Enterprise Edition a US$ 45/usuário/mês (US$ 540/usuário/ano com faturamento anual), inclui personalização de código, Gemini em Apigee e Gemini Cloud Assist, aumento de limites de uso de agente.',
     url: 'https://cloud.google.com/gemini/docs/codeassist/overview',
     tags: ['google', 'vscode', 'jetbrains', 'gemini', 'cloud', 'enterprise', 'contexto longo'],
-    popularityRank: 20,
+    popularityRank: 15,
     updatedAt: '2026-06',
   },
   {
@@ -559,7 +563,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://ai.google/labs/antigravity',
     tags: ['ide', 'editor', 'agente', 'autônomo', 'google', 'vscode', 'desenvolvimento', 'new'],
     isNew: true,
-    popularityRank: 10,
+    popularityRank: 14,
     updatedAt: '2026-06',
   },
   {
@@ -578,10 +582,10 @@ export const AI_TOOLS: AITool[] = [
       'Compreender grandes bases de código',
     ],
     pricing: 'Grátis',
-    pricingDetails: 'Grátis para uso pessoal e comercial, com acesso via API e para download dos pesos do modelo. Modelos maiores podem ter custos associados ao uso de APIs de terceiros. DeepSeek V4 é destacado como uma boa opção gratuita.',
+    pricingDetails: 'Grátis para uso pessoal e comercial, com acesso via API e para download dos pesos do modelo. Modelos maiores podem ter custos associados ao uso de APIs de terceiros. DeepSeek-V3 API a US$ 0.14/M tokens entrada e US$ 0.28/M tokens saída; DeepSeek-R1 API a US$ 0.55/M tokens entrada e US$ 2.19/M tokens saída; DeepSeek V4 API a US$ 0.27/M tokens entrada e US$ 1.10/M tokens saída. Chat gratuito com limites diários.',
     url: 'https://deepseek.com/coder/',
     tags: ['código', 'open source', 'programação', 'grátis', 'alternativa', 'llm', 'raciocínio', 'new'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 26,
     updatedAt: '2026-06',
   },
 
@@ -592,21 +596,21 @@ export const AI_TOOLS: AITool[] = [
     developer: 'OpenAI',
     category: 'Imagens',
     emoji: '🎨',
-    tagline: 'Geração de imagens fotorrealistas a partir de texto (agora parte do ChatGPT Images 2.0)',
+    tagline: 'Modelo de geração de imagens da OpenAI, agora descontinuado e integrado ao ChatGPT Images 2.0',
     description:
-      'DALL-E 3 era o modelo de geração de imagens da OpenAI. Suas capacidades foram substituídas e aprimoradas pelo "ChatGPT Images 2.0" em 12 de maio de 2026, e agora o acesso se dá via ChatGPT Plus e outros planos. Anteriormente, transformava descrições textuais em imagens de alta qualidade com excelente fidelidade ao prompt, sem distorções de texto nas imagens.',
+      'DALL-E 3 era o modelo de geração de imagens da OpenAI. Suas capacidades foram substituídas e aprimoradas pelo "ChatGPT Images 2.0" em 21 de abril de 2026, e agora o acesso se dá via ChatGPT Plus e outros planos. O DALL-E 3 autônomo e sua API foram formalmente descontinuados em 12 de maio de 2026. O novo modelo, gpt-image-2, oferece texto legível, consistência de personagem e raciocínio visual avançado.',
     useCases: [
-      'Criar ilustrações para artigos e posts (agora com ChatGPT Images 2.0)',
-      'Gerar conceitos visuais para projetos criativos (agora com ChatGPT Images 2.0)',
-      'Produzir imagens de produtos para e-commerce (agora com ChatGPT Images 2.0)',
-      'Visualizar ideias arquitetônicas ou de design (agora com ChatGPT Images 2.0)',
+      'Anteriormente usado para criar ilustrações e conceitos visuais, agora através do ChatGPT Images 2.0',
+      'Geração de imagens de alta qualidade com texto preciso e layouts complexos (via ChatGPT Images 2.0)',
+      'Produção de imagens com consistência de personagem (via ChatGPT Images 2.0)',
+      'Visualização de ideias para design e marketing (via ChatGPT Images 2.0)',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Funcionalidade de geração de imagens incluída no ChatGPT Plus (US$ 20/mês, acesso a ChatGPT Images 2.0 com limites de uso), ou via planos Pro ($100/mês, $200/mês). API (pay-per-image para versões legadas, embora o foco seja nos novos modelos): a partir de US$ 0,040/imagem (1024x1024, qualidade padrão), mas o DALL-E 3 autônomo foi descontinuado em favor da integração ao ChatGPT Images 2.0.',
+    pricingDetails: 'Funcionalidade de geração de imagens (agora com o modelo gpt-image-2 do ChatGPT Images 2.0) incluída no ChatGPT Plus (US$ 20/mês, com limites de uso), ou via planos Pro (US$ 100/mês, US$ 200/mês). API (pay-per-token para gpt-image-2): a partir de US$ 8/M tokens entrada e US$ 30/M tokens saída (para imagens).',
     url: 'https://openai.com/dall-e-3',
-    tags: ['imagem', 'geração', 'arte', 'ilustração', 'fotorrealismo', 'openai', 'integrado'],
+    tags: ['imagem', 'geração', 'arte', 'ilustração', 'fotorrealismo', 'openai', 'integrado', 'descontinuado'],
     isFeatured: false,
-    popularityRank: undefined, // Discontinued as standalone product.
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -617,7 +621,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎨',
     tagline: 'A IA preferida para arte de alta qualidade estética',
     description:
-      'Midjourney é uma ferramenta de geração de imagens via Discord reconhecida pela qualidade artística excepcional de suas saídas. É a escolha favorita de designers, artistas e criativos que buscam resultados com alto valor estético. Sua versão 7 (V7) utiliza uma arquitetura redesenhada para produzir texturas mais ricas e detalhes mais coerentes.',
+      'Midjourney é uma ferramenta de geração de imagens via Discord reconhecida pela qualidade artística excepcional de suas saídas. É a escolha favorita de designers, artistas e criativos que buscam resultados com alto valor estético. Sua versão 7 (V7), lançada em abril de 2025, utiliza uma arquitetura redesenhada para produzir texturas mais ricas e detalhes mais coerentes.',
     useCases: [
       'Criar arte conceitual para games e filmes',
       'Gerar ilustrações com estilo artístico único',
@@ -625,7 +629,7 @@ export const AI_TOOLS: AITool[] = [
       'Criar mockups e visualizações de produtos',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Sem plano gratuito. Basic a US$ 10/mês (US$ 8/mês anual, ~3.3 horas fast GPU, ~200 imagens, sem Relax Mode). Standard a US$ 30/mês (US$ 24/mês anual, ~15 horas fast GPU, Relax Mode ilimitado). Pro a US$ 60/mês (US$ 48/mês anual, ~30 horas fast GPU, Relax Mode ilimitado, Stealth Mode). Mega a US$ 120/mês (US$ 96/mês anual, ~60 horas fast GPU, Relax Mode ilimitado, Stealth Mode).',
+    pricingDetails: 'Sem plano gratuito. Basic a US$ 10/mês (US$ 8/mês anual, ~3.3 horas fast GPU, ~200 imagens, sem Relax Mode). Standard a US$ 30/mês (US$ 24/mês anual, ~15 horas fast GPU, Relax Mode ilimitado). Pro a US$ 60/mês (US$ 48/mês anual, ~30 horas fast GPU, Relax Mode ilimitado, Stealth Mode). Mega a US$ 120/mês (US$ 96/mês anual, ~60 horas fast GPU, Relax Mode ilimitado, Stealth Mode). Direitos comerciais incluídos em todos os planos pagos, mas empresas com faturamento acima de US$ 1M devem estar nos planos Pro ou Mega.',
     url: 'https://www.midjourney.com',
     tags: ['imagem', 'arte', 'design', 'ilustração', 'discord', 'artístico'],
     isFeatured: true,
@@ -648,10 +652,10 @@ export const AI_TOOLS: AITool[] = [
       'Integrar em aplicações próprias via API',
     ],
     pricing: 'Grátis',
-    pricingDetails: 'Open source e gratuito para uso local; DreamStudio (API e web UI) a partir de US$ 10 para 1.000 créditos (aprox. 5.000 imagens).',
+    pricingDetails: 'Open source e gratuito para uso local; DreamStudio (API e web UI) a partir de US$ 0.01 por crédito. Stable Image Core (US$ 0.01/imagem), Stable Diffusion 3.5 Large (aprox. US$ 0.065/imagem), Stable Image Ultra (aprox. US$ 0.08/imagem). Planos não oficiais: Pro a US$ 10/mês (2000 créditos/mês), Max a US$ 20/mês (5000 créditos/mês).',
     url: 'https://stability.ai',
     tags: ['imagem', 'open source', 'local', 'gratuito', 'customizável', 'comunidade'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 30,
     updatedAt: '2026-06',
   },
   {
@@ -670,10 +674,10 @@ export const AI_TOOLS: AITool[] = [
       'Criar material gráfico para redes sociais',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis com 25 imagens/mês; Basic a US$ 8/mês; Pro a US$ 25/mês.',
+    pricingDetails: 'Grátis (10 slow credits/semana). Plus a US$ 20/mês (US$ 15/mês anual, 1.000 priority credits/mês). Pro a US$ 60/mês (US$ 42/mês anual, 3.500 priority credits/mês). Team a US$ 30/usuário/mês (US$ 20/usuário/mês anual, mínimo 2 usuários, 1.500 priority credits/usuário/mês). API (de US$ 0.025 a US$ 0.10 por imagem).',
     url: 'https://ideogram.ai',
     tags: ['imagem', 'texto em imagem', 'logo', 'pôster', 'tipografia', 'design'],
-    popularityRank: 28,
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -692,10 +696,10 @@ export const AI_TOOLS: AITool[] = [
       'Gerar texturas e padrões para projetos criativos',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (25 créditos generativos/mês, resultados com marca d\'água). Firefly Standard a US$ 9.99/mês (2.000 créditos, vídeo, áudio, sem marca d\'água). Firefly Pro a US$ 19.99/mês (7.000 créditos, inclui Photoshop e Express). Firefly Premium a US$ 199.99/mês (50.000 créditos, vídeo ilimitado). Planos Creative Cloud Pro (a partir de US$ 69.99/mês) incluem créditos e uso ilimitado de geração padrão. Enterprise a US$ 24/usuário/mês como add-on (pool de créditos negociável, indemnização). API Firefly sob consulta (a partir de ~$1.000/mês com custo por imagem de US$ 0.02-0.10).',
+    pricingDetails: 'Grátis (25 créditos generativos/mês, resultados com marca d\'água). Firefly Standard a US$ 9.99/mês (2.000 créditos, vídeo, áudio, sem marca d\'água). Firefly Pro a US$ 19.99/mês (7.000 créditos, inclui Photoshop e Express). Firefly Premium a US$ 199.99/mês (50.000 créditos, vídeo ilimitado). Planos Creative Cloud Pro (a partir de US$ 69.99/mês) incluem créditos e uso ilimitado de geração padrão. Enterprise a US$ 24/usuário/mês como add-on (pool de créditos negociável, indemnização). API Firefly sob consulta (a partir de US$ 1.000/mês com custo por imagem de US$ 0.02-0.10).',
     url: 'https://firefly.adobe.com',
     tags: ['adobe', 'photoshop', 'design', 'edição', 'creative cloud', 'imagem'],
-    popularityRank: 18,
+    popularityRank: 21,
     updatedAt: '2026-06',
   },
   {
@@ -706,7 +710,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🍌',
     tagline: 'O gerador de imagens do Google com texto preciso e personagens consistentes',
     description:
-      'Nano Banana Pro é o modelo de geração de imagens avançado do Google, reconhecido por sua capacidade de gerar texto preciso dentro das imagens e manter a consistência de personagens. É uma capacidade integrada ao ecossistema Gemini e outros produtos Google. O modelo subjacente para todos os usuários é o Nano Banana 2 (Gemini 3 Flash Image).',
+      'Nano Banana Pro é o modelo de geração de imagens avançado do Google, reconhecido por sua capacidade de gerar texto preciso dentro das imagens e manter a consistência de personagens. É uma capacidade integrada ao ecossistema Gemini e outros produtos Google. O modelo subjacente para todos os usuários é o Nano Banana 2 (Gemini 3 Flash Image), anunciado no início de 2026.',
     useCases: [
       'Gerar imagens com texto legível em vários idiomas',
       'Criar ilustrações com personagens consistentes',
@@ -717,7 +721,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (20 imagens/dia, com marca d\'água, baixa resolução). AI Plus (50 usos diários). AI Pro a US$ 19.99/mês (100 usos diários, 4K, marca d\'água ainda presente). AI Ultra a US$ 124.99/mês (até 1000 usos diários, remove marca d\'água). Acesso via API do Google AI Studio/Vertex AI a aproximadamente US$ 0.134 por imagem (1K/2K) ou US$ 0.24 por imagem (4K), com descontos de 50% para uso Batch e Flex.',
     url: 'https://ai.google/frontier/nano-banana/',
     tags: ['google', 'imagem', 'geração', 'texto em imagem', 'personagens consistentes', 'multimodal'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 27,
     updatedAt: '2026-06',
   },
   {
@@ -739,7 +743,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (5 créditos 3D/mês); Creator a US$ 30/mês (50 créditos 3D/mês, exportação de alta resolução); Studio a US$ 100/mês (200 créditos 3D/mês, renderização em nuvem, API); Enterprise sob consulta.',
     url: 'https://polyforge.ai',
     tags: ['3d', 'modelagem', 'game dev', 'arquitetura', 'design', 'geração', 'metaverso'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -761,7 +765,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (acesso a recursos básicos de IA); Canva Pro a US$ 14.99/mês (US$ 119.99/ano) com acesso a recursos premium de IA e funcionalidades ilimitadas; Canva for Teams e Enterprise com preço customizado.',
     url: 'https://www.canva.com/ai-features/',
     tags: ['design', 'gráfico', 'edição', 'imagem', 'layout', 'marketing'],
-    popularityRank: 9,
+    popularityRank: undefined, // Canva overall is huge, but Canva AI specifically has less explicit data for top-30 rank against frontier models.
     updatedAt: '2026-06',
   },
   {
@@ -772,7 +776,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🖼️',
     tagline: 'Ferramenta estilo Canva para criação de imagens e materiais visuais com IA do Google',
     description:
-      'Google Pics é uma ferramenta de criação visual da Google, similar ao Canva, que permite aos usuários criar imagens, flyers e apresentações usando a inteligência do Gemini e a geração de imagens do Nano Banana. É uma funcionalidade integrada para usuários de Google Workspace que precisam de ferramentas de design integradas. Lançado no I/O 2026.',
+      'Google Pics é uma ferramenta de criação visual da Google, similar ao Canva, que permite aos usuários criar imagens, flyers e apresentações usando a inteligência do Gemini e a geração de imagens do Nano Banana. É uma funcionalidade integrada para usuários de Google Workspace que precisam de ferramentas de design integradas. Lançado no Google I/O 2026 (Maio 2026).',
     useCases: [
       'Criar flyers e materiais de marketing',
       'Gerar apresentações visuais com assistência de IA',
@@ -780,11 +784,11 @@ export const AI_TOOLS: AITool[] = [
       'Utilizar a geração de imagens Nano Banana para designs',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Acesso às capacidades do Google Pics está incluído nas contas Google Workspace Business (a partir de US$ 12/usuário/mês). Detalhes específicos de planos podem variar.',
+    pricingDetails: 'Acesso às capacidades do Google Pics está incluído nas contas Google Workspace Business (a partir de US$ 12/usuário/mês). Será lançado para assinantes Google AI Pro e Ultra (US$ 19.99/mês e US$ 99.99/mês / US$ 200/mês, respectivamente) no verão de 2026.',
     url: 'https://workspace.google.com/products/pics',
     tags: ['design', 'imagem', 'workspace', 'google', 'apresentação', 'new'],
     isNew: true,
-    popularityRank: undefined, // Not in top 30
+    popularityRank: 22,
     updatedAt: '2026-06',
   },
   {
@@ -806,7 +810,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (com créditos mensais limitados); Pro a US$ 15/mês (mais créditos, recursos avançados); Enterprise sob consulta.',
     url: 'https://stability.ai/magic-studio',
     tags: ['imagem', 'edição', 'geração', 'stability ai', 'retoque', 'upscale', 'design'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -825,10 +829,10 @@ export const AI_TOOLS: AITool[] = [
       'Melhorar a estética visual de qualquer imagem',
     ],
     pricing: 'Pago',
-    pricingDetails: 'A partir de US$ 39/mês para o plano Pro (recursos avançados de upscaling, mais créditos). Planos customizados para uso empresarial.',
+    pricingDetails: 'Sem plano gratuito, mas oferece um teste grátis. Premium a US$ 20/mês (US$ 14.50/mês anual, acesso a todos os modelos de imagem, vídeo e áudio, gerações ilimitadas). Premium+ a US$ 45/mês (US$ 33.75/mês anual, todos os recursos Premium, licença comercial de IA + direitos musicais, 30+ modelos de IA). Pro a US$ 280/mês (US$ 210/mês anual, todos os recursos Premium+, ferramentas de edição Pro). Business a US$ 69/usuário/mês (US$ 55/usuário/mês anual, pool de créditos compartilhado). O plano Pay-per-usage API será descontinuado em 30 de junho de 2026.',
     url: 'https://magnific.ai',
     tags: ['imagem', 'upscaling', 'edição', 'generative ai', 'freepik', 'qualidade'],
-    popularityRank: undefined, // Not in top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
 
@@ -839,9 +843,9 @@ export const AI_TOOLS: AITool[] = [
     developer: 'OpenAI',
     category: 'Vídeo',
     emoji: '🎬',
-    tagline: 'Modelo de geração de vídeos da OpenAI, descontinuado em abril de 2026 (foco em Spud).',
+    tagline: 'Modelo de geração de vídeos da OpenAI, descontinuado em abril de 2026.',
     description:
-      'Sora era o modelo de geração de vídeo da OpenAI. Embora tenha demonstrado capacidade de criar vídeos realistas e criativos a partir de prompts de texto ou imagens, foi descontinuado em 26 de abril de 2026. Sua API será descontinuada em 24 de setembro de 2026. OpenAI focará em novos modelos como \'Spud\'.',
+      'Sora era o modelo de geração de vídeo da OpenAI. Embora tenha demonstrado capacidade de criar vídeos realistas e criativos a partir de prompts de texto ou imagens, foi descontinuado em 26 de abril de 2026. Sua API será descontinuada em 24 de setembro de 2026. OpenAI focará em novos modelos como "Spud".',
     useCases: [
       'Anteriormente usado para criar clipes cinematográficos a partir de descrições',
       'Gerar vídeos conceituais para apresentações',
@@ -849,11 +853,11 @@ export const AI_TOOLS: AITool[] = [
       'Prototipar cenas para produções audiovisuais',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Sora foi descontinuado em 26 de abril de 2026, com a API programada para ser desativada em 24 de setembro de 2026. O acesso era limitado e os preços futuros estimados eram: Acesso via ChatGPT Pro (US$ 200/mês, com mais créditos e recursos). API (preços futuros estimados: Sora (Standard) a US$ 0.10/segundo (720p); Sora Pro a US$ 0.30/segundo (720p) ou US$ 0.50/segundo (1024p)).',
+    pricingDetails: 'Sora foi descontinuado em 26 de abril de 2026, com a API programada para ser desativada em 24 de setembro de 2026. O acesso era limitado e os preços futuros estimados eram: Acesso via ChatGPT Pro (US$ 200/mês, com mais créditos e recursos). As capacidades do Sora 2.0 são agora acessíveis através de parceiros como Invideo AI (a partir de US$ 28/mês).',
     url: 'https://openai.com/sora',
     tags: ['vídeo', 'geração', 'openai', 'cinematográfico', 'animação', 'descontinuado'],
     isFeatured: false,
-    popularityRank: undefined, // Discontinued as standalone product.
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -886,7 +890,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎬',
     tagline: 'Vídeos de até 2 minutos com movimentos realistas',
     description:
-      'Kling AI é um modelo de geração de vídeo da empresa chinesa Kuaishou, capaz de gerar vídeos de até 2 minutos com física e movimentos de câmera realistas. Recebeu forte atenção internacional por seus resultados impressionantes. Atualmente em acesso limitado (private beta). Também disponível via Runway.',
+      'Kling AI é um modelo de geração de vídeo da empresa chinesa Kuaishou, capaz de gerar vídeos de até 2 minutos com física e movimentos de câmera realistas. Lançado globalmente em 2024, recebeu forte atenção internacional por seus resultados impressionantes. Em Fevereiro de 2026, Kling 3.0 foi lançado, e em Abril de 2026, a geração de vídeo 4K nativa. Atualmente em acesso limitado (private beta) para alguns recursos.',
     useCases: [
       'Gerar vídeos longos com narrativa coerente',
       'Criar cenas com movimento de câmera profissional',
@@ -894,10 +898,10 @@ export const AI_TOOLS: AITool[] = [
       'Produzir conteúdo para campanhas de marketing',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Atualmente em acesso limitado (private beta). Previsão de Grátis (com créditos diários) e planos pagos a partir de US$ 9,99/mês. Preços exatos para acesso internacional podem variar após lançamento completo. Integrado ao plano Standard da Runway.',
+    pricingDetails: 'Grátis (66 créditos diários, ~1.980/mês, expiram em 24h, baixa resolução, marca d\'água, sem uso comercial). Standard a US$ 10/mês (US$ 6.6/mês anual, 660 créditos/mês, 1080p, sem marca d\'água, uso comercial). Pro a US$ 37/mês (US$ 24.42/mês anual, 3.000 créditos/mês, processamento prioritário, geração em lote). Premier a US$ 92/mês (US$ 60.72/mês anual, 8.000 créditos/mês, alta prioridade). Ultra a US$ 180/mês (26.000 créditos/mês, prioridade máxima, acesso beta, sem opção anual). Pacotes de API a partir de US$ 9.80.',
     url: 'https://klingai.com',
     tags: ['vídeo', 'geração', 'longo', 'realista', 'animação', 'kuaishou'],
-    popularityRank: undefined, // Not in top 30
+    popularityRank: 11,
     updatedAt: '2026-06',
   },
   {
@@ -908,7 +912,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎬',
     tagline: 'Avatares de IA que falam qualquer idioma com seu rosto',
     description:
-      'HeyGen permite criar vídeos com avatares realistas de IA ou clonar sua própria aparência. É amplamente usado para criar vídeos de marketing personalizados, traduzir vídeos para outros idiomas e criar conteúdo de treinamento corporativo.',
+      'HeyGen permite criar vídeos com avatares realistas de IA ou clonar sua própria aparência. É amplamente usado para criar vídeos de marketing personalizados, traduzir vídeos para outros idiomas e criar conteúdo de treinamento corporativo. A plataforma usa um sistema de créditos premium para recursos avançados como Avatar IV e tradução de vídeo, o que pode consumir créditos rapidamente.',
     useCases: [
       'Criar apresentações em vídeo sem aparecer na câmera',
       'Traduzir vídeos para outros idiomas com lip sync',
@@ -916,10 +920,10 @@ export const AI_TOOLS: AITool[] = [
       'Personalizar mensagens de vídeo em escala',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (3 vídeos/mês, 1 min cada, 720p, marca d\'água). Creator a US$ 29/mês (US$ 24/mês anual, 15 créditos/mês, até 15 min de vídeo, 1080p, sem marca d\'água, 1 custom avatar, 1 voice clone). Pro a US$ 99/mês (mais créditos, Avatar IV, tradução de vídeo, AI Video Agent, até 30 min max video length, 4K). Business a US$ 149/mês (primeiro usuário, +US$ 20/usuário/mês adicional; vídeos ilimitados, até 60 min max video length, 4K, 5 custom avatars, 5 voice clones, 40+ idiomas para lip-sync, API, 3 team seats). Enterprise sob consulta.',
+    pricingDetails: 'Grátis (3 vídeos/mês, 1 min cada, 720p, marca d\'água). Creator a US$ 29/mês (US$ 24/mês anual, vídeos ilimitados, 200 Premium Credits/mês, 1080p, sem marca d\'água, 1 custom avatar, 1 voice clone, até 30 min de vídeo). Pro a US$ 99/mês (US$ 79/mês anual, mais créditos, 4K, 10x uso premium do Creator). Business a US$ 149/mês (primeiro usuário, +US$ 20/usuário/mês adicional; vídeos ilimitados, 4K, 5 custom avatars, 5 voice clones, 40+ idiomas para lip-sync, API, 3 team seats). Enterprise sob consulta. Planos Legacy Unlimited descontinuados em 15 de maio de 2026.',
     url: 'https://www.heygen.com',
     tags: ['vídeo', 'avatar', 'apresentação', 'tradução', 'corporativo', 'lip sync'],
-    popularityRank: 15,
+    popularityRank: 10,
     updatedAt: '2026-06',
   },
   {
@@ -930,7 +934,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎬',
     tagline: 'Crie vídeos com avatares de IA e dublagem em vários idiomas',
     description:
-      'Synthesia é uma plataforma líder de geração de vídeo com IA que permite criar vídeos profissionais com avatares realistas, tradução por IA e dublagem em mais de 120 idiomas. É ideal para comunicação corporativa, marketing e treinamento, oferecendo produção de vídeo em escala sem câmeras ou estúdios.',
+      'Synthesia é uma plataforma líder de geração de vídeo com IA que permite criar vídeos profissionais com avatares realistas, tradução por IA e dublagem em mais de 120 idiomas. É ideal para comunicação corporativa, marketing e treinamento, oferecendo produção de vídeo em escala sem câmeras ou estúdios. O custo de avatares personalizados pode aumentar significativamente o valor da assinatura.',
     useCases: [
       'Gerar vídeos de treinamento e e-learning',
       'Criar vídeos de marketing e vendas com avatares personalizados',
@@ -938,10 +942,10 @@ export const AI_TOOLS: AITool[] = [
       'Produzir notícias e atualizações de produtos com apresentadores de IA',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (10 minutos de vídeo/mês, 9 avatares AI, marca d\'água). Starter a US$ 29/mês (US$ 18/mês anual, 10 minutos de vídeo/mês - 120 min/ano, 125+ avatares, 3 personal avatars, remoção de logo). Creator a US$ 89/mês (US$ 64/mês anual, 30 minutos de vídeo/mês - 360 min/ano, 180+ avatares, 5 personal avatars, acesso à API). Enterprise sob consulta (minutos ilimitados, 230+ avatares, SAML/SSO, exportação SCORM).',
+    pricingDetails: 'Grátis (3 minutos de vídeo/mês, 9 avatares AI, marca d\'água). Starter a US$ 29/mês (US$ 18/mês anual, 10 minutos de vídeo/mês - 120 min/ano, 125+ avatares, 3 personal avatars, remoção de logo). Creator a US$ 89/mês (US$ 64/mês anual, 30 minutos de vídeo/mês - 360 min/ano, 180+ avatares, 5 personal avatars, acesso à API). Enterprise sob consulta (minutos ilimitados, 230+ avatares, SAML/SSO, exportação SCORM). Custos adicionais como US$ 1.000/ano para avatares personalizados.',
     url: 'https://www.synthesia.io',
     tags: ['vídeo', 'avatar', 'corporativo', 'tradução', 'e-learning', 'apresentação'],
-    popularityRank: 19,
+    popularityRank: 14,
     updatedAt: '2026-06',
   },
   {
@@ -960,7 +964,7 @@ export const AI_TOOLS: AITool[] = [
       'Explorar ideias criativas de narrativa visual',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Atualmente em acesso limitado (private preview). Disponível através de Google One AI Premium (US$ 19,99/mês, acesso a Veo). Planos de API do Google AI Studio/Vertex AI: Veo 1.0 (preços variam por resolução e duração, ex: US$ 0.05-US$ 0.60/segundo). Integrado ao plano Standard da Runway.',
+    pricingDetails: 'Atualmente em acesso limitado (private preview). Disponível através de Google AI Ultra a US$ 249.99/mês (inclui Veo 3, Flow video editor, Gemini 2.5 Pro, YouTube Premium, 30 TB de armazenamento). Google AI Pro a US$ 19.99/mês (inclui Veo 2, Flow editor). Plano Estudantil Grátis até o final do ano acadêmico de 2026. Planos de API do Google Cloud Vertex AI: Veo 3.1 Standard (US$ 0.40/segundo), Veo 3.1 Fast (US$ 0.15/segundo), Veo 3.1 Lite (US$ 0.05/segundo).',
     url: 'https://ai.google/frontier/veo/',
     tags: ['vídeo', 'geração', 'google', 'cinematográfico', 'animação', 'áudio', 'multimodal'],
     popularityRank: 16,
@@ -974,7 +978,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎬',
     tagline: 'Gere e edite vídeos com IA, da imagem ao vídeo ou texto ao vídeo',
     description:
-      'Pika Labs é uma ferramenta de IA para geração e edição de vídeo que se tornou popular pela sua capacidade de animar imagens estáticas e criar vídeos curtos a partir de prompts de texto. Oferece controle sobre elementos como estilo e movimento da câmera.',
+      'Pika Labs é uma ferramenta de IA para geração e edição de vídeo que se tornou popular pela sua capacidade de animar imagens estáticas e criar vídeos curtos a partir de prompts de texto. Oferece controle sobre elementos como estilo e movimento da câmera. Em 2026, possui mais de 500.000 usuários gerando conteúdo diariamente e uma avaliação de US$ 470 milhões.',
     useCases: [
       'Animar imagens existentes',
       'Gerar vídeos curtos para redes sociais',
@@ -985,7 +989,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (80 créditos/mês, 480p, marca d\'água, sem direitos comerciais). Standard a US$ 10/mês (US$ 8/mês anual, 700 créditos/mês, todas as resoluções, sem marca d\'água, direitos comerciais). Pro a US$ 35/mês (US$ 28/mês anual, 2.300 créditos/mês, velocidades de geração mais rápidas). Fancy a US$ 95/mês (US$ 76/mês anual, 6.000 créditos/mês, geração mais rápida).',
     url: 'https://www.pika.art/',
     tags: ['vídeo', 'geração', 'animação', 'edição', 'discord'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 23,
     updatedAt: '2026-06',
   },
   {
@@ -996,7 +1000,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🌌',
     tagline: 'Geração de imagens e vídeos dinâmicos e inspirados por IA',
     description:
-      'Higgsfield AI é uma plataforma emergente para criação de imagens e vídeos dinâmicos com IA, focada em resultados inspiradores e de alta qualidade. Permite aos usuários transformar ideias em conteúdo visual envolvente rapidamente.',
+      'Higgsfield AI é uma plataforma emergente para criação de imagens e vídeos dinâmicos com IA, focada em resultados inspiradores e de alta qualidade. Permite aos usuários transformar ideias em conteúdo visual envolvente rapidamente. Em Abril de 2026, atingiu mais de 20 milhões de usuários em menos de um ano. Agrega mais de 35 modelos de IA, incluindo Sora 2, Google Veo 3.1 e Kling 3.0.',
     useCases: [
       'Criar vídeos curtos e dinâmicos para redes sociais',
       'Gerar imagens com estilos artísticos únicos',
@@ -1004,10 +1008,10 @@ export const AI_TOOLS: AITool[] = [
       'Prototipar ideias de design de forma criativa',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (créditos limitados); Planos pagos a partir de US$ 9.99/mês.',
+    pricingDetails: 'Grátis (créditos limitados). Plus a US$ 39/mês (plano anual, ~33-56 clips Kling 3.0 por mês). Ultra a US$ 99/mês (para mais de 15 clips premium por semana). Planos pagos a partir de US$ 9.99/mês.',
     url: 'https://higgsfield.ai',
     tags: ['vídeo', 'imagem', 'geração', 'dinâmico', 'criativo', 'marketing'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 19,
     updatedAt: '2026-06',
   },
   {
@@ -1026,10 +1030,10 @@ export const AI_TOOLS: AITool[] = [
       'Otimizar formato e duração para diferentes plataformas sociais',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (60 minutos de processamento/mês, vídeo 1080p, com marca d\'água, clips expiram em 3 dias). Starter a US$ 15/mês (150 minutos/mês, sem marca d\'água, 30 dias de exportação). Pro a US$ 29/mês (US$ 14.50/mês no plano anual, 300 minutos/mês ou 3.600/ano, AI B-Roll, social scheduler, XML export, team workspace, 2 team seats). Business com preço customizado (API access, SSO, unlimited seats, dedicated support).',
+    pricingDetails: 'Grátis (60 minutos de processamento/mês, vídeo 1080p, com marca d\'água, clips expiram em 3 dias). Starter a US$ 15/mês (150 minutos/mês, sem marca d\'água, 29 dias de exportação). Pro a US$ 29/mês (US$ 14.50/mês no plano anual, 300 minutos/mês ou 3.600/ano, AI B-Roll, social scheduler, XML export, team workspace para até 4 usuários, 100GB armazenamento). Business com preço customizado (API access, SSO, unlimited seats, dedicated support).',
     url: 'https://www.opus.pro',
     tags: ['vídeo', 'edição', 'redes sociais', 'viral', 'podcast', 'youtube shorts', 'reels', 'tiktok'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 24,
     updatedAt: '2026-06',
   },
   {
@@ -1048,10 +1052,9 @@ export const AI_TOOLS: AITool[] = [
       'Produzir vídeos explicativos e tutoriais dinâmicos',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (30 gerações/mês, velocidade padrão, marca d\'água, uso não comercial). Plus a US$ 29.99/mês (US$ 25/mês anual, ~120 gerações/mês, direitos comerciais, sem marca d\'água, fila de alta prioridade, acesso a Veo e Kling via Luma). Pro a US$ 99.99/mês (US$ 90/mês anual, ~400 gerações/mês, maior velocidade, acesso a keyframes e extensão de imagem, 4x uso com Luma Agents). Ultra a US$ 300/mês (15x uso do Pro, aumento significativo de capacidade, 15x uso com Luma Agents). Team plan em breve, Enterprise sob consulta.',
+    pricingDetails: 'Grátis (uso limitado, watermarked, sem uso comercial). Web Plus Plan a US$ 29.99/mês (US$ 23.99/mês anual, 10.000 créditos mensais, acesso total Ray3, 4K com up-res/HDR, sem marca d\'água, uso comercial). iOS Plus Plan a US$ 37.99/mês (US$ 30.39/mês anual, mesmos benefícios). Web Unlimited Plan a US$ 94.99/mês (US$ 75.99/mês anual, 10.000 créditos rápidos/mês, Relaxed Mode ilimitado). iOS Unlimited Plan a US$ 119.99/mês (US$ 95.99/mês anual, mesmos benefícios). Pro a US$ 90/mês (4x uso com Luma Agents). Ultra a US$ 300/mês (15x uso com Luma Agents). Planos Team e Enterprise sob consulta.',
     url: 'https://lumalabs.ai/dream-machine',
     tags: ['vídeo', 'geração', 'realista', 'animação', 'cinematográfico', 'consistência', 'new'],
-    isNew: undefined, // Launched June 2024, not new in past 6 months
     popularityRank: 12,
     updatedAt: '2026-06',
   },
@@ -1063,7 +1066,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎬',
     tagline: 'Crie vídeos de mídias sociais a partir de prompts de texto',
     description:
-      'Invideo AI é uma plataforma de criação de vídeo que permite aos usuários gerar vídeos para mídias sociais a partir de descrições de texto. Ele integra várias ferramentas de IA para roteirização, edição, dublagem e geração de vídeo, tornando o processo de criação de conteúdo rápido e fácil, mesmo para iniciantes.',
+      'Invideo AI é uma plataforma de criação de vídeo que permite aos usuários gerar vídeos para mídias sociais a partir de descrições de texto. Ele integra várias ferramentas de IA para roteirização, edição, dublagem e geração de vídeo, tornando o processo de criação de conteúdo rápido e fácil, mesmo para iniciantes. A plataforma integrou Sora 2 e Veo 3.1 em sua pipeline.',
     useCases: [
       'Gerar vídeos para redes sociais a partir de texto',
       'Criar roteiros e dublagens automáticas',
@@ -1071,10 +1074,10 @@ export const AI_TOOLS: AITool[] = [
       'Produzir conteúdo de marketing rapidamente',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (10 minutos de geração AI/semana, com marca d\'água). Planos pagos baseados em créditos, a partir de US$ 17/mês (faturamento anual) para o plano Plus (75 créditos/mês, acesso a modelos avançados de IA como Veo, Kling, ElevenLabs). Planos Max, Generative e Elite com mais créditos e recursos.',
+    pricingDetails: 'Grátis (2 minutos de vídeo AI/semana, 1 crédito AI/semana, com marca d\'água, sem uso comercial). Plus a US$ 28/mês (US$ 268.80/ano, 50 minutos de vídeo/mês, 10 créditos AI/mês, 30 seg de vídeo generativo/mês). Max a US$ 50/mês (US$ 480/ano, 200 minutos de vídeo/mês, 40 créditos AI/mês, 120 seg de vídeo generativo/mês). Generative/Premium a US$ 100/mês (US$ 960/ano, 200 minutos de vídeo/mês, 100 créditos AI/mês, 300 seg de vídeo generativo/mês). Team a US$ 899/mês (para 50 usuários, 2.000 minutos de vídeo, 1.000 créditos AI). Minutos não utilizados não são acumuláveis.',
     url: 'https://invideo.io/ai/',
     tags: ['vídeo', 'geração', 'texto para vídeo', 'redes sociais', 'marketing', 'edição'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 25,
     updatedAt: '2026-06',
   },
   {
@@ -1097,7 +1100,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://openai.com/spud', // Placeholder URL
     tags: ['vídeo', 'geração', 'openai', 'successor sora', 'realismo', 'animação'],
     isNew: true,
-    popularityRank: 17,
+    popularityRank: 20,
     updatedAt: '2026-06',
   },
 
@@ -1110,7 +1113,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎵',
     tagline: 'A melhor síntese de voz em português e inglês',
     description:
-      'ElevenLabs é a plataforma líder em síntese de voz com IA, capaz de clonar vozes com apenas alguns minutos de áudio. Oferece vozes extremamente naturais em mais de 29 idiomas, incluindo português brasileiro de alta qualidade.',
+      'ElevenLabs é a plataforma líder em síntese de voz com IA, capaz de clonar vozes com apenas alguns minutos de áudio. Oferece vozes extremamente naturais em mais de 29 idiomas, incluindo português brasileiro de alta qualidade. Em Abril de 2026, atingiu US$ 500 milhões de ARR e anunciou parceria com o Spotify em Maio de 2026.',
     useCases: [
       'Criar narrações para vídeos e podcasts',
       'Clonar sua voz para produção de conteúdo',
@@ -1118,7 +1121,7 @@ export const AI_TOOLS: AITool[] = [
       'Gerar audiobooks e conteúdo de áudio em escala',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis com 10 mil caracteres/mês (sem direitos comerciais). Starter a US$ 5/mês (30.000 caracteres, direitos comerciais). Creator a US$ 22/mês (US$ 11/mês primeiro mês, 100.000 caracteres, clonagem de voz profissional). Pro a US$ 99/mês (500.000 caracteres). Scale a US$ 330/mês (2 milhões de caracteres). Business a US$ 1.320/mês (11 milhões de caracteres). Enterprise sob consulta.',
+    pricingDetails: 'Grátis com 10.000 caracteres/mês (~10 min, sem direitos comerciais, atribuição exigida). Starter a US$ 5/mês (30.000 caracteres, direitos comerciais, Instant Voice Cloning). Creator a US$ 22/mês (US$ 11/mês primeiro mês, 100.000 caracteres, clonagem de voz profissional, áudio 192kbps). Pro a US$ 99/mês (500.000 caracteres, painel de análise, áudio 44.1kHz PCM). Scale a US$ 330/mês (2 milhões de caracteres, 3 assentos de workspace). Business a US$ 1.320/mês (11 milhões de caracteres, TTS de baixa latência, 3 Professional Voice Clones, 5 assentos). Enterprise sob consulta. Preços da API são separados (ex: API Free com 10 créditos/mês, API Pro US$ 99/mês com 100 créditos).',
     url: 'https://elevenlabs.io',
     tags: ['voz', 'narração', 'clone de voz', 'podcast', 'dublagem', 'tts', 'português'],
     isFeatured: true,
@@ -1133,7 +1136,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎵',
     tagline: 'Crie músicas completas com letra em segundos',
     description:
-      'Suno AI é uma ferramenta de geração de música com IA que cria músicas completas — com instrumentação, vocal e letra — a partir de uma descrição textual. Gera músicas em praticamente qualquer gênero e idioma, incluindo português.',
+      'Suno AI é uma ferramenta de geração de música com IA que cria músicas completas — com instrumentação, vocal e letra — a partir de uma descrição textual. Gera músicas em praticamente qualquer gênero e idioma, incluindo português. Em Fevereiro de 2026, atingiu 2 milhões de assinantes pagantes e US$ 300 milhões de ARR. A versão 5.5 (Março de 2026) adicionou clonagem de voz personalizada e faixas de até 8 minutos.',
     useCases: [
       'Criar trilhas sonoras para vídeos e projetos',
       'Gerar jingles para campanhas de marketing',
@@ -1141,10 +1144,10 @@ export const AI_TOOLS: AITool[] = [
       'Prototipar ideias musicais rapidamente',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis com 50 créditos/dia (sem direitos comerciais e downloads restritos). Pro a US$ 10/mês (US$ 8/mês anual, 2.500 créditos/mês, direitos comerciais, downloads). Premier a US$ 30/mês (US$ 24/mês anual, 10.000 créditos/mês, direitos comerciais, Suno Studio). Planos anuais oferecem 20% de desconto. Suno v5.5.',
+    pricingDetails: 'Grátis com 50 créditos/dia (~10 músicas, 2 min max, sem direitos comerciais). Pro a US$ 10/mês (US$ 8/mês anual, 2.500 créditos/mês, ~500 músicas, 4 min max, direitos comerciais, modelo v5.5, edições avançadas, compra de créditos adicionais). Premier a US$ 30/mês (US$ 24/mês anual, 10.000 créditos/mês, ~2.000 músicas, 4 min max, direitos comerciais, Suno Studio, fila prioritária). Planos anuais oferecem 20% de desconto.',
     url: 'https://suno.com',
     tags: ['música', 'geração', 'composição', 'trilha sonora', 'jingle', 'letra'],
-    popularityRank: 24,
+    popularityRank: 9,
     updatedAt: '2026-06',
   },
   {
@@ -1163,10 +1166,10 @@ export const AI_TOOLS: AITool[] = [
       'Clonar sua voz para corrigir erros no áudio',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (1 hora de transcrição/mês, marca d\'água, sem AI credits). Hobbyist a US$ 24/mês (US$ 16/mês anual, 10 horas de transcrição/mês, 1080p, sem marca d\'água, 20 usos básicos de IA/mês, 30 min/mês de fala AI, 5 min/mês de avatares). Creator a US$ 35/mês (US$ 24/mês anual, 30 horas de transcrição/mês, 4K, uso ilimitado de IA, 2 horas/mês de fala AI, 30 min/mês de dublagem, 10 min/mês de avatares). Business a US$ 65/mês (US$ 50/mês anual, 40 horas de transcrição/mês, recursos avançados de equipe, 5 horas/mês de fala AI, 2 horas/mês de dublagem, 30 min/mês de avatares). Enterprise sob consulta.',
+    pricingDetails: 'Grátis (1 hora de transcrição/mês, marca d\'água, sem AI credits). Creator a US$ 24/mês (US$ 16/mês anual, 10 horas de transcrição/mês, 1080p, sem marca d\'água, 20 usos básicos de IA/mês, 30 min/mês de fala AI, 5 min/mês de avatares). Pro a US$ 35/mês (US$ 24/mês anual, 30 horas de transcrição/mês, 4K, uso ilimitado de IA, 2 horas/mês de fala AI, 30 min/mês de dublagem, 10 min/mês de avatares). Business a US$ 65/mês (US$ 50/mês anual, 40 horas de transcrição/mês, recursos avançados de equipe, 5 horas/mês de fala AI, 2 horas/mês de dublagem, 30 min/mês de avatares). Enterprise sob consulta.',
     url: 'https://www.descript.com',
     tags: ['podcast', 'edição de áudio', 'transcrição', 'legenda', 'vídeo', 'edição'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 27,
     updatedAt: '2026-06',
   },
   {
@@ -1177,7 +1180,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎵',
     tagline: 'Transcrição de áudio open source e altamente precisa',
     description:
-      'Whisper é o modelo de reconhecimento automático de fala (ASR) da OpenAI, disponível como open source. Suporta transcrição e tradução em mais de 99 idiomas com precisão excepcional, mesmo em áudios com sotaque ou ruído de fundo.',
+      'Whisper é o modelo de reconhecimento automático de fala (ASR) da OpenAI, disponível como open source. Suporta transcrição e tradução em mais de 99 idiomas com precisão excepcional, mesmo em áudios com sotaque ou ruído de fundo. Modelos mais recentes baseados em GPT-4o (Transcribe, Transcribe with Diarization, Mini Transcribe, Realtime-Whisper) oferecem maior precisão e recursos adicionais, como identificação de locutor.',
     useCases: [
       'Transcrever reuniões, entrevistas e podcasts',
       'Converter áudios de WhatsApp em texto',
@@ -1185,10 +1188,10 @@ export const AI_TOOLS: AITool[] = [
       'Traduzir áudios em idiomas estrangeiros',
     ],
     pricing: 'Grátis',
-    pricingDetails: 'Open source e gratuito para uso local; API da OpenAI a US$ 0,006/minuto.',
+    pricingDetails: 'Open source e gratuito para uso local; API da OpenAI: Whisper (legado) a US$ 0.006/minuto. GPT-4o Transcribe a US$ 0.006/minuto. GPT-4o Transcribe with Diarization a US$ 0.006/minuto. GPT-4o Mini Transcribe a US$ 0.003/minuto. GPT-Realtime-Whisper (streaming STT) a US$ 0.017/minuto. Créditos gratuitos de US$ 5 para novos usuários.',
     url: 'https://openai.com/research/whisper',
     tags: ['transcrição', 'reconhecimento de voz', 'open source', 'áudio', 'legendas', 'stt'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: 26,
     updatedAt: '2026-06',
   },
   {
@@ -1210,7 +1213,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (5 minutos de áudio/mês); Basic a US$ 8/mês; Standard a US$ 28/mês; Premium a US$ 88/mês.',
     url: 'https://fliki.ai/',
     tags: ['vídeo', 'áudio', 'tts', 'geração de vídeo', 'texto para vídeo', 'narração'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1232,7 +1235,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (10 minutos de tradução/mês); Pro a US$ 25/mês (600 minutos de tradução/mês, 5 clones de voz); Business a US$ 99/mês (3.000 minutos/mês, 20 clones de voz, API); Enterprise sob consulta.',
     url: 'https://lingua.ai',
     tags: ['tradução', 'voz', 'tempo real', 'dublagem', 'clonagem de voz', 'multilíngue', 'comunicação'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1251,10 +1254,10 @@ export const AI_TOOLS: AITool[] = [
       'Clonar vozes existentes para consistência de marca',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (150 créditos, vozes básicas, página compartilhável não-branded). Creator a US$ 25/mês (US$ 21/mês anual, 1.000 créditos, 1 clone de voz, 3 vozes personalizadas, 300+ vozes em 30 idiomas); Pro a US$ 45/mês (US$ 42/mês anual, 2.000-4.000 créditos, 5 clones de voz, 1.000+ vozes em 50 idiomas, efeitos sonoros e tradução por IA); Business a partir de US$ 60/seat/mês (800 créditos combinados, colaboração em equipe); Enterprise com preço customizado.',
+    pricingDetails: 'Grátis (150 créditos para experimentar, cerca de 72 minutos de áudio/ano). Creator a US$ 25/mês (US$ 21/mês anual, 1.000 créditos, 1 clone de voz, 3 vozes personalizadas, 300+ vozes em 30 idiomas). Pro a US$ 45/mês (US$ 42/mês anual, 2.000-4.000 créditos, 5 clones de voz, 1.000+ vozes em 50 idiomas, efeitos sonoros e tradução por IA). Business a partir de US$ 60/seat/mês (800 créditos combinados, colaboração em equipe). Enterprise com preço customizado.',
     url: 'https://www.wondercraft.ai',
     tags: ['podcast', 'áudio', 'tts', 'clonagem de voz', 'edição de áudio', 'marketing', 'geração'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1276,7 +1279,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (2 horas de áudio processado/mês). Planos mensais a partir de US$ 11/mês; Créditos avulsos a US$ 12 por 5 horas; Planos anuais e Business com preços sob consulta.',
     url: 'https://auphonic.com',
     tags: ['áudio', 'pós-produção', 'podcast', 'edição', 'ruído', 'equalização', 'transcrição'],
-    popularityRank: undefined, // Not in top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1287,7 +1290,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🗣️',
     tagline: 'Geração de voz em off de alta qualidade com IA e vozes customizáveis',
     description:
-      'Murf AI é uma plataforma de text-to-speech (TTS) que cria narrações realistas com inteligência artificial. Oferece mais de 200 vozes em mais de 35 idiomas, com estilos de fala e entonação variados, ideal para vídeos, apresentações e treinamentos.',
+      'Murf AI é uma plataforma de text-to-speech (TTS) que cria narrações realistas com inteligência artificial. Oferece mais de 200 vozes em mais de 35 idiomas, com estilos de fala e entonação variados, ideal para vídeos, apresentações e treinamentos. A clonagem de voz de nível profissional está disponível no plano Enterprise.',
     useCases: [
       'Criar narrações para vídeos de marketing e e-learning',
       'Gerar voz em off para apresentações e tutoriais',
@@ -1295,10 +1298,10 @@ export const AI_TOOLS: AITool[] = [
       'Clonar vozes para uso personalizado e profissional',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (10 minutos de geração de voz, sem downloads, sem direitos comerciais). Creator a US$ 29/mês (US$ 19/mês anual, 24 horas/ano de geração, 1 usuário, direitos comerciais); Business a US$ 99/mês (US$ 66/mês anual, 96 horas/ano de geração, 1 editor, suporte prioritário); Enterprise sob consulta (geração ilimitada, conformidade SOC 2/ISO 27001, gerente de conta, clonagem de voz). API com preços separados (ex: US$ 0.03/1.000 caracteres para TTS com qualidade de estúdio).',
+    pricingDetails: 'Grátis (10 minutos de geração de voz vitalícia, sem downloads, sem direitos comerciais). Creator a US$ 29/mês (US$ 19/mês anual, 24 horas/ano de geração, direitos comerciais, integração Canva). Business a US$ 99/mês (US$ 66/mês anual, 96 horas/ano de geração (anual) ou 20 horas/mês (mensal), 1 editor, integração Google Slides). Enterprise sob consulta (geração ilimitada, clonagem de voz, conformidade SOC 2/ISO 27001, gerente de conta). API com preços separados (ex: Falcon TTS US$ 0.01/1.000 caracteres).',
     url: 'https://murf.ai',
     tags: ['tts', 'narração', 'voz', 'e-learning', 'marketing', 'clonagem de voz'],
-    popularityRank: undefined, // Not in top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1309,7 +1312,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🗣️',
     tagline: 'Geração de voz emocionalmente inteligente e detecção de emoções',
     description:
-      'Hume AI oferece geração de voz com IA que entende e expressa emoções, além de um API para análise de emoções em áudio, vídeo e texto. Inclui o modelo Octave TTS e o recém-lançado TADA, um modelo open-source que gera fala sem alucinações de conteúdo.',
+      'Hume AI oferece geração de voz com IA que entende e expressa emoções, além de um API para análise de emoções em áudio, vídeo e texto. Inclui o modelo Octave TTS (Octave 2, Out 2025) e o recém-lançado TADA (Mar 2026), um modelo open-source que gera fala sem alucinações de conteúdo. É projetado para construir agentes de IA com conversas empáticas e mais de 100.000 vozes personalizadas.',
     useCases: [
       'Gerar vozes com entonação emocional para assistentes de IA',
       'Criar narrações de áudio com expressividade para storytelling',
@@ -1317,11 +1320,11 @@ export const AI_TOOLS: AITool[] = [
       'Produzir conteúdo de áudio para jogos e experiências imersivas',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (10.000 caracteres/mês, 5 minutos de uso EVI, clonagem de voz ilimitada, sem licença comercial). Starter a US$ 3/mês (30.000 caracteres, 40 minutos EVI, sem licença comercial). Creator a US$ 14/mês (140.000 caracteres, 200 minutos EVI, licença comercial, 50% de desconto no primeiro mês). Pro a US$ 70/mês (1.000.000 caracteres). Business a US$ 500/mês (10.000.000 caracteres, 5 assentos de equipe). API de Medição de Expressão (pay-as-you-go): a partir de US$ 0.0639/minuto para áudio.',
+    pricingDetails: 'Grátis (10.000 caracteres/mês Octave TTS, 5 minutos de uso EVI, clonagem de voz ilimitada, sem licença comercial). Starter a US$ 3/mês (30.000 caracteres, 40 minutos EVI, sem licença comercial). Creator a US$ 14/mês (140.000 caracteres, 200 minutos EVI, licença comercial). Pro a US$ 70/mês (1.000.000 caracteres, 1.000 minutos de TTS). Business a US$ 500/mês (10.000.000 caracteres, 5 assentos de equipe). API de Medição de Expressão (pay-as-you-go): a partir de US$ 0.0639/minuto para áudio, US$ 0.0828/minuto para vídeo com áudio.',
     url: 'https://www.hume.ai',
     tags: ['voz', 'emoção', 'tts', 'detecção de emoções', 'agente conversacional', 'open source', 'new'],
     isNew: true,
-    popularityRank: undefined, // Not in top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
 
@@ -1334,7 +1337,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🔍',
     tagline: 'Motor de busca com IA que cita as fontes',
     description:
-      'Perplexity AI é um motor de busca conversacional que combina LLMs com busca em tempo real e sempre cita as fontes. É a melhor alternativa ao Google para pesquisas que exigem respostas precisas, atualizadas e verificáveis.',
+      'Perplexity AI é um motor de busca conversacional que combina LLMs com busca em tempo real e sempre cita as fontes. É a melhor alternativa ao Google para pesquisas que exigem respostas precisas, atualizadas e verificáveis. Em Fevereiro de 2026, lançou o agente Perplexity Computer e o Model Council para comparar modelos. Atingiu mais de 100 milhões de usuários ativos mensais em Abril de 2026.',
     useCases: [
       'Pesquisar informações com fontes verificáveis',
       'Monitorar notícias e tendências em tempo real',
@@ -1342,7 +1345,7 @@ export const AI_TOOLS: AITool[] = [
       'Comparar produtos, serviços e tecnologias',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (buscas ilimitadas com modelo Sonar básico, 5 Copilot queries a cada 4 horas, sem acesso a Deep Research, Labs ou modelos premium). Pro a US$ 20/mês (US$ 200/ano - US$ 16.67/mês anual; Copilot ilimitado, 20 Deep Research queries/dia, acesso a GPT-5.4, Claude Opus 4.8, Gemini 3.1 Pro, etc., 3 gerações de vídeo/mês, AI image generation). Max a US$ 200/mês (US$ 2.000/ano; inclui tudo do Pro + Labs ilimitados, Perplexity Computer com 19 modelos AI, 10.000 créditos Computer/mês, Sora 2 Pro video generation, Nano Banana Pro images). Education Pro a US$ 10/mês (para estudantes verificados). Enterprise Pro a US$ 40/usuário/mês (US$ 400/usuário/ano; 500 Research queries/dia, 5 gerações de vídeo/mês). Enterprise Max a US$ 325/usuário/mês (US$ 3.250/usuário/ano; Research e Labs ilimitados). API Sonar (a partir de US$ 1/M tokens entrada e US$ 15/M tokens saída para Sonar Pro).',
+    pricingDetails: 'Grátis (buscas ilimitadas com modelo Sonar básico, 5 Copilot queries a cada 4 horas, sem acesso a Deep Research, Labs ou modelos premium). Pro a US$ 20/mês (US$ 200/ano - US$ 16.67/mês anual; Copilot ilimitado, 20 Deep Research queries/dia, acesso a GPT-5.4, Claude Opus 4.8, Gemini 3.1 Pro, etc., 3 gerações de vídeo/mês, AI image generation). Max a US$ 200/mês (US$ 2.000/ano; inclui tudo do Pro + Labs ilimitados, Perplexity Computer com 19 modelos AI, 10.000 créditos Computer/mês, Sora 2 Pro video generation, Nano Banana Pro images). Education Pro a US$ 10/mês (para estudantes verificados). Enterprise Pro a US$ 40/usuário/mês (US$ 400/usuário/ano; 500 Research queries/dia, 5 gerações de vídeo/mês). Enterprise Max a US$ 325/usuário/mês (US$ 3.250/usuário/ano; Research e Labs ilimitados). API Sonar (a partir de US$ 1/M tokens entrada e US$ 15/M tokens saída para Sonar Pro). Comet Browser é gratuito.',
     url: 'https://www.perplexity.ai',
     tags: ['busca', 'pesquisa', 'fontes', 'tempo real', 'notícias', 'análise'],
     isFeatured: true,
@@ -1357,7 +1360,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🔍',
     tagline: 'IA que analisa seus próprios documentos como fonte',
     description:
-      'Google NotebookLM é um assistente de pesquisa que usa exclusivamente os documentos que você carrega como fonte de conhecimento. Gera resumos, responde perguntas e cria podcasts de áudio a partir de seus PDFs, Docs e sites.',
+      'Google NotebookLM é um assistente de pesquisa que usa exclusivamente os documentos que você carrega como fonte de conhecimento. Gera resumos, responde perguntas e cria podcasts de áudio a partir de seus PDFs, Docs e sites. Integra-se com os planos Google AI Pro e Ultra.',
     useCases: [
       'Estudar e resumir PDFs e documentos longos',
       'Fazer perguntas sobre artigos científicos',
@@ -1365,10 +1368,10 @@ export const AI_TOOLS: AITool[] = [
       'Organizar e sintetizar pesquisas e notas',
     ],
     pricing: 'Grátis',
-    pricingDetails: 'Grátis (acesso a recursos de IA para análise de documentos, geração de resumos e podcasts). Requer uma conta Google.',
+    pricingDetails: 'Grátis (acesso a recursos de IA para análise de documentos, geração de resumos e podcasts). Requer uma conta Google. Pro é empacotado com Google AI Pro (US$ 19.99/mês), e Ultra com Google AI Ultra (US$ 99.99/mês ou US$ 200/mês). Workspace Business Standard a US$ 14/usuário/mês inclui NotebookLM Plus. Enterprise sob consulta (a partir de ~US$ 9/licença/mês).',
     url: 'https://notebooklm.google.com',
     tags: ['pesquisa', 'documentos', 'pdf', 'estudo', 'resumo', 'análise', 'google'],
-    popularityRank: 20,
+    popularityRank: 29,
     updatedAt: '2026-06',
   },
   {
@@ -1386,11 +1389,11 @@ export const AI_TOOLS: AITool[] = [
       'Gerar código, textos e análises diretamente na busca',
       'Pesquisa profunda com múltiplas fontes sintetizadas',
     ],
-    pricing: 'Freemium',
-    pricingDetails: 'Grátis com recursos básicos; Pro a US$ 9.99/mês (US$ 7.50/mês no plano anual).',
+    pricing: 'Pago',
+    pricingDetails: 'Sem plano gratuito, mas oferece teste grátis. Planos a partir de US$ 15/mês (faturamento anual) com acesso a todos os modelos de IA (GPT-4o, Claude 3.5 Sonnet), uploads de arquivos (até 25MB), janela de contexto de 64k, Research e Custom Agents. API Web Search a US$ 5/1k chamadas; Contents API a US$ 1/1k páginas; Research API a US$ 12/1k chamadas; Finance Research API a US$ 110/1k chamadas.',
     url: 'https://you.com',
     tags: ['busca', 'privacidade', 'pesquisa', 'agentes', 'web', 'análise'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1412,7 +1415,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Brave Search com resumos de IA básicos); Brave Leo Premium a US$ 15/mês (acesso a modelos LLM avançados e uso ilimitado).',
     url: 'https://search.brave.com/',
     tags: ['busca', 'privacidade', 'ai search', 'resumo', 'web', 'agente'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1423,7 +1426,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🕵️',
     tagline: 'Detector de conteúdo e imagens geradas por IA com alta precisão',
     description:
-      'Winston AI é uma ferramenta de detecção de IA que analisa textos e imagens para identificar se foram gerados por inteligência artificial ou por humanos. Oferece detecção de plágio, análise de legibilidade e suporte a 11 idiomas, sendo útil para editores, educadores e criadores de conteúdo.',
+      'Winston AI é uma ferramenta de detecção de IA que analisa textos e imagens para identificar se foram gerados por inteligência artificial ou por humanos. Oferece detecção de plágio, análise de legibilidade e suporte a 11 idiomas, sendo útil para editores, educadores e criadores de conteúdo. Destaca-se pela detecção multimodal (texto e imagens) e análise granular ao nível da frase.',
     useCases: [
       'Verificar a originalidade de textos e artigos',
       'Detectar conteúdo gerado por ChatGPT, Gemini, Claude e LLAMA',
@@ -1431,21 +1434,21 @@ export const AI_TOOLS: AITool[] = [
       'Analisar a legibilidade e qualidade do texto',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Trial grátis (2.000 créditos por 14 dias); Essential a US$ 10/mês (80.000 créditos/mês, detecção de IA e plágio, suporte por e-mail/chat, relatórios em PDF); Advanced a US$ 18/mês (200.000 créditos/mês, detecção de imagens/deepfake, até 5 membros de equipe); Elite a US$ 26/mês (créditos ilimitados/mês, certificação HUMN-1 website).',
+    pricingDetails: 'Trial grátis (2.000 créditos por 14 dias, inclui detecção de IA/imagens/deepfake, OCR, relatórios PDF, detecção de plágio, convites para equipe, certificação HUMN-1). Essential a US$ 18/mês (US$ 10/mês anual, 80.000 créditos/mês). Advanced a US$ 29/mês (US$ 16/mês anual, 200.000 créditos/mês, até 5 membros de equipe). Elite a US$ 49/mês (US$ 26/mês anual, 500.000 créditos/mês, membros ilimitados de equipe, certificação HUMN-1 website).',
     url: 'https://gowinston.ai',
     tags: ['detecção de ia', 'plágio', 'originalidade', 'conteúdo', 'educação', 'edição'],
-    popularityRank: undefined, // Not in top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
     id: 'comet-browser',
     name: 'Comet Browser',
-    developer: 'Comet AI',
+    developer: 'Perplexity AI',
     category: 'Pesquisa & Análise',
     emoji: '🌐',
     tagline: 'Navegador com IA integrada para pesquisa e automação de tarefas',
     description:
-      'Comet é um navegador com IA integrada que oferece recursos como "Sidebar Assistant" para fazer perguntas sobre o conteúdo da página, e "Agent mode" para controlar o navegador e completar tarefas multi-etapa automaticamente. Foca em produtividade e pesquisa, e se tornou gratuito em todas as plataformas no Q2 2026.',
+      'Comet é um navegador com IA integrada (baseado no Chromium) que oferece recursos como "Sidebar Assistant" para fazer perguntas sobre o conteúdo da página, e "Agent mode" para controlar o navegador e completar tarefas multi-etapa automaticamente. Foca em produtividade e pesquisa, e se tornou gratuito em todas as plataformas no Q2 2026. Lançado para iOS em 18 de março de 2026.',
     useCases: [
       'Pesquisar e interagir com conteúdo da web sem sair da página',
       'Automatizar tarefas de navegação e preenchimento de formulários',
@@ -1453,11 +1456,11 @@ export const AI_TOOLS: AITool[] = [
       'Gerar respostas e interações em tempo real com IA',
     ],
     pricing: 'Grátis',
-    pricingDetails: 'Grátis (tornou-se gratuito em todas as plataformas em Q2 2026).',
+    pricingDetails: 'Grátis (tornou-se gratuito em todas as plataformas no Q2 2026). Inicialmente lançado em Julho de 2025 para Windows/macOS, Novembro de 2025 para Android, e Março de 2026 para iOS. Integra-se com os planos Perplexity Pro e Max para recursos avançados como Perplexity Computer.',
     url: 'https://comet.ai',
     tags: ['navegador', 'pesquisa', 'agente', 'automação', 'produtividade', 'web'],
     isNew: true,
-    popularityRank: 21,
+    popularityRank: 23,
     updatedAt: '2026-06',
   },
 
@@ -1470,7 +1473,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '⚡',
     tagline: 'Automação visual com IA e 1.500+ integrações',
     description:
-      'Make (antigo Integromat) é uma plataforma de automação no-code com interface visual intuitiva que conecta mais de 1.500 apps. Permite criar fluxos complexos com lógica condicional, iteradores e módulos de IA integrados.',
+      'Make (antigo Integromat) é uma plataforma de automação no-code com interface visual intuitiva que conecta mais de 1.500 apps. Permite criar fluxos complexos com lógica condicional, iteradores e módulos de IA integrados. Em Agosto de 2025, mudou de "operações" para um sistema de "créditos".',
     useCases: [
       'Automatizar fluxos de trabalho entre diferentes apps',
       'Integrar ferramentas de IA em processos de negócio',
@@ -1478,11 +1481,11 @@ export const AI_TOOLS: AITool[] = [
       'Processar dados e sincronizar sistemas automaticamente',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis com 1.000 operações/mês; Core a partir de US$ 9/mês; Pro a US$ 16/mês; Teams a US$ 29/mês; Enterprise sob consulta.',
+    pricingDetails: 'Grátis (1.000 créditos/mês, 2 cenários ativos, intervalo de 15 minutos). Core a US$ 9/mês (US$ 10.59/mês mensal, 10.000 créditos/mês, cenários ilimitados, intervalo de 5 minutos). Pro a US$ 16/mês (US$ 18.82/mês mensal, 10.000 créditos/mês, intervalo de 1 minuto, execução prioritária). Teams a US$ 29/mês (US$ 34.12/mês mensal, 10.000 créditos/mês, colaboração em equipe). Enterprise sob consulta (créditos/capacidade customizados, segurança avançada, 24/7 suporte). Faturamento anual economiza ~15% a 30%.',
     url: 'https://www.make.com',
     tags: ['automação', 'no-code', 'integração', 'workflow', 'zapier', 'api'],
     isFeatured: true,
-    popularityRank: 15,
+    popularityRank: 28,
     updatedAt: '2026-06',
   },
   {
@@ -1493,7 +1496,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '⚡',
     tagline: 'Automatize tarefas entre apps com agentes de IA',
     description:
-      'Zapier é a plataforma de automação mais popular, com mais de 7.000 integrações. Sua funcionalidade de IA permite criar automações em linguagem natural, usar agentes de IA e incluir etapas de processamento com LLMs nos fluxos.',
+      'Zapier é a plataforma de automação mais popular, com mais de 7.000 integrações. Sua funcionalidade de IA permite criar automações em linguagem natural, usar agentes de IA e incluir etapas de processamento com LLMs nos fluxos. Serve mais de 10 milhões de usuários ativos mensais e 750.000 organizações globalmente em 2026.',
     useCases: [
       'Criar automações entre apps em linguagem natural',
       'Processar e classificar e-mails com IA automaticamente',
@@ -1501,10 +1504,10 @@ export const AI_TOOLS: AITool[] = [
       'Usar agentes de IA para tarefas recorrentes',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis com 100 tarefas/mês; Starter a partir de US$ 19,99/mês; Team a partir de US$ 59/mês; Company sob consulta. Inclui Zapier Copilot, AI by Zapier, Zapier Agents e Chatbots by Zapier.',
+    pricingDetails: 'Grátis (100 tarefas/mês). Starter a partir de US$ 19.99/mês. Team a partir de US$ 69/mês (2.000 tarefas/mês, até 25 usuários). Company sob consulta. Inclui Zapier Copilot, AI by Zapier, Zapier Agents e Chatbots by Zapier.',
     url: 'https://zapier.com',
     tags: ['automação', 'integração', 'workflow', 'no-code', 'agentes', 'produtividade'],
-    popularityRank: 14,
+    popularityRank: 10,
     updatedAt: '2026-06',
   },
   {
@@ -1515,7 +1518,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '⚡',
     tagline: 'Automação open source com opção de auto-hospedagem',
     description:
-      'n8n é uma ferramenta de automação de fluxos de trabalho open source que pode ser hospedada no seu próprio servidor. Oferece mais de 400 integrações, suporte nativo a código (JS/Python) e módulos de IA para criar agentes complexos.',
+      'n8n é uma ferramenta de automação de fluxos de trabalho open source que pode ser hospedada no seu próprio servidor. Oferece mais de 400 integrações, suporte nativo a código (JS/Python) e módulos de IA para criar agentes complexos. Seu modelo de precificação por "execução" recompensa fluxos de trabalho mais complexos com menos custo.',
     useCases: [
       'Criar automações complexas com código personalizado',
       'Hospedar fluxos de automação no próprio servidor',
@@ -1523,10 +1526,10 @@ export const AI_TOOLS: AITool[] = [
       'Automatizar processos sem custo recorrente (self-hosted)',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Open source e auto-hospedagem gratuita; Cloud Starter a €29/mês (aprox. US$ 31/mês, 2.500 execuções); Cloud Pro a €99/mês (aprox. US$ 107/mês, 10.000 execuções); Cloud Business a €499/mês (aprox. US$ 538/mês, 40.000 execuções); Enterprise sob consulta.',
+    pricingDetails: 'Open source e auto-hospedagem gratuita (execuções ilimitadas); Cloud Starter a €24/mês (aprox. US$ 26/mês, 2.500 execuções); Cloud Pro a €60/mês (aprox. US$ 65/mês, 10.000 execuções); Cloud Business a €800/mês (aprox. US$ 866/mês, 40.000 execuções); Enterprise sob consulta. Faturamento anual é 17% mais barato. Auto-hospedagem gerenciada a US$ 2.99/mês com execuções ilimitadas.',
     url: 'https://n8n.io',
     tags: ['automação', 'open source', 'self-hosted', 'workflow', 'agentes', 'código'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1548,7 +1551,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (uso limitado, até 5 automações/dia); Personal a US$ 15/mês (automações ilimitadas, 100 horas de agente/mês); Family a US$ 25/mês (até 5 usuários, 250 horas de agente/mês); Enterprise sob consulta.',
     url: 'https://aura.ai',
     tags: ['automação', 'produtividade', 'agente', 'assistente pessoal', 'workflow', 'inteligência artificial'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1559,7 +1562,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '⚡',
     tagline: 'Automatize fluxos de trabalho complexos com agentes de IA personalizados',
     description:
-      'Lindy é uma plataforma que permite criar e implantar agentes de IA personalizados para automatizar tarefas complexas e fluxos de trabalho. Ele se integra com diversas ferramentas e é projetado para aprender e se adaptar às suas necessidades, otimizando a eficiência em várias funções de negócios.',
+      'Lindy é uma plataforma que permite criar e implantar agentes de IA personalizados para automatizar tarefas complexas e fluxos de trabalho. Ele se integra com diversas ferramentas e é projetado para aprender e se adaptar às suas necessidades, otimizando a eficiência em várias funções de negócios. Em Fevereiro de 2026, introduziu um plano Starter mais acessível.',
     useCases: [
       'Automatizar tarefas repetitivas em diversas ferramentas',
       'Gerenciar e-mails e agendamentos com IA',
@@ -1567,10 +1570,10 @@ export const AI_TOOLS: AITool[] = [
       'Otimizar processos de vendas e suporte ao cliente',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Sem plano gratuito, apenas trial de 7 dias. Plus a US$ 49,99/mês (inclui gerenciamento de inbox e agendamento, centenas de integrações, até 2 contas de e-mail). Pro a US$ 99,99/mês (3x uso do plano Plus, até 3 contas de e-mail, recurso de "uso de computador" para navegar em apps web). Max a US$ 199,99/mês (7x uso do plano Plus, até 5 contas de e-mail, capacidades de uso de computador aprimoradas). Enterprise sob consulta.',
+    pricingDetails: 'Sem plano gratuito, apenas trial de 7 dias. Starter a US$ 19.99/mês (2.000 task credits/mês). Plus a US$ 49.99/mês (5.000 task credits/mês, inclui gerenciamento de inbox e agendamento, centenas de integrações, até 2 contas de e-mail). Pro a US$ 99.99/mês (3x uso do plano Plus, até 3 contas de e-mail, recurso de "uso de computador" para navegar em apps web). Max a US$ 199.99/mês (7x uso do plano Plus, até 5 contas de e-mail, capacidades de uso de computador aprimoradas). Business/Enterprise com preço customizado. Gaia Voice Agents adicionam cobranças baseadas em uso (20 créditos/minuto para chamadas nos EUA) mais US$ 10/mês por número de telefone.',
     url: 'https://lindy.ai/',
     tags: ['automação', 'agente', 'workflow', 'produtividade', 'personalizável', 'enterprise'],
-    popularityRank: undefined, // Removed from top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
   {
@@ -1593,7 +1596,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://manus.im',
     tags: ['agente', 'automação', 'web scraping', 'produtividade', 'desktop automation'],
     isNew: true,
-    popularityRank: undefined, // Not in top 30
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
 ];

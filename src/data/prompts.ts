@@ -3945,4 +3945,97 @@ Com base nessas informações, por favor, elabore uma estratégia completa que i
 Apresente as informações de forma estruturada, clara e acionável.`,
     tags: ['Marketing Digital', 'Influenciadores', 'Campanha', 'Engajamento'],
   },
+  {
+    id: 'finance-otimizacao-impostos-pessoais-ia',
+    title: 'Otimizador de Impostos Pessoais com IA',
+    category: 'Finanças',
+    description: 'Gera estratégias personalizadas para otimizar a declaração e o planejamento fiscal de indivíduos.',
+    template: `Atue como um especialista em planejamento tributário e utilize IA para me ajudar a otimizar minha situação fiscal pessoal para o ano fiscal atual. Considere as seguintes informações e proponha estratégias para minimizar impostos legalmente, maximizar deduções e otimizar investimentos.
+
+**Dados Pessoais e Financeiros:**
+- **Tipo de Rendimento Principal:** [Salário CLT, PJ, Autônomo, Aluguéis, Investimentos, Misto, etc.]
+- **Renda Bruta Anual Estimada:** [Valor em BRL]
+- **Fontes de Despesa Dedutíveis Conhecidas:** [Ex: Saúde (plano, consultas), Educação (própria, dependentes), Previdência Privada (PGBL), Doações, Aluguel, etc.]
+- **Objetivos Financeiros Anuais:** [Ex: Economizar para aposentadoria, comprar imóvel, investir em educação, quitar dívidas, etc.]
+- **Situação Familiar:** [Solteiro(a), Casado(a), com X dependentes, etc.]
+- **Região/Estado (se aplicável, para impostos específicos):** [Nome do Estado, se relevante]
+- **Dúvidas Específicas ou Cenários a Explorar (opcional):** [Ex: Vale a pena fazer previdência privada? Como otimizar venda de imóvel?].
+
+Com base nessas informações, forneça:
+1. Uma análise das principais oportunidades de dedução e otimização fiscal.
+2. Sugestões de estratégias de investimento que possam oferecer benefícios fiscais.
+3. Alertas sobre possíveis armadilhas fiscais ou áreas de atenção.
+4. Um plano de ação simplificado com os próximos passos.`,
+    tags: ['Impostos', 'Planejamento Financeiro', 'Otimização', 'IA'],
+  },
+  {
+    id: 'education-micro-aula-interativa-ia',
+    title: 'Criador de Micro-Aulas Interativas com IA',
+    category: 'Educação',
+    description: 'Desenvolve o roteiro e sugere elementos interativos para uma micro-aula sobre um tópico específico.',
+    template: `Crie um roteiro detalhado e sugestões de interatividade para uma micro-aula. O objetivo é engajar o público e facilitar a retenção de informações em um formato conciso e dinâmico.
+
+**Informações da Micro-Aula:**
+- **Tópico da Micro-Aula:** [Ex: Os princípios da energia solar fotovoltaica, Introdução à metodologia OKR, Como funciona o Pix]
+- **Público-alvo:** [Ex: Estudantes do ensino médio, Profissionais de marketing, Iniciantes em finanças]
+- **Objetivo de Aprendizagem:** [O que o aluno deve ser capaz de fazer ou entender após a aula. Ex: Compreender os componentes básicos de um sistema fotovoltaico e seu funcionamento]
+- **Duração Estimada:** [Ex: 3-5 minutos, 5-10 minutos]
+- **Formato Preferencial:** [Ex: Vídeo curto (com narração e gráficos), Infográfico interativo, Texto com quizzes e elementos multimídia]
+- **Nível de Profundidade Desejado:** [Ex: Básico, Intermediário, Avançado (para quem já tem algum conhecimento)]
+
+O roteiro deve incluir:
+1. Uma introdução cativante que contextualize o tema.
+2. Os pontos-chave a serem abordados, divididos em segmentos curtos.
+3. Sugestões de exemplos práticos ou analogias para ilustrar conceitos.
+4. Ideias para elementos visuais/multimídia (se for vídeo/infográfico).
+5. Sugestões de perguntas para reflexão ou pequenos desafios/quizzes interativos.
+6. Um resumo final e um "próximo passo" ou recurso adicional.`,
+    tags: ['Microlearning', 'Educação', 'Conteúdo Interativo', 'IA'],
+  },
+  {
+    id: 'dev-debug-assistant-ia',
+    title: 'Assistente de Debugging Inteligente',
+    category: 'Desenvolvimento',
+    description: 'Ajuda a identificar a causa raiz de erros em códigos e sugere soluções eficazes.',
+    template: `Atue como um especialista em debugging e utilize IA para me auxiliar na identificação e resolução de um problema em meu código. Analise o código fornecido, as mensagens de erro e o contexto para sugerir a causa raiz e as possíveis soluções.
+
+**Informações do Problema:**
+- **Linguagem de Programação/Tecnologia:** [Ex: Python, JavaScript (Node.js/React), Java, C#, SQL, Docker, etc.]
+- **Trecho de Código Problemático (ou arquivo relevante):**
+\`\`\`
+[Cole seu código aqui]
+\`\`\`
+- **Mensagem de Erro ou Comportamento Inesperado:** [Cole a mensagem de erro completa do console/log, ou descreva o que está acontecendo de forma diferente do esperado]
+- **Descrição do Cenário onde o Erro Ocorre:** [Ex: O erro acontece ao carregar a página X, ao enviar um formulário, quando a função Y é chamada com parâmetros Z, em ambiente de produção, etc.]
+- **Histórico de Tentativas de Correção (opcional):** [Ex: Já tentei reiniciar o servidor, verifiquei logs, testei a função com outros inputs, etc.]
+- **Ambiente de Execução (opcional):** [Ex: Desenvolvimento local, Servidor de Testes, Produção, Docker, Kubernetes]
+
+Com base nessas informações, forneça:
+1. Uma análise da provável causa raiz do problema.
+2. Sugestões de passos para depuração e investigação adicionais.
+3. Uma ou mais soluções de código concretas para resolver o problema, com explicações.
+4. Considerações sobre boas práticas para evitar problemas semelhantes no futuro.`,
+    tags: ['Debugging', 'Desenvolvimento', 'Código', 'Análise de Erros', 'IA'],
+  },
+  {
+    id: 'negocios-agente-analise-riscos-ia',
+    title: 'Agente de Análise de Riscos Estratégicos com IA',
+    category: 'Negócios',
+    description: 'Identifica, avalia e sugere planos de mitigação para riscos estratégicos em um cenário de negócios específico.',
+    template: `Atue como um Agente de Análise de Riscos Estratégicos, utilizando capacidades de IA para identificar, avaliar e propor planos de mitigação para riscos associados a um objetivo de negócio específico.
+
+**Informações sobre o Negócio e o Objetivo:**
+- **Setor de Atuação da Empresa:** [Ex: Varejo de e-commerce, Tecnologia SaaS para RH, Consultoria financeira, Indústria de alimentos]
+- **Modelo de Negócio Principal:** [Ex: Assinatura B2B, Venda direta ao consumidor B2C, Franquia, Marketplace]
+- **Objetivo Estratégico em Análise:** [Ex: Lançamento de um novo produto disruptivo no mercado X, Expansão para um novo país/região Y, Implementação de nova tecnologia Z, Redução de custos operacionais em 15%]
+- **Fatores Externos Conhecidos (relevantes para o objetivo):** [Ex: Mudanças regulatórias iminentes, Entrada de um novo concorrente forte, Crise econômica projetada, Flutuação cambial]
+- **Fatores Internos Conhecidos (relevantes para o objetivo):** [Ex: Capacidade limitada da equipe de P&D, Dependência de um único fornecedor, Tecnologia legada, Cultura organizacional resistente a mudanças]
+
+Com base nessas informações, forneça:
+1. Uma lista dos 3 a 5 principais riscos estratégicos associados ao objetivo, categorizados (ex: financeiro, operacional, mercado, reputacional, tecnológico).
+2. Para cada risco, uma breve descrição de sua potencial impacto e probabilidade (ex: Alto Impacto/Média Probabilidade).
+3. Para cada risco, pelo menos duas estratégias de mitigação ou contingência detalhadas.
+4. Sugestões de indicadores-chave de risco (KRIs) para monitorar a evolução desses riscos.`,
+    tags: ['Riscos', 'Estratégia', 'Negócios', 'Análise', 'IA'],
+  },
 ];

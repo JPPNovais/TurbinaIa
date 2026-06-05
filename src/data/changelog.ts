@@ -13,6 +13,49 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'xai-grok-v9-medium-2026',
+    date: '2026-06',
+    title: 'xAI conclui treinamento do Grok V9-Medium com 1.5 trilhão de parâmetros',
+    developer: 'xAI (Grok)',
+    category: 'Lançamento',
+    description: 'A xAI anunciou a conclusão do treinamento do seu modelo Grok V9-Medium, que apresenta 1.5 trilhão de parâmetros, um aumento significativo em relação à versão anterior, com lançamento público previsto para meados de junho de 2026.',
+    highlights: [
+      'Grok V9-Medium possui 1.5 trilhão de parâmetros, três vezes o tamanho do modelo v8-small de produção atual de 500 bilhões de parâmetros.',
+      'O treinamento do modelo, incluindo fine-tuning supervisionado e aprendizado por reforço, foi concluído no final de maio.',
+      'Melhorias esperadas incluem raciocínio mais aguçado, melhor saída de código e respostas mais confiáveis para consultas complexas.',
+      'O lançamento público está previsto para meados de junho de 2026.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'xai-grok-voice-think-fast-1-0-2026',
+    date: '2026-06',
+    title: 'xAI lança Grok Voice Think Fast 1.0, seu agente de voz mais capaz via API',
+    developer: 'xAI (Grok)',
+    category: 'Lançamento',
+    description: 'A xAI disponibilizou o Grok Voice Think Fast 1.0, seu mais capaz agente de voz, através de sua API, prometendo interações de voz avançadas e em tempo real para desenvolvedores.',
+    highlights: [
+      'Lançamento do Grok Voice Think Fast 1.0 como o agente de voz mais avançado da xAI.',
+      'Disponibilidade do modelo via API para desenvolvedores.',
+      'Foco em capacidades de voz para agentes inteligentes.'
+    ],
+    impact: 'Médio'
+  },
+  {
+    id: 'google-deepmind-gemma-4-12b-2026',
+    date: '2026-06',
+    title: 'Google DeepMind lança Gemma 4 12B, um modelo multimodal unificado e encoder-free',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'A Google DeepMind introduziu o Gemma 4 12B em junho de 2026, um novo modelo multimodal unificado e encoder-free que expande as capacidades da família Gemma para diversas aplicações de IA.',
+    highlights: [
+      'Gemma 4 12B é um modelo multimodal unificado e encoder-free.',
+      'Faz parte da família Gemma 4, oferecendo inteligência avançada por parâmetro.',
+      'Projetado para criação de aplicações de IA que funcionam desde servidores em nuvem até laptops e smartphones.'
+    ],
+    impact: 'Alto'
+  },
+  {
     id: 'openai-codex-expansao-acesso-2026',
     date: '2026-06',
     title: 'OpenAI expande capacidades e acesso do Codex para diversas funções e AWS',

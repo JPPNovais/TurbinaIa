@@ -90,7 +90,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 1.74,
     outputPricePerM: 3.48,
     contextWindow: '1M tokens',
-    description: 'Modelo avançado da DeepSeek para raciocínio complexo (lançado em Abril de 2026), com 1M de contexto. Preço atual após promoção que terminou em 31 de maio de 2026.',
+    description: 'Modelo avançado da DeepSeek para raciocínio complexo (lançado em Abril de 2026), com 1M de contexto.',
   },
   // Meta (via API)
   {
@@ -111,20 +111,20 @@ export const AI_MODELS: CalculatorModel[] = [
   },
   // Mistral AI
   {
-    name: 'Mistral Large 3',
+    name: 'Mistral Large',
     provider: 'Mistral AI',
-    inputPricePerM: 0.50,
-    outputPricePerM: 1.50,
-    contextWindow: '262K tokens',
-    description: 'Modelo flagship mais recente da Mistral AI (Mistral Large 3), com raciocínio e capacidades multimodais, suportando 262K de contexto (preços verificados em Junho de 2026).',
+    inputPricePerM: 2.00,
+    outputPricePerM: 6.00,
+    contextWindow: '32K tokens',
+    description: 'Modelo flagship da Mistral AI (Mistral Large), com raciocínio e capacidades multimodais, suportando 32K de contexto (preços verificados em Junho de 2026).',
   },
   {
-    name: 'Mistral Small 4',
+    name: 'Mistral Small',
     provider: 'Mistral AI',
     inputPricePerM: 0.15,
     outputPricePerM: 0.60,
-    contextWindow: '262K tokens',
-    description: 'Um modelo econômico da Mistral AI (preços verificados em Junho de 2026), ideal para projetos sensíveis ao custo, com 262K de contexto.',
+    contextWindow: '32K tokens',
+    description: 'Um modelo econômico da Mistral AI (Mistral Small), ideal para projetos sensíveis ao custo, com 32K de contexto (preços verificados em Junho de 2026).',
   },
   // Cohere
   {

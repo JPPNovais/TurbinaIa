@@ -4038,4 +4038,89 @@ Com base nessas informações, forneça:
 4. Sugestões de indicadores-chave de risco (KRIs) para monitorar a evolução desses riscos.`,
     tags: ['Riscos', 'Estratégia', 'Negócios', 'Análise', 'IA'],
   },
+  {
+    id: 'negocios-resiliencia-cadeia-suprimentos-ia',
+    title: 'Análise de Resiliência da Cadeia de Suprimentos com IA',
+    category: 'Negócios',
+    description: 'Avalia a resiliência da sua cadeia de suprimentos contra interrupções e propõe estratégias de mitigação e diversificação.',
+    template: `Você é um especialista em gestão de riscos e cadeia de suprimentos com IA. Minha empresa atua no setor de [Setor da empresa] e nossos principais produtos/serviços são [Produtos/Serviços chave]. Identifique as vulnerabilidades e proponha estratégias para aumentar a resiliência da nossa cadeia de suprimentos, considerando as seguintes informações:
+
+1.  **Principais Fornecedores:** [Principais fornecedores (nome, origem geográfica, criticidade para o negócio)].
+2.  **Eventos de Risco Potenciais:** [Eventos de risco recentes ou potenciais (ex: desastres naturais, conflitos, crises econômicas, pandemias, interrupções tecnológicas)].
+3.  **Objetivos de Resiliência:** [Objetivos de resiliência (ex: reduzir dependência de um único fornecedor em X%, garantir entrega em no máximo Y dias após interrupção, diversificar fornecedores em Z regiões)].
+4.  **Regulamentações Relevantes (opcional):** [Regulamentações relevantes (ex: leis de importação/exportação, normas de sustentabilidade)].
+
+Com base nestes dados, forneça:
+-   Uma análise das **principais vulnerabilidades** da nossa cadeia de suprimentos.
+-   **3 a 5 estratégias de mitigação e diversificação** detalhadas, com exemplos práticos de como implementá-las.
+-   Recomendações para **monitoramento contínuo de riscos** utilizando ferramentas de IA.
+-   Sugestões de **KPIs de resiliência** para acompanhar o progresso.`,
+    tags: ['Gestão de Riscos', 'Cadeia de Suprimentos', 'Estratégia', 'IA']
+  },
+  {
+    id: 'dev-arquitetura-sustentavel-ia',
+    title: 'Design de Arquitetura de Software Sustentável com IA',
+    category: 'Desenvolvimento',
+    description: 'Projeta uma arquitetura de software que otimiza o consumo de recursos e minimiza a pegada de carbono, considerando requisitos funcionais e não-funcionais.',
+    template: `Você é um arquiteto de software especializado em sustentabilidade e otimização de recursos. Preciso de ajuda para projetar uma arquitetura para o projeto "[Nome do projeto]".
+
+Considere os seguintes requisitos e objetivos:
+1.  **Objetivo Principal do Software:** [Objetivo principal do software].
+2.  **Principais Funcionalidades:** [Principais funcionalidades].
+3.  **Tecnologias Atuais ou Preferenciais:** [Tecnologias atuais ou preferenciais (ex: Python, Node.js, React, AWS Lambda, Docker, Kubernetes)].
+4.  **Volume Esperado:** [Volume esperado de usuários/dados (ex: 10k usuários diários, 1TB de dados mensais)].
+5.  **Requisitos de Performance:** [Requisitos de performance (ex: latência máxima de 200ms, disponibilidade 99.9%)].
+6.  **Limitações (opcional):** [Limitações de orçamento/infraestrutura, equipe (opcional)].
+7.  **Metas de Sustentabilidade:** [Metas de sustentabilidade (ex: reduzir consumo de energia em X%, usar provedores de energia renovável, minimizar transferência de dados)].
+
+Com base nestes dados, proponha:
+-   Uma **arquitetura de software de alto nível** que priorize a eficiência energética e a minimização da pegada de carbono, com justificativa para as escolhas (ex: serverless, edge computing, linguagens de baixo nível).
+-   **Recomendações para otimização de código e infraestrutura** visando a sustentabilidade.
+-   Sugestões de **ferramentas e métricas** para monitorar o consumo de recursos e o impacto ambiental.
+-   Considerações sobre a **seleção de provedores de nuvem** ou data centers com foco em Green IT.`,
+    tags: ['Green IT', 'Arquitetura', 'Sustentabilidade', 'Otimização']
+  },
+  {
+    id: 'produtividade-agente-sintese-conhecimento-ia',
+    title: 'Agente de Síntese de Conhecimento Pessoal',
+    category: 'Produtividade',
+    description: 'Um agente de IA que conecta e sintetiza informações de suas notas, artigos e pensamentos para gerar novas ideias, insights ou resolver problemas específicos.',
+    template: `Você é um agente de IA especialista em síntese e conexão de informações. Seu objetivo é me ajudar a extrair o máximo valor do meu conhecimento acumulado, transformando dados brutos em insights acionáveis ou novas perspectivas.
+
+Aqui estão os parâmetros para a síntese:
+1.  **Tópicos/Ideias Centrais:** [Tópicos ou ideias centrais a serem sintetizadas (ex: o futuro do trabalho híbrido, estratégias de marketing de conteúdo para startups, como otimizar o aprendizado de novas habilidades)].
+2.  **Base de Conhecimento:** [Lista de URLs, trechos de texto, resumos de documentos ou anotações pessoais que servem como base de conhecimento]. Por exemplo:
+    -   "URL: https://exemplo.com/artigo-sobre-futuro-trabalho"
+    -   "Trecho: 'A flexibilidade é chave, mas a conexão humana é insubstituível no modelo híbrido.'"
+    -   "Minha anotação: 'Sempre me pergunto como manter a cultura de equipe online.'"
+3.  **Formato da Saída Desejada:** [Formato da saída desejada (ex: lista de insights numerada, mapa mental conceitual, rascunho de artigo/ensaio, solução detalhada para um problema, novas perguntas a serem exploradas)].
+4.  **Objetivo da Síntese:** [Objetivo da síntese (ex: encontrar conexões inesperadas entre os tópicos, identificar lacunas no meu entendimento, gerar novas hipóteses, criar uma estrutura para um novo projeto, resolver um problema específico relacionado aos tópicos)].
+5.  **Perguntas Específicas (opcional):** [Perguntas específicas a serem respondidas pela síntese (opcional)].
+
+Com base no material fornecido e nos objetivos, por favor, realize a síntese e apresente o resultado no formato solicitado.`,
+    tags: ['Agente IA', 'Conhecimento', 'Inovação', 'Síntese']
+  },
+  {
+    id: 'marketing-conteudo-interativo-multimodal',
+    title: 'Estratégia de Conteúdo Interativo Multimodal',
+    category: 'Marketing',
+    description: 'Desenvolve uma estratégia de conteúdo que combina diferentes formatos (texto, imagem, vídeo, áudio) com elementos interativos para maximizar o engajamento do público.',
+    template: `Você é um estrategista de marketing de conteúdo inovador, especializado em experiências multimodais e interativas. Preciso de uma estratégia para um novo tipo de conteúdo que maximize o engajamento.
+
+Considere os seguintes detalhes da campanha:
+1.  **Produto/Serviço:** [Produto/Serviço a ser promovido].
+2.  **Público-Alvo:** [Público-alvo (demografia, interesses, dores, onde se informam online)].
+3.  **Objetivo da Campanha:** [Objetivo da campanha (ex: geração de leads, reconhecimento de marca, aumento de tráfego, conversão de vendas)].
+4.  **Canais de Distribuição Preferenciais:** [Canais de distribuição preferenciais (ex: Instagram Stories/Reels, TikTok, Blog, Email Marketing, YouTube, Landing Page interativa)].
+5.  **Tipo de Interação Desejada:** [Tipo de interação desejada (ex: quizzes personalizados, enquetes dinâmicas, simuladores de resultados, histórias interativas com escolhas, jogos curtos, chatbots de conteúdo)].
+6.  **Mensagem Central/Tema:** [Mensagem central/tema da campanha].
+7.  **Exemplos de Referência (opcional):** [Exemplos de conteúdos de sucesso que você admira e por que (opcional)].
+
+Com base nestes dados, forneça:
+-   **3 a 5 ideias de formatos de conteúdo interativo multimodal** específicos para os canais e público-alvo, descrevendo como cada modalidade (texto, imagem, vídeo, áudio) se integra e como a interação ocorre.
+-   Um **fluxo de usuário** simplificado para cada ideia, mostrando como o público interage do início ao fim.
+-   Sugestões de **CTAs (Chamadas para Ação)** e como medir o engajamento e o sucesso da campanha.
+-   Recomendações de **ferramentas ou tecnologias** para criar este tipo de conteúdo.`,
+    tags: ['Conteúdo Multimodal', 'Interação', 'Engajamento', 'Marketing Digital']
+  },
 ];

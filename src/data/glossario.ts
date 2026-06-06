@@ -1437,4 +1437,44 @@ export const GLOSSARIO: GlossarioTerm[] = [
     example: 'No treinamento de um Large Language Model, o Aprendizado por Preferência é usado para ensinar o modelo a gerar respostas mais úteis, inofensivas e honestas, coletando classificações de usuários sobre a qualidade de diferentes saídas do modelo.',
     relatedTerms: ['RLHF (Reinforcement Learning from Human Feedback)', 'Alinhamento de IA', 'Aprendizado por Reforço'],
   },
+  {
+    id: 'agentes-ia-raciocinio',
+    term: 'Agentes de IA de Raciocínio',
+    category: 'Aplicações',
+    definition: 'Agentes de Inteligência Artificial que possuem capacidades avançadas de raciocínio, permitindo-lhes planejar, ponderar opções, tomar decisões informadas e se auto-corrigir ao longo de tarefas complexas. Eles utilizam métodos como a "cadeia de pensamento" para resolver problemas em múltiplas etapas, simulando um processo de pensamento mais humano.',
+    example: 'Um agente de IA de raciocínio no setor de saúde que analisa o histórico médico de um paciente, resultados de exames e a literatura científica para sugerir um plano de tratamento personalizado, justificando cada etapa da sua recomendação.',
+    relatedTerms: ['Agente de IA', 'Mecanismo de Raciocínio', 'Chain of Thought (Cadeia de Pensamento)', 'Agente Autônomo', 'Auto-Refinamento']
+  },
+  {
+    id: 'ai-trism',
+    term: 'AI TRiSM (Trust, Risk, and Security Management)',
+    category: 'Segurança & Ética',
+    definition: 'Um framework abrangente para gerenciar confiança, risco, segurança e ética em sistemas de Inteligência Artificial. Ele visa garantir que a IA seja desenvolvida e utilizada de forma responsável, identificando e mitigando vieses, protegendo a privacidade dos dados e estabelecendo diretrizes para a governança e conformidade regulatória dos modelos de IA.',
+    example: 'Uma empresa implementa o AI TRiSM para auditar seus modelos de IA generativa, assegurando que não produzam conteúdo tendencioso, protegendo dados sensíveis de clientes e cumprindo as novas regulamentações de privacidade de IA.',
+    relatedTerms: ['IA Responsável', 'Viés (Bias) em IA', 'Alinhamento de IA', 'Governança de IA', 'Auditoria de Modelos de IA', 'Quadro de Segurança de IA']
+  },
+  {
+    id: 'modelos-fronteira',
+    term: 'Modelos de Fronteira',
+    category: 'Modelos & Arquitetura',
+    definition: 'Refere-se aos modelos de Inteligência Artificial mais avançados e capazes disponíveis, que demonstram alto desempenho e versatilidade em uma ampla gama de tarefas, muitas vezes superando o estado da arte em múltiplas modalidades. Eles são tipicamente grandes em escala e podem ter capacidades de raciocínio e multimodalidade complexas.',
+    example: 'O lançamento de um novo "modelo de fronteira" que não apenas gera texto de alta qualidade, mas também compreende e cria imagens e áudio de forma coerente, abrindo novas possibilidades para aplicações generativas.',
+    relatedTerms: ['LLM (Large Language Model)', 'Modelo Base', 'Multimodal', 'IA Generativa']
+  },
+  {
+    id: 'infraestrutura-ia-generativa',
+    term: 'Infraestrutura de IA Generativa',
+    category: 'Ferramentas & APIs',
+    definition: 'O conjunto especializado de hardware (como GPUs de alto desempenho), software (como plataformas de MLOps) e redes otimizadas necessárias para treinar, implantar e gerenciar eficientemente modelos de IA generativa em larga escala. Essa infraestrutura é projetada para lidar com os volumes massivos de dados e as complexas demandas computacionais desses modelos.',
+    example: 'Desenvolvedores utilizando uma infraestrutura de IA generativa baseada em nuvem para ajustar um LLM pré-treinado com seus próprios dados e implantá-lo em produção com escalabilidade automática, garantindo baixa latência para inferência.',
+    relatedTerms: ['MLOps (Machine Learning Operations)', 'API de IA', 'Serviço de Modelo', 'Otimização de Inferência']
+  },
+  {
+    id: 'automacao-inteligente',
+    term: 'Automação Inteligente',
+    category: 'Aplicações',
+    definition: 'A evolução da automação tradicional que integra a Inteligência Artificial para permitir que sistemas não apenas executem tarefas repetitivas baseadas em regras, mas também compreendam contextos, tomem decisões autônomas, otimizem fluxos de trabalho complexos e se adaptem a mudanças. Vai além da automação robótica de processos (RPA) ao incorporar capacidades cognitivas.',
+    example: 'Um sistema de automação inteligente que gerencia o inventário de uma loja, prevendo demandas futuras com base em padrões de vendas, negociando automaticamente com fornecedores e otimizando os pedidos, adaptando-se a flutuações do mercado.',
+    relatedTerms: ['Agente de IA', 'Agente Autônomo', 'Orquestração de Fluxo de Trabalho de IA']
+  },
 ];

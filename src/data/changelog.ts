@@ -13,6 +13,76 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-gpt-5-4-amazon-bedrock-2026',
+    date: '2026-06',
+    title: 'OpenAI disponibiliza GPT-5.4 no Amazon Bedrock',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'A OpenAI disponibilizou seu modelo GPT-5.4 no Amazon Bedrock, oferecendo aos clientes AWS acesso a capacidades de ponta para aplicações empresariais.',
+    highlights: [
+      'GPT-5.4, um modelo de IA de fronteira, agora está disponível no Amazon Bedrock.',
+      'A integração permite que clientes AWS utilizem o GPT-5.4 com a segurança e governança existentes da plataforma.',
+      'Junto com o GPT-5.5, oferece desempenho de alto nível e eficiência de custo para diversas cargas de trabalho.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'openai-codex-amazon-bedrock-2026',
+    date: '2026-06',
+    title: 'OpenAI lança Codex no Amazon Bedrock para desenvolvimento de software empresarial',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'A OpenAI disponibilizou seu agente de codificação Codex no Amazon Bedrock, otimizado para o desenvolvimento de software empresarial e fluxos de trabalho complexos.',
+    highlights: [
+      'Codex, o agente de codificação da OpenAI, está agora disponível no Amazon Bedrock.',
+      'Suporta desenvolvimento, refatoração, depuração, teste e validação de código em grandes bases de código.',
+      'A inferência do modelo é roteada através do Amazon Bedrock, garantindo segurança e conformidade.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'openai-gpt-rosalind-ciencias-vida-2026',
+    date: '2026-06',
+    title: 'OpenAI aprimora GPT-Rosalind com novas capacidades para pesquisa em ciências da vida',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'A OpenAI lançou uma atualização significativa para sua série GPT-Rosalind, otimizando-a para pesquisa em ciências da vida com capacidades aprimoradas em química medicinal, genômica e fluxos de trabalho experimentais.',
+    highlights: [
+      'O modelo atualizado combina as capacidades de codificação e uso de ferramentas do GPT-5.5 com inteligência aprimorada para descoberta de medicamentos e genômica.',
+      'Apresenta ganhos de desempenho em tarefas de pesquisa de especialistas em biologia e consultas complexas de química medicinal.',
+      'Disponível em pré-visualização de pesquisa para organizações qualificadas globalmente.'
+    ],
+    impact: 'Médio'
+  },
+  {
+    id: 'xai-grok-build-0-1-coding-2026',
+    date: '2026-06',
+    title: 'xAI lança Grok Build 0.1 Coding Model em beta, seu primeiro modelo dedicado à codificação',
+    developer: 'xAI (Grok)',
+    category: 'Lançamento',
+    description: 'A xAI lançou o Grok Build 0.1, seu primeiro modelo de IA dedicado à codificação, disponível em beta através da API xAI e projetado para tarefas de codificação agentic.',
+    highlights: [
+      'Treinado especificamente para tarefas de codificação agentic, incluindo desenvolvimento web, depuração e suporte a Model Context Protocol (MCP).',
+      'Gera mais de 100 tokens por segundo, com precificação agressiva para desenvolvedores.',
+      'Disponível via API xAI e alimenta a interface de linha de comando Grok Build.'
+    ],
+    impact: 'Médio'
+  },
+  {
+    id: 'google-deepmind-gemma-4-qat-2026',
+    date: '2026-06',
+    title: 'Google DeepMind lança Gemma 4 QAT para otimização de modelos em dispositivos móveis e laptops',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'A Google DeepMind introduziu o Gemma 4 QAT (Quantization Aware Training), uma otimização de modelo para a família Gemma 4, focada em melhorar a eficiência em dispositivos móveis e laptops.',
+    highlights: [
+      'Projetado para compressão de modelos, aumentando a eficiência para execução em hardware com recursos limitados.',
+      'Visa melhorar o desempenho da família Gemma 4 em dispositivos de ponta, como laptops e smartphones.',
+      'Contribui para a tendência de levar a inteligência artificial para mais perto do usuário final, com processamento local.'
+    ],
+    impact: 'Médio'
+  },
+  {
     id: 'xai-grok-v9-medium-2026',
     date: '2026-06',
     title: 'xAI conclui treinamento do Grok V9-Medium com 1.5 trilhão de parâmetros',

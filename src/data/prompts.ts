@@ -4123,4 +4123,106 @@ Com base nestes dados, forneça:
 -   Recomendações de **ferramentas ou tecnologias** para criar este tipo de conteúdo.`,
     tags: ['Conteúdo Multimodal', 'Interação', 'Engajamento', 'Marketing Digital']
   },
+  {
+    id: 'ia-otimizacao-processos-agente',
+    title: 'Agente IA para Otimização de Processos de Negócio',
+    category: 'IA & Automação',
+    description: 'Projete um agente de IA para analisar e otimizar um processo de negócio específico, identificando gargalos e sugerindo melhorias com base em dados.',
+    template: `Como um especialista em IA e otimização de processos, crie o design de um agente de IA focado em otimizar o seguinte processo de negócio:
+
+**1. Nome do Processo:** [Nome do processo a ser otimizado, ex: "Processo de Onboarding de Clientes", "Gestão de Estoque"]
+**2. Objetivo Principal da Otimização:** [Qual o objetivo principal? Ex: Reduzir tempo, diminuir custos, aumentar satisfação, minimizar erros]
+**3. Etapas Atuais do Processo (breve descrição):**
+    - [Etapa 1]
+    - [Etapa 2]
+    - [Etapa 3]
+    - ...
+**4. Métricas de Desempenho Atuais (se aplicável):** [Ex: Tempo médio de ciclo, taxa de erro, custo por unidade]
+**5. Dados Disponíveis para o Agente:** [Que tipo de dados o agente terá acesso? Ex: Registros de transações, logs de sistema, dados de CRM, feedback de clientes]
+**6. Restrições ou Requisitos Específicos:** [Ex: Conformidade regulatória, integração com sistemas legados, orçamento máximo para implementação]
+
+Com base nessas informações, o agente de IA deve:
+*   Analisar as etapas e dados fornecidos para identificar gargalos e ineficiências.
+*   Propor pelo menos 3 (três) melhorias acionáveis e inovadoras.
+*   Detalhar como a IA seria utilizada em cada sugestão (ex: Machine Learning para previsão, Processamento de Linguagem Natural para análise de feedback).
+*   Estimar o impacto potencial das melhorias nas métricas definidas.
+*   Sugerir indicadores-chave de desempenho (KPIs) para monitorar o sucesso da otimização.`,
+    tags: ['automação', 'eficiência', 'processos', 'agente-ia'],
+  },
+  {
+    id: 'education-design-jogo-ia',
+    title: 'Design de Jogo Educacional Interativo com IA',
+    category: 'Educação',
+    description: 'Crie um conceito detalhado para um jogo educacional interativo impulsionado por IA, que personalize a aprendizagem e engaje os alunos em um tópico específico.',
+    template: `Como um game designer educacional e especialista em IA, desenvolva um conceito para um jogo educacional interativo com os seguintes parâmetros:
+
+**1. Tópico Educacional:** [Assunto específico a ser ensinado, ex: "Princípios da Física Quântica", "História do Brasil Império", "Programação em Python para iniciantes"]
+**2. Público-Alvo:** [Idade e nível de conhecimento dos alunos, ex: "Ensino Médio, 15-17 anos, sem conhecimento prévio", "Profissionais de marketing júnior, 22-30 anos"]
+**3. Objetivos de Aprendizagem:** [O que o aluno deve ser capaz de fazer/saber após jogar, ex: "Compreender os conceitos de entrelaçamento quântico", "Analisar as causas e consequências da Proclamação da República"]
+**4. Tipo de Jogo Preferido:** [Ex: Quiz interativo, simulação, aventura baseada em narrativa, estratégia, RPG]
+**5. Mecânicas de Personalização com IA:** [Como a IA pode adaptar a experiência? Ex: Dificuldade adaptativa, feedback personalizado, caminhos de aprendizagem ramificados, geração de desafios dinâmicos]
+**6. Elementos Visuais e Sonoros Chave:** [Qual a estética e o tom? Ex: Futurista e minimalista, histórico e imersivo, lúdico e cartoon]
+**7. Plataformas de Distribuição:** [Onde o jogo seria acessível? Ex: Web, Mobile (iOS/Android), Desktop]
+
+O conceito deve incluir:
+*   **Nome Proposto para o Jogo:**
+*   **Enredo/Contexto (se aplicável):**
+*   **Mecânicas de Gameplay Principais:** Descreva como o jogador interage.
+*   **Como a IA será integrada para personalização e engajamento:** Detalhe exemplos.
+*   **Tipos de Desafios ou Atividades:**
+*   **Sistema de Recompensas e Feedback:**
+*   **Sugestões para Conteúdo Multimodal:** (Ex: Textos explicativos, animações, áudios, mini-vídeos)`,
+    tags: ['aprendizagem gamificada', 'interativo', 'design instrucional', 'personalização'],
+  },
+  {
+    id: 'finance-viabilidade-startup-ia',
+    title: 'Análise de Viabilidade de Startup com IA',
+    category: 'Finanças',
+    description: 'Realize uma análise detalhada de viabilidade financeira e de mercado para uma nova startup, utilizando IA para projetar cenários, identificar riscos e oportunidades.',
+    template: `Como um analista financeiro e de mercado com IA, prepare uma análise de viabilidade para a seguinte ideia de negócio:
+
+**1. Nome da Startup (proposto):** [Nome da sua ideia de negócio]
+**2. Descrição Breve da Solução/Produto/Serviço:** [O que sua startup faz?]
+**3. Problema que Resolve:** [Qual problema de mercado sua startup resolve?]
+**4. Mercado-Alvo:** [Quem são seus clientes? Qual o tamanho aproximado do mercado?]
+**5. Modelo de Negócio (como gera receita):** [Ex: Assinatura, venda direta, freemium, SaaS, comissão]
+**6. Investimento Inicial Estimado:** [Valor em BRL para iniciar e operar nos primeiros 6-12 meses]
+**7. Projeção de Receita (primeiro ano, otimista/realista/pessimista):** [Valores estimados em BRL ou unidades]
+**8. Principais Concorrentes (se houver):** [Liste 1-3 concorrentes e o que os diferencia]
+**9. Vantagem Competitiva Principal:** [O que torna sua startup única ou melhor?]
+**10. Cenários de Risco a Considerar:** [Ex: Queda da economia, nova concorrência, problemas de regulamentação, dificuldade de aquisição de clientes]
+
+A análise deve incluir:
+*   **Sumário Executivo:** Breve conclusão sobre a viabilidade.
+*   **Análise de Mercado:** Tamanho, tendências, segmentação e posicionamento.
+*   **Projeções Financeiras (3 anos):** Receitas, custos, lucratividade, ponto de equilíbrio. (Apresentar em um formato claro, idealmente com cenários otimista, realista, pessimista).
+*   **Análise de Riscos e Mitigação:** Identificação dos principais riscos e como a IA pode ajudar a prever/mitigar.
+*   **Oportunidades de Crescimento:** Sugestões de expansão ou monetização adicionais.
+*   **Métricas Chave de Sucesso (KPIs):** Quais métricas acompanhar.
+*   **Recomendação Final:** Vale a pena seguir em frente? Quais os próximos passos críticos?`,
+    tags: ['empreendedorismo', 'planejamento financeiro', 'análise de mercado', 'startup'],
+  },
+  {
+    id: 'dev-agente-seguranca-codigo',
+    title: 'Agente IA para Revisão de Segurança de Código',
+    category: 'Desenvolvimento',
+    description: 'Projete um agente de IA especializado em automatizar a revisão de segurança de código, identificando vulnerabilidades e sugerindo correções em um idioma específico.',
+    template: `Como um arquiteto de segurança de software e designer de agentes de IA, crie um design detalhado para um agente de IA especializado em revisão de segurança de código.
+
+**1. Linguagem de Programação Foco:** [Ex: Python, Java, JavaScript, C#, Go, PHP]
+**2. Tipos de Vulnerabilidades Prioritárias:** [Ex: Injeção de SQL, Cross-Site Scripting (XSS), Autenticação Quebrada, Deserialização Insegura, Vazamento de Dados Sensíveis, Misconfigurations de Segurança]
+**3. Contexto da Aplicação:** [Ex: Aplicação Web, API REST, Microserviço, Mobile App, Script de Automação]
+**4. Ferramentas e Frameworks Comuns no Ecossistema:** [Ex: Django, Spring Boot, Node.js/Express, .NET Core, AWS Lambda]
+**5. Formato Desejado da Saída:** [Ex: Relatório detalhado com localização do código, sugestões de correção e nível de criticidade; Pull Request com as correções sugeridas; Resumo para dashboard]
+**6. Nível de Automação Esperado:** [Ex: Apenas detecção e sugestão; Detecção, sugestão e geração de correções com aprovação humana; Autocorreção para vulnerabilidades de baixo risco]
+
+O design do agente deve incluir:
+*   **Nome Proposto para o Agente:**
+*   **Arquitetura do Agente:** Quais módulos ou componentes ele teria (ex: módulo de parsing AST, módulo de análise estática, módulo de análise de fluxo de dados, módulo de geração de patch/sugestão).
+*   **Técnicas de IA Empregadas:** Como a IA será usada (ex: Machine Learning para reconhecimento de padrões de vulnerabilidade, NLP para analisar comentários, Heurísticas baseadas em regras de segurança).
+*   **Fontes de Conhecimento:** Quais bases de dados de segurança (ex: OWASP Top 10, CVEs, padrões específicos) o agente usaria.
+*   **Fluxo de Trabalho de Interação:** Como o agente se integraria ao processo de desenvolvimento (ex: CI/CD, IDE).
+*   **Limitações e Desafios:** Quais seriam as principais dificuldades ou restrições do agente.`,
+    tags: ['segurança', 'code-review', 'vulnerabilidades', 'agente-ia'],
+  },
 ];

@@ -27,12 +27,12 @@ export const AI_MODELS: CalculatorModel[] = [
   },
   // OpenAI
   {
-    name: 'GPT-5',
+    name: 'GPT-5.5',
     provider: 'OpenAI',
-    inputPricePerM: 1.25,
-    outputPricePerM: 10.00,
-    contextWindow: '128K tokens',
-    description: 'O mais recente modelo flagship da OpenAI (lançado em Abril de 2026), uma nova classe de inteligência com raciocínio avançado, capacidades multimodais e 128K de contexto.',
+    inputPricePerM: 5.00,
+    outputPricePerM: 30.00,
+    contextWindow: '1M tokens',
+    description: 'O mais recente modelo flagship da OpenAI (lançado em Abril de 2026), uma nova classe de inteligência com raciocínio avançado, capacidades multimodais e 1M de contexto.',
   },
   {
     name: 'GPT-4.1',
@@ -85,29 +85,29 @@ export const AI_MODELS: CalculatorModel[] = [
   },
   // DeepSeek
   {
-    name: 'DeepSeek-V2',
+    name: 'DeepSeek-V4 Flash',
     provider: 'DeepSeek',
     inputPricePerM: 0.14,
     outputPricePerM: 0.28,
-    contextWindow: '128K tokens',
-    description: 'Modelo MoE eficiente e econômico da DeepSeek (lançado em Maio de 2024), com 128K de contexto, oferecendo bom desempenho a baixo custo.',
+    contextWindow: '1M tokens',
+    description: 'Modelo MoE eficiente e econômico da DeepSeek (lançado em Maio de 2026), com 1M de contexto, oferecendo bom desempenho a baixo custo.',
   },
   // Meta (via API)
   {
-    name: 'Llama 3 70B Instruct (via Together AI)',
+    name: 'Llama 3.3 70B Instruct Turbo (via Together AI)',
     provider: 'Meta (via API)',
     inputPricePerM: 0.88,
     outputPricePerM: 0.88,
-    contextWindow: '8K tokens',
-    description: 'Versão avançada do modelo open-source Llama 3 (Llama 3 70B Instruct), poderoso via API Together AI (preços verificados em Junho de 2026), com 8K de contexto.',
+    contextWindow: '131K tokens',
+    description: 'Versão avançada do modelo open-source Llama 3 (Llama 3.3 70B Instruct Turbo), poderoso via API Together AI (preços verificados em Junho de 2026), com 131K de contexto.',
   },
   {
-    name: 'Llama 3 8B Instruct (via Together AI)',
+    name: 'Llama 3.1 8B Instruct Turbo (via Together AI)',
     provider: 'Meta (via API)',
-    inputPricePerM: 0.04,
-    outputPricePerM: 0.04,
-    contextWindow: '8K tokens',
-    description: 'Versão leve e econômica da família Llama 3 Instruct via API Together AI (preços verificados em Junho de 2026), com 8K de contexto.',
+    inputPricePerM: 0.18,
+    outputPricePerM: 0.18,
+    contextWindow: '16K tokens',
+    description: 'Versão leve e econômica da família Llama 3 Instruct via API Together AI (preços verificados em Junho de 2026), com 16K de contexto.',
   },
   // Mistral AI
   {
@@ -122,9 +122,9 @@ export const AI_MODELS: CalculatorModel[] = [
     name: 'Mistral Small 4',
     provider: 'Mistral AI',
     inputPricePerM: 0.15,
-    outputPricePerM: 0.30,
-    contextWindow: '256K tokens',
-    description: 'Um modelo econômico da Mistral AI (Mistral Small 4), ideal para projetos sensíveis ao custo, com 256K de contexto (preços verificados em Junho de 2026).',
+    outputPricePerM: 0.60,
+    contextWindow: '128K tokens',
+    description: 'Um modelo econômico da Mistral AI (Mistral Small 4), ideal para projetos sensíveis ao custo, com 128K de contexto (preços verificados em Junho de 2026).',
   },
   // Cohere
   {

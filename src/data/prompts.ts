@@ -4379,4 +4379,126 @@ Gere os seguintes itens de forma clara e organizada:
     *   Questões que foram levantadas mas não respondidas na reunião.`,
     tags: ['Produtividade', 'Gestão de Projetos', 'Reuniões', 'Plano de Ação', 'Automação']
   },
+  {
+    id: 'ia-design-agente-problemas-complexos',
+    title: 'Design de Agente IA para Resolução de Problemas Complexos',
+    category: 'IA & Automação',
+    description: 'Gera um blueprint para um agente IA (ou sistema multi-agente) focado na resolução de um problema específico e multifacetado.',
+    template: `Você é um arquiteto de agentes IA. Meu objetivo é projetar um agente (ou sistema multi-agente) para resolver o seguinte problema complexo: [Problema a ser resolvido].
+
+O objetivo final da intervenção deste agente é: [Objetivo final].
+
+O agente deve ter acesso ao seguinte conhecimento prévio ou fontes de informação: [Conhecimento prévio disponível para o agente].
+
+Ele pode utilizar ou integrar-se com os seguintes tipos de ferramentas e/ou ter acesso a dados: [Tipos de ferramentas ou acesso a dados que o agente pode ter (ex: APIs, bancos de dados, internet, ferramentas de software específicas)].
+
+Os critérios para medir o sucesso da atuação do agente são: [Critérios de sucesso].
+
+Considere as seguintes restrições ou limitações no design e operação do agente: [Restrições/Limitações (ex: custo computacional, tempo de resposta, ética)].
+
+Se for um sistema multi-agente, descreva os papéis adicionais e como eles interagem: [Papéis adicionais se for um sistema multi-agente (opcional, ex: Agente de Pesquisa, Agente de Análise, Agente de Tomada de Decisão)].
+
+Com base nessas informações, forneça:
+1.  Uma descrição detalhada do agente (ou dos agentes e suas interações).
+2.  O fluxo de trabalho lógico para a resolução do problema.
+3.  As principais funcionalidades e módulos necessários.
+4.  Sugestões de tecnologias ou abordagens de IA a serem consideradas.
+5.  Potenciais desafios e como superá-los.`,
+    tags: ['IA', 'Agente', 'Design', 'Problemas Complexos'],
+  },
+  {
+    id: 'negocios-estrategia-resiliencia-ia',
+    title: 'Estratégia de Resiliência de Negócios Otimizada por IA',
+    category: 'Negócios',
+    description: 'Avalia a resiliência de um negócio contra choques externos e internos, gerando planos de mitigação e adaptação com base em cenários simulados por IA.',
+    template: `Você é um consultor de estratégia e resiliência de negócios. Preciso de ajuda para avaliar e fortalecer a resiliência do meu negócio.
+
+Detalhes do meu negócio/setor: [Descrição do Negócio/Setor].
+
+As principais vulnerabilidades que conheço ou suspeito são: [Principais Vulnerabilidades Conhecidas (ex: dependência de um único fornecedor, mercado volátil, alta rotatividade de funcionários)].
+
+Gostaria que você simulasse e me ajudasse a planejar para os seguintes cenários de risco específicos: [Cenários de Risco Específicos a Simular (ex: crise econômica severa, disrupção tecnológica inesperada, eventos climáticos extremos, mudança regulatória drástica)].
+
+Os ativos críticos do meu negócio incluem: [Ativos Críticos (financeiros, humanos, tecnológicos, reputacionais, etc.)].
+
+Meus objetivos de longo prazo para o negócio são: [Objetivos de Longo Prazo do Negócio].
+
+Atualmente, os recursos disponíveis para resposta a crises são: [Recursos Disponíveis para Resposta a Crises (ex: fundo de emergência, equipe de crise, parcerias estratégicas)].
+
+Com base nisso, forneça:
+1.  Uma análise da resiliência atual do negócio para cada cenário.
+2.  Um plano de mitigação detalhado para cada cenário de risco, incluindo ações proativas e reativas.
+3.  Sugestões de adaptações estratégicas e operacionais para aumentar a resiliência geral.
+4.  Métricas chave para monitorar a resiliência.
+5.  Um framework para tomadas de decisão em momentos de crise.`,
+    tags: ['Negócios', 'Estratégia', 'Resiliência', 'Análise de Risco'],
+  },
+  {
+    id: 'produtividade-otimizacao-workflow-agente-ia',
+    title: 'Otimização de Workflow Pessoal com Agentes IA',
+    category: 'Produtividade',
+    description: 'Projeta um fluxo de trabalho pessoal otimizado, delegando tarefas a agentes IA especializados para aumentar a eficiência em uma rotina específica.',
+    template: `Você é um especialista em otimização de workflow e design de agentes de produtividade IA. Meu objetivo é otimizar o seguinte processo pessoal: [Processo Pessoal a Otimizar (ex: gestão de e-mails, pesquisa para projetos de escrita, planejamento de conteúdo para redes sociais, organização de estudos)].
+
+As etapas atuais deste processo são: [Etapas Atuais do Processo (descreva de forma concisa)].
+
+Os principais desafios ou pontos de atrito que enfrento neste processo são: [Principais Desafios/Pontos de Atrito].
+
+Os resultados desejados após a otimização são: [Resultados Desejados (ex: economizar X horas por semana, reduzir estresse, melhorar a qualidade da saída)].
+
+Atualmente, utilizo ou tenho acesso às seguintes ferramentas de IA/automação (se houver): [Ferramentas de IA/Automação Atualmente Usadas ou Disponíveis (ex: ChatGPT, Zapier, ferramentas de resumo de texto, assistentes virtuais)].
+
+O tempo estimado gasto atualmente neste processo é: [Tempo Estimado Gasto Atualmente].
+
+Com base nessas informações, proponha:
+1.  Um fluxo de trabalho otimizado, delegando tarefas a agentes IA (ou funcionalidades IA) onde aplicável.
+2.  Identificação de quais tipos de "agentes" ou ferramentas IA seriam ideais para cada etapa.
+3.  Instruções claras sobre como implementar cada parte do fluxo (incluindo prompts para as IAs, se necessário).
+4.  Estimativa do ganho de eficiência.
+5.  Sugestões de como monitorar e ajustar o novo workflow.`,
+    tags: ['Produtividade', 'Workflow', 'Automação', 'Agente IA'],
+  },
+  {
+    id: 'education-simulador-soft-skills-ia',
+    title: 'Simulador de Prática de Soft Skills com IA',
+    category: 'Educação',
+    description: 'Cria cenários interativos e oferece feedback para a prática de habilidades interpessoais e de comunicação, simulando situações reais.',
+    template: `Você é um coach de habilidades interpessoais com IA, especializado em simulações. Quero praticar e aprimorar minha habilidade de [Habilidade interpessoal a praticar (ex: negociação, dar feedback construtivo, resolução de conflitos, fazer uma apresentação pública, lidar com objeções)].
+
+Gostaria que o cenário simulado se passasse no seguinte contexto: [Contexto ou cenário desejado (ex: reunião de equipe, entrevista de emprego para um cargo específico, conversa difícil com um colega sobre um projeto, apresentação para investidores)].
+
+Meu objetivo específico para esta simulação é: [Objetivo específico da simulação (ex: fechar um acordo, motivar a equipe, comunicar uma má notícia com empatia, obter um aumento)].
+
+Por favor, defina o nível de dificuldade como: [Nível de dificuldade (Básico, Intermediário, Avançado)].
+
+Se desejar, forneça características específicas da persona com quem irei interagir na simulação: [Características da Persona com quem interagir (opcional, ex: "Um chefe exigente e cético", "Um cliente insatisfeito e emocional", "Um colega desmotivado")].
+
+Com base nessas informações, crie um cenário detalhado e inicie a simulação, interagindo comigo como a persona descrita. Após cada minha resposta, avalie-a, forneça feedback construtivo, e apresente a próxima parte do cenário, guiando-me pela prática. Comece por definir o cenário inicial e qual deve ser minha primeira ação ou fala.`,
+    tags: ['Educação', 'Soft Skills', 'Simulação', 'Desenvolvimento Pessoal'],
+  },
+  {
+    id: 'marketing-campanha-multicanal-adaptativa-ia',
+    title: 'Criação de Campanha Multicanal Adaptativa com IA',
+    category: 'Marketing',
+    description: 'Desenha uma campanha de marketing abrangente, sugerindo conteúdo e canais, e incluindo uma estratégia de adaptação baseada em métricas simuladas em tempo real.',
+    template: `Você é um estrategista de marketing digital com IA, especializado em campanhas multicanal e adaptativas. Preciso de ajuda para criar uma campanha para o seguinte: [Produto/Serviço a promover].
+
+Nosso público-alvo principal é: [Público-alvo principal (inclua demografia, psicografia, dores, desejos)].
+
+O objetivo principal desta campanha é: [Objetivo da Campanha (ex: geração de 500 leads qualificados em 3 meses, aumentar o reconhecimento da marca em 20%, gerar X vendas diretas)].
+
+Gostaria de considerar os seguintes canais de marketing: [Canais de Marketing Desejados (ex: Instagram, TikTok, Facebook Ads, Google Ads, Email Marketing, Blog, YouTube, LinkedIn)].
+
+Temos um orçamento estimado de: [Orçamento estimado da campanha (ex: R$10.000/mês, X% da receita)].
+
+As principais mensagens e o valor único da proposta do nosso produto/serviço são: [Principais Mensagens/Valor Único da Proposta].
+
+Com base nessas informações, crie uma proposta de campanha que inclua:
+1.  Uma estratégia de conteúdo para cada canal selecionado, alinhada ao público e objetivo.
+2.  Exemplos de chamadas para ação (CTAs) específicas para cada canal.
+3.  Uma estrutura de funil de vendas multicanal.
+4.  Um plano de como a campanha se adaptaria com base em métricas simuladas (ex: se o engajamento no Instagram cair, o que faremos? Se a taxa de abertura de e-mail for baixa?).
+5.  Métricas chave para monitoramento e avaliação do sucesso.`,
+    tags: ['Marketing', 'Campanha', 'Multicanal', 'Estratégia'],
+  },
 ];

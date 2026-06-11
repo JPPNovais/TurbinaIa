@@ -13,6 +13,50 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'anthropic-claude-fable-5-lancamento-2026',
+    date: '2026-06',
+    title: 'Anthropic lança Claude Fable 5, a versão pública do modelo Mythos',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'A Anthropic disponibilizou publicamente o Claude Fable 5, um novo modelo de inteligência artificial baseado na classe Mythos, projetado para uso geral e com novas salvaguardas.',
+    highlights: [
+      'Claude Fable 5 é o primeiro modelo da classe Mythos a ser disponibilizado para o público geral.',
+      'O modelo foi otimizado para ser seguro para uso generalizado, apesar das capacidades avançadas em cibersegurança da classe Mythos.',
+      'Projetado para dar suporte a tarefas como desenvolvimento de software, pesquisa complexa, análise de imagens e resolução de problemas técnicos.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'anthropic-claude-mythos-5-atualizacao-2026',
+    date: '2026-06',
+    title: 'Anthropic atualiza Claude Mythos para parceiros de acesso restrito',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'A Anthropic lançou o Claude Mythos 5 para usuários de acesso restrito, introduzindo novas salvaguardas, precificação e planos de acesso mais amplos para pesquisa, estendendo a vigilância para biologia e química.',
+    highlights: [
+      'Mythos 5 estende a vigilância de segurança para incluir riscos em biologia e química, além de cibersegurança.',
+      'O modelo mostra fortes habilidades em hacking agentic, realizando múltiplas partes de ciberataques.',
+      'Custa dez dólares por milhão de fichas de entrada e cinquenta dólares por milhão de fichas de saída, com preços comerciais reduzidos pela metade em comparação com a versão prévia.',
+      'Permite acelerar o desenvolvimento de medicamentos em aproximadamente dez vezes e formular novas hipóteses em biologia molecular.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'google-deepmind-diffusiongemma-2026',
+    date: '2026-06',
+    title: 'Google DeepMind lança DiffusionGemma, modelo de IA de texto aberto 4x mais rápido',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'O Google DeepMind lançou o DiffusionGemma, um modelo de inteligência artificial de código aberto que revoluciona a geração de texto ao produzir blocos de tokens em paralelo, resultando em uma velocidade 4x maior.',
+    highlights: [
+      'DiffusionGemma abandona a geração sequencial de texto, produzindo blocos de 256 tokens em paralelo.',
+      'Atinge até 1.000 tokens por segundo em uma NVIDIA H100, sendo ideal para tarefas não lineares como edição de texto em linha.',
+      'É um modelo Mixture of Experts (MoE) com 26 bilhões de parâmetros, dos quais 3,8 bilhões são ativados por inferência.',
+      'Disponível como modelo de código aberto, com licença Apache 2.0 para o Gemma 4 31B, o que pode indicar a natureza aberta do DiffusionGemma.'
+    ],
+    impact: 'Alto'
+  },
+  {
     id: 'openai-gpt-5-4-amazon-bedrock-2026',
     date: '2026-06',
     title: 'OpenAI disponibiliza GPT-5.4 no Amazon Bedrock',

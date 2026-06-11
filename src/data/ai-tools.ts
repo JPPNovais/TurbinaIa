@@ -1369,7 +1369,7 @@ export const AI_TOOLS: AITool[] = [
       'Organizar e sintetizar pesquisas e notas',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (Standard, 100 notebooks, 50 fontes por notebook, 50 chats diários, 3 gerações de áudio/dia). Plus (bundlado com Google AI Plus a US$ 7.99/mês, dobra os limites do gratuito). Pro (bundlado com Google AI Pro a US$ 19.99/mês, 500 notebooks, 300 fontes, 500 chats diários, 20 Audio Overviews, 20 Video Overviews, 100 relatórios/dia, 20 Deep Research reports/dia). Ultra (bundlado com Google AI Ultra a US$ 99.99/mês (20TB) ou US$ 200/mês (30TB)). Google Workspace Business Standard a US$ 14/usuário/mês inclui NotebookLM Plus. Enterprise a US$ 9/licença/mês (com descontos anuais).',
+    pricingDetails: 'Grátis (Standard, 100 notebooks, 50 fontes por notebook, 50 chats diários, 3 gerações de áudio/dia). Plus (bundlado com Google AI Plus a US$ 7.99/mês, dobra os limites do gratuito). Pro (bundlado com Google AI Pro a US$ 19.99/mês, 500 notebooks, 300 fontes, 500 chats diários, 20 Audio Overviews, 20 Video Overviews, 100 relatórios/dia, 20 Deep Research reports/day). Ultra (bundlado com Google AI Ultra a US$ 99.99/mês (20TB) ou US$ 200/mês (30TB)). Google Workspace Business Standard a US$ 14/usuário/mês inclui NotebookLM Plus. Enterprise a US$ 9/licença/mês (com descontos anuais).',
     url: 'https://notebooklm.google.com',
     tags: ['pesquisa', 'documentos', 'pdf', 'estudo', 'resumo', 'análise', 'google'],
     popularityRank: undefined,

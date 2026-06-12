@@ -15,7 +15,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 2.00, // Price for up to 200K tokens
     outputPricePerM: 12.00, // Price for up to 200K tokens
     contextWindow: '2M tokens',
-    description: 'O modelo Pro atual da Google (lançado em Maio de 2026), com raciocínio avançado e contexto de até 2M tokens. Preço base para até 200K tokens. Acima de 200K tokens, os preços são $4.00/M input e $18.00/M output.',
+    description: 'O modelo Pro atual da Google (lançado em Fevereiro de 2026), com raciocínio avançado e contexto de até 2M tokens. Preço base para até 200K tokens. Acima de 200K tokens, os preços são $4.00/M input e $18.00/M output.',
   },
   {
     name: 'Gemini 3.1 Flash-Lite',
@@ -35,12 +35,12 @@ export const AI_MODELS: CalculatorModel[] = [
     description: 'O mais recente modelo flagship da OpenAI (lançado em Abril de 2026), construindo sobre o GPT-5.4 com raciocínio avançado, capacidades multimodais e 1M+ de contexto.',
   },
   {
-    name: 'GPT-4 Turbo',
+    name: 'GPT-5.4',
     provider: 'OpenAI',
-    inputPricePerM: 10.00,
-    outputPricePerM: 30.00,
-    contextWindow: '128K tokens',
-    description: 'O modelo Turbo mais recente da OpenAI (lançado em Abril de 2024), com capacidades de visão e JSON mode, e 128K de contexto. Preços atualizados em Junho de 2026.',
+    inputPricePerM: 2.50,
+    outputPricePerM: 15.00,
+    contextWindow: '1M tokens',
+    description: 'O modelo de produção recomendado da OpenAI (lançado em Maio de 2026), com capacidades avançadas e 1M de contexto. Preços atualizados em Junho de 2026.',
   },
   {
     name: 'GPT-4o mini',
@@ -56,7 +56,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 2.50,
     outputPricePerM: 10.00,
     contextWindow: '128K tokens',
-    description: 'O modelo multimodal da OpenAI (lançado em Maio de 2024), oferece raciocínio avançado, capacidades multimodais e 128K de contexto.',
+    description: 'O modelo multimodal da OpenAI (lançado em Maio de 2024), oferece raciocínio avançado, capacidades multimodais e 128K de contexto. Preços mantidos em Junho de 2026.',
   },
   // Anthropic
   {
@@ -65,7 +65,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 5.00,
     outputPricePerM: 25.00,
     contextWindow: '1M tokens',
-    description: 'A versão mais recente do modelo Opus da Anthropic para raciocínio complexo e tarefas agênticas (lançado em Abril de 2026), com 1M de contexto. Em Maio de 2026, Claude Opus 4.8 foi lançado com preços base idênticos.',
+    description: 'A versão mais recente do modelo Opus da Anthropic para raciocínio complexo e tarefas agênticas (lançado em Abril de 2026), com 1M de contexto.',
   },
   {
     name: 'Claude Sonnet 4.6',
@@ -73,7 +73,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 3.00,
     outputPricePerM: 15.00,
     contextWindow: '1M tokens',
-    description: 'A versão mais recente do modelo Sonnet da Anthropic (lançado em Maio de 2026), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 1M de contexto.',
+    description: 'A versão mais recente do modelo Sonnet da Anthropic (lançado em Fevereiro de 2026), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 1M de contexto.',
   },
   {
     name: 'Claude Haiku 4.5',
@@ -81,7 +81,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 1.00,
     outputPricePerM: 5.00,
     contextWindow: '200K tokens',
-    description: 'A versão mais recente do modelo Haiku da Anthropic (lançado em Maio de 2026), o mais rápido e econômico, com 200K de contexto.',
+    description: 'A versão mais recente do modelo Haiku da Anthropic (lançado em Outubro de 2025), o mais rápido e econômico, com 200K de contexto.',
   },
   // DeepSeek
   {
@@ -90,7 +90,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.14,
     outputPricePerM: 0.28,
     contextWindow: '1M tokens',
-    description: 'Modelo MoE eficiente e econômico da DeepSeek (lançado em Maio de 2026), com 1M de contexto, oferecendo bom desempenho a baixo custo.',
+    description: 'Modelo MoE eficiente e econômico da DeepSeek (lançado em Abril de 2026), com 1M de contexto, oferecendo bom desempenho a baixo custo.',
   },
   // Meta (via API)
   {
@@ -121,8 +121,8 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'Mistral Small 4',
     provider: 'Mistral AI',
-    inputPricePerM: 0.15,
-    outputPricePerM: 0.60,
+    inputPricePerM: 0.10,
+    outputPricePerM: 0.30,
     contextWindow: '256K tokens',
     description: 'Um modelo econômico da Mistral AI (Mistral Small 4), ideal para projetos sensíveis ao custo, com 256K de contexto (preços verificados em Junho de 2026).',
   },

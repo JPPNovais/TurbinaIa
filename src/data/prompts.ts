@@ -4599,4 +4599,125 @@ Com base nesses dados, crie uma estratégia que inclua:
 *   **Desafios e Considerações Éticas:** Como garantir a privacidade dos dados e evitar vieses na personalização.`,
     tags: ['Marketing Digital', 'Conteúdo IA', 'Hiperpersonalização', 'Estratégia Multimodal'],
   },
+  {
+    id: 'social-media-microinfluenciador-ia',
+    title: 'Criador de Persona de Micro-Influenciador IA',
+    category: 'Redes Sociais',
+    description: 'Crie uma persona detalhada de micro-influenciador digital com IA para representar sua marca ou produto nas redes sociais.',
+    template: `Atue como um especialista em branding e marketing de influência. Seu objetivo é criar uma persona de micro-influenciador digital completamente fictícia, impulsionada por IA, que seja ideal para promover o [Nome do Produto/Serviço] da marca [Nome da Marca] nas redes sociais, com foco em [Plataforma(s) Social(is), ex: Instagram e TikTok].
+
+A persona deve ser autêntica, engajadora e ressoar com o público-alvo de [Público-alvo detalhado, ex: jovens adultos entre 25-35 anos interessados em vida saudável e tecnologia].
+
+Inclua os seguintes detalhes:
+
+1.  **Nome da Persona:** [Sugira um nome]
+2.  **Idade e Profissão Fictícia:** [Sugira idade e profissão, ex: 28 anos, nutricionista e gamer nas horas vagas]
+3.  **Personalidade e Tom de Voz:** [Descreva a personalidade (engraçada, inspiradora, prática) e o tom (formal, informal, amigável)]
+4.  **Estilo Visual:** [Descreva o estilo estético (minimalista, colorido, rústico), cores preferidas e tipo de imagem/vídeo que ela postaria]
+5.  **Interesses e Paixões:** [Liste hobbies, causas, tipos de conteúdo que ela naturalmente consumiria e criaria (além do produto)]
+6.  **Principais Mensagens/Valores:** [Que mensagens chave ela transmitiria consistentemente?]
+7.  **Formato de Conteúdo Preferencial:** [Ex: Reels tutoriais, Stories interativos, Carrosséis informativos, Vlogs curtos]
+8.  **Como o Produto/Serviço se Encaixa na Vida Dela:** [Explique de forma orgânica como a persona usaria e se beneficiaria do [Nome do Produto/Serviço]]
+9.  **Engajamento Típico:** [Como ela interagiria com seus seguidores e com outras marcas/influenciadores?]
+10. **Exemplo de 3 Títulos/Temas de Conteúdo:** [Crie 3 ideias de postagens que a persona faria, promovendo o produto de forma sutil e engajadora.]
+
+Certifique-se de que todos os elementos se complementam para criar uma persona coerente e crível.`,
+    tags: ['Marketing Digital', 'Influenciador Virtual', 'Branding', 'Redes Sociais'],
+  },
+  {
+    id: 'ia-agente-inteligencia-produto-competitiva',
+    title: 'Design de Agente IA para Inteligência Competitiva de Produto',
+    category: 'IA & Automação',
+    description: 'Desenhe um agente de IA focado em coletar e analisar dados de concorrentes para um produto ou serviço específico, identificando vantagens e desvantagens.',
+    template: `Você é um arquiteto de sistemas de IA. Projete um agente de IA especializado em inteligência competitiva para o produto/serviço "[Nome do Produto/Serviço]" da empresa "[Nome da Empresa]".
+
+O agente deve ser capaz de:
+
+1.  **Definir Concorrentes:** Identificar [Número] dos principais concorrentes diretos e indiretos no mercado de [Setor de Mercado].
+2.  **Fontes de Dados:** Listar as principais fontes de onde o agente coletaria dados (ex: sites de concorrentes, redes sociais, reviews de clientes, relatórios de mercado, notícias, dados de preços de e-commerce, anúncios pagos).
+3.  **Tipos de Dados a Coletar:** Descreva os dados específicos que o agente deve monitorar para cada concorrente (ex: preços, recursos do produto, feedback de clientes, estratégias de marketing digital, lançamentos de novos produtos, posicionamento de marca, presença em eventos).
+4.  **Módulos de Análise:** Detalhe os módulos de análise que o agente utilizaria:
+    *   **Análise de Sentimento:** Para reviews e menções sociais.
+    *   **Análise de Recursos:** Comparação de funcionalidades.
+    *   **Análise de Preços:** Monitoramento e comparação de modelos de precificação.
+    *   **Análise de Estratégias de Marketing:** Identificação de campanhas e canais.
+    *   **Análise de SWOT:** Identificação de Forças, Fraquezas, Oportunidades e Ameaças dos concorrentes.
+5.  **Frequência de Monitoramento:** Sugira a periodicidade ideal para a coleta e análise de dados (ex: diário, semanal, mensal) e justifique.
+6.  **Mecanismos de Alerta:** Como o agente notificaria a equipe sobre mudanças significativas ou insights críticos (ex: e-mail, dashboard, integração com [Ferramenta de colaboração, ex: Slack])?
+7.  **Formatos de Relatório:** Que tipos de relatórios o agente geraria e com que nível de detalhe (ex: resumo executivo, dashboards interativos, relatórios detalhados por concorrente)?
+8.  **Considerações Éticas e Legais:** Quais cuidados devem ser tomados para garantir que a coleta de dados seja ética e legal (ex: evitar scraping de dados pessoais, focar em dados públicos)?
+
+O objetivo final é fornecer insights acionáveis para a equipe de produto e estratégia.`,
+    tags: ['Inteligência Competitiva', 'Análise de Mercado', 'Agentes IA', 'Estratégia'],
+  },
+  {
+    id: 'produtividade-otimizador-decisao-complexa-ia',
+    title: 'Otimizador de Decisão Estratégica com IA',
+    category: 'Produtividade',
+    description: 'Utilize um framework de IA para analisar cenários complexos e otimizar a tomada de decisões estratégicas, considerando múltiplos fatores e prioridades.',
+    template: `Atue como um consultor de produtividade e um expert em tomada de decisões auxiliado por IA. Meu objetivo é tomar uma decisão estratégica importante sobre [Descreva brevemente o problema/decisão, ex: "a expansão para um novo mercado internacional"].
+
+Por favor, guie-me através de um processo estruturado para otimizar essa decisão, utilizando capacidades de IA para análise.
+
+**Informações Iniciais:**
+*   **Contexto da Decisão:** [Descreva o contexto geral, ex: "Somos uma startup de SaaS buscando crescimento agressivo e avaliando novas fontes de receita."]
+*   **Objetivo Principal:** [Qual é o resultado desejado, ex: "Aumentar a base de usuários em 20% e a receita em 15% nos próximos 12 meses."]
+*   **Restrições/Limitações:** [Quais são as limitações orçamentárias, de tempo, de recursos humanos, etc., ex: "Orçamento de R$500.000, equipe limitada, prazo de 6 meses para iniciar."]
+*   **Partes Interessadas:** [Quem será afetado pela decisão e quem precisa estar envolvido, ex: "CEO, Conselho, Equipe de Produto, Equipe de Vendas."]
+
+**Passos que a IA deve me ajudar a seguir:**
+
+1.  **Identificação de Opções:** Sugira [Número] opções de soluções/caminhos possíveis para a decisão, baseadas no contexto e objetivo.
+2.  **Definição de Critérios de Avaliação:** Para cada opção, quais seriam os [Número] critérios mais relevantes para avaliá-la? (Ex: Potencial de ROI, Risco, Alinhamento Estratégico, Viabilidade Operacional, Impacto Social/ESG). Peça-me para atribuir pesos a cada critério.
+3.  **Análise de Impacto (Positivo e Negativo):** Para cada opção e para cada critério, solicite que eu forneça uma breve descrição dos impactos positivos e negativos. A IA deve então sumarizar e pontuar esses impactos (Ex: Escala de 1 a 5).
+4.  **Análise de Riscos e Mitigação:** Para cada opção, identifique [Número] riscos potenciais e sugira estratégias de mitigação.
+5.  **Análise de Cenários:** Crie 3 cenários (Otimista, Realista, Pessimista) para a opção [Opção Principal a ser avaliada] e descreva os possíveis resultados em cada um.
+6.  **Recomendação e Justificativa:** Com base em todas as análises e pontuações (solicitando minhas entradas), a IA deve gerar uma recomendação principal, justificando-a claramente.
+7.  **Plano de Ação Inicial:** Para a opção recomendada, elabore um plano de ação inicial com [Número] passos e as primeiras ações a serem tomadas.
+
+Aguarde minhas entradas em cada etapa antes de prosseguir.`,
+    tags: ['Tomada de Decisão', 'Estratégia', 'Análise de Cenário', 'Gestão'],
+  },
+  {
+    id: 'escrita-roteiro-ficcao-interativa-ia',
+    title: 'Gerador de Roteiro para Ficção Interativa com IA',
+        category: 'Escrita',
+    description: 'Crie um roteiro inicial e ramificações de enredo para uma experiência de ficção interativa (jogo, VR, história interativa), com base em suas ideias centrais.',
+    template: `Você é um roteirista especializado em ficção interativa e design narrativo de jogos. Ajude-me a desenvolver um roteiro inicial e suas ramificações para uma experiência de ficção interativa.
+
+**Informações Essenciais:**
+*   **Gênero:** [Ex: Fantasia Épica, Sci-Fi Distópica, Mistério Detetivesco, Terror Psicológico, Romance Leve]
+*   **Tema Central:** [Ex: Redenção, Descoberta de si mesmo, Luta pela liberdade, Vingança, Exploração do desconhecido]
+*   **Protagonista:**
+    *   **Nome:** [Nome do personagem principal]
+    *   **Personalidade:** [Características chave, ex: cético, corajoso, introvertido, impulsivo]
+    *   **Objetivo Inicial:** [O que o protagonista quer no início da história?]
+    *   **Conflito Interno/Externo:** [Qual é a principal luta interna ou obstáculo externo?]
+*   **Cenário/Mundo:** [Breve descrição do universo, ex: Uma cidade futurista dominada por corporações, um reino mágico à beira da guerra, uma ilha isolada com segredos ancestrais]
+*   **Ponto de Partida:** [O evento inicial que inicia a aventura, ex: "Um objeto misterioso é encontrado na floresta", "O protagonista recebe uma carta anônima", "A cidade é atacada"]
+*   **Formato de Interação:** [Ex: Escolhas de diálogo, Escolhas de ação, Resolução de puzzles, Desafios de habilidades, Exploração]
+
+**Sua Tarefa (Dividida em Seções):**
+
+1.  **Ato I - Introdução e Chamado à Aventura (2-3 cenas/eventos):**
+    *   Crie uma cena inicial que estabeleça o protagonista, o cenário e o ponto de partida.
+    *   Apresente o "chamado à aventura" ou o problema central.
+    *   Inclua 1-2 pontos de escolha para o jogador que influenciam a narrativa inicial.
+
+2.  **Desenvolvimento do Enredo e Ramificações (2-3 cenas/eventos após cada escolha do Ato I):**
+    *   Para cada escolha feita no Ato I, desenvolva uma cena consequente.
+    *   Apresente novos personagens, desafios ou revelações que aprofundem o conflito.
+    *   Adicione mais 1-2 pontos de escolha significativos para o jogador em cada ramificação, que levam a caminhos distintos.
+
+3.  **Personagens Chave (2-3):**
+    *   Descreva 2-3 personagens secundários importantes que surgem no Ato I ou no início do Ato II.
+    *   Para cada um: Nome, Relação com o protagonista, Personalidade, Motivação.
+
+4.  **Elementos Narrativos Adicionais:**
+    *   Sugira um "MacGuffin" (um objeto de desejo ou trama) ou um mistério central.
+    *   Proponha um "twist" ou reviravolta potencial para um estágio posterior da história.
+
+Apresente o roteiro de forma clara, indicando as opções de escolha e as consequências diretas, como um fluxograma narrativo simplificado.`,
+    tags: ['Escrita Criativa', 'Ficção Interativa', 'Roteiro', 'Storytelling'],
+  },
 ];

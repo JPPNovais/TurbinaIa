@@ -13,6 +13,47 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-chatgpt-memoria-pesquisa-2026',
+    date: '2026-06',
+    title: 'OpenAI pesquisa sobre "melhor memória" para um ChatGPT mais útil',
+    developer: 'OpenAI',
+    category: 'Pesquisa',
+    description: 'A OpenAI divulgou uma atualização de pesquisa focada em aprimorar a capacidade de memória do ChatGPT, visando torná-lo mais útil e eficaz nas interações com os usuários.',
+    highlights: [
+      'A pesquisa foca em melhorar a retenção de informações pelo modelo em conversas prolongadas.',
+      'O objetivo é capacitar o ChatGPT a lembrar de detalhes importantes de interações anteriores para fornecer respostas mais contextuais e personalizadas.'
+    ],
+    impact: 'Médio'
+  },
+  {
+    id: 'cohere-north-mini-code-lancamento-2026',
+    date: '2026-06',
+    title: 'Cohere lança North Mini Code, modelo de codificação de pesos abertos',
+    developer: 'Cohere',
+    category: 'Lançamento',
+    description: 'A Cohere lançou o North Mini Code em 9 de junho de 2026, um modelo de codificação de pesos abertos com 30 bilhões de parâmetros (3 bilhões ativos), otimizado para engenharia de software agêntica.',
+    highlights: [
+      'Modelo Mixture-of-Experts (MoE) projetado para orquestração de sub-agentes, mapeamento de arquitetura, revisão de código e trabalho em terminal.',
+      'Suporta uma janela de contexto de 256.000 tokens e um comprimento máximo de geração de 64.000 tokens.',
+      'Pode ser executado em uma única GPU Nvidia H100 e está disponível sob a licença Apache 2.0.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'deepseek-v4-azure-ai-gateway-2026',
+    date: '2026-06',
+    title: 'Modelos DeepSeek V4 Pro e V4 Flash agora disponíveis via Azure no AI Gateway',
+    developer: 'DeepSeek',
+    category: 'Atualização',
+    description: 'Os modelos DeepSeek V4 Pro e V4 Flash foram disponibilizados via Azure no AI Gateway em 11 de junho de 2026, oferecendo um caminho de failover adicional para usuários.',
+    highlights: [
+      'A integração com o Azure AI Gateway permite rotear solicitações para os modelos DeepSeek V4 Pro e V4 Flash através do Azure.',
+      'A disponibilidade no AI Gateway proporciona um caminho de failover para garantir a continuidade do serviço.',
+      'Nenhuma alteração de código é necessária, pois o roteamento padrão considera o Azure automaticamente.'
+    ],
+    impact: 'Médio'
+  },
+  {
     id: 'anthropic-claude-fable-5-lancamento-2026',
     date: '2026-06',
     title: 'Anthropic lança Claude Fable 5, a versão pública do modelo Mythos',

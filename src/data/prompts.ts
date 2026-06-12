@@ -4501,4 +4501,102 @@ Com base nessas informações, crie uma proposta de campanha que inclua:
 5.  Métricas chave para monitoramento e avaliação do sucesso.`,
     tags: ['Marketing', 'Campanha', 'Multicanal', 'Estratégia'],
   },
+  {
+    id: 'ia-automacao-agente-inteligencia-competitiva',
+    title: 'Design de Agente de Inteligência Competitiva Personalizado',
+    category: 'IA & Automação',
+    description: 'Orienta na criação de um agente de IA para monitoramento e análise de concorrentes, identificando tendências e oportunidades de mercado específicas.',
+    template: `Você é um especialista em design de sistemas de IA. Meu objetivo é criar um agente de inteligência competitiva que me ajude a monitorar [Nome do Mercado/Indústria] para a minha empresa, [Nome da Minha Empresa].
+
+Preciso que você me ajude a estruturar o design desse agente, considerando os seguintes pontos:
+
+1.  **Objetivo Principal do Agente:** [Ex: Identificar novas estratégias de preço dos concorrentes, monitorar lançamentos de produtos disruptivos, analisar sentimentos sobre concorrentes nas redes sociais].
+2.  **Concorrentes Principais a Monitorar:** [Lista de 3 a 5 concorrentes principais].
+3.  **Fontes de Dados Essenciais:** [Ex: Sites de notícias da indústria, relatórios de mercado, redes sociais (Twitter, LinkedIn), blogs de tecnologia, patentes, comunicados de imprensa, dados financeiros públicos, fóruns de discussão].
+4.  **Tipos de Informação a Coletar/Analisar:** [Ex: Estratégias de marketing, inovações de produto/serviço, modelos de precificação, movimentações de talentos, parcerias estratégicas, feedback de clientes sobre concorrentes].
+5.  **Frequência de Monitoramento e Análise:** [Ex: Diário, semanal, mensal, trimestral].
+6.  **Formato de Saída Desejado:** [Ex: Resumo executivo semanal, alertas em tempo real para eventos críticos, dashboard interativo com métricas-chave, relatório de tendências trimestral].
+7.  **Métricas de Sucesso para o Agente:** [Ex: Número de insights acionáveis gerados, precisão das previsões de mercado, tempo economizado na pesquisa manual].
+8.  **Restrições ou Considerações Éticas:** [Ex: Privacidade de dados, evitar desinformação, compliance com LGPD].
+
+Com base nessas informações, estruture o design do agente, detalhando:
+*   Componentes-chave do sistema (módulos de coleta, processamento, análise, geração de relatórios).
+*   Tecnologias de IA que seriam mais adequadas para cada componente.
+*   Uma proposta de arquitetura de alto nível.
+*   Recomendações para a validação e otimização contínua do agente.`,
+    tags: ['IA Agente', 'Inteligência Competitiva', 'Design de Sistemas', 'Estratégia de Negócios'],
+  },
+  {
+    id: 'career-plano-habilidades-futuro-ia',
+    title: 'Plano de Desenvolvimento de Habilidades Orientado pela IA para o Futuro do Trabalho',
+    category: 'Carreira',
+    description: 'Ajuda a criar um plano de desenvolvimento de carreira com foco em habilidades críticas para o futuro, utilizando análise de tendências de mercado e lacunas pessoais.',
+    template: `Você é um coach de carreira especializado no futuro do trabalho e na integração de IA. Meu objetivo é desenvolver um plano de habilidades para me preparar para as demandas do mercado de trabalho nos próximos [Período em Anos, ex: 3 a 5] anos, considerando o avanço da inteligência artificial.
+
+Por favor, crie um plano detalhado baseado nas seguintes informações:
+
+1.  **Minha Posição/Área Atual:** [Ex: Desenvolvedor de Software Sênior, Gerente de Marketing Digital, Analista Financeiro, Professor Universitário].
+2.  **Indústria em que Atuo:** [Ex: Tecnologia, Saúde, Educação, Serviços Financeiros, Varejo].
+3.  **Minhas Principais Habilidades Atuais (hard e soft skills):** [Liste de 5 a 10 habilidades, ex: Python, Gestão de Projetos Ágeis, Comunicação Interpessoal, Análise de Dados].
+4.  **Interesses de Carreira Futuros:** [Ex: Transição para gestão, especialização em IA/Machine Learning, empreendedorismo, atuação em projetos de impacto social].
+5.  **Período para o Plano de Desenvolvimento:** [Ex: 12 meses, 24 meses].
+
+Com base nisso, o plano deve incluir:
+*   **Análise de Tendências:** Quais as principais tendências de IA e automação que impactarão minha área/indústria no período indicado.
+*   **Identificação de Habilidades Críticas:** Uma lista de 5 a 7 habilidades (técnicas e comportamentais) que serão cruciais para o futuro na minha área, com justificativa.
+*   **Análise de Lacunas:** Comparação entre minhas habilidades atuais e as habilidades críticas, destacando as lacunas.
+*   **Plano de Ação Personalizado:** Para cada habilidade a ser desenvolvida, sugira:
+    *   Recursos de aprendizagem (cursos online, livros, projetos práticos, certificações).
+    *   Estratégias para aplicar a IA no processo de aprendizagem (ex: uso de chatbots para dúvidas, geradores de flashcards, simuladores).
+    *   Metas e marcos de progresso.
+*   **Estratégias para "Future-Proofing":** Recomendações gerais para manter a relevância profissional a longo prazo na era da IA.`,
+    tags: ['Carreira', 'Habilidades Futuras', 'IA e Carreira', 'Aprendizagem Contínua'],
+  },
+  {
+    id: 'produtividade-otimizacao-workflow-equipe-ia',
+    title: 'Otimização de Fluxos de Trabalho Cross-Funcionais com Agente de IA',
+    category: 'Produtividade',
+    description: 'Designa um agente de IA para analisar e otimizar processos que envolvem múltiplas equipes, identificando gargalos, redundâncias e oportunidades de automação.',
+    template: `Você é um consultor especializado em otimização de processos e design de agentes de IA para produtividade empresarial. Meu objetivo é otimizar um fluxo de trabalho cross-funcional em minha empresa, [Nome da Empresa], que atualmente envolve [Número] departamentos: [Lista de Departamentos Envolvidos, ex: Marketing, Vendas, Desenvolvimento de Produto, Suporte ao Cliente].
+
+Gostaria de que você me ajudasse a conceber um plano para usar um agente de IA na otimização deste processo. Forneça as seguintes informações:
+
+1.  **Nome do Fluxo de Trabalho a Otimizar:** [Ex: Lançamento de Novo Produto, Gestão de Leads, Resolução de Tickets de Suporte, Onboarding de Clientes].
+2.  **Objetivo Principal da Otimização:** [Ex: Reduzir o tempo de ciclo, diminuir erros de comunicação, melhorar a satisfação do cliente, aumentar a eficiência da equipe].
+3.  **Principais Desafios/Gargalos Atuais:** [Descreva 2-3 problemas principais, ex: Demora na aprovação de materiais, retrabalho devido a falta de comunicação, dificuldade em priorizar tarefas entre equipes].
+4.  **Ferramentas e Sistemas Atuais Utilizados:** [Ex: CRM (Salesforce), Ferramenta de Gestão de Projetos (Jira/Asana), Slack, Email, Google Drive].
+5.  **Dados Disponíveis para Análise:** [Ex: Dados de tempo de ciclo, taxas de erro, logs de comunicação, feedback de equipes].
+
+Com base nisso, proponha um plano que inclua:
+*   **Funções do Agente de IA:** Detalhe como o agente pode atuar (ex: monitoramento de progresso, alertas proativos, sumarização de comunicações, sugestão de alocações de recursos, identificação de padrões de gargalo).
+*   **Etapas de Implementação:** Um roteiro de alto nível para integrar o agente no fluxo de trabalho existente.
+*   **Métricas de Sucesso:** Como medir o impacto da otimização.
+*   **Potenciais Impactos Positivos:** Benefícios esperados para as equipes e para a empresa.
+*   **Desafios e Considerações:** Quais obstáculos podem surgir e como mitigá-los.`,
+    tags: ['Produtividade', 'Gestão de Fluxos de Trabalho', 'IA para Equipes', 'Otimização Empresarial'],
+  },
+  {
+    id: 'marketing-conteudo-hiperpersonalizado-multimodal-ia',
+    title: 'Estratégia de Conteúdo Hiperpersonalizado e Multimodal com IA',
+    category: 'Marketing',
+    description: 'Cria uma estratégia detalhada para gerar conteúdo de marketing altamente personalizado em diversos formatos (texto, vídeo, áudio, imagem) com base em dados de comportamento do cliente, usando IA.',
+    template: `Você é um estrategista de marketing digital com vasta experiência em IA e conteúdo multimodal. Meu objetivo é desenvolver uma estratégia de conteúdo que utilize a IA para entregar experiências hiperpersonalizadas e consistentes em diversos canais e formatos para a minha [Produto/Serviço ou Nome da Marca].
+
+Para elaborar esta estratégia, considere as seguintes informações:
+
+1.  **Público-Alvo Principal:** [Descreva seu público-alvo, ex: Profissionais de TI entre 30-45 anos, pais de primeira viagem com alta renda, pequenos empresários do setor de serviços].
+2.  **Objetivo da Campanha/Conteúdo:** [Ex: Aumentar a conversão de leads, fortalecer o reconhecimento da marca, educar o cliente sobre um novo recurso, reter clientes existentes].
+3.  **Canais de Marketing Atuais:** [Ex: Email Marketing, Instagram, LinkedIn, Blog, YouTube, Podcast, Anúncios Pagos (Google Ads, Meta Ads)].
+4.  **Tipos de Dados de Cliente Disponíveis:** [Ex: Histórico de compras, comportamento de navegação no site, interações com emails anteriores, dados demográficos, respostas a pesquisas, sentimentos em redes sociais].
+5.  **Estilo/Tom de Voz da Marca:** [Ex: Formal e informativo, amigável e inspirador, irreverente e divertido].
+
+Com base nesses dados, crie uma estratégia que inclua:
+*   **Segmentação e Personalização com IA:** Como a IA pode usar os dados disponíveis para criar segmentos de público dinâmicos e personalizar mensagens.
+*   **Ideias de Conteúdo Multimodal:** Sugestões de tipos de conteúdo para cada canal (ex: micro-vídeos para Instagram Stories, artigos aprofundados para o blog, áudios curtos para podcasts, emails interativos), explicando como a IA pode ajudar na geração e adaptação.
+*   **Jornada do Cliente Integrada:** Como o conteúdo personalizado evolui através dos diferentes pontos de contato e canais.
+*   **Tecnologias de IA Recomendadas:** Quais ferramentas ou tipos de IA (ex: processamento de linguagem natural, visão computacional, sistemas de recomendação) podem ser utilizados.
+*   **Métricas de Sucesso:** Como medir a eficácia da estratégia de conteúdo hiperpersonalizado.
+*   **Desafios e Considerações Éticas:** Como garantir a privacidade dos dados e evitar vieses na personalização.`,
+    tags: ['Marketing Digital', 'Conteúdo IA', 'Hiperpersonalização', 'Estratégia Multimodal'],
+  },
 ];

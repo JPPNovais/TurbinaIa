@@ -1781,4 +1781,52 @@ export const GLOSSARIO: GlossarioTerm[] = [
     example: 'Empresas de tecnologia investem massivamente em fazendas de servidores com milhares de GPUs de ponta para atender à demanda crescente por Cálculo de IA, permitindo o desenvolvimento de modelos mais complexos e a execução de inferência em larga escala.',
     relatedTerms: ['Inferência de IA (AI Inference)', 'Pré-treinamento', 'Fine-tuning (Ajuste Fino)', 'LLM (Large Language Model)', 'Multimodal'],
   },
+  {
+    id: 'capacidades-emergentes',
+    term: 'Capacidades Emergentes (Emergent Capabilities)',
+    category: 'Modelos & Arquitetura',
+    definition: 'Refere-se a habilidades e comportamentos complexos que um modelo de Inteligência Artificial adquire, especialmente modelos de linguagem grandes (LLMs) e multimodais, quando são escalados em tamanho e dados de treinamento. Essas capacidades não são explicitamente programadas, mas surgem de forma imprevisível à medida que o modelo se torna mais potente, como a capacidade de raciocinar ou usar ferramentas.',
+    example: 'Um LLM que, após ser treinado com uma vasta quantidade de texto, demonstra a capacidade de gerar código de programação funcional ou de explicar conceitos complexos passo a passo, mesmo sem ter sido explicitamente instruído para essas tarefas.',
+    relatedTerms: ['LLM', 'Modelo Base', 'Agente de IA', 'Raciocínio']
+  },
+  {
+    id: 'treinamento-adversario',
+    term: 'Treinamento Adversário (Adversarial Training)',
+    category: 'Treinamento',
+    definition: 'Uma técnica de treinamento de modelos de IA projetada para aumentar sua robustez e segurança contra "ataques adversários". O modelo é treinado usando exemplos ligeiramente modificados (criados por um "atacante" ou gerador adversário) que visam enganá-lo, forçando-o a aprender a generalizar melhor e a ser menos suscetível a essas perturbações.',
+    example: 'No reconhecimento de imagens, um modelo pode ser treinado com fotos de gatos que foram sutilmente alteradas para parecerem cães para o modelo. Ao aprender a identificar corretamente o gato, mesmo com essas perturbações, o modelo se torna mais robusto a futuras tentativas de ataque.',
+    relatedTerms: ['Ataque Adversário', 'Robustez de IA', 'Defesa Adversária', 'Red Teaming']
+  },
+  {
+    id: 'controle-versao-modelos',
+    term: 'Controle de Versão de Modelos (Model Versioning)',
+    category: 'Ferramentas & APIs',
+    definition: 'A prática de gerenciar e rastrear sistematicamente diferentes iterações e estados de modelos de IA ao longo de seu ciclo de vida. Isso inclui registrar metadados sobre o treinamento, dados usados, hiperparâmetros e desempenho, permitindo a auditabilidade, reprodutibilidade e a capacidade de reverter para versões anteriores.',
+    example: 'Quando um modelo de linguagem é ajustado fino com novos dados, o controle de versão permite que as equipes comparem o desempenho da nova versão com a anterior e, se necessário, voltem para a versão estável.',
+    relatedTerms: ['MLOps', 'Registro de Modelos', 'Governança de IA', 'Auditoria de Modelos de IA']
+  },
+  {
+    id: 'feedback-loop-agentes-ia',
+    term: 'Feedback Loop em Agentes de IA (AI Agent Feedback Loop)',
+    category: 'Arquitetura de Agentes',
+    definition: 'Um mecanismo cíclico em que um agente de IA executa uma ação, observa o resultado dessa ação no ambiente, processa essa observação como feedback e usa essa informação para ajustar ou refinar seu comportamento, planejamento e futuras ações. É fundamental para a autonomia e a capacidade de aprendizado e adaptação contínua dos agentes.',
+    example: 'Um agente de IA responsável por gerenciar um sistema de climatização. Ele define uma temperatura, observa a temperatura real do ambiente e, com base nesse feedback, decide se precisa ligar o aquecimento/ar condicionado novamente ou ajustar a intensidade para atingir o objetivo desejado.',
+    relatedTerms: ['Agente de IA', 'Auto-Refinamento', 'Loop Agêntico', 'Planejamento em Agentes', 'Uso de Ferramentas', 'Aprendizado Contínuo']
+  },
+  {
+    id: 'consciencia-situacional-ia',
+    term: 'Consciência Situacional em IA (AI Situational Awareness)',
+    category: 'Aplicações',
+    definition: 'A capacidade de um sistema de IA de perceber, compreender e projetar o estado dinâmico de seu ambiente em tempo real. Isso envolve a coleta e integração de dados de diversas fontes (sensores, dados contextuais) para formar um modelo coeso e continuamente atualizado da situação, essencial para a tomada de decisões autônomas e adaptativas.',
+    example: 'Um drone autônomo que realiza inspeções de infraestrutura utiliza consciência situacional para entender sua posição atual, a localização de obstáculos, as condições climáticas e a integridade da estrutura inspecionada, adaptando sua rota e ações em tempo real.',
+    relatedTerms: ['Agente Autônomo', 'Modelo de Mundo', 'Percepção Multimodal', 'Raciocínio Contextualizado', 'IA Incorporada']
+  },
+  {
+    id: 'seguranca-cadeia-suprimentos-ia',
+    term: 'Segurança da Cadeia de Suprimentos de IA (AI Supply Chain Security)',
+    category: 'Segurança & Ética',
+    definition: 'O conjunto de práticas e controles de segurança implementados para proteger todos os componentes e processos envolvidos na criação, treinamento, implantação e operação de sistemas de IA. Isso inclui a verificação da integridade e procedência de dados, modelos pré-treinados, bibliotecas de código, hardware e outros recursos utilizados para mitigar riscos como envenenamento de dados, modelos maliciosos e vulnerabilidades.',
+    example: 'Antes de usar um novo dataset para treinar um modelo de visão computacional, uma empresa realiza uma auditoria rigorosa para garantir que os dados não foram adulterados ou não contêm vieses intencionais que poderiam comprometer a segurança ou o desempenho do modelo final.',
+    relatedTerms: ['Segurança da IA', 'Ataque de Envenenamento de Dados', 'IA Responsável', 'Governança de IA', 'Auditoria de Modelos de IA']
+  },
 ];

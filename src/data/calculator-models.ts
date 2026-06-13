@@ -31,8 +31,8 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'OpenAI',
     inputPricePerM: 5.00,
     outputPricePerM: 30.00,
-    contextWindow: '1M+ tokens',
-    description: 'O mais recente modelo flagship da OpenAI (lançado em Abril de 2026), construindo sobre o GPT-5.4 com raciocínio avançado, capacidades multimodais e 1M+ de contexto.',
+    contextWindow: '1M tokens',
+    description: 'O mais recente modelo flagship da OpenAI (lançado em Abril de 2026), construindo sobre o GPT-5.4 com raciocínio avançado, capacidades multimodais e 1M de contexto.',
   },
   {
     name: 'GPT-5.4',
@@ -65,7 +65,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 5.00,
     outputPricePerM: 25.00,
     contextWindow: '1M tokens',
-    description: 'A versão mais recente do modelo Opus da Anthropic para raciocínio complexo e tarefas agênticas (lançado em Abril de 2026), com 1M de contexto.',
+    description: 'A versão mais recente do modelo Opus da Anthropic para raciocínio complexo e tarefas agênticas (lançado em Abril de 2026), com 1M de contexto. Oferece capacidades de visão de alta resolução e é ideal para agentes de longo horizonte.',
   },
   {
     name: 'Claude Sonnet 4.6',
@@ -73,7 +73,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 3.00,
     outputPricePerM: 15.00,
     contextWindow: '1M tokens',
-    description: 'A versão mais recente do modelo Sonnet da Anthropic (lançado em Fevereiro de 2026), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 1M de contexto.',
+    description: 'A versão mais recente do modelo Sonnet da Anthropic (lançado em Fevereiro de 2026), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 1M de contexto. É o melhor equilíbrio para cargas de trabalho de produção.',
   },
   {
     name: 'Claude Haiku 4.5',
@@ -81,7 +81,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 1.00,
     outputPricePerM: 5.00,
     contextWindow: '200K tokens',
-    description: 'A versão mais recente do modelo Haiku da Anthropic (lançado em Outubro de 2025), o mais rápido e econômico, com 200K de contexto.',
+    description: 'A versão mais recente do modelo Haiku da Anthropic (lançado em Outubro de 2025), o mais rápido e econômico, com 200K de contexto. Ideal para tarefas de alto volume e sensíveis à latência.',
   },
   // DeepSeek
   {
@@ -90,7 +90,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.14,
     outputPricePerM: 0.28,
     contextWindow: '1M tokens',
-    description: 'Modelo MoE eficiente e econômico da DeepSeek (lançado em Abril de 2026), com 1M de contexto, oferecendo bom desempenho a baixo custo.',
+    description: 'Modelo MoE eficiente e econômico da DeepSeek (lançado em Abril de 2026), com 1M de contexto, oferecendo bom desempenho a baixo custo. O DeepSeek-V2.5, por exemplo, oferece este mesmo custo por token.',
   },
   // Meta (via API)
   {
@@ -123,8 +123,8 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'Mistral AI',
     inputPricePerM: 0.10,
     outputPricePerM: 0.30,
-    contextWindow: '256K tokens',
-    description: 'Um modelo econômico da Mistral AI (Mistral Small 4), ideal para projetos sensíveis ao custo, com 256K de contexto (preços verificados em Junho de 2026).',
+    contextWindow: '32K tokens',
+    description: 'Um modelo econômico da Mistral AI (Mistral Small 4), ideal para projetos sensíveis ao custo, com 32K de contexto (preços verificados em Junho de 2026).',
   },
   // Cohere
   {

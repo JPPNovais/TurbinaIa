@@ -4720,4 +4720,97 @@ Aguarde minhas entradas em cada etapa antes de prosseguir.`,
 Apresente o roteiro de forma clara, indicando as opções de escolha e as consequências diretas, como um fluxograma narrativo simplificado.`,
     tags: ['Escrita Criativa', 'Ficção Interativa', 'Roteiro', 'Storytelling'],
   },
+  {
+    id: 'negocios-otimizador-processos-atendimento-cliente-ia',
+    title: 'Otimizador de Processos de Atendimento ao Cliente com IA',
+    category: 'Negócios',
+    description: 'Analisa e otimiza fluxos de trabalho de atendimento ao cliente, identificando gargalos e sugerindo soluções de IA para maior eficiência e satisfação.',
+    template: `Você é um especialista em otimização de processos de atendimento ao cliente com IA. Meu objetivo é aprimorar a eficiência e a satisfação do cliente em [Nome do Departamento/Empresa].
+
+Descreva o processo de atendimento atual:
+[Descreva detalhadamente o processo atual (ex: Cliente abre chamado -> Atendente Nível 1 avalia -> Escala para Nível 2 -> Solução -> Fechamento). Inclua sistemas e ferramentas utilizadas.]
+
+Quais são os principais problemas ou gargalos observados?
+[Liste problemas como: tempo de espera longo, alta taxa de reabertura, inconsistência nas respostas, alto custo por atendimento, insatisfação do cliente, etc.]
+
+Quais são os KPIs que desejamos melhorar?
+[Ex: Reduzir tempo médio de atendimento (TMA) em X%, aumentar CSAT em Y%, diminuir custo por contato em Z%, reduzir taxa de escalonamento.]
+
+Com base nessas informações, faça o seguinte:
+1.  **Mapeamento de Processo Otimizado:** Desenhe um novo fluxo de trabalho para o atendimento ao cliente, incorporando pontos de otimização com IA. Use um formato de lista ou fluxograma textual simples.
+2.  **Identificação de Soluções de IA:** Para cada ponto de otimização, sugira tecnologias e soluções de IA específicas (ex: chatbots, NLP para triagem, automação RPA, análise de sentimento, assistentes virtuais para agentes, etc.).
+3.  **Benefícios Esperados:** Explique como cada solução de IA proposta contribuirá para os KPIs definidos.
+4.  **Recomendações de Implementação:** Ofereça um plano de ação em alto nível para a implementação das soluções, incluindo possíveis desafios e como superá-los.
+
+Considere as seguintes informações adicionais:
+- Volume médio de atendimentos por dia: [Número]
+- Canais de atendimento: [Ex: Telefone, E-mail, Chat, Redes Sociais]
+- Perfil dos clientes: [Ex: B2C, B2B, faixa etária, nível de familiaridade com tecnologia]`,
+    tags: ['otimização', 'atendimento-cliente', 'ia', 'automação']
+  },
+  {
+    id: 'education-trilhas-desenvolvimento-corporativo-ia',
+    title: 'Criador de Trilhas de Desenvolvimento Corporativo com IA',
+    category: 'Educação',
+    description: 'Desenha uma trilha de aprendizado personalizada e adaptativa para desenvolver habilidades cruciais em equipes corporativas, utilizando princípios de IA e microlearning.',
+    template: `Você é um especialista em design instrucional e desenvolvimento de talentos com IA. Meu objetivo é criar uma trilha de desenvolvimento de habilidades para [Nome da Equipe/Departamento ou Funções Específicas] em [Nome da Empresa].
+
+Qual é a habilidade principal que queremos desenvolver?
+[Ex: Liderança Adaptativa, Análise de Dados para Não Especialistas, Gerenciamento Ágil de Projetos, Comunicação Estratégica, Habilidades de Vendas Consultivas, Inovação e Design Thinking.]
+
+Qual o nível de proficiência atual da equipe nesta habilidade (estimado)?
+[Ex: Básico, Intermediário, Avançado.]
+
+Qual o nível de proficiência desejado?
+[Ex: Intermediário, Avançado, Especialista.]
+
+Em quanto tempo esperamos que a equipe atinja o nível desejado?
+[Ex: 3 meses, 6 meses, 1 ano.]
+
+Quais recursos de aprendizado já estão disponíveis ou podem ser considerados?
+[Ex: Cursos internos, plataformas e-learning (Coursera, Udemy), mentores internos, workshops, projetos práticos.]
+
+Com base nestas informações, gere o seguinte:
+1.  **Objetivos de Aprendizagem:** Defina 3-5 objetivos de aprendizado claros e mensuráveis para a trilha.
+2.  **Módulos e Etapas da Trilha:** Proponha uma sequência lógica de módulos ou etapas, detalhando o conteúdo principal de cada um.
+3.  **Recursos e Atividades Sugeridos:** Para cada módulo, sugira formatos de aprendizado (ex: micro-aulas, estudos de caso, projetos práticos, simulações interativas, leituras, sessões de mentoring) e como a IA pode personalizar/adaptar a experiência (ex: IA para recomendação de conteúdo, feedback automatizado, trilhas adaptativas baseadas em desempenho).
+4.  **Avaliação e Feedback:** Descreva métodos para avaliar o progresso da equipe e como a IA pode fornecer feedback contínuo e construtivo.
+5.  **Indicadores de Sucesso (KPIs):** Liste KPIs para medir o impacto da trilha no desempenho individual e da equipe.
+
+Considere o uso de abordagens de microlearning e aprendizado adaptativo, onde a IA pode personalizar o ritmo e o conteúdo para cada indivíduo.`,
+    tags: ['educação-corporativa', 'desenvolvimento-talentos', 'ia', 'microlearning']
+  },
+  {
+    id: 'marketing-estrategia-conteudo-imersivo-ia',
+    title: 'Estratégia de Conteúdo Marketing Imersivo com IA',
+    category: 'Marketing',
+    description: 'Desenvolve uma estratégia detalhada para criar uma experiência de marketing imersiva, utilizando IA para personalizar, otimizar e mensurar o engajamento do público.',
+    template: `Você é um estrategista de marketing digital especializado em experiências imersivas e uso de IA. Meu objetivo é desenvolver uma estratégia de conteúdo imersiva para [Produto/Serviço ou Campanha Específica] da [Nome da Empresa].
+
+Qual é o público-alvo desta campanha?
+[Descreva o público-alvo: demografia, psicografia, interesses, dores, comportamentos online.]
+
+Qual é o objetivo principal da campanha imersiva?
+[Ex: Aumentar reconhecimento de marca em X%, gerar Y leads qualificados, impulsionar Z vendas, educar sobre um novo produto, fortalecer conexão emocional com a marca.]
+
+Qual é a principal mensagem ou história que queremos transmitir?
+[Descreva a narrativa central ou o valor único que a experiência deve comunicar.]
+
+Quais tecnologias ou plataformas podemos considerar para esta experiência?
+[Ex: WebXR, Realidade Aumentada (RA), Realidade Virtual (RV), vídeos interativos 360°, metaverso, experiências gamificadas, áudio imersivo, etc.]
+
+Com base nessas informações, gere o seguinte:
+1.  **Conceito Central da Experiência:** Proponha um conceito criativo para a experiência imersiva, alinhado ao público e objetivo.
+2.  **Jornada do Usuário Imersiva:** Detalhe a jornada que o usuário irá percorrer, desde o primeiro contato até a ação desejada, com pontos de interação e tomada de decisão.
+3.  **Formatos de Conteúdo e Elementos Interativos:** Sugira os tipos de conteúdo e elementos interativos para cada etapa da jornada (ex: quizzes, simuladores, histórias ramificadas, objetos 3D, personalização de avatares).
+4.  **Papel da IA na Personalização e Otimização:** Explique como a IA pode ser usada para:
+    *   Personalizar a experiência em tempo real para cada usuário.
+    *   Otimizar o engajamento (ex: recomendação de próximos passos, adaptação de narrativa).
+    *   Analisar o comportamento do usuário e extrair insights.
+5.  **Canais de Divulgação e Promoção:** Recomende os melhores canais para promover a experiência (ex: redes sociais, anúncios pagos, e-mail marketing, parcerias).
+6.  **Métricas de Sucesso:** Liste os KPIs específicos para medir o sucesso da experiência imersiva (ex: tempo de permanência, taxa de conclusão de interação, taxa de conversão na experiência, compartilhamentos, engajamento pós-experiência).
+
+Considere como a IA pode tornar a experiência mais adaptável e relevante para cada segmento do público-alvo.`,
+    tags: ['marketing-imersivo', 'experiência-cliente', 'ia', 'conteúdo-multimodal']
+  },
 ];

@@ -67,7 +67,7 @@ Além das parcerias, a Isomorphic Labs demonstrou sua capacidade de atrair capit
 
 ## O Cenário Competitivo da Descoberta de Drogas por IA
 
-![Inteligência artificial abstrata — representação de redes neurais e modelos computacionais avançados](https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80)
+![Inteligência artificial abstrata — representação de redes neurais e modelos computacionais avançados](https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80)
 
 A Isomorphic Labs não está sozinha na corrida para revolucionar a descoberta de medicamentos com IA. O campo da biotecnologia testemunhou o surgimento de várias empresas que empregam técnicas de IA para identificar candidatos a medicamentos. Entre os nomes proeminentes estão Exscientia, Insilico Medicine, Recursion Pharmaceuticals, Anima Biotech, Pharos AI e Iktos. Algumas dessas empresas, como a Exscientia, já haviam levado moléculas projetadas por IA para testes clínicos.
 

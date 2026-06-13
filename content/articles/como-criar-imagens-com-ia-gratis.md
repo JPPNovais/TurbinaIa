@@ -38,7 +38,7 @@ Para quem quer entender melhor o universo da inteligência artificial por trás 
 
 ## As Melhores Ferramentas Gratuitas para Criar Imagens com IA
 
-![Exemplos de imagens geradas por inteligência artificial com diferentes estilos visuais](https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80)
+![Exemplos de imagens geradas por inteligência artificial com diferentes estilos visuais](https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80)
 
 Antes de detalhar cada opção, veja um resumo rápido das principais ferramentas:
 

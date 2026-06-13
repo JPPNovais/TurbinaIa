@@ -1,6 +1,6 @@
 ---
 title: "TSE Endurece Regras: Proibição de Recomendações e Rankings por IA nas Eleições Brasileiras"
-description: "O Tribunal Superior Eleitoral (TSE) regulamenta o uso de IA nas eleições de 2026, proibindo recomendações e rankings de candidatos, exigindo transparência e aumentando a responsabilização."
+description: "TSE proíbe IA de recomendar candidatos nas eleições de 2026: entenda as regras sobre deepfakes, transparência e responsabilidade de plataformas digitais."
 category: noticias
 tags:
   - Inteligência Artificial
@@ -22,7 +22,9 @@ O Tribunal Superior Eleitoral (TSE) aprovou novas regras para as eleições de 2
 
 ## O Cenário Atual da IA nas Eleições Brasileiras: Um Teste Crucial
 
-A proliferação de ferramentas de Inteligência Artificial generativa, como o Google Gemini e o Flow, tem transformado radicalmente a comunicação digital. Se, por um lado, essa tecnologia oferece novas possibilidades para as campanhas, por outro, ela representa um desafio sem precedentes para a integridade do debate público e a livre formação da vontade do eleitor. As eleições de 2026 são amplamente vistas como o primeiro "teste de estresse" real para a regulamentação da IA no Brasil.
+![Código e algoritmos representando o uso de inteligência artificial em processos eleitorais](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80)
+
+A proliferação de ferramentas de Inteligência Artificial generativa, como o Google Gemini e o Flow, tem transformado radicalmente a comunicação digital. Se, por um lado, essa tecnologia oferece novas possibilidades para as campanhas, por outro, ela representa um desafio concreto e urgente para a integridade do debate público e a livre formação da vontade do eleitor. As eleições de 2026 são amplamente vistas como o primeiro "teste de estresse" real para a regulamentação da IA no Brasil.
 
 Um exemplo notório do impacto da IA na opinião pública surgiu com o caso da "Dona Maria", um personagem criado por um motorista de aplicativo que se tornou uma voz influente nas redes sociais, criticando o governo e gerando milhões de visualizações com conteúdo sintético. Embora o criador negue propósitos eleitorais, a personagem — uma mulher negra e idosa — representa estrategicamente uma demografia crucial para o eleitorado, levantando sérias questões sobre a autenticidade e a intenção de conteúdos gerados por IA.
 
@@ -36,7 +38,7 @@ Diante desse cenário complexo, o Tribunal Superior Eleitoral (TSE) agiu para es
 
 Um dos pontos mais impactantes da nova regulamentação é a proibição expressa de que provedores de sistemas de IA ranqueiem, recomendem, sugiram ou priorizem candidaturas, campanhas, partidos, federações ou coligações. Esta vedação se aplica mesmo que o usuário solicite ativamente uma indicação. O objetivo principal é impedir a interferência algorítmica direta na decisão de voto do cidadão, garantindo que a escolha eleitoral seja livre e voluntária, não influenciada por vieses programados. O ministro Kassio Nunes Marques, relator das resoluções, destacou que a medida busca "impedir a interferência algorítmica no processo decisório".
 
-Essa regra se estende a assistentes pessoais de IA, como ChatGPT, Gemini, DeepSeek, Copilot e Claude, que deverão ser modificados por seus desenvolvedores para evitar indicações de voto. A Agência Brasil também confirmou que o TSE proíbe que a IA recomende em quem o eleitor deve votar.
+Essa regra se estende a assistentes pessoais de IA, como ChatGPT, Gemini, DeepSeek, Copilot e Claude, que deverão ser modificados por seus desenvolvedores para evitar indicações de voto. O risco de manipulação via comandos ocultos nessas ferramentas já foi explorado em detalhe no caso de [prompt injection no judiciário brasileiro](/blog/prompt-injection-no-judiciario-brasileiro-como-comandos-ocultos-tentaram-subverter-a-ia-da-justica). A Agência Brasil também confirmou que o TSE proíbe que a IA recomende em quem o eleitor deve votar.
 
 ### Deepfakes e Conteúdo Sintético: Os Primeiros Alvos
 
@@ -56,6 +58,8 @@ Para proteger o eleitor de ataques de última hora e desinformação, o TSE esta
 
 ## Desafios e Lacunas na Regulamentação
 
+![Dashboard de analytics para monitoramento de conteúdo sintético e desinformação eleitoral](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80)
+
 Apesar dos avanços significativos, a regulamentação da IA nas eleições brasileiras ainda enfrenta desafios. Uma das principais questões levantadas por especialistas é a ausência de uma definição clara e abrangente de "deepfake" por parte do TSE. Paulo Rená da Silva Santarém, do IRIS, questiona se a "Dona Maria" seria considerada um deepfake, destacando que a falta de clareza pode gerar divergências nas decisões judiciais. O jornal Migalhas também aponta que a interpretação da norma sobre deepfake é baseada na potencialidade de influência sobre a formação da vontade do eleitor, mas revela a ausência de uma definição normativa mais precisa e a necessidade de critérios técnicos.
 
 Além disso, a diretora de Relações Institucionais do Conselho Digital, Roberta Jacarandá, expressou preocupações sobre os desafios técnicos das plataformas em cumprir as resoluções, especialmente em relação a "termos subjetivos" como "conteúdos notoriamente inverídicos", que podem levar à remoção excessiva de conteúdos legítimos por medo de punições.
@@ -72,13 +76,13 @@ Adicionalmente, os provedores de internet podem ser responsabilizados solidariam
 
 As eleições gerais de 2026, que elegerão Presidente, governadores, senadores e deputados, representarão o primeiro grande teste para o novo regime de uso da inteligência artificial em propaganda eleitoral. A complexidade e a velocidade da disseminação de conteúdos sintéticos exigirão uma fiscalização robusta e uma colaboração eficaz entre a Justiça Eleitoral, os candidatos, os partidos e as plataformas digitais.
 
-Para fortalecer essa fiscalização, o TSE instituiu uma comissão permanente dedicada a sistematizar e acompanhar iniciativas relacionadas ao uso de IA no processo eleitoral, focando no combate à desinformação. Essa comissão será responsável por elaborar um plano para o uso da IA nos tribunais eleitorais e por definir diretrizes para um uso seguro, ético, responsável e transparente da tecnologia. Além disso, os tribunais eleitorais poderão firmar parcerias estratégicas com universidades e órgãos especializados para garantir o rigor técnico na análise de montagens digitais.
+Para fortalecer essa fiscalização, o TSE instituiu uma comissão permanente dedicada a sistematizar e acompanhar iniciativas relacionadas ao uso de IA no processo eleitoral, focando no combate à desinformação. A discussão sobre a [ética da IA em âmbito global ganhou força com as diretrizes do Papa Leão XIV](/blog/papa-leao-xiv-lanca-enciclica-magnifica-humanitas-novas-diretrizes-eticas-para-a-ia-global), reforçando que o debate ultrapassa fronteiras tecnológicas. Essa comissão será responsável por elaborar um plano para o uso da IA nos tribunais eleitorais e por definir diretrizes para um uso seguro, ético, responsável e transparente da tecnologia. Além disso, os tribunais eleitorais poderão firmar parcerias estratégicas com universidades e órgãos especializados para garantir o rigor técnico na análise de montagens digitais.
 
 ## Perspectiva Internacional e o Marco Legal
 
 As discussões sobre a regulamentação da IA no Brasil se inserem em um contexto global. O Senado brasileiro, por exemplo, aprovou um marco regulatório da IA no final de 2024, fortemente inspirado na Lei de IA da União Europeia (EU AI Act), que ainda aguarda a análise da Câmara dos Deputados.
 
-Esse esforço legislativo, juntamente com as resoluções do TSE, reflete a percepção crescente de que, embora a IA ofereça inovações, ela também exige um novo olhar jurídico para proteger os valores democráticos. O ministro Floriano de Azevedo Marques comparou a preparação da Justiça Eleitoral à de países sujeitos a tsunamis: é preciso estar preparado para o inesperado, pois "alguma aplicação vai desafiar a legislação eleitoral e nós vamos ter que aprender a lidar com ela".
+Esse esforço legislativo, juntamente com as resoluções do TSE, reflete a percepção crescente de que, embora a IA ofereça inovações, ela também exige um novo olhar jurídico para proteger os valores democráticos. Para entender como o Brasil está posicionado nessa corrida, veja nossa análise sobre [IA no Brasil: talentos em ascensão e empresas em ritmo lento](/blog/ia-no-brasil-talentos-em-ascensao-empresas-em-ritmo-lento-o-dilema-da-inovacao). O ministro Floriano de Azevedo Marques comparou a preparação da Justiça Eleitoral à de países sujeitos a tsunamis: é preciso estar preparado para o inesperado, pois "alguma aplicação vai desafiar a legislação eleitoral e nós vamos ter que aprender a lidar com ela".
 
 ## Perguntas Frequentes
 

@@ -20,7 +20,7 @@ A Meta, gigante de tecnologia por trás do Facebook, Instagram e WhatsApp, está
 
 ## O Lançamento Estratégico da Meta AI
 
-![Interface de IA generativa com opções de assinatura para plataformas sociais](https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80)
+![Interface de IA generativa com opções de assinatura para plataformas sociais](https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80)
 
 A investida da Meta no modelo de assinaturas pagas representa um passo significativo na sua estratégia de longo prazo, à medida que a empresa busca capitalizar seus vultosos investimentos em Inteligência Artificial. Mark Zuckerberg, CEO da Meta, tem enfatizado a IA como o futuro da empresa, e essa iniciativa de monetização é um dos primeiros movimentos concretos nesse sentido.
 

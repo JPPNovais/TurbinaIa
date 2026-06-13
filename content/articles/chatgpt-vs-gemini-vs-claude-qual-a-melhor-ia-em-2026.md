@@ -62,7 +62,7 @@ Se você está começando agora, o guia sobre [como usar o ChatGPT](/blog/como-u
 
 ## Gemini (Google)
 
-![Comparação entre interfaces de assistentes de IA modernos](https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80)
+![Comparação entre interfaces de assistentes de IA modernos](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80)
 
 O Gemini é a aposta do Google na corrida das IAs conversacionais, e a empresa não poupou recursos. Com acesso direto ao buscador, ao Google Drive, ao Gmail e ao Google Docs, o Gemini tem uma vantagem estrutural que os concorrentes simplesmente não conseguem replicar — pelo menos não com a mesma profundidade de integração.
 

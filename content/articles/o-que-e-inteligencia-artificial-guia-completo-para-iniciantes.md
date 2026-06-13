@@ -11,7 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: true
 date: "2026-05-31"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80"
+coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80"
 ---
 
 Você já pediu uma recomendação de série para a Netflix, usou o Google Maps para evitar engarrafamento ou recebeu uma resposta do ChatGPT? Então você já usou inteligência artificial — provavelmente hoje mesmo. Mas o que exatamente é essa tecnologia, como ela funciona e por que todo mundo está falando sobre ela? Este guia responde essas perguntas de forma direta, sem jargão desnecessário.

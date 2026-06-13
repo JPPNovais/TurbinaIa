@@ -75,7 +75,7 @@ O Spark é impulsionado pelo [**Gemini 3.5 Flash**](/blog/gemini-35-flash-a-nova
 
 O modelo está disponível via Gemini API, Google AI Studio, Antigravity e Android Studio, com preço de API em **US$ 1,50 por milhão de tokens de entrada e US$ 9,00 por milhão de tokens de saída** — cerca de 25% mais barato que o Gemini 3.1 Pro, segundo o [LLM Stats](https://llm-stats.com/blog/research/gemini-3.5-flash-launch).
 
-![Arquitetura de agente de IA com camadas de inteligência, harness agêntico e persistência em nuvem](https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80)
+![Arquitetura de agente de IA com camadas de inteligência, harness agêntico e persistência em nuvem](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80)
 
 ## Antigravity 2.0: A Plataforma que Sustenta a Era Agêntica
 

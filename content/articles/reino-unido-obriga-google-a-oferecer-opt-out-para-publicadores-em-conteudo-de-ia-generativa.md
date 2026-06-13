@@ -61,7 +61,7 @@ A CMA deu ao Google nove meses para implementar todas as mudanças exigidas sob 
 
 A imposição dessas regras cria tanto uma oportunidade quanto um risco para os publicadores, como observado pela [EUToday.net](https://eutoday.net/uk-forces-google-to-give-publishers-ai-search-opt-out-as-media-bargaining-fight-widens). Optar por sair pode proteger o conteúdo de ser absorvido em respostas geradas por IA, mas também pode significar perder qualquer tráfego que os recursos de IA do Google enviem. Permanecer no sistema pode preservar a visibilidade, mas pode deixar os publicadores expostos a resumos que satisfazem os usuários antes que visitem o artigo original. O advogado de concorrência Tom Lewis, da Geradin Partners, que representa publicadores de notícias em questões de busca do Google, parabenizou a CMA por "abordar esta questão" e afirmou que o plano do Google de lançar as mudanças globalmente é uma "grande vitória".
 
-![Regulação de IA generativa na busca: como diferentes jurisdições abordam o uso de conteúdo por modelos de linguagem](https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80)
+![Regulação de IA generativa na busca: como diferentes jurisdições abordam o uso de conteúdo por modelos de linguagem](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80)
 
 ## Um Precedente Global? A Abordagem do Reino Unido vs. Outras Jurisdições
 

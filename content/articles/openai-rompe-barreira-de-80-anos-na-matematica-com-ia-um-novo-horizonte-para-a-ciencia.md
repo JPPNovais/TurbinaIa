@@ -19,7 +19,7 @@ A inteligência artificial atingiu um novo e impressionante marco, desafiando um
 
 ### O Enigma de Erdős: Um Desafio de Quase Oito Décadas
 
-![Representação abstrata de redes neurais e estruturas matemáticas complexas em azul e roxo](https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80)
+![Representação abstrata de redes neurais e estruturas matemáticas complexas em azul e roxo](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80)
 
 O "problema da distância unitária", proposto pelo proeminente matemático húngaro Paul Erdős em 1946, é enganosamente simples em sua formulação: dado um número *n* de pontos em um plano, qual é o número máximo de pares de pontos que podem estar a exatamente uma unidade de distância um do outro? Durante décadas, a comunidade matemática acreditou que as configurações em grade (como um tabuleiro de xadrez) ofereciam a melhor resposta possível, sugerindo que o número máximo de pares de distância unitária aumentaria apenas ligeiramente em relação ao número total de pontos, seguindo uma conjectura de n^(1+o(1)) ou n^(1+C/log log n).
 

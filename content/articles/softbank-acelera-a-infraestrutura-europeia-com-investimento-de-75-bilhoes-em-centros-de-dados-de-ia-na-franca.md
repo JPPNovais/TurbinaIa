@@ -23,7 +23,7 @@ Este investimento maciço, divulgado durante a Cúpula anual "Choose France" de 
 
 ## O Mega-Investimento do SoftBank na França
 
-![IA abstrata representando o processamento de dados em larga escala nos novos data centers europeus](https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80)
+![IA abstrata representando o processamento de dados em larga escala nos novos data centers europeus](https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80)
 
 O compromisso do SoftBank representa um marco significativo para o desenvolvimento da inteligência artificial na Europa. A primeira fase do projeto prevê um investimento inicial de €45 bilhões para entregar 3,1 GW de capacidade de centros de dados de IA na região de Hauts-de-France até 2031. Conforme o `w.media`, essa etapa incluirá a construção de centros de dados em Dunquerque (Loon-Plage), Bosquel e Bouchain, com planos para desenvolver locais adicionais em toda a França. A iniciativa visa atender à demanda crescente de desenvolvedores de IA, provedores de nuvem, empresas, instituições públicas e organizações de pesquisa.
 

@@ -13,7 +13,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-29"
-coverImage: "https://images.unsplash.com/photo-1684163761691-f2ff5477e4ea?auto=format&fit=crop&w=1200&q=80"
+coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80"
 ---
 
 A corrida pela supremacia na inteligência artificial ganhou um novo e decisivo capítulo com a aquisição da startup Stainless pela Anthropic, anunciada em 18 de maio de 2026. O movimento, que, segundo relatos anteriores, avaliou a Stainless em mais de US$ 300 milhões, não é apenas mais uma compra no aquecido mercado de tecnologia; é uma jogada estratégica que redesenha o panorama competitivo para o acesso a APIs de IA, criando um "gargalo" que pode afetar diretamente rivais de peso como OpenAI e Google. A Anthropic, conhecida por seus modelos Claude e seu foco em segurança de IA, agora consolida o controle sobre uma infraestrutura crítica para a experiência do desenvolvedor e a proliferação de agentes de IA.

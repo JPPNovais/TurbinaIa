@@ -13,6 +13,89 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'anthropic-claude-mythos-5-lancamento-2026',
+    date: '2026-06',
+    title: 'Anthropic lança Claude Mythos 5 para participantes do Project Glasswing',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'A Anthropic lançou o Claude Mythos 5 em 9 de junho de 2026, um modelo da classe Mythos disponibilizado para participantes do Project Glasswing, juntamente com o Claude Fable 5 para uso geral.',
+    highlights: [
+      'Mythos 5 é um modelo avançado da classe Mythos, projetado para usuários com acesso confiável, como parte do Project Glasswing.',
+      'O lançamento ocorreu simultaneamente com o Claude Fable 5, que se tornou o modelo mais capaz da Anthropic amplamente disponível.',
+      'O modelo possui capacidades elevadas em engenharia de software, trabalho de conhecimento, visão e pesquisa científica.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'anthropic-claude-fable-mythos-5-suspensao-acesso-2026',
+    date: '2026-06',
+    title: 'Governo dos EUA ordena suspensão do acesso a Claude Fable 5 e Mythos 5',
+    developer: 'Anthropic',
+    category: 'Descontinuado',
+    description: 'Em 12 de junho de 2026, o governo dos EUA emitiu uma diretiva de controle de exportação para suspender o acesso a Fable 5 e Mythos 5 para todos os cidadãos estrangeiros, citando preocupações de segurança nacional.',
+    highlights: [
+      'A Anthropic afirmou que desabilitaria "abruptamente" seus modelos de IA mais avançados para todos os usuários após a ordem.',
+      'A empresa entende que o governo acredita haver um método de "jailbreaking" que poderia permitir o uso de Fable 5 na identificação de vulnerabilidades de software.',
+      'A medida representa uma escalada nos esforços dos EUA para conter as capacidades de IA de adversários estrangeiros.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'openai-codex-aquisicao-ona-2026',
+    date: '2026-06',
+    title: 'OpenAI adquire Ona para expandir capacidades do Codex com infraestrutura de nuvem segura',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'A OpenAI anunciou em 11 de junho de 2026 a aquisição da Ona, integrando sua tecnologia de execução e orquestração segura em nuvem ao ecossistema Codex.',
+    highlights: [
+      'A aquisição visa expandir o Codex com uma infraestrutura de nuvem segura e controlada pelo cliente para agentes de longa duração em software e trabalho de conhecimento.',
+      'A tecnologia da Ona permitirá que os agentes operem dentro do ambiente de nuvem de uma organização, enquanto a OpenAI fornece inteligência e orquestração.',
+      'Mais de 5 milhões de pessoas usam o Codex semanalmente para pesquisar, analisar, construir e automatizar seu trabalho.'
+    ],
+    impact: 'Médio'
+  },
+  {
+    id: 'openai-modelos-oracle-cloud-2026',
+    date: '2026-06',
+    title: 'Modelos OpenAI e Codex disponíveis via compromisso com Oracle Cloud',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'Em 10 de junho de 2026, a OpenAI anunciou uma parceria com a Oracle para permitir que clientes empresariais apliquem créditos Oracle Universal para acessar modelos de fronteira da OpenAI e o Codex através do OCI.',
+    highlights: [
+      'A parceria visa facilitar o acesso a modelos avançados de IA da OpenAI para clientes da Oracle Cloud Infrastructure (OCI).',
+      'Os clientes poderão usar seus créditos Oracle Universal elegíveis para o uso desses modelos.',
+      'A disponibilidade está prevista para as próximas semanas após o anúncio.'
+    ],
+    impact: 'Médio'
+  },
+  {
+    id: 'deepseek-v4-1-lancamento-2026',
+    date: '2026-06',
+    title: 'DeepSeek lança modelo V4.1',
+    developer: 'DeepSeek',
+    category: 'Lançamento',
+    description: 'O modelo DeepSeek V4.1 foi lançado em junho de 2026, precedendo o lançamento previsto do V4.2 para agosto do mesmo ano.',
+    highlights: [
+      'O lançamento do DeepSeek V4.1 em junho continua a série de modelos V4 da empresa.',
+      'Detalhes específicos sobre novas capacidades e melhorias em relação às versões anteriores (V4 Pro e V4 Flash) não foram amplamente divulgados nos resultados da pesquisa, mas a existência da versão 4.1 é indicada.'
+    ],
+    impact: 'Baixo'
+  },
+  {
+    id: 'xai-grok-4-lancamento-2026',
+    date: '2026-06',
+    title: 'xAI lança Grok 4 e a nova camada Grok 4 Heavy',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI lançou o Grok 4 em 11 de junho de 2026, descrevendo-o como o modelo mais inteligente do mundo, com integração de ferramentas nativas e busca em tempo real, além de introduzir a camada "SuperGrok Heavy" com acesso ao Grok 4 Heavy.',
+    highlights: [
+      'Grok 4 inclui uso nativo de ferramentas e integração de busca em tempo real.',
+      'Disponível para assinantes SuperGrok e Premium+, bem como através da API xAI.',
+      'A camada SuperGrok Heavy oferece acesso ao Grok 4 Heavy, a versão mais poderosa do Grok 4.'
+    ],
+    impact: 'Alto'
+  },
+  {
     id: 'openai-chatgpt-memoria-pesquisa-2026',
     date: '2026-06',
     title: 'OpenAI pesquisa sobre "melhor memória" para um ChatGPT mais útil',

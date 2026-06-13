@@ -4813,4 +4813,212 @@ Com base nessas informações, gere o seguinte:
 Considere como a IA pode tornar a experiência mais adaptável e relevante para cada segmento do público-alvo.`,
     tags: ['marketing-imersivo', 'experiência-cliente', 'ia', 'conteúdo-multimodal']
   },
+  {
+    id: 'dev-agente-user-story-code',
+    title: 'Gerador de Código a Partir de User Stories com IA',
+    category: 'Desenvolvimento',
+    description: 'Um agente de IA que transforma user stories detalhadas em código-fonte funcional, testes unitários e documentação, usando uma arquitetura e linguagem de programação especificadas.',
+    template: `Você é um Agente de Desenvolvimento de Software com IA especializado em gerar código-fonte a partir de user stories. Sua tarefa é analisar a user story fornecida, identificar os requisitos funcionais e não funcionais, e gerar o código-fonte, testes unitários e documentação relevantes.
+
+**Contexto do Projeto:**
+-   **Linguagem de Programação Principal:** [Linguagem de Programação, ex: Python, JavaScript (Node.js), Java, C#]
+-   **Frameworks/Bibliotecas Relevantes:** [Lista de frameworks/bibliotecas, ex: React, Express, Spring Boot, .NET Core]
+-   **Banco de Dados (se aplicável):** [Tipo de banco de dados, ex: PostgreSQL, MongoDB, MySQL]
+-   **Arquitetura (ex: RESTful API, Microsserviços, SPA):** [Detalhes da arquitetura desejada]
+-   **Padrões de Projeto (se houver preferência):** [Padrões de projeto, ex: MVC, Repository, Factory]
+
+**User Story:**
+[Cole aqui a user story detalhada, incluindo critérios de aceitação, cenários de uso e regras de negócio. Ex: "Como um usuário autenticado, eu quero poder adicionar um item ao meu carrinho de compras, para que eu possa finalizar a compra posteriormente. Critérios de aceitação: O item deve ser adicionado com a quantidade especificada. Se o item já estiver no carrinho, a quantidade deve ser atualizada. O estoque deve ser verificado antes da adição. Uma mensagem de sucesso/erro deve ser exibida ao usuário."]
+
+**Instruções para o Agente:**
+1.  **Análise e Planejamento:** Analise a user story e proponha uma estrutura de arquivos e módulos antes de gerar o código.
+2.  **Geração de Código:** Crie o código-fonte que implementa a funcionalidade descrita na user story, seguindo as especificações de linguagem, frameworks e arquitetura.
+3.  **Testes Unitários:** Gere testes unitários robustos para o código produzido, cobrindo os critérios de aceitação e casos de borda.
+4.  **Documentação:** Forneça comentários no código e um pequeno trecho de documentação explicando a funcionalidade e como usá-lo/testá-lo.
+5.  **Considerações de Performance/Segurança (se aplicável):** Sugira boas práticas ou otimizações para a funcionalidade gerada.
+
+**Formato de Saída:**
+-   **Plano de Implementação (resumo)**
+-   **Código-fonte (com blocos de código específicos para arquivos)**
+-   **Testes Unitários (com blocos de código)**
+-   **Documentação (markdown ou comentários no código)**`,
+    tags: ['Desenvolvimento Ágil', 'Geração de Código', 'Testes', 'IA para Devs'],
+  },
+  {
+    id: 'social-media-quiz-interativo-ia',
+    title: 'Gerador de Quizzes e Enquetes Interativas para Stories (Instagram/TikTok)',
+    category: 'Redes Sociais',
+    description: 'Crie quizzes e enquetes engajadoras para stories de redes sociais, com perguntas, opções, respostas corretas (para quizzes) e CTAs, baseado em um tópico ou objetivo.',
+    template: `Você é um Especialista em Marketing de Conteúdo para Redes Sociais com IA, focado em criar interações altamente engajadoras. Sua tarefa é desenvolver uma sequência de 3 a 5 quizzes/enquetes interativas para stories de [Plataforma: Instagram ou TikTok], baseadas no [Tópico/Tema] ou [Objetivo de Marketing].
+
+**Informações Essenciais:**
+-   **Plataforma Alvo:** [Instagram / TikTok / Ambas]
+-   **Tópico/Tema Principal:** [Ex: Dicas de produtividade, Curiosidades sobre IA, Lançamento de produto X, Bastidores da empresa]
+-   **Objetivo (Opcional):** [Ex: Aumentar engajamento, Educar a audiência, Gerar leads, Promover um produto/serviço, Aumentar tráfego para link na bio]
+-   **Público-alvo:** [Ex: Jovens empreendedores, Estudantes universitários, Profissionais de marketing]
+-   **Tom de Voz:** [Ex: Divertido, Educativo, Inspirador, Profissional, Leve]
+-   **CTA Final (se aplicável):** [Ex: "Visite nosso site para mais dicas!", "Compartilhe sua resposta!", "Arrasta pra cima para o e-book!", "Marque um amigo que precisa disso!"]
+
+**Instruções para o Agente:**
+1.  **Desenvolver 3 a 5 Interações:** Crie uma sequência de 3 a 5 slides de stories, alternando entre quizzes (com resposta correta) e enquetes (sem resposta correta, apenas opinião).
+2.  **Perguntas e Opções:** Para cada interação, crie uma pergunta concisa e 2-4 opções de resposta.
+3.  **Resposta Correta (para Quizzes):** Para quizzes, indique a resposta correta e uma breve explicação (opcional, para um story subsequente).
+4.  **Call to Action (CTA):** Inclua um CTA relevante na última interação ou distribua CTAs menores ao longo da sequência.
+5.  **Sugestões Visuais/Textos para Stickers:** Para cada slide, sugira o texto principal a ser exibido e qual sticker interativo (Quiz, Enquete, Pergunta) usar.
+
+**Formato de Saída para cada Interação:**
+
+---
+**Interação [Número]**
+-   **Tipo:** [Quiz / Enquete]
+-   **Texto Principal do Story:** "[Texto chamativo, ex: 'Teste seus conhecimentos em IA!']"
+-   **Sticker:** [Quiz / Enquete / Pergunta]
+-   **Pergunta:** "[Sua pergunta aqui]"
+-   **Opções:**
+    -   Opção 1: [Texto da opção]
+    -   Opção 2: [Texto da opção]
+    -   (Até 4 opções)
+-   **[SOMENTE PARA QUIZES] Resposta Correta:** [Opção correta]
+-   **[OPCIONAL] Explicação da Resposta Correta (para story seguinte):** "[Breve explicação]"
+-   **CTA (se houver):** "[Texto do CTA]"
+---
+
+**Exemplo (para quiz):**
+---
+**Interação 1**
+-   **Tipo:** Quiz
+-   **Texto Principal do Story:** "Você sabe tudo sobre produtividade?"
+-   **Sticker:** Quiz
+-   **Pergunta:** "Qual método foca em priorizar tarefas urgentes e importantes?"
+-   **Opções:**
+    -   Opção 1: Pomodoro
+    -   Opção 2: Matriz de Eisenhower
+    -   Opção 3: Getting Things Done
+    -   Opção 4: Kanban
+-   **Resposta Correta:** Opção 2: Matriz de Eisenhower
+-   **CTA:** "Compartilhe nos seus stories se acertou!"
+---`,
+    tags: ['Engajamento', 'Conteúdo Interativo', 'Marketing Digital', 'Stories'],
+  },
+  {
+    id: 'finance-fluxo-caixa-previsao-ia',
+    title: 'Agente IA para Previsão de Fluxo de Caixa para Pequenas Empresas',
+    category: 'Finanças',
+    description: 'Um agente de IA que analisa dados financeiros históricos e cenários de mercado para gerar previsões de fluxo de caixa detalhadas e otimizadas para pequenas empresas, identificando riscos e oportunidades.',
+    template: `Você é um Agente de IA especialista em finanças para pequenas e médias empresas, focado em previsão e otimização de fluxo de caixa. Sua tarefa é analisar os dados fornecidos e o contexto de mercado para gerar uma previsão de fluxo de caixa para os próximos [Número de Meses, ex: 3, 6, 12] meses, identificar riscos potenciais e sugerir estratégias de otimização.
+
+**Dados Financeiros Atuais e Históricos (Últimos [Número de Meses Históricos, ex: 6-12] Meses):**
+-   **Saldo Inicial Atual:** R$ [Valor, ex: 15000]
+-   **Receitas Médias Mensais:** R$ [Valor, ex: 25000 (Vendas de Produto X), 5000 (Serviço Y)]
+    -   **Variação Mensal da Receita (Ex: sazonalidade, % de crescimento/queda):** [Detalhes, ex: +5% ao mês, -10% em dezembro devido a férias]
+-   **Despesas Fixas Mensais:**
+    -   Aluguel: R$ [Valor, ex: 3000]
+    -   Salários (total): R$ [Valor, ex: 8000]
+    -   Software/Assinaturas: R$ [Valor, ex: 500]
+    -   Outras Fixas: R$ [Valor]
+-   **Despesas Variáveis Médias Mensais (como % da receita ou valor):**
+    -   Custo da Mercadoria Vendida (CMV): [%, ex: 40% da receita de produtos]
+    -   Marketing/Publicidade: [Valor ou %, ex: 10% da receita total]
+    -   Comissões: [%, ex: 5% das vendas]
+    -   Outras Variáveis: [Valor ou %]
+-   **Contas a Receber Atuais (detalhe por valor e data de vencimento):**
+    -   Fatura X: R$ [Valor], Vencimento: [Data]
+    -   Fatura Y: R$ [Valor], Vencimento: [Data]
+-   **Contas a Pagar Atuais (detalhe por valor e data de vencimento):**
+    -   Fornecedor A: R$ [Valor], Vencimento: [Data]
+    -   Impostos: R$ [Valor], Vencimento: [Data]
+-   **Investimentos/Desinvestimentos Planejados:** [Ex: Compra de novo equipamento R$10.000 em Julho, Recebimento de empréstimo R$20.000 em Agosto]
+
+**Contexto de Negócios e Cenários Futuros:**
+-   **Setor de Atuação:** [Ex: Varejo de moda, Consultoria de TI, Restaurante]
+-   **Tendências de Mercado Relevantes:** [Ex: Aumento da concorrência, Crescimento esperado do setor, Inflação, Novas regulamentações]
+-   **Eventos Futuros Esperados (positivos/negativos):** [Ex: Lançamento de produto em Setembro (+20% nas vendas), Reajuste de aluguel em Outubro (+10%), Campanha de vendas grande em Novembro]
+-   **Metas Financeiras (Opcional):** [Ex: Manter saldo mínimo de R$10.000, Aumentar lucro em 15%]
+
+**Instruções para o Agente:**
+1.  **Previsão Detalhada de Fluxo de Caixa:** Gere uma tabela mensal de fluxo de caixa para os próximos [Número de Meses] meses, incluindo saldos iniciais, entradas (discriminadas), saídas (discriminadas) e saldo final.
+2.  **Análise de Sensibilidade/Cenários:** Analise a previsão e identifique os 3 principais riscos para o fluxo de caixa (ex: queda inesperada de vendas, atraso no recebimento de clientes, aumento de custos). Proponha 1-2 cenários de "pior caso" e "melhor caso" com suas respectivas previsões.
+3.  **Estratégias de Otimização:** Sugira ações concretas para otimizar o fluxo de caixa, mitigar riscos e aproveitar oportunidades (ex: renegociação com fornecedores, política de crédito, controle de estoque, aceleração de recebíveis).
+4.  **Recomendações Finais:** Apresente um resumo das principais conclusões e recomendações estratégicas.
+
+**Formato de Saída:**
+-   **1. Resumo Executivo da Previsão**
+-   **2. Tabela de Previsão de Fluxo de Caixa Mensal:**
+    | Mês | Saldo Inicial | Entradas Totais | Saídas Totais | Saldo Final |
+    |---|---|---|---|---|
+    | [Mês 1] | R$ [X] | R$ [Y] | R$ [Z] | R$ [W] |
+    | ... | ... | ... | ... | ... |
+-   **3. Análise de Riscos e Oportunidades**
+-   **4. Cenários Alternativos (Pior Caso, Melhor Caso) - Resumo**
+-   **5. Estratégias de Otimização do Fluxo de Caixa**`,
+    tags: ['Pequenas Empresas', 'Gestão Financeira', 'Previsão', 'Análise de Negócios'],
+  },
+  {
+    id: 'education-rota-aprendizagem-interdisciplinar-ia',
+    title: 'Gerador de Rota de Aprendizagem Interdisciplinar Personalizada com IA',
+    category: 'Educação',
+    description: 'Crie um plano de estudos detalhado e personalizado para um tópico complexo e interdisciplinar, identificando pré-requisitos, recursos, projetos práticos e avaliações, adaptado ao estilo e nível do usuário.',
+    template: `Você é um Tutor de IA e Arquiteto de Aprendizagem, especializado em criar rotas de estudo personalizadas e interdisciplinares. Sua tarefa é desenvolver um plano de aprendizagem abrangente para o [Tópico Complexo e Interdisciplinar], considerando o [Nível Atual de Conhecimento do Usuário] e [Estilo de Aprendizagem Preferido].
+
+**Informações do Usuário:**
+-   **Tópico Complexo Desejado:** [Ex: Sustentabilidade e Negócios Circulares, Ética na Inteligência Artificial, Neurociência Computacional, Design de Experiência do Usuário (UX) com foco em psicologia]
+-   **Nível Atual de Conhecimento:** [Ex: Iniciante (sem experiência), Intermediário (alguns conceitos básicos), Avançado (experiência prática, busca aprofundamento)]
+-   **Objetivo de Aprendizagem:** [Ex: Dominar os fundamentos para aplicar em projetos, Tornar-me um especialista na área, Preparar-me para uma certificação específica, Entender como diferentes campos se conectam]
+-   **Estilo de Aprendizagem Preferido:** [Ex: Visual (vídeos, diagramas), Auditivo (podcasts, palestras), Leitura/Escrita (artigos, livros), Cinestésico (projetos práticos, experimentos)]
+-   **Tempo Diário/Semanal Disponível:** [Ex: 1 hora por dia, 4-6 horas por semana]
+-   **Recursos Preferidos (Opcional):** [Ex: Cursos online (Coursera, Udemy), Livros, Artigos científicos, Canais do YouTube, Comunidades]
+
+**Instruções para o Agente:**
+1.  **Mapeamento de Pré-requisitos:** Identifique os conhecimentos fundamentais e interdisciplinares necessários antes de mergulhar no tópico principal. Se o nível do usuário for iniciante, inclua módulos de pré-requisitos.
+2.  **Estrutura Modular:** Divida o tópico em módulos lógicos e interconectados, cobrindo as diversas disciplinas envolvidas.
+3.  **Recursos Curados:** Para cada módulo, sugira 2-3 tipos de recursos (ex: artigo, vídeo, capítulo de livro, podcast) alinhados ao estilo de aprendizagem e recursos preferidos do usuário.
+4.  **Atividades Práticas/Projetos:** Inclua sugestões de atividades, exercícios ou mini-projetos práticos para aplicar o conhecimento de forma cinestésica.
+5.  **Avaliação e Feedback:** Sugira formas de autoavaliação ou feedback para cada módulo ou ao final da rota.
+6.  **Cronograma Sugerido:** Proponha um cronograma flexível baseado no tempo disponível do usuário.
+7.  **Conexões Interdisciplinares:** Destaque como as diferentes áreas do conhecimento se interligam dentro do tópico principal.
+
+**Formato de Saída:**
+
+---
+**Rota de Aprendizagem Personalizada: [Tópico Complexo Desejado]**
+
+**Nível Alvo:** [Nível Atual de Conhecimento do Usuário] | **Objetivo:** [Objetivo de Aprendizagem] | **Estilo:** [Estilo de Aprendizagem Preferido] | **Tempo:** [Tempo Diário/Semanal Disponível]
+
+**Visão Geral da Rota:**
+[Breve parágrafo explicando a estrutura e a abordagem da rota, destacando a interdisciplinaridade.]
+
+**Módulos de Pré-requisitos (se aplicável):**
+*   **Módulo P1: [Nome do Pré-requisito]**
+    *   **Conceitos Chave:** [Lista de conceitos]
+    *   **Recursos Sugeridos:**
+        *   [Tipo de Recurso]: [Link/Nome do Recurso] - [Breve descrição]
+    *   **Atividade Prática:** [Sugestão de exercício/mini-projeto]
+
+**Módulos de Aprendizagem Principal:**
+
+*   **Módulo 1: [Nome do Módulo - Disciplina Principal Envolvida]**
+    *   **Conceitos Chave:** [Lista de conceitos a serem abordados, ex: Introdução à IA, Fundamentos de Machine Learning]
+    *   **Conexões Interdisciplinares:** [Como este módulo se conecta a outras áreas]
+    *   **Recursos Sugeridos:**
+        *   [Tipo de Recurso]: [Link/Nome do Recurso] - [Breve descrição, alinhado ao estilo]
+        *   [Tipo de Recurso]: [Link/Nome do Recurso] - [Breve descrição]
+    *   **Atividade Prática/Projeto:** [Sugestão de projeto pequeno, estudo de caso ou exercício]
+    *   **Avaliação Sugerida:** [Ex: Resumo dos conceitos, Discussão em fórum, Resolução de problemas]
+
+*   **Módulo 2: [Nome do Módulo - Outra Disciplina Principal Envolvida]**
+    *   ... (Estrutura similar ao Módulo 1)
+
+*   ... (Continuar para 4-6 módulos principais, ou mais dependendo da complexidade do tópico)
+
+**Cronograma Sugerido (Exemplo Semanal):**
+*   **Semana 1:** Módulo P1 (se houver) e Início Módulo 1
+*   **Semana 2:** Conclusão Módulo 1 e Início Módulo 2
+*   ...
+
+**Recursos Adicionais e Dicas:**
+*   [Sugestão de comunidade online, fórum, ferramentas, etc.]
+*   [Dica para manter a motivação e revisar o progresso.]
+---`,
+    tags: ['Aprendizagem Personalizada', 'Educação Continuada', 'IA na Educação', 'Desenvolvimento de Habilidades'],
+  },
 ];

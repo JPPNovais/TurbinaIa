@@ -45,18 +45,18 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'GPT-4o mini',
     provider: 'OpenAI',
-    inputPricePerM: 0.15,
-    outputPricePerM: 0.60,
+    inputPricePerM: 0.125,
+    outputPricePerM: 0.625,
     contextWindow: '128K tokens',
-    description: 'A versão mais acessível do GPT-4o (lançado em Julho de 2024), otimizado para tarefas de alta demanda e baixo custo, mantendo 128K de contexto.',
+    description: 'A versão mais acessível do GPT-4o (lançado em Julho de 2024), otimizado para tarefas de alta demanda e baixo custo, mantendo 128K de contexto. Preços atualizados em Junho de 2026.',
   },
   {
     name: 'GPT-4o',
     provider: 'OpenAI',
-    inputPricePerM: 2.50,
-    outputPricePerM: 10.00,
+    inputPricePerM: 5.00,
+    outputPricePerM: 15.00,
     contextWindow: '128K tokens',
-    description: 'O modelo multimodal da OpenAI (lançado em Maio de 2024), oferece raciocínio avançado, capacidades multimodais e 128K de contexto. Preços mantidos em Junho de 2026.',
+    description: 'O modelo multimodal da OpenAI (lançado em Maio de 2024), oferece raciocínio avançado, capacidades multimodais e 128K de contexto. Preços atualizados em Junho de 2026.',
   },
   // Anthropic
   {
@@ -65,7 +65,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 5.00,
     outputPricePerM: 25.00,
     contextWindow: '1M tokens',
-    description: 'A versão mais recente do modelo Opus da Anthropic para raciocínio complexo e tarefas agênticas (lançado em Abril de 2026), com 1M de contexto. Oferece capacidades de visão de alta resolução e é ideal para agentes de longo horizonte.',
+    description: 'A versão mais recente do modelo Opus da Anthropic para raciocínio complexo e tarefas agênticas (lançado em Abril de 2026), com 1M de contexto. Oferece capacidades de visão de alta resolução e é ideal para agentes de longo horizonte. Preços atualizados em Junho de 2026.',
   },
   {
     name: 'Claude Sonnet 4.6',
@@ -73,7 +73,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 3.00,
     outputPricePerM: 15.00,
     contextWindow: '1M tokens',
-    description: 'A versão mais recente do modelo Sonnet da Anthropic (lançado em Fevereiro de 2026), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 1M de contexto. É o melhor equilíbrio para cargas de trabalho de produção.',
+    description: 'A versão mais recente do modelo Sonnet da Anthropic (lançado em Fevereiro de 2026), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 1M de contexto. É o melhor equilíbrio para cargas de trabalho de produção. Preços atualizados em Junho de 2026.',
   },
   {
     name: 'Claude Haiku 4.5',
@@ -81,7 +81,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 1.00,
     outputPricePerM: 5.00,
     contextWindow: '200K tokens',
-    description: 'A versão mais recente do modelo Haiku da Anthropic (lançado em Outubro de 2025), o mais rápido e econômico, com 200K de contexto. Ideal para tarefas de alto volume e sensíveis à latência.',
+    description: 'A versão mais recente do modelo Haiku da Anthropic (lançado em Outubro de 2025), o mais rápido e econômico, com 200K de contexto. Ideal para tarefas de alto volume e sensíveis à latência. Preços atualizados em Junho de 2026.',
   },
   // DeepSeek
   {
@@ -90,16 +90,16 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.14,
     outputPricePerM: 0.28,
     contextWindow: '1M tokens',
-    description: 'Modelo MoE eficiente e econômico da DeepSeek (lançado em Abril de 2026), com 1M de contexto, oferecendo bom desempenho a baixo custo. O DeepSeek-V2.5, por exemplo, oferece este mesmo custo por token.',
+    description: 'Modelo MoE eficiente e econômico da DeepSeek (lançado em Abril de 2026), com 1M de contexto, oferecendo bom desempenho a baixo custo. Preços atualizados em Junho de 2026.',
   },
   // Meta (via API)
   {
-    name: 'Llama 3.3 70B Instruct Turbo (via Together AI)',
+    name: 'Llama 3.1 70B Instruct (via Together AI)',
     provider: 'Meta (via API)',
     inputPricePerM: 0.88,
     outputPricePerM: 0.88,
     contextWindow: '131K tokens',
-    description: 'Versão avançada do modelo open-source Llama 3 (Llama 3.3 70B Instruct Turbo), poderoso via API Together AI (preços verificados em Junho de 2026), com 131K de contexto.',
+    description: 'Versão avançada do modelo open-source Llama 3 (Llama 3.1 70B Instruct), poderoso via API Together AI (preços verificados em Junho de 2026), com 131K de contexto.',
   },
   {
     name: 'Llama 3.1 8B Instruct Turbo (via Together AI)',
@@ -123,8 +123,8 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'Mistral AI',
     inputPricePerM: 0.10,
     outputPricePerM: 0.30,
-    contextWindow: '32K tokens',
-    description: 'Um modelo econômico da Mistral AI (Mistral Small 4), ideal para projetos sensíveis ao custo, com 32K de contexto (preços verificados em Junho de 2026).',
+    contextWindow: '256K tokens',
+    description: 'Um modelo econômico da Mistral AI (Mistral Small 4), ideal para projetos sensíveis ao custo, com 256K de contexto (preços verificados em Junho de 2026).',
   },
   // Cohere
   {

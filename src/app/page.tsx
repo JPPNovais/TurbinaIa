@@ -116,38 +116,70 @@ export default async function Home({ searchParams }: HomeProps) {
         </section>
       )}
 
-      {/* Intro / resposta direta (AEO) */}
-      <div className="container">
+      {/* Ferramentas gratuitas — ações claras + resposta direta (AEO) */}
+      <section className="container home-tools" aria-label="Ferramentas gratuitas do Turbina IA">
         <p className="home-intro">
-          <strong>Em resumo:</strong> o Turbina IA é o portal brasileiro de Inteligência Artificial
-          com notícias diárias, tutoriais e ferramentas gratuitas — incluindo{' '}
-          <Link href="/comparador">comparador de modelos</Link>,{' '}
-          <Link href="/calculadora">calculadora de custos</Link>,{' '}
-          <Link href="/prompts">biblioteca de prompts</Link> e o{' '}
-          <Link href="/verificador-ia">verificador de IA</Link>.
+          <strong>Em resumo:</strong> o Turbina IA é o portal brasileiro de Inteligência Artificial —
+          notícias diárias, tutoriais e ferramentas gratuitas para você usar IA com mais resultado.
         </p>
-        <ul className="home-highlights">
-          <li>📰 Notícias diárias de Inteligência Artificial</li>
-          <li>📚 Tutoriais e guias práticos (do básico ao avançado)</li>
-          <li>⚖️ <Link href="/comparador">Comparador</Link> de ChatGPT, Gemini e Claude</li>
-          <li>🧮 <Link href="/calculadora">Calculadora</Link> de custos de APIs de IA</li>
-          <li>💬 <Link href="/prompts">Biblioteca</Link> com +160 prompts prontos</li>
-          <li>🔍 <Link href="/verificador-ia">Verificador de IA</Link> para aparecer nas respostas (AEO)</li>
-        </ul>
-      </div>
 
-      {/* Destaque da ferramenta gratuita (AEO) */}
-      <div className="container">
-        <Link href="/verificador-ia" className="tool-highlight">
-          <div className="tool-highlight-icon" aria-hidden="true">🔍</div>
-          <div className="tool-highlight-text">
-            <span className="tool-highlight-badge">Novo · Ferramenta Grátis</span>
-            <strong className="tool-highlight-title">Seu site aparece nas respostas do ChatGPT e Gemini?</strong>
-            <span className="tool-highlight-desc">Teste grátis em segundos e descubra o que melhorar para ser citado pelas IAs.</span>
-          </div>
-          <span className="tool-highlight-cta">Analisar agora →</span>
+        {/* Destaque maior: Verificador de IA (ferramenta de avaliação) */}
+        <Link href="/verificador-ia" className="tool-feature">
+          <span className="tool-feature-ic" aria-hidden="true">🔍</span>
+          <span className="tool-feature-body">
+            <span className="tool-feature-badge">Novo · Ferramenta grátis</span>
+            <span className="tool-feature-title">Seu site aparece nas respostas do ChatGPT e Gemini?</span>
+            <span className="tool-feature-desc">Analise sua página em segundos e descubra o que melhorar para ser citado pelas IAs.</span>
+          </span>
+          <span className="tool-feature-cta">Analisar grátis →</span>
         </Link>
-      </div>
+
+        {/* Cards das ferramentas */}
+        <ul className="tool-cards">
+          <li>
+            <Link href="/comparador" className="tool-card">
+              <span className="tool-card-ic ic-cyan" aria-hidden="true">⚖️</span>
+              <span className="tool-card-tt">Comparador de IAs</span>
+              <span className="tool-card-sub">ChatGPT vs Gemini vs Claude</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/calculadora" className="tool-card">
+              <span className="tool-card-ic ic-green" aria-hidden="true">🧮</span>
+              <span className="tool-card-tt">Calculadora de Custos</span>
+              <span className="tool-card-sub">Quanto custa a API de cada IA</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/prompts" className="tool-card">
+              <span className="tool-card-ic ic-purple" aria-hidden="true">💬</span>
+              <span className="tool-card-tt">Biblioteca de Prompts</span>
+              <span className="tool-card-sub">+160 prompts prontos e grátis</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/gerador" className="tool-card">
+              <span className="tool-card-ic ic-orange" aria-hidden="true">✍️</span>
+              <span className="tool-card-tt">Gerador de Prompts</span>
+              <span className="tool-card-sub">Monte o prompt perfeito</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/ferramentas" className="tool-card">
+              <span className="tool-card-ic ic-blue" aria-hidden="true">🧰</span>
+              <span className="tool-card-tt">Guia de Ferramentas</span>
+              <span className="tool-card-sub">+70 IAs por categoria</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/glossario" className="tool-card">
+              <span className="tool-card-ic ic-pink" aria-hidden="true">📖</span>
+              <span className="tool-card-tt">Glossário de IA</span>
+              <span className="tool-card-sub">Termos explicados de forma simples</span>
+            </Link>
+          </li>
+        </ul>
+      </section>
 
       {/* Top Banner Ad */}
       <div className="container">

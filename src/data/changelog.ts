@@ -13,6 +13,63 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'xai-grok-build-plugin-marketplace-2026',
+    date: '2026-06',
+    title: 'xAI lança Grok Build Plugin Marketplace para expandir capacidades de agentic coding',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI lançou o Grok Build Plugin Marketplace em 11 de junho de 2026, uma plataforma integrada ao terminal que permite aos usuários navegar, instalar e atualizar plugins para o Grok Build, seu agente de codificação.',
+    highlights: [
+      'Marketplace integrado ao terminal para o Grok Build, o agente de codificação da xAI.',
+      'Plugins empacotam habilidades, comandos slash, agentes, hooks, servidores MCP e LSPs em uma única instalação.',
+      'O catálogo de lançamento inclui plugins de parceiros como MongoDB, Vercel, Sentry, Chrome DevTools, Cloudflare e Superpowers.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'deepseek-v2-melhorias-codificacao-matematica-2026',
+    date: '2026-06',
+    title: 'DeepSeek aprimora o modelo V2 com capacidades avançadas de codificação e matemática',
+    developer: 'DeepSeek',
+    category: 'Atualização',
+    description: 'Em junho de 2026, a DeepSeek aprimorou seu modelo V2 com capacidades significativas em codificação e matemática, que, na época, superaram as de vários modelos fechados proeminentes, como GPT-4 Turbo da OpenAI e Claude 3 Opus da Anthropic.',
+    highlights: [
+      'Aprimoramentos em capacidades de codificação e matemática para o modelo V2.',
+      'Superou modelos fechados como GPT-4 Turbo e Claude 3 Opus em codificação e matemática na época do lançamento.',
+      'Esses desenvolvimentos prepararam o terreno para futuras melhorias em modelos abertos chineses.'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'meta-ai-agente-negocios-whatsapp-instagram-messenger-2026',
+    date: '2026-06',
+    title: 'Meta lança Agente de Negócios de IA para WhatsApp, Instagram e Messenger',
+    developer: 'Meta AI',
+    category: 'Lançamento',
+    description: 'Em 2 de junho de 2026, a Meta lançou um novo agente de IA para negócios em suas plataformas WhatsApp, Instagram e Messenger, visando ajudar empresas a gerenciar suas operações.',
+    highlights: [
+      'Agente de IA projetado para auxiliar na gestão de negócios.',
+      'Disponibilizado inicialmente nas plataformas WhatsApp, Instagram e Messenger.',
+      'O CEO Mark Zuckerberg afirmou que a ferramenta eventualmente ajudará a "gerenciar todo o seu negócio".'
+    ],
+    impact: 'Alto'
+  },
+  {
+    id: 'xai-grok-go-assistente-compras-2026',
+    date: '2026-06',
+    title: 'xAI lança Go, assistente de compras de IA no aplicativo Gopuff',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI lançou Go em 11 de junho de 2026, um assistente de compras de IA integrado ao aplicativo Gopuff, utilizando modelos de texto, áudio e imagem do Grok para criar carrinhos personalizados e alimentar um feed de compras visual.',
+    highlights: [
+      'Assistente de compras de IA integrado ao aplicativo Gopuff.',
+      'Utiliza modelos de texto, áudio e imagem do Grok para personalização.',
+      'Oferece carrinhos personalizados e um feed de compras visual, com o objetivo de acelerar os pedidos.',
+      'Disponível inicialmente nos EUA no iOS e Android, com lançamento futuro no Reino Unido.'
+    ],
+    impact: 'Alto'
+  },
+  {
     id: 'anthropic-claude-mythos-5-lancamento-2026',
     date: '2026-06',
     title: 'Anthropic lança Claude Mythos 5 para participantes do Project Glasswing',

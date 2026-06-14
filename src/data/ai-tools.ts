@@ -114,7 +114,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://claude.ai',
     tags: ['redação', 'texto', 'anthropic', 'assistente', 'análise', 'longo contexto'],
     isFeatured: true,
-    popularityRank: 2,
+    popularityRank: 3,
     updatedAt: '2026-06',
   },
   {
@@ -136,7 +136,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (acesso a Gemini 3.5 Flash, uso limitado). Google AI Plus a US$ 7.99/mês (200GB de armazenamento, recursos Gemini Advanced) ou US$ 9.99/mês (2TB de armazenamento, recursos Gemini Advanced). Google One AI Premium a US$ 19,99/mês (acesso a Gemini 3.1 Pro, 2 TB de armazenamento, recursos de IA no Gmail, Docs, etc.). Google AI Ultra a US$ 99.99/mês (20TB de armazenamento, até 20x limites de uso) ou US$ 200/mês (30TB de armazenamento). Google Gemini for Workspace Business Standard, Plus e Enterprise (Gemini agora está incluído). Planos de API (pay-per-token): Gemini 3.5 Flash (lançado em 19 de maio de 2026) a US$ 1.50/M tokens entrada e US$ 9.00/M tokens saída; Gemini 3.1 Pro a US$ 2.00/M tokens entrada e US$ 12.00/M tokens saída (até 1M tokens).',
     url: 'https://gemini.google.com',
     tags: ['google', 'redação', 'texto', 'assistente', 'workspace', 'multimodal'],
-    popularityRank: 3,
+    popularityRank: 2,
     updatedAt: '2026-06',
   },
   {
@@ -158,7 +158,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Copilot Chat com modelos básicos, integrado ao Windows e Bing). Copilot Pro a US$ 20/usuário/mês (acesso a modelos mais avançados como GPT-4 Turbo, criação de imagens acelerada, integração com Office para assinantes Microsoft 365 Personal/Family, acesso prioritário). Microsoft 365 Copilot Business: US$ 18/usuário/mês (faturamento anual, oferta promocional até 30 de junho de 2026, para até 300 usuários), US$ 21/usuário/mês (faturamento anual, preço padrão a partir de 1º de julho de 2026), ou US$ 25.20/usuário/mês (faturamento mensal). Requer plano Microsoft 365 Business Standard ou Business Premium. Microsoft 365 Copilot Enterprise a US$ 30/usuário/mês (faturamento anual). Requer plano Microsoft 365 E3 ou E5. Microsoft 365 E7 Frontier Suite a US$ 99/usuário/mês (lançado em 1º de maio de 2026, inclui E5, Copilot, Agent 365). Copilot Studio para agentes customizados: US$ 200/mês por 25.000 créditos (pacotes pré-pagos) ou US$ 0.01 por crédito (pay-as-you-go via Azure).',
     url: 'https://copilot.microsoft.com',
     tags: ['microsoft', 'office', 'word', 'excel', 'powerpoint', 'redação', 'produtividade'],
-    popularityRank: 5,
+    popularityRank: 4,
     updatedAt: '2026-06',
   },
   {
@@ -203,7 +203,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://x.ai/grok',
     tags: ['twitter', 'x', 'tempo real', 'notícias', 'xai', 'chat', 'raciocínio'],
     isNew: true,
-    popularityRank: 27,
+    popularityRank: 16,
     updatedAt: '2026-06',
   },
   {
@@ -225,7 +225,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (uso limitado de IA para tarefas básicas). Notion Plus a US$ 10/usuário/mês (faturamento anual, inclui um trial limitado de Notion AI). Notion Business a US$ 20/usuário/mês (faturamento anual, inclui Notion AI ilimitado, SSO, teamspaces privados, pesquisa empresarial, notas de reunião de IA, modo de pesquisa). Enterprise com preço customizado.',
     url: 'https://www.notion.so/ai',
     tags: ['produtividade', 'organização', 'escrita', 'workspace', 'assistente', 'notas'],
-    popularityRank: undefined,
+    popularityRank: 11,
     updatedAt: '2026-06',
   },
   {
@@ -291,7 +291,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (2.000 palavras por mês, 1 assento, 90+ ferramentas de IA). Pro a US$ 36/mês (faturamento anual) ou US$ 49/mês (faturamento mensal), inclui palavras ilimitadas, 5 assentos, Brand Voice ilimitado e recursos de colaboração. Enterprise com preço customizado (SSO, acesso à API, suporte dedicado).',
     url: 'https://www.copy.ai',
     tags: ['copywriting', 'marketing', 'conteúdo', 'geração de texto', 'anúncios', 'vendas', 'novo'],
-    popularityRank: 27,
+    popularityRank: undefined,
     updatedAt: '2026-06',
   },
 
@@ -339,7 +339,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://cursor.com',
     tags: ['editor', 'código', 'ide', 'programação', 'vscode', 'refatoração'],
     isFeatured: true,
-    popularityRank: 22,
+    popularityRank: 29,
     updatedAt: '2026-06',
   },
   {
@@ -363,7 +363,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (quota leve para codificação agêntica, disponibilidade limitada de modelos, edições inline ilimitadas, Tab completions ilimitadas). Pro a US$ 20/mês (quotas aumentadas, incluindo modelos de fronteira OpenAI, Claude e Gemini, disponibilidade total de modelos, SWE 1.6, acesso ao Devin Cloud para agentes). Uso adicional disponível a preços de API. Max a US$ 200/mês (quotas significativamente mais altas que o Pro).',
     url: 'https://devin.ai/desktop', // Updated URL
     tags: ['código', 'autocompletar', 'grátis', 'programação', 'múltiplas linguagens', 'ide', 'agente', 'windsurf', 'codeium'],
-    popularityRank: 23,
+    popularityRank: 28,
     updatedAt: '2026-06',
   },
   {
@@ -386,7 +386,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://replit.com',
     tags: ['ide online', 'programação', 'deploy', 'aprendizado', 'prototipagem'],
     isNew: true,
-    popularityRank: 29,
+    popularityRank: 28,
     updatedAt: '2026-06',
   },
   {
@@ -725,7 +725,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (10 slow credits/semana). Plus a US$ 20/mês (US$ 15/mês anual, 1.000 priority credits/mês). Pro a US$ 60/mês (US$ 42/mês anual, 3.500 priority credits/mês). Team a US$ 30/usuário/mês (US$ 20/usuário/mês anual, mínimo 2 usuários, 1.500 priority credits/usuário/mês). API (de US$ 0.025 a US$ 0.10 por imagem).',
     url: 'https://ideogram.ai',
     tags: ['imagem', 'texto em imagem', 'logo', 'pôster', 'tipografia', 'design'],
-    popularityRank: 19,
+    popularityRank: 17,
     updatedAt: '2026-06',
   },
   {
@@ -747,7 +747,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (20 gerações gratuitas). Assinantes Firefly (incluindo Firefly Pro, Firefly Premium, planos de 4.000, 7.000 e 50.000 créditos) agora têm gerações ilimitadas de imagens e vídeos (até 2K resolução) com modelos líderes da indústria (Google Nano Banana Pro, GPT Image Generation, Runway Gen-4 Image, e modelos Firefly). Planos Creative Cloud Pro (a partir de US$ 69.99/mês) incluem uso ilimitado de geração padrão. Assinatura do aplicativo móvel Firefly a US$ 9.99/mês. Enterprise a US$ 24/usuário/mês como add-on (pool de créditos negociável, indemnização). API Firefly sob consulta (a partir de US$ 1.000/mês com custo por imagem de US$ 0.02-0.10).',
     url: 'https://firefly.adobe.com',
     tags: ['adobe', 'photoshop', 'design', 'edição', 'creative cloud', 'imagem'],
-    popularityRank: 24,
+    popularityRank: 9,
     updatedAt: '2026-06',
   },
   {
@@ -904,7 +904,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (150 tokens diários, até 75 imagens/dia, uso não comercial). Apprentice a US$ 10/mês (US$ 8/mês anual, 8.500 tokens/mês, uso comercial). Artisan a US$ 24/mês (US$ 20/mês anual, 25.000 tokens/mês). Maestro a US$ 48/mês (US$ 40/mês anual, 60.000 tokens/mês). Enterprise sob consulta.',
     url: 'https://leonardo.ai',
     tags: ['imagem', 'geração', 'arte', 'design', '3d', 'customizável'],
-    popularityRank: 25,
+    popularityRank: 15,
     updatedAt: '2026-06',
   },
 
@@ -929,7 +929,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://openai.com/sora',
     tags: ['vídeo', 'geração', 'openai', 'cinematográfico', 'animação', 'descontinuado'],
     isFeatured: false,
-    popularityRank: undefined,
+    popularityRank: undefined, // Discontinued, so no meaningful rank
     updatedAt: '2026-06',
   },
   {
@@ -951,7 +951,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis com 125 créditos (uso único); Standard a US$ 15/mês (US$ 12/mês anual, 625 créditos/mês); Pro a US$ 35/mês (US$ 28/mês anual, 2.250 créditos/mês, custom voice creation); Unlimited a US$ 95/mês (US$ 76/mês anual, 2.250 credits/mês + gerações ilimitadas em Explore Mode); Enterprise sob consulta. API a US$ 0.01 por crédito.',
     url: 'https://runwayml.com',
     tags: ['vídeo', 'geração', 'edição', 'efeitos', 'cinematográfico', 'profissional'],
-    popularityRank: 18,
+    popularityRank: 23,
     updatedAt: '2026-06',
   },
   {
@@ -974,7 +974,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://klingai.com',
     tags: ['vídeo', 'geração', 'longo', 'realista', 'animação', 'kuaishou'],
     isNew: true,
-    popularityRank: 10,
+    popularityRank: 27,
     updatedAt: '2026-06',
   },
   {
@@ -996,7 +996,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (1-3 vídeos/mês, 1 min cada, 720p, marca d\'água, 1 custom avatar, 3 video agent videos). Creator a US$ 29/mês (US$ 24/mês anual, vídeos ilimitados, 600 Premium Credits/mês, 30 min Avatar IV ou 200 min Avatar III, 1080p, sem marca d\'água, 1 custom avatar, 1 voice clone). Pro a partir de US$ 49/mês (escalável até US$ 4300/mês, 1.000-100.000 créditos, 4K, mais créditos, acesso prioritário). Business a US$ 149/mês (primeiro usuário, +US$ 20/usuário/mês adicional, US$ 1428/ano + US$ 240/assento adicional; vídeos ilimitados, 4K, 5 custom avatars, 5 voice clones, 40+ idiomas para lip-sync, API, 3 team seats). Enterprise sob consulta. Premium Credit Packs a US$ 15 por 300 créditos (mensal) ou US$ 150 por 3600 créditos (anual).',
     url: 'https://www.heygen.com',
     tags: ['vídeo', 'avatar', 'apresentação', 'tradução', 'corporativo', 'lip sync'],
-    popularityRank: 15,
+    popularityRank: 19,
     updatedAt: '2026-06',
   },
   {
@@ -1018,7 +1018,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (3 minutos de vídeo/mês, 9 avatares AI, marca d\'água). Starter a US$ 29/mês (US$ 18/mês anual, 10 minutos de vídeo/mês - 120 min/ano, 125+ avatares, 3 personal avatars, remoção de logo). Creator a US$ 89/mês (US$ 64/mês anual, 30 minutos de vídeo/mês - 360 min/ano, 180+ avatares, 5 personal avatars, acesso à API). Enterprise sob consulta (minutos ilimitados, 230+ avatares, SAML/SSO, exportação SCORM). Custos adicionais como US$ 1.000/ano para avatares personalizados ("Studio Avatar").',
     url: 'https://www.synthesia.io',
     tags: ['vídeo', 'avatar', 'corporativo', 'tradução', 'e-learning', 'apresentação'],
-    popularityRank: 16,
+    popularityRank: 21,
     updatedAt: '2026-06',
   },
   {
@@ -1062,7 +1062,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (80 créditos/mês, 480p, marca d\'água, sem direitos comerciais). Standard a US$ 10/mês (US$ 8/mês anual, 700 créditos/mês, todas as resoluções, sem marca d\'água, direitos comerciais). Pro a US$ 35/mês (US$ 28/mês anual, 2.300 créditos/mês, velocidades de geração mais rápidas). Fancy a US$ 95/mês (US$ 76/mês anual, 6.000 créditos/mês, geração mais rápida).',
     url: 'https://www.pika.art/',
     tags: ['vídeo', 'geração', 'animação', 'edição', 'discord'],
-    popularityRank: 17,
+    popularityRank: 22,
     updatedAt: '2026-06',
   },
   {
@@ -1150,7 +1150,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (acesso ao gerador de vídeo AI com marca d\'água, quota semanal limitada de exportação). Plus a US$ 25/mês (US$ 20/mês anual) para 50 minutos de geração AI/mês, 80 downloads iStock, 2 clones de voz. Max a US$ 60/mês (US$ 48/mês anual) para 200 minutos de geração AI/mês, 320 downloads iStock, 5 clones de voz, exportação 4K. Generative a US$ 120/mês (US$ 100/mês anual) inclui 100 créditos Generative, 200 minutos de vídeo AI, 320 assets iStock, 5 slots de anúncios UGC generativos, acesso a Sora 2 e Veo 3.1. Team a US$ 899/mês (para 50 usuários). Minutos não utilizados não são acumuláveis.',
     url: 'https://invideo.io/ai/',
     tags: ['vídeo', 'geração', 'texto para vídeo', 'redes sociais', 'marketing', 'edição'],
-    popularityRank: 20,
+    popularityRank: 24,
     updatedAt: '2026-06',
   },
   {
@@ -1220,7 +1220,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis com 50 créditos/dia (~10 músicas, 2 min max, sem direitos comerciais). Pro a US$ 10/mês (US$ 8/mês anual, 2.500 créditos/mês, ~500 músicas, 4 min max, direitos comerciais, modelo v5.5, edições avançadas, compra de créditos adicionais). Premier a US$ 30/mês (US$ 24/mês anual, 10.000 créditos/mês, ~2.000 músicas, 4 min max, direitos comerciais, Suno Studio, fila prioritária). Planos anuais oferecem 20% de desconto.',
     url: 'https://suno.com',
     tags: ['música', 'geração', 'composição', 'trilha sonora', 'jingle', 'letra'],
-    popularityRank: 9,
+    popularityRank: 20,
     updatedAt: '2026-06',
   },
   {
@@ -1242,7 +1242,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (1 hora de transcrição/mês, marca d\'água, sem AI credits). Creator a US$ 24/mês (US$ 16/mês anual, 10 horas de transcrição/mês, 1080p, sem marca d\'água, 20 usos básicos de IA/mês, 30 min/mês de fala AI, 5 min/mês de avatares). Pro a US$ 35/mês (US$ 24/mês anual, 30 horas de transcrição/mês, 4K, uso ilimitado de IA, 2 horas/mês de fala AI, 30 min/mês de dublagem, 10 min/mês de avatares). Business a US$ 65/mês (US$ 50/mês anual, 40 horas de transcrição/mês, recursos avançados de equipe, 5 horas/mês de fala AI, 2 horas/mês de dublagem, 30 min/mês de avatares). Enterprise sob consulta.',
     url: 'https://www.descript.com',
     tags: ['podcast', 'edição de áudio', 'transcrição', 'legenda', 'vídeo', 'edição'],
-    popularityRank: 21,
+    popularityRank: 25,
     updatedAt: '2026-06',
   },
   {
@@ -1418,11 +1418,11 @@ export const AI_TOOLS: AITool[] = [
       'Comparar produtos, serviços e tecnologias',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Grátis (buscas ilimitadas com modelo Sonar básico, 5 Copilot queries a cada 4 horas, sem acesso a Deep Research, Labs ou modelos premium). Pro a US$ 20/mês (US$ 200/ano - US$ 16.67/mês anual; Copilot ilimitado, 20 Deep Research queries/dia, acesso a GPT-5.4, Claude Opus 4.8, Gemini 3.1 Pro, etc., 3 gerações de vídeo/mês, AI image generation). Max a US$ 200/mês (US$ 2.000/ano; inclui tudo do Pro + Labs ilimitados, Perplexity Computer com 19 modelos AI, 10.000 créditos Computer/mês, Sora 2 Pro video generation, Nano Banana Pro images). Education Pro a US$ 10/mês (para estudantes verificados). Enterprise Pro a US$ 40/usuário/mês (US$ 400/usuário/ano; 500 Research queries/dia, 5 gerações de vídeo/mês). Enterprise Max a US$ 325/usuário/mês (US$ 3.250/usuário/ano; Research e Labs ilimitados). API Sonar (a partir de US$ 1/M tokens entrada e US$ 15/M tokens saída para Sonar Pro). Comet Browser é gratuito.',
+    pricingDetails: 'Grátis (buscas ilimitadas com modelo Sonar básico, 5 Copilot queries a cada 4 horas, sem acesso a Deep Research, Labs ou modelos premium). Pro a US$ 20/mês (US$ 200/ano - US$ 16.67/mês anual; Copilot ilimitado, 20 Deep Research queries/dia, acesso a GPT-5.4, Claude Opus 4.8, Gemini 3.1 Pro, etc., 3 gerações de vídeo/mês, AI image generation). Max a US$ 200/mês (US$ 2.000/ano; inclui tudo do Pro + Labs ilimitados, Perplexity Computer com 19 modelos AI, 10.000 créditos Computer/mês, Sora 2 Pro video generation, Nano Banana Pro images). Education Pro a US$ 10/mês (para estudantes verificados). Enterprise Pro a US$ 40/usuário/mês (US$ 400/usuário/ano; 500 Research queries/day, 5 gerações de vídeo/mês). Enterprise Max a US$ 325/usuário/mês (US$ 3.250/usuário/ano; Research e Labs ilimitados). API Sonar (a partir de US$ 1/M tokens entrada e US$ 15/M tokens saída para Sonar Pro). Comet Browser é gratuito.',
     url: 'https://www.perplexity.ai',
     tags: ['busca', 'pesquisa', 'fontes', 'tempo real', 'notícias', 'análise'],
     isFeatured: true,
-    popularityRank: 4,
+    popularityRank: 5,
     updatedAt: '2026-06',
   },
   {
@@ -1466,7 +1466,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Sem plano gratuito, mas oferece teste grátis. Planos a partir de US$ 15/mês (faturamento anual) com acesso a todos os modelos de IA (GPT-4o, Claude 3.5 Sonnet), uploads de arquivos (até 25MB), janela de contexto de 64k, Research e Custom Agents. API Web Search a US$ 5/1k chamadas; Contents API a US$ 1/1k páginas; Research API a US$ 12/1k chamadas; Finance Research API a US$ 110/1k chamadas.',
     url: 'https://you.com',
     tags: ['busca', 'privacidade', 'pesquisa', 'agentes', 'web', 'análise'],
-    popularityRank: 24,
+    popularityRank: 18,
     updatedAt: '2026-06',
   },
   {
@@ -1488,7 +1488,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Grátis (Brave Search com resumos de IA básicos); Brave Leo Premium a US$ 15/mês (acesso a modelos LLM avançados e uso ilimitado).',
     url: 'https://search.brave.com/',
     tags: ['busca', 'privacidade', 'ai search', 'resumo', 'web', 'agente'],
-    popularityRank: undefined,
+    popularityRank: 14,
     updatedAt: '2026-06',
   },
   {

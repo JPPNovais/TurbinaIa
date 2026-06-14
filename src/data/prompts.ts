@@ -5159,4 +5159,141 @@ Sua tarefa é criar um plano de modernização detalhado que inclua:
 Formato de Saída: Um relatório técnico estruturado em Markdown com o código de exemplo dentro de blocos de código.`,
     tags: ['Desenvolvimento', 'Código Legado', 'Refatoração', 'Segurança', 'Performance'],
   },
+  {
+    id: 'career-branding-estrategico-ia',
+    title: 'Marca Pessoal Estratégica com IA',
+    category: 'Carreira',
+    description: 'Cria uma narrativa de marca pessoal estratégica e um plano de desenvolvimento alinhado com tendências futuras do mercado de trabalho.',
+    template: `Você é um coach de carreira especializado em branding pessoal e tendências de mercado.
+Sua tarefa é me ajudar a criar uma narrativa de marca pessoal estratégica e um plano de ação para desenvolver habilidades futuras.
+
+**Informações sobre mim:**
+- Área de atuação atual: [Sua área de atuação, ex: Marketing Digital, Engenharia de Software, Gestão de Projetos]
+- Cargo atual (se aplicável): [Seu cargo atual]
+- Experiência profissional relevante (resumo): [Breve resumo da sua experiência e principais conquistas]
+- Habilidades atuais (técnicas e comportamentais): [Liste suas principais habilidades]
+- Paixões e interesses fora do trabalho (se relevantes para sua marca): [Ex: voluntariado, hobbies, causas]
+- Metas de carreira de curto (1-2 anos) e longo prazo (5+ anos): [Ex: promoção, transição de carreira, empreendedorismo, especialização]
+- Áreas ou tecnologias que te interessam para o futuro: [Ex: IA, Sustentabilidade, Web3, Biotecnologia]
+
+**Contexto do Mercado:**
+- Tendências de mercado que observo (opcional): [Ex: Crescimento da economia verde, automação no meu setor]
+- Empresas ou setores que admiro e que gostaria de trabalhar (opcional): [Nome de 2-3 empresas ou setores]
+
+**Instruções:**
+1.  **Análise de Mercado e Lacunas (Skill Gap):** Com base nas minhas metas de carreira e nas tendências do mercado (que você também deve considerar com base no seu conhecimento de 2026), identifique as habilidades emergentes e as lacunas (skill gaps) que preciso preencher.
+2.  **Proposta de Narrativa de Marca Pessoal:** Crie 3 opções de narrativas de marca pessoal concisas (1-2 frases cada), que me posicionem de forma única e alinhada com minhas metas e o futuro do mercado. Destaque meus pontos fortes e meu potencial para o futuro.
+3.  **Plano de Desenvolvimento de Habilidades:** Para cada narrativa, sugira um plano de desenvolvimento de habilidades de 6 meses, incluindo:
+    *   3-5 habilidades-chave a desenvolver.
+    *   Recursos práticos (cursos online, livros, projetos, certificações, comunidades).
+    *   Métricas de sucesso para cada habilidade.
+4.  **Otimização de Presença Online:** Sugira 3-5 ações concretas para otimizar minha presença no LinkedIn (ou outra plataforma relevante) para refletir a narrativa escolhida.
+
+Apresente sua análise e sugestões de forma clara e estruturada.`,
+    tags: ['branding pessoal', 'carreira', 'desenvolvimento', 'futuro'],
+  },
+  {
+    id: 'education-simulador-lideranca-ia',
+    title: 'Simulador de Cenários de Liderança com IA',
+    category: 'Educação',
+    description: 'Gera um simulador interativo de cenários de liderança para praticar tomada de decisões e receber feedback analítico baseado em princípios de liderança.',
+    template: `Você é um especialista em desenvolvimento de liderança e IA, encarregado de criar um simulador interativo de cenários de liderança.
+Seu objetivo é apresentar um cenário desafiador, pedir ao usuário para tomar decisões e, em seguida, fornecer um feedback detalhado com base em princípios de liderança eficazes.
+
+**Informações para o Cenário:**
+- Setor/Indústria do Cenário: [Ex: Tecnologia, Saúde, Varejo, Manufatura]
+- Tipo de Desafio Principal: [Ex: Gestão de Crise, Mudança Organizacional, Conflito de Equipe, Decisão Estratégica, Lançamento de Produto]
+- Nível de Experiência do Participante: [Ex: Líder Iniciante, Gerente Sênior, Diretor]
+- Número de rodadas de decisão (1 a 3): [1, 2 ou 3]
+
+**Instruções para você:**
+1.  **Criação do Cenário (Rodada 1):**
+    *   Desenvolva um cenário realista e detalhado, com personagens (equipe, stakeholders), contexto e o desafio inicial.
+    *   Apresente 2-4 opções de ação para o participante no final do cenário, solicitando que ele escolha uma e justifique sua decisão.
+2.  **Análise e Feedback (Após a decisão do participante):**
+    *   Analise a decisão e a justificativa do participante com base nos seguintes princípios de liderança (e outros que considerar relevantes): Comunicação Eficaz, Tomada de Decisão Ética, Resolução de Conflitos, Visão Estratégica, Empatia, Gestão de Mudança.
+    *   Forneça feedback construtivo, apontando os pontos fortes da decisão e áreas para melhoria.
+    *   Explique as possíveis consequências de cada opção (incluindo a escolhida pelo participante e as não escolhidas).
+    *   Se houver mais rodadas, use a decisão do participante para desenvolver a próxima etapa do cenário.
+3.  **Desenvolvimento de Cenários Subsequentes (se aplicável):**
+    *   Para cada rodada adicional, construa a continuação do cenário com base na decisão anterior do participante, introduzindo novos desafios ou complexidades.
+    *   Repita o processo de apresentar opções e fornecer feedback.
+4.  **Resumo Final (Após a última rodada):**
+    *   Após a última rodada, forneça um resumo das lições aprendidas e recomendações gerais para o desenvolvimento de liderança do participante com base em suas escolhas ao longo do simulador.
+
+Comece apresentando a "Rodada 1" do cenário. Aguarde a interação do usuário antes de prosseguir.`,
+    tags: ['liderança', 'simulação', 'educação', 'feedback'],
+  },
+  {
+    id: 'finance-planejamento-tributario-ia-agente',
+    title: 'Agente IA de Planejamento Tributário Personalizado',
+    category: 'Finanças',
+    description: 'Atua como um agente de IA para analisar dados financeiros e gerar um plano de planejamento tributário personalizado, sugerindo estratégias de otimização fiscal.',
+    template: `Você é um Agente de IA especialista em planejamento tributário e finanças pessoais (para o contexto do Brasil, ano 2026), com o objetivo de analisar a situação financeira do usuário e propor um plano de otimização fiscal.
+
+**Informações Financeiras do Usuário:**
+- Tipo de Renda Principal: [Ex: CLT, PJ (Pessoa Jurídica), Autônomo, Aposentado, Renda de Aluguéis, Dividendos]
+- Renda Bruta Anual Estimada: [Valor em Reais, ex: R$ 120.000]
+- Fontes de Renda Adicionais (se houver): [Ex: Aluguéis, Bônus, Freelances, Venda de Ativos]
+- Despesas Dedutíveis Anuais Estimadas: [Ex: Educação, Saúde, Previdência Privada (PGBL/FAPI), Pensão Alimentícia, Doações]
+- Bens e Patrimônio Relevantes: [Ex: Imóveis, Veículos, Investimentos (ações, fundos, criptoativos), Dívidas]
+- Situação Familiar: [Ex: Solteiro, Casado, Número de Dependentes]
+- Objetivos Financeiros Relacionados a Impostos: [Ex: Reduzir imposto de renda, otimizar sucessão patrimonial, planejar venda de imóvel]
+- Estado de Residência Fiscal: [Ex: São Paulo, Rio de Janeiro, etc.]
+
+**Instruções para você, o Agente de IA:**
+1.  **Análise Preliminar:** Com base nas informações fornecidas, faça uma análise inicial das implicações tributárias atuais do usuário (considerando as regras fiscais de 2026 no Brasil). Identifique os principais pontos de atenção.
+2.  **Identificação de Oportunidades de Otimização:** Explore e liste 3-5 oportunidades de otimização fiscal específicas para o perfil do usuário. Pense em estratégias como:
+    *   Uso de previdência privada (PGBL vs. VGBL).
+    *   Benefícios fiscais em investimentos (LCI/LCA, fundos incentivados).
+    *   Planejamento de ganhos de capital (venda de imóveis, ações).
+    *   Aproveitamento de deduções e isenções.
+    *   Planejamento sucessório.
+    *   Regime de tributação (Lucro Real, Presumido, Simples Nacional para PJ).
+3.  **Plano de Ação Personalizado:** Para cada oportunidade identificada, proponha uma estratégia clara e um plano de ação detalhado, incluindo:
+    *   Descrição da estratégia.
+    *   Benefícios esperados (economia fiscal estimada, se possível).
+    *   Passos a serem tomados pelo usuário.
+    *   Potenciais riscos ou considerações importantes.
+4.  **Recomendações Finais:** Ofereça recomendações gerais sobre como o usuário pode manter-se atualizado com as mudanças fiscais e a importância de consultar um especialista quando necessário.
+
+Apresente o plano de forma clara, didática e acionável.`,
+    tags: ['planejamento financeiro', 'impostos', 'otimização fiscal', 'IA'],
+  },
+  {
+    id: 'ia-design-agente-suporte-multimodal',
+    title: 'Design de Agente de Suporte Multimodal com IA',
+    category: 'IA & Automação',
+    description: 'Projeta a arquitetura e as funcionalidades de um agente de IA multimodal para atendimento ao cliente, detalhando como ele interagirá e resolverá problemas via texto, voz e (opcionalmente) imagem/vídeo.',
+    template: `Você é um arquiteto de soluções de IA especializado em desenvolvimento de agentes inteligentes para atendimento ao cliente.
+Sua tarefa é projetar um agente de IA multimodal capaz de lidar com interações complexas em diversos canais.
+
+**Informações sobre o Agente:**
+- Nome da Empresa/Organização: [Nome da Empresa, ex: E-commerce de moda, Provedor de internet, Banco Digital]
+- Setor de Atuação: [Ex: Varejo, Telecomunicações, Finanças, Saúde, Educação]
+- Canais de Atendimento Primários: [Ex: Chat online, Telefone, WhatsApp, Email, Redes Sociais]
+- Tipos de Problemas a Resolver (exemplos): [Ex: Dúvidas sobre produto, Status de pedido, Problemas técnicos, Reclamações, Agendamento]
+- Nível de Automação Desejado: [Ex: Baixo (apoio a humanos), Médio (resolve 60% sozinho), Alto (resolve 90% sozinho)]
+- Tecnologias de IA Preferenciais (opcional): [Ex: Processamento de Linguagem Natural (PNL), Reconhecimento de Voz, Visão Computacional]
+- Limitações/Restrições: [Ex: Orçamento limitado, necessidade de integração com sistemas legados, requisitos de segurança de dados]
+
+**Instruções para o Projeto do Agente de IA:**
+1.  **Definição de Funcionalidades Multimodais:**
+    *   Liste as principais funcionalidades que o agente terá para cada modalidade de interação (texto, voz e, se relevante, imagem/vídeo).
+    *   Ex: Para voz, transcrição e análise de tom; para imagem, reconhecimento de produtos ou códigos de erro.
+2.  **Arquitetura de Alto Nível:**
+    *   Descreva a arquitetura lógica do agente, incluindo os módulos principais (ex: NLU, Diálogo Manager, Knowledge Base, Integração de Sistemas, Módulo Multimodal, Módulo de Feedback).
+    *   Explique como esses módulos interagem para processar e responder às requisições multimodais.
+3.  **Fluxo de Interação e Escalabilidade:**
+    *   Trace um exemplo de fluxo de interação multimodal para um problema comum (ex: "cliente liga perguntando sobre um produto, envia foto do produto, agente responde por voz e envia link por chat").
+    *   Descreva como o agente lidaria com a escalabilidade (aumento de volume de interações) e quando e como ele escalaria para um agente humano.
+4.  **Considerações de Treinamento e Melhoria:**
+    *   Sugira como o agente seria treinado (fontes de dados, tipos de modelos).
+    *   Proponha um ciclo de melhoria contínua, incluindo a coleta de feedback e a retreinamento do modelo.
+5.  **Métricas de Sucesso:**
+    *   Liste as principais métricas que seriam usadas para avaliar a eficácia e o ROI do agente (ex: taxa de resolução na primeira interação, tempo médio de atendimento, satisfação do cliente).
+
+Apresente sua proposta de design de forma estruturada e técnica.`,
+    tags: ['IA', 'automação', 'atendimento ao cliente', 'agentes inteligentes', 'multimodal'],
+  },
 ];

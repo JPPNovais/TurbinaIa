@@ -126,6 +126,14 @@ export default async function Home({ searchParams }: HomeProps) {
           <Link href="/prompts">biblioteca de prompts</Link> e o{' '}
           <Link href="/verificador-ia">verificador de IA</Link>.
         </p>
+        <ul className="home-highlights">
+          <li>📰 Notícias diárias de Inteligência Artificial</li>
+          <li>📚 Tutoriais e guias práticos (do básico ao avançado)</li>
+          <li>⚖️ <Link href="/comparador">Comparador</Link> de ChatGPT, Gemini e Claude</li>
+          <li>🧮 <Link href="/calculadora">Calculadora</Link> de custos de APIs de IA</li>
+          <li>💬 <Link href="/prompts">Biblioteca</Link> com +160 prompts prontos</li>
+          <li>🔍 <Link href="/verificador-ia">Verificador de IA</Link> para aparecer nas respostas (AEO)</li>
+        </ul>
       </div>
 
       {/* Destaque da ferramenta gratuita (AEO) */}

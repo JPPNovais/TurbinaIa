@@ -79,25 +79,38 @@ export async function POST(request: Request) {
     }
 
     const lower = html.toLowerCase();
-    const text = stripTags(html);
+
+    // Conteúdo principal: remove <head>, menu/cabeçalho/rodapé para não contar
+    // navegação como "conteúdo" (isso distorcia a análise de resposta-direta,
+    // 1º parágrafo, palavras e listas).
+    const content = html
+      .replace(/<head[\s\S]*?<\/head>/i, ' ')
+      .replace(/<header[\s\S]*?<\/header>/gi, ' ')
+      .replace(/<nav[\s\S]*?<\/nav>/gi, ' ')
+      .replace(/<footer[\s\S]*?<\/footer>/gi, ' ');
+    const contentLower = content.toLowerCase();
+    const text = stripTags(content);
     const wordCount = text ? text.split(/\s+/).length : 0;
 
     const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
     const title = titleMatch ? titleMatch[1].trim() : '';
     const metaDesc = html.match(/<meta[^>]+name=["']description["'][^>]*>/i)?.[0] || '';
     const metaDescContent = metaDesc.match(/content=["']([^"']*)["']/i)?.[1] || '';
-    const h1Count = (lower.match(/<h1[\s>]/g) || []).length;
-    const h2h3Count = (lower.match(/<h(2|3)[\s>]/g) || []).length;
+    const h1Count = (contentLower.match(/<h1[\s>]/g) || []).length;
+    const h2h3Count = (contentLower.match(/<h(2|3)[\s>]/g) || []).length;
     const hasJsonLd = /application\/ld\+json/i.test(html);
     const hasFaq = /perguntas frequentes|faqpage|"@type"\s*:\s*"question"|<h[23][^>]*>\s*faq/i.test(lower);
-    const hasLists = /<ul[\s>]|<ol[\s>]|<table[\s>]/i.test(lower);
-    const firstP = html.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
-    const firstPText = firstP ? stripTags(firstP[1]) : '';
+    const hasLists = /<ul[\s>]|<ol[\s>]|<table[\s>]/i.test(contentLower);
+    // 1º parágrafo "de verdade" — pula parágrafos vazios/curtíssimos do layout.
+    const paragraphs = [...content.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
+      .map((m) => stripTags(m[1]))
+      .filter((t) => t.length > 0);
+    const firstPText = paragraphs[0] || '';
     const answerFirst =
       /resposta r[áa]pida|tl;?dr|em resumo|resumo:/i.test(text.slice(0, 600)) ||
-      (firstPText.length > 0 && firstPText.length <= 320);
-    const imgs = (lower.match(/<img[\s>]/g) || []).length;
-    const imgsWithAlt = (lower.match(/<img[^>]+alt=["'][^"']*["']/g) || []).length;
+      (firstPText.length >= 40 && firstPText.length <= 320);
+    const imgs = (contentLower.match(/<img[\s>]/g) || []).length;
+    const imgsWithAlt = (contentLower.match(/<img[^>]+alt=["'][^"']*["']/g) || []).length;
     const altOk = imgs === 0 ? true : imgsWithAlt / imgs >= 0.7;
     const hasAuthorOrDate = /"author"|datepublished|"datemodified"|publicado em|atualizado em|por\s+[A-ZÀ-Ý]/i.test(html);
 

@@ -2,12 +2,11 @@ name: Autopublicar Artigo Turbina IA
 
 on:
   schedule:
-    # Executa DIARIAMENTE 3 vezes ao dia:
+    # Executa DIARIAMENTE 2 vezes ao dia:
     # - 06:00 Horário de Brasília (09:00 UTC)
-    # - 12:00 Horário de Brasília (15:00 UTC)
     # - 18:00 Horário de Brasília (21:00 UTC)
     # Esses são os melhores horários de pico comercial no Brasil para tráfego e SEO.
-    - cron: '0 9,15,21 * * *'
+    - cron: '0 9,21 * * *'
   workflow_dispatch:
     # Permite disparar manualmente pelo painel do GitHub Actions
 

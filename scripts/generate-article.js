@@ -484,6 +484,19 @@ Escreva um artigo longo (mínimo de 1500 palavras, idealmente entre 1800 e 2500 
     }
     cleanContent = lines.join('\n');
 
+    // Guard de qualidade: aborta se a saída do modelo não for um artigo válido
+    // (ex.: vazou chamada de ferramenta como `print(google_search...)`,
+    // frontmatter ausente, sem título, ou corpo curto demais). Evita publicar
+    // arquivos quebrados (sem título/imagem) como já ocorreu.
+    const hasFrontmatter = cleanContent.startsWith('---') && /\n---/.test(cleanContent.slice(3));
+    const hasTitle = /^title:\s*\S/m.test(cleanContent);
+    const bodyAfterFm = cleanContent.replace(/^---[\s\S]*?\n---/, '').trim();
+    if (!hasFrontmatter || !hasTitle || bodyAfterFm.length < 800) {
+      console.error('❌ Conteúdo gerado é inválido (sem frontmatter/título ou muito curto). Artigo NÃO será salvo.');
+      console.error('   Prévia do que veio do modelo:', JSON.stringify(cleanContent.slice(0, 180)));
+      return; // sai sem gravar — o workflow segue e não comita lixo
+    }
+
     // Parse title and category from frontmatter
     let titleLine = cleanContent.split('\n').find(line => line.startsWith('title:'));
     let titleVal = topic;

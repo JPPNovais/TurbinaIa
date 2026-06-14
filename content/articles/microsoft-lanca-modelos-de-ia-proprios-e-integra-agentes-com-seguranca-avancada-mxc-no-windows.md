@@ -1,1 +1,0 @@
-print(google_search.search(queries=["Microsoft Build 2026 announcements AI security", "Microsoft proprietary AI models development", "MXC SDK cross-platform capabilities", "MDASH Microsoft Security multi-model agentic scanning harness details", "AI agent security challenges enterprise", "Microsoft Agent 365 capabilities June 2026", "Microsoft Windows security for AI agents"]))

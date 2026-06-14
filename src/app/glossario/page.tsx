@@ -97,6 +97,21 @@ export default function GlossarioPage() {
 
         <section style={{ lineHeight: '1.7', color: 'var(--text-secondary)' }}>
           <h2 style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '1.25rem' }}>
+            O que você encontra neste glossário
+          </h2>
+          <p style={{ marginBottom: '1rem' }}>
+            Reunimos os termos essenciais de Inteligência Artificial explicados em português simples,
+            organizados por tema:
+          </p>
+          <ul style={{ paddingLeft: '1.5rem', marginBottom: '2rem', listStyleType: 'disc' }}>
+            <li style={{ marginBottom: '0.4rem' }}><strong>Fundamentos:</strong> IA, machine learning, deep learning, rede neural.</li>
+            <li style={{ marginBottom: '0.4rem' }}><strong>Modelos e arquitetura:</strong> LLM, transformer, parâmetros, GPT.</li>
+            <li style={{ marginBottom: '0.4rem' }}><strong>Uso e custos:</strong> token, prompt, contexto, temperatura.</li>
+            <li style={{ marginBottom: '0.4rem' }}><strong>Técnicas avançadas:</strong> RAG, embeddings, fine-tuning, agentes.</li>
+            <li style={{ marginBottom: '0.4rem' }}><strong>Segurança e ética:</strong> alucinação, viés, prompt injection.</li>
+          </ul>
+
+          <h2 style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '1.25rem' }}>
             Perguntas Frequentes sobre Termos de IA
           </h2>
 

@@ -1,5 +1,5 @@
 ---
-title: "O Que é AEO e GEO? Como Aparecer nas Respostas do ChatGPT e do Google (2026)"
+title: "O Que é AEO e GEO? Como Aparecer nas Respostas das IAs (2026)"
 description: "AEO e GEO são as novas fronteiras do SEO: saiba como otimizar seu conteúdo para aparecer nas respostas de IA do Google e ChatGPT."
 category: tutoriais
 tags:

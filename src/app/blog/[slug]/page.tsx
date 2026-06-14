@@ -34,8 +34,14 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 
   const imageUrl = article.coverImage || 'https://www.turbinaia.com.br/icon.png';
 
+  // Mantém o <title> em bom tamanho para o Google: só acrescenta a marca
+  // quando o título do artigo é curto o suficiente.
+  const pageTitle = article.title.length <= 55
+    ? `${article.title} - Turbina IA`
+    : article.title;
+
   return {
-    title: `${article.title} - Turbina IA`,
+    title: pageTitle,
     description: article.description,
     alternates: {
       canonical: `/blog/${resolvedParams.slug}`,

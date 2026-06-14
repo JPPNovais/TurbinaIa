@@ -5021,4 +5021,142 @@ Considere como a IA pode tornar a experiência mais adaptável e relevante para 
 ---`,
     tags: ['Aprendizagem Personalizada', 'Educação Continuada', 'IA na Educação', 'Desenvolvimento de Habilidades'],
   },
+  {
+    id: 'ia-agente-qualificacao-leads',
+    title: 'Agente IA para Qualificação de Leads Automatizada',
+    category: 'IA & Automação',
+    description: 'Configura um agente de IA para qualificar leads B2B automaticamente com base em critérios de empresa e setor, otimizando o processo de vendas.',
+    template: `Role: Agente de IA especialista em vendas e qualificação de leads B2B.
+Objetivo: Analisar e qualificar uma lista de leads fornecida, identificando o potencial de conversão com base em critérios pré-definidos e dados de mercado.
+Contexto: Você opera como um membro da equipe de vendas, focando em otimizar a fase inicial do funil.
+Critérios de Qualificação para um Lead [Nome da Empresa/Produto]:
+1.  Tamanho da Empresa (Faturamento/Funcionários): [Idealmente > R$X milhões de faturamento, ou > Y funcionários]
+2.  Setor de Atuação: [Setores alvo, ex: Tecnologia, SaaS, Saúde, Finanças]
+3.  Necessidade Potencial: [Problemas que nosso produto/serviço resolve, ex: otimização de custos, aumento de produtividade, expansão de mercado]
+4.  Poder de Compra/Budget: [Indicações de budget disponível ou capacidade de investimento]
+5.  Tomador de Decisão: [Identificar o perfil ideal do contato dentro da empresa, ex: Diretor de TI, Gerente de Marketing, CEO]
+6.  Fit Estratégico: [Quão bem o lead se alinha com a nossa estratégia de mercado de longo prazo]
+Fonte de Dados (para análise): Você tem acesso a dados públicos da empresa (LinkedIn, website, notícias financeiras, relatórios setoriais) e à descrição do nosso [Produto/Serviço].
+Tarefa: Para cada lead na lista [Lista de Leads em formato CSV/texto, ex: "Empresa X, Setor Y, Faturamento Z; Empresa A, Setor B, Faturamento C"], realize o seguinte:
+1.  Pesquise as informações da empresa com base nos critérios acima.
+2.  Avalie o lead como "Altamente Qualificado", "Qualificado", "Potencial" ou "Desqualificado".
+3.  Justifique a qualificação com base nos critérios.
+4.  Sugira o próximo passo (ex: "Enviar email de prospecção com foco em [Benefício X]", "Agendar demonstração", "Monitorar").
+5.  Identifique o tomador de decisão ideal e sugira um ponto de contato se possível.
+Formato de Saída: Uma tabela ou lista estruturada para cada lead, contendo: [Nome do Lead], [Nome da Empresa], [Setor], [Qualificação], [Justificativa Detalhada], [Próximo Passo Sugerido], [Tomador de Decisão Ideal/Contato Sugerido].`,
+    tags: ['Agente IA', 'Vendas', 'Qualificação Leads', 'B2B'],
+  },
+  {
+    id: 'education-projeto-aprendizagem-ia',
+    title: 'Design de Rota de Aprendizagem Baseada em Projetos com IA',
+    category: 'Educação',
+    description: 'Crie uma rota de aprendizagem autodirigida e baseada em projetos, utilizando IA para identificar recursos, definir marcos e propor atividades práticas para adquirir uma nova habilidade.',
+    template: `Role: Tutor de IA especialista em design instrucional e aprendizagem ativa.
+Objetivo: Desenvolver uma rota de aprendizagem detalhada e baseada em projetos para a aquisição da habilidade "[Habilidade Desejada, ex: Programação Python para Análise de Dados]".
+Público-alvo: [Meu nível atual de conhecimento na habilidade, ex: iniciante absoluto, básico, intermediário, avançado].
+Recursos Preferenciais (se houver): [Livros, cursos online, plataformas, ex: Coursera, Alura, YouTube]
+Tempo Disponível Semanal: [Ex: 5 horas]
+Prazo para Conclusão: [Ex: 3 meses]
+Projeto Final Sugerido (opcional): [Se você já tem uma ideia de projeto final para aplicar a habilidade, descreva-o aqui, ex: "Criar um dashboard interativo no Streamlit usando dados reais de mercado"]. Se não, a IA deve sugerir um.
+Sua tarefa é criar um plano com as seguintes seções:
+1.  **Visão Geral da Habilidade**: Breve descrição da habilidade, suas aplicações e por que ela é importante.
+2.  **Pré-requisitos**: Habilidades mínimas necessárias (se houver) e como adquiri-las rapidamente.
+3.  **Módulos de Aprendizagem (Etapas do Projeto)**: Divida a habilidade em módulos lógicos, cada um com um objetivo claro e um pequeno projeto prático.
+    *   Para cada módulo, liste:
+        *   Título do Módulo:
+        *   Objetivo de Aprendizagem: O que será aprendido.
+        *   Mini-Projeto/Exercício Prático: Uma tarefa concreta para aplicar o conhecimento.
+        *   Recursos Sugeridos: (Livros, artigos, tutoriais em vídeo, cursos específicos, ferramentas)
+        *   Tempo Estimado:
+        *   Critérios de Sucesso/Verificação: Como saber que o módulo foi dominado.
+4.  **Projeto Integrador (se não fornecido)**: Se um projeto final não foi fornecido, sugira um projeto desafiador que combine todos os conhecimentos adquiridos.
+5.  **Avaliação e Feedback**: Sugira formas de autoavaliação e obtenção de feedback.
+6.  **Próximos Passos**: O que fazer após concluir a rota.
+Formato de Saída: Um documento estruturado em Markdown, claro e fácil de seguir.`,
+    tags: ['Educação', 'Aprendizagem', 'Projetos', 'Habilidades'],
+  },
+  {
+    id: 'marketing-estrategia-shorts-ia',
+    title: 'Estratégia de Conteúdo Multimodal para Shorts/Reels com IA',
+    category: 'Marketing',
+    description: 'Desenvolva uma estratégia completa de conteúdo para vídeos curtos (Shorts, Reels, TikTok) com foco em engajamento e crescimento, utilizando IA para idear, otimizar e analisar performance.',
+    template: `Role: Estrategista de Marketing Digital com especialização em IA e criação de conteúdo para plataformas de vídeo curto.
+Objetivo: Criar uma estratégia de conteúdo multimodal para vídeos curtos (Shorts, Reels, TikTok) para a [Marca/Empresa] com o objetivo de [Objetivo Principal, ex: aumentar o engajamento em 30%, gerar X leads, aumentar reconhecimento de marca].
+Público-alvo: [Descrição detalhada do público, ex: jovens empreendedores de 25-35 anos interessados em tecnologia e produtividade].
+Produto/Serviço a ser promovido: [Nome do Produto/Serviço] - [Breve descrição e principais benefícios].
+Plataformas Foco: [TikTok, Instagram Reels, YouTube Shorts, ou todas].
+Tipo de Conteúdo Atual (se houver): [Ex: Posts informativos, tutoriais, bastidores. Se não houver, diga "Nenhum"].
+Recursos Disponíveis: [Ex: Uma pessoa para gravar vídeos, acesso a ferramentas de edição básicas, budget para impulsionamento (se sim, quanto?)].
+Sua tarefa é elaborar uma estratégia que inclua:
+1.  **Análise de Tendências (IA-driven)**: Utilize sua capacidade de IA para identificar as 3 principais tendências de áudio, formatos visuais e temas que são relevantes para o nosso público e setor nas plataformas foco, e como podemos adaptá-los.
+2.  **Pilares de Conteúdo e Temas (com IA-ideação)**: Proponha 3-5 pilares de conteúdo (ex: educacional, entretenimento, bastidores, desafios) e, para cada pilar, gere 5 ideias de vídeos específicos que se alinhem com as tendências identificadas.
+3.  **Formato e Estilo (Multimodal)**: Descreva o estilo visual e de comunicação (tom de voz) ideal para os vídeos, incluindo sugestões de elementos multimodais (texto na tela, legendas dinâmicas, músicas, efeitos, transições).
+4.  **Roteiro e Ganchos (IA-otimizado)**: Para 3 das ideias de vídeos geradas, crie um micro-roteiro (gancho inicial, desenvolvimento, CTA) focado em prender a atenção e otimizar a retenção nos primeiros segundos.
+5.  **Call to Action (CTA) Otimizados**: Sugira 3 CTAs criativos e eficazes para diferentes objetivos (engajamento, visita ao perfil, clique no link da bio, etc.).
+6.  **Calendário de Conteúdo (Proposta)**: Proponha uma frequência de postagem e um esqueleto para um calendário de conteúdo para [próximo mês].
+7.  **Métricas e Análise (IA-assisted)**: Quais métricas devemos monitorar e como a IA pode ser usada para analisar a performance e otimizar futuras criações (ex: identificar padrões de engajamento, melhores horários de postagem).
+Formato de Saída: Um plano estratégico detalhado em tópicos, fácil de entender e implementar.`,
+    tags: ['Marketing', 'Conteúdo', 'Vídeo Curto', 'IA', 'Redes Sociais'],
+  },
+  {
+    id: 'finance-assistente-financas-pessoais-ia',
+    title: 'Assistente de IA para Gestão de Finanças Pessoais e Recomendação',
+    category: 'Finanças',
+    description: 'Atua como um assistente financeiro de IA, analisando seus dados financeiros para oferecer insights, otimizar gastos e recomendar estratégias personalizadas para alcançar suas metas.',
+    template: `Role: Assistente de IA especialista em finanças pessoais, planejamento financeiro e otimização de orçamento.
+Objetivo: Analisar os dados financeiros fornecidos e gerar insights acionáveis, sugestões de otimização de gastos, estratégias de economia/investimento e um plano de ação para atingir as metas financeiras.
+Dados Financeiros Atuais (Forneça o máximo de detalhes possível):
+*   Renda Mensal Líquida: [Valor, ex: R$ 5.000]
+*   Despesas Fixas Mensais:
+    *   Aluguel/Hipoteca: [Valor, ex: R$ 1.500]
+    *   Contas de Consumo (Luz, Água, Internet): [Valor, ex: R$ 300]
+    *   Transporte: [Valor, ex: R$ 200]
+    *   Outras Despesas Fixas: [Liste, ex: Mensalidade academia R$100, Streaming R$50]
+*   Despesas Variáveis Mensais (Estimativa):
+    *   Alimentação: [Valor, ex: R$ 800]
+    *   Lazer/Entretenimento: [Valor, ex: R$ 400]
+    *   Compras/Outros: [Valor, ex: R$ 300]
+*   Dívidas (se houver):
+    *   Tipo de Dívida: [Descrição, ex: Cartão de Crédito] - Saldo: [Valor] - Juros Anuais: [Taxa %] - Parcela Mensal: [Valor]
+    *   Tipo de Dívida: [Descrição, ex: Empréstimo Pessoal] - Saldo: [Valor] - Juros Anuais: [Taxa %] - Parcela Mensal: [Valor]
+*   Poupança/Investimentos Atuais: [Valor total, ex: R$ 10.000 em CDB]
+*   Metas Financeiras (Curto, Médio, Longo Prazo):
+    *   Curto Prazo (até 1 ano): [Ex: Criar reserva de emergência de 3 meses de despesas (R$X)]
+    *   Médio Prazo (1-5 anos): [Ex: Comprar um carro (R$Y)]
+    *   Longo Prazo (> 5 anos): [Ex: Aposentadoria confortável (R$Z por mês)]
+Tolerância a Risco de Investimento: [Baixa, Moderada, Alta]
+Sua tarefa é fornecer:
+1.  **Resumo da Situação Atual**: Uma visão clara da saúde financeira atual (receitas, despesas, saldo, endividamento).
+2.  **Análise de Otimização de Gastos**: Identifique áreas onde os gastos podem ser reduzidos (tanto fixos quanto variáveis) e sugira alternativas ou estratégias de negociação.
+3.  **Estratégia de Quitação de Dívidas (se aplicável)**: Se houver dívidas, proponha a melhor estratégia para quitá-las (ex: bola de neve, avalanche) considerando juros e impacto no orçamento.
+4.  **Plano de Economia e Investimento para Metas**: Desenvolva um plano acionável para cada meta financeira, incluindo quanto poupar mensalmente e quais tipos de investimento são mais adequados à minha tolerância a risco e ao prazo.
+5.  **Recomendações Personalizadas**: Ofereça 3-5 recomendações financeiras personalizadas que eu possa implementar imediatamente.
+Formato de Saída: Um relatório estruturado em Markdown, com cálculos claros e sugestões práticas.`,
+    tags: ['Finanças Pessoais', 'Otimização', 'Orçamento', 'Investimento'],
+  },
+  {
+    id: 'dev-agente-modernizacao-codigo',
+    title: 'Agente IA para Modernização de Código Legado (Segurança e Performance)',
+    category: 'Desenvolvimento',
+    description: 'Atua como um agente de IA especializado em refatorar código legado, focando em modernizar a arquitetura, melhorar a segurança, otimizar a performance e adotar padrões de design atuais.',
+    template: `Role: Agente de IA especialista em engenharia de software, refatoração e otimização de sistemas legados, com forte foco em segurança e performance.
+Objetivo: Analisar o trecho de código legado fornecido e propor uma refatoração completa para modernizá-lo, aplicando as melhores práticas de desenvolvimento, padrões de design, melhorias de segurança e otimizações de performance.
+Contexto do Código Legado:
+*   Linguagem/Framework Atual: [Ex: Java 8 com Spring MVC, PHP 5.6, Python 2.7, JavaScript com jQuery]
+*   Linguagem/Framework Alvo (se houver preferência): [Ex: Java 17 com Spring Boot, PHP 8 com Laravel, Python 3.10 com FastAPI, TypeScript com React]
+*   Funcionalidade Principal do Código: [Descreva brevemente o que o código faz, ex: "Processa requisições de API para gerenciar usuários", "Gera relatórios financeiros"]
+*   Problemas Atuais Conhecidos (se houver): [Ex: Lentidão, vulnerabilidades de segurança (SQL Injection), dificuldade de manutenção, alta complexidade ciclomática, não escalável]
+*   Requisitos Não Funcionais (se houver): [Ex: Deve ser escalável para X usuários, tempo de resposta < Y ms, aderir a padrões de segurança específicos (OWASP Top 10)]
+Código Legado (forneça o trecho completo ou um link para um gist/repositório):
+\`\`\`[Cole o código legado aqui]\`\`\`
+Sua tarefa é criar um plano de modernização detalhado que inclua:
+1.  **Análise de Problemas**: Identifique os principais problemas de segurança, performance, manutenibilidade e escalabilidade no código atual.
+2.  **Sugestões de Refatoração (High-Level)**: Proponha uma nova arquitetura ou padrões de design que seriam mais adequados para a funcionalidade (ex: migrar para microsserviços, usar Clean Architecture, aplicar SOLID principles).
+3.  **Otimização de Performance**: Indique bottlenecks de performance e sugira otimizações específicas (ex: melhor uso de cache, consultas de banco de dados mais eficientes, algoritmos mais performáticos).
+4.  **Melhorias de Segurança**: Identifique vulnerabilidades e proponha correções e melhores práticas de segurança (ex: sanitização de inputs, uso de ORMs seguros, autenticação/autorização robusta).
+5.  **Exemplo de Código Refatorado**: Reescreva um trecho representativo do código legado usando a linguagem/framework alvo, demonstrando as melhorias propostas (apenas um trecho, não o código todo).
+6.  **Próximos Passos e Ferramentas**: Sugira ferramentas e um roadmap para a implementação da refatoração.
+Formato de Saída: Um relatório técnico estruturado em Markdown com o código de exemplo dentro de blocos de código.`,
+    tags: ['Desenvolvimento', 'Código Legado', 'Refatoração', 'Segurança', 'Performance'],
+  },
 ];

@@ -45,16 +45,16 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'GPT-4o mini',
     provider: 'OpenAI',
-    inputPricePerM: 0.125,
-    outputPricePerM: 0.625,
+    inputPricePerM: 0.15, // Preço atualizado
+    outputPricePerM: 0.60, // Preço atualizado
     contextWindow: '128K tokens',
     description: 'A versão mais acessível do GPT-4o (lançado em Julho de 2024), otimizado para tarefas de alta demanda e baixo custo, mantendo 128K de contexto. Preços atualizados em Junho de 2026.',
   },
   {
     name: 'GPT-4o',
     provider: 'OpenAI',
-    inputPricePerM: 5.00,
-    outputPricePerM: 15.00,
+    inputPricePerM: 2.50, // Preço atualizado
+    outputPricePerM: 10.00, // Preço atualizado
     contextWindow: '128K tokens',
     description: 'O modelo multimodal da OpenAI (lançado em Maio de 2024), oferece raciocínio avançado, capacidades multimodais e 128K de contexto. Preços atualizados em Junho de 2026.',
   },
@@ -121,8 +121,8 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'Mistral Small 4',
     provider: 'Mistral AI',
-    inputPricePerM: 0.10,
-    outputPricePerM: 0.30,
+    inputPricePerM: 0.15, // Preço atualizado
+    outputPricePerM: 0.60, // Preço atualizado
     contextWindow: '256K tokens',
     description: 'Um modelo econômico da Mistral AI (Mistral Small 4), ideal para projetos sensíveis ao custo, com 256K de contexto (preços verificados em Junho de 2026).',
   },

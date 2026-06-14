@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { CHANGELOG, type ChangelogEntry } from '@/data/changelog';
+import { useProgressiveReveal } from '@/hooks/useProgressiveReveal';
 
 const CATEGORY_COLORS: Record<string, { bg: string; text: string; dot: string }> = {
   'Lançamento': { bg: '#10b98120', text: '#10b981', dot: '#10b981' },
@@ -32,18 +33,23 @@ export default function ChangelogClient() {
       const matchDev = selectedDev === 'Todos' || entry.developer === selectedDev;
       const matchCat = selectedCat === 'Todos' || entry.category === selectedCat;
       return matchDev && matchCat;
-    });
+    }).sort((a, b) => b.date.localeCompare(a.date)); // mais recentes primeiro
   }, [selectedDev, selectedCat]);
+
+  // Busca/filtro rodam sobre TODA a base (filtered). A revelação progressiva
+  // apenas recorta quantos eventos do resultado são exibidos por vez.
+  const { visibleItems, hasMore, remaining, sentinelRef, loadMore } =
+    useProgressiveReveal(filtered, 30, 30);
 
   const grouped = useMemo(() => {
     const map: Record<string, ChangelogEntry[]> = {};
-    filtered.forEach((entry) => {
+    visibleItems.forEach((entry) => {
       const year = entry.date.split('-')[0];
       if (!map[year]) map[year] = [];
       map[year].push(entry);
     });
     return Object.entries(map).sort(([a], [b]) => parseInt(b) - parseInt(a));
-  }, [filtered]);
+  }, [visibleItems]);
 
   const highImpactCount = CHANGELOG.filter((e) => e.impact === 'Alto').length;
 
@@ -311,6 +317,14 @@ export default function ChangelogClient() {
               </div>
             </div>
           ))
+        )}
+
+        {hasMore && (
+          <div ref={sentinelRef} className="load-more-wrapper">
+            <button type="button" className="btn btn-secondary load-more-btn" onClick={loadMore}>
+              Carregar mais eventos ({remaining})
+            </button>
+          </div>
         )}
       </div>
     </main>

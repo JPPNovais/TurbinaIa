@@ -7,7 +7,7 @@ const OG_DESC = 'Comparação de IAs lado a lado em 2026: ChatGPT, Claude, Gemin
 const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Ferramenta Gratuita')}`;
 
 export const metadata: Metadata = {
-  title: 'Comparador de IAs 2026: Comparação de ChatGPT, Claude e Gemini | Turbina IA',
+  title: 'Comparador de IAs: ChatGPT vs Gemini vs Claude (2026) | Turbina IA',
   description: OG_DESC,
   keywords: ['comparador de IA', 'comparação de IAs', 'comparativo de IA', 'ChatGPT vs Claude', 'Gemini vs ChatGPT', 'melhor IA', 'melhor IA para programar', 'qual a melhor inteligência artificial'],
   alternates: { canonical: '/comparador' },

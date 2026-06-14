@@ -7,7 +7,7 @@ const OG_DESC = 'Simule e compare os custos de tokens das principais APIs: Gemin
 const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Calculadora Gratuita')}`;
 
 export const metadata: Metadata = {
-  title: 'Calculadora de Custos de APIs de IA (Gemini, Claude, GPT, DeepSeek) | Turbina IA',
+  title: 'Calculadora de Custo de API de IA (GPT, Claude, Gemini) | Turbina IA',
   description: OG_DESC,
   keywords: ['calculadora custo IA', 'preço API GPT', 'custo token Claude', 'API Gemini preço', 'DeepSeek custo'],
   alternates: { canonical: '/calculadora' },

@@ -85,7 +85,6 @@ export async function POST(request: Request) {
     // 1º parágrafo, palavras e listas).
     const content = html
       .replace(/<head[\s\S]*?<\/head>/i, ' ')
-      .replace(/<header[\s\S]*?<\/header>/gi, ' ')
       .replace(/<nav[\s\S]*?<\/nav>/gi, ' ')
       .replace(/<footer[\s\S]*?<\/footer>/gi, ' ');
     const contentLower = content.toLowerCase();

@@ -11,7 +11,7 @@ const OG_DESC = `Banco com +${PROMPT_COUNT} prompts prontos e gratuitos para Cha
 const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent(`+${PROMPT_COUNT} Prompts Grátis`)}`;
 
 export const metadata: Metadata = {
-  title: `Biblioteca de Prompts para IA: +${PROMPT_COUNT} Prompts Prontos (ChatGPT, Claude, Gemini) | Turbina IA`,
+  title: `Biblioteca de Prompts para IA: +${PROMPT_COUNT} Grátis | Turbina IA`,
   description: OG_DESC,
   keywords: ['biblioteca de prompts', 'banco de prompts', 'prompts prontos', 'prompts ChatGPT', 'prompts Gemini', 'prompts Claude', 'prompt para gemini', 'prompt marketing', 'biblioteca prompts IA'],
   alternates: { canonical: '/prompts' },

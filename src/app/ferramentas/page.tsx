@@ -4,9 +4,9 @@ import FerramentasClient from './FerramentasClient';
 import { AI_TOOLS } from '@/data/ai-tools';
 
 export const metadata: Metadata = {
-  title: 'Guia de Ferramentas de IA 2026: Qual IA usar para cada tarefa? | Turbina IA',
+  title: 'Guia de Ferramentas de IA: Qual usar para cada tarefa | Turbina IA',
   description:
-    'Descubra as melhores ferramentas de inteligência artificial organizadas por finalidade. Compare ChatGPT, Claude, Midjourney, GitHub Copilot e mais de 30 IAs por categoria.',
+    'Descubra as melhores ferramentas de IA por finalidade: ChatGPT, Claude, Midjourney, GitHub Copilot e mais de 70 IAs organizadas por categoria.',
   keywords: [
     'ferramentas de IA',
     'inteligência artificial',

@@ -7,7 +7,7 @@ const OG_DESC = 'Ferramenta grátis de AEO: analise se o seu conteúdo está pro
 const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent('Verificador de IA (AEO)')}&desc=${encodeURIComponent('Seu site aparece nas respostas do ChatGPT e Gemini?')}&badge=${encodeURIComponent('Ferramenta Grátis')}`;
 
 export const metadata: Metadata = {
-  title: 'Verificador de IA (AEO): Seu Site Aparece nas Respostas do ChatGPT e Gemini? | Turbina IA',
+  title: 'Verificador de IA: Seu Site Aparece no ChatGPT? | Turbina IA',
   description: OG_DESC,
   keywords: ['verificador de IA', 'AEO', 'GEO', 'aparecer no ChatGPT', 'otimização para IA', 'answer engine optimization', 'ser citado pela IA', 'visibilidade em IA'],
   alternates: { canonical: '/verificador-ia' },
@@ -116,6 +116,34 @@ export default function VerificadorPage() {
             <li style={{ marginBottom: '0.4rem' }}>Estrutura de <strong>títulos (H1/H2/H3)</strong>, listas e tabelas.</li>
             <li style={{ marginBottom: '0.4rem' }}>Profundidade do conteúdo e sinais de <strong>autoria/atualização (E-E-A-T)</strong>.</li>
           </ul>
+
+          <h2 style={{ fontSize: '1.8rem', color: 'var(--text-primary)', margin: '2rem 0 1rem' }}>
+            Como melhorar a nota da sua página (passo a passo)
+          </h2>
+          <p style={{ marginBottom: '1rem' }}>
+            Depois de rodar a análise, ataque os itens marcados em vermelho. A seguir, o que cada
+            ponto significa e como resolver — são ajustes simples que aumentam muito a chance de o
+            seu conteúdo ser citado pelas IAs e aparecer nos resumos de busca:
+          </p>
+          <ul style={{ paddingLeft: '1.5rem', marginBottom: '1.5rem', listStyleType: 'disc' }}>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Resposta direta no início:</strong> abra o conteúdo com um resumo (TL;DR) que responde a pergunta principal em 1 a 3 frases. É o trecho que as IAs mais copiam.</li>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Seção de FAQ:</strong> adicione perguntas no jeito que as pessoas digitam (ex.: “quanto custa…”, “como fazer…”) com respostas curtas e objetivas logo abaixo.</li>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Dados estruturados (schema):</strong> inclua JSON-LD do tipo Article e FAQPage para a IA entender a estrutura do seu conteúdo sem adivinhar.</li>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Títulos claros (H1/H2/H3):</strong> divida o texto em seções com subtítulos descritivos; a IA extrai respostas de blocos bem organizados.</li>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Listas e tabelas:</strong> sempre que possível, transforme comparações e passos em listas ou tabelas — formatos fáceis de citar.</li>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Profundidade:</strong> cubra o tema de verdade (acima de 600 palavras). Conteúdo raso raramente é escolhido como fonte.</li>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Autoria e atualização (E-E-A-T):</strong> mostre quem escreveu, cite fontes confiáveis e exiba a data de atualização. Confiança pesa na hora de a IA escolher quem citar.</li>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Título e meta description:</strong> use um título de até 60 caracteres (de preferência em forma de pergunta) e uma meta description de até 160 caracteres resumindo a resposta.</li>
+          </ul>
+          <p style={{ marginBottom: '1rem' }}>
+            Uma observação importante: se a sua página é um <strong>site dinâmico</strong> (carregado
+            por JavaScript) e o conteúdo não vem no HTML inicial, tanto este verificador quanto as
+            próprias IAs podem não conseguir ler o texto. Nesse caso, garanta a renderização no
+            servidor (SSR) ou pré-renderização para que o conteúdo principal apareça no HTML. Depois
+            de aplicar os ajustes, rode a análise de novo e acompanhe a nota subir. Para se aprofundar,
+            veja <Link href="/blog/o-que-e-aeo-geo-como-aparecer-nas-respostas-de-ia">o guia completo de AEO e GEO</Link>{' '}
+            e as técnicas de <Link href="/blog/como-aparecer-nas-respostas-do-chatgpt">como aparecer nas respostas do ChatGPT</Link>.
+          </p>
 
           <h2 style={{ fontSize: '1.8rem', color: 'var(--text-primary)', margin: '2rem 0 1rem' }}>
             Perguntas Frequentes

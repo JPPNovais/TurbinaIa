@@ -8,7 +8,7 @@ const OG_DESC = `${GLOSSARIO.length} termos de Inteligência Artificial explicad
 const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent(`${GLOSSARIO.length} Termos Grátis`)}`;
 
 export const metadata: Metadata = {
-  title: 'Glossário de IA - Termos de Inteligência Artificial em Português | Turbina IA',
+  title: 'Glossário de IA: Termos de Inteligência Artificial | Turbina IA',
   description: OG_DESC,
   keywords: ['glossário IA', 'termos inteligência artificial', 'dicionário IA', 'LLM significado', 'o que é token IA', 'o que é RAG'],
   alternates: { canonical: '/glossario' },

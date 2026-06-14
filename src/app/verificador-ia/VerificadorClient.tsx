@@ -86,7 +86,10 @@ export default function VerificadorClient() {
           <div className="aeo-score-card">
             <div
               className="aeo-score-circle"
-              style={{ ['--score-color' as string]: scoreColor(result.score) }}
+              style={{
+                ['--score-color' as string]: scoreColor(result.score),
+                ['--score' as string]: `${result.score}%`,
+              }}
             >
               <span className="aeo-score-num">{result.score}</span>
               <span className="aeo-score-max">/100</span>
@@ -99,6 +102,21 @@ export default function VerificadorClient() {
               <p className="aeo-score-meta">{result.wordCount} palavras analisadas</p>
             </div>
           </div>
+
+          {result.wordCount < 30 && (
+            <div className="aeo-note">
+              <strong>😉 Quase lá!</strong> Não conseguimos ler o conteúdo desta página — ela
+              provavelmente é carregada por JavaScript (site dinâmico), então o texto não vem no
+              HTML inicial. Isso também atrapalha as IAs! Dica: garanta que o conteúdo principal
+              apareça no HTML (renderização no servidor) e teste o link de um artigo com bastante texto.
+            </div>
+          )}
+
+          {/* CTA no meio do resultado */}
+          <LeadMagnet
+            title="📥 Quer o checklist completo de AEO?"
+            subtitle="Receba o passo a passo para o seu site aparecer nas respostas da IA — e o pack com +160 prompts. É grátis."
+          />
 
           <h2 className="aeo-checklist-title">O que está bom e o que melhorar</h2>
           <ul className="aeo-checklist">
@@ -114,8 +132,8 @@ export default function VerificadorClient() {
           </ul>
 
           <LeadMagnet
-            title="📥 Checklist completo de AEO + Pack de Prompts"
-            subtitle="Receba o passo a passo para aparecer nas respostas da IA. Cadastre seu e-mail e baixe agora, grátis."
+            title="📥 Pegue o checklist + pack de +160 prompts"
+            subtitle="Tudo pronto para você aplicar hoje. Cadastre seu e-mail e baixe agora, grátis."
           />
         </div>
       )}

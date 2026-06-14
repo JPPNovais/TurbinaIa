@@ -1583,3 +1583,46 @@ h1, h2, h3, h4, h5, h6 {
 .tool-highlight-title { font-size: 1.15rem; color: var(--text-primary); margin: 0.15rem 0; }
 .tool-highlight-desc { font-size: 0.92rem; color: var(--text-secondary); }
 .tool-highlight-cta { font-weight: 700; color: var(--primary); white-space: nowrap; }
+
+/* Home: intro (resposta direta) e FAQ */
+.home-intro {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md, 16px);
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.home-intro a { color: var(--primary); font-weight: 600; }
+.home-faq {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+.home-faq h2 { font-size: 1.6rem; margin-bottom: 1rem; color: var(--text-primary); }
+.home-faq h3 { font-size: 1.1rem; margin: 1.25rem 0 0.4rem; color: var(--text-primary); }
+.home-faq p { color: var(--text-secondary); line-height: 1.6; }
+
+/* Verificador: nota para sites dinâmicos (SPA) */
+.aeo-note {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: var(--border-radius-md, 16px);
+  background: rgba(245, 158, 11, 0.10);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.aeo-note strong { color: var(--text-primary); }
+
+/* Mobile: empilha o formulário do lead magnet e do verificador */
+@media (max-width: 560px) {
+  .lead-magnet-form, .aeo-form { flex-direction: column; }
+  .lead-magnet-input, .lead-magnet-btn,
+  .aeo-input, .aeo-btn { width: 100%; flex: 1 1 100%; }
+  .lead-magnet { padding: 1.5rem 1.1rem; }
+  .aeo-score-card { gap: 1rem; }
+}

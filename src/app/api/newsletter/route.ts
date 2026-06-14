@@ -54,22 +54,14 @@ export async function POST(request: Request) {
 
     console.error('Supabase newsletter error:', response.status, errorData);
     return NextResponse.json(
-      {
-        success: false,
-        message: 'Erro no servidor ao processar a inscrição.',
-        debug: { stage: 'upstream', status: response.status, error: errorData, hasEnv: !!SUPABASE_URL && !!SUPABASE_ANON_KEY },
-      },
-      { status: 500 }
+      { success: false, message: 'Estamos com uma instabilidade momentânea. Tente novamente em instantes.' },
+      { status: 503 }
     );
   } catch (error) {
     console.error('Newsletter subscription error:', error);
     return NextResponse.json(
-      {
-        success: false,
-        message: 'Erro no servidor ao processar a inscrição.',
-        debug: { stage: 'exception', error: String(error), hasEnv: !!SUPABASE_URL && !!SUPABASE_ANON_KEY },
-      },
-      { status: 500 }
+      { success: false, message: 'Estamos com uma instabilidade momentânea. Tente novamente em instantes.' },
+      { status: 503 }
     );
   }
 }

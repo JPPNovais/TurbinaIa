@@ -55,6 +55,16 @@ export default async function Home({ searchParams }: HomeProps) {
     return formatDateLong(dateStr);
   };
 
+  const homeFaqLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'O que é o Turbina IA?', acceptedAnswer: { '@type': 'Answer', text: 'O Turbina IA é um portal brasileiro de Inteligência Artificial com notícias diárias, tutoriais e ferramentas gratuitas como comparador de modelos, calculadora de custos de API, biblioteca de prompts e verificador de IA.' } },
+      { '@type': 'Question', name: 'O conteúdo do Turbina IA é gratuito?', acceptedAnswer: { '@type': 'Answer', text: 'Sim. Todos os artigos e ferramentas do Turbina IA são gratuitos e não exigem cadastro.' } },
+      { '@type': 'Question', name: 'Quais ferramentas o Turbina IA oferece?', acceptedAnswer: { '@type': 'Answer', text: 'Comparador de modelos de IA, calculadora de custos de API, biblioteca de prompts, gerador de conteúdo, glossário de IA e o verificador de IA (AEO).' } },
+    ],
+  };
+
   return (
     <main>
       {/* Acessibilidade e SEO: H1 oculto para identificar a página inicial do portal */}
@@ -105,6 +115,18 @@ export default async function Home({ searchParams }: HomeProps) {
           </div>
         </section>
       )}
+
+      {/* Intro / resposta direta (AEO) */}
+      <div className="container">
+        <p className="home-intro">
+          <strong>Em resumo:</strong> o Turbina IA é o portal brasileiro de Inteligência Artificial
+          com notícias diárias, tutoriais e ferramentas gratuitas — incluindo{' '}
+          <Link href="/comparador">comparador de modelos</Link>,{' '}
+          <Link href="/calculadora">calculadora de custos</Link>,{' '}
+          <Link href="/prompts">biblioteca de prompts</Link> e o{' '}
+          <Link href="/verificador-ia">verificador de IA</Link>.
+        </p>
+      </div>
 
       {/* Destaque da ferramenta gratuita (AEO) */}
       <div className="container">
@@ -173,7 +195,20 @@ export default async function Home({ searchParams }: HomeProps) {
             featuredArticles={featuredPool.filter(art => !featuredArticle || art.slug !== featuredArticle.slug)}
           />
         </div>
+
+        {/* FAQ da home (AEO) */}
+        <section className="home-faq">
+          <h2>Perguntas Frequentes</h2>
+          <h3>O que é o Turbina IA?</h3>
+          <p>O Turbina IA é um portal brasileiro de Inteligência Artificial com notícias diárias, tutoriais e ferramentas gratuitas como comparador de modelos, calculadora de custos de API, biblioteca de prompts e verificador de IA.</p>
+          <h3>O conteúdo do Turbina IA é gratuito?</h3>
+          <p>Sim. Todos os artigos e ferramentas do Turbina IA são gratuitos e não exigem cadastro.</p>
+          <h3>Quais ferramentas o Turbina IA oferece?</h3>
+          <p>Comparador de modelos de IA, calculadora de custos de API, biblioteca de prompts, gerador de conteúdo, glossário de IA e o verificador de IA (AEO).</p>
+        </section>
       </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqLd) }} />
     </main>
   );
 }

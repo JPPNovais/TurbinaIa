@@ -28,6 +28,7 @@ try {
 
 const { GoogleGenAI } = require('@google/genai');
 const { postprocessArticle } = require('./article-postprocess');
+const { enhanceSeo } = require('./seo-enhance');
 
 const apiKey = process.env.GEMINI_API_KEY;
 
@@ -605,6 +606,12 @@ Escreva um artigo longo (mínimo de 1500 palavras, idealmente entre 1800 e 2500 
     cleanContent = await postprocessArticle(cleanContent, { verbose: true });
 
     const slug = slugify(titleVal);
+
+    // Enriquecimento de SEO determinístico: description <=160, 2 imagens inline
+    // e links internos contextuais (apenas para slugs existentes).
+    console.log('🎯 Aplicando pacote SEO (description, imagens inline, links internos)...');
+    cleanContent = enhanceSeo(cleanContent, { articlesDir, coverImageUrl, currentSlug: slug });
+
     const filePath = path.join(articlesDir, `${slug}.md`);
     fs.writeFileSync(filePath, cleanContent, 'utf8');
 

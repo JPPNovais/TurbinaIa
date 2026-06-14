@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import LogoIcon from './LogoIcon';
 
 const RECURSOS_ITEMS = [
+  { href: '/verificador-ia', label: 'Verificador de IA', icon: '🔍' },
   { href: '/prompts', label: 'Prompts', icon: '💬' },
   { href: '/gerador', label: 'Gerador de Artigos', icon: '✍️' },
   { href: '/glossario', label: 'Glossário de IA', icon: '📖' },

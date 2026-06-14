@@ -1499,3 +1499,81 @@ h1, h2, h3, h4, h5, h6 {
 .author-box-name { display: block; font-size: 1.1rem; color: var(--text-primary); margin: 0.1rem 0 0.4rem; }
 .author-box-bio { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin: 0; }
 .author-box-bio a { color: var(--primary); font-weight: 600; }
+
+/* Verificador de IA (AEO) */
+.aeo-tool { margin-top: 1rem; }
+.aeo-form { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.aeo-input {
+  flex: 1 1 280px;
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--border-radius-sm, 8px);
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+}
+.aeo-input:focus { outline: none; border-color: var(--primary); }
+.aeo-btn {
+  padding: 0.9rem 1.6rem;
+  border-radius: var(--border-radius-sm, 8px);
+  border: none;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff; font-weight: 700; font-size: 1rem; cursor: pointer; font-family: inherit;
+  transition: transform 0.1s, opacity 0.15s;
+}
+.aeo-btn:hover { transform: translateY(-1px); }
+.aeo-btn:disabled { opacity: 0.6; cursor: default; }
+.aeo-error { color: #ef4444; margin-top: 0.8rem; font-size: 0.9rem; }
+
+.aeo-result { margin-top: 2rem; }
+.aeo-score-card {
+  display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+  padding: 1.5rem; border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md, 16px); background: var(--bg-secondary);
+}
+.aeo-score-circle {
+  width: 92px; height: 92px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: baseline; justify-content: center; gap: 2px;
+  background: conic-gradient(var(--score-color) calc(var(--score, 0)), var(--bg-tertiary) 0);
+  border: 6px solid var(--score-color);
+}
+.aeo-score-num { font-size: 1.9rem; font-weight: 800; color: var(--text-primary); font-family: var(--font-display); }
+.aeo-score-max { font-size: 0.85rem; color: var(--text-muted); }
+.aeo-score-status { font-size: 1.1rem; display: block; }
+.aeo-score-url { color: var(--text-secondary); margin: 0.3rem 0 0; font-size: 0.95rem; word-break: break-word; }
+.aeo-score-meta { color: var(--text-muted); margin: 0.2rem 0 0; font-size: 0.82rem; }
+
+.aeo-checklist-title { font-size: 1.4rem; margin: 2rem 0 1rem; color: var(--text-primary); }
+.aeo-checklist { display: flex; flex-direction: column; gap: 0.6rem; }
+.aeo-check {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  padding: 0.85rem 1rem; border-radius: var(--border-radius-sm, 8px);
+  border: 1px solid var(--border-color); background: var(--bg-secondary);
+}
+.aeo-check-icon {
+  width: 1.5rem; height: 1.5rem; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem; font-weight: 700; color: #fff;
+}
+.aeo-check.ok .aeo-check-icon { background: #10b981; }
+.aeo-check.fail .aeo-check-icon { background: #ef4444; }
+.aeo-check-label { display: block; color: var(--text-primary); font-weight: 600; font-size: 0.95rem; }
+.aeo-check-tip { display: block; color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.2rem; line-height: 1.5; }
+
+/* Destaque da ferramenta na home */
+.tool-highlight {
+  display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;
+  margin-top: 2rem; padding: 1.25rem 1.5rem;
+  border-radius: var(--border-radius-md, 16px);
+  background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.12), rgba(var(--secondary-rgb), 0.12));
+  border: 1px solid var(--border-color);
+  transition: transform 0.12s, border-color 0.15s;
+}
+.tool-highlight:hover { transform: translateY(-2px); border-color: var(--primary); }
+.tool-highlight-icon { font-size: 2rem; flex-shrink: 0; }
+.tool-highlight-text { display: flex; flex-direction: column; flex: 1 1 280px; }
+.tool-highlight-badge { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--primary); }
+.tool-highlight-title { font-size: 1.15rem; color: var(--text-primary); margin: 0.15rem 0; }
+.tool-highlight-desc { font-size: 0.92rem; color: var(--text-secondary); }
+.tool-highlight-cta { font-weight: 700; color: var(--primary); white-space: nowrap; }

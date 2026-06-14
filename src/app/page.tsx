@@ -106,6 +106,19 @@ export default async function Home({ searchParams }: HomeProps) {
         </section>
       )}
 
+      {/* Destaque da ferramenta gratuita (AEO) */}
+      <div className="container">
+        <Link href="/verificador-ia" className="tool-highlight">
+          <div className="tool-highlight-icon" aria-hidden="true">🔍</div>
+          <div className="tool-highlight-text">
+            <span className="tool-highlight-badge">Novo · Ferramenta Grátis</span>
+            <strong className="tool-highlight-title">Seu site aparece nas respostas do ChatGPT e Gemini?</strong>
+            <span className="tool-highlight-desc">Teste grátis em segundos e descubra o que melhorar para ser citado pelas IAs.</span>
+          </div>
+          <span className="tool-highlight-cta">Analisar agora →</span>
+        </Link>
+      </div>
+
       {/* Top Banner Ad */}
       <div className="container">
         <AdSense adSlot="homepage-top-banner" adFormat="horizontal" />

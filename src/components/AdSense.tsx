@@ -36,8 +36,15 @@ export default function AdSense({
 
   const adClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || 'ca-pub-placeholder';
 
-  // If there's no active AdSense client ID, hide the ad blocks completely to reclaim space
-  if (adClientId === 'ca-pub-placeholder') {
+  // Interruptor de exibição dos blocos. Enquanto o site está em revisão pelo
+  // Google, mantenha desligado (variável ausente) para não exibir caixas vazias.
+  // Ligue (NEXT_PUBLIC_ADS_ENABLED=true) só depois da conta ser aprovada.
+  // O script de aprovação carrega no layout independentemente disto.
+  const adsEnabled = process.env.NEXT_PUBLIC_ADS_ENABLED === 'true';
+
+  // If there's no active AdSense client ID, or ads aren't enabled yet, hide the
+  // ad blocks completely to reclaim space
+  if (adClientId === 'ca-pub-placeholder' || !adsEnabled) {
     return null;
   }
 

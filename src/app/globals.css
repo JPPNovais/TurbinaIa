@@ -519,6 +519,12 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+/* Colapsa o bloco inteiro (borda + rótulo "ANÚNCIO") quando o Google não
+   preenche o anúncio — em revisão ou impressão não vendida — evitando caixa vazia. */
+.ad-container:has(ins.adsbygoogle[data-ad-status='unfilled']) {
+  display: none !important;
+}
+
 /* Hero Section */
 .section-title {
   font-size: 1.75rem;

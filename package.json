@@ -10,7 +10,8 @@
     "generate-article": "node scripts/generate-article.js",
     "update-models": "node scripts/update-models.js",
     "update-calculator": "node scripts/update-calculator.js",
-    "update-changelog": "node scripts/update-changelog.js"
+    "update-changelog": "node scripts/update-changelog.js",
+    "build-pack": "node scripts/build-prompt-pack.js"
   },
   "dependencies": {
     "@google/genai": "^2.5.0",

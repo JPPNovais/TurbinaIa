@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 import ReadingProgressBar from '@/components/ReadingProgressBar';
 import AdSense from '@/components/AdSense';
 import PostCard from '@/components/PostCard';
+import LeadMagnet from '@/components/LeadMagnet';
 import { getArticleData, getAllArticlesMetadata } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
 
@@ -104,7 +105,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     description: article.description,
     image: article.coverImage || 'https://www.turbinaia.com.br/icon.png',
     datePublished: article.date,
-    dateModified: article.date,
+    dateModified: article.updatedAt || article.date,
     inLanguage: 'pt-BR',
     keywords: article.tags.join(', '),
     articleSection: article.category,
@@ -181,6 +182,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <span>Por <strong>{article.author}</strong></span>
           <span>•</span>
           <span>{formattedDate}</span>
+          {article.updatedAt && article.updatedAt !== article.date && (
+            <>
+              <span>•</span>
+              <span>Atualizado em {formatDateLong(article.updatedAt)}</span>
+            </>
+          )}
           <span>•</span>
           <span>{article.readingTime}</span>
         </div>
@@ -239,6 +246,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           dangerouslySetInnerHTML={{ __html: article.contentHtml }} 
         />
 
+        {/* Captura de leads — pack de prompts em troca do e-mail */}
+        <LeadMagnet />
+
         {/* Bottom Article Ad (AdSense block after content) */}
         <AdSense adSlot="article-bottom-banner" adFormat="horizontal" />
 
@@ -292,6 +302,20 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <Link href="/" style={{ fontSize: '0.9rem', color: 'var(--primary)', fontWeight: 600 }}>
             ← Voltar para a Home
           </Link>
+        </div>
+
+        {/* Author box (E-E-A-T) */}
+        <div className="author-box">
+          <div className="author-box-avatar" aria-hidden="true">🌀</div>
+          <div className="author-box-info">
+            <span className="author-box-label">Escrito por</span>
+            <strong className="author-box-name">{article.author}</strong>
+            <p className="author-box-bio">
+              Equipe editorial do Turbina IA, especializada em Inteligência Artificial, ferramentas
+              de produtividade e tendências de tecnologia. Conteúdo apurado em fontes oficiais e
+              revisado por humanos. <Link href="/sobre">Saiba mais sobre nós</Link>.
+            </p>
+          </div>
         </div>
       </article>
 

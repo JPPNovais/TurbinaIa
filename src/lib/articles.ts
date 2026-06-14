@@ -18,6 +18,7 @@ export interface ArticleMetadata {
   title: string;
   description: string;
   date: string;
+  updatedAt?: string;
   category: string;
   tags: string[];
   coverImage?: string;
@@ -148,6 +149,7 @@ export async function getAllArticlesMetadata(): Promise<ArticleMetadata[]> {
         title: data.title || 'Sem título',
         description: data.description || '',
         date: data.date || new Date().toISOString().split('T')[0],
+        updatedAt: data.updatedAt || undefined,
         category: data.category || 'Geral',
         tags: Array.isArray(data.tags) ? data.tags : [],
         coverImage: data.coverImage || '',
@@ -195,6 +197,7 @@ export async function getArticleData(slug: string): Promise<Article | null> {
     title: data.title || 'Sem título',
     description: data.description || '',
     date: data.date || new Date().toISOString().split('T')[0],
+        updatedAt: data.updatedAt || undefined,
     category: data.category || 'Geral',
     tags: Array.isArray(data.tags) ? data.tags : [],
     coverImage: data.coverImage || '',

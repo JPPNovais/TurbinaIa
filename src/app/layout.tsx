@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: '/',
+    types: {
+      'application/rss+xml': '/feed.xml',
+    },
   },
   openGraph: {
     title: 'Turbina IA - O Portal Definitivo de Inteligência Artificial',

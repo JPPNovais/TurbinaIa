@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import PromptsClient from './PromptsClient';
+import LeadMagnet from '@/components/LeadMagnet';
 import { PROMPTS } from '@/data/prompts';
 
 const PROMPT_COUNT = PROMPTS.length;
@@ -79,6 +80,14 @@ export default function PromptsPage() {
       <main style={{ minHeight: '80vh' }}>
       {/* Prompts Client Component */}
       <PromptsClient />
+
+      {/* Captura de leads — baixar o pack completo de prompts */}
+      <section className="container" style={{ maxWidth: '800px' }}>
+        <LeadMagnet
+          title="📥 Baixe o Pack Completo com +160 Prompts"
+          subtitle="Leve toda a biblioteca em um arquivo único para usar offline. Cadastre seu e-mail e baixe agora, de graça."
+        />
+      </section>
 
       {/* SEO content at the bottom */}
       <section className="container" style={{ marginTop: '3rem', marginBottom: '6rem', maxWidth: '800px' }}>

@@ -95,10 +95,13 @@ export default function RootLayout({
         <Footer />
         <CookieBanner />
         {adClientId !== 'ca-pub-placeholder' && (
-          <Script
+          // Tag <script> crua (não o <Script> do Next): o crawler do AdSense não
+          // executa JS, então precisa da tag literal no HTML do servidor. O React 19
+          // renderiza scripts async nativamente como tag real no SSR.
+          <script
+            async
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClientId}`}
             crossOrigin="anonymous"
-            strategy="afterInteractive"
           />
         )}
         {gaMeasurementId && (

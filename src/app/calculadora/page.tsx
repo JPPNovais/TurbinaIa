@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import CalculatorClient from './CalculatorClient';
 
 const OG_TITLE = 'Calculadora de Custos de APIs de IA';
@@ -46,10 +47,50 @@ const jsonLd = {
   ],
 };
 
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Quanto custa a API do ChatGPT?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'O GPT-4o mini custa cerca de US$ 0,15 por 1M tokens de entrada e US$ 0,60 por 1M tokens de saída. O GPT-4o custa US$ 2,50/1M de entrada e US$ 10/1M de saída. Use a calculadora acima para simular o custo exato no seu volume de uso.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Como calcular o custo de tokens de uma API de IA?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Multiplique o número estimado de tokens de entrada pelo preço por milhão de tokens de entrada, e faça o mesmo para os tokens de saída. Some os dois valores. Em média, 1.000 palavras em português equivalem a aproximadamente 1.300 tokens.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Qual API de IA é mais barata?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Para tarefas cotidianas, o Gemini 2.5 Flash e o DeepSeek V3 estão entre as opções mais baratas do mercado, custando menos de US$ 0,30 por 1M de tokens de entrada. A calculadora do Turbina IA compara os preços atuais de todos os principais modelos.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'A calculadora de custos de IA é gratuita?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sim. A calculadora do Turbina IA é 100% gratuita e não exige cadastro. Basta inserir o volume estimado de tokens e ver a comparação de custo entre os modelos na hora.',
+      },
+    },
+  ],
+};
+
 export default function CalculatorPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <main style={{ minHeight: '80vh' }}>
       {/* Interactive Calculator */}
       <CalculatorClient />
@@ -57,7 +98,7 @@ export default function CalculatorPage() {
       {/* SEO Explanations Content */}
       <section className="container" style={{ marginTop: '3rem', marginBottom: '6rem', maxWidth: '800px' }}>
         <hr style={{ border: '0', height: '1px', background: 'var(--border-color)', margin: '4rem 0' }} />
-        
+
         <article style={{ lineHeight: '1.7', color: 'var(--text-secondary)' }}>
           <h2 style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '1.25rem' }}>
             Como funciona a precificação de APIs de Inteligência Artificial?
@@ -104,7 +145,47 @@ export default function CalculatorPage() {
               <strong>Otimize o histórico do chat:</strong> Em chats contínuos, limpe ou sumarize as mensagens antigas para evitar reenviar um histórico gigantesco a cada nova interação.
             </li>
           </ol>
+
+          <p style={{ marginBottom: '1rem' }}>
+            Para escolher o modelo mais adequado além do custo, use o nosso <Link href="/comparador">comparador de IAs</Link>. Se precisar de ajuda para escrever prompts mais eficientes e reduzir tokens desnecessários, explore a <Link href="/prompts">biblioteca de prompts</Link>.
+          </p>
         </article>
+
+        <hr style={{ border: '0', height: '1px', background: 'var(--border-color)', margin: '3rem 0' }} />
+
+        <section style={{ lineHeight: '1.7', color: 'var(--text-secondary)' }}>
+          <h2 style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '1.25rem' }}>
+            Perguntas Frequentes sobre Custos de APIs de IA
+          </h2>
+
+          <h3 style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '1.75rem', marginBottom: '0.5rem' }}>
+            Quanto custa a API do ChatGPT?
+          </h3>
+          <p style={{ marginBottom: '1rem' }}>
+            O GPT-4o mini custa cerca de US$ 0,15 por 1M tokens de entrada e US$ 0,60 por 1M tokens de saída. O GPT-4o custa US$ 2,50/1M de entrada e US$ 10/1M de saída. Use a calculadora acima para simular o custo exato no seu volume.
+          </p>
+
+          <h3 style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '1.75rem', marginBottom: '0.5rem' }}>
+            Como calcular o custo de tokens de uma API de IA?
+          </h3>
+          <p style={{ marginBottom: '1rem' }}>
+            Multiplique o número estimado de tokens de entrada pelo preço por milhão de tokens de entrada, e faça o mesmo para os tokens de saída. Some os dois valores. Em média, 1.000 palavras em português equivalem a aproximadamente 1.300 tokens.
+          </p>
+
+          <h3 style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '1.75rem', marginBottom: '0.5rem' }}>
+            Qual API de IA é mais barata?
+          </h3>
+          <p style={{ marginBottom: '1rem' }}>
+            Para tarefas cotidianas, o Gemini 2.5 Flash e o DeepSeek V3 estão entre as opções mais baratas do mercado, custando menos de US$ 0,30 por 1M de tokens de entrada. A calculadora acima compara os preços atuais de todos os principais modelos.
+          </p>
+
+          <h3 style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '1.75rem', marginBottom: '0.5rem' }}>
+            A calculadora de custos de IA é gratuita?
+          </h3>
+          <p style={{ marginBottom: '1rem' }}>
+            Sim. É 100% gratuita e não exige cadastro. Basta inserir o volume estimado de tokens e ver a comparação de custo entre os modelos na hora.
+          </p>
+        </section>
       </section>
     </main>
     </>

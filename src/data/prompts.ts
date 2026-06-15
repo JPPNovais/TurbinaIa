@@ -5296,4 +5296,136 @@ Sua tarefa é projetar um agente de IA multimodal capaz de lidar com interaçõe
 Apresente sua proposta de design de forma estruturada e técnica.`,
     tags: ['IA', 'automação', 'atendimento ao cliente', 'agentes inteligentes', 'multimodal'],
   },
+  {
+    id: 'ia-agente-autonomo-planejamento-estrategico',
+    title: 'Agente de IA Autônomo para Planejamento Estratégico e Execução',
+    category: 'IA & Automação',
+    description: 'Ajuda a projetar um Agente de IA autônomo capaz de auxiliar no planejamento estratégico e na execução de tarefas complexas, adaptando-se a novos dados e cenários.',
+    template: `Você atuará como um designer de Agente de IA. Seu objetivo é projetar um Agente de IA autônomo para auxiliar no planejamento estratégico e na execução de [tipo_de_tarefa_complexa, ex: expansão de mercado, otimização de campanha de marketing, desenvolvimento de novo produto].
+
+O Agente deve operar em um ciclo contínuo de:
+1.  **Observação:** Coletar dados de [fontes_de_dados_relevantes, ex: relatórios de mercado, dados de vendas, feedback de clientes, APIs externas].
+2.  **Análise e Diagnóstico:** Identificar padrões, tendências e desafios relacionados a [objetivo_estrategico, ex: crescimento de receita, market share, eficiência operacional].
+3.  **Planejamento:** Propor um plano de ação estratégico, incluindo [metas_especificas, ex: KPIs, milestones] e [recursos_necessarios, ex: equipe, orçamento, ferramentas].
+4.  **Execução:** Sugerir ou, se possível, iniciar ações em [sistemas_ou_plataformas_integradas, ex: CRM, plataforma de anúncios, sistema de gerenciamento de projetos].
+5.  **Reflexão e Ajuste:** Avaliar o progresso, identificar desvios e ajustar o plano de forma autônoma.
+
+**Contexto:**
+-   **Nome da Organização/Projeto:** [nome_da_organizacao]
+-   **Desafio/Oportunidade Principal:** [desafio_ou_oportunidade]
+-   **Público-alvo/Mercado:** [publico_alvo_ou_mercado]
+-   **Restrições/Limitações:** [restricoes_ou_limitacoes, ex: orçamento, conformidade, tempo]
+
+**Saída desejada:**
+Apresente um design detalhado do Agente, incluindo:
+1.  **Nome Sugerido para o Agente:**
+2.  **Principais Módulos/Componentes:** (Ex: Módulo de Coleta de Dados, Módulo de Análise Preditiva, Módulo de Geração de Plano, Módulo de Execução, Módulo de Aprendizado e Ajuste)
+3.  **Tecnologias/Ferramentas Sugeridas para Implementação:** (Ex: APIs específicas, plataformas de nuvem, modelos de LLM, ferramentas de automação)
+4.  **Fluxo de Trabalho Detalhado do Agente:** Descreva passo a passo como o Agente operaria no ciclo, incluindo exemplos de inputs e outputs em cada etapa.
+5.  **Mecanismos de Segurança e Ética:** Como garantir o uso responsável dos dados e evitar vieses.
+6.  **Métricas de Sucesso para o Agente:** Como medir a eficácia e o valor gerado pelo Agente.`,
+    tags: ['Agente IA', 'Automação', 'Planejamento Estratégico', 'Design de Agente'],
+  },
+  {
+    id: 'marketing-estrategia-engajamento-multimodal-interativo-ia',
+    title: 'Estratégia de Engajamento com Conteúdo Multimodal Interativo (IA)',
+    category: 'Marketing',
+    description: 'Desenvolve uma estratégia detalhada para criar conteúdo multimodal e interativo, otimizado por IA, para maximizar o engajamento do público-alvo em diversas plataformas.',
+    template: `Você é um especialista em marketing digital e estratégias de conteúdo multimodal interativo com IA. Crie uma estratégia abrangente para aumentar o engajamento do nosso público-alvo, utilizando uma abordagem multimodal e interativa, com otimização por IA.
+
+**Informações Essenciais:**
+-   **Produto/Serviço:** [nome_do_produto_ou_servico]
+-   **Objetivo de Marketing Principal:** [objetivo_principal, ex: aumentar reconhecimento de marca, gerar leads qualificados, impulsionar vendas, construir comunidade]
+-   **Público-alvo:** [descricao_detalhada_do_publico, ex: idade, interesses, dores, comportamentos online, plataformas preferidas]
+-   **Plataformas de Distribuição:** [plataformas_principais, ex: Instagram, TikTok, YouTube, Blog, Email Marketing, Website Interativo, Podcasts]
+-   **Recursos Disponíveis (opcional):** [recursos_existentes, ex: equipe de design, ferramentas de vídeo, banco de dados de clientes, orçamento para anúncios]
+
+**Saída Desejada:**
+Apresente uma estratégia detalhada, incluindo:
+1.  **Análise de Conteúdo Multimodal Interativo para o Público-alvo:** Quais tipos de formatos (vídeos curtos, quizzes, infográficos animados, calculadoras, enquetes, realidade aumentada, áudio interativo, etc.) e interações seriam mais eficazes e por quê.
+2.  **Ideias de Conteúdo Multimodal Otimizadas por IA:** 5-7 ideias concretas de peças de conteúdo que combinem múltiplos formatos e elementos interativos. Para cada ideia, inclua:
+    *   **Título/Tema:**
+    *   **Formatos Envolvidos:** (ex: vídeo + quiz + texto)
+    *   **Elementos Interativos:** (ex: votação, arraste e solte, resposta aberta)
+    *   **Como a IA Otimizaria:** (ex: personalização de conteúdo, análise de engajamento, geração de variações, recomendação de tópicos)
+    *   **Chamada para Ação (CTA):**
+    *   **Plataforma Principal:**
+3.  **Plano de Distribuição e Promoção:** Como cada tipo de conteúdo será distribuído nas plataformas escolhidas e quais táticas de promoção serão usadas.
+4.  **Métricas de Engajamento e Avaliação:** Como o sucesso será medido (ex: tempo de permanência, taxa de cliques em interações, compartilhamentos, conversões).
+5.  **Recomendações de Ferramentas/Tecnologias de IA:** Quais ferramentas podem auxiliar na criação, personalização e análise desse conteúdo.`,
+    tags: ['Marketing Digital', 'Conteúdo Multimodal', 'Engajamento', 'Interatividade'],
+  },
+  {
+    id: 'produtividade-agente-otimizacao-pessoal-ia',
+    title: 'Agente de IA para Otimização de Processos Pessoais e Hábitos',
+    category: 'Produtividade',
+    description: 'Projeta um agente de IA para analisar e otimizar rotinas e hábitos pessoais, sugerindo melhorias e automações para aumentar a eficiência e o bem-estar.',
+    template: `Você é um especialista em produtividade e design de agentes de IA para otimização pessoal. Crie um plano para um Agente de IA que ajude um indivíduo a otimizar seus processos pessoais e hábitos diários.
+
+**Perfil do Usuário:**
+-   **Nome Fictício:** [nome_do_usuario]
+-   **Profissão/Área:** [profissao_ou_area]
+-   **Principais Desafios de Produtividade/Hábitos:** [desafios_especificos, ex: procrastinação, dificuldade de manter foco, sobrecarga de informações, rotina inconsistente, má gestão do tempo, hábitos não saudáveis]
+-   **Objetivos de Melhoria:** [objetivos_claros, ex: aumentar foco no trabalho, iniciar novo hábito (leitura/exercício), reduzir tempo em redes sociais, gerenciar e-mails de forma mais eficiente]
+-   **Ferramentas Atuais Utilizadas:** [ferramentas_existentes, ex: Google Calendar, Notion, To-Doist, WhatsApp, e-mail]
+-   **Preferencia de Interação com IA:** [modo_de_interacao, ex: texto, voz, notificações proativas, interface visual]
+
+**Saída Desejada:**
+Apresente um design detalhado do Agente de IA, incluindo:
+1.  **Nome Sugerido para o Agente:**
+2.  **Principais Funcionalidades do Agente:** (Ex: Análise de Tempo, Sugestão de Micro-hábitos, Bloqueio de Distrações, Gerenciamento de Prioridades, Resumo de Informações, Lembretes Inteligentes)
+3.  **Fontes de Dados do Usuário:** Quais informações o Agente precisaria acessar (com permissão) para ser eficaz (ex: calendário, histórico de uso de apps, e-mails, notas, wearables).
+4.  **Fluxo de Otimização de um Hábito/Processo (Exemplo):** Escolha um dos [objetivos_claros] do usuário e descreva passo a passo como o Agente atuaria para auxiliar na sua otimização, desde a análise inicial até a sugestão de ações e monitoramento.
+5.  **Mecanismos de Personalização e Adaptação:** Como o Agente aprenderia e se adaptaria ao longo do tempo às necessidades e preferências do usuário.
+6.  **Considerações de Privacidade e Ética:** Como o Agente garantiria a privacidade dos dados e agiria de forma ética.`,
+    tags: ['Produtividade Pessoal', 'Automação', 'Agente IA', 'Hábitos'],
+  },
+  {
+    id: 'finance-agente-preditivo-gestao-estoque-pme',
+    title: 'Agente de IA Preditivo para Gestão de Estoque em PMEs',
+    category: 'Finanças',
+    description: 'Descreve a arquitetura e funcionalidades de um agente de IA focado na previsão e otimização da gestão de estoque para pequenas e médias empresas, minimizando custos e perdas.',
+    template: `Você é um especialista em finanças e automação para Pequenas e Médias Empresas (PMEs). Projete um Agente de IA preditivo para otimizar a gestão de estoque de uma PME em [setor_da_empresa, ex: varejo de moda, restaurante, e-commerce de eletrônicos, distribuidora de alimentos].
+
+**Informações da PME:**
+-   **Nome da Empresa (fictício):** [nome_da_pme]
+-   **Tipo de Produtos:** [descricao_dos_produtos_do_estoque, ex: roupas de verão, ingredientes frescos, componentes eletrônicos, livros]
+-   **Volume de Vendas Mensal (estimado):** [volume_vendas_mensal]
+-   **Principais Desafios Atuais na Gestão de Estoque:** [desafios_existentes, ex: excesso de estoque, falta de produtos populares, perdas por validade, custos de armazenagem altos, dificuldade de previsão de demanda]
+-   **Sistemas Atuais (opcional):** [sistemas_ja_utilizados, ex: planilhas Excel, ERP simples, sistema de PDV]
+
+**Saída Desejada:**
+Apresente um design detalhado do Agente de IA, incluindo:
+1.  **Nome Sugerido para o Agente:**
+2.  **Principais Funcionalidades do Agente:** (Ex: Previsão de Demanda, Otimização de Pedidos de Compra, Alertas de Nível Crítico, Análise de Rotatividade de Produtos, Identificação de Produtos 'Mortos', Sugestão de Preços Dinâmicos)
+3.  **Fontes de Dados para o Agente:** Quais dados o Agente precisaria acessar para suas análises (ex: histórico de vendas, dados de fornecedores, tendências de mercado, dados sazonais, promoções passadas).
+4.  **Modelo de Funcionamento do Agente (Fluxo):** Descreva o ciclo de operação do Agente, desde a coleta de dados, a análise preditiva, a geração de recomendações até a execução (ou sugestão para execução).
+5.  **Benefícios Esperados para a PME:** Como o Agente impactaria positivamente a PME em termos financeiros e operacionais.
+6.  **Considerações de Implementação:** Requisitos tecnológicos mínimos, tempo estimado e potenciais desafios.`,
+    tags: ['Finanças PME', 'Gestão de Estoque', 'Análise Preditiva', 'Agente IA'],
+  },
+  {
+    id: 'dev-agente-gerador-testes-integracao-ia',
+    title: 'Agente de IA para Geração e Validação de Testes de Integração',
+    category: 'Desenvolvimento',
+    description: 'Cria um plano para um agente de IA que gera cenários de teste de integração robustos e valida a cobertura, com base nas especificações de APIs e microsserviços.',
+    template: `Você é um engenheiro de software e especialista em automação de testes com IA. Projete um Agente de IA para auxiliar na geração, execução e validação de testes de integração para um sistema de [tipo_de_sistema, ex: microsserviços RESTful, aplicação web complexa, sistema de e-commerce com múltiplos módulos].
+
+**Contexto do Sistema:**
+-   **Nome do Projeto/Sistema:** [nome_do_sistema]
+-   **Componentes Principais/APIs:** [lista_de_componentes_ou_apis_a_serem_integradas, ex: API de Usuários, Serviço de Pagamento, Microsserviço de Produtos, API de Notificações]
+-   **Linguagem/Framework Principal:** [linguagem_ou_framework, ex: Node.js/Express, Python/Django, Java/Spring Boot]
+-   **Ferramentas de Teste Atuais (opcional):** [ferramentas_existentes, ex: Postman, Newman, Cypress, Jest, Pytest]
+-   **Principais Desafios nos Testes de Integração Atuais:** [desafios_atuais, ex: criação manual demorada de cenários, dificuldade em simular estados complexos, manutenção de testes, cobertura insuficiente, testes flaky]
+
+**Saída Desejada:**
+Apresente um design detalhado do Agente de IA, incluindo:
+1.  **Nome Sugerido para o Agente:**
+2.  **Principais Funcionalidades do Agente:** (Ex: Análise de Contratos de API, Geração de Cenários de Teste (Happy Path e Edge Cases), Geração de Dados Sintéticos, Orquestração de Testes, Validação de Respostas, Relatórios de Cobertura, Sugestão de Mocking/Stubbing)
+3.  **Fontes de Entrada do Agente:** Quais informações o Agente utilizaria (ex: especificações OpenAPI/Swagger, documentação de microsserviços, código-fonte, logs de produção, casos de uso).
+4.  **Fluxo de Trabalho do Agente:** Descreva passo a passo como o Agente operaria, desde a ingestão de informações até a geração do relatório final dos testes de integração. Inclua como ele lidaria com dependências e estados.
+5.  **Tecnologias/Ferramentas de IA/Automação Sugeridas:** Quais tecnologias (ex: LLMs, frameworks de teste específicos, ferramentas de CI/CD, ferramentas de virtualização de serviços) seriam ideais para a implementação do Agente.
+6.  **Métricas de Sucesso para o Agente:** Como medir a eficácia e o valor gerado (ex: tempo de desenvolvimento de testes reduzido, número de bugs de integração encontrados, cobertura de testes aumentada).`,
+    tags: ['Testes de Integração', 'Desenvolvimento', 'APIs', 'Microsserviços'],
+  },
 ];

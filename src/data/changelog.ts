@@ -13,6 +13,20 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-chatgpt-reformulacao-agentes-2026',
+    date: '2026-06',
+    title: 'OpenAI reformula ChatGPT para priorizar agentes de IA e recursos avançados',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'A OpenAI planeja a maior atualização da história do ChatGPT, reformulando-o para priorizar o acesso ao assistente Codex e a recursos avançados de IA, com um foco estratégico em agentes autônomos.',
+    highlights: [
+      'Reformulação significativa do ChatGPT para focar em capacidades de agente de IA.',
+      'Priorização do acesso ao assistente Codex e outros recursos avançados de IA.',
+      'A estratégia visa aumentar o faturamento com clientes empresariais.'
+    ],
+    impact: 'Alto'
+  },
+  {
     id: 'xai-grok-build-plugin-marketplace-2026',
     date: '2026-06',
     title: 'xAI lança Grok Build Plugin Marketplace para expandir capacidades de agentic coding',

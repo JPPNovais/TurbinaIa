@@ -5428,4 +5428,124 @@ Apresente um design detalhado do Agente de IA, incluindo:
 6.  **Métricas de Sucesso para o Agente:** Como medir a eficácia e o valor gerado (ex: tempo de desenvolvimento de testes reduzido, número de bugs de integração encontrados, cobertura de testes aumentada).`,
     tags: ['Testes de Integração', 'Desenvolvimento', 'APIs', 'Microsserviços'],
   },
+  {
+    id: 'negocios-agente-otimizacao-cadeia-valor',
+    title: 'Agente de IA para Otimização de Cadeia de Valor',
+    category: 'Negócios',
+    description: 'Projeta um sistema de agentes de IA para analisar e otimizar processos em uma cadeia de valor específica, identificando gargalos e sugerindo melhorias.',
+    template: `Você é um especialista em IA e otimização de processos de negócios. Sua tarefa é projetar um sistema de agentes de IA para otimizar a cadeia de valor "[Nome da Cadeia de Valor]".
+
+**Contexto da Cadeia de Valor:**
+- **Nome:** [Nome da Cadeia de Valor]
+- **Processos Envolvidos (ex: Aquisição, Produção, Logística, Vendas, Pós-Venda):** [Liste os principais processos, com suas interdependências e pontos críticos se souber]
+- **Objetivos de Otimização:** [Ex: Reduzir custos em X%, Aumentar eficiência em Y%, Melhorar satisfação do cliente em Z%, Reduzir tempo de ciclo]
+- **Dados Disponíveis (tipos):** [Ex: Dados de vendas, Estoque, Produção, Logística, Feedback de clientes, Sensores de máquinas, Dados financeiros]
+- **Restrições/Desafios Atuais:** [Ex: Orçamento limitado, Legados tecnológicos, Cultura organizacional, Regulamentações específicas]
+
+**Sua Missão:**
+1.  **Definir a Arquitetura do Sistema de Agentes:** Proponha uma arquitetura multiagente (quantos agentes, quais suas funções principais, como interagem).
+2.  **Detalhar o Papel de Cada Agente:** Para cada agente proposto, descreva seu nome, objetivo, as fontes de dados que acessará, as análises que realizará e as decisões/ações que poderá sugerir ou executar (se aplicável).
+3.  **Fluxo de Dados:** Descreva como os dados fluirão entre os agentes e de/para os sistemas externos.
+4.  **Métricas de Sucesso:** Sugira métricas claras para avaliar a eficácia da otimização proposta pelo sistema.
+5.  **Desafios de Implementação e Soluções:** Identifique potenciais desafios técnicos, operacionais ou humanos e proponha soluções para mitigá-los.
+
+Formate sua resposta de forma clara, com seções distintas para cada item solicitado.`,
+    tags: ['Agentes IA', 'Otimização', 'Cadeia de Valor', 'Processos']
+  },
+  {
+    id: 'marketing-lancamento-hiperpersonalizado-multimodal',
+    title: 'Estratégia de Lançamento de Produto Hiperpersonalizada Multimodal',
+    category: 'Marketing',
+    description: 'Gera uma estratégia de campanha de lançamento de produto que integra conteúdo multimodal e hiperpersonalização para segmentos de público distintos.',
+    template: `Você é um estrategista de marketing digital com expertise em lançamentos de produtos e IA multimodal. Sua tarefa é desenvolver uma estratégia de campanha de lançamento hiperpersonalizada e multimodal para o produto/serviço "[Nome do Produto/Serviço]".
+
+**Informações do Produto/Serviço:**
+- **Nome:** [Nome do Produto/Serviço]
+- **Principais Características/Benefícios:** [Liste 3-5 características e seus respectivos benefícios chave]
+- **Proposta de Valor Única (PVU):** [Qual torna este produto único e desejável?]
+- **Público-alvo Principal:** [Descreva o perfil demográfico, psicográfico e comportamental do público ideal]
+- **Sub-segmentos de Público (se houver):** [Liste e descreva 2-3 sub-segmentos importantes, ex: "Early Adopters Tech-Savvy", "Profissionais Ocupados", "Pequenas Empresas"]
+- **Canais de Marketing Preferenciais:** [Ex: Redes Sociais (Instagram, TikTok, LinkedIn), Email Marketing, Google Ads, Blog, Parcerias, Eventos]
+- **Orçamento de Marketing (estimado):** [Ex: R$ 10.000,00 - R$ 50.000,00]
+- **Prazo de Lançamento:** [Ex: 4 semanas pré-lançamento, 2 semanas lançamento, 4 semanas pós-lançamento]
+
+**Sua Missão:**
+1.  **Visão Geral da Estratégia:** Proponha uma visão geral da campanha, incluindo o objetivo principal e a narrativa central.
+2.  **Estratégia de Hiperpersonalização:** Para cada "Sub-segmento de Público" (e o principal), descreva como a mensagem, o tom e os CTAs serão hiperpersonalizados.
+3.  **Plano de Conteúdo Multimodal por Segmento e Fase:**
+    *   Para cada fase (pré-lançamento, lançamento, pós-lançamento) e para cada segmento de público, sugira 2-3 tipos de conteúdo multimodal.
+    *   Exemplos de multimodal: Vídeos curtos (TikTok/Reels), Imagens interativas (Carrossel Instagram), Podcasts/Áudios curtos, Infográficos animados, Artigos de blog com elementos interativos, Webinars, Quizzes.
+    *   Especifique o canal e o objetivo de cada peça de conteúdo.
+4.  **Métricas de Sucesso:** Quais KPIs serão utilizados para medir o sucesso da campanha, tanto no geral quanto para a eficácia da personalização e do conteúdo multimodal?
+5.  **Cronograma Simplificado:** Um cronograma de alto nível para as fases da campanha e principais marcos.
+
+Formate sua resposta com seções claras para facilitar a leitura e implementação.`,
+    tags: ['Marketing', 'Lançamento', 'Multimodal', 'Personalização']
+  },
+  {
+    id: 'produtividade-coach-foco-profundo-ia',
+    title: 'Coach de IA para Sessões de Foco Profundo e Produtividade',
+    category: 'Produtividade',
+    description: 'Atua como um coach de IA para planejar e guiar sessões de foco profundo, aplicando técnicas como Pomodoro e time blocking, e gerenciando distrações.',
+    template: `Você é um coach de produtividade com IA, especializado em técnicas de foco profundo e gerenciamento de tempo. Sua tarefa é atuar como meu assistente pessoal para uma sessão de foco profundo.
+
+**Detalhes da Sessão de Foco:**
+- **Duração da Sessão:** [Ex: 2 horas, 90 minutos]
+- **Tarefa Principal da Sessão:** [Descreva a tarefa mais importante que você precisa realizar, ex: "Escrever um relatório técnico complexo", "Desenvolver código para a nova funcionalidade X", "Estudar para a certificação Y"]
+- **Tarefas de Apoio/Complementares (opcional):** [Liste tarefas menores que podem ser feitas se a principal for concluída, ex: "Responder 5 e-mails urgentes", "Revisar agenda do dia seguinte"]
+- **Técnica de Foco Preferida (escolha uma):** [Pomodoro (25/5), Time Blocking (blocos contínuos), Flow State (minimizar interrupções)]
+- **Distrações Comuns:** [Ex: Notificações do celular, E-mails/Slack, Pensamentos aleatórios, Interrupções de colegas, Redes sociais]
+- **Objetivo Final da Sessão:** [Qual resultado tangível você espera alcançar ao final da sessão?]
+
+**Sua Missão como Coach de IA:**
+1.  **Plano da Sessão:** Crie um plano detalhado para a sessão, dividindo a duração total em blocos de trabalho e pausas de acordo com a técnica escolhida. Inclua lembretes para hidratação/pequenos alongamentos nas pausas.
+2.  **Estratégias para Gerenciar Distrações:** Para cada uma das "Distrações Comuns" listadas, sugira uma estratégia prática para minimizá-la ou eliminá-la durante a sessão.
+3.  **Frases de Incentivo/Foco:** Proponha 3-5 frases curtas para me lembrar do objetivo e me manter focado quando a mente divagar.
+4.  **Verificação Pós-Sessão:** Ao final da sessão, quais perguntas você me faria para avaliar o progresso e o nível de foco alcançado?
+
+Formate sua resposta de forma prática e acionável, como se estivesse me guiando em tempo real.`,
+    tags: ['Produtividade', 'Foco', 'IA Coach', 'Gerenciamento Tempo']
+  },
+  {
+    id: 'finance-agente-patrimonio-familiar-preditivo',
+    title: 'Agente de IA para Gestão Preditiva de Patrimônio Familiar',
+    category: 'Finanças',
+    description: 'Simula e projeta cenários financeiros futuros para a gestão do patrimônio familiar, considerando investimentos, dívidas, objetivos e eventos de vida.',
+    template: `Você é um agente de IA especializado em planejamento financeiro preditivo e gestão de patrimônio familiar. Sua tarefa é criar um plano de gestão preditiva para o patrimônio da minha família, considerando diversas variáveis e cenários.
+
+**Dados Financeiros Atuais da Família:**
+- **Renda Familiar Mensal (líquida):** [Valor em BRL]
+- **Despesas Fixas Mensais:** [Valor em BRL, ex: aluguel, financiamento, escola]
+- **Despesas Variáveis Mensais (estimativa):** [Valor em BRL, ex: alimentação, lazer, transporte]
+- **Ativos (valor total):**
+    - **Investimentos:** [Valor total e tipo, ex: R$ 150.000 em renda fixa, R$ 50.000 em ações]
+    - **Imóveis/Outros Bens:** [Valor estimado, ex: R$ 500.000 imóvel próprio]
+- **Passivos (valor total):**
+    - **Dívidas de Curto Prazo:** [Valor total, ex: cartão de crédito, empréstimos pessoais]
+    - **Dívidas de Longo Prazo:** [Valor total, ex: financiamento imobiliário, carros]
+- **Fundo de Emergência:** [Valor em BRL]
+
+**Objetivos Financeiros e Eventos de Vida:**
+- **Objetivos Principais:** [Ex: Aposentadoria aos 60 anos, Educação dos filhos (previsão de custos), Compra de um segundo imóvel em 5 anos, Troca de carro em 3 anos]
+- **Horizonte Temporal para o Plano:** [Ex: 10 anos, 20 anos, até a aposentadoria]
+- **Tolerância a Risco (investimentos):** [Ex: Conservador, Moderado, Arrojado]
+- **Eventos de Vida Futuros (potenciais):** [Ex: Aumento/redução de renda, Nascimento de filho, Despesas médicas grandes, Perda de emprego (cenário pessimista)]
+
+**Sua Missão como Agente de IA Preditivo:**
+1.  **Análise de Fluxo de Caixa Atual e Projeção:** Analise o fluxo de caixa atual e projete-o para os próximos [Horizonte Temporal], considerando a inflação e possível aumento de renda.
+2.  **Simulação de Cenários (Otimista, Realista, Pessimista):**
+    *   **Cenário Realista:** Baseado nos dados fornecidos, com crescimento moderado de investimentos e custos.
+    *   **Cenário Otimista:** Inclua um evento positivo (ex: bônus, herança inesperada, alta rentabilidade em investimentos).
+    *   **Cenário Pessimista:** Inclua um evento negativo (ex: perda de renda por 6 meses, grande despesa médica inesperada, queda nos investimentos).
+    *   Para cada cenário, mostre o impacto nos ativos, passivos e na capacidade de atingir os objetivos financeiros.
+3.  **Plano de Ação Sugerido:** Com base nos cenários, forneça um plano de ação concreto para otimizar o patrimônio, incluindo:
+    *   Sugestões para otimização de despesas e aumento de renda.
+    *   Recomendações de investimento alinhadas à tolerância a risco e objetivos.
+    *   Estratégias para gerenciamento e redução de dívidas.
+    *   Recomendações para reforçar o fundo de emergência.
+4.  **Alertas de Risco e Monitoramento:** Quais seriam os principais indicadores de alerta (KPIs) para monitorar e quais ações corretivas seriam sugeridas se esses indicadores forem atingidos?
+
+Formate sua resposta de forma analítica e estruturada, apresentando os dados e as recomendações de forma clara e compreensível.`,
+    tags: ['Finanças', 'Patrimônio', 'Preditiva', 'Planejamento']
+  },
 ];

@@ -20,6 +20,19 @@ const CLAUDE_MODEL = process.env.CLAUDE_MODEL || 'sonnet';
 const CLAUDE_TIMEOUT_MS = parseInt(process.env.CLAUDE_TIMEOUT_MS || '600000', 10); // 10 min
 const MAX_BUFFER = 64 * 1024 * 1024; // artigos longos + saída JSON
 
+// Sanitiza o token de OAuth: ao colar o secret é comum vir com espaços ou quebras de
+// linha invisíveis, que tornam o header HTTP de autenticação inválido
+// ("API Error: Header ... has invalid value"). Removemos apenas espaços e caracteres
+// de controle — um token OAuth válido não contém nenhum deles (mas contém hífens!).
+if (process.env.CLAUDE_CODE_OAUTH_TOKEN) {
+  const raw = process.env.CLAUDE_CODE_OAUTH_TOKEN;
+  const cleaned = raw.replace(/\s/g, "");
+  if (cleaned !== raw) {
+    console.log('🧹 [llm] CLAUDE_CODE_OAUTH_TOKEN continha espaços/quebras de linha — sanitizado.');
+  }
+  process.env.CLAUDE_CODE_OAUTH_TOKEN = cleaned;
+}
+
 // Quando o Claude falha por motivo "permanente" (limite do plano, auth, CLI ausente),
 // desligamos o Claude para o resto desta execução e passamos a usar só o fallback,
 // evitando desperdiçar tempo tentando algo que vai falhar de novo a cada chamada.
@@ -37,6 +50,7 @@ function isPermanentClaudeError(message = '') {
     m.includes('401') ||
     m.includes('403') ||
     m.includes('not logged in') ||
+    m.includes('invalid value') ||
     m.includes('enoent') ||
     m.includes('command not found')
   );
@@ -147,7 +161,7 @@ async function generateContent({ model, contents, config }) {
       return { text };
     } catch (err) {
       const msg = err && err.message ? err.message : String(err);
-      console.log('⚠️  [llm] Claude falhou: ' + msg.slice(0, 160));
+      console.log('⚠️  [llm] Claude falhou: ' + msg.slice(0, 200));
       if (isPermanentClaudeError(msg)) {
         claudeDisabled = true;
         console.log('⛔ [llm] Claude desativado nesta execução (limite/auth/CLI). Usando Gemini.');

@@ -2,13 +2,20 @@ name: Autopublicar Artigo Turbina IA
 
 on:
   schedule:
-    # Executa DIARIAMENTE 2 vezes ao dia:
-    # - 06:00 Horário de Brasília (09:00 UTC)
-    # - 18:00 Horário de Brasília (21:00 UTC)
-    # Esses são os melhores horários de pico comercial no Brasil para tráfego e SEO.
-    - cron: '0 9,21 * * *'
+    # 3 artigos por dia, em horários de pico no Brasil (UTC):
+    # - 09:00 UTC = 06:00 BRT  → roda também as atualizações das páginas
+    # - 16:00 UTC = 13:00 BRT  → só artigo
+    # - 23:00 UTC = 20:00 BRT  → só artigo
+    - cron: '0 9 * * *'
+    - cron: '0 16 * * *'
+    - cron: '0 23 * * *'
   workflow_dispatch:
-    # Permite disparar manualmente pelo painel do GitHub Actions
+    # Disparo manual pelo painel do GitHub Actions (usado para validação)
+    inputs:
+      run_updates:
+        description: 'Também rodar as atualizações das páginas (models, calculadora, etc.)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -30,57 +37,44 @@ jobs:
       - name: Instalar Dependências
         run: npm ci || npm install
 
-      - name: Atualizar Modelos de IA
-        continue-on-error: true
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/update-models.js
+      - name: Instalar Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
 
-      - name: Atualizar Calculadora
-        continue-on-error: true
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/update-calculator.js
+      - name: Verificar Claude CLI
+        run: claude --version || echo "⚠️ claude CLI indisponível — os scripts cairão no fallback do Gemini"
 
-      - name: Atualizar Changelog
+      # As atualizações das 6 páginas só rodam 1x/dia (no primeiro horário) para
+      # economizar consumo do plano. No disparo manual, marque "run_updates".
+      - name: Atualizar páginas (models, calculadora, changelog, ferramentas, prompts, glossário)
+        if: github.event.schedule == '0 9 * * *' || (github.event_name == 'workflow_dispatch' && inputs.run_updates)
         continue-on-error: true
         env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/update-changelog.js
-
-      - name: Atualizar Ferramentas
-        continue-on-error: true
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/update-tools.js
-
-      - name: Atualizar Prompts
-        continue-on-error: true
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/update-prompts.js
-
-      - name: Atualizar Glossário
-        continue-on-error: true
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/update-glossario.js
+        run: |
+          node scripts/update-models.js     || echo "⚠️ update-models falhou"
+          node scripts/update-calculator.js || echo "⚠️ update-calculator falhou"
+          node scripts/update-changelog.js  || echo "⚠️ update-changelog falhou"
+          node scripts/update-tools.js      || echo "⚠️ update-tools falhou"
+          node scripts/update-prompts.js    || echo "⚠️ update-prompts falhou"
+          node scripts/update-glossario.js  || echo "⚠️ update-glossario falhou"
 
       - name: Gerar Artigo
         env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: node scripts/generate-article.js
 
-      - name: Commitar e Enviar Artigo e Modelos Atualizados
+      - name: Commitar e Enviar Alterações
         run: |
           git config --global user.name "Turbina IA Bot"
           git config --global user.email "jppnovais@gmail.com"
-          
-          # Verifica se há alterações (artigos ou dados dos modelos de IA)
+
+          # Verifica se há alterações (artigos novos ou dados das páginas atualizados)
           if [ -n "$(git status --porcelain)" ]; then
             git add .
-            git commit -m "chore: atualizações automáticas de artigos e modelos de IA [skip ci]"
+            git commit -m "chore: atualizações automáticas de artigos e páginas [skip ci]"
             git push
             echo "✅ Alterações publicadas com sucesso!"
           else

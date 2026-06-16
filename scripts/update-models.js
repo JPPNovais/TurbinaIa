@@ -24,16 +24,14 @@ try {
   console.log('Aviso: Não foi possível carregar o arquivo .env automaticamente.');
 }
 
-const { GoogleGenAI } = require('@google/genai');
 const { safeWriteDataFile, withRetry } = require('./data-update-utils');
-const apiKey = process.env.GEMINI_API_KEY;
+const ai = require('./llm');
+const apiKey = process.env.CLAUDE_CODE_OAUTH_TOKEN || process.env.GEMINI_API_KEY;
 
 if (!apiKey) {
-  console.error('❌ Erro: A variável de ambiente GEMINI_API_KEY não foi encontrada.');
+  console.error('❌ Erro: defina CLAUDE_CODE_OAUTH_TOKEN (Claude/plano) ou GEMINI_API_KEY (fallback).');
   process.exit(1);
 }
-
-const ai = new GoogleGenAI({ apiKey });
 
 function cleanMarkdownResponse(text) {
   let cleaned = text.trim();

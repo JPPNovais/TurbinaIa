@@ -26,21 +26,18 @@ try {
   console.log('Aviso: Não foi possível carregar o arquivo .env automaticamente.');
 }
 
-const { GoogleGenAI } = require('@google/genai');
 const { postprocessArticle } = require('./article-postprocess');
 const { enhanceSeo } = require('./seo-enhance');
+const ai = require('./llm');
 
-const apiKey = process.env.GEMINI_API_KEY;
+const apiKey = process.env.CLAUDE_CODE_OAUTH_TOKEN || process.env.GEMINI_API_KEY;
 
 if (!apiKey) {
-  console.error('❌ Erro: A variável de ambiente GEMINI_API_KEY não foi encontrada.');
-  console.error('Por favor, crie um arquivo .env na raiz do projeto com:');
-  console.error('GEMINI_API_KEY=sua_chave_aqui');
-  console.error('Ou execute o comando com a chave inline: GEMINI_API_KEY=sua_chave node scripts/generate-article.js "Tema"');
+  console.error('❌ Erro: defina CLAUDE_CODE_OAUTH_TOKEN (Claude/plano Max) ou GEMINI_API_KEY (fallback).');
+  console.error('Local: crie um .env na raiz com CLAUDE_CODE_OAUTH_TOKEN=... (gere o token com: claude setup-token)');
+  console.error('Ou rode inline: CLAUDE_CODE_OAUTH_TOKEN=... node scripts/generate-article.js "Tema"');
   process.exit(1);
 }
-
-const ai = new GoogleGenAI({ apiKey });
 
 // Helper to clean markdown block wrappers from LLM response
 function cleanMarkdownResponse(text) {

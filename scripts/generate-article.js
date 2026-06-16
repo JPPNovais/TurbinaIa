@@ -369,6 +369,8 @@ A lista de Referências DEVE conter pelo menos 3 fontes do "tier 1" abaixo. Arti
 
 **Se a busca inicial só retornou blogs desconhecidos**, refaça a busca priorizando explicitamente os domínios acima — não publique com fontes fracas só porque foi mais fácil encontrá-las.
 
+**Temas especulativos (rumores, vazamentos, modelos não lançados):** ancore o artigo em jornalismo estabelecido (\`theinformation.com\`, \`reuters.com\`, \`bloomberg.com\`, \`theverge.com\`, \`techcrunch.com\`) sempre que existir, e deixe o status de rumor EXPLÍCITO no texto ("ainda não confirmado oficialmente", "segundo fontes não oficiais"). Não construa o artigo majoritariamente sobre blogs de tecnologia menores ou sites de criptomoeda — eles podem aparecer como apoio, nunca como espinha dorsal.
+
 **Domínios fracos que NÃO contam como fonte** (e serão removidos automaticamente pelo postprocess): \`ajeet.me\`, \`automely.com\`, \`clawpod.com\`, \`stackdecode.com\`, \`genaicoding.com\`, \`aisuperskills.com\`, \`therundown.ai\`, \`letsdatascience.com\`, \`quantumzeitgeist.com\`, \`startuphub.ai\`, \`kucoin.com\`, \`cryptobriefing.com\`, \`incrypted.com\`, \`digg.com\`, \`biggo.finance\`, \`pasqualepillitteri.it\`, \`vietnam.vn\`, \`ocafezinho.com\`, \`yourstory.com\`, qualquer \`*.medium.com\` ou \`*.substack.com\` sem autoria reconhecida.
 
 ## ESTRUTURA DE HEADINGS (obrigatório)
@@ -419,7 +421,7 @@ date: "${today}"
 
 6. **FAQ:** Seção "## Perguntas Frequentes" com 3 perguntas e respostas ultra-diretas.
 
-7. **Links internos:** Inclua ao menos um link para: [Comparador de IAs](/comparador), [Calculadora de Custos](/calculadora), [Prompts](/prompts), [Gerador de Prompts](/gerador), [Glossário de IA](/glossario) ou [Monitor de Modelos](/changelog).
+7. **Links internos (OBRIGATÓRIO — mínimo 2, ideal 3):** Distribua ao longo do corpo de 2 a 3 links internos contextuais, integrados naturalmente às frases (nunca numa lista solta). Use as páginas do próprio site e escolha pela relevância: [Comparador de IAs](/comparador) (ao comparar modelos), [Calculadora de Custos](/calculadora) (ao falar de preços/tokens), [Prompts](/prompts) e [Gerador de Prompts](/gerador) (ao falar de uso prático), [Glossário de IA](/glossario) (ao introduzir um termo técnico) ou [Monitor de Modelos](/changelog) (ao falar de versões/lançamentos). Menos de 2 links internos no corpo = artigo incompleto, reescreva.
 
 8. **Fontes:** Seção "## Fontes e Referências" ao final com todos os links.
 

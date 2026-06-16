@@ -41,7 +41,7 @@ A correção exigiu identificar e excluir o sinal de recompensa contaminado ante
 
 ## Janela de 1,5 Milhão de Tokens: O Que Muda na Prática
 
-O GPT-5.5 já oferecia uma janela de contexto de 1 milhão de tokens, considerável pelos padrões atuais. Se os rumores sobre o GPT-5.6 se confirmarem, o salto para 1,5 milhão de tokens representa um aumento de 50% — ou, matematicamente, uma janela 43% maior do que a do modelo atual.
+O GPT-5.5 já oferecia uma janela de contexto de 1 milhão de tokens, considerável pelos padrões atuais. Se os rumores sobre o GPT-5.6 se confirmarem, o salto para 1,5 milhão de tokens representa um aumento de 50% em relação à janela do modelo atual.
 
 Desenvolvedores que acessaram o modelo via ambientes ChatGPT Pro relataram comportamento consistente com essa janela expandida, com testes via ferramenta OpenCode mostrando respostas fluidas em entradas de cerca de 900.000 tokens e alguns relatos de requisições acima de 1,05 milhão de tokens completadas com êxito. Todas essas são sondagens informais, não benchmarks oficiais.
 

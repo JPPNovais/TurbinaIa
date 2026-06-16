@@ -82,6 +82,7 @@ const WEAK_SOURCE_DOMAINS = [
   // Crypto / aggregator / clickbait
   'kucoin.com',
   'cryptobriefing.com',
+  'cryptopolitan.com',
   'incrypted.com',
   'digg.com',
   'biggo.finance',
@@ -97,6 +98,7 @@ const WEAK_SOURCE_DOMAINS = [
   'automely.com',
   // Personal blogs and translation mirrors
   'ajeet.me',
+  'knightli.com',
   'pasqualepillitteri.it',
   'vietnam.vn',
   'ocafezinho.com',

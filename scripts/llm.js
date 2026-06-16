@@ -99,13 +99,20 @@ function callClaude({ contents, config }) {
 
   // O prompt vai por stdin (não como argumento) para não esbarrar no limite de tamanho
   // de argumentos do sistema operacional — os prompts de artigo são grandes.
-  const stdout = execFileSync('claude', args, {
-    input: prompt,
-    encoding: 'utf8',
-    maxBuffer: MAX_BUFFER,
-    timeout: CLAUDE_TIMEOUT_MS,
-    env: process.env,
-  });
+  let stdout;
+  try {
+    stdout = execFileSync('claude', args, {
+      input: prompt,
+      encoding: 'utf8',
+      maxBuffer: MAX_BUFFER,
+      timeout: CLAUDE_TIMEOUT_MS,
+      env: process.env,
+    });
+  } catch (e) {
+    // execFileSync esconde a causa em e.stderr/e.stdout; expomos para diagnóstico.
+    const detail = (e.stderr || e.stdout || e.message || '').toString().trim();
+    throw new Error('claude CLI: ' + (detail || 'falha desconhecida').slice(0, 600));
+  }
 
   let parsed;
   try {

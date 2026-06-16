@@ -43,13 +43,15 @@ jobs:
       - name: Verificar Claude CLI
         run: claude --version || echo "⚠️ claude CLI indisponível — os scripts cairão no fallback do Gemini"
 
-      # As atualizações das 6 páginas só rodam 1x/dia (no primeiro horário) para
-      # economizar consumo do plano. No disparo manual, marque "run_updates".
+      # As atualizações das 6 páginas rodam 1x/dia (no primeiro horário) e usam o
+      # Gemini — são tarefas de pesquisar dados + reescrever arquivo, rápidas e
+      # baratas no Gemini e mal-adequadas ao Claude headless (agêntico/lento).
+      # No disparo manual, marque "run_updates".
       - name: Atualizar páginas (models, calculadora, changelog, ferramentas, prompts, glossário)
         if: github.event.schedule == '0 9 * * *' || (github.event_name == 'workflow_dispatch' && inputs.run_updates)
         continue-on-error: true
         env:
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          LLM_SKIP_CLAUDE: '1'
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           node scripts/update-models.js     || echo "⚠️ update-models falhou"

@@ -19,6 +19,7 @@ const { execFileSync } = require('child_process');
 const CLAUDE_MODEL = process.env.CLAUDE_MODEL || 'sonnet';
 const CLAUDE_TIMEOUT_MS = parseInt(process.env.CLAUDE_TIMEOUT_MS || '600000', 10); // 10 min
 const MAX_BUFFER = 64 * 1024 * 1024; // artigos longos + saída JSON
+const CLAUDE_MAX_TURNS = parseInt(process.env.CLAUDE_MAX_TURNS || '16', 10); // turnos p/ tarefas com busca web
 
 // Sanitiza o token de OAuth: ao colar o secret é comum vir com espaços ou quebras de
 // linha invisíveis, que tornam o header HTTP de autenticação inválido
@@ -101,7 +102,7 @@ function callClaude({ contents, config }) {
       'Você tem acesso às ferramentas WebSearch e WebFetch. Pesquise fontes atuais e confiáveis na web antes de responder, usando apenas informações reais e verificáveis.'
     );
     args.push('--allowedTools', 'WebSearch,WebFetch');
-    args.push('--max-turns', '8');
+    args.push('--max-turns', String(CLAUDE_MAX_TURNS));
   } else {
     args.push('--max-turns', '2');
   }
@@ -154,7 +155,10 @@ function callGeminiFallback({ model, contents, config }) {
 }
 
 async function generateContent({ model, contents, config }) {
-  if (!claudeDisabled && process.env.CLAUDE_CODE_OAUTH_TOKEN) {
+  // LLM_SKIP_CLAUDE=1 força o uso do Gemini (usado nos updates de página, que são
+  // tarefas agênticas pesadas e mal-adequadas ao Claude headless).
+  const skipClaude = process.env.LLM_SKIP_CLAUDE === '1';
+  if (!skipClaude && !claudeDisabled && process.env.CLAUDE_CODE_OAUTH_TOKEN) {
     try {
       const text = await Promise.resolve().then(() => callClaude({ contents, config }));
       console.log('🤖 [llm] resposta via Claude (' + CLAUDE_MODEL + ')');

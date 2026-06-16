@@ -13,6 +13,21 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'anthropic-claude-mythos-5-ciberdefensores-2026',
+    date: '2026-06',
+    title: 'Anthropic lança Claude Mythos 5 com salvaguardas removidas para ciberdefensores',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'A Anthropic lançou uma versão especializada do Claude Mythos 5, seu modelo de IA mais capaz com salvaguardas removidas, para um grupo seleto de ciberdefensores e provedores de infraestrutura, como parte do Project Glasswing em colaboração com o governo dos EUA.',
+    highlights: [
+      'Lançamento direcionado do Claude Mythos 5 para ciberdefensores e provedores de infraestrutura.',
+      'Versão do modelo com salvaguardas removidas para enfrentar ameaças de cibersegurança.',
+      'Implementado através do Project Glasswing em colaboração com o governo dos EUA.',
+      'O modelo subjacente é o mesmo do Claude Fable 5.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'openai-chatgpt-reformulacao-agentes-2026',
     date: '2026-06',
     title: 'OpenAI reformula ChatGPT para priorizar agentes de IA e recursos avançados',

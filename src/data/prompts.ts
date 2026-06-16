@@ -5548,4 +5548,118 @@ Formate sua resposta de forma prática e acionável, como se estivesse me guiand
 Formate sua resposta de forma analítica e estruturada, apresentando os dados e as recomendações de forma clara e compreensível.`,
     tags: ['Finanças', 'Patrimônio', 'Preditiva', 'Planejamento']
   },
+  {
+    id: 'ia-design-agente-feedback-cliente',
+    title: 'Design de Agente Autônomo para Gestão de Feedback de Clientes',
+    category: 'IA & Automação',
+    description: 'Cria um plano detalhado para um agente de IA que coleta, analisa e responde a feedback de clientes de múltiplas fontes, automatizando o ciclo de gestão.',
+    template: `Você é um especialista em design de sistemas de IA. Quero que você crie um plano detalhado para um agente de IA autônomo focado na gestão de feedback de clientes.
+
+**Objetivo do Agente:** [Descreva o objetivo principal do agente, ex: "Reduzir o tempo de resposta a feedbacks negativos", "Identificar tendências de satisfação", "Personalizar respostas a elogios"].
+
+**Fontes de Feedback:** [Liste as fontes de feedback, ex: "Redes sociais (Twitter, Instagram)", "E-mails de suporte", "Pesquisas de satisfação", "Avaliações em lojas de aplicativos"].
+
+**Ações Desejadas do Agente:** [Descreva o que o agente deve ser capaz de fazer, ex: "Classificar feedbacks por sentimento (positivo, negativo, neutro)", "Encaminhar feedbacks urgentes para a equipe X", "Gerar rascunhos de resposta personalizados", "Sumarizar tendências de feedback semanalmente"].
+
+**Público-alvo (para respostas/análises):** [Descreva quem receberá as saídas do agente, ex: "Equipe de marketing", "Gerentes de produto", "Próprios clientes (para respostas diretas)", "Analistas de BI"].
+
+**Restrições/Considerações Específicas:** [Ex: "Deve operar apenas em português", "Priorizar feedback com menção de marca", "Integrar com sistema de CRM [Nome do CRM]"].
+
+Com base nas informações acima, elabore um plano detalhado para o design do agente de IA, incluindo:
+1.  **Arquitetura do Agente:** Componentes chave (coleta, processamento de linguagem natural, análise de sentimento, geração de linguagem natural, módulo de tomada de decisão, integração com sistemas externos).
+2.  **Fluxo de Trabalho:** Um diagrama de fluxo de alto nível que descreva a jornada de um feedback desde a coleta até a ação final.
+3.  **Tecnologias Sugeridas (Opcional):** Ferramentas ou abordagens de IA que seriam adequadas para cada componente.
+4.  **Métricas de Sucesso:** Como medir o desempenho e a eficácia do agente.
+5.  **Desafios Potenciais e Estratégias de Mitigação.**
+6.  **Recomendações para Implementação e Evolução.`,
+    tags: ['agente ia', 'automação', 'feedback cliente', 'atendimento']
+  },
+  {
+    id: 'education-curriculo-habilidades-emergentes-ia',
+    title: 'Desenvolvimento de Currículo de Curso Online para Habilidades Emergentes com IA',
+    category: 'Educação',
+    description: 'Gere um currículo detalhado para um curso online focado em habilidades emergentes, utilizando insights de IA sobre tendências de mercado e necessidades de aprendizado futuras.',
+    template: `Você é um especialista em design instrucional e tendências de mercado com IA. Sua tarefa é criar um currículo detalhado para um curso online que prepare profissionais para habilidades emergentes nos próximos 3-5 anos.
+
+**Área de Atuação/Indústria:** [Ex: "Tecnologia e Dados", "Sustentabilidade e Energia Renovável", "Marketing Digital Avançado", "Saúde e Biotecnologia"].
+
+**Público-alvo do Curso:** [Ex: "Profissionais de nível júnior a pleno buscando requalificação", "Líderes de equipe querendo entender novas tecnologias", "Estudantes universitários em transição de carreira"].
+
+**Habilidades-chave que o curso deve abordar (se já tiver uma ideia):** [Ex: "Machine Learning Ops (MLOps)", "Design Thinking aplicado à IA", "Economia Circular", "Marketing de Conteúdo Multimodal"]. Se não souber, a IA pode sugerir.
+
+**Formato e Duração Sugerida:** [Ex: "Curso assíncrono de 8 semanas com 5 horas de estudo por semana", "Programa intensivo de 4 dias com aulas ao vivo e workshops", "Série de micro-aulas com avaliação prática"].
+
+**Resultados de Aprendizagem Desejados para os Alunos:** [Ex: "Ser capaz de prototipar soluções de IA generativa", "Elaborar estratégias de ESG para empresas de pequeno porte", "Gerenciar campanhas de marketing em plataformas emergentes"].
+
+Com base nas informações fornecidas e em sua análise de tendências de mercado (2025-2026), por favor, elabore um currículo completo, incluindo:
+1.  **Título do Curso e Descrição Curta.**
+2.  **Módulos do Curso:** Com títulos, descrições e habilidades específicas que serão desenvolvidas em cada um.
+3.  **Tópicos Essenciais por Módulo:** Bullet points dos assuntos a serem cobertos.
+4.  **Atividades de Aprendizagem Sugeridas:** (ex: leituras, vídeos, exercícios práticos, projetos, discussões).
+5.  **Avaliação:** Sugestões de como o aprendizado será avaliado (testes, projetos finais, estudos de caso).
+6.  **Recursos Adicionais:** Livros, artigos, ferramentas.
+7.  **Recomendações para Manter o Curso Atualizado:** Dada a natureza das habilidades emergentes.`,
+    tags: ['currículo', 'habilidades emergentes', 'design instrucional', 'futuro do trabalho']
+  },
+  {
+    id: 'marketing-conteudo-vendas-hiperpersonalizado',
+    title: 'Geração de Conteúdo de Vendas Hiperpersonalizado para Leads B2B',
+    category: 'Marketing',
+    description: 'Crie um script ou proposta de conteúdo de vendas único e altamente personalizado para um lead B2B específico, utilizando dados detalhados de engajamento e perfil.',
+    template: `Você é um copywriter de vendas B2B com expertise em personalização impulsionada por IA. Seu objetivo é criar um conteúdo de vendas altamente eficaz e hiperpersonalizado para um lead B2B específico.
+
+**Informações Detalhadas do Lead:**
+*   **Nome do Lead:** [Nome Completo do Lead]
+*   **Cargo/Função:** [Cargo Atual do Lead]
+*   **Empresa do Lead:** [Nome da Empresa do Lead]
+*   **Indústria da Empresa:** [Indústria/Setor da Empresa, ex: SaaS, Manufatura, Varejo, Finanças]
+*   **Principais Desafios Conhecidos do Lead/Empresa:** [Ex: "Dificuldade em escalar vendas", "Alto churn de clientes", "Processos manuais ineficientes", "Falta de visibilidade de dados"]. Se não souber, a IA pode inferir da indústria.
+*   **Pontos de Dor (Pain Points) Potenciais:** [Ex: "Perda de produtividade", "Custos crescentes", "Competição acirrada", "Regulamentação complexa"].
+*   **Interesses/Engajamento Anterior (se houver):** [Ex: "Visitou nossa página de produto X", "Baixou nosso e-book Y sobre [Tópico]", "Comentou em um post nosso sobre [Assunto]", "Participou de um webinar sobre [Tema]"].
+*   **Preferência de Formato (se conhecido):** [Ex: "E-mail curto e direto", "Mensagem de LinkedIn com link para estudo de caso", "Roteiro para video personalizado"].
+
+**Nosso Produto/Serviço:**
+*   **Nome do Produto/Serviço:** [Nome do Seu Produto/Serviço]
+*   **Principal Benefício/Proposta de Valor:** [Ex: "Automatiza a gestão de projetos em 50%", "Aumenta a retenção de clientes em 15%", "Otimiza campanhas de marketing com IA"].
+*   **Funcionalidades Chave que resolvem os desafios do lead:** [Liste 2-3 funcionalidades que se alinham diretamente com os desafios ou interesses do lead].
+*   **Chamada para Ação Desejada:** [Ex: "Agendar uma demo", "Baixar um trial gratuito", "Responder a esta mensagem para mais informações"].
+
+Crie um **[Escolha: "Rascunho de E-mail de Vendas", "Script para Mensagem de LinkedIn", "Roteiro para Vídeo Curto Personalizado"]** de vendas com os seguintes elementos:
+1.  **Abertura Impactante:** Altamente personalizada, referenciando a empresa, cargo ou interesse anterior do lead.
+2.  **Identificação do Ponto de Dor:** Conecte os desafios do lead com a capacidade do seu produto de resolvê-los.
+3.  **Proposta de Valor Única:** Como seu produto/serviço se destaca e beneficia *diretamente* o lead.
+4.  **Evidência Social (Opcional):** Um breve estudo de caso ou dado relevante para a indústria do lead.
+5.  **Chamada para Ação Clara e Única.**
+6.  **Fechamento Profissional e Personalizado.`,
+    tags: ['vendas b2b', 'hiperpersonalização', 'lead generation', 'copywriting']
+  },
+  {
+    id: 'finance-analise-riscos-operacionais-pme',
+    title: 'Análise Preditiva de Riscos Operacionais para PMEs com IA',
+    category: 'Finanças',
+    description: 'Realize uma análise detalhada de riscos operacionais para uma pequena ou média empresa, identificando vulnerabilidades e sugerindo estratégias de mitigação baseadas em IA.',
+    template: `Você é um consultor financeiro e especialista em análise de riscos para PMEs, utilizando métodos preditivos de IA. Sua tarefa é analisar os riscos operacionais para uma pequena ou média empresa e fornecer um relatório com estratégias de mitigação.
+
+**Dados da Empresa:**
+*   **Nome da Empresa:** [Nome da PME]
+*   **Setor de Atuação:** [Ex: "Serviços de TI", "Restaurante", "Comércio Varejista", "Indústria de Pequeno Porte"].
+*   **Modelo de Negócios Principal:** [Descreva brevemente como a empresa gera receita e valor].
+*   **Principal Oferta de Produto/Serviço:** [Ex: "Desenvolvimento de software customizado", "Pratos da culinária italiana", "Roupas e acessórios", "Peças automotivas"].
+*   **Número de Funcionários:** [Ex: "10", "50", "150"].
+*   **Principais Processos Operacionais:** [Liste os 3-5 processos mais críticos, ex: "Gestão de estoque", "Atendimento ao cliente", "Produção", "Vendas", "Logística"].
+*   **Dados de Desempenho Recente (se disponível):** [Ex: "Último ano fiscal: Crescimento de 15%, margem de 10%", "Faturamento de R$X milhões", "Taxa de rotatividade de funcionários de Y%"]. Se não houver dados específicos, a IA pode usar benchmarks da indústria.
+
+**Fatores Externos/Mercado Relevantes:** [Ex: "Inflação alta", "Escassez de mão de obra qualificada", "Novas regulamentações no setor", "Aumento da concorrência", "Instabilidade geopolítica"].
+
+**Fatores Internos Potenciais de Risco:** [Ex: "Dependência de poucos fornecedores", "Falta de diversificação de produtos", "Sistemas de TI desatualizados", "Falta de plano de sucessão", "Processos manuais suscetíveis a erros"].
+
+Com base nas informações fornecidas e em sua análise preditiva, elabore um relatório de riscos operacionais, incluindo:
+1.  **Identificação dos Principais Riscos Operacionais:** Liste 3-5 riscos mais críticos e suas potenciais consequências para a PME.
+2.  **Análise de Impacto e Probabilidade:** Para cada risco, estime o potencial impacto (financeiro, reputacional, operacional) e a probabilidade de ocorrência.
+3.  **Sinais de Alerta Precoce:** Quais indicadores a empresa deve monitorar para detectar a iminência de cada risco.
+4.  **Estratégias de Mitigação Detalhadas:** Para cada risco, proponha ações concretas e implementáveis para reduzir sua probabilidade ou impacto. Inclua o papel da tecnologia (inclusive IA) quando aplicável.
+5.  **Plano de Contingência:** Sugestões para o que fazer caso um risco se materialize.
+6.  **Recomendações para Monitoramento Contínuo e Revisão.`,
+    tags: ['análise de risco', 'pme', 'planejamento estratégico', 'gestão financeira']
+  },
 ];

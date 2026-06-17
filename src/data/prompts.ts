@@ -5662,4 +5662,142 @@ Com base nas informações fornecidas e em sua análise preditiva, elabore um re
 6.  **Recomendações para Monitoramento Contínuo e Revisão.`,
     tags: ['análise de risco', 'pme', 'planejamento estratégico', 'gestão financeira']
   },
+  {
+    id: 'negocios-analise-feedback-cliente-multicanal',
+    title: 'Análise de Feedback de Clientes Multicanal com IA',
+    category: 'Negócios',
+    description: 'Analisa feedback de clientes de múltiplas fontes (e-mail, redes sociais, chat, reviews) para identificar padrões, sentimentos e sugestões de melhoria para produtos, serviços e processos.',
+    template: `Você é um especialista em análise de dados e experiência do cliente. Sua tarefa é analisar o feedback de clientes de diversas fontes e gerar insights acionáveis.
+
+**Contexto:**
+A empresa: [Nome da Empresa]
+Setor: [Setor da Empresa]
+Produto/Serviço analisado: [Nome do Produto/Serviço]
+Objetivo da análise: [Ex: Melhorar a satisfação do cliente, identificar dores do produto, otimizar processos de suporte]
+
+**Dados de Feedback:**
+Inclua aqui as transcrições, URLs, ou resumos do feedback de clientes. Especifique a fonte de cada feedback (ex: "Review da App Store", "Mensagem Direta no Instagram", "E-mail de Suporte", "Transcrição de Chat").
+[Cole aqui o feedback dos clientes. Ex:
+- App Store: "O app é ótimo, mas a tela de login trava com frequência."
+- Instagram DM: "Adorei a nova função X, mas sinto falta de um tutorial."
+- E-mail: "Meu pedido atrasou e o rastreamento não atualizava, fiquei frustrado."
+- Chat: "O atendente foi super prestativo, resolveu meu problema rapidamente."
+]
+
+**Tarefas:**
+1.  **Identificação de Temas e Padrões:** Liste os 5 principais temas recorrentes (positivos e negativos) no feedback.
+2.  **Análise de Sentimento:** Para cada tema, determine o sentimento geral (positivo, negativo, neutro) e forneça exemplos representativos.
+3.  **Sugestões de Melhoria:** Com base nos temas negativos, sugira 3-5 ações concretas e priorizadas para o [Produto/Serviço] ou processos internos.
+4.  **Oportunidades de Destaque:** Identifique pontos fortes elogiados pelos clientes que podem ser destacados em marketing ou comunicação.
+5.  **Recomendações Estratégicas:** Apresente 2-3 recomendações estratégicas de longo prazo para melhorar a experiência geral do cliente.
+
+**Formato de Saída:**
+Um relatório estruturado com as seções acima, utilizando listas e marcadores para clareza.`,
+    tags: ['Feedback', 'Clientes', 'Análise', 'CX'],
+  },
+  {
+    id: 'dev-analise-dependencias-seguranca',
+    title: 'Gerador de Relatório de Análise de Dependências e Vulnerabilidades',
+    category: 'Desenvolvimento',
+    description: 'Gera um relatório de análise de dependências de projetos, identificando vulnerabilidades de segurança e sugerindo atualizações ou alternativas para melhorar a segurança e manutenção do código.',
+    template: `Você é um engenheiro de segurança de software e especialista em DevSecOps. Sua tarefa é analisar as dependências de um projeto de software, identificar vulnerabilidades conhecidas e sugerir ações corretivas.
+
+**Contexto do Projeto:**
+Nome do Projeto: [Nome do Projeto]
+Linguagem/Framework Principal: [Ex: Python/Django, Node.js/React, Java/Spring Boot]
+Ambiente de Deployment (se relevante): [Ex: Cloud (AWS/Azure/GCP), On-premise, Serverless]
+Objetivo da Análise: [Ex: Auditoria de segurança antes do lançamento, Manutenção de rotina, Avaliação de risco de nova dependência]
+
+**Lista de Dependências:**
+Forneça a lista de dependências do projeto. Se possível, inclua a versão e a fonte (ex: package.json, requirements.txt, pom.xml).
+[Cole aqui a lista de dependências. Ex:
+- express@4.17.1 (npm)
+- lodash@4.17.21 (npm)
+- requests==2.25.1 (pip)
+- react@17.0.2 (npm)
+- @angular/core@12.0.0 (npm)
+]
+
+**Tarefas:**
+1.  **Identificação de Vulnerabilidades Conhecidas:** Para cada dependência listada, pesquise por vulnerabilidades de segurança conhecidas (CVEs, advisories) associadas à versão específica.
+2.  **Nível de Risco:** Para cada vulnerabilidade encontrada, atribua um nível de risco (Crítico, Alto, Médio, Baixo) e justifique brevemente.
+3.  **Sugestões de Atualização:** Para dependências com vulnerabilidades, sugira a versão mais recente e segura que seja compatível com o projeto, ou alternativas caso a atualização não seja viável.
+4.  **Recomendações de Mitigação:** Para vulnerabilidades que não podem ser corrigidas imediatamente por atualização, sugira estratégias de mitigação (ex: configurações de segurança adicionais, controles de acesso).
+5.  **Práticas Recomendadas:** Inclua 2-3 práticas recomendadas de DevSecOps para gerenciamento contínuo de dependências e vulnerabilidades.
+
+**Formato de Saída:**
+Um relatório em Markdown com as seguintes seções:
+-   **Sumário Executivo:** Breve resumo dos riscos principais.
+-   **Lista de Vulnerabilidades Encontradas:** (Tabela com Dependência, Versão, Vulnerabilidade, Nível de Risco, CVEs/Links)
+-   **Ações Recomendadas:** (Para cada vulnerabilidade, uma seção detalhando a sugestão de atualização/alternativa e/ou mitigação)
+-   **Melhores Práticas de DevSecOps.**`,
+    tags: ['Segurança', 'DevSecOps', 'Dependências', 'Vulnerabilidade'],
+  },
+  {
+    id: 'produtividade-leitura-dinamica-ia',
+    title: 'Assistente de Leitura Dinâmica e Síntese de Documentos Complexos com IA',
+    category: 'Produtividade',
+    description: 'Otimiza a leitura e compreensão de documentos extensos e complexos, extraindo pontos chave, resumos executivos e respondendo a perguntas específicas para um entendimento aprofundado e eficiente.',
+    template: `Você é um especialista em análise de informação e síntese de conhecimento, focado em otimizar a compreensão de documentos complexos para profissionais ocupados.
+
+**Contexto:**
+Tipo de Documento: [Ex: Artigo científico, Relatório financeiro, Documento legal, Manual técnico, Livro didático, Proposta de projeto]
+Assunto Principal: [Ex: Tendências em IA, Regulação de privacidade de dados, Novas terapias, Estratégia de mercado]
+Meu Nível de Conhecimento Prévio sobre o Assunto: [Ex: Básico, Intermediário, Avançado]
+Objetivo da Leitura: [Ex: Entender os argumentos principais, Extrair dados específicos, Preparar para uma reunião, Aprender um novo conceito]
+Tempo Disponível para Leitura (opcional): [Ex: 30 minutos, 1 hora]
+
+**Conteúdo do Documento:**
+[Cole aqui o texto completo do documento. Se for muito longo, cole as seções mais importantes ou um resumo extenso. Indique se o documento é acessível via URL e o forneça, se preferir.]
+[URL do Documento (se disponível): [http://exemplo.com/documento.pdf]]
+
+**Tarefas:**
+1.  **Resumo Executivo (150-250 palavras):** Forneça um resumo conciso dos pontos mais importantes e conclusões do documento.
+2.  **Estrutura de Pontos Chave:** Liste os 5-7 tópicos mais relevantes, cada um com uma breve explicação.
+3.  **Terminologia Essencial:** Identifique e explique até 5 termos técnicos ou jargões cruciais para o entendimento do documento.
+4.  **Perguntas e Respostas:** Responda a 3 perguntas específicas que eu tenho sobre o documento:
+    -   Pergunta 1: [Sua primeira pergunta específica]
+    -   Pergunta 2: [Sua segunda pergunta específica]
+    -   Pergunta 3: [Sua terceira pergunta específica]
+5.  **Análise Crítica/Próximos Passos (Opcional):** Se relevante para o [Objetivo da Leitura], identifique quaisquer lacunas, vieses, ou sugira próximos passos com base no conteúdo.
+
+**Formato de Saída:**
+Um documento claro e bem formatado em Markdown, com cabeçalhos para cada seção e marcadores para listas.`,
+    tags: ['Leitura', 'Conhecimento', 'Síntese', 'Documentos'],
+  },
+  {
+    id: 'finance-estrategia-captacao-startup',
+    title: 'Estratégia de Captação de Recursos para Startups com IA',
+    category: 'Finanças',
+    description: 'Desenvolve uma estratégia de captação de recursos para startups, incluindo identificação de investidores potenciais, criação de um storytelling financeiro convincente e preparação de documentos essenciais.',
+    template: `Você é um consultor financeiro e estrategista de captação de recursos, especializado em startups e investimentos. Sua tarefa é criar um plano estratégico para a captação de recursos de uma startup.
+
+**Contexto da Startup:**
+Nome da Startup: [Nome da Startup]
+Setor de Atuação: [Ex: Fintech, SaaS, Saúde Digital, E-commerce, IA/ML]
+Fase Atual da Startup: [Ex: Pré-seed, Seed, Série A, Série B]
+Valor/Solução Única: [Qual problema a startup resolve e como de forma inovadora?]
+Modelo de Negócio: [Ex: Assinatura, Freemium, Venda de produto, Marketplace]
+Tração Atual (se houver): [Ex: Número de usuários/clientes, Receita Recorrente Mensal (MRR), Parcerias estratégicas, KPIs relevantes]
+Valor Alvo da Captação: [Ex: R$ 500.000, R$ 2 milhões, $10 milhões]
+Uso dos Fundos: [Como o dinheiro será utilizado? Ex: Desenvolvimento de produto, Expansão de equipe, Marketing e vendas, Entrada em novo mercado]
+
+**Informações Financeiras Básicas (se disponível):**
+Receita (Últimos 12 meses): [Valor]
+Margem de Lucro Bruta: [X%]
+Queima de Caixa Mensal (Burn Rate): [Valor]
+Runway Atual: [Número de meses]
+
+**Tarefas:**
+1.  **Perfil do Investidor Ideal:** Desenhe o perfil de investidores (Anjos, VCs, Fundos Corporativos, Crowdfunding) mais adequados para a [Fase Atual da Startup] e [Setor de Atuação].
+2.  **Storytelling Financeiro:** Crie um "storytelling financeiro" persuasivo, que conecte a visão da startup com seu potencial de retorno, destacando [Valor/Solução Única] e [Tração Atual].
+3.  **Estrutura de Pitch Deck Essencial:** Liste os slides essenciais para um pitch deck de sucesso, com um breve descritivo para cada um, focando em informações que atraem investidores para a fase atual.
+4.  **Term Sheet Key Points (Não-Vinculativos):** Sugira 3-5 termos chave que a startup deve considerar na negociação de um Term Sheet, com uma breve explicação do seu impacto (ex: Valuation, Cláusulas de Liquidação, Vesting).
+5.  **Estratégias de Abordagem:** Recomende 2-3 canais e estratégias eficazes para abordar e engajar investidores potenciais.
+6.  **Próximos Passos Prioritários:** Liste os 3 próximos passos mais importantes para a startup iniciar ou avançar no processo de captação.
+
+**Formato de Saída:**
+Um relatório detalhado e acionável em Markdown, com cabeçalhos claros para cada seção.`,
+    tags: ['Startup', 'Financiamento', 'Investimento', 'Plano'],
+  },
 ];

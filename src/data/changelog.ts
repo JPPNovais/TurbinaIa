@@ -13,6 +13,50 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-deepmind-diffusiongemma-26b-a4b-2026',
+    date: '2026-06',
+    title: 'Google DeepMind lança DiffusionGemma 26B-A4B como modelo de código aberto',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'A Google DeepMind lançou o DiffusionGemma 26B-A4B em 9 de junho de 2026, uma versão de código aberto do seu modelo DiffusionGemma, focado em capacidades avançadas de geração de imagens.',
+    highlights: [
+      'Lançamento da variante 26B-A4B do DiffusionGemma.',
+      'Disponibilizado como modelo de código aberto (Open Source).',
+      'Focado em geração de imagens.',
+      'Lançado em 9 de junho de 2026.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-chatgpt-images-2-0-2026',
+    date: '2026-06',
+    title: 'OpenAI lança ChatGPT Images 2.0 com foco em texto legível em imagens',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'A OpenAI atualizou o ChatGPT com a versão Images 2.0, melhorando significativamente a capacidade de geração de imagens com texto legível, posicionando-o como o melhor para essa funcionalidade.',
+    highlights: [
+      'Lançamento da versão 2.0 da capacidade de geração de imagens do ChatGPT.',
+      'Principal melhoria na capacidade de gerar texto legível dentro das imagens.',
+      'Considerado o melhor modelo para geração de imagens com texto por rankings de mercado.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'openai-codex-agente-trabalho-2026',
+    date: '2026-06',
+    title: 'OpenAI expande Codex para além da codificação, transformando-o em um agente de trabalho com plugins e aplicativos compartilháveis',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'A OpenAI expandiu as funcionalidades do Codex para além da codificação, incorporando plugins, anotações e aplicativos compartilháveis, tornando-o um agente de trabalho versátil para uma audiência mais ampla, incluindo não-desenvolvedores.',
+    highlights: [
+      'Expansão das capacidades do Codex para além da codificação tradicional.',
+      'Introdução de plugins e anotações para maior versatilidade.',
+      'Permite a criação e compartilhamento de aplicativos.',
+      'Adoção crescente por usuários não-desenvolvedores, redefinindo seu público-alvo.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'anthropic-claude-mythos-5-ciberdefensores-2026',
     date: '2026-06',
     title: 'Anthropic lança Claude Mythos 5 com salvaguardas removidas para ciberdefensores',

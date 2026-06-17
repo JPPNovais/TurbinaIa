@@ -95,7 +95,9 @@ function callClaude({ contents, config }) {
     sys.push(typeof si === 'string' ? si : contentsToPrompt(si));
   }
   sys.push(
-    'Responda diretamente com o conteúdo solicitado, sem preâmbulos, comentários ou explicações fora do que foi pedido.'
+    'Sua resposta final deve conter EXCLUSIVAMENTE o conteúdo solicitado (ex.: o texto/Markdown pedido), começando diretamente por ele, sem preâmbulos nem comentários. ' +
+      'NUNCA escreva ou edite arquivos, NUNCA use ferramentas de escrita ou de shell, e NUNCA descreva ações ou afirme que "escreveu/salvou um arquivo" — você não tem sistema de arquivos. ' +
+      'Apenas devolva o conteúdo em si, como texto puro na sua mensagem final.'
   );
   if (useWeb) {
     sys.push(

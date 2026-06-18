@@ -5800,4 +5800,124 @@ Runway Atual: [Número de meses]
 Um relatório detalhado e acionável em Markdown, com cabeçalhos claros para cada seção.`,
     tags: ['Startup', 'Financiamento', 'Investimento', 'Plano'],
   },
+  {
+    id: 'ia-multiagente-analise-competitiva-estrategica',
+    title: 'Análise Competitiva Estratégica com Multi-Agentes de IA',
+    category: 'IA & Automação',
+    description: 'Utilize um sistema multi-agente de IA para conduzir uma análise aprofundada da concorrência, identificando forças, fraquezas, oportunidades e ameaças para seu produto/serviço.',
+    template: `Como um sistema multi-agente de IA, sua tarefa é realizar uma análise competitiva estratégica abrangente para o [Produto/Serviço] '[Nome do Produto/Serviço]' da empresa '[Nome da Empresa]'. O principal objetivo é fornecer insights acionáveis que informem nossa estratégia de mercado e posicionamento.
+
+Você terá os seguintes agentes trabalhando em conjunto:
+1.  **Agente 'Coletor de Dados':** Pesquisará e coletará informações sobre [Nome do Produto/Serviço] e até [Número] concorrentes principais ([Lista de Concorrentes, se houver, ou 'identificar os principais']). Foco em:
+    *   Características e funcionalidades do produto/serviço
+    *   Preços e modelos de precificação
+    *   Estratégias de marketing e canais (site, redes sociais, anúncios, SEO)
+    *   Percepção do cliente (avaliações, comentários, menções online)
+    *   Modelo de negócio e cadeia de valor
+    *   Notícias recentes e comunicados à imprensa
+    *   Patentes ou inovações relevantes
+    *   [Outros pontos de coleta de dados específicos]
+
+2.  **Agente 'Analista de Estratégia de Produto':** Avaliará os dados coletados com foco nas ofertas de produto/serviço. Ele identificará:
+    *   Lacunas no mercado não atendidas
+    *   Diferenciais competitivos do nosso [Produto/Serviço] e dos concorrentes
+    *   Potenciais funcionalidades a serem desenvolvidas ou melhoradas
+    *   Propostas de valor únicas
+
+3.  **Agente 'Analista de Marketing e Posicionamento':** Examinará as estratégias de comunicação e posicionamento dos concorrentes. Ele identificará:
+    *   Mensagens chave e tom de voz
+    *   Canais mais eficazes
+    *   Pontos fortes e fracos na comunicação
+    *   Oportunidades para diferenciar nossa mensagem
+    *   [Público-alvo principal de cada concorrente]
+
+4.  **Agente 'Analista de Tendências e Cenários':** Identificará tendências emergentes no mercado, tecnologias disruptivas e mudanças regulatórias que possam impactar o setor. Ele avaliará:
+    *   Novas demandas de clientes
+    *   Ameaças e oportunidades futuras
+    *   Potenciais cenários de mercado nos próximos [Período, ex: 1-3 anos]
+
+O processo deve ser:
+1.  O Agente 'Coletor de Dados' inicia a coleta e organiza as informações brutas.
+2.  Os Agentes 'Analista de Estratégia de Produto', 'Analista de Marketing e Posicionamento' e 'Analista de Tendências e Cenários' analisam os dados de suas respectivas perspectivas.
+3.  Todos os agentes devem colaborar para identificar sobreposições, contradições e inferir insights mais profundos.
+4.  O resultado final deve ser um relatório estruturado, incluindo:
+    *   Sumário Executivo (principais descobertas)
+    *   Análise detalhada por concorrente (pontos fortes, fracos, estratégia)
+    *   Análise SWOT consolidada para nosso [Produto/Serviço] em relação ao mercado
+    *   Recomendações estratégicas e táticas acionáveis para [Nome da Empresa] sobre:
+        *   Melhorias de produto/serviço
+        *   Estratégias de marketing e posicionamento
+        *   Identificação de nichos de mercado
+        *   Mitigação de riscos e aproveitamento de oportunidades
+
+Considere o [Contexto Adicional da Empresa/Mercado, se houver] ao realizar a análise.`,
+    tags: ['IA Multi-Agente', 'Análise Competitiva', 'Estratégia', 'Inteligência de Mercado'],
+  },
+  {
+    id: 'social-media-campanha-interativa-multimodal-ia',
+    title: 'Estratégia de Campanha Interativa Multimodal para Redes Sociais',
+    category: 'Redes Sociais',
+    description: 'Desenvolva uma estratégia de campanha completa para redes sociais, utilizando conteúdo interativo e multimodal gerado por IA, focado em um objetivo específico.',
+    template: `Você é um especialista em marketing de redes sociais com IA. Crie uma estratégia de campanha interativa e multimodal para as redes sociais (Instagram, TikTok, LinkedIn, YouTube, X) da empresa '[Nome da Empresa]' para promover '[Produto/Serviço/Evento]'.
+
+**Objetivo da Campanha:** [Ex: Aumentar o engajamento em 30%, Gerar 500 novos leads, Impulsionar vendas em 15%, Aumentar reconhecimento de marca, etc.]
+**Público-alvo:** [Descrição detalhada do público-alvo: idade, interesses, dores, plataformas preferidas]
+**Mensagem Principal:** [Mensagem central que a campanha deve transmitir]
+**Call to Action (CTA) Desejado:** [O que você quer que o público faça: comprar, se inscrever, visitar link, interagir]
+**Duração da Campanha:** [Número] semanas, começando em [Data de Início]
+**Orçamento Disponível (opcional):** [Valor ou 'Médio']
+**Recursos Existentes (opcional):** [Ex: Banco de imagens, vídeos curtos, depoimentos]
+
+A estratégia deve incluir:
+1.  **Conceito Criativo Central:** Uma ideia unificadora que guie todo o conteúdo interativo e multimodal.
+2.  **Escolha de Plataformas e Justificativa:** Quais plataformas serão o foco e por que, considerando o público e o objetivo.
+3.  **Sugestões de Conteúdo Multimodal Interativo (Mínimo 5 tipos):** Para cada plataforma chave, proponha tipos de posts que combinem texto, imagem, vídeo e/ou áudio, incentivando a interação. Exemplos podem incluir:
+    *   **Instagram:** Carrosséis interativos com enquetes, Reels com desafios, filtros AR com branding.
+    *   **TikTok:** Tendências de áudio com mini-tutoriais, dueto/stitch com perguntas ao público.
+    *   **LinkedIn:** Enquetes sobre o setor, vídeos curtos com dicas, artigos com perguntas abertas.
+    *   **YouTube Shorts:** Perguntas e respostas rápidas, "por trás das cenas" com votação.
+    *   **X (Twitter):** Threads com votações, Spaces com sessões de perguntas.
+    *   **Conteúdo Gamificado:** Quizzes, 'Adivinhe a Imagem/Som', 'Escolha sua Aventura'.
+4.  **Cronograma de Publicação:** Um plano semanal para [Número] semanas, detalhando o tipo de conteúdo e plataforma para cada fase da campanha (lançamento, engajamento, conversão).
+5.  **Métricas de Sucesso:** Como o objetivo da campanha será medido (Ex: Alcance, Impressões, Engajamento médio, Cliques no CTA, Leads gerados, Taxa de conversão).
+6.  **Estratégia de Engajamento:** Como a IA pode ser usada para monitorar comentários, responder a perguntas frequentes ou sugerir interações proativas.
+7.  **Adaptação Pós-Campanha:** Sugestões para analisar os dados e otimizar futuras campanhas.
+
+Gere exemplos de copys para 3 posts interativos (um para cada tipo de mídia diferente: vídeo, carrossel de imagem, enquete de texto) baseados no conceito criativo. Formate o output de forma clara e organizada, com seções dedicadas a cada item da lista.`,
+    tags: ['Redes Sociais', 'Marketing Digital', 'Conteúdo Multimodal', 'Engajamento', 'IA'],
+  },
+  {
+    id: 'finance-otimizacao-portfolio-esg-ia-agente',
+    title: 'Agente de Otimização de Portfólio ESG com IA',
+    category: 'Finanças',
+    description: 'Use um agente de IA para otimizar seu portfólio de investimentos, alinhando objetivos financeiros de retorno/risco com critérios específicos de ESG (Ambiental, Social e Governança).',
+    template: `Você é um agente de IA especialista em finanças e investimentos ESG (Ambiental, Social e Governança). Sua tarefa é recomendar uma estratégia de otimização de portfólio para um investidor com o perfil e os critérios a seguir.
+
+**Perfil do Investidor:**
+*   **Capital Disponível para Investimento:** [Valor Numérico, ex: R$ 50.000]
+*   **Horizonte de Investimento:** [Curto Prazo (<1 ano), Médio Prazo (1-5 anos), Longo Prazo (>5 anos)]
+*   **Tolerância a Risco:** [Baixa, Moderada, Alta]
+*   **Objetivo Financeiro Principal:** [Ex: Crescimento de Capital, Renda Passiva, Preservação de Capital, Educação, Aposentadoria]
+*   **Retorno Esperado Anual (opcional):** [Percentual, ex: 8-12%]
+
+**Critérios ESG Específicos (escolha 3 a 5 ou defina os seus):**
+1.  **Ambiental (E):** [Ex: Empresas com pegada de carbono reduzida, investindo em energias renováveis, gestão eficiente de resíduos, sem histórico de poluição, certificações ambientais]
+2.  **Social (S):** [Ex: Boas práticas trabalhistas, diversidade e inclusão, impacto positivo na comunidade, segurança do trabalho, saúde e bem-estar dos funcionários]
+3.  **Governança (G):** [Ex: Transparência na gestão, conselho independente, práticas anticorrupção, remuneração executiva justa, direitos dos acionistas minoritários]
+*   **[Critério ESG Adicional 1]:** [Descrição]
+*   **[Critério ESG Adicional 2]:** [Descrição]
+*   **Setores a Excluir (opcional):** [Ex: Armas, Tabaco, Combustíveis Fósseis, Jogos de Azar]
+
+**Contexto Atual de Mercado (opcional):** [Breve descrição de condições de mercado, ex: 'Inflação alta e juros em queda']
+
+Com base nessas informações, seu agente de IA deve:
+1.  **Analisar e Sugerir Classes de Ativos:** Recomendar classes de ativos (ações, títulos, fundos imobiliários, fundos ESG específicos, renda fixa) que se alinhem com o perfil de risco e horizonte do investidor.
+2.  **Filtrar e Avaliar Investimentos ESG:** Identificar um conjunto de 5 a 10 investimentos específicos (empresas, fundos, ETFs) que não apenas atendam aos objetivos financeiros, mas que também tenham um forte alinhamento com os critérios ESG fornecidos. Destaque como cada um se alinha.
+3.  **Propor uma Alocação de Portfólio:** Sugerir uma porcentagem de alocação para cada investimento, justificando a decisão em termos de risco, retorno e impacto ESG.
+4.  **Avaliar Riscos e Benefícios:** Descrever os principais riscos financeiros e ESG associados à carteira proposta, bem como os benefícios esperados (financeiros e de impacto).
+5.  **Recomendações de Monitoramento:** Sugerir como o portfólio deve ser monitorado em relação aos objetivos financeiros e ESG ao longo do tempo.
+
+Apresente sua resposta de forma clara e estruturada, com tabelas ou listas para facilitar a compreensão.`,
+    tags: ['Finanças', 'Investimentos', 'ESG', 'Otimização de Portfólio', 'IA Agente'],
+  },
 ];

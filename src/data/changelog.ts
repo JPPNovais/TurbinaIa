@@ -13,6 +13,78 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-deepmind-gemini-3-5-live-translate-2026',
+    date: '2026-06',
+    title: 'Google DeepMind lança Gemini 3.5 Live Translate para tradução de voz fluida',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'A Google DeepMind lançou o Gemini 3.5 Live Translate em junho de 2026, uma nova capacidade que oferece tradução de voz fluida e natural.',
+    highlights: [
+      'Lançamento da capacidade Live Translate para Gemini 3.5.',
+      'Foco em tradução de voz fluida e natural.',
+      'Disponibilizado em junho de 2026.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'meta-ai-modo-ia-facebook-2026',
+    date: '2026-06',
+    title: 'Meta AI lança Modo IA para o Facebook, aprimorando a busca por informações',
+    developer: 'Meta AI',
+    category: 'Atualização',
+    description: 'A Meta lançou o Modo IA no Facebook em 15 de junho de 2026, uma nova funcionalidade que utiliza a Meta IA para sintetizar respostas de publicações públicas em Grupos e Reels, transformando a busca por informações na plataforma.',
+    highlights: [
+      'Lançamento do Modo IA no Facebook.',
+      'Utiliza Meta IA para sintetizar respostas de conteúdo público.',
+      'Disponível a partir de 15 de junho de 2026.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-databricks-agent-bricks-2026',
+    date: '2026-06',
+    title: 'xAI integra modelos Grok nativamente no Databricks Agent Bricks',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI expandiu a presença empresarial do Grok, disponibilizando seus modelos nativamente no Databricks Agent Bricks a partir de 18 de junho de 2026, permitindo que agentes de IA operem sobre grandes volumes de dados corporativos.',
+    highlights: [
+      'Modelos Grok disponíveis nativamente no Databricks Agent Bricks.',
+      'Anunciado no Databricks 2026 Data + AI Summit.',
+      'Permite a criação de agentes de IA sobre dados empresariais.',
+      'Lançado em 18 de junho de 2026.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'cohere-rerank-4-lancamento-2026',
+    date: '2026-06',
+    title: 'Cohere lança Rerank 4 para aprimorar a recuperação de informações em IA',
+    developer: 'Cohere',
+    category: 'Atualização',
+    description: 'A Cohere lançou o Rerank 4 em 11 de junho de 2026, uma nova versão de seu modelo de reranking projetada para construir experiências de busca e agentes de IA mais precisas no OCI Enterprise AI.',
+    highlights: [
+      'Lançamento da versão 4 do modelo Rerank.',
+      'Melhora a precisão em busca e experiências de IA agênticas.',
+      'Disponível no OCI Enterprise AI.',
+      'Lançado em 11 de junho de 2026.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'cohere-embed-4-lancamento-2026',
+    date: '2026-06',
+    title: 'Cohere apresenta Embed 4 com suporte multimodal expandido',
+    developer: 'Cohere',
+    category: 'Atualização',
+    description: 'A Cohere expandiu o suporte multimodal de seus modelos com o lançamento do Embed 4 em 11 de junho de 2026, permitindo embeddings de texto, imagens ou inputs combinados de texto-imagem para experiências de IA mais ricas.',
+    highlights: [
+      'Lançamento da versão 4 do modelo Embed.',
+      'Suporte expandido para inputs multimodais (texto, imagem, texto-imagem).',
+      'Disponível em 11 de junho de 2026.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'google-deepmind-diffusiongemma-26b-a4b-2026',
     date: '2026-06',
     title: 'Google DeepMind lança DiffusionGemma 26B-A4B como modelo de código aberto',

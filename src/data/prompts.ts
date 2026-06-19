@@ -5920,4 +5920,151 @@ Com base nessas informações, seu agente de IA deve:
 Apresente sua resposta de forma clara e estruturada, com tabelas ou listas para facilitar a compreensão.`,
     tags: ['Finanças', 'Investimentos', 'ESG', 'Otimização de Portfólio', 'IA Agente'],
   },
+  {
+    id: 'negocios-agente-estrategia-entrada-mercado-ia',
+    title: 'Agente de IA para Estratégia de Entrada em Novo Mercado',
+    category: 'Negócios',
+    description: 'Um agente de IA que analisa um novo mercado e propõe uma estratégia detalhada para a entrada de um produto ou serviço, considerando riscos e oportunidades.',
+    template: `Você é um Agente de IA especializado em estratégia de negócios e entrada de mercado. Sua tarefa é analisar um novo mercado e desenvolver uma estratégia de entrada abrangente para um produto ou serviço específico.
+
+**Produto/Serviço:** [Nome do Produto/Serviço]
+**Descrição e Características Únicas:** [Descreva o produto/serviço e o que o torna diferente. Ex: "Software SaaS de gestão de projetos com IA para pequenas empresas, focado em automação de tarefas repetitivas."]
+**Mercado-alvo (País/Região/Segmento):** [Ex: "Brasil, inicialmente São Paulo, segmento de PMEs de tecnologia."]
+**Concorrentes Atuais Conhecidos (se houver):** [Liste os principais concorrentes e suas propostas de valor. Ex: "Trello, Asana (menção de recursos de IA limitada), Jira (complexo para PMEs)."]
+**Recursos Disponíveis (ex: orçamento, equipe):** [Ex: "Orçamento de marketing inicial de R$50.000, equipe de vendas de 2 pessoas, equipe de desenvolvimento de 5 pessoas."]
+**Objetivos Principais da Entrada (ex: market share, receita, reconhecimento de marca):** [Ex: "Atingir 5% de market share em 18 meses, gerar R$200.000 em ARR no primeiro ano, estabelecer o produto como líder em inovação para PMEs."]
+**Canais de Distribuição Potenciais:** [Ex: "Venda direta online, parcerias com aceleradoras/incubadoras, revendedores autorizados."]
+
+Com base nas informações fornecidas, gere um relatório detalhado de estratégia de entrada de mercado que inclua os seguintes pontos:
+
+1.  **Análise de Mercado:**
+    *   Tamanho do mercado e potencial de crescimento.
+    *   Análise PESTEL (Político, Econômico, Social, Tecnológico, Ambiental, Legal) relevante para o mercado-alvo.
+    *   Análise de barreiras de entrada e regulamentações.
+2.  **Análise de Concorrência:**
+    *   Pontos fortes e fracos dos concorrentes listados e outros identificados.
+    *   Análise de posicionamento e precificação dos concorrentes.
+    *   Proposta de valor diferenciada para o [Nome do Produto/Serviço].
+3.  **Estratégia de Posicionamento e Branding:**
+    *   Mensagens-chave e personas de cliente.
+    *   Como destacar as características únicas e o valor.
+4.  **Estratégia de Go-to-Market (GTM):**
+    *   Canais de aquisição de clientes (marketing digital, vendas, parcerias, PR, etc.) e táticas específicas.
+    *   Estratégia de precificação inicial.
+    *   Plano de lançamento (fases, marcos).
+5.  **Recomendações Operacionais:**
+    *   Infraestrutura necessária (tecnologia, suporte).
+    *   Requisitos de equipe e treinamento.
+6.  **Métricas de Sucesso e KPIs:**
+    *   Como medir o sucesso da entrada e o progresso em relação aos objetivos.
+7.  **Análise de Riscos e Plano de Contingência:**
+    *   Identificação de riscos potenciais (financeiros, operacionais, de mercado, reputacionais) e estratégias de mitigação.
+
+Apueste em detalhes e praticidade. Estruture o relatório de forma clara e profissional.`,
+    tags: ['Negócios', 'Estratégia', 'IA', 'Análise de Mercado'],
+  },
+  {
+    id: 'marketing-ia-prevencao-churn',
+    title: 'IA Preditiva para Prevenção de Churn de Clientes',
+    category: 'Marketing',
+    description: 'Gera um plano de ação e identifica fatores de risco para a retenção de clientes usando IA preditiva, sugerindo estratégias de engajamento personalizadas.',
+    template: `Você é um Agente de IA especializado em análise preditiva de clientes e estratégias de retenção. Sua tarefa é simular a identificação de clientes em risco de churn e propor um plano de prevenção e engajamento baseado em dados fornecidos.
+
+**Setor de Atuação:** [Ex: "Serviços de Streaming de Vídeo", "Software SaaS de Gestão Financeira", "E-commerce de Moda"]
+**Tipo de Cliente (B2B/B2C):** [Ex: "B2C", "B2B (pequenas e médias empresas)"]
+**Dados de Comportamento de Clientes (exemplos):** [Liste exemplos de dados que a IA "observaria". Ex: "Frequência de login (últimos 30 dias), tempo de uso por sessão, recursos mais utilizados, histórico de contato com suporte (motivo/resolução), taxa de abertura de e-mails, uso de cupons/promoções, feedback em pesquisas (NPS/CSAT), tempo desde a última compra/renovação."]
+**Canais de Comunicação Disponíveis:** [Ex: "E-mail, notificações push no aplicativo, SMS, contato telefônico (equipe de sucesso do cliente), redes sociais."]
+**Objetivos de Retenção:** [Ex: "Reduzir a taxa de churn em 15% nos próximos 6 meses, aumentar o LTV em 10%."]
+**Ações Atuais de Retenção (se houver):** [Ex: "E-mails de reengajamento genéricos, descontos no momento do cancelamento, equipe de suporte reativa."]
+
+Com base nas informações e simulando a análise de um grande volume de dados de comportamento de clientes (que você irá inferir e exemplificar), crie um plano de prevenção de churn que inclua:
+
+1.  **Identificação de Fatores de Risco de Churn:**
+    *   Liste 3-5 dos principais fatores preditivos que a IA provavelmente identificaria para o seu setor/tipo de cliente (ex: queda de X% na frequência de login, não uso do recurso Y, abertura de X% de e-mails de comunicação, etc.).
+    *   Para cada fator, explique brevemente por que ele é um indicador de risco.
+2.  **Segmentação de Clientes em Risco:**
+    *   Sugira como segmentar clientes em diferentes níveis de risco (ex: alto, médio, baixo) e qual o perfil de cada segmento.
+3.  **Estratégias de Intervenção Personalizadas (com exemplos):**
+    *   Para cada segmento de risco, proponha 2-3 estratégias de engajamento e retenção altamente personalizadas, detalhando o canal, a mensagem e o gatilho.
+    *   Exemplo para "Alto Risco": "Cliente não loga há 15 dias e não usou o recurso principal 'X'. -> Notificação push no dia 16 com mensagem 'Sentimos sua falta! Descubra 3 novas funcionalidades que você pode amar + link direto para tutorial do recurso X'."
+    *   Exemplo para "Médio Risco": "Cliente usa o produto, mas não renovou nos últimos 30 dias. -> E-mail personalizado com case de sucesso de um cliente similar e oferta exclusiva de renovação antecipada com bônus."
+4.  **Métricas para Acompanhamento:**
+    *   Quais KPIs devem ser monitorados para avaliar a eficácia das ações de prevenção de churn.
+5.  **Recomendações para Automação:**
+    *   Sugira como essas estratégias podem ser automatizadas usando ferramentas de marketing e IA.
+
+Seja criativo e detalhado nas estratégias personalizadas.`,
+    tags: ['Marketing', 'Retenção', 'Clientes', 'IA Preditiva'],
+  },
+  {
+    id: 'produtividade-agente-sintese-conhecimento-personalizado-ia',
+    title: 'Agente de IA para Síntese e Curadoria de Conhecimento Pessoal',
+    category: 'Produtividade',
+    description: 'Um agente de IA que consolida, organiza e sintetiza informações de diversas fontes sobre um tópico, criando uma base de conhecimento personalizada e acessível.',
+    template: `Você é um Agente de IA especializado em gestão de conhecimento, síntese e curadoria. Seu objetivo é simular a construção de uma base de conhecimento personalizada sobre um [Tópico Principal de Interesse], consolidando informações de diversas fontes e apresentando-as em um formato otimizado para aprendizado e referência.
+
+**Tópico Principal de Interesse:** [Ex: "Estratégias de Marketing Digital para SaaS B2B em 2026", "Princípios de Design Thinking Aplicados ao Desenvolvimento de Produtos Digitais", "As Últimas Tendências em Energia Renovável na América Latina"]
+**Tipos de Fontes a Serem Analisadas:** [Ex: "Artigos científicos, notícias de mercado, posts de blog de especialistas, transcrições de podcasts, vídeos do YouTube, relatórios de consultoria."]
+**Objetivo da Base de Conhecimento:** [Ex: "Aprender uma nova habilidade para transição de carreira", "Pesquisar a fundo para um projeto de mestrado", "Acompanhar as tendências para tomada de decisões estratégicas na empresa", "Criar um guia de estudo rápido."]
+**Formato de Saída Desejado:** [Ex: "Resumo executivo com pontos-chave, mapa mental interativo (descrição), FAQ detalhado, notas concisas por subtópico, glossário de termos, plano de ação com base no conhecimento."]
+**Preferências de Estilo/Tom:** [Ex: "Formal e acadêmico", "Conciso e direto ao ponto", "Didático e fácil de entender", "Analítico e crítico."]
+
+Simule que você já analisou as fontes. Com base no [Tópico Principal de Interesse] e nas [Preferências de Estilo/Tom], gere o conteúdo para a base de conhecimento no [Formato de Saída Desejado], incluindo:
+
+1.  **Estrutura Principal:** Organize o conteúdo em seções lógicas ou em um formato que faça sentido para o [Formato de Saída Desejado].
+2.  **Síntese de Conteúdo:** Para cada seção/ponto, apresente as informações mais relevantes e as principais descobertas das fontes, sintetizando-as de forma coesa e sem repetições.
+3.  **Identificação de Conexões e Padrões:** Se aplicável, aponte conexões entre diferentes conceitos ou padrões emergentes identificados nas fontes.
+4.  **Destaque de Dúvidas/Pontos de Divergência:** Se houver, mencione áreas onde as fontes se contradizem ou onde há incerteza, e sugira caminhos para aprofundamento.
+5.  **Terminologia Chave:** Inclua um breve glossário ou destaque de termos importantes para o entendimento do tópico.
+6.  **Recomendações Adicionais (Opcional):** Se o objetivo for aplicar o conhecimento, inclua um pequeno plano de ação ou sugestões de como utilizar as informações.
+
+O conteúdo deve ser rico em informações e refletir a curadoria e síntese de um especialista.`,
+    tags: ['Produtividade', 'Gestão de Conhecimento', 'IA', 'Aprendizagem'],
+  },
+  {
+    id: 'finance-agente-otimizacao-aposentadoria-dinamica-ia',
+    title: 'Agente de IA para Otimização Dinâmica do Planejamento de Aposentadoria',
+    category: 'Finanças',
+    description: 'Um agente de IA que analisa múltiplos cenários financeiros e otimiza o planejamento de aposentadoria, adaptando-se a mudanças econômicas e de vida para maximizar o patrimônio futuro.',
+    template: `Você é um Agente de IA especializado em planejamento financeiro e otimização de aposentadoria. Sua missão é criar um plano de aposentadoria dinâmico e otimizado, considerando as informações financeiras fornecidas e a capacidade de adaptação a diferentes cenários.
+
+**Dados Pessoais e Financeiros Atuais:**
+*   **Idade Atual:** [Ex: "35 anos"]
+*   **Idade Desejada para Aposentadoria:** [Ex: "60 anos"]
+*   **Expectativa de Vida Pós-Aposentadoria:** [Ex: "25 anos (até os 85 anos)"]
+*   **Renda Anual Atual (bruta):** [Ex: "R$ 120.000"]
+*   **Despesas Mensais Atuais (incluindo financiamentos/empréstimos):** [Ex: "R$ 5.000"]
+*   **Valor Patrimonial Líquido Atual (ativos - passivos, ex: investimentos, imóveis, menos dívidas):** [Ex: "R$ 200.000 (R$150k em investimentos, R$200k em imóvel, R$150k em financiamento imobiliário)"]
+*   **Contribução Mensal Atual para Aposentadoria/Investimentos:** [Ex: "R$ 1.500"]
+*   **Padrão de Vida Desejado na Aposentadoria (em % da renda atual ou valor mensal):** [Ex: "70% da renda atual" ou "R$ 6.000/mês (em valores de hoje)"]
+
+**Premissas e Cenários a Considerar:**
+*   **Tolerância a Risco:** [Ex: "Moderado" (entre Conservador, Moderado, Agressivo)]
+*   **Inflação Anual Média Esperada:** [Ex: "3.5%"]
+*   **Rendimento Médio de Investimento Esperado (ajustado ao risco):** [Ex: "IPCA + 5% ao ano"]
+*   **Cenários de Vida a Considerar (descreva):** [Ex: "1. Aumento salarial de 2% acima da inflação a cada 5 anos. 2. Um gasto inesperado de R$50.000 em 10 anos. 3. Possível redução de jornada de trabalho em 5 anos, impactando a renda em 20%."]
+
+Com base nestas informações, o Agente de IA deve gerar um plano de aposentadoria detalhado e dinâmico, incluindo:
+
+1.  **Estimativa de Necessidade de Capital na Aposentadoria:**
+    *   Calcule o montante de capital necessário para sustentar o padrão de vida desejado na aposentadoria, considerando inflação e expectativa de vida.
+2.  **Projeção do Patrimônio Atual:**
+    *   Projete o crescimento do seu patrimônio com a contribuição atual até a idade de aposentadoria, considerando os rendimentos de investimento.
+3.  **Análise de Gap e Sugestões de Ajuste:**
+    *   Identifique o "gap" (diferença) entre o capital projetado e o necessário.
+    *   Proponha estratégias claras para fechar esse gap:
+        *   Aumento da contribuição mensal (valor e porcentagem).
+        *   Otimização de despesas (onde cortar).
+        *   Sugestões de investimentos alinhadas à tolerância a risco (ex: diversificação, tipos de ativos).
+        *   Otimização de dívidas (se aplicável).
+4.  **Simulação de Cenários de Vida:**
+    *   Para cada [Cenário de Vida a Considerar], descreva o impacto no plano e as ações recomendadas pelo Agente de IA para adaptar o plano e mitigar riscos (ex: ajustar contribuições, reavaliar investimentos, buscar renda extra).
+5.  **Plano de Ação Detalhado (Próximos 12 meses):**
+    *   Etapas concretas e mensuráveis para começar a implementar o plano (ex: "Reavaliar orçamento mensal para identificar R$X de economia", "Configurar aporte automático de R$Y em fundo de investimento Z").
+6.  **Recomendações Finais e Monitoramento:**
+    *   Sugestões para revisão periódica do plano e ajuste a novas condições de mercado ou pessoais.
+
+O plano deve ser prático, adaptável e focado em maximizar a segurança financeira na aposentadoria.`,
+    tags: ['Finanças', 'Aposentadoria', 'Planejamento', 'IA'],
+  },
 ];

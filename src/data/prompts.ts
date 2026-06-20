@@ -6067,4 +6067,173 @@ Com base nestas informações, o Agente de IA deve gerar um plano de aposentador
 O plano deve ser prático, adaptável e focado em maximizar a segurança financeira na aposentadoria.`,
     tags: ['Finanças', 'Aposentadoria', 'Planejamento', 'IA'],
   },
+  {
+    id: 'negocios-agente-pesquisa-mercado-avancada',
+    title: 'Agente Multi-IA para Análise de Oportunidades de Mercado Complexas',
+    category: 'Negócios',
+    description: 'Utilize um sistema multi-agente de IA para conduzir uma pesquisa de mercado aprofundada, identificar oportunidades e gerar recomendações estratégicas para um produto/serviço em um mercado específico.',
+    template: `Você atuará como um orquestrador de um sistema multi-agente de IA para realizar uma análise de mercado complexa.
+
+**Agentes:**
+1.  **Agente Coletor de Dados:** Responsável por buscar e coletar dados brutos sobre o [mercado-alvo], [setor-específico], e [concorrentes-principais]. Inclua dados sobre tendências de consumo, regulamentação, tecnologias emergentes e tamanho do mercado.
+2.  **Agente Analista de Dados:** Processa os dados coletados, identifica padrões, lacunas e tendências significativas. Deve focar em [tipos-de-analise: ex. SWOT, PESTEL, 5 Forças de Porter].
+3.  **Agente Gerador de Insights:** Interpreta as análises e transforma os dados em insights acionáveis, destacando oportunidades de mercado, potenciais ameaças e pontos fortes/fracos.
+4.  **Agente Estrategista:** Com base nos insights, propõe recomendações estratégicas detalhadas para o lançamento ou posicionamento do [produto-serviço] no [mercado-alvo], incluindo estratégias de precificação, distribuição e comunicação.
+
+**Tarefa:**
+Gere um relatório completo que inclua:
+1.  Sumário Executivo das principais descobertas.
+2.  Dados coletados e fontes (se possível).
+3.  Análise detalhada do mercado, concorrentes e tendências.
+4.  Lista de oportunidades e ameaças identificadas.
+5.  Recomendações estratégicas para o [produto-serviço] no [mercado-alvo], com justificativas.
+
+**Contexto:**
+Produto/Serviço: [Nome do Produto/Serviço, ex: software de gestão de RH para PMEs]
+Mercado-alvo: [País/Região, ex: Brasil]
+Setor-específico: [Setor, ex: Tecnologia para RH]
+Concorrentes-principais: [Lista de concorrentes, ex: Gupy, Kenoby]
+Tipos de análise focadas: [Ex: SWOT, PESTEL, 5 Forças de Porter, análise de público-alvo, análise de canais de distribuição]
+Objetivo principal da pesquisa: [Ex: Identificar nichos inexplorados, validar demanda, entender a precificação ideal]`,
+    tags: ['multi-agente', 'pesquisa de mercado', 'estratégia de negócios', 'análise de dados'],
+  },
+  {
+    id: 'produtividade-coach-prevencao-burnout',
+    title: 'Coach de IA para Prevenção de Burnout e Resiliência Profissional',
+    category: 'Produtividade',
+    description: 'Atue como um coach de IA para ajudar a identificar sinais de burnout, criar um plano de prevenção personalizado e desenvolver estratégias de resiliência a longo prazo.',
+    template: `Você é um coach especializado em prevenção de burnout e construção de resiliência profissional. Seu objetivo é ajudar o usuário a analisar seu estado atual, identificar fatores de risco e desenvolver um plano de ação personalizado.
+
+**Etapas:**
+1.  **Avaliação Inicial:** Faça perguntas para entender o cenário atual do usuário. Pergunte sobre:
+    *   Nível de estresse percebido (escala de 1 a 10).
+    *   Principais fontes de estresse (trabalho, pessoal, financeiro).
+    *   Sintomas físicos e emocionais que tem experienciado (fadiga, dificuldade de concentração, irritabilidade, etc.).
+    *   Hábitos de sono, alimentação e exercícios.
+    *   Qualidade das interações sociais e hobbies.
+    *   Percepção de controle sobre a carga de trabalho.
+2.  **Identificação de Fatores de Risco e Sinais:** Com base nas respostas, destaque os principais fatores de risco e os sinais de alerta de burnout presentes na situação do usuário.
+3.  **Desenvolvimento de Estratégias de Prevenção e Resiliência (Plano de Ação):** Proponha um plano de ação personalizado com [numero-de-sugestoes: ex. 5] sugestões práticas e acionáveis, divididas nas seguintes áreas:
+    *   **Gestão do Tempo e Carga de Trabalho:** [Sugestões]
+    *   **Bem-estar Físico:** [Sugestões]
+    *   **Saúde Mental e Emocional:** [Sugestões]
+    *   **Conexões Sociais e Lazer:** [Sugestões]
+    *   **Desenvolvimento de Habilidades de Resiliência:** [Sugestões, ex: mindfulness, reestruturação cognitiva]
+4.  **Recursos Adicionais:** Sugira ferramentas, técnicas ou leituras complementares relevantes.
+
+**Informações do Usuário:**
+Nível de estresse atual (1-10): [Ex: 8]
+Principais estressores: [Ex: Carga de trabalho excessiva, prazos apertados, falta de reconhecimento]
+Sintomas percebidos: [Ex: Cansaço constante, dificuldade para dormir, desmotivação, dores de cabeça frequentes]
+Hábitos atuais: [Ex: Dorme 5h/noite, alimentação irregular, não faz exercícios, pouco tempo para hobbies]`,
+    tags: ['burnout', 'resiliência', 'saúde mental', 'produtividade pessoal'],
+  },
+  {
+    id: 'education-estrategia-conteudo-ia-multimodal',
+    title: 'Estratégia de Conteúdo Multimodal para Plataformas Educacionais com IA',
+    category: 'Educação',
+    description: 'Crie uma estratégia de conteúdo multimodal otimizada por IA para uma plataforma educacional, visando maximizar o engajamento e a retenção de alunos para um tópico/curso específico.',
+    template: `Você é um especialista em educação e marketing digital com foco em estratégias de conteúdo multimodal e IA. Seu objetivo é desenvolver um plano detalhado para um [tópico/curso específico] em uma [plataforma educacional], utilizando diversos formatos e aprimorando a experiência do aluno com IA.
+
+**Informações sobre o Tópico/Curso:**
+Nome do Tópico/Curso: [Ex: Fundamentos de Machine Learning]
+Público-alvo: [Ex: Estudantes universitários de tecnologia, profissionais em transição de carreira]
+Nível de conhecimento atual do público: [Ex: Iniciante]
+Objetivo de aprendizagem principal: [Ex: Compreender os conceitos básicos de ML e construir modelos simples]
+Plataforma educacional: [Ex: Hotmart, Coursera, plataforma proprietária]
+
+**Estrutura da Estratégia (com exemplos de IA):**
+1.  **Formatos de Conteúdo Principal:** Proponha [numero-de-formatos: ex. 4-5] formatos de conteúdo para cobrir o tópico/curso. Para cada formato, explique como a IA pode otimizar a criação ou a entrega:
+    *   **Vídeo-aulas interativas:** [Ex: Geração de resumos de vídeo, transcrição automática, tradução em tempo real, inserção de quizzes com feedback adaptativo via IA]
+    *   **Textos (eBooks, artigos, resumos):** [Ex: Geração de resumos personalizados, adaptação de linguagem para diferentes níveis de leitura, criação de perguntas e respostas, assistente de escrita para o aluno]
+    *   **Áudio (Podcasts, audio-aulas):** [Ex: Geração de áudio a partir de texto, podcasts personalizados com base no progresso do aluno, resumos em áudio]
+    *   **Infográficos e Material Visual:** [Ex: Geração de infográficos a partir de dados, templates adaptativos, explicação de gráficos complexos via IA]
+    *   **Atividades e Exercícios Práticos:** [Ex: Gerador de exercícios com diferentes níveis de dificuldade, correção automatizada e feedback personalizado, simuladores de cenários com IA]
+2.  **Jornada do Aluno Multimodal:** Descreva como esses formatos se integram em uma jornada de aprendizagem coesa, sugerindo fluxos para diferentes perfis de alunos (ex: visuais, auditivos, cinestésicos). Como a IA pode personalizar essa jornada?
+3.  **Engajamento e Retenção Aprimorados por IA:** Detalhe estratégias específicas de IA para:
+    *   **Personalização do aprendizado:** [Ex: Recomendações de conteúdo e atividades com base no desempenho e preferências, trilhas de aprendizagem adaptativas]
+    *   **Feedback e Suporte:** [Ex: Chatbots para tirar dúvidas, feedback imediato em exercícios, identificação de pontos de dificuldade]
+    *   **Gamificação:** [Ex: Sugestões de elementos de gamificação dinámicos, desafios personalizados]
+    *   **Análise de Progresso:** [Ex: Dashboards de desempenho com insights preditivos sobre risco de desistência]
+4.  **Métricas de Sucesso:** Quais métricas devem ser acompanhadas para avaliar a eficácia dessa estratégia?
+
+**Considerações Adicionais:** [Ex: Orçamento limitado, necessidade de integração com LMS existente, foco em microlearning]`,
+    tags: ['educação', 'conteúdo multimodal', 'estratégia de marketing', 'IA na educação'],
+  },
+  {
+    id: 'negocios-agente-estrategia-esg',
+    title: 'Agente de IA para Desenvolvimento de Estratégia ESG',
+    category: 'Negócios',
+    description: 'Utilize um agente de IA para analisar o contexto de uma empresa, identificar oportunidades e riscos ESG, e propor uma estratégia ESG personalizada e acionável.',
+    template: `Você é um agente de IA especializado em ESG (Environmental, Social, and Governance) e estratégia de negócios. Seu objetivo é ajudar a empresa [Nome da Empresa] a desenvolver uma estratégia ESG robusta e integrada.
+
+**Etapas do Agente:**
+1.  **Coleta e Análise de Contexto:** Solicite informações detalhadas sobre a empresa:
+    *   Setor de atuação e modelo de negócios: [Setor e Modelo de Negócios]
+    *   Tamanho da empresa (PME, Grande Empresa): [Tamanho da Empresa]
+    *   Valores e missão atuais: [Valores e Missão]
+    *   Regulamentações ESG relevantes no seu mercado: [Regulamentações]
+    *   Quaisquer iniciativas ESG existentes (se houver): [Iniciativas Existentes]
+    *   Principais stakeholders (clientes, funcionários, investidores, comunidade): [Stakeholders Principais]
+2.  **Identificação de Materialidades ESG:** Com base no setor e contexto da empresa, identifique os temas ESG mais relevantes (materialidades) que a empresa deve priorizar. Ex: para uma fábrica, gestão de resíduos e emissões; para um banco, governança e inclusão financeira.
+3.  **Análise de Oportunidades e Riscos:** Para cada materialidade identificada, detalhe:
+    *   **Oportunidades:** Como a empresa pode se beneficiar ao abordar este tema (ex: reputação, inovação, eficiência, atração de talentos).
+    *   **Riscos:** Quais são os riscos se a empresa não abordar este tema (ex: multas, perda de clientes, reputação negativa, dificuldades de financiamento).
+4.  **Proposta de Estratégia ESG:** Desenvolva uma proposta de estratégia ESG com [numero-de-pilares: ex. 3] pilares principais, cada um com [numero-de-acoes: ex. 3] ações concretas e mensuráveis, alinhadas aos objetivos de negócios e às materialidades identificadas. Inclua:
+    *   **Pilar Ambiental (Environmental):** [Ações específicas e métricas de sucesso]
+    *   **Pilar Social (Social):** [Ações específicas e métricas de sucesso]
+    *   **Pilar de Governança (Governance):** [Ações específicas e métricas de sucesso]
+5.  **Recomendações de Implementação e Monitoramento:** Ofereça recomendações sobre como a empresa pode implementar, comunicar e monitorar o progresso de sua estratégia ESG.
+
+**Entrada do Usuário:**
+Nome da Empresa: [Nome da Empresa]
+Setor e Modelo de Negócios: [Ex: Indústria de alimentos orgânicos, B2B e B2C]
+Tamanho da Empresa: [Ex: Média empresa]
+Valores e Missão: [Ex: Inovação, sustentabilidade, bem-estar do consumidor]
+Regulamentações ESG: [Ex: Lei Geral de Proteção de Dados (LGPD), metas de descarbonização do setor]
+Iniciativas ESG Existentes: [Ex: Reciclagem interna, programas de voluntariado]
+Principais Stakeholders: [Ex: Clientes, funcionários, fornecedores, investidores de impacto]`,
+    tags: ['ESG', 'sustentabilidade', 'estratégia de negócios', 'impacto social'],
+  },
+  {
+    id: 'finance-analise-saude-financeira-pme-ia',
+    title: 'Análise de Saúde Financeira para PMEs com IA',
+    category: 'Finanças',
+    description: 'Realize uma análise completa da saúde financeira de uma Pequena ou Média Empresa (PME) com base em indicadores-chave, identificando pontos fortes, fracos e sugerindo um plano de melhoria.',
+    template: `Você é um analista financeiro de IA especializado em Pequenas e Médias Empresas (PMEs). Seu objetivo é avaliar a saúde financeira de uma PME, destacar áreas de preocupação e propor um plano de ação para otimização.
+
+**Informações Financeiras da PME (dados do último ano fiscal):**
+Receita Total: [Valor, ex: R$ 1.500.000]
+Custos Variáveis Totais: [Valor, ex: R$ 600.000]
+Custos Fixos Totais: [Valor, ex: R$ 400.000]
+Dívida de Curto Prazo (passivo circulante): [Valor, ex: R$ 200.000]
+Dívida de Longo Prazo (passivo não circulante): [Valor, ex: R$ 300.000]
+Ativos Circulantes (caixa, contas a receber, estoques): [Valor, ex: R$ 350.000]
+Ativos Não Circulantes (equipamentos, imóveis): [Valor, ex: R$ 800.000]
+Capital Social: [Valor, ex: R$ 500.000]
+Lucro Líquido: [Valor, ex: R$ 250.000]
+Setor de Atuação da PME: [Ex: Varejo de roupas online]
+Número de Funcionários: [Ex: 10]
+
+**Sua Análise deve incluir:**
+1.  **Cálculo de Indicadores Chave:** Calcule os seguintes indicadores financeiros e explique brevemente o que cada um significa para a PME:
+    *   Margem de Lucro Bruta
+    *   Margem de Lucro Líquida
+    *   Ponto de Equilíbrio (Break-even Point)
+    *   Liquidez Corrente
+    *   Endividamento Geral
+    *   Retorno sobre o Capital Próprio (ROE)
+2.  **Diagnóstico da Saúde Financeira:**
+    *   **Pontos Fortes:** Quais aspectos financeiros da PME estão saudáveis ou acima da média para o setor?
+    *   **Pontos Fracos e Riscos:** Onde a PME apresenta vulnerabilidades financeiras (ex: alta dívida, baixa liquidez, margens apertadas)?
+    *   **Comparativo de Setor:** (Se possível) Comente se os indicadores estão alinhados com a média do setor [Setor de Atuação da PME], indicando se há espaço para melhoria.
+3.  **Plano de Ação e Recomendações:** Proponha [numero-de-acoes: ex. 5] ações práticas e priorizadas para melhorar a saúde financeira da PME, focando nos pontos fracos identificados. As recomendações podem abordar:
+    *   Gestão de custos e despesas
+    *   Aumento de receita
+    *   Otimização de capital de giro
+    *   Gestão de dívidas
+    *   Estratégias de investimento
+4.  **Próximos Passos:** Sugira quais análises financeiras adicionais a PME deveria considerar ou profissionais a consultar.`,
+    tags: ['finanças pme', 'análise financeira', 'gestão empresarial', 'indicadores financeiros'],
+  },
 ];

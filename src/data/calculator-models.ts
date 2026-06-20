@@ -15,15 +15,15 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 7.00,
     outputPricePerM: 21.00,
     contextWindow: '1M tokens',
-    description: 'O modelo Pro mais recente da Google, com raciocínio avançado e contexto de até 1M tokens. Preços baseados na precificação do Gemini 1.5 Pro (Standard Pricing).',
+    description: 'O modelo Pro mais recente da Google, com raciocínio avançado e contexto de até 1M tokens. Preços baseados na precificação do Gemini 1.5 Pro (Standard Pricing) a partir de Junho de 2026.',
   },
   {
     name: 'Gemini 1.5 Flash',
     provider: 'Google',
-    inputPricePerM: 0.0375,
-    outputPricePerM: 0.15,
+    inputPricePerM: 0.35,
+    outputPricePerM: 1.05,
     contextWindow: '128K tokens',
-    description: 'O modelo Flash mais econômico da Google, otimizado para tarefas de alta frequência e baixo custo, com até 128K de contexto. Preços baseados na precificação do Gemini 1.5 Flash a partir de Outubro de 2024.',
+    description: 'O modelo Flash mais econômico da Google, otimizado para tarefas de alta frequência e baixo custo, com até 128K de contexto. Preços baseados na precificação do Gemini 1.5 Flash (Standard Pricing) a partir de Junho de 2026.',
   },
   // OpenAI
   {
@@ -32,7 +32,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 5.00,
     outputPricePerM: 15.00,
     contextWindow: '128K tokens',
-    description: 'O mais recente modelo flagship da OpenAI (lançado em Maio de 2024), com raciocínio avançado, capacidades multimodais e 128K de contexto. Oferece desempenho de ponta e é a principal escolha para tarefas complexas. (Preços e janela de contexto baseados no GPT-4o a partir de Maio de 2024).',
+    description: 'O mais recente modelo flagship da OpenAI (lançado em Maio de 2024), com raciocínio avançado, capacidades multimodais e 128K de contexto. Oferece desempenho de ponta e é a principal escolha para tarefas complexas. (Preços e janela de contexto baseados no GPT-4o a partir de Junho de 2026).',
   },
   {
     name: 'GPT-4o mini',
@@ -40,7 +40,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.15,
     outputPricePerM: 0.60,
     contextWindow: '128K tokens',
-    description: 'A versão mais econômica do GPT-4o da OpenAI (lançada em Julho de 2024), ideal para tarefas de baixo custo e alta escala, com 128K de contexto, mantendo alto desempenho. (Preços e janela de contexto baseados no GPT-4o mini a partir de Julho de 2024).',
+    description: 'A versão mais econômica do GPT-4o da OpenAI (lançada em Julho de 2024), ideal para tarefas de baixo custo e alta escala, com 128K de contexto, mantendo alto desempenho. (Preços e janela de contexto baseados no GPT-4o mini a partir de Junho de 2026).',
   },
   {
     name: 'GPT-4 Turbo',
@@ -48,7 +48,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 10.00,
     outputPricePerM: 30.00,
     contextWindow: '128K tokens',
-    description: 'Modelo de produção recomendado da OpenAI (versão 2024), com capacidades avançadas e 128K de contexto. Ideal para cargas de trabalho empresariais, oferecendo forte desempenho. (Preços e janela de contexto baseados no GPT-4 Turbo).',
+    description: 'Modelo de produção recomendado da OpenAI (versão 2024), com capacidades avançadas e 128K de contexto. Ideal para cargas de trabalho empresariais, oferecendo forte desempenho. (Preços e janela de contexto baseados no GPT-4 Turbo a partir de Junho de 2026).',
   },
   // Anthropic
   {
@@ -57,7 +57,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 15.00,
     outputPricePerM: 75.00,
     contextWindow: '200K tokens',
-    description: 'O modelo mais inteligente da família Claude da Anthropic (lançado em Março de 2024), para raciocínio complexo e tarefas agênticas, com 200K de contexto (com capacidade de até 1M tokens). Foco em honestidade e confiabilidade. (Preços e janela de contexto baseados no Claude 3 Opus a partir de Março de 2024).',
+    description: 'O modelo mais inteligente da família Claude da Anthropic (lançado em Março de 2024), para raciocínio complexo e tarefas agênticas, com 200K de contexto (com capacidade de até 1M tokens). Foco em honestidade e confiabilidade. (Preços e janela de contexto baseados no Claude 3 Opus a partir de Junho de 2026).',
   },
   {
     name: 'Claude 3 Sonnet',
@@ -65,7 +65,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 3.00,
     outputPricePerM: 15.00,
     contextWindow: '200K tokens',
-    description: 'O modelo intermediário da família Claude da Anthropic (lançado em Março de 2024), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 200K de contexto (com capacidade de até 1M tokens). (Preços e janela de contexto baseados no Claude 3 Sonnet a partir de Março de 2024).',
+    description: 'O modelo intermediário da família Claude da Anthropic (lançado em Março de 2024), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 200K de contexto (com capacidade de até 1M tokens). (Preços e janela de contexto baseados no Claude 3 Sonnet a partir de Junho de 2026).',
   },
   {
     name: 'Claude 3 Haiku',
@@ -73,7 +73,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.25,
     outputPricePerM: 1.25,
     contextWindow: '200K tokens',
-    description: 'O modelo mais rápido e econômico da família Claude da Anthropic (lançado em Março de 2024), ideal para tarefas de alto volume e sensíveis à latência, com 200K de contexto. (Preços e janela de contexto baseados no Claude 3 Haiku a partir de Março de 2024).',
+    description: 'O modelo mais rápido e econômico da família Claude da Anthropic (lançado em Março de 2024), ideal para tarefas de alto volume e sensíveis à latência, com 200K de contexto. (Preços e janela de contexto baseados no Claude 3 Haiku a partir de Junho de 2026).',
   },
   // DeepSeek
   {
@@ -82,7 +82,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.10,
     outputPricePerM: 0.20,
     contextWindow: '128K tokens',
-    description: 'Modelo MoE altamente eficiente e econômico da DeepSeek (lançado em Junho de 2024), oferecendo bom desempenho a um custo muito baixo, com 128K de contexto. (Preços e janela de contexto baseados no DeepSeek-V2).',
+    description: 'Modelo MoE altamente eficiente e econômico da DeepSeek (lançado em Junho de 2024), oferecendo bom desempenho a um custo muito baixo, com 128K de contexto. (Preços e janela de contexto baseados no DeepSeek-V2 a partir de Junho de 2026).',
   },
   // Meta (via API)
   {
@@ -91,7 +91,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.90,
     outputPricePerM: 0.90,
     contextWindow: '8K tokens',
-    description: 'Versão avançada do modelo open-source Llama 3 (Llama 3 70B Instruct), poderosa via API Together AI (preços verificados em Junho de 2024), com 8K de contexto. (Baseado na precificação do Llama 3 70B Instruct via Together AI).',
+    description: 'Versão avançada do modelo open-source Llama 3 (Llama 3 70B Instruct), poderosa via API Together AI (preços verificados em Junho de 2024), com 8K de contexto. (Baseado na precificação do Llama 3 70B Instruct via Together AI a partir de Junho de 2026).',
   },
   // Mistral AI
   {
@@ -116,7 +116,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.15,
     outputPricePerM: 0.45,
     contextWindow: '32K tokens',
-    description: 'Modelo ultra-econômico da Mistral AI, ideal para tarefas de alto volume e sensíveis à latência, com 32K de contexto. (Preços e janela de contexto baseados no Mistral Tiny).',
+    description: 'Modelo ultra-econômico da Mistral AI, ideal para tarefas de alto volume e sensíveis à latência, com 32K de contexto. (Preços e janela de contexto baseados no Mistral Tiny a partir de Junho de 2026).',
   },
   // Cohere
   {

@@ -13,6 +13,36 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-ai-mode-search-generative-ui-free-2026',
+    date: '2026-06',
+    title: 'Google disponibiliza recursos visuais de UI Generativa no Modo IA do Search gratuitamente',
+    developer: 'Google',
+    category: 'Atualização',
+    description: 'A Google anunciou em junho de 2026 que os recursos visuais de UI Generativa no Modo IA do Search, anteriormente restritos a assinantes Pro e Ultra, serão gratuitos para todos os usuários, com lançamento durante a Copa do Mundo FIFA 2026.',
+    highlights: [
+      'Recursos visuais de UI Generativa no Modo IA do Search tornam-se gratuitos para todos os usuários.',
+      'Anteriormente exclusivos para assinantes Pro e Ultra.',
+      'Lançamento alinhado à Copa do Mundo FIFA 2026, incluindo estatísticas interativas de jogos e recursos esportivos dinâmicos impulsionados por IA.',
+      'Aumenta o acesso às capacidades de IA no Search.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'openai-codex-sites-preview-2026',
+    date: '2026-06',
+    title: 'OpenAI lança Codex Sites em prévia para criação de aplicativos e dashboards interativos',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'A OpenAI lançou o Codex Sites em prévia em junho de 2026, uma nova ferramenta que permite a usuários de Negócios e Empresas transformar ideias e análises em aplicativos e dashboards interativos, hospedados e compartilháveis.',
+    highlights: [
+      'Lançamento em prévia do Codex Sites.',
+      'Permite a criação de aplicativos e dashboards interativos.',
+      'Destinado a usuários de Negócios e Empresas.',
+      'Expande as funcionalidades da plataforma Codex.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'google-deepmind-gemini-3-5-live-translate-2026',
     date: '2026-06',
     title: 'Google DeepMind lança Gemini 3.5 Live Translate para tradução de voz fluida',

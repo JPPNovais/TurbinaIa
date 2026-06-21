@@ -6236,4 +6236,145 @@ Número de Funcionários: [Ex: 10]
 4.  **Próximos Passos:** Sugira quais análises financeiras adicionais a PME deveria considerar ou profissionais a consultar.`,
     tags: ['finanças pme', 'análise financeira', 'gestão empresarial', 'indicadores financeiros'],
   },
+  {
+    id: 'marketing-estrategia-video-curto-ia',
+    title: 'Estratégia e Roteiro para Série de Vídeos Curtos (Reels/TikTok)',
+    category: 'Marketing',
+    description: 'Gere uma estratégia completa e roteiro detalhado para uma série de vídeos curtos (Reels, TikTok, Shorts) focada em engajamento para uma plataforma específica.',
+    template: `Você é um especialista em marketing de vídeo curto e estratégias de conteúdo viral. Eu preciso criar uma série de [Número de vídeos na série] vídeos curtos (para [Plataforma: Instagram Reels, TikTok, YouTube Shorts]) sobre o [Tópico principal da série].
+
+Meu público-alvo são [Descrição do público-alvo].
+O objetivo principal desta série é [Objetivo principal: aumentar engajamento, gerar leads, educar, promover um produto/serviço].
+A persona que queremos atrair é [Descrição detalhada da persona: idade, interesses, dores, aspirações].
+
+Para cada vídeo da série, preciso que você:
+1.  Sugira um título ou gancho chamativo.
+2.  Crie um roteiro breve (até 60 segundos) com as principais falas ou pontos visuais.
+3.  Indique a linguagem e tom de voz (ex: divertido, informativo, inspirador).
+4.  Sugira elementos visuais ou transições que possam ser usados.
+5.  Proponha uma Call-to-Action (CTA) clara e alinhada ao objetivo.
+6.  Sugira 3-5 hashtags relevantes.
+
+Pense em uma progressão lógica entre os vídeos para manter o público engajado na série. Comece com um gancho forte e termine com uma CTA que leve ao próximo vídeo ou a uma ação externa.
+`,
+    tags: ['vídeo curto', 'conteúdo multimodal', 'redes sociais', 'marketing de conteúdo'],
+  },
+  {
+    id: 'ia-design-agente-otimizacao-processo-negocios',
+    title: 'Design de Agente de IA para Otimização de Processos',
+    category: 'IA & Automação',
+    description: 'Projete um agente de IA para otimizar um processo de negócios específico, definindo seu objetivo, etapas, dados de entrada, resultados e critérios de decisão.',
+    template: `Você é um arquiteto de soluções de IA com experiência em design de agentes autônomos. Minha tarefa é projetar um agente de IA para otimizar o processo de [Nome do processo de negócios a otimizar, ex: triagem de currículos, atendimento inicial ao cliente, agendamento de reuniões, análise de feedback de produto].
+
+O objetivo principal deste agente de IA é [Objetivo principal do agente neste processo, ex: reduzir o tempo de triagem em X%, aumentar a satisfação do cliente em Y%, automatizar Z% dos agendamentos].
+
+Detalhe o design do agente de IA respondendo às seguintes perguntas:
+1.  **Nome Sugerido para o Agente:**
+2.  **Entradas (Inputs) Necessárias:** Que tipo de dados e informações o agente receberá? (Ex: e-mails de clientes, currículos em PDF, dados de CRM, dados de sensores). Especifique o formato e a fonte.
+3.  **Etapas do Processo que o Agente Automatizará/Otimizará:** Descreva passo a passo como o agente irá interagir com o processo.
+4.  **Lógica de Decisão e Regras:** Quais são os critérios, condições e regras de negócio que o agente deve seguir para tomar decisões ou executar ações? (Ex: Se feedback negativo, escalar para humano; Se currículo tem X palavras-chave, mover para etapa Y).
+5.  **Saídas (Outputs) e Ações do Agente:** Quais serão os resultados gerados pelo agente? (Ex: relatórios, e-mails enviados, atualizações em sistemas, agendamentos confirmados, recomendações).
+6.  **Integrações Necessárias:** Com quais sistemas ou plataformas o agente precisará se comunicar? (Ex: CRM, ERP, sistema de e-mail, calendário).
+7.  **Mecanismos de Feedback e Aprendizado:** Como o desempenho do agente será monitorado e como ele aprenderá e melhorará ao longo do tempo? (Ex: feedback humano, análise de erros, machine learning).
+8.  **Pontos Críticos e Exceções:** Quais cenários o agente não deve lidar sozinho e requer intervenção humana?
+9.  **Métricas de Sucesso:** Como mediremos se o agente está cumprindo seu objetivo?
+
+Seja detalhado e prático em cada seção.
+`,
+    tags: ['agente IA', 'automação', 'otimização', 'processos de negócios'],
+  },
+  {
+    id: 'finance-planejamento-financeiro-freelancer-ia',
+    title: 'Planejamento Financeiro Inteligente para Freelancers/Economia Gig',
+    category: 'Finanças',
+    description: 'Crie um plano financeiro adaptável para freelancers e profissionais da economia gig, considerando a renda variável, otimização de impostos e metas de poupança.',
+    template: `Você é um consultor financeiro com IA especializado em finanças para freelancers e a economia gig. Preciso de um plano financeiro detalhado e adaptável.
+
+Meus dados financeiros atuais são:
+-   **Renda Média Mensal (últimos 6 meses):** [Renda mensal média, ex: R$5.000]
+-   **Estimativa de Variação de Renda:** [Estimativa de variação da renda (% mínima a % máxima), ex: de -20% a +30%]
+-   **Principais Despesas Fixas Mensais:** [Liste as despesas fixas, ex: aluguel R$1.500, internet R$100, seguro R$200]
+-   **Principais Despesas Variáveis Mensais:** [Liste as despesas variáveis, ex: alimentação R$800, transporte R$300, lazer R$400]
+-   **Dívidas Existentes:** [Descreva tipo, valor, juros, parcela, ex: Cartão de crédito R$2.000, 10% juros, parcela R$200] (Se não tiver, diga "Nenhuma")
+-   **Metas de Poupança/Investimento:** [Descreva metas de curto, médio e longo prazo, ex: Reserva de emergência R$15.000 (curto), entrada de imóvel R$50.000 (médio), aposentadoria (longo)]
+-   **Regime Tributário Atual:** [MEI, Simples Nacional, Lucro Presumido, etc.]
+-   **Porcentagem da Renda que Desejo Poupar/Investir:** [Porcentagem, ex: 20%]
+
+Com base nessas informações, preciso de um plano que inclua:
+1.  **Orçamento Mensal Adaptável:** Sugestão de como alocar a renda em cenários de alta e baixa receita, priorizando despesas essenciais e metas.
+2.  **Estratégia de Reserva de Emergência:** Como construir e manter uma reserva de emergência ideal para minha situação de renda variável.
+3.  **Otimização de Dívidas (se houver):** Plano para quitação ou renegociação das dívidas existentes.
+4.  **Sugestões para Impostos:** Recomendações para otimizar minha carga tributária dentro do [Regime Tributário Atual] e sugestões de como separar o dinheiro para impostos.
+5.  **Plano de Poupança e Investimento:** Recomendações de tipos de investimento adequados para minhas metas e perfil de risco, considerando a flexibilidade necessária para um freelancer.
+6.  **Dicas de Gerenciamento de Renda Variável:** Estratégias para lidar com a flutuação da renda, como "pagar a si mesmo primeiro" ou criar um "salário" fixo mensal a partir da renda variável.
+7.  **Métricas de Acompanhamento:** Quais indicadores devo monitorar para garantir a saúde financeira.
+
+Priorize ações práticas e de fácil implementação.
+`,
+    tags: ['finanças pessoais', 'freelancer', 'renda variável', 'planejamento financeiro'],
+  },
+  {
+    id: 'negocios-previsao-vendas-avancada-ia',
+    title: 'Previsão de Vendas Avançada com Fatores Externos e Internos (IA)',
+    category: 'Negócios',
+    description: 'Gere uma previsão de vendas avançada, incorporando dados históricos, tendências de mercado, sazonalidade e fatores externos relevantes para um produto ou serviço específico.',
+    template: `Você é um analista de dados com IA especializado em previsão de vendas e inteligência de mercado. Preciso de uma previsão de vendas detalhada para o [Produto/Serviço para previsão] para o período de [Período da previsão, ex: próximos 12 meses].
+
+Considere os seguintes dados e informações:
+-   **Disponibilidade de Dados Históricos de Vendas:** [Sim/Não]. Se sim, descreva o período e a granularidade (ex: "Sim, últimos 3 anos, dados mensais").
+-   **Principais Fatores Internos que Influenciam Vendas:** [Liste fatores, ex: promoções sazonais, lançamentos de novos recursos, mudanças de preço, capacidade de produção, campanhas de marketing recentes].
+-   **Principais Fatores Externos que Influenciam Vendas:** [Liste fatores, ex: tendências econômicas (inflação, PIB), atividades da concorrência, mudanças regulatórias, eventos sociais/culturais, condições climáticas regionais, tendências tecnológicas, dados de sentimentos de mercado].
+-   **Benchmark de Mercado para Crescimento:** [Se houver, ex: "o mercado cresce em média 10% ao ano"] (Se não houver, diga "Não aplicável").
+-   **Objetivo da Previsão:** [Ex: Planejamento de estoque, definição de metas de vendas, alocação de orçamento de marketing, avaliação de capacidade de produção].
+
+Com base nestas informações, gere a previsão de vendas com os seguintes detalhes:
+1.  **Cenário Base de Previsão:** Uma previsão quantitativa mês a mês para o período solicitado, com justificativas claras.
+2.  **Análise de Sensibilidade (Cenários Otimista e Pessimista):** Projete cenários alternativos de vendas considerando a variação dos fatores internos e externos mais críticos.
+3.  **Fatores Chave de Sucesso e Risco:** Identifique os 3-5 fatores mais impactantes para o sucesso ou falha da previsão.
+4.  **Recomendações Estratégicas:** Com base na previsão, sugira ações que a empresa pode tomar em termos de marketing, operações, finanças e desenvolvimento de produtos.
+5.  **Métricas de Acompanhamento:** Quais KPIs devem ser monitorados para validar e ajustar a previsão ao longo do tempo.
+
+Estruture a resposta de forma clara, com um resumo executivo e depois o detalhamento de cada seção.
+`,
+    tags: ['previsão de vendas', 'análise de dados', 'inteligência de mercado', 'negócios'],
+  },
+  {
+    id: 'career-rota-desenvolvimento-tecnologias-emergentes-ia',
+    title: 'Rota de Desenvolvimento de Habilidades para Tecnologias Emergentes',
+    category: 'Carreira',
+    description: 'Crie uma rota de desenvolvimento de habilidades personalizada para transicionar ou se aprofundar em uma tecnologia emergente, mapeando conhecimentos, recursos e etapas práticas.',
+    template: `Você é um coach de carreira com IA, especializado em planejamento de desenvolvimento de habilidades para o futuro. Quero criar uma rota de desenvolvimento para a seguinte tecnologia emergente.
+
+**Minha área de atuação atual:** [Sua área de atuação atual, ex: Marketing Digital, Engenharia de Software, Consultoria Financeira, Design Gráfico]
+**Tecnologia Emergente que desejo dominar:** [Tecnologia emergente que deseja dominar, ex: IA Generativa, Web3, Computação Quântica, Neurociência Aplicada, Biotecnologia]
+**Nível de conhecimento atual na tecnologia:** [Iniciante, Intermediário, Avançado]
+**Objetivo de carreira relacionado a essa tecnologia:** [Ex: Mudar completamente de área, aplicar a tecnologia no meu trabalho atual, ser um especialista e palestrante, iniciar um negócio]
+**Recursos de aprendizagem preferidos:** [Ex: Cursos online (Coursera, Udemy), livros técnicos, projetos práticos (open source), bootcamps, mentoria, conferências]
+**Tempo disponível semanal para estudo e prática:** [Número de horas por semana, ex: 5-10 horas]
+
+Com base nessas informações, crie um plano de desenvolvimento em 4 fases, detalhando cada uma:
+**Fase 1: Fundamentação (1-2 meses)**
+-   Quais conceitos essenciais e pré-requisitos preciso dominar?
+-   Quais recursos de aprendizagem (livros, cursos) são mais indicados?
+-   Sugestão de um pequeno projeto prático para iniciar.
+
+**Fase 2: Imersão e Prática (2-4 meses)**
+-   Quais habilidades técnicas e ferramentas devo focar em aprender?
+-   Sugestões de cursos avançados ou projetos de médio porte.
+-   Como posso aplicar a tecnologia em um contexto relevante para minha área atual?
+
+**Fase 3: Especialização e Networking (3-6 meses)**
+-   Como posso me aprofundar em um nicho específico dentro da tecnologia?
+-   Estratégias para networking (comunidades, eventos, LinkedIn).
+-   Sugestões de projetos mais complexos ou contribuições open source.
+
+**Fase 4: Posicionamento no Mercado (contínuo)**
+-   Como posso atualizar meu perfil profissional (LinkedIn, currículo) para refletir minhas novas habilidades?
+-   Estratégias para buscar oportunidades (entrevistas, propostas de projetos).
+-   Como posso continuar aprendendo e me mantendo atualizado?
+
+Para cada fase, sugira métricas de sucesso para acompanhar meu progresso e ajustar o plano se necessário.
+`,
+    tags: ['carreira', 'desenvolvimento de habilidades', 'tecnologia emergente', 'planejamento de carreira'],
+  },
 ];

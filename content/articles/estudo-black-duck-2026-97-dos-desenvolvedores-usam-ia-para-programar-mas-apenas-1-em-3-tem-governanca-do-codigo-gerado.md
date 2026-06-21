@@ -11,7 +11,6 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-21"
-coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c"
 coverImage: "https://images.unsplash.com/photo-1773924685132-a2200ab56b78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxFc3R1ZG8lMjBCbGFjayUyMER1Y2slMjAyMDI2JTNBJTIwOTclMjUlMjBkb3MlMjBEZXNlbnZvbHZlZG9yZXMlMjBVc2FtJTIwSUElMjBwYXJhJTIwUHJvZ3JhbWFyJTJDJTIwbWFzJTIwQXBlbmFzJTIwMSUyMGVtJTIwMyUyMFRlbSUyMEdvdmVybmFuJUMzJUE3YSUyMGRvJTIwQyVDMyVCM2RpZ28lMjBHZXJhZG8lMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgyMDQ0MTY5fDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 

@@ -603,8 +603,11 @@ Escreva um artigo longo (mínimo de 1500 palavras, idealmente entre 1800 e 2500 
     // Inject coverImage into frontmatter before the closing ---
     const frontmatterEndIndex = cleanContent.indexOf('---', 4);
     if (frontmatterEndIndex !== -1) {
-      const beforeEnd = cleanContent.substring(0, frontmatterEndIndex);
+      let beforeEnd = cleanContent.substring(0, frontmatterEndIndex);
       const afterEnd = cleanContent.substring(frontmatterEndIndex);
+      // Drop any coverImage the model may have emitted in the frontmatter,
+      // otherwise injecting ours produces a duplicated YAML key (build error).
+      beforeEnd = beforeEnd.replace(/^coverImage:.*(\r?\n)?/gim, '');
       cleanContent = `${beforeEnd}coverImage: "${coverImageUrl}"\n${afterEnd}`;
     }
 

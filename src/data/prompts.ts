@@ -6377,4 +6377,115 @@ Para cada fase, sugira métricas de sucesso para acompanhar meu progresso e ajus
 `,
     tags: ['carreira', 'desenvolvimento de habilidades', 'tecnologia emergente', 'planejamento de carreira'],
   },
+  {
+    id: 'social-media-campanha-dinamica-lancamento-ia',
+    title: 'Campanha Multimodal Dinâmica de Lançamento com IA',
+    category: 'Redes Sociais',
+    description: 'Crie uma estratégia de campanha de lançamento multimodal, com IA adaptando o conteúdo em tempo real com base no engajamento e feedback da audiência.',
+    template: `Você é um especialista em marketing de redes sociais com IA, focado em campanhas de lançamento dinâmicas e multimodais.
+
+Crie uma estratégia de campanha de lançamento para o [Nome do Produto/Serviço] com os seguintes objetivos: [Objetivo Principal da Campanha, ex: Geração de Leads, Vendas, Conscientização de Marca].
+
+O público-alvo são [Detalhes do Público-Alvo: demografia, interesses, dores].
+
+A campanha deve durar [Duração da Campanha, ex: 3 semanas] e envolver as seguintes plataformas: [Plataformas, ex: Instagram, TikTok, LinkedIn, YouTube].
+
+Para cada fase da campanha (Pré-lançamento, Lançamento, Pós-lançamento), defina:
+1.  **Tipo de Conteúdo Multimodal Sugerido:** (ex: vídeos curtos, carrosséis, stories interativos, posts longos com infográficos, lives, áudios)
+2.  **Mensagens Chave:**
+3.  **Chamadas para Ação (CTAs):**
+4.  **Métricas de Engajamento e Conversão para Monitoramento:**
+
+Além disso, descreva como a IA deve analisar continuamente as [Métricas de Engajamento e Conversão para Monitoramento] e o [Tipo de Feedback da Audiência, ex: comentários, mensagens diretas, menções] para *dinamicamente ajustar* os seguintes elementos da campanha em tempo real:
+*   **Variação de Mensagens:** Sugestões para adaptar a linguagem ou os ângulos de venda.
+*   **Variação de Formato de Conteúdo:** Quando priorizar um formato sobre outro (ex: mais vídeos se o engajamento está alto, mais carrosséis para aprofundar se a retenção é boa).
+*   **Otimização de CTAs:** Como ajustar a chamada para ação para melhorar a conversão.
+*   **Sugestão de Segmentação:** Quais segmentos do público-alvo responderam melhor e como realocar esforços.
+
+Foco em um cronograma de conteúdo para a primeira semana e um plano de adaptação para as semanas seguintes.`,
+    tags: ['marketing digital', 'campanha', 'lançamento', 'ia adaptativa']
+  },
+  {
+    id: 'escrita-assistente-ebook-ia',
+    title: 'Assistente de Criação de E-book Completo com IA',
+    category: 'Escrita',
+    description: 'Guie a criação de um e-book, desde a estrutura e sumário até a geração de conteúdo detalhado para capítulos específicos, utilizando IA.',
+    template: `Você é um assistente de escrita com IA especializado em criação de e-books não-ficção.
+
+Meu objetivo é criar um e-book sobre [Tópico Principal do E-book, ex: "Produtividade Pessoal para Empreendedores Digitais"].
+O público-alvo é [Descrição do Público-Alvo, ex: empreendedores iniciantes, freelancers com dificuldades de gestão de tempo].
+O objetivo do e-book é [Objetivo Principal, ex: educar, vender um serviço, gerar leads].
+O tom de voz deve ser [Tom de Voz, ex: profissional, amigável, inspirador, técnico].
+
+**Passo 1: Estrutura e Sumário**
+Primeiro, proponha um título atraente e uma estrutura de e-book completa, incluindo:
+*   Título e Subtítulo
+*   Introdução (com gancho e apresentação do problema)
+*   [Número] capítulos principais (com títulos descritivos)
+*   [Número] subcapítulos para cada capítulo principal
+*   Conclusão (com resumo e chamada para ação final)
+*   Apêndices ou Recursos Adicionais (se aplicável)
+
+**Passo 2: Geração de Conteúdo para Capítulo Específico**
+Após a aprovação da estrutura, você irá gerar o conteúdo para o capítulo "[Título do Capítulo Desejado]".
+Para este capítulo, por favor, gere um texto detalhado, cobrindo os seguintes subcapítulos/tópicos:
+*   "[Primeiro Subcapítulo/Tópico]"
+*   "[Segundo Subcapítulo/Tópico]"
+*   "[Terceiro Subcapítulo/Tópico]"
+...
+
+Assegure-se de que o texto seja original, informativo, envolvente e siga o [Tom de Voz] definido. Inclua exemplos práticos e, se relevante, dicas acionáveis. O conteúdo do capítulo deve ter no mínimo [Número] palavras.
+
+**Instruções para o Usuário:** Comece pedindo apenas a estrutura e o sumário (Passo 1). Após minha aprovação, solicite qual capítulo deve ser detalhado e forneça os tópicos específicos para o Passo 2.`,
+    tags: ['escrita criativa', 'e-book', 'conteúdo longo', 'geração de texto']
+  },
+  {
+    id: 'ia-design-agente-otimizacao-processos-multiagente',
+    title: 'Design de Agente Multi-Agente para Otimização de Processos Empresariais',
+    category: 'IA & Automação',
+    description: 'Crie um design detalhado para um sistema de IA multi-agente que otimiza um processo de negócio complexo, definindo papéis, interações e fluxos de dados entre agentes.',
+    template: `Você é um arquiteto de sistemas de IA e designer de agentes especializados em otimização de processos empresariais.
+
+Meu objetivo é otimizar o processo de [Nome do Processo Empresarial a ser Otimizado, ex: "Onboarding de Novos Clientes", "Gestão da Cadeia de Suprimentos", "Desenvolvimento de Software"].
+
+Descreva o processo atual de forma concisa: [Descrição Resumida do Processo Atual, incluindo pontos de dor e ineficiências].
+
+**Seu Desafio:** Projete um sistema de IA multi-agente para otimizar este processo. Para cada agente, defina:
+
+1.  **Nome do Agente:** Um nome descritivo para sua função.
+2.  **Papel e Responsabilidades:** Detalhe o que o agente faz, suas entradas e saídas esperadas.
+3.  **Habilidades/Ferramentas de IA Necessárias:** Quais capacidades de IA o agente precisa (ex: processamento de linguagem natural, análise preditiva, visão computacional, recomendação, geração de código).
+4.  **Interações com Outros Agentes:** Como este agente se comunica e colabora com os demais agentes do sistema.
+5.  **Fluxo de Dados:** Quais dados o agente consome e produz, e para onde esses dados vão.
+6.  **Mecanismos de Tomada de Decisão:** Como o agente decide agir ou recomendar uma ação.
+
+Ao final, forneça um diagrama de alto nível (descrito textualmente) que ilustre a arquitetura do sistema multi-agente e o fluxo otimizado do processo, destacando como cada agente contribui para a melhoria.
+
+Considere as métricas de sucesso para a otimização deste processo: [Métricas de Sucesso, ex: Redução de tempo, Redução de custos, Aumento da satisfação do cliente, Melhoria na qualidade].`,
+    tags: ['ia multi-agente', 'otimização de processos', 'automação', 'design de sistemas']
+  },
+  {
+    id: 'negocios-agente-inteligencia-mercado-preditiva',
+    title: 'Agente de Inteligência de Mercado Preditiva para Decisões Estratégicas',
+    category: 'Negócios',
+    description: 'Desenvolva um agente de IA focado em análise preditiva de mercado para auxiliar em decisões estratégicas de negócios, identificando oportunidades e riscos futuros.',
+    template: `Você é um agente de inteligência de mercado com IA, especializado em análise preditiva para decisões estratégicas de negócios.
+
+Meu setor de atuação é [Setor da Empresa, ex: tecnologia SaaS, varejo de moda, serviços de consultoria financeira].
+Os principais produtos/serviços que ofereço são: [Lista de Produtos/Serviços].
+Meu principal desafio/questão de negócio no momento é: [Exemplo: Expandir para um novo mercado, lançar um novo produto, otimizar a cadeia de suprimentos, antecipar mudanças regulatórias].
+
+**Seu objetivo é atuar como um agente preditivo, fornecendo insights para minha decisão estratégica.**
+
+Por favor, descreva como você, como agente de IA, coletaria, processaria e analisaria dados para:
+
+1.  **Identificar Tendências Emergentes de Mercado:** Quais são as macrotendências (econômicas, sociais, tecnológicas, regulatórias) que podem impactar [Setor da Empresa] nos próximos [Período, ex: 12-24 meses]?
+2.  **Análise de Concorrência Preditiva:** Quais movimentos prováveis meus principais concorrentes ([Nomes dos Concorrentes, se houver]) farão e como isso pode influenciar minha posição?
+3.  **Previsão de Demanda e Comportamento do Consumidor:** Como a demanda por [Produtos/Serviços] pode evoluir e quais mudanças no comportamento do consumidor são esperadas?
+4.  **Identificação de Oportunidades e Riscos:** Com base nas análises anteriores, quais são as principais oportunidades de crescimento ou inovações para minha empresa e quais são os riscos potenciais que devo mitigar?
+5.  **Recomendações Estratégicas Acionáveis:** Proponha [Número] ações estratégicas específicas que minha empresa deve considerar para capitalizar as oportunidades e mitigar os riscos identificados.
+
+Para cada tipo de análise, detalhe as fontes de dados que você utilizaria (ex: relatórios de mercado, redes sociais, notícias, dados de vendas históricos, patentes, dados demográficos).`,
+    tags: ['inteligência de mercado', 'análise preditiva', 'decisão estratégica', 'negócios']
+  },
 ];

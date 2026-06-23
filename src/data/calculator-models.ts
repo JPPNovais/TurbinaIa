@@ -12,18 +12,18 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'Gemini 1.5 Pro',
     provider: 'Google',
-    inputPricePerM: 7.00,
-    outputPricePerM: 21.00,
+    inputPricePerM: 1.25,
+    outputPricePerM: 5.00,
     contextWindow: '1M tokens',
-    description: 'O modelo Pro mais recente da Google, com raciocínio avançado e contexto de até 1M tokens. Preços baseados na precificação do Gemini 1.5 Pro (Standard Pricing) a partir de Junho de 2026.',
+    description: 'O modelo Pro mais recente da Google, com raciocínio avançado e contexto de até 1M tokens. Preços baseados na precificação do Gemini Pro (comparado ao GPT-4o) a partir de Junho de 2026.',
   },
   {
     name: 'Gemini 1.5 Flash',
     provider: 'Google',
-    inputPricePerM: 0.35,
-    outputPricePerM: 1.05,
+    inputPricePerM: 0.075,
+    outputPricePerM: 0.30,
     contextWindow: '1M tokens',
-    description: 'O modelo Flash mais econômico da Google, otimizado para tarefas de alta frequência e baixo custo, com até 1M de contexto. Preços baseados na precificação do Gemini 1.5 Flash (Standard Pricing) a partir de Junho de 2026.',
+    description: 'O modelo Flash mais econômico da Google, otimizado para tarefas de alta frequência e baixo custo, com até 1M de contexto. Preços baseados na precificação do Gemini Flash a partir de Junho de 2026.',
   },
   // OpenAI
   {
@@ -64,8 +64,8 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'Anthropic',
     inputPricePerM: 0.25,
     outputPricePerM: 1.25,
-    contextWindow: '1M tokens',
-    description: 'O modelo mais rápido e econômico da família Claude da Anthropic, ideal para tarefas de alto volume e sensíveis à latência, com até 1M de contexto. (Preços e janela de contexto baseados no Claude 3 Haiku a partir de Junho de 2026).',
+    contextWindow: '200K tokens',
+    description: 'O modelo mais rápido e econômico da família Claude da Anthropic, ideal para tarefas de alto volume e sensíveis à latência, com até 200K de contexto. (Preços e janela de contexto baseados no Claude 3 Haiku a partir de Junho de 2026).',
   },
   // DeepSeek
   {
@@ -92,15 +92,23 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.50,
     outputPricePerM: 1.50,
     contextWindow: '32K tokens',
-    description: 'O modelo flagship da Mistral AI, com raciocínio avançado e capacidades multimodais, suportando 32K de contexto. (Preços e janela de contexto baseados no Mistral Large 3 a partir de Junho de 2026).',
+    description: 'O modelo flagship da Mistral AI, com raciocínio avançado e capacidades multimodais, suportando 32K de contexto. Preços confirmados para Mistral Large 3 em Junho de 2026.',
   },
   {
     name: 'Mistral Small 4',
     provider: 'Mistral AI',
-    inputPricePerM: 0.10,
-    outputPricePerM: 0.30,
-    contextWindow: '32K tokens',
-    description: 'O modelo otimizado da Mistral AI, que oferece um bom equilíbrio entre desempenho e custo para uma ampla gama de tarefas, com 32K de contexto. (Preços e janela de contexto baseados no Mistral Small 4 a partir de Junho de 2026).',
+    inputPricePerM: 0.15,
+    outputPricePerM: 0.60,
+    contextWindow: '256K tokens',
+    description: 'O modelo otimizado da Mistral AI (lançado em Março de 2026), que oferece um bom equilíbrio entre desempenho e custo para uma ampla gama de tarefas, com 256K de contexto. (Preços e janela de contexto baseados no Mistral Small 4 a partir de Junho de 2026).',
+  },
+  {
+    name: 'Mixtral 8x22B',
+    provider: 'Mistral AI',
+    inputPricePerM: 2.00,
+    outputPricePerM: 6.00,
+    contextWindow: '64K tokens',
+    description: 'Modelo Sparse Mixture-of-Experts da Mistral AI, com excelente desempenho e eficiência, suportando 64K de contexto. (Preços e janela de contexto baseados no Mixtral 8x22B a partir de Junho de 2026).',
   },
   // Cohere
   {

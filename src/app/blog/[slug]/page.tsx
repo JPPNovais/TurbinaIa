@@ -121,6 +121,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       name: article.author,
       url: 'https://www.turbinaia.com.br/sobre',
     },
+    editor: {
+      '@type': 'Person',
+      name: 'Rafael Menezes',
+      jobTitle: 'Editor',
+      url: 'https://www.turbinaia.com.br/sobre',
+    },
     publisher: {
       '@type': 'Organization',
       name: 'Turbina IA',
@@ -312,14 +318,15 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
         {/* Author box (E-E-A-T) */}
         <div className="author-box">
-          <div className="author-box-avatar" aria-hidden="true">🌀</div>
+          <div className="author-box-avatar" aria-hidden="true">RM</div>
           <div className="author-box-info">
-            <span className="author-box-label">Escrito por</span>
-            <strong className="author-box-name">{article.author}</strong>
+            <span className="author-box-label">Editor responsável</span>
+            <strong className="author-box-name">Rafael Menezes</strong>
             <p className="author-box-bio">
-              Equipe editorial do Turbina IA, especializada em Inteligência Artificial, ferramentas
-              de produtividade e tendências de tecnologia. Conteúdo apurado em fontes oficiais e
-              revisado por humanos. <Link href="/sobre">Saiba mais sobre nós</Link>.
+              Editor do Turbina IA. Acompanha diariamente os lançamentos de modelos, ferramentas
+              e tendências de Inteligência Artificial para explicar o tema de forma acessível em
+              português. O conteúdo é produzido pela redação com auxílio de IA e curadoria
+              editorial, sempre apoiado em fontes oficiais. <Link href="/sobre">Conheça a redação</Link>.
             </p>
           </div>
         </div>

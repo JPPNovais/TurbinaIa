@@ -95,22 +95,22 @@ export default function SobrePage() {
         {/* Equipe */}
         <h2 style={h2Style}>Nossa Redação</h2>
         <p>
-          O conteúdo do Turbina IA é produzido por uma equipe de <strong>jornalistas e especialistas em
-          tecnologia</strong> com interesse profundo no ecossistema de inteligência artificial. Nossos
-          colaboradores acompanham diariamente as publicações científicas, lançamentos de modelos, fóruns
-          técnicos e movimentações do setor para entregar cobertura relevante e atualizada.
+          O Turbina IA é editado por <strong>Rafael Menezes</strong>, responsável pela linha editorial do
+          portal. Acompanhamos diariamente lançamentos de modelos, atualizações de plataformas, fóruns
+          técnicos e movimentações do setor de inteligência artificial para transformar tudo isso em
+          conteúdo claro e útil em português.
         </p>
         <p>
-          Para ampliar a cobertura e agilizar a produção editorial, utilizamos ferramentas de{' '}
-          <strong>inteligência artificial generativa</strong> — como o Google Gemini — como auxílio na
-          redação de rascunhos e na estruturação de conteúdo. Contudo, <strong>todo artigo publicado passa
-          por revisão editorial humana</strong> antes de ir ao ar. A responsabilidade pelo que é publicado
-          é sempre da equipe do Turbina IA.
+          Trabalhamos de forma transparente: boa parte dos nossos artigos é{' '}
+          <strong>produzida com auxílio de inteligência artificial generativa</strong> na redação de
+          rascunhos e na estruturação do conteúdo, sempre <strong>sob curadoria e supervisão editorial</strong>.
+          Nós definimos as pautas, conferimos os fatos em fontes oficiais e nos responsabilizamos pelo que
+          é publicado.
         </p>
         <p>
-          Adotamos essa abordagem de forma transparente porque acreditamos que a combinação de expertise
-          humana com ferramentas de IA, quando bem aplicada e devidamente revisada, permite produzir
-          conteúdo mais completo e ágil — sem comprometer a qualidade editorial.
+          Acreditamos que a combinação de critério editorial humano com ferramentas de IA, quando bem
+          aplicada, permite produzir conteúdo mais completo e ágil — sem comprometer a qualidade nem a
+          confiança do leitor.
         </p>
 
         {/* Transparência editorial */}
@@ -122,7 +122,7 @@ export default function SobrePage() {
 
         <div style={cardStyle}>
           <strong style={{ display: 'block', marginBottom: '0.5rem', fontSize: '1.05rem' }}>
-            Independencia Editorial
+Independência Editorial
           </strong>
           <p style={{ margin: 0 }}>
             Nossas análises, comparativos e recomendações são elaborados de forma independente pela equipe

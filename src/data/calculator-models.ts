@@ -127,4 +127,12 @@ export const AI_MODELS: CalculatorModel[] = [
     contextWindow: '128K tokens',
     description: 'Modelo eficiente da Cohere, adequado para cargas de trabalho de produção e RAG de menor custo, com 128K de contexto. Preços e janela de contexto confirmados em Junho de 2026 para o Command R.',
   },
+  {
+    name: 'Command A',
+    provider: 'Cohere',
+    inputPricePerM: 2.50,
+    outputPricePerM: 10.00,
+    contextWindow: '256K tokens',
+    description: 'O mais novo modelo flagship da Cohere (lançado em 2024), com uma janela de contexto maior e otimizado para raciocínio avançado e fluxos de trabalho agênticos. (Preços e janela de contexto baseados no Command A a partir de Junho de 2026).',
+  },
 ];

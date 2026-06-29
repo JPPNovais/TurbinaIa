@@ -6520,4 +6520,195 @@ Para cada tipo de análise, detalhe as fontes de dados que você utilizaria (ex:
     template: "Como um especialista em finanças e inteligência artificial, projete um agente de IA autônomo com o objetivo de otimizar o capital de giro para Pequenas e Médias Empresas (PMEs). O agente deve fornecer insights proativos e recomendações estratégicas.\n\n**Cenário da PME:**\n*   **Setor:** [Setor da PME, ex: varejo de alimentos, prestação de serviços de TI, indústria de vestuário]\n*   **Faturamento Anual Médio:** [Valor aproximado, ex: R$ 500.000,00]\n*   **Principais Desafios Financeiros:** [Ex: sazonalidade nas vendas, altos estoques, atraso de clientes, dificuldade de acesso a crédito]\n*   **Sistemas Atuais de Gestão:** [Ex: ERP [Nome do ERP, ex: Omie, Bling], planilhas Excel, sistema de PDV]\n\nO agente deve ser capaz de:\n1.  **Coleta e Integração de Dados:** Conectar-se e processar dados de [fontes de dados, ex: extratos bancários, contas a pagar/receber, dados de estoque, vendas, fluxo de caixa, DRE].\n2.  **Análise Preditiva de Fluxo de Caixa:** Prever picos e vales no fluxo de caixa com base em dados históricos e eventos futuros (sazonalidade, grandes vendas/compras).\n3.  **Otimização de Contas a Receber:** Identificar clientes com maior probabilidade de atraso e sugerir estratégias de cobrança ou prazos de pagamento.\n4.  **Otimização de Contas a Pagar:** Recomendar melhores prazos de pagamento a fornecedores, buscando equilibrar relacionamento e fluxo de caixa.\n5.  **Gestão Inteligente de Estoques:** Sugerir níveis ideais de estoque para [tipo de produto, ex: produtos perecíveis, itens de alta rotatividade], minimizando custos de armazenagem e perdas, e evitando rupturas.\n6.  **Recomendações de Financiamento:** Avaliar opções de crédito de curto prazo e sugerir o momento ideal e as melhores condições para captar recursos, se necessário.\n7.  **Simulação de Cenários:** Permitir que o empresário simule o impacto de diferentes decisões (ex: aumento de vendas, mudança de política de crédito) no capital de giro.\n\nEstruture o design do agente com os seguintes tópicos:\n*   **Arquitetura do Agente:** Módulos principais (coleta, análise, predição, recomendação, interface).\n*   **Metodologias de IA:** Quais algoritmos (ex: séries temporais, machine learning para classificação/regressão) seriam usados para cada função?\n*   **KPIs Monitorados:** Quais indicadores financeiros e operacionais seriam constantemente acompanhados pelo agente?\n*   **Interface e Relatórios:** Como o agente apresentaria suas análises e recomendações ao usuário de forma clara e acionável?\n*   **Considerações de Segurança e Privacidade:** Como garantir a segurança dos dados financeiros da PME?\n\nApresente um design robusto e prático para o agente.",
     tags: ['PME', 'capital de giro', 'gestão financeira', 'otimização'],
   },
+  {
+    id: 'ia-multiagente-simulacao-mercado',
+    title: 'Simulação de Mercado com Agentes Multi-IA para Estratégia',
+    category: 'IA & Automação',
+    description: 'Simula interações complexas entre diferentes agentes de mercado (clientes, concorrentes, fornecedores) para testar estratégias de lançamento de produto, precificação ou expansão, prevendo resultados e identificando riscos.',
+    template: `Você é um sistema de agentes multi-IA especializado em simulação de mercado.
+Sua tarefa é simular o comportamento e as interações de agentes dentro de um mercado definido, com base nos parâmetros fornecidos.
+
+**Definição da Simulação:**
+*   **Segmento de mercado:** [Segmento de mercado a ser simulado, ex: SaaS para PMEs, varejo de moda online, energia renovável residencial]
+*   **Produto/Serviço a simular:** [Nome e breve descrição do produto ou serviço cuja estratégia será testada]
+*   **Objetivo da simulação:** [Objetivo principal, ex: Prever demanda inicial, otimizar estratégia de precificação, identificar reações da concorrência, avaliar potencial de expansão]
+*   **Período de simulação:** [Duração da simulação, ex: 6 meses, 1 ano, 3 anos]
+*   **Métricas de sucesso:** [Quais métricas você deseja que a simulação otimize ou preveja, ex: Market share, lucro líquido, taxa de adoção, satisfação do cliente, CAC, LTV]
+
+**Configuração dos Agentes:**
+
+1.  **Agentes Clientes:**
+    *   **Número/proporção:** [Ex: 10.000 clientes potenciais, divididos em 3 segmentos]
+    *   **Características demográficas/psicográficas:** [Ex: Faixa etária 25-40, renda média, early adopters, sensíveis a preço, leais à marca, buscadores de valor]
+    *   **Comportamento de compra:** [Ex: Busca por avaliações, comparações de preço, influenciado por redes sociais, decide rapidamente, cético]
+    *   **Sensibilidade:** [Ex: Alta sensibilidade a preço, busca por inovação, valoriza suporte pós-venda]
+
+2.  **Agentes Concorrentes:**
+    *   **Número/Identificação:** [Ex: 3 concorrentes principais (Nome do Concorrente A, Nome do Concorrente B), 2 entrantes potenciais]
+    *   **Estratégia:** [Ex: Líder de mercado com foco em premium, agressivo em preço, inovador em tecnologia, nichado em qualidade]
+    *   **Capacidade de Resposta:** [Ex: Reagem rapidamente a mudanças de preço, copiam inovações, focam em fidelidade]
+    *   **Forças e Fraquezas:** [Ex: Forte branding, infraestrutura robusta, falha em inovação, custos elevados]
+
+3.  **Agentes Fornecedores (se relevante):**
+    *   **Número/Identificação:** [Ex: 2 fornecedores chaves para matéria-prima X]
+    *   **Características:** [Ex: Preços competitivos, alta qualidade, capacidade de entrega limitada, dependência de mercado]
+
+**Variáveis a Testar/Hipóteses:**
+*   [Preço inicial do produto/serviço, ex: R$99/mês]
+*   [Estratégia de Marketing, ex: Campanha intensa em redes sociais com influenciadores e anúncios pagos, focada em benefícios]
+*   [Recursos do Produto, ex: Lançamento com funcionalidade X e Y, roadmap para funcionalidade Z]
+*   [Canais de Distribuição, ex: Venda direta online, parceria com varejistas, equipe de vendas interna]
+*   [Estratégia de Pós-Venda, ex: Suporte 24/7, programa de fidelidade]
+
+**Saída esperada:**
+Gere um relatório detalhado da simulação, incluindo:
+1.  **Resultados da simulação:** Previsão das métricas de sucesso ao longo do tempo.
+2.  **Comportamento dos Agentes:** Como clientes, concorrentes e fornecedores reagiram às variáveis testadas.
+3.  **Identificação de Riscos e Oportunidades:** Pontos fracos e fortes da estratégia testada.
+4.  **Recomendações:** Ajustes na estratégia para otimizar os resultados e alcançar o objetivo da simulação.
+5.  **Cenários Alternativos:** Sugestões de 2-3 cenários com variáveis modificadas para uma nova rodada de simulação.
+`,
+    tags: ['Multi-agente', 'Simulação', 'Estratégia', 'Análise de Mercado'],
+  },
+  {
+    id: 'negocios-agente-ma-estrategico',
+    title: 'Agente IA para Análise Estratégica de Fusões e Aquisições (M&A)',
+    category: 'Negócios',
+    description: 'Atua como um assistente especializado em M&A, identificando potenciais alvos, realizando pré-due diligence com base em dados públicos, avaliando sinergias e riscos estratégicos para uma transação.',
+    template: `Você é um Agente IA especialista em Fusões e Aquisições (M&A) e inteligência de mercado.
+Sua missão é auxiliar na fase inicial de prospecção e análise de um potencial alvo de aquisição, fornecendo uma visão estratégica e preditiva.
+
+**Contexto da Busca:**
+*   **Empresa Compradora (Nós):** [Nome da sua empresa, setor de atuação, tamanho (ex: faturamento anual), principais forças (ex: tecnologia disruptiva, forte distribuição, marca consolidada)]
+*   **Setor de Interesse para Aquisição:** [Setor(es) onde busca o alvo, ex: Saúde digital, fintechs de crédito, agritechs focadas em IA, e-commerce de nicho]
+*   **Objetivos Estratégicos da Aquisição:** [Por que sua empresa deseja adquirir? Ex: Expansão de mercado geográfico, aquisição de nova tecnologia/propriedade intelectual, eliminação de concorrente, diversificação de portfólio, aquisição de base de clientes]
+
+**Critérios para o Alvo Ideal:**
+*   **Faturamento Mínimo/Máximo:** [Ex: R$10M a R$50M anuais]
+*   **Estágio de Desenvolvimento:** [Ex: Startup em crescimento, empresa estabelecida com estagnação, empresa madura]
+*   **Tecnologias Chave:** [Ex: Plataforma SaaS B2B, experiência em Machine Learning, patentes em biotecnologia, mobile-first]
+*   **Localização Geográfica:** [Ex: Brasil (especificar estados/regiões), América Latina, Global]
+*   **Market Share/Posicionamento:** [Ex: Líder em seu nicho, disruptor, com forte base de clientes fiéis]
+*   **Cultura Corporativa (opcional):** [Ex: Inovadora, ágil, focada em sustentabilidade]
+*   **Principais desafios/riscos a evitar em um alvo:** [Ex: Dívidas elevadas, equipe chave dependente de fundadores, tecnologia obsoleta, problemas regulatórios]
+
+**Instruções para o Agente IA:**
+1.  **Identificação de Potenciais Alvos:** Liste 3-5 empresas que se encaixem nos critérios, justificando cada uma.
+2.  **Pré-Due Diligence (Análise de Dados Públicos):** Para cada alvo, compile informações públicas relevantes, como:
+    *   Faturamento estimado (se disponível)
+    *   Rodadas de investimento e investidores
+    *   Notícias recentes (lançamentos, parcerias, problemas)
+    *   Presença online e engajamento (website, redes sociais, reviews)
+    *   Principais produtos/serviços e público-alvo
+    *   Estrutura de equipe (número de funcionários, perfil de liderança)
+3.  **Análise de Sinergias:** Para os 2 alvos mais promissores, descreva as potenciais sinergias com a sua empresa (ex: cross-selling, redução de custos, acesso a novos mercados/tecnologias, otimização de operações).
+4.  **Avaliação de Riscos e Desafios:** Para cada um desses 2 alvos, identifique os principais riscos e desafios da aquisição (ex: integração cultural, problemas regulatórios, alta dependência de poucos clientes, valuation elevado).
+5.  **Recomendação Estratégica:** Apresente uma recomendação final sobre qual alvo parece mais promissor, com base nos objetivos estratégicos e na análise de sinergias/riscos, e os próximos passos sugeridos.
+
+**Formato de Saída:**
+Um relatório estruturado com as seções acima, utilizando listas, marcadores e parágrafos claros.
+`,
+    tags: ['M&A', 'Estratégia Corporativa', 'Análise de Risco', 'Inteligência de Mercado'],
+  },
+  {
+    id: 'produtividade-assistente-decisao-complexa-ia',
+    title: 'Assistente IA para Análise e Estruturação de Decisões Complexas',
+    category: 'Produtividade',
+    description: 'Ajuda a desmistificar decisões de alto impacto, aplicando frameworks de decisão, identificando vieses cognitivos potenciais e sugerindo abordagens para analisar prós, contras e cenários futuros de forma objetiva.',
+    template: `Você é um assistente IA especializado em tomada de decisões, capaz de aplicar frameworks e identificar vieses cognitivos para estruturar e otimizar escolhas complexas.
+
+**A Decisão a Ser Tomada:**
+*   **Qual é a decisão complexa:** [Descreva a decisão que precisa ser tomada, ex: Mudar de carreira para uma área totalmente nova, investir em um imóvel, iniciar um negócio paralelo, aceitar uma proposta de emprego em outra cidade]
+*   **Contexto da decisão:** [Forneça detalhes sobre a situação atual e o pano de fundo da decisão, ex: Estou insatisfeito com minha carreira atual mas tenho estabilidade, preciso de um imóvel para minha família mas o mercado está incerto]
+*   **Opções iniciais consideradas (se houver):** [Liste as opções que você já pensou, ex: Opção A: Ficar no emprego atual; Opção B: Mudar para a carreira X; Opção C: Fazer um curso antes de decidir]
+*   **Principais preocupações ou incertezas:** [O que te impede de decidir? Quais são os maiores medos ou dúvidas? Ex: Risco financeiro, perder a segurança, tempo de adaptação, julgamento de outros]
+*   **Valores ou objetivos de longo prazo envolvidos:** [O que é importante para você no longo prazo? Ex: Liberdade financeira, realização pessoal, equilíbrio vida-trabalho, impacto social, crescimento profissional]
+*   **Partes interessadas e seus potenciais impactos:** [Quem mais será afetado por essa decisão? Ex: Família, sócios, equipe]
+*   **Prazo para a decisão:** [Quando você precisa tomar essa decisão?]
+
+**Instruções para o Assistente IA:**
+1.  **Reformulações da Decisão:** Apresente a decisão em questão de 2-3 maneiras diferentes para explorar ângulos distintos e garantir clareza.
+2.  **Identificação de Vieses Cognitivos:** Analise a descrição e identifique potenciais vieses cognitivos que possam estar influenciando sua perspectiva (ex: viés de confirmação, aversão à perda, viés de ancoragem, efeito manada). Explique cada viés e como ele pode estar presente.
+3.  **Sugestão de Frameworks de Decisão:** Proponha 2-3 frameworks de decisão relevantes (ex: Matriz de Eisenhower, Análise SWOT, Árvore de Decisão, Análise de Custo-Benefício, Teoria da Utilitária) e explique como cada um pode ser aplicado ao seu caso.
+4.  **Análise de Cenários:** Para as opções iniciais (ou opções que o IA possa inferir), detalhe um cenário positivo, um negativo e um realista para cada uma, considerando as preocupações e objetivos.
+5.  **Perguntas Desafiadoras:** Formule 5-7 perguntas que você deveria se fazer para aprofundar a análise e superar possíveis bloqueios mentais.
+6.  **Plano de Próximos Passos:** Sugira um plano de ação estruturado com etapas concretas para prosseguir com a análise e chegar a uma decisão informada.
+
+**Formato de Saída:**
+Um relatório claro e objetivo, dividido nas seções acima, com explicações didáticas e conselhos práticos.
+`,
+    tags: ['Tomada de Decisão', 'Análise de Risco', 'Vieses Cognitivos', 'Estratégia Pessoal'],
+  },
+  {
+    id: 'marketing-agente-funil-vendas-hiperpreditivo',
+    title: 'Agente IA de Otimização Hiperpreditiva para Funil de Vendas Multimodal',
+    category: 'Marketing',
+    description: 'Implementa um agente IA para analisar dados de engajamento em diversos canais (texto, vídeo, imagem) e prever o próximo passo do cliente no funil de vendas, sugerindo conteúdos, interações e ofertas hiperpersonalizadas para maximizar as taxas de conversão.',
+    template: `Você é um Agente IA de marketing hiperpreditivo, especializado em otimização de funil de vendas multimodal.
+Sua missão é analisar padrões de engajamento e dados para prever o comportamento do cliente e sugerir as melhores ações e conteúdos para cada etapa do funil.
+
+**Informações Essenciais:**
+*   **Público-alvo principal:** [Descreva seu público-alvo, ex: Millennials empreendedores interessados em tecnologia, Pequenas e Médias Empresas (PMEs) do setor de serviços, famílias com crianças pequenas em busca de educação financeira]
+*   **Produto/Serviço:** [Nome e breve descrição do produto/serviço a ser vendido]
+*   **Objetivo da Campanha:** [Meta principal, ex: Aumentar as vendas em 20% no próximo trimestre, reduzir o Custo de Aquisição de Cliente (CAC) em 15%, aumentar a taxa de conversão de lead para cliente em 10%]
+*   **Etapas Atuais do Funil de Vendas:** [Liste as etapas que seu funil já possui, ex: 1. Conscientização (visitante do site), 2. Interesse (download de e-book), 3. Consideração (participação em webinar), 4. Intenção (demonstração de produto), 5. Compra]
+
+**Dados Disponíveis para Análise (Hipótese):**
+*   **Fontes de Dados:** [Ex: Google Analytics, CRM (Salesforce/Hubspot), Plataformas de Automação de Marketing (RD Station/ActiveCampaign), Redes Sociais (Facebook, Instagram, LinkedIn, TikTok), E-mail Marketing, Pesquisas de satisfação]
+*   **Tipos de Dados de Engajamento Multimodal:** [Ex: Cliques em links, tempo de visualização de vídeo, comentários em posts, downloads de materiais ricos (PDFs, infográficos), aberturas de e-mail, interações em quiz interativos, menções em redes sociais, pesquisas no site]
+*   **Segmentação de Clientes:** [Ex: Leads frios, leads quentes, clientes recorrentes, clientes de alto valor, clientes em risco de churn]
+
+**Recursos de Conteúdo Multimodal Disponíveis:**
+*   **Formatos:** [Ex: Artigos de blog, vídeos curtos (Reels/TikTok), webinars, podcasts, carrosséis de Instagram, infográficos, e-books, depoimentos em vídeo, cases de estudo, templates interativos]
+*   **Tópicos/Temas:** [Ex: Dicas de produtividade, como usar o produto X, benefícios da tecnologia Y, tendências de mercado, histórias de sucesso]
+
+**Instruções para o Agente IA:**
+1.  **Mapeamento de Conteúdo por Etapa do Funil:** Para cada etapa do funil de vendas, sugira os tipos de conteúdo multimodal mais eficazes e os temas que ressoam melhor com o público naquele estágio.
+2.  **Estratégias de Hiperpersonalização Preditiva:** Descreva como o agente pode usar os dados de engajamento para prever o próximo passo do cliente. Para cada previsão, sugira uma ação de marketing (ex: e-mail personalizado, notificação push, anúncio retargeting, oferta especial) e o tipo de conteúdo mais apropriado.
+3.  **Otimização de Canais:** Indique quais canais são mais adequados para entregar cada tipo de conteúdo em cada etapa, considerando o público-alvo e o objetivo.
+4.  **Métricas de Acompanhamento:** Sugira as principais métricas e KPIs que devem ser monitorados para avaliar a eficácia das estratégias propostas.
+5.  **Recomendações de Testes A/B:** Proponha 2-3 ideias para testes A/B que poderiam refinar ainda mais a estratégia multimodal e preditiva.
+
+**Formato de Saída:**
+Um plano estratégico detalhado, com seções para cada etapa do funil, seguido de recomendações de hiperpersonalização, otimização de canais e métricas. Use listas, tabelas e exemplos claros.
+`,
+    tags: ['Funil de Vendas', 'Marketing Preditivo', 'Hiperpersonalização', 'Multimodal'],
+  },
+  {
+    id: 'education-tutor-ia-habilidades-emergentes',
+    title: 'Tutor IA Adaptativo para Habilidades Emergentes e Mercado de Trabalho',
+    category: 'Educação',
+    description: 'Desenvolve um plano de estudos dinâmico e um roteiro de carreira focado em habilidades emergentes (ex: IA, Data Science, Cibersegurança, ESG), adaptando o conteúdo e os recursos de aprendizagem com base no seu perfil, progresso e nas demandas do mercado.',
+    template: `Você é um Tutor IA adaptativo e especialista em habilidades emergentes e tendências do mercado de trabalho.
+Sua função é criar um plano de desenvolvimento personalizado e um roteiro de carreira para me capacitar em uma habilidade do futuro, adaptando-se ao meu progresso e às demandas do mercado.
+
+**Meu Perfil e Objetivos:**
+*   **Habilidade Emergente ou Área de Interesse:** [Qual habilidade ou área você quer desenvolver, ex: Machine Learning para Negócios, Cloud Computing (AWS/Azure/GCP), Cibersegurança em Ambientes Híbridos, Análise de Dados com Python, Estratégias ESG e Sustentabilidade, Desenvolvimento de Agentes IA]
+*   **Nível de Conhecimento Atual na Área:** [Iniciante, Intermediário, Avançado, ou "Nenhum"]
+*   **Experiência Profissional Atual:** [Sua área de atuação e quantos anos de experiência, ex: Gerente de Marketing com 5 anos, Desenvolvedor Júnior com 2 anos, Profissional de RH com 10 anos, Estudante universitário]
+*   **Estilo de Aprendizado Preferido:** [Visual (vídeos, infográficos), Auditivo (podcasts, aulas expositivas), Prático (projetos, hands-on), Leitura (livros, artigos), Misto]
+*   **Disponibilidade de Tempo Semanal para Estudo:** [Ex: 5 horas, 10-15 horas, 20+ horas]
+*   **Objetivo de Carreira:** [O que você busca com essa habilidade? Ex: Transição de carreira para a área X, promoção na empresa atual, empreender com nova tecnologia, especialização em um nicho, aumentar empregabilidade]
+*   **Recursos de Aprendizado Preferidos (opcional):** [Ex: Cursos online (Coursera, Udemy), Bootcamps, Livros, Mentorias, Projetos open-source, Certificações]
+*   **Região de Interesse para Oportunidades de Trabalho (opcional):** [Ex: São Paulo, Brasil, Global, Remoto]
+
+**Instruções para o Tutor IA:**
+1.  **Avaliação de Pré-requisitos:** Identifique quaisquer pré-requisitos fundamentais para a habilidade escolhida, e se meu nível atual é suficiente ou se preciso de um plano para cobri-los primeiro.
+2.  **Plano de Estudos Adaptativo (roadmap):** Crie um roteiro detalhado, dividido em módulos/etapas, para adquirir a habilidade. Para cada etapa, inclua:
+    *   **Tópicos Chave:** O que será aprendido.
+    *   **Recursos Sugeridos:** Cursos específicos (mencione plataformas), livros, artigos, tutoriais, podcasts, projetos práticos. Adapte ao meu estilo e recursos preferidos.
+    *   **Atividades Práticas:** Sugira exercícios, mini-projetos ou desafios para aplicar o conhecimento.
+    *   **Estimativa de Tempo:** Quanto tempo cada etapa deve levar, considerando minha disponibilidade.
+3.  **Roteiro de Carreira e Mercado:**
+    *   **Cargos Relevantes:** Liste 3-5 cargos que utilizam essa habilidade e que se alinham ao meu objetivo de carreira.
+    *   **Tendências de Mercado:** Quais são as tendências de demanda para essa habilidade nos próximos 3-5 anos?
+    *   **Próximos Passos Pós-Estudo:** Recomende ações para o pós-aprendizado (ex: Certificações, criação de portfólio, networking, preparação para entrevistas).
+4.  **Mecanismos de Adaptação:** Descreva como o plano pode ser adaptado (ex: acelerado se houver rápido progresso, ajustado se houver dificuldade em um tópico, atualizado com novas tendências).
+5.  **Métricas de Progresso:** Sugira como posso acompanhar meu próprio progresso e saber se estou no caminho certo.
+
+**Formato de Saída:**
+Um documento estruturado com o plano de estudos, roteiro de carreira, e as seções de avaliação e adaptação. Use listas, tabelas e formatação para clareza.
+`,
+    tags: ['Habilidades Futuras', 'Aprendizagem Adaptativa', 'Carreira', 'Educação Personalizada'],
+  },
 ];

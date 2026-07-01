@@ -13,6 +13,142 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-gpt-5-6-preview-disponibilidade-2026-07',
+    date: '2026-07',
+    title: 'OpenAI disponibiliza GPT-5.6 (Sol, Terra, Luna) em prévia limitada, com lançamento público previsto para julho',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'Em 26 de junho de 2026, a OpenAI lançou sua família de modelos GPT-5.6 (Sol, Terra e Luna) para um grupo seleto de 20 parceiros, com o lançamento público das versões Sol, Terra e Luna esperado até o final de julho de 2026.',
+    highlights: [
+      'Modelos GPT-5.6 (Sol, Terra, Luna) lançados em prévia limitada em 26 de junho de 2026 para 20 parceiros.',
+      'Lançamento público das três versões previsto para o final de julho de 2026.',
+      'Sol é o modelo principal, Terra é equilibrado e Luna é a opção mais rápida e acessível.',
+      'Modelos apresentam capacidades aprimoradas em cibersegurança e funcionalidades agenticas.',
+      'A disponibilidade foi escalonada a pedido do governo dos EUA.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'anthropic-claude-sonnet-5-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Anthropic lança Claude Sonnet 5, seu modelo de linguagem intermediário com foco em capacidades agenticas',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Em 1º de julho de 2026, a Anthropic lançou o Claude Sonnet 5, um modelo de linguagem grande de médio porte que supera seu antecessor, o Sonnet 4.6, e se torna a opção padrão nos níveis de consumo do chatbot Claude.',
+    highlights: [
+      'Claude Sonnet 5 lançado em 1º de julho de 2026 como o modelo Sonnet mais agentico até o momento.',
+      'Desempenho próximo ao do Opus 4.8, mas a preços mais baixos.',
+      'Melhorias significativas em raciocínio, uso de ferramentas, codificação e trabalho de conhecimento em comparação com o Sonnet 4.6.',
+      'Será o modelo padrão nos planos gratuito e Pro do chatbot Claude e disponível via API.',
+      'Preços de lançamento introdutórios de US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de tokens de saída até 31 de agosto de 2026.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'anthropic-claude-fable-mythos-5-restauracao-acesso-2026-07',
+    date: '2026-07',
+    title: 'Anthropic restaura acesso global aos modelos Claude Fable 5 e Mythos 5 após suspensão de controles de exportação',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'Em 1º de julho de 2026, o governo dos EUA suspendeu os controles de exportação sobre os modelos Claude Fable 5 e Mythos 5 da Anthropic, permitindo a restauração do acesso global ao Fable 5 e o retorno do Mythos 5 para organizações americanas verificadas.',
+    highlights: [
+      'Controles de exportação sobre Claude Fable 5 e Mythos 5 foram suspensos em 30 de junho de 2026.',
+      'Acesso global ao Fable 5 restaurado a partir de 1º de julho de 2026.',
+      'Acesso ao Mythos 5 restaurado para um grupo seleto de organizações americanas aprovadas pelo governo federal.',
+      'A suspensão ocorre após semanas de negociações sobre preocupações de cibersegurança.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-deepmind-gemini-3-5-pro-adiamento-2026-07',
+    date: '2026-07',
+    title: 'Google DeepMind adia lançamento do Gemini 3.5 Pro para julho de 2026',
+    developer: 'Google DeepMind',
+    category: 'Atualização',
+    description: 'O lançamento do próximo modelo de IA de ponta do Google, Gemini 3.5 Pro, foi adiado de junho para julho de 2026, enquanto a empresa dedica mais tempo para coletar feedback de testadores iniciais e aprimorar o modelo.',
+    highlights: [
+      'Lançamento do Gemini 3.5 Pro adiado para julho de 2026.',
+      'O adiamento visa aprimorar o modelo com base no feedback de testadores.',
+      'O novo modelo é esperado para ser melhor em tarefas de longo prazo e no funcionamento de agentes.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'meta-ai-brain2qwerty-v2-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Meta AI apresenta Brain2Qwerty v2, um sistema de IA não invasivo para conversão de atividade cerebral em texto',
+    developer: 'Meta AI',
+    category: 'Lançamento',
+    description: 'Em 1º de julho de 2026, a Meta revelou o Brain2Qwerty v2, um sistema de IA não invasivo que converte a atividade cerebral em texto com 61% de precisão de palavras, superando significativamente os métodos anteriores.',
+    highlights: [
+      'Lançamento do Brain2Qwerty v2 em 1º de julho de 2026.',
+      'Sistema de IA não invasivo que traduz atividade cerebral em texto.',
+      'Atinge 61% de precisão de palavras.',
+      'Pode auxiliar pessoas com lesões cerebrais ou paralisia na comunicação.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'meta-ai-meta-compute-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Meta lança Meta Compute, uma unidade de nuvem para vender excesso de capacidade de IA e acesso a modelos de IA',
+    developer: 'Meta AI',
+    category: 'Lançamento',
+    description: 'Em 1º de julho de 2026, a Meta lançou o Meta Compute, uma nova unidade de serviços em nuvem destinada a monetizar sua capacidade de computação de IA excedente e oferecer acesso hospedado a seus modelos de IA, incluindo os modelos Muse Spark, para clientes externos.',
+    highlights: [
+      'Meta Compute lançado em 1º de julho de 2026 para vender capacidade de IA e modelos hospedados.',
+      'Oferecerá acesso a modelos de IA hospedados na infraestrutura da Meta.',
+      'Competirá com provedores de nuvem focados em IA.',
+      'Parte de um investimento significativo em infraestrutura de IA da Meta.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'mistral-ocr-4-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Mistral AI lança OCR 4, um modelo de inteligência de documentos para 170 idiomas',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'Em julho de 2026, a Mistral AI lançou o Mistral OCR 4, um modelo de inteligência de documentos que cobre 170 idiomas e é executado como um contêiner auto-hospedado, ideal para equipes que não podem rotear documentos sensíveis através de APIs de nuvem de terceiros.',
+    highlights: [
+      'Mistral OCR 4 lançado como modelo de inteligência de documentos.',
+      'Suporta 170 idiomas.',
+      'Pode ser auto-hospedado, importante para documentos sensíveis.',
+      'Retorna caixas delimitadoras em nível de parágrafo, pontuações de confiança e classificação de blocos.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'deepseek-v4-lancamento-oficial-2026-07',
+    date: '2026-07',
+    title: 'DeepSeek lança oficialmente o V4 com janela de contexto de 1 milhão de tokens e nova precificação dinâmica de API',
+    developer: 'DeepSeek',
+    category: 'Lançamento',
+    description: 'A DeepSeek anunciou o lançamento oficial do DeepSeek V4 para meados de julho de 2026, trazendo aprimoramentos de recursos e desempenho, uma janela de contexto padrão de 1 milhão de tokens e um novo plano de preços de API com taxas de pico e fora de pico.',
+    highlights: [
+      'Lançamento oficial do DeepSeek V4 programado para meados de julho de 2026.',
+      'Inclui janela de contexto de 1 milhão de tokens em toda a linha de modelos.',
+      'Oferece desempenho aprimorado em execução de tarefas baseadas em agentes, raciocínio matemático e geração de código.',
+      'Introduz nova precificação de API com taxas dobradas durante horários de pico.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-4-5-beta-2026-06',
+    date: '2026-06',
+    title: 'xAI lança Grok 4.5 em beta privado para SpaceX e Tesla',
+    developer: 'xAI (Grok)',
+    category: 'Lançamento',
+    description: 'Em 28 de junho de 2026, Elon Musk anunciou que o Grok 4.5, o mais novo modelo da xAI construído sobre a fundação V9 de 1,5 trilhão de parâmetros, entrou em beta privado na SpaceX e Tesla.',
+    highlights: [
+      'Grok 4.5 lançado em beta privado em 28 de junho de 2026.',
+      'Disponível inicialmente apenas para SpaceX e Tesla.',
+      'Construído na fundação V9 de 1,5 trilhão de parâmetros da xAI.',
+      'Avaliações iniciais indicam desempenho próximo ou superior ao Claude Opus.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'google-ai-mode-search-generative-ui-free-2026',
     date: '2026-06',
     title: 'Google disponibiliza recursos visuais de UI Generativa no Modo IA do Search gratuitamente',

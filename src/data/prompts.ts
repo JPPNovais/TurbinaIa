@@ -6711,4 +6711,152 @@ Um documento estruturado com o plano de estudos, roteiro de carreira, e as seç�
 `,
     tags: ['Habilidades Futuras', 'Aprendizagem Adaptativa', 'Carreira', 'Educação Personalizada'],
   },
+  {
+    id: 'ia-design-multiagente-cadeia-suprimentos',
+    title: 'Design de Sistema Multi-Agente para Otimização da Cadeia de Suprimentos',
+    category: 'IA & Automação',
+    description: 'Crie um design conceitual para um sistema multi-agente que otimiza a cadeia de suprimentos, identificando papéis, interações e fluxos de dados entre agentes.',
+    template: `Você é um especialista em arquitetura de sistemas multi-agente e otimização de cadeias de suprimentos.
+Minha empresa, [Nome da Empresa], atua no setor de [Setor da Empresa, ex: varejo de eletrônicos, manufatura automotiva].
+Nosso principal desafio na cadeia de suprimentos é [Desafio Principal, ex: reduzir custos de estoque, melhorar a pontualidade das entregas, aumentar a resiliência a interrupções].
+Temos os seguintes nós críticos na nossa cadeia de suprimentos: [Nós Críticos da Cadeia, ex: fornecedores de matéria-prima, fábrica de produção, centro de distribuição, varejo].
+Os dados que temos disponíveis são: [Tipos de Dados Disponíveis, ex: histórico de vendas, dados de estoque em tempo real, prazos de entrega de fornecedores, capacidade de produção, dados de transporte, previsões de demanda].
+
+Com base nessas informações, crie um design conceitual para um sistema multi-agente que otimize nossa cadeia de suprimentos. Para cada agente, você deve definir:
+
+1.  **Nome do Agente:** Um nome descritivo.
+2.  **Papel e Objetivo:** Qual a responsabilidade principal e o que ele busca otimizar.
+3.  **Capacidades Principais:** Quais ações ele pode realizar (ex: prever demanda, negociar preços, roteirizar entregas, alertar sobre atrasos).
+4.  **Dados de Entrada:** Que informações ele consome.
+5.  **Dados de Saída/Decisões:** Que informações ele produz ou que decisões ele toma.
+6.  **Interações com Outros Agentes:** Com quais outros agentes ele se comunica e para qual finalidade.
+7.  **Mecanismo de Coordenação/Consenso (se aplicável):** Como os agentes resolvem conflitos ou chegam a um acordo para decisões globais.
+
+Comece pelos agentes mais críticos e detalhe a arquitetura de interação entre eles.`,
+    tags: ['multi-agente', 'cadeia de suprimentos', 'otimização', 'arquitetura IA'],
+  },
+  {
+    id: 'education-agente-conteudo-multimodal-adaptativo',
+    title: 'Design de Agente IA para Conteúdo Educacional Multimodal Adaptativo',
+    category: 'Educação',
+    description: 'Projete um agente de IA capaz de personalizar rotas de aprendizagem e adaptar o formato do conteúdo (texto, vídeo, áudio, interativo) com base no perfil e progresso do aluno.',
+    template: `Você é um especialista em design instrucional e inteligência artificial adaptativa.
+Meu objetivo é criar um agente de IA para personalizar a experiência de aprendizado para [Público-alvo, ex: estudantes universitários de engenharia, profissionais de marketing em transição de carreira, crianças do ensino fundamental].
+O conteúdo a ser adaptado é sobre [Tópico principal do conteúdo, ex: Fundamentos de IA, História do Brasil, Programação Python Avançada].
+Os formatos de conteúdo que temos disponíveis para o agente utilizar são: [Formatos disponíveis, ex: artigos de texto, videoaulas, podcasts, infográficos interativos, simuladores, quizzes].
+Os dados que podemos coletar do aluno incluem: [Tipos de dados do aluno, ex: histórico de desempenho em quizzes, tempo gasto em cada recurso, estilo de aprendizagem preferencial (declarado ou inferido), feedback direto, conhecimento prévio avaliado].
+
+Crie um design para este agente de IA, detalhando os seguintes componentes:
+
+1.  **Módulo de Perfil do Aluno:**
+    *   Quais dados ele coleta?
+    *   Como ele infere o estilo de aprendizagem, nível de conhecimento e preferências?
+    *   Como ele mantém o perfil atualizado?
+
+2.  **Módulo de Avaliação e Progresso:**
+    *   Como ele mede o progresso e a compreensão do aluno?
+    *   Quais métricas são usadas para determinar a necessidade de adaptação?
+
+3.  **Módulo de Recomendação de Conteúdo e Rota:**
+    *   Como ele seleciona o próximo tópico ou recurso?
+    *   Como ele adapta a dificuldade e profundidade do material?
+    *   Como ele garante uma progressão lógica e eficaz?
+
+4.  **Módulo de Adaptação Multimodal:**
+    *   Como ele decide qual formato de conteúdo (texto, vídeo, áudio, etc.) é mais adequado para o aluno naquele momento e para aquele conceito?
+    *   Quais regras ou modelos ele utiliza para essa decisão (ex: aluno visual prefere vídeo, conceito complexo precisa de simulador)?
+    *   Como ele equilibra a preferência do aluno com a eficácia comprovada do formato para o tópico?
+
+5.  **Interações com o Usuário:**
+    *   Como o agente se comunica com o aluno para fornecer feedback, sugerir caminhos ou solicitar preferências?
+
+Inclua um exemplo de cenário de uso onde um aluno com [Característica do Aluno, ex: dificuldade em conceitos visuais] está aprendendo [Conceito específico] e como o agente adaptaria o conteúdo.`,
+    tags: ['educação', 'personalização', 'multimodal', 'agente IA', 'aprendizagem adaptativa'],
+  },
+  {
+    id: 'dev-agente-refactor-seguranca-owasp',
+    title: 'Design de Agente IA para Refatoração de Código Orientada à Segurança (OWASP Top 10)',
+    category: 'Desenvolvimento',
+    description: 'Desenvolva o design de um agente de IA capaz de identificar vulnerabilidades de segurança (com base no OWASP Top 10) em um código-fonte e propor refatorações para remediá-las, com explicações.',
+    template: `Você é um arquiteto de software e especialista em segurança da informação, com foco no OWASP Top 10.
+Minha equipe de desenvolvimento precisa de um agente de IA que auxilie na refatoração de código para aumentar sua segurança.
+A linguagem de programação principal que utilizamos é [Linguagem de Programação, ex: Python, Java, JavaScript (Node.js/React), C#].
+O tipo de aplicação que estamos desenvolvendo é [Tipo de Aplicação, ex: API RESTful para e-commerce, aplicação web de gestão interna, microserviço de processamento de dados].
+O agente deve focar nas vulnerabilidades mais críticas do OWASP Top 10 que são relevantes para [Tipo de Aplicação] em [Linguagem de Programação].
+
+Crie um design conceitual para este agente de IA, detalhando os seguintes módulos e funcionalidades:
+
+1.  **Módulo de Análise Estática de Código (SAST):**
+    *   Como ele varreria o código-fonte?
+    *   Quais padrões ou "assinaturas" ele procuraria para identificar vulnerabilidades do OWASP Top 10 (ex: Injeção SQL, XSS, Autenticação Quebrada, Desserialização Insegura, etc.)?
+    *   Como ele lidaria com falsos positivos?
+
+2.  **Módulo de Contextualização e Priorização:**
+    *   Como ele avaliaria a severidade e o impacto potencial de uma vulnerabilidade no contexto da aplicação?
+    *   Como ele priorizaria as refatorações?
+
+3.  **Módulo de Geração de Refatoração Segura:**
+    *   Como ele geraria o código refatorado para remediar a vulnerabilidade?
+    *   Ele ofereceria múltiplas opções de refatoração?
+    *   Como ele garantiria que a refatoração proposta não introduza novos bugs ou vulnerabilidades?
+
+4.  **Módulo de Explicação e Aprendizagem:**
+    *   Como ele explicaria a vulnerabilidade encontrada, o risco associado e os princípios de segurança por trás da refatoração proposta?
+    *   Como ele poderia aprender com as interações do desenvolvedor (aprovação/rejeição de sugestões)?
+
+5.  **Integração com Ferramentas de Desenvolvimento (Opcional):**
+    *   Como ele se integraria a um IDE ou pipeline de CI/CD para fornecer feedback em tempo real?
+
+Dê um exemplo detalhado de uma vulnerabilidade específica do OWASP Top 10 (ex: Injeção SQL) e como o agente lidaria com ela em [Linguagem de Programação], desde a detecção até a proposta de refatoração e explicação.`,
+    tags: ['segurança de código', 'refatoração', 'OWASP', 'agente IA', 'desenvolvimento'],
+  },
+  {
+    id: 'finance-agente-otimizacao-aposentadoria-multiperiodo',
+    title: 'Design de Agente IA para Otimização de Alocação de Ativos para Aposentadoria',
+    category: 'Finanças',
+    description: 'Desenvolva um agente de IA capaz de analisar o perfil de risco do usuário, metas financeiras e condições de mercado para otimizar a alocação de ativos em um plano de aposentadoria ao longo do tempo.',
+    template: `Você é um planejador financeiro especializado em inteligência artificial e otimização de portfólios de longo prazo.
+Meu objetivo é criar um agente de IA que ajude indivíduos a planejar e otimizar a alocação de seus ativos para a aposentadoria.
+O perfil do usuário que o agente deve considerar inclui:
+*   Idade atual: [Idade Atual] anos
+*   Idade desejada para aposentadoria: [Idade Aposentadoria] anos
+*   Capital inicial disponível para investimento: R$ [Capital Inicial]
+*   Contribuição mensal planejada: R$ [Contribuicao Mensal]
+*   Rendimento anual desejado na aposentadoria (em valores atuais): R$ [Rendimento Desejado]
+*   Aversão a risco (Baixa, Moderada, Alta): [Aversao a Risco]
+*   Outras fontes de renda futura (ex: Previdência Social, aluguéis): [Outras Rendas Futuras, se houver]
+*   Conhecimentos de investimento: [Nivel Conhecimento Investimento, ex: Iniciante, Intermediário, Avançado]
+
+O agente deve ter acesso a dados de mercado em tempo real (ou simulados para o propósito do design) sobre:
+*   Classes de ativos (ex: ações, renda fixa, fundos imobiliários, multimercado, criptomoedas)
+*   Retornos históricos e volatilidade
+*   Inflação e taxas de juros
+*   Cenários econômicos futuros (ex: otimista, pessimista, estável)
+
+Crie um design conceitual para este agente de IA, detalhando os seguintes módulos:
+
+1.  **Módulo de Perfil e Metas:**
+    *   Como o agente coletaria e interpretaria o perfil de risco, horizonte de investimento e metas financeiras do usuário?
+    *   Como ele ajustaria esses parâmetros ao longo do tempo (ex: à medida que a idade de aposentadoria se aproxima)?
+
+2.  **Módulo de Análise e Previsão de Mercado:**
+    *   Como ele processaria dados de mercado e cenários econômicos?
+    *   Que técnicas de previsão (ex: Monte Carlo, séries temporais) ele utilizaria para simular retornos e riscos futuros das classes de ativos?
+
+3.  **Módulo de Otimização de Portfólio (Multi-período):**
+    *   Como ele determinaria a alocação de ativos ideal (percentual em cada classe) para cada período (ex: a cada 5 anos) até a aposentadoria?
+    *   Quais restrições (ex: liquidez, impostos, aversão a risco) ele consideraria na otimização?
+    *   Como ele adaptaria a alocação em resposta a mudanças no perfil do usuário ou nas condições de mercado?
+
+4.  **Módulo de Rebalanciamento e Ajuste:**
+    *   Com que frequência ele recomendaria o rebalanciamento do portfólio?
+    *   Como ele sugeriria ajustes na contribuição mensal ou nas metas, se necessário, para atingir o objetivo?
+
+5.  **Módulo de Explicação e Educação:**
+    *   Como ele explicaria as recomendações de investimento de forma clara e acessível, mesmo para um usuário com [Nivel Conhecimento Investimento] conhecimento?
+    *   Como ele educaria o usuário sobre os riscos e benefícios das diferentes alocações?
+
+Forneça um exemplo de uma recomendação de alocação inicial para [Idade Atual] anos e como ela poderia ser ajustada quando o usuário estiver com [Idade Exemplo Proximo Periodo, ex: 50] anos, considerando uma mudança nas condições de mercado ou no perfil de risco.`,
+    tags: ['finanças pessoais', 'aposentadoria', 'otimização', 'agente IA', 'investimento'],
+  },
 ];

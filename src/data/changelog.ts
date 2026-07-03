@@ -13,6 +13,33 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-deepmind-nano-banana-2-lite-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Google DeepMind lança Nano Banana 2 Lite para produção de mídias generativas',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Em 2 de julho de 2026, o Google DeepMind lançou o Nano Banana 2 Lite, um novo sistema de inteligência artificial focado em imagens que acelera os fluxos de trabalho na produção de mídias generativas para criadores e desenvolvedores.',
+    highlights: [
+      'Lançado em 2 de julho de 2026, focado em imagens generativas.',
+      'Prioriza rapidez e redução de custos operacionais, gerando quadros a partir de comandos de texto em cerca de quatro segundos.',
+      'Disponível no AI Studio da companhia e via API do ecossistema Gemini.',
+      'O modelo mantém boa aderência aos comandos inseridos e preserva a consistência dos elementos visuais.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'mistral-devstral-2-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Mistral AI lança Devstral 2, seu novo modelo de codificação',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'A Mistral AI lançou o Devstral 2 em 25 de julho de 2026, um modelo de linguagem especializado em codificação.',
+    highlights: [
+      'Devstral 2, um modelo de codificação, foi lançado em 25 de julho de 2026.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'openai-gpt-5-6-preview-disponibilidade-2026-07',
     date: '2026-07',
     title: 'OpenAI disponibiliza GPT-5.6 (Sol, Terra, Luna) em prévia limitada, com lançamento público previsto para julho',

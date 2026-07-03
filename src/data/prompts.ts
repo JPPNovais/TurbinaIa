@@ -6859,4 +6859,146 @@ Crie um design conceitual para este agente de IA, detalhando os seguintes módul
 Forneça um exemplo de uma recomendação de alocação inicial para [Idade Atual] anos e como ela poderia ser ajustada quando o usuário estiver com [Idade Exemplo Proximo Periodo, ex: 50] anos, considerando uma mudança nas condições de mercado ou no perfil de risco.`,
     tags: ['finanças pessoais', 'aposentadoria', 'otimização', 'agente IA', 'investimento'],
   },
+  {
+    id: 'ia-agente-otimizacao-custos-nuvem',
+    title: 'Design de Agente IA para Otimização Contínua de Custos em Nuvem',
+    category: 'IA & Automação',
+    description: 'Crie um design detalhado para um agente de IA autônomo que monitora, analisa e sugere otimizações de custos em infraestruturas de nuvem, considerando padrões de uso e contratos.',
+    template: `Você é um especialista em arquitetura de nuvem e design de agentes de IA. Crie um prompt para um agente autônomo focado em otimização contínua de custos em nuvem.
+
+**Nome do Agente:** [Nome sugestivo para o Agente, ex: CloudCostMaster]
+**Provedor de Nuvem Principal:** [AWS, Azure, Google Cloud, Múltiplos]
+**Objetivo Principal:** Reduzir os gastos com nuvem em [percentual desejado]% em [período de tempo], mantendo ou melhorando o desempenho e a resiliência.
+**Métricas de Desempenho-Chave (KPMs):**
+- Economia mensal percentual
+- Utilização de recursos (CPU, RAM, Armazenamento)
+- Custo por unidade de serviço (ex: por GB de dados, por transação)
+- Tempo de inatividade não planejado (SLA)
+- Consumo de energia (opcional, para ESG)
+
+**Componentes do Agente (detalhar cada um):**
+1.  **Módulo de Coleta de Dados:** Quais fontes de dados ele deve integrar? (Ex: APIs de billing do provedor, logs de uso, monitoramento de performance, inventário de recursos).
+2.  **Módulo de Análise e Padrões:** Que tipos de análise ele deve realizar? (Ex: Análise de desperdício, identificação de recursos ociosos, tendências de uso, análise de picos/vales, comparação com benchmarks de mercado).
+3.  **Módulo de Sugestão de Otimização:** Que tipos de recomendações o agente deve gerar? (Ex: Redimensionamento de instâncias, compra de instâncias reservadas/spot, desligamento de recursos não utilizados, otimização de storage, escolha de regiões mais baratas, automação de escalonamento).
+4.  **Módulo de Execução/Automação (opcional):** Em que nível o agente pode automatizar as otimizações? (Ex: Sugerir ações, gerar scripts de automação, executar ações após aprovação, executar ações autonomamente para baixo risco).
+5.  **Módulo de Monitoramento Pós-Otimização:** Como ele deve monitorar o impacto das mudanças? (Ex: Acompanhamento de KPMs, alertas para desvios, validação de economia).
+6.  **Módulo de Geração de Relatórios:** Que tipos de relatórios ele deve gerar e para quem? (Ex: Relatórios executivos, técnicos, alertas para equipes de DevOps/Engenharia).
+
+**Considerações Adicionais:**
+-   **Frequência de Análise:** [Diária, Semanal, Contínua]
+-   **Integrações:** [Ferramentas de CI/CD, Slack, Jira, CMDB]
+-   **Restrições/Políticas:** [Políticas de segurança, compliance, orçamento máximo para cada serviço].
+-   **Recursos Críticos:** Quais recursos nunca devem ser desligados ou redimensionados sem intervenção humana?
+
+Gere o design completo do agente, incluindo um fluxo de trabalho de alto nível e as principais características de cada módulo.`,
+    tags: ['IA Agente', 'Custos Nuvem', 'Otimização', 'Automação'],
+  },
+  {
+    id: 'marketing-lancamento-multimodal-adaptativo',
+    title: 'Campanha de Lançamento de Produto com IA Multimodal Adaptativa',
+    category: 'Marketing',
+    description: 'Crie um plano de campanha de marketing multimodal para um novo produto, com estratégias de conteúdo adaptativas geradas por IA, otimizando o engajamento e a conversão em tempo real.',
+    template: `Você é um estrategista de marketing digital e especialista em IA generativa multimodal. Crie um plano de campanha de lançamento completo para um novo produto/serviço, com foco na geração de conteúdo adaptativo e multimodal.
+
+**Nome do Produto/Serviço:** [Nome do Produto/Serviço]
+**Público-Alvo Principal:** [Ex: Desenvolvedores Backend, Pequenos Empresários, Famílias Jovens]
+**Proposta de Valor Única (PVU):** [O que torna seu produto único e valioso?]
+**Objetivo Principal da Campanha:** [Ex: Atingir 10.000 cadastros em 30 dias, Gerar 500 leads qualificados, Aumentar reconhecimento da marca em 20%]
+**Canais de Distribuição Prioritários:** [Instagram, LinkedIn, YouTube, Email Marketing, Blog, Anúncios Pagos (Google/Meta), TikTok]
+
+**Fases da Campanha (detalhar conteúdo multimodal adaptativo para cada fase):**
+1.  **Awareness (Pré-lançamento - [Número] semanas):**
+    *   **Objetivo:** Gerar curiosidade e antecipação.
+    *   **Ideias de Conteúdo Multimodal (IA deve gerar):**
+        *   [Imagens/Vídeos curtos animados com teasers, legendas envolventes]
+        *   [Posts de blog curtos com infográficos interativos]
+        *   [Enquetes e quizzes em Stories com resultados dinâmicos]
+    *   **Adaptação IA:** Como a IA deve ajustar o conteúdo com base no engajamento inicial (ex: ajuste de tom, formato de imagem, horário de postagem)?
+
+2.  **Engajamento (Lançamento - [Número] semanas):**
+    *   **Objetivo:** Apresentar o produto em profundidade, educar sobre os benefícios.
+    *   **Ideias de Conteúdo Multimodal (IA deve gerar):**
+        *   [Vídeos explicativos longos para YouTube/site]
+        *   [Carrosséis de Instagram com casos de uso e estatísticas]
+        *   [Sequências de e-mail personalizadas com GIFs e vídeos incorporados]
+        *   [Webinars/lives com roteiros dinâmicos baseados em perguntas frequentes]
+    *   **Adaptação IA:** Como a IA deve refinar as mensagens com base nas interações (ex: Destaque de features mais populares, respostas a objeções comuns, personalização de CTA)?
+
+3.  **Conversão (Pós-lançamento - [Número] semanas):**
+    *   **Objetivo:** Impulsionar vendas, inscrições ou aquisições.
+    *   **Ideias de Conteúdo Multimodal (IA deve gerar):**
+        *   [Depoimentos em vídeo de clientes com variações de texto para diferentes segmentos]
+        *   [Anúncios dinâmicos com imagens e textos personalizados para retargeting]
+        *   [Materiais ricos (eBooks, whitepapers) com elementos visuais gerados pela IA]
+    *   **Adaptação IA:** Como a IA deve otimizar os caminhos de conversão (ex: Teste A/B de CTAs, ajuste de landing page, criação de ofertas personalizadas)?
+
+**Requisitos para o Agente de IA Multimodal:**
+-   **Capacidade de Geração:** Texto, Imagens (estáticas e animadas), Roteiros de Vídeo/Áudio.
+-   **Capacidade de Análise:** Sentiment analysis, engajamento por canal, taxas de conversão, dados demográficos.
+-   **Capacidade de Adaptação:** Alterar parâmetros de geração de conteúdo (tom, estilo, formato, foco da mensagem) em tempo real.
+-   **Relatórios:** Gerar relatórios de performance com insights acionáveis para [equipe de marketing, C-level].
+
+Gere o plano da campanha detalhado, incluindo exemplos de prompts para o agente de IA para cada tipo de conteúdo e fase.`,
+    tags: ['Marketing', 'Multimodal', 'Lançamento', 'Conteúdo Adaptativo'],
+  },
+  {
+    id: 'education-agente-mentoria-softskills-ia',
+    title: 'Design de Agente IA para Mentoria e Desenvolvimento de Soft Skills',
+    category: 'Educação',
+    description: 'Crie um design detalhado para um agente de IA que atua como mentor virtual, oferecendo treinamento e simulações interativas para o desenvolvimento de soft skills essenciais.',
+    template: `Você é um especialista em educação corporativa e design instrucional, com profundo conhecimento em IA. Desenvolva um design completo para um agente de IA focado em mentoria e desenvolvimento de soft skills.
+
+**Nome do Agente:** [Nome sugestivo para o Agente, ex: SkillWise AI, EmpatiaCoach]
+**Soft Skill(s) Foco:** [Ex: Comunicação Assertiva, Liderança Empática, Resolução de Conflitos, Feedback Construtivo]
+**Público-Alvo:** [Ex: Líderes de Equipe, Novos Colaboradores, Profissionais de Vendas, Estudantes Universitários]
+**Objetivo Principal:** Capacitar o usuário a [descrever o resultado mensurável da soft skill, ex: "conduzir reuniões mais produtivas", "resolver disputas com clientes de forma satisfatória"].
+
+**Componentes do Agente (detalhar cada um):**
+1.  **Módulo de Avaliação Inicial:** Como o agente deve diagnosticar o nível atual da soft skill do usuário? (Ex: Questionários de autoavaliação, cenários com múltiplas escolhas, análise de transcrições de texto/áudio).
+2.  **Módulo de Conteúdo e Explicação:** Como o agente deve fornecer o conhecimento teórico? (Ex: Micro-aulas interativas, vídeos curtos, artigos, exemplos práticos de aplicação).
+3.  **Módulo de Simulação Interativa:** Crie um framework para simulações realistas.
+    *   **Tipo de Simulação:** [Role-playing textual, simulações com avatares visuais, análise de casos de estudo].
+    *   **Contexto dos Cenários:** [Ex: Reunião difícil com um cliente, feedback para um colega, negociação salarial, apresentação em público].
+    *   **Feedback do Agente:** Como o agente deve fornecer feedback construtivo durante e após a simulação? (Ex: Pontos de melhoria específicos, sugestões de frases, análise de tom de voz, métricas de desempenho na simulação).
+4.  **Módulo de Coaching e Reforço:** Como o agente deve acompanhar o progresso e reforçar o aprendizado? (Ex: Plano de ação personalizado, exercícios práticos para o dia a dia, lembretes, sessões de revisão periódicas).
+5.  **Módulo de Personalização:** Como o agente se adapta ao estilo de aprendizado e ritmo do usuário? (Ex: Ritmo adaptativo, escolha de formato de conteúdo preferencial, ajuste da dificuldade dos cenários).
+6.  **Módulo de Relatórios de Progresso:** Que métricas e relatórios o agente deve fornecer ao usuário? (Ex: Gráfico de evolução da soft skill, áreas de força/fraqueza, recomendação de próximos passos).
+
+**Considerações Adicionais:**
+-   **Integrações:** [Plataformas LMS, Calendário, Ferramentas de comunicação interna].
+-   **Abordagem Pedagógica:** [Andragogia, Aprendizagem Experiencial, Gamificação].
+-   **Ética:** Como garantir que o feedback seja imparcial, construtivo e sensível às emoções do usuário?
+
+Gere o design completo do agente, incluindo um exemplo de cenário de simulação para uma das soft skills escolhidas, e como o agente interagiria.`,
+    tags: ['Educação', 'Soft Skills', 'Mentoria IA', 'Simulação'],
+  },
+  {
+    id: 'negocios-agente-otimizacao-portfolio-estrategico-ia',
+    title: 'Design de Agente IA para Otimização Estratégica de Portfólio de Produtos/Serviços',
+    category: 'Negócios',
+    description: 'Crie o design para um agente de IA que analisa continuamente o portfólio de produtos/serviços de uma empresa, sugerindo otimizações estratégicas com base em dados de mercado, rentabilidade e alinhamento estratégico.',
+    template: `Você é um consultor de estratégia de negócios e especialista em IA para tomada de decisões complexas. Desenvolva um design detalhado para um agente de IA autônomo focado na otimização estratégica do portfólio de produtos e serviços de uma empresa.
+
+**Nome do Agente:** [Nome sugestivo para o Agente, ex: PortfolioStrategist, MarketMaven AI]
+**Tipo de Empresa:** [Startup SaaS, Manufatura, Varejo, Serviços Financeiros]
+**Portfólio de Foco:** [Ex: Linha de produtos "X", Todos os serviços digitais, Portfólio completo].
+**Objetivo Estratégico Principal:** [Ex: Maximizar rentabilidade do portfólio em 15% nos próximos 2 anos, Aumentar a participação de mercado em 10% no segmento Y, Reduzir o churn de produtos em 5%].
+
+**Componentes do Agente (detalhar cada um):**
+1.  **Módulo de Coleta de Dados:** Quais fontes de dados internas e externas o agente deve integrar? (Ex: Dados de vendas e rentabilidade, feedback de clientes (NPS, reviews), dados de uso de produtos, pesquisa de mercado, análise de concorrentes, tendências tecnológicas, relatórios de analistas, dados macroeconômicos).
+2.  **Módulo de Análise de Desempenho do Portfólio:** Que tipos de análises ele deve realizar? (Ex: Matriz BCG, Curva de Valor, Análise de Ciclo de Vida do Produto, Análise de Custo-Benefício, Análise de Sensibilidade, Gaps no Portfólio, Pontos de Saturação).
+3.  **Módulo de Previsão e Tendências:** Como o agente deve prever o futuro do portfólio e do mercado? (Ex: Previsão de demanda, identificação de tendências emergentes, antecipação de obsolescência de produtos, impacto de eventos externos).
+4.  **Módulo de Sugestão Estratégica:** Que tipos de recomendações o agente deve gerar para otimização? (Ex: Lançamento de novos produtos/serviços (com base em gaps), descontinuação de produtos/serviços, realocação de recursos (P&D, marketing), ajustes de precificação, parcerias estratégicas, diversificação de mercado, melhorias em produtos existentes).
+5.  **Módulo de Avaliação de Risco:** Como o agente deve avaliar os riscos associados às recomendações? (Ex: Riscos de mercado, riscos operacionais, riscos financeiros, riscos de reputação).
+6.  **Módulo de Geração de Cenários:** O agente deve ser capaz de criar e comparar múltiplos cenários estratégicos. Como isso funcionaria? (Ex: "E se" com diferentes premissas de mercado, impacto de decisões concorrentes).
+7.  **Módulo de Interface e Relatórios:** Como o agente deve comunicar suas análises e recomendações? (Ex: Dashboards interativos, relatórios executivos com justificativas baseadas em dados, alertas para mudanças críticas).
+
+**Considerações Adicionais:**
+-   **Frequência de Atualização:** [Diária, Semanal, Mensal, Contínua]
+-   **Tomada de Decisão:** O agente deve ser puramente consultivo ou pode ter um nível de automação para certas decisões de baixo risco?
+-   **Alinhamento com Missão/Visão:** Como garantir que as recomendações do agente estejam alinhadas com a estratégia geral e valores da empresa?
+
+Gere o design completo do agente, incluindo um fluxo de trabalho de alto nível e as principais características de cada módulo.`,
+    tags: ['Negócios', 'Estratégia IA', 'Portfólio', 'Otimização'],
+  },
 ];

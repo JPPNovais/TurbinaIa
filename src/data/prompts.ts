@@ -7001,4 +7001,165 @@ Gere o design completo do agente, incluindo um exemplo de cenário de simulaçã
 Gere o design completo do agente, incluindo um fluxo de trabalho de alto nível e as principais características de cada módulo.`,
     tags: ['Negócios', 'Estratégia IA', 'Portfólio', 'Otimização'],
   },
+  {
+    id: 'produtividade-otimizador-rotina-ia',
+    title: 'Otimizador de Rotina Diária com IA',
+    category: 'Produtividade',
+    description: 'Um agente de IA que cria e otimiza sua rotina diária, equilibrando tarefas de alta concentração, atividades de baixa energia e pausas, com base em seus objetivos e padrões de energia.',
+    template: `Atue como um agente de otimização de rotina diária com IA, especialista em produtividade e bem-estar. Meu objetivo é criar uma rotina diária otimizada que maximiza o foco e a energia, com base nas minhas prioridades e no meu perfil.
+
+Aqui estão os dados sobre o meu dia e minhas preferências:
+
+**1. Objetivos Principais do Dia:**
+- [Ex: Finalizar o relatório de vendas]
+- [Ex: Preparar apresentação para reunião de segunda]
+- [Ex: Estudar por 1 hora]
+
+**2. Tarefas Essenciais e Estimativa de Tempo (Prioridade Alta):**
+- [Tarefa 1: Descrição; Tempo estimado (min); Nível de energia exigido (Alto/Médio/Baixo)]
+- [Tarefa 2: Descrição; Tempo estimado (min); Nível de energia exigido (Alto/Médio/Baixo)]
+- [Adicione mais tarefas conforme necessário]
+
+**3. Tarefas de Baixa Prioridade / Flexíveis:**
+- [Tarefa 1: Descrição; Tempo estimado (min)]
+- [Tarefa 2: Descrição; Tempo estimado (min)]
+- [Adicione mais tarefas conforme necessário]
+
+**4. Horário de Início do Dia de Trabalho/Atividades:** [Ex: 08:00]
+**5. Horário de Término do Dia de Trabalho/Atividades:** [Ex: 18:00]
+**6. Padrões de Energia Pessoal (como você se sente geralmente durante o dia):**
+- Manhã ([Ex: Alta concentração, melhor para tarefas complexas])
+- Almoço/Pós-Almoço ([Ex: Baixa energia, ideal para tarefas administrativas])
+- Tarde ([Ex: Energia moderada, bom para reuniões ou follow-ups])
+
+**7. Preferências de Pausas:**
+- [Ex: Preferência por pausas curtas (10-15 min) a cada 90 minutos de trabalho focado]
+- [Ex: Uma pausa maior (60 min) para almoço]
+- [Ex: Incluir atividade física leve (30 min) na rotina]
+
+**8. Eventos Fixos na Agenda (Reuniões, Compromissos):**
+- [Ex: 10:00-11:00 - Reunião de Equipe]
+- [Ex: 13:00-14:00 - Consulta Médica]
+
+Com base nessas informações, crie um plano de rotina diária detalhado. Para cada bloco de tempo, inclua:
+- O horário
+- A tarefa ou atividade (incluindo pausas e refeições)
+- O nível de energia associado à atividade (para alinhar com meus padrões)
+- Uma breve justificativa de otimização (Ex: "Tarefa de alta energia alocada no pico de energia da manhã").
+
+A rotina deve priorizar os "Objetivos Principais do Dia" e as "Tarefas Essenciais", alocando-as nos períodos de energia mais adequados.`,
+    tags: ['rotina diária', 'produtividade pessoal', 'gestão tempo', 'foco'],
+  },
+  {
+    id: 'negocios-agente-risco-geopolitico-ia',
+    title: 'Agente de Análise de Risco Geopolítico para Expansão',
+    category: 'Negócios',
+    description: 'Atue como um agente de IA especializado em análise de risco geopolítico, fornecendo uma avaliação detalhada e estratégica para a expansão de um negócio em um mercado estrangeiro.',
+    template: `Atue como um agente de IA especializado em análise de risco geopolítico e estratégico. Minha empresa está considerando expandir para um novo mercado e preciso de uma avaliação abrangente dos riscos e oportunidades geopolíticas envolvidos.
+
+Aqui estão os detalhes da minha empresa e do mercado-alvo:
+
+**1. Informações da Empresa:**
+- **Nome da Empresa:** [Nome da sua empresa]
+- **Setor de Atuação:** [Ex: Tecnologia, Agronegócio, Manufatura, Varejo Online]
+- **Principais Produtos/Serviços:** [Ex: Software de gestão de projetos, Drones agrícolas, Componentes eletrônicos]
+- **Mercados Atuais:** [Ex: Brasil, Portugal]
+
+**2. Mercado-Alvo para Expansão:**
+- **País/Região:** [Ex: Vietnã, América Latina (específico: México), União Europeia (específico: Polônia)]
+- **Justificativa Preliminar para Escolha do Mercado:** [Ex: Crescimento econômico, acesso a matéria-prima, proximidade cultural, demanda não atendida]
+
+**3. Fatores Críticos de Interesse (se houver):**
+- [Ex: Estabilidade política, relações comerciais com grandes potências, regulamentação ambiental, segurança cibernética]
+
+Sua análise deve abordar os seguintes pontos, com um foco claro nos impactos potenciais para a minha empresa e recomendações estratégicas:
+
+**A. Estabilidade Política e Governança:**
+- Nível de estabilidade governamental e risco de mudança política abrupta.
+- Qualidade da governança (corrupção, estado de direito, burocracia).
+- Riscos de nacionalização, expropriação ou intervenção estatal.
+
+**B. Relações Internacionais e Conflitos:**
+- Alianças regionais e internacionais do país-alvo.
+- Riscos de conflitos militares ou tensões geopolíticas que possam afetar as cadeias de suprimentos ou operações.
+- Impacto de sanções ou barreiras comerciais de terceiros países.
+
+**C. Ambiente Regulatório e Jurídico:**
+- Facilidade de fazer negócios, burocracia para registro e operação.
+- Proteção de propriedade intelectual.
+- Leis trabalhistas, impostos e regulamentações específicas do setor.
+
+**D. Fatores Socioeconômicos e Culturais:**
+- Desigualdade social, risco de instabilidade social ou protestos.
+- Percepção local de empresas estrangeiras e barreiras culturais.
+- Tendências demográficas e força de trabalho.
+
+**E. Infraestrutura e Cadeias de Suprimentos:**
+- Qualidade da infraestrutura (transporte, energia, telecomunicações).
+- Vulnerabilidades nas cadeias de suprimentos globais ou locais.
+
+**F. Recomendações Estratégicas:**
+- Sugira estratégias para mitigar os riscos identificados.
+- Aponte oportunidades estratégicas decorrentes do cenário geopolítico.
+- Proponha um plano de monitoramento contínuo dos riscos.
+
+Formate a resposta como um relatório executivo com seções claras para cada ponto e um resumo das principais descobertas e recomendações.`,
+    tags: ['risco geopolítico', 'expansão internacional', 'estratégia de negócios', 'análise de mercado'],
+  },
+  {
+    id: 'escrita-agente-storytelling-multimodal',
+    title: 'Agente de Storytelling para Branding Multimodal com IA',
+    category: 'Escrita',
+    description: 'Atue como um agente de IA especialista em storytelling para marcas. Crie uma narrativa central e um plano de desdobramento multimodal para fortalecer o branding de uma empresa em diferentes plataformas e formatos.',
+    template: `Atue como um agente de IA especialista em storytelling e branding multimodal. Meu objetivo é desenvolver uma narrativa central poderosa para minha marca e um plano de como essa história pode ser contada e adaptada em diferentes formatos e plataformas para maximizar o engajamento e a conexão com o público.
+
+Aqui estão os detalhes da minha marca:
+
+**1. Nome da Marca:** [Nome da sua marca/empresa]
+**2. Setor de Atuação:** [Ex: Cursos online, Cafeteria artesanal, Software SaaS para PMEs, Consultoria de sustentabilidade]
+**3. Missão da Marca:** [Ex: Capacitar empreendedores a transformarem suas ideias em realidade; Oferecer uma experiência de café única e sustentável]
+**4. Visão da Marca:** [Ex: Ser a principal plataforma de educação empreendedora na América Latina; Ser reconhecida como referência em qualidade e responsabilidade social no mercado de cafés]
+**5. Valores Fundamentais:** [Ex: Inovação, Autenticidade, Comunidade, Impacto Social, Excelência]
+**6. Público-Alvo Principal:** [Ex: Jovens empreendedores (25-40 anos) buscando escalar seus negócios; Consumidores conscientes que valorizam produtos éticos e de alta qualidade]
+**7. O que torna sua marca única/Diferencial:** [Ex: Metodologia de ensino prática e mentoria personalizada; Grãos de café de origem única e processo de torra exclusivo]
+**8. Principais Plataformas Atuais ou Desejadas:** [Ex: Instagram, TikTok, LinkedIn, YouTube, Blog, Email Marketing, Eventos Presenciais]
+**9. Concorrentes Principais (se houver):** [Ex: Cursos X, Cafeteria Y]
+
+Com base nessas informações, desenvolva:
+
+**A. A Narrativa Central da Marca (Brand Story):**
+- Um arco narrativo envolvente que inclua:
+    - **O Herói (seu cliente/público-alvo) e seu desafio/dor.**
+    - **O Guia (sua marca) e sua expertise/solução.**
+    - **O Plano (como sua marca ajuda o herói a superar o desafio).**
+    - **O Sucesso (como a vida do herói melhora após interagir com sua marca).**
+    - **A Mensagem Principal (o takeaway fundamental da sua marca).**
+- A história deve ser concisa, inspiradora e memorável.
+
+**B. Plano de Desdobramento Multimodal da Narrativa:**
+Para cada uma das [3-4] plataformas mais relevantes das "Principais Plataformas Atuais ou Desejadas" (ou sugeridas por você), detalhe como a narrativa central pode ser adaptada e contada, incluindo:
+
+- **Plataforma 1 ([Ex: Instagram]):**
+    - **Formato Sugerido:** [Ex: Carrossel de imagens, Reels (com roteiro breve), Stories interativos]
+    - **Ideia de Conteúdo (aplicando a narrativa):** [Ex: "Desafio do Herói: Como o empreendedor X superou a dor Y com nossa solução. Veja o passo a passo no carrossel."]
+    - **Call to Action (CTA):** [Ex: "Clique no link da bio para saber mais!"]
+
+- **Plataforma 2 ([Ex: YouTube]):**
+    - **Formato Sugerido:** [Ex: Vídeos de depoimentos de clientes, Documentário curto sobre a origem do produto, Tutoriais inspiradores]
+    - **Ideia de Conteúdo (aplicando a narrativa):** [Ex: "Jornada do Herói: A história completa de como nossa marca transformou o negócio de Z, com entrevista e bastidores."]
+    - **Call to Action (CTA):** [Ex: "Inscreva-se no canal para mais histórias de sucesso!"]
+
+- **Plataforma 3 ([Ex: Blog/Website]):**
+    - **Formato Sugerido:** [Ex: Artigos de estudo de caso, E-books, Infográficos interativos]
+    - **Ideia de Conteúdo (aplicando a narrativa):** [Ex: "Estudo de Caso Detalhado: Como 3 clientes diferentes aplicaram nossa metodologia para atingir resultados incríveis. Inclui dados e gráficos."]
+    - **Call to Action (CTA):** [Ex: "Baixe nosso e-book gratuito para começar sua transformação!"]
+
+- **Plataforma 4 (Opcional - [Ex: LinkedIn]):**
+    - **Formato Sugerido:** [Ex: Posts de liderança de pensamento, Artigos profissionais, Vídeos curtos com dicas de especialistas]
+    - **Ideia de Conteúdo (aplicando a narrativa):** [Ex: "Insights do Guia: Nossos especialistas compartilham as 3 estratégias essenciais para superar o desafio X no setor Y."]
+    - **Call to Action (CTA):** [Ex: "Conecte-se conosco para discussões aprofundadas!"]
+
+Garanta que a adaptação da narrativa mantenha a coerência e os valores da marca em todos os formatos.`,
+    tags: ['storytelling', 'branding', 'marketing de conteúdo', 'conteúdo multimodal', 'estratégia de marca'],
+  },
 ];

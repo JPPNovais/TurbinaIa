@@ -78,6 +78,7 @@ export const aiModels: AIModel[] = [
       'Claude Opus 4.8 (lançado em 28 de maio de 2026) é o modelo mais capaz da Anthropic disponível publicamente, com Dynamic Workflows para orquestração de subagentes e Effort Control, e melhorias em agentes de longo prazo, codificação, análise financeira e multimodalidade.',
       'Claude Opus 4.8 aceita mensagens de sistema no meio da conversa, permitindo atualizar instruções sem reiniciar o prompt completo e reduzindo custos.',
       'Claude Sonnet 5 (lançado em 1º de julho de 2026) é o novo modelo padrão para planos Free e Pro, oferecendo uma ampla gama de opções de custo-desempenho e, em alguns casos, igualando os níveis de capacidade do Opus 4.8, sendo forte para trabalho de engenharia de software em múltiplas etapas.',
+      'Claude Sonnet 5 mostra uma taxa geral menor de comportamentos indesejáveis do que o Sonnet 4.6 e é geralmente mais seguro de usar em contextos de agente.',
       'Claude Opus 4.7, Claude Sonnet 5 e Claude Sonnet 4.6 oferecem uma janela de contexto de 1 milhão de tokens, permitindo processar vastos volumes de informações.',
       'Claude Sonnet 4.6 (lançado em 17 de fevereiro de 2026) é o modelo padrão anterior para usuários Free e Pro, sendo 30-50% mais rápido que as versões anteriores do Sonnet e altamente competente em codificação (79.6% no SWE-Bench Verified) e raciocínio.',
       'Excelência em codificação com Claude Code, permitindo escrever, editar e executar código de forma autônoma, planejando mudanças em múltiplos arquivos e executando testes, com taxas de limite de uso aumentadas para suportar níveis de esforço mais altos.',
@@ -99,7 +100,9 @@ export const aiModels: AIModel[] = [
       'Modelos da classe Mythos (Claude Fable 5 e Claude Mythos 5), anunciados em junho de 2026, tiveram seu acesso suspenso por uma diretiva do governo dos EUA.',
       'A precificação Enterprise da Anthropic agora inclui uma taxa base de assento mais custos de uso de API, afastando-se de uma promessa de "taxa fixa" para fluxos de trabalho autônomos.',
       'Opus 4.8 pode usar mais tokens que Opus 4.7 em algumas tarefas, especialmente onde controles de esforço e comportamento multi-turno afetam o uso total.',
-      'A Anthropic é um pouco imprecisa sobre o limite entre os níveis de esforço "Extra" e "Max" em Opus 4.8.'
+      'A Anthropic é um pouco imprecisa sobre o limite entre os níveis de esforço "Extra" e "Max" em Opus 4.8.',
+      'Claude Sonnet 5 utiliza um tokenizer atualizado que pode mapear para aproximadamente 1.0–1.35x mais tokens para o mesmo input, dependendo do conteúdo.',
+      'O custo real por tarefa concluída para o Sonnet 5 pode ser quase o dobro do Sonnet 4.6, apesar de uma precificação por token idêntica após o período introdutório.'
     ],
     score: {
       reasoning: 5.0,
@@ -109,7 +112,7 @@ export const aiModels: AIModel[] = [
       value: 4.9
     },
     affiliateUrl: 'https://claude.ai',
-    description: 'A família Claude da Anthropic agora é liderada pelos modelos Opus 4.8, Opus 4.7, Sonnet 5, Sonnet 4.6 e Haiku 4.5, representando um avanço significativo em inteligência artificial. O Claude Opus 4.8 (lançado em maio de 2026) é o modelo mais capaz, com recursos como Dynamic Workflows, Effort Control e melhorias para agentes de longo prazo e codificação. O Claude Sonnet 5 (lançado em 1º de julho de 2026) é o novo modelo padrão para planos gratuitos e Pro, oferecendo uma forte execução para engenharia de software, embora com menor capacidade em cibersegurança do que os modelos Opus. O Sonnet 4.6, agora uma opção alternativa, é notavelmente mais rápido e se destaca em codificação e raciocínio, todos com uma vasta janela de contexto de 1 milhão de tokens. A plataforma se integra profundamente com ferramentas externas via MCP v2 e oferece o Claude Code para desenvolvimento autônomo, além de um modo de voz e capacidades de visão aprimoradas. Os antigos modelos da geração 3.x e 3.5.x foram descontinuados. A Anthropic oferece uma variedade de planos, desde o gratuito até o Enterprise, com preços de API competitivos e otimizações como cache e Batch API. O Fast Mode para Opus 4.x é agora mais acessível. No entanto, o custo do Fast Mode para Opus ainda é um prêmio, e o uso de Claude Code exige cautela devido às suas implicações. Os modelos da classe Mythos (Fable 5) tiveram seu acesso suspenso.'
+    description: 'A família Claude da Anthropic agora é liderada pelos modelos Opus 4.8, Opus 4.7, Sonnet 5, Sonnet 4.6 e Haiku 4.5, representando um avanço significativo em inteligência artificial. O Claude Opus 4.8 (lançado em maio de 2026) é o modelo mais capaz, com recursos como Dynamic Workflows, Effort Control e melhorias para agentes de longo prazo e codificação. O Claude Sonnet 5 (lançado em 1º de julho de 2026) é o novo modelo padrão para planos gratuitos e Pro, oferecendo uma forte execução para engenharia de software e, em alguns casos, igualando os níveis de capacidade do Opus 4.8. Sonnet 5 também apresenta taxas mais baixas de comportamentos indesejáveis e é geralmente mais seguro. O Sonnet 4.6, agora uma opção alternativa, é notavelmente mais rápido e se destaca em codificação e raciocínio, todos com uma vasta janela de contexto de 1 milhão de tokens. A plataforma se integra profundamente com ferramentas externas via MCP v2 e oferece o Claude Code para desenvolvimento autônomo, além de um modo de voz e capacidades de visão aprimoradas. Os antigos modelos da geração 3.x e 3.5.x foram descontinuados. A Anthropic oferece uma variedade de planos, desde o gratuito até o Enterprise, com preços de API competitivos e otimizações como cache e Batch API. Em 26 de abril de 2026, os limites de taxa para Sonnet e Haiku foram aumentados e simplificados para três níveis na plataforma Claude nativa. O Fast Mode para Opus 4.x é agora mais acessível. No entanto, o custo do Fast Mode para Opus ainda é um prêmio, e o uso de Claude Code exige cautela devido às suas implicações. Além disso, o Sonnet 5 utiliza um novo tokenizer que pode aumentar o uso de tokens, e o custo real por tarefa pode ser maior. Os modelos da classe Mythos (Fable 5) tiveram seu acesso suspenso pelo governo dos EUA em junho de 2026.'
   },
   {
     id: 'google-gemini-models',
@@ -118,7 +121,7 @@ export const aiModels: AIModel[] = [
     category: 'Texto & Código',
     pricing: 'Plano gratuito disponível (com acesso ao aplicativo Gemini, que utiliza Gemini 3.5 Flash por padrão, e API via Google AI Studio para Gemini 3.5 Flash e 3.1 Flash-Lite, com limites de uso. Modelos Pro são pagos a partir de 1º de abril de 2026 para usuários gratuitos). Google AI Plus: US$ 7.99/mês (200GB de armazenamento) ou US$ 9.99/mês (2TB de armazenamento). Google AI Pro (anteriormente Gemini Advanced): US$ 19.99/mês (acesso a modelos Pro, 1 milhão de tokens de contexto, integração com Workspace, YouTube Premium Lite, 5TB de armazenamento, etc.) ou US$ 49.99/mês (10TB de armazenamento). Google AI Ultra US$ 99.99: US$ 99.99/mês (lançado no I/O 2026, 5x mais limites de uso que o Pro, integração Gemini 3.5 Flash, acesso prioritário ao Google Antigravity, 20TB de armazenamento, YouTube Premium). Google AI Ultra US$ 199.99: US$ 199.99/mês (lançado no I/O 2026, 20x mais limites de uso que o Pro, inclui Gemini Spark). Gemini para Workspace add-on: US$ 30/usuário/mês. API para Gemini 3.5 Flash: US$ 1.50/milhão de tokens de entrada e US$ 9.00/milhão de tokens de saída (janela de contexto de 1M tokens). API para Gemini 3.1 Pro: US$ 2.00/milhão de tokens de entrada (até 200K tokens de contexto), US$ 4.00/milhão de tokens de entrada (>200K tokens de contexto) e US$ 12.00/milhão de tokens de saída (janela de contexto de 2M tokens). API para Gemini 3.1 Flash-Lite: US$ 0.25/milhão de tokens de entrada e US$ 1.50/milhão de tokens de saída. O cache de contexto reduz os custos em até ~90%; Batch API oferece 50% de desconto em todos os modelos.',
     pros: [
-      'Gemini 3.1 Pro oferece uma vasta janela de contexto de até 2 milhões de tokens, disponível publicamente para todos os desenvolvedores.',
+      'Gemini 3.1 Pro oferece uma vasta janela de contexto de até 2 milhões de tokens, com disponibilidade pública geral prevista para julho de 2026.',
       'Gemini 3.5 Flash (lançado em 19 de maio de 2026) é o novo modelo de produção de ponta do Google, otimizado para tarefas de agente e codificação, com velocidade e custo-benefício de Flash e inteligência próxima ao Pro.',
       'Capacidades multimodais avançadas para processar e analisar vídeo, áudio, imagens e texto nativamente em uma única requisição.',
       'Capacidades de execução de código para Gemini 1.5 Pro e 1.5 Flash na API, permitindo ao modelo gerar e executar código Python de forma iterativa.',
@@ -126,7 +129,7 @@ export const aiModels: AIModel[] = [
       'Recurso "Personal Intelligence" (lançado em fevereiro de 2026) conecta o Gemini diretamente ao Gmail, Fotos, Drive e Search para respostas personalizadas com base nos dados do usuário.',
       'NotebookLM recebeu uma grande atualização em 2026, transformando-o em uma plataforma completa de síntese de pesquisa, aceitando documentos, PDFs, vídeos e áudios, gerando resumos, áudios e vídeos.',
       'Suporte ao Model Context Protocol (MCP) adicionado à API e SDK do Gemini em março de 2026, permitindo conectar o Gemini a milhares de apps e fontes de dados.',
-      'Project Mariner ("Computer Use") permite que o Gemini clique, preencha formulários e navegue em UIs autonomamente (disponível em 3 Pro e 3 Flash desde março-abril de 2026).',
+      'Project Mariner ("Computer Use") permite que o Gemini clique, preencha formulários e navegue em UIs autonomamente (disponível em 3 Pro e 3 Flash desde março-abril de 2026, com preview público no Gemini 3.5 Flash em junho de 2026).',
       'Gemini Spark é um novo agente de IA autônomo, exclusivo para assinantes do AI Ultra.',
       'Gemini Omni é um modelo experimental de todas as modalidades, capaz de compreensão e geração de vídeo em tempo real.',
       'Geração de vídeo (com Veo 3.1 em prévia) e geração de música (com Lyria 3) disponíveis.',
@@ -138,7 +141,7 @@ export const aiModels: AIModel[] = [
       'A API para Gemini 3.1 Pro possui preços escalonados para prompts com contexto muito longo (>200K tokens).',
       'Modelos Pro agora são pagos exclusivamente para usuários gratuitos desde 1º de abril de 2026.',
       'Modelos anteriores como Gemini 2.0 Flash e 2.0 Flash-Lite foram desativados em 1º de junho de 2026, exigindo migração para modelos mais recentes.',
-      'Modelos Imagen 4 e Gemini 3 Image (Nano Banana 2/Pro) estão sendo descontinuados até 17 de agosto de 2026; o Gemini 3.1 Flash Image (Nano Banana 2) está disponível.',
+      'Modelos Imagen 4 e Gemini 3 Image estão sendo descontinuados até 17 de agosto de 2026. No entanto, Gemini 3.1 Flash Image (Nano Banana 2, lançado em 26 de fevereiro de 2026) e Nano Banana 2 Lite (lançado em junho de 2026) estão disponíveis, sendo Nano Banana 2 Lite o mais rápido e eficiente.',
       'O nome "Gemini Advanced" está sendo aposentado em favor de "Google AI Pro".',
       'Alguns recursos de IA são agrupados em planos do Google One/Workspace e são mandatórios.',
       'A janela de 2 milhões de tokens é mais como um "depósito" que o modelo pode acessar, não uma "área de trabalho" onde tudo está sempre presente, podendo levar a esquecimento em algumas situações.',
@@ -152,15 +155,17 @@ export const aiModels: AIModel[] = [
       value: 4.9
     },
     affiliateUrl: 'https://aistudio.google.com',
-    description: 'A família Gemini do Google é agora liderada pelo Gemini 3.5 Flash e Gemini 3.1 Pro, oferecendo uma combinação de capacidades avançadas e eficiência. Gemini 3.1 Pro (agora com disponibilidade geral e 2 milhões de tokens de contexto) é um modelo multimodal poderoso ideal para análise de grandes volumes de informações em texto, imagem, áudio e vídeo, com capacidades de execução de código. Gemini 3.5 Flash, lançado no Google I/O 2026, é otimizado para velocidade e custo-benefício, ideal para tarefas de alto volume e agente. A plataforma Gemini se integra profundamente com o ecossistema Google, incluindo Workspace, Search e NotebookLM, com novos recursos como Personal Intelligence e Computer Use. Os planos de assinatura Google AI Pro e Ultra oferecem acesso expandido a modelos e recursos avançados, como Gemini Spark e Gemini Omni. No entanto, os modelos Pro são agora pagos para usuários gratuitos, e a API para contextos muito longos no Gemini 3.1 Pro pode ter custos mais altos.'
+    description: 'A família Gemini do Google é agora liderada pelo Gemini 3.5 Flash e Gemini 3.1 Pro, oferecendo uma combinação de capacidades avançadas e eficiência. Gemini 3.1 Pro (lançado em fevereiro de 2026, com disponibilidade geral prevista para julho de 2026 e 2 milhões de tokens de contexto) é um modelo multimodal poderoso ideal para análise de grandes volumes de informações em texto, imagem, áudio e vídeo, com capacidades de execução de código. Gemini 3.5 Flash, lançado no Google I/O 2026, é otimizado para velocidade e custo-benefício, ideal para tarefas de alto volume e agente. A plataforma Gemini se integra profundamente com o ecossistema Google, incluindo Workspace, Search e NotebookLM, com novos recursos como Personal Intelligence e Computer Use. Os planos de assinatura Google AI Pro e Ultra oferecem acesso expandido a modelos e recursos avançados, como Gemini Spark e Gemini Omni. No entanto, os modelos Pro são agora pagos para usuários gratuitos, e a API para contextos muito longos no Gemini 3.1 Pro pode ter custos mais altos.'
   },
   {
     id: 'meta-llama-muse-models',
-    name: 'Llama 4 Maverick, Llama 4 Scout, Llama 3.3 70B, Llama 3.2 (Vision), Llama 3.1 (405B)',
+    name: 'Llama 5 (600B), Llama 4 Maverick, Llama 4 Scout, Llama 3.3 70B, Llama 3.2 (Vision), Llama 3.1 (405B)',
     developer: 'Meta',
     category: 'Texto & Código',
-    pricing: 'Código "open-weight" para uso local gratuito (requer hardware). Licença comunitária Llama para uso não comercial e comercial (com restrições: empresas com mais de 700 milhões de usuários ativos mensais precisam de uma licença separada da Meta). A Meta AI para consumidores (meta.ai, WhatsApp, Messenger, Instagram Direct) é gratuita. API para Llama 4 Maverick (via AWS Bedrock): US$ 0.50/milhão de tokens de entrada. API para Llama 3.3 70B Instruct (via Deepinfra): A partir de US$ 0.23/milhão de tokens de entrada e US$ 0.40/milhão de tokens de saída. API para Llama 3.1 70B Instruct (via Azure): US$ 2.68/milhão de tokens de entrada e US$ 3.54/milhão de tokens de saída. API para Llama 3.1 405B Instruct (via Azure): US$ 5.33/milhão de tokens de entrada e US$ 16.00/milhão de tokens de saída. API para Llama 3.1 8B Instruct (via Deepinfra/Groq): A partir de US$ 0.05/milhão de tokens de entrada e US$ 0.08/milhão de tokens de saída. API para Llama 3.2 1B Instruct (via OpenRouter): US$ 0.027/milhão de tokens de entrada e US$ 0.201/milhão de tokens de saída. API para Llama 3.2 3B (via CloudPrice): US$ 0.04/milhão de tokens de entrada e US$ 0.075/milhão de tokens de saída. API para Llama 3.2 11B (via DeepInfra): Aproximadamente US$ 0.05/milhão de tokens de entrada. ',
+    pricing: 'Código "open-weight" para uso local gratuito (requer hardware). Licença comunitária Llama para uso não comercial e comercial (com restrições: empresas com mais de 700 milhões de usuários ativos mensais precisam de uma licença separada da Meta, e não pode ser usado para treinar outros LLMs não-Llama). A Meta AI para consumidores (meta.ai, WhatsApp, Messenger, Instagram Direct) é gratuita. API para Llama 5 (via OpenRouter): A partir de US$ 0.50/milhão de tokens de entrada. API para Llama 4 Maverick (via AWS Bedrock): US$ 0.50/milhão de tokens de entrada. API para Llama 3.3 70B Instruct (via Deepinfra): A partir de US$ 0.23/milhão de tokens de entrada e US$ 0.40/milhão de tokens de saída. API para Llama 3.1 70B Instruct (via Azure): US$ 2.68/milhão de tokens de entrada e US$ 3.54/milhão de tokens de saída. API para Llama 3.1 405B Instruct (via Azure): US$ 5.33/milhão de tokens de entrada e US$ 16.00/milhão de tokens de saída. API para Llama 3.1 8B Instruct (via Deepinfra/Groq): A partir de US$ 0.05/milhão de tokens de entrada e US$ 0.08/milhão de tokens de saída. API para Llama 3.2 1B Instruct (via OpenRouter): US$ 0.027/milhão de tokens de entrada e US$ 0.201/milhão de tokens de saída. API para Llama 3.2 3B (via CloudPrice): US$ 0.04/milhão de tokens de entrada e US$ 0.075/milhão de tokens de saída. API para Llama 3.2 11B (via DeepInfra): Aproximadamente US$ 0.05/milhão de tokens de entrada. ',
     pros: [
+      'Llama 5 (lançado em 8 de abril de 2026) é o modelo "open-weight" de fronteira da Meta, com 600 bilhões de parâmetros e uma janela de contexto de 5 milhões de tokens, rivalizando ou superando GPT-5 e Gemini 2.0 em benchmarks importantes.',
+      'Llama 5 incorpora capacidades de autoaperfeiçoamento recursivo e é entregue com modelos de segurança Llama Guard 5, Prompt Guard 3 e Code Shield 2.',
       'Llama 4 Maverick (lançado em abril de 2025) é o modelo principal da família Llama 4, nativamente multimodal para compreensão de imagem e texto, com 1M de tokens de contexto, rápido e com baixo custo.',
       'Llama 4 Scout (lançado em abril de 2025) oferece capacidade de contexto extremamente longa de até 10 milhões de tokens, ideal para recuperação de informações.',
       'Llama 3.3 70B (lançado em dezembro de 2024) é o modelo de linguagem apenas texto mais avançado da Meta, atingindo desempenho de classe GPT-4 em benchmarks, com 128K tokens de contexto.',
@@ -169,9 +174,8 @@ export const aiModels: AIModel[] = [
       'Modelos "open-weight" permitem flexibilidade para uso local, fine-tuning e controle sobre os dados, sem taxas por geração para uso próprio.',
       'Ecossistema robusto de provedores de API terceirizados que oferecem custos competitivos (Deepinfra) e velocidade (Groq).',
       'A Meta AI para consumidores (meta.ai, WhatsApp, Messenger, Instagram Direct) permite conversar com modelos Llama gratuitamente.',
-      'A arquitetura Mixture-of-Experts (MoE) em Llama 4 melhora a eficiência e o poder, ativando apenas um subconjunto de parâmetros.',
-      'Llama 4 com processamento de fala nativo (em vez de conversão de voz para texto), resultando em interações mais naturais.',
-      'Llama 3.1 inclui "Code Shield", um guardrail para código gerado.'
+      'A arquitetura Mixture-of-Experts (MoE) em Llama 4 (e Llama 5) melhora a eficiência e o poder, ativando apenas um subconjunto de parâmetros.',
+      'Llama 4 com processamento de fala nativo (em vez de conversão de voz para texto), resultando em interações mais naturais.'
     ],
     cons: [
       'Requer hardware potente (GPU) para rodar modelos maiores localmente com alta velocidade.',
@@ -179,19 +183,20 @@ export const aiModels: AIModel[] = [
       'Os modelos multimodais Llama 3.2 não estão disponíveis para desenvolvedores sediados na União Europeia devido a incertezas regulatórias.',
       'Meta Muse Spark (lançado em 8 de abril de 2026) é o primeiro modelo de ponta de peso fechado e exclusivo para API da Meta, uma mudança em relação à filosofia de "open-weight".',
       'Não há uma UI de "chat" de consumo oficial e tão polida quanto a do ChatGPT para os modelos Llama (a Meta AI é uma experiência de aplicativo).',
-      'O desenvolvimento do modelo "Behemoth" (2 trilhões de parâmetros) foi efetivamente arquivado.',
+      'O desenvolvimento do modelo "Behemoth" (2 trilhões de parâmetros), embora um "teacher model" que supera outros LLMs, não foi lançado publicamente e continua em treinamento.',
       'A competitividade do Llama 4 Maverick na fronteira de codificação aberta não é mais a melhor.',
-      'A janela de contexto de 10 milhões de tokens do Llama 4 Scout é "real para recuperação, fraca para síntese".'
+      'A janela de contexto de 10 milhões de tokens do Llama 4 Scout é "real para recuperação, fraca para síntese".',
+      'Não houve acesso prático aos pesos do Llama 5 no lançamento para testes independentes.'
     ],
     score: {
-      reasoning: 4.9,
-      writing: 4.9,
-      coding: 4.8,
+      reasoning: 5.0,
+      writing: 5.0,
+      coding: 5.0,
       speed: 4.8,
       value: 4.8
     },
     affiliateUrl: 'https://llama.meta.com/',
-    description: 'A família Llama da Meta evoluiu significativamente, com os modelos Llama 4 Maverick e Scout liderando a fronteira em multimodalidade e contexto longo, respectivamente. Os modelos Llama 3.3 70B e Llama 3.1 405B representam o que há de mais avançado em "open-weight" text-only e multimodo, oferecendo desempenho comparável aos principais modelos proprietários. Llama 3.2 introduziu capacidades multimodais de visão e modelos leves para dispositivos. Esses modelos são "open-weight", permitindo uso local e fine-tuning, mas a licença comunitária impõe restrições para grandes usos comerciais e proíbe o treinamento de LLMs não-Llama. A Meta também lançou o Muse Spark, um modelo de peso fechado e API-only, marcando uma nova direção. Embora o ecossistema de APIs de terceiros ofereça flexibilidade e custos competitivos, o uso eficiente exige hardware potente, e a disponibilidade de modelos multimodais pode ser restrita na UE.'
+    description: 'A família Llama da Meta evoluiu significativamente, com o lançamento do Llama 5 em abril de 2026 como seu modelo de fronteira "open-weight" mais avançado. O Llama 5 possui 600 bilhões de parâmetros e uma janela de contexto de 5 milhões de tokens, prometendo desempenho que rivaliza ou supera modelos proprietários como GPT-5 e Gemini 3. Os modelos Llama 4 Maverick e Scout, lançados em abril de 2025, continuam a liderar em multimodalidade e contexto longo, respectivamente. Os modelos Llama 3.3 70B e Llama 3.1 405B representam o que há de mais avançado em "open-weight" text-only e multimodo, oferecendo desempenho comparável aos principais modelos proprietários. Llama 3.2 introduziu capacidades multimodais de visão e modelos leves para dispositivos. Esses modelos são "open-weight", permitindo uso local e fine-tuning, mas a licença comunitária impõe restrições para grandes usos comerciais e proíbe o treinamento de LLMs não-Llama. A Meta também lançou o Muse Spark, um modelo de peso fechado e API-only, marcando uma nova direção. Embora o ecossistema de APIs de terceiros ofereça flexibilidade e custos competitivos, o uso eficiente exige hardware potente, e a disponibilidade de modelos multimodais pode ser restrita na UE. O modelo "Behemoth" da Meta continua em treinamento como um "teacher model" e não foi lançado publicamente.'
   },
   {
     id: 'openai-chatgpt-images-2-0',
@@ -258,7 +263,8 @@ export const aiModels: AIModel[] = [
       'A Midjourney está envolvida em litígios de direitos autorais. ',
       'Baniu prompts com nomes de figuras políticas para evitar desinformação. ',
       'O Draft Mode (V8.1) tem uma "qualidade ligeiramente reduzida" em suas gerações iniciais.',
-      'Niji 7 não oferece suporte a "Consistência de Personagem" (--cref).'
+      'Niji 7 não oferece suporte a "Consistência de Personagem" (--cref).',
+      'Empresas com receita anual bruta acima de US$ 1.000.000 devem usar os planos Pro ou Mega para uso comercial.'
     ],
     score: {
       reasoning: 4.8,

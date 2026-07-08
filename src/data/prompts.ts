@@ -7162,4 +7162,132 @@ Para cada uma das [3-4] plataformas mais relevantes das "Principais Plataformas 
 Garanta que a adaptação da narrativa mantenha a coerência e os valores da marca em todos os formatos.`,
     tags: ['storytelling', 'branding', 'marketing de conteúdo', 'conteúdo multimodal', 'estratégia de marca'],
   },
+  {
+    id: 'ia-agente-simulacao-testes-complexos',
+    title: 'Agente de IA para Simulação de Testes de Cenários Complexos',
+    category: 'IA & Automação',
+    description: 'Gere um agente de IA capaz de simular interações de usuários e cenários de teste complexos para identificar falhas e otimizar a robustez de um sistema ou produto.',
+    template: `Você é um Agente de IA especializado em simulação de cenários complexos e teste de sistemas. Seu objetivo é criar um plano de simulação detalhado e gerar dados de teste sintéticos para validar a robustez de um sistema ou produto.
+
+**Sistema/Produto a ser testado:** [Nome do Sistema/Produto]
+**Funcionalidade Principal:** [Descrição da funcionalidade principal do sistema ou produto, ex: Processamento de pedidos, sistema de login, interface de usuário.]
+**Objetivos do Teste (o que queremos validar/encontrar):** [Ex: Garantir resiliência a picos de tráfego, identificar falhas em fluxos de exceção, testar comportamentos inesperados de usuários, validar a consistência dos dados, etc.]
+**Perfis de Usuário a Simular:** [Liste os diferentes perfis de usuário que o agente deve simular. Ex: Usuário comum, usuário avançado (power user), usuário mal-intencionado, usuário com dados incompletos, admin.]
+**Cenários Críticos/Edge Cases:** [Liste 3-5 cenários específicos que são particularmente importantes, complexos ou propensos a falhas. Ex: Compra com estoque zero, tentativa de login com credenciais inválidas múltiplas vezes, envio de formulário com caracteres especiais, transação simultânea de múltiplos usuários, falha de rede intermitente.]
+**Integrações/Dependências Externas (se houver):** [Liste quaisquer sistemas externos, APIs ou serviços com os quais o sistema testado interage. Ex: API de pagamento, sistema de terceiros para autenticação, banco de dados externo.]
+**Dados de Teste Necessários (tipos e volume):** [Descreva os tipos de dados sintéticos que o agente precisa gerar e o volume aproximado. Ex: 1000 usuários cadastrados, 500 pedidos com diferentes status, 20 GB de dados históricos de transações, 50 tipos de produtos diferentes.]
+
+Com base nas informações acima, gere:
+
+1.  **Um Plano de Simulação Detalhado:**
+    *   Definição dos Agentes Simuladores: Descreva os "papéis" que cada agente terá, seus comportamentos e objetivos na simulação.
+    *   Fluxos de Interação Complexos: Detalhe os passos que cada perfil de agente seguirá para simular os cenários críticos e as interações complexas.
+    *   Métricas de Sucesso e Falha: Quais KPIs devem ser monitorados durante a simulação para avaliar a robustez e identificar falhas (ex: tempo de resposta, taxa de erros, consumo de recursos, consistência de dados).
+    *   Estratégias de Injeção de Falhas/Stress Testing: Proponha como o agente pode introduzir estresse ou condições de falha para testar a resiliência do sistema.
+
+2.  **Exemplos de Dados de Teste Sintéticos:**
+    *   Forneça 5-10 exemplos de registros para cada tipo de dado (usuários, transações, etc.) com variações que reflitam os perfis e cenários definidos, em um formato estruturado (ex: JSON, CSV).
+
+3.  **Sugestões de Ferramentas/Abordagens:**
+    *   Recomende 2-3 tecnologias ou metodologias (ex: BDD, fuzzing, simulação baseada em agente, simulações Monte Carlo) que seriam úteis para implementar e executar esses testes de simulação.`,
+    tags: ['teste de software', 'automação', 'qualidade', 'engenharia de IA'],
+  },
+  {
+    id: 'marketing-agente-otimizacao-jornada-cliente-ia',
+    title: 'Agente de IA para Otimização de Jornada do Cliente Hiperpersonalizada',
+    category: 'Marketing',
+    description: 'Crie um agente de IA para analisar e otimizar a jornada do cliente, sugerindo pontos de contato, conteúdos e interações hiperpersonalizadas para maximizar engajamento e conversão.',
+    template: `Você é um Agente de IA especializado em Customer Journey Mapping e Hiperpersonalização. Seu objetivo é analisar a jornada atual de um cliente e propor otimizações baseadas em dados para criar uma experiência mais engajadora e efetiva, maximizando engajamento e conversão.
+
+**Produto/Serviço:** [Nome do Produto/Serviço que está no centro da jornada.]
+**Público-alvo principal:** [Descreva o público-alvo principal. Ex: Pequenos empresários no setor de tecnologia, jovens adultos interessados em sustentabilidade, famílias com renda X e filhos pequenos.]
+**Etapa da Jornada do Cliente a Otimizar:** [Escolha a etapa específica que o agente deve focar. Ex: Descoberta, Consideração, Compra, Onboarding, Retenção, Fidelização, Advocacia.]
+**Canais Atualmente Utilizados:** [Liste todos os canais que você utiliza para interagir com o cliente. Ex: Email marketing, Redes Sociais (Instagram, LinkedIn, TikTok), Blog, Anúncios Pagos (Google Ads, Meta Ads), Atendimento ao Cliente (chat, telefone), Aplicativo Móvel, Website, Eventos.]
+**Dados Disponíveis sobre o Cliente (tipos de dados):** [Liste os tipos de dados que você coleta e tem acesso. Ex: Histórico de compras, interações com emails (aberturas, cliques), cliques em anúncios, tempo de permanência no site, dados demográficos, feedback em pesquisas, comportamento no app, interações com posts em redes sociais.]
+**Objetivo Específico da Otimização:** [Defina um objetivo claro e mensurável para esta otimização. Ex: Aumentar a taxa de conversão da etapa de Consideração para Compra em 15%, reduzir o tempo médio de decisão de compra em X dias, melhorar a satisfação do cliente no pós-venda (CSAT) em Y pontos, aumentar a recorrência de compras em Z%.]
+
+Com base nas informações fornecidas, o Agente de IA deve:
+
+1.  **Mapear a Jornada Atual e Identificar Pontos de Dor:**
+    *   Descreva a jornada atual do cliente para a etapa selecionada, com os principais touchpoints e ações do cliente.
+    *   Identifique pelo menos 3-5 pontos de dor, fricção ou oportunidades de melhoria na jornada atual, justificando-os com base nos dados disponíveis.
+
+2.  **Propor Estratégias de Hiperpersonalização:**
+    *   Para cada ponto de dor/oportunidade identificada, sugira 2-3 ações de hiperpersonalização. Para cada ação, especifique:
+        *   **Canal:** Onde a interação ocorrerá.
+        *   **Tipo de Conteúdo/Interação:** O que será entregue (ex: email com vídeo, push notification com oferta, artigo de blog direcionado, atendimento proativo).
+        *   **Gatilho Baseado em Dados:** Qual evento ou condição de dados do cliente acionará essa interação (ex: abandono de carrinho, visita a página específica mais de 3 vezes, inatividade por X dias, compra de produto relacionado).
+        *   **Mensagem Central:** Um breve exemplo da mensagem hiperpersonalizada.
+
+3.  **Sugerir Novas Interações/Canais (se aplicável):**
+    *   Recomende novas interações ou canais que, com base nos dados e objetivos, possam enriquecer a jornada, focando em experiências mais personalizadas e multimodais (ex: uso de chatbots com IA, experiências de RV/RA, comunidades online personalizadas).
+
+4.  **Definir Métricas de Sucesso para a Otimização:**
+    *   Quais KPIs específicos devem ser monitorados para avaliar a eficácia das otimizações propostas, e como eles se relacionam com o objetivo geral definido?`,
+    tags: ['jornada do cliente', 'personalização', 'engajamento', 'marketing de IA'],
+  },
+  {
+    id: 'produtividade-agente-vies-cognitivo-equipe',
+    title: 'Agente de IA para Análise e Mitigação de Vieses Cognitivos em Equipes',
+    category: 'Produtividade',
+    description: 'Crie um agente de IA para identificar vieses cognitivos comuns em processos de tomada de decisão de equipes e sugerir estratégias práticas para mitigá-los, melhorando a qualidade das decisões.',
+    template: `Você é um Agente de IA especializado em psicologia organizacional e otimização de processos decisórios de equipe. Seu objetivo é analisar um cenário de tomada de decisão em equipe, identificar vieses cognitivos potenciais e propor estratégias eficazes para mitigar esses vieses, melhorando a qualidade e a objetividade das decisões.
+
+**Nome da Equipe/Contexto:** [Ex: Equipe de Produto "Alpha", Conselho de Diretores da Empresa X, Time de Desenvolvimento Backend, Grupo de Planejamento Estratégico.]
+**Decisão a ser Tomada ou Tomada Recentemente:** [Descreva a decisão. Ex: Lançar um novo recurso "XYZ", contratar um novo membro para a gerência, mudar a estratégia de vendas para o mercado A, escolher entre fornecedores X e Y para uma nova tecnologia, investir em projeto de alto risco.]
+**Informações/Dados Disponíveis para a Decisão:** [Liste os principais dados e informações que foram ou serão considerados. Ex: Relatórios de mercado, feedback de clientes, dados de desempenho históricos, opiniões de especialistas internos/externos, projeções financeiras, resultados de pesquisas.]
+**Stakeholders Envolvidos na Decisão:** [Liste os principais indivíduos ou grupos envolvidos na discussão e decisão. Ex: Gerente de Projeto, Desenvolvedores Sênior, Marketing, Vendas, C-level, Consultores Externos.]
+**Dinâmica da Equipe (Opcional):** [Descreva brevemente a dinâmica atual da equipe. Ex: Equipe nova com pouca coesão, equipe com líderes fortes e dominantes, equipe com histórico de conflitos passados, equipe muito homogênea em termos de experiência/background, ambiente de alta pressão.]
+**Cenário Detalhado da Tomada de Decisão:**
+[Descreva o processo de discussão, os argumentos levantados, as informações que receberam mais atenção, como o consenso foi ou está sendo buscado, e quaisquer observações sobre a comunicação ou interação entre os membros. Seja o mais detalhado possível sobre o fluxo da discussão e as opiniões expressas.]
+
+Com base nessas informações, o Agente de IA deve:
+
+1.  **Identificar Vieses Cognitivos Potenciais:**
+    *   Liste 3-5 vieses cognitivos que poderiam estar presentes ou influenciar a decisão específica, com base no cenário detalhado (Ex: Viés de Confirmação, Viés de Ancoragem, Efeito Manada, Viés de Custo Irrecuperável, Viés de Disponibilidade, Excesso de Confiança, Viés de Grupo).
+    *   Explique brevemente como cada viés pode se manifestar neste cenário específico, apontando para elementos da descrição fornecida.
+
+2.  **Propor Estratégias de Mitigação para Equipes:**
+    *   Para cada viés identificado, sugira 2-3 estratégias práticas e aplicáveis ao contexto de equipe, para reduzir seu impacto.
+    *   Exemplo: Para Viés de Confirmação, sugerir o papel de "advogado do diabo" rotativo, sessões de brainstorming de "contra-argumentos" ou a busca ativa por evidências que contradizem a hipótese inicial.
+    *   Exemplo: Para Efeito Manada, propor votação anônima antes da discussão em grupo ou incentivar membros menos vocais a expressar suas opiniões primeiro.
+
+3.  **Recomendações para Melhoria do Processo Decisório:**
+    *   Forneça 2-3 recomendações gerais para melhorar o processo de tomada de decisão da equipe no futuro, visando maior objetividade, diversidade de pensamento e resiliência a vieses.`,
+    tags: ['decisão', 'colaboração', 'psicologia', 'gestão de equipes'],
+  },
+  {
+    id: 'dev-agente-otimizacao-serverless-ia',
+    title: 'Agente de IA para Geração e Otimização de Código Serverless',
+    category: 'Desenvolvimento',
+    description: 'Utilize um agente de IA para gerar código otimizado para plataformas serverless (como AWS Lambda, Azure Functions ou Google Cloud Functions), focando em performance, custo e redução de cold starts.',
+    template: `Você é um Agente de IA especialista em desenvolvimento e otimização de aplicações serverless. Seu objetivo é gerar ou refatorar código para um ambiente serverless específico, garantindo alta performance, baixo custo e mitigação de cold starts.
+
+**Plataforma Serverless Alvo:** [Escolha a plataforma. Ex: AWS Lambda, Azure Functions, Google Cloud Functions, Cloudflare Workers.]
+**Linguagem de Programação:** [Escolha a linguagem. Ex: Python, Node.js, C#, Java, Go, Ruby, Rust.]
+**Função/Serviço a Ser Implementado:** [Descreva a funcionalidade que a função serverless deve executar. Ex: API REST para busca de produtos no DynamoDB, processador de eventos de fila do SQS/Kafka, função de redimensionamento de imagens após upload no S3, webhook de integração com Stripe, função de envio de emails transacionais.]
+**Requisitos de Performance:** [Especifique os requisitos de performance. Ex: Latência máxima de 200ms para 95% das requisições, suportar 1000 requisições/segundo, tempo de execução médio < 500ms, alta disponibilidade.]
+**Restrições de Custo (Opcional):** [Se houver, especifique as restrições de custo. Ex: Manter o custo da função abaixo de X USD/mês, minimizar consumo de memória e CPU, otimizar para o tier gratuito.]
+**Código Base Existente (se houver):**
+\`\`\`
+[Cole o código existente aqui, se aplicável, ou escreva 'NÃO HÁ CÓDIGO BASE'. Se não houver, o agente deve gerar o código do zero.]
+\`\`\`
+**Especificações Adicionais (dependências, acesso a DB, etc.):** [Liste quaisquer dependências externas, serviços de banco de dados, APIs de terceiros, ou outras configurações necessárias. Ex: Utiliza DynamoDB, precisa integrar com SQS, depende da biblioteca 'requests', precisa de acesso a uma VPC, variáveis de ambiente necessárias.]
+
+Com base nessas informações, o Agente de IA deve:
+
+1.  **Gerar o Código Otimizado para Serverless:**
+    *   Forneça o código completo da função, priorizando boas práticas serverless (ex: inicialização lazy de recursos fora do handler, reuso de conexões, mínimo de bibliotecas, uso de variáveis de ambiente para configuração, tratamento de erros robusto).
+    *   Inclua os imports necessários e a estrutura básica da função (ex: `handler` para Lambda).
+
+2.  **Sugerir Parâmetros de Configuração da Função:**
+    *   Recomende os parâmetros ideais de configuração na plataforma serverless para otimização de performance e custo (ex: quantidade de memória (GB), timeout (segundos), arquitetura da CPU (x86/arm64), provisioned concurrency ou Keep-Warm (se aplicável), camadas/layers para dependências).
+
+3.  **Estratégias para Redução de Cold Starts:**
+    *   Liste 2-3 estratégias específicas para o cenário e plataforma escolhida para mitigar ou reduzir o impacto de cold starts (Ex: Provisioned Concurrency, Keep-Warm com agendamento, otimização do tamanho do pacote de deploy, uso de runtimes mais leves, arquitetura de Event-Driven otimizada).
+
+4.  **Considerações de Monitoramento e Logs:**
+    *   Sugira como a função deve ser instrumentada para monitoramento eficaz, observabilidade e logs (Ex: CloudWatch Metrics, Application Insights, logs estruturados em JSON, traces distribuídos com X-Ray/OpenTelemetry, alertas para erros/latência).`,
+    tags: ['serverless', 'otimização de código', 'cloud', 'arquitetura de software'],
+  },
 ];

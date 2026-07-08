@@ -13,6 +13,125 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-gpt-5-6-lancamento-publico-2026-07',
+    date: '2026-07',
+    title: 'OpenAI lança publicamente os modelos GPT-5.6 (Sol, Terra, Luna)',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 9 de julho de 2026, a OpenAI lançou publicamente sua família de modelos de linguagem GPT-5.6 (Sol, Terra e Luna), após a liberação de restrições governamentais.',
+    highlights: [
+      'Modelos GPT-5.6 Sol, Terra e Luna lançados publicamente em 9 de julho de 2026.',
+      'O lançamento seguiu a aprovação da Casa Branca, após revisões de segurança.',
+      'GPT-5.6 Sol é o modelo mais forte, Terra é para uso diário com custo-benefício, e Luna é o modelo de menor custo.',
+      'A OpenAI havia disponibilizado uma prévia limitada para 20 parceiros em 26 de junho.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'meta-ai-muse-image-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Meta AI lança Muse Image, modelo de geração de imagens com capacidades de código e busca web',
+    developer: 'Meta AI',
+    category: 'Lançamento',
+    description: 'Em 7 de julho de 2026, a Meta Platforms Inc. estreou o Muse Image, um modelo de geração de imagens capaz de escrever código e realizar buscas na web.',
+    highlights: [
+      'Lançado em 7 de julho de 2026, com foco em geração de imagens e edição.',
+      'Capaz de gerar imagens a partir de prompts detalhados, editar fotos existentes e usar uma ferramenta de busca web para obter informações.',
+      'Possui uma ferramenta integrada que permite gerar código, como scripts Python para visualizações de dados.',
+      'Disponível através do chatbot Meta AI em mercados selecionados e alimenta novos efeitos no Instagram Stories, com expansão planejada para Facebook e Messenger.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'mistral-robostral-navigate-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Mistral AI lança Robostral Navigate, um modelo de robótica para navegação industrial',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'A Mistral AI anunciou em 8 de julho de 2026 o lançamento do Robostral Navigate, um modelo de robótica projetado para permitir que robôs naveguem em ambientes complexos usando uma única câmera e prompts de linguagem básicos.',
+    highlights: [
+      'Lançado em 8 de julho de 2026, para navegação robótica em ambientes complexos.',
+      'Utiliza uma única câmera RGB, dispensando LiDAR ou sensores de profundidade.',
+      'Alcança 76,6% de sucesso em benchmarks R2R-CE não vistos, superando abordagens multi-sensor.',
+      'O modelo é agnóstico em relação ao hardware e foi treinado inteiramente via simulação.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'xai-grok-4-5-lancamento-publico-2026-07',
+    date: '2026-07',
+    title: 'xAI lança Grok 4.5 publicamente, classificado como "Opus-class"',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'Em 9 de julho de 2026, Elon Musk anunciou que a xAI lançaria publicamente o Grok 4.5, seu mais recente modelo de linguagem grande, descrevendo-o como um modelo "Opus-class", porém mais rápido, mais eficiente em tokens e de menor custo.',
+    highlights: [
+      'Lançamento público do Grok 4.5 previsto para 9 de julho de 2026.',
+      'Elon Musk o descreveu como um modelo "Opus-class", superando o Claude Opus em desempenho inicial.',
+      'Promete ser mais rápido, mais eficiente em tokens e ter menor custo.',
+      'O modelo havia entrado em beta privado na Tesla e SpaceX em junho.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-deepmind-gemini-3-5-pro-rebuild-adiamento-2026-07',
+    date: '2026-07',
+    title: 'Google DeepMind adia lançamento do Gemini 3.5 Pro para 17 de julho para reconstrução arquitetural completa',
+    developer: 'Google DeepMind',
+    category: 'Atualização',
+    description: 'Em 7 de julho de 2026, o Google DeepMind adiou o lançamento de seu modelo Gemini 3.5 Pro para 17 de julho, abandonando a arquitetura existente do 2.5 Pro em favor de um redesenho completo.',
+    highlights: [
+      'Lançamento adiado para 17 de julho de 2026.',
+      'Decisão de abandonar a arquitetura existente do Gemini 2.5 Pro para uma reconstrução do zero.',
+      'O objetivo é melhorar o raciocínio matemático, a geração de cenas SVG e a qualidade da imagem.',
+      'O modelo introduz uma janela de contexto de 2 milhões de tokens e uma camada de raciocínio Deep Think.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'anthropic-claude-cowork-mobile-web-acesso-2026-07',
+    date: '2026-07',
+    title: 'Anthropic disponibiliza Claude Cowork em beta para mobile e web',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'Em 7 de julho de 2026, a Anthropic começou a disponibilizar sua experiência agêntica, Claude Cowork, em beta para usuários de planos Max em dispositivos móveis e na web.',
+    highlights: [
+      'Acesso a Claude Cowork expandido para mobile e web em 7 de julho de 2026.',
+      'Disponível em beta para membros do plano Max, com planos de expansão para outros planos.',
+      'Permite que o modelo funcione como um colaborador em tarefas multi-etapas, lendo arquivos, organizando pastas e rascunhando documentos.',
+      'Permite que o trabalho continue em segundo plano quando o dispositivo estiver offline e busca decisões do usuário via telefone.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'mistral-ai-novo-modelo-open-weight-early-access-2026-07',
+    date: '2026-07',
+    title: 'Mistral AI anuncia acesso antecipado a novo modelo open-weight "muito empolgante"',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'Em 4 de julho de 2026, o CEO da Mistral AI, Arthur Mensch, confirmou que um novo modelo "muito empolgante" de peso aberto seria lançado no verão, com acesso antecipado aberto em julho.',
+    highlights: [
+      'Acesso antecipado a um novo modelo open-weight da Mistral AI iniciado em julho de 2026.',
+      'O CEO Arthur Mensch descreveu o modelo como "muito empolgante".',
+      'A empresa visa reduzir a diferença de capacidades com laboratórios de IA de fronteira dos EUA.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'deepseek-chat-reasoner-descontinuado-2026-07',
+    date: '2026-07',
+    title: 'DeepSeek descontinua oficialmente modelos DeepSeek-Chat e DeepSeek-Reasoner',
+    developer: 'DeepSeek',
+    category: 'Descontinuado',
+    description: 'DeepSeek-Chat e DeepSeek-Reasoner serão totalmente descontinuados e inacessíveis após 24 de julho de 2026, 15:59 UTC, exigindo que os usuários migrem para as novas APIs DeepSeek V4 Pro ou DeepSeek V4 Flash.',
+    highlights: [
+      'Modelos DeepSeek-Chat e DeepSeek-Reasoner descontinuados a partir de 24 de julho de 2026.',
+      'Requests usando os nomes antigos falharão após a data de descontinuação.',
+      'Durante o período de carência (até 24 de julho), as chamadas para os modelos antigos são roteadas para DeepSeek V4 Flash.',
+      'Usuários são aconselhados a migrar para deepseek-v4-pro ou deepseek-v4-flash.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'google-deepmind-nano-banana-2-lite-lancamento-2026-07',
     date: '2026-07',
     title: 'Google DeepMind lança Nano Banana 2 Lite para produção de mídias generativas',

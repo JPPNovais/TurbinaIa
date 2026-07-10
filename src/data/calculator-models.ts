@@ -57,15 +57,15 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 5.00,
     outputPricePerM: 25.00,
     contextWindow: '1M tokens',
-    description: 'O modelo mais inteligente da família Claude da Anthropic (versão Opus 4.8), para raciocínio complexo e tarefas agênticas, com até 1M de contexto. Foco em honestidade e confiabilidade. Preços e janela de contexto baseados no Claude Opus 4.8 a partir de Julho de 2026.',
+    description: 'O modelo mais inteligente da família Claude da Anthropic (versão Opus 4.8), para raciocínio complexo e tarefas agênticas, com até 1M de contexto. Foco em honestidade e confiabilidade. Preços e janela de contexto baseados no Claude Opus 4.7/4.6 a partir de Julho de 2026.',
   },
   {
-    name: 'Claude 3.5 Sonnet',
+    name: 'Claude 4.6 Sonnet',
     provider: 'Anthropic',
     inputPricePerM: 3.00,
     outputPricePerM: 15.00,
     contextWindow: '1M tokens',
-    description: 'O modelo intermediário da família Claude da Anthropic, um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com até 1M de contexto. Preços e janela de contexto baseados no Claude Sonnet 4.6 a partir de Julho de 2026.',
+    description: 'O modelo intermediário da família Claude da Anthropic (versão Sonnet 4.6), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com até 1M de contexto. Preços e janela de contexto baseados no Claude Sonnet 4.6 a partir de Julho de 2026.',
   },
   {
     name: 'Claude Haiku 4.5',
@@ -81,8 +81,8 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'DeepSeek',
     inputPricePerM: 0.14,
     outputPricePerM: 0.28,
-    contextWindow: '128K tokens',
-    description: 'O modelo DeepSeek V4 Flash, com bom desempenho e um custo muito baixo, suportando 128K de contexto. Preços e janela de contexto baseados no DeepSeek V4 Flash a partir de Julho de 2026.',
+    contextWindow: '1M tokens',
+    description: 'O modelo DeepSeek V4 Flash, com bom desempenho e um custo muito baixo, suportando 1M de contexto. Preços e janela de contexto baseados no DeepSeek V4 Flash a partir de Julho de 2026.',
   },
   // Meta (via API)
   {

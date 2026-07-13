@@ -13,6 +13,21 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'meta-ai-muse-spark-1-1-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Meta AI lança Muse Spark 1.1, seu primeiro modelo pago com foco em codificação e agentes',
+    developer: 'Meta AI',
+    category: 'Lançamento',
+    description: 'Em 9 de julho de 2026, a Meta lançou o Muse Spark 1.1, um modelo de linguagem que marca a entrada da empresa no mercado de modelos de IA pagos, com foco em capacidades de codificação e agentes.',
+    highlights: [
+      'Lançado em 9 de julho de 2026, o Muse Spark 1.1 é o primeiro modelo de IA pago da Meta.',
+      'Projetado como um "coder agentic", o modelo se destaca em benchmarks de uso de ferramentas.',
+      'A precificação inicial é de US$ 1,25 por milhão de tokens de entrada e US$ 4,25 por milhão de tokens de saída.',
+      'Disponível para prévia de API nos EUA, com compatibilidade para os formatos de SDK da OpenAI e Anthropic.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'openai-gpt-5-6-lancamento-publico-2026-07',
     date: '2026-07',
     title: 'OpenAI lança publicamente os modelos GPT-5.6 (Sol, Terra, Luna)',

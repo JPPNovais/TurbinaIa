@@ -7290,4 +7290,95 @@ Com base nessas informações, o Agente de IA deve:
     *   Sugira como a função deve ser instrumentada para monitoramento eficaz, observabilidade e logs (Ex: CloudWatch Metrics, Application Insights, logs estruturados em JSON, traces distribuídos com X-Ray/OpenTelemetry, alertas para erros/latência).`,
     tags: ['serverless', 'otimização de código', 'cloud', 'arquitetura de software'],
   },
+  {
+    id: 'social-media-agente-estrategia-conteudo-otimizador',
+    title: 'Agente Otimizador de Estratégia de Conteúdo para Redes Sociais',
+    category: 'Redes Sociais',
+    description: 'Um agente de IA que analisa suas métricas de redes sociais e sugere otimizações para sua estratégia de conteúdo com base em dados.',
+    template: `Aja como um agente especialista em otimização de estratégias de conteúdo para redes sociais. Sua tarefa é analisar os dados de desempenho fornecidos e identificar oportunidades de melhoria e novas direções para o conteúdo.
+
+Dados de desempenho (últimos [período de tempo], ex: 3 meses):
+- **Plataformas analisadas:** [Instagram, TikTok, LinkedIn, etc. - liste todas as plataformas relevantes]
+- **Métricas Chave por Plataforma:**
+  - Instagram: [Impressões: X, Alcance: Y, Engajamento (likes, comentários, saves, compartilhamentos): Z%, Seguidores: W (ganhos/perdidos: ΔW), Stories views: K]
+  - TikTok: [Visualizações: X, Taxa de engajamento: Y%, Seguidores: Z (ganhos/perdidos: ΔZ), Tempo médio de visualização: W]
+  - LinkedIn: [Visualizações de posts: X, Taxa de engajamento: Y%, Conexões: Z (ganhos/perdidos: ΔZ), Cliques em links: V]
+  - Outras métricas relevantes: [Listar outras métricas e valores, ex: Cliques no link da bio, Taxa de conversão, Menções]
+- **Tipos de Conteúdo Publicados:** [Ex: Reels, Carrosséis, Stories, Posts estáticos, Vídeos longos, Artigos - liste os tipos mais frequentes]
+- **Tópicos/Temas Abordados:** [Ex: Tutoriais, Bastidores, Dicas rápidas, Debates, Notícias do setor, Curiosidades - liste os principais tópicos]
+- **Objetivo Atual da Estratégia:** [Ex: Aumento de brand awareness, Geração de leads, Engajamento da comunidade, Vendas diretas, Suporte ao cliente]
+
+Com base nesses dados e no objetivo, por favor:
+1.  **Diagnostique** os pontos fortes e fracos da estratégia atual, destacando quais tipos de conteúdo ou tópicos performaram melhor/pior em cada plataforma relevante e por quê (hipóteses).
+2.  **Sugira 3-5 ações concretas e táticas** para otimizar a estratégia de conteúdo em cada plataforma relevante, considerando as tendências atuais, o objetivo e os insights do diagnóstico.
+3.  **Proponha 2-3 novas ideias de conteúdo multimodal** ou formatos que poderiam ser testados para melhorar o desempenho e alinhar-se com o objetivo.
+4.  **Indique 2-3 métricas específicas** que devem ser monitoradas para avaliar o sucesso das novas ações propostas.
+
+Formate sua resposta de forma clara, com seções para "Diagnóstico da Estratégia", "Sugestões Táticas por Plataforma", "Novas Ideias de Conteúdo Multimodal" e "Métricas de Sucesso para Acompanhamento".`,
+    tags: ['Estratégia Digital', 'Análise de Dados', 'Agente IA', 'Otimização'],
+  },
+  {
+    id: 'education-agente-gamificacao-aprendizagem',
+    title: 'Agente Criador de Cenários de Gamificação para Aprendizagem',
+    category: 'Educação',
+    description: 'Um agente de IA que projeta um cenário de gamificação completo para um tópico de aprendizagem específico, incluindo mecânicas e recompensas.',
+    template: `Aja como um agente especialista em design instrucional e gamificação. Sua tarefa é criar um cenário de gamificação detalhado para facilitar a aprendizagem de um tópico específico.
+
+Informações sobre o Tópico de Aprendizagem:
+- **Tópico:** [Ex: Princípios de Economia Circular, Introdução à Programação Python, História da Arte Moderna]
+- **Público-alvo:** [Ex: Estudantes universitários de administração, Profissionais em transição de carreira para TI, Alunos do ensino médio interessados em história]
+- **Nível de conhecimento atual do público:** [Ex: Iniciante (sem conhecimento prévio), Intermediário (conhecimento básico), Avançado (precisa de aprofundamento)]
+- **Objetivos de aprendizagem:** [O que o aluno deve ser capaz de fazer ou saber ao final, ex: Compreender os 7 Rs da Economia Circular, Escrever um script Python simples com loops e condicionais, Identificar os principais movimentos artísticos modernos e seus artistas]
+- **Duração estimada da atividade gamificada:** [Ex: 30 minutos, 2 horas, 1 semana, 1 mês]
+- **Formato preferencial (se houver):** [Ex: Online (plataforma web com quizzes e interações), Presencial (com materiais físicos e trabalho em grupo), Híbrido (parte online, parte presencial)]
+
+Com base nessas informações, crie o cenário de gamificação, incluindo os seguintes elementos:
+1.  **Nome do Jogo/Cenário Gamificado:** Um título envolvente e relevante para o tópico.
+2.  **Narrativa/Contexto:** Uma breve história ou cenário que engaja o aluno no jogo e justifica os desafios.
+3.  **Mecânicas de Jogo Principais:**
+    *   **Pontos:** Como os pontos são ganhos (ex: por responder corretamente, completar tarefas, ajudar colegas) e qual seu propósito (ex: ranking, desbloquear conteúdo).
+    *   **Emblemas/Conquistas:** Quais marcos ou habilidades desbloqueiam emblemas e o que eles representam (ex: "Mestre Python", "Reciclador Campeão").
+    *   **Níveis/Fases:** Como o progresso é estruturado (ex: Nível 1: Introdução, Nível 2: Desafios Práticos) e o que cada nível/fase envolve (com exemplos de atividades ou temas).
+    *   **Desafios/Missões:** Tipos de atividades ou problemas que os alunos devem resolver para avançar (ex: quizzes, estudos de caso, projetos práticos, simulações).
+    *   **Recompensas/Feedback:** Como o aluno é recompensado ou recebe feedback (virtuais, sociais, reais - ex: feedback imediato, acesso a conteúdo bônus, reconhecimento público).
+    *   **Elemento Social (opcional):** Como os alunos podem interagir, colaborar ou competir (se aplicável ao tópico e público-alvo).
+4.  **Integração com o Conteúdo:** Descreva como o tópico de aprendizagem será incorporado naturalmente nas mecânicas e desafios, garantindo que o jogo reforce os objetivos de aprendizagem.
+5.  **Exemplo de Fluxo de Jogo:** Detalhe um pequeno segmento do jogo (ex: o primeiro nível/missão) para ilustrar como funcionaria na prática, passo a passo.
+6.  **Métricas de Sucesso:** Como o sucesso do cenário gamificado será avaliado em relação aos objetivos de aprendizagem e engajamento dos alunos.
+
+Formate sua resposta com seções claras e detalhadas para cada um dos itens acima, com exemplos práticos para o tópico escolhido.`,
+    tags: ['Gamificação', 'Design Instrucional', 'Aprendizagem Ativa', 'Educação Interativa'],
+  },
+  {
+    id: 'finance-agente-analise-risco-credito-pme',
+    title: 'Agente de Análise de Risco de Crédito para PMEs',
+    category: 'Finanças',
+    description: 'Um agente de IA que avalia o risco de crédito de uma Pequena e Média Empresa (PME) com base em dados financeiros e operacionais, e sugere estratégias de melhoria.',
+    template: `Aja como um agente especialista em análise de crédito e consultoria financeira para PMEs. Sua tarefa é avaliar o perfil de risco de crédito de uma empresa, identificar pontos fracos e fortes, e propor recomendações para melhorar sua elegibilidade para financiamento.
+
+Dados da PME:
+- **Nome da Empresa:** [Nome da PME]
+- **Setor de Atuação:** [Ex: Varejo de moda, Serviços de TI, Indústria alimentícia, Construção Civil]
+- **Tempo de Operação:** [Ex: 3 anos, 10 anos, 1 ano e meio]
+- **Faturamento Anual Médio (últimos 3 anos):** [Ex: R$ 500.000, R$ 2 milhões, R$ 120.000]
+- **Lucratividade Média (Margem Líquida - últimos 3 anos):** [Ex: 10%, 3%, -5%]
+- **Endividamento Total (Passivo Total):** [Ex: R$ 150.000, R$ 800.000, R$ 50.000]
+- **Patrimônio Líquido:** [Ex: R$ 300.000, R$ 1 milhão, R$ 80.000]
+- **Fluxo de Caixa Operacional (últimos 12 meses):** [Ex: Positivo em R$ 80.000, Negativo em R$ 10.000, Estável em R$ 0]
+- **Histórico de Pagamentos (com bancos, fornecedores, impostos):** [Ex: Sempre em dia, Atrasos pontuais com fornecedores (especificar), Um atraso significativo com banco X no ano passado]
+- **Garantias Disponíveis (se houver e valor estimado):** [Ex: Imóvel avaliado em R$ X, Recebíveis futuros de contratos Y, Máquinas e equipamentos de R$ Z]
+- **Necessidade de Financiamento:** [Ex: Capital de giro, Expansão de loja física, Aquisição de novos equipamentos, Lançamento de produto]
+- **Valor Solicitado:** [Ex: R$ 100.000, R$ 500.000, R$ 30.000]
+- **Urgência:** [Ex: Moderada (para os próximos 6 meses), Alta (para os próximos 3 meses), Baixa (apenas prospecção)]
+
+Com base nesses dados, por favor:
+1.  **Avalie o Risco de Crédito:** Classifique o risco de crédito da PME (Baixo, Médio, Alto) e justifique sua avaliação com base nos dados fornecidos, destacando os indicadores chave.
+2.  **Identifique os Principais Fatores:** Destaque os 3-5 principais fatores financeiros e operacionais que impactam positiva e negativamente o perfil de crédito da empresa.
+3.  **Proponha Recomendações:** Sugira 3-5 ações estratégicas e táticas que a PME pode tomar nos próximos [período, ex: 6-12 meses] para melhorar seu perfil de risco e aumentar suas chances de obter financiamento, incluindo, se aplicável, a otimização de garantias, a reestruturação de dívidas ou a melhoria de indicadores financeiros.
+4.  **Sugira Tipos de Financiamento:** Com base no perfil e necessidade, quais tipos de financiamento (ex: empréstimo bancário tradicional, linha de crédito para capital de giro, financiamento coletivo/crowdfunding, venture debt, crédito subsidiado) seriam mais adequados para a PME.
+5.  **Métricas de Acompanhamento:** Indique 2-3 métricas financeiras (além do faturamento/lucratividade) que a PME deve monitorar para demonstrar melhoria contínua de seu perfil de crédito aos potenciais credores.
+
+Formate sua resposta de forma clara, com seções dedicadas à "Avaliação de Risco de Crédito", "Principais Fatores de Impacto", "Recomendações Estratégicas e Táticas", "Tipos de Financiamento Sugeridos" e "Métricas de Acompanhamento".`,
+    tags: ['Análise Financeira', 'Risco de Crédito', 'PME', 'Empreendedorismo'],
+  },
 ];

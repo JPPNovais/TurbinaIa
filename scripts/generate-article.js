@@ -275,11 +275,55 @@ function getRecentArticleTitles(daysBack = 30) {
   return titles;
 }
 
+// Rodízio de tipos de pauta — diversifica o blog para além de hard news de
+// laboratórios/empresas (que dominavam 100% das publicações):
+//   segunda  → notícia quente (comportamento original)
+//   quarta   → novidade de ferramenta de IA que as pessoas usam no dia a dia
+//   sexta    → uso prático / metodologia / tendência de adoção (evergreen, tráfego orgânico)
+// Override manual: ARTICLE_TYPE=noticia|ferramenta|uso (env) ou rodízio pelo dia.
+const ARTICLE_TYPES = {
+  noticia: {
+    label: 'Notícia quente',
+    category: 'noticias',
+    suggestion: (today, avoidBlock) => `Pesquise na internet as notícias mais importantes, recentes e impactantes de hoje (${today}) sobre Inteligência Artificial, tecnologia ou novas ferramentas de IA, priorizando publicações de fontes de alta credibilidade como: blogs oficiais dos laboratórios de IA (anthropic.com, openai.com, deepmind.google, ai.meta.com, mistral.ai, blog.google/technology/ai), revistas especializadas (technologyreview.com, wired.com, nature.com, science.org), veículos de jornalismo tecnológico com editorial reconhecido (techcrunch.com, theverge.com, reuters.com, bloomberg.com, apnews.com) ou papers do arxiv.org. Com base nas notícias reais encontradas nessas fontes, sugira um único título/tema ESPECÍFICO para um artigo de blog focado em atrair tráfego e otimizado para SEO. O tema deve ter um fato ou notícia concreta como gancho — EVITE temas genéricos como "evolução da IA em 2026" ou resumos semanais do tipo "a semana da IA". Prefira temas como "OpenAI lança X", "Google anuncia Y", "estudo revela Z".${avoidBlock}\n\nRetorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais.`,
+    angle: `## PAUTA DESTA EDIÇÃO: NOTÍCIA
+Este artigo é uma notícia quente. Vá direto ao fato, contextualize com profundidade jornalística e explique o que muda na prática para o leitor brasileiro. Use \`category: noticias\` no frontmatter.`,
+  },
+  ferramenta: {
+    label: 'Novidade de ferramenta',
+    category: 'ferramentas',
+    suggestion: (today, avoidBlock) => `Pesquise na internet (${today}) as novidades mais recentes e relevantes em FERRAMENTAS DE IA que pessoas comuns e profissionais usam no dia a dia — lançamentos, atualizações importantes ou recursos novos de produtos como ChatGPT, Gemini, Claude, Copilot, NotebookLM, Midjourney, Canva, CapCut, ElevenLabs, Notion AI, Perplexity, cursores de código com IA, apps de produtividade com IA, ou ferramentas novas que estejam ganhando tração real (rankings de apps, dados de adoção). Priorize fontes confiáveis: blogs oficiais dos produtos, techcrunch.com, theverge.com, wired.com, arstechnica.com, technologyreview.com. EVITE pautas corporativas de bastidor (chips, aquisições, rodadas de investimento, data centers) — o foco é utilidade prática para quem USA as ferramentas. Sugira um único título/tema ESPECÍFICO com gancho concreto (recurso lançado, mudança de preço/plano, funcionalidade viral) e apelo de busca orgânica — algo que uma pessoa realmente pesquisaria no Google, como "X ganha recurso Y: como funciona e para quem vale a pena".${avoidBlock}\n\nRetorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais.`,
+    angle: `## PAUTA DESTA EDIÇÃO: FERRAMENTA
+Este artigo é sobre uma novidade de ferramenta de IA de uso cotidiano. Além de noticiar o fato, seja ÚTIL: explique como o recurso funciona na prática, quem se beneficia, quanto custa (planos/preços no Brasil quando existirem), limitações reais e como o leitor testa hoje. Uma seção curta de passo a passo ou "como experimentar" é bem-vinda quando fizer sentido. Use \`category: ferramentas\` no frontmatter.`,
+  },
+  uso: {
+    label: 'Uso prático / metodologia',
+    category: 'tutoriais',
+    suggestion: (today, avoidBlock) => `Pesquise na internet (${today}) tendências REAIS e recentes de COMO as pessoas estão usando Inteligência Artificial no trabalho, nos estudos, na criação de conteúdo ou na vida pessoal — metodologias, técnicas e hábitos em alta (ex.: técnicas de prompt que viraram padrão, "vibe coding", IA para estudar para provas e concursos, agentes de IA em rotinas de trabalho, automação pessoal, pesquisa profunda com IA). A pauta DEVE estar ancorada em pelo menos um fato concreto e verificável de fonte confiável: pesquisa/survey (Pew, Gallup, McKinsey, Stanford HAI, gartner.com), reportagem de veículo reconhecido (technologyreview.com, wired.com, theverge.com, economist.com, ft.com, reuters.com) ou dados de adoção divulgados oficialmente. EVITE listicles genéricos ("10 formas de usar IA") e temas sem gancho factual. Sugira um único título/tema ESPECÍFICO com forte apelo de busca orgânica — do tipo que responde a uma pergunta que as pessoas pesquisam ("o que é X e por que todo mundo está usando", "como a técnica Y funciona").${avoidBlock}\n\nRetorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais.`,
+    angle: `## PAUTA DESTA EDIÇÃO: USO PRÁTICO / METODOLOGIA
+Este artigo explica uma forma de usar IA que está em alta, com valor evergreen (deve continuar útil por meses). Estruture para intenção de busca: defina o conceito logo no início, mostre como aplicar na prática (com exemplo concreto ou mini passo a passo), o que dizem os dados/pesquisas sobre adoção, erros comuns e para quem faz sentido. Use \`category: tutoriais\` no frontmatter (ou \`ferramentas\` se o tema for centrado num produto específico).`,
+  },
+};
+
+function pickArticleType() {
+  const override = (process.env.ARTICLE_TYPE || '').trim().toLowerCase();
+  if (ARTICLE_TYPES[override]) return override;
+  const day = new Date().getUTCDay(); // 0=dom ... 6=sáb (cron roda seg/qua/sex 16h UTC)
+  if (day === 1) return 'noticia';
+  if (day === 3) return 'ferramenta';
+  if (day === 5) return 'uso';
+  return ['noticia', 'ferramenta', 'uso'][day % 3];
+}
+
 async function run() {
   let topic = process.argv[2];
   const today = new Date().toISOString().split('T')[0];
+  const manualTopic = Boolean(topic);
+  const articleType = pickArticleType();
+  const typeSpec = ARTICLE_TYPES[articleType];
 
   console.log('⚡ Iniciando o Gerador de Artigos Turbina IA ⚡');
+  console.log(`🗞️  Tipo de pauta desta edição: ${typeSpec.label} (${articleType})`);
 
   // Step 1: Suggest a trend topic if none is supplied
   if (!topic) {
@@ -293,7 +337,7 @@ async function run() {
     try {
       const suggestResponse = await withRetry(() => ai.models.generateContent({
         model: 'gemini-2.5-flash',
-        contents: `Pesquise na internet as notícias mais importantes, recentes e impactantes de hoje (${today}) sobre Inteligência Artificial, tecnologia ou novas ferramentas de IA, priorizando publicações de fontes de alta credibilidade como: blogs oficiais dos laboratórios de IA (anthropic.com, openai.com, deepmind.google, ai.meta.com, mistral.ai, blog.google/technology/ai), revistas especializadas (technologyreview.com, wired.com, nature.com, science.org), veículos de jornalismo tecnológico com editorial reconhecido (techcrunch.com, theverge.com, reuters.com, bloomberg.com, apnews.com) ou papers do arxiv.org. Com base nas notícias reais encontradas nessas fontes, sugira um único título/tema ESPECÍFICO para um artigo de blog focado em atrair tráfego e otimizado para SEO. O tema deve ter um fato ou notícia concreta como gancho — EVITE temas genéricos como "evolução da IA em 2026" ou resumos semanais do tipo "a semana da IA". Prefira temas como "OpenAI lança X", "Google anuncia Y", "estudo revela Z".${avoidBlock}\n\nRetorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais. Exemplo de retorno: Lançamento do Gemini 1.5 Pro: A nova IA do Google com janela de contexto histórica`,
+        contents: typeSpec.suggestion(today, avoidBlock),
         config: {
           tools: [{ googleSearch: {} }]
         }
@@ -320,9 +364,24 @@ async function run() {
     ? `\n\n## CONTEÚDO REAL EXTRAÍDO DAS FONTES PRIMÁRIAS\n\nOs textos abaixo foram baixados diretamente dos sites das fontes originais. Use-os como base principal das informações do artigo. Ao cruzar informações que aparecem em múltiplas fontes, você pode afirmar com mais confiança — indique isso com expressões como "confirmado por X e Y" ou "tanto a [Fonte A] quanto a [Fonte B] relatam que...".\n\n${sourceContext}\n\n---\n`
     : '';
 
+  const angleBlock = manualTopic ? '' : `\n${typeSpec.angle}\n`;
+
   const prompt = `Você é o redator-chefe do blog Turbina IA (turbinaia.com.br), especializado em Inteligência Artificial, ferramentas de produtividade e tendências tecnológicas.
 
 Sua missão é escrever um artigo em português impecável, com jornalismo de qualidade, sobre o tema: "${topic}".${sourceBlock}
+${angleBlock}
+## ESTILO DE ESCRITA — TEXTO HUMANO (tão importante quanto as fontes)
+
+O texto precisa soar como um jornalista brasileiro experiente escrevendo para gente de verdade — nunca como texto de IA. Regras:
+
+- **Abertura concreta:** comece com um fato, uma cena, um número ou uma pergunta específica. PROIBIDO abrir com generalidades ("A inteligência artificial está transformando o mundo...", "Nos últimos anos...").
+- **Ritmo variado:** alterne frases curtas com longas; parágrafos de 1 a 5 frases, tamanhos irregulares. Texto em que todos os parágrafos têm o mesmo tamanho parece máquina.
+- **Clichês de IA PROIBIDOS:** "no cenário atual", "em constante evolução", "é importante ressaltar/destacar/notar", "vale destacar", "nesse sentido", "além disso" mais de 1x, "em resumo", "concluindo", "revolucionário", "divisor de águas", "game-changer", "desbloquear o potencial", "impulsionar sua produtividade", "não é mais ficção científica".
+- **Menos listas, mais prosa:** prefira parágrafos corridos com transições naturais. Bullets só quando o conteúdo é genuinamente enumerativo (specs, preços, passos).
+- **Negrito com parcimônia:** reserve para termos-chave, nunca para frases inteiras de ênfase retórica.
+- **Fechamento com substância:** termine com a consequência prática ou a pergunta que fica em aberto — nunca com resumo genérico ou "só o tempo dirá".
+- **Voz editorial:** um toque de análise própria claramente sinalizada é bem-vindo ("na prática, o que muda é...", "o detalhe que passou despercebido é..."), sem editorialismo disfarçado de fato.
+- **Título honesto (política AdSense):** o título deve prometer EXATAMENTE o que o corpo entrega. Se o corpo relativiza ("ainda é rumor", "só em preview"), o título não pode afirmar como fato consumado. Sensacionalismo com desmentido no corpo = conteúdo enganoso.
 
 ## REGRAS DE QUALIDADE DAS FONTES (OBRIGATÓRIO)
 
@@ -466,17 +525,22 @@ Escreva um artigo longo (mínimo de 1500 palavras, idealmente entre 1800 e 2500 
       }
 
       if (inFrontmatter) {
+        // Normaliza antes de re-escapar: o modelo às vezes já entrega aspas
+        // escapadas (\") — re-escapar sem desfazer gera \\" e quebra o YAML
+        // (título truncado; incidente do artigo J-Space em 13/07).
         if (lines[i].startsWith('title:')) {
           let value = lines[i].replace('title:', '').trim();
           if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
             value = value.substring(1, value.length - 1);
           }
+          value = value.replace(/\\+"/g, '"');
           lines[i] = `title: "${value.replace(/"/g, '\\"')}"`;
         } else if (lines[i].startsWith('description:')) {
           let value = lines[i].replace('description:', '').trim();
           if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
             value = value.substring(1, value.length - 1);
           }
+          value = value.replace(/\\+"/g, '"');
           lines[i] = `description: "${value.replace(/"/g, '\\"')}"`;
         }
       }

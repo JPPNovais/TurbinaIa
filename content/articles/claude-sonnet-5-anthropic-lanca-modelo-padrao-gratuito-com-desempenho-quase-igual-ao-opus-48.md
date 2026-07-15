@@ -84,13 +84,13 @@ Já para o usuário final do aplicativo Claude, a mudança é mais simples de de
 
 ## Perguntas Frequentes
 
-**O Claude Sonnet 5 é realmente gratuito?**
+### O Claude Sonnet 5 é realmente gratuito?
 Sim, para quem usa o aplicativo ou o site do Claude. O modelo é o padrão nos planos Free e Pro sem custo adicional, conforme confirmam a [Anthropic](https://www.anthropic.com/news/claude-sonnet-5) e o [Canaltech](https://canaltech.com.br/inteligencia-artificial/claude-lanca-sonnet-5-modelo-gratuito-quase-tao-bom-quanto-o-pago/). A cobrança por token existe apenas para quem acessa o modelo pela API ou pelo Claude Code.
 
-**Qual a diferença de preço entre Sonnet 5 e Opus 4.8 na API?**
+### Qual a diferença de preço entre Sonnet 5 e Opus 4.8 na API?
 Até 31 de agosto de 2026, o Sonnet 5 custa US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de saída (depois sobe para US$ 3 e US$ 15), contra US$ 5 e US$ 25 do Opus 4.8, segundo dados da [Anthropic](https://www.anthropic.com/news/claude-sonnet-5).
 
-**O Sonnet 5 substitui o Opus 4.8 em tarefas complexas?**
+### O Sonnet 5 substitui o Opus 4.8 em tarefas complexas?
 Não totalmente. Embora reduza a distância em benchmarks como SWE-bench Pro (63,2% contra 69,2% do Opus 4.8), a própria Anthropic mantém o Opus 4.8 como recomendação para tarefas que exigem maior precisão e julgamento sutil, como aponta a [TechCrunch](https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/).
 
 ## Fontes e Referências

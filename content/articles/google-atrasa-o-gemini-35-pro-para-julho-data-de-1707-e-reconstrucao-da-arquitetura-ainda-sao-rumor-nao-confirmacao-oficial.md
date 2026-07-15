@@ -77,13 +77,13 @@ O adiamento acontece em um momento particularmente sensível para a Google. Riva
 
 ## Perguntas Frequentes
 
-**O Gemini 3.5 Pro já tem data oficial de lançamento?**
+### O Gemini 3.5 Pro já tem data oficial de lançamento?
 Não. A Google confirmou, por meio de reportagem da Business Insider, que o modelo está atrasado para junho e chega em julho de 2026, mas não divulgou uma data exata. A data de 17 de julho circula apenas em veículos especializados menores, sem confirmação oficial da empresa.
 
-**É verdade que a Google reconstruiu toda a arquitetura do Gemini 3.5 Pro?**
+### É verdade que a Google reconstruiu toda a arquitetura do Gemini 3.5 Pro?
 Essa informação também não foi confirmada oficialmente. A explicação verificada para o atraso, segundo a Business Insider, envolve três problemas específicos — eficiência de tokens, desempenho de codificação e raciocínio em tarefas longas —, não necessariamente um descarte completo da arquitetura-base.
 
-**Por que tantos pesquisadores do Google DeepMind saíram ao mesmo tempo?**
+### Por que tantos pesquisadores do Google DeepMind saíram ao mesmo tempo?
 Segundo TechCrunch e Bloomberg, a proximidade das aberturas de capital da OpenAI e da Anthropic tornou os pacotes de remuneração em ações dessas empresas mais atrativos, somando-se a frustrações internas de alguns pesquisadores com a alocação de poder computacional na Google.
 
 ## Fontes e Referências

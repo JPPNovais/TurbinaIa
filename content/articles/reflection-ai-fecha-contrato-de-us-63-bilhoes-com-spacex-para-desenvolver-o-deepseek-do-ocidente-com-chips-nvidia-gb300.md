@@ -99,13 +99,13 @@ Para o ecossistema de IA global, o acordo sinaliza algo mais amplo: o poder comp
 
 ## Perguntas Frequentes
 
-**O que é a Reflection AI e por que é comparada ao DeepSeek?**
+### O que é a Reflection AI e por que é comparada ao DeepSeek?
 A Reflection AI é uma startup americana fundada em março de 2024 por Misha Laskin e Ioannis Antonoglou, ex-pesquisadores do Google DeepMind, com o objetivo de desenvolver modelos de inteligência artificial de código aberto capazes de competir com os sistemas de fronteira da OpenAI, Anthropic e Google. A comparação com o DeepSeek vem do posicionamento da empresa como alternativa aberta, transparente e customizável aos sistemas proprietários — da mesma forma que o DeepSeek representou uma ruptura no mercado dominado por modelos fechados ocidentais.
 
-**Qual é o valor exato do acordo com a SpaceX e o que ele inclui?**
+### Qual é o valor exato do acordo com a SpaceX e o que ele inclui?
 O contrato prevê pagamentos de US$ 150 milhões por mês a partir de 1º de julho de 2026, podendo somar até US$ 6,3 bilhões até 2029. Ele garante à Reflection AI acesso imediato aos chips Nvidia GB300 e à infraestrutura de hardware do datacenter Colossus 2, em Memphis, Tennessee. Qualquer parte pode encerrar o acordo com 90 dias de aviso após os três primeiros meses de vigência.
 
-**A Reflection AI já tem produtos disponíveis ao público?**
+### A Reflection AI já tem produtos disponíveis ao público?
 Não. Até junho de 2026, a Reflection AI não lançou publicamente nenhum modelo de fronteira. A empresa está em fase avançada de pré-treinamento e construção de infraestrutura, com planos de usar arquitetura Mixture-of-Experts (MoE) e treinar sobre dezenas de trilhões de tokens. O acesso ao Colossus 2 a partir de julho de 2026 deve acelerar significativamente esse processo.
 
 ## Fontes e Referências

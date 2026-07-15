@@ -419,7 +419,7 @@ date: "${today}"
 
 5. **Perspectiva internacional:** Quando houver diferentes pontos de vista de veículos de diferentes países ou regiões, inclua-os para enriquecer a análise.
 
-6. **FAQ:** Seção "## Perguntas Frequentes" com 3 perguntas e respostas ultra-diretas.
+6. **FAQ:** Seção "## Perguntas Frequentes" com 3 perguntas e respostas ultra-diretas. FORMATO OBRIGATÓRIO: cada pergunta é um heading H3 (\`### Pergunta aqui?\`) seguido da resposta em parágrafo normal. NUNCA use \`**negrito**\` para as perguntas — o site só extrai o schema FAQPage (rich snippet do Google) de perguntas em \`###\`.
 
 7. **Links internos (OBRIGATÓRIO — mínimo 2, ideal 3):** Distribua ao longo do corpo de 2 a 3 links internos contextuais, integrados naturalmente às frases (nunca numa lista solta). Use as páginas do próprio site e escolha pela relevância: [Comparador de IAs](/comparador) (ao comparar modelos), [Calculadora de Custos](/calculadora) (ao falar de preços/tokens), [Prompts](/prompts) e [Gerador de Prompts](/gerador) (ao falar de uso prático), [Glossário de IA](/glossario) (ao introduzir um termo técnico) ou [Monitor de Modelos](/changelog) (ao falar de versões/lançamentos). Menos de 2 links internos no corpo = artigo incompleto, reescreva.
 

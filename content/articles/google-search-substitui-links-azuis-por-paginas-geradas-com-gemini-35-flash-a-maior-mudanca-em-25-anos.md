@@ -90,13 +90,13 @@ Do lado regulatório, o Alura destaca que a Autoridade de Concorrência e Mercad
 
 ## Perguntas Frequentes
 
-**O Google vai eliminar totalmente os links azuis da busca?**
+### O Google vai eliminar totalmente os links azuis da busca?
 Não. Segundo a [TechCrunch](https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/), os links continuam existindo e aparecem como apoio às respostas geradas por IA, mas deixam de ser o formato prioritário em boa parte das consultas, especialmente aquelas mais complexas ou conversacionais.
 
-**O que muda de fato com o Gemini 3.5 Flash no Search?**
+### O que muda de fato com o Gemini 3.5 Flash no Search?
 De acordo com o [Google](https://blog.google/products-and-platforms/products/search/search-io-2026/), o modelo passa a ser o padrão do AI Mode globalmente, permitindo respostas mais rápidas, follow-ups diretos nas AI Overviews e geração de interfaces personalizadas para cada pergunta, em vez de uma lista fixa de resultados.
 
-**Quando os agentes de informação estarão disponíveis para todos?**
+### Quando os agentes de informação estarão disponíveis para todos?
 Conforme anunciado pelo [Google](https://blog.google/products-and-platforms/products/search/search-io-2026/), os agentes de informação chegam primeiro, neste verão de 2026, para assinantes dos planos Google AI Pro e Ultra nos Estados Unidos, com expectativa de expansão gradual para mais usuários e regiões depois.
 
 ## Fontes e Referências

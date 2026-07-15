@@ -1,6 +1,6 @@
 ---
 title: "SubQ Promete Resolver o Maior Gargalo dos LLMs: Startup Lança Modelo com Janela de 12 Milhões de Tokens e Atenção 1.000x Mais Eficiente"
-description: "A Subquadratic lança o SubQ, primeiro LLM com arquitetura totalmente subquadrática: 12 milhões de tokens, compute 1.000x menor e benchmarks verificados por"
+description: "A Subquadratic lança o SubQ, LLM de arquitetura subquadrática: janela de 12 milhões de tokens e promessa de atenção até 1.000x mais eficiente."
 category: noticias
 tags:
   - LLMs
@@ -104,13 +104,13 @@ A pergunta que o relatório técnico prometido precisará responder é se os gan
 
 ## Perguntas Frequentes
 
-**O que é a janela de contexto de um LLM e por que 12 milhões de tokens é relevante?**
+### O que é a janela de contexto de um LLM e por que 12 milhões de tokens é relevante?
 A janela de contexto é o limite de texto que um modelo consegue processar de uma vez, incluindo pergunta e histórico da conversa. Os modelos de fronteira atuais operam até 1 milhão de tokens (cerca de 750.000 palavras). Os 12 milhões do SubQ equivalem a aproximadamente 120 livros lidos simultaneamente — viabilizando análise de repositórios de código completos, contratos jurídicos extensos e corpora de pesquisa sem fragmentação. Veja mais sobre termos técnicos no [Glossário de IA](/glossario).
 
-**O que diferencia o SubQ dos outros modelos com janelas de contexto longas?**
+### O que diferencia o SubQ dos outros modelos com janelas de contexto longas?
 A maioria dos modelos com janelas extensas (como os atuais Claude e Gemini) mantém arquitetura de atenção densa com escalonamento quadrático — o que torna o uso de janelas muito grandes computacionalmente proibitivo e caro na prática. O SubQ usa atenção esparsa com escalonamento linear, o que significa que o custo cresce proporcionalmente ao tamanho do contexto, não de forma explosiva.
 
-**O SubQ já está disponível para o público geral?**
+### O SubQ já está disponível para o público geral?
 Não. No lançamento de maio de 2026, a Subquadratic abriu acesso apenas via **beta privado** para desenvolvedores e equipes enterprise interessados na API, no SubQ Code e no SubQ Search. Não há previsão de disponibilidade ampla divulgada até a data de publicação deste artigo.
 
 ## Fontes e Referências

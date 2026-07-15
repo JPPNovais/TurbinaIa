@@ -89,13 +89,13 @@ No ecossistema de shopping, a IA também está reescrevendo as regras. Varejista
 
 ## Perguntas Frequentes
 
-**O ChatGPT está perdendo usuários absolutos?**
+### O ChatGPT está perdendo usuários absolutos?
 Não. O ChatGPT continua crescendo em termos absolutos, superando 1,1 bilhão de usuários mensais ativos em maio de 2026 — o crescimento mais rápido da história para qualquer aplicativo. O que caiu foi sua fatia relativa de um mercado que cresce ainda mais rápido do que ele próprio.
 
-**Por que o Claude tem a maior taxa de conversão paga se tem menos usuários?**
+### Por que o Claude tem a maior taxa de conversão paga se tem menos usuários?
 O Claude construiu forte reputação entre usuários profissionais e de alta intenção — desenvolvedores, escritores, analistas — que têm maior disposição a pagar por recursos premium. Essa concentração em segmentos de maior valor resulta em 13% de taxa de conversão para assinatura, a maior entre os principais assistentes, e em receita por usuário de US$ 2,76 contra US$ 1,74 do ChatGPT.
 
-**O Gemini vai ultrapassar o ChatGPT em audiência?**
+### O Gemini vai ultrapassar o ChatGPT em audiência?
 Os dados atuais mostram que o Gemini cresceu 129 milhões de usuários em cinco meses, enquanto o ChatGPT ainda tem mais do dobro da audiência do concorrente. Mas a vantagem estrutural do Gemini — estar integrado ao Android por padrão — cria uma pressão de crescimento que é difícil de contra-atacar apenas com melhorias de produto.
 
 ## Fontes e Referências

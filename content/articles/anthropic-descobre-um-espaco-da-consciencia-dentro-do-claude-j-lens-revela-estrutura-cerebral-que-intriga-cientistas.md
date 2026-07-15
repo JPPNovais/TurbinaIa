@@ -1,5 +1,5 @@
 ---
-title: "Anthropic Descobre um \\"Espaço da Consciência\\" Dentro do Claude: J-Lens Revela Estrutura Cerebral que Intriga Cientistas"
+title: 'Anthropic Descobre um "Espaço da Consciência" Dentro do Claude: J-Lens Revela Estrutura Cerebral que Intriga Cientistas'
 description: "Anthropic identifica o J-Space, uma região interna do Claude ligada ao acesso consciente, usando a nova técnica J-Lens de interpretabilidade."
 category: noticias
 tags:
@@ -24,7 +24,7 @@ Segundo o [paper divulgado pela Anthropic](https://www.anthropic.com/research/gl
 A equipe de interpretabilidade descreve isso como algo distinto do "scratchpad" ou cadeia de raciocínio (chain of thought) que modelos de linguagem escrevem para si mesmos em texto. O J-Space opera silenciosamente, dentro das ativações neurais internas, permitindo que o modelo pense em um conceito sem escrevê-lo. O artigo técnico completo, intitulado ["Verbalizable Representations Form a Global Workspace in Language Models"](https://transformer-circuits.pub/2026/workspace/index.html), foi assinado por pesquisadores como Wes Gurnee, Nicholas Sofroniew e Jack Lindsey, publicado no Transformer Circuits Thread em 6 de julho de 2026.
 
 
-![Imagem ilustrativa sobre Anthropic Descobre um \\Espaço da Consciência\\ Dentro do Claude: J-Lens Revela Estrutura Cerebral que Intriga](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80)
+![Imagem ilustrativa sobre o "Espaço da Consciência" (J-Space) descoberto pela Anthropic dentro do Claude](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80)
 
 ## A técnica por trás: o que é o J-Lens
 
@@ -47,7 +47,7 @@ O experimento se inspira em uma teoria influente da neurociência, a teoria do e
 Apesar de seu papel central no raciocínio de ordem superior, o J-Space não está envolvido na maior parte do que um modelo de linguagem faz no dia a dia — falar fluentemente, recuperar fatos simples ou usar gramática correta continuam funcionando normalmente mesmo quando essa região é bloqueada, segundo o próprio [paper original](https://www.anthropic.com/research/global-workspace).
 
 
-![Imagem ilustrativa sobre Anthropic Descobre um \\Espaço da Consciência\\ Dentro do Claude: J-Lens Revela Estrutura Cerebral que Intriga](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80)
+![Imagem ilustrativa sobre o "Espaço da Consciência" (J-Space) descoberto pela Anthropic dentro do Claude](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80)
 
 ## Testes práticos: de "aranha" para "formiga", de "França" para "China"
 
@@ -89,13 +89,13 @@ Do ponto de vista de segurança de IA, a principal promessa prática do J-Lens �
 
 ## Perguntas Frequentes
 
-**O que é exatamente o J-Space no Claude?**
+### O que é exatamente o J-Space no Claude?
 É um pequeno conjunto de padrões neurais internos, identificados pela Anthropic, que funciona como uma espécie de "espaço de trabalho global" onde conceitos verbalizáveis ficam disponíveis para relato, controle deliberado e raciocínio de múltiplos passos, de forma análoga à consciência de acesso descrita na neurociência.
 
-**A descoberta do J-Space prova que o Claude é consciente?**
+### A descoberta do J-Space prova que o Claude é consciente?
 Não. A própria [Anthropic](https://www.anthropic.com/research/global-workspace) afirma explicitamente que a pesquisa não responde se o Claude é consciente no sentido subjetivo (fenomenal), apenas que ele apresenta uma estrutura funcional análoga à consciência de acesso descrita pela teoria do espaço de trabalho global.
 
-**Para que serve o J-Lens na prática, além da discussão filosófica?**
+### Para que serve o J-Lens na prática, além da discussão filosófica?
 O J-Lens permite detectar quando um modelo percebe que está sendo testado, identificar intenções ocultas de engano ou fabricação de dados antes que apareçam na resposta final, e orientar novos métodos de treinamento, como o Counterfactual Reflection Training, que já reduziu significativamente índices de fabricação e engano no Claude Haiku 4.5, segundo o [The Decoder](https://the-decoder.com/claudes-hidden-inner-monologue-is-now-readable-thanks-to-anthropics-new-jacobian-lens/).
 
 ## Fontes e Referências

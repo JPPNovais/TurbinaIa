@@ -66,13 +66,13 @@ Isso significa que, por ora, trata-se de um rumor de alto grau de credibilidade 
 
 ## Perguntas Frequentes
 
-**A Anthropic já confirmou oficialmente a parceria com a Samsung?**
+### A Anthropic já confirmou oficialmente a parceria com a Samsung?
 Não. A empresa disse ao TechCrunch que uma pilha de hardware diversificada, incluindo Nvidia, Google e Amazon, continuará central em sua estratégia, mas não confirmou nem negou as conversas com a Samsung.
 
-**Para que servirá o chip de IA da Anthropic?**
+### Para que servirá o chip de IA da Anthropic?
 Ainda não foi definido. Segundo o The Information, citado por múltiplos veículos, a Anthropic não decidiu se o chip será voltado para treinamento, inferência, ou ambos, nem qual será seu desempenho final.
 
-**Por que a Anthropic quer um chip próprio?**
+### Por que a Anthropic quer um chip próprio?
 Para reduzir a dependência da Nvidia, cujas GPUs dominam o mercado de IA e enfrentam escassez recorrente, além de buscar ganhos de eficiência energética com processos avançados como o 2nm da Samsung.
 
 ## Fontes e Referências

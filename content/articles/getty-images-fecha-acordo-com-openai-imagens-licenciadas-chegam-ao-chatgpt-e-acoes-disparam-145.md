@@ -86,13 +86,13 @@ Vale lembrar que esta não é a primeira vez que a indústria criativa negocia s
 
 ## Perguntas Frequentes
 
-**As imagens da Getty serão usadas para treinar modelos da OpenAI?**
+### As imagens da Getty serão usadas para treinar modelos da OpenAI?
 Não se sabe. O acordo foi descrito como de "exibição" (display), não de treinamento, mas as empresas não divulgaram cláusulas específicas sobre esse ponto. No contrato anterior com a Perplexity AI, a Getty proibiu explicitamente o uso para treinamento.
 
-**Quanto a Getty vai receber pelo acordo?**
+### Quanto a Getty vai receber pelo acordo?
 Os termos financeiros não foram divulgados publicamente. Nenhuma das empresas confirmou valores, duração exata ou estrutura de pagamento.
 
-**O que muda para quem usa o ChatGPT?**
+### O que muda para quem usa o ChatGPT?
 As respostas de busca e descoberta dentro do ChatGPT passarão a incluir imagens do acervo licenciado da Getty Images, potencialmente tornando as respostas visuais mais ricas e com conteúdo de fonte verificada — embora os detalhes de implementação ainda não tenham sido detalhados.
 
 ## Fontes e Referências

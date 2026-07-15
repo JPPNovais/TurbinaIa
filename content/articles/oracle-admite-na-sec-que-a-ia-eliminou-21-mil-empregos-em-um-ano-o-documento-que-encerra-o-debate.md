@@ -102,13 +102,13 @@ O fenômeno Oracle representa um ponto de inflexão na narrativa corporativa sob
 
 ## Perguntas Frequentes
 
-**A Oracle disse explicitamente que a IA causou as demissões?**
+### A Oracle disse explicitamente que a IA causou as demissões?
 Sim. No filing anual à SEC, referente ao exercício fiscal encerrado em 31 de maio de 2026, a Oracle declarou que "a adoção e implementação de tecnologias de IA em nossas operações resultou, e pode continuar a resultar, em reduções da nossa força de trabalho." É uma das admissões mais diretas já feitas por uma grande empresa de tecnologia em documento regulatório.
 
-**Quantos funcionários a Oracle ainda tem e onde estão?**
+### Quantos funcionários a Oracle ainda tem e onde estão?
 Ao final do exercício fiscal de 2026, a Oracle tinha 141.000 funcionários em tempo integral: 49.000 nos Estados Unidos e 92.000 em outros países. O maior grupo está em pesquisa e desenvolvimento (43.000), seguido pela área de serviços (34.000), segundo o Observador.
 
-**A onda de cortes em Big Tech vai continuar?**
+### A onda de cortes em Big Tech vai continuar?
 Os próprios documentos da Oracle sugerem que sim — pelo menos dentro da empresa. Com US$ 70 bilhões em capex projetados para 2027, a pressão para converter custos de pessoal em investimento em infraestrutura de IA continuará. No setor como um todo, o Layoffs.fyi registrou mais de 119.800 demissões em empresas de tecnologia apenas na primeira metade de 2026.
 
 ---

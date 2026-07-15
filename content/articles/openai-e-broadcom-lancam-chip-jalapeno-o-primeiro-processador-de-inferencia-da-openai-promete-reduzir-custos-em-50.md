@@ -90,13 +90,13 @@ Greg Brockman sintetizou bem a ambição de longo prazo em declaração reproduz
 
 ## Perguntas Frequentes
 
-**O Jalapeño vai substituir as GPUs da NVIDIA na OpenAI?**
+### O Jalapeño vai substituir as GPUs da NVIDIA na OpenAI?
 Não completamente — ao menos não no curto prazo. O Jalapeño foi projetado especificamente para inferência e deve operar em paralelo com as GPUs da NVIDIA, que continuarão sendo usadas para tarefas de pré-treinamento, conforme confirmado pelo TechCrunch. A substituição seria gradual e provavelmente limitada às cargas de inferência.
 
-**Quando o Jalapeño vai impactar o desempenho do ChatGPT?**
+### Quando o Jalapeño vai impactar o desempenho do ChatGPT?
 O plano é que o chip comece a alimentar data centers até o fim de 2026. O impacto imediato seria em velocidade de resposta e maior estabilidade do serviço gratuito durante picos de uso, graças à redução de custos operacionais.
 
-**O que significa "ASIC de tamanho reticle"?**
+### O que significa "ASIC de tamanho reticle"?
 Um ASIC (*Application-Specific Integrated Circuit*) é um chip projetado para uma única função específica — no caso, inferência de LLMs. "Tamanho reticle" significa que o die de silício ocupa a maior área fisicamente possível dentro do processo de litografia utilizado, maximizando a quantidade de transistores e, portanto, o poder de processamento por chip. É o formato adotado por alguns dos chips mais poderosos já fabricados para IA.
 
 ---

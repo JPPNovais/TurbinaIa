@@ -131,13 +131,13 @@ Para mantenedores de projetos open-source, o Patch the Planet representa uma mud
 
 ## Perguntas Frequentes
 
-**Qualquer empresa pode acessar o GPT-5.5-Cyber?**
+### Qualquer empresa pode acessar o GPT-5.5-Cyber?
 Não. O acesso permanece restrito a "defensores verificados" por meio do programa Trusted Access for Cyber da OpenAI. Para a maioria das organizações, a empresa recomenda usar o GPT-5.5 padrão com as salvaguardas do Trusted Access. O programa Daybreak Cyber Partner Program permite que fornecedores de segurança integrem essas capacidades em produtos comerciais.
 
-**O que diferencia o Patch the Planet de outros programas de bug bounty?**
+### O que diferencia o Patch the Planet de outros programas de bug bounty?
 A diferença principal é o modelo com supervisão humana intermediária: pesquisadores de segurança humanos revisam e validam cada achado antes que ele chegue ao mantenedor do projeto. Isso reduz falsos positivos e evita sobrecarregar equipes pequenas com volume bruto de relatórios gerados por IA. Os projetos participantes também recebem workflows reutilizáveis de fuzzing e testes.
 
-**Quais projetos open-source já participam do Patch the Planet?**
+### Quais projetos open-source já participam do Patch the Planet?
 Os participantes iniciais anunciados incluem cURL, NATS Server, pyca/cryptography, Sigstore, aiohttp, o projeto Go, freenginx, Python e python.org. A OpenAI afirma que mais de 30 projetos já se comprometeram a participar no total.
 
 ## Fontes e Referências

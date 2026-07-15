@@ -76,13 +76,13 @@ Para quem quer comparar como o GPT-Live-1 se posiciona frente a outros modelos d
 
 ## Perguntas Frequentes
 
-**O GPT-Live-1 já está disponível para todos os usuários do ChatGPT?**
+### O GPT-Live-1 já está disponível para todos os usuários do ChatGPT?
 Sim. Segundo a [OpenAI](https://openai.com/index/introducing-gpt-live/), o GPT-Live-1 e o GPT-Live-1 mini começaram a ser distribuídos globalmente em 8 de julho de 2026, em iOS, Android e ChatGPT.com, com o GPT-Live-1 como padrão pago e o mini como padrão gratuito.
 
-**Qual a diferença entre o GPT-Live-1 e o Modo de Voz Avançado anterior?**
+### Qual a diferença entre o GPT-Live-1 e o Modo de Voz Avançado anterior?
 O Modo de Voz Avançado usava um pipeline de três modelos separados (fala-para-texto, texto e texto-para-fala) e operava por turnos, segundo a [TechCrunch](https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/). O GPT-Live processa entrada e saída de áudio simultaneamente na mesma arquitetura full-duplex, reduzindo pausas artificiais e permitindo interrupções mais naturais.
 
-**O GPT-Live substitui o GPT-5.5 para tarefas complexas?**
+### O GPT-Live substitui o GPT-5.5 para tarefas complexas?
 Não. O GPT-Live cuida da camada de conversa por voz, mas delega perguntas que exigem busca na web ou raciocínio profundo ao GPT-5.5, que roda em segundo plano e devolve o resultado à conversa, conforme descrito pela [OpenAI](https://openai.com/index/introducing-gpt-live/).
 
 ## Fontes e Referências

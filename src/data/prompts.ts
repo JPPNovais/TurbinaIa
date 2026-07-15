@@ -7278,7 +7278,7 @@ Com base nessas informações, o Agente de IA deve:
 
 1.  **Gerar o Código Otimizado para Serverless:**
     *   Forneça o código completo da função, priorizando boas práticas serverless (ex: inicialização lazy de recursos fora do handler, reuso de conexões, mínimo de bibliotecas, uso de variáveis de ambiente para configuração, tratamento de erros robusto).
-    *   Inclua os imports necessários e a estrutura básica da função (ex: `handler` para Lambda).
+    *   Inclua os imports necessários e a estrutura básica da função (ex: \`handler\` para Lambda).
 
 2.  **Sugerir Parâmetros de Configuração da Função:**
     *   Recomende os parâmetros ideais de configuração na plataforma serverless para otimização de performance e custo (ex: quantidade de memória (GB), timeout (segundos), arquitetura da CPU (x86/arm64), provisioned concurrency ou Keep-Warm (se aplicável), camadas/layers para dependências).

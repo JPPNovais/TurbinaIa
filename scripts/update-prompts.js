@@ -108,6 +108,7 @@ Regras:
 - category: APENAS um dos valores: ${categories.map(c => `'${c}'`).join(', ')}
 - id: kebab-case único, diferente dos IDs listados acima
 - tags: 2-4 strings curtas e relevantes
+- PROIBIDO usar crase/backtick (\`) em qualquer texto — para citar código ou nomes técnicos, use aspas simples ou colchetes (o arquivo usa template literals e crases quebram o build)
 - Retorne APENAS o array TypeScript, sem texto explicativo`;
 
   try {

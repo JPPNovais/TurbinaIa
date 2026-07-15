@@ -59,6 +59,22 @@ function findStructuralBreakage(originalContent, updatedContent) {
     issues.push(`arquivo não começa com TypeScript válido (provavelmente prosa do LLM): "${preview}..."`);
   }
 
+  // 7. Full syntax parse with the TypeScript compiler (present in node_modules). Catches
+  //    what the heuristics can't — e.g. a *pair* of markdown-style backticks inside a
+  //    template literal (`code`): the total backtick count stays even (check 5 passes),
+  //    but the pair terminates the literal and breaks the file (incident of 2026-07-08).
+  try {
+    const ts = require('typescript');
+    const sf = ts.createSourceFile('data.ts', updatedContent, ts.ScriptTarget.Latest, true);
+    const diags = sf.parseDiagnostics || [];
+    if (diags.length > 0) {
+      const pos = sf.getLineAndCharacterOfPosition(diags[0].start);
+      issues.push(`erro de sintaxe TypeScript na linha ${pos.line + 1}: ${ts.flattenDiagnosticMessageText(diags[0].messageText, ' ')}`);
+    }
+  } catch (e) {
+    // typescript indisponível neste ambiente — seguimos só com as heurísticas acima.
+  }
+
   return issues;
 }
 

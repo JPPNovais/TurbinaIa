@@ -13,6 +13,20 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-deepmind-gemini-3-5-pro-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Google DeepMind lança Gemini 3.5 Pro para disponibilidade geral',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Após adiamentos prévios, o modelo Gemini 3.5 Pro da Google DeepMind foi finalmente liberado para disponibilidade geral em julho de 2026, consolidando sua posição como um modelo de linguagem de fronteira.',
+    highlights: [
+      'A disponibilidade geral do Gemini 3.5 Pro foi confirmada para julho de 2026, após ter sido adiado do mês de junho.',
+      'O lançamento posiciona o Gemini 3.5 Pro como um dos modelos de ponta no mercado de IA.',
+      'O modelo é focado em fornecer capacidades avançadas de modelo de linguagem para diversas aplicações de IA.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'meta-ai-muse-spark-1-1-lancamento-2026-07',
     date: '2026-07',
     title: 'Meta AI lança Muse Spark 1.1, seu primeiro modelo pago com foco em codificação e agentes',

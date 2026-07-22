@@ -2757,4 +2757,52 @@ export const GLOSSARIO: GlossarioTerm[] = [
     example: 'Um usuário pode fornecer a um MLLM (Large Multimodal Language Model) algumas imagens de plantas raras com suas descrições e, em seguida, pedir para identificar uma nova imagem de planta, tudo dentro do mesmo prompt.',
     relatedTerms: ['Aprendizado em Contexto (In-context Learning - ICL)', 'Multimodal', 'Prompt'],
   },
+  {
+    id: 'caixa-de-areia-agentes',
+    term: 'Caixa de Areia de Agentes (Agent Sandbox)',
+    category: 'Segurança & Ética',
+    definition: 'Um ambiente de execução isolado e controlado, projetado especificamente para testar e avaliar o comportamento de agentes de IA de forma segura. Permite que os agentes interajam com ferramentas simuladas e dados restritos, garantindo que suas ações não afetem sistemas de produção ou dados reais durante o desenvolvimento e a validação.',
+    example: 'Antes de implantar um agente de IA que interage com o sistema de pedidos de uma empresa, ele é executado em uma caixa de areia de agentes para garantir que ele processe os pedidos corretamente e não cause efeitos colaterais indesejados.',
+    relatedTerms: ['Agente de IA', 'Red Teaming', 'Avaliação de Segurança de Agentes', 'Uso de Ferramentas']
+  },
+  {
+    id: 'orquestrador-agentes-multimodais',
+    term: 'Orquestrador de Agentes Multimodais (Multimodal Agent Orchestrator)',
+    category: 'Ferramentas & APIs',
+    definition: 'Um componente de sistema responsável por coordenar e gerenciar múltiplos agentes de IA que processam e geram informações através de diversas modalidades (texto, imagem, áudio, vídeo). Ele garante que esses agentes colaborem de forma eficaz, troquem contexto e executem tarefas complexas que exigem compreensão e interação multimodal.',
+    example: 'Em um sistema de suporte ao cliente avançado, um orquestrador de agentes multimodais pode coordenar um agente visual para analisar uma captura de tela do problema, um agente de áudio para transcrever a voz do cliente e um agente de linguagem para gerar uma resposta contextualizada, combinando as informações de todas as modalidades.',
+    relatedTerms: ['Agente Multimodal', 'Orquestração de Agentes', 'Sistema Multiagente', 'Geração Multimodal', 'Modelo de Linguagem Grande Multimodal (MLLM)']
+  },
+  {
+    id: 'monitoramento-agentes',
+    term: 'Monitoramento de Agentes (Agent Monitoring)',
+    category: 'Ferramentas & APIs',
+    definition: 'A prática de coletar e analisar as ações, chamadas de ferramentas, saídas e resultados de agentes de IA em tempo real para entender seu desempenho, identificar falhas, detectar comportamentos inesperados ou maliciosos e garantir a conformidade em ambientes de produção.',
+    example: 'Uma equipe de operações de IA utiliza o monitoramento de agentes para rastrear as interações de um agente autônomo com uma API externa, verificando o tempo de resposta, o custo de tokens e a exatidão das informações geradas para detectar anomalias.',
+    relatedTerms: ['Agente de IA', 'Observabilidade de Modelos', 'MLOps', 'AI TRiSM']
+  },
+  {
+    id: 'pipeline-dados-ia-generativa',
+    term: 'Pipeline de Dados de IA Generativa (Generative AI Data Pipeline)',
+    category: 'Ferramentas & APIs',
+    definition: 'Um sistema ponta a ponta que automatiza a ingestão, preparação, transformação e entrega contínua de dados, muitas vezes não estruturados ou multimodais, para o desenvolvimento, treinamento, ajuste fino (fine-tuning) e operação de modelos de IA generativa. É otimizado para as demandas específicas desses modelos, incluindo o preenchimento de bancos de dados vetoriais para RAG.',
+    example: 'Um pipeline de dados de IA generativa ingere artigos de notícias em tempo real, os processa em embeddings vetoriais e os armazena em um banco de dados vetorial, que é então usado por um LLM para gerar resumos noticiosos atualizados via RAG.',
+    relatedTerms: ['MLOps', 'Infraestrutura de IA Generativa', 'RAG (Retrieval-Augmented Generation)', 'Dataset (Conjunto de Dados)', 'Geração de Dados Sintéticos']
+  },
+  {
+    id: 'modelo-raciocinio-hibrido',
+    term: 'Modelo de Raciocínio Híbrido (Hybrid Reasoning Model)',
+    category: 'Modelos & Arquitetura',
+    definition: 'Um sistema de IA que integra múltiplas abordagens de raciocínio, como métodos estatísticos (baseados em machine learning), simbólicos (baseados em regras e lógica) e neurais, dentro de uma arquitetura unificada. O objetivo é combinar os pontos fortes de cada abordagem para resolver tarefas complexas que exigem tanto o reconhecimento de padrões quanto a inferência lógica e a interpretabilidade.',
+    example: 'Um modelo de diagnóstico médico híbrido pode usar redes neurais para analisar imagens de exames (método estatístico) e um sistema baseado em regras para aplicar conhecimentos médicos explícitos e inferir um diagnóstico (método simbólico).',
+    relatedTerms: ['IA Neuro-Simbólica', 'Raciocínio Simbólico', 'Mecanismo de Raciocínio', 'Arquitetura Cognitiva para Agentes de IA']
+  },
+  {
+    id: 'linhagem-dados-ia',
+    term: 'Linhagem de Dados para IA (Data Lineage for AI)',
+    category: 'Segurança & Ética',
+    definition: 'O processo de registrar, rastrear e visualizar o ciclo de vida dos dados utilizados por modelos de IA, desde sua origem até seu consumo. Isso inclui informações sobre a fonte dos dados, todas as transformações aplicadas e seu uso final, sendo crucial para a governança, conformidade regulatória, auditoria, depuração de modelos e mitigação de viés.',
+    example: 'Para investigar por que um modelo de IA de crédito começou a mostrar viés para certos grupos, a equipe de governança de dados utiliza a linhagem de dados para rastrear o histórico completo dos dados de treinamento, identificando possíveis fontes de viés em etapas de coleta ou processamento.',
+    relatedTerms: ['IA Responsável', 'Governança de Dados para IA', 'Auditoria de Modelos de IA', 'Viés (Bias) em IA', 'Dataset (Conjunto de Dados)']
+  },
 ];

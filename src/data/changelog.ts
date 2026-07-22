@@ -13,6 +13,48 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-deepmind-gemini-3-5-flash-cyber-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Google DeepMind lança Gemini 3.5 Flash Cyber',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Em 20 de julho de 2026, o Google DeepMind lançou o Gemini 3.5 Flash Cyber, uma nova variante leve e proprietária que se junta à família de modelos Gemini Flash 3.5.',
+    highlights: [
+      'Lançado em 20 de julho de 2026, como parte das atualizações do Google para seus modelos de IA.',
+      'É descrito como um modelo "Lightweight Proprietary", focado em eficiência e desempenho.',
+      'A expansão da linha Gemini 3.5 Flash indica um foco contínuo em versões otimizadas para diversas aplicações.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-deepmind-gemini-3-5-flash-lite-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Google DeepMind lança Gemini 3.5 Flash-Lite',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'O Google DeepMind introduziu o Gemini 3.5 Flash-Lite em 20 de julho de 2026, apresentando uma versão ainda mais leve e proprietária dentro da série Gemini 3.5 Flash.',
+    highlights: [
+      'Disponibilizado em 20 de julho de 2026, ampliando as opções da série Gemini Flash.',
+      'Classificado como um modelo "Lightweight Proprietary", sugerindo foco em recursos de computação limitados.',
+      'Representa uma otimização para casos de uso que exigem alta eficiência e baixo consumo de recursos.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-deepmind-gemini-3-6-flash-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Google DeepMind lança Gemini 3.6 Flash',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Em 20 de julho de 2026, o Google DeepMind lançou o Gemini 3.6 Flash, marcando uma nova iteração e atualização na sua série de modelos Flash.',
+    highlights: [
+      'Lançado em 20 de julho de 2026, indicando um avanço na numeração da versão da série Flash.',
+      'É um modelo "Lightweight Proprietary", alinhado com a estratégia de otimização de desempenho.',
+      'A transição para a versão 3.6 sugere melhorias e novas capacidades em relação às versões anteriores do Gemini Flash.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'google-deepmind-gemini-3-5-pro-lancamento-2026-07',
     date: '2026-07',
     title: 'Google DeepMind lança Gemini 3.5 Pro para disponibilidade geral',

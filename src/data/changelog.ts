@@ -13,6 +13,48 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-gpt-live-lancamento-2026-07',
+    date: '2026-07',
+    title: 'OpenAI lança GPT-Live, uma IA de voz conversacional em tempo real',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 10 de julho de 2026, a OpenAI apresentou o GPT-Live, uma nova geração de IA de voz capaz de ouvir, falar e raciocinar simultaneamente, com arquitetura full-duplex.',
+    highlights: [
+      'Lançado em 10 de julho de 2026, com foco em conversas mais naturais e em tempo real.',
+      'Apresenta arquitetura full-duplex, permitindo que a IA escute, fale e raciocine simultaneamente.',
+      'Inclui recursos como tradução ao vivo, busca na web durante a conversa e delegação inteligente de tarefas.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'mistral-leanstral-1-5-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Mistral AI introduz Leanstral 1.5 para verificação de código',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'Na semana de 6 a 12 de julho de 2026, a Mistral AI lançou o Leanstral 1.5, um novo modelo de inteligência artificial focado especificamente na verificação de código.',
+    highlights: [
+      'Introduzido na semana de 6 a 12 de julho de 2026, ampliando as ofertas de modelos da Mistral AI.',
+      'Projetado para otimizar e verificar a qualidade e segurança do código.',
+      'Representa um avanço no portfólio de IA de codificação da Mistral.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-chatgpt-skills-lancamento-2026-07',
+    date: '2026-07',
+    title: 'OpenAI lança "ChatGPT Skills" para fluxos de trabalho reutilizáveis',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Por volta de 24 de julho de 2026, a OpenAI introduziu o recurso "ChatGPT Skills", permitindo que os usuários criem fluxos de trabalho reutilizáveis com instruções e orientações para tarefas específicas.',
+    highlights: [
+      'Lançado como uma atualização para o ChatGPT por volta de 24 de julho de 2026.',
+      'Permite a criação de "habilidades" (Skills) para automatizar tarefas repetitivas e administrativas.',
+      'Funciona como um manual personalizável, onde o usuário entrega conhecimento e recursos ao ChatGPT para reuso.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'google-deepmind-gemini-3-5-flash-cyber-lancamento-2026-07',
     date: '2026-07',
     title: 'Google DeepMind lança Gemini 3.5 Flash Cyber',

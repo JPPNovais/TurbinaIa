@@ -13,6 +13,34 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'anthropic-claude-opus-5-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Anthropic lança Claude Opus 5, um novo modelo de IA mais eficiente e com custo reduzido',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Em 24 de julho de 2026, a Anthropic lançou o Claude Opus 5, um novo modelo de inteligência artificial projetado para oferecer desempenho próximo ao do Claude Fable 5, o sistema mais avançado da empresa, mas com um custo até 50% menor.',
+    highlights: [
+      'Lançado em 24 de julho de 2026, com foco em eficiência e custo-benefício.',
+      'Promete desempenho de elite em tarefas de programação, trabalho profissional e raciocínio complexo.',
+      'Disponível via API e plataformas da Anthropic, oferecendo uma alternativa mais acessível para usuários que buscam alta performance.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'cohere-transcribe-arabic-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Cohere lança Transcribe Arabic, modelo open-source para reconhecimento de fala em árabe',
+    developer: 'Cohere',
+    category: 'Lançamento',
+    description: 'Em 7 de julho de 2026, a Cohere disponibilizou o Transcribe Arabic, um novo modelo de speech-to-text de código aberto com 2 bilhões de parâmetros, focado no reconhecimento de fala em árabe.',
+    highlights: [
+      'Lançado em 7 de julho de 2026 sob a licença Apache 2.0.',
+      'Lidera o ranking de ASR (Reconhecimento Automático de Fala) em árabe, superando significativamente o Whisper Large V3.',
+      'Capaz de lidar com variedade de dialetos, troca de código e fala bilíngue árabe-inglês.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'openai-gpt-live-lancamento-2026-07',
     date: '2026-07',
     title: 'OpenAI lança GPT-Live, uma IA de voz conversacional em tempo real',

@@ -13,6 +13,78 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'deepseek-v4-flash-api-beta-publico-2026-07',
+    date: '2026-07',
+    title: 'DeepSeek libera V4-Flash API em beta público, focada em tarefas de agente',
+    developer: 'DeepSeek',
+    category: 'Lançamento',
+    description: 'Em 31 de julho de 2026, a DeepSeek lançou a versão oficial de sua V4-Flash API em beta público, com melhorias significativas para tarefas de agente, marcando um avanço em sua capacidade de otimização de kernels de GPU e desempenho de código.',
+    highlights: [
+      'Lançamento em beta público da V4-Flash API em 31 de julho de 2026, disponível para uso através da API existente.',
+      'Desempenho em agentes superou amplamente o V4-Pro-Preview, registrando 82,7 pontos no Terminal Bench 2.1 e 54,4 no DeepSWE.',
+      'Oferece suporte nativo ao formato Responses API e foi ajustada para o Codex.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-deepmind-gemini-robotics-2-lancamento-2026-07',
+    date: '2026-07',
+    title: 'Google DeepMind lança Gemini Robotics 2, oferecendo controle inteligente de corpo inteiro para robôs humanoides',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Em 30 de julho de 2026, a Google DeepMind publicou o Gemini Robotics 2, uma família de três modelos que unifica o controle de um robô humanoide sob uma única política treinada, incluindo pernas, tronco, braços e mãos de cinco dedos.',
+    highlights: [
+      'Permite o controle inteligente de corpo inteiro, unificando locomoção, equilíbrio e manipulação em uma única política treinada.',
+      'Supera versões anteriores que focavam apenas na parte superior do corpo, permitindo que robôs caminhem, se agachem e peguem objetos do chão com uma taxa de sucesso de 45,7%.',
+      'Combina modelos multimodais de visão e ação (VLM e VLA) para interpretar o ambiente e controlar movimentos de forma autônoma.',
+      'Apresenta o benchmark "ASIMOV-Agentic", um sistema de salvaguardas para detectar e bloquear comandos prejudiciais.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'meta-ai-meta-model-api-preview-2026-07',
+    date: '2026-07',
+    title: 'Meta AI lança prévia pública da Meta Model API para desenvolvedores',
+    developer: 'Meta AI',
+    category: 'Lançamento',
+    description: 'Em 9 de julho de 2026, a Meta AI lançou uma prévia pública da nova Meta Model API, permitindo que desenvolvedores acessem o modelo multimodal de raciocínio Muse Spark 1.1 para tarefas de agente.',
+    highlights: [
+      'Disponibiliza o modelo Muse Spark 1.1 via API para desenvolvedores, com foco em tarefas de agente.',
+      'Inclui melhorias significativas no uso de ferramentas e computação, codificação e compreensão multimodal.',
+      'Avança a fronteira de desempenho-eficiência e se alinha à visão de superinteligência pessoal da Meta.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-gpt-5-6-reducao-precos-fast-mode-api-2026-07',
+    date: '2026-07',
+    title: 'OpenAI anuncia redução de preços para GPT-5.6 Luna e Terra e introduz Fast mode na API',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'Em 30 de julho de 2026, a OpenAI anunciou uma redução de preços de até 80% para os modelos GPT-5.6 Luna e 20% para Terra, além de introduzir o Fast mode na API, que oferece velocidades até 2,5 vezes mais rápidas para o GPT-5.6 Sol.',
+    highlights: [
+      'Redução de 80% no custo do GPT-5.6 Luna e 20% para o GPT-5.6 Terra para uso via API.',
+      'Introdução do Fast mode na API, substituindo o Priority Processing e acelerando o GPT-5.6 Sol em até 2,5 vezes.',
+      'Ajustes nos preços visam competir com modelos de IA mais acessíveis no mercado corporativo.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'xai-grok-voice-think-fast-2-0-lancamento-2026-07',
+    date: '2026-07',
+    title: 'xAI lança Grok Voice Think Fast 2.0, seu modelo de voz speech-to-speech mais capaz',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'Em 29 de julho de 2026, a xAI introduziu o Grok Voice Think Fast 2.0, seu modelo de voz speech-to-speech mais avançado, com melhorias significativas em inteligência, precisão de transcrição e conversação natural.',
+    highlights: [
+      'Melhorias significativas em raciocínio de fala, capacidade conversacional e confiabilidade no uso de ferramentas.',
+      'Atingiu 82,9% no Speech-to-Speech Quality Index da Artificial Analysis, superando o GPT-Realtime-2.1 da OpenAI.',
+      'Tempo para primeiro áudio reduzido para 0,70 segundos e tokens de raciocínio diminuíram 60%, com chamadas de ferramentas antes da primeira frase.',
+      'Já está em produção nas linhas de suporte ao cliente Starlink com ganhos de conversão medidos.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'anthropic-claude-opus-5-lancamento-2026-07',
     date: '2026-07',
     title: 'Anthropic lança Claude Opus 5, um novo modelo de IA mais eficiente e com custo reduzido',

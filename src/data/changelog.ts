@@ -13,6 +13,77 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-astra-capacidades-reveladas-2026-08',
+    date: '2026-08',
+    title: 'OpenAI revela capacidades do Astra, resolvendo 10 problemas matemáticos abertos',
+    developer: 'OpenAI',
+    category: 'Pesquisa',
+    description: 'Em 1º de agosto de 2026, a OpenAI anunciou que uma versão interna de seu próximo grande modelo, Astra, resolveu dez problemas matemáticos e de ciência da computação teórica anteriormente abertos, publicando provas formais verificáveis.',
+    highlights: [
+      'Astra, o próximo grande modelo da OpenAI, resolveu dez problemas matemáticos e de ciência da computação teórica de longa data.',
+      'As soluções foram verificadas através de provas formais Lean publicadas no GitHub, custando aproximadamente US$ 2.000 em computação.',
+      'Este anúncio marca uma demonstração significativa de capacidade, posicionando Astra como uma ferramenta de pesquisa genuína antes de seu lançamento público.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'deepseek-v4-flash-lancamento-oficial-2026-08',
+    date: '2026-08',
+    title: 'DeepSeek lança oficialmente o modelo V4-Flash, focado em baixo custo e alta eficiência',
+    developer: 'DeepSeek',
+    category: 'Lançamento',
+    description: 'Em 3 de agosto de 2026, a DeepSeek lançou oficialmente seu novo modelo V4-Flash, que se destaca por ser um dos modelos de IA mais baratos para operar em testes de benchmark globais, mantendo um desempenho competitivo.',
+    highlights: [
+      'Lançamento oficial em 3 de agosto de 2026.',
+      'É considerado o modelo de IA líder mais barato para operar, com custo de apenas US$ 0,14 por milhão de tokens de entrada e US$ 0,28 por milhão de tokens de saída.',
+      'Disponível como modelo de código aberto (open-weight) sob a Licença MIT, permitindo uso comercial, modificação e implantação local.',
+      'Alcançou 50 de 100 no Índice de Inteligência da Artificial Analysis, igualando o Gemini 3.6 Flash do Google.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-4-6-lancamento-previsto-2026-08',
+    date: '2026-08',
+    title: 'xAI planeja lançamento do Grok 4.6 com melhorias significativas',
+    developer: 'xAI (Grok)',
+    category: 'Lançamento',
+    description: 'O fundador da xAI, Elon Musk, indicou que o Grok 4.6, o próximo modelo de inteligência artificial da empresa, está previsto para ser lançado por volta de 7 de agosto de 2026, apresentando melhorias significativas.',
+    highlights: [
+      'Lançamento previsto para 7 de agosto de 2026.',
+      'Será um modelo de 1,5 trilhão de parâmetros com ajuste fino supervisionado (SFT) e aprendizado por reforço (RL) significativamente aprimorados.',
+      'Será melhor que a versão 4.5 em todos os aspectos, exceto por ser ligeiramente mais lento para servir, mas com melhor eficiência de tokens.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'meta-ai-business-agents-lancamento-2026-08',
+    date: '2026-08',
+    title: 'Meta AI introduz Agentes de Negócios para WhatsApp e Instagram',
+    developer: 'Meta AI',
+    category: 'Lançamento',
+    description: 'Em 2 de agosto de 2026, a Meta apresentou seus Business Agents, agentes de IA de nível empresarial projetados para operar diretamente no WhatsApp e Instagram Direct, para gerenciar interações com clientes e processos de comércio.',
+    highlights: [
+      'Permitem conversas multi-turno com clientes, consulta de inventário, qualificação de leads e finalização de compra dentro dos aplicativos.',
+      'Eliminam a necessidade de direcionar usuários para websites ou aplicativos externos.',
+      'Focados em automatizar workflows de negócios e gerar leads para empresas.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'openai-o3-descontinuado-2026-08',
+    date: '2026-08',
+    title: 'OpenAI o3 será desativado do ChatGPT',
+    developer: 'OpenAI',
+    category: 'Descontinuado',
+    description: 'Em 26 de agosto de 2026, o modelo OpenAI o3 será desativado do ChatGPT, após um período de transição de 90 dias.',
+    highlights: [
+      'O modelo OpenAI o3 será aposentado do ChatGPT em 26 de agosto de 2026.',
+      'A mudança afeta apenas o ChatGPT e não há alterações na API.',
+      'A desativação visa focar nos modelos mais novos e capazes da OpenAI.'
+    ],
+    impact: 'Baixo',
+  },
+  {
     id: 'deepseek-v4-flash-api-beta-publico-2026-07',
     date: '2026-07',
     title: 'DeepSeek libera V4-Flash API em beta público, focada em tarefas de agente',

@@ -13,6 +13,35 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'xai-grok-4-7-lancamento-previsto-2026-08',
+    date: '2026-08',
+    title: 'xAI planeja lançamento do Grok 4.7 com 2.1 trilhões de parâmetros',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'Em 30 de julho de 2026, Elon Musk revelou que a xAI planeja lançar o Grok 4.7 algumas semanas após o Grok 4.6, indicando um modelo significativamente maior com 2.1 trilhões de parâmetros.',
+    highlights: [
+      'Grok 4.7 será lançado algumas semanas após o Grok 4.6, previsto para 7 de agosto de 2026.',
+      'O modelo terá 2.1 trilhões de parâmetros, consideravelmente maior que seu predecessor, o Grok 4.6.',
+      'Espera-se que o Grok 4.7 ofereça maior eficiência de tokens e capacidades aprimoradas, apesar de ser ligeiramente mais lento para servir.',
+      'Este lançamento planejado continua a estratégia da xAI de entregar atualizações frequentes de modelos para intensificar a competição na indústria de IA.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'openai-gpt-5-6-sol-lancamento-chatgpt-2026-08',
+    date: '2026-08',
+    title: 'OpenAI inicia lançamento do GPT-5.6 Sol no ChatGPT para usuários pagos',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'A OpenAI começou a disponibilizar o GPT-5.6 Sol no ChatGPT para planos pagos elegíveis em agosto de 2026, focando em raciocínio complexo para programação, pesquisa, ciência, cibersegurança e design.',
+    highlights: [
+      'GPT-5.6 Sol é o modelo de raciocínio principal da OpenAI, projetado para tarefas complexas.',
+      'O lançamento está sendo feito para usuários com planos pagos qualificados do ChatGPT, com a disponibilidade variando durante o processo.',
+      'As capacidades do modelo são reforçadas em programação, pesquisa, ciência, cibersegurança e uso do computador.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'openai-astra-capacidades-reveladas-2026-08',
     date: '2026-08',
     title: 'OpenAI revela capacidades do Astra, resolvendo 10 problemas matemáticos abertos',

@@ -13,6 +13,48 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'meta-ai-muse-spark-1-2-lancamento-2026-08',
+    date: '2026-08',
+    title: 'Meta lança Muse Spark 1.2, uma atualização para seu modelo de IA de fronteira',
+    developer: 'Meta AI',
+    category: 'Atualização',
+    description: 'A Meta lançou o Muse Spark 1.2 em 5 de agosto de 2026, uma atualização para seu modelo de IA de fronteira com foco em capacidades aprimoradas.',
+    highlights: [
+      'O Muse Spark 1.2 foi lançado em 5 de agosto de 2026.',
+      'É a versão mais recente da família de modelos de IA de fronteira da Meta.',
+      'A atualização indica o desenvolvimento contínuo da Meta em modelos de IA de ponta.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-gpt-5-6-luna-lancamento-2026-08',
+    date: '2026-08',
+    title: 'OpenAI introduz a camada GPT-5.6 Luna e reestrutura as ofertas de modelos',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'A OpenAI reestruturou seu portfólio de modelos GPT-5.6 em agosto de 2026, introduzindo novas camadas de capacidade duráveis, incluindo a camada Luna.',
+    highlights: [
+      'A OpenAI reorganizou suas ofertas de modelos em camadas de capacidade duráveis: Sol, Terra e Luna.',
+      'A camada Luna foi introduzida como parte desta reestruturação em agosto de 2026.',
+      'Esta mudança visa aprimorar a categorização e o acesso às diferentes capacidades do GPT-5.6.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-chatgpt-work-lancamento-2026-08',
+    date: '2026-08',
+    title: 'OpenAI lança ChatGPT Work, um sistema agêntico para projetos complexos',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'A OpenAI lançou o ChatGPT Work em agosto de 2026, um sistema agêntico baseado no GPT-5.6 projetado para executar projetos complexos de várias horas em arquivos e aplicativos de equipe.',
+    highlights: [
+      'O ChatGPT Work é um sistema agêntico construído sobre o GPT-5.6.',
+      'Ele foi projetado para executar projetos complexos que duram várias horas.',
+      'O sistema integra-se com arquivos de equipe e aplicativos para automação de tarefas.'
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'xai-grok-4-7-lancamento-previsto-2026-08',
     date: '2026-08',
     title: 'xAI planeja lançamento do Grok 4.7 com 2.1 trilhões de parâmetros',

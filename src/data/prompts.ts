@@ -7661,4 +7661,250 @@ Formate sua resposta de forma clara, com seções dedicadas à "Avaliação de R
     template: 'Você é um consultor de transformação digital e estratégia de IA, especialista em comunicar conceitos complexos de IA para líderes de negócios não-técnicos. Crie um guia estratégico de alto nível para a liderança de [Nome da Organização/Empresa ou Tipo de Organização, ex: "uma empresa de manufatura de médio porte", "um departamento de marketing de uma grande corporação", "uma startup de serviços financeiros"] que deseja iniciar ou aprimorar a implementação de soluções de Inteligência Artificial em suas operações.\n\nO guia deve ser claro, conciso e focado em ações práticas e considerações estratégicas, evitando jargões técnicos excessivos. Aborde os seguintes pontos:\n\n1.  **Visão Geral e Benefícios da IA:** Explique de forma simples o que é IA para negócios e quais os principais benefícios que ela pode trazer para [Setor da Organização, ex: "a indústria manufatureira", "o marketing digital", "o setor financeiro"].\n2.  **Identificação de Oportunidades:** Como a liderança pode identificar as melhores áreas para aplicar IA (problemas a serem resolvidos, processos a serem otimizados, novas fontes de valor)?\n3.  **Primeiros Passos e Projetos Piloto:** Sugira uma abordagem para começar com projetos de IA, focando em "ganhos rápidos" e aprendizado incremental.\n4.  **Gestão de Riscos e Considerações Éticas:** Quais são os principais riscos (ex: dados, vieses, segurança) e considerações éticas que a liderança precisa ter em mente?\n5.  **Cultura e Talentos:** Como preparar a equipe e a cultura organizacional para a adoção da IA? Quais habilidades serão necessárias?\n6.  **Métricas de Sucesso e ROI:** Como medir o sucesso de iniciativas de IA e demonstrar o retorno sobre o investimento?\n7.  **Plano de Ação de Alto Nível (3 Fases):** Proponha um plano de ação simplificado em três fases (ex: "Descoberta e Planejamento", "Implementação Piloto", "Expansão e Otimização").\n\nO foco da organização é [Foco principal da organização, ex: "redução de custos e aumento da eficiência", "melhora da experiência do cliente", "inovação de produtos"].\n',
     tags: ['Estratégia IA', 'Liderança', 'Transformação Digital', 'Gestão de Projetos'],
   },
+  {
+    id: 'ia-multiagente-analise-produto-competitiva',
+    title: 'Multi-Agente de Análise Competitiva de Produto',
+    category: 'IA & Automação',
+    description: 'Gere uma análise competitiva aprofundada para um produto ou serviço usando uma arquitetura de múltiplos agentes de IA.',
+    template: `Você atuará como um orquestrador de múltiplos agentes de IA para realizar uma análise competitiva detalhada de um produto/serviço.
+
+Agente 1: Pesquisador de Mercado
+  - Tarefa: Coletar dados sobre [Nome do Produto/Serviço] e seus [Principais Concorrentes (ex: Concorrente A, Concorrente B)] no [Setor de Atuação]. Focar em aspectos como: funcionalidades, preços, público-alvo, estratégias de marketing, reputação online (reviews, mídias sociais) e pontos fortes/fracos percebidos.
+  - Fontes: Websites oficiais, relatórios de mercado, notícias do setor, reviews de clientes, plataformas de redes sociais.
+
+Agente 2: Analista Estratégico
+  - Tarefa: Analisar os dados coletados pelo Agente Pesquisador para identificar padrões, tendências, diferenciais competitivos e gaps no mercado. Realizar uma análise SWOT (Strengths, Weaknesses, Opportunities, Threats) para o [Nome do Produto/Serviço] e para cada concorrente.
+  - Foco: Como [Nome do Produto/Serviço] se posiciona em relação aos concorrentes, oportunidades de inovação, ameaças potenciais (novos entrantes, tecnologias disruptivas).
+
+Agente 3: Gerador de Insights e Recomendações
+  - Tarefa: Com base nas análises dos Agentes 1 e 2, sintetizar os achados mais relevantes em insights acionáveis. Propor recomendações estratégicas para o [Nome do Produto/Serviço] para ganhar vantagem competitiva.
+  - Exemplo de Saída: Sugestões de funcionalidades a desenvolver, ajustes de preço, canais de marketing a explorar, melhorias na proposta de valor.
+
+Formato da Saída Final:
+
+1.  **Resumo Executivo da Análise Competitiva:**
+    *   Visão geral do cenário competitivo e posicionamento do [Nome do Produto/Serviço].
+2.  **Análise Detalhada dos Concorrentes:**
+    *   Para cada concorrente (Concorrente A, Concorrente B, etc.):
+        *   Nome do Concorrente:
+        *   Principais Produtos/Serviços:
+        *   Pontos Fortes (Strengths):
+        *   Pontos Fracos (Weaknesses):
+        *   Estratégias de Marketing Notáveis:
+        *   Reputação/Feedback de Clientes:
+3.  **Análise SWOT do [Nome do Produto/Serviço]:**
+    *   Strengths:
+    *   Weaknesses:
+    *   Opportunities:
+    *   Threats:
+4.  **Diferenciais e Gaps de Mercado:**
+    *   Onde o [Nome do Produto/Serviço] se destaca atualmente.
+    *   Lacunas identificadas no mercado que o [Nome do Produto/Serviço] pode preencher.
+5.  **Recomendações Estratégicas Acionáveis:**
+    *   Recomendações para Produto/Serviço:
+    *   Recomendações para Marketing e Vendas:
+    *   Recomendações para Posicionamento:
+    *   Recomendações para Inovação:
+
+Por favor, inicie a análise competitiva para o produto [Nome do Produto/Serviço], no setor [Setor de Atuação], com foco nos [Recursos Chave do Produto] e no [Público-Alvo].`,
+    tags: ['IA Agentes', 'Análise Competitiva', 'Estratégia Produto', 'Negócios'],
+  },
+  {
+    id: 'negocios-agente-resiliencia-organizacional-ia',
+    title: 'Agente de Otimização de Resiliência Organizacional',
+    category: 'Negócios',
+    description: 'Desenvolva uma estratégia de resiliência organizacional abrangente, identificando riscos e planos de mitigação com um agente de IA.',
+    template: `Você atuará como um Agente de Otimização de Resiliência Organizacional. Sua tarefa é analisar o [Nome da Organização] no [Setor de Atuação] e propor um plano robusto para aumentar sua capacidade de resistir, adaptar-se e recuperar-se de choques e disrupções.
+
+Considere as seguintes áreas-chave de análise para a resiliência:
+1.  **Operacional:** Cadeia de suprimentos, processos internos, infraestrutura tecnológica.
+2.  **Financeira:** Fluxo de caixa, acesso a capital, gestão de dívidas.
+3.  **Tecnológica:** Segurança cibernética, redundância de sistemas, inovação.
+4.  **Pessoas:** Gestão de talentos, bem-estar da equipe, planejamento de sucessão, capacidade de trabalho remoto.
+5.  **Reputação e Marca:** Percepção pública, gestão de crises de imagem.
+6.  **Estratégica:** Capacidade de adaptação do modelo de negócios, diversificação de mercados.
+
+Passos do Agente:
+
+1.  **Identificação de Riscos e Vulnerabilidades:**
+    *   Liste os principais riscos internos e externos que podem impactar [Nome da Organização], considerando o [Setor de Atuação] e os [Riscos Atuais Conhecidos (se houver)].
+    *   Categorize os riscos por gravidade (Baixa, Média, Alta) e probabilidade (Baixa, Média, Alta).
+    *   Inclua riscos relacionados às [Principais Áreas/Departamentos] da organização.
+2.  **Avaliação da Capacidade Atual de Resposta:**
+    *   Descreva brevemente como [Nome da Organização] lidaria atualmente com os riscos identificados, com base nas informações disponíveis.
+3.  **Desenvolvimento de Estratégias de Mitigação e Continuidade:**
+    *   Para cada risco de 'Média' a 'Alta' gravidade/probabilidade, proponha medidas proativas para mitigá-lo.
+    *   Desenvolva planos de contingência e continuidade de negócios para os cenários mais críticos.
+4.  **Sugestão de KPIs de Resiliência:**
+    *   Indique métricas-chave para monitorar a saúde e a resiliência da organização ao longo do tempo.
+5.  **Plano de Ação para Implementação:**
+    *   Forneça um plano de ação estruturado com as principais etapas para implementar as estratégias propostas, visando os [Objetivos de Resiliência] da organização.
+
+Formato da Saída Final:
+
+1.  **Diagnóstico de Resiliência da [Nome da Organização]:**
+    *   Análise Geral e Prioridades.
+2.  **Matriz de Riscos e Vulnerabilidades:**
+    *   Tabela: | Risco | Categoria | Gravidade | Probabilidade | Impacto Potencial |
+3.  **Estratégias de Mitigação e Continuidade:**
+    *   Para cada Risco Crítico:
+        *   Risco:
+        *   Estratégia de Mitigação:
+        *   Plano de Continuidade:
+        *   Responsáveis Sugeridos:
+4.  **KPIs de Resiliência Sugeridos:**
+    *   KPI 1: [Descrição e Justificativa]
+    *   KPI 2: [Descrição e Justificativa]
+    *   ...
+5.  **Plano de Ação para Fortalecimento da Resiliência:**
+    *   Etapa 1: [Ação], [Prazo], [Recursos Necessários]
+    *   Etapa 2: [Ação], [Prazo], [Recursos Necessários]
+    *   ...
+
+Por favor, comece a analisar a resiliência organizacional para a [Nome da Organização], que atua no [Setor de Atuação], com foco no [Foco Geográfico (se relevante)].`,
+    tags: ['Resiliência', 'Gestão de Riscos', 'Planejamento Estratégico', 'IA para Negócios'],
+  },
+  {
+    id: 'escrita-assistente-criativo-multimodal',
+    title: 'Assistente de Escrita Criativa Multimodal',
+    category: 'Escrita',
+    description: 'Crie um roteiro ou conceito para uma experiência narrativa multimodal (texto, áudio, visual) com assistência de IA.',
+    template: `Você atuará como um Assistente de Escrita Criativa Multimodal. Sua tarefa é desenvolver um roteiro ou conceito detalhado para uma experiência narrativa que combine texto, elementos visuais (imagens, vídeos, animações) e áudio (música, efeitos sonoros, narração).
+
+As informações que você deve usar são:
+*   **Tema/Conceito Central:** [Tema/Conceito Central]
+*   **Gênero/Estilo:** [Gênero/Estilo (ex: ficção científica, drama histórico, fantasia urbana)]
+*   **Público-Alvo:** [Público-Alvo (ex: adolescentes, fãs de mistério, profissionais de marketing)]
+*   **Canais de Distribuição Multimodal:** [Canais de Distribuição Multimodal (ex: website interativo, aplicativo móvel, VR/AR, plataforma de podcast com visuais)]
+*   **Duração Estimada da Experiência:** [Duração Estimada da Experiência (ex: 15 minutos, 3 episódios de 30 minutos)]
+*   **Objetivo da Experiência:** [Objetivo da Experiência (ex: entreter, educar, inspirar, promover um produto/serviço)]
+
+Seu roteiro deve incluir os seguintes elementos, adaptando-se aos [Canais de Distribuição Multimodal] e à [Duração Estimada da Experiência]:
+
+1.  **Título Provisório e Logline:** Um título cativante e uma frase que resuma a premissa.
+2.  **Arcabouço Narrativo/Estrutura:**
+    *   Ato 1 (Exposição/Introdução): Apresentação dos personagens, cenário e conflito inicial.
+    *   Ato 2 (Desenvolvimento/Conflito): Escalada do conflito, reviravoltas, desenvolvimento dos personagens.
+    *   Ato 3 (Resolução/Conclusão): Clímax, desfecho e impacto da experiência.
+3.  **Detalhes Multimodais por Cena/Segmento:**
+    *   Para cada parte significativa da narrativa (ex: "Introdução ao Mundo," "Descoberta do Mistério," "Confronto Final"), descreva:
+        *   **Conteúdo Textual:** Diálogos-chave, narração, textos de tela.
+        *   **Sugestões Visuais:** Tipo de imagem/vídeo, estilo visual, elementos de UI (se interativo).
+        *   **Sugestões Sonoras:** Tipo de música, efeitos sonoros, tom da narração.
+        *   **Elementos Interativos (se aplicável):** Escolhas do usuário, mini-jogos, exploração de ambientes.
+4.  **Personagens Principais (descrição breve):** Nome, personalidade, papel na história.
+5.  **Cenário/Mundo (descrição breve):** Como o mundo da história se manifesta através dos diferentes modais.
+6.  **Experiência do Usuário/Público:** Como o [Público-Alvo] irá interagir e ser impactado pela experiência, considerando o [Objetivo da Experiência].
+
+Formato da Saída Final:
+
+**1. Título Provisório:**
+   [Seu Título Sugerido]
+**2. Logline:**
+   [Sua Frase de Resumo]
+**3. Sinopse Breve:**
+   [Um parágrafo descrevendo a história]
+**4. Personagens Principais:**
+   - [Nome do Personagem 1]: [Breve descrição]
+   - [Nome do Personagem 2]: [Breve descrição]
+**5. Cenário/Mundo:**
+   [Breve descrição de como o ambiente é apresentado multimodalmente]
+**6. Estrutura Narrativa Multimodal:**
+
+   **ATO 1: [NOME DO ATO 1 - ex: O Despertar]**
+   *   **TEXTO:** [Conteúdo textual central, diálogos]
+   *   **VISUAL:** [Descrição visual, tipo de imagem/vídeo, estilo]
+   *   **ÁUDIO:** [Descrição sonora, música, efeitos, narração]
+   *   **INTERAÇÃO (se aplicável):** [Tipo de interação sugerida]
+
+   **ATO 2: [NOME DO ATO 2 - ex: A Busca]**
+   *   **TEXTO:** [Conteúdo textual central, diálogos]
+   *   **VISUAL:** [Descrição visual, tipo de imagem/vídeo, estilo]
+   *   **ÁUDIO:** [Descrição sonora, música, efeitos, narração]
+   *   **INTERAÇÃO (se aplicável):** [Tipo de interação sugerida]
+
+   **ATO 3: [NOME DO ATO 3 - ex: O Legado]**
+   *   **TEXTO:** [Conteúdo textual central, diálogos]
+   *   **VISUAL:** [Descrição visual, tipo de imagem/vídeo, estilo]
+   *   **ÁUDIO:** [Descrição sonora, música, efeitos, narração]
+   *   **INTERAÇÃO (se aplicável):** [Tipo de interação sugerida]
+
+**7. Objetivo e Impacto na Audiência:**
+   [Como a experiência atinge o objetivo e impacta o público]
+
+Por favor, comece a criar o roteiro ou conceito da experiência narrativa multimodal com o tema [Tema/Conceito Central] e gênero [Gênero/Estilo].`,
+    tags: ['Escrita Criativa', 'Conteúdo Multimodal', 'Storytelling', 'IA para Criação'],
+  },
+  {
+    id: 'career-mentoria-adaptativa-ia',
+    title: 'Agente de Mentoria de Carreira Adaptativa',
+    category: 'Carreira',
+    description: 'Receba um plano de desenvolvimento de carreira adaptativo e recomendações personalizadas com base em suas habilidades e metas.',
+    template: `Você atuará como um Agente de Mentoria de Carreira Adaptativa. Sua função é analisar o perfil do usuário e criar um plano de desenvolvimento de carreira personalizado e flexível, que se ajusta a novas informações e ao progresso.
+
+Informações do Usuário:
+*   **Profissão Atual/Desejada:** [Profissão Atual/Desejada]
+*   **Setor de Atuação:** [Setor de Atuação]
+*   **Habilidades Atuais:** [Lista de Habilidades Atuais (ex: Python, Gestão de Projetos, Comunicação)]
+*   **Interesses Profissionais:** [Interesses Profissionais (ex: IA, Sustentabilidade, Liderança)]
+*   **Metas de Carreira a Curto Prazo (1-2 anos):** [Metas a Curto Prazo (ex: Obter certificação PMP, Transição para cargo de liderança júnior)]
+*   **Metas de Carreira a Longo Prazo (5+ anos):** [Metas a Longo Prazo (ex: Tornar-se Diretor, Abrir meu próprio negócio)]
+*   **Nível de Experiência:** [Nível de Experiência (ex: Iniciante, Júnior, Pleno, Sênior, Especialista)]
+
+Sua resposta deve ser um plano de mentoria adaptativo, incluindo:
+
+1.  **Análise de Perfil e Potencial:**
+    *   Um breve resumo do seu perfil atual, identificando pontos fortes e oportunidades de desenvolvimento com base nas suas [Habilidades Atuais] e [Metas de Carreira].
+    *   Identificação de 'skill gaps' (lacunas de habilidades) para atingir as [Metas de Carreira a Curto Prazo] e [Metas de Carreira a Longo Prazo] no [Setor de Atuação].
+2.  **Plano de Desenvolvimento de Habilidades Personalizado:**
+    *   Para cada skill gap, sugira recursos de aprendizado (cursos online, certificações, livros, projetos práticos).
+    *   Priorize as habilidades com base no impacto nas metas de curto e longo prazo.
+    *   Inclua sugestões de habilidades emergentes relevantes para o [Setor de Atuação] e seus [Interesses Profissionais].
+3.  **Estratégias de Networking e Exposição:**
+    *   Recomendações de tipos de eventos, comunidades online, plataformas e mentores potenciais para expandir sua rede.
+    *   Sugestões de como aumentar sua visibilidade profissional (ex: LinkedIn, artigos, palestras).
+4.  **Simulação de Cenários e Desafios (textual):**
+    *   Apresente um ou dois cenários hipotéticos relevantes para suas [Metas de Carreira a Curto Prazo] ou [Metas de Carreira a Longo Prazo].
+    *   Peça ao usuário para descrever como ele reagiria e ofereça feedback sobre a resposta (este ponto será um prompt de acompanhamento, mas o template deve prever isso).
+5.  **Mecanismo de Adaptação (orientação):**
+    *   Descreva como o plano pode ser atualizado e adaptado. Por exemplo, "Ao concluir uma habilidade ou ajustar suas metas, você pode me informar e o plano será reavaliado."
+    *   Sugira pontos de verificação regulares (ex: trimestrais) para revisar o progresso.
+
+Formato da Saída Final:
+
+**1. Análise de Perfil e Potencial para [Profissão Atual/Desejada]:**
+   *   Pontos Fortes: [Lista]
+   *   Oportunidades de Desenvolvimento: [Lista]
+   *   Lacunas de Habilidades (Skill Gaps) para [Metas de Carreira a Curto Prazo]:
+       *   [Habilidade 1]: [Por que é importante], [Nível de Prioridade]
+       *   [Habilidade 2]: [Por que é importante], [Nível de Prioridade]
+   *   Lacunas de Habilidades (Skill Gaps) para [Metas de Carreira a Longo Prazo]:
+       *   [Habilidade 1]: [Por que é importante], [Nível de Prioridade]
+       *   [Habilidade 2]: [Por que é importante], [Nível de Prioridade]
+
+**2. Plano de Desenvolvimento de Habilidades (Próximos 6 Meses):**
+   *   **Foco 1: [Habilidade Prioritária 1]**
+       *   Recursos Sugeridos: [Curso X na Coursera/Udemy, Livro Y, Projeto Z]
+       *   Como Praticar: [Ex: Construir um mini-projeto, participar de workshops]
+       *   Meta de Curto Prazo Associada: [Meta]
+   *   **Foco 2: [Habilidade Prioritária 2]**
+       *   Recursos Sugeridos: [Curso X, Livro Y, Projeto Z]
+       *   Como Praticar: [Ex: Simular entrevistas, fazer apresentações]
+       *   Meta de Curto Prazo Associada: [Meta]
+   *   **Habilidades Emergentes a Explorar:** [Ex: IA Generativa para [Setor], Blockchain, Sustentabilidade]
+
+**3. Estratégias de Networking e Visibilidade:**
+   *   Eventos/Comunidades: [Ex: Meetups de tecnologia, conferências do setor]
+   *   Plataformas: [Ex: LinkedIn (otimização de perfil), GitHub (mostrar projetos)]
+   *   Mentoria: [Sugestão de buscar mentores em [áreas específicas]]
+
+**4. Cenário de Desafio (Para você interagir):**
+   "Imagine que você acabou de ser promovido a [Cargo da Meta de Curto Prazo] e precisa liderar um projeto complexo em [Área/Tecnologia]. Quais seriam seus primeiros 3 passos para garantir o sucesso, considerando suas habilidades atuais e as que você planeja desenvolver?"
+
+**5. Mecanismo de Adaptação do Plano:**
+   "Este é um plano vivo. À medida que você progredir, adquirir novas habilidades ou suas metas mudarem, basta me informar com os detalhes ([Habilidade concluída], [Nova meta]) e eu adaptarei as recomendações."
+
+Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [Profissão Atual/Desejada] e as [Metas de Carreira a Curto Prazo (1-2 anos)] e [Metas de Carreira a Longo Prazo (5+ anos)].`,
+    tags: ['Carreira', 'Mentoria IA', 'Desenvolvimento Profissional', 'Habilidades Futuras'],
+  },
 ];

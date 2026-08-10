@@ -13,6 +13,123 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'meta-ai-muse-glimmer-lancamento-2026-08',
+    date: '2026-08',
+    title: 'Meta lança Muse Glimmer, um modelo de IA de código aberto para dispositivos locais',
+    developer: 'Meta AI',
+    category: 'Lançamento',
+    description: 'A Meta lançou o Muse Glimmer em 10 de agosto de 2026, um modelo de 30 bilhões de parâmetros de peso aberto, projetado para fluxos de trabalho de IA agêntica locais e no dispositivo, otimizado para Macs e PCs com uma única GPU de consumidor.',
+    highlights: [
+      'Muse Glimmer é um modelo de 30 bilhões de parâmetros lançado em 10 de agosto de 2026.',
+      'É um modelo de peso aberto, disponível para download gratuito no Hugging Face sob uma licença Apache 2.0.',
+      'Projetado para tarefas agênticas locais, como gerenciamento de agendamentos, organização de arquivos e codificação.',
+      'Otimizado para rodar em Macs ou PCs com uma única GPU de consumidor.',
+      'Representa um foco da Meta na expansão do código aberto e na IA localizada.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'meta-ai-muse-spark-1-2-open-weights-anunciado-2026-08',
+    date: '2026-08',
+    title: 'Meta anuncia a liberação dos pesos abertos para o Muse Spark 1.2',
+    developer: 'Meta AI',
+    category: 'Atualização',
+    description: 'Em 10 de agosto de 2026, a Meta confirmou que lançará em breve os pesos abertos para o Muse Spark 1.2, seu modelo de fundação maior, após seu lançamento inicial com pesos fechados.',
+    highlights: [
+      'A Meta se comprometeu a liberar os pesos abertos para o Muse Spark 1.2.',
+      'A notícia veio junto com o lançamento do Muse Glimmer, destacando a estratégia de código aberto da Meta.',
+      'O Muse Spark 1.2 é um modelo de fundação maior da Meta.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'google-deepmind-weathernext-cyclones-lancamento-2026-08',
+    date: '2026-08',
+    title: 'Google DeepMind lança WeatherNext Cyclones, um modelo de IA para previsão de ciclones',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Em 6 de agosto de 2026, o Google DeepMind lançou "WeatherNext Cyclones" (WN-C) como código aberto, um modelo que prevê a trajetória, intensidade e campo de vento de ciclones tropicais globalmente com até 15 dias de antecedência.',
+    highlights: [
+      'O modelo WeatherNext Cyclones foi lançado em 6 de agosto de 2026.',
+      'Alcançou uma vantagem média de previsão de mais de um dia sobre os principais modelos operacionais.',
+      'Prever a intensidade e a extensão do vento simultaneamente com probabilidades.',
+      'O código foi disponibilizado como open-source.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'deepseek-v4-pro-responses-api-suporte-2026-08',
+    date: '2026-08',
+    title: 'DeepSeek anuncia suporte da Responses API para o modelo DeepSeek-V4-Pro',
+    developer: 'DeepSeek',
+    category: 'Atualização',
+    description: 'A DeepSeek planeja adicionar suporte para a Responses API para seu modelo deepseek-v4-pro no início de agosto de 2026, expandindo as capacidades da API para este modelo.',
+    highlights: [
+      'O suporte da Responses API para deepseek-v4-pro foi planejado para o início de agosto de 2026.',
+      'Anteriormente, a Responses API suportava apenas o modelo deepseek-v4-flash.',
+      'Esta atualização melhora a funcionalidade e a versatilidade do DeepSeek-V4-Pro para desenvolvedores.'
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'xai-grok-imagine-image-2-0-lancamento-2026-08',
+    date: '2026-08',
+    title: 'xAI lança Grok Imagine Image 2.0 com ferramentas de edição de precisão',
+    developer: 'xAI (Grok)',
+    category: 'Lançamento',
+    description: 'A xAI lançou o Grok Imagine Image 2.0 em 7 de agosto de 2026, como um novo Modo de Qualidade para o gerador de imagens do Grok, com recursos de edição precisos, referências multi-imagem e redimensionamento inteligente.',
+    highlights: [
+      'Grok Imagine Image 2.0 foi lançado em 7 de agosto de 2026.',
+      'Foca em edição de precisão, incluindo uma ferramenta Magic Wand e segmentação.',
+      'Aceita até cinco imagens de entrada para mesclagem de referências.',
+      'Classificado em segundo lugar nas tabelas de classificação Text-to-Image Arena e edição de imagem.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'xai-grok-voice-think-fast-2-0-lancamento-2026-08',
+    date: '2026-08',
+    title: 'xAI introduz Grok Voice Think Fast 2.0, seu modelo de voz mais capaz',
+    developer: 'xAI (Grok)',
+    category: 'Lançamento',
+    description: 'A xAI introduziu o Grok Voice Think Fast 2.0 em 8 de agosto de 2026, como seu modelo de voz para voz mais capaz, apresentando inteligência aprimorada, melhor precisão de transcrição, raciocínio mais rápido e conversas mais fluidas.',
+    highlights: [
+      'Grok Voice Think Fast 2.0 foi lançado em 8 de agosto de 2026.',
+      'Oferece inteligência aprimorada e maior precisão na transcrição.',
+      'Proporciona raciocínio mais rápido e conversas mais suaves.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'xai-grok-4-6-lancamento-estavel-2026-08',
+    date: '2026-08',
+    title: 'xAI lança a versão estável do Grok 4.6',
+    developer: 'xAI (Grok)',
+    category: 'Lançamento',
+    description: 'O Grok 4.6 foi lançado como uma versão estável em 7 de agosto de 2026, continuando a série de modelos de linguagem grandes generativos da xAI.',
+    highlights: [
+      'A versão estável do Grok 4.6 foi lançada em 7 de agosto de 2026.',
+      'O Grok é desenvolvido pela SpaceXAI (anteriormente xAI).',
+      'Este lançamento segue outras versões da família de modelos Grok 4.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'mistral-shieldstral-1-0-lancamento-2026-08',
+    date: '2026-08',
+    title: 'Mistral AI lança Shieldstral 1.0, um classificador de segurança multimodal de pesos abertos',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'A Mistral AI lançou o Shieldstral 1.0 em 4 de agosto de 2026, um classificador de segurança multimodal de pesos abertos de 3 bilhões de parâmetros que supera modelos até 7 vezes seu tamanho.',
+    highlights: [
+      'Shieldstral 1.0 foi lançado em 4 de agosto de 2026.',
+      'É um modelo de 3 bilhões de parâmetros de pesos abertos, com licença Apache 2.0.',
+      'Supera modelos maiores em classificação de segurança multimodal.',
+      'Framifica a moderação de conteúdo como uma tarefa de Q&A adaptativa à política.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'meta-ai-muse-spark-1-2-lancamento-2026-08',
     date: '2026-08',
     title: 'Meta lança Muse Spark 1.2, uma atualização para seu modelo de IA de fronteira',

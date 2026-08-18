@@ -79,7 +79,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '✍️',
     tagline: 'O assistente de IA mais popular do mundo',
     description:
-      'ChatGPT Plus é a versão premium da OpenAI, impulsionada pelo modelo GPT-5.5 (ou superior), com acesso a plugins, navegação web e geração de imagens através do ChatGPT Images 2.0. É o assistente conversacional mais versátil disponível, excelente para redação, análise e brainstorming.',
+      'ChatGPT Plus é a versão premium da OpenAI, impulsionada pela família de modelos GPT-5.6 (Sol, Terra e Luna, lançada em julho de 2026), com acesso a plugins, navegação web e geração de imagens através do ChatGPT Images 2.0. É o assistente conversacional mais versátil disponível, excelente para redação, análise e brainstorming.',
     useCases: [
       'Escrever e revisar textos e e-mails',
       'Criar roteiros, histórias e conteúdo criativo',
@@ -87,7 +87,7 @@ export const AI_TOOLS: AITool[] = [
       'Responder perguntas complexas com contexto longo',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: Uso limitado de GPT-5.5 Instant (~10 mensagens a cada 5 horas, com anúncios em algumas regiões dos EUA); Plano Go: US$ 8/mês (uso de GPT-5.5 Instant com cota maior, sem Deep Research); Plano Plus: US$ 20/mês (acesso a GPT-5.5, Deep Research - 10 sessões/mês, Sora, Codex, Agent Mode, sem anúncios, 160 mensagens/3h); Plano Pro US$ 100/mês (5x limites do Plus); Plano Pro US$ 200/mês (20x limites do Plus, 250 sessões de Deep Research/mês, janela de contexto de 1M tokens); Plano Business: US$ 20/usuário/mês (faturamento anual, mínimo de 2 usuários) ou US$ 25/usuário/mês (faturamento mensal); Plano Enterprise: sob consulta. API GPT-5.6 Sol: US$ 5.00/M tokens entrada e US$ 30.00/M tokens saída.',
+    pricingDetails: 'Plano Grátis: Uso limitado de GPT-5.5 Instant (~10 mensagens a cada 5 horas, com anúncios em algumas regiões dos EUA); Plano Go: US$ 8/mês (uso de GPT-5.5 Instant com cota maior, sem Deep Research); Plano Plus: US$ 20/mês (acesso a GPT-5.5, Deep Research - 10 sessões/mês, Sora, Codex, Agent Mode, sem anúncios, 160 mensagens/3h); Plano Pro US$ 100/mês (5x limites do Plus); Plano Pro US$ 200/mês (20x limites do Plus, 250 sessões de Deep Research/mês, janela de contexto de 1M tokens); Plano Business: US$ 20/usuário/mês (faturamento anual, mínimo de 2 usuários) ou US$ 25/usuário/mês (faturamento mensal); Plano Enterprise: sob consulta. API GPT-5.6: Sol (topo de linha) US$ 5/M tokens entrada e US$ 30/M saída; Terra (intermediário) US$ 2,50/M entrada e US$ 15/M saída; Luna (econômico) US$ 1/M entrada e US$ 6/M saída.',
     url: 'https://chatgpt.com',
     tags: ['redação', 'texto', 'gpt', 'openai', 'chatbot', 'assistente', 'copywriting'],
     isFeatured: true,
@@ -102,7 +102,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '✍️',
     tagline: 'IA focada em segurança com janela de contexto gigante',
     description:
-      'Claude é o assistente de IA da Anthropic, reconhecido por suas capacidades de raciocínio avançado, escrita de alta qualidade e janela de contexto de até 200.000 tokens (Claude 3 Opus). Destaca-se em análises longas, redação técnica e tarefas que exigem precisão.',
+      'Claude é o assistente de IA da Anthropic, reconhecido por suas capacidades de raciocínio avançado, escrita de alta qualidade e janela de contexto longa. Desde julho de 2026, o Claude Sonnet 5 é o modelo padrão dos planos Free e Pro, com desempenho agentic próximo ao do topo de linha Opus 4.8 por um custo bem menor. Destaca-se em análises longas, redação técnica e tarefas que exigem precisão.',
     useCases: [
       'Analisar documentos extensos (PDFs, contratos)',
       'Redação técnica e acadêmica de qualidade',
@@ -110,7 +110,7 @@ export const AI_TOOLS: AITool[] = [
       'Brainstorming e criação de conteúdo',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: Acesso a Claude Sonnet 4.6, com limites diários de uso, upload de arquivos; Plano Pro: US$ 20/mês (US$ 17/mês anual) para uso de 5x o plano gratuito, acesso a todos os modelos incluindo Claude Opus 4.7, raciocínio estendido/adaptativo, acesso prioritário, projetos ilimitados; Plano Max 5x: US$ 100/mês (5x capacidade do Pro); Plano Max 20x: US$ 200/mês (20x capacidade do Pro); Plano Team Standard: US$ 25/usuário/mês (US$ 20/usuário/mês anual, mínimo 5 usuários) inclui recursos Pro, controles administrativos, limites de uso mais altos, acesso a Sonnet e Haiku limitado; Plano Team Premium: US$ 125/usuário/mês (US$ 100/usuário/mês anual, mínimo 5 usuários) inclui Opus e Claude Code completo; Plano Enterprise: sob consulta. API (pay-per-token): Claude Opus 4.7 a US$ 5/M tokens entrada e US$ 25/M tokens saída; Claude Sonnet 4.6 a US$ 3/M tokens entrada e US$ 15/M tokens saída; Claude Haiku 4.5 a US$ 1/M tokens entrada e US$ 5/M tokens saída. Fast Mode para Opus 4.6 com 6x o preço padrão. Batch API com 50% de desconto.',
+    pricingDetails: 'Plano Grátis: Acesso a Claude Sonnet 5 (modelo padrão desde julho de 2026), com limites diários de uso, upload de arquivos; Plano Pro: US$ 20/mês (US$ 17/mês anual) para uso de 5x o plano gratuito, acesso a todos os modelos incluindo Claude Opus 4.8, raciocínio estendido/adaptativo, acesso prioritário, projetos ilimitados; Plano Max 5x: US$ 100/mês (5x capacidade do Pro); Plano Max 20x: US$ 200/mês (20x capacidade do Pro); Plano Team Standard: US$ 25/usuário/mês (US$ 20/usuário/mês anual, mínimo 5 usuários) inclui recursos Pro, controles administrativos, limites de uso mais altos; Plano Team Premium: US$ 125/usuário/mês (US$ 100/usuário/mês anual, mínimo 5 usuários) inclui Opus e Claude Code completo; Plano Enterprise: sob consulta. API (pay-per-token): Claude Opus 4.8 a US$ 5/M tokens entrada e US$ 25/M tokens saída; Claude Sonnet 5 a US$ 2/M tokens entrada e US$ 10/M tokens saída até 31/08/2026 (depois US$ 3/US$ 15); Claude Haiku 4.5 a US$ 1/M tokens entrada e US$ 5/M tokens saída. Batch API com 50% de desconto.',
     url: 'https://claude.ai',
     tags: ['redação', 'texto', 'anthropic', 'assistente', 'análise', 'longo contexto'],
     isFeatured: true,
@@ -125,7 +125,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '✍️',
     tagline: 'IA do Google com acesso a toda a suíte Google',
     description:
-      'Gemini Advanced (rebatizado como Google AI Pro) é o modelo de IA multimodal do Google, impulsionado pelo Gemini 3.1 Pro, integrado ao Gmail, Docs, Drive e Meet. Oferece acesso a busca em tempo real e integração nativa com os serviços Google.',
+      'Gemini Advanced (rebatizado como Google AI Pro) é o modelo de IA multimodal do Google, integrado ao Gmail, Docs, Drive e Meet. Desde maio de 2026, o Gemini 3.5 Flash — mais rápido e com capacidades agênticas — está disponível ao lado do Gemini 3.1 Pro. Oferece acesso a busca em tempo real e integração nativa com os serviços Google.',
     useCases: [
       'Redigir e-mails e documentos no Google Workspace',
       'Pesquisar e sumarizar informações atualizadas',
@@ -321,12 +321,12 @@ export const AI_TOOLS: AITool[] = [
   {
     id: 'cursor',
     name: 'Cursor',
-    developer: 'Anysphere',
+    developer: 'Anysphere (SpaceX)',
     category: 'Código & Dev',
     emoji: '💻',
     tagline: 'Editor de código com IA nativa e contexto completo do projeto',
     description:
-      'Cursor é um editor de código (fork do VS Code) com IA profundamente integrada que entende todo o contexto do seu projeto. Permite editar arquivos inteiros, refatorar bases de código e conversar sobre o código com Claude, GPT-4o e Gemini. Cruzando US$ 2 bilhões em receita anualizada e com mais de um milhão de desenvolvedores pagantes em Fevereiro de 2026.',
+      'Cursor é um editor de código (fork do VS Code) com IA profundamente integrada que entende todo o contexto do seu projeto. Permite editar arquivos inteiros, refatorar bases de código e conversar sobre o código com Claude, GPT-4o e Gemini. Em junho de 2026, a Anysphere (criadora do Cursor) foi adquirida pela SpaceX por US$ 60 bilhões em ações — negócio com fechamento previsto para o terceiro trimestre de 2026. A ferramenta ultrapassou US$ 4 bilhões em receita anualizada e está presente em 67% das empresas da Fortune 500.',
     useCases: [
       'Refatorar e editar múltiplos arquivos ao mesmo tempo',
       'Perguntar sobre a base de código inteira em linguagem natural',

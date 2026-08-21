@@ -290,7 +290,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Plano Grátis: Acesso limitado a Chat; Plano Chat: US$ 29/mês (faturamento mensal) ou US$ 24/mês (faturamento anual) para 5 assentos, palavras ilimitadas em Chat, acesso a todos os LLMs (GPT-4o, Claude, Gemini), projetos de chat ilimitados; Plano Growth: US$ 1.000/mês (faturamento anual) para 75 assentos, 20.000 créditos de workflow/mês, integração com CRMs como Salesforce e HubSpot, automação de pesquisa de leads, outreach personalizado em escala; Plano Expansion: US$ 2.000/mês (faturamento anual) para 150 assentos, 45.000 créditos de workflow/mês; Plano Scale: US$ 3.000/mês (faturamento anual) para 200 assentos, 75.000 créditos de workflow/mês; Plano Enterprise: preço customizado (SSO, acesso à API, suporte dedicado).',
     url: 'https://www.copy.ai',
     tags: ['copywriting', 'marketing', 'conteúdo', 'geração de texto', 'anúncios', 'vendas'],
-    popularityRank: 17,
+    popularityRank: 14,
     updatedAt: '2026-08',
   },
 
@@ -1043,7 +1043,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Plano Grátis: 80 créditos mensais, 480p, marca d\'água, sem direitos comerciais; Plano Standard: US$ 10/mês (US$ 8/mês anual) para 700 créditos/mês, todas as resoluções, sem marca d\'água, direitos comerciais; Plano Pro: US$ 35/mês (US$ 28/mês anual) para 2.300 créditos/mês, velocidades de geração mais rápidas; Plano Fancy: US$ 95/mês (US$ 76/mês anual) para 6.000 créditos/mês, geração mais rápida.',
     url: 'https://www.pika.art/',
     tags: ['vídeo', 'geração', 'animação', 'edição', 'discord'],
-    popularityRank: 16,
+    popularityRank: 31,
     updatedAt: '2026-08',
   },
   {
@@ -1198,7 +1198,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://suno.com',
     tags: ['música', 'geração', 'composição', 'trilha sonora', 'jingle', 'letra'],
     isNew: true,
-    popularityRank: 10,
+    popularityRank: 12,
     updatedAt: '2026-08',
   },
   {
@@ -1392,7 +1392,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Plano Grátis: Buscas ilimitadas com modelo Sonar básico, 5 Copilot queries a cada 4 horas, sem acesso a Deep Research, Labs ou modelos premium; Plano Pro: US$ 20/mês (US$ 16.67/mês anual) Copilot ilimitado, 20 Deep Research queries/day, acesso a GPT-5.4, Claude Opus 4.8, Gemini 3.1 Pro, etc., 3 gerações de vídeo/mês, AI image generation; Plano Max: US$ 200/mês (US$ 2.000/ano) inclui tudo do Pro + Labs ilimitados, Perplexity Computer com 19 modelos AI, 10.000 créditos Computer/mês, Sora 2 Pro video generation, Nano Banana Pro images; Plano Education Pro: US$ 10/mês (para estudantes verificados); Plano Enterprise Pro: US$ 40/usuário/mês (US$ 400/usuário/ano) 500 Research queries/day, 5 gerações de vídeo/mês; Plano Enterprise Max: US$ 325/usuário/mês (US$ 3.250/usuário/ano) Research e Labs ilimitados. API Sonar (a partir de US$ 1/M tokens entrada e US$ 15/M tokens saída para Sonar Pro). Comet Browser é gratuito.',
     url: 'https://www.perplexity.ai',
     tags: ['busca', 'pesquisa', 'fontes', 'tempo real', 'notícias', 'análise'],
-    popularityRank: 6,
+    popularityRank: 29,
     updatedAt: '2026-08',
   },
   {

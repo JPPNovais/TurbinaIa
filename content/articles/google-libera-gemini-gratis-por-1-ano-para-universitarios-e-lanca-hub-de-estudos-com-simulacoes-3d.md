@@ -9,7 +9,7 @@ tags:
   - IA na Educação
 author: Redação Turbina IA
 isFeatured: false
-date: "2026-08-21"
+date: "2026-08-20"
 coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
 ---
 

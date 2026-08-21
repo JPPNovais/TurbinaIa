@@ -102,7 +102,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '✍️',
     tagline: 'IA focada em segurança com janela de contexto gigante',
     description:
-      'Claude é o assistente de IA da Anthropic, reconhecido por suas capacidades de raciocínio avançado, escrita de alta qualidade e janela de contexto de até 200.000 tokens (Claude 3 Opus). Destaca-se em análises longas, redação técnica e tarefas que exigem precisão.',
+      'Claude é o assistente de IA da Anthropic, reconhecido por suas capacidades de raciocínio avançado, escrita de alta qualidade e janela de contexto de até 200.000 tokens (Claude Opus 4.7). Destaca-se em análises longas, redação técnica e tarefas que exigem precisão.',
     useCases: [
       'Analisar documentos extensos (PDFs, contratos)',
       'Redação técnica e acadêmica de qualidade',
@@ -147,7 +147,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '✍️',
     tagline: 'IA integrada ao Windows e Office 365',
     description:
-      'Microsoft Copilot é o assistente de IA da Microsoft, baseado nos modelos GPT-4 da OpenAI e integrado nativamente ao Word, Excel, PowerPoint, Outlook e Teams. É a escolha ideal para quem já usa o ecossistema Microsoft.',
+      'Microsoft Copilot é o assistente de IA da Microsoft, com o GPT-5.6 da OpenAI como modelo preferencial no Word, Excel, PowerPoint, Outlook, Teams e Cowork. É a escolha ideal para quem já usa o ecossistema Microsoft.',
     useCases: [
       'Criar e editar documentos no Word',
       'Automatizar análises no Excel com linguagem natural',
@@ -177,7 +177,7 @@ export const AI_TOOLS: AITool[] = [
       'Manter consistência de tom de voz da marca',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Plano Grátis: Sem plano gratuito, apenas trial de 7 dias (requer cartão de crédito); Plano Creator: US$ 49/mês (faturamento mensal) ou US$ 39/mês (faturamento anual) para 1 usuário (GPT-3.5 e GPT-4, palavras ilimitadas, 2 Brand Voices, 5 Knowledge assets, 3 Audiences, Essential Agents, Jasper Art, 50+ templates); Plano Pro: US$ 69/mês (faturamento mensal) ou US$ 59/mês (faturamento anual) por assento (para pequenos times, 2-3 Brand Voices, Jasper Art, SEO mode do Surfer SEO); Plano Business: preço customizado (a partir de ~US$ 900-US$ 1,500/mês para 3-5 usuários, multi-assento, Brand Voices ilimitados, agentes de IA avançados, API e SSO).',
+    pricingDetails: 'Plano Grátis: Sem plano gratuito, apenas trial de 7 dias (requer cartão de crédito); Plano Creator: US$ 49/mês (faturamento mensal) ou US$ 39/mês (faturamento anual) para 1 usuário (arquitetura agnóstica de modelo, com acesso aos principais LLMs — GPT, Claude e Gemini — escolhidos automaticamente por tarefa; palavras ilimitadas, 2 Brand Voices, 5 Knowledge assets, 3 Audiences, Essential Agents, Jasper Art, 50+ templates); Plano Pro: US$ 69/mês (faturamento mensal) ou US$ 59/mês (faturamento anual) por assento (para pequenos times, 2-3 Brand Voices, Jasper Art, SEO mode do Surfer SEO); Plano Business: preço customizado (a partir de ~US$ 900-US$ 1,500/mês para 3-5 usuários, multi-assento, Brand Voices ilimitados, agentes de IA avançados, API e SSO).',
     url: 'https://www.jasper.ai',
     tags: ['marketing', 'copywriting', 'seo', 'blog', 'anúncios', 'conteúdo', 'redação'],
     popularityRank: 15,
@@ -592,7 +592,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '⚙️',
     tagline: 'Editor de código agentic com IA da Google, baseado em VS Code',
     description:
-      'Google Antigravity é um novo editor de código agentic da Google (fork do VS Code) que usa agentes de IA para planear tarefas, escrever código, instalar pacotes via terminal e testar aplicações no navegador. Oferece acesso a modelos Gemini 3.1 Pro, Flash, Claude 3.5 Sonnet e Claude 3 Opus, sendo um ótimo ponto de partida para desenvolvedores iniciantes. Recebeu acesso prioritário com o novo plano Google AI Ultra. Teve uma reestruturação de preços em Março e Maio de 2026.',
+      'Google Antigravity é um novo editor de código agentic da Google (fork do VS Code) que usa agentes de IA para planear tarefas, escrever código, instalar pacotes via terminal e testar aplicações no navegador. Oferece acesso a modelos Gemini 3.1 Pro, Flash, Claude Sonnet 4.6 e Claude Opus 4.7, sendo um ótimo ponto de partida para desenvolvedores iniciantes. Recebeu acesso prioritário com o novo plano Google AI Ultra. Teve uma reestruturação de preços em Março e Maio de 2026.',
     useCases: [
       'Desenvolvimento de software completo com agentes autônomos',
       'Instalar dependências e gerenciar ambientes de forma automatizada',
@@ -1010,7 +1010,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎬',
     tagline: 'Criação de vídeos de alta qualidade cinematográfica com IA do Google',
     description:
-      'Google Veo é o modelo de geração de vídeo do Google, disponível através do Gemini. Ele cria vídeos realistas e cinematográficos a partir de prompts de texto ou imagens, com controle sobre elementos como estilo, iluminação e movimentos de câmera. É reconhecido por sua alta qualidade e capacidade de gerar vídeos com áudio nativo. Atualmente em acesso limitado (private preview). Integrado ao Runway.',
+      'Google Veo é o modelo de geração de vídeo do Google, disponível através do Gemini e do editor Flow. Ele cria vídeos realistas e cinematográficos a partir de prompts de texto ou imagens, com controle sobre elementos como estilo, iluminação e movimentos de câmera. É reconhecido por sua alta qualidade e capacidade de gerar vídeos com áudio nativo. As gerações anteriores (Veo 2 e Veo 3) foram aposentadas em 30 de junho de 2026; o Veo 3.1 é hoje a única versão disponível, tanto no app Gemini quanto via Vertex AI.',
     useCases: [
       'Gerar clipes cinematográficos de alta qualidade',
       'Produzir vídeos realistas com áudio integrado',
@@ -1018,10 +1018,9 @@ export const AI_TOOLS: AITool[] = [
       'Explorar ideias criativas de narrativa visual',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Plano Grátis: N/A; Atualmente em acesso limitado (private preview). Disponível através de Google AI Ultra a US$ 99.99/mês (com 20TB de armazenamento) ou US$ 200/mês (com 30TB de armazenamento, inclui Veo 3, Flow video editor, Gemini 2.5 Pro, YouTube Premium). Google AI Pro a US$ 19.99/mês (inclui Veo 2, Flow editor). Plano Estudantil Grátis (1 ano) até o final do ano acadêmico de 2026. Planos de API do Google Cloud Vertex AI (pay-per-second): Veo 3.1 Standard (US$ 0.40/segundo, lançado em Out 2025), Veo 3.1 Fast (US$ 0.15/segundo, lançado em Out 2025), Veo 3.1 Lite (US$ 0.05/segundo, lançado em Mar 2026).',
+    pricingDetails: 'Plano Grátis: acesso limitado ao Veo 3.1 Fast pelo app Gemini (3 gerações/dia); Google AI Pro a US$ 19.99/mês inclui 1.000 créditos Flow/mês (equivalente a ~100 vídeos Veo 3.1 Lite, ~50 Veo 3.1 Fast ou ~10 Veo 3.1 Quality, 5 gerações/dia no app Gemini); Google AI Ultra a US$ 99.99/mês (20TB de armazenamento) ou US$ 200/mês (30TB), com limites bem mais altos de Flow e Veo 3.1 Quality, além de YouTube Premium. Plano Estudantil Grátis (1 ano) até o final do ano acadêmico de 2026. Planos de API (Gemini API, Vertex AI, pay-per-second): Veo 3.1 Quality (US$ 0.40/segundo), Veo 3.1 Fast (US$ 0.15/segundo), Veo 3.1 Lite (a partir de US$ 0.03/segundo, sem áudio). Veo 2 e o Veo 3 original foram descontinuados em 30 de junho de 2026.',
     url: 'https://ai.google/frontier/veo/',
     tags: ['vídeo', 'geração', 'google', 'cinematográfico', 'animação', 'áudio', 'multimodal'],
-    isNew: true,
     updatedAt: '2026-08',
   },
   {
@@ -1433,7 +1432,7 @@ export const AI_TOOLS: AITool[] = [
       'Pesquisa profunda com múltiplas fontes sintetizadas',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Plano Grátis: Sem plano gratuito, mas oferece teste grátis; Planos a partir de US$ 15/mês (faturamento anual) com acesso a todos os modelos de IA (GPT-4o, Claude 3.5 Sonnet), uploads de arquivos (até 25MB), janela de contexto de 64k, Research e Custom Agents. API Web Search a US$ 5/1k chamadas; Contents API a US$ 1/1k páginas; Research API a US$ 12/1k chamadas; Finance Research API a US$ 110/1k chamadas.',
+    pricingDetails: 'Plano Grátis: Sem plano gratuito, mas oferece teste grátis; Planos a partir de US$ 15/mês (faturamento anual) com acesso aos principais modelos de IA (GPT, Claude, Gemini), uploads de arquivos (até 25MB), janela de contexto de 64k, Research e Custom Agents. API Web Search a US$ 5/1k chamadas; Contents API a US$ 1/1k páginas; Research API a US$ 12/1k chamadas; Finance Research API a US$ 110/1k chamadas.',
     url: 'https://you.com',
     tags: ['busca', 'privacidade', 'pesquisa', 'agentes', 'web', 'análise'],
     updatedAt: '2026-08',

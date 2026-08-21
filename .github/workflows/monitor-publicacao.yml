@@ -1,0 +1,141 @@
+name: Monitor de Publicação
+
+# Alarme para o modo de falha que derrubou o blog entre 13 e 21/08/2026: a
+# rotina diária do Claude rodava, mas commitava em branches claude/* que
+# ninguém mergeava. Nenhum job falhou, nenhum build quebrou — o site
+# simplesmente parou de receber artigo por nove dias sem avisar.
+#
+# Este workflow não gera conteúdo e não precisa de nenhuma secret: só olha a
+# data do artigo mais recente na main e abre (ou atualiza) uma issue quando ela
+# envelhece. Roda depois do horário da rotina (09:00 UTC) para não acusar
+# atraso enquanto ela ainda está trabalhando.
+
+on:
+  schedule:
+    - cron: '0 13 * * *' # 13:00 UTC = 10:00 BRT
+  workflow_dispatch:
+    inputs:
+      max_age_days:
+        description: 'Dias tolerados sem artigo novo antes de disparar o alarme'
+        type: string
+        default: '2'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout da main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Verificar idade do último artigo
+        id: check
+        env:
+          MAX_AGE_DAYS: ${{ inputs.max_age_days || '2' }}
+        run: |
+          set +e
+          node scripts/check-publish-health.js --max-age "$MAX_AGE_DAYS" > resultado.txt 2>&1
+          status=$?
+          cat resultado.txt
+          if [ "$status" -eq 0 ]; then
+            echo 'stale=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'stale=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Abrir ou atualizar a issue de alerta
+        if: steps.check.outputs.stale == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const marcador = '<!-- monitor-publicacao -->';
+            const resumo = fs.readFileSync('resultado.txt', 'utf8').trim();
+            const corpo = [
+              marcador,
+              '## O blog parou de receber artigos',
+              '',
+              '```',
+              resumo,
+              '```',
+              '',
+              '### O que verificar, em ordem',
+              '',
+              '1. **A rotina diária do Claude rodou hoje?** Se rodou e não publicou, o mais provável é que tenha commitado numa branch em vez da `main` — confira as branches `claude/*` do repositório e recupere o que estiver preso lá.',
+              '2. **O build da Vercel passou?** Build quebrado congela o site na versão anterior sem alerta nenhum.',
+              '3. **O artigo foi reprovado na validação?** `node scripts/finalize-article.js` sai com código 1 e não commita quando o artigo não cumpre as regras editoriais.',
+              '',
+              `_Verificado automaticamente pelo workflow [${context.workflow}](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})._`,
+            ].join('\n');
+
+            const { owner, repo } = context.repo;
+            const abertas = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open',
+              labels: 'publicacao-parada',
+            });
+            const existente = abertas.data.find((i) => (i.body || '').includes(marcador));
+
+            if (existente) {
+              await github.rest.issues.createComment({ owner, repo, issue_number: existente.number, body: corpo });
+              core.notice(`Alerta atualizado na issue #${existente.number}.`);
+              return;
+            }
+
+            const nova = { owner, repo, title: '⚠️ Publicação parada: o blog está sem artigo novo', body: corpo };
+            let criada;
+            try {
+              criada = await github.rest.issues.create({ ...nova, labels: ['publicacao-parada'] });
+            } catch (erro) {
+              // Se o rótulo ainda não existir no repositório, abre sem ele em vez
+              // de perder o alerta.
+              core.warning(`Não consegui aplicar o rótulo: ${erro.message}`);
+              criada = await github.rest.issues.create(nova);
+            }
+            core.notice(`Alerta aberto na issue #${criada.data.number}.`);
+
+      - name: Fechar a issue quando a publicação voltar
+        if: steps.check.outputs.stale == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const abertas = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open',
+              labels: 'publicacao-parada',
+            });
+            for (const issue of abertas.data) {
+              if (!(issue.body || '').includes('<!-- monitor-publicacao -->')) continue;
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: issue.number,
+                body: 'Publicação normalizada — há artigo novo na `main` dentro do prazo. Fechando automaticamente.',
+              });
+              await github.rest.issues.update({
+                owner,
+                repo,
+                issue_number: issue.number,
+                state: 'closed',
+                state_reason: 'completed',
+              });
+            }
+
+      - name: Falhar o job quando estiver parado
+        if: steps.check.outputs.stale == 'true'
+        run: |
+          echo "::error::Publicação parada — veja a issue com o rótulo publicacao-parada."
+          exit 1

@@ -25,6 +25,14 @@ export const AI_MODELS: CalculatorModel[] = [
     contextWindow: '1M tokens',
     description: 'O modelo Flash mais recente da Google (Gemini 3.6 Flash), otimizado para tarefas de alta frequência e baixo custo, com até 1M de contexto. Preços atualizados a partir de Agosto de 2026.',
   },
+  {
+    name: 'Gemini 3.7 Flash',
+    provider: 'Google',
+    inputPricePerM: 0.75,
+    outputPricePerM: 3.75,
+    contextWindow: '1M tokens',
+    description: 'Novo modelo Flash da Google (Gemini 3.7 Flash), lançado em 13 de Agosto de 2026, voltado a codificação e agentes, com 1M de contexto. Preço introdutório válido até 31 de Dezembro de 2026, quando sobe para $1.50/M entrada e $7.50/M saída.',
+  },
   // OpenAI
   {
     name: 'GPT-4o',
@@ -65,7 +73,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 2.00,
     outputPricePerM: 10.00,
     contextWindow: '200K tokens',
-    description: 'O modelo intermediário da família Claude da Anthropic (Claude 3 Sonnet), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 200K de contexto. Preços atualizados a partir de Agosto de 2026 (preço aumenta para $3.00/M entrada e $15.00/M saída após 31 de Agosto de 2026).',
+    description: 'O modelo intermediário da família Claude da Anthropic (Claude 3 Sonnet), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com 200K de contexto. Preço de $2.00/M entrada e $10.00/M saída tornado permanente pela Anthropic em 11 de Agosto de 2026 (o aumento para $3.00/$15.00 previsto para 1º de Setembro de 2026 foi cancelado).',
   },
   {
     name: 'Claude 3 Haiku',

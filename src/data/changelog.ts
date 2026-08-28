@@ -13,6 +13,125 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-jalapeno-chip-resultados-2026-08',
+    date: '2026-08',
+    title: 'OpenAI revela primeiros resultados do Jalapeño, seu primeiro chip de inferência personalizado',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 25 de agosto de 2026, a OpenAI divulgou os primeiros resultados de desempenho do Jalapeño, seu primeiro chip de inferência de IA projetado internamente em parceria com a Broadcom, com implantação em sua infraestrutura prevista para o final do ano.',
+    highlights: [
+      'Jalapeño entregou de 1,5x a 1,9x mais throughput por quilowatt e latência ponta a ponta de 1,7x a 3,6x menor que os sistemas GB200 e GB300 da Nvidia em benchmarks iniciais.',
+      'É um chip "cativo", projetado exclusivamente para uso interno da OpenAI, e não um produto vendido a terceiros.',
+      'Desenvolvido com a Broadcom (silício) e a Celestica (placas e racks), faz parte de um roteiro multigeracional de chips.',
+      'A implantação na infraestrutura da OpenAI está prevista para começar até o final de 2026.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'deepseek-v4-flash-vision-exp-lancamento-2026-08',
+    date: '2026-08',
+    title: 'DeepSeek lança V4-Flash-Vision-Exp, sua primeira versão multimodal experimental do V4 Flash',
+    developer: 'DeepSeek',
+    category: 'Lançamento',
+    description: 'Em 21 de agosto de 2026, a DeepSeek revelou o V4-Flash-Vision-Exp, uma versão experimental multimodal de seu modelo V4 Flash, capaz de analisar imagens e capturas de tela mantendo as capacidades de texto, raciocínio e agentes do modelo original.',
+    highlights: [
+      'Lançado em 21 de agosto de 2026, disponível através da API multimodal da DeepSeek.',
+      'Adiciona capacidades de compreensão visual ao modelo V4 Flash, antes apenas textual.',
+      'A empresa afirma que o modelo se aproxima do desempenho do Claude Opus 4.8, da Anthropic, em benchmarks agênticos multimodais.',
+      'O lançamento ocorre em meio aos preparativos da DeepSeek para uma possível oferta pública inicial (IPO).'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'google-deepmind-gemini-3-7-flash-lancamento-2026-08',
+    date: '2026-08',
+    title: 'Google DeepMind lança Gemini 3.7 Flash, seu modelo mais avançado para código e agentes',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Em 13 de agosto de 2026, o Google DeepMind lançou o Gemini 3.7 Flash, apenas três semanas após o Gemini 3.6 Flash, trazendo melhorias substanciais em engenharia de software, codificação e fluxos de trabalho agênticos.',
+    highlights: [
+      'Lançado em 13 de agosto de 2026, com acesso via API Gemini, Google AI Studio, Android Studio e plataformas empresariais do Google.',
+      'Janela de contexto de mais de 1 milhão de tokens.',
+      'Pontuou 65,3% no benchmark DeepSWE v1.1, ante 49,0% do Gemini 3.6 Flash.',
+      'Preço introdutório de US$ 0,75 por milhão de tokens de entrada, metade do custo do 3.6 Flash.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'deepseek-v4-pro-disponibilidade-geral-2026-08',
+    date: '2026-08',
+    title: 'DeepSeek lança oficialmente o V4-Pro para disponibilidade geral, focado em tarefas de agentes',
+    developer: 'DeepSeek',
+    category: 'Lançamento',
+    description: 'Em 13 de agosto de 2026, a DeepSeek disponibilizou oficialmente o DeepSeek-V4-Pro-0813 em seu aplicativo, site e API, após meses em prévia, com foco em tarefas em que agentes de IA usam ferramentas, executam código e completam fluxos de trabalho de múltiplas etapas.',
+    highlights: [
+      'Disponibilidade geral a partir de 13 de agosto de 2026, após período de prévia iniciado em abril.',
+      'Suporta janela de contexto de até 1 milhão de tokens e saídas de até 384 mil tokens, com modos de raciocínio (thinking) e não-raciocínio.',
+      'API atualizada para funcionar no formato Responses API da OpenAI.',
+      'Precificado em US$ 1,32 por milhão de tokens de entrada e US$ 3,96 por milhão de tokens de saída.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-bot-lancamento-2026-08',
+    date: '2026-08',
+    title: 'xAI lança Grok Bot, agentes de IA "sempre ativos" com computador próprio na nuvem',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI lançou o Grok Bot em beta em 11 de agosto de 2026, uma equipe de agentes de IA sempre ativos que recebem seu próprio computador na nuvem, fazem login nas ferramentas já usadas pela empresa e concluem tarefas de múltiplas etapas sem supervisão constante.',
+    highlights: [
+      'Lançado em beta em 11 de agosto de 2026, com acesso via desktop (incluindo build para Linux) e iOS.',
+      'Cada Bot recebe um computador em nuvem persistente e pode operar interfaces como um humano faria.',
+      'É possível reunir de dois a seis Bots em um chat em grupo, permitindo que troquem mensagens e deem continuidade ao trabalho entre si.',
+      'Acesso incluído nos planos SuperGrok Heavy, Cursor Ultra e Cursor Teams Premium.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'anthropic-claude-watermark-eu-ai-act-2026-08',
+    date: '2026-08',
+    title: 'Anthropic passa a aplicar marca d\'água invisível em textos gerados pelo Claude em todo o mundo',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'A Anthropic anunciou em 11 de agosto de 2026 que passará a inserir marcas d\'água invisíveis, legíveis por máquina, em textos gerados por novos modelos Claude a partir de 2 de agosto de 2026, para atender às exigências de transparência do Artigo 50 do AI Act da União Europeia.',
+    highlights: [
+      'A marcação, aplicada desde 2 de agosto de 2026, vale globalmente e não apenas para usuários na Europa.',
+      'Não é perceptível durante a leitura normal e permanece no texto mesmo após copiar e colar.',
+      'A empresa tem até 2 de dezembro de 2026 para estender a marcação a modelos Claude mais antigos.',
+      'O não cumprimento do AI Act pode gerar multas de até 15 milhões de euros ou 3% do faturamento global da empresa.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'anthropic-claude-sonnet-5-precos-permanentes-2026-08',
+    date: '2026-08',
+    title: 'Anthropic cancela aumento de preço do Claude Sonnet 5 e torna tarifa de lançamento permanente',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'Em 10 de agosto de 2026, a Anthropic anunciou que não seguirá com o aumento de preço planejado para o Claude Sonnet 5, mantendo permanentemente a tarifa introdutória de US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de saída.',
+    highlights: [
+      'O aumento para US$ 3/US$ 15 por milhão de tokens, previsto para 1º de setembro de 2026, foi cancelado.',
+      'A tarifa introdutória de lançamento (julho de 2026) passa a ser o preço padrão do modelo.',
+      'A decisão consolida o Sonnet 5 como opção mais competitiva em custo frente a modelos concorrentes.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-gpt-5-6-luna-gratis-ilimitado-2026-08',
+    date: '2026-08',
+    title: 'OpenAI libera chats de texto ilimitados no GPT-5.6 Luna para usuários gratuitos do ChatGPT',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'Em 6 de agosto de 2026, a OpenAI anunciou que o GPT-5.6 Luna se tornaria o modelo padrão para usuários dos planos Free e Go, com chats de texto ilimitados, além de uma atualização do GPT-5.6 Sol para assinantes Plus e Pro.',
+    highlights: [
+      'GPT-5.6 Luna passa a ser o modelo padrão gratuito, com chats de texto ilimitados e botão "Think" para respostas mais elaboradas.',
+      'Limites continuam existindo para upload de arquivos, imagens e outras ferramentas nos planos gratuitos.',
+      'Usuários Plus e Pro ganharam um controle deslizante para ajustar o nível de "pensamento" do GPT-5.6 Sol em cada resposta.',
+      'A expansão de acesso ilimitado ao Luna e o botão Think foram implementados na semana de 10 de agosto de 2026.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'meta-ai-muse-glimmer-lancamento-2026-08',
     date: '2026-08',
     title: 'Meta lança Muse Glimmer, um modelo de IA de código aberto para dispositivos locais',

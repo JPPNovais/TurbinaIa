@@ -13,6 +13,80 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-deepmind-gemini-3-5-transcribe-lancamento-2026-08',
+    date: '2026-08',
+    title: 'Google lança Gemini 3.5 Transcribe, novo modelo de fala para texto em mais de 85 idiomas',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Em 26 de agosto de 2026, o Google lançou em preview o Gemini 3.5 Transcribe, novo modelo de transcrição de fala que sucede o Chirp 3 no topo da linha de áudio do Gemini, com suporte a mais de 85 idiomas.',
+    highlights: [
+      'Produz texto formatado e legível, remove vícios de fala ("hã", "tipo") e reconhece vocabulário especializado.',
+      'Funciona tanto em fluxos ao vivo (streaming) quanto em áudio pré-gravado.',
+      'Taxa de erro de palavras (WER) de 5,50% no benchmark multilíngue FLEURS em modo streaming e 5,04% em modo não streaming, segundo dados do Google.',
+      'Preço de US$ 2 por milhão de tokens de áudio de entrada (~US$ 0,003 por minuto de áudio) mais US$ 12 por milhão de tokens de texto de saída.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'zai-glm-5-3-flash-lancamento-2026-08',
+    date: '2026-08',
+    title: 'Z.ai lança GLM-5.3-Flash, primeiro modelo nativamente multimodal da família GLM-5',
+    developer: 'Z.ai',
+    category: 'Lançamento',
+    description: 'Em 26 de agosto de 2026, a startup chinesa Z.ai lançou o GLM-5.3-Flash, o primeiro modelo nativamente multimodal (texto, imagem e vídeo) da família GLM-5, com pesos abertos sob licença MIT.',
+    highlights: [
+      '320 bilhões de parâmetros totais e 18 bilhões ativos, com janela de contexto de 1 milhão de tokens.',
+      'Arquitetura híbrida de atenção esparsa e linear para reduzir o custo computacional em contextos longos.',
+      'Pontuou 57 no Artificial Analysis Intelligence Index, acima da mediana de 29 entre modelos de peso aberto de porte semelhante.',
+      'Preço de lançamento de US$ 0,15 por milhão de tokens de entrada e US$ 0,50 por milhão de saída, com 50% de desconto promocional até 9 de setembro de 2026.'
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'anthropic-claude-platform-ga-computer-use-skills-files-2026-08',
+    date: '2026-08',
+    title: 'Anthropic torna Computer Use, Browser Use, Skills API e Files API disponíveis em produção',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Em 20 de agosto de 2026, a Anthropic anunciou que os recursos Computer Use, a nova ferramenta Browser Use, a Skills API e a Files API deixaram de ser beta e passaram a ficar disponíveis em produção na Claude Platform.',
+    highlights: [
+      'Computer Use passa a executar várias ações por chamada de modelo, em vez de uma ação por vez, reduzindo o número de chamadas necessárias.',
+      'A ferramenta de uso de navegador (Browser Use) permite que agentes interajam com aplicações web e obteve certificação de conformidade HIPAA.',
+      'A Skills API permite que empresas gerenciem pastas de habilidades personalizadas para os agentes.',
+      'A Files API oferece limites de taxa 5x maiores e 1 TB de armazenamento por organização; Skills API e Files API também estão disponíveis via Microsoft Foundry.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'cursor-auto-pricing-por-modelo-2026-08',
+    date: '2026-08',
+    title: 'Cursor muda o modo Auto para cobrança por preço do modelo roteado',
+    developer: 'Anysphere',
+    category: 'Atualização',
+    description: 'A partir de 24 de agosto de 2026, o Cursor deixou de cobrar uma taxa fixa única pelo modo Auto e passou a debitar pelo preço do modelo de IA para o qual cada requisição é roteada — geralmente mais caro que a taxa fixa anterior.',
+    highlights: [
+      'A mudança foi comunicada por e-mail aos assinantes, sem post oficial no blog da empresa até o momento.',
+      'A Cursor afirma ter ampliado o volume de uso incluído nos planos para compensar a nova forma de cobrança, mas ainda não publicou os valores exatos das novas cotas.',
+      'A mudança acontece em meio a um histórico de reajustes de preço da ferramenta ao longo de 2026.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'suno-limites-download-anunciado-2026-08',
+    date: '2026-08',
+    title: 'Suno anuncia limites de download por plano a partir de 3 de setembro de 2026',
+    developer: 'Suno',
+    category: 'Atualização',
+    description: 'A Suno anunciou que, a partir de 3 de setembro de 2026, passará a limitar o número de downloads de músicas por plano — medida retroativa, que também vale para faixas já geradas antes do anúncio — como parte de um esforço para conter abuso e distribuição em massa.',
+    highlights: [
+      'Plano Grátis: limite vitalício de 7 downloads, sem uso comercial.',
+      'Plano Pro: até 20 downloads por mês.',
+      'Plano Premier: até 60 downloads por mês; apenas o Suno Studio permanece sem limite de exportação.',
+      'Downloads extras poderão ser comprados separadamente, mas a Suno ainda não divulgou o preço.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'openai-jalapeno-chip-resultados-2026-08',
     date: '2026-08',
     title: 'OpenAI revela primeiros resultados do Jalapeño, seu primeiro chip de inferência personalizado',

@@ -13,6 +13,91 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-dalle-gpt-descontinuado-chatgpt-2026-08',
+    date: '2026-08',
+    title: 'OpenAI aposenta o GPT oficial do DALL-E dentro do ChatGPT',
+    developer: 'OpenAI',
+    category: 'Descontinuado',
+    description: 'Em 30 de agosto de 2026, a OpenAI retirou do ChatGPT o GPT oficial "DALL-E", interface que permitia gerar imagens com o modelo homônimo, direcionando os usuários para o ChatGPT Images, construído sobre os modelos gpt-image mais recentes.',
+    highlights: [
+      'A mudança havia sido avisada previamente nas notas de lançamento do ChatGPT, em 31 de julho de 2026, dando às pessoas um mês para salvar as imagens já geradas.',
+      'GPTs personalizados criados por usuários que também usam geração de imagem continuam funcionando normalmente — apenas o GPT oficial da OpenAI foi descontinuado.',
+      'A aposentadoria faz parte da consolidação das ferramentas de imagem da OpenAI em torno dos modelos gpt-image, mais recentes que o DALL-E original.'
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'anthropic-model-hardware-standard-preview-2026-08',
+    date: '2026-08',
+    title: 'Anthropic lança em preview de pesquisa o Model Hardware Standard para conectar Claude a robôs e equipamentos de laboratório',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Em 27 de agosto de 2026, a Anthropic anunciou o Model Hardware Standard (MHS), um novo padrão de software, em preview de pesquisa, para permitir que assistentes de IA como o Claude operem robôs e equipamentos científicos e industriais de forma mais segura.',
+    highlights: [
+      'O MHS descreve como um equipamento funciona — limites de velocidade, ângulos seguros de movimento etc. — para que a IA não dependa de manuais em papel ou de conhecimento tácito de especialistas.',
+      'A Anthropic afirma que a integração de um novo equipamento, que levaria dias ou semanas, pode cair para minutos ou horas com o padrão.',
+      'Empresas como Amazon Web Services, Danaher, Hugging Face e Raspberry Pi já testam o MHS, com fabricantes de hardware como Tecan, QIAGEN, Doosan Robotics e Universal Robots construindo suporte a ele; uma lista de espera está aberta a outros interessados.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'salesforce-anthropic-claudeforce-anuncio-2026-08',
+    date: '2026-08',
+    title: 'Salesforce e Anthropic anunciam "Claudeforce", integrando o Claude ao CRM da Salesforce',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Em 26 de agosto de 2026, Salesforce e Anthropic anunciaram uma parceria estendida batizada de Claudeforce, que leva o Claude para dentro do CRM da Salesforce, dando acesso a dados, fluxos de trabalho e regras de negócio da plataforma a experiências agênticas.',
+    highlights: [
+      'O primeiro produto da parceria, "Salesforce in Claude", inclui mais de 37 habilidades de vendas pré-construídas, como preparação de reuniões, revisão de saúde de negócios (deal health) e revisão de pipeline.',
+      'O recurso já está disponível para clientes piloto selecionados, com beta aberto previsto para setembro de 2026.',
+      'Salesforce e Anthropic afirmam já ser clientes estratégicas uma da outra: a Salesforce usa o Claude em sua engenharia, e a Anthropic usa a Salesforce como CRM preferencial.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'anthropic-claude-chrome-disponibilidade-geral-2026-08',
+    date: '2026-08',
+    title: 'Claude in Chrome sai do piloto e passa a ficar disponível em todos os planos pagos',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'Em 26 de agosto de 2026, a Anthropic tornou geralmente disponível a extensão "Claude in Chrome", que passou de um piloto restrito para todos os planos pagos (Pro, Max, Team e Enterprise) do Claude.',
+    highlights: [
+      'O agente de navegador passa a executar ações de forma mais autônoma no navegador — ler páginas, clicar em links, preencher formulários e tarefas de múltiplos passos — com menos necessidade de aprovação a cada etapa.',
+      'Um classificador de segurança separado valida cada ação proposta contra o pedido original do usuário antes de executá-la, reduzindo o risco de conteúdo malicioso em páginas web redirecionar o agente para ações não solicitadas.',
+      'A extensão continua indisponível no plano gratuito do Claude, sendo exclusiva para assinantes pagos.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'alibaba-qwen-3-8-flash-next-lancamento-2026-08',
+    date: '2026-08',
+    title: 'Alibaba lança Qwen3.8-Flash-Next, modelo de pesos abertos com foco em eficiência de custo',
+    developer: 'Alibaba',
+    category: 'Lançamento',
+    description: 'Em 26 de agosto de 2026, a Alibaba lançou o Qwen3.8-Flash-Next, um modelo de pesos abertos com 125 bilhões de parâmetros totais, dos quais apenas 6 bilhões são ativados por token, mirando "eficiência de custo máxima".',
+    highlights: [
+      'Janela de contexto nativa de 262.144 tokens, extensível a 1 milhão de tokens.',
+      'Pontuou 62,5 no benchmark SWE-bench Pro, superando o Qwen3.8-27B (61,7) e o Qwen3.7-Plus (55,8) da própria Alibaba.',
+      'Também marcou 91,7 no GPQA Diamond e 91,9 no LiveCodeBench v6, superando o Claude nesse último benchmark segundo dados divulgados pela empresa.',
+      'A Alibaba afirma que o modelo entrega resultados melhores que o Qwen3.7-Plus com aproximadamente um nono do custo de treinamento.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'perplexity-portable-computer-nvidia-lancamento-2026-08',
+    date: '2026-08',
+    title: 'Perplexity lança Portable Computer, agente de IA 100% local em parceria com a Nvidia',
+    developer: 'Perplexity',
+    category: 'Lançamento',
+    description: 'Em 25 de agosto de 2026, a Perplexity lançou o Portable Computer, uma versão totalmente local do seu agente "Perplexity Computer", desenvolvida em parceria com a Nvidia para rodar no computador de mesa DGX Spark, sem depender da nuvem.',
+    highlights: [
+      'Todo o conjunto do agente — orquestrador, planejador, roteador de ferramentas, fila de tarefas e índice de busca local — roda no próprio hardware, usando o Qwen 3.8 27B ou o PPLX 27B (versão da Perplexity pós-treinada a partir do Qwen) como modelos de lançamento.',
+      'O DGX Spark roda na plataforma Grace Blackwell GB10, com CPU Arm de 20 núcleos, GPU Nvidia e 128 GB de memória unificada, custando US$ 4.699 no marketplace da Nvidia.',
+      'Tarefas executadas localmente não consomem créditos da Perplexity; o recurso exige assinatura Pro (US$ 20/mês) ou Max (US$ 200/mês) e, por ora, só roda em Linux, com versão para Windows prevista.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'google-deepmind-gemini-3-5-transcribe-lancamento-2026-08',
     date: '2026-08',
     title: 'Google lança Gemini 3.5 Transcribe, novo modelo de fala para texto em mais de 85 idiomas',

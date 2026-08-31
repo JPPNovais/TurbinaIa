@@ -102,7 +102,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '✍️',
     tagline: 'IA focada em segurança com janela de contexto gigante',
     description:
-      'Claude é o assistente de IA da Anthropic, reconhecido por suas capacidades de raciocínio avançado, escrita de alta qualidade e janela de contexto de até 1.000.000 de tokens no Claude Opus 5, lançado em 24 de julho de 2026 com thinking adaptativo por padrão. Destaca-se em análises longas, redação técnica e tarefas que exigem precisão.',
+      'Claude é o assistente de IA da Anthropic, reconhecido por suas capacidades de raciocínio avançado, escrita de alta qualidade e janela de contexto de até 1.000.000 de tokens no Claude Opus 5, lançado em 24 de julho de 2026 com thinking adaptativo por padrão. Destaca-se em análises longas, redação técnica e tarefas que exigem precisão. Em 26 de agosto de 2026, a Anthropic anunciou uma parceria com a Salesforce ("Claudeforce") para integrar o Claude à plataforma e a um plugin com 37 skills, com piloto em andamento e beta aberto previsto para setembro de 2026.',
     useCases: [
       'Analisar documentos extensos (PDFs, contratos)',
       'Redação técnica e acadêmica de qualidade',
@@ -110,7 +110,7 @@ export const AI_TOOLS: AITool[] = [
       'Brainstorming e criação de conteúdo',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: Acesso a Claude Sonnet 4.6, com limites diários de uso, upload de arquivos; Plano Pro: US$ 20/mês (US$ 17/mês anual) para uso de 5x o plano gratuito, acesso a todos os modelos incluindo Claude Opus 5 (lançado em 24/07/2026, com 1M de tokens de contexto), raciocínio estendido/adaptativo, acesso prioritário, projetos ilimitados; Plano Max 5x: US$ 100/mês (5x capacidade do Pro); Plano Max 20x: US$ 200/mês (20x capacidade do Pro); Plano Team Standard: US$ 25/usuário/mês (US$ 20/usuário/mês anual, mínimo 5 usuários) inclui recursos Pro, controles administrativos, limites de uso mais altos, acesso a Sonnet e Haiku limitado; Plano Team Premium: US$ 125/usuário/mês (US$ 100/usuário/mês anual, mínimo 5 usuários) inclui Opus e Claude Code completo; Plano Enterprise: sob consulta. API (pay-per-token): Claude Fable 5 (o modelo "Mythos-class" mais avançado da Anthropic, para tarefas agênticas longas de dias) a US$ 10/M tokens entrada e US$ 50/M tokens saída; Claude Opus 5 (lançado em 24 de julho de 2026, sucessor do Opus 4.8, mesmo preço) a US$ 5/M tokens entrada e US$ 25/M tokens saída; Claude Sonnet 5 (novo modelo) a US$ 2/M tokens entrada e US$ 10/M tokens saída (preço de lançamento tornado permanente pela Anthropic em 10 de agosto de 2026, cancelando o reajuste para US$ 3/US$ 15 previsto para 1º de setembro de 2026); Claude Sonnet 4.6 a US$ 3/M tokens entrada e US$ 15/M tokens saída; Claude Haiku 4.5 a US$ 1/M tokens entrada e US$ 5/M tokens saída. Fast Mode para Opus 4.6 com 6x o preço padrão. Batch API com 50% de desconto.',
+    pricingDetails: 'Plano Grátis: Acesso a Claude Sonnet 4.6, com limites diários de uso, upload de arquivos; Plano Pro: US$ 20/mês (US$ 17/mês anual) para uso de 5x o plano gratuito, acesso a todos os modelos incluindo Claude Opus 5 (lançado em 24/07/2026, com 1M de tokens de contexto), raciocínio estendido/adaptativo, acesso prioritário, projetos ilimitados; Plano Max 5x: US$ 100/mês (5x capacidade do Pro); Plano Max 20x: US$ 200/mês (20x capacidade do Pro); Plano Team Standard: US$ 25/usuário/mês (US$ 20/usuário/mês anual, mínimo 5 usuários) inclui recursos Pro, controles administrativos, limites de uso mais altos, acesso a Sonnet e Haiku limitado; Plano Team Premium: US$ 125/usuário/mês (US$ 100/usuário/mês anual, mínimo 5 usuários) inclui Opus e Claude Code completo; Plano Team for Scientists (lançado em 27 de agosto de 2026): 10.000 vagas gratuitas ou com desconto para pesquisadores acadêmicos/sem fins lucrativos verificados — assento padrão gratuito e assento premium (5x uso) por US$ 15/mês, com preço travado por um ano; Plano Enterprise: sob consulta. API (pay-per-token): Claude Fable 5 (o modelo "Mythos-class" mais avançado da Anthropic, para tarefas agênticas longas de dias) a US$ 10/M tokens entrada e US$ 50/M tokens saída; Claude Opus 5 (lançado em 24 de julho de 2026, sucessor do Opus 4.8, mesmo preço) a US$ 5/M tokens entrada e US$ 25/M tokens saída; Claude Sonnet 5 (novo modelo) a US$ 2/M tokens entrada e US$ 10/M tokens saída (preço de lançamento tornado permanente pela Anthropic em 10 de agosto de 2026, cancelando o reajuste para US$ 3/US$ 15 previsto para 1º de setembro de 2026); Claude Sonnet 4.6 a US$ 3/M tokens entrada e US$ 15/M tokens saída; Claude Haiku 4.5 a US$ 1/M tokens entrada e US$ 5/M tokens saída. Fast Mode para Opus 4.6 com 6x o preço padrão. Batch API com 50% de desconto.',
     url: 'https://claude.ai',
     tags: ['redação', 'texto', 'anthropic', 'assistente', 'análise', 'longo contexto'],
     isFeatured: true,
@@ -147,7 +147,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '✍️',
     tagline: 'IA integrada ao Windows e Office 365',
     description:
-      'Microsoft Copilot é o assistente de IA da Microsoft, com o GPT-5.6 da OpenAI como modelo preferencial no Word, Excel, PowerPoint, Outlook, Teams e Cowork. É a escolha ideal para quem já usa o ecossistema Microsoft.',
+      'Microsoft Copilot é o assistente de IA da Microsoft, com o GPT-5.6 da OpenAI como modelo preferencial no Word, Excel, PowerPoint, Outlook, Teams e Cowork. É a escolha ideal para quem já usa o ecossistema Microsoft. A partir de meados de agosto de 2026, a Microsoft começou a unificar o app de consumidor Copilot e o Microsoft 365 Copilot em um único aplicativo "Copilot" (com redirecionamento de m365.cloud.microsoft para copilot.cloud.microsoft), com chegada a Windows e Mac prevista para meados de setembro de 2026; alguns recursos de consumidor (como Copilot Podcasts e Group Chat) foram descontinuados a partir de 18 de agosto de 2026 nesse processo.',
     useCases: [
       'Criar e editar documentos no Word',
       'Automatizar análises no Excel com linguagem natural',
@@ -191,7 +191,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🚀',
     tagline: 'IA com dados em tempo real do X (Twitter) e personalidade única',
     description:
-      'Grok é o assistente de IA da xAI (empresa de Elon Musk), integrado ao X (Twitter) com acesso a informações em tempo real da rede social. Destaca-se por respostas diretas, raciocínio avançado e acesso a tendências do momento. O modelo atual é Grok 4.5.',
+      'Grok é o assistente de IA da xAI (empresa de Elon Musk), integrado ao X (Twitter) com acesso a informações em tempo real da rede social. Destaca-se por respostas diretas, raciocínio avançado e acesso a tendências do momento. O modelo mais recente é o Grok 4.6, lançado em 12 de agosto de 2026, com janela de contexto de 500K tokens e níveis de esforço de raciocínio ajustáveis (baixo, médio, alto, xhigh).',
     useCases: [
       'Pesquisar tendências e notícias em tempo real via X',
       'Redigir posts e threads para redes sociais',
@@ -199,7 +199,7 @@ export const AI_TOOLS: AITool[] = [
       'Usar raciocínio avançado com o modo Grok Think',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: Acesso limitado a Grok 4, Aurora image generation, entrada de voz, ~10 requisições a cada 2 horas, memória, projetos e tarefas básicos, DeepSearch com limites de uso; Plano X Premium: US$ 8/mês (acesso básico a Grok dentro do X, limites de uso aumentados, mas não acesso total ao SuperGrok); Plano SuperGrok Lite: US$ 10/mês (lançado em 25 de março de 2026) inclui Grok 3.5, Grok Imagine - geração de imagem/vídeo 480p, 1 agente de IA, 2x chats mais longos; Plano SuperGrok: US$ 30/mês (ou US$ 300/ano) acesso total a Grok 4 e Grok 4.1, 128K contexto, DeepSearch, Big Brain Mode, Grok Imagine ilimitado - imagem/vídeo, voz, ~100 prompts a cada 2 horas; Plano X Premium+: US$ 40/mês (ou US$ 395/ano) acesso prioritário a Grok 4, maior throughput de mensagens, experiência X sem anúncios; Plano SuperGrok Plus: US$ 100/mês (novo tier, entre SuperGrok e Heavy); Plano SuperGrok Heavy: US$ 300/mês (acesso exclusivo a Grok 4 Heavy, 256K-428K tokens contexto, uso ilimitado de Grok 3); Plano Grok Business: US$ 30/usuário/mês (colaboração em equipe, faturamento centralizado, dados NÃO usados para treinamento); Plano Enterprise: sob consulta. API (pay-per-token): Grok 4.5 Fast a US$ 0.20/M tokens entrada e US$ 0.50/M tokens saída (janela de contexto de 2M tokens); Grok 4.3 a US$ 1.25/M tokens entrada e US$ 2.50/M tokens saída (janela de contexto de 1M tokens). Até US$ 150/mês em créditos API gratuitos.',
+    pricingDetails: 'Plano Grátis: Acesso limitado a Grok 4, Aurora image generation, entrada de voz, ~10 requisições a cada 2 horas, memória, projetos e tarefas básicos, DeepSearch com limites de uso; Plano X Premium: US$ 8/mês (acesso básico a Grok dentro do X, limites de uso aumentados, mas não acesso total ao SuperGrok); Plano SuperGrok Lite: US$ 10/mês (lançado em 25 de março de 2026) inclui Grok 3.5, Grok Imagine - geração de imagem/vídeo 480p, 1 agente de IA, 2x chats mais longos; Plano SuperGrok: US$ 30/mês (ou US$ 300/ano) acesso total a Grok 4 e Grok 4.1, 128K contexto, DeepSearch, Big Brain Mode, Grok Imagine ilimitado - imagem/vídeo, voz, ~100 prompts a cada 2 horas; Plano X Premium+: US$ 40/mês (ou US$ 395/ano) acesso prioritário a Grok 4, maior throughput de mensagens, experiência X sem anúncios; Plano SuperGrok Plus: US$ 100/mês (novo tier, entre SuperGrok e Heavy); Plano SuperGrok Heavy: US$ 300/mês (acesso exclusivo a Grok 4 Heavy, 256K-428K tokens contexto, uso ilimitado de Grok 3); Plano Grok Business: US$ 30/usuário/mês (colaboração em equipe, faturamento centralizado, dados NÃO usados para treinamento); Plano Enterprise: sob consulta. API (pay-per-token): Grok 4.6 (lançado em 12/08/2026, 500K contexto) a US$ 2.00/M tokens entrada, US$ 0.50/M tokens em cache e US$ 6.00/M tokens saída até 200K tokens (US$ 4.00/US$ 1.00/US$ 12.00 acima de 200K tokens); Grok 4.5 Fast a US$ 0.20/M tokens entrada e US$ 0.50/M tokens saída (janela de contexto de 2M tokens); Grok 4.3 a US$ 1.25/M tokens entrada e US$ 2.50/M tokens saída (janela de contexto de 1M tokens). Até US$ 150/mês em créditos API gratuitos.',
     url: 'https://x.ai/grok',
     tags: ['twitter', 'x', 'tempo real', 'notícias', 'xai', 'chat', 'raciocínio'],
     popularityRank: 5,
@@ -343,12 +343,12 @@ export const AI_TOOLS: AITool[] = [
   {
     id: 'cursor',
     name: 'Cursor',
-    developer: 'Anysphere',
+    developer: 'Anysphere (adquirida pela SpaceX em 14/08/2026)',
     category: 'Código & Dev',
     emoji: '💻',
     tagline: 'Editor de código com IA nativa e contexto completo do projeto',
     description:
-      'Cursor é um editor de código (fork do VS Code) com IA profundamente integrada que entende todo o contexto do seu projeto. Permite editar arquivos inteiros, refatorar bases de código e conversar sobre o código com Claude, GPT-4o e Gemini. Cruzando US$ 2 bilhões em receita anualizada e com mais de um milhão de desenvolvedores pagantes em Fevereiro de 2026. Em agosto de 2026, lançou em beta o Origin, uma plataforma de hospedagem de código nativa para agentes de IA (repositórios, PRs e sincronização com GitHub), disponível para todos os planos pagos, além do Grok Bot, agente sempre ativo desenvolvido em parceria com a xAI.',
+      'Cursor é um editor de código (fork do VS Code) com IA profundamente integrada que entende todo o contexto do seu projeto. Permite editar arquivos inteiros, refatorar bases de código e conversar sobre o código com Claude, GPT-4o e Gemini. Cruzando US$ 2 bilhões em receita anualizada e com mais de um milhão de desenvolvedores pagantes em Fevereiro de 2026. Em 14 de agosto de 2026, a SpaceX concluiu a aquisição da Anysphere (empresa por trás do Cursor) em um negócio de US$ 60 bilhões todo em ações, incorporando-a a uma nova divisão chamada "SpaceXAI". Em agosto de 2026, lançou também em beta o Origin, uma plataforma de hospedagem de código nativa para agentes de IA (repositórios, PRs e sincronização com GitHub), disponível para todos os planos pagos, além do Grok Bot, agente sempre ativo desenvolvido em parceria com a xAI.',
     useCases: [
       'Refatorar e editar múltiplos arquivos ao mesmo tempo',
       'Perguntar sobre a base de código inteira em linguagem natural',
@@ -683,7 +683,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎨',
     tagline: 'A IA preferida para arte de alta qualidade estética',
     description:
-      'Midjourney é uma ferramenta de geração de imagens via Discord reconhecida pela qualidade artística excepcional de suas saídas. É a escolha favorita de designers, artistas e criativos que buscam resultados com alto valor estético. Sua versão 7 (V7), lançada em abril de 2025, utiliza uma arquitetura redesenhada para produzir texturas mais ricas e detalhes mais coerentes.',
+      'Midjourney é uma ferramenta de geração de imagens via Discord reconhecida pela qualidade artística excepcional de suas saídas. É a escolha favorita de designers, artistas e criativos que buscam resultados com alto valor estético. A versão padrão atual é a V8.2 (padrão desde 24 de julho de 2026, sucedendo a V8.1), evolução da arquitetura redesenhada introduzida na V7 (abril de 2025), com texturas mais ricas e detalhes mais coerentes.',
     useCases: [
       'Criar arte conceitual para games e filmes',
       'Gerar ilustrações com estilo artístico único',
@@ -1423,7 +1423,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🔍',
     tagline: 'Motor de busca com IA que cita as fontes',
     description:
-      'Perplexity AI é um motor de busca conversacional que combina LLMs com busca em tempo real e sempre cita as fontes. É a melhor alternativa ao Google para pesquisas que exigem respostas precisas, atualizadas e verificáveis. Em Fevereiro de 2026, lançou o agente Perplexity Computer e o Model Council para comparar modelos. Atingiu mais de 100 milhões de usuários ativos mensais em Abril de 2026.',
+      'Perplexity AI é um motor de busca conversacional que combina LLMs com busca em tempo real e sempre cita as fontes. É a melhor alternativa ao Google para pesquisas que exigem respostas precisas, atualizadas e verificáveis. Em Fevereiro de 2026, lançou o agente Perplexity Computer e o Model Council para comparar modelos. Atingiu mais de 100 milhões de usuários ativos mensais em Abril de 2026. Em 25 de agosto de 2026, lançou o "Portable Computer", um agente de IA local (roda em Nvidia DGX Spark ou GPUs RTX com 24GB+ de VRAM, sem custo por token), disponível para assinantes Pro/Max. Entre 23 e 27 de agosto de 2026, veio à tona que a Nvidia negocia um aporte na empresa a uma avaliação acima de US$ 30 bilhões (ante ~US$ 20 bilhões um ano antes).',
     useCases: [
       'Pesquisar informações com fontes verificáveis',
       'Monitorar notícias e tendências em tempo real',

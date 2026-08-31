@@ -20,10 +20,10 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'Gemini 3.6 Flash',
     provider: 'Google',
-    inputPricePerM: 1.50,
-    outputPricePerM: 7.50,
+    inputPricePerM: 0.75,
+    outputPricePerM: 3.75,
     contextWindow: '1M tokens',
-    description: 'O modelo Flash mais recente da Google (Gemini 3.6 Flash), otimizado para tarefas de alta frequência e baixo custo, com até 1M de contexto. Preços atualizados a partir de Agosto de 2026.',
+    description: 'O modelo Flash da Google (Gemini 3.6 Flash), otimizado para tarefas de alta frequência e baixo custo, com até 1M de contexto. Desde 13 de agosto de 2026, a Google igualou o preço do 3.6 Flash ao preço introdutório do Gemini 3.7 Flash (corte de 50%); a promoção vale até 31 de dezembro de 2026, quando o preço volta a US$ 1.50/US$ 7.50 por milhão de tokens.',
   },
   {
     name: 'Gemini 3.7 Flash',
@@ -87,10 +87,10 @@ export const AI_MODELS: CalculatorModel[] = [
   {
     name: 'DeepSeek V4 Flash',
     provider: 'DeepSeek',
-    inputPricePerM: 0.14,
-    outputPricePerM: 0.28,
+    inputPricePerM: 0.22,
+    outputPricePerM: 0.66,
     contextWindow: '1M tokens',
-    description: 'O modelo DeepSeek V4 Flash, com bom desempenho e um custo muito baixo, suportando 1M de contexto. Preços atualizados a partir de Agosto de 2026. Os preços de entrada são para cache miss; para cache hit, o custo é de $0.0028/M tokens.',
+    description: 'O modelo DeepSeek V4 Flash, suportando 1M de contexto. Desde 16 de agosto de 2026 a DeepSeek passou a cobrar por faixa horária: preço aqui reflete o horário fora de pico (a maior parte do tempo); no horário de pico (01h-04h e 06h-10h UTC, seg-sex) o preço sobe para US$ 0.44/M entrada e US$ 1.32/M saída — cerca de 3 a 4,7x mais caro que o valor anterior de US$ 0.14/US$ 0.28.',
   },
   // Meta (via API)
   {

@@ -87,12 +87,12 @@ export const AI_TOOLS: AITool[] = [
       'Responder perguntas complexas com contexto longo',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: GPT-5.6 Luna tornou-se o modelo padrão a partir de 6 de agosto de 2026, com conversas de texto do dia a dia ilimitadas desde a semana de 10 de agosto de 2026 (sujeito a proteções antiabuso; upload de arquivos, geração de imagem, voz e análise de dados continuam com limites separados), com anúncios em algumas regiões dos EUA; Plano Go: US$ 8/mês (uso de GPT-5.6 Luna com cota maior, sem Deep Research); Plano Plus: US$ 20/mês (acesso a GPT-5.6 Sol com seletor de esforço de raciocínio, Deep Research - 10 sessões/mês, Sora, Codex, Agent Mode, sem anúncios, 160 mensagens/3h); Plano Pro US$ 100/mês (5x limites do Plus); Plano Pro US$ 200/mês (20x limites do Plus, 250 sessões de Deep Research/mês, janela de contexto de 1M tokens); Plano Business: US$ 20/usuário/mês (faturamento anual, mínimo de 2 usuários) ou US$ 25/usuário/mês (faturamento mensal); Plano Enterprise: sob consulta. API GPT-5.6 Sol: US$ 4.00/M tokens entrada e US$ 20.00/M tokens saída (preço promocional com corte de mais de 20% anunciado em 21 de agosto de 2026, válido pelo menos até 21 de novembro de 2026; preço padrão anterior era US$ 5.00/US$ 30.00).',
+    pricingDetails: 'Plano Grátis: GPT-5.6 Luna tornou-se o modelo padrão a partir de 6 de agosto de 2026, com conversas de texto do dia a dia ilimitadas desde a semana de 10 de agosto de 2026 (sujeito a proteções antiabuso; upload de arquivos, geração de imagem, voz e análise de dados continuam com limites separados), com anúncios em algumas regiões dos EUA; Plano Go: US$ 8/mês (uso de GPT-5.6 Luna com cota maior, sem Deep Research); Plano Plus: US$ 20/mês (acesso a GPT-5.6 Sol com seletor de esforço de raciocínio, Deep Research - 10 sessões/mês, Sora, Codex, Agent Mode, sem anúncios, 160 mensagens/3h); Plano Pro US$ 100/mês (5x limites do Plus); Plano Pro US$ 200/mês (20x limites do Plus, 250 sessões de Deep Research/mês, janela de contexto de 1M tokens); Plano Business: assento Standard a US$ 20/usuário/mês (faturamento anual, mínimo de 2 usuários) ou US$ 25/usuário/mês (faturamento mensal); assento Premium (disponível desde 25 de agosto de 2026) a US$ 100/usuário/mês (anual) ou US$ 125/usuário/mês (mensal), com 5x o uso do Standard e sem limite de 5 horas, podendo ser combinado com assentos Standard no mesmo workspace; Plano Enterprise: sob consulta. API GPT-5.6 Sol: US$ 4.00/M tokens entrada e US$ 20.00/M tokens saída (preço promocional com corte de mais de 20% anunciado em 21 de agosto de 2026, válido pelo menos até 21 de novembro de 2026; preço padrão anterior era US$ 5.00/US$ 30.00).',
     url: 'https://chatgpt.com',
     tags: ['redação', 'texto', 'gpt', 'openai', 'chatbot', 'assistente', 'copywriting'],
     isFeatured: true,
     popularityRank: 1,
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'claude',
@@ -102,7 +102,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '✍️',
     tagline: 'IA focada em segurança com janela de contexto gigante',
     description:
-      'Claude é o assistente de IA da Anthropic, reconhecido por suas capacidades de raciocínio avançado, escrita de alta qualidade e janela de contexto de até 1.000.000 de tokens no Claude Opus 5, lançado em 24 de julho de 2026 com thinking adaptativo por padrão. Destaca-se em análises longas, redação técnica e tarefas que exigem precisão. Em 26 de agosto de 2026, a Anthropic anunciou uma parceria com a Salesforce ("Claudeforce") para integrar o Claude à plataforma e a um plugin com 37 skills, com piloto em andamento e beta aberto previsto para setembro de 2026.',
+      'Claude é o assistente de IA da Anthropic, reconhecido por suas capacidades de raciocínio avançado, escrita de alta qualidade e janela de contexto de até 1.000.000 de tokens no Claude Opus 5, lançado em 24 de julho de 2026 com thinking adaptativo por padrão. Destaca-se em análises longas, redação técnica e tarefas que exigem precisão. Em 26 de agosto de 2026, a Anthropic anunciou uma parceria com a Salesforce ("Claudeforce") para integrar o Claude à plataforma e a um plugin com 37 skills, com piloto em andamento e beta aberto previsto para setembro de 2026. Em 25 de agosto de 2026, a Anthropic unificou a memória do Claude entre o chat e o Claude Cowork: ela passou a funcionar por tópicos individuais editáveis (em vez de resumos diários), vem ligada por padrão nos planos Free, Pro e Max, e fica desligada por padrão em Team e Enterprise.',
     useCases: [
       'Analisar documentos extensos (PDFs, contratos)',
       'Redação técnica e acadêmica de qualidade',
@@ -115,7 +115,7 @@ export const AI_TOOLS: AITool[] = [
     tags: ['redação', 'texto', 'anthropic', 'assistente', 'análise', 'longo contexto'],
     isFeatured: true,
     popularityRank: 2,
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'gemini-advanced',

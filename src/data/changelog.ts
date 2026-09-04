@@ -13,6 +13,90 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-gpt-6-astra-lancamento-critico-ciber-2026-09',
+    date: '2026-09',
+    title: 'OpenAI lança o GPT-6 Astra, primeiro modelo classificado como "Crítico" em risco cibernético',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 3 de setembro de 2026, a OpenAI começou a liberar o GPT-6 Astra, descrito pela empresa como seu modelo mais inteligente até aqui e o primeiro a atingir o limiar "Crítico" de capacidade cibernética do seu Preparedness Framework — ou seja, capaz de descobrir falhas de segurança desconhecidas e montar exploits funcionais contra sistemas bem defendidos sem um humano guiando cada passo.',
+    highlights: [
+      'A classificação "Crítico" obrigou a OpenAI a reforçar salvaguardas antes do lançamento, atrasando partes do desenvolvimento do Astra por semanas enquanto endurecia proteções contra uso indevido.',
+      'Segundo a empresa, o Astra recusou 91,5% dos pedidos em avaliações de jailbreak cibernético, ante 59% do GPT-5.6 Sol, incorporando lições do incidente em que agentes da OpenAI invadiram a Hugging Face.',
+      'O lançamento é escalonado: primeiro para participantes do programa de segurança Daybreak, depois para contas pagas de consumidores e empresas nos dias seguintes.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'anthropic-claude-fable-5-1-mythos-5-1-lancamento-2026-09',
+    date: '2026-09',
+    title: 'Anthropic lança Claude Fable 5.1 e Mythos 5.1, com cache 75% mais barato',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Em 1º de setembro de 2026, a Anthropic lançou o Claude Fable 5.1, versão de disponibilidade geral com as salvaguardas de produção padrão, e o Mythos 5.1, mesmo modelo subjacente liberado com menos restrições para organizações de cibersegurança e ciências biológicas com acesso vetado.',
+    highlights: [
+      'O preço de entrada e saída por token ficou igual ao do Fable 5 (US$ 10/US$ 50 por milhão de tokens), mas o custo de leitura de cache caiu 75%, de US$ 1,00 para US$ 0,25 por milhão de tokens.',
+      'Os dois modelos suportam até 1 milhão de tokens de contexto e até 128 mil tokens de saída por resposta.',
+      'No benchmark Terminal-Bench-Science 0.1, o Fable 5.1 marcou 52,6%, contra 24,7% do Fable 5 e 29,0% do Opus 5.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-gemini-3-8-flash-lancamento-2026-09',
+    date: '2026-09',
+    title: 'Google lança Gemini 3.8 Flash e uma variante restrita para defesa cibernética',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Em 2 de setembro de 2026, o Google lançou o Gemini 3.8 Flash — sua terceira atualização da linha Flash em seis semanas — com preço promocional de US$ 0,75 por milhão de tokens de entrada e US$ 3,75 de saída até 31 de dezembro de 2026, além de uma variante restrita chamada Gemini 3.8 Flash Cyber, voltada à detecção e correção automática de vulnerabilidades.',
+    highlights: [
+      'O modelo aceita texto, imagem, áudio, vídeo e PDF, com janela de contexto de 1 milhão de tokens e saída de até 64 mil tokens, otimizado para tarefas agênticas longas e engenharia de software.',
+      'O Gemini 3.8 Flash Cyber tem acesso limitado a defensores confiáveis pelo novo "Fairwind Program" do Google.',
+      'A equipe de segurança do Chrome afirma que o Flash Cyber produziu 2,6 vezes mais correções corretas de vulnerabilidades do que os melhores modelos comerciais de porte muito maior.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'meta-muse-spark-1-3-lancamento-2026-09',
+    date: '2026-09',
+    title: 'Meta lança Muse Spark 1.3 com endpoint até 10x mais barato para quem aceita compartilhar dados',
+    developer: 'Meta',
+    category: 'Lançamento',
+    description: 'Em 2 de setembro de 2026, a Meta lançou o Muse Spark 1.3, modelo multimodal (texto, imagem e vídeo) com 1 milhão de tokens de contexto, oferecido em dois endpoints: um padrão, com dados privados, a US$ 1,25/US$ 4,25 por milhão de tokens de entrada/saída, e outro "contribuidor", entre US$ 0,10 e US$ 0,20 por milhão de tokens, para quem autoriza a Meta a treinar novos modelos com o próprio tráfego.',
+    highlights: [
+      'O modelo aparece na 6ª posição entre 636 modelos no Artificial Analysis Intelligence Index, com recuperação de contexto longo quase perfeita.',
+      'Segundo a Meta, o Muse Spark 1.3 venceu todas as categorias de código no benchmark interno da própria empresa.',
+      'O lançamento chega poucas semanas depois do Muse Glimmer, modelo de peso aberto de 30 bilhões de parâmetros da Meta voltado a fluxos de trabalho agênticos locais.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'alibaba-qwen-3-8-max-0902-atualizacao-2026-09',
+    date: '2026-09',
+    title: 'Alibaba atualiza o Qwen3.8-Max para a versão 0902, focada em código e agentes',
+    developer: 'Alibaba',
+    category: 'Atualização',
+    description: 'Em 2 de setembro de 2026, a Alibaba lançou o Qwen3.8-Max-0902, um snapshot atualizado do Qwen3.8-Max (2,4 trilhões de parâmetros, 1 milhão de tokens de contexto) com foco em desempenho de código e agentes, mantendo a arquitetura e o preço de API inalterados (US$ 2/US$ 6 por milhão de tokens de entrada/saída).',
+    highlights: [
+      'A Alibaba lista três áreas de melhoria: execuções autônomas mais longas em projetos grandes, orquestração mais estável de múltiplas ferramentas e leitura mais precisa de gráficos e documentos.',
+      'A pontuação no ranking CodeArena subiu 22 pontos, para 1.691, colocando o modelo em primeiro lugar na tabela.',
+      'A atualização está disponível pelos canais de API e serviços hospedados da Qwen Cloud.'
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'github-copilot-creditos-billing-2026-09',
+    date: '2026-09',
+    title: 'GitHub Copilot encerra créditos promocionais e volta ao valor padrão a partir de setembro',
+    developer: 'GitHub / Microsoft',
+    category: 'Atualização',
+    description: 'A partir de 1º de setembro de 2026, encerrou-se a promoção de créditos de IA vigente desde junho para clientes dos planos Business e Enterprise do GitHub Copilot: o crédito incluído por assento no plano Business volta de US$ 30 para os US$ 19 padrão, e no Enterprise, de US$ 70 para US$ 39, sem mudança nos preços de assinatura.',
+    highlights: [
+      'A mudança afeta apenas o volume de créditos de IA incluído por mês, usado em requisições premium — completions de código e sugestões Next Edit seguem sem consumir créditos em nenhum plano.',
+      'O GitHub também retomou, a partir de 1º de setembro, novos cadastros de clientes Business e Enterprise pagando por cartão de crédito ou PayPal.',
+      'A empresa avisa que atualizações de faturamento adicionais para clientes existentes começam a valer em 1º de outubro de 2026.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'openai-dalle-gpt-descontinuado-chatgpt-2026-08',
     date: '2026-08',
     title: 'OpenAI aposenta o GPT oficial do DALL-E dentro do ChatGPT',

@@ -97,6 +97,22 @@ export const PROMPTS: Prompt[] = [
     template: 'Você é um especialista em banco de dados. Preciso de uma query SQL para [Banco de Dados: Ex: PostgreSQL, MySQL, SQLite].\n\nEstrutura das tabelas relevantes:\n```sql\n[Cole aqui o CREATE TABLE das tabelas envolvidas, ou descreva os campos]\n```\n\nO que a query deve retornar:\n[Descreva em português claro o resultado esperado. Ex: "Quero listar todos os usuários que fizeram pelo menos 2 pedidos nos últimos 30 dias, ordenados pelo valor total gasto (decrescente), incluindo o nome do usuário, quantidade de pedidos e valor total"]\n\nForneça:\n1. A query otimizada com aliases legíveis\n2. Explicação de cada cláusula principal\n3. Índices recomendados para a performance da query',
     tags: ['SQL', 'Banco de Dados', 'Backend'],
   },
+  {
+    id: 'dev-especificacao-spec-driven',
+    title: 'Especificação Técnica Antes de Codar (Spec-Driven Development)',
+    category: 'Desenvolvimento',
+    description: 'Transforme um pedido solto em uma especificação estruturada antes de pedir a um agente de IA para implementar, reduzindo retrabalho e funções inventadas.',
+    template: 'Antes de escrever qualquer código, ajude-me a transformar o pedido abaixo em uma especificação técnica clara, que vai servir de referência para toda a implementação.\n\nPedido original: [Descreva em uma ou duas frases o que você quer construir. Ex: "uma tela que lista os pedidos do usuário com filtro por status"]\nContexto do projeto: [Stack usada, principais arquivos/pastas envolvidos, convenções do time]\nRestrições conhecidas: [Ex: não pode quebrar a API existente, precisa funcionar offline, deve seguir o design system atual]\n\nEstruture a especificação em três partes:\n1. **O quê e por quê:** objetivo do recurso, para quem ele é e o problema que resolve — sem detalhes de implementação.\n2. **Como (plano técnico):** arquitetura, arquivos e funções que provavelmente serão tocados, bibliotecas envolvidas, decisões de design que precisam ser tomadas.\n3. **Tarefas:** lista numerada de passos pequenos e testáveis, na ordem em que devem ser implementados, cada um com um critério claro de "pronto".\n\nSó depois de eu validar essa especificação, me pergunte se pode começar a implementar o primeiro item da lista de tarefas.',
+    tags: ['Spec-Driven Development', 'Agentes de Código', 'Boas Práticas'],
+  },
+  {
+    id: 'dev-checklist-contexto-agente',
+    title: 'Checklist de Contexto para Tarefas Longas com Agentes de IA',
+    category: 'Desenvolvimento',
+    description: 'Monte o pacote de contexto mínimo e de alto sinal antes de uma tarefa longa com um agente de codificação, evitando que ele perca o fio da tarefa ou repita erros já corrigidos.',
+    template: 'Vou pedir a um agente de codificação para executar uma tarefa longa, de múltiplos passos, e quero montar o contexto certo antes de começar.\n\nTarefa: [Descreva a tarefa completa]\nRepositório/projeto: [Nome e uma frase sobre o que ele faz]\nArquivos e trechos de código relevantes: [Liste os arquivos que provavelmente importam, ou cole os trechos mais relevantes]\nDecisões já tomadas que não podem ser reabertas: [Ex: já decidimos usar a biblioteca X, o endpoint Y já está congelado]\nArmadilhas conhecidas: [Algo que já deu errado antes nesse código, ou um comportamento não óbvio que o agente precisa saber]\n\nCom base nisso, monte para mim:\n1. Um resumo de contexto enxuto (máximo 200 palavras) que eu possa colar no início da conversa com o agente.\n2. Uma lista do que deliberadamente NÃO precisa entrar no contexto, para eu não sobrecarregar a tarefa com informação irrelevante.\n3. Um checkpoint sugerido — a cada quantos passos vale a pena eu revisar o progresso antes de deixar o agente continuar sozinho.',
+    tags: ['Context Engineering', 'Agentes de Código', 'Produtividade'],
+  },
 
   // PRODUTIVIDADE
   {
@@ -227,6 +243,14 @@ export const PROMPTS: Prompt[] = [
     template: 'Analise os dados abaixo e transforme-os em um relatório de insights acionáveis.\n\nDados:\n```\n[Cole seus dados aqui — pode ser CSV, tabela, ou lista de números]\n```\n\nContexto:\n- O que esses dados representam: [Ex: vendas mensais, métricas de marketing, pesquisa com clientes]\n- Período coberto: [Ex: Janeiro a Junho de 2025]\n- Objetivo da análise: [O que preciso decidir ou entender com esses dados]\n\nForneça:\n1. **Sumário executivo** (3-4 insights mais importantes)\n2. **Tendências** identificadas (crescimento, queda, sazonalidade)\n3. **Anomalias** ou pontos de atenção\n4. **Recomendações** de ação (prioridades 1, 2 e 3)\n5. Sugestão de gráficos para visualização (descreva qual tipo e o que mostrar)',
     tags: ['Dados', 'Analytics', 'Relatório'],
   },
+  {
+    id: 'ai-vibe-coding-ou-spec-driven',
+    title: 'Vibe Coding ou Spec-Driven? Escolha o Fluxo Certo para a Tarefa',
+    category: 'IA & Automação',
+    description: 'Antes de começar a codar com um agente de IA, decida se a tarefa pede um pedido rápido e informal ou uma especificação escrita — evitando tanto burocracia desnecessária quanto retrabalho.',
+    template: 'Me ajude a decidir o fluxo de trabalho certo com IA para a tarefa de programação abaixo, antes de eu começar.\n\nTarefa: [Descreva a tarefa]\nVai para produção? [Sim / Não / Ainda não sei]\nQuantas pessoas vão manter esse código depois: [Ex: só eu, um time pequeno, vários times]\nCusto de um erro em produção: [Ex: baixo — é interno; alto — afeta clientes pagantes]\nPrazo: [Ex: preciso hoje, tenho a semana toda]\n\nCom base nessas respostas:\n1. Recomende se eu devo usar um fluxo informal (\"vibe coding\": descrever o que quero e iterar por tentativa e erro) ou um fluxo com especificação escrita antes de codar (spec-driven), justificando em 2-3 frases.\n2. Se a recomendação for spec-driven, escreva o esqueleto da especificação (o quê/por quê, plano técnico, lista de tarefas) já preenchido com o que eu informei.\n3. Se a recomendação for vibe coding, escreva o prompt inicial ideal para eu mandar ao agente, incluindo as restrições que não podem ser esquecidas mesmo em um fluxo informal.',
+    tags: ['Spec-Driven Development', 'Vibe Coding', 'Agentes de Código'],
+  },
 
   // CARREIRA
   {
@@ -252,6 +276,14 @@ export const PROMPTS: Prompt[] = [
     description: 'Simule uma entrevista real e receba feedback detalhado sobre suas respostas com o método STAR.',
     template: 'Vou me preparar para uma entrevista de emprego. Atue como um recrutador experiente da empresa "[Nome da Empresa]" para a vaga de "[Cargo]".\n\nMeu perfil:\n[Breve descrição da sua experiência]\n\nInformações sobre a empresa (cole o que encontrar no site/LinkedIn da empresa):\n[Informações sobre a empresa, cultura, valores]\n\nPor favor:\n1. Faça as 5 perguntas comportamentais mais prováveis para essa vaga\n2. Após eu responder cada uma, avalie usando o método STAR (Situação, Tarefa, Ação, Resultado)\n3. Dê feedback sobre o que fortaleceu e o que pode melhorar\n4. Ao final, simule 2 perguntas difíceis (tipo "Qual seu maior defeito?" ou "Por que devo te contratar?") e forneça a resposta ideal',
     tags: ['Entrevista', 'STAR', 'Carreira'],
+  },
+  {
+    id: 'career-auditoria-uso-ia',
+    title: 'Auditoria Pessoal de Uso de IA no Trabalho',
+    category: 'Carreira',
+    description: 'Mapeie em quantas tarefas diferentes do seu trabalho você realmente usa IA, para identificar se está ganhando produtividade real ou só usando de forma pontual e superficial.',
+    template: 'Quero fazer uma auditoria honesta de como uso IA no meu trabalho atual, para identificar onde estou ganhando produtividade de verdade e onde estou só usando por usar.\n\nMeu cargo/função: [Cargo]\nPrincipais responsabilidades do dia a dia: [Liste de 4 a 8 tarefas recorrentes]\nFerramentas de IA que já uso hoje: [Ex: ChatGPT, Copilot, Claude]\n\nCom base nisso, me ajude a:\n1. Listar, para cada responsabilidade que citei, se eu uso IA nela hoje (sim/não) e como.\n2. Apontar quais dessas tarefas têm mais potencial de ganho real se eu passar a usar IA de forma mais estruturada — não apenas para respostas pontuais, mas incorporada ao processo.\n3. Sugerir, para as 2 tarefas com maior potencial, um fluxo de trabalho concreto (passo a passo) de como incorporar IA nelas.\n4. Apontar um risco ou armadilha comum em cada um desses 2 fluxos sugeridos, para eu revisar o resultado com atenção em vez de aceitar de olhos fechados.',
+    tags: ['Produtividade com IA', 'Carreira', 'Autoavaliação'],
   },
 
   // EDUCAÇÃO

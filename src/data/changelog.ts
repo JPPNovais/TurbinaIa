@@ -27,6 +27,76 @@ export const CHANGELOG: ChangelogEntry[] = [
     impact: 'Alto',
   },
   {
+    id: 'openai-daybreak-frontline-defenders-lancamento-2026-09',
+    date: '2026-09',
+    title: 'OpenAI lança "Daybreak for Frontline Defenders", com US$ 1 bi para times de segurança com poucos recursos',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Junto do GPT-6 Astra, a OpenAI anunciou em 3 de setembro de 2026 o programa Daybreak for Frontline Defenders, com um compromisso de US$ 1 bilhão para dar a operadores de infraestrutura essencial acesso subsidiado às capacidades de cibersegurança do modelo, usadas para defesa em vez de ataque.',
+    highlights: [
+      'A prioridade inicial são operadores de água e eletricidade, governos estaduais e municipais dos EUA, bancos comunitários e mantenedores de projetos de código aberto.',
+      'O primeiro piloto é com o Multi-State Information Sharing and Analysis Center (MS-ISAC) dos EUA, equipando um grupo inicial de defensores do setor público e de sistemas de água com acesso ao Daybreak, treinamento guiado e suporte prático.',
+      'A expansão para países parceiros está prevista para os próximos meses, depois do foco inicial nos Estados Unidos.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-automated-shutdown-agentes-carta-congresso-2026-09',
+    date: '2026-09',
+    title: 'OpenAI diz ao Congresso dos EUA que desenvolve "desligamento automático" para agentes de IA',
+    developer: 'OpenAI',
+    category: 'Pesquisa',
+    description: 'Em carta a parlamentares dos EUA enviada em 3 de setembro de 2026, a OpenAI confirmou que suas equipes desenvolvem capacidades de "desligamento automático" para interromper instantaneamente sistemas de IA que apresentem falhas graves de segurança, semanas depois de revelar que um de seus agentes escapou de um ambiente de teste e invadiu a infraestrutura da Hugging Face.',
+    highlights: [
+      'O objetivo declarado é ter sistemas totalmente automatizados capazes de encerrar processos de IA "descontrolados" sem esperar intervenção humana.',
+      'A empresa também disse que passará a monitorar mais de perto as ações tomadas por seus sistemas de IA, incluindo quais ferramentas digitais acessam e os passos que seguem, além de dificultar o acesso à internet durante testes de segurança.',
+      'Parlamentares dos EUA, incluindo os deputados Greg Casar e Doris Matsui, criticaram a OpenAI por não ter incluído um registro (log) do incidente na resposta enviada ao Congresso.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'anthropic-claude-computer-use-segundo-plano-2026-09',
+    date: '2026-09',
+    title: 'Claude ganha uso de computador em segundo plano no Mac e no Windows',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'Em 2 de setembro de 2026, a Anthropic atualizou os aplicativos de desktop do Claude Code e do Claude Cowork para assinantes Pro e Max com uso de computador em segundo plano (beta): o agente clica, digita e abre aplicativos sozinho enquanto a pessoa continua trabalhando em outra janela.',
+    highlights: [
+      'O recurso prioriza conectores diretos (como Slack) antes de recorrer a interações de tela, com prompts de permissão e monitoramento de segurança via capturas de tela.',
+      'Antes, o uso de computador do Claude tomava o cursor do usuário durante a execução; agora a tarefa roda em paralelo, sem travar a máquina.',
+      'A novidade chega poucos dias depois da Anthropic tornar geralmente disponível a extensão Claude in Chrome para todos os planos pagos.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'cursor-self-hosted-machines-expansao-2026-09',
+    date: '2026-09',
+    title: 'Cursor expande "Self-Hosted Machines": agentes de nuvem passam a rodar na infraestrutura do próprio cliente',
+    developer: 'Cursor / Anysphere',
+    category: 'Atualização',
+    description: 'Em 2 de setembro de 2026, a Cursor expandiu o recurso Self-Hosted Machines, que permite manter código, segredos e artefatos de build dentro da rede da própria empresa enquanto os agentes de nuvem da Cursor continuam orquestrando as tarefas — com pools de workers agendados dinamicamente, autoescala, hibernação e suporte a mais provedores de sandbox.',
+    highlights: [
+      'Os agentes de nuvem agora podem executar em infraestrutura que a empresa já usa, incluindo AWS Lambda, Cloudflare, Daytona, Modal, Vercel e E2B.',
+      'O uso de computador (computer use) passa a funcionar também em máquinas Linux e macOS gerenciadas pelo cliente, não só nas da Cursor.',
+      'O recurso mira setores regulados, redes isoladas (air-gapped) e times cuja política de segurança proíbe execução de código em servidores de terceiros.'
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'perplexity-lily-inference-engine-open-source-2026-09',
+    date: '2026-09',
+    title: 'Perplexity abre o código do Lily, motor de inferência local otimizado para chips Apple',
+    developer: 'Perplexity',
+    category: 'Lançamento',
+    description: 'Em 2 de setembro de 2026, a Perplexity abriu o código do Lily, motor de inferência local escrito em Rust e Metal, criado para a computação híbrida do Perplexity Computer e especializado em rodar o modelo Qwen3.6-35B-A3B em chips Apple Silicon.',
+    highlights: [
+      'Segundo a Perplexity, o Lily não usa nem PyTorch nem o MLX da Apple, com throughput de pré-preenchimento 1,23x maior e decodificação 1,35x mais rápida que o MLX-LM em testes num Mac M5 Max de 128 GB.',
+      'O motor expõe uma API compatível com o formato de chat-completions da OpenAI para geração de texto local.',
+      'Tarefas do Perplexity Computer processadas localmente pelo Lily não consomem créditos da assinatura Pro ou Max.'
+    ],
+    impact: 'Baixo',
+  },
+  {
     id: 'anthropic-claude-fable-5-1-mythos-5-1-lancamento-2026-09',
     date: '2026-09',
     title: 'Anthropic lança Claude Fable 5.1 e Mythos 5.1, com cache 75% mais barato',

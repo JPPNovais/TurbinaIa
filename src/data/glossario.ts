@@ -3357,4 +3357,20 @@ export const GLOSSARIO: GlossarioTerm[] = [
     example: 'Ao anunciar o GPT-6 Astra em setembro de 2026, o presidente da OpenAI, Greg Brockman, declarou "bem-vindos à era da AGI" — afirmação recebida com ceticismo por parte de pesquisadores, já que não existe um teste objetivo e amplamente aceito para comprovar a chegada da AGI.',
     relatedTerms: ['IA Generativa', 'Framework de Preparação (Preparedness Framework)', 'Modelo Base (Foundation Model)'],
   },
+  {
+    id: 'fair-use',
+    term: 'Fair Use (Uso Justo)',
+    category: 'Segurança & Ética',
+    definition: 'Doutrina do direito autoral americano que permite o uso de trechos de obras protegidas sem autorização do titular em certos contextos — crítica, paródia, pesquisa ou, segundo decisões recentes, treinamento de modelos de IA sobre material adquirido legalmente. Não é uma autorização genérica: cortes americanos já diferenciaram treinar com obras compradas legalmente (protegido) de manter bibliotecas de cópias baixadas de fontes pirata (não protegido), distinção que vem decidindo o resultado de várias ações judiciais contra empresas de IA generativa.',
+    example: 'Em Bartz v. Anthropic, o juiz William Alsup considerou fair use treinar modelos com livros comprados legalmente, mas não com cópias baixadas de bibliotecas pirata — distinção que motivou o acordo de US$ 1,5 bilhão da Anthropic com autores em julho de 2026 e que volta a ser discutida no processo movido por Sony Music Publishing e Warner Chappell contra a empresa.',
+    relatedTerms: ['Governança de IA (AI Governance)', 'IA Responsável (Responsible AI)', 'Dataset (Conjunto de Dados)'],
+  },
+  {
+    id: 'indenizacao-estatutaria',
+    term: 'Indenização Estatutária (Statutory Damages)',
+    category: 'Segurança & Ética',
+    definition: 'No direito autoral americano, valor de indenização fixado por lei — em vez de calculado a partir do dano real sofrido — que um titular de direitos pode pedir por cada obra infringida de forma comprovada, com teto mais alto quando a infração é considerada deliberada. Como não depende de provar prejuízo financeiro exato, virou o pedido padrão em ações judiciais de editoras e autores contra empresas de IA acusadas de treinar modelos com material pirateado, permitindo que o valor total pedido chegue a bilhões de dólares mesmo sem uma estimativa precisa de dano.',
+    example: 'Na ação movida em agosto de 2026 contra a Anthropic, Sony Music Publishing e Warner Chappell pedem indenização estatutária de até US$ 150 mil por música infringida de forma deliberada, o que, multiplicado pelas "dezenas de milhares" de composições citadas na petição, pode somar bilhões de dólares.',
+    relatedTerms: ['Fair Use (Uso Justo)', 'Governança de IA (AI Governance)', 'Dataset (Conjunto de Dados)'],
+  },
 ];

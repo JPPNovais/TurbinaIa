@@ -13,6 +13,34 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'xai-grok-bot-enterprise-controles-2026-09',
+    date: '2026-09',
+    title: 'xAI leva o Grok Bot para empresas com controles de auditoria e teste grátis de 2 semanas',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'Em 3 de setembro de 2026, a xAI anunciou controles de nível empresarial para o Grok Bot — seu serviço de agentes de IA "sempre ativos", em beta desde 11 de agosto de 2026 — incluindo controles de acesso, de rede e de auditoria voltados a permitir que empresas gerenciem frotas de bots em escala.',
+    highlights: [
+      'Clientes dos planos Grok e Cursor Enterprise ganham teste grátis de duas semanas e podem convidar toda a organização, mesmo quem ainda não tem conta.',
+      'Cada Grok Bot opera com computador, navegador, sistema de arquivos, terminal e memória próprios, podendo coordenar com outros bots em tarefas de vendas, recrutamento, marketing, finanças e engenharia.',
+      'Desde o lançamento em beta, empresas como Legora, Supermicro e ServiceTitan já adotaram o Grok Bot.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'google-deepmind-weathernext-3-lancamento-2026-09',
+    date: '2026-09',
+    title: 'Google DeepMind lança o WeatherNext 3, modelo de previsão do tempo com atualização a cada hora',
+    developer: 'Google DeepMind',
+    category: 'Lançamento',
+    description: 'Em 3 de setembro de 2026, o Google DeepMind e o Google Research apresentaram o WeatherNext 3, modelo global de previsão do tempo que gera previsões a cada hora com resolução de até 5 km para variáveis de superfície, treinado com dados de satélites geoestacionários em tempo real.',
+    highlights: [
+      'Em avaliações independentes do Operational WeatherBench, mantido pela startup Brightband, o WeatherNext 3 superou os modelos físicos de referência IFS (ECMWF) e GFS (NOAA).',
+      'A previsão de precipitação fica até 50% mais precisa para quem planeja com um dia ou mais de antecedência, com os maiores ganhos em regiões onde as previsões historicamente eram menos confiáveis.',
+      'O modelo já está sendo integrado à Busca do Google, ao app Gemini, ao Google Maps, à Google Maps Platform Weather API e ao Google Earth Engine.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'openai-gpt-6-astra-lancamento-critico-ciber-2026-09',
     date: '2026-09',
     title: 'OpenAI lança o GPT-6 Astra, primeiro modelo classificado como "Crítico" em risco cibernético',

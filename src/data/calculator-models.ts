@@ -31,7 +31,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.75,
     outputPricePerM: 3.75,
     contextWindow: '1M tokens',
-    description: 'Novo modelo Flash da Google (Gemini 3.7 Flash), lançado em 13 de Agosto de 2026, voltado a codificação e agentes, com 1M de contexto. Preço introdutório válido até 31 de Dezembro de 2026, quando sobe para $1.50/M entrada e $7.50/M saída.',
+    description: 'Modelo Flash da Google (Gemini 3.7 Flash), lançado em 13 de Agosto de 2026, voltado a codificação e agentes, com 1M de contexto. Em 2 de setembro de 2026 a Google lançou o sucessor Gemini 3.8 Flash, com foco reforçado em engenharia de software e tarefas agênticas, mantendo o mesmo preço promocional de $0.75/M entrada e $3.75/M saída até 31 de Dezembro de 2026 (quando ambos sobem para $1.50/M entrada e $7.50/M saída).',
   },
   // OpenAI
   {

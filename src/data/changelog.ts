@@ -13,6 +13,76 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'deepseek-v4-1-flash-lancamento-2026-09',
+    date: '2026-09',
+    title: 'DeepSeek lança o V4.1 Flash, modelo multimodal de pesos abertos com contexto de 1M tokens',
+    developer: 'DeepSeek',
+    category: 'Lançamento',
+    description: 'Em 10 de setembro de 2026, a DeepSeek lançou o V4.1 Flash, modelo de mistura de especialistas com 552 bilhões de parâmetros (cerca de 8 bi ativados na entrada e 16 bi na saída), com pesos abertos sob licença MIT e suporte nativo a compreensão de imagens além de texto.',
+    highlights: [
+      'Janela de contexto de 1 milhão de tokens, com uso de memória bem menor para o cache de atenção em relação ao V4 Pro.',
+      'Segundo a empresa, o modelo supera o V4 Pro 0813 em desempenho, custo e velocidade, com testes independentes reportando throughput sustentado de 300 a 355 tokens/segundo.',
+      'Preço de API em US$ 0,30/US$ 1,20 por milhão de tokens (entrada/saída) em horário de pico, caindo para US$ 0,15/US$ 0,60 fora de pico.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-agents-api-beta-publico-2026-09',
+    date: '2026-09',
+    title: 'OpenAI abre em beta público a Agents API, expondo o motor por trás do Codex a qualquer desenvolvedor',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 10 de setembro de 2026, a OpenAI lançou em beta público a Agents API, levando a mesma infraestrutura de agente usada no Codex — sandbox, subagentes, compactação de contexto — para qualquer desenvolvedor construir agentes próprios sem montar essa camada do zero.',
+    highlights: [
+      'Dentro de uma sessão, a API roda código, edita arquivos, pesquisa na web, aplica skills e divide tarefas entre subagentes com limite de concorrência configurável.',
+      'O desenvolvedor escolhe onde rodar o processamento: em sandbox gerenciado pela própria OpenAI, em infraestrutura própria ou em parceiros como Cloudflare, DigitalOcean, E2B, Modal, Oracle e Vercel.',
+      'Cobrança é por uso de tokens e ferramentas, sem taxa adicional pela API; dados ficam restritos aos EUA e o modo Zero Data Retention ainda não é suportado.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'anthropic-quarto-incidente-seguranca-metr-2026-09',
+    date: '2026-09',
+    title: 'Anthropic revela quarto incidente de acesso não autorizado do Claude e contrata auditoria independente da METR',
+    developer: 'Anthropic',
+    category: 'Pesquisa',
+    description: 'Em 9 de setembro de 2026, a Anthropic divulgou um quarto incidente em que um modelo Claude obteve acesso não autorizado a sistemas reais de terceiros durante uma avaliação de cibersegurança — depois de já ter revelado, em julho, três casos semelhantes causados por uma configuração que conectou o modelo à internet aberta quando deveria estar isolado em ambiente de simulação.',
+    highlights: [
+      'A empresa contratou a organização de pesquisa METR para conduzir investigação independente dos quatro incidentes, com acordo inicial de oito semanas e acesso amplo a transcrições e funcionários autorizados a compartilhar informação confidencial.',
+      'O incidente envolvendo o Claude Opus 4.6 ocorreu em janeiro de 2026 mas só foi descoberto em agosto, mesmo após uma varredura retrospectiva de cerca de 141 mil transcrições — só veio à tona quando a empresa reunia um pacote maior de dados para a própria METR.',
+      'A Anthropic publicou uma avaliação de alinhamento própria sobre os casos antes do resultado da auditoria externa.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'notion-mail-descontinuado-2026-09',
+    date: '2026-09',
+    title: 'Notion encerra o Notion Mail em 22/9 após maioria dos usuários delegar a caixa de entrada a agentes de IA',
+    developer: 'Notion',
+    category: 'Descontinuado',
+    description: 'A Notion confirmou o desligamento definitivo do Notion Mail (web, desktop e iOS) em 22 de setembro de 2026, com prazo até 21/9 para exportar rascunhos, envios agendados, modelos e regras de etiqueta — a empresa afirma que mais da metade da base ativa já não abria a caixa de entrada, deixando toda a triagem por conta dos agentes de IA da plataforma.',
+    highlights: [
+      'O produto nasceu da aquisição da Skiff, startup de e-mail focada em privacidade comprada pela Notion em fevereiro de 2024.',
+      'O conector de IA da Notion para Gmail continua funcionando normalmente — só o cliente de e-mail próprio é descontinuado.',
+      'É um caso raro de empresa desligando um produto não por falta de uso, mas porque o uso migrou inteiramente para automação dentro do próprio app.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'google-assistente-descontinuado-gemini-2026-09',
+    date: '2026-09',
+    title: 'Google inicia desligamento irreversível do Google Assistente em celulares e relógios, substituído pelo Gemini',
+    developer: 'Google',
+    category: 'Descontinuado',
+    description: 'Desde 4 de setembro de 2026, a Google está desligando o Google Assistente em smartphones, tablets, relógios com Wear OS e fones de ouvido Android, com o Gemini assumindo como assistente padrão — a troca é gradual, roda dispositivo por dispositivo ao longo de algumas semanas e, segundo a empresa, não tem como ser revertida depois de aplicada.',
+    highlights: [
+      'Caixas de som e telas Google Home, aparelhos com Google TV e carros com Android Automotive embutido mantêm o Assistente clássico por enquanto, em cronograma de migração separado.',
+      'A decisão foi tomada após o app Gemini ultrapassar 1 bilhão de usuários mensais em agosto de 2026, tornando-se o produto de crescimento mais rápido da história da Google.',
+      'O comando de voz "Ok Google" continua funcionando normalmente, mas agora aciona o Gemini em vez do Assistente baseado em regras.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'xai-grok-bot-enterprise-controles-2026-09',
     date: '2026-09',
     title: 'xAI leva o Grok Bot para empresas com controles de auditoria e teste grátis de 2 semanas',

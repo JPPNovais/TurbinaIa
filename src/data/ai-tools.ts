@@ -458,7 +458,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🖥️',
     tagline: 'Agente de IA da OpenAI para código e produtividade em geral',
     description:
-      'OpenAI Codex evoluiu de um modelo para um sistema de agente de IA multifuncional. Lançado como CLI em Abril de 2025, agora possui um aplicativo de desktop (Fev 2026) e integra os modelos GPT-5.4 e GPT-5.4 mini (Março 2026). É capaz de entender repositórios complexos, gerar código, e ajudar em tarefas de conhecimento geral como criação de relatórios, planilhas e apresentações, com mais de 5 milhões de usuários ativos semanais em Junho de 2026.',
+      'OpenAI Codex evoluiu de um modelo para um sistema de agente de IA multifuncional. Lançado como CLI em Abril de 2025, agora possui um aplicativo de desktop (Fev 2026). Em 31 de agosto de 2026, os modelos GPT-5.4 e GPT-5.4 mini se aposentaram do Codex para usuários logados via ChatGPT, substituídos por GPT-5.6 Terra (uso balanceado do dia a dia) e GPT-5.6 Luna (mais econômico), mantendo o GPT-5.6 Sol como topo de linha. O paper acadêmico ["The Shift to Agentic AI: Evidence from Codex"](https://arxiv.org/abs/2606.26959), publicado pela própria OpenAI, mostra que a base de usuários ativos do Codex mais que quintuplicou no primeiro semestre de 2026 e que 60,3% das interações na ferramenta já envolvem pelo menos uma chamada de ferramenta externa (contra 21,9% no ChatGPT) — sinal de que o uso migrou de perguntas pontuais para delegação de tarefas longas, incluindo pedidos estimados em mais de 8 horas de trabalho humano. É capaz de entender repositórios complexos, gerar código, e ajudar em tarefas de conhecimento geral como criação de relatórios, planilhas e apresentações.',
     useCases: [
       'Compreensão de código complexo e geração de código a partir de linguagem natural',
       'Base para ferramentas de autocompletar e agentes de software',
@@ -466,9 +466,9 @@ export const AI_TOOLS: AITool[] = [
       'Pesquisa e análise de dados, automação de fluxos de trabalho',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Acesso via planos ChatGPT. Plano Grátis: Trial limitado, acesso a Codex app/CLI/IDE extensions, sem GitHub code review ou Slack integration; Plano Go: US$ 8/mês; Plano Plus: US$ 20/mês (10-60 tarefas na nuvem/5h, acesso a GPT-5.3-Codex); Plano Pro 5x: US$ 100/mês (lançado em Abr 2026) 50-300 tarefas na nuvem/5h, 5x uso do Plus; Plano Pro 20x: US$ 200/mês (200-1200 tarefas na nuvem/5h, 20x uso do Plus); Plano Business: US$ 20/usuário/mês (faturamento anual) ou US$ 25/usuário/mês (faturamento mensal); Plano Enterprise: sob consulta (inclui uso ilimitado de Codex, segurança avançada). API (token-based credit billing a partir de Abr 2026): GPT-5.3-Codex a 43.75 créditos/1M input tokens e 350 créditos/1M output tokens (1 crédito = US$ 0.01). Estimativa de custo médio: US$ 100-200/desenvolvedor/mês.',
+    pricingDetails: 'Acesso via planos ChatGPT. Plano Grátis: Trial limitado, acesso a Codex app/CLI/IDE extensions, sem GitHub code review ou Slack integration; Plano Go: US$ 8/mês; Plano Plus: US$ 20/mês (10-60 tarefas na nuvem/5h, acesso a GPT-5.6 Terra e Luna desde 31/08/2026); Plano Pro 5x: US$ 100/mês (lançado em Abr 2026) 50-300 tarefas na nuvem/5h, 5x uso do Plus; Plano Pro 20x: US$ 200/mês (200-1200 tarefas na nuvem/5h, 20x uso do Plus); Plano Business: US$ 20/usuário/mês (faturamento anual) ou US$ 25/usuário/mês (faturamento mensal); Plano Enterprise: sob consulta (inclui uso ilimitado de Codex, segurança avançada). API: GPT-5.6 Terra a US$ 2.00/M tokens entrada e US$ 12.00/M tokens saída; GPT-5.6 Luna a US$ 0.20/M tokens entrada e US$ 1.20/M tokens saída (após corte de preço de 30/07/2026). Estimativa de custo médio: US$ 100-200/desenvolvedor/mês.',
     url: 'https://openai.com/codex',
-    tags: ['cli', 'terminal', 'openai', 'agente', 'o3', 'o4-mini', 'desenvolvimento', 'produtividade'],
+    tags: ['cli', 'terminal', 'openai', 'agente', 'gpt-5.6', 'desenvolvimento', 'produtividade', 'agêntico'],
     popularityRank: 19,
     updatedAt: '2026-09',
   },

@@ -13,6 +13,76 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'anthropic-relatorio-uso-indevido-armas-2026-09',
+    date: '2026-09',
+    title: 'Anthropic revela que Irã, Rússia e China tentaram usar o Claude para pesquisa de armas',
+    developer: 'Anthropic',
+    category: 'Pesquisa',
+    description: 'Em 11 de setembro de 2026, a equipe de inteligência de ameaças da Anthropic publicou um relatório detalhando tentativas de uso indevido do Claude por atores ligados a Irã, Rússia, China e Iêmen ao longo do último ano, incluindo pesquisa para enxames de drones kamikaze, sistemas de navegação de mísseis e projetos com potencial ligação a armas biológicas.',
+    highlights: [
+      'Um grupo ligado à Rússia usou o Claude para desenvolver software de coordenação de enxames de drones FPV, incluindo guiagem terminal e seleção de alvos; o grupo Midnight Blizzard, associado à inteligência russa, usou o modelo para automatizar fases do desenvolvimento de malware e phishing contra alvos militares.',
+      'Um ator ligado à China usou o Claude para modelar um pacote de guerra eletrônica que simulava a supressão de defesas antiaéreas em Taiwan, incluindo radares de alerta antecipado e baterias de mísseis Patriot e Tien Kung.',
+      'A Anthropic afirma que nenhum dos casos identificados envolveu os modelos mais avançados da empresa, Claude Fable e Claude Mythos.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'openai-chatgpt-financial-services-lancamento-2026-09',
+    date: '2026-09',
+    title: 'OpenAI lança o ChatGPT for Financial Services com GPT-6 Astra e dados de bancos embutidos',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 10 de setembro de 2026, a OpenAI lançou o ChatGPT for Financial Services, versão do ChatGPT Work voltada a bancos de investimento e equipes de equity research, combinando o modelo GPT-6 Astra com dados financeiros já indexados de fornecedores como Daloopa, PitchBook, LSEG News e Crunchbase.',
+    highlights: [
+      'O produto foi moldado com o Morgan Stanley e a butique de fusões e aquisições Evercore como parceiros de design, mirando tarefas de pesquisa de empresas, modelagem de LBO, triagem de compradores e montagem de pitchbooks.',
+      'Cada número ou afirmação gerada vem com citação rastreável até a fonte primária (demonstrativo financeiro, transcrição de resultados ou relatório de research).',
+      'Acesso é restrito a instituições financeiras elegíveis via time comercial da OpenAI; preço e número mínimo de licenças não foram divulgados publicamente.'
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'sakana-ai-fugu-max-ultra-v2-lancamento-2026-09',
+    date: '2026-09',
+    title: 'Sakana AI divide o orquestrador Fugu em Fugu Max e Fugu Ultra v2 para cortar custo em até 60%',
+    developer: 'Sakana AI',
+    category: 'Lançamento',
+    description: 'Em 11 de setembro de 2026, a Sakana AI lançou o Fugu Max e o Fugu Ultra v2, duas versões de seu modelo orquestrador — que direciona cada tarefa para o modelo mais adequado dentro de um conjunto de modelos abertos e especializados, incluindo a família Nemotron da NVIDIA, em vez de responder sozinho.',
+    highlights: [
+      'O Fugu Max custa US$ 2/US$ 6 por milhão de tokens de entrada/saída, com preço de saída de 40% a 60% menor que Sonnet 5, GPT-5.6 Terra e Kimi K3, priorizando o modelo mais barato capaz de resolver cada tarefa.',
+      'O Fugu Ultra v2 custa US$ 5/US$ 30 por milhão de tokens (US$ 10/US$ 45 para contextos acima de 272 mil tokens) e mira o melhor resultado possível em tarefas longas e multietapas, sem depender de modelos proprietários de fronteira como Claude Fable, Mythos ou GPT-6 Astra.',
+      'Os dois modelos já estão disponíveis via API compatível com o padrão OpenAI, sem pesos abertos para autohospedagem, e o serviço não é oferecido na União Europeia nem no Espaço Econômico Europeu.'
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'cohere-north-small-translate-lancamento-2026-09',
+    date: '2026-09',
+    title: 'Cohere lança tradutor North Small Translate e supera DeepL e Google Tradutor em benchmark de 50 idiomas',
+    developer: 'Cohere',
+    category: 'Lançamento',
+    description: 'Em 10 de setembro de 2026, a Cohere lançou o North Small Translate, modelo de tradução com arquitetura Mixture-of-Experts (218 bilhões de parâmetros totais, 25 bilhões ativados por token), alcançando pontuação de 83,6 no benchmark WMT26 em mais de 50 idiomas.',
+    highlights: [
+      'A pontuação supera modelos proprietários como DeepL e Google Tradutor, além de modelos abertos como Gemma 4 31B, GLM 5.2 e Mistral Large 3; uma variante agêntica de múltiplas passagens, que revisa e corrige a própria tradução, chega a 84,36 pontos.',
+      'O modelo aceita apenas texto (entrada e saída), com janela de contexto e limite de saída de 16 mil tokens cada, e roda em uma GPU B200 ou duas H100 com quantização W4A4.',
+      'Os pesos em FP8 estão disponíveis gratuitamente no Hugging Face sob licença CC BY-NC 4.0 apenas para uso não comercial; empresas que queiram usar em produção precisam de licença comercial e da plataforma gerenciada Model Vault da Cohere.'
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'visa-mastercard-ant-kya-framework-2026-09',
+    date: '2026-09',
+    title: 'Visa, Mastercard e Ant International se unem em torno de um padrão comum para verificar agentes de IA em pagamentos',
+    developer: 'Visa / Mastercard / Ant International',
+    category: 'Atualização',
+    description: 'Em 9 de setembro de 2026, Visa, Mastercard e Ant International anunciaram colaboração para desenvolver um framework de interoperabilidade "Know-Your-Agent" (KYA), buscando um padrão comum para identificar e verificar agentes de IA que fazem compras em nome de usuários dentro de redes de pagamento e carteiras digitais.',
+    highlights: [
+      'A iniciativa une três protocolos hoje separados — o Trusted Agent Protocol da Visa, o Verifiable Intent da Mastercard e o Agentic Mobile Protocol da Ant International — em busca de princípios comuns de confiança e verificação de identidade.',
+      'O objetivo declarado é reduzir a duplicação de verificação de identidade de agentes entre redes, diminuindo custo e tempo de integração para novos serviços de comércio agêntico.',
+      'As empresas citam projeções de mercado de US$ 3 a 5 trilhões em comércio de consumo orquestrado por agentes de IA até 2030 como motivação para padronizar as regras antes da escala do setor.'
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'deepseek-v4-1-flash-lancamento-2026-09',
     date: '2026-09',
     title: 'DeepSeek lança o V4.1 Flash, modelo multimodal de pesos abertos com contexto de 1M tokens',

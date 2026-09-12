@@ -1219,7 +1219,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎵',
     tagline: 'Crie músicas completas com letra em segundos',
     description:
-      'Suno AI é uma ferramenta de geração de música com IA que cria músicas completas — com instrumentação, vocal e letra — a partir de uma descrição textual. Gera músicas em praticamente qualquer gênero e idioma, incluindo português. Em Fevereiro de 2026, atingiu 2 milhões de assinantes pagantes e US$ 300 milhões de ARR. A versão 5.5 (Março de 2026) adicionou clonagem de voz personalizada e faixas de até 8 minutos. Em 13 de agosto de 2026, o Suno Studio (a DAW no navegador) ganhou a versão 2.0, com suporte a MIDI, barra de chat com IA para criar plugins próprios, automação de parâmetros e exportação sem limite para assinantes Premier.',
+      'Suno AI é uma ferramenta de geração de música com IA que cria músicas completas — com instrumentação, vocal e letra — a partir de uma descrição textual. Gera músicas em praticamente qualquer gênero e idioma, incluindo português. Em Fevereiro de 2026, atingiu 2 milhões de assinantes pagantes e US$ 300 milhões de ARR. Em 9 de setembro de 2026, a Suno lançou a geração de modelos v6, v6-wild e v6-mini — a primeira construída com música licenciada de gravadoras parceiras (Warner Music Group, BMG e Believe, que passam a receber parte da receita gerada), substituindo gradualmente as versões anteriores. Em 13 de agosto de 2026, o Suno Studio (a DAW no navegador) ganhou a versão 2.0, com suporte a MIDI, barra de chat com IA para criar plugins próprios, automação de parâmetros e exportação sem limite para assinantes Premier.',
     useCases: [
       'Criar trilhas sonoras para vídeos e projetos',
       'Gerar jingles para campanhas de marketing',
@@ -1227,11 +1227,11 @@ export const AI_TOOLS: AITool[] = [
       'Prototipar ideias musicais rapidamente',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: 50 créditos/dia, ~10 músicas, 2 min max, sem direitos comerciais, atribuição exigida, limitações de geração; Plano Pro: US$ 10/mês (US$ 8/mês anual) para 2.500 créditos/mês, ~500 músicas, 4 min max, direitos comerciais, modelo v5.5, edições avançadas, compra de créditos adicionais; Plano Premier: US$ 30/mês (US$ 24/mês anual) para 10.000 créditos/mês, ~2.000 músicas, 4 min max, direitos comerciais, Suno Studio 2.0 (MIDI, plugins com IA, automação) com exportação de multitrack e stems em 32-bit/48kHz sem limite, fila prioritária. Planos anuais oferecem 20% de desconto. A partir de 3 de setembro de 2026, a Suno passa a limitar downloads (retroativo a músicas já geradas): 7 downloads vitalícios no Grátis, 20/mês no Pro e 60/mês no Premier — downloads extras poderão ser comprados, mas o preço ainda não foi divulgado; apenas o Suno Studio permanece sem limite de exportação.',
+    pricingDetails: 'Plano Grátis: 50 créditos/dia, ~10 músicas, 2 min max, modelo v6-mini, sem direitos comerciais, atribuição exigida, limitações de geração; Plano Pro: US$ 10/mês (US$ 8/mês anual) para 2.500 créditos/mês, ~500 músicas, 4 min max, direitos comerciais, acesso aos modelos v6 e v6-wild, edições avançadas, compra de créditos adicionais; Plano Premier: US$ 30/mês (US$ 24/mês anual) para 10.000 créditos/mês, ~2.000 músicas, 4 min max, direitos comerciais, Suno Studio 2.0 (MIDI, plugins com IA, automação) com exportação de multitrack e stems em 32-bit/48kHz sem limite, fila prioritária. Planos anuais oferecem 20% de desconto. Desde 3 de setembro de 2026, a Suno limita downloads (retroativo a músicas já geradas): 7 downloads vitalícios no Grátis, 20/mês no Pro e 60/mês no Premier — downloads extras poderão ser comprados, mas o preço ainda não foi divulgado; apenas o Suno Studio permanece sem limite de exportação.',
     url: 'https://suno.com',
     tags: ['música', 'geração', 'composição', 'trilha sonora', 'jingle', 'letra'],
     popularityRank: 12,
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'descript',

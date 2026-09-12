@@ -8115,4 +8115,34 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um redator especializado em traduzir pesquisa técnica sobre IA para uma linguagem acessível em redes sociais, sem exagerar nem simplificar a ponto de distorcer o achado original.\n\nDados do estudo/paper:\n- Fonte: [Nome do estudo, quem publicou, link se tiver]\n- Principal achado/número: [Ex: "60% das interações já envolvem uso de ferramenta externa"]\n- Contexto necessário para não distorcer o dado: [Ex: é dado interno da empresa que vende o produto, é amostra pequena, é tendência ainda inicial]\n- Rede social de destino: [Ex: LinkedIn, X/Twitter, Instagram]\n\nMe entregue:\n\n1. **Gancho de abertura** com o dado mais forte do estudo, sem clickbait enganoso.\n2. **Corpo do post** explicando o achado em linguagem simples, mantendo qualquer ressalva importante (ex: dado autorreportado, amostra específica).\n3. **Por que isso importa** para quem lê — uma frase conectando o achado a uma decisão prática do dia a dia do leitor.\n4. **Fonte visível**: como citar a fonte original de forma clara dentro do formato da rede escolhida.\n5. **Versão curta** (para legenda/thread inicial) e **versão longa** (para o corpo completo do post ou primeiro comentário).',
     tags: ['Redes Sociais', 'Pesquisa', 'Conteúdo', 'IA'],
   },
+
+  // FINANÇAS
+  {
+    id: 'financas-briefing-empresa-fontes-citadas',
+    title: 'Briefing de Empresa com Fontes Citadas em Cada Afirmação',
+    category: 'Finanças',
+    description: 'Peça um briefing de research sobre uma empresa ou setor em que cada número e afirmação venha acompanhado da fonte, no mesmo espírito de citação granular que ferramentas de IA para o mercado financeiro vêm adotando.',
+    template: 'Você é um analista de research financeiro rigoroso quanto à origem de cada dado que usa. Preciso de um briefing sobre a empresa/setor "[Nome da Empresa ou Setor]" para embasar [Objetivo: Ex: uma decisão de investimento, uma reunião com cliente, um relatório interno].\n\nContexto:\n- O que já sei e não preciso repetir: [Resumo do que já sabe]\n- Perguntas específicas que quero respondidas: [Liste 2-4 perguntas]\n- Nível de profundidade esperado: [Ex: visão geral de 1 página, análise aprofundada]\n\nRegras obrigatórias:\n1. Toda afirmação factual (número, data, evento) deve vir com a fonte identificada entre parênteses logo depois — nome do veículo ou documento, não um link genérico.\n2. Separe claramente o que é fato confirmado do que é estimativa, opinião de analista ou rumor ainda não confirmado.\n3. Se não tiver certeza da origem de um dado, diga isso explicitamente em vez de apresentá-lo como fato.\n4. Termine com uma lista de lacunas: perguntas que ficaram sem resposta confiável e que exigiriam apuração adicional.',
+    tags: ['Research Financeiro', 'Fontes', 'Análise', 'Finanças'],
+  },
+
+  // PRODUTIVIDADE
+  {
+    id: 'produtividade-auditoria-confianca-resultado-ia',
+    title: 'Auditoria de Confiança Antes de Usar um Resultado Gerado por IA',
+    category: 'Produtividade',
+    description: 'Um checklist para revisar criticamente um texto, análise ou código gerado por IA antes de usá-lo, especialmente quando o resultado parece bom demais para ser checado com cuidado.',
+    template: 'Você é um revisor cético especializado em encontrar erros escondidos em resultados de IA que parecem bem-acabados. Vou colar abaixo um resultado gerado por uma ferramenta de IA e quero que você o audite antes de eu usá-lo.\n\nContexto do resultado:\n- O que a IA foi instruída a fazer: [Descreva a tarefa original]\n- Onde esse resultado será usado: [Ex: relatório para cliente, decisão interna, código em produção]\n- Nível de consequência se houver um erro não detectado: [Baixo/médio/alto, e por quê]\n\nResultado gerado pela IA para auditar:\n[Cole aqui o texto, análise ou código completo]\n\nMe entregue:\n\n1. **Afirmações não verificáveis:** aponte números, nomes, datas ou conclusões que não vêm acompanhados de fonte ou lógica clara de onde surgiram.\n2. **Pontos de acabamento enganoso:** identifique trechos bem formatados ou convincentes que, olhando com mais atenção, escondem lacunas de raciocínio ou generalizações frágeis.\n3. **Perguntas que eu deveria fazer** antes de aprovar esse resultado, mas que a apresentação polida do texto tornou fácil esquecer.\n4. **Veredito final:** aprovar como está, aprovar com ajustes pontuais (liste quais) ou não usar sem revisão humana mais profunda.',
+    tags: ['Revisão de IA', 'Confiabilidade', 'Qualidade', 'IA Agêntica'],
+  },
+
+  // CARREIRA
+  {
+    id: 'carreira-plano-anti-atrofia-cognitiva',
+    title: 'Plano para Não Perder Habilidade Técnica Usando IA no Dia a Dia',
+    category: 'Carreira',
+    description: 'Monte um plano pessoal para continuar desenvolvendo o raciocínio e o julgamento de uma função, mesmo delegando boa parte das tarefas repetitivas a ferramentas de IA.',
+    template: 'Você é um mentor de carreira especializado em desenvolvimento de habilidades técnicas na era da IA. Uso IA no meu trabalho para acelerar tarefas do dia a dia e quero continuar desenvolvendo o julgamento da minha área, em vez de simplesmente aceitar o que a ferramenta entrega sem entender o "porquê".\n\nMeu contexto:\n- Minha função/área: [Ex: analista financeiro júnior, desenvolvedor, redator]\n- Tarefas que já delego quase totalmente à IA: [Liste 2-4 tarefas]\n- Habilidade específica que tenho medo de não desenvolver por delegar demais: [Ex: reconhecer um erro num modelo financeiro, revisar código sem depender do autocomplete]\n- Tempo que consigo dedicar por semana a praticar deliberadamente: [Ex: 2 horas]\n\nMe entregue:\n\n1. **Diagnóstico:** que parte do raciocínio da tarefa delegada é a mais valiosa de dominar manualmente, mesmo que a IA já faça isso rápido.\n2. **Exercícios deliberados:** 3 exercícios práticos, do tamanho do tempo semanal que informei, para treinar esse raciocínio sem IA ou revisando criticamente o que a IA produziu.\n3. **Sinais de alerta:** como perceber, no dia a dia, que estou aceitando resultados de IA sem entender de verdade.\n4. **Rotina de checagem:** uma pergunta ou hábito simples para aplicar antes de aprovar qualquer resultado de IA relacionado a essa habilidade.',
+    tags: ['Carreira', 'Desenvolvimento Profissional', 'IA no Trabalho', 'Aprendizado'],
+  },
 ];

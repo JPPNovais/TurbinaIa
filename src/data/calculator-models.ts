@@ -48,7 +48,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 10.00,
     outputPricePerM: 30.00,
     contextWindow: '128K tokens',
-    description: 'O modelo GPT-4 Turbo da OpenAI, que equilibra inteligência e custo, com visão e capacidades de função. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
+    description: 'O modelo GPT-4 Turbo da OpenAI, que equilibra inteligência e custo, com visão e capacidades de função. Desligamento programado pela OpenAI para 23 de outubro de 2026, com gpt-5.6-sol como substituto recomendado. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
   },
   {
     name: 'GPT-4o Mini',
@@ -85,12 +85,12 @@ export const AI_MODELS: CalculatorModel[] = [
   },
   // DeepSeek
   {
-    name: 'DeepSeek V4 Flash',
+    name: 'DeepSeek V4.1 Flash',
     provider: 'DeepSeek',
-    inputPricePerM: 0.22,
-    outputPricePerM: 0.66,
+    inputPricePerM: 0.15,
+    outputPricePerM: 0.60,
     contextWindow: '1M tokens',
-    description: 'O modelo DeepSeek V4 Flash, suportando 1M de contexto. Desde 16 de agosto de 2026 a DeepSeek passou a cobrar por faixa horária: preço aqui reflete o horário fora de pico (a maior parte do tempo); no horário de pico (01h-04h e 06h-10h UTC, seg-sex) o preço sobe para US$ 0.44/M entrada e US$ 1.32/M saída — cerca de 3 a 4,7x mais caro que o valor anterior de US$ 0.14/US$ 0.28.',
+    description: 'Lançado em 10 de setembro de 2026, o DeepSeek V4.1 Flash substitui o DeepSeek V4 Flash (agora aposentado, com chamadas antigas redirecionadas automaticamente) e passou a receber também o tráfego do V4 Pro a partir de 14 de setembro de 2026. Preço aqui reflete o horário fora de pico; no horário de pico (01h-04h e 06h-10h UTC, seg-sex) os preços dobram para US$ 0.30/M entrada e US$ 1.20/M saída. Suporta 1M tokens de contexto e compreensão nativa de imagens.',
   },
   // Meta (via API)
   {
@@ -150,6 +150,6 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.50,
     outputPricePerM: 1.50,
     contextWindow: '16K tokens',
-    description: 'Um modelo econômico e eficiente da OpenAI, otimizado para chat e diversas tarefas de linguagem, com 16K de contexto. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
+    description: 'Um modelo econômico e eficiente da OpenAI, otimizado para chat e diversas tarefas de linguagem, com 16K de contexto. Desligamento programado pela OpenAI para 23 de outubro de 2026 (gpt-3.5-turbo-instruct desliga em 28 de setembro de 2026); requisições serão redirecionadas automaticamente após essa data. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
   },
 ];

@@ -125,7 +125,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '✍️',
     tagline: 'IA do Google com acesso a toda a suíte Google',
     description:
-      'Gemini Advanced (rebatizado como Google AI Pro) é o modelo de IA multimodal do Google, impulsionado pelo Gemini 3.1 Pro, integrado ao Gmail, Docs, Drive e Meet. Oferece acesso a busca em tempo real e integração nativa com os serviços Google. Em 11 de agosto de 2026, o app Gemini ultrapassou 1 bilhão de usuários mensais, o produto de crescimento mais rápido da história do Google. A partir de 4 de setembro de 2026, o Google começou a desligar o Google Assistente em celulares, tablets, relógios com Wear OS, fones e Android Auto (celular), tornando o Gemini o assistente de voz padrão nesses dispositivos de forma irreversível — Google Home, Google TV e carros com Google built-in mantêm o Assistente por enquanto. O Android Drop de 1º de setembro de 2026 também trouxe ao Gemini a função "Lembrar" (memória de localização de itens sem tag, integrada ao Find Hub) e a Guided Vision no Gemini Live (descrições em voz do que a câmera vê, para acessibilidade).',
+      'Gemini Advanced (rebatizado como Google AI Pro) é o modelo de IA multimodal do Google, impulsionado pelo Gemini 3.1 Pro, integrado ao Gmail, Docs, Drive e Meet. Oferece acesso a busca em tempo real e integração nativa com os serviços Google. Em 11 de agosto de 2026, o app Gemini ultrapassou 1 bilhão de usuários mensais, o produto de crescimento mais rápido da história do Google. A partir de 4 de setembro de 2026, o Google começou a desligar o Google Assistente em celulares, tablets, relógios com Wear OS, fones e Android Auto (celular), tornando o Gemini o assistente de voz padrão nesses dispositivos de forma irreversível — Google Home, Google TV e carros com Google built-in mantêm o Assistente por enquanto. O Android Drop de 1º de setembro de 2026 também trouxe ao Gemini a função "Lembrar" (memória de localização de itens sem tag, integrada ao Find Hub) e a Guided Vision no Gemini Live (descrições em voz do que a câmera vê, para acessibilidade). Em 10 de setembro de 2026, o Google lançou um app nativo do Gemini para Windows (cinco meses após a versão de Mac), gratuito, com o atalho Alt+Space abrindo o assistente sobre qualquer janela ativa e integração com Gmail, Drive, Docs e Agenda; o agente autônomo Gemini Spark não veio junto no lançamento — segue disponível só no app do Mac, no celular e na web.',
     useCases: [
       'Redigir e-mails e documentos no Google Workspace',
       'Pesquisar e sumarizar informações atualizadas',
@@ -347,7 +347,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '💻',
     tagline: 'Editor de código com IA nativa e contexto completo do projeto',
     description:
-      'Cursor é um editor de código (fork do VS Code) com IA profundamente integrada que entende todo o contexto do seu projeto. Permite editar arquivos inteiros, refatorar bases de código e conversar sobre o código com Claude, GPT-4o e Gemini. Cruzando US$ 2 bilhões em receita anualizada e com mais de um milhão de desenvolvedores pagantes em Fevereiro de 2026. Em 14 de agosto de 2026, a SpaceX concluiu a aquisição da Anysphere (empresa por trás do Cursor) em um negócio de US$ 60 bilhões todo em ações, incorporando-a a uma nova divisão chamada "SpaceXAI". Em agosto de 2026, lançou também em beta o Origin, uma plataforma de hospedagem de código nativa para agentes de IA (repositórios, PRs e sincronização com GitHub), disponível para todos os planos pagos, além do Grok Bot, agente sempre ativo desenvolvido em parceria com a xAI.',
+      'Cursor é um editor de código (fork do VS Code) com IA profundamente integrada que entende todo o contexto do seu projeto. Permite editar arquivos inteiros, refatorar bases de código e conversar sobre o código com Claude, GPT-4o e Gemini. Cruzando US$ 2 bilhões em receita anualizada e com mais de um milhão de desenvolvedores pagantes em Fevereiro de 2026. Em 14 de agosto de 2026, a SpaceX concluiu a aquisição da Anysphere (empresa por trás do Cursor) em um negócio de US$ 60 bilhões todo em ações, incorporando-a a uma nova divisão chamada "SpaceXAI". Em agosto de 2026, lançou também em beta o Origin, uma plataforma de hospedagem de código nativa para agentes de IA (repositórios, PRs e sincronização com GitHub), disponível para todos os planos pagos, além do Grok Bot, agente sempre ativo desenvolvido em parceria com a xAI. Em 10 de setembro de 2026, lançou em beta o Projects: um agente coordenador que não escreve código diretamente, mas planeja e delega o trabalho a agentes executores, mantém contexto por meses numa mesma tarefa (uma migração ou feature inteira) e roda na nuvem, continuando o trabalho mesmo com o laptop fechado.',
     useCases: [
       'Refatorar e editar múltiplos arquivos ao mesmo tempo',
       'Perguntar sobre a base de código inteira em linguagem natural',
@@ -360,7 +360,7 @@ export const AI_TOOLS: AITool[] = [
     tags: ['editor', 'código', 'ide', 'programação', 'vscode', 'refatoração'],
     isFeatured: true,
     popularityRank: 26,
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'devin-desktop',

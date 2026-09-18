@@ -8185,4 +8185,44 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um consultor de produtividade especializado em adoção de tecnologia em equipes. Minha equipe tem a tendência de testar toda ferramenta ou modelo de IA novo que sai, sem tempo suficiente para validar se cada mudança realmente compensa. Quero um framework para controlar esse ritmo sem ficar tecnologicamente para trás.\n\nContexto da equipe:\n- Área/função da equipe: [Ex: desenvolvimento, marketing, atendimento ao cliente]\n- Ferramentas de IA usadas atualmente: [Liste as principais]\n- Frequência com que a equipe troca ou testa ferramentas novas hoje: [Ex: toda semana, a cada lançamento relevante]\n- Maior problema observado com essa frequência: [Ex: perda de tempo reaprendendo fluxos, inconsistência entre membros do time, falta de dados para comparar antes/depois]\n\nMe entregue:\n\n1. **Critérios de entrada:** o que uma ferramenta ou modelo novo precisa demonstrar antes de a equipe sequer testar oficialmente.\n2. **Janela mínima de avaliação:** por quanto tempo testar antes de decidir adotar, manter em observação ou descartar — e por quê.\n3. **Métricas simples de antes/depois** para comparar a ferramenta nova com a que já está em uso, sem exigir instrumentação complexa.\n4. **Regra de exceção:** em que situação vale pular esse ritmo controlado e adotar algo imediatamente (ex.: correção de segurança crítica).',
     tags: ['Produtividade', 'Gestão de Equipe', 'Adoção de IA', 'Tomada de Decisão'],
   },
+
+  // IA & AUTOMAÇÃO
+  {
+    id: 'ia-automacao-auditoria-engenharia-contexto-agente',
+    title: 'Auditoria de Engenharia de Contexto para um Agente que Perdeu Qualidade',
+    category: 'IA & Automação',
+    description: 'Diagnostique por que um agente de IA que funcionava bem em testes passou a dar respostas inconsistentes em produção, revisando o que está sendo enviado para a janela de contexto a cada chamada.',
+    template: 'Você é um especialista em engenharia de contexto para agentes de IA. Um agente meu que funcionava bem em testes começou a dar respostas inconsistentes ou a "esquecer" instruções em sessões mais longas, e quero descobrir se o problema está na curadoria do contexto, não no prompt em si.\n\nContexto do agente:\n- O que o agente faz: [Descreva a tarefa principal]\n- Instrução de sistema atual: [Cole a instrução de sistema completa]\n- Ferramentas expostas ao agente: [Liste as ferramentas/funções disponíveis]\n- Como o histórico de conversa é mantido: [Ex: mensagens brutas acumuladas, resumo periódico, sem controle nenhum]\n- Em que ponto da tarefa o comportamento piora: [Ex: depois de N turnos, ao processar documentos grandes, sem padrão claro]\n\nMe entregue:\n\n1. **Diagnóstico de sobrecarga de contexto:** avalie se instruções, definições de ferramentas, documentos recuperados e histórico estão competindo por espaço de um jeito que empurra informação importante para o meio da janela de contexto.\n2. **O que cortar:** identifique o que pode ser removido, resumido ou movido para fora do contexto principal sem perda de qualidade.\n3. **Onde reposicionar:** sugira que informação deveria ficar perto do início ou do fim do contexto, por ser mais crítica para a tarefa.\n4. **Técnica de compactação recomendada:** proponha uma forma concreta de resumir ou podar o histórico ao longo de sessões longas, adequada ao meu caso.',
+    tags: ['Engenharia de Contexto', 'Agentes de IA', 'Diagnóstico', 'IA Agêntica'],
+  },
+
+  // PRODUTIVIDADE
+  {
+    id: 'produtividade-poda-contexto-documento-longo',
+    title: 'Poda de Contexto Antes de Colar um Documento Longo num Prompt',
+    category: 'Produtividade',
+    description: 'Prepare um documento extenso para colar num chat de IA extraindo só os trechos relevantes para a pergunta, em vez de colar o arquivo inteiro e arriscar que a informação certa se perca no meio do texto.',
+    template: 'Você é um assistente de preparação de contexto. Antes de eu colar um documento longo em outra conversa de IA para fazer uma pergunta específica, quero que você me ajude a reduzir o material ao que realmente importa.\n\nDocumento completo:\n[Cole aqui o texto integral do documento]\n\nPergunta que pretendo fazer sobre esse documento: [Escreva a pergunta específica que vai fazer depois]\n\nMe entregue:\n\n1. **Trechos essenciais:** copie literalmente só os parágrafos ou seções do documento que contêm informação necessária para responder à pergunta.\n2. **O que pode ficar de fora:** liste, em uma frase cada, os blocos de conteúdo que são irrelevantes para essa pergunta específica (mesmo que relevantes para outras).\n3. **Versão resumida do contexto**, pronta para colar, com os trechos essenciais organizados na ordem mais útil — priorizando colocar o dado mais importante logo no início ou no fim, não no meio.\n4. **Alerta de lacuna:** avise se a pergunta exigir uma informação que não está presente no documento, para eu não seguir com uma resposta baseada em suposição.',
+    tags: ['Engenharia de Contexto', 'Produtividade', 'Prompt', 'Documentos Longos'],
+  },
+
+  // NEGÓCIOS
+  {
+    id: 'negocios-avaliar-parceria-licenciamento-conteudo-ia',
+    title: 'Avaliação de Proposta de Licenciamento de Conteúdo para Treinar ou Alimentar IA',
+    category: 'Negócios',
+    description: 'Analise os prós e contras de uma proposta de parceria para licenciar o catálogo ou os dados da sua empresa para uma empresa de IA, no espírito dos acordos que gravadoras vêm fechando com plataformas de IA musical.',
+    template: 'Você é um consultor de negócios especializado em parcerias de licenciamento de conteúdo para empresas de IA. Recebi uma proposta de parceria e quero uma avaliação equilibrada antes de decidir.\n\nDetalhes da proposta:\n- Empresa de IA proponente: [Nome/setor da empresa]\n- O que seria licenciado: [Ex: catálogo de conteúdo, base de dados, imagens, textos]\n- Modelo de remuneração oferecido: [Ex: valor fixo, participação de receita, royalties por uso]\n- Uso pretendido pela empresa de IA: [Ex: treinamento de modelo, geração de conteúdo derivado para usuários finais, ambos]\n- Exclusividade exigida: [Sim/não, e por quanto tempo]\n\nMe entregue:\n\n1. **Riscos de longo prazo:** o que pode dar errado se o conteúdo licenciado for usado de um jeito que eu não previ hoje (ex.: geração de conteúdo derivado que compete com o original).\n2. **Cláusulas que faltam:** proteções contratuais comuns nesse tipo de acordo que a proposta atual não menciona (auditoria de uso, limites de escopo, revisão periódica de termos).\n3. **Comparação de modelo de remuneração:** avalie se o modelo proposto (fixo vs. participação de receita) faz sentido dado o tipo de uso pretendido.\n4. **Perguntas para a próxima reunião** com o proponente, para esclarecer os pontos mais ambíguos da proposta antes de avançar.',
+    tags: ['Licenciamento', 'Parcerias', 'IA Generativa', 'Negociação'],
+  },
+
+  // EDUCAÇÃO
+  {
+    id: 'educacao-explicar-conceito-tecnico-camadas',
+    title: 'Explicação em Camadas de um Conceito Técnico de IA em Alta',
+    category: 'Educação',
+    description: 'Peça a explicação de um termo técnico de IA que está circulando (como engenharia de contexto, apodrecimento de contexto ou subagentes) em três níveis de profundidade crescente, para entender rápido e depois aprofundar.',
+    template: 'Você é um professor que explica conceitos técnicos de IA em camadas de profundidade crescente. Quero entender o termo "[Termo técnico: Ex: engenharia de contexto, apodrecimento de contexto, subagentes]" partindo do básico até uma explicação mais técnica.\n\nMeu nível de partida: [Ex: nunca ouvi falar, já ouvi mas não sei aplicar, uso no trabalho mas quero aprofundar]\n\nMe entregue em três camadas:\n\n1. **Camada 1 — explicação de uma frase:** o conceito numa única frase, sem jargão, como se estivesse explicando para alguém fora da área de tecnologia.\n2. **Camada 2 — explicação com exemplo prático:** dois parágrafos com um exemplo concreto de onde esse conceito aparece no dia a dia de quem usa ou constrói com IA.\n3. **Camada 3 — explicação técnica:** a definição mais precisa, com os termos correlatos que valem a pena pesquisar em seguida, e uma armadilha comum de quem aplica o conceito errado.\n\nTermine indicando se esse é um conceito estável (deve continuar relevante por anos) ou um termo de tendência recente que pode perder força — e por quê.',
+    tags: ['Educação', 'IA & Automação', 'Aprendizado', 'Conceitos Técnicos'],
+  },
 ];

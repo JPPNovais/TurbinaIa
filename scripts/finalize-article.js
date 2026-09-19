@@ -210,7 +210,11 @@ async function main() {
 
   const faqHeadings = (body.match(/^###\s+.+\?\s*$/gm) || []).length;
   if (!/^##\s+Perguntas Frequentes/m.test(body)) problems.push('seção "## Perguntas Frequentes" ausente');
-  else if (faqHeadings < 3) problems.push(`FAQ com ${faqHeadings} pergunta(s) em H3 (mínimo 3 — sem H3 o rich snippet não é gerado)`);
+  // O Google encerrou o rich result de FAQ em 07/05/2026, mas o H3 continua
+  // obrigatório: é dele que o extractFAQs monta o FAQPage lido pelos motores de
+  // resposta (ChatGPT, Perplexity, Gemini) e é o formato de título-pergunta que
+  // esses motores extraem da página. Sem H3, o artigo sai sem nada disso.
+  else if (faqHeadings < 3) problems.push(`FAQ com ${faqHeadings} pergunta(s) em H3 (mínimo 3 — sem H3 o FAQPage não é gerado)`);
 
   if (/\[cite:\s*\d/.test(body)) problems.push('artefato de grounding "[cite: N]" no texto');
   if (/vertexaisearch\.cloud\.google\.com/.test(body)) problems.push('URL intermediária do vertexaisearch no texto');

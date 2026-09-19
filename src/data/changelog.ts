@@ -13,6 +13,62 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'trump-recua-orgao-fiscalizador-ia-2026-09',
+    date: '2026-09',
+    title: 'Trump recua de órgão fiscalizador de IA após ligações de Zuckerberg, Musk e Huang',
+    developer: 'Governo dos EUA',
+    category: 'Pesquisa',
+    description: 'Segundo reportagem do Wall Street Journal citada pela Forbes em 17 de setembro de 2026, Mark Zuckerberg (Meta), Elon Musk (SpaceX) e Jensen Huang (Nvidia) ligaram separadamente para Donald Trump pedindo que ele não avançasse com a proposta de órgão fiscalizador de IA apresentada por Demis Hassabis, da Google DeepMind, em julho.',
+    highlights: [
+      'O órgão seria modelado na FINRA, financiado pelos laboratórios mas respondendo a supervisão federal, revisando modelos até 30 dias antes do lançamento.',
+      'Os três executivos argumentaram que o desenho concentraria poder regulatório em OpenAI, Anthropic e Google DeepMind.',
+      'Trump não avançou com a proposta após as conversas, que ocorreram dias após o lançamento do DeepMind Institute.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'xai-grok-build-agente-terminal-lancamento-2026-09',
+    date: '2026-09',
+    title: 'xAI lança o Grok Build, agente de codificação para terminal, e adiciona memória entre sessões',
+    developer: 'xAI',
+    category: 'Lançamento',
+    description: 'A xAI lançou o Grok Build, um agente de codificação que roda direto no terminal (CLI), inicialmente restrito a assinantes do plano SuperGrok Heavy (US$ 300/mês). Em 16 de setembro de 2026, a ferramenta ganhou memória entre sessões, registrando convenções e decisões do projeto.',
+    highlights: [
+      'O modelo dedicado Grok Build 0.1 custa US$ 1,00/milhão de tokens de entrada e US$ 2,00/milhão de saída via API.',
+      'A memória entre sessões grava notas em markdown sobre convenções e decisões do projeto, relidas automaticamente em sessões futuras.',
+      'Grok Build entra numa disputa já concorrida com Claude Code, Codex CLI e o Composer 2.5 do Cursor.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'cursor-projects-agente-coordenador-lancamento-2026-09',
+    date: '2026-09',
+    title: 'Cursor lança em beta o Projects, agente coordenador que delega tarefas a agentes executores',
+    developer: 'Anysphere (SpaceXAI)',
+    category: 'Lançamento',
+    description: 'Em 10 de setembro de 2026, o Cursor lançou em beta o Projects: um agente que não escreve código diretamente, mas planeja e delega o trabalho a agentes executores, mantendo contexto por meses numa mesma tarefa.',
+    highlights: [
+      'O agente coordenador roda na nuvem e continua o trabalho mesmo com o laptop fechado.',
+      'É voltado a tarefas longas, como uma migração ou o desenvolvimento de uma feature inteira.',
+      'Chega meses após o Origin, a plataforma de hospedagem de código nativa para agentes lançada em agosto.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'runway-team-plan-adobe-plugins-lancamento-2026-09',
+    date: '2026-09',
+    title: 'Runway lança Team Plan e plugins para Adobe Premiere Pro e After Effects',
+    developer: 'Runway',
+    category: 'Lançamento',
+    description: 'Em 4 de setembro de 2026, a Runway lançou o Team Plan, voltado a equipes de 2 a 9 pessoas com créditos compartilhados. Em 8 de setembro, lançou plugins para Adobe Premiere Pro e After Effects, levando a geração de vídeo com IA para dentro do fluxo de edição profissional.',
+    highlights: [
+      'O Team Plan custa US$ 69/assento/mês (US$ 55/assento/mês anual), com 6.900 créditos por assento em um pool compartilhado e 1TB de armazenamento.',
+      'Os plugins da Adobe permitem gerar vídeo e restilizar imagens com o Aleph 2 direto na timeline do Premiere e do After Effects.',
+      'O resultado da geração é inserido diretamente na composição ou sequência em edição, sem exportar e reimportar arquivos.',
+    ],
+    impact: 'Baixo',
+  },
+  {
     id: 'deepmind-institute-agi-lancamento-2026-09',
     date: '2026-09',
     title: 'Google DeepMind lança o DeepMind Institute para debater riscos da AGI',

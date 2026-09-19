@@ -8225,4 +8225,34 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um professor que explica conceitos técnicos de IA em camadas de profundidade crescente. Quero entender o termo "[Termo técnico: Ex: engenharia de contexto, apodrecimento de contexto, subagentes]" partindo do básico até uma explicação mais técnica.\n\nMeu nível de partida: [Ex: nunca ouvi falar, já ouvi mas não sei aplicar, uso no trabalho mas quero aprofundar]\n\nMe entregue em três camadas:\n\n1. **Camada 1 — explicação de uma frase:** o conceito numa única frase, sem jargão, como se estivesse explicando para alguém fora da área de tecnologia.\n2. **Camada 2 — explicação com exemplo prático:** dois parágrafos com um exemplo concreto de onde esse conceito aparece no dia a dia de quem usa ou constrói com IA.\n3. **Camada 3 — explicação técnica:** a definição mais precisa, com os termos correlatos que valem a pena pesquisar em seguida, e uma armadilha comum de quem aplica o conceito errado.\n\nTermine indicando se esse é um conceito estável (deve continuar relevante por anos) ou um termo de tendência recente que pode perder força — e por quê.',
     tags: ['Educação', 'IA & Automação', 'Aprendizado', 'Conceitos Técnicos'],
   },
+
+  // NEGÓCIOS
+  {
+    id: 'negocios-checklist-orgao-fiscalizador-ia',
+    title: 'Checklist de Impacto de Notícias sobre Regulação de IA no Seu Negócio',
+    category: 'Negócios',
+    description: 'Transforme uma notícia sobre regulação, autorregulação ou órgão fiscalizador de IA em uma lista prática do que sua empresa precisa (ou não precisa) fazer a respeito.',
+    template: 'Você é um consultor que ajuda empresas a separar sinal de ruído em notícias sobre regulação de IA. Li a seguinte notícia e quero saber se ela exige alguma ação da minha empresa.\n\nResumo da notícia: [Cole aqui um resumo da notícia sobre regulação, autorregulação setorial ou órgão fiscalizador de IA]\n\nContexto da minha empresa:\n- Setor: [Ex: varejo, saúde, fintech, educação]\n- Como usamos IA hoje: [Ex: chatbot de atendimento, geração de conteúdo, modelo de fronteira via API]\n- Porte: [Ex: startup, PME, grande empresa]\n\nMe entregue:\n\n1. **O que mudou de fato:** separe o que já é regra vigente do que ainda é proposta, debate ou pressão política sem efeito prático imediato.\n2. **Quem é afetado:** a notícia atinge diretamente laboratórios de IA, ou also empresas que apenas usam modelos de terceiros como a minha?\n3. **Ação recomendada:** nenhuma, monitorar, ou agir agora — com justificativa.\n4. **Prazo realista:** se houver alguma ação a tomar, em quanto tempo isso normalmente se torna obrigatório (histórico de casos parecidos).',
+    tags: ['Regulação de IA', 'Governança', 'Compliance', 'IA & Automação'],
+  },
+
+  // DESENVOLVIMENTO
+  {
+    id: 'dev-notas-memoria-agente-codificacao',
+    title: 'Estruturar Notas de Memória para Agentes de Codificação em Sessões Longas',
+    category: 'Desenvolvimento',
+    description: 'Gere um arquivo de notas em markdown para agentes de codificação com memória entre sessões (como Claude Code, Grok Build ou Cursor) registrarem decisões e convenções de um projeto.',
+    template: 'Você é um engenheiro sênior documentando decisões técnicas para que um agente de codificação com memória entre sessões (Ex: Claude Code, Grok Build, Cursor) leia antes de continuar o trabalho.\n\nContexto do projeto: [Nome e breve descrição do projeto/repositório]\nO que foi decidido nesta sessão: [Ex: escolha de biblioteca, padrão de nomenclatura, arquitetura de uma feature]\nO que ainda está pendente: [Ex: falta migrar um módulo, falta escrever testes de X]\nArmadilhas já descobertas: [Ex: uma dependência que quebra o build, um endpoint que exige autenticação especial]\n\nGere um arquivo de notas em markdown, organizado em seções curtas ("Convenções", "Decisões", "Pendências", "Armadilhas conhecidas"), escrito para ser lido por um modelo de IA no início da próxima sessão — direto ao ponto, sem introduções, priorizando o que evita retrabalho.',
+    tags: ['Agentes de Codificação', 'IA & Automação', 'Produtividade', 'Boas Práticas'],
+  },
+
+  // EDUCAÇÃO
+  {
+    id: 'educacao-debate-agi-perspectivas',
+    title: 'Simulação de Debate sobre se a AGI Já Chegou',
+    category: 'Educação',
+    description: 'Peça uma simulação de debate estruturado entre diferentes posições públicas sobre se a inteligência artificial geral (AGI) já foi alcançada, para entender os argumentos de cada lado.',
+    template: 'Você vai simular um debate estruturado sobre a pergunta: "A AGI (Inteligência Artificial Geral) já foi alcançada?"\n\nApresente três posições diferentes, cada uma com seus argumentos mais fortes:\n\n1. **Posição "já chegou":** os argumentos de quem defende que os modelos de fronteira atuais já atendem a critérios razoáveis de AGI.\n2. **Posição "ainda não chegou":** os argumentos de quem, mesmo reconhecendo os avanços, aponta lacunas concretas de capacidade ou de definição que ainda faltam.\n3. **Posição cética quanto ao próprio termo:** os argumentos de quem considera "AGI" um termo mal definido ou usado mais para fins de marketing do que como um marco técnico claro.\n\nPara cada posição, cite o tipo de evidência que costuma ser usado a favor dela (benchmarks, capacidades demonstradas, definições formais de laboratórios) e a maior fraqueza do argumento.\n\nTermine com: qual pergunta eu deveria fazer para testar, na prática, se uma ferramenta de IA que uso hoje se aproxima ou está longe de AGI.',
+    tags: ['AGI', 'Educação', 'IA & Automação', 'Pensamento Crítico'],
+  },
 ];

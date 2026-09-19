@@ -82,13 +82,13 @@ A semana de 19 e 20 de junho de 2026 pode ser lembrada como o momento em que a c
 
 ## Perguntas Frequentes
 
-**Por que John Jumper é tão importante para o mundo da IA?**
+### Por que John Jumper é tão importante para o mundo da IA?
 Jumper liderou o desenvolvimento do AlphaFold2, o sistema de IA que resolveu um dos maiores problemas em aberto da biologia — a predição da estrutura tridimensional de proteínas a partir de sequências genéticas. Por isso, dividiu o Prêmio Nobel de Química de 2024 com Demis Hassabis. Sua expertise combina aprendizado profundo, biologia computacional e arquiteturas transformer em escala, o que o torna um dos perfis mais raros e cobiçados de toda a indústria de IA.
 
-**O que Jumper vai fazer na Anthropic?**
+### O que Jumper vai fazer na Anthropic?
 A Anthropic não anunciou oficialmente cargo ou responsabilidades. O que se sabe é que a empresa vem investindo em 2026 em infraestrutura de IA para ciência — incluindo wet labs e parcerias com o Allen Institute e o Howard Hughes Medical Institute —, o que sugere fortemente que Jumper atuará nessa frente de IA aplicada à biologia e às ciências da vida.
 
-**Qual é o impacto real para o Google DeepMind?**
+### Qual é o impacto real para o Google DeepMind?
 A saída de Jumper, combinada com a de Noam Shazeer para a OpenAI na mesma semana, representa a maior perda de talento científico de fronteira na história do laboratório. Além do impacto simbólico — Jumper e Hassabis dividiram o Nobel —, a perda fragiliza o posicionamento do Google como o laboratório onde "a ciência séria de IA acontece", exatamente no momento em que a Anthropic avança com uma agenda científica estruturada.
 
 ## Fontes e Referências

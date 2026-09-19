@@ -66,13 +66,13 @@ Para a comunidade técnica, este evento ressalta a importância de os desenvolve
 
 ## Perguntas Frequentes
 
-**1. Por que a Anthropic suspendeu o acesso a Fable 5 e Mythos 5?**
+### Por que a Anthropic suspendeu o acesso a Fable 5 e Mythos 5?
 A Anthropic suspendeu o acesso por ordem do governo dos EUA, que citou preocupações de segurança nacional relacionadas a um método de "jailbreak" em Fable 5.
 
-**2. O que a Anthropic disse sobre as vulnerabilidades?**
+### O que a Anthropic disse sobre as vulnerabilidades?
 A Anthropic discorda da gravidade das vulnerabilidades, afirmando que são menores, já conhecidas e que outros modelos públicos de IA também conseguem detectá-las sem a necessidade de um bypass.
 
-**3. Todos os modelos da Anthropic foram afetados?**
+### Todos os modelos da Anthropic foram afetados?
 Não, apenas Fable 5 e Mythos 5 foram afetados. O acesso a todos os outros modelos da Anthropic permanece inalterado.
 
 ## Fontes e Referências

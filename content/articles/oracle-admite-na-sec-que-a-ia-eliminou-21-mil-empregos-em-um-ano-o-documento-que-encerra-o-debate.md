@@ -1,6 +1,6 @@
 ---
 title: "Oracle Admite na SEC que a IA Eliminou 21 Mil Empregos em Um Ano: o Documento que Encerra o Debate"
-description: "Oracle reduziu sua força de trabalho em 13%, de 162 mil para 141 mil funcionários, e admitiu oficialmente à SEC que a adoção de IA foi responsável pelos cortes."
+description: "Oracle cortou 13% da força de trabalho, de 162 mil para 141 mil funcionários, e admitiu à SEC que a adoção de IA foi responsável pelas demissões."
 category: noticias
 tags:
   - Inteligência Artificial

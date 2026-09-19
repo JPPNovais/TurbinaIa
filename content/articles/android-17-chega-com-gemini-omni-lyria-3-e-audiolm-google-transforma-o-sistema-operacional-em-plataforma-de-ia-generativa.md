@@ -84,13 +84,13 @@ O Android 17 também endereça uma dívida técnica real: a partir do nível 37 
 
 ## Perguntas Frequentes
 
-**O Android 17 está disponível para todos os Android?**
+### O Android 17 está disponível para todos os Android?
 Não imediatamente. O lançamento inicial foi para a maioria dos dispositivos Pixel compatíveis. Outros fabricantes receberão o Android 17 nos próximos meses, conforme confirmado pelo [blog de desenvolvedores da Google](https://developer.android.com/blog/posts/android-17-is-here). O código-fonte já está disponível no Android Open Source Project (AOSP).
 
-**O Lyria 3 gera músicas completas ou apenas fragmentos?**
+### O Lyria 3 gera músicas completas ou apenas fragmentos?
 Por enquanto, as faixas geradas no app Gemini têm 30 segundos de duração, com letra e arte de capa incluídas. O recurso está disponível para usuários com 18 anos ou mais, com limites de geração maiores para assinantes Gemini. Futuramente, o Lyria 3 deve suportar faixas mais longas e outros tipos de entrada de áudio além de voz.
 
-**O Gemini Omni substitui outras ferramentas de edição de vídeo?**
+### O Gemini Omni substitui outras ferramentas de edição de vídeo?
 Ainda não. O Gemini Omni Flash está posicionado como ferramenta de criação acessível e iterativa — ideal para remixar conteúdo existente e realizar edições criativas por linguagem natural. Fluxos de trabalho profissionais que exigem controle granular de linha do tempo, colorização precisa ou efeitos avançados continuam dependendo de software dedicado. A própria Google descreve o Omni como ponto de partida, não substituto.
 
 ## Fontes e Referências

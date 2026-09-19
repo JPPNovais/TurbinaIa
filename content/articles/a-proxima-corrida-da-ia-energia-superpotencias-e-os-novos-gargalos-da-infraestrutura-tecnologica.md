@@ -79,13 +79,13 @@ Para entender melhor como a IA pode otimizar as operações de TI e as tendênci
 
 ## Perguntas Frequentes
 
-**1. Qual o principal gargalo para a expansão da IA atualmente?**
+### Qual o principal gargalo para a expansão da IA atualmente?
 O principal gargalo é a **disponibilidade de energia elétrica** e a infraestrutura dos data centers para suportar a demanda "imensa" e crescente das cargas de trabalho de IA.
 
-**2. Como o Brasil se destaca na corrida da IA em termos de infraestrutura?**
+### Como o Brasil se destaca na corrida da IA em termos de infraestrutura?
 O Brasil se destaca pela sua **abundância de energia limpa** (mais de 90% renovável) e laços comerciais crescentes com a China, tornando-o um destino atraente para investimentos em data centers sustentáveis.
 
-**3. O que são os "elementos de irracionalidade" no boom da IA mencionados pelo CEO do Google?**
+### O que são os "elementos de irracionalidade" no boom da IA mencionados pelo CEO do Google?
 Sundar Pichai, CEO do Google, refere-se aos sinais de **supervalorização de empresas e investimentos** no setor de IA, lembrando a "exuberância irracional" que precedeu a bolha da internet no início dos anos 2000.
 
 ## Fontes e Referências

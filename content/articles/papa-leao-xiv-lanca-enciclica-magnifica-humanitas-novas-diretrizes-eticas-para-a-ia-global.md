@@ -77,13 +77,13 @@ Para aprofundar seu conhecimento sobre os impactos da IA e suas aplicações ét
 
 ## Perguntas Frequentes (FAQ)
 
-**O que é a encíclica "Magnifica Humanitas" e qual seu tema principal?**
+### O que é a encíclica "Magnifica Humanitas" e qual seu tema principal?
 A "Magnifica Humanitas" é a primeira encíclica do Papa Leão XIV, lançada em 25 de maio de 2026, com o tema principal de "salvaguardar a pessoa humana na era da Inteligência Artificial" e estabelecer novas diretrizes éticas para a IA global.
 
-**Quais são as principais preocupações do Papa Leão XIV em relação à IA?**
+### Quais são as principais preocupações do Papa Leão XIV em relação à IA?
 As principais preocupações do Papa incluem a falta de regulamentação, a disseminação de desinformação, a concentração de poder em mãos privadas, o impacto no trabalho digno, a proteção de crianças e, especialmente, o uso de sistemas de armas autônomas que escapam ao controle humano, alertando para o risco de uma "guerra sem fim".
 
-**A encíclica aborda a "guerra justa"?**
+### A encíclica aborda a "guerra justa"?
 Sim, de forma marcante. O Papa Leão XIV fez uma das declarações mais claras de um pontífice, repudiando a teoria da guerra justa como "ultrapassada" e afirmando que "o uso da força, da violência e das armas reflete uma pobreza relacional" com consequências desastrosas.
 
 ## Fontes e Referências

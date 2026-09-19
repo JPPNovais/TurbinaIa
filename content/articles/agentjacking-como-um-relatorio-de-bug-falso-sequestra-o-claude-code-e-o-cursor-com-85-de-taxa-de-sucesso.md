@@ -111,13 +111,13 @@ Como a Tenet resumiu com clareza na conclusão do seu relatório: "O único luga
 
 ## Perguntas Frequentes
 
-**O que é exatamente um Sentry DSN e por que ele é público?**
+### O que é exatamente um Sentry DSN e por que ele é público?
 DSN (Data Source Name) é a chave que o Sentry exige que seja embutida no JavaScript do frontend ou em apps móveis para que erros dos usuários finais sejam enviados à plataforma. Por design, é uma credencial de escrita pública — sem ela, a telemetria do lado do cliente não funcionaria. O problema é que isso significa que qualquer pessoa pode usá-la para injetar eventos falsos.
 
-**O ataque já está sendo usado ativamente fora dos testes controlados?**
+### O ataque já está sendo usado ativamente fora dos testes controlados?
 A Tenet Security realizou testes controlados em mais de 100 organizações e confirmou a execução do código em um ambiente Fortune 100. A empresa não afirmou que há exploração ativa e em larga escala além dos seus testes, mas a técnica é simples o suficiente para ser replicada por qualquer ator malicioso com acesso a um DSN público.
 
-**Como eu sei se meu agente de IA está vulnerável ao Agentjacking?**
+### Como eu sei se meu agente de IA está vulnerável ao Agentjacking?
 Se você usa Claude Code, Cursor ou Codex com a integração do servidor MCP do Sentry ativada e seu projeto tem um DSN exposto publicamente (o que é quase certo se você usa Sentry em frontend), você está no perfil de risco. O repositório agent-jackstop da Tenet Security oferece configurações endurecidas para mitigar o risco imediatamente.
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: "G7 2026: Altman, Amodei e Hassabis Propõem Fórum Global de IA e Coalizão Liderada pelos EUA para Regular Modelos de Fronteira"
-description: "Em almoço fechado em Évian, os CEOs da OpenAI, Anthropic e Google DeepMind apresentaram a líderes do G7 um plano inédito para governança internacional da IA"
+description: "Em Évian, os CEOs da OpenAI, Anthropic e Google DeepMind apresentaram a líderes do G7 um plano inédito de governança internacional da IA de fronteira."
 category: noticias
 tags:
   - G7 2026
@@ -96,13 +96,13 @@ Para quem quer comparar as capacidades e o posicionamento atual dos principais m
 
 ## Perguntas Frequentes
 
-**O G7 2026 produziu algum acordo concreto sobre regulação de IA?**
+### O G7 2026 produziu algum acordo concreto sobre regulação de IA?
 Não. A reunião não gerou compromissos vinculantes nem anúncios regulatórios formais. O único resultado tangível foi o anúncio de Macron de que uma plataforma entre democracias ocidentais seria criada em até um mês, com novos encontros planejados para setembro de 2026.
 
-**O que exatamente Amodei e Hassabis propuseram no G7?**
+### O que exatamente Amodei e Hassabis propuseram no G7?
 Uma coalizão liderada pelos EUA para estabelecer regras internacionais para IA, com foco em três áreas: acesso estruturado a modelos de fronteira, coordenação do comércio de chips excluindo a China, e cooperação em riscos cibernéticos e de bioterrorismo. O Canadá concordou que os EUA poderiam liderar tal coalizão.
 
-**Por que a Anthropic estava no centro das atenções no G7?**
+### Por que a Anthropic estava no centro das atenções no G7?
 Porque cinco dias antes da cúpula, o governo Trump havia forçado a Anthropic a desativar globalmente seus dois modelos mais avançados — Fable 5 e Mythos 5 — por razões de segurança nacional, criando um episódio que dominou as conversas sobre acesso a IA de fronteira durante toda a reunião e transformou Amodei no executivo mais observado do encontro.
 
 ## Fontes e Referências

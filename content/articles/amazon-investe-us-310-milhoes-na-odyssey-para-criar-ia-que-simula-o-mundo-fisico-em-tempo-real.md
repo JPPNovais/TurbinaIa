@@ -113,13 +113,13 @@ Essa tensão é real, mas também calculada. Até que os chips Trainium estejam 
 
 ## Perguntas Frequentes
 
-**O que é um world model e como ele difere de modelos de linguagem como o ChatGPT?**
+### O que é um world model e como ele difere de modelos de linguagem como o ChatGPT?
 World models são sistemas de IA treinados em física, relações causais e dados espaciais — não em texto. Enquanto um LLM como o ChatGPT prevê a próxima palavra numa sequência, um world model prevê o próximo estado de um ambiente físico. Isso os torna especialmente úteis para robótica, simulação e entretenimento interativo.
 
-**Por que a Amazon investiu na Odyssey se a Nvidia também é investidora?**
+### Por que a Amazon investiu na Odyssey se a Nvidia também é investidora?
 A Amazon entrou na rodada para garantir que seus chips Trainium sejam usados pela Odyssey como infraestrutura preferencial, acelerando o desenvolvimento do Trainium como alternativa competitiva ao domínio da Nvidia no mercado de aceleradores de IA. É uma aposta estratégica em market share de chips, não apenas em retorno financeiro.
 
-**Quando os world models estarão disponíveis para uso comercial em larga escala?**
+### Quando os world models estarão disponíveis para uso comercial em larga escala?
 A Odyssey já tem uma demonstração pública operacional desde maio de 2025, com custo de US$ 2 a US$ 4 por hora de uso. Mas a qualidade ainda está longe do nível necessário para aplicações de produção crítica. Com US$ 310 milhões em caixa, a empresa projeta um "momento GPT-3" para o setor — uma demonstração que mude a percepção do mercado sobre o que é possível. O prazo mais provável para aplicações robustas em robótica e entretenimento é entre 2027 e 2028.
 
 ---

@@ -98,13 +98,13 @@ Em certo sentido, Shazeer ajudou a criar a tecnologia que tanto o Google quanto 
 
 ## Perguntas Frequentes
 
-**Qual será o papel de Noam Shazeer na OpenAI?**
+### Qual será o papel de Noam Shazeer na OpenAI?
 Segundo o [Silicon Republic](https://www.siliconrepublic.com/business/googles-noam-shazeer-leaving-organisation-join-rival-openai), ele atuará como líder de pesquisa em arquitetura de IA, focado em estudar e definir como construir modelos de IA de próxima geração — um cargo de pesquisa fundamental, não de gestão de produto.
 
-**Quando Shazeer anunciou sua saída do Google?**
+### Quando Shazeer anunciou sua saída do Google?
 O anúncio foi feito em 18 de junho de 2026 via post no X (antigo Twitter), conforme reportado de forma independente por TechCrunch, Bloomberg, 9to5Google e CTech. O anúncio foi divulgado inicialmente em 17 de junho, horário do Pacífico.
 
-**Qual é a importância de Noam Shazeer para a história da IA?**
+### Qual é a importância de Noam Shazeer para a história da IA?
 Shazeer é um dos coautores do paper "Attention Is All You Need" (2017), que introduziu a arquitetura Transformer — a base tecnológica de praticamente toda IA generativa moderna, incluindo ChatGPT, Gemini e Claude. Sem essa contribuição, o boom atual da IA generativa simplesmente não existiria na forma que conhecemos.
 
 ---

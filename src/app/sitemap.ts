@@ -7,12 +7,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Fetch all articles
   const articles = await getAllArticlesMetadata();
   
-  const articleEntries = articles.map((article) => ({
-    url: `${baseUrl}/blog/${article.slug}`,
-    lastModified: new Date(article.date),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }));
+  // O `lastModified` precisa refletir a última revisão real do artigo, não só a
+  // data de publicação: é esse sinal que faz o Google reindexar um post
+  // atualizado. Artigos dos últimos 30 dias ainda recebem tráfego de notícia e
+  // merecem prioridade e frequência de rastreio maiores.
+  const now = Date.now();
+  const DIAS = 24 * 60 * 60 * 1000;
+
+  const articleEntries = articles.map((article) => {
+    const publicado = new Date(article.date);
+    const modificado = article.updatedAt ? new Date(article.updatedAt) : publicado;
+    const idadeEmDias = (now - publicado.getTime()) / DIAS;
+
+    return {
+      url: `${baseUrl}/blog/${article.slug}`,
+      lastModified: modificado,
+      changeFrequency: (idadeEmDias <= 30 ? 'daily' : 'monthly') as 'daily' | 'monthly',
+      priority: idadeEmDias <= 30 ? 0.9 : 0.7,
+    };
+  });
 
   const staticPages = [
     {

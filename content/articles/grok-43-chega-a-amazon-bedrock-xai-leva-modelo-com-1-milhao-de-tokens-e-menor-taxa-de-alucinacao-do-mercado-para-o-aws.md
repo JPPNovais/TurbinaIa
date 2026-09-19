@@ -1,6 +1,6 @@
 ---
 title: "Grok 4.3 Chega à Amazon Bedrock: xAI Leva Modelo com 1 Milhão de Tokens e Menor Taxa de Alucinação do Mercado para o AWS"
-description: "A xAI estreia o Grok 4.3 no Amazon Bedrock com janela de contexto de 1 milhão de tokens, raciocínio configurável e liderança em benchmarks anti-alucinação."
+description: "A xAI estreia o Grok 4.3 no Amazon Bedrock com 1 milhão de tokens de contexto, raciocínio configurável e liderança em benchmarks anti-alucinação."
 category: noticias
 tags:
   - Grok
@@ -130,13 +130,13 @@ Tanto a [AWS](https://aws.amazon.com/about-aws/whats-new/2026/06/grok-amazon-bed
 
 ## Perguntas Frequentes
 
-**O Grok 4.3 está disponível no Brasil via Amazon Bedrock?**
+### O Grok 4.3 está disponível no Brasil via Amazon Bedrock?
 A disponibilidade inicial é na região `us-west-2` (Oregon). A [documentação da AWS](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-grok-4-3.html) não lista regiões brasileiras entre as suportadas no lançamento. Empresas com requisitos de residência de dados no Brasil devem verificar a política de inferência geográfica do Bedrock antes de adotar o modelo.
 
-**O Grok 4.3 no Bedrock custa o mesmo que na API direta da xAI?**
+### O Grok 4.3 no Bedrock custa o mesmo que na API direta da xAI?
 Sim, a [xAI confirma](https://docs.x.ai/developers/models/grok-4.3) o mesmo preço-base: US$ 1,25/1M tokens de entrada e US$ 2,50/1M tokens de saída. A diferença está na infraestrutura: o Bedrock acrescenta a camada de governança da AWS (IAM, CloudTrail, criptografia gerenciada), que pode justificar o uso mesmo sem desconto adicional para organizações com exigências regulatórias.
 
-**O que diferencia o raciocínio "none" do "high" em termos práticos de custo?**
+### O que diferencia o raciocínio "none" do "high" em termos práticos de custo?
 No modo `none`, o modelo responde diretamente sem etapa interna de chain-of-thought — mais rápido e com menor consumo de tokens. No modo `high`, o modelo gera tokens de raciocínio interno antes de produzir a resposta final, o que eleva o custo por requisição mas melhora a qualidade em tarefas complexas. A [xAI documenta](https://docs.x.ai/developers/models/grok-4.3) que tokens de raciocínio são cobrados como tokens de saída normais. Para estimativas de custo por caso de uso, use a [Calculadora de Custos](/calculadora).
 
 ---

@@ -93,13 +93,13 @@ Se o modelo de assinatura se sustentar — a pergunta que a TechCrunch coloca ex
 
 ## Perguntas Frequentes
 
-**O Google Home Speaker chegará ao Brasil?**
+### O Google Home Speaker chegará ao Brasil?
 Não há data confirmada para o Brasil. O lançamento em 25 de junho de 2026 abrange 18 países, todos na América do Norte, Europa, Ásia-Pacífico e Oceania. Usuários brasileiros precisam acompanhar anúncios futuros da Google Brasil.
 
-**O Google Assistant vai parar de funcionar nos dispositivos antigos?**
+### O Google Assistant vai parar de funcionar nos dispositivos antigos?
 O Gemini for Home substituirá o Google Assistant nos dispositivos compatíveis ao longo do tempo, sem custo para funções básicas. Recursos avançados como Gemini Live exigirão assinatura Google Home Premium. O cronograma exato de migração ainda não foi divulgado oficialmente.
 
-**Vale a pena assinar o Google Home Premium?**
+### Vale a pena assinar o Google Home Premium?
 Depende do seu uso. A maioria das melhorias conversacionais do Gemini — comandos de múltiplos passos, memória de curto prazo, correções de frase — estão disponíveis sem assinatura. O plano de US$ 10/mês faz mais sentido para quem quer Gemini Live para conversas abertas. O plano de US$ 20/mês justifica-se para quem tem câmeras Nest e quer resumos automáticos de atividade doméstica.
 
 ---

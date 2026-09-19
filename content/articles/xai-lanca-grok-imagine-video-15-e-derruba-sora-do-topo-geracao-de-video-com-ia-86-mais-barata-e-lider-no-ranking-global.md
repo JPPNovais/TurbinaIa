@@ -121,13 +121,13 @@ A xAI sinalizou que um Pro Mode com resolução superior está no roadmap, mas s
 
 ## Perguntas Frequentes
 
-**O Grok Imagine Video 1.5 é gratuito?**
+### O Grok Imagine Video 1.5 é gratuito?
 Sim, o acesso básico em grok.com não exige assinatura X Premium. O plano SuperGrok (US$ 30/mês) libera limites maiores de geração. Via API, a precificação é US$ 0,08 por segundo em 480p ou US$ 4,20 por minuto em 720p.
 
-**Por que o Grok Imagine Video 1.5 produz movimentos mais coerentes que concorrentes?**
+### Por que o Grok Imagine Video 1.5 produz movimentos mais coerentes que concorrentes?
 Pela arquitetura Aurora, que gera cada quadro em sequência condicionado a todos os anteriores — ao contrário de modelos de difusão que tratam os quadros de forma mais independente. Isso mantém trajetórias de câmera, posições de objetos e iluminação consistentes ao longo do clipe, eliminando os artefatos de "quadros soltos" comuns em gerações anteriores.
 
-**O modelo suporta 1080p?**
+### O modelo suporta 1080p?
 Não ainda. O teto atual é 720p, por razões estruturais da arquitetura Aurora. A xAI anunciou que um Pro Mode com resolução superior está no roadmap, mas sem data confirmada de lançamento.
 
 ## Fontes e Referências

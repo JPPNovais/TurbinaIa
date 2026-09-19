@@ -1,6 +1,6 @@
 ---
 title: "Astra, Modelo Ainda Não Lançado da OpenAI, Resolve 10 Problemas Matemáticos Abertos há Décadas por US$ 2 Mil"
-description: "OpenAI diz que seu modelo Astra resolveu 10 problemas matemáticos abertos há décadas, com provas verificáveis em Lean, por cerca de US$ 2 mil em computação."
+description: "OpenAI diz que o modelo Astra resolveu 10 problemas matemáticos abertos há décadas, com provas verificáveis em Lean, por cerca de US$ 2 mil em computação."
 category: noticias
 tags:
   - OpenAI

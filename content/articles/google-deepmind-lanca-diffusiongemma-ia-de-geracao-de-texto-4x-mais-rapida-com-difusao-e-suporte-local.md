@@ -127,13 +127,13 @@ Para aprofundar seu conhecimento sobre os termos técnicos abordados neste artig
 
 ## Perguntas Frequentes
 
-**1. O que é DiffusionGemma?**
+### O que é DiffusionGemma?
 DiffusionGemma é um modelo de linguagem experimental de código aberto do Google DeepMind que gera texto usando um método de difusão paralelo, resultando em até 4x mais velocidade de inferência em GPUs locais comparado a modelos autoregressivos.
 
-**2. Qual a principal diferença entre DiffusionGemma e os modelos Gemma 4 tradicionais?**
+### Qual a principal diferença entre DiffusionGemma e os modelos Gemma 4 tradicionais?
 A principal diferença é a abordagem de geração de texto: enquanto os modelos Gemma 4 tradicionais geram texto sequencialmente (token por token), o DiffusionGemma usa difusão para gerar blocos de 256 tokens em paralelo, o que o torna significativamente mais rápido para inferência local, mas com uma qualidade de saída ligeiramente inferior.
 
-**3. Para quais tipos de tarefas o DiffusionGemma é mais adequado?**
+### Para quais tipos de tarefas o DiffusionGemma é mais adequado?
 É ideal para tarefas não-lineares que se beneficiam da capacidade de corrigir e editar texto em um bloco inteiro, como inserção de texto, preenchimento de lacunas em código, edição in-line e trabalhos com dados estruturados. Também é otimizado para fluxos de trabalho locais e interativos, onde a velocidade é crucial.
 
 ## Fontes e Referências

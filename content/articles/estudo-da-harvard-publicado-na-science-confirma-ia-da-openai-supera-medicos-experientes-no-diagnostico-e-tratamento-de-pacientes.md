@@ -109,13 +109,13 @@ O estudo de Harvard representa, portanto, um marco: não porque prova que a IA �
 
 ## Perguntas Frequentes
 
-**O modelo de IA da OpenAI pode substituir médicos no diagnóstico?**
+### O modelo de IA da OpenAI pode substituir médicos no diagnóstico?
 Não, segundo os próprios autores do estudo. Os resultados indicam que a IA tem potencial para auxiliar médicos — especialmente na triagem inicial —, mas os pesquisadores enfatizam que ainda não existe estrutura formal de responsabilização e que os pacientes desejam ter humanos guiando decisões críticas de saúde.
 
-**Qual modelo da OpenAI foi avaliado no estudo de Harvard?**
+### Qual modelo da OpenAI foi avaliado no estudo de Harvard?
 O estudo avaliou principalmente o o1 preview, o primeiro modelo da OpenAI com capacidade de raciocínio passo a passo, e também o modelo 4o. O o1 se saiu melhor em quase todos os pontos de avaliação, especialmente na triagem inicial, onde superou os dois médicos humanos com 67% de acerto contra 55% e 50%.
 
-**Quais são as principais limitações do estudo?**
+### Quais são as principais limitações do estudo?
 O experimento foi realizado apenas com dados textuais, sem incluir imagens, radiografias ou exames físicos. Além disso, os médicos humanos com quem a IA foi comparada eram internistas — não especialistas em medicina de emergência —, o que segundo críticos pode ter subestimado o desempenho humano em condições reais de pronto-socorro.
 
 ## Fontes e Referências

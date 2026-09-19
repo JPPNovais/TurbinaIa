@@ -98,13 +98,13 @@ Tammy Madsen, professora da Universidade Santa Clara, disse à [Fortune](https:/
 
 ## Perguntas Frequentes
 
-**Por que a SpaceX pagou tanto pelo Cursor?**
+### Por que a SpaceX pagou tanto pelo Cursor?
 O Cursor é a plataforma de codificação com IA de crescimento mais rápido do mundo — US$ 4 bilhões em receita anualizada, presente em 67% da Fortune 500. Para a SpaceX, que prometeu a investidores do IPO um mercado endereçável de US$ 22,7 trilhões em aplicações enterprise de IA, o Cursor é o produto mais direto para entregar essa promessa. O pagamento em ações (não em caixa) e a valorização explosiva do papel no IPO tornaram o custo efetivo do negócio praticamente nulo para os acionistas da SpaceX.
 
-**O Cursor vai continuar funcionando normalmente após a aquisição?**
+### O Cursor vai continuar funcionando normalmente após a aquisição?
 Até o fechamento do negócio, previsto para o terceiro trimestre de 2026, nada muda operacionalmente. Após a integração, a grande incógnita é se a SpaceX forçará o uso do Grok (da xAI) como modelo base, substituindo o acesso atual a Claude e GPT-4. Por enquanto, nem a SpaceX nem o Cursor se pronunciaram sobre mudanças no produto.
 
-**É mesmo a maior aquisição de startup de IA da história?**
+### É mesmo a maior aquisição de startup de IA da história?
 Sim, com a ressalva indicada pelo próprio Olhar Digital: é a maior aquisição de uma startup de capital de risco externamente financiada. A incorporação da xAI pela própria SpaceX, anunciada em fevereiro de 2026, foi uma operação de fusão interna entre entidades controladas por Musk — estruturalmente diferente de uma aquisição de mercado. O deal do Cursor, a US$ 60 bilhões, supera qualquer aquisição anterior de startup no setor de IA por uma margem expressiva.
 
 ---

@@ -98,13 +98,13 @@ Para acompanhar as ferramentas de IA que estão chegando ao mercado e comparar s
 
 ## Perguntas Frequentes
 
-**O que é o Optum Real da UnitedHealth?**
+### O que é o Optum Real da UnitedHealth?
 O Optum Real é um sistema de IA que permite a médicos e equipes de faturamento verificar em tempo real se um procedimento médico será coberto pelo plano de saúde do paciente, antes de realizá-lo. Segundo a Bloomberg, o sistema processou cerca de um bilhão de transações desde seu lançamento em 2025 e deve alcançar 2,5 bilhões até o final de 2026.
 
-**Por que a UnitedHealth está investindo tanto em IA agora?**
+### Por que a UnitedHealth está investindo tanto em IA agora?
 Após um colapso de lucros em 2025 — com ações caindo mais de um terço — a empresa colocou a IA no centro de sua estratégia de recuperação. A automação de processos administrativos, que custam ao setor US$ 80 bilhões ao ano, é vista como a principal alavanca para cortar despesas e melhorar a experiência dos segurados.
 
-**Quais são os riscos do uso de IA em planos de saúde?**
+### Quais são os riscos do uso de IA em planos de saúde?
 O principal risco documentado é o uso de algoritmos enviesados ou com alta taxa de erro para negar coberturas. Um processo judicial citado pelo CBS News acusa a UnitedHealth de usar um algoritmo com 90% de taxa de erro para recusar internações de idosos. Há também o risco de que os pacientes não saibam quando e como a IA está influenciando decisões sobre seu cuidado.
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: "IA no Brasil: Líder na América Latina em Adoção, mas 72% das Empresas Ainda Engatinham"
-description: "71% dos profissionais brasileiros usam IA no trabalho, líder global, mas 72% das empresas ainda estão no estágio inicial. Veja o paradoxo da inovação no Brasil."
+description: "71% dos profissionais brasileiros usam IA no trabalho, líder global, mas 72% das empresas seguem no estágio inicial. Veja o paradoxo da inovação no Brasil."
 category: noticias
 tags:
   - IA no Brasil

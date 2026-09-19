@@ -25,6 +25,10 @@ export interface ArticleMetadata {
   author: string;
   slug: string;
   readingTime: string;
+  /** Número real de palavras do corpo — usado no schema.org `wordCount` (Integer). */
+  wordCount: number;
+  /** Minutos de leitura como número — usado no `timeRequired` (ISO 8601). */
+  readingMinutes: number;
   isFeatured?: boolean;
 }
 
@@ -73,6 +77,15 @@ function extractFAQs(markdownContent: string): ArticleFAQ[] {
       currentQuestion = h3[1].replace(/[*_`]/g, '').trim();
       continue;
     }
+    // Rede de segurança: alguns artigos antigos escreviam a pergunta como uma
+    // linha inteira em negrito (`**1. Pergunta?**`) em vez de H3. Sem isto, o
+    // artigo perde o FAQPage inteiro sem quebrar nada — falha silenciosa.
+    const negrito = line.match(/^\*\*\s*(?:\d+[.)]\s*)?(.+?)\s*\*\*\s*$/);
+    if (negrito) {
+      flush();
+      currentQuestion = negrito[1].replace(/[*_`]/g, '').trim();
+      continue;
+    }
     if (currentQuestion) answerLines.push(line);
   }
   flush();
@@ -117,12 +130,15 @@ function extractHeadings(markdownContent: string): ArticleHeading[] {
 
 const articlesDirectory = path.join(process.cwd(), 'content/articles');
 
-// Helper to calculate reading time
-function calculateReadingTime(text: string): string {
+// Helper to calculate reading time. Devolve também os números crus: o
+// schema.org exige `wordCount` como Integer e `timeRequired` como duração
+// ISO 8601 — passar a string "8 min de leitura" invalida o rich result.
+function measureContent(text: string): { readingTime: string; wordCount: number; readingMinutes: number } {
   const wordsPerMinute = 200;
-  const words = text.trim().split(/\s+/).length;
-  const minutes = Math.max(1, Math.ceil(words / wordsPerMinute));
-  return `${minutes} min de leitura`;
+  const trimmed = text.trim();
+  const wordCount = trimmed ? trimmed.split(/\s+/).length : 0;
+  const readingMinutes = Math.max(1, Math.ceil(wordCount / wordsPerMinute));
+  return { readingTime: `${readingMinutes} min de leitura`, wordCount, readingMinutes };
 }
 
 // Ensure the directory exists
@@ -144,6 +160,7 @@ export async function getAllArticlesMetadata(): Promise<ArticleMetadata[]> {
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       
       const { data, content } = matter(fileContents);
+      const measured = measureContent(content);
       
       const metadata: ArticleMetadata = {
         title: data.title || 'Sem título',
@@ -155,7 +172,9 @@ export async function getAllArticlesMetadata(): Promise<ArticleMetadata[]> {
         coverImage: data.coverImage || '',
         author: data.author || 'Redator Turbina IA',
         slug,
-        readingTime: calculateReadingTime(content),
+        readingTime: measured.readingTime,
+        wordCount: measured.wordCount,
+        readingMinutes: measured.readingMinutes,
         isFeatured: !!data.isFeatured,
       };
       
@@ -192,6 +211,7 @@ export async function getArticleData(slug: string): Promise<Article | null> {
   const contentHtml = enhanceContentHtml(rawHtml);
   const headings = extractHeadings(content);
   const faqs = extractFAQs(content);
+  const measured = measureContent(content);
   
   const metadata: Article = {
     title: data.title || 'Sem título',
@@ -203,7 +223,9 @@ export async function getArticleData(slug: string): Promise<Article | null> {
     coverImage: data.coverImage || '',
     author: data.author || 'Redator Turbina IA',
     slug,
-    readingTime: calculateReadingTime(content),
+    readingTime: measured.readingTime,
+    wordCount: measured.wordCount,
+    readingMinutes: measured.readingMinutes,
     isFeatured: !!data.isFeatured,
     contentHtml,
     headings,

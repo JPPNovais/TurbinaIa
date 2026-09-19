@@ -105,13 +105,13 @@ A trajetória DeepSeek-Huawei redefine o cenário competitivo em pelo menos trê
 
 ## Perguntas Frequentes
 
-**O DeepSeek V4-Pro foi treinado exclusivamente em chips da Huawei?**
+### O DeepSeek V4-Pro foi treinado exclusivamente em chips da Huawei?
 Não. Conforme o próprio paper do modelo e relatos do [The Register](https://www.theregister.com/2026/04/24/deepseek_v4/), a DeepSeek validou o esquema de paralelismo do V4 tanto em GPUs da NVIDIA quanto em aceleradores Ascend da Huawei. A Huawei confirmou que seus chips foram usados em parte do treinamento do V4-Flash, mas a DeepSeek não especificou se o V4-Pro também usou hardware NVIDIA durante o pré-treinamento.
 
-**O corte de 75% nos preços é permanente?**
+### O corte de 75% nos preços é permanente?
 Sim. A DeepSeek anunciou em 23 de maio de 2026 que a redução é permanente, com a API do V4-Pro passando para a faixa de 0,025 a 6 yuans por milhão de tokens, conforme [reportado pelo The Daily Star](https://www.thedailystar.net/news/tech-startup/news/deepseek-cuts-flagship-ai-model-prices-75-amid-huawei-chip-expansion-4183371) com base em dados da Reuters. A empresa indicou que os preços podem cair ainda mais com a expansão dos supernodes Ascend 950 no segundo semestre de 2026.
 
-**O Ascend 950DT rivaliza com chips da NVIDIA?**
+### O Ascend 950DT rivaliza com chips da NVIDIA?
 Analistas citados pela TrendForce posicionam o Ascend 950PR (o antecessor imediato) em patamar equivalente a algo entre o NVIDIA H100 e o H200 em cargas de inferência. O 950DT, com 4 TB/s de bandwidth de memória, está sendo desenhado especificamente para decode e treinamento — workloads nos quais bandwidth é fator limitante. Uma comparação direta com H200 ou Blackwell GB200 em cenários reais ainda aguarda benchmarks independentes.
 
 ## Fontes e Referências

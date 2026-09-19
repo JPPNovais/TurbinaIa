@@ -115,7 +115,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     inLanguage: 'pt-BR',
     keywords: article.tags.join(', '),
     articleSection: article.category,
-    wordCount: article.readingTime,
+    // `wordCount` precisa ser Integer e `timeRequired` uma duração ISO 8601.
+    // Antes daqui ia a string "8 min de leitura", que invalidava o campo.
+    wordCount: article.wordCount,
+    timeRequired: `PT${article.readingMinutes}M`,
     author: {
       '@type': 'Organization',
       name: article.author,

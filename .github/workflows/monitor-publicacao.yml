@@ -134,6 +134,18 @@ jobs:
               });
             }
 
+      # O Guia de Ferramentas envelhece pelo mesmo modo de falha da publicação: a
+      # página mostra só a data mais recente do conjunto, então basta uma
+      # ferramenta conferida no mês para o selo dizer "Atualizado set 2026"
+      # enquanto dezenas de preços apodrecem. Aqui isso vira aviso visível.
+      # Não derruba o job: preço velho é problema editorial, não blog parado.
+      - name: Verificar idade do Guia de Ferramentas
+        if: always()
+        continue-on-error: true
+        run: |
+          node scripts/check-tools-freshness.js --max-age 3 || \
+            echo "::warning::Guia de Ferramentas com entradas sem verificação há mais de 3 meses."
+
       - name: Falhar o job quando estiver parado
         if: steps.check.outputs.stale == 'true'
         run: |

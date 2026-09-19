@@ -14,6 +14,12 @@ export interface AITool {
   isNew?: boolean;
   isFeatured?: boolean;
   popularityRank?: number;
+  /**
+   * Mês ('YYYY-MM') da última vez que os dados desta ferramenta foram
+   * CONFERIDOS contra uma fonte — não da última vez que mudaram. Uma entrada
+   * conferida e inalterada também recebe a data nova; é o que permite medir o
+   * que realmente envelheceu (ver scripts/check-tools-freshness.js).
+   */
   updatedAt?: string;
 }
 
@@ -688,7 +694,7 @@ export const AI_TOOLS: AITool[] = [
     tags: ['imagem', 'arte', 'design', 'ilustração', 'discord', 'artístico'],
     isFeatured: true,
     popularityRank: 8,
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'stable-diffusion',
@@ -1424,7 +1430,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://www.perplexity.ai',
     tags: ['busca', 'pesquisa', 'fontes', 'tempo real', 'notícias', 'análise'],
     popularityRank: 29,
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'notebooklm',
@@ -1619,7 +1625,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Plano Grátis: Auto-hospedagem, execuções ilimitadas, apenas custo do servidor (~$5-18/mês); Plano Cloud Starter: €24/mês (aprox. US$ 26/mês) 2.500 execuções/mês; Plano Cloud Pro: €60/mês (aprox. US$ 65/mês) 10.000 execuções/mês; Plano Cloud Business: €800/mês (aprox. US$ 866/mês) 40.000 execuções/mês; Plano Enterprise: sob consulta. Faturamento anual economiza 17%.',
     url: 'https://n8n.io',
     tags: ['automação', 'open source', 'self-hosted', 'workflow', 'agentes', 'código'],
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'aura-agent',

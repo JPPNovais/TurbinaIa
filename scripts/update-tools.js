@@ -88,8 +88,14 @@ Foque em ferramentas que:
 - São de empresas reconhecidas
 - Resolvem um caso de uso real
 
-### 5. Atualizar o campo updatedAt
-Defina \`updatedAt: '${currentMonth}'\` em todas as entradas que você modificar.
+### 5. Atualizar o campo updatedAt (= ÚLTIMA VERIFICAÇÃO, não última mudança)
+Defina \`updatedAt: '${currentMonth}'\` em toda entrada que você **conferiu contra uma
+fonte nesta execução** — inclusive quando o dado estava certo e nada mudou. É assim que
+sabemos a diferença entre "conferido, continua igual" e "ninguém olhou".
+
+NÃO carimbe uma entrada que você não conferiu de fato. Uma data falsa é pior que uma
+data velha: ela esconde justamente o dado que envelheceu. Se não deu para conferir tudo,
+carimbe só o que conferiu e deixe o resto com a data antiga.
 
 ## Regras obrigatórias:
 1. Mantenha EXATAMENTE a mesma estrutura TypeScript (interfaces, export const AI_TOOLS, export const CATEGORIES)
@@ -116,7 +122,7 @@ interface AITool {
   isNew?: boolean;
   isFeatured?: boolean;
   popularityRank?: number;     // 1-30, 1 = mais popular
-  updatedAt?: string;          // 'YYYY-MM'
+  updatedAt?: string;          // 'YYYY-MM' — mês da última VERIFICAÇÃO contra fonte
 }
 \`\`\``;
 

@@ -39,9 +39,13 @@ export interface Article extends ArticleMetadata {
 }
 
 // Extract FAQ pairs from the "Perguntas Frequentes" section so we can emit
-// FAQPage structured data (rich results in Google). Every article in this
-// project follows the convention of an `## Perguntas Frequentes` H2 followed
-// by `### question` H3s, each with an answer paragraph beneath it.
+// FAQPage structured data. Atenção: o Google encerrou o RICH RESULT de FAQ em
+// 07/05/2026 — a marcação continua válida e é lida para entender a página, e
+// segue sendo aproveitada pelos motores de resposta (ChatGPT, Perplexity,
+// Gemini), que é o objetivo de AEO/GEO deste projeto. Não espere o sanfonado
+// na SERP. Every article in this project follows the convention of an
+// `## Perguntas Frequentes` H2 followed by `### question` H3s, each with an
+// answer paragraph beneath it.
 function extractFAQs(markdownContent: string): ArticleFAQ[] {
   const lines = markdownContent.split('\n');
   const faqs: ArticleFAQ[] = [];

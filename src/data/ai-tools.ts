@@ -608,7 +608,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '⚙️',
     tagline: 'Editor de código agentic com IA da Google, baseado em VS Code',
     description:
-      'Google Antigravity é um novo editor de código agentic da Google (fork do VS Code) que usa agentes de IA para planear tarefas, escrever código, instalar pacotes via terminal e testar aplicações no navegador. Oferece acesso a modelos Gemini 3.1 Pro, Flash, Claude Sonnet 4.6 e Claude Opus 4.7, sendo um ótimo ponto de partida para desenvolvedores iniciantes. Recebeu acesso prioritário com o novo plano Google AI Ultra. Teve uma reestruturação de preços em Março e Maio de 2026.',
+      'Google Antigravity é um novo editor de código agentic da Google (fork do VS Code) que usa agentes de IA para planear tarefas, escrever código, instalar pacotes via terminal e testar aplicações no navegador. Oferece acesso a modelos Gemini 3.1 Pro, Flash, Claude Sonnet 4.6 e Claude Opus 4.7, sendo um ótimo ponto de partida para desenvolvedores iniciantes. Recebeu acesso prioritário com o novo plano Google AI Ultra. Teve uma reestruturação de preços em Março e Maio de 2026. Em 10 de setembro de 2026, o período de preview terminou e o Antigravity passou a "Generally Available", com o plano Individual gratuito mantendo Tab completions e Command requests ilimitados e limites semanais básicos para os modelos de agente (incluindo o novo Gemini 3.8 Flash, adicionado em 1º de setembro).',
     useCases: [
       'Desenvolvimento de software completo com agentes autônomos',
       'Instalar dependências e gerenciar ambientes de forma automatizada',
@@ -620,7 +620,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://ai.google/labs/antigravity',
     tags: ['ide', 'editor', 'agente', 'autônomo', 'google', 'vscode', 'desenvolvimento'],
     popularityRank: 25,
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'deepseek-coder',
@@ -1204,7 +1204,7 @@ export const AI_TOOLS: AITool[] = [
       'Gerar audiobooks e conteúdo de áudio em escala',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: 10.000 caracteres/mês, ~10 minutos, sem direitos comerciais, atribuição exigida; Plano Starter: US$ 6/mês (aumentado de US$ 5/mês em reprecificação de 2026; 30.000 caracteres, direitos comerciais, Instant Voice Cloning); Plano Creator: US$ 22/mês (US$ 11/mês primeiro mês) 121.000 créditos, clonagem de voz profissional, áudio 192kbps; Plano Pro: US$ 99/mês (600.000 créditos, painel de análise, áudio 44.1kHz PCM); Plano Scale: US$ 299/mês (reduzido de US$ 330/mês; 2 milhões de caracteres, 3 assentos de workspace); Plano Business: US$ 990/mês (reduzido de US$ 1.320/mês; 6 milhões de créditos/caracteres, TTS de baixa latência, 3 Professional Voice Clones, 10 assentos); Plano Enterprise: sob consulta. API com preços separados (ex: API Free com 10 créditos/mês, API Pro US$ 99/mês com 100 créditos).',
+    pricingDetails: 'Plano Grátis: 10.000 caracteres/mês, ~10 minutos, sem direitos comerciais, atribuição exigida; Plano Starter: US$ 6/mês (aumentado de US$ 5/mês em reprecificação de 2026; 30.000 caracteres, direitos comerciais, Instant Voice Cloning); Plano Creator: US$ 22/mês (US$ 11/mês primeiro mês) 121.000 créditos, clonagem de voz profissional, áudio 192kbps; Plano Pro: US$ 99/mês (600.000 créditos, painel de análise, áudio 44.1kHz PCM); Plano Scale: US$ 299/mês (reduzido de US$ 330/mês; 2 milhões de caracteres, 3 assentos de workspace); Plano Business: US$ 990/mês (reduzido de US$ 1.320/mês; 6 milhões de créditos/caracteres, TTS de baixa latência, 3 Professional Voice Clones, 10 assentos); Plano Enterprise: sob consulta. API com preços separados (ex: API Free com 10 créditos/mês, API Pro US$ 99/mês com 100 créditos). Desde 17 de setembro de 2026, a ElevenLabs reduziu os preços da ElevenAPI e da ElevenAgents e lançou um modelo pay-as-you-go sem compromisso mínimo: Text to Speech fica até 55% mais barato (ex.: modelo Flash no plano Creator caiu de US$ 0.11 para US$ 0.05 por 1.000 caracteres), Speech to Text até 45% mais barato (Scribe v2 caiu de US$ 0.40 para US$ 0.22 por 1.000 caracteres) e ElevenAgents até 20% mais barato.',
     url: 'https://elevenlabs.io',
     tags: ['voz', 'narração', 'clone de voz', 'podcast', 'dublagem', 'tts', 'português'],
     isFeatured: true,
@@ -1420,11 +1420,11 @@ export const AI_TOOLS: AITool[] = [
       'Comparar produtos, serviços e tecnologias',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: Buscas ilimitadas com modelo Sonar básico, 5 Copilot queries a cada 4 horas, sem acesso a Deep Research, Labs ou modelos premium; Plano Pro: US$ 20/mês (US$ 16.67/mês anual) Copilot ilimitado, 20 Deep Research queries/day, acesso a GPT-5.4, Claude Opus 4.8, Gemini 3.1 Pro, etc., 3 gerações de vídeo/mês, AI image generation; Plano Max: US$ 200/mês (US$ 2.000/ano) inclui tudo do Pro + Labs ilimitados, Perplexity Computer com 19 modelos AI, 10.000 créditos Computer/mês, Sora 2 Pro video generation, Nano Banana Pro images; Plano Education Pro: US$ 10/mês (para estudantes verificados); Plano Enterprise Pro: US$ 40/usuário/mês (US$ 400/usuário/ano) 500 Research queries/day, 5 gerações de vídeo/mês; Plano Enterprise Max: US$ 325/usuário/mês (US$ 3.250/usuário/ano) Research e Labs ilimitados. API Sonar (a partir de US$ 1/M tokens entrada e US$ 15/M tokens saída para Sonar Pro). Comet Browser é gratuito.',
+    pricingDetails: 'Plano Grátis: Buscas ilimitadas com modelo Sonar básico, 5 Copilot queries a cada 4 horas, sem acesso a Deep Research, Labs ou modelos premium; Plano Pro: US$ 20/mês (US$ 16.67/mês anual) Copilot ilimitado, 20 Deep Research queries/day, acesso a GPT-5.4, Claude Opus 4.8, Gemini 3.1 Pro, etc., 3 gerações de vídeo/mês, AI image generation; Plano Max: US$ 200/mês (US$ 2.000/ano) inclui tudo do Pro + Labs ilimitados, Perplexity Computer com 19 modelos AI, 10.000 créditos Computer/mês, Sora 2 Pro video generation, Nano Banana Pro images; Plano Education Pro: US$ 10/mês (para estudantes verificados); Plano Enterprise Pro: US$ 40/usuário/mês (US$ 400/usuário/ano) 500 Research queries/day, 5 gerações de vídeo/mês; Plano Enterprise Max: US$ 325/usuário/mês (US$ 3.250/usuário/ano) Research e Labs ilimitados. API Sonar (a partir de US$ 1/M tokens entrada e US$ 15/M tokens saída para Sonar Pro) — o endpoint /chat/completions do Sonar (sonar, sonar-pro, sonar-reasoning-pro) será desativado em 27 de setembro de 2026, com migração obrigatória para a nova Agent API (lançada em 13/08/2026), que unifica busca web, leitura de URLs, execução de código e conexões MCP em um único endpoint com cobrança baseada em buscas. Comet Browser é gratuito.',
     url: 'https://www.perplexity.ai',
     tags: ['busca', 'pesquisa', 'fontes', 'tempo real', 'notícias', 'análise'],
     popularityRank: 29,
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'notebooklm',

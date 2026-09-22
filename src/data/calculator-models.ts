@@ -58,6 +58,14 @@ export const AI_MODELS: CalculatorModel[] = [
     contextWindow: '128K tokens',
     description: 'O modelo econômico da família GPT-4 da OpenAI (GPT-4o Mini), ideal para tarefas de baixo custo e alta escala. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
   },
+  {
+    name: 'GPT-6 Astra',
+    provider: 'OpenAI',
+    inputPricePerM: 10.00,
+    outputPricePerM: 50.00,
+    contextWindow: '1.05M tokens',
+    description: 'Lançado em 3 de setembro de 2026 e, desde 14 de setembro de 2026, modelo padrão do ChatGPT Plus, Pro, Business e Enterprise no chat comum. Primeiro modelo da OpenAI a atingir o nível "Crítico" de capacidade cibernética no Preparedness Framework da empresa. Entrada em cache custa US$ 1.00/M tokens; saída máxima de 128K tokens.',
+  },
   // Anthropic
   {
     name: 'Claude 3 Opus',

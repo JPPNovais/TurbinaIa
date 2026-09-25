@@ -133,7 +133,7 @@ export const AI_TOOLS: AITool[] = [
       'Gerar conteúdo multimodal (texto + imagem)',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: Acesso a Gemini 3.5 Flash, uso limitado, 128K contexto; Plano Google AI Plus: US$ 4.99/mês (reduzido de US$ 7.99/mês em 8 de junho de 2026, com armazenamento dobrado para 400GB); Plano Google AI Pro (anteriormente Gemini Advanced): US$ 19.99/mês (acesso a Gemini 3.1 Pro, 2 TB de armazenamento Google One, recursos de IA no Gmail, Docs, etc., Deep Research, NotebookLM, Veo 3.1 video, 1.000 créditos AI mensais); Plano Google AI Ultra: US$ 99.99/mês (preço reduzido, 5x limites do Pro, 20TB armazenamento) ou US$ 200/mês (20x limites do Pro, 30TB armazenamento, acesso antecipado a Deep Think); Google Gemini for Workspace Business Standard: US$ 16.80/usuário/mês (Gemini incluído); Planos de API (pay-per-token): Gemini 3.5 Flash a US$ 1.50/M tokens entrada e US$ 9.00/M tokens saída; Gemini 3.7 Flash (lançado em 13 de agosto de 2026) a US$ 0.75/M tokens entrada e US$ 3.75/M tokens saída; Gemini 3.8 Flash (lançado em 2 de setembro de 2026, com foco em engenharia de software e tarefas agênticas) a US$ 0.75/M tokens entrada e US$ 3.75/M tokens saída (preço promocional até 31/12/2026, dobrando para US$ 1.50/US$ 7.50 em 2027 — mesmo patamar aplicado à 3.7 Flash), já disponível no app Gemini para assinantes Google AI Pro e Ultra, no AI Mode e no Gemini do Google Sheets; Gemini 3.1 Pro a US$ 2.00/M tokens entrada e US$ 12.00/M tokens saída (até 200K tokens, dobra acima de 200K).',
+    pricingDetails: 'Plano Grátis: Acesso a Gemini 3.5 Flash, uso limitado, 128K contexto; Plano Google AI Plus: US$ 4.99/mês (reduzido de US$ 7.99/mês em 8 de junho de 2026, com armazenamento dobrado para 400GB); Plano Google AI Pro (anteriormente Gemini Advanced): US$ 19.99/mês (acesso a Gemini 3.1 Pro, 2 TB de armazenamento Google One, recursos de IA no Gmail, Docs, etc., Deep Research, NotebookLM, Veo 3.1 video, 1.000 créditos AI mensais); Plano Google AI Ultra: US$ 99.99/mês (preço reduzido, 5x limites do Pro, 20TB armazenamento) ou US$ 200/mês (20x limites do Pro, 30TB armazenamento, acesso antecipado a Deep Think); Oferta para estudantes: universitários elegíveis nos EUA podem resgatar 1 ano grátis do Google AI Pro (ou do Google AI Plus em mais de 140 países fora dos EUA), com inscrição disponível até 31 de dezembro de 2026 — é exigido cartão de crédito no cadastro e a cobrança de US$ 19.99/mês começa automaticamente ao fim do ano gratuito caso não haja cancelamento; Google Gemini for Workspace Business Standard: US$ 16.80/usuário/mês (Gemini incluído); Planos de API (pay-per-token): Gemini 3.5 Flash a US$ 1.50/M tokens entrada e US$ 9.00/M tokens saída; Gemini 3.7 Flash (lançado em 13 de agosto de 2026) a US$ 0.75/M tokens entrada e US$ 3.75/M tokens saída; Gemini 3.8 Flash (lançado em 2 de setembro de 2026, com foco em engenharia de software e tarefas agênticas) a US$ 0.75/M tokens entrada e US$ 3.75/M tokens saída (preço promocional até 31/12/2026, dobrando para US$ 1.50/US$ 7.50 em 2027 — mesmo patamar aplicado à 3.7 Flash), já disponível no app Gemini para assinantes Google AI Pro e Ultra, no AI Mode e no Gemini do Google Sheets; Gemini 3.1 Pro a US$ 2.00/M tokens entrada e US$ 12.00/M tokens saída (até 200K tokens, dobra acima de 200K).',
     url: 'https://gemini.google.com',
     tags: ['google', 'redação', 'texto', 'assistente', 'workspace', 'multimodal'],
     popularityRank: 3,
@@ -147,7 +147,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '✍️',
     tagline: 'IA integrada ao Windows e Office 365',
     description:
-      'Microsoft Copilot é o assistente de IA da Microsoft, com o GPT-5.6 da OpenAI como modelo preferencial no Word, Excel, PowerPoint, Outlook, Teams e Cowork. É a escolha ideal para quem já usa o ecossistema Microsoft. A partir de meados de agosto de 2026, a Microsoft começou a unificar o app de consumidor Copilot e o Microsoft 365 Copilot em um único aplicativo "Copilot" (com redirecionamento de m365.cloud.microsoft para copilot.cloud.microsoft), com chegada a Windows e Mac prevista para meados de setembro de 2026; alguns recursos de consumidor (como Copilot Podcasts, Group Chat e Deep Research) foram descontinuados a partir de 18 de agosto de 2026 nesse processo — o Deep Research gratuito foi substituído pelo Researcher, agora restrito a assinantes do Microsoft 365 Premium (US$ 19,99/mês) e a usuários corporativos licenciados.',
+      'Microsoft Copilot é o assistente de IA da Microsoft, com o GPT-5.6 da OpenAI como modelo preferencial no Word, Excel, PowerPoint, Outlook, Teams e Cowork. É a escolha ideal para quem já usa o ecossistema Microsoft. A partir de meados de agosto de 2026, a Microsoft começou a unificar o app de consumidor Copilot e o Microsoft 365 Copilot em um único aplicativo "Copilot" (com redirecionamento de m365.cloud.microsoft para copilot.cloud.microsoft), com o rollout para Windows e Mac confirmado a partir de meados de setembro de 2026; alguns recursos de consumidor (como Copilot Podcasts, Group Chat e Deep Research) foram descontinuados a partir de 18 de agosto de 2026 nesse processo — o Deep Research gratuito foi substituído pelo Researcher, agora restrito a assinantes do Microsoft 365 Premium (US$ 19,99/mês) e a usuários corporativos licenciados.',
     useCases: [
       'Criar e editar documentos no Word',
       'Automatizar análises no Excel com linguagem natural',
@@ -224,7 +224,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Meta AI é gratuito para uso pessoal no WhatsApp, Instagram, Facebook e no app de Mac (versão 1.0 beta, ~16MB, requer Apple Silicon e macOS 15+); contas empresariais conectam Instagram, Facebook, campanhas de anúncio da Meta e Google Workspace (Gmail, Docs, Sheets, Slides) sem custo adicional pelo app em si. Desde 15 de setembro de 2026, o assinante Meta One passou a ter SKUs pagos próprios: planos individuais Core a US$ 7.99/mês e Premium a US$ 19.99/mês (ambos ampliam o uso de Muse Image, Muse Video e do editor Restyle do Instagram), além de planos avulsos a partir de US$ 2.99/mês e planos para criadores/negócios de US$ 14.99 a US$ 499/mês.',
     url: 'https://www.meta.ai',
     tags: ['meta', 'whatsapp', 'instagram', 'ditado', 'mac', 'assistente', 'chat'],
-    popularityRank: 32,
+    popularityRank: 14,
     updatedAt: '2026-09',
   },
   {
@@ -311,7 +311,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Plano Grátis: Acesso limitado a Chat; Plano Chat: US$ 29/mês (faturamento mensal) ou US$ 24/mês (faturamento anual) para 5 assentos, palavras ilimitadas em Chat, acesso a todos os LLMs (GPT-4o, Claude, Gemini), projetos de chat ilimitados; Plano Growth: US$ 1.000/mês (faturamento anual) para 75 assentos, 20.000 créditos de workflow/mês, integração com CRMs como Salesforce e HubSpot, automação de pesquisa de leads, outreach personalizado em escala; Plano Expansion: US$ 2.000/mês (faturamento anual) para 150 assentos, 45.000 créditos de workflow/mês; Plano Scale: US$ 3.000/mês (faturamento anual) para 200 assentos, 75.000 créditos de workflow/mês; Plano Enterprise: preço customizado (SSO, acesso à API, suporte dedicado).',
     url: 'https://www.copy.ai',
     tags: ['copywriting', 'marketing', 'conteúdo', 'geração de texto', 'anúncios', 'vendas'],
-    popularityRank: 14,
+    popularityRank: 32,
     updatedAt: '2026-08',
   },
 
@@ -324,7 +324,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '💻',
     tagline: 'O assistente de código mais usado por desenvolvedores',
     description:
-      'GitHub Copilot é um assistente de programação baseado em modelos OpenAI, integrado ao VS Code, JetBrains e mais. Sugere linhas e funções completas em tempo real enquanto você digita, acelerando significativamente o desenvolvimento. A partir de 1º de junho de 2026, a cobrança é baseada em créditos de IA para requisições premium, com código completions e sugestões Next Edit ainda incluídas em todos os planos sem consumo de créditos.',
+      'GitHub Copilot é um assistente de programação baseado em modelos OpenAI, integrado ao VS Code, JetBrains e mais. Sugere linhas e funções completas em tempo real enquanto você digita, acelerando significativamente o desenvolvimento. A partir de 1º de junho de 2026, a cobrança é baseada em créditos de IA para requisições premium, com código completions e sugestões Next Edit ainda incluídas em todos os planos sem consumo de créditos. A partir de 28 de setembro de 2026 (data não antecipável), a GitHub vai unificar o Copilot Chat do github.com, o Copilot Chat no GitHub Mobile e o GitHub Copilot cloud agent numa única experiência, migrando totalmente para o modelo de "agent sessions" já usado pelo cloud agent e alterando a política de retenção dos dados de chat.',
     useCases: [
       'Autocompletar código em tempo real',
       'Gerar funções e classes a partir de comentários',

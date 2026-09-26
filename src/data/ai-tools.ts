@@ -914,7 +914,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎬',
     tagline: 'Modelo de geração de vídeos da OpenAI, descontinuado em abril de 2026.',
     description:
-      'Sora era o modelo de geração de vídeo da OpenAI. Embora tenha demonstrado capacidade de criar vídeos realistas e criativos a partir de prompts de texto ou imagens, foi descontinuado em 26 de abril de 2026. Sua API será descontinuada em 24 de setembro de 2026. OpenAI focará em novos modelos como "Spud".',
+      'Sora era o modelo de geração de vídeo da OpenAI. Embora tenha demonstrado capacidade de criar vídeos realistas e criativos a partir de prompts de texto ou imagens, foi descontinuado em 26 de abril de 2026. Em 24 de setembro de 2026, a API do Sora 2 foi oficialmente desativada, conforme aviso publicado pela OpenAI em sua página de depreciações desde 24 de março de 2026 — a empresa não indicou um modelo sucessor direto na própria API, deixando a migração a cargo de cada desenvolvedor. OpenAI focará em novos modelos como "Spud".',
     useCases: [
       'Anteriormente usado para criar clipes cinematográficos a partir de descrições',
       'Gerar vídeos conceituais para apresentações',
@@ -922,11 +922,11 @@ export const AI_TOOLS: AITool[] = [
       'Prototipar cenas para produções audiovisuais',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Sora (web e app) foi descontinuado em 26 de abril de 2026. A API do Sora será descontinuada em 24 de setembro de 2026. O acesso era limitado e as capacidades do Sora 2.0 são agora acessíveis através de parceiros como Invideo AI (a partir de US$ 25/mês) ou via planos ChatGPT Pro (US$ 200/mês, com créditos dedicados para vídeo). Acesso gratuito ao Sora 2 foi encerrado em 10 de janeiro de 2026.',
+    pricingDetails: 'Sora (web e app) foi descontinuado em 26 de abril de 2026. A API do Sora 2 foi desativada em 24 de setembro de 2026, encerrando de vez o acesso programático ao modelo. As capacidades de geração de vídeo permanecem acessíveis através de parceiros como Invideo AI (a partir de US$ 25/mês) ou via planos ChatGPT Pro (US$ 200/mês, com créditos dedicados para vídeo). Acesso gratuito ao Sora 2 foi encerrado em 10 de janeiro de 2026.',
     url: 'https://openai.com/sora',
     tags: ['vídeo', 'geração', 'openai', 'cinematográfico', 'animação', 'descontinuado'],
     isFeatured: false,
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'runway-gen4-5',

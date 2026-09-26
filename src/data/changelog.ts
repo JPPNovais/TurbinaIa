@@ -13,6 +13,48 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-project-suncatcher-satelite-tpu-2026-09',
+    date: '2026-09',
+    title: 'Google confirma para 1º de outubro o lançamento do primeiro satélite com TPUs do Project Suncatcher',
+    developer: 'Google',
+    category: 'Lançamento',
+    description: 'Em 24 de setembro de 2026, o Google confirmou que o satélite protótipo MVP do Project Suncatcher, construído com a Planet e carregando quatro TPUs, decola em 1º de outubro a bordo de um foguete Falcon 9 da SpaceX na missão compartilhada Transporter-18, partindo da Base da Força Espacial de Vandenberg.',
+    highlights: [
+      'O satélite, do tamanho de uma geladeira, é alimentado por cerca de 1 kW de painéis solares e testará se os chips resistem às vibrações do lançamento, à radiação e ao problema de resfriamento sem ar no espaço.',
+      'O Google planeja lançar mais dois satélites em 2027 para testar links a laser de alta largura de banda entre unidades, um passo rumo à visão de longo prazo de clusters de até 81 satélites operando em conjunto.',
+      'Em órbita baixa, os painéis solares captam luz quase contínua e podem gerar até 8 vezes mais energia que na superfície da Terra, segundo o Google.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'meta-ray-ban-gen-3-audio-connect-2026-09',
+    date: '2026-09',
+    title: 'Meta lança os óculos Ray-Ban Meta Gen 3 e a versão só de áudio Ray-Ban Meta Audio',
+    developer: 'Meta',
+    category: 'Lançamento',
+    description: 'Durante o Meta Connect, em 23 de setembro de 2026, a Meta apresentou a terceira geração dos óculos Ray-Ban Meta, a partir de US$ 449, e uma nova variante sem câmera chamada Ray-Ban Meta Audio, voltada a quem prioriza privacidade, a partir de US$ 349.',
+    highlights: [
+      'O Gen 3 mantém a câmera de 12MP, mas ganha um sexto microfone, bateria de até 9 horas, vídeo em 3K e um botão de ação personalizável, em armações Wayfarer, Aviator e a nova Zena; o preço subiu US$ 70 em relação à geração anterior.',
+      'O Ray-Ban Meta Audio começou a aceitar pré-venda no mesmo dia, com embarques previstos para 13 de outubro de 2026.',
+      'A Meta também mostrou um preview do headset de realidade mista Project Phoenix, ainda sem data de lançamento definida.',
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'frontier-ai-standards-agency-sriram-krishnan-2026-09',
+    date: '2026-09',
+    title: 'OpenAI, Anthropic e Google avançam negociação por uma agência conjunta de padrões de segurança em IA',
+    developer: 'OpenAI, Anthropic, Google',
+    category: 'Pesquisa',
+    description: 'Reportagens publicadas a partir de 24 de setembro de 2026 revelaram que as três empresas estão negociando a criação de um órgão setorial batizado provisoriamente de "Frontier AI Standards Agency" (ou SAFA), e que já procuraram Sriram Krishnan, ex-conselheiro de IA da Casa Branca, para ser o CEO da futura entidade.',
+    highlights: [
+      'O modelo inspirador é a FINRA do mercado financeiro americano: uma entidade que operaria fora do governo, definindo parâmetros práticos para os compromissos públicos de segurança das empresas.',
+      'Krishnan deixou o cargo de conselheiro de IA do governo Trump em junho de 2026 após rejeitar publicamente a ideia de um regime de licenciamento para IA ("não vai existir uma FDA para IA").',
+      'Por ora é apenas uma negociação, sem estatuto formal ou CEO confirmado — a expectativa de fontes ouvidas é de que isso só se resolva até o fim de 2026.',
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'anthropic-claude-descoberta-enzima-art-crispr-2026-09',
     date: '2026-09',
     title: 'Claude descobre autonomamente um novo sistema de enzimas com semelhanças ao CRISPR',

@@ -8351,4 +8351,32 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um consultor de governança de TI me ajudando a levantar o uso não autorizado de ferramentas de IA (Shadow AI) na minha empresa antes de criar qualquer política nova.\n\nTamanho da empresa/time: [Número aproximado de pessoas]\nSetor: [Ex: jurídico, saúde, varejo, tecnologia]\nFerramentas de IA já aprovadas oficialmente, se houver: [Liste, ou diga que não há nenhuma]\nMaior preocupação hoje: [Ex: dados de clientes, propriedade intelectual, conformidade regulatória]\n\nMonte:\n1. Um questionário curto e não punitivo (5 a 7 perguntas) para entender, de forma anônima, quais ferramentas de IA as pessoas já usam no trabalho e para quê.\n2. Uma lista de sinais indiretos que o time de TI pode observar (sem invadir privacidade) para estimar o uso real além da autoavaliação.\n3. Um roteiro de como comunicar essa pesquisa para o time sem gerar a sensação de "caça às bruxas", deixando claro que o objetivo é entender e apoiar, não punir.\n4. Sugestões de próximos passos, dependendo se o resultado mostrar uso baixo, moderado ou alto de ferramentas não aprovadas.',
     tags: ['Shadow AI', 'Governança', 'Segurança da Informação'],
   },
+
+  // IA & AUTOMAÇÃO
+  {
+    id: 'ia-automacao-checklist-permissoes-agente-internet',
+    title: 'Checklist de Permissões Antes de Dar Acesso à Internet a um Agente de IA',
+    category: 'IA & Automação',
+    description: 'Revise, antes de ligar o acesso à internet de um agente autônomo, exatamente o que ele pode e não pode fazer — para reduzir o risco de ele agir fora do que foi pedido.',
+    template: 'Você é um consultor de segurança especializado em agentes de IA autônomos. Antes de eu liberar acesso à internet (navegação, chamadas de API externas ou uso de credenciais) para um agente, quero revisar os riscos concretos.\n\nContexto do agente:\n- Tarefa que ele vai executar: [Ex: pesquisar dados públicos, monitorar concorrentes, preencher formulários]\n- Ferramentas/acessos que terá: [Ex: navegador, chamadas de API, login em sites específicos]\n- Domínios ou sistemas que ele deveria tocar: [Liste os domínios permitidos]\n- Nível de supervisão humana durante a execução: [Ex: nenhuma, aprovação por passo, revisão só no final]\n\nMe entregue:\n\n1. **Lista de permissões mínimas necessárias** para a tarefa, cortando qualquer acesso que não seja estritamente preciso.\n2. **Cenários de uso indevido plausíveis** — o que um agente com essas permissões poderia fazer de errado mesmo sem intenção maliciosa, incluindo acessar sistemas fora da lista de domínios permitidos.\n3. **Sinais de alerta para monitorar nos logs** durante e depois da execução, que indicariam que o agente saiu do previsto.\n4. **Plano de contenção**: o que fazer no primeiro sinal de comportamento fora do esperado, incluindo como revogar acesso rapidamente.\n\nSeja direto sobre riscos que eu talvez esteja subestimando, mesmo que eu não tenha perguntado sobre eles.',
+    tags: ['Agentes de IA', 'Segurança da IA', 'IA Agêntica', 'Governança'],
+  },
+  {
+    id: 'ia-automacao-plano-resposta-incidente-agente',
+    title: 'Plano de Resposta Quando um Agente de IA Age Fora do Esperado',
+    category: 'IA & Automação',
+    description: 'Monte, antes que aconteça, um plano de resposta para o momento em que um agente autônomo que sua empresa usa faz algo que ninguém pediu — inspirado em casos recentes de agentes de laboratórios de IA agindo sem autorização em sistemas de terceiros.',
+    template: 'Você é um consultor de resposta a incidentes de segurança, especializado em sistemas com agentes de IA autônomos. Quero montar um plano de resposta para o cenário em que um agente que uso internamente age de um jeito que não foi instruído — antes que isso aconteça de verdade.\n\nContexto:\n- O que o agente faz normalmente: [Descreva a tarefa e o nível de autonomia dele]\n- Sistemas e dados a que ele tem acesso: [Liste]\n- Quem seria o primeiro a notar um comportamento estranho: [Ex: time de TI, o próprio usuário, um sistema de monitoramento]\n- Já existe algum plano de resposta a incidentes de segurança tradicional na empresa: [Sim/não — se sim, descreva brevemente]\n\nMe entregue um plano de resposta com:\n\n1. **Critérios de detecção**: como diferenciar um erro comum de um comportamento genuinamente fora do esperado que mereça escalonamento.\n2. **Passos imediatos de conteção**: o que suspender ou revogar primeiro, na ordem certa, para limitar o dano sem destruir evidências.\n3. **Quem precisa ser avisado e em que prazo**, incluindo se algum sistema de terceiros afetado precisaria ser notificado (e por que demorar semanas para avisar, como já ocorreu em casos reais, é um erro).\n4. **Checklist de revisão pós-incidente**, incluindo o que documentar para evitar que o mesmo tipo de falha se repita.',
+    tags: ['Agentes de IA', 'Resposta a Incidentes', 'Segurança da IA', 'Governança'],
+  },
+
+  // PRODUTIVIDADE
+  {
+    id: 'produtividade-revisao-log-atividade-agente',
+    title: 'Roteiro de Revisão Periódica de Logs de Atividade de um Agente Autônomo',
+    category: 'Produtividade',
+    description: 'Crie uma rotina simples e recorrente para revisar o que um agente de IA realmente fez, em vez de só configurá-lo uma vez e assumir que continua se comportando como esperado.',
+    template: 'Você é um especialista em operação de agentes de IA (AgentOps). Quero criar uma rotina periódica de revisão dos logs de atividade de um agente autônomo que uso, para não descobrir um problema só meses depois.\n\nContexto:\n- O que o agente faz: [Descreva a tarefa]\n- Frequência de execução: [Ex: contínua, algumas vezes por dia, sob demanda]\n- O que já é registrado em log hoje: [Ex: só o resultado final, passos intermediários, nada estruturado]\n- Tempo disponível por semana para essa revisão: [Ex: 15 minutos, 1 hora]\n\nMe entregue:\n\n1. **Uma rotina de revisão cabível no tempo disponível**, com frequência sugerida (diária, semanal) e o que exatamente olhar em cada revisão.\n2. **Uma lista curta de perguntas** para fazer aos logs a cada revisão (Ex: o agente acessou algo fora do esperado? Fez mais chamadas do que o normal? Houve erro silencioso?).\n3. **Sugestão de o que logar, se hoje for insuficiente**, para viabilizar essa rotina no futuro.\n4. **Critério simples para decidir quando uma revisão de rotina deve virar uma investigação mais séria.**',
+    tags: ['AgentOps', 'Agentes de IA', 'Produtividade', 'Monitoramento'],
+  },
 ];

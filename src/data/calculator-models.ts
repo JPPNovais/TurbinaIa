@@ -66,6 +66,22 @@ export const AI_MODELS: CalculatorModel[] = [
     contextWindow: '1.05M tokens',
     description: 'Lançado em 3 de setembro de 2026 e, desde 14 de setembro de 2026, modelo padrão do ChatGPT Plus, Pro, Business e Enterprise no chat comum. Primeiro modelo da OpenAI a atingir o nível "Crítico" de capacidade cibernética no Preparedness Framework da empresa. Entrada em cache custa US$ 1.00/M tokens; saída máxima de 128K tokens.',
   },
+  {
+    name: 'GPT-6 Sol',
+    provider: 'OpenAI',
+    inputPricePerM: 2.00,
+    outputPricePerM: 10.00,
+    contextWindow: '1.05M tokens',
+    description: 'Lançado em 22 de setembro de 2026 para ChatGPT Work e Codex (todos os planos pagos), com metade do preço do GPT-5.6 Sol que substitui. Voltado a codificação complexa e fluxos de trabalho agênticos, ainda não disponível na caixa de chat padrão do ChatGPT.',
+  },
+  {
+    name: 'GPT-6 Luna',
+    provider: 'OpenAI',
+    inputPricePerM: 0.10,
+    outputPricePerM: 0.50,
+    contextWindow: '1.05M tokens',
+    description: 'Lançado em 22 de setembro de 2026, é o modelo mais barato já lançado pela OpenAI, voltado a tarefas de alto volume como resumo e extração de dados. Disponível no app desktop para planos Free/Go e em Work/Codex para planos pagos; ainda não chegou à versão web/mobile do chat padrão.',
+  },
   // Anthropic
   {
     name: 'Claude Opus 5.5',

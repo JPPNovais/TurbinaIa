@@ -1001,7 +1001,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎬',
     tagline: 'Crie vídeos com avatares de IA e dublagem em vários idiomas',
     description:
-      'Synthesia é uma plataforma líder de geração de vídeo com IA que permite criar vídeos profissionais com avatares realistas, tradução por IA e dublagem em mais de 120 idiomas. É ideal para comunicação corporativa, marketing e treinamento, oferecendo produção de vídeo em escala sem câmeras ou estúdios. O custo de avatares personalizados pode aumentar significativamente o valor da assinatura.',
+      'Synthesia é uma plataforma líder de geração de vídeo com IA que permite criar vídeos profissionais com avatares realistas, tradução por IA e dublagem em mais de 120 idiomas. É ideal para comunicação corporativa, marketing e treinamento, oferecendo produção de vídeo em escala sem câmeras ou estúdios. Desde a versão Synthesia 3.0, os avatares usam o motor Express-2, com gestos e movimentos de corpo inteiro (como apontar para elementos na tela), e a plataforma ganhou um AI Playground que dá acesso embutido ao Google Veo 3.1 e ao OpenAI Sora 2 para gerar clipes curtos de até 8 segundos sem sair do editor. O custo de avatares personalizados pode aumentar significativamente o valor da assinatura.',
     useCases: [
       'Gerar vídeos de treinamento e e-learning',
       'Criar vídeos de marketing e vendas com avatares personalizados',
@@ -1013,7 +1013,7 @@ export const AI_TOOLS: AITool[] = [
     url: 'https://www.synthesia.io',
     tags: ['vídeo', 'avatar', 'corporativo', 'tradução', 'e-learning', 'apresentação'],
     popularityRank: 21,
-    updatedAt: '2026-08',
+    updatedAt: '2026-09',
   },
   {
     id: 'google-veo',
@@ -1442,7 +1442,7 @@ export const AI_TOOLS: AITool[] = [
       'Criar quizzes, flashcards e mapas mentais de estudo a partir das fontes',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis (Standard): 100 notebooks, 50 fontes por notebook, fonte de até 500.000 palavras; desde 2 de setembro de 2026, os antigos limites diários fixos de chat/Studio (ex.: 50 chats/dia, 3 áudios/dia) foram substituídos por uma cota de computação com renovação a cada 5 horas até um teto semanal, sem número de unidades divulgado; Plano Plus: (bundlado com Google AI Plus a US$ 7.99/mês) cota de computação 2x maior que o Grátis; Plano Pro: (bundlado com Google AI Pro a US$ 19.99/mês) 500 notebooks, 300 fontes, cota de computação 4x maior que o Grátis, execução de código chegando em breve; Plano Ultra: (bundlado com Google AI Ultra a US$ 99.99/mês (20TB) ou US$ 200/mês (30TB)) cota de computação de 5x a 20x o Grátis, já inclui execução de código nativa. Google Workspace Business Standard a US$ 14/usuário/mês inclui NotebookLM Plus. Plano Enterprise: US$ 9/licença/mês (com descontos anuais).',
+    pricingDetails: 'Plano Grátis (Standard): 100 notebooks, 50 fontes por notebook, fonte de até 500.000 palavras; desde 2 de setembro de 2026, os antigos limites diários fixos de chat/Studio (ex.: 50 chats/dia, 3 áudios/dia) foram substituídos por uma cota de computação com renovação a cada 5 horas até um teto semanal, sem número de unidades divulgado; Plano Plus: (bundlado com Google AI Plus a US$ 4.99/mês, preço reduzido pelo Google em 8 de junho de 2026) cota de computação 2x maior que o Grátis; Plano Pro: (bundlado com Google AI Pro a US$ 19.99/mês) 500 notebooks, 300 fontes, cota de computação 4x maior que o Grátis, execução de código chegando em breve; Plano Ultra: (bundlado com Google AI Ultra a US$ 99.99/mês (20TB) ou US$ 200/mês (30TB)) cota de computação de 5x a 20x o Grátis, já inclui execução de código nativa. Google Workspace Business Standard a US$ 14/usuário/mês inclui NotebookLM Plus. Plano Enterprise: US$ 9/licença/mês (com descontos anuais).',
     url: 'https://notebooklm.google.com',
     tags: ['pesquisa', 'documentos', 'pdf', 'estudo', 'resumo', 'análise', 'google'],
     popularityRank: 30,

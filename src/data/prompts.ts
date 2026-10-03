@@ -8411,4 +8411,42 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um roteirista especializado em vídeos curtos para redes sociais (Reels, TikTok, YouTube Shorts). Transforme o conteúdo abaixo em um roteiro de vídeo de até [Duração desejada: Ex: 45, 60, 90] segundos.\n\nConteúdo base (artigo, post ou ideia):\n[Cole aqui o conteúdo ou descreva a ideia]\n\nPúblico-alvo: [Ex: empreendedores iniciantes, estudantes de concurso]\nTom de voz: [Ex: direto e provocador, didático e calmo, bem-humorado]\nObjetivo do vídeo: [Ex: gerar comentários, levar para um link na bio, educar sobre o tema]\n\nEstruture o roteiro em:\n1. Gancho (primeiros 3 segundos): uma frase que impede a pessoa de pular o vídeo.\n2. Desenvolvimento: os pontos principais, em ordem, com indicação de quando cortar para um novo plano ou inserir um texto na tela.\n3. Call to action final: o que a pessoa deve fazer depois de assistir.\n4. Sugestão de legenda para a publicação, com até 3 hashtags relevantes para o tema.\n\nMantenha frases curtas, pensadas para serem faladas em voz alta, não para serem lidas.',
     tags: ['Vídeo Curto', 'Reels', 'Roteiro'],
   },
+
+  // IA & AUTOMAÇÃO
+  {
+    id: 'automacao-configurar-agente-persistente',
+    title: 'Configurar um Agente de IA Persistente com Objetivo e Limites Claros',
+    category: 'IA & Automação',
+    description: 'Defina nome, papel, objetivo e limites de atuação antes de ativar um agente "sempre ligado" (como os agentes Autopilot, Dots ou similares), reduzindo o risco de ele agir fora do esperado.',
+    template: 'Você é um especialista em configuração de agentes de IA autônomos. Me ajude a escrever um briefing completo para configurar um agente persistente antes de ativá-lo.\n\nNome do agente: [Nome]\nPapel/função: [Ex: assistente de vendas, monitor de projetos, triagem de e-mails]\nObjetivo principal: [O que ele deve alcançar continuamente]\nSistemas e ferramentas que ele pode acessar: [Ex: Gmail, Slack, planilhas, CRM]\nFrequência de contato com o responsável humano: [Ex: resumo diário, aviso só em exceções]\n\nCom base nisso, produza:\n1. Uma descrição de objetivo em uma frase, sem ambiguidade.\n2. Uma lista de limites explícitos — ações que o agente NUNCA deve tomar sem aprovação humana (ex.: gastar dinheiro, enviar mensagens externas, apagar dados).\n3. Uma lista de gatilhos que devem interromper o agente e pedir confirmação.\n4. Um modelo de resumo periódico que o agente deve enviar ao responsável humano.\n\nSeja específico e evite limites genéricos demais para serem úteis na prática.',
+    tags: ['Agentes de IA', 'Automação', 'Autopilot'],
+  },
+  {
+    id: 'negocios-avaliar-custo-agente-por-uso',
+    title: 'Estimar o Custo Real de um Agente de IA Cobrado por Uso',
+    category: 'Negócios',
+    description: 'Monte uma estimativa de orçamento para um agente de IA que cobra por consumo (créditos, tokens ou tarefas concluídas) em vez de mensalidade fixa, antes de liberá-lo para toda a equipe.',
+    template: 'Você é um analista financeiro ajudando a estimar o custo de adotar um agente de IA com cobrança baseada em uso (consumo de créditos, tokens ou por tarefa concluída).\n\nTarefas que o agente vai executar: [Liste as tarefas, ex: responder e-mails, gerar relatórios, atualizar planilhas]\nFrequência estimada de cada tarefa: [Ex: 20 vezes por dia, 5 por semana]\nCusto por unidade de uso informado pelo fornecedor (se houver): [Ex: preço por crédito, por token, ou "ainda não publicado"]\nTamanho da equipe que vai usar o agente: [Número de pessoas]\nCusto atual de uma licença fixa equivalente (se existir): [Valor mensal]\n\nCom base nisso, me ajude a:\n1. Montar uma tabela estimando o custo mensal em um cenário conservador, um realista e um pessimista de uso.\n2. Comparar esse custo com a alternativa de licença fixa, se eu tiver informado uma.\n3. Listar os riscos de orçamento específicos de cobrança por uso (picos de consumo, falta de tabela pública de preços, dificuldade de prever gasto).\n4. Sugerir um limite de gasto inicial e um ponto de revisão para reavaliar depois do primeiro mês de uso real.\n\nSe eu não informar o preço por unidade, deixe isso explícito como lacuna em vez de inventar um número.',
+    tags: ['Orçamento de IA', 'Agentes de IA', 'Custos'],
+  },
+
+  // PRODUTIVIDADE
+  {
+    id: 'produtividade-checklist-migracao-ferramenta',
+    title: 'Checklist de Migração Quando uma Ferramenta de IA Muda ou Funde Planos',
+    category: 'Produtividade',
+    description: 'Organize o que exportar, testar e comunicar à equipe quando um aplicativo de IA que você usa descontinua recursos, funde produtos ou muda a estrutura de cobrança.',
+    template: 'Você é um consultor de produtividade me ajudando a organizar uma migração forçada de ferramenta de IA.\n\nNome da ferramenta: [Nome]\nO que mudou: [Ex: fusão de dois apps em um só, recursos descontinuados, nova cobrança por uso]\nPrazo anunciado pela empresa: [Data limite, se houver]\nConteúdos ou dados que uso hoje na ferramenta: [Ex: histórico de conversas, documentos gerados, automações configuradas]\nOutras pessoas da equipe que também usam: [Quantas e em que função]\n\nMonte para mim:\n1. Uma checklist, em ordem de prioridade, do que preciso exportar ou salvar antes do prazo.\n2. Uma lista de funcionalidades que provavelmente vou perder e alternativas imediatas para cada uma.\n3. Um rascunho curto de comunicado para avisar a equipe sobre a mudança e o que ela precisa fazer até quando.\n4. Perguntas que ainda preciso esclarecer com o fornecedor antes do prazo acabar.\n\nNão invente datas ou recursos que eu não tenha informado — marque como "a confirmar" o que depender de informação que falta.',
+    tags: ['Migração', 'Ferramentas de IA', 'Organização'],
+  },
+
+  // EDUCAÇÃO
+  {
+    id: 'educacao-avaliar-estudo-criticamente',
+    title: 'Avaliar Criticamente um Estudo Antes de Compartilhar os Resultados',
+    category: 'Educação',
+    description: 'Peça uma leitura crítica de um estudo, pesquisa ou survey citado em uma notícia, verificando metodologia, tamanho de amostra e limitações antes de repassar os números adiante.',
+    template: 'Você é um pesquisador treinado em avaliar a qualidade metodológica de estudos antes que os resultados sejam repassados como fato.\n\nTrecho ou resumo do estudo: [Cole aqui o texto ou o resumo que você leu]\nOnde você viu essa informação: [Ex: notícia, post, newsletter]\nPergunta que você está tentando responder com esse dado: [O que você quer usar essa informação para sustentar]\n\nCom base apenas no que eu colei (sem inventar detalhes que não estão ali), me ajude a identificar:\n1. Quem conduziu o estudo e qual o tamanho da amostra, se informado.\n2. Se é um experimento controlado, uma pesquisa de opinião, ou uma observação sem grupo de controle.\n3. Limitações óbvias (amostra pequena, período curto, viés de quem financiou o estudo, dados autodeclarados).\n4. Se a manchete ou o resumo que você leu exagera a conclusão em relação ao que o estudo realmente mostra.\n5. Uma versão honesta de uma frase para citar esse dado, com as ressalvas necessárias.\n\nSe faltar informação no trecho que eu colei para responder algum desses pontos, diga claramente que não é possível avaliar em vez de supor.',
+    tags: ['Pensamento Crítico', 'Pesquisa', 'Verificação de Fatos'],
+  },
 ];

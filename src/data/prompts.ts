@@ -8449,4 +8449,54 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um pesquisador treinado em avaliar a qualidade metodológica de estudos antes que os resultados sejam repassados como fato.\n\nTrecho ou resumo do estudo: [Cole aqui o texto ou o resumo que você leu]\nOnde você viu essa informação: [Ex: notícia, post, newsletter]\nPergunta que você está tentando responder com esse dado: [O que você quer usar essa informação para sustentar]\n\nCom base apenas no que eu colei (sem inventar detalhes que não estão ali), me ajude a identificar:\n1. Quem conduziu o estudo e qual o tamanho da amostra, se informado.\n2. Se é um experimento controlado, uma pesquisa de opinião, ou uma observação sem grupo de controle.\n3. Limitações óbvias (amostra pequena, período curto, viés de quem financiou o estudo, dados autodeclarados).\n4. Se a manchete ou o resumo que você leu exagera a conclusão em relação ao que o estudo realmente mostra.\n5. Uma versão honesta de uma frase para citar esse dado, com as ressalvas necessárias.\n\nSe faltar informação no trecho que eu colei para responder algum desses pontos, diga claramente que não é possível avaliar em vez de supor.',
     tags: ['Pensamento Crítico', 'Pesquisa', 'Verificação de Fatos'],
   },
+
+  // DESENVOLVIMENTO
+  {
+    id: 'dev-auditoria-servidores-mcp',
+    title: 'Auditoria de Segurança de Servidores MCP Antes de Conectar a um Agente de Código',
+    category: 'Desenvolvimento',
+    description: 'Avalie os riscos de permissão, dados e confiança antes de conectar um novo servidor MCP (Model Context Protocol) a um agente de codificação, evitando exposição de segredos ou ações indesejadas.',
+    template: 'Você é um especialista em segurança de aplicações ajudando a avaliar um servidor MCP (Model Context Protocol) antes de conectá-lo a um agente de codificação com acesso ao meu repositório.\n\nNome do servidor MCP: [Nome]\nFornecedor/mantenedor: [Empresa ou projeto responsável]\nFerramentas que ele expõe ao agente: [Liste as ferramentas/ações, ex: ler arquivos, criar PRs, acessar API externa, enviar e-mails]\nDados que ele vai poder acessar: [Ex: código-fonte, segredos de ambiente, banco de dados de produção, mensagens do Slack]\nOnde ele roda: [Ex: localmente, serviço de terceiros hospedado, container na minha infraestrutura]\n\nCom base nisso, me ajude a:\n1. Listar os piores cenários possíveis se esse servidor for malicioso, comprometido ou simplesmente tiver um bug (ex: exfiltração de segredos, execução de código arbitrário, ações irreversíveis em produção).\n2. Sugerir o conjunto mínimo de permissões que o agente realmente precisa para a tarefa atual, cortando qualquer ferramenta exposta que não seja estritamente necessária.\n3. Indicar quais ações desse servidor deveriam exigir aprovação humana explícita antes de serem executadas, em vez de rodar de forma autônoma.\n4. Propor como isolar esse servidor (ex: variáveis de ambiente separadas, conta de serviço com permissões restritas, sandbox) para limitar o estrago em caso de falha.\n\nSe eu não informar algum dado necessário para a análise, diga claramente o que falta em vez de supor que é seguro.',
+    tags: ['MCP', 'Segurança', 'Agentes de Código'],
+  },
+
+  // REDES SOCIAIS
+  {
+    id: 'redes-sociais-roteiro-avatar-ia-ugc',
+    title: 'Roteiro para Vídeo UGC com Avatar de IA (com Divulgação Transparente)',
+    category: 'Redes Sociais',
+    description: 'Crie o roteiro de um vídeo estilo UGC estrelado por um avatar gerado por IA, incluindo a divulgação clara de que o conteúdo é sintético.',
+    template: 'Você é um roteirista especializado em vídeos de UGC (conteúdo gerado por usuário) produzidos com avatares falados por IA para redes sociais.\n\nProduto/serviço: [Nome do Produto/Serviço]\nPersona do avatar: [Ex: "criador de tecnologia descontraído", "mãe prática", "especialista em finanças"]\nPlataforma de destino: [Ex: TikTok, Instagram Reels, YouTube Shorts]\nDuração alvo: [Ex: 30 segundos]\nPrincipal dor que o produto resolve: [Dor/Problema]\nGancho que deve prender a atenção nos primeiros 3 segundos: [Ideia de gancho, ou "sugira 3 opções"]\n\nEscreva o roteiro completo com:\n1. Gancho (0-3s): fala exata do avatar.\n2. Desenvolvimento (problema → demonstração → benefício), com marcações de tempo.\n3. Chamada para ação final, incluindo onde ela aparece na tela.\n4. Sugestões de corte/B-roll ou textos na tela para cada bloco.\n5. Uma frase de divulgação transparente (ex: "conteúdo gerado com avatar de IA" ou "anúncio com porta-voz sintético") e em qual momento do vídeo ela deve aparecer, seguindo boas práticas de transparência com o público.\n\nO tom deve ser natural e conversacional, como um UGC autêntico, nunca lido de forma robótica ou excessivamente comercial.',
+    tags: ['UGC', 'Avatar de IA', 'Vídeo Curto', 'Transparência'],
+  },
+
+  // PRODUTIVIDADE
+  {
+    id: 'produtividade-auditoria-stack-ferramentas-ia',
+    title: 'Auditoria do Stack Pessoal de Ferramentas de IA (Cortar Redundâncias)',
+    category: 'Produtividade',
+    description: 'Faça um raio-x de todos os assistentes e agentes de IA que você assina hoje para identificar sobreposição de funções, custo total e o que vale a pena cancelar.',
+    template: 'Você é um consultor de produtividade me ajudando a organizar o meu stack pessoal de ferramentas de IA, que cresceu de forma desordenada.\n\nFerramentas de IA que assino ou uso hoje: [Liste cada uma com o custo mensal, ex: "Ferramenta A - R$ 97/mês", "Ferramenta B - R$ 40/mês"]\nPara que uso cada uma: [Descreva brevemente a função principal de cada ferramenta listada]\nFrequência de uso real de cada uma na última semana: [Ex: "Ferramenta A - todos os dias", "Ferramenta B - não usei"]\nOrçamento mensal confortável para ferramentas de IA: [Valor]\n\nCom base nisso, monte para mim:\n1. Uma tabela comparando as ferramentas por custo, função e frequência real de uso, destacando sobreposições (duas ou mais ferramentas resolvendo o mesmo problema).\n2. Uma recomendação clara de quais cancelar, quais manter e quais rebaixar para um plano mais barato, com a economia mensal estimada de cada corte.\n3. Um checklist do que exportar ou salvar (histórico, automações configuradas, dados) antes de cancelar cada ferramenta recomendada para corte.\n4. Um critério simples que eu possa usar no futuro antes de assinar uma nova ferramenta de IA, para não cair na mesma desorganização.\n\nSe faltar alguma informação para avaliar uma ferramenta específica, diga o que precisa ser esclarecido em vez de assumir.',
+    tags: ['Produtividade', 'Ferramentas de IA', 'Orçamento'],
+  },
+
+  // CARREIRA
+  {
+    id: 'carreira-treino-entrevista-ia-voz',
+    title: 'Treino de Entrevista com Entrevistador de IA por Voz',
+    category: 'Carreira',
+    description: 'Prepare-se para a triagem inicial feita por um entrevistador de IA por voz, entendendo como responder de forma natural e sem soar ensaiado para esse formato.',
+    template: 'Você vai simular por voz/texto uma entrevista de triagem inicial feita por um entrevistador de IA, no estilo das ferramentas de pré-seleção automatizada usadas por empresas hoje.\n\nVaga: [Título da vaga]\nEmpresa/setor: [Nome ou tipo de empresa]\nMeu currículo resumido: [Cole um resumo da sua experiência e principais conquistas]\nCompetências que a vaga provavelmente avalia: [Ex: comunicação, resolução de problemas, experiência técnica em X]\nNível de ansiedade que costumo sentir nesse tipo de entrevista: [Ex: alto, moderado, baixo]\n\nConduza a simulação assim:\n1. Faça 5 perguntas, uma por vez, misturando perguntas comportamentais e técnicas típicas desse tipo de triagem automatizada.\n2. Espere minha resposta antes de passar para a próxima pergunta.\n3. Depois de cada resposta, dê um feedback rápido: o que funcionou, o que pareceu ensaiado ou vago demais, e se a resposta teria clareza suficiente para um sistema de IA extrair as palavras-chave certas.\n4. Ao final das 5 perguntas, resuma meus 3 principais pontos fortes percebidos e os 2 pontos que mais precisam de ajuste antes da entrevista real.\n\nSeja direto no feedback, mas construtivo — o objetivo é eu ganhar confiança para esse formato específico de entrevista.',
+    tags: ['Entrevista de Emprego', 'IA por Voz', 'Carreira'],
+  },
+
+  // EDUCAÇÃO
+  {
+    id: 'educacao-checagem-alucinacoes-trabalho-academico',
+    title: 'Checagem de Alucinações e Citações Antes de Entregar um Trabalho Acadêmico com IA',
+    category: 'Educação',
+    description: 'Revise um texto acadêmico produzido com apoio de IA para detectar citações inventadas, dados incorretos ou afirmações sem fonte antes da entrega.',
+    template: 'Você é um revisor acadêmico rigoroso, especializado em detectar alucinações e citações inventadas em textos produzidos com apoio de ferramentas de IA.\n\nTexto a revisar: [Cole aqui o trabalho, artigo ou resumo completo]\nDisciplina/área: [Ex: Direito, Biologia, Administração]\nNível acadêmico: [Ex: graduação, pós-graduação]\nFerramentas de IA usadas na produção do texto: [Ex: assistente de escrita, agente de pesquisa, nenhuma]\n\nRevise o texto e aponte, item por item:\n1. Toda citação, nome de autor, dado estatístico ou referência bibliográfica que pareça real, mas que você não consiga confirmar como genuína com o que está no próprio texto — marque como "citação a verificar".\n2. Afirmações apresentadas como fato que não vêm acompanhadas de nenhuma fonte ou embasamento no texto.\n3. Números, datas ou nomes que pareçam contraditórios entre diferentes partes do texto.\n4. Trechos que generalizam demais um resultado específico (ex: tratar um único estudo como consenso científico).\n\nPara cada item apontado, explique por que ele é suspeito e sugira a ação correta: buscar a fonte original, reformular a frase para ser mais honesta sobre a incerteza, ou remover a afirmação.\n\nNão confirme nenhuma citação como verdadeira apenas por parecer plausível — se você não tem como validar, trate como pendência.',
+    tags: ['Integridade Acadêmica', 'Alucinação de IA', 'Pesquisa'],
+  },
 ];

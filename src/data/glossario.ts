@@ -3749,4 +3749,28 @@ export const GLOSSARIO: GlossarioTerm[] = [
     example: 'O Notion 3.7, lançado em 15 de setembro de 2026, introduziu os Agent Skills: instruções reutilizáveis armazenadas na biblioteca do workspace, portáveis para outros agentes como Claude Code, Codex, Cursor, Gemini e Grok.',
     relatedTerms: ['Subagentes (Sub-agents)', 'Engenharia de Contexto (Context Engineering)', 'Orquestração de Agentes'],
   },
+  {
+    id: 'modelo-de-decisao',
+    term: 'Modelo de Decisão (Decision Model)',
+    category: 'Modelos & Arquitetura',
+    definition: 'Modelo de IA especializado, geralmente pequeno e de peso aberto, que não gera texto livre como um LLM — em vez disso, recebe uma entrada e devolve uma saída estruturada e tipada, como uma classificação, uma pontuação de risco ou uma probabilidade entre opções pré-definidas. É pensado para tarefas de triagem, classificação e roteamento dentro de sistemas agênticos, trocando a flexibilidade de um modelo generalista por respostas mais rápidas, previsíveis e baratas.',
+    example: 'Em 1º de outubro de 2026, a Cloudflare lançou o Clef e o Clef-flash, e a Amazon publicou o Strands Decider 2B — modelos de decisão de peso aberto que devolvem probabilidades tipadas em vez de texto, pensados para classificar pedidos e rotear tarefas entre agentes de IA.',
+    relatedTerms: ['Roteamento de Modelos', 'Modelo Open Source de IA', 'Quantização (Quantization)'],
+  },
+  {
+    id: 'psicose-por-ia',
+    term: 'Psicose por IA (AI Psychosis)',
+    category: 'Segurança & Ética',
+    definition: 'Termo não clínico usado para descrever casos em que interações intensas e prolongadas com chatbots de IA generativa parecem estar associadas ao surgimento ou agravamento de crenças delirantes em algumas pessoas. O padrão é atribuído à tendência dos modelos de validar e concordar com o usuário (ver Bajulação de Modelos de IA) combinada a um tom autoritativo e humano, e tem levado desenvolvedores a ajustar como os modelos respondem em conversas longas sobre temas sensíveis.',
+    example: 'Em setembro de 2026, a American Psychological Association publicou um alerta sobre "psicose por IA" depois que a OpenAI estimou que cerca de 0,07% dos usuários semanais do ChatGPT — na época, uns 560 mil — demonstravam possíveis sinais de psicose ou mania durante conversas.',
+    relatedTerms: ['Bajulação de Modelos de IA (Sycophancy)', 'IA Responsável (Responsible AI)', 'Alucinação'],
+  },
+  {
+    id: 'marco-legal-ia-brasil',
+    term: 'Marco Legal da IA (PL 2338/2023)',
+    category: 'Segurança & Ética',
+    definition: 'Projeto de lei brasileiro que cria o marco regulatório nacional para inteligência artificial, inspirado no AI Act europeu: classifica sistemas de IA por nível de risco, define direitos das pessoas afetadas (transparência, explicação, contestação de decisões automatizadas), cria um sistema nacional de governança de IA e prevê multas de até R$ 50 milhões por infração. Aprovado pelo Senado em dezembro de 2024, seguia em análise na Câmara dos Deputados sem data de votação marcada em outubro de 2026.',
+    example: 'O texto aprovado pelo Senado proíbe o uso de IA para armas autônomas e para prever crimes a partir de traços de personalidade, e restringe o reconhecimento biométrico remoto em espaços públicos a casos específicos com autorização judicial.',
+    relatedTerms: ['Governança de IA (AI Governance)', 'IA Responsável (Responsible AI)', 'IA Soberana (Sovereign AI)'],
+  },
 ];

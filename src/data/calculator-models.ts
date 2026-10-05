@@ -82,6 +82,14 @@ export const AI_MODELS: CalculatorModel[] = [
     contextWindow: '1.05M tokens',
     description: 'Lançado em 22 de setembro de 2026, é o modelo mais barato já lançado pela OpenAI, voltado a tarefas de alto volume como resumo e extração de dados. Disponível no app desktop para planos Free/Go e em Work/Codex para planos pagos; ainda não chegou à versão web/mobile do chat padrão.',
   },
+  {
+    name: 'GPT-6.1 Sol',
+    provider: 'OpenAI',
+    inputPricePerM: 2.00,
+    outputPricePerM: 10.00,
+    contextWindow: '1M tokens',
+    description: 'Lançado no DevDay de 29 de setembro de 2026 para planos Plus, Pro, Business, Enterprise e Edu em ChatGPT Work e Codex. Fica cerca de 1 ponto atrás do GPT-6 Astra no benchmark DeepSWE v1.1 de engenharia de software, custando um quinto do preço padrão do Astra (US$ 10,00/US$ 50,00 por milhão de tokens) e um décimo no input em cache (US$ 0,10/M). Lançado um dia após a OpenAI cancelar o GPT-6.1 Astra por falhas de segurança.',
+  },
   // Anthropic
   {
     name: 'Claude Opus 5.5',

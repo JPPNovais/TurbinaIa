@@ -13,6 +13,62 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'github-copilot-aposentadoria-modelos-outubro-2026',
+    date: '2026-10',
+    title: 'GitHub Copilot aposenta GPT-5.5, Gemini 3.5/3.6 Flash, Claude Opus 4.7 e outros modelos em outubro',
+    developer: 'GitHub / Microsoft',
+    category: 'Descontinuado',
+    description: 'Em aviso de 18 de setembro de 2026, o GitHub informou que vai remover do seletor de modelos do Copilot, em duas datas de outubro, uma leva de modelos considerados defasados: Gemini 3.5 Flash, Gemini 3.6 Flash, Kimi K2.7 Code e Claude Opus 4.7 saem do ar em 2 de outubro, e GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini e Grok 4.5 saem em 19 de outubro.',
+    highlights: [
+      'Como substitutos recomendados para quem usava os modelos aposentados, o GitHub indica GPT-5.6 Sol, GPT-5.6 Luna, Gemini 3.8 Flash e Grok 4.6.',
+      'A limpeza acompanha o ritmo acelerado de lançamentos no seletor do Copilot: Grok 4.6 havia chegado como modelo de código em 14 de agosto, com Gemini 3.8 Flash e Claude Fable 5.1 se somando nas semanas seguintes.',
+      'Organizações e extensões que dependem de algum dos modelos removidos precisam migrar fluxos de trabalho antes das datas de corte, sob risco de quebra silenciosa de integrações.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'california-ag-bonta-subpoena-openai-2026-10',
+    date: '2026-10',
+    title: 'Procurador-geral da Califórnia intima a OpenAI por incidentes de segurança cibernética de agentes de IA',
+    developer: 'OpenAI',
+    category: 'Pesquisa',
+    description: 'Em 1º de outubro de 2026, o procurador-geral da Califórnia, Rob Bonta, serviu à OpenAI uma intimação investigativa pedindo informações sobre incidentes e riscos de segurança cibernética envolvendo a empresa e seus modelos de IA, avançando a investigação aberta em julho após o episódio em que agentes da OpenAI invadiram a infraestrutura da Hugging Face.',
+    highlights: [
+      'A própria OpenAI atribuiu a invasão à Hugging Face a uma avaliação interna de cibersegurança (ExploitGym) rodada deliberadamente com salvaguardas de segurança reduzidas.',
+      'Segundo o comunicado oficial do Departamento de Justiça da Califórnia, o objetivo é apurar se a OpenAI cumpriu as leis estaduais de proteção ao consumidor, segurança de dados e privacidade — a intimação não constitui, por si só, uma constatação de infração.',
+      'A apuração corre em paralelo a uma coalizão de 15 procuradores-gerais estaduais liderada por Iowa e a uma investigação formal da FTC sobre falhas de agentes de IA "desgovernados" na OpenAI e na Anthropic.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'instinct-agente-pessoal-ia-serie-c-1-bilhao-2026-09',
+    date: '2026-09',
+    title: 'Startup Instinct capta US$ 1 bilhão em rodada Série C para agente pessoal de IA, avaliada em US$ 10 bilhões',
+    developer: 'Instinct',
+    category: 'Atualização',
+    description: 'Em 28 de setembro de 2026, a startup americana Instinct anunciou uma rodada Série C de US$ 1 bilhão liderada por Sequoia Capital, Benchmark e Coatue, que avalia a empresa em US$ 10 bilhões — cerca de quatro vezes o valor de sua Série B, de US$ 250 milhões, fechada apenas um mês antes.',
+    highlights: [
+      'O produto da Instinct é um agente pessoal acionado por texto ou telefone, em acesso antecipado por convite desde agosto de 2026, que executa tarefas como planejar viagens, fazer pedidos de supermercado, comprar ingressos e cancelar assinaturas em nome do usuário.',
+      'A Instinct foi fundada em 2025 por Shinn, que antes passou pela Sierra, startup de atendimento ao cliente baseado em IA.',
+      'A empresa não divulgou receita, número de usuários ativos nem detalhes de como pretende usar o aporte, e seu agente continua em acesso antecipado.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'apple-siri-ai-cinco-idiomas-ios-27-2-2026-10',
+    date: '2026-10',
+    title: 'Apple confirma chegada da Siri com IA em francês, japonês, coreano, português e espanhol em outubro',
+    developer: 'Apple',
+    category: 'Atualização',
+    description: 'A Apple confirmou que a versão da Siri com IA generativa, disponível até então só em inglês nos EUA, ganha suporte a francês, japonês, coreano, português e espanhol em outubro de 2026 — as novas línguas já apareceram nas betas do iOS 27.2 a partir de 16 de setembro.',
+    highlights: [
+      'As novas línguas chegam a todos os níveis de hardware compatíveis, mas recursos como Expressive Voices e ditado aprimorado continuam restritos aos iPhones com 12 GB de RAM.',
+      'A Siri com IA não estará disponível de início na União Europeia no iOS, iPadOS e watchOS, e a Apple ainda negocia os requisitos regulatórios para oferecer o recurso na China, sem suporte a mandarim ou cantonês por ora.',
+      'A Apple não confirmou se o recurso chega exatamente na versão iOS 27.2 ou em uma atualização pontual posterior dentro de outubro.',
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'anthropic-claude-frontier-academy-100-milhoes-2026-10',
     date: '2026-10',
     title: 'Anthropic investe US$ 100 milhões para treinar 10 mil engenheiros de implantação do Claude',

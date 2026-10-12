@@ -100,20 +100,20 @@ export const AI_MODELS: CalculatorModel[] = [
     description: 'O modelo mais inteligente da família Claude da Anthropic, construído para raciocínio exigente e trabalho agêntico de longo prazo, com até 1M de tokens de contexto. Lançado em 22 de setembro de 2026, o Opus 5.5 substitui o Opus 5 com desempenho equivalente ao Claude Fable 5.1 por cerca de 40% menos custo (preço anterior do Opus 5 era $5.00/M entrada e $25.00/M saída).',
   },
   {
-    name: 'Claude Sonnet 5',
+    name: 'Claude Sonnet 5.5',
     provider: 'Anthropic',
     inputPricePerM: 2.00,
     outputPricePerM: 10.00,
     contextWindow: '1M tokens',
-    description: 'O modelo intermediário da família Claude da Anthropic (Claude Sonnet 5), um equilíbrio entre inteligência e velocidade para cargas de trabalho empresariais, com até 1M de tokens de contexto. Preço de $2.00/M entrada e $10.00/M saída tornado permanente pela Anthropic em 11 de Agosto de 2026 (o aumento para $3.00/$15.00 previsto para 1º de Setembro de 2026 foi cancelado).',
+    description: 'O modelo intermediário da família Claude da Anthropic, lançado em 28 de setembro de 2026, substituindo o Claude Sonnet 5: respostas até 30% mais rápidas e custo por tarefa cerca de 30% menor, mantendo o mesmo preço de API de US$ 2.00/M entrada e US$ 10.00/M saída, com até 1M de tokens de contexto.',
   },
   {
-    name: 'Claude Haiku 4.5',
+    name: 'Claude Haiku 5.5',
     provider: 'Anthropic',
-    inputPricePerM: 1.00,
-    outputPricePerM: 5.00,
-    contextWindow: '200K tokens',
-    description: 'O modelo mais rápido e econômico da família Claude da Anthropic (Claude Haiku 4.5), ideal para tarefas de alto desempenho e baixo custo, com até 200K de contexto (menor que os demais modelos Claude, que chegam a 1M de tokens).',
+    inputPricePerM: 0.10,
+    outputPricePerM: 0.50,
+    contextWindow: '1M tokens',
+    description: 'O modelo mais rápido e econômico da família Claude da Anthropic, lançado em 7 de outubro de 2026 substituindo o Haiku 4.5: primeiro Haiku com níveis de esforço ajustáveis, cerca de 75% mais barato em média, e com janela de contexto ampliada para 1M tokens (antes 200K). Preço de US$ 0.10/M entrada e US$ 0.50/M saída vale para prompts de até 100K tokens (sobe para US$ 0.50/US$ 2.50 acima disso).',
   },
   // DeepSeek
   {

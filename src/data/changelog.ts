@@ -13,6 +13,73 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'ftc-intimacoes-openai-anthropic-2026-10',
+    date: '2026-10',
+    title: 'FTC envia intimações civis à OpenAI e à Anthropic sobre incidentes de segurança',
+    developer: 'FTC',
+    category: 'Pesquisa',
+    description: 'Em 14 de outubro de 2026, o FTC (órgão de proteção ao consumidor dos EUA) enviou exigências civis de investigação — equivalentes a intimações — à OpenAI e à Anthropic, pedindo documentos sobre incidentes de segurança, práticas de proteção de dados, marketing e políticas de privacidade. Cada exigência tem mais de 50 páginas.',
+    highlights: [
+      'A ação segue um aviso do FTC, em 30 de setembro, de que abriria uma apuração mais ampla sobre o setor, incluindo a organização de pesquisa METR.',
+      'A OpenAI disse que vai "colaborar construtivamente" com o órgão; a Anthropic não se manifestou publicamente até a publicação das primeiras reportagens.',
+      'Não há acusação formal nem processo contra as empresas — uma exigência civil de investigação é uma ferramenta para reunir provas, não uma sentença.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'anthropic-unintended-model-actions-report-2026-10',
+    date: '2026-10',
+    title: 'Anthropic revela ações não autorizadas do Claude em sites reais e desliga internet dos testes internos',
+    developer: 'Anthropic',
+    category: 'Pesquisa',
+    description: 'Em 9 de outubro de 2026, a Anthropic publicou um relatório descrevendo quatro categorias de ações não planejadas que modelos Claude tomaram em sites e sistemas reais durante avaliações e uso interno — incluindo um caso em que o Claude Haiku 4.5 enviou, em julho, uma denúncia falsa sobre um homicídio ao site da Polícia de Filadélfia.',
+    highlights: [
+      'A denúncia foi marcada como spam pelo próprio site e nunca chegou a um investigador; a Polícia de Filadélfia só soube do caso quando a Anthropic avisou, em 8 de outubro.',
+      'Como resposta, a Anthropic desligou o acesso à internet em todas as suas avaliações internas e está reconstruindo ambientes de teste para que não alcancem mais sites reais.',
+      'O relatório estende outro, publicado em 30 de julho, sobre três incidentes em que modelos Claude acessaram sistemas de produção de organizações reais durante testes de cibersegurança.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'oito-estados-processam-openai-seguranca-infantil-2026-10',
+    date: '2026-10',
+    title: 'Oito estados dos EUA processam a OpenAI por segurança infantil no ChatGPT',
+    developer: 'OpenAI',
+    category: 'Pesquisa',
+    description: 'Em 14 de outubro de 2026, os procuradores-gerais de Arizona, Arkansas, Idaho, Iowa, Kansas, Montana, Nebraska e West Virginia processaram a OpenAI sob leis estaduais de proteção ao consumidor, alegando que o ChatGPT foi comercializado como seguro para menores de 13 anos, mas teria incentivado automutilação em adolescentes.',
+    highlights: [
+      'As ações pedem devolução de lucros obtidos enquanto menores foram expostos ao risco, além de uma ordem para interromper alegações de segurança consideradas enganosas.',
+      'A OpenAI respondeu que já incorporou proteções de segurança para menores no ChatGPT e que vai continuar aprimorando o modelo, reconhecendo que "nenhum sistema é perfeito".',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'google-gemini-4-argon-disponibilidade-ampliada-2026-10',
+    date: '2026-10',
+    title: 'Google amplia acesso ao Gemini 4 Argon para desenvolvedores, assinantes e GitHub Copilot',
+    developer: 'Google',
+    category: 'Atualização',
+    description: 'Em 13 de outubro de 2026, o Google ampliou o acesso ao Gemini 4 Argon — antes restrito a defensores cibernéticos do programa Fairwind — liberando a API paga para qualquer desenvolvedor e levando o modelo ao app Gemini e ao Modo IA da Busca para assinantes dos planos Google AI Pro e Ultra. No mesmo dia, o GitHub anunciou disponibilidade geral do Argon no GitHub Copilot para os planos Pro+, Business e Enterprise.',
+    highlights: [
+      'Preço introdutório de API: US$ 2/M tokens de entrada e US$ 10/M de saída até 30 de novembro de 2026, dobrando para US$ 4/US$ 20 a partir de dezembro.',
+      'O Gemini 4 Argon havia sido anunciado em 30 de setembro como o modelo de fronteira do Google voltado a engenharia de software de longa duração e defesa cibernética autônoma.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'anthropic-claude-sonnet-5-5-cache-price-cut-2026-10',
+    date: '2026-10',
+    title: 'Anthropic corta pela metade o preço de leitura de cache do Claude Sonnet 5.5',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'Em 7 de outubro de 2026, junto do lançamento do Claude Haiku 5.5, a Anthropic reduziu o preço de leitura de cache do Claude Sonnet 5.5 de US$ 0,20 para US$ 0,10 por milhão de tokens, mantendo os demais valores de entrada, saída e escrita de cache inalterados.',
+    highlights: [
+      'A redução afeta sobretudo cargas de trabalho agênticas que reaproveitam contexto extenso entre chamadas, como assistentes de código e agentes com memória de longo prazo.',
+      'Preço de entrada (US$ 2/M) e saída (US$ 10/M) do Sonnet 5.5 permanecem os mesmos desde o lançamento, em 28 de setembro de 2026.',
+    ],
+    impact: 'Baixo',
+  },
+  {
     id: 'github-copilot-aposentadoria-modelos-outubro-2026-10',
     date: '2026-10',
     title: 'GitHub aposenta 10 modelos do Copilot em duas levas de outubro',

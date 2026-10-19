@@ -29,16 +29,20 @@ Article frontmatter schema:
 ```yaml
 ---
 title: "..."
-description: "..."       # Max 160 chars for SEO
+seoTitle: "..."          # Optional <title> for Google, max 60 chars (keyword first). Without it, src/lib/seo.ts shortens the title automatically
+description: "..."       # Max 155 chars for SEO
 category: tutoriais|noticias|ferramentas
 tags:
   - tag1
 author: Redação Turbina IA
 isFeatured: false
 date: "YYYY-MM-DD"
+updatedAt: "YYYY-MM-DD"  # Optional: set when the post is meaningfully revised (shown as "Atualizado em", used in sitemap/JSON-LD)
 coverImage: "https://images.unsplash.com/..."
 ---
 ```
+
+Every article opens with a lede paragraph followed by `**Resposta Rápida (TL;DR):**`, and ends with `## Perguntas Frequentes` + `### pergunta?` H3s (extracted into FAQPage JSON-LD). Prompts go in fenced code blocks: each one gets a "Copiar" button and the `copy_prompt` GA4 event.
 
 The home page always displays the most recently published article (`allArticles[0]`) as the hero. `isFeatured: true` adds the article to the sidebar featured pool but does not control the hero.
 
@@ -56,7 +60,9 @@ The home page always displays the most recently published article (`allArticles[
 | `/comparador` | Client Component | AI model comparison table |
 | `/calculadora` | Client Component | Cost calculator |
 | `/prompts` | Client Component | Prompt library with filters |
-| `/api/newsletter` | Route Handler | Stores subscribers in `data/subscribers.json` |
+| `/categoria/[slug]` | SSG | Topic hubs (melhores-ias, tutoriais, noticias, ferramentas) from `src/lib/taxonomy.ts`; `/prompts` is the Prompts hub |
+| `/llms.txt`, `/sitemap.xml`, `/robots.txt` | Static | Generated at build time |
+| `/api/newsletter` | Route Handler | Subscribes via `NEWSLETTER_PROVIDER` (supabase, brevo, mailchimp, webhook) — see README |
 
 ### Next.js 16 Breaking Changes in This Codebase
 
@@ -83,7 +89,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ c
 
 ### Image Handling
 
-Only `images.unsplash.com` is allowed as an external image host (`next.config.ts`). The `generate-article.js` script maintains a curated pool of Unsplash images per category and enforces uniqueness across existing articles to avoid duplicate cover images.
+Only `images.unsplash.com` is allowed as an external image host (`next.config.ts`). LCP cover images use the default `next/image` optimizer; cards/thumbnails use `CdnImage` (Unsplash CDN directly, AVIF/WebP) and inline article images get a responsive srcset in `src/lib/articles.ts`. The `generate-article.js` script maintains a curated pool of Unsplash images per category and enforces uniqueness across existing articles to avoid duplicate cover images.
 
 ### Path Alias
 

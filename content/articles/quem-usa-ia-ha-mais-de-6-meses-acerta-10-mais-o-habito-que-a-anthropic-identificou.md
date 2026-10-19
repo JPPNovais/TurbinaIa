@@ -9,7 +9,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-09"
-coverImage: "https://images.unsplash.com/photo-1516116211223-5c359a36298a?auto=format&fit=crop&w=1200&q=80"
+coverImage: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80"
 ---
 
 Um milhão de conversas. Esse foi o tamanho da amostra que a Anthropic analisou entre 5 e 12 de fevereiro deste ano para responder a uma pergunta simples: usar IA há mais tempo faz alguma diferença real no resultado? A resposta, publicada no quinto relatório do [Anthropic Economic Index](https://www.anthropic.com/research/economic-index-march-2026-report), foi sim — quem usa o Claude há seis meses ou mais tem taxa de sucesso nas conversas entre 3 e 5 pontos percentuais maior do que quem começou há pouco tempo, dependendo de quantas variáveis são controladas na análise. Na introdução do próprio relatório, a Anthropic resume essa diferença como "10% maior" em termos relativos.

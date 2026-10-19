@@ -11,7 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-18"
-coverImage: "https://images.unsplash.com/photo-1516116211223-5c359a36298a?auto=format&fit=crop&w=1200&q=80"
+coverImage: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=1200&q=80"
 ---
 
 A xAI deu um passo estratégico significativo no mercado corporativo de inteligência artificial: o [Grok 4.3 está agora disponível de forma geral no Amazon Bedrock](https://x.ai/news/grok-amazon-bedrock), a plataforma gerenciada de modelos de IA da Amazon Web Services. O anúncio marca a estreia formal da empresa de Elon Musk como fornecedora de modelos dentro do ecossistema AWS — ao lado de nomes como Anthropic, Meta e Cohere —, e chega acompanhado de credenciais técnicas que merecem atenção: contexto de um milhão de tokens, raciocínio ajustável por nível de esforço e, segundo a própria xAI, a menor taxa de alucinação entre os modelos frontier do mercado.

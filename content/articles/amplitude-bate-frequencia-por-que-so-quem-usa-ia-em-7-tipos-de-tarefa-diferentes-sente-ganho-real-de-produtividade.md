@@ -9,7 +9,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-01"
-coverImage: "https://images.unsplash.com/photo-1516116211223-5c359a36298a?auto=format&fit=crop&w=1200&q=80"
+coverImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
 ---
 
 Quase três em cada quatro trabalhadores de escritório sem cargo de gestão já usam inteligência artificial com regularidade — um salto de 23 pontos percentuais em apenas um ano, segundo o levantamento mais recente do Boston Consulting Group com quase 12 mil profissionais em 14 países. Mais de 40% deles dizem economizar o equivalente a um dia inteiro de trabalho por semana. E, ainda assim, quase metade afirma passar mais tempo gerenciando e direcionando a IA do que efetivamente fazendo o trabalho — segundo o mesmo [levantamento noticiado pela Bloomberg](https://www.bloomberg.com/news/articles/2026-06-03/ai-saves-time-but-most-companies-waste-the-gain-study-shows).

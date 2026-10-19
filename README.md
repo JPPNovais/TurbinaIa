@@ -76,4 +76,5 @@ Variáveis `NEXT_PUBLIC_*` são embutidas no build: depois de mudar, faça um re
 - **Temas:** `src/lib/taxonomy.ts` decide o tema de cada post. `/prompts` é o hub de Prompts; `/categoria/melhores-ias`, `/categoria/tutoriais`, `/categoria/noticias` e `/categoria/ferramentas` são os demais. Os links antigos `/?category=x` redirecionam com 301.
 - **Mais lidos da home:** lista em `src/data/popular-posts.ts` — atualize uma vez por mês com os posts mais vistos no GA4.
 - **Arquivos para robôs:** `/sitemap.xml` (lastmod real de cada página), `/robots.txt` e `/llms.txt` (mapa do site para assistentes de IA) são gerados no build.
+- **Domínio:** o redirecionamento `turbinaia.com.br → www.turbinaia.com.br` é configurado no painel da Vercel (Settings → Domains → Redirect to, 308), não no código. A Vercel sempre converte `http → https` no mesmo host antes desse redirect, então `http://turbinaia.com.br` dá 2 saltos na primeira visita; navegadores que já visitaram pulam o primeiro por causa do HSTS.
 - **Imagens:** só `images.unsplash.com`. Antes de usar uma foto nova, confira se responde 200 (fotos removidas do Unsplash viram 404).

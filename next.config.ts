@@ -13,17 +13,12 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Canonicalização de host: força tudo para https://www.turbinaia.com.br
-  // O Google estava indexando 4 variantes (www, sem-www, http) e dividindo a
-  // autoridade. Estes 301 consolidam todos os sinais em um único domínio.
+  // Canonicalização de host (turbinaia.com.br → www) fica no painel da Vercel
+  // (Domains → redirect 308), não aqui: o redirect de domínio da Vercel responde
+  // antes do app, então uma regra de host neste arquivo nunca rodava e só
+  // duplicaria a configuração. http → https é feito pela própria Vercel.
   async redirects() {
     return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'turbinaia.com.br' }],
-        destination: 'https://www.turbinaia.com.br/:path*',
-        permanent: true,
-      },
       // Os filtros antigos da home (/?category=tutoriais) viraram páginas de
       // categoria indexáveis. 301 preserva links externos e o que já foi indexado.
       {

@@ -6,10 +6,31 @@ import Sidebar from '@/components/Sidebar';
 import AdSense from '@/components/AdSense';
 import { getAllArticlesMetadata } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
+import { SITE_URL, DEFAULT_OG_IMAGE, jsonLd } from '@/lib/seo';
+
+const HOME_TITLE = 'Turbina IA: Prompts Prontos, Rankings de IAs e Tutoriais';
+const HOME_DESCRIPTION = 'Prompts prontos para ChatGPT e Gemini, rankings das melhores IAs, tutoriais e ferramentas grátis para usar inteligência artificial no dia a dia.';
 
 export const metadata: Metadata = {
+  title: HOME_TITLE,
+  description: HOME_DESCRIPTION,
   alternates: {
     canonical: '/',
+  },
+  openGraph: {
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    url: SITE_URL,
+    siteName: 'Turbina IA',
+    locale: 'pt_BR',
+    type: 'website',
+    images: [DEFAULT_OG_IMAGE],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE.url],
   },
 };
 
@@ -248,7 +269,7 @@ export default async function Home({ searchParams }: HomeProps) {
         </section>
       </section>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(homeFaqLd) }} />
     </main>
   );
 }

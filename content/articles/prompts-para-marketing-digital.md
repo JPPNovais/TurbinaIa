@@ -1,5 +1,6 @@
 ---
 title: "+30 Prompts para Marketing Digital: Modelos Prontos para Copiar (2026)"
+seoTitle: "+30 Prompts para Marketing Digital Prontos (2026)"
 description: "Prompts para marketing digital prontos para usar: copie, adapte e gere textos, anúncios, posts e e-mails com ChatGPT em segundos."
 category: tutoriais
 tags:

@@ -16,6 +16,8 @@ export interface ArticleFAQ {
 
 export interface ArticleMetadata {
   title: string;
+  /** <title> curto (até ~60 caracteres) escrito à mão; opcional. */
+  seoTitle?: string;
   description: string;
   date: string;
   updatedAt?: string;
@@ -25,6 +27,7 @@ export interface ArticleMetadata {
   author: string;
   slug: string;
   readingTime: string;
+  wordCount: number;
   isFeatured?: boolean;
 }
 
@@ -117,12 +120,50 @@ function extractHeadings(markdownContent: string): ArticleHeading[] {
 
 const articlesDirectory = path.join(process.cwd(), 'content/articles');
 
+function countWords(text: string): number {
+  return text.trim().split(/\s+/).filter(Boolean).length;
+}
+
 // Helper to calculate reading time
-function calculateReadingTime(text: string): string {
+function calculateReadingTime(words: number): string {
   const wordsPerMinute = 200;
-  const words = text.trim().split(/\s+/).length;
   const minutes = Math.max(1, Math.ceil(words / wordsPerMinute));
   return `${minutes} min de leitura`;
+}
+
+// O YAML converte `date: 2026-06-04` (sem aspas) em objeto Date; normaliza
+// tudo para a string "YYYY-MM-DD" que o resto do código espera.
+function normalizeDate(value: unknown): string | undefined {
+  if (!value) return undefined;
+  if (value instanceof Date && !isNaN(value.getTime())) return value.toISOString().split('T')[0];
+  const str = String(value).trim();
+  return /^\d{4}-\d{2}-\d{2}/.test(str) ? str.slice(0, 10) : undefined;
+}
+
+function buildMetadata(slug: string, data: Record<string, unknown>, content: string): ArticleMetadata {
+  const wordCount = countWords(content);
+  const date = normalizeDate(data.date) || new Date().toISOString().split('T')[0];
+  const updatedAt = normalizeDate(data.updatedAt);
+  return {
+    title: (data.title as string) || 'Sem título',
+    seoTitle: (data.seoTitle as string) || undefined,
+    description: (data.description as string) || '',
+    date,
+    updatedAt: updatedAt && updatedAt > date ? updatedAt : undefined,
+    category: (data.category as string) || 'Geral',
+    tags: Array.isArray(data.tags) ? data.tags : [],
+    coverImage: (data.coverImage as string) || '',
+    author: (data.author as string) || 'Redator Turbina IA',
+    slug,
+    readingTime: calculateReadingTime(wordCount),
+    wordCount,
+    isFeatured: !!data.isFeatured,
+  };
+}
+
+/** Data da última modificação real do artigo (updatedAt ou publicação). */
+export function getLastModified(article: Pick<ArticleMetadata, 'date' | 'updatedAt'>): string {
+  return article.updatedAt || article.date;
 }
 
 // Ensure the directory exists
@@ -132,7 +173,12 @@ function ensureDirectoryExists() {
   }
 }
 
+// No build de produção os arquivos não mudam: cada página estática pedia a
+// lista inteira de novo (160 leituras x 180 páginas). Em dev, sempre relê.
+let metadataCache: ArticleMetadata[] | null = null;
+
 export async function getAllArticlesMetadata(): Promise<ArticleMetadata[]> {
+  if (metadataCache && process.env.NODE_ENV === 'production') return metadataCache;
   ensureDirectoryExists();
   const fileNames = fs.readdirSync(articlesDirectory);
   
@@ -144,26 +190,12 @@ export async function getAllArticlesMetadata(): Promise<ArticleMetadata[]> {
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       
       const { data, content } = matter(fileContents);
-      
-      const metadata: ArticleMetadata = {
-        title: data.title || 'Sem título',
-        description: data.description || '',
-        date: data.date || new Date().toISOString().split('T')[0],
-        updatedAt: data.updatedAt || undefined,
-        category: data.category || 'Geral',
-        tags: Array.isArray(data.tags) ? data.tags : [],
-        coverImage: data.coverImage || '',
-        author: data.author || 'Redator Turbina IA',
-        slug,
-        readingTime: calculateReadingTime(content),
-        isFeatured: !!data.isFeatured,
-      };
-      
-      return metadata;
+      return buildMetadata(slug, data, content);
     });
 
   // Sort articles by date descending
-  return allArticlesData.sort((a, b) => (a.date < b.date ? 1 : -1));
+  metadataCache = allArticlesData.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return metadataCache;
 }
 
 export async function getArticleData(slug: string): Promise<Article | null> {
@@ -194,17 +226,7 @@ export async function getArticleData(slug: string): Promise<Article | null> {
   const faqs = extractFAQs(content);
   
   const metadata: Article = {
-    title: data.title || 'Sem título',
-    description: data.description || '',
-    date: data.date || new Date().toISOString().split('T')[0],
-        updatedAt: data.updatedAt || undefined,
-    category: data.category || 'Geral',
-    tags: Array.isArray(data.tags) ? data.tags : [],
-    coverImage: data.coverImage || '',
-    author: data.author || 'Redator Turbina IA',
-    slug,
-    readingTime: calculateReadingTime(content),
-    isFeatured: !!data.isFeatured,
+    ...buildMetadata(slug, data, content),
     contentHtml,
     headings,
     faqs,

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Sobre o Turbina IA - Missão, Equipe e Transparência Editorial',
-  description: 'Conheça o Turbina IA: nossa missão de democratizar o conhecimento sobre inteligência artificial no Brasil, quem produz o conteúdo e como trabalhamos com transparência editorial.',
+  title: 'Sobre o Turbina IA: Missão e Transparência Editorial',
+  description: 'Conheça o Turbina IA: a missão de democratizar a inteligência artificial no Brasil, quem produz o conteúdo e como trabalhamos com transparência.',
   alternates: {
     canonical: 'https://www.turbinaia.com.br/sobre',
   },

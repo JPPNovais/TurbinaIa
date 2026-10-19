@@ -1,5 +1,6 @@
 ---
 title: "Guia de Prompt Engineering 2026: Como Criar Prompts Perfeitos para ChatGPT, Claude e Gemini"
+seoTitle: "Guia de Prompt Engineering: Como Criar Prompts Perfeitos"
 description: "Domine prompt engineering com técnicas oficiais da Anthropic e OpenAI: chain-of-thought, few-shot, XML tags e mais. Guia prático com exemplos reais."
 category: tutoriais
 tags:

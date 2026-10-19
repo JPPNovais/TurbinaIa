@@ -4,6 +4,7 @@ import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, DEFAULT_OG_IMAGE, jsonLd } from '@/lib/seo';
 import './globals.css';
 
 const inter = Inter({
@@ -39,20 +40,13 @@ export const metadata: Metadata = {
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',
-    images: [
-      {
-        url: '/icon.png',
-        width: 512,
-        height: 512,
-        alt: 'Turbina IA',
-      },
-    ],
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Turbina IA - O Portal Definitivo de Inteligência Artificial',
     description: 'Notícias diárias, tutoriais de monetização, guias práticos e tendências sobre Inteligência Artificial.',
-    images: ['/icon.png'],
+    images: [DEFAULT_OG_IMAGE.url],
   },
 };
 
@@ -67,20 +61,33 @@ export default function RootLayout({
   const organizationLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': ORGANIZATION_ID,
     name: 'Turbina IA',
-    url: 'https://www.turbinaia.com.br',
-    logo: 'https://www.turbinaia.com.br/icon.png',
-    description: 'Portal brasileiro de Inteligência Artificial: notícias, tutoriais, comparador de modelos e ferramentas práticas de IA.',
-    sameAs: [],
+    url: SITE_URL,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/icon.png`,
+      width: 512,
+      height: 512,
+    },
+    description: 'Portal brasileiro de Inteligência Artificial: prompts prontos, rankings de ferramentas, tutoriais, comparador de modelos e notícias de IA.',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'editorial',
+      url: `${SITE_URL}/contato`,
+      availableLanguage: 'Portuguese',
+    },
   };
 
   const websiteLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': WEBSITE_ID,
     name: 'Turbina IA',
-    url: 'https://www.turbinaia.com.br',
+    alternateName: 'TurbinaIA',
+    url: SITE_URL,
     inLanguage: 'pt-BR',
-    publisher: { '@type': 'Organization', name: 'Turbina IA' },
+    publisher: { '@id': ORGANIZATION_ID },
   };
 
   return (
@@ -88,7 +95,7 @@ export default function RootLayout({
       <body>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationLd, websiteLd]) }}
+          dangerouslySetInnerHTML={{ __html: jsonLd([organizationLd, websiteLd]) }}
         />
         <Header />
         {children}

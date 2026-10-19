@@ -1,5 +1,6 @@
 ---
 title: "+30 Prompts para Programação: Modelos Prontos para Devs (2026)"
+seoTitle: "+30 Prompts para Programação Prontos para Devs (2026)"
 description: "Prompts para programação que realmente funcionam: escreva, debugue, refatore e documente código com ChatGPT usando estes modelos prontos."
 category: tutoriais
 tags:

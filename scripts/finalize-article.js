@@ -7,7 +7,7 @@
 //   2. valida o artigo (frontmatter, título, corpo mínimo) e recusa lixo
 //   3. escolhe uma coverImage do pool curado que ainda não esteja em uso
 //   4. roda o postprocess (limpeza de artefatos, redirects, fontes fracas)
-//   5. roda o pacote de SEO (description <=160, imagens inline, links internos)
+//   5. roda o pacote de SEO (description <=155, imagens inline, links internos)
 //   6. renomeia o arquivo para o slug canônico derivado do título
 //
 // Uso:  node scripts/finalize-article.js content/articles/<qualquer-nome>.md
@@ -219,6 +219,16 @@ async function main() {
     console.error('❌ Artigo REPROVADO — nada foi publicado. Corrija e rode de novo:');
     for (const p of problems) console.error(`   • ${p}`);
     process.exit(1);
+  }
+
+  // Avisos de SEO (não bloqueiam): o <title> do Google mostra ~60 caracteres.
+  // Sem seoTitle, o site encurta o título sozinho (src/lib/seo.ts), mas um
+  // seoTitle escrito à mão sempre fica melhor.
+  const seoTitle = readFrontmatterField(content, 'seoTitle');
+  if (seoTitle && seoTitle.length > 60) {
+    console.warn(`⚠️  seoTitle com ${seoTitle.length} caracteres (máximo 60): "${seoTitle}"`);
+  } else if (!seoTitle && title.length > 60) {
+    console.warn(`⚠️  Título com ${title.length} caracteres e sem seoTitle — adicione no frontmatter um seoTitle de até 60 caracteres com a palavra-chave no início.`);
   }
 
   const slug = slugify(title);

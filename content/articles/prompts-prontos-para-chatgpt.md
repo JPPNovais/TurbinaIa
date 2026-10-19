@@ -1,5 +1,6 @@
 ---
 title: "+50 Prompts Prontos para ChatGPT: Modelos para Copiar e Usar (2026)"
+seoTitle: "+50 Prompts Prontos para ChatGPT para Copiar (2026)"
 description: "Prompts prontos para ChatGPT em todas as áreas: trabalho, estudo, marketing e mais. Copie, adapte e turbine sua produtividade agora."
 category: tutoriais
 tags:

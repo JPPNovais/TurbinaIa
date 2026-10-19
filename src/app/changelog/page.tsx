@@ -7,7 +7,7 @@ const OG_DESC = `Cronologia completa dos principais lançamentos de IA: ChatGPT,
 const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Atualizado Automaticamente')}`;
 
 export const metadata: Metadata = {
-  title: 'Monitor de Modelos de IA - Lançamentos e Atualizações | Turbina IA',
+  title: 'Monitor de Modelos de IA: Lançamentos e Atualizações',
   description: OG_DESC,
   keywords: ['lançamentos IA', 'novidades modelos IA', 'atualização chatgpt', 'histórico claude', 'timeline inteligência artificial'],
   alternates: { canonical: '/changelog' },

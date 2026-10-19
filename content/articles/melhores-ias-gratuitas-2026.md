@@ -1,5 +1,6 @@
 ---
 title: "As 10 Melhores IAs Gratuitas em 2026 (ChatGPT, Gemini, Claude e Mais)"
+seoTitle: "10 Melhores IAs Gratuitas em 2026: ChatGPT, Gemini e Mais"
 description: "Melhores IAs grátis em 2026: compare ChatGPT, Gemini, Claude e mais. Descubra qual ferramenta de IA gratuita serve melhor para você."
 category: ferramentas
 tags:

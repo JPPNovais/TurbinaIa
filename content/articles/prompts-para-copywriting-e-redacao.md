@@ -1,5 +1,6 @@
 ---
 title: "+30 Prompts para Copywriting e Redação: Escreva Melhor com IA (2026)"
+seoTitle: "+30 Prompts para Copywriting e Redação (2026)"
 description: "Prompts para copywriting e redação que realmente funcionam: +30 modelos prontos para headlines, textos de vendas, storytelling e revisão com IA."
 category: tutoriais
 tags:

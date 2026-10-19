@@ -17,7 +17,7 @@ A inteligência artificial atingiu um novo e impressionante marco, desafiando um
 
 **Resposta Rápida (TL;DR):** Um modelo de IA de propósito geral da OpenAI resolveu o problema da distância unitária de Erdős, um desafio matemático de 80 anos, ao descobrir uma família infinita de configurações de pontos que supera as soluções tradicionais baseadas em grades. A chave para o avanço foi a aplicação inovadora da teoria algébrica dos números, uma abordagem incomum para problemas geométricos, marcando um "marco" para a IA na matemática e abrindo novas fronteiras para a pesquisa científica autônoma.
 
-### O Enigma de Erdős: Um Desafio de Quase Oito Décadas
+## O Enigma de Erdős: Um Desafio de Quase Oito Décadas
 
 ![Representação abstrata de redes neurais e estruturas matemáticas complexas em azul e roxo](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80)
 
@@ -25,13 +25,13 @@ O "problema da distância unitária", proposto pelo proeminente matemático hún
 
 Matemáticos renomados dedicaram suas carreiras a verificar ou refutar essa hipótese. O problema era considerado "possivelmente o mais conhecido (e mais simples de explicar) problema da geometria combinatória". No entanto, o consenso permaneceu inabalável — até agora.
 
-### A Reviravolta Inesperada da OpenAI
+## A Reviravolta Inesperada da OpenAI
 
 A OpenAI, conhecida por seus avanços em inteligência artificial, [anunciou](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-remarks.pdf) que um de seus modelos de raciocínio de propósito geral encontrou uma solução que refuta essa antiga conjectura. O modelo identificou uma família infinita de configurações de pontos que supera a eficiência do padrão de grade tradicional, segundo reportagem do [The Guardian](https://www.theguardian.com/technology/2026/may/21/openai-makes-breakthrough-on-80-year-old-maths-problem). Esta descoberta desafia a visão aceita por gerações de matemáticos.
 
 A precisão do avanço foi refinada pelo matemático Will Sawin, da Universidade de Princeton, que expressou a melhoria com um expoente matemático fixo de δ = 0.014, o que significa que o número de pares de distância unitária cresce em n^(1+0.014) para infinitos *n*, conforme detalhado pela [MIT Technology Review](https://www.technologyreview.com/2026/05/21/1093121/openai-says-internal-model-has-disproved-80-year-old-erdos-unit-distance-conjecture/). Isso representa um salto polinomial significativo sobre o limite quase linear que se acreditava ser o máximo.
 
-### Além da Geometria: A Teoria Algébrica dos Números em Ação
+## Além da Geometria: A Teoria Algébrica dos Números em Ação
 
 O que mais impressionou os especialistas não foi apenas o "o quê", mas o "como". Em vez de empregar as abordagens habituais da geometria, o sistema de IA recorreu à teoria algébrica dos números, uma área avançada da matemática que explora extensões de números inteiros. Esta foi uma escolha de metodologia considerada "pouco comum na resolução de problemas geométricos".
 
@@ -39,7 +39,7 @@ O raciocínio da IA incluiu ferramentas sofisticadas como "torres de corpos de c
 
 A prova gerada pela IA tinha aproximadamente 125 páginas, um testemunho da complexidade e profundidade da solução, segundo análise do [The Decoder](https://the-decoder.com/the-first-ai-proof-worthy-of-maths-top-journal-landed-and-it-wont-be-the-last/).
 
-### A Reação da Comunidade Científica: Um Marco para a IA Matemática
+## A Reação da Comunidade Científica: Um Marco para a IA Matemática
 
 A solução proposta pela OpenAI foi submetida a um rigoroso escrutínio externo por matemáticos reconhecidos mundialmente. Um grupo de nove matemáticos — incluindo o ganhador da Medalha Fields Tim Gowers, Noga Alon (Princeton), Melanie Wood (Harvard), Arul Shankar (Toronto), Jacob Tsimerman, Victor Wang e Thomas Bloom — assinou em coautoria um [trabalho complementar publicado no arXiv](https://arxiv.org/abs/2601.07421) que explica a importância da descoberta.
 
@@ -51,7 +51,7 @@ Vários pesquisadores destacaram que a conexão revelada pela IA pode impactar o
 
 ![Laptop com código e gráficos científicos representando descobertas matemáticas assistidas por inteligência artificial](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80)
 
-### Implicações e o Futuro da Descoberta Científica com IA
+## Implicações e o Futuro da Descoberta Científica com IA
 
 Um dos aspectos mais destacados deste caso é que a solução não veio de um programa especializado em demonstrações formais, mas de um modelo de raciocínio de propósito geral. A [própria OpenAI](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-remarks.pdf) assegurou que seu sistema não foi treinado especificamente para o problema da distância unitária, nem recebeu ferramentas adaptadas para essa tarefa — ponto também destacado pela [CNN Brasil](https://www.cnnbrasil.com.br/tecnologia/ia-da-openai-resolve-problema-matematico-que-atravessou-decadas-surpreende-especialistas-e-levanta-uma-pergunta-assustadora-as-maquinas-ja-comecaram-a-fazer-descobertas-cientificas-sozinhas/) ao analisar o caso para o público brasileiro.
 

@@ -1,5 +1,6 @@
 ---
 title: "O Que é Machine Learning? Guia Completo de Aprendizado de Máquina (2026)"
+seoTitle: "Machine Learning: O Que É e Como Funciona (Guia 2026)"
 description: "Machine learning é a tecnologia por trás das IAs mais populares. Descubra o que é, como funciona, quais são os tipos e como começar a aprender."
 category: tutoriais
 tags:

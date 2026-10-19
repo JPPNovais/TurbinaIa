@@ -1,5 +1,6 @@
 ---
 title: "O que é 'Context Engineering' e Por que Está Substituindo o Prompt Engineering em 2026"
+seoTitle: "Context Engineering: O Que É e Por Que Substitui o Prompt"
 description: "Entenda o que é context engineering, por que especialistas dizem que ela supera o prompt engineering e como aplicar isso na prática hoje."
 category: tutoriais
 tags:

@@ -1,5 +1,6 @@
 ---
 title: "+30 Prompts para Estudos e Concursos: Use a IA para Aprender Mais Rápido (2026)"
+seoTitle: "+30 Prompts para Estudos e Concursos com IA (2026)"
 description: "Prompts para estudos e concursos prontos para usar no ChatGPT: resumos, simulados, plano de estudos, memorização e redação com IA."
 category: tutoriais
 tags:

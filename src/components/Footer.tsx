@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-links-col">
-            <h3 className="footer-title">Categorias</h3>
+            <h2 className="footer-title">Categorias</h2>
             <ul className="footer-links">
               <li>
                 <Link href="/?category=tutoriais" className="footer-link">
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-links-col">
-            <h3 className="footer-title">Legal e Informações</h3>
+            <h2 className="footer-title">Legal e Informações</h2>
             <ul className="footer-links">
               <li>
                 <Link href="/sobre" className="footer-link">

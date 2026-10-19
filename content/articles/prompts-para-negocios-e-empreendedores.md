@@ -1,5 +1,6 @@
 ---
 title: "+30 Prompts para Negócios e Empreendedores: IA para Crescer sua Empresa (2026)"
+seoTitle: "+30 Prompts para Negócios e Empreendedores (2026)"
 description: "Prompts para negócios prontos para usar no ChatGPT: plano estratégico, vendas, finanças, gestão e validação de ideias para empreendedores."
 category: tutoriais
 tags:

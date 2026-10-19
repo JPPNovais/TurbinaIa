@@ -6,8 +6,9 @@ import ReadingProgressBar from '@/components/ReadingProgressBar';
 import AdSense from '@/components/AdSense';
 import PostCard from '@/components/PostCard';
 import LeadMagnet from '@/components/LeadMagnet';
-import { getArticleData, getAllArticlesMetadata } from '@/lib/articles';
+import { getArticleData, getAllArticlesMetadata, getLastModified } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
+import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, buildArticleTitle, clampDescription, jsonLd } from '@/lib/seo';
 
 interface ArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -32,26 +33,29 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     };
   }
 
-  const imageUrl = article.coverImage || 'https://www.turbinaia.com.br/icon.png';
+  const imageUrl = article.coverImage || `${SITE_URL}/icon.png`;
 
-  // Mantém o <title> em bom tamanho para o Google: só acrescenta a marca
-  // quando o título do artigo é curto o suficiente.
-  const pageTitle = article.title.length <= 55
-    ? `${article.title} - Turbina IA`
-    : article.title;
+  // <title> com no máximo ~60 caracteres (seoTitle do frontmatter ou corte
+  // automático); o título completo continua no H1 e no Open Graph.
+  const pageTitle = buildArticleTitle(article.title, article.seoTitle);
+  const description = clampDescription(article.description);
 
   return {
     title: pageTitle,
-    description: article.description,
+    description,
     alternates: {
       canonical: `/blog/${resolvedParams.slug}`,
     },
     openGraph: {
-      title: `${article.title} - Turbina IA`,
-      description: article.description,
+      title: article.title,
+      description,
       type: 'article',
-      url: `https://www.turbinaia.com.br/blog/${resolvedParams.slug}`,
+      url: `${SITE_URL}/blog/${resolvedParams.slug}`,
+      siteName: 'Turbina IA',
+      locale: 'pt_BR',
       publishedTime: article.date,
+      modifiedTime: getLastModified(article),
+      section: article.category,
       authors: [article.author],
       tags: article.tags,
       images: [
@@ -65,8 +69,8 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${article.title} - Turbina IA`,
-      description: article.description,
+      title: article.title,
+      description,
       images: [imageUrl],
     },
   };
@@ -97,7 +101,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const formattedDate = formatDateLong(article.date);
 
   // Social sharing links
-  const articleUrl = `https://www.turbinaia.com.br/blog/${article.slug}`;
+  const articleUrl = `${SITE_URL}/blog/${article.slug}`;
   const shareText = `Confira este artigo no Turbina IA: ${article.title}`;
   const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(articleUrl)}`;
   const linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`;
@@ -107,34 +111,41 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const blogPostingLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
+    '@id': `${articleUrl}#article`,
     headline: article.title,
     description: article.description,
-    image: article.coverImage || 'https://www.turbinaia.com.br/icon.png',
+    image: [article.coverImage || `${SITE_URL}/icon.png`],
     datePublished: article.date,
-    dateModified: article.updatedAt || article.date,
+    dateModified: getLastModified(article),
     inLanguage: 'pt-BR',
     keywords: article.tags.join(', '),
     articleSection: article.category,
-    wordCount: article.readingTime,
+    wordCount: article.wordCount,
+    timeRequired: `PT${Math.max(1, Math.ceil(article.wordCount / 200))}M`,
+    url: articleUrl,
     author: {
       '@type': 'Organization',
       name: article.author,
-      url: 'https://www.turbinaia.com.br/sobre',
+      url: `${SITE_URL}/sobre`,
     },
     editor: {
       '@type': 'Person',
       name: 'Rafael Menezes',
       jobTitle: 'Editor',
-      url: 'https://www.turbinaia.com.br/sobre',
+      url: `${SITE_URL}/sobre`,
     },
     publisher: {
       '@type': 'Organization',
+      '@id': ORGANIZATION_ID,
       name: 'Turbina IA',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.turbinaia.com.br/icon.png',
+        url: `${SITE_URL}/icon.png`,
+        width: 512,
+        height: 512,
       },
     },
+    isPartOf: { '@id': WEBSITE_ID },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': articleUrl,
@@ -163,14 +174,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       }
     : null;
 
-  const jsonLd = [blogPostingLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
+  const structuredData = [blogPostingLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
 
   return (
     <main>
       {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd(structuredData) }}
       />
       {/* Scroll indicator */}
       <ReadingProgressBar />
@@ -234,8 +245,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <article className="article-container">
         {/* Table of Contents (Sumário) */}
         {article.headings && article.headings.length > 0 && (
-          <div className="table-of-contents">
-            <h3 className="toc-title">🌀 Sumário do Artigo</h3>
+          <nav className="table-of-contents" aria-label="Sumário do artigo">
+            <p className="toc-title">🌀 Sumário do Artigo</p>
             <ul className="toc-list">
               {article.headings.map((heading) => (
                 <li 
@@ -250,7 +261,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
         )}
 
         <div 

@@ -1,5 +1,6 @@
 ---
 title: "O Que é Inteligência Artificial? Guia Completo para Iniciantes (2026)"
+seoTitle: "O Que é Inteligência Artificial? Guia para Iniciantes 2026"
 description: "Inteligência artificial explicada do zero: o que é IA, como funciona, tipos e como usar no dia a dia. Guia completo para iniciantes."
 category: tutoriais
 tags:

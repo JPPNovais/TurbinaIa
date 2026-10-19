@@ -1,5 +1,5 @@
 // SEO enhancer — aplicado deterministicamente a cada artigo gerado pelo robô,
-// para que todo conteúdo novo já saia com: meta description <=160, 2 imagens
+// para que todo conteúdo novo já saia com: meta description <=155, 2 imagens
 // inline e links internos contextuais (sem depender do LLM, evitando links
 // inventados/quebrados).
 
@@ -51,14 +51,15 @@ function splitFrontmatter(md) {
   return { front: md.slice(0, fmEnd), body: md.slice(fmEnd) };
 }
 
-// 1) Garante meta description <= 160 caracteres, cortando no limite de palavra.
+// 1) Garante meta description <= 155 caracteres (o Google corta por volta
+// disso no SERP), cortando no limite de palavra.
 function enforceDescription(front) {
   return front.replace(/^description:\s*"?(.*?)"?\s*$/m, (line, value) => {
     let v = value.trim();
-    if (v.length <= 160) return `description: "${v.replace(/"/g, '\\"')}"`;
-    let cut = v.slice(0, 157);
+    if (v.length <= 155) return `description: "${v.replace(/"/g, '\\"')}"`;
+    let cut = v.slice(0, 155);
     const lastSpace = cut.lastIndexOf(' ');
-    if (lastSpace > 120) cut = cut.slice(0, lastSpace);
+    if (lastSpace > 115) cut = cut.slice(0, lastSpace);
     cut = cut.replace(/[\s,;:.\-–—]+$/, '');
     return `description: "${cut.replace(/"/g, '\\"')}"`;
   });

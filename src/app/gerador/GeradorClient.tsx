@@ -329,9 +329,9 @@ export default function GeradorClient() {
               minHeight: '300px',
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-                <h3 style={{ margin: 0, fontSize: '1rem', color: 'var(--text-primary)' }}>
+                <h2 style={{ margin: 0, fontSize: '1rem', color: 'var(--text-primary)' }}>
                   Seu Prompt Gerado
-                </h3>
+                </h2>
                 {generatedPrompt && (
                   <button
                     onClick={handleCopy}

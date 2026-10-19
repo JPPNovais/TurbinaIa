@@ -2,9 +2,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import FerramentasClient from './FerramentasClient';
 import { AI_TOOLS } from '@/data/ai-tools';
+import { WEBSITE_ID, jsonLd as serializeJsonLd } from '@/lib/seo';
+
+const OG_TITLE = 'Guia de Ferramentas de IA 2026: Qual IA usar para cada tarefa?';
+const OG_DESC = `Descubra as melhores ferramentas de inteligência artificial organizadas por finalidade. Compare ChatGPT, Claude, Midjourney, GitHub Copilot e mais de ${Math.floor(AI_TOOLS.length / 10) * 10} IAs.`;
+const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent('Guia de Ferramentas de IA')}&desc=${encodeURIComponent('Qual IA usar para cada tarefa, organizadas por categoria')}&badge=${encodeURIComponent(`+${Math.floor(AI_TOOLS.length / 10) * 10} IAs`)}`;
 
 export const metadata: Metadata = {
-  title: 'Guia de Ferramentas de IA: Qual usar para cada tarefa | Turbina IA',
+  title: 'Guia de Ferramentas de IA: Qual Usar para Cada Tarefa',
   description:
     'Descubra as melhores ferramentas de IA por finalidade: ChatGPT, Claude, Midjourney, GitHub Copilot e mais de 70 IAs organizadas por categoria.',
   keywords: [
@@ -22,19 +27,19 @@ export const metadata: Metadata = {
     'qual IA usar',
   ],
   openGraph: {
-    title: 'Guia de Ferramentas de IA 2026: Qual IA usar para cada tarefa?',
-    description:
-      'Descubra as melhores ferramentas de inteligência artificial organizadas por finalidade. Compare ChatGPT, Claude, Midjourney, GitHub Copilot e mais de 30 IAs.',
+    title: OG_TITLE,
+    description: OG_DESC,
     url: 'https://www.turbinaia.com.br/ferramentas',
     siteName: 'Turbina IA',
     locale: 'pt_BR',
     type: 'website',
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: OG_TITLE }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Guia de Ferramentas de IA 2026: Qual IA usar para cada tarefa?',
-    description:
-      'Descubra as melhores ferramentas de inteligência artificial organizadas por finalidade. Compare mais de 30 IAs por categoria de uso.',
+    title: OG_TITLE,
+    description: OG_DESC,
+    images: [OG_IMAGE],
   },
   alternates: {
     canonical: 'https://www.turbinaia.com.br/ferramentas',
@@ -52,7 +57,7 @@ const jsonLd = {
       description:
         'Descubra as melhores ferramentas de inteligência artificial organizadas por finalidade.',
       inLanguage: 'pt-BR',
-      isPartOf: { '@id': 'https://www.turbinaia.com.br' },
+      isPartOf: { '@id': WEBSITE_ID },
     },
     {
       '@type': 'ItemList',
@@ -115,11 +120,11 @@ export default function FerramentasPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqLd) }}
       />
       <FerramentasClient />
 

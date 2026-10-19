@@ -169,7 +169,7 @@ export default function ChangelogClient() {
             <div key={year} style={{ marginBottom: '3rem' }}>
               {/* Year header */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                <div style={{
+                <h2 style={{
                   background: 'var(--primary)',
                   color: '#fff',
                   padding: '0.3rem 1rem',
@@ -177,9 +177,11 @@ export default function ChangelogClient() {
                   fontSize: '0.9rem',
                   fontWeight: 700,
                   fontFamily: 'var(--font-display)',
+                  lineHeight: 'inherit',
+                  letterSpacing: 'normal',
                 }}>
                   {year}
-                </div>
+                </h2>
                 <div style={{ flex: 1, height: '1px', background: 'var(--border-color)' }} />
                 <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
                   {entries.length} evento{entries.length !== 1 ? 's' : ''}

@@ -144,6 +144,7 @@ export default function PromptsClient() {
       {/* Prompts Grid */}
       {filteredPrompts.length > 0 ? (
         <>
+        <h2 className="sr-only">Prompts da biblioteca</h2>
         <div className="prompts-grid">
           {visiblePrompts.map((prompt) => (
             <article key={prompt.id} className="prompt-card">

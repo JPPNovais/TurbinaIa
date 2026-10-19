@@ -3,6 +3,10 @@ import Link from 'next/link';
 import PromptsClient from './PromptsClient';
 import LeadMagnet from '@/components/LeadMagnet';
 import { PROMPTS } from '@/data/prompts';
+import PostCard from '@/components/PostCard';
+import { getAllArticlesMetadata } from '@/lib/articles';
+import { getHubArticles } from '@/lib/taxonomy';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const PROMPT_COUNT = PROMPTS.length;
 
@@ -72,14 +76,33 @@ const faqLd = {
   ],
 };
 
-export default function PromptsPage() {
+export default async function PromptsPage() {
+  // /prompts é o hub do tema: além da biblioteca interativa, lista no HTML do
+  // servidor todas as coleções e guias de prompts publicados no blog.
+  const promptArticles = getHubArticles(await getAllArticlesMetadata(), 'prompts');
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <main style={{ minHeight: '80vh' }}>
       {/* Prompts Client Component */}
-      <PromptsClient />
+      <PromptsClient breadcrumb={<Breadcrumbs items={[{ name: 'Prompts' }]} currentPath="/prompts" />} />
+
+      {promptArticles.length > 0 && (
+        <section className="container hub-page hub-section" aria-labelledby="guias-de-prompts">
+          <h2 id="guias-de-prompts" className="section-title">Coleções e guias de prompts</h2>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', maxWidth: '760px', lineHeight: 1.6 }}>
+            Coleções completas por área — marketing, programação, estudos, negócios e copywriting — e guias para escrever
+            prompts melhores no ChatGPT, no Gemini e no Claude.
+          </p>
+          <div className="articles-grid">
+            {promptArticles.map((article) => (
+              <PostCard key={article.slug} article={article} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Captura de leads — baixar o pack completo de prompts */}
       <section className="container" style={{ maxWidth: '800px' }}>

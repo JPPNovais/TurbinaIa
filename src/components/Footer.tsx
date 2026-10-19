@@ -22,17 +22,27 @@ export default function Footer() {
             <h2 className="footer-title">Categorias</h2>
             <ul className="footer-links">
               <li>
-                <Link href="/?category=tutoriais" className="footer-link">
+                <Link href="/prompts" className="footer-link" prefetch={false}>
+                  Prompts
+                </Link>
+              </li>
+              <li>
+                <Link href="/categoria/melhores-ias" className="footer-link" prefetch={false}>
+                  Melhores IAs
+                </Link>
+              </li>
+              <li>
+                <Link href="/categoria/tutoriais" className="footer-link" prefetch={false}>
                   Tutoriais
                 </Link>
               </li>
               <li>
-                <Link href="/?category=noticias" className="footer-link">
+                <Link href="/categoria/noticias" className="footer-link" prefetch={false}>
                   Notícias
                 </Link>
               </li>
               <li>
-                <Link href="/?category=ferramentas" className="footer-link">
+                <Link href="/categoria/ferramentas" className="footer-link" prefetch={false}>
                   Ferramentas
                 </Link>
               </li>

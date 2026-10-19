@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ComparatorClient from './ComparatorClient';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const OG_TITLE = 'Comparador de IAs: Comparação de Inteligências Artificiais';
 const OG_DESC = 'Comparação de IAs lado a lado em 2026: ChatGPT, Claude, Gemini e mais. Compare preços, prós, contras e notas em programação, escrita e raciocínio.';
@@ -75,6 +76,7 @@ export default function ComparadorPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <main className="container comparador-section">
+        <Breadcrumbs items={[{ name: 'Comparador de IAs' }]} currentPath="/comparador" />
         <div className="comparador-header">
           <h1>Comparador de IAs: Comparação de Inteligências Artificiais</h1>
           <p>

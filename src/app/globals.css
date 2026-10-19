@@ -1728,3 +1728,77 @@ h1, h2, h3, h4, h5, h6 {
   .tool-card { padding: 0.9rem; }
   .tool-card-sub { font-size: 0.8rem; }
 }
+
+/* Itens da trilha de navegação (breadcrumb) */
+.article-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+/* Páginas de tema / categoria (/categoria/<slug>) */
+.hub-header {
+  padding-top: calc(var(--header-height) + 2.5rem);
+  padding-bottom: 1rem;
+}
+.hub-tools { max-width: 900px; }
+.hub-title {
+  font-size: clamp(2rem, 4.5vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0.85rem 0 0.75rem;
+}
+.hub-intro {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 760px;
+}
+.hub-tools {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.hub-tool {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  height: 100%;
+  padding: 0.9rem 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+.hub-tool:hover { border-color: var(--primary); transform: translateY(-2px); }
+.hub-tool strong { font-family: var(--font-display); color: var(--text-primary); font-size: 0.98rem; }
+.hub-tool span { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; }
+.hub-section { margin-top: 2.5rem; }
+.hub-archive {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 0.25rem 2rem;
+}
+.hub-archive li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.95rem;
+}
+.hub-archive a { color: var(--text-primary); font-weight: 500; line-height: 1.4; }
+.hub-archive a:hover { color: var(--primary); }
+.hub-archive time { flex-shrink: 0; font-size: 0.8rem; color: var(--text-muted); white-space: nowrap; }
+.hub-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.hub-others { margin-bottom: 4rem; }
+.hub-page .articles-grid { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1024px) { .hub-page .articles-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) {
+  .hub-page .articles-grid { grid-template-columns: 1fr; }
+  .hub-archive { grid-template-columns: 1fr; }
+}

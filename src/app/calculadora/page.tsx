@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import CalculatorClient from './CalculatorClient';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const OG_TITLE = 'Calculadora de Custos de APIs de IA';
 const OG_DESC = 'Simule e compare os custos de tokens das principais APIs: Gemini 2.5, GPT-4.1, Claude Sonnet e DeepSeek. Encontre a mais barata para seu projeto.';
@@ -93,7 +94,7 @@ export default function CalculatorPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <main style={{ minHeight: '80vh' }}>
       {/* Interactive Calculator */}
-      <CalculatorClient />
+      <CalculatorClient breadcrumb={<Breadcrumbs items={[{ name: 'Calculadora de Custos' }]} currentPath="/calculadora" />} />
 
       {/* SEO Explanations Content */}
       <section className="container" style={{ marginTop: '3rem', marginBottom: '6rem', maxWidth: '800px' }}>

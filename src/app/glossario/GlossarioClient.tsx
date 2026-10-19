@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import { GLOSSARIO, GLOSSARIO_CATEGORIES, type GlossarioTerm } from '@/data/glossario';
 import { useProgressiveReveal } from '@/hooks/useProgressiveReveal';
 
-export default function GlossarioClient() {
+export default function GlossarioClient({ breadcrumb }: { breadcrumb?: React.ReactNode }) {
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Todos');
   const [selectedTerm, setSelectedTerm] = useState<GlossarioTerm | null>(null);
@@ -49,6 +49,7 @@ export default function GlossarioClient() {
   return (
     <main style={{ paddingTop: 'calc(var(--header-height) + 2rem)', paddingBottom: '4rem' }}>
       <div className="container">
+        {breadcrumb}
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
           <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginBottom: '0.75rem' }}>

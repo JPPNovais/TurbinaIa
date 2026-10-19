@@ -7,6 +7,7 @@ import AdSense from '@/components/AdSense';
 import { getAllArticlesMetadata } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
 import { SITE_URL, DEFAULT_OG_IMAGE, jsonLd } from '@/lib/seo';
+import { HUBS, HUB_ORDER } from '@/lib/taxonomy';
 
 const HOME_TITLE = 'Turbina IA: Prompts Prontos, Rankings de IAs e Tutoriais';
 const HOME_DESCRIPTION = 'Prompts prontos para ChatGPT e Gemini, rankings das melhores IAs, tutoriais e ferramentas grátis para usar inteligência artificial no dia a dia.';
@@ -34,41 +35,29 @@ export const metadata: Metadata = {
   },
 };
 
-interface HomeProps {
-  searchParams: Promise<{ category?: string }>;
-}
-
-export default async function Home({ searchParams }: HomeProps) {
-  const resolvedSearchParams = await searchParams;
-  const selectedCategory = resolvedSearchParams.category || '';
-
+// A home é estática (gerada no build a cada deploy). Antes ela lia
+// ?category= e por isso era renderizada a cada visita, sem cache de CDN; os
+// filtros agora são páginas próprias e indexáveis (/categoria/<slug>, /prompts)
+// e o ?category= antigo redireciona com 301 (next.config.ts).
+export default async function Home() {
   // Get articles
   const allArticles = await getAllArticlesMetadata();
-
-  // Filter articles by category if selected
-  const filteredArticles = selectedCategory
-    ? allArticles.filter(art => art.category.toLowerCase() === selectedCategory.toLowerCase())
-    : allArticles;
 
   // Find all articles marked as featured.
   const featuredPool = allArticles.filter(art => art.isFeatured);
 
   // The featured article is always the latest published article (index 0)
-  const featuredArticle = !selectedCategory && allArticles.length > 0
-    ? allArticles[0]
-    : null;
+  const featuredArticle = allArticles.length > 0 ? allArticles[0] : null;
 
   // Articles for the grid (excluding the featured one if showing)
   const gridArticles = featuredArticle
-    ? filteredArticles.filter(art => art.slug !== featuredArticle.slug)
-    : filteredArticles;
+    ? allArticles.filter(art => art.slug !== featuredArticle.slug)
+    : allArticles;
 
-  // Categories list for tabs
+  // Abas de navegação por tema
   const categories = [
-    { label: 'Todos', value: '' },
-    { label: 'Tutoriais', value: 'tutoriais' },
-    { label: 'Notícias', value: 'noticias' },
-    { label: 'Ferramentas', value: 'ferramentas' },
+    { label: 'Todos', href: '/' },
+    ...HUB_ORDER.map((slug) => ({ label: HUBS[slug].label, href: HUBS[slug].href })),
   ];
 
   // Helper for formatting hero date
@@ -214,12 +203,9 @@ export default async function Home({ searchParams }: HomeProps) {
           {categories.map((cat) => (
             <Link
               key={cat.label}
-              href={cat.value ? `/?category=${cat.value}` : '/'}
-              className={`filter-btn ${
-                (cat.value === '' && !selectedCategory) || selectedCategory === cat.value
-                  ? 'active'
-                  : ''
-              }`}
+              href={cat.href}
+              className={`filter-btn ${cat.href === '/' ? 'active' : ''}`}
+              prefetch={false}
             >
               {cat.label}
             </Link>
@@ -229,11 +215,7 @@ export default async function Home({ searchParams }: HomeProps) {
         <div className="main-layout">
           {/* Articles Grid Column */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-            <h2 className="section-title">
-              {selectedCategory 
-                ? `Publicações em ${categories.find(c => c.value === selectedCategory.toLowerCase())?.label || selectedCategory}` 
-                : 'Últimas Publicações'}
-            </h2>
+            <h2 className="section-title">Últimas Publicações</h2>
             {gridArticles.length > 0 ? (
               <ArticlesGrid articles={gridArticles} />
             ) : (

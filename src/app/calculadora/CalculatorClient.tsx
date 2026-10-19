@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import { AI_MODELS, type CalculatorModel as AIModel } from '@/data/calculator-models';
 import './calculadora.css';
 
-export default function CalculatorClient() {
+export default function CalculatorClient({ breadcrumb }: { breadcrumb?: React.ReactNode }) {
   const [inputTokens, setInputTokens] = useState<number>(50000);
   const [outputTokens, setOutputTokens] = useState<number>(10000);
   const [requestsCount, setRequestsCount] = useState<number>(1000);
@@ -60,6 +60,7 @@ export default function CalculatorClient() {
 
   return (
     <section className="calculadora-section container">
+      {breadcrumb}
       <div className="calculadora-header">
         <h1>Calculadora de Custos de APIs de IA ⚡</h1>
         <p>

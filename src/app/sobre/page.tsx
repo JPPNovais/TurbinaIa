@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Sobre o Turbina IA: Missão e Transparência Editorial',
@@ -31,6 +32,7 @@ export default function SobrePage() {
       className="container"
       style={{ paddingTop: 'calc(var(--header-height) + 3rem)', paddingBottom: '4rem', maxWidth: '800px' }}
     >
+      <Breadcrumbs items={[{ name: 'Sobre' }]} currentPath="/sobre" />
       <header style={{ marginBottom: '2rem', textAlign: 'center' }}>
         <h1 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem' }}>
           Sobre o Turbina IA

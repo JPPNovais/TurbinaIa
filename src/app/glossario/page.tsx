@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import GlossarioClient from './GlossarioClient';
 import { GLOSSARIO } from '@/data/glossario';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const OG_TITLE = 'Glossário de IA — Termos de Inteligência Artificial';
 const OG_DESC = `${GLOSSARIO.length} termos de Inteligência Artificial explicados em português. De LLM a RAG, de Token a Embeddings — sem jargão desnecessário.`;
@@ -90,7 +91,7 @@ export default function GlossarioPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
-      <GlossarioClient />
+      <GlossarioClient breadcrumb={<Breadcrumbs items={[{ name: 'Glossário de IA' }]} currentPath="/glossario" />} />
 
       <section className="container" style={{ marginTop: '3rem', marginBottom: '6rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
         <hr style={{ border: '0', height: '1px', background: 'var(--border-color)', margin: '3rem 0' }} />

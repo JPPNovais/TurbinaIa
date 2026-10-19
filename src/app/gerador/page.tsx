@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import GeradorClient from './GeradorClient';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const OG_TITLE = 'Gerador de Prompts Interativo para IA';
 const OG_DESC = 'Preencha um formulário simples e receba um prompt profissional pronto para ChatGPT, Claude ou Gemini. Grátis, sem cadastro.';
@@ -91,7 +92,7 @@ export default function GeradorPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
-      <GeradorClient />
+      <GeradorClient breadcrumb={<Breadcrumbs items={[{ name: 'Gerador de Prompts' }]} currentPath="/gerador" />} />
 
       <section className="container" style={{ marginTop: '3rem', marginBottom: '6rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
         <hr style={{ border: '0', height: '1px', background: 'var(--border-color)', margin: '3rem 0' }} />

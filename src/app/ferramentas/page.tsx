@@ -3,6 +3,7 @@ import Link from 'next/link';
 import FerramentasClient from './FerramentasClient';
 import { AI_TOOLS } from '@/data/ai-tools';
 import { WEBSITE_ID, jsonLd as serializeJsonLd } from '@/lib/seo';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const OG_TITLE = 'Guia de Ferramentas de IA 2026: Qual IA usar para cada tarefa?';
 const OG_DESC = `Descubra as melhores ferramentas de inteligência artificial organizadas por finalidade. Compare ChatGPT, Claude, Midjourney, GitHub Copilot e mais de ${Math.floor(AI_TOOLS.length / 10) * 10} IAs.`;
@@ -126,7 +127,7 @@ export default function FerramentasPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqLd) }}
       />
-      <FerramentasClient />
+      <FerramentasClient breadcrumb={<Breadcrumbs items={[{ name: 'Guia de Ferramentas' }]} currentPath="/ferramentas" />} />
 
       <section className="container" style={{ marginTop: '3rem', marginBottom: '6rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
         <hr style={{ border: '0', height: '1px', background: 'var(--border-color)', margin: '3rem 0' }} />

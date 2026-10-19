@@ -22,6 +22,20 @@ const nextConfig: NextConfig = {
         destination: 'https://www.turbinaia.com.br/:path*',
         permanent: true,
       },
+      // Os filtros antigos da home (/?category=tutoriais) viraram páginas de
+      // categoria indexáveis. 301 preserva links externos e o que já foi indexado.
+      {
+        source: '/',
+        has: [{ type: 'query', key: 'category', value: '(?<cat>tutoriais|noticias|ferramentas)' }],
+        destination: '/categoria/:cat',
+        statusCode: 301,
+      },
+      // O hub de prompts é a própria Biblioteca de Prompts.
+      {
+        source: '/categoria/prompts',
+        destination: '/prompts',
+        statusCode: 301,
+      },
     ];
   },
 };

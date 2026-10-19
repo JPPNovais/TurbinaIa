@@ -106,7 +106,7 @@ function generatePrompt(form: FormState): string {
   return prompt.trim();
 }
 
-export default function GeradorClient() {
+export default function GeradorClient({ breadcrumb }: { breadcrumb?: React.ReactNode }) {
   const [form, setForm] = useState<FormState>({
     tarefa: '',
     contexto: '',
@@ -137,6 +137,7 @@ export default function GeradorClient() {
   return (
     <main style={{ paddingTop: 'calc(var(--header-height) + 2rem)', paddingBottom: '4rem' }}>
       <div className="container" style={{ maxWidth: '900px' }}>
+        {breadcrumb}
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
           <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginBottom: '0.75rem' }}>

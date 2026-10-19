@@ -5,7 +5,7 @@ import { useProgressiveReveal } from '@/hooks/useProgressiveReveal';
 import { PROMPTS, Prompt } from '@/data/prompts';
 import './prompts.css';
 
-export default function PromptsClient() {
+export default function PromptsClient({ breadcrumb }: { breadcrumb?: React.ReactNode }) {
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedPrompt, setSelectedPrompt] = useState<Prompt | null>(null);
@@ -102,6 +102,7 @@ export default function PromptsClient() {
   return (
     <section className="prompts-section container">
       {/* Header */}
+      {breadcrumb}
       <div className="prompts-header">
         <h1>Biblioteca de Prompts para IA: ChatGPT, Claude e Gemini ⚡</h1>
         <p>

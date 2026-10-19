@@ -23,7 +23,7 @@ const DEVELOPER_COLORS: Record<string, string> = {
 const ALL_DEVELOPERS = ['Todos', ...Array.from(new Set(CHANGELOG.map((e) => e.developer)))];
 const ALL_CATEGORIES = ['Todos', 'Lançamento', 'Atualização', 'Pesquisa', 'Descontinuado'];
 
-export default function ChangelogClient() {
+export default function ChangelogClient({ breadcrumb }: { breadcrumb?: React.ReactNode }) {
   const [selectedDev, setSelectedDev] = useState('Todos');
   const [selectedCat, setSelectedCat] = useState('Todos');
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -56,6 +56,7 @@ export default function ChangelogClient() {
   return (
     <main style={{ paddingTop: 'calc(var(--header-height) + 2rem)', paddingBottom: '4rem' }}>
       <div className="container">
+        {breadcrumb}
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
           <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginBottom: '0.75rem' }}>

@@ -6,9 +6,11 @@ import ReadingProgressBar from '@/components/ReadingProgressBar';
 import AdSense from '@/components/AdSense';
 import PostCard from '@/components/PostCard';
 import LeadMagnet from '@/components/LeadMagnet';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { getArticleData, getAllArticlesMetadata, getLastModified } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
 import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, buildArticleTitle, clampDescription, jsonLd } from '@/lib/seo';
+import { getPrimaryHub } from '@/lib/taxonomy';
 
 interface ArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -152,15 +154,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     },
   };
 
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://www.turbinaia.com.br' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.turbinaia.com.br/#artigos' },
-      { '@type': 'ListItem', position: 3, name: article.title, item: articleUrl },
-    ],
-  };
+  const hub = getPrimaryHub(article);
 
   const faqLd = article.faqs && article.faqs.length > 0
     ? {
@@ -174,7 +168,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       }
     : null;
 
-  const structuredData = [blogPostingLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
+  const structuredData = [blogPostingLd, ...(faqLd ? [faqLd] : [])];
 
   return (
     <main>
@@ -188,14 +182,11 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       {/* 1. Article Header */}
       <header className="article-header container">
-        <nav className="article-breadcrumb" aria-label="Trilha de navegação">
-          <Link href="/">Início</Link>
-          <span aria-hidden="true"> / </span>
-          <Link href={`/?category=${encodeURIComponent(article.category)}`}>{article.category}</Link>
-          <span aria-hidden="true"> / </span>
-          <span className="article-breadcrumb-current">{article.title}</span>
-        </nav>
-        <span className="badge badge-secondary">{article.category}</span>
+        <Breadcrumbs
+          items={[{ name: hub.label, href: hub.href }, { name: article.title }]}
+          currentPath={`/blog/${article.slug}`}
+        />
+        <Link href={hub.href} className="badge badge-secondary">{hub.label}</Link>
         <h1 className="article-header-title">{article.title}</h1>
         <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
           {article.description}

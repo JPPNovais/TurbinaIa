@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import VerificadorClient from './VerificadorClient';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const OG_TITLE = 'Verificador de IA: Seu Site Aparece nas Respostas do ChatGPT?';
 const OG_DESC = 'Ferramenta grátis de AEO: analise se o seu conteúdo está pronto para ser citado pelo ChatGPT, Gemini e Google. Receba sua nota e o que melhorar.';
@@ -75,6 +76,7 @@ export default function VerificadorPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
 
       <main className="container" style={{ paddingTop: 'calc(var(--header-height) + 2.5rem)', paddingBottom: '4rem', maxWidth: '820px' }}>
+        <Breadcrumbs items={[{ name: 'Verificador de IA' }]} currentPath="/verificador-ia" />
         <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <span className="badge badge-secondary">Ferramenta Grátis · AEO</span>
           <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', margin: '0.75rem 0 0.75rem' }}>

@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllArticlesMetadata, getLastModified } from '@/lib/articles';
 import { getGitLastModified, latestDate } from '@/lib/page-dates';
 import { SITE_URL } from '@/lib/seo';
+import { CATEGORY_PAGE_SLUGS, HUBS, getHubArticles } from '@/lib/taxonomy';
 
 type ChangeFrequency = NonNullable<MetadataRoute.Sitemap[number]['changeFrequency']>;
 
@@ -40,8 +41,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...(article.coverImage ? { images: [article.coverImage] } : {}),
   }));
 
+  // Páginas de tema: mudam quando entra um post novo nelas.
+  const categoryEntries: MetadataRoute.Sitemap = CATEGORY_PAGE_SLUGS.map((slug) => {
+    const lastModified = latestDate(...getHubArticles(articles, slug).map(getLastModified));
+    return {
+      url: `${SITE_URL}${HUBS[slug].href}`,
+      ...(lastModified ? { lastModified } : {}),
+      changeFrequency: slug === 'noticias' ? 'daily' : 'weekly',
+      priority: slug === 'melhores-ias' ? 0.9 : 0.8,
+    };
+  });
+
+  const promptArticlesDate = latestDate(...getHubArticles(articles, 'prompts').map(getLastModified));
+
   const staticEntries: MetadataRoute.Sitemap = STATIC_PAGES.map((page) => {
-    const lastModified = getGitLastModified(page.sources);
+    // /prompts também lista os posts do tema: vale a data mais recente das duas fontes.
+    const lastModified = latestDate(
+      getGitLastModified(page.sources),
+      page.path === '/prompts' ? promptArticlesDate : undefined,
+    );
     return {
       url: `${SITE_URL}${page.path}`,
       ...(lastModified ? { lastModified } : {}),
@@ -58,6 +76,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1.0,
     },
     ...staticEntries,
+    ...categoryEntries,
     ...articleEntries,
   ];
 }

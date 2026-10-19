@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import ChangelogClient from './ChangelogClient';
 import { CHANGELOG } from '@/data/changelog';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const OG_TITLE = 'Monitor de Modelos de IA — Lançamentos e Atualizações';
 const OG_DESC = `Cronologia completa dos principais lançamentos de IA: ChatGPT, Claude, Gemini, DeepSeek e mais. ${CHANGELOG.length} eventos rastreados.`;
@@ -49,7 +50,7 @@ export default function ChangelogPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <ChangelogClient />
+      <ChangelogClient breadcrumb={<Breadcrumbs items={[{ name: 'Monitor de Modelos' }]} currentPath="/changelog" />} />
     </>
   );
 }

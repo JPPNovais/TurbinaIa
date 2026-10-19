@@ -150,7 +150,7 @@ function RankingSection({ tools }: { tools: AITool[] }) {
   );
 }
 
-export default function FerramentasClient() {
+export default function FerramentasClient({ breadcrumb }: { breadcrumb?: React.ReactNode }) {
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Todas');
 
@@ -200,6 +200,7 @@ export default function FerramentasClient() {
   return (
     <main className="ferramentas-section">
       <div className="container">
+        {breadcrumb}
         <header className="ferramentas-header">
           <h1>Guia de Ferramentas de IA</h1>
           <p>

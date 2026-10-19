@@ -47,37 +47,37 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/comparador" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                <Link href="/comparador" className="footer-link" prefetch={false} style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
                   Comparador de IAs ⚡
                 </Link>
               </li>
               <li>
-                <Link href="/calculadora" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                <Link href="/calculadora" className="footer-link" prefetch={false} style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
                   Calculadora de Custos ⚡
                 </Link>
               </li>
               <li>
-                <Link href="/prompts" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                <Link href="/prompts" className="footer-link" prefetch={false} style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
                   Biblioteca de Prompts ⚡
                 </Link>
               </li>
               <li>
-                <Link href="/gerador" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                <Link href="/gerador" className="footer-link" prefetch={false} style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
                   Gerador de Prompts ⚡
                 </Link>
               </li>
               <li>
-                <Link href="/glossario" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                <Link href="/glossario" className="footer-link" prefetch={false} style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
                   Glossário de IA ⚡
                 </Link>
               </li>
               <li>
-                <Link href="/changelog" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                <Link href="/changelog" className="footer-link" prefetch={false} style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
                   Monitor de Modelos ⚡
                 </Link>
               </li>
               <li>
-                <Link href="/ferramentas" className="footer-link" style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+                <Link href="/ferramentas" className="footer-link" prefetch={false} style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
                   Guia de Ferramentas ⚡
                 </Link>
               </li>
@@ -88,22 +88,22 @@ export default function Footer() {
             <h2 className="footer-title">Legal e Informações</h2>
             <ul className="footer-links">
               <li>
-                <Link href="/sobre" className="footer-link">
+                <Link href="/sobre" className="footer-link" prefetch={false}>
                   Sobre o Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contato" className="footer-link">
+                <Link href="/contato" className="footer-link" prefetch={false}>
                   Contato
                 </Link>
               </li>
               <li>
-                <Link href="/politica-de-privacidade" className="footer-link">
+                <Link href="/politica-de-privacidade" className="footer-link" prefetch={false}>
                   Política de Privacidade
                 </Link>
               </li>
               <li>
-                <Link href="/termos-de-uso" className="footer-link">
+                <Link href="/termos-de-uso" className="footer-link" prefetch={false}>
                   Termos de Uso
                 </Link>
               </li>

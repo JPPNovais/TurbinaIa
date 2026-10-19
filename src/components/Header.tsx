@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import LogoIcon from './LogoIcon';
+import HoverPrefetchLink from './HoverPrefetchLink';
 
 const RECURSOS_ITEMS = [
   { href: '/verificador-ia', label: 'Verificador de IA', icon: '🔍' },
@@ -66,7 +67,7 @@ function RecursosDropdown({
 
       <div className="nav-dropdown-menu" role="menu">
         {RECURSOS_ITEMS.map((item) => (
-          <Link
+          <HoverPrefetchLink
             key={item.href}
             href={item.href}
             className={`nav-dropdown-item${pathname === item.href ? ' active' : ''}`}
@@ -78,7 +79,7 @@ function RecursosDropdown({
           >
             <span className="nav-dropdown-item-icon">{item.icon}</span>
             {item.label}
-          </Link>
+          </HoverPrefetchLink>
         ))}
       </div>
     </div>
@@ -133,19 +134,19 @@ export default function Header() {
             <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`} onClick={closeMenu}>
               Home
             </Link>
-            <Link href="/comparador" className={`nav-link ${pathname === '/comparador' ? 'active' : ''}`} onClick={closeMenu}>
+            <HoverPrefetchLink href="/comparador" className={`nav-link ${pathname === '/comparador' ? 'active' : ''}`} onClick={closeMenu}>
               Comparador
-            </Link>
-            <Link href="/calculadora" className={`nav-link ${pathname === '/calculadora' ? 'active' : ''}`} onClick={closeMenu}>
+            </HoverPrefetchLink>
+            <HoverPrefetchLink href="/calculadora" className={`nav-link ${pathname === '/calculadora' ? 'active' : ''}`} onClick={closeMenu}>
               Calculadora
-            </Link>
-            <Link href="/ferramentas" className={`nav-link ${pathname === '/ferramentas' ? 'active' : ''}`} onClick={closeMenu}>
+            </HoverPrefetchLink>
+            <HoverPrefetchLink href="/ferramentas" className={`nav-link ${pathname === '/ferramentas' ? 'active' : ''}`} onClick={closeMenu}>
               Guia de IAs
-            </Link>
+            </HoverPrefetchLink>
             <RecursosDropdown pathname={pathname} isMobile={isMobile} onNavigate={closeMenu} />
-            <Link href="/changelog" className={`nav-link ${pathname === '/changelog' ? 'active' : ''}`} onClick={closeMenu}>
+            <HoverPrefetchLink href="/changelog" className={`nav-link ${pathname === '/changelog' ? 'active' : ''}`} onClick={closeMenu}>
               Novidades
-            </Link>
+            </HoverPrefetchLink>
           </nav>
 
           <div className="header-actions">

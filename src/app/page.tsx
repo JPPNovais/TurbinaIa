@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import HoverPrefetchLink from '@/components/HoverPrefetchLink';
 import ArticlesGrid from '@/components/ArticlesGrid';
 import Sidebar from '@/components/Sidebar';
 import AdSense from '@/components/AdSense';
@@ -8,6 +9,7 @@ import { getAllArticlesMetadata } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
 import { SITE_URL, DEFAULT_OG_IMAGE, jsonLd } from '@/lib/seo';
 import { HUBS, HUB_ORDER } from '@/lib/taxonomy';
+import { withAspectRatio } from '@/lib/unsplash';
 
 const HOME_TITLE = 'Turbina IA: Prompts Prontos, Rankings de IAs e Tutoriais';
 const HOME_DESCRIPTION = 'Prompts prontos para ChatGPT e Gemini, rankings das melhores IAs, tutoriais e ferramentas grátis para usar inteligência artificial no dia a dia.';
@@ -108,12 +110,13 @@ export default async function Home() {
               <Link href={`/blog/${featuredArticle.slug}`} className="hero-card">
                 {featuredArticle.coverImage ? (
                   <Image 
-                    src={featuredArticle.coverImage} 
+                    src={withAspectRatio(featuredArticle.coverImage, '16:10')}
                     alt={featuredArticle.title} 
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     style={{ objectFit: 'cover' }}
-                    priority
+                    loading="eager"
+                    fetchPriority="high"
                   />
                 ) : (
                   <div className="card-img-placeholder" style={{ fontSize: '1.5rem' }}>
@@ -134,7 +137,7 @@ export default async function Home() {
         </p>
 
         {/* Destaque maior: Verificador de IA (ferramenta de avaliação) */}
-        <Link href="/verificador-ia" className="tool-feature">
+        <HoverPrefetchLink href="/verificador-ia" className="tool-feature">
           <span className="tool-feature-ic" aria-hidden="true">🔍</span>
           <span className="tool-feature-body">
             <span className="tool-feature-badge">Novo · Ferramenta grátis</span>
@@ -142,51 +145,51 @@ export default async function Home() {
             <span className="tool-feature-desc">Analise sua página em segundos e descubra o que melhorar para ser citado pelas IAs.</span>
           </span>
           <span className="tool-feature-cta">Analisar grátis →</span>
-        </Link>
+        </HoverPrefetchLink>
 
         {/* Cards das ferramentas */}
         <ul className="tool-cards">
           <li>
-            <Link href="/comparador" className="tool-card">
+            <HoverPrefetchLink href="/comparador" className="tool-card">
               <span className="tool-card-ic ic-cyan" aria-hidden="true">⚖️</span>
               <span className="tool-card-tt">Comparador de IAs</span>
               <span className="tool-card-sub">ChatGPT vs Gemini vs Claude</span>
-            </Link>
+            </HoverPrefetchLink>
           </li>
           <li>
-            <Link href="/calculadora" className="tool-card">
+            <HoverPrefetchLink href="/calculadora" className="tool-card">
               <span className="tool-card-ic ic-green" aria-hidden="true">🧮</span>
               <span className="tool-card-tt">Calculadora de Custos</span>
               <span className="tool-card-sub">Quanto custa a API de cada IA</span>
-            </Link>
+            </HoverPrefetchLink>
           </li>
           <li>
-            <Link href="/prompts" className="tool-card">
+            <HoverPrefetchLink href="/prompts" className="tool-card">
               <span className="tool-card-ic ic-purple" aria-hidden="true">💬</span>
               <span className="tool-card-tt">Biblioteca de Prompts</span>
               <span className="tool-card-sub">+160 prompts prontos e grátis</span>
-            </Link>
+            </HoverPrefetchLink>
           </li>
           <li>
-            <Link href="/gerador" className="tool-card">
+            <HoverPrefetchLink href="/gerador" className="tool-card">
               <span className="tool-card-ic ic-orange" aria-hidden="true">✍️</span>
               <span className="tool-card-tt">Gerador de Prompts</span>
               <span className="tool-card-sub">Monte o prompt perfeito</span>
-            </Link>
+            </HoverPrefetchLink>
           </li>
           <li>
-            <Link href="/ferramentas" className="tool-card">
+            <HoverPrefetchLink href="/ferramentas" className="tool-card">
               <span className="tool-card-ic ic-blue" aria-hidden="true">🧰</span>
               <span className="tool-card-tt">Guia de Ferramentas</span>
               <span className="tool-card-sub">+70 IAs por categoria</span>
-            </Link>
+            </HoverPrefetchLink>
           </li>
           <li>
-            <Link href="/glossario" className="tool-card">
+            <HoverPrefetchLink href="/glossario" className="tool-card">
               <span className="tool-card-ic ic-pink" aria-hidden="true">📖</span>
               <span className="tool-card-tt">Glossário de IA</span>
               <span className="tool-card-sub">Termos explicados de forma simples</span>
-            </Link>
+            </HoverPrefetchLink>
           </li>
         </ul>
       </section>

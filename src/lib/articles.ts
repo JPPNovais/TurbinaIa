@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import { isUnsplash, unsplashUrl } from '@/lib/unsplash';
 
 export interface ArticleHeading {
   text: string;
@@ -82,12 +83,31 @@ function extractFAQs(markdownContent: string): ArticleFAQ[] {
   return faqs;
 }
 
+// Imagens do corpo: o CSS (.prose img) já exibe tudo em 16:9 com object-fit,
+// então pedimos ao CDN o recorte 16:9 em 3 larguras — o celular baixa 480px
+// em AVIF/WebP em vez de 1200px em JPEG — e declaramos width/height (CLS).
+const CONTENT_IMAGE_WIDTHS = [480, 768, 1200];
+const CONTENT_IMAGE_SIZES = '(max-width: 800px) calc(100vw - 3rem), 712px';
+
+function escapeAttr(value: string): string {
+  return value.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
+function responsiveContentImage(match: string, rawSrc: string, rest: string): string {
+  const src = rawSrc.replace(/&amp;/g, '&');
+  if (!isUnsplash(src)) return `<img loading="lazy" decoding="async" src="${rawSrc}"${rest}>`;
+  const height = (w: number) => Math.round((w * 9) / 16);
+  const srcset = CONTENT_IMAGE_WIDTHS.map((w) => `${unsplashUrl(src, w, { height: height(w) })} ${w}w`).join(', ');
+  const fallback = unsplashUrl(src, 1200, { height: height(1200) });
+  return `<img loading="lazy" decoding="async" width="1200" height="675" src="${escapeAttr(fallback)}" srcset="${escapeAttr(srcset)}" sizes="${CONTENT_IMAGE_SIZES}"${rest}>`;
+}
+
 // Lazy-load and async-decode content images for better Core Web Vitals (LCP/CLS),
 // and mark external links as noopener for safety. The cover image stays eager
-// because it is rendered separately via next/image with priority.
+// because it is rendered separately via next/image with preload.
 function enhanceContentHtml(html: string): string {
   return html
-    .replace(/<img /g, '<img loading="lazy" decoding="async" ')
+    .replace(/<img src="([^"]+)"([^>]*)>/g, responsiveContentImage)
     .replace(/<a href="http/g, '<a target="_blank" rel="noopener noreferrer nofollow" href="http');
 }
 

@@ -11,6 +11,7 @@ import { getArticleData, getAllArticlesMetadata, getLastModified } from '@/lib/a
 import { formatDateLong } from '@/lib/date';
 import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, buildArticleTitle, clampDescription, jsonLd } from '@/lib/seo';
 import { getPrimaryHub } from '@/lib/taxonomy';
+import { withAspectRatio } from '@/lib/unsplash';
 
 interface ArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -186,7 +187,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           items={[{ name: hub.label, href: hub.href }, { name: article.title }]}
           currentPath={`/blog/${article.slug}`}
         />
-        <Link href={hub.href} className="badge badge-secondary">{hub.label}</Link>
+        <Link href={hub.href} className="badge badge-secondary" prefetch={false}>{hub.label}</Link>
         <h1 className="article-header-title">{article.title}</h1>
         <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
           {article.description}
@@ -212,12 +213,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <div className="article-hero-media">
           {article.coverImage ? (
             <Image 
-              src={article.coverImage} 
+              src={withAspectRatio(article.coverImage, '16:9')}
               alt={article.title} 
               fill
               sizes="(max-width: 768px) 100vw, 900px"
               style={{ objectFit: 'cover' }}
-              priority
+              loading="eager"
+              fetchPriority="high"
             />
           ) : (
             <div className="card-img-placeholder" style={{ fontSize: '2rem' }}>

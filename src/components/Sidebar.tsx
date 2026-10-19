@@ -2,10 +2,11 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import CdnImage from './CdnImage';
 import AdSense from './AdSense';
 import { ArticleMetadata } from '@/lib/articles';
 import { formatDateShort } from '@/lib/date';
+import { withAspectRatio } from '@/lib/unsplash';
 
 interface SidebarProps {
   recentArticles: ArticleMetadata[];
@@ -126,8 +127,8 @@ export default function Sidebar({ recentArticles, featuredArticles = [] }: Sideb
                 <Link href={`/blog/${article.slug}`} key={`featured-${article.slug}`} className="popular-post-item">
                   <div className="popular-post-thumb" style={{ position: 'relative' }}>
                     {article.coverImage ? (
-                      <Image 
-                        src={article.coverImage} 
+                      <CdnImage 
+                        src={withAspectRatio(article.coverImage, '1:1')}
                         alt={article.title} 
                         fill
                         sizes="60px"
@@ -165,8 +166,8 @@ export default function Sidebar({ recentArticles, featuredArticles = [] }: Sideb
               <Link href={`/blog/${article.slug}`} key={article.slug} className="popular-post-item">
                 <div className="popular-post-thumb" style={{ position: 'relative' }}>
                   {article.coverImage ? (
-                    <Image 
-                      src={article.coverImage} 
+                    <CdnImage 
+                      src={withAspectRatio(article.coverImage, '1:1')}
                       alt={article.title} 
                       fill
                       sizes="60px"

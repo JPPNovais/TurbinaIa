@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import CdnImage from '@/components/CdnImage';
 import { ArticleMetadata } from '@/lib/articles';
 import { formatDateMedium } from '@/lib/date';
+import { withAspectRatio } from '@/lib/unsplash';
 
 interface PostCardProps {
   article: ArticleMetadata;
@@ -31,8 +32,8 @@ export default function PostCard({ article }: PostCardProps) {
     <article className="article-card">
       <Link href={`/blog/${slug}`} className="card-media">
         {coverImage ? (
-          <Image 
-            src={coverImage} 
+          <CdnImage 
+            src={withAspectRatio(coverImage, '16:9')}
             alt={title} 
             fill 
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

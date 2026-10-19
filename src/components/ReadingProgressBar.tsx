@@ -6,16 +6,25 @@ export default function ReadingProgressBar() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
+    let frame = 0;
+    // passive + requestAnimationFrame: no máximo uma atualização por quadro,
+    // sem bloquear a rolagem (INP)
     const handleScroll = () => {
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (totalHeight > 0) {
-        const progress = (window.scrollY / totalHeight) * 100;
-        setScrollProgress(progress);
-      }
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (totalHeight > 0) {
+          setScrollProgress((window.scrollY / totalHeight) * 100);
+        }
+      });
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
   }, []);
 
   return (

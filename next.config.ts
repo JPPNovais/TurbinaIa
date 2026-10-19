@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    // Capas LCP passam pelo otimizador (mesma origem). Cards, miniaturas e
+    // imagens do texto usam o CDN do Unsplash direto (src/components/CdnImage).
     remotePatterns: [
       {
         protocol: 'https',

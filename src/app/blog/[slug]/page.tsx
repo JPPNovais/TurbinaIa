@@ -231,8 +231,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               fill
               sizes="(max-width: 768px) 100vw, 900px"
               style={{ objectFit: 'cover' }}
-              loading="eager"
-              fetchPriority="high"
+              preload
             />
           ) : (
             <div className="card-img-placeholder" style={{ fontSize: '2rem' }}>

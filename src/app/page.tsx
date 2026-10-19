@@ -138,8 +138,7 @@ export default async function Home() {
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     style={{ objectFit: 'cover' }}
-                    loading="eager"
-                    fetchPriority="high"
+                    preload
                   />
                 ) : (
                   <div className="card-img-placeholder" style={{ fontSize: '1.5rem' }}>

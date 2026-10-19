@@ -122,7 +122,7 @@ function addCopyButtons(html: string): string {
 
 // Lazy-load and async-decode content images for better Core Web Vitals (LCP/CLS),
 // and mark external links as noopener for safety. The cover image stays eager
-// because it is rendered separately via next/image with fetchPriority.
+// because it is rendered separately via next/image with preload.
 function enhanceContentHtml(html: string): string {
   return addCopyButtons(html)
     .replace(/<img src="([^"]+)"([^>]*)>/g, responsiveContentImage)

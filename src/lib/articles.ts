@@ -102,11 +102,29 @@ function responsiveContentImage(match: string, rawSrc: string, rest: string): st
   return `<img loading="lazy" decoding="async" width="1200" height="675" src="${escapeAttr(fallback)}" srcset="${escapeAttr(srcset)}" sizes="${CONTENT_IMAGE_SIZES}"${rest}>`;
 }
 
+// Cada bloco de código (os prompts dos posts) ganha uma barra com o número e
+// um botão "Copiar" já no HTML do servidor — sem salto de layout. O clique é
+// tratado por <ArticleInteractions>, que dispara o evento copy_prompt.
+function addCopyButtons(html: string): string {
+  let index = 0;
+  return html
+    .replace(/<pre>/g, () => {
+      index += 1;
+      return (
+        `<div class="prompt-block" data-prompt-number="${index}">` +
+        `<div class="prompt-block-bar"><span class="prompt-block-label">Prompt ${index}</span>` +
+        `<button type="button" class="prompt-copy-btn" data-copy-prompt="${index}" aria-label="Copiar prompt ${index}">Copiar</button></div>` +
+        '<pre>'
+      );
+    })
+    .replace(/<\/pre>/g, '</pre></div>');
+}
+
 // Lazy-load and async-decode content images for better Core Web Vitals (LCP/CLS),
 // and mark external links as noopener for safety. The cover image stays eager
-// because it is rendered separately via next/image with preload.
+// because it is rendered separately via next/image with fetchPriority.
 function enhanceContentHtml(html: string): string {
-  return html
+  return addCopyButtons(html)
     .replace(/<img src="([^"]+)"([^>]*)>/g, responsiveContentImage)
     .replace(/<a href="http/g, '<a target="_blank" rel="noopener noreferrer nofollow" href="http');
 }

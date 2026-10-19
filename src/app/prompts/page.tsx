@@ -107,6 +107,7 @@ export default async function PromptsPage() {
       {/* Captura de leads — baixar o pack completo de prompts */}
       <section className="container" style={{ maxWidth: '800px' }}>
         <LeadMagnet
+          source="prompts_page"
           title="📥 Baixe o Pack Completo com +160 Prompts"
           subtitle="Leve toda a biblioteca em um arquivo único para usar offline. Cadastre seu e-mail e baixe agora, de graça."
         />

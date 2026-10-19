@@ -5,6 +5,7 @@ import { preconnect } from 'react-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import AnalyticsListeners from '@/components/AnalyticsListeners';
 import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, DEFAULT_OG_IMAGE, jsonLd } from '@/lib/seo';
 import './globals.css';
 
@@ -117,6 +118,8 @@ export default function RootLayout({
         )}
         {gaMeasurementId && (
           <>
+            {/* outbound_click e scroll_depth (os demais eventos saem dos componentes) */}
+            <AnalyticsListeners />
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
               strategy="afterInteractive"

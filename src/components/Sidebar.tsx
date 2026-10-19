@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 import CdnImage from './CdnImage';
 import AdSense from './AdSense';
 import { ArticleMetadata } from '@/lib/articles';
 import { formatDateShort } from '@/lib/date';
+import { useNewsletterSignup } from '@/hooks/useNewsletterSignup';
 import { withAspectRatio } from '@/lib/unsplash';
 
 interface SidebarProps {
@@ -14,42 +14,7 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ recentArticles, featuredArticles = [] }: SidebarProps) {
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-
-    setStatus('loading');
-    setMessage('');
-
-    try {
-      const response = await fetch('/api/newsletter', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok && data.success) {
-        setStatus('success');
-        setMessage(data.message);
-        setEmail('');
-      } else {
-        setStatus('error');
-        setMessage(data.message || 'Ocorreu um erro ao processar a inscrição.');
-      }
-    } catch (err) {
-      console.error(err);
-      setStatus('error');
-      setMessage('Ocorreu um erro de rede. Tente novamente mais tarde.');
-    }
-  };
+  const { email, setEmail, website, setWebsite, status, message, submit: handleSubmit } = useNewsletterSignup('sidebar');
 
   return (
     <aside className="sidebar">
@@ -86,6 +51,16 @@ export default function Sidebar({ recentArticles, featuredArticles = [] }: Sideb
                 disabled={status === 'loading'}
                 style={{ width: '100%' }}
               />
+              <input
+                type="text"
+                name="website"
+                value={website}
+                onChange={(e) => setWebsite(e.target.value)}
+                className="hp-field"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+              />
             </div>
             
             <button 
@@ -97,7 +72,7 @@ export default function Sidebar({ recentArticles, featuredArticles = [] }: Sideb
               {status === 'loading' ? 'Inscrevendo...' : 'Inscrever Turbina ⚡'}
             </button>
 
-            {status === 'error' && (
+            {(status === 'error' || status === 'exists') && (
               <p style={{ 
                 color: '#ef4444', 
                 fontSize: '0.8rem', 

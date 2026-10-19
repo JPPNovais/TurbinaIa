@@ -1876,3 +1876,62 @@ h1, h2, h3, h4, h5, h6 {
   .hub-cards { grid-template-columns: 1fr; }
   .popular-ranking { grid-template-columns: 1fr; }
 }
+
+/* Blocos de prompt com botão "Copiar" (gerados em src/lib/articles.ts) */
+.prose .prompt-block { margin: 1.5rem 0; }
+.prose .prompt-block pre {
+  margin: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  /* prompts são texto corrido: quebram linha em vez de rolar de lado */
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.6;
+}
+.prompt-block-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0.6rem 0.45rem 1.1rem;
+  background: #161b22;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: none;
+  border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
+}
+.prompt-block-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+.prompt-copy-btn {
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: #e2e8f0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+.prompt-copy-btn:hover { background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.3); }
+.prompt-copy-btn.is-copied { background: rgba(5, 150, 105, 0.25); border-color: #059669; color: #a7f3d0; }
+
+/* Newsletter compacta no meio do artigo */
+.newsletter-inline {
+  margin: 2.5rem 0;
+  padding: 1.4rem 1.5rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary);
+  background: var(--bg-secondary);
+}
+.newsletter-inline-title { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.35rem; }
+.newsletter-inline-text { color: var(--text-secondary); line-height: 1.55; margin-bottom: 0.9rem; font-size: 0.98rem; }
+
+/* Campo-isca para robôs nos formulários de newsletter */
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }

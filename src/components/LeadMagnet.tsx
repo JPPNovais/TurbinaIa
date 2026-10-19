@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useNewsletterSignup, type NewsletterSource } from '@/hooks/useNewsletterSignup';
 
 const PACK_URL = '/pack-de-prompts-turbina-ia.txt';
 
@@ -9,6 +9,9 @@ interface LeadMagnetProps {
   title?: string;
   /** Subtítulo/descrição (opcional) */
   subtitle?: string;
+  /** Onde o formulário está (vai para o evento newsletter_signup). */
+  source?: NewsletterSource;
+  postSlug?: string;
 }
 
 /**
@@ -19,41 +22,18 @@ interface LeadMagnetProps {
 export default function LeadMagnet({
   title = '📥 Pack com +160 Prompts de IA (grátis)',
   subtitle = 'Receba nossa coletânea de prompts prontos para ChatGPT, Claude e Gemini. Cadastre seu e-mail e baixe agora — sem custo.',
+  source = 'post_end',
+  postSlug,
 }: LeadMagnetProps) {
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'unlocked' | 'error'>('idle');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    setStatus('loading');
-    setMessage('');
-    try {
-      const res = await fetch('/api/newsletter', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-      const data = await res.json().catch(() => ({}));
-      // Sucesso OU e-mail já cadastrado → libera o download de qualquer forma.
-      if (res.ok || /cadastrad/i.test(data?.message || '')) {
-        setStatus('unlocked');
-      } else {
-        setStatus('error');
-        setMessage(data?.message || 'Não foi possível concluir. Tente novamente.');
-      }
-    } catch {
-      setStatus('error');
-      setMessage('Erro de conexão. Tente novamente.');
-    }
-  };
+  const { email, setEmail, website, setWebsite, status, message, submit } = useNewsletterSignup(source, { postSlug });
+  // Sucesso OU e-mail já cadastrado → libera o download de qualquer forma.
+  const unlocked = status === 'success' || status === 'exists';
 
   return (
     <aside className="lead-magnet" aria-label="Baixe o pack de prompts">
       <div className="lead-magnet-body">
         <h3 className="lead-magnet-title">{title}</h3>
-        {status === 'unlocked' ? (
+        {unlocked ? (
           <>
             <p className="lead-magnet-subtitle">Tudo certo! Seu pack está liberado. ⚡</p>
             <a href={PACK_URL} download className="lead-magnet-btn lead-magnet-download">
@@ -63,7 +43,7 @@ export default function LeadMagnet({
         ) : (
           <>
             <p className="lead-magnet-subtitle">{subtitle}</p>
-            <form className="lead-magnet-form" onSubmit={handleSubmit}>
+            <form className="lead-magnet-form" onSubmit={submit}>
               <input
                 type="email"
                 required
@@ -73,6 +53,16 @@ export default function LeadMagnet({
                 className="lead-magnet-input"
                 aria-label="Seu e-mail"
                 disabled={status === 'loading'}
+              />
+              <input
+                type="text"
+                name="website"
+                value={website}
+                onChange={(e) => setWebsite(e.target.value)}
+                className="hp-field"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
               />
               <button type="submit" className="lead-magnet-btn" disabled={status === 'loading'}>
                 {status === 'loading' ? 'Enviando…' : 'Quero o pack grátis'}

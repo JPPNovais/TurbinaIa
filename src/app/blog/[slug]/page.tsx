@@ -7,6 +7,8 @@ import AdSense from '@/components/AdSense';
 import PostCard from '@/components/PostCard';
 import LeadMagnet from '@/components/LeadMagnet';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import ArticleInteractions from '@/components/ArticleInteractions';
+import NewsletterInline from '@/components/NewsletterInline';
 import { getArticleData, getAllArticlesMetadata, getLastModified } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
 import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, buildArticleTitle, clampDescription, jsonLd } from '@/lib/seo';
@@ -15,6 +17,23 @@ import { withAspectRatio } from '@/lib/unsplash';
 
 interface ArticlePageProps {
   params: Promise<{ slug: string }>;
+}
+
+// Newsletter no meio do texto (opcional): NEXT_PUBLIC_NEWSLETTER_INLINE=false desliga.
+const INLINE_NEWSLETTER = process.env.NEXT_PUBLIC_NEWSLETTER_INLINE !== 'false';
+
+/**
+ * Divide o HTML do artigo num <h2> perto da metade do corpo para encaixar a
+ * captura de newsletter entre duas seções (nunca no meio de um parágrafo).
+ * Só em artigos com 4+ seções, sem contar FAQ e Fontes.
+ */
+function splitAtMiddleSection(html: string): [string, string] | null {
+  const sections = [...html.matchAll(/<h2[\s>][\s\S]*?<\/h2>/g)]
+    .filter((match) => !/perguntas frequentes|faq|fontes|refer[êe]ncias/i.test(match[0]))
+    .map((match) => match.index as number);
+  if (sections.length < 4) return null;
+  const at = sections[Math.floor(sections.length / 2)];
+  return [html.slice(0, at), html.slice(at)];
 }
 
 // Generate static params for SSG
@@ -149,6 +168,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   };
 
   const hub = getPrimaryHub(article);
+  const contentParts = INLINE_NEWSLETTER ? splitAtMiddleSection(article.contentHtml) : null;
 
   const faqLd = article.faqs && article.faqs.length > 0
     ? {
@@ -228,7 +248,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       </div>
 
       {/* 3. Main Article Content */}
-      <article className="article-container">
+      <article className="article-container" id="conteudo-artigo">
         {/* Table of Contents (Sumário) */}
         {article.headings && article.headings.length > 0 && (
           <nav className="table-of-contents" aria-label="Sumário do artigo">
@@ -250,13 +270,26 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           </nav>
         )}
 
-        <div 
-          className="prose" 
-          dangerouslySetInnerHTML={{ __html: article.contentHtml }} 
+        {contentParts ? (
+          <>
+            <div className="prose" dangerouslySetInnerHTML={{ __html: contentParts[0] }} />
+            <NewsletterInline postSlug={article.slug} topic={hub.slug} />
+            <div className="prose" dangerouslySetInnerHTML={{ __html: contentParts[1] }} />
+          </>
+        ) : (
+          <div className="prose" dangerouslySetInnerHTML={{ __html: article.contentHtml }} />
+        )}
+
+        {/* Botões "Copiar" dos prompts + evento copy_prompt */}
+        <ArticleInteractions
+          containerId="conteudo-artigo"
+          postTitle={article.title}
+          postSlug={article.slug}
+          postTopic={hub.slug}
         />
 
         {/* Captura de leads — pack de prompts em troca do e-mail */}
-        <LeadMagnet />
+        <LeadMagnet source="post_end" postSlug={article.slug} />
 
         {/* Bottom Article Ad (AdSense block after content) */}
         <AdSense adSlot="article-bottom-banner" adFormat="horizontal" />

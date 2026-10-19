@@ -112,7 +112,7 @@ function addCopyButtons(html: string): string {
       index += 1;
       return (
         `<div class="prompt-block" data-prompt-number="${index}">` +
-        `<div class="prompt-block-bar"><span class="prompt-block-label">Prompt ${index}</span>` +
+        `<div class="prompt-block-bar"><span class="prompt-block-label">Prompt</span>` +
         `<button type="button" class="prompt-copy-btn" data-copy-prompt="${index}" aria-label="Copiar prompt ${index}">Copiar</button></div>` +
         '<pre>'
       );

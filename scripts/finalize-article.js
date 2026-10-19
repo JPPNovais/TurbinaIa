@@ -205,7 +205,7 @@ async function main() {
     problems.push(`category inválida: "${category}" (use tutoriais, noticias ou ferramentas)`);
   }
 
-  const internalLinks = (body.match(/\]\((\/(?:comparador|calculadora|prompts|gerador|glossario|changelog|ferramentas|blog\/)[^)]*)\)/g) || []).length;
+  const internalLinks = (body.match(/\]\((\/(?:comparador|calculadora|prompts|gerador|glossario|changelog|ferramentas|categoria\/|blog\/)[^)]*)\)/g) || []).length;
   if (internalLinks < 2) problems.push(`apenas ${internalLinks} link(s) interno(s) no corpo (mínimo 2)`);
 
   const faqHeadings = (body.match(/^###\s+.+\?\s*$/gm) || []).length;
@@ -229,6 +229,20 @@ async function main() {
     console.warn(`⚠️  seoTitle com ${seoTitle.length} caracteres (máximo 60): "${seoTitle}"`);
   } else if (!seoTitle && title.length > 60) {
     console.warn(`⚠️  Título com ${title.length} caracteres e sem seoTitle — adicione no frontmatter um seoTitle de até 60 caracteres com a palavra-chave no início.`);
+  }
+
+  // Avisos de AEO (não bloqueiam): assistentes de IA citam a resposta direta
+  // do início e conteúdo em lista/tabela. Todos os artigos atuais seguem isso.
+  const openingBlocks = body
+    .split(/\n\s*\n/)
+    .filter((block) => !/^\s*(?:-{3,}|\*{3,})\s*$/.test(block)) // ignora separadores ---
+    .slice(0, 3)
+    .join('\n');
+  if (!/resposta r[aá]pida|tl;dr/i.test(openingBlocks)) {
+    console.warn('⚠️  Sem "**Resposta Rápida (TL;DR):**" logo após o primeiro parágrafo — é o trecho que ChatGPT/Copilot citam.');
+  }
+  if (!/^\|.*\|\s*$/m.test(body) && !/^\s*(?:[-*]|\d+\.)\s/m.test(body)) {
+    console.warn('⚠️  Nenhuma lista nem tabela no corpo — dados em lista/tabela são mais fáceis de citar.');
   }
 
   const slug = slugify(title);

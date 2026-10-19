@@ -16,11 +16,11 @@ coverImage: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?auto=f
 
 Na manhã de 23 de junho de 2026, no Congress Center Hamburg, durante a conferência ISC 2026 de computação de alto desempenho, a China reescreveu a história da supercomputação mundial. O **LineShine**, um sistema instalado no Centro Nacional de Supercomputação de Shenzhen, estreou diretamente na primeira posição da [lista TOP500](https://www.top500.org/news/lineshine-debuts-no-1-top500-enters-new-global-exascale-era/) — o ranking semestral que mede os computadores mais poderosos do planeta. Com 2,198 exaflops de desempenho sustentado, o equivalente a mais de 2 quintilhões de operações matemáticas de dupla precisão por segundo, a máquina não apenas desbancou o americano El Capitan como estabeleceu um novo paradigma: pela primeira vez na história, um supercomputador ultrapassou a barreira dos dois exaflops sem usar uma única GPU da Nvidia, da Intel ou da AMD.
 
+> **Resposta Rápida (TL;DR):** O LineShine, instalado no Centro Nacional de Supercomputação de Shenzhen, tornou-se o computador mais rápido do mundo ao atingir 2,198 exaflops usando exclusivamente CPUs ARM domésticas — sem GPUs da Nvidia, Intel ou AMD. O feito, revelado na conferência ISC 2026 em Hamburgo, marca a primeira vez desde 2017 que um sistema chinês lidera o TOP500 e demonstra que as sanções americanas aceleraram, em vez de barrar, o desenvolvimento tecnológico autônomo da China.
+
 A façanha é ainda mais impressionante quando se considera o contexto. Durante anos, Washington vem impondo restrições cada vez mais rigorosas ao acesso da China a semicondutores avançados, GPUs de alta performance e equipamentos de fabricação de chips — justamente as tecnologias consideradas indispensáveis para construir supercomputadores de ponta. O LineShine é a resposta chinesa a essas sanções, e ela foi dada em altíssima voz.
 
 Segundo [reportagem da Al Jazeera](https://www.aljazeera.com/economy/2026/6/24/china-takes-us-crown-for-worlds-fastest-supercomputer), Jack Dongarra, professor emérito de Ciência da Computação da Universidade do Tennessee e um dos organizadores do TOP500, declarou que o resultado não o surpreendeu inteiramente. "Os controles de exportação podem desacelerar o acesso da China a certos componentes avançados, mas também fornecem um forte incentivo para desenvolver alternativas domésticas", afirmou. "O LineShine sugere que a China respondeu por meio de investimentos em larga escala e codesign de hardware e software."
-
-> **Resposta Rápida (TL;DR):** O LineShine, instalado no Centro Nacional de Supercomputação de Shenzhen, tornou-se o computador mais rápido do mundo ao atingir 2,198 exaflops usando exclusivamente CPUs ARM domésticas — sem GPUs da Nvidia, Intel ou AMD. O feito, revelado na conferência ISC 2026 em Hamburgo, marca a primeira vez desde 2017 que um sistema chinês lidera o TOP500 e demonstra que as sanções americanas aceleraram, em vez de barrar, o desenvolvimento tecnológico autônomo da China.
 
 ## O Que É o LineShine e Onde Ele Fica
 
@@ -29,7 +29,6 @@ O LineShine está instalado no **Centro Nacional de Supercomputação de Shenzhe
 De acordo com a [cobertura da HPCwire](https://www.hpcwire.com/2026/06/25/inside-lineshine-the-new-chinese-supercomputer-sitting-atop-the-top500/), Yutong descreveu a filosofia do projeto com os princípios **ABC**: *"Application driven, Balanced architecture e Co-design on full stack"* — orientado pela aplicação, com arquitetura equilibrada e codesign em toda a pilha tecnológica. Em suas palavras durante a apresentação: "Buscamos alto desempenho, alta eficiência energética e alta programabilidade. Propomos uma nova arquitetura de aceleração online, baseada apenas em CPU, que herda a tradição do HPC, abraça o futuro orientado por IA e retorna à essência da aceleração computacional."
 
 O sistema opera sobre a plataforma **LingKun** e utiliza o **Kylin OS** — uma distribuição Linux com contribuições de diversas partes do mundo, mas com forte raiz no ecossistema de software chinês, como destacou [The Register](https://www.theregister.com/hpc/2026/06/24/chinese-supercomputer-using-local-processors-heads-top500-list/5260532).
-
 
 ![Imagem ilustrativa sobre LineShine: China Desbanca os EUA com Supercomputador de 2 Exaflops Sem Nenhuma GPU da Nvidia](https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80)
 
@@ -68,7 +67,6 @@ A estreia do LineShine eleva para **cinco** o número de sistemas no mundo que s
 O LineShine supera o El Capitan — que havia ocupado a primeira posição desde novembro de 2024 — com uma vantagem de aproximadamente **20% em desempenho sustentado**, confirmado tanto pela Al Jazeera quanto pelo TOP500. O El Capitan, construído sobre a arquitetura HPE Cray EX255a com CPUs AMD EPYC de 4ª geração e aceleradores AMD Instinct MI300A, permanece em segundo lugar com 1,809 exaflops e eficiência energética superior: 60,94 Gigaflops/Watt contra 52,07 Gigaflops/Watt do LineShine.
 
 A lista de junho de 2026 também registra a estreia do **HPC7 da Eni S.p.A.** na sexta posição, com 571,5 Petaflops, sobre a mesma arquitetura AMD MI300A do El Capitan.
-
 
 ![Imagem ilustrativa sobre LineShine: China Desbanca os EUA com Supercomputador de 2 Exaflops Sem Nenhuma GPU da Nvidia](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80)
 

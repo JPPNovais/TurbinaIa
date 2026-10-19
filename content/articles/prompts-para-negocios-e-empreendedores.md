@@ -17,13 +17,11 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=form
 
 Administrar um negócio sempre exigiu fazer muito com pouco. Mas a partir de 2023, o jogo mudou de verdade: qualquer empreendedor com acesso a um computador e uma conta gratuita no ChatGPT passou a ter um assistente disponível 24 horas por dia, capaz de redigir contratos, montar planilhas de precificação, criar roteiros de vendas e ajudar a validar uma ideia antes de investir um centavo.
 
+**Resposta Rápida (TL;DR):** Prompts bem escritos para negócios economizam horas de trabalho em tarefas como plano de negócios, scripts de vendas e análise financeira. Substitua as variáveis em [colchetes] pelos dados reais da sua empresa. Para mais modelos prontos, explore a [biblioteca de prompts](/prompts) do Turbina IA.
+
 O problema é que a maioria das pessoas usa a IA de forma superficial — pedindo textos genéricos que qualquer concorrente também poderia gerar. A diferença está em saber exatamente o que pedir e como estruturar a solicitação.
 
 Este guia reúne mais de 30 prompts testados para as áreas que mais importam no dia a dia de quem tem empresa: estratégia, vendas, finanças, produtividade e validação de ideias. Todos foram escritos para serem copiados, adaptados com as informações do seu negócio e usados agora.
-
----
-
-**Resposta Rápida (TL;DR):** Prompts bem escritos para negócios economizam horas de trabalho em tarefas como plano de negócios, scripts de vendas e análise financeira. Substitua as variáveis em [colchetes] pelos dados reais da sua empresa. Para mais modelos prontos, explore a [biblioteca de prompts](/prompts) do Turbina IA.
 
 ---
 

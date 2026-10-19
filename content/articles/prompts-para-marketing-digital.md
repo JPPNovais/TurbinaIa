@@ -17,13 +17,11 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=f
 
 Quem trabalha com marketing sabe que a maior parte do tempo não vai para a estratégia — vai para a execução. Escrever textos de anúncio, criar pautas de conteúdo, montar fluxos de e-mail, redigir legendas para cinco redes sociais diferentes. A IA não elimina esse trabalho, mas corta o tempo pela metade quando você sabe pedir certo.
 
+**Resposta Rápida (TL;DR):** Prompts de marketing funcionam melhor quando incluem o papel da IA, o público-alvo, o objetivo da peça e o tom desejado. Os modelos abaixo cobrem copywriting, redes sociais, SEO, e-mail e planejamento estratégico — basta copiar, preencher os colchetes e ajustar o resultado.
+
 O problema é que a maioria dos profissionais ainda usa prompts genéricos — "crie um post sobre meu produto" — e depois reclama que o resultado parece robótico. A diferença está no nível de detalhe que você entrega antes de apertar Enter.
 
 Este guia reúne mais de 30 prompts testados para as principais áreas do marketing digital. Todos usam variáveis em `[colchetes]` para você substituir com os dados do seu negócio.
-
----
-
-**Resposta Rápida (TL;DR):** Prompts de marketing funcionam melhor quando incluem o papel da IA, o público-alvo, o objetivo da peça e o tom desejado. Os modelos abaixo cobrem copywriting, redes sociais, SEO, e-mail e planejamento estratégico — basta copiar, preencher os colchetes e ajustar o resultado.
 
 ---
 

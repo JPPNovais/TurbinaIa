@@ -8,7 +8,8 @@ import AdSense from '@/components/AdSense';
 import { getAllArticlesMetadata } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
 import { SITE_URL, DEFAULT_OG_IMAGE, jsonLd } from '@/lib/seo';
-import { HUBS, HUB_ORDER } from '@/lib/taxonomy';
+import { HUBS, HUB_ORDER, getHubArticles, getPrimaryHub, isPromptArticle, isRankingArticle, type HubSlug } from '@/lib/taxonomy';
+import { POPULAR_POST_SLUGS } from '@/data/popular-posts';
 import { withAspectRatio } from '@/lib/unsplash';
 
 const HOME_TITLE = 'Turbina IA: Prompts Prontos, Rankings de IAs e Tutoriais';
@@ -55,6 +56,28 @@ export default async function Home() {
   const gridArticles = featuredArticle
     ? allArticles.filter(art => art.slug !== featuredArticle.slug)
     : allArticles;
+
+  // Mais lidos: lista curada (src/data/popular-posts.ts), na ordem definida
+  const bySlug = new Map(allArticles.map((art) => [art.slug, art]));
+  const popularArticles = POPULAR_POST_SLUGS.map((slug) => bySlug.get(slug)).filter(
+    (art): art is NonNullable<typeof art> => Boolean(art)
+  );
+  const popularRank = new Map(POPULAR_POST_SLUGS.map((slug, index) => [slug, index]));
+
+  // Hub da home: os três temas que trazem leitores de busca. Em cada um, os
+  // mais lidos primeiro e depois os mais recentes; tutoriais sem repetir os
+  // que já aparecem em Prompts e Melhores IAs.
+  const homeHubSlugs: HubSlug[] = ['prompts', 'melhores-ias', 'tutoriais'];
+  const homeHubs = homeHubSlugs.map((slug) => {
+    const articles = getHubArticles(allArticles, slug);
+    const pool = slug === 'tutoriais'
+      ? articles.filter((art) => !isPromptArticle(art) && !isRankingArticle(art))
+      : articles;
+    const top = [...pool]
+      .sort((a, b) => (popularRank.get(a.slug) ?? 999) - (popularRank.get(b.slug) ?? 999))
+      .slice(0, 3);
+    return { hub: HUBS[slug], count: articles.length, top };
+  });
 
   // Abas de navegação por tema
   const categories = [
@@ -193,6 +216,55 @@ export default async function Home() {
           </li>
         </ul>
       </section>
+
+      {/* Hub por tema: Prompts, Melhores IAs e Tutoriais */}
+      <section className="container home-hubs" aria-labelledby="home-temas">
+        <h2 id="home-temas" className="section-title">Explore por tema</h2>
+        <ul className="hub-cards">
+          {homeHubs.map(({ hub, count, top }) => (
+            <li key={hub.slug} className="hub-card">
+              <HoverPrefetchLink href={hub.href} className="hub-card-head">
+                <span className="hub-card-ic" aria-hidden="true">{hub.icon}</span>
+                <span className="hub-card-name">
+                  <strong>{hub.label}</strong>
+                  <small>{count} publicações</small>
+                </span>
+              </HoverPrefetchLink>
+              <p className="hub-card-tagline">{hub.tagline}</p>
+              <ul className="hub-card-links">
+                {top.map((art) => (
+                  <li key={art.slug}>
+                    <HoverPrefetchLink href={`/blog/${art.slug}`}>{art.title}</HoverPrefetchLink>
+                  </li>
+                ))}
+              </ul>
+              <HoverPrefetchLink href={hub.href} className="hub-card-more">
+                Ver tudo em {hub.label} →
+              </HoverPrefetchLink>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Mais lidos (curadoria a partir do GA4) */}
+      {popularArticles.length > 0 && (
+        <section className="container home-popular" aria-labelledby="home-mais-lidos">
+          <h2 id="home-mais-lidos" className="section-title">Mais lidos</h2>
+          <ol className="popular-ranking">
+            {popularArticles.map((art, index) => (
+              <li key={art.slug}>
+                <HoverPrefetchLink href={`/blog/${art.slug}`} className="popular-ranking-item">
+                  <span className="popular-ranking-pos" aria-hidden="true">{index + 1}</span>
+                  <span className="popular-ranking-body">
+                    <span className="popular-ranking-title">{art.title}</span>
+                    <span className="popular-ranking-meta">{getPrimaryHub(art).label} · {art.readingTime}</span>
+                  </span>
+                </HoverPrefetchLink>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       {/* Top Banner Ad */}
       <div className="container">

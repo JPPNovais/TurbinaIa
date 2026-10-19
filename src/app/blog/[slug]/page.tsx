@@ -10,7 +10,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { getArticleData, getAllArticlesMetadata, getLastModified } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
 import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, buildArticleTitle, clampDescription, jsonLd } from '@/lib/seo';
-import { getPrimaryHub } from '@/lib/taxonomy';
+import { getPrimaryHub, getRelatedArticles } from '@/lib/taxonomy';
 import { withAspectRatio } from '@/lib/unsplash';
 
 interface ArticlePageProps {
@@ -87,21 +87,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
 
-  // Get other articles for recommendations
+  // "Leia também": 4 posts do mesmo tema (prompts com prompts, rankings com
+  // rankings), desempatando por tags em comuns e pelos mais recentes
   const allArticles = await getAllArticlesMetadata();
-  const relatedArticles = allArticles
-    .filter((art) => art.slug !== article.slug && art.category === article.category)
-    .slice(0, 2);
+  const recommendations = getRelatedArticles(article, allArticles, 4);
 
-  // Fallback recommendations if we don't have enough in the same category
-  const fallbackArticles = relatedArticles.length < 2
-    ? allArticles.filter((art) => art.slug !== article.slug && art.category !== article.category).slice(0, 2 - relatedArticles.length)
-    : [];
-
-  const recommendations = [...relatedArticles, ...fallbackArticles];
-
-  // Format date nicely
-  const formattedDate = formatDateLong(article.date);
+  // Datas visíveis: "Atualizado em" sempre; "Publicado em" quando difere
+  const lastModified = getLastModified(article);
+  const wasUpdated = lastModified !== article.date;
 
   // Social sharing links
   const articleUrl = `${SITE_URL}/blog/${article.slug}`;
@@ -195,14 +188,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
         <div className="article-header-meta">
           <span>Por <strong>{article.author}</strong></span>
-          <span>•</span>
-          <span>{formattedDate}</span>
-          {article.updatedAt && article.updatedAt !== article.date && (
+          {wasUpdated && (
             <>
               <span>•</span>
-              <span>Atualizado em {formatDateLong(article.updatedAt)}</span>
+              <span>Publicado em <time dateTime={article.date}>{formatDateLong(article.date)}</time></span>
             </>
           )}
+          <span>•</span>
+          <span>Atualizado em <time dateTime={lastModified}>{formatDateLong(lastModified)}</time></span>
           <span>•</span>
           <span>{article.readingTime}</span>
         </div>
@@ -341,7 +334,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <section style={{ background: 'var(--bg-secondary)', padding: '4rem 0', borderTop: '1px solid var(--border-color)' }}>
           <div className="container">
             <h2 style={{ marginBottom: '2rem', textAlign: 'center', fontSize: '1.75rem' }}>
-              Leia Também Recomendados
+              Leia também
             </h2>
             <div className="articles-grid">
               {recommendations.map((rec) => (

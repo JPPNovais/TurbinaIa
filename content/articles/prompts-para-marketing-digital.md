@@ -1,6 +1,6 @@
 ---
-title: "+30 Prompts para Marketing Digital: Modelos Prontos para Copiar (2026)"
-seoTitle: "+30 Prompts para Marketing Digital Prontos (2026)"
+title: "24 Prompts para Marketing Digital: Modelos Prontos para Copiar (2026)"
+seoTitle: "24 Prompts para Marketing Digital Prontos (2026)"
 description: "Prompts para marketing digital prontos para usar: copie, adapte e gere textos, anúncios, posts e e-mails com ChatGPT em segundos."
 category: tutoriais
 tags:
@@ -21,7 +21,7 @@ Quem trabalha com marketing sabe que a maior parte do tempo não vai para a estr
 
 O problema é que a maioria dos profissionais ainda usa prompts genéricos — "crie um post sobre meu produto" — e depois reclama que o resultado parece robótico. A diferença está no nível de detalhe que você entrega antes de apertar Enter.
 
-Este guia reúne mais de 30 prompts testados para as principais áreas do marketing digital. Todos usam variáveis em `[colchetes]` para você substituir com os dados do seu negócio.
+Este guia reúne 24 prompts testados para as principais áreas do marketing digital. Todos usam variáveis em `[colchetes]` para você substituir com os dados do seu negócio.
 
 ---
 
@@ -203,7 +203,7 @@ Crie um plano de lançamento de 8 semanas para [produto/serviço] com foco em [o
 Ajude a definir OKRs de marketing para o próximo trimestre de [empresa]. Contexto: [descreva situação atual, principais desafios e meta de negócio do período]. Crie 2 Objetivos e 3-4 Key Results mensuráveis por objetivo. Os KRs devem ser específicos, com número e prazo.
 ```
 
-Se você quiser testar essas estratégias com apoio de IA gerativa, o [gerador de conteúdo com IA](/gerador) do Turbina IA pode acelerar a produção de peças a partir dos seus briefings. E para ampliar seu repertório além do marketing, os [+50 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) cobrem outras áreas com o mesmo nível de detalhe.
+Se você quiser testar essas estratégias com apoio de IA gerativa, o [gerador de conteúdo com IA](/gerador) do Turbina IA pode acelerar a produção de peças a partir dos seus briefings. E para ampliar seu repertório além do marketing, os [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) cobrem outras áreas com o mesmo nível de detalhe.
 
 ---
 

@@ -165,7 +165,7 @@ export default async function PromptsPage() {
             Prompts para o Gemini do Google
           </h3>
           <p style={{ marginBottom: '1rem' }}>
-            O Gemini se destaca em tarefas multimodais e na integração com o Google Workspace. Todos os prompts desta página funcionam perfeitamente nele — desde comandos de marketing e programação até estudo e finanças. Para se aprofundar, veja o <Link href="/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa">guia de engenharia de prompt</Link> e a coletânea de <Link href="/blog/prompts-prontos-para-chatgpt">+50 prompts prontos para ChatGPT</Link> (que também servem para o Gemini).
+            O Gemini se destaca em tarefas multimodais e na integração com o Google Workspace. Todos os prompts desta página funcionam perfeitamente nele — desde comandos de marketing e programação até estudo e finanças. Para se aprofundar, veja o <Link href="/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa">guia de engenharia de prompt</Link> e a coletânea de <Link href="/blog/prompts-prontos-para-chatgpt">41 prompts prontos para ChatGPT</Link> (que também servem para o Gemini).
           </p>
 
           <h2 style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--text-primary)', marginTop: '3rem', marginBottom: '1.25rem' }}>

@@ -1,6 +1,6 @@
 ---
-title: "+30 Prompts para Negócios e Empreendedores: IA para Crescer sua Empresa (2026)"
-seoTitle: "+30 Prompts para Negócios e Empreendedores (2026)"
+title: "27 Prompts para Negócios e Empreendedores: IA para Crescer sua Empresa (2026)"
+seoTitle: "27 Prompts para Negócios e Empreendedores (2026)"
 description: "Prompts para negócios prontos para usar no ChatGPT: plano estratégico, vendas, finanças, gestão e validação de ideias para empreendedores."
 category: tutoriais
 tags:
@@ -21,7 +21,7 @@ Administrar um negócio sempre exigiu fazer muito com pouco. Mas a partir de 202
 
 O problema é que a maioria das pessoas usa a IA de forma superficial — pedindo textos genéricos que qualquer concorrente também poderia gerar. A diferença está em saber exatamente o que pedir e como estruturar a solicitação.
 
-Este guia reúne mais de 30 prompts testados para as áreas que mais importam no dia a dia de quem tem empresa: estratégia, vendas, finanças, produtividade e validação de ideias. Todos foram escritos para serem copiados, adaptados com as informações do seu negócio e usados agora.
+Este guia reúne 27 prompts testados para as áreas que mais importam no dia a dia de quem tem empresa: estratégia, vendas, finanças, produtividade e validação de ideias. Todos foram escritos para serem copiados, adaptados com as informações do seu negócio e usados agora.
 
 ---
 
@@ -68,7 +68,7 @@ Sou empreendedor no segmento de [segmento]. Preciso definir minha proposta de va
 
 ## Prompts para Vendas e Atendimento
 
-Boa parte do faturamento de um pequeno negócio depende de como as pessoas se comunicam com clientes. A IA pode ajudar a criar scripts, responder objeções e personalizar mensagens em escala. Para combinações mais criativas, vale olhar também os [+50 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) que reunimos em outro artigo.
+Boa parte do faturamento de um pequeno negócio depende de como as pessoas se comunicam com clientes. A IA pode ajudar a criar scripts, responder objeções e personalizar mensagens em escala. Para combinações mais criativas, vale olhar também os [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) que reunimos em outro artigo.
 
 ```
 Escreva um script de vendas para abordagem por [WhatsApp / telefone / e-mail] direcionado a [perfil do cliente]. Nosso produto/serviço é [descrição em uma frase]. O objetivo da mensagem é agendar uma conversa de 15 minutos. Tom: profissional, mas descontraído. Limite: 5 linhas.

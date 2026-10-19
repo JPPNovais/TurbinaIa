@@ -1,6 +1,6 @@
 ---
-title: "+50 Prompts Prontos para ChatGPT: Modelos para Copiar e Usar (2026)"
-seoTitle: "+50 Prompts Prontos para ChatGPT para Copiar (2026)"
+title: "41 Prompts Prontos para ChatGPT: Modelos para Copiar e Usar (2026)"
+seoTitle: "41 Prompts Prontos para ChatGPT para Copiar (2026)"
 description: "Prompts prontos para ChatGPT em todas as áreas: trabalho, estudo, marketing e mais. Copie, adapte e turbine sua produtividade agora."
 category: tutoriais
 tags:
@@ -17,7 +17,7 @@ coverImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=f
 
 Saber o que perguntar faz toda a diferença. Você pode ter acesso ao modelo de IA mais avançado do mundo e ainda assim obter respostas mediocres — não por culpa da ferramenta, mas pela forma como você se comunicou com ela. É por isso que bons prompts valem ouro.
 
-Este guia reúne mais de 50 prompts prontos para ChatGPT organizados por categoria, todos com variáveis em colchetes para você adaptar ao seu contexto. Se quiser entender a fundo como construir prompts do zero, o [guia de prompt engineering](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) vai além do que listamos aqui. Mas se você precisa de algo para usar agora, está no lugar certo.
+Este guia reúne 41 prompts prontos para ChatGPT organizados por categoria, todos com variáveis em colchetes para você adaptar ao seu contexto. Se quiser entender a fundo como construir prompts do zero, o [guia de prompt engineering](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) vai além do que listamos aqui. Mas se você precisa de algo para usar agora, está no lugar certo.
 
 ---
 

@@ -11,7 +11,8 @@
     "update-models": "node scripts/update-models.js",
     "update-calculator": "node scripts/update-calculator.js",
     "update-changelog": "node scripts/update-changelog.js",
-    "build-pack": "node scripts/build-prompt-pack.js"
+    "build-pack": "node scripts/build-prompt-pack.js",
+    "check-titles": "node scripts/check-title-counts.js"
   },
   "dependencies": {
     "@google/genai": "^2.5.0",

@@ -12,12 +12,13 @@ tags:
 author: Redação Turbina IA
 isFeatured: true
 date: "2026-06-04"
+updatedAt: "2026-10-19"
 coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80"
 ---
 
 O Gemini responde bem a instruções claras, contexto detalhado e objetivos específicos. O problema é que a maioria das pessoas digita perguntas vagas e depois fica insatisfeita com o resultado. A diferença entre uma resposta mediana e uma resposta excelente quase sempre está na qualidade do prompt.
 
-Este artigo reúne mais de 40 prompts prontos, organizados por categoria, com variáveis em [colchetes] para você adaptar ao seu caso. Todos foram escritos levando em conta as características do Gemini — inclusive sua integração com o ecossistema Google e sua capacidade de lidar com textos longos.
+Este artigo reúne 40 prompts prontos, organizados por categoria, com variáveis em [colchetes] para você adaptar ao seu caso. Todos foram escritos levando em conta as características do Gemini — inclusive sua integração com o ecossistema Google e sua capacidade de lidar com textos longos.
 
 ---
 
@@ -63,6 +64,12 @@ Resuma o seguinte e-mail em 3 bullet points com os pontos mais importantes que p
 Reescreva o e-mail abaixo deixando o tom mais [profissional/direto/cordial] sem alterar o conteúdo principal:
 
 [Cole o e-mail original]
+```
+
+```
+Leia a conversa de e-mails abaixo e escreva uma resposta que: (1) confirme o que já foi combinado, (2) responda à pergunta que [nome] deixou em aberto e (3) proponha [próximo passo, ex.: uma reunião na quinta às 10h]. Tom [cordial/objetivo]. No final, fora do e-mail, liste em uma linha o que ainda depende de mim.
+
+[Cole a conversa completa, da mensagem mais antiga para a mais recente]
 ```
 
 **Google Docs e redação:**
@@ -131,6 +138,12 @@ Aja como professor de [disciplina]. Crie 10 questões de múltipla escolha com 4
 Preciso escrever um trabalho acadêmico sobre [tema]. Me ajude a estruturar um esboço com introdução, 4 seções de desenvolvimento e conclusão. Para cada seção, sugira 2 argumentos ou pontos a desenvolver.
 ```
 
+```
+Transforme o conteúdo abaixo em 15 flashcards de revisão, do mais básico ao mais difícil. Entregue em uma tabela com as colunas Pergunta, Resposta (até 25 palavras) e Nível (fácil/médio/difícil), pronta para eu copiar para o Google Sheets:
+
+[Cole o resumo, capítulo ou anotações]
+```
+
 ---
 
 ## Prompts para Marketing e Conteúdo
@@ -167,6 +180,10 @@ Crie uma descrição de produto para [nome do produto] voltada para [público-al
 Transforme o seguinte artigo de blog em um roteiro de vídeo de [duração, ex.: 3 minutos] para YouTube. Inclua indicações de corte, momentos para inserir b-roll e uma chamada para inscrição natural:
 
 [Cole o artigo aqui]
+```
+
+```
+Aja como especialista em SEO. Para a palavra-chave [palavra-chave principal], me entregue: (1) a intenção de busca mais provável, (2) 8 perguntas reais que o público faz sobre o tema, para usar como FAQ, (3) uma estrutura de H2 e H3 para um artigo completo e (4) uma meta description de até 155 caracteres com a palavra-chave no início.
 ```
 
 ---
@@ -219,6 +236,10 @@ Converta o código abaixo de [linguagem de origem] para [linguagem de destino] m
 [Cole o código aqui]
 ```
 
+```
+Escreva um script do Google Apps Script que [descreva a automação, ex.: toda segunda-feira às 8h envie um e-mail de lembrete para os contatos da coluna B da aba "Clientes" cujo status na coluna D seja "pendente"]. Depois do código, explique em passos curtos onde colar o script, como autorizá-lo e como criar o acionador de tempo.
+```
+
 Para se aprofundar em como estruturar pedidos técnicos para IAs de forma eficiente, o nosso [guia de engenharia de prompt](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) cobre os princípios que funcionam em qualquer modelo.
 
 ---
@@ -251,6 +272,10 @@ Preciso de ideias para [tipo de conteúdo criativo, ex.: série de posts temáti
 Escreva os primeiros 3 capítulos de um roteiro para um mini-documentário sobre [tema]. Inclua indicações de entrevistados ideais, imagens de arquivo sugeridas e narração em off.
 ```
 
+```
+[Compartilhe uma foto do quadro branco ou das anotações à mão] Transcreva o conteúdo desta imagem e organize em um resumo de reunião com três partes: decisões tomadas, tarefas (com responsável, se aparecer) e dúvidas em aberto. Marque com [?] qualquer trecho que você não conseguiu ler com certeza.
+```
+
 ---
 
 ## Como Usar Esses Prompts no Gemini
@@ -271,7 +296,7 @@ Para produção de conteúdo em escala, experimente também o nosso [gerador de 
 
 ### Os prompts do ChatGPT funcionam no Gemini?
 
-Em grande parte, sim. Os princípios de engenharia de prompt são os mesmos: seja específico, forneça contexto, defina o formato de saída. Prompts estruturados para o ChatGPT geralmente funcionam bem no Gemini com pequenas adaptações. A principal diferença é que o Gemini responde melhor a instruções que exploram suas capacidades multimodais e integração com Google. Confira também nosso artigo com [+50 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) — a maioria funciona nos dois.
+Em grande parte, sim. Os princípios de engenharia de prompt são os mesmos: seja específico, forneça contexto, defina o formato de saída. Prompts estruturados para o ChatGPT geralmente funcionam bem no Gemini com pequenas adaptações. A principal diferença é que o Gemini responde melhor a instruções que exploram suas capacidades multimodais e integração com Google. Confira também nosso artigo com [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) — a maioria funciona nos dois.
 
 ### O Gemini é gratuito?
 

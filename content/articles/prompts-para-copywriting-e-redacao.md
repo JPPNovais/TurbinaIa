@@ -1,7 +1,7 @@
 ---
-title: "+30 Prompts para Copywriting e Redação: Escreva Melhor com IA (2026)"
-seoTitle: "+30 Prompts para Copywriting e Redação (2026)"
-description: "Prompts para copywriting e redação que realmente funcionam: +30 modelos prontos para headlines, textos de vendas, storytelling e revisão com IA."
+title: "25 Prompts para Copywriting e Redação: Escreva Melhor com IA (2026)"
+seoTitle: "25 Prompts para Copywriting e Redação (2026)"
+description: "Prompts para copywriting e redação que realmente funcionam: 25 modelos prontos para headlines, textos de vendas, storytelling e revisão com IA."
 category: tutoriais
 tags:
   - Prompts
@@ -17,7 +17,7 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=f
 
 Escrever um texto que converte, emociona ou simplesmente prende a atenção do leitor do início ao fim é uma das habilidades mais valiosas no marketing digital. E não importa se você é copywriter profissional, empreendedor escrevendo as próprias páginas de vendas ou criador de conteúdo procurando consistência — a IA pode acelerar (muito) o seu processo.
 
-O problema é que a maioria das pessoas usa prompts genéricos e recebe de volta textos genéricos. Este guia existe para resolver isso. Aqui você vai encontrar mais de 30 prompts de escrita testados, organizados por finalidade, com variáveis que você substitui pela sua realidade. Nada de "escreva um texto sobre X". Prompts de verdade.
+O problema é que a maioria das pessoas usa prompts genéricos e recebe de volta textos genéricos. Este guia existe para resolver isso. Aqui você vai encontrar 25 prompts de escrita testados, organizados por finalidade, com variáveis que você substitui pela sua realidade. Nada de "escreva um texto sobre X". Prompts de verdade.
 
 ## Resposta Rápida (TL;DR)
 
@@ -126,7 +126,7 @@ Descrição atual: "[cole aqui]"
 Principal transformação que o produto entrega: [descreva]
 ```
 
-Para ter ainda mais modelos de copy à disposição, você pode explorar nossa coleção de [+50 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) organizada por tipo de texto.
+Para ter ainda mais modelos de copy à disposição, você pode explorar nossa coleção de [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) organizada por tipo de texto.
 
 ---
 

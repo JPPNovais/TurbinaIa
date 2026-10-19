@@ -12,12 +12,13 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-11"
+updatedAt: "2026-10-19"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
 ---
 
 Se você já abriu o ChatGPT e digitou "escreva um código para X" e recebeu algo genérico que não serve, o problema provavelmente estava no prompt. A IA não lê mentes — ela responde exatamente ao que você pergunta. E quando você pergunta bem, o resultado muda completamente.
 
-Este guia reúne mais de 30 prompts para programação organizados por tarefa: escrever código, debugar, refatorar, criar testes e documentar. Cada modelo é direto ao ponto e tem variáveis em `[colchetes]` para você adaptar ao seu contexto.
+Este guia reúne 30 prompts para programação organizados por tarefa: escrever código, debugar, refatorar, criar testes e documentar. Cada modelo é direto ao ponto e tem variáveis em `[colchetes]` para você adaptar ao seu contexto.
 
 ---
 
@@ -145,6 +146,13 @@ Após o deploy, os logs mostram este erro recorrente:
 [cole o log de erro]
 O ambiente é [descrição do ambiente: Node 20, Linux, 4 workers].
 Liste as 3 causas mais prováveis em ordem de probabilidade e como investigar cada uma.
+```
+
+```
+Este código funcionava até a última alteração. Abaixo está o diff entre a versão que funcionava e a atual:
+[cole a saída do git diff]
+
+O sintoma agora é: [descreva o erro ou o comportamento errado]. Aponte qual mudança do diff provavelmente causou a regressão e sugira a correção mínima, sem reverter o restante.
 ```
 
 Debugar se torna mais eficiente quando você entende como os modelos de IA processam contexto. Vale checar as opções disponíveis no [GitHub Copilot por tokens](/blog/github-copilot-adota-cobranca-por-tokens-e-gera-aumentos-de-ate-60x-para-desenvolvedores) antes de escolher qual ferramenta usar para isso.
@@ -320,7 +328,7 @@ Para tarefas repetitivas (boilerplate, testes, documentação, conversão de có
 
 ### Onde encontro mais prompts prontos para ChatGPT?
 
-Na [biblioteca de prompts](/prompts) do Turbina IA você encontra modelos organizados por área. Também temos uma lista com [+50 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) cobrindo outras categorias além de programação.
+Na [biblioteca de prompts](/prompts) do Turbina IA você encontra modelos organizados por área. Também temos uma lista com [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) cobrindo outras categorias além de programação.
 
 ---
 

@@ -12,12 +12,13 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-10"
+updatedAt: "2026-10-19"
 coverImage: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80"
 ---
 
 Estudar para concurso público, vestibular ou qualquer prova extensa exige método — e a inteligência artificial pode ser uma das ferramentas mais eficazes que você vai colocar na sua rotina. Não porque ela faz o trabalho por você, mas porque ela comprime em minutos o que levaria horas: transforma um capítulo denso em resumo direto, gera questões inéditas sobre o conteúdo que você acabou de ler, monta cronograma personalizado e ainda explica um conceito de cinco formas diferentes até você entender.
 
-Este artigo reúne mais de 30 prompts práticos, organizados por tipo de uso, para você aplicar agora mesmo no ChatGPT, Gemini ou qualquer outro modelo de linguagem.
+Este artigo reúne 30 prompts práticos, organizados por tipo de uso, para você aplicar agora mesmo no ChatGPT, Gemini ou qualquer outro modelo de linguagem.
 
 ---
 
@@ -129,6 +130,10 @@ Já estudei [X% do conteúdo] e faltam [Y dias] para a prova. Ajuste meu cronogr
 Crie uma rotina diária de estudos de [X horas] que inclua blocos de estudo, pausas (técnica Pomodoro), revisão espaçada e horário fixo para questões. Adapte para alguém que trabalha durante o dia e estuda à noite.
 ```
 
+```
+Estes foram meus resultados nos últimos simulados, em acertos por disciplina: [liste, ex.: Português 70%, Direito Constitucional 45%, Raciocínio Lógico 60%]. Redistribua minhas [X horas] de estudo da próxima semana priorizando as matérias com pior desempenho e maior peso no edital, sem zerar nenhuma. Mostre o resultado em uma tabela com disciplina, horas e o que estudar em cada uma.
+```
+
 Se você ainda está descobrindo como tirar o melhor proveito dessas ferramentas, o artigo [como usar o ChatGPT](/blog/como-usar-chatgpt-guia-completo-para-iniciantes) é um bom ponto de partida.
 
 ---
@@ -204,7 +209,7 @@ Minha resposta: [cole sua resposta]
 Escreva uma introdução de impacto para uma redação sobre [tema], com diferentes abordagens: a) com citação, b) com dado estatístico, c) com provocação ou paradoxo.
 ```
 
-Conhecer o que é possível com IA é fundamental para usar bem. Se quiser entender o contexto mais amplo, o artigo [o que é inteligência artificial](/blog/o-que-e-inteligencia-artificial-guia-completo-para-iniciantes) explica de forma acessível. Para uma coleção ainda maior de prompts organizados por tarefa, confira os [+50 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt).
+Conhecer o que é possível com IA é fundamental para usar bem. Se quiser entender o contexto mais amplo, o artigo [o que é inteligência artificial](/blog/o-que-e-inteligencia-artificial-guia-completo-para-iniciantes) explica de forma acessível. Para uma coleção ainda maior de prompts organizados por tarefa, confira os [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt).
 
 ---
 

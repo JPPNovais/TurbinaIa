@@ -1,6 +1,6 @@
 ---
-title: "24 Prompts para Marketing Digital: Modelos Prontos para Copiar (2026)"
-seoTitle: "24 Prompts para Marketing Digital Prontos (2026)"
+title: "40 Prompts para Marketing Digital: Modelos Prontos para Copiar (2026)"
+seoTitle: "40 Prompts para Marketing Digital Prontos (2026)"
 description: "Prompts para marketing digital prontos para usar: copie, adapte e gere textos, anúncios, posts e e-mails com ChatGPT em segundos."
 category: tutoriais
 tags:
@@ -12,6 +12,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-12"
+updatedAt: "2026-10-20"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
 ---
 
@@ -21,7 +22,16 @@ Quem trabalha com marketing sabe que a maior parte do tempo não vai para a estr
 
 O problema é que a maioria dos profissionais ainda usa prompts genéricos — "crie um post sobre meu produto" — e depois reclama que o resultado parece robótico. A diferença está no nível de detalhe que você entrega antes de apertar Enter.
 
-Este guia reúne 24 prompts testados para as principais áreas do marketing digital. Todos usam variáveis em `[colchetes]` para você substituir com os dados do seu negócio.
+Este guia reúne 40 prompts testados para as principais áreas do marketing digital. Todos usam variáveis em `[colchetes]` para você substituir com os dados do seu negócio.
+
+**Escolha a categoria:**
+
+- [Copywriting e anúncios](#prompts-para-copywriting-e-anuncios) — 9 prompts
+- [Redes sociais](#prompts-para-redes-sociais) — 9 prompts
+- [SEO e conteúdo](#prompts-para-seo-e-conteudo) — 8 prompts
+- [E-mail marketing](#prompts-para-e-mail-marketing) — 7 prompts
+- [Estratégia e planejamento](#prompts-para-estrategia-e-planejamento) — 7 prompts
+- [Como usar prompts de marketing com IA](#como-usar-prompts-de-marketing-com-ia) — os três princípios antes de começar
 
 ---
 
@@ -81,6 +91,21 @@ Escreva um script de 60 segundos para vídeo vertical sobre [tema/produto]. Estr
 Crie 5 propostas de valor de uma frase para [empresa/produto]. Cada uma deve comunicar [benefício principal] para [público] de forma clara, sem jargões. Use o formato: "[Produto] ajuda [público] a [resultado] sem [objeção principal]."
 ```
 
+**Respostas para objeções de compra:**
+```
+Liste as 7 objeções mais comuns de quem pensa em comprar [produto/serviço] (preço, confiança, tempo, prioridade etc.). Para cada uma, escreva uma resposta de até 2 frases para usar na página de vendas e o tipo de prova que a reforça (depoimento, garantia ou dado). Público: [perfil].
+```
+
+**Estrutura completa de página de vendas:**
+```
+Você é copywriter de resposta direta. Monte a estrutura de uma página de vendas para [produto], já com o texto de cada seção: headline, subheadline, problema, solução, como funciona (3 passos), benefícios, prova social, oferta, garantia, FAQ curta e CTA final. Preço: [valor]. Público: [perfil].
+```
+
+**Anúncios de remarketing:**
+```
+Escreva 4 anúncios de remarketing para pessoas que visitaram [página/produto] e não compraram. Use um ângulo em cada: lembrete, objeção respondida, prova social e oferta com prazo. Texto principal de até 125 caracteres e título de até 40.
+```
+
 ---
 
 ## Prompts para Redes Sociais
@@ -110,6 +135,26 @@ Escreva uma resposta profissional e empática para o seguinte comentário negati
 **Bio de perfil otimizada:**
 ```
 Reescreva a bio do perfil [Instagram/LinkedIn/TikTok] de [empresa/profissional]. Segmento: [nicho]. Diferencial: [o que torna único]. CTA: [ação desejada]. Limite: 150 caracteres para Instagram, 220 para LinkedIn. Sem clichês como "apaixonado por" ou "especialista em".
+```
+
+**Roteiro de carrossel educativo:**
+```
+Crie o roteiro de um carrossel de 9 slides para o Instagram sobre [tema], para [público]. Slide 1: título-gancho de até 8 palavras; slides 2 a 8: uma ideia por slide, com até 30 palavras; slide 9: resumo e CTA para [ação]. Sugira um visual para cada slide.
+```
+
+**Ideias de Reels a partir das dúvidas do público:**
+```
+Liste 15 ideias de Reels/TikTok para [nicho] baseadas em dúvidas reais que o público tem sobre [tema]. Para cada ideia: gancho falado nos primeiros 3 segundos, formato (tutorial, mito x verdade, bastidor, reação) e duração ideal.
+```
+
+**Respostas-padrão para direct e WhatsApp:**
+```
+Crie respostas-padrão para as 8 perguntas que [empresa] mais recebe por direct e WhatsApp: [liste as perguntas, ex.: preço, prazo, formas de pagamento, entrega]. Tom: [tom da marca], no máximo 3 frases cada, sempre terminando com uma pergunta que avance a conversa para a venda.
+```
+
+**Briefing para influenciador:**
+```
+Escreva um briefing para uma parceria com um influenciador de [nicho] divulgando [produto]. Inclua objetivo, mensagens-chave, o que é obrigatório e o que é proibido dizer, formatos e quantidade de posts, prazos, CTA, link ou cupom e como o resultado será medido.
 ```
 
 Para mais modelos prontos e filtráveis por plataforma, acesse a [biblioteca de prompts](/prompts) do Turbina IA.
@@ -149,6 +194,21 @@ Crie 8 perguntas e respostas em formato FAQ sobre [tema/produto] otimizadas para
 Tenho um artigo de blog sobre [tema] com [X] palavras. Sugira 6 formatos para reaproveitar o conteúdo: (1) thread LinkedIn, (2) carrossel Instagram, (3) script de Reels, (4) newsletter, (5) post estático com dado principal, (6) roteiro de podcast de 5 minutos. Para cada formato, dê o ângulo e estrutura.
 ```
 
+**Otimização de artigo que já está no ar:**
+```
+Analise o artigo abaixo para a palavra-chave [palavra-chave] e sugira melhorias de SEO: título, intertítulos, trechos que deveriam responder mais diretamente à intenção de busca, perguntas que faltam, links internos possíveis e partes que podem ser cortadas. [cole o artigo]
+```
+
+**Texto para página de categoria de e-commerce:**
+```
+Escreva um texto de 150 a 200 palavras para a página da categoria [nome da categoria] da loja [nome], com a palavra-chave [palavra-chave] no primeiro parágrafo, uma lista dos principais tipos de produto e uma frase que ajude o cliente a escolher. Não repita a palavra-chave mais de 3 vezes.
+```
+
+**SEO local no perfil de empresa do Google:**
+```
+Escreva a descrição do perfil de empresa no Google de [nome do negócio], um(a) [tipo de negócio] em [bairro/cidade], com até 750 caracteres, citando os serviços principais, os diferenciais e a região atendida. Depois, sugira 5 posts curtos para publicar no perfil ao longo do mês.
+```
+
 O [guia de engenharia de prompt](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) explica em detalhe como estruturar qualquer tipo de prompt para extrair resultados melhores.
 
 ---
@@ -173,6 +233,21 @@ Crie 3 versões de e-mail para recuperação de carrinho abandonado de [produto/
 **Newsletter semanal (template fixo):**
 ```
 Crie um template de newsletter semanal para [empresa/creator] no nicho [segmento]. Seções fixas: (1) abertura pessoal (3-4 frases), (2) conteúdo principal (insight, tutorial ou curadoria — 300 palavras), (3) recomendação da semana (ferramenta, artigo ou livro), (4) CTA da semana. Tom: [ex.: colega de área falando com colega].
+```
+
+**Linhas de assunto para teste A/B:**
+```
+Crie 10 linhas de assunto para o e-mail sobre [tema/oferta], separadas por estratégia: curiosidade, benefício direto, número, urgência e personalização. Todas com até 45 caracteres, sem caixa alta nem excesso de pontuação. Indique quais 2 você testaria primeiro e por quê.
+```
+
+**E-mail de abertura de carrinho (lançamento):**
+```
+Escreva o e-mail de abertura do carrinho para o lançamento de [produto], para uma lista que acompanhou o conteúdo de pré-lançamento. Inclua assunto, preview text, abertura que conecta com o conteúdo anterior, apresentação da oferta (preço, bônus e prazo), garantia e CTA. Até 350 palavras.
+```
+
+**Convite para pesquisa com clientes:**
+```
+Escreva um e-mail convidando clientes de [empresa] a responder uma pesquisa de 3 minutos sobre [tema]. Explique para que servem as respostas e o que o cliente ganha ([incentivo]). Depois, sugira 6 perguntas para a pesquisa, misturando múltipla escolha e uma pergunta aberta.
 ```
 
 ---
@@ -203,11 +278,34 @@ Crie um plano de lançamento de 8 semanas para [produto/serviço] com foco em [o
 Ajude a definir OKRs de marketing para o próximo trimestre de [empresa]. Contexto: [descreva situação atual, principais desafios e meta de negócio do período]. Crie 2 Objetivos e 3-4 Key Results mensuráveis por objetivo. Os KRs devem ser específicos, com número e prazo.
 ```
 
-Se você quiser testar essas estratégias com apoio de IA gerativa, o [gerador de conteúdo com IA](/gerador) do Turbina IA pode acelerar a produção de peças a partir dos seus briefings. E para ampliar seu repertório além do marketing, os [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) cobrem outras áreas com o mesmo nível de detalhe.
+**Análise de resultados de campanha:**
+```
+Analise os resultados da campanha abaixo e diga o que funcionou, o que não funcionou e 3 ajustes para a próxima. Explique cada conclusão a partir dos números. Dados: [canal, investimento, impressões, cliques, CTR, conversões, CPA e receita]
+```
+
+**Funil de conteúdo por etapa:**
+```
+Monte um funil de conteúdo para [produto/serviço] com sugestões para cada etapa: topo (descoberta), meio (consideração) e fundo (decisão). Para cada etapa, liste 5 conteúdos com formato, canal e a métrica que indica sucesso.
+```
+
+**Divisão de verba de mídia paga:**
+```
+Tenho [valor] por mês para mídia paga e o objetivo é [objetivo]. Sugira como dividir a verba entre [canais, ex.: Meta Ads, Google Ads e TikTok Ads], com a justificativa de cada fatia, o que testar nas primeiras 2 semanas e quando realocar o orçamento com base nos resultados.
+```
+
+Se você quiser testar essas estratégias com apoio de IA gerativa, o [gerador de conteúdo com IA](/gerador) do Turbina IA pode acelerar a produção de peças a partir dos seus briefings. E para ampliar seu repertório além do marketing, os [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt) cobrem outras áreas com o mesmo nível de detalhe — são mais de 100, organizados por categoria.
 
 ---
 
 ## Perguntas Frequentes
+
+### Quais são os melhores prompts para marketing digital?
+
+Os que dizem à IA quem ela é, para quem é a peça, qual o objetivo e em que formato entregar. Na prática, os que mais economizam tempo são os de anúncios com variações para teste, calendário editorial, pauta de SEO e sequências de e-mail — todos nesta lista, separados por categoria.
+
+### Como fazer um prompt de marketing para o ChatGPT?
+
+Comece pelo papel ("Você é um copywriter de e-commerce"), dê o contexto (produto, público, canal e tom), diga a tarefa com um verbo claro e defina o formato (quantidade de variações, limite de caracteres, estrutura). Quanto mais dados reais do seu negócio você colocar nos colchetes, menos vai precisar editar depois.
 
 ### Qual modelo de IA é melhor para marketing — ChatGPT, Gemini ou outro?
 

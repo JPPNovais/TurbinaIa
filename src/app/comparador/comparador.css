@@ -345,3 +345,15 @@
   color: var(--text-primary);
 }
 
+
+/* Introdução indexável acima da ferramenta */
+.comparador-intro {
+  max-width: 760px;
+  margin: -1.5rem auto 2.5rem;
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.comparador-intro p + p { margin-top: 0.9rem; }
+.comparador-intro a { color: var(--primary); font-weight: 600; }
+.comparador-intro strong { color: var(--text-primary); }

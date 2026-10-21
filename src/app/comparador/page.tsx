@@ -8,7 +8,7 @@ const OG_DESC = 'Comparação de IAs lado a lado em 2026: ChatGPT, Claude, Gemin
 const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Ferramenta Gratuita')}`;
 
 export const metadata: Metadata = {
-  title: 'Comparador de IAs: ChatGPT vs Gemini vs Claude (2026)',
+  title: 'Comparador de IAs Grátis: ChatGPT vs Gemini vs Claude (2026)',
   description: OG_DESC,
   keywords: ['comparador de IA', 'comparação de IAs', 'comparativo de IA', 'ChatGPT vs Claude', 'Gemini vs ChatGPT', 'melhor IA', 'melhor IA para programar', 'qual a melhor inteligência artificial'],
   alternates: { canonical: '/comparador' },
@@ -64,6 +64,16 @@ const faqLd = {
     },
     {
       '@type': 'Question',
+      name: 'Quais IAs o comparador compara?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Os assistentes ChatGPT, Claude e Gemini, os modelos Llama e Muse da Meta, os geradores de imagem ChatGPT Images, Midjourney e Stable Diffusion e a plataforma de automação Make.com.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Como usar o comparador de IAs?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Escolha um modelo em cada lado da comparação. A ferramenta mostra as notas de 0 a 5 em raciocínio, escrita, programação, velocidade e custo-benefício, além de preços, prós e contras de cada opção.' },
+    },
+    {
+      '@type': 'Question',
       name: 'O comparador de IAs é gratuito?',
       acceptedAnswer: { '@type': 'Answer', text: 'Sim. O comparador do Turbina IA é 100% gratuito e não exige cadastro. Selecione dois modelos e veja a comparação lado a lado na hora.' },
     },
@@ -83,6 +93,30 @@ export default function ComparadorPage() {
             Faça a comparação de IAs lado a lado: capacidades, preços, vantagens e limitações dos modelos de inteligência artificial mais populares de 2026. Selecione dois e tome a decisão certa para o seu projeto ou trabalho.
           </p>
         </div>
+
+        {/* Introdução no HTML do servidor, acima da ferramenta (indexável) */}
+        <section className="comparador-intro" aria-label="Sobre o comparador de IAs">
+          <p>
+            O <strong>comparador de IAs</strong> do Turbina IA coloca dois modelos lado a lado para você decidir qual usar
+            sem precisar testar tudo. Estão na comparação os assistentes mais usados no Brasil — <strong>ChatGPT</strong>,{' '}
+            <strong>Claude</strong> e <strong>Gemini</strong>, além dos modelos Llama e Muse, da Meta —, os geradores de
+            imagem ChatGPT Images, Midjourney e Stable Diffusion e a plataforma de automação Make.com.
+          </p>
+          <p>
+            Cada opção recebe uma nota de 0 a 5 em cinco critérios: raciocínio lógico, escrita criativa, programação,
+            velocidade de resposta e custo-benefício. Junto das notas aparecem os planos e preços, os principais prós e
+            contras e um resumo de para quem cada ferramenta faz mais sentido.
+          </p>
+          <p>
+            Para usar, escolha um modelo em cada lado — por exemplo, ChatGPT x Claude — e veja onde cada um se destaca.
+            Se a decisão envolve o custo de uso via API, complemente com a{' '}
+            <Link href="/calculadora" prefetch={false}>calculadora de custos de IA</Link>; para uma análise escrita dos três
+            assistentes mais populares, leia o{' '}
+            <Link href="/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026" prefetch={false}>comparativo ChatGPT vs Gemini vs Claude</Link>.
+            As informações são revisadas periodicamente, conforme os modelos ganham novas versões.
+          </p>
+        </section>
+
         <ComparatorClient />
 
         {/* Conteúdo SEO rastreável abaixo da ferramenta */}
@@ -118,6 +152,12 @@ export default function ComparadorPage() {
 
           <h3 style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '1.75rem', marginBottom: '0.5rem' }}>Qual a melhor IA para programar?</h3>
           <p style={{ marginBottom: '1rem' }}>Claude e ChatGPT lideram em programação, com o Gemini bem próximo. Para bases de código grandes, modelos com janela de contexto maior levam vantagem.</p>
+
+          <h3 style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '1.75rem', marginBottom: '0.5rem' }}>Quais IAs o comparador compara?</h3>
+          <p style={{ marginBottom: '1rem' }}>Os assistentes ChatGPT, Claude e Gemini, os modelos Llama e Muse da Meta, os geradores de imagem ChatGPT Images, Midjourney e Stable Diffusion e a plataforma de automação Make.com.</p>
+
+          <h3 style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '1.75rem', marginBottom: '0.5rem' }}>Como usar o comparador de IAs?</h3>
+          <p style={{ marginBottom: '1rem' }}>Escolha um modelo em cada lado da comparação. A ferramenta mostra as notas de 0 a 5 em raciocínio, escrita, programação, velocidade e custo-benefício, além de preços, prós e contras de cada opção.</p>
 
           <h3 style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '1.75rem', marginBottom: '0.5rem' }}>O comparador de IAs é gratuito?</h3>
           <p style={{ marginBottom: '1rem' }}>Sim. É 100% gratuito e não exige cadastro. Selecione dois modelos e veja a comparação na hora.</p>

@@ -87,6 +87,8 @@ A ironia é que, apesar de liderar globalmente em número de downloads, a Ásia 
 
 No ecossistema de shopping, a IA também está reescrevendo as regras. Varejistas como Walmart e Target, integrados a assistentes de IA, já veem referrals de IA respondendo por mais de 1,5% de suas visitas. A Amazon, que bloqueou os crawlers do ChatGPT, ficou de fora desse fluxo de tráfego — uma decisão que pode custar caro à medida que a IA se torna uma das principais camadas de descoberta de produtos na internet. Para quem usa IA para criar prompts de pesquisa e descoberta de produtos, nossa biblioteca de [Prompts](/prompts) traz exemplos práticos de como estruturar consultas eficazes.
 
+Para quem segue no ChatGPT, dá para extrair bem mais dele com pedidos mais bem escritos: reunimos mais de 100 [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) prontos para copiar, em português.
+
 ## Perguntas Frequentes
 
 ### O ChatGPT está perdendo usuários absolutos?

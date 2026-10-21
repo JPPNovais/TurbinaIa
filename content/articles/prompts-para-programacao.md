@@ -328,7 +328,7 @@ Para tarefas repetitivas (boilerplate, testes, documentação, conversão de có
 
 ### Onde encontro mais prompts prontos para ChatGPT?
 
-Na [biblioteca de prompts](/prompts) do Turbina IA você encontra modelos organizados por área. Também temos uma lista com [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) cobrindo outras categorias além de programação.
+Na [biblioteca de prompts](/prompts) do Turbina IA você encontra modelos organizados por área. Também temos mais de 100 [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) cobrindo outras categorias além de programação.
 
 ---
 

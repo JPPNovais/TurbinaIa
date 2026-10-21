@@ -71,6 +71,8 @@ Nenhuma das empresas trata o tema como resolvido. A própria Anthropic reconhece
 
 O ponto em comum entre os quatro produtos é que todos tratam a ação autônoma como algo a ser liberado aos poucos, com controles visíveis e possibilidade de interromper o agente a qualquer momento — não como um interruptor ligado por padrão. Para quem está testando essas ferramentas agora, a recomendação prática é simples: comece revisando cada ação até entender o padrão de comportamento do agente, e só depois considere ativar a execução mais autônoma.
 
+Enquanto os agentes mudam de lugar, o jeito mais direto de produzir mais com o ChatGPT continua sendo um bom pedido: confira nossos [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) prontos para copiar.
+
 ## Perguntas Frequentes
 
 ### O que aconteceu com o ChatGPT Atlas?

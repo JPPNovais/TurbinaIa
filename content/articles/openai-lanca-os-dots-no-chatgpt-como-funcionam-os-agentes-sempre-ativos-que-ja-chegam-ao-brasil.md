@@ -72,6 +72,8 @@ Quem já paga pelo ChatGPT Pro ou Business Premium em um mercado elegível encon
 
 Para quem ainda está decidindo se vale pagar por um plano Pro só para experimentar automações desse tipo, vale lembrar que fluxos mais simples — lembretes, roteiros de pesquisa e modelos de mensagem — continuam funcionando bem com prompts bem estruturados no plano gratuito ou no Plus. O [Gerador de Prompts](/gerador) e a biblioteca de [Prompts](/prompts) do Turbina IA reúnem exemplos prontos para quem quer testar o limite da automação sem assinar o nível mais caro do produto.
 
+Para configurar tarefas para agentes como os Dots, vale a mesma regra dos bons prompts — papel, contexto, tarefa e formato. Veja exemplos nos nossos [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt).
+
 ## Perguntas Frequentes
 
 ### O que é exatamente um "dot" da OpenAI?

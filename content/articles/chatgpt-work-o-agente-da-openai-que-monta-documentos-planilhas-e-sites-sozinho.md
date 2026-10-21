@@ -98,6 +98,8 @@ O lançamento acontece num momento em que a corrida por agentes de trabalho aut�
 
 Para quem decide qual ferramenta adotar na empresa, o detalhe que costuma pesar mais do que o benchmark de lançamento é a superfície de conectores já disponível: de nada adianta um agente brilhante se ele não fala com o CRM ou a planilha que sua equipe já usa todos os dias.
 
+Com um agente como esse, quanto mais claro o pedido, melhor o resultado: veja os modelos dos nossos [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt), com papel, contexto, tarefa e formato já definidos.
+
 ## Perguntas Frequentes
 
 ### O ChatGPT Work substitui o ChatGPT normal?

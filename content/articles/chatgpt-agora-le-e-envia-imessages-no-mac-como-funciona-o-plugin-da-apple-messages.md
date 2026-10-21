@@ -74,6 +74,8 @@ Quem quiser acompanhar quando integrações parecidas chegarem a outros aplicati
 
 Full Disk Access no macOS não é uma permissão cirúrgica — ela não diz "leia só o Mensagens", diz "leia qualquer arquivo que o sistema permitir a um app comum". A OpenAI promete usar esse acesso apenas para o plugin de Mensagens, mas a garantia depende inteiramente da política interna da empresa, não de uma barreira técnica do sistema operacional que impeça um uso mais amplo no futuro. É a mesma lógica de confiança que já rege outros aplicativos com Acesso Total ao Disco — só que, dessa vez, do lado de quem lê é um modelo de linguagem, não um software de backup com comportamento previsível.
 
+Para escrever melhor as mensagens que o ChatGPT vai enviar por você, vale conhecer nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) — a seção de e-mail tem modelos que funcionam também para mensagens curtas.
+
 ## Perguntas Frequentes
 
 ### O plugin de Apple Messages do ChatGPT funciona em qualquer Mac?

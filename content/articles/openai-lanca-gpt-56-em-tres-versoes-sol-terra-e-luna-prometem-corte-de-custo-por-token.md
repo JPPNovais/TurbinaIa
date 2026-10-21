@@ -85,6 +85,8 @@ Isso também reabre a discussão sobre o próprio conceito de [token](/glossario
 
 A OpenAI diz que 5.6 já está disponível "no ChatGPT, no Codex e na API OpenAI", segundo a TechCrunch — sem exigir contrato especial ou fila de espera adicional além da que já existia para a plataforma como um todo. Quem acompanha o ritmo de lançamentos da empresa, aliás, pode manter o controle de qual modelo está ativo em cada produto pelo [Monitor de Modelos](/changelog) do Turbina IA, já que a OpenAI tem histórico de trocar o modelo padrão do ChatGPT sem grande alarde depois do lançamento inicial.
 
+Seja qual for a versão que você usar, a qualidade da resposta continua dependendo do pedido: veja nossos [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt), organizados por categoria.
+
 ## Perguntas Frequentes
 
 ### O GPT-5.6 já está disponível para todo mundo no Brasil?

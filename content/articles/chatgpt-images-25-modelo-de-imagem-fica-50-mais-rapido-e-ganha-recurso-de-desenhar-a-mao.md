@@ -66,6 +66,8 @@ A OpenAI não divulgou limite de gerações gratuitas por dia para o Images 2.5 
 
 Também não há, até o momento, uma tabela pública de preço por imagem para o uso via ChatGPT (fora da API, que é cobrada por token consumido, não por imagem gerada) — outro ponto que só fica claro na prática, de acordo com o volume e a complexidade de cada geração.
 
+Além das imagens, o ChatGPT rende mais com pedidos bem estruturados: confira nossos [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt), com modelos de marketing, redes sociais e criatividade.
+
 ## Perguntas Frequentes
 
 ### O ChatGPT Images 2.5 está disponível no plano gratuito?

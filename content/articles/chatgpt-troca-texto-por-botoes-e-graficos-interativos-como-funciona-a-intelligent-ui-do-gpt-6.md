@@ -68,6 +68,8 @@ Quem quer ver a Intelligent UI em ação não precisa aprender um comando especi
 
 Para quem prefere manter o ChatGPT em modo texto — por exemplo, em conexões mais lentas ou por simples preferência pessoal — a OpenAI diz que vai liberar uma opção para reduzir a quantidade de visuais que aparecem nas respostas, embora o caminho exato dentro das configurações ainda não tenha sido detalhado por nenhuma fonte checada até a publicação deste texto. Enquanto isso não chega, quem precisa de prompts prontos para testar o recurso em casos de uso específicos pode recorrer à biblioteca de [prompts do Turbina IA](/prompts) como ponto de partida.
 
+Botões e gráficos ajudam, mas o resultado ainda depende do pedido — por isso mantemos uma [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) com mais de 100 modelos organizados por categoria.
+
 ## Perguntas Frequentes
 
 ### O que é a Intelligent UI do ChatGPT?

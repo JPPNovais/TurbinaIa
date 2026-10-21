@@ -156,6 +156,9 @@ export default async function Home() {
         <p className="home-intro">
           <strong>Em resumo:</strong> o Turbina IA é o portal brasileiro de Inteligência Artificial —
           notícias diárias, tutoriais e ferramentas gratuitas para você usar IA com mais resultado.
+          Para começar agora, veja a nossa lista com mais de 100{' '}
+          <Link href="/blog/prompts-prontos-para-chatgpt" prefetch={false}>prompts para ChatGPT</Link>{' '}
+          prontos para copiar.
         </p>
 
         {/* Destaque maior: Verificador de IA (ferramenta de avaliação) */}

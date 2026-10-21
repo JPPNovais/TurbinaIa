@@ -91,6 +91,8 @@ A parceria entre a [OpenAI](https://openai.com/) e a [Visa](https://www.visa.com
 
 Embora não haja uma data de lançamento ou detalhes exatos sobre como a experiência aparecerá para os consumidores, o arcabouço está projetado para impulsionar pagamentos agentes em qualquer forma que eles assumam. A visão é clara: os agentes de IA assumirão um papel crescente em tarefas que envolvem dinheiro, e a infraestrutura subjacente de pagamentos precisa evoluir para garantir que essas transações sejam seguras, transparentes e sob o controle do usuário. A corrida para dominar o "comércio agente" está apenas começando, e a colaboração entre [OpenAI](https://openai.com/) e [Visa](https://www.visa.com/usa/about-visa/our_business/corporate-overview.html) é um sinal inequívoco de que este é o próximo campo de batalha da inovação em pagamentos digitais. Quer avaliar quais plataformas de IA já oferecem capacidades agênticas? Confira nosso [Comparador de IAs](/comparador) ou aprofunde-se nos termos técnicos no [Glossário de IA](/glossario).
 
+Para aproveitar o ChatGPT além das compras, separamos mais de 100 [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) prontos para copiar, em português.
+
 ## Perguntas Frequentes
 
 ### 1. O que é "comércio agente" e como a parceria Visa-OpenAI o impulsiona?

@@ -126,7 +126,7 @@ Descrição atual: "[cole aqui]"
 Principal transformação que o produto entrega: [descreva]
 ```
 
-Para ter ainda mais modelos de copy à disposição, você pode explorar nossa coleção de [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) organizada por tipo de texto.
+Para ter ainda mais modelos de copy à disposição, você pode explorar nossa coleção de [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt), com mais de 100 modelos organizados por categoria.
 
 ---
 

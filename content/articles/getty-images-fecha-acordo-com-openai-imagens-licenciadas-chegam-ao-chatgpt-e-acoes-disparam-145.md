@@ -84,6 +84,8 @@ Ao mesmo tempo, o movimento coloca pressão sobre concorrentes como Shutterstock
 
 Vale lembrar que esta não é a primeira vez que a indústria criativa negocia sua sobrevivência com uma tecnologia disruptiva. A chegada da fotografia digital, da internet e dos smartphones cada vez que foi acompanhada por profecias de morte dos modelos de negócio existentes — e por adaptações que, no longo prazo, muitas vezes ampliaram o mercado total. Se a parceria com a OpenAI seguirá esse padrão, ou se representará a erosão definitiva do modelo de licenciamento tradicional, é uma questão que a própria Getty provavelmente ainda não sabe responder.
 
+Para quem já usa o ChatGPT no trabalho, nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) traz modelos prontos para copiar, inclusive de marketing e criação de conteúdo.
+
 ## Perguntas Frequentes
 
 ### As imagens da Getty serão usadas para treinar modelos da OpenAI?

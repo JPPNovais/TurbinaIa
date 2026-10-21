@@ -97,6 +97,8 @@ O fim do Atlas é o primeiro recuo público e explícito de um dos grandes labor
 
 Para quem já testa fluxos de automação com esses agentes de navegação, vale espiar também a seção de [Prompts](/prompts) do Turbina IA, com exemplos prontos para tarefas que agora migram do Atlas para o app de desktop e a extensão de Chrome.
 
+Depois da migração, se você continua usando o ChatGPT no navegador, nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) reúne mais de 100 modelos prontos para copiar.
+
 ## Perguntas Frequentes
 
 ### Quando exatamente o ChatGPT Atlas para de funcionar?

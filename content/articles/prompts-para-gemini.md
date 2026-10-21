@@ -296,7 +296,7 @@ Para produção de conteúdo em escala, experimente também o nosso [gerador de 
 
 ### Os prompts do ChatGPT funcionam no Gemini?
 
-Em grande parte, sim. Os princípios de engenharia de prompt são os mesmos: seja específico, forneça contexto, defina o formato de saída. Prompts estruturados para o ChatGPT geralmente funcionam bem no Gemini com pequenas adaptações. A principal diferença é que o Gemini responde melhor a instruções que exploram suas capacidades multimodais e integração com Google. Confira também nosso artigo com [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) — a maioria funciona nos dois.
+Em grande parte, sim. Os princípios de engenharia de prompt são os mesmos: seja específico, forneça contexto, defina o formato de saída. Prompts estruturados para o ChatGPT geralmente funcionam bem no Gemini com pequenas adaptações. A principal diferença é que o Gemini responde melhor a instruções que exploram suas capacidades multimodais e integração com Google. Confira também a nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) — são mais de 100 modelos, e a maioria funciona nos dois.
 
 ### O Gemini é gratuito?
 

@@ -77,6 +77,8 @@ Quem organiza prompts para equipe pode aproveitar a [biblioteca de prompts do Tu
 
 Nenhuma das fontes consultadas traz números de adoção do Space nas primeiras semanas, nem uma data confirmada para os slides saírem da prévia. A própria OpenAI reconhece, em sua documentação, que o lançamento das novidades da DevDay está sendo gradual e que nem toda conta elegível já viu as novas opções aparecerem. Para equipes que dependem de compliance e residência de dados — comum em Enterprise —, detalhes finos sobre essas exigências dentro do Space também não foram detalhados publicamente até agora, o que é um ponto a acompanhar antes de qualquer migração em massa de documentos sensíveis.
 
+Para montar documentos e apresentações com o ChatGPT, a seção de trabalho dos nossos [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) tem modelos de relatório, pauta e estrutura de slides prontos para copiar.
+
 ## Perguntas Frequentes
 
 ### O que é o ChatGPT Space?

@@ -68,6 +68,8 @@ Para quem quer ir além do chat livre e já usa o ChatGPT para tarefas específi
 
 A OpenAI não deu prazo para expandir o "ilimitado" a outras funções, e o texto do anúncio deixa claro que o recurso pode ser ajustado se houver abuso em larga escala. Ainda assim, o movimento sinaliza uma aposta da empresa: manter o usuário gratuito engajado no ecossistema ChatGPT por mais tempo, mesmo sem pagar nada, apostando que uma fração deles eventualmente migra para os planos pagos quando esbarrar nos limites de arquivo, imagem ou voz que continuam de pé.
 
+Com mais mensagens disponíveis no plano grátis, vale ter à mão bons modelos de pedido: reunimos mais de 100 [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) em português, prontos para copiar.
+
 ## Perguntas Frequentes
 
 ### O ChatGPT gratuito agora é totalmente ilimitado?

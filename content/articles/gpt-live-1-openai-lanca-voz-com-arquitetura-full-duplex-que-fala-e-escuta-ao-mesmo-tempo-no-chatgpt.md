@@ -74,6 +74,8 @@ O lançamento do GPT-Live não acontece no vácuo. Segundo a [TechCrunch](https:
 
 Para quem quer comparar como o GPT-Live-1 se posiciona frente a outros modelos de voz e de linguagem do mercado, o [Comparador de IAs](/comparador) do Turbina IA reúne especificações lado a lado. E para acompanhar os próximos passos da OpenAI e de concorrentes nesse tipo de lançamento, vale monitorar o [Monitor de Modelos](/changelog), que rastreia atualizações de versão em tempo real.
 
+Conversa por voz também rende mais com pedidos claros — os mesmos princípios dos nossos [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt) valem para texto e para voz.
+
 ## Perguntas Frequentes
 
 ### O GPT-Live-1 já está disponível para todos os usuários do ChatGPT?

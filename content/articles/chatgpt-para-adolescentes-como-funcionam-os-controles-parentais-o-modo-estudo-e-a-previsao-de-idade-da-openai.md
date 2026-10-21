@@ -72,6 +72,8 @@ Essa tabela resume os três pilares do produto:
 
 Vale reconhecer o timing incômodo que a própria imprensa aponta: adolescentes já usam chatbots de IA como confidentes há anos, e a resposta corporativa formal só chegou agora, sob pressão de processos judiciais e escrutínio público. Isso não invalida o valor prático do recurso — mas explica por que a OpenAI descreve o lançamento em tom de responsabilidade tardia, e não de inovação espontânea. Vale lembrar que ferramentas de IA generativa como o [Comparador de IAs](/comparador) do Turbina IA ajudam a entender como cada assistente trata dados e faixas etárias antes de liberar o acesso para um filho adolescente.
 
+Para estudantes, a seção de estudos da nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) tem modelos que pedem explicações e perguntas em vez de respostas prontas — na mesma linha do modo estudo.
+
 ## Perguntas Frequentes
 
 ### O ChatGPT for Teens já está disponível no Brasil?

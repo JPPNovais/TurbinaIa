@@ -164,6 +164,8 @@ Para quem quer expandir o uso além do ChatGPT, a lista de [melhores IAs gratuit
 
 ---
 
+Para praticar o que você aprendeu aqui, use a nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt): são mais de 100 modelos prontos para copiar, em português, organizados por categoria.
+
 ## Perguntas Frequentes
 
 ### O ChatGPT é gratuito?

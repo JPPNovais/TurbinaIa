@@ -70,6 +70,8 @@ Reservar mesa é um exemplo pequeno de uma tendência maior, que no jargão da i
 
 O detalhe que costuma passar despercebido é o que esse tipo de integração tira do meio: a etapa de comparação manual entre sites. Antes, decidir onde comer envolvia abrir o Google, depois o Yelp, depois talvez o Instagram do restaurante e só então o OpenTable para confirmar horário. Agora esse trajeto inteiro cabe numa única troca de mensagens — o que é conveniente, mas também concentra numa única empresa a decisão de quais restaurantes aparecem primeiro. Vale acompanhar se a OpenAI vai divulgar, em algum momento, como ordena essas recomendações — hoje isso não está documentado publicamente.
 
+Para planejar o resto da programação — roteiro de viagem, cardápio da semana, festa —, a seção Dia a Dia dos nossos [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) tem modelos prontos para copiar.
+
 ## Perguntas Frequentes
 
 ### O ChatGPT cobra alguma taxa para fazer a reserva do restaurante?

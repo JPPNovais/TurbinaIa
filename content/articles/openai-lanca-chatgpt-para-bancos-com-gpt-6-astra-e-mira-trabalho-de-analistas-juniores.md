@@ -70,6 +70,8 @@ Para quem trabalha com análise financeira e já usa múltiplos modelos de IA no
 
 O anúncio da OpenAI resolve um problema real — o custo e a fricção de conectar um modelo de linguagem a dados financeiros confiáveis —, mas não resolve a pergunta que fica no ar desde que ferramentas de IA começaram a ocupar tarefas de entrada de carreira: se a próxima geração de analistas não passar pelas horas de trabalho repetitivo que hoje formam o olho clínico para achar um erro numa planilha, quem vai treinar o julgamento que a IA ainda não tem? A OpenAI aposta que o ganho de produtividade compensa. Bancos como o Goldman Sachs, pelo visto, ainda não têm certeza.
 
+Se você quer testar no seu dia a dia tarefas parecidas com as de um analista — resumir relatórios, organizar dados, revisar textos —, nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) tem modelos prontos para copiar.
+
 ## Perguntas Frequentes
 
 ### O que é o ChatGPT for Financial Services?

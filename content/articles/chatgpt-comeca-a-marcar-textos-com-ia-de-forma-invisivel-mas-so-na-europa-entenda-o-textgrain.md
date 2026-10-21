@@ -74,6 +74,8 @@ Há também um efeito colateral conhecido: textos muito curtos, respostas purame
 
 Por ora, nada muda para quem assina ChatGPT, Claude ou Gemini no Brasil — a ativação automática é europeia, e o Brasil não tem data anunciada para entrar nessa lista. O que vale observar é a direção: depois de anos resistindo a lançar essa tecnologia por medo de perder usuários, a OpenAI foi empurrada por lei, não por iniciativa própria, e isso tende a se repetir em outros mercados conforme regulações parecidas avancem. Para profissionais que usam IA para escrever e relatam preocupação com detecção de plágio ou autoria, o recado prático é que nenhuma marca-d'água atual resolve o problema de forma definitiva — ela só torna a detecção um pouco mais provável, nunca garantida.
 
+Se você usa o ChatGPT como apoio para escrever, nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) tem modelos de revisão e de estruturação de textos, prontos para copiar.
+
 ## Perguntas Frequentes
 
 ### O ChatGPT já marca meus textos no Brasil?

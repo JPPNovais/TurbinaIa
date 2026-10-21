@@ -94,7 +94,9 @@ export default async function PromptsPage() {
           <h2 id="guias-de-prompts" className="section-title">Coleções e guias de prompts</h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', maxWidth: '760px', lineHeight: 1.6 }}>
             Coleções completas por área — marketing, programação, estudos, negócios e copywriting — e guias para escrever
-            prompts melhores no ChatGPT, no Gemini e no Claude.
+            prompts melhores no ChatGPT, no Gemini e no Claude. Se você usa principalmente o ChatGPT, comece pela{' '}
+            <Link href="/blog/prompts-prontos-para-chatgpt" prefetch={false}>lista de prompts para ChatGPT</Link>, com mais
+            de 100 modelos em português organizados por categoria.
           </p>
           <div className="articles-grid">
             {promptArticles.map((article) => (
@@ -165,7 +167,7 @@ export default async function PromptsPage() {
             Prompts para o Gemini do Google
           </h3>
           <p style={{ marginBottom: '1rem' }}>
-            O Gemini se destaca em tarefas multimodais e na integração com o Google Workspace. Todos os prompts desta página funcionam perfeitamente nele — desde comandos de marketing e programação até estudo e finanças. Para se aprofundar, veja o <Link href="/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa">guia de engenharia de prompt</Link> e a coletânea de <Link href="/blog/prompts-prontos-para-chatgpt">41 prompts prontos para ChatGPT</Link> (que também servem para o Gemini).
+            O Gemini se destaca em tarefas multimodais e na integração com o Google Workspace. Todos os prompts desta página funcionam perfeitamente nele — desde comandos de marketing e programação até estudo e finanças. Para se aprofundar, veja o <Link href="/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa">guia de engenharia de prompt</Link> e os <Link href="/blog/prompts-prontos-para-chatgpt" prefetch={false}>prompts prontos para o ChatGPT</Link> (que também servem para o Gemini).
           </p>
 
           <h2 style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--text-primary)', marginTop: '3rem', marginBottom: '1.25rem' }}>

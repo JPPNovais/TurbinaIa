@@ -229,6 +229,8 @@ Para aprofundar sua prática de prompting, explore os recursos do próprio site:
 
 ---
 
+Para ver essa estrutura aplicada a tarefas reais, confira mais de 100 [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt), organizados por categoria e prontos para copiar.
+
 ## Perguntas Frequentes
 
 ### 1. O que é prompt engineering?

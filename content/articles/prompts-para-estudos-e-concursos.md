@@ -209,7 +209,7 @@ Minha resposta: [cole sua resposta]
 Escreva uma introdução de impacto para uma redação sobre [tema], com diferentes abordagens: a) com citação, b) com dado estatístico, c) com provocação ou paradoxo.
 ```
 
-Conhecer o que é possível com IA é fundamental para usar bem. Se quiser entender o contexto mais amplo, o artigo [o que é inteligência artificial](/blog/o-que-e-inteligencia-artificial-guia-completo-para-iniciantes) explica de forma acessível. Para uma coleção ainda maior de prompts organizados por tarefa, confira os [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt).
+Conhecer o que é possível com IA é fundamental para usar bem. Se quiser entender o contexto mais amplo, o artigo [o que é inteligência artificial](/blog/o-que-e-inteligencia-artificial-guia-completo-para-iniciantes) explica de forma acessível. Para uma coleção ainda maior de prompts organizados por tarefa, confira a nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt), com mais de 100 modelos organizados por categoria.
 
 ---
 

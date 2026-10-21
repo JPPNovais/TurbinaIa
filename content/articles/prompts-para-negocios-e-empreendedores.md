@@ -68,7 +68,7 @@ Sou empreendedor no segmento de [segmento]. Preciso definir minha proposta de va
 
 ## Prompts para Vendas e Atendimento
 
-Boa parte do faturamento de um pequeno negócio depende de como as pessoas se comunicam com clientes. A IA pode ajudar a criar scripts, responder objeções e personalizar mensagens em escala. Para combinações mais criativas, vale olhar também os [41 prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) que reunimos em outro artigo.
+Boa parte do faturamento de um pequeno negócio depende de como as pessoas se comunicam com clientes. A IA pode ajudar a criar scripts, responder objeções e personalizar mensagens em escala. Para combinações mais criativas, vale olhar também os mais de 100 [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) que reunimos em outro artigo.
 
 ```
 Escreva um script de vendas para abordagem por [WhatsApp / telefone / e-mail] direcionado a [perfil do cliente]. Nosso produto/serviço é [descrição em uma frase]. O objetivo da mensagem é agendar uma conversa de 15 minutos. Tom: profissional, mas descontraído. Limite: 5 linhas.

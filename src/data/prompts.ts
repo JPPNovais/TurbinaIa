@@ -8663,4 +8663,28 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um professor que explica conceitos técnicos de forma simples, sem simplificar demais a ponto de ficar errado.\n\nExplique o que é "engenharia de contexto" (context engineering) para uma pessoa com este perfil: [Ex: colega de trabalho sem formação técnica / estudante de ensino médio / gestor que só usa ChatGPT ocasionalmente]\n\nA explicação deve:\n1. Usar uma analogia do dia a dia (não precisa ser sobre computação) para o conceito de "janela de contexto limitada".\n2. Dar um exemplo concreto do que muda na prática ao aplicar a ideia numa conversa comum com IA.\n3. Terminar com uma dica de uma frase que a pessoa possa aplicar hoje mesmo na próxima conversa com um assistente de IA.\n4. Ter no máximo 4 parágrafos curtos, sem jargão técnico sem explicação.',
     tags: ['Context Engineering', 'Educação com IA', 'Comunicação'],
   },
+  {
+    id: 'ia-automacao-checklist-agente-pessoal-proativo',
+    title: 'Checklist Antes de Ativar um Agente Pessoal Proativo (Claude Duet, Dots, Muse)',
+    category: 'IA & Automação',
+    description: 'Agentes como Claude Duet, os "dots" da OpenAI e o Meta AI Muse monitoram seus apps conectados sozinhos e agem sem você pedir. Use este prompt para decidir, antes de ativar um desses agentes, o que ele pode fazer sem perguntar e onde você quer manter a aprovação manual.',
+    template: 'Você é um consultor de produtividade e segurança digital. Vou ativar um agente pessoal proativo de IA (que monitora meus apps conectados e age por conta própria) e preciso definir os limites antes de começar.\n\nApps que pretendo conectar: [Ex: e-mail, calendário, Slack, planilhas financeiras]\nTarefas que eu gostaria que o agente resolvesse sozinho: [Descreva]\nTarefas que considero sensíveis demais para automatizar sem aprovação: [Descreva]\n\nMonte uma tabela com três colunas: Tarefa | Pode agir sozinho sem perguntar | Precisa da minha aprovação antes de agir — e me ajude a classificar cada tarefa que eu listei, justificando em uma frase cada classificação. Ao final, liste 3 perguntas que eu deveria responder antes de dar acesso de qualquer agente de IA à minha caixa de e-mail.',
+    tags: ['Agentes de IA', 'Produtividade', 'Segurança Digital'],
+  },
+  {
+    id: 'negocios-auditoria-concentracao-fornecedores-ia',
+    title: 'Auditoria de Dependência de Poucos Fornecedores de IA na Empresa',
+    category: 'Negócios',
+    description: 'Com poucas empresas concentrando praticamente toda a infraestrutura de IA do mercado, vale checar o quanto o seu negócio depende de um único fornecedor. Use este prompt para mapear riscos de concentração antes que um aumento de preço ou uma instabilidade de um fornecedor pegue sua empresa de surpresa.',
+    template: 'Você é um consultor de risco de tecnologia. Preciso mapear a dependência da minha empresa em relação a fornecedores de IA.\n\nFerramentas de IA que usamos hoje e para que servem: [Liste, ex: ChatGPT para atendimento, Claude para código, Gemini para planilhas]\nQuanto da nossa operação pararia se um desses fornecedores aumentasse o preço de repente ou saísse do ar por um dia: [Descreva o impacto]\n\nMonte uma análise com:\n1. Nível de dependência de cada fornecedor (Baixo/Médio/Alto), com justificativa.\n2. Para cada fornecedor em nível Alto, sugira um plano B realista (outro fornecedor, processo manual temporário, ou contrato com SLA mais forte).\n3. Uma recomendação objetiva sobre se vale a pena manter mais de um fornecedor rodando em paralelo para a mesma tarefa, mesmo custando um pouco mais.',
+    tags: ['Governança de IA', 'Gestão de Risco', 'Fornecedores'],
+  },
+  {
+    id: 'educacao-explicar-treinamento-air-gapped',
+    title: 'Explique o Que É Treinar uma IA Sem Acesso à Internet (Air-Gapped)',
+    category: 'Educação',
+    description: 'OpenAI e Anthropic passaram a treinar seus modelos mais avançados sem acesso à internet em tempo real, por motivos de segurança. Use este prompt para gerar uma explicação simples desse conceito para quem não trabalha com IA no dia a dia.',
+    template: 'Você é um professor que explica conceitos técnicos de IA de forma simples, sem errar por simplificar demais.\n\nExplique o que significa treinar um modelo de IA "sem acesso à internet em tempo real" (treinamento air-gapped) para uma pessoa com este perfil: [Ex: amigo curioso sem formação técnica / aluno do ensino médio / jornalista cobrindo tecnologia]\n\nA explicação deve:\n1. Usar uma analogia do mundo físico para o que é um ambiente isolado ("sandbox") de treinamento.\n2. Explicar, com um exemplo simples, por que uma IA em treinamento acessar a internet sem supervisão pode ser um risco.\n3. Terminar explicando o que muda (e o que não muda) para quem usa produtos como ChatGPT ou Claude no dia a dia.\n4. Ter no máximo 4 parágrafos curtos, sem jargão técnico sem explicação.',
+    tags: ['Segurança de IA', 'Educação com IA', 'Treinamento de Modelos'],
+  },
 ];

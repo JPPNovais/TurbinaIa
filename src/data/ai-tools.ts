@@ -213,7 +213,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '💬',
     tagline: 'Assistente de IA da Meta com app de Mac que dita texto em qualquer janela',
     description:
-      'Meta AI é o assistente da Meta integrado ao WhatsApp, Instagram e Facebook, com um app dedicado para Mac lançado em beta em 19 de agosto de 2026. O app de desktop soma ditado por voz em qualquer aplicativo (atalho padrão Option-Space) a um modo de compartilhamento de tela: o assistente lê o que está na janela ativa, via o modelo Muse Spark, e responde com esse contexto sem precisar copiar e colar nada. É voltado sobretudo para criadores e pequenos negócios que já anunciam no Instagram e Facebook.',
+      'Meta AI é o assistente da Meta integrado ao WhatsApp, Instagram e Facebook, com um app dedicado para Mac lançado em beta em 19 de agosto de 2026. O app de desktop soma ditado por voz em qualquer aplicativo (atalho padrão Option-Space) a um modo de compartilhamento de tela: o assistente lê o que está na janela ativa, via o modelo Muse Spark, e responde com esse contexto sem precisar copiar e colar nada. É voltado sobretudo para criadores e pequenos negócios que já anunciam no Instagram e Facebook. Em 8 de setembro de 2026, a Meta lançou separadamente o Muse, um agente pessoal proativo que recebe uma meta ou tarefa (reservar viagem, comprar um produto, responder e-mails, preencher formulários) e executa os passos sozinho numa máquina virtual própria ("Muse Secure VM"), continuando a trabalhar mesmo com o app fechado; ações sensíveis, como enviar uma mensagem ou fechar uma compra, pedem aprovação explícita do usuário. Pagamentos passam pelo Link, da Stripe, que pode gerar um cartão virtual de uso único para não expor os dados bancários reais ao vendedor. Por ora disponível só nos EUA, para maiores de 18 anos, via app próprio para iOS/Android, versão web e diretamente no WhatsApp — concorrendo direto com o Claude Duet (Anthropic) e os "dots" do ChatGPT (OpenAI).',
     useCases: [
       'Ditar texto em qualquer app do Mac (e-mail, editores, chats) por voz',
       'Fazer perguntas sobre o que está na tela sem copiar e colar',
@@ -221,11 +221,11 @@ export const AI_TOOLS: AITool[] = [
       'Consultar desempenho de campanhas e posts do Facebook/Instagram por linguagem natural',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Meta AI é gratuito para uso pessoal no WhatsApp, Instagram, Facebook e no app de Mac (versão 1.0 beta, ~16MB, requer Apple Silicon e macOS 15+); contas empresariais conectam Instagram, Facebook, campanhas de anúncio da Meta e Google Workspace (Gmail, Docs, Sheets, Slides) sem custo adicional pelo app em si. Desde 15 de setembro de 2026, o assinante Meta One passou a ter SKUs pagos próprios: planos individuais Core a US$ 7.99/mês e Premium a US$ 19.99/mês (ambos ampliam o uso de Muse Image, Muse Video e do editor Restyle do Instagram), além de planos avulsos a partir de US$ 2.99/mês e planos para criadores/negócios de US$ 14.99 a US$ 499/mês.',
+    pricingDetails: 'Meta AI é gratuito para uso pessoal no WhatsApp, Instagram, Facebook e no app de Mac (versão 1.0 beta, ~16MB, requer Apple Silicon e macOS 15+); contas empresariais conectam Instagram, Facebook, campanhas de anúncio da Meta e Google Workspace (Gmail, Docs, Sheets, Slides) sem custo adicional pelo app em si. Desde 15 de setembro de 2026, o assinante Meta One passou a ter SKUs pagos próprios: planos individuais Core a US$ 7.99/mês e Premium a US$ 19.99/mês (ambos ampliam o uso de Muse Image, Muse Video e do editor Restyle do Instagram), além de planos avulsos a partir de US$ 2.99/mês e planos para criadores/negócios de US$ 14.99 a US$ 499/mês. O agente Muse (lançado em 8/09/2026) tem seu próprio esquema de cota: nível Grátis com cerca de 100 milhões de tokens/semana, nível Power a US$ 20/mês (~500 milhões de tokens/semana) e nível Maximum a US$ 100/mês (~3 bilhões de tokens/semana); a Meta diz esperar que a maioria dos usuários permaneça no nível gratuito.',
     url: 'https://www.meta.ai',
-    tags: ['meta', 'whatsapp', 'instagram', 'ditado', 'mac', 'assistente', 'chat'],
+    tags: ['meta', 'whatsapp', 'instagram', 'ditado', 'mac', 'assistente', 'chat', 'muse', 'agente'],
     popularityRank: 14,
-    updatedAt: '2026-09',
+    updatedAt: '2026-10',
   },
   {
     id: 'notion-ai',

@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getAllArticlesMetadata, getLastModified } from '@/lib/articles';
-import { getGitLastModified, latestDate } from '@/lib/page-dates';
+import { getPageLastModified, latestDate } from '@/lib/page-dates';
 import { SITE_URL } from '@/lib/seo';
 import { CATEGORY_PAGE_SLUGS, HUBS, getHubArticles } from '@/lib/taxonomy';
 
@@ -10,23 +10,23 @@ interface StaticPage {
   path: string;
   changeFrequency: ChangeFrequency;
   priority: number;
-  /** Arquivos que compõem a página: o último commit neles vira o lastmod. */
-  sources: string[];
 }
 
+// O lastmod de cada página vem de STATIC_PAGE_DATES (src/lib/page-dates.ts).
+
 const STATIC_PAGES: StaticPage[] = [
-  { path: '/prompts', changeFrequency: 'weekly', priority: 0.95, sources: ['src/app/prompts', 'src/data/prompts.ts'] },
-  { path: '/comparador', changeFrequency: 'weekly', priority: 0.95, sources: ['src/app/comparador', 'src/data/ai-models.ts'] },
-  { path: '/ferramentas', changeFrequency: 'weekly', priority: 0.9, sources: ['src/app/ferramentas', 'src/data/ai-tools.ts'] },
-  { path: '/calculadora', changeFrequency: 'weekly', priority: 0.9, sources: ['src/app/calculadora', 'src/data/calculator-models.ts'] },
-  { path: '/verificador-ia', changeFrequency: 'monthly', priority: 0.85, sources: ['src/app/verificador-ia', 'src/app/api/aeo-check'] },
-  { path: '/gerador', changeFrequency: 'monthly', priority: 0.85, sources: ['src/app/gerador'] },
-  { path: '/glossario', changeFrequency: 'monthly', priority: 0.85, sources: ['src/app/glossario', 'src/data/glossario.ts'] },
-  { path: '/changelog', changeFrequency: 'weekly', priority: 0.8, sources: ['src/app/changelog', 'src/data/changelog.ts'] },
-  { path: '/sobre', changeFrequency: 'monthly', priority: 0.6, sources: ['src/app/sobre'] },
-  { path: '/contato', changeFrequency: 'yearly', priority: 0.5, sources: ['src/app/contato'] },
-  { path: '/politica-de-privacidade', changeFrequency: 'yearly', priority: 0.3, sources: ['src/app/politica-de-privacidade'] },
-  { path: '/termos-de-uso', changeFrequency: 'yearly', priority: 0.3, sources: ['src/app/termos-de-uso'] },
+  { path: '/prompts', changeFrequency: 'weekly', priority: 0.95 },
+  { path: '/comparador', changeFrequency: 'weekly', priority: 0.95 },
+  { path: '/ferramentas', changeFrequency: 'weekly', priority: 0.9 },
+  { path: '/calculadora', changeFrequency: 'weekly', priority: 0.9 },
+  { path: '/verificador-ia', changeFrequency: 'monthly', priority: 0.85 },
+  { path: '/gerador', changeFrequency: 'monthly', priority: 0.85 },
+  { path: '/glossario', changeFrequency: 'monthly', priority: 0.85 },
+  { path: '/changelog', changeFrequency: 'weekly', priority: 0.8 },
+  { path: '/sobre', changeFrequency: 'monthly', priority: 0.6 },
+  { path: '/contato', changeFrequency: 'yearly', priority: 0.5 },
+  { path: '/politica-de-privacidade', changeFrequency: 'yearly', priority: 0.3 },
+  { path: '/termos-de-uso', changeFrequency: 'yearly', priority: 0.3 },
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -57,7 +57,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticEntries: MetadataRoute.Sitemap = STATIC_PAGES.map((page) => {
     // /prompts também lista os posts do tema: vale a data mais recente das duas fontes.
     const lastModified = latestDate(
-      getGitLastModified(page.sources),
+      getPageLastModified(page.path),
       page.path === '/prompts' ? promptArticlesDate : undefined,
     );
     return {

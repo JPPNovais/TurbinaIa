@@ -50,6 +50,7 @@ The home page always displays the most recently published article (`allArticles[
 
 - `src/data/ai-models.ts` — Full dataset for the AI model comparator (`/comparador`). Updated via `update-models.js`.
 - `src/data/prompts.ts` — Prompt library displayed at `/prompts`.
+- `src/data/calculator-models.ts` — API prices for `/calculadora` (USD per 1M tokens; optional `longContext` tier for long prompts). Updated by `update-calculator.js`, which also writes the PTAX exchange rate to `src/data/exchange-rate.ts` (`--only-exchange-rate` skips the LLM step). The math lives in `src/lib/api-cost.ts`, shared by the tool and the page text/FAQ.
 
 ### Routing Overview
 

@@ -5,17 +5,44 @@ export interface CalculatorModel {
   outputPricePerM: number;
   contextWindow: string;
   description: string;
+  /**
+   * Preço mais alto cobrado quando o prompt (tokens de entrada) passa de
+   * `aboveTokens` — vale para a requisição inteira, entrada e saída.
+   * Omitir quando o modelo tem preço único.
+   */
+  longContext?: {
+    aboveTokens: number;
+    inputPricePerM: number;
+    outputPricePerM: number;
+  };
 }
 
 export const AI_MODELS: CalculatorModel[] = [
   // Google
   {
-    name: 'Gemini 3.1 Pro',
+    name: 'Gemini 4 Argon',
+    provider: 'Google',
+    inputPricePerM: 2.00,
+    outputPricePerM: 10.00,
+    contextWindow: '1M tokens',
+    description: 'O principal modelo de raciocínio da Google, voltado a engenharia de software, matemática e agentes de várias etapas. Disponível na API paga (não está no tier gratuito). Preço promocional de US$ 2,00/US$ 10,00 por milhão de tokens até 30 de novembro de 2026; a partir de 1º de dezembro de 2026 passa a US$ 4,00/US$ 20,00. O preço de saída inclui os tokens de raciocínio.',
+  },
+  {
+    name: 'Gemini 3.1 Pro (Preview)',
     provider: 'Google',
     inputPricePerM: 2.00,
     outputPricePerM: 12.00,
-    contextWindow: '200K tokens',
-    description: 'O modelo Pro mais recente da Google (Gemini 3.1 Pro), com raciocínio avançado. Preços atualizados a partir de Agosto de 2026 para contextos até 200K tokens (preços diferenciados para contextos maiores).',
+    contextWindow: '1M tokens',
+    description: 'Modelo Pro da geração 3 da Google, ainda em versão Preview na API. Para prompts de até 200 mil tokens custa US$ 2,00/US$ 12,00 por milhão; acima disso, US$ 4,00/US$ 18,00 (a calculadora aplica a faixa automaticamente). O preço de saída inclui os tokens de raciocínio.',
+    longContext: { aboveTokens: 200_000, inputPricePerM: 4.00, outputPricePerM: 18.00 },
+  },
+  {
+    name: 'Gemini 3.8 Flash',
+    provider: 'Google',
+    inputPricePerM: 0.75,
+    outputPricePerM: 3.75,
+    contextWindow: '1M tokens',
+    description: 'Modelo Flash mais recente da Google (lançado em 2 de setembro de 2026), com foco em programação e tarefas agênticas e 1M de tokens de contexto. Substituiu o Gemini 3.7 Flash, cujas chamadas são redirecionadas para ele. Preço promocional de US$ 0,75/US$ 3,75 até 31 de dezembro de 2026; a partir de 1º de janeiro de 2027, US$ 1,50/US$ 7,50.',
   },
   {
     name: 'Gemini 3.6 Flash',
@@ -23,48 +50,26 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.75,
     outputPricePerM: 3.75,
     contextWindow: '1M tokens',
-    description: 'O modelo Flash da Google (Gemini 3.6 Flash), otimizado para tarefas de alta frequência e baixo custo, com até 1M de contexto. Desde 13 de agosto de 2026, a Google igualou o preço do 3.6 Flash ao preço introdutório do Gemini 3.7 Flash (corte de 50%); a promoção vale até 31 de dezembro de 2026, quando o preço volta a US$ 1.50/US$ 7.50 por milhão de tokens.',
-  },
-  {
-    name: 'Gemini 3.7 Flash',
-    provider: 'Google',
-    inputPricePerM: 0.75,
-    outputPricePerM: 3.75,
-    contextWindow: '1M tokens',
-    description: 'Modelo Flash da Google (Gemini 3.7 Flash), lançado em 13 de Agosto de 2026, voltado a codificação e agentes, com 1M de contexto. Em 2 de setembro de 2026 a Google lançou o sucessor Gemini 3.8 Flash, com foco reforçado em engenharia de software e tarefas agênticas, mantendo o mesmo preço promocional de $0.75/M entrada e $3.75/M saída até 31 de Dezembro de 2026 (quando ambos sobem para $1.50/M entrada e $7.50/M saída).',
+    description: 'Geração anterior do Flash da Google, ainda disponível na API, com 1M de tokens de contexto. Mesmo preço promocional do 3.8 Flash (US$ 0,75/US$ 3,75) até 31 de dezembro de 2026; a partir de 1º de janeiro de 2027, US$ 1,50/US$ 7,50.',
   },
   // OpenAI
-  {
-    name: 'GPT-4o',
-    provider: 'OpenAI',
-    inputPricePerM: 2.50,
-    outputPricePerM: 10.00,
-    contextWindow: '128K tokens',
-    description: 'O modelo flagship da OpenAI (GPT-4o), com capacidades avançadas e multimodalidade. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
-  },
-  {
-    name: 'GPT-4 Turbo',
-    provider: 'OpenAI',
-    inputPricePerM: 10.00,
-    outputPricePerM: 30.00,
-    contextWindow: '128K tokens',
-    description: 'O modelo GPT-4 Turbo da OpenAI, que equilibra inteligência e custo, com visão e capacidades de função. Desligamento programado pela OpenAI para 23 de outubro de 2026, com gpt-5.6-sol como substituto recomendado. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
-  },
-  {
-    name: 'GPT-4o Mini',
-    provider: 'OpenAI',
-    inputPricePerM: 0.15,
-    outputPricePerM: 0.60,
-    contextWindow: '128K tokens',
-    description: 'O modelo econômico da família GPT-4 da OpenAI (GPT-4o Mini), ideal para tarefas de baixo custo e alta escala. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
-  },
   {
     name: 'GPT-6 Astra',
     provider: 'OpenAI',
     inputPricePerM: 10.00,
     outputPricePerM: 50.00,
     contextWindow: '1.05M tokens',
-    description: 'Lançado em 3 de setembro de 2026 e, desde 14 de setembro de 2026, modelo padrão do ChatGPT Plus, Pro, Business e Enterprise no chat comum. Primeiro modelo da OpenAI a atingir o nível "Crítico" de capacidade cibernética no Preparedness Framework da empresa. Entrada em cache custa US$ 1.00/M tokens; saída máxima de 128K tokens.',
+    description: 'Lançado em 3 de setembro de 2026 e, desde 14 de setembro, modelo padrão do ChatGPT Plus, Pro, Business e Enterprise. É o modelo mais caro da OpenAI na API. Prompts acima de 272 mil tokens custam US$ 20,00/US$ 75,00 por milhão. Entrada em cache: US$ 1,00/M; saída máxima de 128K tokens.',
+    longContext: { aboveTokens: 272_000, inputPricePerM: 20.00, outputPricePerM: 75.00 },
+  },
+  {
+    name: 'GPT-6.1 Sol',
+    provider: 'OpenAI',
+    inputPricePerM: 2.00,
+    outputPricePerM: 10.00,
+    contextWindow: '1.05M tokens',
+    description: 'Lançado no DevDay de 29 de setembro de 2026, é o Sol mais recente: fica cerca de 1 ponto atrás do GPT-6 Astra no benchmark DeepSWE v1.1 custando um quinto do preço. Entrada em cache a US$ 0,10/M. Prompts acima de 272 mil tokens custam US$ 4,00/US$ 15,00 por milhão.',
+    longContext: { aboveTokens: 272_000, inputPricePerM: 4.00, outputPricePerM: 15.00 },
   },
   {
     name: 'GPT-6 Sol',
@@ -72,7 +77,8 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 2.00,
     outputPricePerM: 10.00,
     contextWindow: '1.05M tokens',
-    description: 'Lançado em 22 de setembro de 2026 para ChatGPT Work e Codex (todos os planos pagos), com metade do preço do GPT-5.6 Sol que substitui. Voltado a codificação complexa e fluxos de trabalho agênticos, ainda não disponível na caixa de chat padrão do ChatGPT.',
+    description: 'Lançado em 22 de setembro de 2026, voltado a programação complexa e fluxos agênticos; a própria OpenAI indica o GPT-6.1 Sol como versão mais nova pelo mesmo preço. Prompts acima de 272 mil tokens custam US$ 4,00/US$ 15,00 por milhão.',
+    longContext: { aboveTokens: 272_000, inputPricePerM: 4.00, outputPricePerM: 15.00 },
   },
   {
     name: 'GPT-6 Luna',
@@ -80,24 +86,41 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.10,
     outputPricePerM: 0.50,
     contextWindow: '1.05M tokens',
-    description: 'Lançado em 22 de setembro de 2026, é o modelo mais barato já lançado pela OpenAI, voltado a tarefas de alto volume como resumo e extração de dados. Disponível no app desktop para planos Free/Go e em Work/Codex para planos pagos; ainda não chegou à versão web/mobile do chat padrão.',
+    description: 'Lançado em 22 de setembro de 2026, é o modelo mais barato da OpenAI, voltado a tarefas de alto volume como resumo e extração de dados. É o substituto indicado para o GPT-4o e o GPT-4o Mini. Prompts acima de 272 mil tokens custam US$ 0,20/US$ 0,75 por milhão.',
+    longContext: { aboveTokens: 272_000, inputPricePerM: 0.20, outputPricePerM: 0.75 },
   },
   {
-    name: 'GPT-6.1 Sol',
+    name: 'GPT-4o',
     provider: 'OpenAI',
-    inputPricePerM: 2.00,
+    inputPricePerM: 2.50,
     outputPricePerM: 10.00,
-    contextWindow: '1M tokens',
-    description: 'Lançado no DevDay de 29 de setembro de 2026 para planos Plus, Pro, Business, Enterprise e Edu em ChatGPT Work e Codex. Fica cerca de 1 ponto atrás do GPT-6 Astra no benchmark DeepSWE v1.1 de engenharia de software, custando um quinto do preço padrão do Astra (US$ 10,00/US$ 50,00 por milhão de tokens) e um décimo no input em cache (US$ 0,10/M). Lançado um dia após a OpenAI cancelar o GPT-6.1 Astra por falhas de segurança.',
+    contextWindow: '128K tokens',
+    description: 'Modelo multimodal da geração anterior da OpenAI, já marcado como descontinuado: a API desliga o GPT-4o em 14 de janeiro de 2027, com o GPT-6 Luna como substituto indicado.',
+  },
+  {
+    name: 'GPT-4o Mini',
+    provider: 'OpenAI',
+    inputPricePerM: 0.15,
+    outputPricePerM: 0.60,
+    contextWindow: '128K tokens',
+    description: 'Versão econômica da geração anterior da OpenAI, já marcada como descontinuada: desliga em 14 de janeiro de 2027. O GPT-6 Luna, substituto indicado, custa menos e tem contexto muito maior.',
   },
   // Anthropic
+  {
+    name: 'Claude Fable 5.1',
+    provider: 'Anthropic',
+    inputPricePerM: 10.00,
+    outputPricePerM: 50.00,
+    contextWindow: '1M tokens',
+    description: 'O modelo mais capaz da Anthropic com acesso geral, para raciocínio exigente e trabalho agêntico longo, com 1M de tokens de contexto e até 128K de saída. O raciocínio fica sempre ligado e é cobrado como saída.',
+  },
   {
     name: 'Claude Opus 5.5',
     provider: 'Anthropic',
     inputPricePerM: 4.00,
     outputPricePerM: 20.00,
     contextWindow: '1M tokens',
-    description: 'O modelo mais inteligente da família Claude da Anthropic, construído para raciocínio exigente e trabalho agêntico de longo prazo, com até 1M de tokens de contexto. Lançado em 22 de setembro de 2026, o Opus 5.5 substitui o Opus 5 com desempenho equivalente ao Claude Fable 5.1 por cerca de 40% menos custo (preço anterior do Opus 5 era $5.00/M entrada e $25.00/M saída).',
+    description: 'O Opus atual da Anthropic, lançado em 22 de setembro de 2026 no lugar do Opus 5, com cerca de 20% de corte no preço (o Opus 5 custava US$ 5,00/US$ 25,00). Contexto de 1M de tokens e até 128K de saída; leitura de cache a US$ 0,20/M.',
   },
   {
     name: 'Claude Sonnet 5.5',
@@ -105,7 +128,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 2.00,
     outputPricePerM: 10.00,
     contextWindow: '1M tokens',
-    description: 'O modelo intermediário da família Claude da Anthropic, lançado em 28 de setembro de 2026, substituindo o Claude Sonnet 5: respostas até 30% mais rápidas e custo por tarefa cerca de 30% menor, mantendo o mesmo preço de API de US$ 2.00/M entrada e US$ 10.00/M saída, com até 1M de tokens de contexto.',
+    description: 'O modelo intermediário da Anthropic, lançado em 28 de setembro de 2026 no lugar do Sonnet 5, pelo mesmo preço de API (US$ 2,00/US$ 10,00). Contexto de 1M de tokens e até 128K de saída.',
   },
   {
     name: 'Claude Haiku 5.5',
@@ -113,7 +136,8 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.10,
     outputPricePerM: 0.50,
     contextWindow: '1M tokens',
-    description: 'O modelo mais rápido e econômico da família Claude da Anthropic, lançado em 7 de outubro de 2026 substituindo o Haiku 4.5: primeiro Haiku com níveis de esforço ajustáveis, cerca de 75% mais barato em média, e com janela de contexto ampliada para 1M tokens (antes 200K). Preço de US$ 0.10/M entrada e US$ 0.50/M saída vale para prompts de até 100K tokens (sobe para US$ 0.50/US$ 2.50 acima disso).',
+    description: 'O modelo mais rápido e barato da Anthropic, lançado em 7 de outubro de 2026 no lugar do Haiku 4.5, com 1M de tokens de contexto. O preço de US$ 0,10/US$ 0,50 vale para prompts de até 100 mil tokens; acima disso, US$ 0,50/US$ 2,50 por milhão.',
+    longContext: { aboveTokens: 100_000, inputPricePerM: 0.50, outputPricePerM: 2.50 },
   },
   // DeepSeek
   {
@@ -122,16 +146,16 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.15,
     outputPricePerM: 0.60,
     contextWindow: '1M tokens',
-    description: 'Lançado em 10 de setembro de 2026, o DeepSeek V4.1 Flash substitui o DeepSeek V4 Flash (agora aposentado, com chamadas antigas redirecionadas automaticamente) e passou a receber também o tráfego do V4 Pro a partir de 14 de setembro de 2026. Preço aqui reflete o horário fora de pico; no horário de pico (01h-04h e 06h-10h UTC, seg-sex) os preços dobram para US$ 0.30/M entrada e US$ 1.20/M saída. Suporta 1M tokens de contexto e compreensão nativa de imagens.',
+    description: 'Lançado em 10 de setembro de 2026 no lugar do V4 Flash, com 1M de tokens de contexto e compreensão de imagens. O preço mostrado é o do horário fora de pico; no pico (01h–04h e 06h–10h UTC, de segunda a sexta) dobra para US$ 0,30/US$ 1,20.',
   },
   // Meta (via API)
   {
-    name: 'Llama 3.3 70B Instruct (via Together AI)',
+    name: 'Muse Glimmer 30B (via Together AI)',
     provider: 'Meta (via API)',
-    inputPricePerM: 1.04,
-    outputPricePerM: 1.04,
-    contextWindow: '131K tokens',
-    description: 'Versão avançada do modelo open-source Llama 3.3 (Llama-3.3-70b-instruct), poderosa via API Together AI. Oferece 131K de contexto. Preços atualizados a partir de Agosto de 2026.',
+    inputPricePerM: 0.35,
+    outputPricePerM: 1.50,
+    contextWindow: '128K tokens',
+    description: 'Modelo aberto da Meta lançado em 10 de agosto de 2026, servido pela Together AI. É o substituto indicado do Llama 3.3 70B, que saiu da API serverless da Together em 22 de outubro de 2026. Entrada em cache a US$ 0,04/M.',
   },
   // Mistral AI
   {
@@ -139,8 +163,16 @@ export const AI_MODELS: CalculatorModel[] = [
     provider: 'Mistral AI',
     inputPricePerM: 0.50,
     outputPricePerM: 1.50,
-    contextWindow: '128K tokens',
-    description: 'O modelo flagship da Mistral AI (Mistral Large 3), com raciocínio avançado e capacidades multimodais. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
+    contextWindow: '256K tokens',
+    description: 'O modelo principal da Mistral AI em versão estável, com raciocínio avançado, capacidades multimodais e 256K de contexto.',
+  },
+  {
+    name: 'Mistral Medium 3.5',
+    provider: 'Mistral AI',
+    inputPricePerM: 1.50,
+    outputPricePerM: 7.50,
+    contextWindow: '256K tokens',
+    description: 'O modelo intermediário da Mistral AI (abril de 2026), equilibrando inteligência e custo, com 256K de contexto.',
   },
   {
     name: 'Mistral Small 4',
@@ -148,15 +180,7 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 0.15,
     outputPricePerM: 0.60,
     contextWindow: '256K tokens',
-    description: 'O modelo otimizado da Mistral AI (Mistral Small 4), que oferece um bom equilíbrio entre desempenho e custo para uma ampla gama de tarefas. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
-  },
-  {
-    name: 'Mistral Medium 3.5',
-    provider: 'Mistral AI',
-    inputPricePerM: 1.50,
-    outputPricePerM: 7.50,
-    contextWindow: '262K tokens',
-    description: 'O modelo intermediário da Mistral AI (Mistral Medium 3.5), oferecendo um equilíbrio entre inteligência e custo. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
+    description: 'O modelo compacto da Mistral AI, com bom equilíbrio entre desempenho e custo para tarefas do dia a dia e 256K de contexto.',
   },
   // Cohere
   {
@@ -165,23 +189,14 @@ export const AI_MODELS: CalculatorModel[] = [
     inputPricePerM: 2.50,
     outputPricePerM: 10.00,
     contextWindow: '256K tokens',
-    description: 'O mais novo modelo flagship da Cohere (Command A), com uma janela de contexto de 256K tokens, otimizado para raciocínio avançado, fluxos de trabalho agênticos e capacidades multilingues. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
+    description: 'O modelo principal da Cohere, otimizado para fluxos agênticos, RAG e uso multilíngue, com 256K de contexto.',
   },
   {
-    name: 'Command R+',
+    name: 'Command R+ (08-2024)',
     provider: 'Cohere',
     inputPricePerM: 2.50,
     outputPricePerM: 10.00,
     contextWindow: '128K tokens',
-    description: 'O modelo flagship da Cohere (Command R+), com uma janela de contexto de 128K tokens e otimizado para raciocínio avançado e fluxos de trabalho agênticos. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
-  },
-  // Add new relevant model to reach 15 total (OpenAI GPT-3.5 Turbo)
-  {
-    name: 'GPT-3.5 Turbo',
-    provider: 'OpenAI',
-    inputPricePerM: 0.50,
-    outputPricePerM: 1.50,
-    contextWindow: '16K tokens',
-    description: 'Um modelo econômico e eficiente da OpenAI, otimizado para chat e diversas tarefas de linguagem, com 16K de contexto. Desligamento programado pela OpenAI para 23 de outubro de 2026 (gpt-3.5-turbo-instruct desliga em 28 de setembro de 2026); requisições serão redirecionadas automaticamente após essa data. Preços e janela de contexto atualizados a partir de Agosto de 2026.',
+    description: 'Versão de agosto de 2024 do Command R+, hoje listada pela Cohere como modelo legado, mantido para clientes existentes. Para projetos novos, a própria Cohere indica o Command A.',
   },
 ];

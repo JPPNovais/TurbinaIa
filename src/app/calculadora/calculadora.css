@@ -259,3 +259,70 @@
     margin-top: 0.5rem;
   }
 }
+
+/* Dica abaixo de cada campo */
+.field-hint {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  margin-top: 0.35rem;
+}
+
+/* Modelo que não comporta a requisição (entrada + saída > contexto) */
+.cost-card.unavailable { opacity: 0.6; }
+.cost-warning {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #dc2626;
+  margin-top: 0.4rem;
+}
+.cost-tier-note {
+  font-family: inherit !important;
+  font-size: 0.75rem;
+  color: var(--primary);
+  margin-top: 0.2rem;
+}
+
+/* Texto indexável entre o título e a ferramenta */
+.calculadora-intro {
+  max-width: 760px;
+  margin: -1.5rem auto 2.5rem;
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.calculadora-intro p + p { margin-top: 0.9rem; }
+.calculadora-intro a { color: var(--primary); font-weight: 600; }
+.calculadora-intro strong { color: var(--text-primary); }
+.calculadora-formula {
+  margin: 1rem 0;
+  padding: 0.9rem 1rem;
+  background: var(--bg-tertiary);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+/* Tabela de preços por modelo (conteúdo indexável abaixo da ferramenta) */
+.calculadora-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.calculadora-table th,
+.calculadora-table td {
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+  white-space: nowrap;
+}
+.calculadora-table thead th {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+.calculadora-table tbody th { color: var(--text-primary); font-weight: 600; white-space: normal; }
+.calculadora-table td { font-family: monospace; }

@@ -72,3 +72,46 @@ export function latestDate(...dates: (Date | string | undefined)[]): Date | unde
   }
   return best;
 }
+
+interface StaticPageDates {
+  /** Arquivos que compõem a página (componente + dados): o último commit neles vira a data. */
+  sources: string[];
+  /**
+   * Última revisão editorial do texto (YYYY-MM-DD). Reserva para quando o
+   * clone raso da Vercel não alcança o commit — sem ela a página ficaria sem
+   * data. Atualize ao revisar o texto da página.
+   */
+  reviewedAt?: string;
+}
+
+export const STATIC_PAGE_DATES: Record<string, StaticPageDates> = {
+  '/prompts': { sources: ['src/app/prompts', 'src/data/prompts.ts'] },
+  '/comparador': { sources: ['src/app/comparador', 'src/data/ai-models.ts'], reviewedAt: '2026-10-26' },
+  '/ferramentas': { sources: ['src/app/ferramentas', 'src/data/ai-tools.ts'] },
+  '/calculadora': {
+    sources: ['src/app/calculadora', 'src/data/calculator-models.ts', 'src/data/exchange-rate.ts', 'src/lib/api-cost.ts'],
+    reviewedAt: '2026-10-26',
+  },
+  '/verificador-ia': { sources: ['src/app/verificador-ia', 'src/app/api/aeo-check'] },
+  '/gerador': { sources: ['src/app/gerador'] },
+  '/glossario': { sources: ['src/app/glossario', 'src/data/glossario.ts'] },
+  '/changelog': { sources: ['src/app/changelog', 'src/data/changelog.ts'] },
+  '/sobre': { sources: ['src/app/sobre'] },
+  '/contato': { sources: ['src/app/contato'] },
+  '/politica-de-privacidade': { sources: ['src/app/politica-de-privacidade'] },
+  '/termos-de-uso': { sources: ['src/app/termos-de-uso'] },
+};
+
+/** Data de atualização de uma página estática (sitemap, "Atualizado em" e JSON-LD). */
+export function getPageLastModified(pagePath: string): Date | undefined {
+  const page = STATIC_PAGE_DATES[pagePath];
+  if (!page) return undefined;
+  // Meio-dia de Brasília: "2026-10-26" puro seria meia-noite UTC (dia 25 aqui)
+  const reviewed = page.reviewedAt ? `${page.reviewedAt}T12:00:00-03:00` : undefined;
+  return latestDate(getGitLastModified(page.sources), reviewed);
+}
+
+/** Date → "YYYY-MM-DD" no fuso de Brasília. */
+export function toLocalDateString(date: Date): string {
+  return date.toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' });
+}

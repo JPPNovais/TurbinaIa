@@ -1,62 +1,79 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { AI_MODELS, type CalculatorModel as AIModel } from '@/data/calculator-models';
+import { AI_MODELS } from '@/data/calculator-models';
+import { USD_BRL } from '@/data/exchange-rate';
+import { DEFAULT_SCENARIO, DEFAULT_USD_BRL, fitsContext, formatMoney, ratesFor, requestCostUsd } from '@/lib/api-cost';
+import { formatDateMedium } from '@/lib/date';
 import './calculadora.css';
 
-export default function CalculatorClient({ breadcrumb }: { breadcrumb?: React.ReactNode }) {
-  const [inputTokens, setInputTokens] = useState<number>(50000);
-  const [outputTokens, setOutputTokens] = useState<number>(10000);
-  const [requestsCount, setRequestsCount] = useState<number>(1000);
+// Faixas dos controles deslizantes. A escala é logarítmica: de 100 a 1 milhão
+// de tokens, cada trecho do controle cobre a mesma proporção, o que permite
+// escolher 1.500 tokens (um chat) com a mesma precisão que 500 mil (um livro).
+const INPUT_RANGE = { min: 100, max: 1_000_000 };
+const OUTPUT_RANGE = { min: 50, max: 128_000 };
+const REQUESTS_RANGE = { min: 1, max: 10_000_000 };
+const SLIDER_STEPS = 1000;
+
+
+/** Arredonda para 2 algarismos significativos (1.537 → 1.500). */
+function roundNice(value: number): number {
+  if (value < 100) return Math.max(1, Math.round(value));
+  const magnitude = Math.pow(10, Math.floor(Math.log10(value)) - 1);
+  return Math.round(value / magnitude) * magnitude;
+}
+
+function toSlider(value: number, { min, max }: { min: number; max: number }): number {
+  const clamped = Math.min(max, Math.max(min, value));
+  return Math.round((Math.log(clamped / min) / Math.log(max / min)) * SLIDER_STEPS);
+}
+
+function fromSlider(position: number, { min, max }: { min: number; max: number }): number {
+  return roundNice(min * Math.pow(max / min, position / SLIDER_STEPS));
+}
+
+interface CalculatorClientProps {
+  breadcrumb?: React.ReactNode;
+  /** Texto indexável entre o título e a ferramenta (vem do servidor). */
+  intro?: React.ReactNode;
+}
+
+export default function CalculatorClient({ breadcrumb, intro }: CalculatorClientProps) {
+  const [inputTokens, setInputTokens] = useState<number>(DEFAULT_SCENARIO.input);
+  const [outputTokens, setOutputTokens] = useState<number>(DEFAULT_SCENARIO.output);
+  const [requestsCount, setRequestsCount] = useState<number>(DEFAULT_SCENARIO.requests);
   const [period, setPeriod] = useState<'daily' | 'monthly'>('monthly');
   const [currency, setCurrency] = useState<'USD' | 'BRL'>('BRL');
-  const [exchangeRate, setExchangeRate] = useState<number>(5.80);
+  // Texto livre para o leitor poder apagar e digitar (aceita vírgula ou ponto)
+  const [rateText, setRateText] = useState<string>(DEFAULT_USD_BRL.toFixed(2).replace('.', ','));
 
-  // Synchronize inputs between slider and number inputs
-  const handleInputChange = (val: string, setter: (n: number) => void, min: number = 0) => {
-    const num = parseInt(val.replace(/\D/g, '')) || 0;
-    setter(Math.max(min, num));
+  const parsedRate = parseFloat(rateText.replace(',', '.'));
+  const exchangeRate = parsedRate > 0 ? parsedRate : DEFAULT_USD_BRL;
+  const toCurrency = (usd: number) => (currency === 'BRL' ? usd * exchangeRate : usd);
+
+  const handleNumberChange = (val: string, setter: (n: number) => void, range: { min: number; max: number }) => {
+    const num = parseInt(val.replace(/\D/g, ''), 10) || 0;
+    // O campo de texto aceita até 10x o máximo do controle deslizante
+    setter(Math.min(range.max * 10, Math.max(range.min, num)));
   };
 
-  // Perform cost calculations
   const calculatedCosts = useMemo(() => {
     const results = AI_MODELS.map((model) => {
-      // Pricing is per 1M tokens
-      const singleInputCost = (inputTokens / 1_000_000) * model.inputPricePerM;
-      const singleOutputCost = (outputTokens / 1_000_000) * model.outputPricePerM;
-      const costPerRequestUsd = singleInputCost + singleOutputCost;
-
-      // Period scaling
-      const multiplier = period === 'daily' ? 1 : 1; // requestsCount is already absolute for the chosen period view
-      const totalCostUsd = costPerRequestUsd * requestsCount * multiplier;
-
-      // Currency conversion
-      const multiplierCurrency = currency === 'BRL' ? exchangeRate : 1;
-      const totalCost = totalCostUsd * multiplierCurrency;
-      const costPerRequest = costPerRequestUsd * multiplierCurrency;
-
+      const costPerRequestUsd = requestCostUsd(model, inputTokens, outputTokens);
       return {
         ...model,
-        costPerRequest,
-        totalCost,
-        rawTotalCostUsd: totalCostUsd, // keep USD for absolute comparison/sorting
+        rates: ratesFor(model, inputTokens),
+        fits: fitsContext(model, inputTokens, outputTokens),
+        costPerRequestUsd,
+        // requestsCount já é o volume do período escolhido (dia ou mês)
+        totalCostUsd: costPerRequestUsd * requestsCount,
       };
     });
+    // Mais barato primeiro; os que não comportam a requisição vão para o fim
+    return results.sort((a, b) => Number(b.fits) - Number(a.fits) || a.totalCostUsd - b.totalCostUsd);
+  }, [inputTokens, outputTokens, requestsCount]);
 
-    // Sort by total cost ascending
-    return [...results].sort((a, b) => a.totalCost - b.totalCost);
-  }, [inputTokens, outputTokens, requestsCount, period, currency, exchangeRate]);
-
-  const currencySymbol = currency === 'BRL' ? 'R$' : 'US$';
-
-  const formatCurrency = (value: number) => {
-    return value.toLocaleString('pt-BR', {
-      style: 'currency',
-      currency: currency,
-      minimumFractionDigits: value < 0.1 ? 4 : 2,
-      maximumFractionDigits: value < 0.1 ? 6 : 2,
-    });
-  };
+  const periodLabel = period === 'daily' ? 'dia' : 'mês';
 
   return (
     <section className="calculadora-section container">
@@ -65,163 +82,156 @@ export default function CalculatorClient({ breadcrumb }: { breadcrumb?: React.Re
         <h1>Calculadora de Custos de APIs de IA ⚡</h1>
         <p>
           Simule o consumo de tokens e compare os preços cobrados pelas principais provedoras do mercado
-          (Google, OpenAI, Anthropic, DeepSeek e Meta). Encontre a opção mais custo-benefício para o seu projeto.
+          (OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral e Cohere). Encontre a opção mais barata para o seu projeto.
         </p>
       </div>
 
-      <div className="calculadora-grid">
+      {intro}
+
+      <div className="calculadora-grid" id="calcular">
         {/* Panel of sliders and inputs */}
         <aside className="inputs-panel">
           <div className="input-field-group">
             <div className="field-header">
-              <label htmlFor="inputTokens">Tokens de Entrada (Prompt)</label>
+              <label htmlFor="inputTokens">Tokens de entrada por requisição</label>
               <span className="field-value-badge">
-                {inputTokens.toLocaleString('pt-BR')} tokens
+                {inputTokens.toLocaleString('pt-BR')}
               </span>
             </div>
             <input
               id="inputTokensSlider"
               type="range"
-              min="1000"
-              max="500000"
-              step="1000"
-              value={inputTokens}
-              onChange={(e) => setInputTokens(Number(e.target.value))}
+              min="0"
+              max={SLIDER_STEPS}
+              value={toSlider(inputTokens, INPUT_RANGE)}
+              onChange={(e) => setInputTokens(fromSlider(Number(e.target.value), INPUT_RANGE))}
               className="slider-input"
+              aria-label="Tokens de entrada por requisição"
             />
             <input
               id="inputTokens"
               type="text"
-              pattern="[0-9]*"
+              inputMode="numeric"
               value={inputTokens.toLocaleString('pt-BR')}
-              onChange={(e) => handleInputChange(e.target.value, setInputTokens, 100)}
+              onChange={(e) => handleNumberChange(e.target.value, setInputTokens, INPUT_RANGE)}
               className="text-number-input"
             />
-            <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.25rem', display: 'block' }}>
-              Ex: Perguntas, arquivos, histórico da conversa.
+            <span className="field-hint">
+              Instruções, histórico da conversa, pergunta e arquivos enviados. Uma página de texto tem cerca de 700 tokens.
             </span>
           </div>
 
           <div className="input-field-group">
             <div className="field-header">
-              <label htmlFor="outputTokens">Tokens de Saída (Resposta)</label>
+              <label htmlFor="outputTokens">Tokens de saída por requisição</label>
               <span className="field-value-badge">
-                {outputTokens.toLocaleString('pt-BR')} tokens
+                {outputTokens.toLocaleString('pt-BR')}
               </span>
             </div>
             <input
               id="outputTokensSlider"
               type="range"
-              min="500"
-              max="100000"
-              step="500"
-              value={outputTokens}
-              onChange={(e) => setOutputTokens(Number(e.target.value))}
+              min="0"
+              max={SLIDER_STEPS}
+              value={toSlider(outputTokens, OUTPUT_RANGE)}
+              onChange={(e) => setOutputTokens(fromSlider(Number(e.target.value), OUTPUT_RANGE))}
               className="slider-input"
+              aria-label="Tokens de saída por requisição"
             />
             <input
               id="outputTokens"
               type="text"
-              pattern="[0-9]*"
+              inputMode="numeric"
               value={outputTokens.toLocaleString('pt-BR')}
-              onChange={(e) => handleInputChange(e.target.value, setOutputTokens, 10)}
+              onChange={(e) => handleNumberChange(e.target.value, setOutputTokens, OUTPUT_RANGE)}
               className="text-number-input"
             />
-            <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.25rem', display: 'block' }}>
-              Ex: A resposta gerada pelo modelo.
+            <span className="field-hint">
+              A resposta do modelo. Em modelos de raciocínio, os tokens de &quot;pensamento&quot; também são cobrados como saída.
             </span>
+          </div>
+
+          {/* Period Toggle */}
+          <div className="input-field-group">
+            <span className="field-header">Período da estimativa</span>
+            <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
+              {(['daily', 'monthly'] as const).map((value) => (
+                <button
+                  key={value}
+                  type="button"
+                  className="btn"
+                  aria-pressed={period === value}
+                  style={{
+                    flex: 1,
+                    background: period === value ? 'var(--primary)' : 'var(--bg-tertiary)',
+                    color: period === value ? 'white' : 'var(--text-primary)',
+                    borderColor: 'var(--border-color)',
+                    padding: '0.5rem',
+                    fontSize: '0.9rem',
+                  }}
+                  onClick={() => setPeriod(value)}
+                >
+                  {value === 'daily' ? 'Por dia' : 'Por mês'}
+                </button>
+              ))}
+            </div>
           </div>
 
           <div className="input-field-group">
             <div className="field-header">
-              <label htmlFor="requestsCount">Volume de Requisições</label>
+              <label htmlFor="requestsCount">Requisições por {periodLabel}</label>
               <span className="field-value-badge">
-                {requestsCount.toLocaleString('pt-BR')} / {period === 'daily' ? 'dia' : 'mês'}
+                {requestsCount.toLocaleString('pt-BR')}
               </span>
             </div>
             <input
               id="requestsCountSlider"
               type="range"
-              min="100"
-              max="100000"
-              step="100"
-              value={requestsCount}
-              onChange={(e) => setRequestsCount(Number(e.target.value))}
+              min="0"
+              max={SLIDER_STEPS}
+              value={toSlider(requestsCount, REQUESTS_RANGE)}
+              onChange={(e) => setRequestsCount(fromSlider(Number(e.target.value), REQUESTS_RANGE))}
               className="slider-input"
+              aria-label={`Requisições por ${periodLabel}`}
             />
             <input
               id="requestsCount"
               type="text"
-              pattern="[0-9]*"
+              inputMode="numeric"
               value={requestsCount.toLocaleString('pt-BR')}
-              onChange={(e) => handleInputChange(e.target.value, setRequestsCount, 1)}
+              onChange={(e) => handleNumberChange(e.target.value, setRequestsCount, REQUESTS_RANGE)}
               className="text-number-input"
             />
-          </div>
-
-          {/* Period Toggle */}
-          <div className="input-field-group">
-            <label className="field-header">Frequência da Estimativa</label>
-            <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
-              <button
-                type="button"
-                className="btn"
-                style={{
-                  flex: 1,
-                  background: period === 'daily' ? 'var(--primary)' : 'var(--bg-tertiary)',
-                  color: period === 'daily' ? 'white' : 'var(--text-primary)',
-                  borderColor: 'var(--border-color)',
-                  padding: '0.5rem',
-                  fontSize: '0.9rem',
-                }}
-                onClick={() => setPeriod('daily')}
-              >
-                Diária
-              </button>
-              <button
-                type="button"
-                className="btn"
-                style={{
-                  flex: 1,
-                  background: period === 'monthly' ? 'var(--primary)' : 'var(--bg-tertiary)',
-                  color: period === 'monthly' ? 'white' : 'var(--text-primary)',
-                  borderColor: 'var(--border-color)',
-                  padding: '0.5rem',
-                  fontSize: '0.9rem',
-                }}
-                onClick={() => setPeriod('monthly')}
-              >
-                Mensal
-              </button>
-            </div>
           </div>
 
           {/* Exchange Rate Customizer */}
           {currency === 'BRL' && (
             <div className="input-field-group" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.25rem' }}>
               <div className="field-header">
-                <label htmlFor="exchangeRate">Taxa de Câmbio (USD → BRL)</label>
-                <span className="field-value-badge">R$ {exchangeRate.toFixed(2)}</span>
+                <label htmlFor="exchangeRate">Câmbio (US$ 1 = R$)</label>
+                <span className="field-value-badge">R$ {exchangeRate.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 4 })}</span>
               </div>
               <input
                 id="exchangeRate"
-                type="number"
-                step="0.05"
-                min="1.00"
-                value={exchangeRate}
-                onChange={(e) => setExchangeRate(Number(e.target.value) || 5.80)}
+                type="text"
+                inputMode="decimal"
+                value={rateText}
+                onChange={(e) => setRateText(e.target.value.replace(/[^\d.,]/g, ''))}
                 className="text-number-input"
                 style={{ fontFamily: 'monospace' }}
               />
+              <span className="field-hint">
+                Padrão: PTAX do Banco Central de {formatDateMedium(USD_BRL.date)}. O cartão de crédito costuma somar IOF e spread.
+              </span>
             </div>
           )}
         </aside>
 
         {/* Results Panel */}
-        <main className="results-panel">
+        <div className="results-panel">
           <div className="results-header-bar">
-            <h2 style={{ fontSize: '1.35rem', fontWeight: 700 }}>Estimativa de Custo Comparado</h2>
-            
+            <h2 style={{ fontSize: '1.35rem', fontWeight: 700 }}>Custo estimado por {periodLabel}</h2>
+
             <div className="currency-toggle">
               <button
                 type="button"
@@ -242,14 +252,16 @@ export default function CalculatorClient({ breadcrumb }: { breadcrumb?: React.Re
 
           <div className="models-cost-list">
             {calculatedCosts.map((model, idx) => {
-              const isCheapest = idx === 0;
+              const isCheapest = idx === 0 && model.fits;
+              const rate = (usd: number) => toCurrency(usd).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+              const symbol = currency === 'BRL' ? 'R$' : 'US$';
               return (
                 <article
                   key={model.name}
-                  className={`cost-card ${isCheapest ? 'cheapest' : ''}`}
+                  className={`cost-card ${isCheapest ? 'cheapest' : ''} ${model.fits ? '' : 'unavailable'}`}
                 >
                   {isCheapest && (
-                    <span className="cheapest-badge">Melhor Custo-Benefício 🏆</span>
+                    <span className="cheapest-badge">Mais barato para este uso 🏆</span>
                   )}
 
                   <div className="model-meta-info">
@@ -258,32 +270,47 @@ export default function CalculatorClient({ breadcrumb }: { breadcrumb?: React.Re
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '0.35rem', lineHeight: '1.4' }}>
                       {model.description}
                     </p>
+                    {!model.fits && (
+                      <p className="cost-warning">
+                        Entrada + saída passam da janela de contexto deste modelo ({model.contextWindow}).
+                      </p>
+                    )}
                   </div>
 
                   <div className="model-rates">
                     <span style={{ fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.25rem', display: 'block' }}>
-                      Tarifas base (1M tokens):
+                      Preço por 1M de tokens:
                     </span>
-                    <span>Entrada: {currencySymbol} {(model.inputPricePerM * (currency === 'BRL' ? exchangeRate : 1)).toFixed(2)}</span>
-                    <span>Saída: {currencySymbol} {(model.outputPricePerM * (currency === 'BRL' ? exchangeRate : 1)).toFixed(2)}</span>
+                    <span>Entrada: {symbol} {rate(model.rates.input)}</span>
+                    <span>Saída: {symbol} {rate(model.rates.output)}</span>
+                    {model.rates.longContext && model.longContext && (
+                      <span className="cost-tier-note">
+                        Faixa de prompt longo (acima de {model.longContext.aboveTokens.toLocaleString('pt-BR')} tokens)
+                      </span>
+                    )}
                   </div>
 
                   <div className="model-total-cost">
                     <span className={`cost-value ${isCheapest ? 'success-text' : ''}`}>
-                      {formatCurrency(model.totalCost)}
+                      {formatMoney(toCurrency(model.totalCostUsd), currency)}
                     </span>
                     <span className="cost-per-req">
-                      {formatCurrency(model.costPerRequest)} / req
+                      {formatMoney(toCurrency(model.costPerRequestUsd), currency)} / requisição
                     </span>
                     <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
-                      Total {period === 'daily' ? 'diário' : 'mensal'} ({requestsCount.toLocaleString('pt-BR')} reqs)
+                      Total por {periodLabel} ({requestsCount.toLocaleString('pt-BR')} requisições)
                     </span>
+                    {period === 'daily' && (
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                        ≈ {formatMoney(toCurrency(model.totalCostUsd * 30), currency)} por mês (30 dias)
+                      </span>
+                    )}
                   </div>
                 </article>
               );
             })}
           </div>
-        </main>
+        </div>
       </div>
     </section>
   );

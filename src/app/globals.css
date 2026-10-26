@@ -1960,3 +1960,42 @@ h1, h2, h3, h4, h5, h6 {
 .prompt-collections-more { margin-top: 1.25rem; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; }
 .prompt-collections-more a { color: var(--primary); font-weight: 600; }
 
+/* Páginas-ferramenta (/comparador, /calculadora): data, resposta direta e sumário */
+.tool-updated {
+  margin-top: 0.75rem;
+  font-size: 0.85rem !important;
+  color: var(--text-muted) !important;
+}
+.tool-answer {
+  margin: 1.25rem 0;
+  padding: 1rem 1.15rem;
+  background: rgba(var(--primary-rgb), 0.06);
+  border: 1px solid rgba(var(--primary-rgb), 0.25);
+  border-radius: var(--border-radius-md);
+  color: var(--text-primary);
+}
+.tool-toc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.88rem;
+}
+.tool-toc-label { font-weight: 700; color: var(--text-primary); margin-right: 0.25rem; }
+.tool-toc a {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--text-secondary) !important;
+  font-weight: 500 !important;
+  background: var(--bg-secondary);
+}
+.tool-toc a:hover { border-color: var(--primary); color: var(--primary) !important; }
+[id='calcular'], [id='comparar'], [id='como-calcular'], [id='precos-por-modelo'], [id='exemplo-de-calculo'],
+[id='como-escolher'], [id='modelos-comparados'], [id='perguntas-frequentes'], [id='dicas-para-economizar'] {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}

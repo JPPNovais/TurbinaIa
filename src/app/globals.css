@@ -1935,3 +1935,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Campo-isca para robôs nos formulários de newsletter */
 .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+/* Bloco "Prompts por ferramenta e área" (fim dos posts de prompts e /prompts) */
+.prompt-collections {
+  margin: 3rem 0 2.5rem;
+  padding: 1.5rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+}
+.prompt-collections-title { font-size: 1.4rem; font-weight: 800; margin-bottom: 0.25rem; }
+.prompt-collections-group + .prompt-collections-group { margin-top: 1.25rem; }
+.prompt-collections-group-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+.prompt-collections .hub-tools { margin-top: 0.6rem; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.prompt-collections-current { border-color: var(--primary); cursor: default; }
+.prompt-collections-current:hover { transform: none; }
+.prompt-collections-more { margin-top: 1.25rem; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; }
+.prompt-collections-more a { color: var(--primary); font-weight: 600; }
+

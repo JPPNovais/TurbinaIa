@@ -109,6 +109,30 @@ export const HUBS: Record<HubSlug, Hub> = {
   },
 };
 
+export interface PromptCollection {
+  slug: string;
+  /** Completa "Prompts para…": "ChatGPT" (ferramenta, ganha o artigo "o") ou "marketing digital". */
+  label: string;
+  group: 'ferramenta' | 'area';
+  /** O que a coleção cobre, em poucas palavras. */
+  covers: string;
+}
+
+/**
+ * Coleções de prompts do blog, na ordem do bloco "Prompts por ferramenta e
+ * área" (fim dos posts de prompts e /prompts). A quantidade de prompts vem do
+ * título de cada post, então não precisa ser atualizada aqui.
+ */
+export const PROMPT_COLLECTIONS: PromptCollection[] = [
+  { slug: 'prompts-prontos-para-chatgpt', label: 'ChatGPT', group: 'ferramenta', covers: 'trabalho, e-mail, estudos, carreira e dia a dia' },
+  { slug: 'prompts-para-gemini', label: 'Gemini', group: 'ferramenta', covers: 'Workspace, fotos, Gems e Deep Research' },
+  { slug: 'prompts-para-marketing-digital', label: 'marketing digital', group: 'area', covers: 'anúncios, redes sociais, SEO e e-mail' },
+  { slug: 'prompts-para-copywriting-e-redacao', label: 'copywriting e redação', group: 'area', covers: 'headlines, páginas de vendas e revisão' },
+  { slug: 'prompts-para-programacao', label: 'programação', group: 'area', covers: 'código, debug, testes e agentes de código' },
+  { slug: 'prompts-para-estudos-e-concursos', label: 'estudos e concursos', group: 'area', covers: 'resumos, simulados e plano de estudos' },
+  { slug: 'prompts-para-negocios-e-empreendedores', label: 'negócios', group: 'area', covers: 'estratégia, vendas, finanças e gestão' },
+];
+
 /** Ordem de exibição (home, rodapé, llms.txt). */
 export const HUB_ORDER: HubSlug[] = ['prompts', 'melhores-ias', 'tutoriais', 'noticias', 'ferramentas'];
 

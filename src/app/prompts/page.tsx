@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PromptsClient from './PromptsClient';
 import LeadMagnet from '@/components/LeadMagnet';
+import PromptCollections from '@/components/PromptCollections';
 import { PROMPTS } from '@/data/prompts';
 import PostCard from '@/components/PostCard';
 import { getAllArticlesMetadata } from '@/lib/articles';
@@ -195,6 +196,8 @@ export default async function PromptsPage() {
             Cada prompt traz campos entre colchetes (como [Público-Alvo] ou [Nome do Produto]). Substitua-os pelas informações reais do seu projeto antes de enviar à IA para obter respostas precisas.
           </p>
         </article>
+
+        <PromptCollections showLibraryLink={false} />
       </section>
     </main>
     </>

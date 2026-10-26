@@ -9,10 +9,11 @@ import LeadMagnet from '@/components/LeadMagnet';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ArticleInteractions from '@/components/ArticleInteractions';
 import NewsletterInline from '@/components/NewsletterInline';
+import PromptCollections from '@/components/PromptCollections';
 import { getArticleData, getAllArticlesMetadata, getLastModified } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
 import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, buildArticleTitle, clampDescription, jsonLd } from '@/lib/seo';
-import { getPrimaryHub, getRelatedArticles } from '@/lib/taxonomy';
+import { getPrimaryHub, getRelatedArticles, isPromptArticle } from '@/lib/taxonomy';
 import { withAspectRatio } from '@/lib/unsplash';
 
 interface ArticlePageProps {
@@ -286,6 +287,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           postSlug={article.slug}
           postTopic={hub.slug}
         />
+
+        {/* Posts de prompts: links para todas as coleções (ferramenta e área) */}
+        {isPromptArticle(article) && <PromptCollections currentSlug={article.slug} />}
 
         {/* Captura de leads — pack de prompts em troca do e-mail */}
         <LeadMagnet source="post_end" postSlug={article.slug} />

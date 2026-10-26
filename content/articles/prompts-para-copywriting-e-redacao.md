@@ -1,7 +1,7 @@
 ---
-title: "25 Prompts para Copywriting e Redação: Escreva Melhor com IA (2026)"
-seoTitle: "25 Prompts para Copywriting e Redação (2026)"
-description: "Prompts para copywriting e redação que realmente funcionam: 25 modelos prontos para headlines, textos de vendas, storytelling e revisão com IA."
+title: "40 Prompts para Copywriting e Redação: Escreva Melhor com IA (2026)"
+seoTitle: "40 Prompts para Copywriting e Redação Prontos (2026)"
+description: "Prompts para copywriting e redação prontos para copiar: 40 modelos para headlines, AIDA e PAS, páginas de vendas, storytelling, revisão e LinkedIn."
 category: tutoriais
 tags:
   - Prompts
@@ -12,22 +12,38 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-09"
+updatedAt: "2026-10-26"
 coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
 ---
 
 Escrever um texto que converte, emociona ou simplesmente prende a atenção do leitor do início ao fim é uma das habilidades mais valiosas no marketing digital. E não importa se você é copywriter profissional, empreendedor escrevendo as próprias páginas de vendas ou criador de conteúdo procurando consistência — a IA pode acelerar (muito) o seu processo.
 
-O problema é que a maioria das pessoas usa prompts genéricos e recebe de volta textos genéricos. Este guia existe para resolver isso. Aqui você vai encontrar 25 prompts de escrita testados, organizados por finalidade, com variáveis que você substitui pela sua realidade. Nada de "escreva um texto sobre X". Prompts de verdade.
+O problema é que a maioria das pessoas usa prompts genéricos e recebe de volta textos genéricos. Este guia existe para resolver isso. Aqui você vai encontrar 40 prompts de escrita testados, organizados por finalidade, com variáveis que você substitui pela sua realidade. Nada de "escreva um texto sobre X". Prompts de verdade.
 
-## Resposta Rápida (TL;DR)
+**Resposta Rápida (TL;DR):** Um bom prompt para copywriting diz à IA quem é o público, qual dor ou desejo ele tem, o que você vende, o que o leitor deve fazer depois de ler e o formato do texto — tamanho, tom e quantas versões. Os 40 modelos abaixo já trazem essa estrutura, com variáveis em `[colchetes]`: headlines, fórmulas como AIDA e PAS, páginas de vendas, storytelling, revisão e redação profissional. Funcionam no ChatGPT, no Gemini e no Claude.
 
-Para obter bons textos com IA, o prompt precisa especificar tom, público-alvo e formato de saída — não apenas o tema. Use os modelos abaixo como ponto de partida, substituindo as variáveis em `[colchetes]` pelo contexto do seu produto ou marca. Você pode testar e refinar todos eles direto na nossa [biblioteca de prompts](/prompts).
+**Escolha a categoria:**
+
+- [Headlines e títulos](#prompts-para-headlines-e-titulos) — 7 prompts
+- [Fórmulas clássicas de copy (PAS, BAB, 4 Ps e 4 Us)](#prompts-com-formulas-classicas-de-copy-pas-bab-4-ps-e-4-us) — 4 prompts
+- [Textos de vendas](#prompts-para-textos-de-vendas-copy) — 6 prompts
+- [Páginas de vendas e landing pages](#prompts-para-paginas-de-vendas-e-landing-pages) — 4 prompts
+- [Storytelling](#prompts-para-storytelling) — 4 prompts
+- [Revisão e edição](#prompts-para-revisao-e-edicao) — 5 prompts
+- [Adaptar tom e estilo](#prompts-para-adaptar-tom-e-estilo) — 5 prompts
+- [Redação profissional: e-mail, LinkedIn e release](#prompts-para-redacao-profissional-e-mail-linkedin-e-release) — 5 prompts
+- [Como fazer um prompt para copywriting](#como-fazer-um-prompt-para-copywriting) — a estrutura, com exemplo
 
 ---
 
-## O Que Faz um Prompt de Escrita Funcionar
+## Como Fazer um Prompt para Copywriting
 
-Antes de partir para os modelos, vale entender por que alguns prompts geram ouro e outros geram papelão.
+Antes de partir para os modelos, vale entender por que alguns prompts geram ouro e outros geram papelão. Um prompt de copywriting completo responde a cinco perguntas: **para quem** é o texto, **qual dor ou desejo** ele toca, **o que** você oferece, **o que o leitor deve fazer** depois de ler e **em que formato** entregar. Veja a diferença:
+
+- **Prompt fraco:** "Escreva um anúncio para o meu curso de inglês."
+- **Prompt forte:** "Escreva 3 anúncios para o Instagram de um curso de inglês online para adultos de 30 a 45 anos que travam na hora de falar. Dor: vergonha de errar em reuniões de trabalho. Oferta: aulas ao vivo em grupos de 4 pessoas, com 7 dias grátis. Objetivo: clique para a página do teste grátis. Até 125 caracteres no texto principal, tom direto e sem prometer fluência em semanas."
+
+Depois, ajuste três coisas em qualquer prompt desta lista:
 
 **Tom:** A IA não sabe se você quer soar como uma startup descolada ou uma clínica médica séria. Diga explicitamente: "tom informal e direto", "linguagem técnica mas acessível", "autoridade sem ser arrogante".
 
@@ -71,6 +87,50 @@ ao mesmo tempo gerem cliques no Google. Inclua a palavra-chave de forma natural.
 Liste 8 títulos de e-mail marketing para uma campanha de [produto/oferta].
 Objetivo: [aumentar cliques / gerar abertura / reativar inativos].
 Evite gatilhos de spam como "GRÁTIS" em caixa alta ou excesso de pontos de exclamação.
+```
+
+```
+Escreva 10 ganchos para os 3 primeiros segundos de um vídeo curto (Reels ou TikTok) sobre [tema]. Cada gancho deve ter no máximo 12 palavras e usar um ângulo diferente: erro comum, número surpreendente, pergunta direta, promessa específica ou contraste "antes e depois". Público: [público].
+```
+
+```
+Crie 6 títulos para um anúncio no [Meta Ads / Google Ads] de [produto], com no máximo [40] caracteres cada. Metade focada no benefício principal ([benefício]) e metade na dor que o produto resolve ([dor]). Não use promessas que eu não possa comprovar.
+```
+
+---
+
+## Prompts com Fórmulas Clássicas de Copy (PAS, BAB, 4 Ps e 4 Us)
+
+As fórmulas de copywriting existem porque funcionam: dão uma ordem lógica ao texto e evitam que você esqueça a parte que convence. Peça à IA que siga uma delas explicitamente — o resultado sai mais organizado do que um "escreva um texto persuasivo".
+
+```
+Escreva um texto de até 120 palavras para [canal: anúncio, post ou e-mail] usando a fórmula PAS:
+- Problema: a dor que [público] sente com [situação]
+- Agitação: o que piora se nada mudar (seja concreto, sem exagero)
+- Solução: como [produto] resolve, com um benefício mensurável
+Termine com o CTA "[ação desejada]".
+```
+
+```
+Use a fórmula Antes–Depois–Ponte (BAB) para apresentar [produto/serviço]:
+- Antes: o dia a dia de [público] hoje, com um detalhe que ele reconheça
+- Depois: como fica a rotina com o problema resolvido
+- Ponte: o que o [produto] faz para levar de um ponto ao outro
+Escreva 3 versões: uma de 50, uma de 100 e uma de 200 palavras.
+```
+
+```
+Escreva um e-mail de venda para [produto] com a fórmula dos 4 Ps:
+- Promessa: o resultado principal em uma frase
+- Imagem: uma cena que mostre o leitor já com esse resultado
+- Prova: [dado, depoimento ou estudo de caso real]
+- Proposta: a oferta e o CTA, com [condição ou prazo]
+Tom [tom]. Até 250 palavras.
+```
+
+```
+Avalie as headlines abaixo de 1 a 5 em cada um dos 4 Us — Útil, Urgente, Única e Ultraespecífica. Mostre o resultado em uma tabela, explique a nota mais baixa de cada uma e reescreva as 3 piores para que cheguem a pelo menos 4 em todos os critérios:
+[cole as headlines, uma por linha]
 ```
 
 ---
@@ -127,6 +187,30 @@ Principal transformação que o produto entrega: [descreva]
 ```
 
 Para ter ainda mais modelos de copy à disposição, você pode explorar nossa coleção de [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt), com mais de 100 modelos organizados por categoria.
+
+---
+
+## Prompts para Páginas de Vendas e Landing Pages
+
+Uma página de vendas é uma sequência de respostas às dúvidas do leitor. Estes prompts montam a estrutura e escrevem as seções que mais pesam na decisão de compra.
+
+```
+Monte a estrutura completa de uma página de vendas para [produto] voltado a [público]. Para cada seção (headline, subheadline, problema, solução, benefícios, prova social, oferta, garantia, FAQ e CTA final), escreva em uma linha o objetivo da seção e, em seguida, um rascunho do texto.
+Informações do produto: [preço, o que está incluído, diferenciais].
+```
+
+```
+Transforme as características de [produto] em benefícios. Para cada item, entregue em uma tabela: a característica, o benefício prático ("o que isso muda para você") e o benefício emocional por trás dele.
+Características: [liste aqui]
+```
+
+```
+Escreva a seção de oferta de [produto] mostrando tudo o que a pessoa recebe: item principal, bônus e garantia. Para cada item, diga o que é e qual problema resolve, em uma frase. Feche comparando o preço ([preço e condições]) com o custo de continuar com o problema. Não invente valores para os bônus.
+```
+
+```
+Escreva 8 perguntas e respostas para o FAQ da página de vendas de [produto], respondendo às dúvidas que mais travam a compra de [público]: preço, prazo para ver resultado, suporte, garantia, forma de acesso e para quem o produto NÃO serve. Respostas de até 60 palavras, tom [tom].
+```
 
 ---
 
@@ -258,7 +342,49 @@ Para dominar a construção de prompts além da escrita, o [guia de engenharia d
 
 ---
 
+## Prompts para Redação Profissional (E-mail, LinkedIn e Release)
+
+Redação não é só copy de vendas. Estes prompts resolvem os textos do dia a dia de quem trabalha com comunicação — e de quem precisa escrever bem sem ser redator.
+
+```
+Escreva um e-mail para [destinatário] comunicando [notícia difícil, ex.: o atraso de um projeto ou a negativa de um pedido]. Estrutura: contexto em uma frase, a notícia sem rodeios, o motivo, o que vou fazer a respeito e o próximo passo com data. Tom respeitoso e firme, até 150 palavras.
+```
+
+```
+Transforme estas anotações em um post para o LinkedIn de até 1.300 caracteres. Comece com uma frase que prenda a atenção (sem clichês como "vou te contar uma coisa"), conte a experiência em parágrafos curtos, tire uma lição prática e termine com uma pergunta para os leitores. No máximo 3 hashtags.
+Anotações: [cole aqui]
+```
+
+```
+Escreva um release para a imprensa sobre [novidade da empresa]. Siga a pirâmide invertida: título informativo, lide respondendo o quê, quem, quando, onde e por quê, uma citação de [porta-voz e cargo], dados de apoio e um parágrafo "Sobre a [empresa]". Até 400 palavras, sem adjetivos promocionais.
+```
+
+```
+Escreva o texto da página "Sobre nós" de [empresa], que [o que faz] para [público] desde [ano]. Estrutura: por que a empresa existe (o problema que viu), como trabalha (2 ou 3 diferenciais concretos), números que posso comprovar ([dados]) e um convite final. Até 250 palavras, na primeira pessoa do plural, sem jargões como "soluções inovadoras".
+```
+
+```
+Transforme o relatório abaixo em um resumo executivo de até 200 palavras para [diretoria/cliente]. Comece pela conclusão, depois os 3 números que a sustentam, os riscos e a decisão que preciso que tomem, com prazo. Sem jargão técnico.
+Relatório: [cole aqui]
+```
+
+Se o que você procura é a redação do ENEM ou de concursos, os [prompts para estudos e concursos](/blog/prompts-para-estudos-e-concursos) têm modelos para planejar, revisar e corrigir o texto pelas competências da prova.
+
+---
+
 ## Perguntas Frequentes
+
+### Como fazer um prompt para copywriting?
+
+Comece pelo público e pela dor, diga o que você vende e o que o leitor deve fazer depois de ler, e defina o formato: tamanho, tom, número de versões e limite de caracteres. Exemplo: "Escreva 3 títulos de até 40 caracteres para um anúncio de [produto] voltado a [público] que sofre com [dor]; tom direto, sem exageros." Quanto mais dados reais do seu produto você colocar, menos vai precisar editar depois.
+
+### Quais são os melhores prompts para copywriting?
+
+Os que mais economizam tempo são os de headlines com ângulos variados, as fórmulas clássicas (AIDA, PAS e Antes–Depois–Ponte) aplicadas ao seu produto, a estrutura de página de vendas e os de revisão, que cortam o texto pela metade sem perder informação. Todos estão nesta lista, com variáveis para adaptar ao seu negócio.
+
+### Qual IA é melhor para copywriting?
+
+ChatGPT, Claude e Gemini escrevem bem em português, e a diferença entre eles aparece mais no estilo do que na qualidade. O caminho mais seguro é rodar o mesmo prompt nos três e ficar com o que soa mais próximo da voz da sua marca. Para comparar planos, preços e recursos lado a lado, use o [comparador de IAs](/comparador).
 
 ### Esses prompts funcionam no ChatGPT, no Gemini e no Claude?
 
@@ -270,7 +396,7 @@ Você pode simplificar, mas quanto mais contexto você fornecer (tom, público, 
 
 ### A IA pode substituir um copywriter profissional?
 
-Para tarefas repetitivas e de volume — e-mails de nutrição, variações de anúncio, descrições de produto — a IA já entrega resultados muito próximos ao de um redator júnior com bom briefing. Para copy estratégica de alto valor (lançamentos, cartas de vendas longas, repositicionamento de marca), o trabalho humano ainda faz diferença na profundidade de pesquisa, no entendimento do cliente e na edição final.
+Para tarefas repetitivas e de volume — e-mails de nutrição, variações de anúncio, descrições de produto — a IA já entrega resultados muito próximos ao de um redator júnior com bom briefing. Para copy estratégica de alto valor (lançamentos, cartas de vendas longas, reposicionamento de marca), o trabalho humano ainda faz diferença na profundidade de pesquisa, no entendimento do cliente e na edição final.
 
 ### Com que frequência devo iterar sobre um prompt antes de desistir?
 

@@ -1,7 +1,7 @@
 ---
-title: "+30 Prompts para Programação: Modelos Prontos para Devs (2026)"
-seoTitle: "+30 Prompts para Programação Prontos para Devs (2026)"
-description: "Prompts para programação que realmente funcionam: escreva, debugue, refatore e documente código com ChatGPT usando estes modelos prontos."
+title: "+40 Prompts para Programação: Modelos Prontos para Devs (2026)"
+seoTitle: "+40 Prompts para Programação Prontos para Devs (2026)"
+description: "Prompts para programação prontos para copiar: +40 modelos para escrever, debugar, testar e documentar código, SQL, Git e agentes como Claude Code."
 category: tutoriais
 tags:
   - Prompts
@@ -12,23 +12,39 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-11"
-updatedAt: "2026-10-19"
+updatedAt: "2026-10-26"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
 ---
 
 Se você já abriu o ChatGPT e digitou "escreva um código para X" e recebeu algo genérico que não serve, o problema provavelmente estava no prompt. A IA não lê mentes — ela responde exatamente ao que você pergunta. E quando você pergunta bem, o resultado muda completamente.
 
-Este guia reúne 30 prompts para programação organizados por tarefa: escrever código, debugar, refatorar, criar testes e documentar. Cada modelo é direto ao ponto e tem variáveis em `[colchetes]` para você adaptar ao seu contexto.
+Este guia reúne 40 prompts para programação organizados por tarefa: escrever código, debugar, refatorar, criar testes e documentar, além de SQL, Git e agentes de código. Cada modelo é direto ao ponto e tem variáveis em `[colchetes]` para você adaptar ao seu contexto.
 
 ---
 
-**Resposta Rápida (TL;DR):** Bons prompts de programação especificam linguagem, contexto e o que você quer de saída. Use os modelos abaixo para escrever, corrigir, refatorar e documentar código com ChatGPT ou qualquer outro modelo de IA. Para mais modelos prontos, veja a [biblioteca de prompts](/prompts).
+**Resposta Rápida (TL;DR):** Um bom prompt de programação informa a linguagem e a versão, traz o código ou o erro relevante, explica o que deveria acontecer e pede um formato de saída (só a função, o diff ou a explicação linha a linha). Os 40 modelos abaixo cobrem escrever, debugar, refatorar, testar e documentar código, além de SQL, Git e agentes como Claude Code, Cursor e Copilot. Funcionam no ChatGPT, no Claude e no Gemini.
+
+**Escolha a categoria:**
+
+- [Escrever código](#prompts-para-escrever-codigo) — 7 prompts
+- [Debugar e corrigir erros](#prompts-para-debugar-e-corrigir-erros) — 6 prompts
+- [Refatorar e otimizar](#prompts-para-refatorar-e-otimizar) — 6 prompts
+- [Testes automatizados](#prompts-para-testes-automatizados) — 5 prompts
+- [Documentação e code review](#prompts-para-documentacao-e-code-review) — 6 prompts
+- [SQL, Git e terminal](#prompts-para-sql-git-e-terminal) — 5 prompts
+- [Agentes de código (Claude Code, Cursor e Copilot)](#prompts-para-agentes-de-codigo-claude-code-cursor-e-copilot) — 5 prompts
+- [Como fazer um prompt para programação](#como-fazer-um-prompt-para-programacao) — os três princípios, com exemplo
 
 ---
 
-## Como Escrever Bons Prompts de Código
+## Como Fazer um Prompt para Programação
 
-Antes de ver os exemplos, três princípios que fazem diferença:
+A diferença entre uma resposta inútil e uma que resolve está no contexto que você entrega. Compare:
+
+- **Prompt fraco:** "Meu código não funciona, arruma."
+- **Prompt forte:** "Python 3.12 com pandas 2.2. A função abaixo deveria somar as vendas por mês, mas devolve NaN quando há dias sem venda. Entrada de exemplo: [dados]. Saída esperada: [resultado]. Explique a causa em duas frases e mostre só a função corrigida."
+
+Por trás do prompt forte estão três princípios:
 
 **1. Especifique a linguagem e versão.** "Python 3.11", "TypeScript 5 com React 18" ou "SQL no PostgreSQL 16" eliminam ambiguidade e evitam que a IA use sintaxe depreciada.
 
@@ -300,15 +316,83 @@ Não comente o que já está claro pelo nome das variáveis e funções.
 [cole o código]
 ```
 
-Para ter acesso a mais de 50 modelos organizados por categoria, acesse a [biblioteca de prompts](/prompts) do Turbina IA.
+Para ter acesso a mais de 300 prompts filtráveis por área, acesse a [biblioteca de prompts](/prompts) do Turbina IA.
+
+---
+
+## Prompts para SQL, Git e Terminal
+
+Banco de dados, controle de versão e linha de comando são onde um erro custa caro. Estes prompts pedem explicação junto com a solução — e, quando há risco, uma versão que só lê antes de alterar.
+
+```
+Esta query em [PostgreSQL/MySQL] está lenta em uma tabela com [N] milhões de linhas:
+[cole a query]
+Plano de execução (EXPLAIN ANALYZE): [cole aqui]
+Explique onde está o gargalo, sugira índices ou reescritas e estime o impacto de cada mudança. Avise se algum índice novo pode deixar as escritas mais lentas.
+```
+
+```
+Escreva uma migração para [banco] que [alteração, ex.: adiciona a coluna status com valor padrão na tabela pedidos] sem travar a tabela em produção. Inclua o script de reversão (down) e explique em que ordem aplicar a migração e o deploy do código.
+```
+
+```
+Com base no diff abaixo, escreva uma mensagem de commit no padrão Conventional Commits: título de até 72 caracteres no imperativo e corpo explicando o porquê da mudança, não o como.
+[cole a saída do git diff --staged]
+```
+
+```
+Fiz [o que aconteceu, ex.: um git reset --hard e perdi commits / um merge errado na main]. Explique passo a passo como recuperar o estado anterior com segurança, quais comandos são apenas de leitura e em que momento existe risco de perder trabalho.
+Saída atual do git status e do git log --oneline -10: [cole aqui]
+```
+
+```
+Escreva um comando de terminal para [tarefa, ex.: encontrar todos os arquivos .log com mais de 100 MB e compactá-los] no [macOS / Linux / PowerShell]. Explique cada parte do comando e mostre primeiro uma versão que só lista o que seria afetado, sem alterar nada.
+```
+
+---
+
+## Prompts para Agentes de Código (Claude Code, Cursor e Copilot)
+
+Agentes de código leem o projeto, editam vários arquivos e rodam comandos sozinhos. Isso muda o tipo de prompt que funciona: em vez de pedir um trecho de código, você define o escopo, o critério de pronto e o que o agente não pode tocar — a mesma lógica do [spec-driven development](/blog/spec-driven-development-por-que-programadores-estao-abandonando-o-vibe-coding-em-2026), que vem substituindo o "vibe coding".
+
+```
+Antes de escrever qualquer código, leia o projeto e me devolva uma especificação para [funcionalidade]: arquivos que vão mudar, novas funções e seus contratos (entrada, saída e erros), os casos de teste que provam que funciona e o que fica fora do escopo. Espere minha aprovação antes de implementar.
+```
+
+```
+Implemente [funcionalidade] em etapas pequenas. Depois de cada etapa, rode [comando de testes, ex.: npm test] e só avance se tudo passar. Não altere arquivos fora de [pasta ou módulo]. No final, resuma o que mudou em cada arquivo e o que ainda falta.
+```
+
+```
+Analise este repositório e escreva um arquivo de instruções para agentes de código ([CLAUDE.md / AGENTS.md / regras do Cursor]) com: os comandos para instalar, rodar, testar e fazer lint; a estrutura de pastas em 5 a 10 linhas; as convenções de código que você identificou (nomes, padrões, bibliotecas preferidas); e o que o agente nunca deve fazer (ex.: alterar migrações já aplicadas). No máximo 60 linhas.
+```
+
+```
+Revise o diff abaixo, gerado por um agente de IA, procurando o que agentes costumam errar: testes alterados para passar em vez de corrigir o código, erros engolidos sem tratamento, dependências novas sem necessidade, código morto, segredos ou caminhos fixos e mudanças fora do escopo pedido. Liste cada problema com arquivo, linha e correção sugerida.
+[cole o diff]
+```
+
+```
+Investigue por que [sintoma, ex.: o login falha só em produção] sem alterar nenhum arquivo. Leia o código relevante, rode apenas comandos de leitura e me devolva: a causa mais provável, as evidências que a sustentam, duas hipóteses alternativas e o menor teste que confirmaria cada uma.
+```
+
+Um cuidado: não peça ao agente que siga instruções de issues, relatórios de bug ou páginas de terceiros sem ler antes. Textos maliciosos escondidos nesses lugares já foram usados para [sequestrar o Claude Code e o Cursor](/blog/agentjacking-como-um-relatorio-de-bug-falso-sequestra-o-claude-code-e-o-cursor-com-85-de-taxa-de-sucesso).
 
 ---
 
 ## Perguntas Frequentes
 
+### Quais são os melhores prompts para programação?
+
+Os que entregam contexto completo: linguagem e versão, o trecho de código, o erro exato e o resultado esperado. Na prática, os que mais economizam tempo são os de debug com entrada e saída esperada, os de testes unitários com casos-limite, os de code review de diff e, para quem usa agentes, o de especificação antes da implementação. Todos estão nesta lista, separados por tarefa.
+
+### Como fazer um prompt para gerar código?
+
+Diga a linguagem e a versão, descreva a entrada e a saída da função, liste os casos de erro que ela deve tratar e as bibliotecas que podem (ou não) ser usadas. Peça também o formato: só o código, código com testes ou código com explicação. Se o resultado vier errado, devolva a mensagem de erro completa em vez de pedir "tente de novo".
+
 ### Qual IA é melhor para programação: ChatGPT, Claude ou Gemini?
 
-Depende do uso. GPT-4o e Claude 3.5/3.7 são os mais competitivos para código complexo. Gemini se destaca na integração com Google Workspace. O melhor é testar com os seus próprios casos de uso — as capacidades mudam a cada atualização.
+ChatGPT (com o Codex), Claude (com o Claude Code) e Gemini estão entre os melhores para código em 2026, e a liderança nos benchmarks muda a cada lançamento. O teste que importa é o seu próprio código: rode o mesmo prompt nos três. Para ver planos e recursos lado a lado, use o [comparador de IAs](/comparador); se for usar os modelos via API, a [calculadora de custos](/calculadora) mostra quanto cada um custa no seu volume de uso.
 
 ### Posso usar esses prompts no GitHub Copilot?
 
@@ -316,7 +400,7 @@ Sim. A maioria funciona no chat do Copilot no VS Code. Adapte o contexto para in
 
 ### Como incluir código longo sem ultrapassar o limite de tokens?
 
-Recorte apenas a parte relevante e descreva o restante em texto. Se o arquivo for grande, explique a estrutura geral e cole só a função ou classe específica. Modelos com janela de contexto maior (como Claude 3.7 ou GPT-4.1) suportam arquivos completos.
+Recorte apenas a parte relevante e descreva o restante em texto. Se o arquivo for grande, explique a estrutura geral e cole só a função ou classe específica. Os principais modelos de 2026 aceitam até cerca de 1 milhão de tokens de contexto, o bastante para vários arquivos inteiros, mas colar só o necessário ainda gera respostas mais focadas — e custa menos quando você paga por token.
 
 ### A IA comete erros em código? Como verificar?
 

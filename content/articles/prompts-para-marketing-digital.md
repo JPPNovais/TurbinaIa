@@ -1,7 +1,7 @@
 ---
 title: "40 Prompts para Marketing Digital: Modelos Prontos para Copiar (2026)"
 seoTitle: "40 Prompts para Marketing Digital Prontos (2026)"
-description: "Prompts para marketing digital prontos para usar: copie, adapte e gere textos, anúncios, posts e e-mails com ChatGPT em segundos."
+description: "Prompts para marketing digital prontos para copiar: 40 modelos para anúncios, redes sociais, SEO, e-mail e planejamento no ChatGPT, Gemini e Claude."
 category: tutoriais
 tags:
   - Prompts
@@ -12,13 +12,13 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-12"
-updatedAt: "2026-10-20"
+updatedAt: "2026-10-26"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
 ---
 
 Quem trabalha com marketing sabe que a maior parte do tempo não vai para a estratégia — vai para a execução. Escrever textos de anúncio, criar pautas de conteúdo, montar fluxos de e-mail, redigir legendas para cinco redes sociais diferentes. A IA não elimina esse trabalho, mas corta o tempo pela metade quando você sabe pedir certo.
 
-**Resposta Rápida (TL;DR):** Prompts de marketing funcionam melhor quando incluem o papel da IA, o público-alvo, o objetivo da peça e o tom desejado. Os modelos abaixo cobrem copywriting, redes sociais, SEO, e-mail e planejamento estratégico — basta copiar, preencher os colchetes e ajustar o resultado.
+**Resposta Rápida (TL;DR):** Os melhores prompts para marketing digital dizem à IA qual papel assumir, para quem é a peça, qual o objetivo (clique, lead, venda) e o formato — canal, tamanho e número de variações. Os 40 modelos abaixo já seguem essa estrutura e cobrem anúncios, redes sociais, SEO, e-mail e planejamento: copie, preencha os colchetes e ajuste o resultado. Funcionam no ChatGPT, no Gemini e no Claude.
 
 O problema é que a maioria dos profissionais ainda usa prompts genéricos — "crie um post sobre meu produto" — e depois reclama que o resultado parece robótico. A diferença está no nível de detalhe que você entrega antes de apertar Enter.
 
@@ -37,7 +37,12 @@ Este guia reúne 40 prompts testados para as principais áreas do marketing digi
 
 ## Como Usar Prompts de Marketing com IA
 
-Antes de mergulhar nos modelos, três princípios que fazem diferença real:
+Antes de mergulhar nos modelos, veja a diferença que o contexto faz:
+
+- **Prompt fraco:** "Crie um post sobre a minha loja."
+- **Prompt forte:** "Você é social media de uma loja de roupas femininas plus size em Belo Horizonte. Crie 3 legendas para o Instagram anunciando a coleção de verão, para mulheres de 25 a 45 anos que têm dificuldade de achar peças que vistam bem. Objetivo: levar ao link da bio. Até 300 caracteres cada, tom acolhedor e sem clichês de autoestima."
+
+Por trás do prompt forte estão três princípios:
 
 **Papel:** Diga à IA quem ela é. "Você é um copywriter sênior especializado em e-commerce B2C" gera resultados muito diferentes de um prompt sem contexto.
 
@@ -309,7 +314,7 @@ Comece pelo papel ("Você é um copywriter de e-commerce"), dê o contexto (prod
 
 ### Qual modelo de IA é melhor para marketing — ChatGPT, Gemini ou outro?
 
-Depende da tarefa. O ChatGPT (GPT-4o) é forte em copywriting e raciocínio longo. O Gemini se destaca em integração com Google Workspace e pesquisa atualizada. Para marketing de conteúdo com SEO, vale testar ambos. Confira os [prompts para o Gemini](/blog/prompts-para-gemini) se quiser explorar esse modelo especificamente.
+Depende da tarefa. O ChatGPT é versátil para copy e variações rápidas, o Gemini se destaca na integração com o Google Workspace e em pesquisa atualizada, e o Claude costuma ir bem em textos longos. Para marketing de conteúdo com SEO, vale testar o mesmo prompt em mais de um e comparar planos e recursos no [comparador de IAs](/comparador). Se quiser explorar o modelo do Google, veja os [prompts para o Gemini](/blog/prompts-para-gemini).
 
 ### Preciso ter experiência com IA para usar esses prompts?
 
@@ -329,7 +334,7 @@ Para anúncios pagos, gere pelo menos 3-5 variações e teste em paralelo (A/B).
 
 ### Como evitar que os textos gerados soem artificiais?
 
-Três práticas funcionam bem: (1) inclua no prompt exemplos reais do tom que você quer ("escreva como neste exemplo: [trecho]"), (2) peça à IA para evitar termos específicos que soa robóticos, (3) depois da geração, substitua expressões genéricas por referências concretas do seu produto, clientes e contexto.
+Três práticas funcionam bem: (1) inclua no prompt exemplos reais do tom que você quer ("escreva como neste exemplo: [trecho]"), (2) peça à IA para evitar termos específicos que soam robóticos, (3) depois da geração, substitua expressões genéricas por referências concretas do seu produto, clientes e contexto.
 
 ---
 

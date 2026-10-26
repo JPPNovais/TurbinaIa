@@ -1,7 +1,7 @@
 ---
-title: "+40 Prompts para o Gemini: Modelos Prontos para Copiar (2026)"
-seoTitle: "+40 Prompts para o Gemini Prontos para Copiar (2026)"
-description: "Prompts para o Gemini testados e prontos para copiar. Produtividade, estudo, código, marketing e mais — com variáveis para adaptar ao seu uso."
+title: "+50 Prompts para o Gemini: Modelos Prontos para Copiar (2026)"
+seoTitle: "+50 Prompts para o Gemini Prontos para Copiar (2026)"
+description: "Prompts para o Gemini prontos para copiar: +50 modelos para Gmail e Docs, edição de fotos, Gems, Deep Research, estudo, código e marketing."
 category: tutoriais
 tags:
   - Gemini
@@ -12,23 +12,39 @@ tags:
 author: Redação Turbina IA
 isFeatured: true
 date: "2026-06-04"
-updatedAt: "2026-10-19"
+updatedAt: "2026-10-26"
 coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80"
 ---
 
 O Gemini responde bem a instruções claras, contexto detalhado e objetivos específicos. O problema é que a maioria das pessoas digita perguntas vagas e depois fica insatisfeita com o resultado. A diferença entre uma resposta mediana e uma resposta excelente quase sempre está na qualidade do prompt.
 
-Este artigo reúne 40 prompts prontos, organizados por categoria, com variáveis em [colchetes] para você adaptar ao seu caso. Todos foram escritos levando em conta as características do Gemini — inclusive sua integração com o ecossistema Google e sua capacidade de lidar com textos longos.
+Este artigo reúne mais de 50 prompts prontos, organizados por categoria, com variáveis em [colchetes] para você adaptar ao seu caso. Todos foram escritos levando em conta as características do Gemini — inclusive sua integração com o ecossistema Google e sua capacidade de lidar com textos longos.
 
 ---
 
-**Resposta Rápida (TL;DR):** Os melhores prompts para o Gemini são diretos, fornecem contexto e especificam o formato de saída esperado. Copie qualquer modelo abaixo, substitua as variáveis entre colchetes e cole no [Gemini](https://gemini.google.com). Se quiser explorar ainda mais modelos prontos, a nossa [biblioteca de prompts](/prompts) tem centenas de opções organizadas por categoria.
+**Resposta Rápida (TL;DR):** Os melhores prompts para o Gemini têm quatro partes: o **papel** que ele deve assumir, o **contexto** (cole o texto, o e-mail ou anexe a foto), a **tarefa** com um verbo claro e o **formato** da resposta. Os modelos abaixo já seguem essa estrutura: copie, troque o que está entre [colchetes] e cole no [Gemini](https://gemini.google.com). Se você usa o Google no trabalho, comece pelos de Gmail e Docs; se quer editar imagens, pelos de fotos.
+
+**Escolha a categoria:**
+
+- [Produtividade e Google Workspace](#prompts-de-produtividade-e-google-workspace) — 10 prompts
+- [Criar e editar fotos](#prompts-para-criar-e-editar-fotos-no-gemini) — 6 prompts
+- [Gems, Deep Research e apps do Google](#prompts-para-gems-deep-research-e-apps-do-google) — 6 prompts
+- [Estudo e pesquisa](#prompts-para-estudo-e-pesquisa) — 7 prompts
+- [Marketing e conteúdo](#prompts-para-marketing-e-conteudo) — 8 prompts
+- [Programação](#prompts-para-programacao) — 8 prompts
+- [Criativos e multimodais](#prompts-criativos-e-multimodais-imagemvideo) — 7 prompts
+- [Como fazer um prompt para o Gemini](#como-fazer-um-prompt-para-o-gemini) — a fórmula, com exemplo
 
 ---
 
-## O Que Torna um Bom Prompt para o Gemini
+## Como Fazer um Prompt para o Gemini
 
-O Gemini tem características que o diferenciam de outros modelos de IA e que valem conhecer antes de sair digitando:
+A fórmula que funciona na maioria dos casos tem quatro partes: **papel** (quem o Gemini deve ser), **contexto** (o material e a situação), **tarefa** (o que fazer, com um verbo claro) e **formato** (lista, tabela, e-mail, limite de palavras). Compare:
+
+- **Prompt fraco:** "Me ajuda com um e-mail para o cliente."
+- **Prompt forte:** "Você é gerente de contas. O cliente [nome] reclamou do atraso no pedido [número]. Escreva um e-mail de até 120 palavras pedindo desculpas, informando a nova data de entrega ([data]) e oferecendo [compensação]. Tom cordial e direto."
+
+O segundo entrega ao Gemini tudo o que ele precisa para acertar de primeira. Além da fórmula, vale conhecer o que o Gemini tem de diferente de outros modelos:
 
 **Janela de contexto longa:** O Gemini suporta janelas de contexto muito grandes (chegando a 1 milhão de tokens nos modelos avançados). Isso significa que você pode colar documentos inteiros, transcrições ou conversas longas e pedir para o modelo analisar tudo de uma vez — sem precisar resumir antes.
 
@@ -107,6 +123,76 @@ Com base nas tarefas abaixo, crie um plano de dia organizado em blocos de tempo 
 ```
 Tenho uma reunião sobre [tema] em [tempo disponível para preparar]. Me dê uma pauta objetiva com 5 tópicos e 3 perguntas estratégicas que devo fazer.
 ```
+
+---
+
+## Prompts para Criar e Editar Fotos no Gemini
+
+O Gemini cria e edita imagens a partir de uma foto sua e de uma descrição em português. O segredo é dizer o que deve **continuar igual** (rosto, produto, enquadramento) e o que deve **mudar** — sem isso, ele tende a "reinventar" a foto inteira. Anexe a imagem pelo botão de **+** antes de enviar o prompt.
+
+```
+[Anexe uma selfie com o rosto bem iluminado] Transforme esta foto em um retrato profissional para o LinkedIn. Mantenha meu rosto, meus traços e minha expressão exatamente como estão. Troque a roupa por [camisa social azul-marinho / blazer cinza], use um fundo de escritório cinza-claro desfocado e luz suave de estúdio vindo da esquerda. Enquadramento do peito para cima, formato quadrado, aparência de foto real e sem efeito de pintura.
+```
+
+```
+[Anexe a foto antiga] Restaure esta foto: remova riscos, manchas e dobras e recupere a nitidez dos rostos sem mudar os traços das pessoas. Se ela estiver em preto e branco, colorize com tons naturais e discretos, coerentes com a época [ex.: anos 70]. Mantenha o enquadramento original e não acrescente pessoas nem objetos.
+```
+
+```
+[Anexe a foto do produto] Coloque este [produto] sobre [superfície, ex.: uma bancada de madeira clara] em um cenário de [ambiente, ex.: cozinha moderna com luz natural da manhã]. O produto precisa ficar idêntico ao original — formato, cor, rótulo e proporções. Acrescente uma sombra realista e deixe espaço livre à direita para texto. Formato vertical 4:5, estilo de foto publicitária.
+```
+
+```
+[Anexe uma foto de corpo inteiro] Crie uma figura colecionável em escala 1/7 da pessoa desta foto, em estilo realista, sobre uma base redonda de acrílico transparente em cima de uma mesa de escritório. Ao lado, coloque a caixa da figura com a ilustração do personagem e o nome "[nome]" na embalagem. Ao fundo, a tela do computador mostra o modelo 3D da figura. Iluminação de estúdio e aparência de foto real.
+```
+
+```
+[Anexe a foto] Redesenhe esta foto no estilo [aquarela / ilustração de livro infantil / desenho a lápis / animação 3D], mantendo a composição, as poses e as roupas. Cores [suaves/vibrantes] e nenhum texto na imagem.
+```
+
+```
+Na imagem que você acabou de gerar, mude apenas [o detalhe, ex.: a cor do casaco para verde-oliva] e mantenha todo o resto exatamente igual: rosto, fundo, luz e enquadramento.
+```
+
+O último prompt é o que mais economiza tempo: em vez de pedir uma imagem nova a cada ajuste, corrija **um detalhe por vez** na mesma conversa. Duas observações: o número de imagens por dia varia conforme o plano, e as imagens criadas pelo Gemini recebem uma marca d'água digital invisível (SynthID) que identifica o conteúdo como gerado por IA. Evite enviar fotos de outras pessoas sem autorização.
+
+---
+
+## Prompts para Gems, Deep Research e Apps do Google
+
+Estes prompts usam recursos que só o Gemini tem. Os que consultam Gmail, Drive ou Maps exigem que o app correspondente esteja conectado ao Gemini (em **Configurações → Apps**); os nomes dos menus e a disponibilidade podem variar por plano e país. Na versão para empresas, o Gemini já consegue até [puxar dados de ferramentas como Salesforce e HubSpot](/blog/gemini-no-workspace-agora-puxa-dados-de-salesforce-hubspot-e-asana-como-ativar-as-integracoes-mcp).
+
+**Gem (seu assistente personalizado):**
+
+```
+Escreva as instruções de um Gem chamado [nome, ex.: Revisor de Propostas]. Ele deve: (1) agir como [papel, ex.: gerente comercial com 10 anos de experiência], (2) sempre pedir [informação, ex.: o valor e o prazo da proposta] antes de começar, (3) entregar a resposta no formato [formato, ex.: tabela com problema, risco e sugestão] e (4) nunca [restrição, ex.: inventar números que eu não forneci]. Escreva em segunda pessoa, pronto para eu colar no campo de instruções do Gem.
+```
+
+**Deep Research (pesquisa longa com fontes):**
+
+```
+[Ative o Deep Research antes de enviar] Pesquise [tema, ex.: o mercado de energia solar residencial no Brasil em 2026]. Quero: tamanho e crescimento do mercado, principais empresas, preço médio para o consumidor, regras e incentivos em vigor e 3 riscos para quem quer entrar no setor. Priorize fontes oficiais e imprensa especializada dos últimos 12 meses e cite a fonte de cada número.
+```
+
+**YouTube, Gmail, Drive e Maps:**
+
+```
+Resuma este vídeo do YouTube em 5 pontos principais, com o minuto aproximado de cada um, e liste as ferramentas, livros ou sites citados: [cole o link do vídeo]
+```
+
+```
+Procure no meu Gmail os e-mails de [remetente ou empresa] dos últimos [30 dias] sobre [assunto] e monte uma lista com: data, o que foi pedido, se eu já respondi e qual é o próximo passo.
+```
+
+```
+Use os arquivos [nome do documento] e [nome da planilha] do meu Google Drive para montar um resumo de uma página sobre [tema], com os números mais importantes em uma tabela e as dúvidas que os arquivos não respondem.
+```
+
+```
+Monte um roteiro de [3] dias em [cidade] para [perfil, ex.: um casal que gosta de comida e museus], com no máximo [2] deslocamentos longos por dia. Para cada dia, agrupe atrações próximas, sugira um restaurante [faixa de preço] por refeição e use o Google Maps para indicar o tempo de deslocamento entre os pontos.
+```
+
+Se você organiza estudos ou projetos em cadernos de fontes, vale ver também [como funciona o Gemini Notebook](/blog/notebooklm-virou-gemini-notebook-como-funciona-o-novo-recurso-que-executa-codigo-dentro-das-suas-notas), que reúne documentos e responde só com base neles.
 
 ---
 
@@ -240,7 +326,7 @@ Converta o código abaixo de [linguagem de origem] para [linguagem de destino] m
 Escreva um script do Google Apps Script que [descreva a automação, ex.: toda segunda-feira às 8h envie um e-mail de lembrete para os contatos da coluna B da aba "Clientes" cujo status na coluna D seja "pendente"]. Depois do código, explique em passos curtos onde colar o script, como autorizá-lo e como criar o acionador de tempo.
 ```
 
-Para se aprofundar em como estruturar pedidos técnicos para IAs de forma eficiente, o nosso [guia de engenharia de prompt](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) cobre os princípios que funcionam em qualquer modelo.
+Se for automatizar esses prompts pela API do Gemini, estime antes quanto vai pagar por mês na [calculadora de custos de API](/calculadora), que compara o preço por token do Gemini, do ChatGPT e do Claude. Para se aprofundar em como estruturar pedidos técnicos para IAs de forma eficiente, o nosso [guia de engenharia de prompt](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) cobre os princípios que funcionam em qualquer modelo.
 
 ---
 
@@ -294,13 +380,25 @@ Para produção de conteúdo em escala, experimente também o nosso [gerador de 
 
 ## Perguntas Frequentes
 
+### Quais são os melhores prompts para o Gemini?
+
+Os que seguem a estrutura papel + contexto + tarefa + formato e aproveitam o que o Gemini tem de próprio: os de Gmail, Docs e Sheets para quem usa o Google no trabalho, os de edição de fotos (retrato profissional, restauração de foto antiga, produto com fundo novo) e os de Deep Research para pesquisas com fontes. Todos estão nesta lista, separados por categoria e prontos para copiar.
+
+### Como fazer um prompt para o Gemini?
+
+Diga quem ele deve ser, dê o contexto, peça a tarefa com um verbo claro e defina o formato da resposta. Exemplo: "Você é professor de matemática. Explique juros compostos para um aluno do 9º ano, com um exemplo de poupança, em até 5 parágrafos curtos." Se a resposta vier genérica, acrescente detalhes na mesma conversa em vez de começar do zero.
+
+### Qual o melhor prompt para editar fotos no Gemini?
+
+Anexe a foto e diga, nesta ordem, o que deve continuar igual ("mantenha meu rosto e meus traços"), o que deve mudar (roupa, fundo, luz), o estilo e o formato da imagem. O prompt de retrato profissional desta lista é um bom ponto de partida. Para ajustes, peça uma mudança por vez na mesma conversa.
+
 ### Os prompts do ChatGPT funcionam no Gemini?
 
 Em grande parte, sim. Os princípios de engenharia de prompt são os mesmos: seja específico, forneça contexto, defina o formato de saída. Prompts estruturados para o ChatGPT geralmente funcionam bem no Gemini com pequenas adaptações. A principal diferença é que o Gemini responde melhor a instruções que exploram suas capacidades multimodais e integração com Google. Confira também a nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) — são mais de 100 modelos, e a maioria funciona nos dois.
 
 ### O Gemini é gratuito?
 
-Sim, o Gemini tem uma versão gratuita acessível em [gemini.google.com](https://gemini.google.com) que usa o modelo Gemini 2.0 Flash. O plano Google One AI Premium dá acesso ao Gemini Advanced (modelos mais capazes como o Gemini 2.5 Pro) e à integração com Gmail, Docs e outros aplicativos do Workspace.
+Sim. A versão gratuita, em [gemini.google.com](https://gemini.google.com) e no app para celular, já roda todos os prompts desta lista, com limites diários nos modelos mais avançados, na criação de imagens e no Deep Research. Os planos pagos do Google (Google AI Plus, Pro e Ultra) ampliam esses limites e levam o Gemini para dentro do Gmail, do Docs e de outros apps do Workspace. Como os planos mudam com frequência, o [comparador de IAs](/comparador) mostra os preços atualizados lado a lado com os do ChatGPT e do Claude.
 
 ### Qual a diferença entre o Gemini e o ChatGPT na prática?
 

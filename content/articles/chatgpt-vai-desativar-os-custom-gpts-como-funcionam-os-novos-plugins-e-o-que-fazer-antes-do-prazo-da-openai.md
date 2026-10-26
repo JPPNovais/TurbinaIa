@@ -1,7 +1,7 @@
 ---
-title: "ChatGPT Vai Desativar os Custom GPTs em 11 de Dezembro: Prazos, Plugins e o Que Fazer Antes"
-seoTitle: "ChatGPT Desliga os Custom GPTs em 11/12: O Que Fazer Agora"
-description: "Os Custom GPTs do ChatGPT saem do ar em 11/12/2026. Veja o cronograma, o que migra para os Plugins, o que se perde e o que fazer antes do prazo."
+title: "ChatGPT Vai Desativar os Custom GPTs em 11 de Dezembro: o Que Você Perde e o Que Fazer Antes"
+seoTitle: "Custom GPTs Saem do Ar em 11/12: O Que Salvar e Como Migrar"
+description: "Custom GPTs param de funcionar em 11/12/2026 e as conversas não migram. Veja o que salvar agora, como migrar para Plugins e quem ganha prazo extra."
 category: ferramentas
 tags:
   - ChatGPT
@@ -11,7 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-24"
-updatedAt: "2026-10-20"
+updatedAt: "2026-10-26"
 coverImage: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80"
 ---
 
@@ -27,7 +27,7 @@ Para contas pessoais, a mudança já está em vigor: a própria página de ajuda
 
 Para workspaces Enterprise, Business e Edu, existe um cronograma mais formal, e é aqui que a história fica interessante: ele já mudou. O aviso a administradores saiu em 11 de setembro. A experiência de migração dentro do produto, que a OpenAI tinha planejado ativar em 17 de setembro, foi adiada para 22 de setembro. O prazo para deixar de permitir a criação de novos GPTs, inicialmente marcado para 25 de setembro, também foi empurrado — agora está previsto para 26 de outubro. A aposentadoria definitiva, quando os GPTs simplesmente param de rodar, segue marcada para 11 de dezembro. A própria OpenAI rotula cada uma dessas datas como "sujeita a mudança", e o adiamento em cascata sugere que a transição está sendo mais complicada de executar do que a empresa previu.
 
-Há ainda uma válvula de escape para empresas: segundo a [cobertura da EdTech Innovation Hub](https://www.edtechinnovationhub.com/news/openai-to-retire-custom-gpts-in-december-as-creators-move-to-plugins) sobre a FAQ da OpenAI, workspaces Enterprise afetados que tiverem um adiamento aprovado podem manter os GPTs até 11 de fevereiro de 2027. Até 20 de outubro de 2026, não havia notícia de novo adiamento da data geral de 11 de dezembro.
+Há ainda uma válvula de escape para empresas: segundo a [cobertura da EdTech Innovation Hub](https://www.edtechinnovationhub.com/news/openai-to-retire-custom-gpts-in-december-as-creators-move-to-plugins) sobre a FAQ da OpenAI, workspaces Enterprise afetados que tiverem um adiamento aprovado podem manter os GPTs até 11 de fevereiro de 2027. Até 26 de outubro de 2026, não havia notícia de novo adiamento da data geral de 11 de dezembro, que segue confirmada na [cobertura da Campus Technology](https://campustechnology.com/articles/2026/10/05/openai-discontinuing-custom-gpts-and-moving-to-plugin-architecture.aspx).
 
 ### Cronograma resumido
 

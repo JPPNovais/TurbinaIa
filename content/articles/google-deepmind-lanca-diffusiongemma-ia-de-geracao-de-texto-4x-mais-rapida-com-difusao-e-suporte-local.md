@@ -125,6 +125,8 @@ A chegada do DiffusionGemma abre um novo capítulo na exploração de arquitetur
 
 Para aprofundar seu conhecimento sobre os termos técnicos abordados neste artigo e outras ferramentas de IA, visite nosso [Glossário de IA](/glossario). O DiffusionGemma representa exatamente o tipo de inovação que torna 2026 tão movimentado — contexto explorado em detalhes no [Google I/O 2026 e como a IA redefine a busca e a experiência online](/blog/google-io-2026-como-a-ia-redefine-a-busca-e-a-experiencia-online). Para desenvolvedores que querem aproveitar o modelo local, confira também as [melhores ferramentas de IA para produtividade em 2026](/blog/melhores-ferramentas-de-ia-produtividade-2026).
 
+E se a ideia é comparar o custo de rodar um modelo local com o de usar uma API paga, a [calculadora de custos de API](/calculadora) estima o gasto mensal de Gemini, GPT e Claude no seu volume de uso, enquanto o [comparador de IAs](/comparador) mostra as diferenças de recursos entre eles.
+
 ## Perguntas Frequentes
 
 **1. O que é DiffusionGemma?**

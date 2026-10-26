@@ -97,6 +97,8 @@ Se o histórico de lançamentos anteriores da OpenAI servir de guia, o GPT-5.6 p
 
 Para desenvolvedores e empresas que já usam o GPT-5.5 em workflows de coding ou automação, os pontos críticos a observar serão: (1) se a janela de 1,5 milhão de tokens se confirma nas especificações oficiais; (2) se o preço de API permanece na faixa atual ou sofre ajuste; e (3) como o modelo se sai nos benchmarks de *instruction following* de longa duração — exatamente o tipo de avaliação que o "kindle-alpha" ainda precisa superar em versão pública. Para comparar modelos e escolher o mais adequado ao seu caso de uso, use o nosso [Comparador de IAs](/comparador).
 
+Enquanto isso, dá para tirar mais dos modelos atuais com prompts bem estruturados: a [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) tem mais de 100 modelos prontos para copiar, organizados por categoria.
+
 ---
 
 ## Perguntas Frequentes

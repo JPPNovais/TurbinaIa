@@ -114,6 +114,8 @@ A comunidade de IA tem demonstrado grande entusiasmo pelo Gemma 4 12B, com mais 
 
 Para explorar mais sobre as últimas tendências e ferramentas em IA, visite nossa seção de [Monitor de Modelos](/changelog).
 
+Para quem está decidindo entre rodar um modelo aberto como o Gemma no próprio computador ou pagar por um modelo na nuvem, o [comparador de IAs](/comparador) coloca os principais assistentes lado a lado, e a [calculadora de custos de API](/calculadora) mostra quanto custariam o Gemini, o GPT e o Claude no mesmo volume de uso.
+
 ## Perguntas Frequentes
 
 ### O que torna o Gemma 4 12B "sem encoder"?

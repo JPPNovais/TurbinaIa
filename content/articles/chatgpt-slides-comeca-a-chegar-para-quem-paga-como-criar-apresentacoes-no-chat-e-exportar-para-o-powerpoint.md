@@ -70,6 +70,8 @@ Quem tem um plano elegível pode seguir um caminho simples: abrir o ChatGPT pelo
 
 Um detalhe que ainda trava o uso em certos contextos: a edição de Pages e, por extensão, de slides continua restrita ao navegador e ao aplicativo de desktop. Quem usa o ChatGPT principalmente no celular ainda só consegue visualizar e compartilhar o resultado, não editar.
 
+Para o conteúdo que vai dentro dos slides — roteiro, resumo de relatório, tópicos de uma reunião —, a seção Trabalho e Produtividade dos nossos [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) tem modelos prontos para copiar.
+
 ## Perguntas Frequentes
 
 ### Quais planos do ChatGPT já têm acesso ao Slides?

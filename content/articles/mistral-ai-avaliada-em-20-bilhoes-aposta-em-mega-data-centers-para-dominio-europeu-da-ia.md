@@ -66,6 +66,8 @@ As negociações para a nova rodada de financiamento de €3 bilhões ainda est�
 
 A estratégia da Mistral AI representa um esforço europeu mais amplo para desenvolver capacidades de IA domésticas, independentes da tecnologia americana e chinesa. A aposta em mega data centers e na soberania de IA é um passo crucial para garantir que a Europa tenha um papel de liderança no futuro da inteligência artificial.
 
+Na prática, os modelos da Mistral já estão entre os mais baratos do mercado: o Mistral Large 3 custa US$ 0,50 por milhão de tokens de entrada, contra US$ 2,00 ou mais dos modelos intermediários da OpenAI e da Anthropic. A [calculadora de custos de API](/calculadora) compara esse preço com o de GPT, Claude e Gemini no seu volume de uso.
+
 ## Perguntas Frequentes
 
 ### Qual o novo valor de mercado da Mistral AI?

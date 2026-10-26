@@ -72,6 +72,8 @@ A ascensão de "agentes de IA" e "sistemas multi-agentes", conforme discutido pe
 
 Esta nova era do iOS 27 e da Siri turbinada pelo Gemini promete uma experiência de usuário mais inteligente, personalizada e flexível. No entanto, o sucesso a longo prazo dependerá da capacidade da Apple de gerenciar os desafios de privacidade, garantir a qualidade das integrações de terceiros e continuar a inovar em um ritmo acelerado.
 
+Enquanto a nova Siri não chega ao seu iPhone, dá para testar o Gemini direto no app do Google: os [prompts para o Gemini](/blog/prompts-para-gemini) mostram como pedir tarefas do dia a dia com resultados melhores.
+
 ## Perguntas Frequentes
 
 ### A Siri vai parar de usar a IA da própria Apple no iOS 27?

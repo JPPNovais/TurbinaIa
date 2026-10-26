@@ -64,6 +64,8 @@ Doar um padrão de sucesso para uma fundação neutra custa controle, mas compra
 
 Esse cálculo não é exclusivo da IA. A doação do MCP à AAIF em dezembro já tinha sido lida pela imprensa especializada como parte de um padrão deliberado da Anthropic — como observou a cobertura da época, a empresa vem "construindo infraestrutura de indústria" em vez de apenas lançar produtos fechados. A chegada do Agent Skills ao mesmo guarda-chuva reforça essa leitura: trata-se de consolidar uma camada de infraestrutura compartilhada antes que ela se fragmente em versões incompatíveis — o mesmo problema que motivou a criação de fundações neutras em ciclos anteriores da computação.
 
+Para desenvolvedores, o efeito prático é poder escrever instruções reutilizáveis uma vez e levá-las a vários assistentes. Os [prompts para programação](/blog/prompts-para-programacao) trazem um modelo para gerar o arquivo de instruções de um agente de código (CLAUDE.md ou AGENTS.md), que segue a mesma lógica.
+
 ## Perguntas Frequentes
 
 ### O que exatamente a Anthropic doou para a Agentic AI Foundation?

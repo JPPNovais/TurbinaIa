@@ -106,6 +106,8 @@ O **Project Genie** foi expandido com quase 20 anos de imagens do Google Street 
 
 O Google expandiu o **SynthID**, sua tecnologia de marca d'água digital, para mais de 100 bilhões de imagens e vídeos produzidos com IA, com verificação agora integrada ao Search e ao Chrome. OpenAI, Kakao e Eleven Labs foram anunciados como novos parceiros que adotarão o padrão. O sistema de **C2PA Content Credentials** também foi integrado, permitindo verificar se uma imagem é original ou foi modificada.
 
+Boa parte dos recursos anunciados no I/O passa pelo Gemini. Para tirar proveito deles desde já, os [prompts prontos para o Gemini](/blog/prompts-para-gemini) trazem modelos para Gmail, Docs, pesquisa e edição de imagens.
+
 ---
 
 ## Perguntas Frequentes

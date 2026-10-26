@@ -9,6 +9,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-04"
+updatedAt: "2026-10-26"
 coverImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
 ---
 
@@ -17,6 +18,8 @@ No fim da tarde de 30 de setembro, o Google publicou uma tabela de benchmarks qu
 Só que, diferente de praticamente todo lançamento recente de modelo de ponta, Argon não está disponível para quem assina o [Gemini](/blog/prompts-para-gemini). Pelo menos não ainda.
 
 > **Resposta Rápida (TL;DR):** O Google lançou o Gemini 4 Argon em 30 de setembro de 2026 com recorde em benchmark de engenharia de software e empate em cibersegurança, mas restringiu o acesso a um grupo seleto de defensores cibernéticos do programa Fairwind. A versão para desenvolvedores, empresas e assinantes comuns ainda não tem data confirmada.
+
+> **Atualização (26/10/2026):** a documentação oficial da API do Gemini passou a listar o Gemini 4 Argon como modelo estável e disponível no plano pago da API, por US$ 2,00 por milhão de tokens de entrada e US$ 10,00 de saída até 30 de novembro (US$ 4,00 e US$ 20,00 a partir de 1º de dezembro); ele não entra no plano gratuito. A [calculadora de custos de API](/calculadora) já inclui o modelo para você comparar com o GPT-6 Astra e o Claude Opus 5.5.
 
 ## Um modelo lançado para quem caça vulnerabilidades, não para o usuário comum
 

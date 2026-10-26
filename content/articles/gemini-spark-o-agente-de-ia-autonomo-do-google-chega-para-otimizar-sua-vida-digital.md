@@ -149,6 +149,8 @@ Para usuários que já são assinantes do Google AI Ultra nos EUA e têm acesso 
 
 Para inspiração sobre como formular instruções eficazes para agentes de IA, consulte nossa [Biblioteca de Prompts](/prompts). Para comparar o Spark com outros modelos e ferramentas disponíveis, veja nosso [Comparador de IAs](/comparador).
 
+Se você ainda está aprendendo a dar instruções ao Gemini, comece pelos [prompts para o Gemini](/blog/prompts-para-gemini), que incluem modelos para Gmail, Drive e Gems — a mesma lógica de instrução clara que um agente como o Spark exige.
+
 ## Perguntas Frequentes
 
 ### 1. O Gemini Spark é o mesmo que o Gemini (assistente padrão)?

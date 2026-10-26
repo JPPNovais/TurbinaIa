@@ -76,6 +76,8 @@ O histórico documentado nessa mesma página mostra que o ritmo não é incomum:
 
 Há um detalhe que raramente aparece nessas notícias de troca de modelo: a mesma documentação cita um compromisso da Anthropic de preservar os pesos dos modelos retirados a longo prazo, [segundo a página sobre compromissos de depreciação de modelos](https://www.anthropic.com/research/deprecation-commitments), em vez de simplesmente descartá-los quando saem de uso. A empresa lista entre os riscos de aposentar um modelo a perda de acesso para pesquisadores que fazem estudos comparativos e possíveis questões de bem-estar do próprio modelo — um raciocínio pouco comum fora dos laboratórios de ponta, mas que mostra que a decisão de 29 de outubro faz parte de um processo bem mais formalizado do que um simples botão desligado.
 
+Se você tinha prompts salvos para o Haiku 4.5, vale testá-los de novo no modelo que ficar no seletor, porque o estilo das respostas muda entre gerações. A [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt), que funciona também no Claude, é um bom ponto de partida para refazer a sua biblioteca.
+
 ## Perguntas Frequentes
 
 ### O Claude Haiku 4.5 deixa de existir em 29 de outubro?

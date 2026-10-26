@@ -77,6 +77,8 @@ Para times de vendas, o ganho mais direto é não perder o fio da conversa: ler 
 
 Nenhuma dessas tarefas é impossível sem a integração — todo mundo já fazia isso abrindo abas. A diferença é que o Gemini agora faz a ponte, e isso é o tipo de detalhe que raramente vira manchete, mas que muda a rotina de quem usa essas ferramentas todo dia. Para comparar como o Gemini se posiciona frente a outros assistentes de IA em tarefas do dia a dia, o [Comparador de IAs do Turbina IA](/comparador) traz um panorama lado a lado dos principais modelos disponíveis hoje.
 
+Para quem leva esse tipo de integração para sistemas próprios pela API do Gemini, em vez de usá-la dentro do Workspace, a [calculadora de custos de API](/calculadora) estima quanto cada modelo do Google custa por mês no seu volume de chamadas.
+
 ## Perguntas Frequentes
 
 ### O que é o Model Context Protocol (MCP) usado pelo Gemini?

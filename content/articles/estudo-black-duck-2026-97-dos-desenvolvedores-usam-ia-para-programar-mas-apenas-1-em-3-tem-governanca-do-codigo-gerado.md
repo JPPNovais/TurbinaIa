@@ -126,6 +126,8 @@ A mensagem central do estudo é que as equipes que aprendem a "operacionalizar" 
 
 Como alertou Gemmiti, da Black Duck: "Quando a IA pode descobrir e explorar vulnerabilidades de forma autônoma em velocidade de máquina, a janela que as equipes têm para identificar e corrigir problemas não apenas encolhe — ela efetivamente desaparece. O único caminho viável é combater essa velocidade de ataque impulsionada por IA com uma defesa igualmente impulsionada por IA."
 
+Na escala de um desenvolvedor ou de um time pequeno, um primeiro passo de governança é revisar o código gerado com o mesmo rigor do código humano: os [prompts para programação](/blog/prompts-para-programacao) incluem um modelo de code review de diffs gerados por IA, que procura exatamente os erros que agentes costumam cometer.
+
 ## Perguntas Frequentes
 
 ### Qual foi a metodologia do estudo Black Duck 2026?

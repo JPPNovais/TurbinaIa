@@ -68,6 +68,8 @@ Nitish Tyagi, analista sênior principal da Gartner, ouvido pelo InfoWorld, resu
 
 Resta a pergunta que Jena, da Kanerika, colocou sobre a mesa e que ainda não tem resposta pública: quanto do trabalho de 16 dias do Qwen3.8-Max realmente sobreviveu a uma revisão de código humana — e o quanto disso é, de fato, reprodutível fora dos laboratórios da própria Alibaba.
 
+Para saber se um modelo novo como o Qwen3.8-Max resolve o seu tipo de problema, e não só o dos benchmarks, rode os mesmos prompts em mais de um modelo: os [prompts para programação](/blog/prompts-para-programacao) têm modelos de debug, refatoração e testes que servem como bateria de comparação.
+
 ## Perguntas Frequentes
 
 ### O que é o Qwen3.8-Max?

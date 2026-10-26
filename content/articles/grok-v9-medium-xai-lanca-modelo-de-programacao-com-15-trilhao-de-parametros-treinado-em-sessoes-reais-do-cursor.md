@@ -98,6 +98,8 @@ Além do modelo, a xAI avançou na frente de ferramentas com o **Grok Build**, s
 
 A imagem que emerge é a de uma estratégia de três frentes simultâneas: dados proprietários via Cursor, hardware dedicado no Colossus 2, e uma suite de ferramentas que vai do modelo de fundação ao agente de terminal. Se o Grok V9-Medium entregar o desempenho prometido nos benchmarks de programação, a xAI terá transformado sua desvantagem histórica nessa área em uma posição de competição real no segundo semestre de 2026.
 
+Para pôr o Grok V9-Medium à prova quando ele chegar ao seu editor, use a mesma bateria de tarefas em todos os modelos: os [prompts para programação](/blog/prompts-para-programacao) trazem modelos de debug, refatoração, testes e agentes de código prontos para isso.
+
 ## Perguntas Frequentes
 
 **O Grok V9-Medium é o Grok 5?**

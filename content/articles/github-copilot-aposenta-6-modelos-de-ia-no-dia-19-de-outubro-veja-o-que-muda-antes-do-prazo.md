@@ -84,6 +84,8 @@ Na prática, a lista de verificação para não ser pego de surpresa é curta:
 
 Nenhuma dessas ações é complicada isoladamente. O problema é a cadência: como mostra o histórico de 2026, não dá para tratar isso como um evento único — é um processo recorrente que qualquer time que depende do Copilot para trabalho sério precisa incorporar à própria rotina de manutenção, do mesmo jeito que já trata atualização de dependências de código.
 
+Na troca de modelo, também vale revisar os prompts que o time usa no chat do Copilot: os [prompts para programação](/blog/prompts-para-programacao) trazem modelos prontos para debug, testes e agentes de código. E para quem avalia usar os modelos direto pela API, a [calculadora de custos](/calculadora) estima o gasto mensal de cada um.
+
 ## Perguntas Frequentes
 
 ### Meu código vai parar de funcionar se eu não fizer nada?

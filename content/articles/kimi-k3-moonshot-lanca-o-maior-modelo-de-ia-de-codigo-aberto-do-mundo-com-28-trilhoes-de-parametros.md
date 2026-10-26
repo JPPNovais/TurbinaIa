@@ -87,6 +87,8 @@ Para desenvolvedores brasileiros, o efeito mais imediato é a pressão de preço
 
 A pergunta que fica em aberto é até onde vai essa corrida de eficiência. Se a Moonshot conseguiu chegar perto de Claude Opus 4.8 e GPT-5.5 sem acesso irrestrito aos chips mais avançados do mercado, o argumento de que só GPU em quantidade industrial garante liderança em IA começa a rachar — e isso interessa tanto a laboratórios rivais quanto a quem paga a conta no fim do mês.
 
+Para medir na prática se um modelo aberto como o K3 dá conta do seu código, os [prompts para programação](/blog/prompts-para-programacao) servem como bateria de testes: debug com entrada e saída esperadas, refatoração e testes unitários.
+
 ## Perguntas Frequentes
 
 ### O Kimi K3 é realmente de código aberto?

@@ -73,6 +73,8 @@ Uma janela de 500 mil tokens ajuda porque permite manter mais contexto de um rep
 
 Para desenvolvedores que já usam Cursor no dia a dia, a chegada do Grok 4.6 como opção de modelo dentro do editor significa mais uma alternativa de custo-benefício a testar lado a lado com GPT-5.6 Sol e Fable 5 — vale comparar diretamente no [Comparador de IAs](/comparador) antes de trocar o modelo padrão de um fluxo de trabalho em produção.
 
+Uma forma prática de fazer essa comparação é rodar a mesma bateria de tarefas em cada modelo: os [prompts para programação](/blog/prompts-para-programacao) trazem modelos de debug, testes e agentes de código que servem para isso.
+
 ## Perguntas Frequentes
 
 ### O que é o Grok 4.6 e quando foi lançado?

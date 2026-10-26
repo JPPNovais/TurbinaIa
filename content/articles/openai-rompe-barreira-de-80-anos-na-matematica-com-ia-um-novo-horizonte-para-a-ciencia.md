@@ -61,6 +61,8 @@ A resolução do problema da distância unitária marca, de fato, um antes e um 
 
 Para aprofundar seu conhecimento sobre o universo da IA e suas aplicações, visite nosso [Glossário de IA](/glossario) e explore outras ferramentas revolucionárias em nosso site.
 
+Fora dos laboratórios, os modelos de raciocínio da OpenAI já resolvem problemas bem mais modestos no dia a dia, de planilhas a exercícios de estudo. Para ver como eles se comparam aos rivais, use o [comparador de IAs](/comparador); para testá-los, a [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) tem mais de 100 modelos prontos.
+
 ## Perguntas Frequentes
 
 ### Qual problema matemático a OpenAI resolveu?

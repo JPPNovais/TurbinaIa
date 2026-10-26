@@ -79,6 +79,8 @@ Para o usuário comum, o Astra ainda não chegou de forma ampla — a liberaçã
 
 Na prática, o efeito imediato para o mercado brasileiro é indireto: mais pressão competitiva sobre Google e Anthropic para acelerar suas próprias divulgações de capacidade cibernética, e mais atenção de times de segurança corporativa para políticas de uso de IA generativa dentro da empresa — inclusive sobre quais modelos podem ou não acessar sistemas internos sem supervisão.
 
+Para quem usa o GPT-6 Astra no ChatGPT, onde ele virou o modelo padrão dos planos pagos, a [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) traz mais de 100 modelos prontos. Já quem pretende usá-lo pela API deve calcular o custo antes: a [calculadora de custos](/calculadora) mostra quanto ele custa frente ao GPT-6.1 Sol e aos concorrentes no mesmo volume de uso.
+
 ## Perguntas Frequentes
 
 ### O que significa o GPT-6 Astra ser classificado como "Crítico" em cibersegurança?

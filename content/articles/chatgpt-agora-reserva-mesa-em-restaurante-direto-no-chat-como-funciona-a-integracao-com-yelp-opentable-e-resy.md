@@ -72,6 +72,8 @@ O detalhe que costuma passar despercebido é o que esse tipo de integração tir
 
 Para planejar o resto da programação — roteiro de viagem, cardápio da semana, festa —, a seção Dia a Dia dos nossos [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) tem modelos prontos para copiar.
 
+E se você está decidindo entre o ChatGPT e o Gemini — que já vem integrado ao Google Maps — para esse tipo de tarefa, o [comparador de IAs](/comparador) mostra recursos e planos dos dois lado a lado.
+
 ## Perguntas Frequentes
 
 ### O ChatGPT cobra alguma taxa para fazer a reserva do restaurante?

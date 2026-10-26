@@ -76,6 +76,8 @@ A comunidade agora aguarda para ver como essa mudança se estabilizará. Será q
 
 Para entender melhor as diferentes ferramentas de IA disponíveis e comparar seus recursos e modelos de precificação, você pode visitar nosso [comparador de modelos de IA](/comparador). Para estimar o impacto financeiro direto no seu uso, experimente também nossa [calculadora de custo de APIs](/calculadora).
 
+Com a cobrança por token, prompts mais enxutos viram economia direta: os [prompts para programação](/blog/prompts-para-programacao) mostram como dar ao modelo só o contexto necessário — o trecho de código, o erro e o resultado esperado — em vez de colar arquivos inteiros.
+
 ## Perguntas Frequentes (FAQ)
 
 ### O que mudou na cobrança do GitHub Copilot?

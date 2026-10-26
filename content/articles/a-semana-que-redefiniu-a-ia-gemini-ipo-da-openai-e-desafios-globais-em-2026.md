@@ -90,6 +90,8 @@ A semana da Google I/O 2026 e as notícias sobre o IPO da OpenAI, juntamente com
 
 Essa semana não apenas redefiniu o panorama tecnológico e financeiro da IA, mas também intensificou o diálogo global sobre como equilibrar a inovação com a responsabilidade. O futuro exigirá uma colaboração sem precedentes entre governos, indústrias e a sociedade para garantir que a IA seja desenvolvida e utilizada de forma a beneficiar a humanidade, mitigando seus riscos inerentes.
 
+Para acompanhar essas mudanças na prática, e não só nas manchetes, vale testar os dois assistentes que dominaram a semana: os [prompts para o Gemini](/blog/prompts-para-gemini) e a [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) têm modelos prontos para copiar.
+
 ## Perguntas Frequentes
 
 ### 1. Quais foram os principais anúncios do Google I/O 2026 sobre IA?

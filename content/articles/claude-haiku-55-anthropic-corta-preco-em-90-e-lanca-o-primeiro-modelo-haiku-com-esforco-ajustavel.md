@@ -76,6 +76,8 @@ A própria Anthropic resume os casos de uso recomendados: tarefas de alto volume
 
 Para times que já rodam produtos de IA em escala — e sentem o preço por token pesando na planilha todo mês — a conta é simples de fazer antes de migrar: comparar o volume real de chamadas que cai na faixa de até 100 mil tokens (a grande maioria, segundo a própria Anthropic) contra o volume que passa disso, e simular os dois preços lado a lado. Quem ainda não testa prompts com o modelo pode fazer isso na própria [biblioteca de prompts](/prompts) do site, adaptando exemplos de uso prático para o novo preço.
 
+A [calculadora de custos de API](/calculadora) já aplica as duas faixas do Haiku 5.5 — até e acima de 100 mil tokens de prompt — e compara o resultado com o GPT-6 Luna e o Gemini Flash. E como o Claude entende os mesmos comandos que o ChatGPT, os [prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) também servem para testar o modelo.
+
 ## Perguntas Frequentes
 
 ### Quanto custa o Claude Haiku 5.5 na API da Anthropic?

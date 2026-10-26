@@ -76,6 +76,8 @@ Embora o Gemini 3.5 Flash seja mais caro que modelos Flash anteriores (3x o pre�
 
 Essa otimização de custo por token e a velocidade de saída permitem que desenvolvedores e empresas implementem e escalem soluções de IA de forma mais eficiente. A capacidade de gerar o dobro de tokens por segundo em comparação com o Gemini 3.1 Pro, a um custo 4 a 8 vezes menor para cargas de trabalho de alto volume, é uma vantagem que não pode ser ignorada em ambientes de produção. Isso é particularmente relevante para a automação de tarefas de longo prazo, onde o custo e a latência são fatores críticos.
 
+Para quem vai usar o Gemini no dia a dia, e não só pela API, os [prompts prontos para o Gemini](/blog/prompts-para-gemini) mostram como pedir tarefas de pesquisa, código e Workspace aproveitando a velocidade dos modelos Flash.
+
 ## Perguntas Frequentes
 
 ### O que é IA Agêntica?

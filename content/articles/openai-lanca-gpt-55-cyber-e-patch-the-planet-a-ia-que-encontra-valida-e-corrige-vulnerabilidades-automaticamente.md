@@ -129,6 +129,8 @@ Para times de segurança e desenvolvedores que não têm acesso ao GPT-5.5-Cyber
 
 Para mantenedores de projetos open-source, o Patch the Planet representa uma mudança qualitativa: em vez de receber uma avalanche de relatórios gerados por IA, eles receberão achados já triados, com patches testados e orientação de remediação — o que transforma a IA de um gerador de trabalho adicional em um multiplicador de força para equipes pequenas. A lógica é parecida com o que discutimos anteriormente ao analisar [como usar prompts para segurança e automação](/prompts): a IA é mais útil quando incorporada a workflows com supervisão humana clara.
 
+Na escala de um desenvolvedor, dá para aplicar a mesma lógica: os [prompts para programação](/blog/prompts-para-programacao) incluem modelos de code review com foco em segurança e de revisão de diffs gerados por IA, sempre com uma pessoa validando o resultado.
+
 ## Perguntas Frequentes
 
 ### Qualquer empresa pode acessar o GPT-5.5-Cyber?

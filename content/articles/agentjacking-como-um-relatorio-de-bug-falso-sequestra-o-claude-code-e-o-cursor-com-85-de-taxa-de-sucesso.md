@@ -107,6 +107,8 @@ O Agentjacking não é um incidente isolado — é um sinal de maturidade de uma
 
 Como a Tenet resumiu com clareza na conclusão do seu relatório: "O único lugar restante para interceptar isso é no momento em que o agente decide agir." Enquanto os modelos de linguagem não conseguirem distinguir dados de instruções de forma confiável, a camada de runtime do agente — não o firewall, não o EDR — é onde a defesa precisa acontecer.
 
+Se você usa agentes de código no dia a dia, os [prompts para programação](/blog/prompts-para-programacao) trazem modelos para o Claude Code e o Cursor que limitam o escopo de cada tarefa — por exemplo, investigar um bug só com comandos de leitura — e reduzem o estrago que uma instrução maliciosa pode causar.
+
 ---
 
 ## Perguntas Frequentes

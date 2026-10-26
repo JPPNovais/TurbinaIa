@@ -67,6 +67,8 @@ Isso vale especialmente para equipes brasileiras que já automatizaram parte do 
 
 Enquanto o Astra não volta, o Sol preenche a lacuna como opção de custo-benefício para quem precisa de um modelo forte em programação sem pagar o preço cheio do topo de linha. Mas a pergunta que fica — e que a OpenAI ainda não respondeu publicamente — é quando, ou se, o padrão de segurança que reprovou o Astra vai se tornar a régua padrão para todos os lançamentos futuros da empresa, inclusive para os concorrentes que vão ter de responder à mesma pressão.
 
+Quem quiser pôr o GPT-6.1 Sol à prova em código pode começar pelos [prompts para programação](/blog/prompts-para-programacao), que cobrem debug, testes e agentes de código; para tarefas gerais no ChatGPT, a [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) reúne mais de 100 modelos.
+
 ## Perguntas Frequentes
 
 ### Por que a OpenAI cancelou o lançamento do GPT-6.1 Astra?

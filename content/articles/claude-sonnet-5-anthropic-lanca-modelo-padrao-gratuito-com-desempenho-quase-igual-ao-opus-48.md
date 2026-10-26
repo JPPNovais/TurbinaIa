@@ -82,6 +82,8 @@ Para quem já constrói produtos sobre a API da Anthropic, a recomendação prá
 
 Já para o usuário final do aplicativo Claude, a mudança é mais simples de descrever: a partir de 30 de junho de 2026, qualquer pessoa com conta gratuita passou a ter acesso, sem custo, a um modelo que a própria Anthropic posiciona como o mais capaz de sua linha intermediária até hoje — um patamar que, segundo a empresa, era exclusivo dos modelos Opus há poucos meses. Resta acompanhar, nas próximas semanas, se o desempenho relatado nos benchmarks controlados se confirma no uso cotidiano, à medida que mais desenvolvedores e usuários testam o modelo em cenários reais.
 
+Para fazer esse teste por conta própria no plano gratuito, os [prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) funcionam no Claude sem adaptação e cobrem trabalho, estudos e escrita.
+
 ## Perguntas Frequentes
 
 ### O Claude Sonnet 5 é realmente gratuito?

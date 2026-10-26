@@ -72,6 +72,8 @@ O anúncio da OpenAI resolve um problema real — o custo e a fricção de conec
 
 Se você quer testar no seu dia a dia tarefas parecidas com as de um analista — resumir relatórios, organizar dados, revisar textos —, nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) tem modelos prontos para copiar.
 
+Para empresas que pensam em usar o GPT-6 Astra pela API em vez do produto pronto da OpenAI, vale fazer a conta antes: ele é o modelo mais caro da empresa — US$ 10 por milhão de tokens de entrada e US$ 50 de saída —, e a [calculadora de custos de API](/calculadora) compara esse gasto com o de opções mais baratas, como o GPT-6.1 Sol.
+
 ## Perguntas Frequentes
 
 ### O que é o ChatGPT for Financial Services?

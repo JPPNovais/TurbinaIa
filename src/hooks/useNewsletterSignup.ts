@@ -33,11 +33,15 @@ export function useNewsletterSignup(source: NewsletterSource, context: { postSlu
         setStatus('success');
         setMessage(data?.message || 'Inscrição realizada com sucesso! ⚡');
         setEmail('');
-        track('newsletter_signup', {
-          form_location: source,
-          post_slug: context.postSlug,
-          page_path: window.location.pathname,
-        });
+        // Com o campo-isca preenchido a API responde sucesso sem gravar nada:
+        // não é inscrição real, então não vira conversão no GA4.
+        if (!website) {
+          track('newsletter_signup', {
+            form_location: source,
+            post_slug: context.postSlug,
+            page_path: window.location.pathname,
+          });
+        }
       } else if (/cadastrad/i.test(data?.message || '')) {
         setStatus('exists');
         setMessage(data.message);

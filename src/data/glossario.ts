@@ -4045,4 +4045,28 @@ export const GLOSSARIO: GlossarioTerm[] = [
     example: 'Em outubro de 2026, Meta AI Muse, OpenAI "dots" e o novo Claude Duet da Anthropic passaram a competir diretamente nessa categoria, cada um com seu próprio equilíbrio entre autonomia e necessidade de aprovação do usuário.',
     relatedTerms: ['Agente Proativo', 'Agente Sempre Ativo (Always-on Agent)', 'Agente de IA (AI Agent)'],
   },
+  {
+    id: 'lacuna-de-adocao-de-ia',
+    term: 'Lacuna de Adoção de IA (AI Adoption Gap)',
+    category: 'Fundamentos',
+    definition: 'Diferença persistente entre a parcela da população que já experimentou ferramentas de IA generativa pelo menos uma vez e a parcela que as usa com regularidade — ou entre quem já usou e quem nunca usou. O termo descreve por que a curva de adoção desacelera depois do pico inicial de curiosidade, geralmente por falta de interesse percebido, desconfiança sobre privacidade ou dúvidas sobre a precisão das respostas.',
+    example: 'A Pew Research Center encontrou, em 2026, que 51% dos adultos americanos nunca usaram um chatbot de IA, mesmo com o uso geral tendo saltado de 33% para 49% em dois anos — um retrato clássico de lacuna de adoção.',
+    relatedTerms: ['Alucinação (Hallucination)', 'IA Generativa', 'Agente Pessoal Proativo'],
+  },
+  {
+    id: 'taxonomia-asking-doing-expressing',
+    term: 'Taxonomia Asking/Doing/Expressing',
+    category: 'Fundamentos',
+    definition: 'Classificação usada para categorizar o tipo de interação que uma pessoa tem com um chatbot de IA em três grupos: "Asking" (buscar informação ou orientação para decidir algo), "Doing" (pedir que o modelo execute uma tarefa que gera um resultado, como escrever um e-mail ou código) e "Expressing" (conversar para desabafar ou refletir, sem buscar informação ou ação). A divisão nasceu de um estudo da OpenAI com o economista Harvard David Deming sobre milhões de conversas reais.',
+    example: 'O mesmo estudo mostrou que mensagens de "Asking" estão associadas a maior satisfação do usuário do que as de "Doing", e que, em contexto de trabalho, as mensagens de "Doing" dominam — ao contrário do uso pessoal, onde "Asking" lidera.',
+    relatedTerms: ['Lacuna de Adoção de IA (AI Adoption Gap)', 'Engenharia de Contexto (Context Engineering)'],
+  },
+  {
+    id: 'model-council',
+    term: 'Conselho de Modelos (Model Council)',
+    category: 'Ferramentas & APIs',
+    definition: 'Recurso que envia a mesma pergunta simultaneamente para vários modelos de fronteira de laboratórios diferentes e reconcilia as respostas numa única saída, em vez de depender de um único modelo. A ideia é reduzir o risco de alucinação isolada e dar ao usuário uma resposta que já passou por um crivo de concordância entre sistemas distintos.',
+    example: 'O Perplexity Max usa esse princípio no recurso Model Council, consultando vários modelos de ponta ao mesmo tempo para perguntas complexas antes de apresentar uma resposta consolidada.',
+    relatedTerms: ['Alucinação (Hallucination)', 'Modelo de Fronteira', 'Grounding'],
+  },
 ];

@@ -13,6 +13,59 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'anthropic-s1-ipo-nasdaq-ant-2026-10',
+    date: '2026-10',
+    title: 'Anthropic protocola S-1 e confirma IPO na Nasdaq sob o ticker "ANT"',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'Em 26 de outubro de 2026, a Anthropic protocolou publicamente o formulário S-1 na SEC para sua oferta pública inicial, confirmando a intenção de listar ações Classe A na Nasdaq Global Select Market sob o ticker "ANT" — primeiro passo formal depois do pedido confidencial feito em junho.',
+    highlights: [
+      'Goldman Sachs e Morgan Stanley lideram o sindicato de bancos coordenadores da oferta, que reúne cerca de 20 outras instituições.',
+      'O roadshow de marketing da oferta deve começar na semana de 9 de novembro de 2026, segundo reportagem da Bloomberg.',
+      'O valor por ação ainda não foi fixado; a expectativa de mercado gira em torno de uma avaliação próxima de US$ 1,5 trilhão.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'canva-craft-primeiro-modelo-imagem-proprio-2026-10',
+    date: '2026-10',
+    title: 'Canva lança o Craft, seu primeiro modelo próprio de geração de imagens',
+    developer: 'Canva',
+    category: 'Lançamento',
+    description: 'Em 22 de outubro de 2026, o Canva lançou o Craft, o primeiro modelo de geração de imagens treinado internamente pela equipe do Canva Research, disponível de graça para qualquer conta na aba Dream Lab do editor, com resolução de até 2K e texto legível em 55 idiomas.',
+    highlights: [
+      'As imagens saem divididas em camadas editáveis via Magic Layers, em vez de um arquivo único.',
+      'Até então, todo recurso de geração de imagem do Canva dependia de modelos de terceiros, como Nano Banana, DALL-E e Imagen.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'cursor-cloud-agent-canvases-environments-api-2026-10',
+    date: '2026-10',
+    title: 'Cursor permite que Cloud Agents montem canvases interativos e abre Environments API',
+    developer: 'Cursor (Anysphere)',
+    category: 'Atualização',
+    description: 'Em 16 de outubro de 2026, o Cursor passou a permitir que Cloud Agents montem canvases interativos (dashboards, tabelas e gráficos) durante a execução de uma tarefa, com opção de compartilhar por link somente leitura a partir do plano Pro, e abriu em beta pública uma Environments API para gerenciar programaticamente os ambientes de nuvem dos agentes.',
+    highlights: [
+      'A Environments API agora suporta até 300 repositórios por ambiente, com carregamento até 5x mais rápido em ambientes grandes.',
+      'Administradores podem desativar o compartilhamento de canvases para toda a organização.',
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'anthropic-claude-haiku-45-retirado-seletor-2026-10',
+    date: '2026-10',
+    title: 'Claude Haiku 4.5 sai do seletor de modelos para assinantes Free, Pro e Max',
+    developer: 'Anthropic',
+    category: 'Descontinuado',
+    description: 'Em 29 de outubro de 2026, o Claude Haiku 4.5 saiu do seletor de modelos no chat, no Claude Cowork e no Claude Design dos planos Free, Pro e Max — anúncio já feito em 15 de outubro —, com quem tinha esse modelo selecionado passando a usar o Haiku 5.5 automaticamente, sem perda de histórico.',
+    highlights: [
+      'A mudança não afeta o Claude Code nem os planos Team/Enterprise, onde o Haiku 4.5 continua disponível.',
+      'Na API, o Haiku 4.5 também permanece acessível para quem ainda depende dele em integrações existentes.',
+    ],
+    impact: 'Baixo',
+  },
+  {
     id: 'google-gemini-4-argon-25-trilhoes-tokens-72h-2026-10',
     date: '2026-10',
     title: 'Gemini 4 Argon processa 25 trilhões de tokens em 72 horas, diz Pichai',

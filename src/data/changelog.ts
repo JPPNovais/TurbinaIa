@@ -13,6 +13,45 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-corta-meta-captacao-10-bi-2026-10',
+    date: '2026-10',
+    title: 'OpenAI reduz em US$ 10 bilhões a meta de sua rodada de financiamento',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'Em 31 de outubro de 2026, o Financial Times revelou, em reportagem citada pela Bloomberg, que a OpenAI diminuiu a meta de uma rodada de financiamento em andamento de cerca de US$ 30 bilhões para algo em torno de US$ 20 bilhões, mantendo a avaliação em US$ 1,25 trilhão — valor já reduzido do US$ 1,4 trilhão pedido em setembro.',
+    highlights: [
+      'O corte acompanha uma semana de forte queda das ações ligadas a IA, com o Nasdaq 100 chegando a tocar correção técnica em 29 de outubro.',
+      'A rodada é liderada por fundos dos Emirados Árabes Unidos e pela gestora Coatue; nenhum termo foi confirmado oficialmente pela OpenAI até a publicação.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'ai-stocks-selloff-nvidia-pior-mes-2026-10',
+    date: '2026-10',
+    title: 'Ações ligadas a IA derretem em outubro; Nvidia tem o pior mês desde novembro de 2025',
+    developer: 'Nvidia',
+    category: 'Atualização',
+    description: 'Ao longo de outubro de 2026, ações de empresas de IA e semicondutores perderam mais de US$ 1 trilhão em valor combinado em uma única semana, segundo a CNBC, com a Nvidia registrando seu pior mês desde novembro de 2025 e "neoclouds" como CoreWeave e Nebius caindo mais de 30% no período, em meio a dúvidas sobre o retorno dos investimentos bilionários em data centers de IA.',
+    highlights: [
+      'Executivos da Broadcom afirmaram que o custo do financiamento, e não a escassez de chips ou energia, pode se tornar o maior obstáculo à expansão do setor.',
+      'Em 29 de outubro, o Nasdaq 100 caiu 3,5% e tocou o território de correção técnica, na pior sessão desde junho.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'anthropic-s1-perdas-80-bi-2026-10',
+    date: '2026-10',
+    title: 'S-1 da Anthropic revela prejuízo de US$ 80,7 bilhões no primeiro semestre de 2026',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'O formulário S-1 protocolado pela Anthropic em 26 de outubro de 2026 revelou um prejuízo de US$ 80,7 bilhões no primeiro semestre do ano, ao lado de uma margem bruta implícita de 85% — números que dividiram analistas entre apostas otimistas e alertas de que a oferta pode estar sobreavaliada.',
+    highlights: [
+      'A casa de análise New Constructs classificou a oferta como "a IPO mais ridícula de 2026", enquanto Gil Luria, da D.A. Davidson, disse esperar bom desempenho se o papel for precificado corretamente.',
+      'O arquivamento também listou a estrutura de benefício público da empresa como fator de risco adicional para investidores.',
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'anthropic-s1-ipo-nasdaq-ant-2026-10',
     date: '2026-10',
     title: 'Anthropic protocola S-1 e confirma IPO na Nasdaq sob o ticker "ANT"',

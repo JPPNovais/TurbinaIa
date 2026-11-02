@@ -28,6 +28,7 @@ try {
 
 const { postprocessArticle } = require('./article-postprocess');
 const { enhanceSeo } = require('./seo-enhance');
+const { loadArticles, pickArticleType, nextBacklogItem, formatPostList, guidesSinceLastNews } = require('./pauta');
 const ai = require('./llm');
 
 const apiKey = process.env.CLAUDE_CODE_OAUTH_TOKEN || process.env.GEMINI_API_KEY;
@@ -275,12 +276,10 @@ function getRecentArticleTitles(daysBack = 30) {
   return titles;
 }
 
-// Rodízio de tipos de pauta — diversifica o blog para além de hard news de
-// laboratórios/empresas (que dominavam 100% das publicações):
-//   segunda  → notícia quente (comportamento original)
-//   quarta   → novidade de ferramenta de IA que as pessoas usam no dia a dia
-//   sexta    → uso prático / metodologia / tendência de adoção (evergreen, tráfego orgânico)
-// Override manual: ARTICLE_TYPE=noticia|ferramenta|uso (env) ou rodízio pelo dia.
+// Rodízio (cron seg/qua/sex, 3 por semana — o ritmo não muda):
+//   notícia só depois de 3 publicações que não sejam category:noticias;
+//   nos outros dias, guia evergreen. O backlog em scripts/pauta.js vem primeiro.
+// Override manual: ARTICLE_TYPE=noticia|guia|ferramenta|uso.
 const ARTICLE_TYPES = {
   noticia: {
     label: 'Notícia quente',
@@ -290,48 +289,52 @@ const ARTICLE_TYPES = {
 Este artigo é uma notícia quente. Vá direto ao fato, contextualize com profundidade jornalística e explique o que muda na prática para o leitor brasileiro. Use \`category: noticias\` no frontmatter.`,
   },
   ferramenta: {
-    label: 'Novidade de ferramenta',
+    label: 'Guia de ferramenta',
     category: 'ferramentas',
-    suggestion: (today, avoidBlock) => `Pesquise na internet (${today}) as novidades mais recentes e relevantes em FERRAMENTAS DE IA que pessoas comuns e profissionais usam no dia a dia — lançamentos, atualizações importantes ou recursos novos de produtos como ChatGPT, Gemini, Claude, Copilot, NotebookLM, Midjourney, Canva, CapCut, ElevenLabs, Notion AI, Perplexity, cursores de código com IA, apps de produtividade com IA, ou ferramentas novas que estejam ganhando tração real (rankings de apps, dados de adoção). Priorize fontes confiáveis: blogs oficiais dos produtos, techcrunch.com, theverge.com, wired.com, arstechnica.com, technologyreview.com. EVITE pautas corporativas de bastidor (chips, aquisições, rodadas de investimento, data centers) — o foco é utilidade prática para quem USA as ferramentas. Sugira um único título/tema ESPECÍFICO com gancho concreto (recurso lançado, mudança de preço/plano, funcionalidade viral) e apelo de busca orgânica — algo que uma pessoa realmente pesquisaria no Google, como "X ganha recurso Y: como funciona e para quem vale a pena".${avoidBlock}\n\nRetorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais.`,
-    angle: `## PAUTA DESTA EDIÇÃO: FERRAMENTA
-Este artigo é sobre uma novidade de ferramenta de IA de uso cotidiano. Além de noticiar o fato, seja ÚTIL: explique como o recurso funciona na prática, quem se beneficia, quanto custa (planos/preços no Brasil quando existirem), limitações reais e como o leitor testa hoje. Uma seção curta de passo a passo ou "como experimentar" é bem-vinda quando fizer sentido. Use \`category: ferramentas\` no frontmatter.`,
+    suggestion: (today, avoidBlock) => `Sugira UM guia evergreen, útil por meses, sobre uma ferramenta de IA que pessoas usam de verdade (ChatGPT, Gemini, Claude, Copilot, NotebookLM, Midjourney ou similar). O título deve ser uma busca real, do tipo "como usar X para Y" ou "X grátis: o que dá para fazer". NÃO sugira notícia do dia, aquisição, chip, investimento ou "lançamento de hoje". A data de referência é ${today}, mas o artigo precisa continuar válido daqui a alguns meses.${avoidBlock}\n\nRetorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais.`,
+    angle: `## PAUTA DESTA EDIÇÃO: GUIA DE FERRAMENTA
+Guia evergreen, não notícia. Explique como usar a ferramenta, para quem serve, o que o plano gratuito realmente inclui (só com fonte oficial) e um passo a passo curto. Use \`category: ferramentas\` ou \`tutoriais\` no frontmatter. Não use \`noticias\`.`,
   },
   uso: {
     label: 'Uso prático / metodologia',
     category: 'tutoriais',
-    suggestion: (today, avoidBlock) => `Pesquise na internet (${today}) tendências REAIS e recentes de COMO as pessoas estão usando Inteligência Artificial no trabalho, nos estudos, na criação de conteúdo ou na vida pessoal — metodologias, técnicas e hábitos em alta (ex.: técnicas de prompt que viraram padrão, "vibe coding", IA para estudar para provas e concursos, agentes de IA em rotinas de trabalho, automação pessoal, pesquisa profunda com IA). A pauta DEVE estar ancorada em pelo menos um fato concreto e verificável de fonte confiável: pesquisa/survey (Pew, Gallup, McKinsey, Stanford HAI, gartner.com), reportagem de veículo reconhecido (technologyreview.com, wired.com, theverge.com, economist.com, ft.com, reuters.com) ou dados de adoção divulgados oficialmente. EVITE listicles genéricos ("10 formas de usar IA") e temas sem gancho factual. Sugira um único título/tema ESPECÍFICO com forte apelo de busca orgânica — do tipo que responde a uma pergunta que as pessoas pesquisam ("o que é X e por que todo mundo está usando", "como a técnica Y funciona").${avoidBlock}\n\nRetorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais.`,
-    angle: `## PAUTA DESTA EDIÇÃO: USO PRÁTICO / METODOLOGIA
-Este artigo explica uma forma de usar IA que está em alta, com valor evergreen (deve continuar útil por meses). Estruture para intenção de busca: defina o conceito logo no início, mostre como aplicar na prática (com exemplo concreto ou mini passo a passo), o que dizem os dados/pesquisas sobre adoção, erros comuns e para quem faz sentido. Use \`category: tutoriais\` no frontmatter (ou \`ferramentas\` se o tema for centrado num produto específico).`,
+    suggestion: (today, avoidBlock) => `Sugira UM guia evergreen de uso prático de IA (trabalho, estudo, conteúdo), do tipo que alguém pesquisa no Google: "como fazer X com IA", "o que é Y". A data de referência é ${today}. Ancore em um fato verificável se existir, mas o artigo tem de continuar útil por meses. NÃO sugira notícia, lançamento do dia, aquisição ou rodada de investimento.${avoidBlock}\n\nRetorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais.`,
+    angle: `## PAUTA DESTA EDIÇÃO: GUIA PRÁTICO
+Artigo evergreen. Defina o conceito no início, mostre como aplicar (passo a passo ou exemplo) e para quem faz sentido. Use \`category: tutoriais\`. Não use \`noticias\`.`,
+  },
+  guia: {
+    label: 'Guia evergreen',
+    category: 'tutoriais',
+    suggestion: (today, avoidBlock) => `Sugira UM guia evergreen em português para o blog Turbina IA. Priorize, nesta ordem: lista de prompts por área ou ferramenta, comparativo "melhores IAs para [tarefa]", guia de AEO (aparecer nas respostas de ChatGPT, Gemini, Copilot ou Perplexity) ou tutorial prático. O título deve ser a busca, com a palavra-chave no começo. Data de referência: ${today}. NÃO sugira notícia, bastidor corporativo, chip, aquisição ou "a semana da IA".${avoidBlock}\n\nRetorne APENAS o título sugerido em uma única linha, sem aspas, explicações, markdown ou comentários adicionais.`,
+    angle: `## PAUTA DESTA EDIÇÃO: GUIA EVERGREEN
+Tutorial, lista de prompts, comparativo "melhores IAs para X" ou guia de AEO. Tem de continuar útil por meses. Use \`category: tutoriais\` (ou \`ferramentas\` se o centro for um produto). Não use \`noticias\`.`,
   },
 };
-
-function pickArticleType() {
-  const override = (process.env.ARTICLE_TYPE || '').trim().toLowerCase();
-  if (ARTICLE_TYPES[override]) return override;
-  const day = new Date().getUTCDay(); // 0=dom ... 6=sáb (cron roda seg/qua/sex 16h UTC)
-  if (day === 1) return 'noticia';
-  if (day === 3) return 'ferramenta';
-  if (day === 5) return 'uso';
-  return ['noticia', 'ferramenta', 'uso'][day % 3];
-}
 
 async function run() {
   let topic = process.argv[2];
   const today = new Date().toISOString().split('T')[0];
   const manualTopic = Boolean(topic);
-  const articleType = pickArticleType();
+  const catalog = loadArticles();
+  const articleType = pickArticleType(catalog);
   const typeSpec = ARTICLE_TYPES[articleType];
+  const backlogItem = !manualTopic && articleType !== 'noticia' ? nextBacklogItem(catalog) : null;
 
   console.log('⚡ Iniciando o Gerador de Artigos Turbina IA ⚡');
   console.log(`🗞️  Tipo de pauta desta edição: ${typeSpec.label} (${articleType})`);
+  console.log(`📐 Guias desde a última notícia: ${guidesSinceLastNews(catalog)} (notícia só a partir de 3)`);
+  if (backlogItem) console.log(`📌 Backlog: ${backlogItem.id}`);
 
-  // Step 1: Suggest a trend topic if none is supplied
-  if (!topic) {
+  // Step 1: Backlog evergreen primeiro; senão, sugestão da IA.
+  if (!topic && backlogItem) {
+    topic = backlogItem.title;
+    console.log(`📚 Tema vindo do backlog: "${topic}"`);
+  } else if (!topic) {
     console.log('Nenhum tema foi fornecido. Solicitando uma sugestão de tendência à IA via busca na internet...');
 
     const recentTitles = getRecentArticleTitles(30);
     const avoidBlock = recentTitles.length > 0
-      ? `\n\nTEMAS JÁ COBERTOS (NÃO repita nem aborde de ângulo similar — canibalizariam o conteúdo existente):\n${recentTitles.map(t => `- ${t}`).join('\n')}\n\nEscolha um tema DIFERENTE, com fato ou notícia nova que não se sobreponha aos listados acima.`
+      ? `\n\nTEMAS JÁ COBERTOS (NÃO repita nem aborde de ângulo similar — canibalizariam o conteúdo existente):\n${recentTitles.map(t => `- ${t}`).join('\n')}\n\nEscolha um tema DIFERENTE, que não se sobreponha aos listados acima.`
       : '';
 
     try {
@@ -364,7 +367,10 @@ async function run() {
     ? `\n\n## CONTEÚDO REAL EXTRAÍDO DAS FONTES PRIMÁRIAS\n\nOs textos abaixo foram baixados diretamente dos sites das fontes originais. Use-os como base principal das informações do artigo. Ao cruzar informações que aparecem em múltiplas fontes, você pode afirmar com mais confiança — indique isso com expressões como "confirmado por X e Y" ou "tanto a [Fonte A] quanto a [Fonte B] relatam que...".\n\n${sourceContext}\n\n---\n`
     : '';
 
-  const angleBlock = manualTopic ? '' : `\n${typeSpec.angle}\n`;
+  const backlogNote = backlogItem && backlogItem.note ? `\n${backlogItem.note}\n` : '';
+  const seoHint = backlogItem && backlogItem.seoHint ? `\nseoTitle sugerido (até 60 caracteres, pode ajustar se o corpo exigir): "${backlogItem.seoHint}"\n` : '';
+  const angleBlock = manualTopic ? '' : `\n${typeSpec.angle}\n${backlogNote}${seoHint}`;
+  const internalPosts = formatPostList(catalog);
 
   const prompt = `Você é o redator-chefe do blog Turbina IA (turbinaia.com.br), especializado em Inteligência Artificial, ferramentas de produtividade e tendências tecnológicas.
 
@@ -453,7 +459,8 @@ Estes padrões NÃO podem aparecer no Markdown final em nenhuma hipótese — el
 Retorne APENAS o Markdown cru com frontmatter YAML no topo. Sem blocos de código envolvendo o arquivo inteiro.
 
 ---
-title: [Título chamativo e otimizado para SEO]
+title: [Título do H1. Pode ser longo; o Google usa o seoTitle.]
+seoTitle: [Até 60 caracteres, palavra-chave no início, sem reticências e sem clickbait]
 description: [Meta descrição com menos de 160 caracteres]
 category: [tutoriais | noticias | ferramentas]
 tags:
@@ -480,9 +487,14 @@ date: "${today}"
 
 6. **FAQ:** Seção "## Perguntas Frequentes" com 3 perguntas e respostas ultra-diretas. FORMATO OBRIGATÓRIO: cada pergunta é um heading H3 (\`### Pergunta aqui?\`) seguido da resposta em parágrafo normal. NUNCA use \`**negrito**\` para as perguntas — o site só extrai o schema FAQPage (rich snippet do Google) de perguntas em \`###\`.
 
-7. **Links internos (OBRIGATÓRIO — mínimo 2, ideal 3):** Distribua ao longo do corpo de 2 a 3 links internos contextuais, integrados naturalmente às frases (nunca numa lista solta). Use as páginas do próprio site e escolha pela relevância: [Comparador de IAs](/comparador) (ao comparar modelos), [Calculadora de Custos](/calculadora) (ao falar de preços/tokens), [Prompts](/prompts) e [Gerador de Prompts](/gerador) (ao falar de uso prático), [Glossário de IA](/glossario) (ao introduzir um termo técnico) ou [Monitor de Modelos](/changelog) (ao falar de versões/lançamentos). Menos de 2 links internos no corpo = artigo incompleto, reescreva.
+7. **seoTitle (OBRIGATÓRIO):** no frontmatter, campo \`seoTitle\` com no máximo 60 caracteres, a palavra-chave principal no começo, sem reticências (\`…\`) e sem promessa que o texto não cumpre. É o \`<title>\` do Google. O \`title\` continua sendo o H1 e pode ser mais longo.
 
-8. **Fontes:** Seção "## Fontes e Referências" ao final com todos os links.
+8. **Links para outros posts (OBRIGATÓRIO — 2 ou 3):** no corpo, em frases que já existem, coloque 2 ou 3 links Markdown para posts DESTA lista (caminhos exatamente assim, \`/blog/slug\`). Não invente slug. Ferramentas do site (\`/comparador\`, \`/calculadora\`, \`/prompts\`, \`/glossario\`) podem entrar além desses 2 ou 3, não no lugar deles.
+
+Posts que você pode linkar:
+${internalPosts}
+
+9. **Fontes:** Seção "## Fontes e Referências" ao final com todos os links.
 
 Escreva um artigo longo (mínimo de 1500 palavras, idealmente entre 1800 e 2500 palavras), com profundidade jornalística real, baseado nas fontes primárias fornecidas e em pesquisa adicional verificada.
 
@@ -690,6 +702,21 @@ Escreva um artigo longo (mínimo de 1500 palavras, idealmente entre 1800 e 2500 
     // e links internos contextuais (apenas para slugs existentes).
     console.log('🎯 Aplicando pacote SEO (description, imagens inline, links internos)...');
     cleanContent = enhanceSeo(cleanContent, { articlesDir, coverImageUrl, currentSlug: slug });
+
+    const bodyCheck = cleanContent.replace(/^---[\s\S]*?\n---/, '');
+    const seoTitleLine = cleanContent.match(/^seoTitle:\s*"?(.+?)"?\s*$/m);
+    const seoTitleValue = seoTitleLine ? seoTitleLine[1].replace(/^"|"$/g, '') : '';
+    const blogLinkCount = (bodyCheck.match(/\]\(\/blog\/[a-z0-9-]+/g) || []).length;
+    const publishProblems = [];
+    if (!seoTitleValue) publishProblems.push('seoTitle ausente');
+    else if (seoTitleValue.length > 60) publishProblems.push(`seoTitle com ${seoTitleValue.length} caracteres (máximo 60)`);
+    else if (/…|\.\.\./.test(seoTitleValue)) publishProblems.push('seoTitle com reticências');
+    if (blogLinkCount < 2) publishProblems.push(`apenas ${blogLinkCount} link(s) para outros posts (mínimo 2)`);
+    if (publishProblems.length) {
+      console.error('❌ Artigo REPROVADO — nada foi salvo:');
+      for (const problem of publishProblems) console.error(`   • ${problem}`);
+      return;
+    }
 
     const filePath = path.join(articlesDir, `${slug}.md`);
     fs.writeFileSync(filePath, cleanContent, 'utf8');

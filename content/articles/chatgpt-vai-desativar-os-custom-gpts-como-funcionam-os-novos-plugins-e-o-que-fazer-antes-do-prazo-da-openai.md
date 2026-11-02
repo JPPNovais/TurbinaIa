@@ -1,7 +1,7 @@
 ---
 title: "ChatGPT Vai Desativar os Custom GPTs em 11 de Dezembro: o Que Você Perde e o Que Fazer Antes"
-seoTitle: "Custom GPTs Saem do Ar em 11/12: O Que Salvar e Como Migrar"
-description: "Custom GPTs param de funcionar em 11/12/2026 e as conversas não migram. Veja o que salvar agora, como migrar para Plugins e quem ganha prazo extra."
+seoTitle: "Migre seus GPTs para Plugins até 11 de dezembro"
+description: "Custom GPTs param em 11/12/2026. Passo a passo oficial para migrar para Plugins: o que passa, o que não passa e o que acontece com as conversas."
 category: ferramentas
 tags:
   - ChatGPT
@@ -11,117 +11,107 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-24"
-updatedAt: "2026-10-26"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80"
 ---
 
-Quem abre hoje o menu de criação de assistentes personalizados no [ChatGPT](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026) encontra uma tela que só permite editar um GPT já existente — a opção de criar um novo desapareceu das contas Free, Go, Plus e Pro. Não é bug. É o primeiro sinal visível de uma mudança que a OpenAI vem construindo há meses: o fim dos Custom GPTs, a funcionalidade lançada em novembro de 2023 que permitiu a qualquer usuário montar um "assistente sob medida" sem escrever uma linha de código.
+Os Custom GPTs do ChatGPT têm data de aposentadoria marcada: **11 de dezembro de 2026**. A [FAQ oficial da OpenAI](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), atualizada no fim de outubro de 2026, mantém esse dia como a data padrão. Workspaces FedRAMP e workspaces Enterprise afetados com adiamento aprovado ficam para **11 de fevereiro de 2027**. Essa data extra não vale para todo mundo: vale o aviso da sua conta.
 
-> **Resposta Rápida (TL;DR):** A OpenAI vai aposentar os Custom GPTs em **11 de dezembro de 2026** (data planejada, que pode variar por conta e workspace) e migrar os usuários para Plugins baseados no protocolo aberto MCP. Contas pessoais (Free, Go, Plus, Pro) já não podem criar GPTs novos; em workspaces Enterprise afetados, a criação acaba em 26 de outubro, e quem tiver adiamento aprovado ganha até 11 de fevereiro de 2027. O que fazer agora: publicar rascunhos, listar os GPTs que usam Actions (elas não migram) e confirmar com o criador se GPTs de terceiros vão ganhar versão em Plugin.
+Se você criou o GPT, o caminho oficial é migrar para um Plugin antes dessa data. Se você só usa um GPT de outra pessoa, não dá para migrar no lugar dela.
 
-## O que está acontecendo, exatamente
+> **Resposta Rápida (TL;DR):** A aposentadoria padrão é 11 de dezembro de 2026. Quando a migração aparecer na sua conta, vá em Meus GPTs, abra o que você criou e escolha **Migrar para plugin**. A migração usa a última versão publicada: rascunho não passa. Instruções viram uma skill, arquivos de conhecimento viram arquivos de referência e apps conectados entram no plugin. Actions personalizadas e o modelo escolhido no GPT não passam. O plugin nasce privado. As conversas antigas continuam acessíveis depois da aposentadoria, segundo a própria FAQ — não é preciso exportá-las para preservá-las.
 
-Segundo a [FAQ oficial de aposentadoria e migração dos Custom GPTs](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), publicada e atualizada pela própria OpenAI, o plano é substituir os GPTs por Plugins — pacotes que combinam instruções reutilizáveis (chamadas de "Skills") com aplicativos conectados, tudo construído sobre o Model Context Protocol ([MCP](/glossario)), o padrão aberto que a Anthropic lançou no fim de 2024 e que hoje é adotado também por Google e Microsoft. Na prática, isso significa que uma integração feita para funcionar no ChatGPT tem mais chance de funcionar em outros produtos de IA sem reescrever tudo do zero — o oposto do modelo fechado que os GPTs representavam.
+## O que fazer agora, em ordem
 
-Para contas pessoais, a mudança já está em vigor: a própria página de ajuda da OpenAI sobre GPTs afirma que a criação e publicação de novos assistentes personalizados "não está disponível" para planos Free, Go, Plus e Pro, embora os GPTs já criados continuem funcionando normalmente. Quem usa GPTs próprios no dia a dia — para revisar contratos, gerar relatórios num formato específico, responder no tom de uma marca — não perde nada por enquanto. Mas não vai conseguir criar um novo a partir de hoje.
+O passo a passo abaixo junta a [FAQ de aposentadoria](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq) e o [guia de migração para criadores](https://learn.chatgpt.com/docs/migrate-custom-gpts). A opção de migrar pode ainda não estar na sua conta: a OpenAI diz que o acesso chega em momentos diferentes e que uma data-alvo não garante que toda conta consiga migrar naquele dia.
 
-Para workspaces Enterprise, Business e Edu, existe um cronograma mais formal, e é aqui que a história fica interessante: ele já mudou. O aviso a administradores saiu em 11 de setembro. A experiência de migração dentro do produto, que a OpenAI tinha planejado ativar em 17 de setembro, foi adiada para 22 de setembro. O prazo para deixar de permitir a criação de novos GPTs, inicialmente marcado para 25 de setembro, também foi empurrado — agora está previsto para 26 de outubro. A aposentadoria definitiva, quando os GPTs simplesmente param de rodar, segue marcada para 11 de dezembro. A própria OpenAI rotula cada uma dessas datas como "sujeita a mudança", e o adiamento em cascata sugere que a transição está sendo mais complicada de executar do que a empresa previu.
+1. **Separe o que é seu do que é de outra pessoa.** Só o criador (ou, num workspace Enterprise, um admin) migra o GPT. Permissão para usar o de outra pessoa não autoriza a migração.
+2. **Termine a edição e publique.** A migração usa a última versão publicada. Rascunho e edição não publicada não passam. Publicar não exige deixar o GPT público.
+3. **Anote o público e alguns prompts que você já usa.** O plugin nasce privado, e quem usava o GPT não ganha acesso sozinho. Os conversation starters também não passam um a um.
+4. **Migre quando o botão existir.** Em Meus GPTs, no que você criou, selecione **Migrar para plugin**. Revise as instruções e os arquivos e siga o que a tela pedir.
+5. **Teste antes de trocar a rotina.** Rode um pedido que você já conhece e um caso mais difícil. Confira se a skill certa entra, se o arquivo de referência é usado e se o formato da resposta continua o que você precisa.
+6. **Compartilhe de novo, se outras pessoas dependem dele.** No workspace, Share Plugin pode preencher o público original, mas é preciso revisar e salvar. Plugin pessoal público passa por um envio separado.
+7. **Se o GPT chama uma API sua (Action), reserve tempo extra.** Custom actions não entram na migração. Dá para reconstruir com um app suportado ou um servidor MCP, e a OpenAI avisa que isso pode exigir configuração técnica. Não assuma que a substituição faz tudo o que a Action fazia.
 
-Há ainda uma válvula de escape para empresas: segundo a [cobertura da EdTech Innovation Hub](https://www.edtechinnovationhub.com/news/openai-to-retire-custom-gpts-in-december-as-creators-move-to-plugins) sobre a FAQ da OpenAI, workspaces Enterprise afetados que tiverem um adiamento aprovado podem manter os GPTs até 11 de fevereiro de 2027. Até 26 de outubro de 2026, não havia notícia de novo adiamento da data geral de 11 de dezembro, que segue confirmada na [cobertura da Campus Technology](https://campustechnology.com/articles/2026/10/05/openai-discontinuing-custom-gpts-and-moving-to-plugin-architecture.aspx).
+Depois da migração o GPT original fica somente leitura e continua utilizável até a aposentadoria. Na data que vale para a sua conta, o GPT e a página dele deixam de abrir. O guia de criadores diz que ainda será possível migrar depois da aposentadoria, mas o GPT em si já não roda.
 
-### Cronograma resumido
+## As datas que a OpenAI lista
 
-| Data | O que acontece | Para quem |
+| Data | O que a FAQ diz | Para quem |
 |---|---|---|
-| Já em vigor | Criação e publicação de novos GPTs indisponíveis; os existentes continuam funcionando | Free, Go, Plus e Pro |
-| 11/09/2026 | Aviso aos administradores | Enterprise, Business e Edu |
-| 22/09/2026 | Migração disponível dentro do produto (adiada de 17/09) | Enterprise, Business e Edu |
-| 26/10/2026 | Fim da criação de novos GPTs (adiado de 25/09) | Workspaces Enterprise afetados |
-| 11/12/2026 | Aposentadoria: GPTs e suas páginas deixam de funcionar | Data geral planejada (pode variar por conta) |
-| 11/02/2027 | Prazo final com adiamento aprovado | Workspaces Enterprise com prorrogação |
+| 11/09/2026 | Aviso aos administradores | Workspaces Enterprise afetados |
+| 22/09/2026 | Alvo da experiência de migração e do banner. É alvo, não garantia de que a opção aparece em todo workspace | Enterprise afetado |
+| 01/10/2026 | Alvo do banner em workspaces que optaram por banner atrasado | Esses workspaces |
+| 26/10/2026 | Fim da criação de GPTs novos. FedRAMP fica de fora. GPTs já existentes e ainda não migrados continuam editáveis | Enterprise afetado |
+| 11/12/2026 | Aposentadoria padrão: GPTs e páginas deixam de abrir | Data geral |
+| 11/02/2027 | Aposentadoria adiada | FedRAMP e Enterprise com adiamento qualificado e aprovado |
 
+A FAQ diz que e-mails padrão de admin usam as datas gerais e não são personalizados para quem teve adiamento. Se a sua empresa recebeu outro prazo, vale o aviso do workspace, não a tabela genérica.
 
-![Imagem ilustrativa sobre ChatGPT Vai Desativar os Custom GPTs: Como Funcionam os Novos Plugins e o Que Fazer Antes do Prazo da OpenAI](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80)
+A transição atinge todos os planos do ChatGPT, mas a FAQ não publica, nessa página, um corte de criação separado para Free, Go, Plus e Pro. O corte de 26 de outubro está descrito para workspaces Enterprise afetados. Restrição de criar GPT e aposentadoria dos que já existem são coisas diferentes: um adiamento da aposentadoria, sozinho, não devolve o direito de criar GPT novo.
 
-## Um recurso que já morreu uma vez — e voltou diferente
+## O que passa para o Plugin — e o que não passa
 
-Tem uma ironia no nome escolhido para o substituto. "Plugins" não é termo novo no ChatGPT: a OpenAI lançou uma primeira versão em 2023, permitindo que o chatbot chamasse serviços externos via APIs, e a descontinuou em março de 2024 justamente porque os Custom GPTs — mais fáceis de criar e de descobrir dentro do produto — tomaram o lugar dela. Agora o pêndulo volta na direção oposta, mas com uma diferença técnica que muda o jogo: os novos Plugins não dependem de esquemas proprietários da OpenAI, e sim do MCP, o mesmo protocolo que já roda no Claude, no Cursor e em dezenas de outras ferramentas.
+Um Plugin, na definição do [guia da OpenAI](https://learn.chatgpt.com/docs/migrate-custom-gpts), é um pacote reutilizável que pode ter skills, apps ou os dois. Skill é a instrução de como fazer a tarefa. App é a conexão com outro serviço.
 
-Foi essa aposta em um padrão comum entre concorrentes que a OpenAI reforçou nesta semana. Em [23 de setembro, a empresa adicionou suporte a Plugins ao modo de Voz ao Vivo do ChatGPT](https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/) na web, no iOS e no Android, e também levou o recurso de Voz para dentro do ChatGPT Work. Na prática, isso permite que alguém dispare, por comando de voz, uma tarefa que puxa dados do Gmail, do calendário ou do Slack — usando exatamente a mesma infraestrutura de Plugins que está substituindo os GPTs. É um sinal de que a empresa não está tratando os Plugins como um recurso secundário: é para onde o produto inteiro está indo.
-
-## O que sobrevive na migração — e o que não sobrevive
-
-A documentação oficial de desenvolvedores da OpenAI descreve o [novo ecossistema de Plugins](https://developers.openai.com/plugins) como uma combinação de Skills (instruções e orientação de fluxo de trabalho) e aplicativos conectados (contas externas que o ChatGPT pode acessar, como Google Drive ou Slack). Quando um Custom GPT é migrado automaticamente, alguns elementos passam direto, outros não:
-
-| Elemento do Custom GPT | O que acontece na migração |
+| No Custom GPT | Na migração |
 |---|---|
-| Instruções ([prompt](/prompts) do sistema) | Viram uma Skill dentro do novo Plugin |
-| Arquivos de conhecimento (Knowledge) | Convertidos em arquivos de referência |
-| Aplicativos conectados | Incluídos como apps do Plugin |
-| Actions personalizadas (chamadas de API) | **Não migram** — precisam ser reconstruídas via conector suportado ou servidor MCP próprio |
-| Escolha de modelo específico | **Não migra** — o Plugin usa o modelo padrão do usuário |
+| Instruções | Viram uma skill dentro do plugin |
+| Arquivos de conhecimento | São copiados como arquivos de referência |
+| Apps conectados | Entram como apps do plugin |
+| Actions personalizadas | Não passam. Precisam ser refeitas |
+| Modelo escolhido no GPT | Não passa. No Enterprise, valem os padrões do workspace |
+| Conversation starters e chats anteriores | Não são copiados um a um para o plugin. Guarde os prompts que quiser reutilizar |
+| Compartilhamento | O plugin individual começa privado. Quem usava o GPT não recebe acesso automático |
 
-O ponto mais delicado, porém, não é técnico — é de propriedade. A própria FAQ da OpenAI afirma, em uma frase que vale a pena citar literalmente: acesso a um GPT público não garante acesso ao plugin que o substitui. Ou seja, quem usa um GPT criado por outra pessoa (um assistente de terceiros que virou parte da rotina, por exemplo) não tem nenhuma garantia de que vai poder continuar usando a versão migrada, porque a decisão de migrar — e de manter o plugin público — é do criador original, não de quem apenas usa.
+O plugin pode responder diferente. O guia pede para comparar os prompts conhecidos e pelo menos um caso mais difícil antes de depender da substituição.
 
-O mesmo vale para quem compartilhava o próprio GPT: segundo a [EdTech Innovation Hub](https://www.edtechinnovationhub.com/news/openai-to-retire-custom-gpts-in-december-as-creators-move-to-plugins), um plugin pessoal migrado começa privado, então quem tinha acesso ao GPT não ganha acesso automático à nova versão. E, depois da migração, o GPT original continua utilizável até a aposentadoria, mas fica somente leitura — as conversas antigas permanecem ligadas a ele e não passam para o Plugin.
+Quem só conversa no chat, sem GPT próprio, não migra nada. O modelo da conversa comum é outro assunto — o [guia de como usar o ChatGPT](/blog/como-usar-chatgpt-guia-completo-para-iniciantes) continua valendo para o chat, não para essa migração.
 
-Essa cláusula já gerou reação. No fórum oficial de desenvolvedores da OpenAI, criadores pequenos que monetizavam GPTs personalizados relataram ter investido centenas de horas construindo, testando e refinando esses assistentes, e agora veem um caminho de migração que não preserva automaticamente as Actions que tornavam seus produtos únicos. Parte da comunidade também pediu que a empresa reconsiderasse a aposentadoria completa, ou ao menos preservasse os fluxos de trabalho que dependem de usuários com necessidades específicas de acessibilidade, que tinham GPTs configurados exatamente para seu jeito de trabalhar.
+## Conversas antigas
 
+Aqui a FAQ atual corrige uma leitura que circulou no começo do anúncio. O texto oficial diz que as conversas existentes com Custom GPTs **continuam acessíveis depois da aposentadoria** e que não é preciso fazer nada para preservá-las.
 
-![Imagem ilustrativa sobre ChatGPT Vai Desativar os Custom GPTs: Como Funcionam os Novos Plugins e o Que Fazer Antes do Prazo da OpenAI](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80)
+Isso não significa que o histórico seja colado dentro do plugin. O guia de criadores trata conversas anteriores como algo que pode não ser copiado, e recomenda guardar prompts úteis para testar a substituição. São duas coisas: o histórico permanece acessível; ele não vira, sozinho, o conteúdo do plugin novo.
 
-## Por que isso importa para quem só usa o ChatGPT no dia a dia
+## Se você usa um GPT feito por outra pessoa
 
-Vale separar duas categorias de leitor aqui. Se você nunca criou um GPT personalizado e só usa o ChatGPT no chat comum, a mudança não altera sua experiência diretamente — o modelo de conversa continua o mesmo. Mas se sua empresa, sua equipe de marketing ou você mesmo construiu um assistente para uma tarefa recorrente (responder e-mails num tom específico, montar relatórios num formato fixo, revisar peças de acordo com um guia de estilo), há uma lista de ações que faz sentido resolver agora, antes que o prazo mude de novo:
+Não migre por ela. A FAQ é direta: permissão de uso não é permissão de migração. Olhe o aviso no próprio GPT e o que o criador disser sobre um substituto.
 
-Primeiro, publique qualquer GPT que ainda esteja como rascunho — contas pessoais já não conseguem criar novos, e a migração usa sempre a última versão publicada: alterações que ficaram só no rascunho não entram no Plugin. Segundo, se o seu GPT usa Actions (chamadas para uma API externa, como um CRM ou uma planilha do Google), comece a mapear qual conector nativo da OpenAI pode substituir essa integração, ou se será necessário montar um servidor MCP próprio — um processo que a documentação da própria empresa reconhece que pode levar semanas. Terceiro, se você depende de um GPT feito por outra pessoa ou empresa, entre em contato com quem criou para confirmar se ele pretende migrar e manter o acesso público; não dá para presumir que sim.
+Um GPT público criado num workspace Enterprise afetado entra na transição desse workspace, mesmo que você o abra de uma conta pessoal. O que importa é onde ele foi criado. Acesso ao GPT público não garante acesso ao plugin que o substitui.
 
-Um paralelo prático ajuda a entender a escala da mudança: um Custom GPT funcionava como um app fechado, que você abria como se fosse um aplicativo separado dentro do ChatGPT. Um Plugin, na nova arquitetura, funciona mais como uma habilidade que fica disponível dentro da conversa que você já está tendo — inclusive, como mostrou a atualização de voz desta semana, dentro de uma conversa falada. É a mesma lógica de composição que já orienta ferramentas como as reunidas no [Guia de Ferramentas de IA](/ferramentas) do Turbina IA, em que cada peça (um conector, uma automação, um modelo) se encaixa em um fluxo maior em vez de existir como um app isolado.
+Quando o criador compartilhar o plugin, instalar e usar são passos separados, a menos que um admin já tenha instalado para você. No ChatGPT, o guia diz para escolher o plugin ou a skill com uma menção `@` ou em **+** e depois **More**, onde isso existir. O ChatGPT também pode acionar uma skill instalada se a descrição bater com o pedido — e pode não acionar. Por isso o teste inclui os dois caminhos.
 
-## O contexto mais amplo: todo mundo está migrando para Skills
+## Para quem o GPT era só um prompt bem guardado
 
-A OpenAI não está sozinha nessa aposta. A ideia de trocar "assistentes fechados" por "habilidades combináveis" espelha um movimento que já vinha acontecendo em outros laboratórios — a própria Anthropic populariza o conceito de Skills como pacotes de instruções que o Claude carrega sob demanda, em vez de depender de um app inteiro dedicado a uma única tarefa. Quem acompanha o [Monitor de Modelos e Lançamentos](/changelog) do Turbina IA já deve ter notado como esse vocabulário — Skills, MCP, conectores — se repete entre concorrentes que, até dois anos atrás, construíam soluções fechadas e incompatíveis entre si. A convergência em torno do MCP como padrão comum é o que torna a mudança da OpenAI diferente da simples troca de nome de um recurso: é uma aposta de que o valor de uma integração está em funcionar em qualquer produto de IA, não em prender o usuário a um único chatbot.
+Se o seu GPT não tinha Action nem arquivo de conhecimento, a parte que mais importa são as instruções. Enquanto o botão de migrar não aparece, dá para guardar esse texto como prompt reutilizável. A [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) é um atalho para tarefas genéricas; ela não substitui um GPT com arquivo próprio ou integração. Para montar a instrução do zero, o [guia de prompt engineering](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) separa papel, contexto e formato — que é o que a skill do plugin precisa carregar.
 
-Isso também devolve poder de escolha para quem usa mais de uma ferramenta no trabalho. Hoje é comum alternar entre ChatGPT, Claude e Gemini dependendo da tarefa — algo que o [Comparador de IAs](/comparador) do site ajuda a decidir caso a caso — e um conector MCP construído uma vez, em teoria, deixa de ser um investimento perdido quando a pessoa migra de plataforma. Na prática ainda é cedo para confirmar que essa promessa de portabilidade total vai se sustentar: cada fornecedor mantém seu próprio catálogo de conectores certificados, e nem todo servidor MCP funciona de forma idêntica em cada cliente.
-
-## O que fazer se seu fluxo de trabalho depende de um GPT hoje
-
-Antes de qualquer decisão, vale um inventário simples. Liste os GPTs que sua equipe usa com frequência de verdade — não os que foram criados uma vez e esquecidos — e separe os que têm Actions configuradas dos que são só instruções e arquivos de conhecimento. Os segundos tendem a migrar de forma mais limpa, porque instruções viram Skills quase diretamente. Os primeiros exigem mais atenção: cada Action é, na prática, uma integração de API que alguém configurou manualmente, e a OpenAI é explícita ao dizer que esse tipo de conexão não atravessa a migração sozinho.
-
-Para equipes que usam GPTs para gerar conteúdo com um tom ou formato específico, uma alternativa mais simples do que esperar a migração automática é recriar a instrução como um prompt reutilizável enquanto o sistema de Plugins amadurece — algo que se aproxima do que já existe na [biblioteca de Prompts](/prompts) do Turbina IA e na nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt), com mais de 100 modelos prontos para copiar, para quem quer testar formatos prontos antes de investir tempo automatizando de novo. Isso não substitui um GPT com conhecimento próprio e Actions, mas evita que uma tarefa recorrente fique travada esperando um cronograma que, como já ficou claro nas últimas duas semanas, pode mudar de novo.
-
-**Veja também:** [OpenAI Encerra o Navegador ChatGPT Atlas em 9 de Agosto](/blog/openai-encerra-o-navegador-chatgpt-atlas-em-9-de-agosto-como-migrar-senhas-abas-e-favoritos-antes-do-prazo).
+Se a dúvida é qual modelo usar no chat comum, já que o modelo escolhido no GPT não atravessa a migração, o [comparativo ChatGPT, Gemini e Claude](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026) compara os assistentes, não os plugins.
 
 ## Perguntas Frequentes
 
-### Qual é o prazo para os Custom GPTs acabarem?
+### Até quando os Custom GPTs funcionam?
 
-A data planejada para a aposentadoria é 11 de dezembro de 2026, quando os GPTs e suas páginas deixam de funcionar — o calendário pode variar por conta e workspace. Workspaces Enterprise afetados com adiamento aprovado podem usar os GPTs até 11 de fevereiro de 2027.
+A data padrão é 11 de dezembro de 2026. FedRAMP e workspaces Enterprise afetados com adiamento qualificado e aprovado ficam até 11 de fevereiro de 2027. A FAQ manda seguir o aviso da sua conta se ele trouxer outro prazo.
 
-### O que fazer antes de os Custom GPTs serem desativados?
+### Como migrar um GPT para Plugin?
 
-Publique os GPTs que estão em rascunho (a migração usa a última versão publicada), liste os que usam Actions para reconstruí-las com um conector ou servidor MCP e confirme com o criador se os GPTs de terceiros que você usa vão ganhar versão em Plugin.
+Quando a opção existir na conta em que o GPT foi criado, abra Meus GPTs, ache o GPT em "criados por mim" e selecione Migrar para plugin. Antes disso, publique a versão que deve passar: rascunho não migra. Teste o plugin e compartilhe de novo se outras pessoas precisarem dele.
 
-### Meu Custom GPT vai parar de funcionar hoje?
+### As conversas do meu GPT somem em 11 de dezembro?
 
-Não. Em contas pessoais (Free, Go, Plus ou Pro), GPTs já criados continuam rodando; o que mudou é que não é mais possível criar ou publicar um GPT novo nessas contas. Os GPTs devem funcionar até a aposentadoria planejada para 11 de dezembro de 2026 — data que a própria OpenAI classifica como sujeita a mudança, depois de já ter adiado outras etapas do cronograma.
+Não, segundo a FAQ atual da OpenAI: as conversas existentes continuam acessíveis depois da aposentadoria, e não é preciso exportá-las para preservá-las. Elas não são copiadas automaticamente para dentro do plugin.
 
-### O histórico de conversas do meu GPT vai para o Plugin?
+### O que eu perco na migração?
 
-Não. As conversas existentes continuam ligadas ao GPT original, que fica somente leitura depois da migração e deixa de funcionar na aposentadoria. Se alguma resposta antiga for importante, salve antes do prazo.
+Actions personalizadas não passam e precisam ser refeitas. O modelo escolhido no GPT também não passa. O plugin começa privado, então quem usava o GPT não ganha acesso sozinho. O resultado pode ser diferente: a OpenAI pede para testar antes de trocar a rotina.
 
-### O que é um Plugin e por que ele é diferente de um Custom GPT?
+### Dá para migrar depois de 11 de dezembro?
 
-Um Plugin é um pacote que combina Skills (instruções reutilizáveis) com aplicativos conectados, construído sobre o protocolo aberto [MCP](/glossario). Ao contrário do Custom GPT, que funcionava como um assistente fechado e separado dentro do ChatGPT, o Plugin fica disponível dentro da conversa normal — inclusive por voz — e usa um padrão que também roda em outras ferramentas de IA, não só no ChatGPT.
-
-### Existe algo que eu perco ao migrar um GPT para Plugin?
-
-Sim, dois pontos importantes. As Actions personalizadas — chamadas de API que o GPT fazia para serviços externos — não são transferidas automaticamente e precisam ser reconstruídas com um conector suportado ou um servidor MCP próprio. E a escolha de um modelo específico configurada no GPT também não migra; o Plugin passa a usar o modelo padrão da conta. Vale revisar esses dois pontos antes de considerar a migração concluída.
+O guia para criadores diz que sim, a migração continua disponível depois da aposentadoria, mas o GPT em si deixa de rodar nessa data. O substituto precisa ter sido testado antes se a equipe ainda depende dele no dia a dia.
 
 ## Fontes e Referências
 
-- [Custom GPT retirement and migration FAQ (OpenAI Help Center)](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq)
-- [Plugins | OpenAI Developers](https://developers.openai.com/plugins)
-- [ChatGPT mobile app gets voice-based agentic features (TechCrunch)](https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/)
-- [OpenAI to retire custom GPTs in December as creators move to plugins (EdTech Innovation Hub)](https://www.edtechinnovationhub.com/news/openai-to-retire-custom-gpts-in-december-as-creators-move-to-plugins)
-- [OpenAI to retire custom GPTs, replace them with plugins (Virtualization Review)](https://virtualizationreview.com/articles/2026/09/28/openai-to-retire-custom-gpts-replace-them-with-plugins.aspx)
+- [Custom GPT retirement and migration FAQ — OpenAI Help Center](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq)
+- [Moving your custom GPT workflows to plugins — ChatGPT Learn](https://learn.chatgpt.com/docs/migrate-custom-gpts)
+- [GPTs in ChatGPT — OpenAI Help Center](https://help.openai.com/en/articles/8554407-gpts-in-chatgpt)

@@ -205,8 +205,13 @@ async function main() {
     problems.push(`category inválida: "${category}" (use tutoriais, noticias ou ferramentas)`);
   }
 
-  const internalLinks = (body.match(/\]\((\/(?:comparador|calculadora|prompts|gerador|glossario|changelog|ferramentas|categoria\/|blog\/)[^)]*)\)/g) || []).length;
-  if (internalLinks < 2) problems.push(`apenas ${internalLinks} link(s) interno(s) no corpo (mínimo 2)`);
+  const blogLinks = (body.match(/\]\(\/blog\/[a-z0-9-]+/g) || []).length;
+  if (blogLinks < 2) problems.push(`apenas ${blogLinks} link(s) para outros posts (/blog/...) no corpo (mínimo 2)`);
+
+  const seoTitle = readFrontmatterField(content, 'seoTitle');
+  if (!seoTitle) problems.push('seoTitle ausente — até 60 caracteres, palavra-chave no início');
+  else if (seoTitle.length > 60) problems.push(`seoTitle com ${seoTitle.length} caracteres (máximo 60)`);
+  else if (/…|\.\.\./.test(seoTitle)) problems.push('seoTitle não pode terminar ou conter reticências');
 
   const faqHeadings = (body.match(/^###\s+.+\?\s*$/gm) || []).length;
   if (!/^##\s+Perguntas Frequentes/m.test(body)) problems.push('seção "## Perguntas Frequentes" ausente');
@@ -219,16 +224,6 @@ async function main() {
     console.error('❌ Artigo REPROVADO — nada foi publicado. Corrija e rode de novo:');
     for (const p of problems) console.error(`   • ${p}`);
     process.exit(1);
-  }
-
-  // Avisos de SEO (não bloqueiam): o <title> do Google mostra ~60 caracteres.
-  // Sem seoTitle, o site encurta o título sozinho (src/lib/seo.ts), mas um
-  // seoTitle escrito à mão sempre fica melhor.
-  const seoTitle = readFrontmatterField(content, 'seoTitle');
-  if (seoTitle && seoTitle.length > 60) {
-    console.warn(`⚠️  seoTitle com ${seoTitle.length} caracteres (máximo 60): "${seoTitle}"`);
-  } else if (!seoTitle && title.length > 60) {
-    console.warn(`⚠️  Título com ${title.length} caracteres e sem seoTitle — adicione no frontmatter um seoTitle de até 60 caracteres com a palavra-chave no início.`);
   }
 
   // Avisos de AEO (não bloqueiam): assistentes de IA citam a resposta direta

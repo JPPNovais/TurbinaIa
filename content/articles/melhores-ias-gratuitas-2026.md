@@ -1,7 +1,7 @@
 ---
-title: "As 10 Melhores IAs Gratuitas em 2026 (ChatGPT, Gemini, Claude e Mais)"
-seoTitle: "10 Melhores IAs Gratuitas em 2026: ChatGPT, Gemini e Mais"
-description: "Melhores IAs grátis em 2026: compare ChatGPT, Gemini, Claude e mais. Descubra qual ferramenta de IA gratuita serve melhor para você."
+title: "Melhor IA Gratuita em 2026: ChatGPT, Gemini, Claude e o que o plano grátis inclui"
+seoTitle: "Melhor IA Gratuita em 2026: ChatGPT, Gemini e Claude"
+description: "Melhor IA gratuita em 2026: o que ChatGPT, Gemini, Claude e o GitHub Copilot Free incluem de graça, com o que a página oficial de cada um diz hoje."
 category: ferramentas
 tags:
   - IA Gratuita
@@ -12,191 +12,112 @@ tags:
 author: Redação Turbina IA
 isFeatured: true
 date: "2026-06-02"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80"
 ---
 
-Nunca houve tantas ferramentas de inteligência artificial gratuitas disponíveis — e, ao mesmo tempo, nunca foi tão difícil saber qual delas realmente vale o seu tempo. Cada semana surge uma nova plataforma prometendo ser "a melhor IA grátis", mas o que acontece na prática é que a maioria tem limitações importantes no plano free que só você descobre depois de criar a conta.
+"Melhor IA gratuita" depende da tarefa. Em novembro de 2026, as páginas oficiais de ChatGPT, Gemini, Claude e GitHub Copilot descrevem planos grátis reais — e nenhum deles é ilimitado em tudo. Este guia usa só o que essas páginas dizem. Preço e modelo mudam; quando a dúvida for de centavo ou de versão, o [comparador de IAs](/comparador) é o lugar para cruzar a ficha atual.
 
-Este guia vai direto ao ponto: quais são as IAs gratuitas que funcionam de verdade em 2026, para que servem e o que você pode (e não pode) fazer sem pagar nada.
+> **Resposta Rápida (TL;DR):** Para conversa e texto no dia a dia, o plano gratuito do ChatGPT usa o GPT-5.6 Luna, com chats de texto do cotidiano sem um teto numérico publicado (há salvaguarda contra abuso) e limites à parte para arquivo, imagem, voz e análise de dados. O Gemini sem assinatura lista acesso ao modelo Flash-Lite, mais geração de imagem, Deep Research, Gemini Live, Canvas e Gems. O Claude gratuito inclui Sonnet e Haiku, com limite a cada 5 horas e a cada semana, e não inclui Opus nem Fable. Para código no editor, o GitHub Copilot Free existe, com sugestões inline limitadas a 2.000 por mês e escolha automática de modelo.
 
-## Resposta Rápida (TL;DR)
+## Comparativo do que é grátis de verdade
 
-Para conversas gerais e produtividade, **Google Gemini** e **ChatGPT** são as opções gratuitas mais completas hoje. Para geração de imagens sem custo, **Bing Image Creator** e **Ideogram** lideram. Se você programa, vale experimentar o **GitHub Copilot** com seu plano gratuito. Confira a tabela abaixo para uma visão comparativa rápida.
+| Ferramenta | Melhor para | O que o grátis inclui, segundo a página oficial | O que não entra |
+|---|---|---|---|
+| [ChatGPT Free](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq) | Texto, busca, arquivo e imagem com limite | GPT-5.6 Luna; chats de texto do dia a dia sem teto numérico publicado; busca na web; upload de arquivo e imagem; criação de imagem; Library com 500 MB | GPT-6 e GPT-5.6 Sol. Upload, imagem, voz e análise de dados têm limite próprio |
+| [Gemini sem plano](https://gemini.google/subscriptions/) | Pesquisa, imagem e rotina Google | Flash-Lite; geração e edição de imagem; Deep Research; Gemini Live; Canvas; Gems; 15 GB no Google | A página de planos não coloca Flash, Pro nem Gemini 4 Argon no grátis |
+| [Claude Free](https://claude.com/pricing) | Texto longo, arquivo e artefato | Sonnet e Haiku; chat na web, desktop e celular; busca, arquivos, código, memória, conectores, Artefatos, Design, Slides e Docs; até 5 Projects | Opus, Fable, Claude Code e Research. Uso limitado a cada 5 horas e a cada semana |
+| [GitHub Copilot Free](https://docs.github.com/en/copilot/get-started/plans) | Código no editor | Plano gratuito para quem não recebe Copilot por uma organização; 2.000 completações por mês; chat no GitHub.com e no app; modelo só em seleção automática | Copilot na nuvem (é plano pago). Skills de chat na IDE não estão no Free |
 
-## Comparativo Rápido das Principais IAs Gratuitas
+A tabela não inclui Ideogram, Leonardo, Gamma nem Bing Image Creator. A versão anterior deste texto citava limites desses produtos sem uma página oficial conferida agora; eles saíram até haver fonte atual.
 
-| Ferramenta | Melhor para | Plano grátis inclui |
-|---|---|---|
-| ChatGPT (OpenAI) | Assistente geral, redação, análise | Acesso ao GPT-4o com limites de uso |
-| Google Gemini | Pesquisa, integração Google, multimodal | Gemini 1.5 Flash sem limite definido |
-| Claude (Anthropic) | Textos longos, análise de documentos | Claude Sonnet com limites diários |
-| Microsoft Copilot | Produtividade Office, buscas com IA | Acesso gratuito via Bing, GPT-4 incluso |
-| DeepSeek | Raciocínio técnico, código | Acesso web gratuito, API com créditos |
-| Bing Image Creator | Geração de imagens com DALL·E | Créditos gratuitos diários |
-| Leonardo AI | Imagens artísticas e criativas | Tokens diários gratuitos |
-| Ideogram | Imagens com texto preciso | Gerações gratuitas por dia |
-| Gamma | Apresentações e slides com IA | Plano gratuito com criações limitadas |
-| GitHub Copilot | Autocompletar e chat para código | Plano gratuito para desenvolvedores |
-
----
-
-## Chatbots e Assistentes de IA Gratuitos
+## Assistentes de texto
 
 ![Interface de inteligência artificial com linhas de código e dados digitais](https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80)
 
-Os assistentes de IA de texto são a porta de entrada para a maioria das pessoas. Eles respondem perguntas, ajudam a escrever, resumem documentos e muito mais. Veja os principais com plano gratuito real.
+### ChatGPT
 
-### ChatGPT — OpenAI
+A [FAQ do plano gratuito](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq), atualizada no começo de novembro de 2026, diz que o Free usa o GPT-5.6 Luna. O recurso Think, no app e em lançamento na web, também usa o Luna — não o GPT-5.6 Sol. A página de [modelos no ChatGPT](https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt) repete: Free e Go não têm GPT-5.6 Sol, e o GPT-6 que está chegando aos planos pagos não é o modelo deles.
 
-O ChatGPT é provavelmente a IA mais conhecida do mundo. O plano gratuito dá acesso ao modelo GPT-4o, que é o modelo mais avançado da OpenAI, com um limite de uso que é redefinido periodicamente. Quando o limite é atingido, o sistema cai automaticamente para o GPT-3.5.
+Chats de texto do dia a dia não têm um número máximo publicado. A OpenAI condiciona isso a salvaguardas contra abuso. Arquivo, imagem, voz e análise de dados contam em outro limite, e o produto avisa quando ele estoura. A mesma FAQ lista busca na web, leitura de arquivo e imagem, criação de imagem, GPTs e uma Library de 500 MB. Anúncios podem aparecer no Free em alguns países; o detalhe está na FAQ de anúncios, não neste resumo.
 
-**O que o plano grátis oferece:** respostas de texto, análise de imagens, acesso limitado ao modo de voz e algumas ferramentas como navegação web.
+Quem está começando pelo chat, e não pelo plano, tem o [guia de como usar o ChatGPT](/blog/como-usar-chatgpt-guia-completo-para-iniciantes). Modelos prontos para colar estão na [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt).
 
-**Limitações:** sem acesso aos GPTs personalizados da loja, sem geração de imagens com DALL·E, sem projetos salvos e prioridade menor nos servidores em horários de pico.
+### Gemini
 
-Se você quer entender melhor como tirar proveito dessa ferramenta, temos um [guia completo sobre como usar o ChatGPT](/blog/como-usar-chatgpt-guia-completo-para-iniciantes) com exemplos práticos do dia a dia.
+A [página de planos do Gemini](https://gemini.google/subscriptions/) descreve o Free como acesso ao modelo Flash-Lite, com geração e edição de imagem, Deep Research, Gemini Live, Canvas e Gems, além de 15 GB somando Gmail, Drive e Fotos. Flash, Pro e Gemini 4 Argon aparecem nos planos pagos dessa página, não no grátis.
 
-### Google Gemini
+Isso é diferente do que este guia dizia em junho, quando o texto ainda falava em Gemini 1.5 Flash sem um limite claro. O nome do modelo grátis mudou. Se a tarefa é prompt para o app do Google, os [prompts para o Gemini](/blog/prompts-para-gemini) seguem o formato que o produto aceita hoje.
 
-O Gemini é a resposta do Google ao ChatGPT e, em muitos aspectos, superou as expectativas. O plano gratuito oferece acesso ao Gemini 1.5 Flash, que é rápido e capaz, sem um limite de uso especialmente restritivo para uso cotidiano.
+### Claude
 
-**O que o plano grátis oferece:** conversas ilimitadas no modelo Flash, acesso direto ao Google Workspace (Gmail, Docs, Drive), pesquisa web integrada e suporte a imagens.
+Na [tabela de preços da Anthropic](https://claude.com/pricing), o plano Free custa US$ 0 e inclui Sonnet e Haiku. Opus e Fable ficam de fora. O uso é limitado a cada 5 horas e a cada semana; a própria página diz que a velocidade com que o limite chega depende do modelo, do tamanho do chat e dos arquivos.
 
-**Limitações:** o modelo mais poderoso (Gemini 1.5 Pro e Ultra) é exclusivo do plano pago. A integração profunda com apps do Google pode ser uma vantagem ou uma desvantagem dependendo do seu ecosistema.
+No Free também entram chat na web, no desktop e no celular, busca, criação de arquivo, execução de código, memória, conectores, Artefatos, Design, Slides e Docs, voz e até 5 Projects. Claude Code, Research e os créditos mensais de API começam nos planos pagos. Treinamento do modelo, na mesma tabela, está como opt-out também no Free — ou seja, a configuração existe; não é um "sempre treina" automático.
 
-### Claude — Anthropic
+Para texto longo, o Claude é a opção gratuita com essa ficha. Para decidir entre os três assistentes numa tarefa específica, o [comparativo ChatGPT vs Gemini vs Claude](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026) detalha o critério, não só o preço.
 
-O Claude se destaca quando o assunto é lidar com textos longos. Ele consegue processar documentos extensos, contratos, artigos acadêmicos e ainda manter o contexto ao longo de uma conversa longa. Para quem trabalha com análise de conteúdo, é uma das melhores opções gratuitas.
+## Código
 
-**O que o plano grátis oferece:** acesso ao Claude Sonnet com limites de uso diários, janela de contexto grande e suporte a upload de arquivos.
+### GitHub Copilot Free
 
-**Limitações:** o plano gratuito tem cotas que se esgotam com uso intenso. Não há acesso ao Claude Opus no plano free.
+A [documentação de planos do GitHub](https://docs.github.com/en/copilot/get-started/plans) mantém um Copilot Free. Ele é para quem usa o Copilot como pessoa física e não o recebe por uma organização ou empresa. Sugestões inline ficam em 2.000 completações por mês. A escolha de modelo, no Free e no plano Student, é só automática — a tabela de modelos nomeados (Claude, Gemini, GPT, Grok) está nos planos pagos.
 
-Para comparar diretamente como esses três assistentes se saem em tarefas do dia a dia, vale a pena conferir nosso [comparativo ChatGPT vs Gemini vs Claude](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026).
+O chat do Copilot no GitHub.com e no GitHub Mobile continua no Free. Copilot na nuvem, na mesma página, é recurso de plano pago. Skills de chat dentro da IDE não estão no Free.
 
-### Microsoft Copilot
+Quem quer o prompt em volta do código, e não só o autocomplete, tem os [prompts para programação](/blog/prompts-para-programacao). Se a conta for crescer para API, a [calculadora de custos](/calculadora) estima o gasto por token antes da fatura.
 
-O Copilot é o assistente de IA da Microsoft e uma das melhores opções gratuitas para quem já usa o ecossistema Windows e Office. Ele roda sobre o GPT-4 da OpenAI e está disponível diretamente no navegador Edge, no Windows 11 e em copilot.microsoft.com.
+O Copilot da Microsoft (o app em copilot.microsoft.com, dentro do Windows e do Microsoft 365) é outro produto. Os limites do plano gratuito dele mudaram mais de uma vez em 2026 e esta revisão não os fixa sem a página do próprio Copilot na data em que você for assinar. O comparador do site separa os dois.
 
-**O que o plano grátis oferece:** acesso ao GPT-4 sem limites restritivos, geração de imagens com DALL·E via Designer, integração com Bing para buscas atualizadas.
+## Imagem, sem produto extra
 
-**Limitações:** a integração com Office 365 (Word, Excel, PowerPoint) exige o plano pago Microsoft 365 Copilot.
+Não há, nesta atualização, uma lista de geradores de imagem de terceiros com cota diária conferida. O que dá para afirmar com a fonte na mesa:
 
-### DeepSeek
+- O ChatGPT Free cria imagem, com limite próprio, separado do chat de texto.
+- O Gemini sem plano inclui geração e edição de imagem.
 
-Vindo da China, o DeepSeek surpreendeu o mercado em 2025 com um modelo de raciocínio técnico de alta qualidade disponível gratuitamente. É especialmente bom para tarefas que exigem lógica passo a passo, como problemas matemáticos, código e análise estruturada.
+Para o passo a passo de prompt de imagem, o texto [como criar imagens com IA grátis](/blog/como-criar-imagens-com-ia-gratis) continua o complemento. Ele não substitui a ficha de plano desta página.
 
-**O que o plano grátis oferece:** acesso ao DeepSeek-R1 via interface web com limites de uso, e créditos iniciais na API para desenvolvedores.
+## Como escolher sem abrir dez contas
 
-**Limitações:** pode apresentar lentidão em horários de pico, e a interface web ainda é mais básica que a dos concorrentes.
+**Texto e pergunta do dia a dia.** ChatGPT Free, pelo GPT-5.6 Luna e pelo chat de texto sem teto numérico publicado. Se a resposta precisar de arquivo grande ou de muitas imagens, o limite desses recursos aparece antes do limite do texto.
 
----
+**Pesquisa ligada à conta Google.** Gemini no Flash-Lite, com Deep Research e Gems no grátis. Não conte com o Gemini 4 Argon: a página de planos o coloca na assinatura.
 
-## IAs Gratuitas para Geração de Imagens
+**Documento longo e arquivo.** Claude Free, com Sonnet e o limite de 5 horas e de semana. Opus não está nesse plano.
 
-![Dashboard com visualizações de dados e gráficos analíticos](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80)
+**Código no editor.** GitHub Copilot Free, se você não estiver numa organização que já fornece Copilot. Duas mil completações por mês e modelo automático.
 
-Criar imagens com IA sem pagar nada é totalmente possível em 2026. As ferramentas abaixo oferecem gerações gratuitas diárias que são suficientes para uso casual e até profissional em ritmo moderado.
+Dá para usar mais de um. O que não dá é tratar o plano grátis de junho de 2026 como se ainda fosse o de novembro: GPT-4o no ChatGPT e Gemini 1.5 Flash saíram desta ficha porque as páginas oficiais atuais descrevem outros modelos.
 
-### Bing Image Creator (Microsoft Designer)
-
-Powered by DALL·E 4 da OpenAI, o Bing Image Creator é uma das opções mais acessíveis para geração de imagens. Basta ter uma conta Microsoft gratuita para começar.
-
-**O que o plano grátis oferece:** um número de créditos rápidos por dia (que esgotam rápido em uso intenso), mas as gerações continuam funcionando mesmo após os créditos — apenas mais devagar.
-
-**Limitações:** sem opções avançadas de edição, sem controle de aspect ratio detalhado, e a qualidade varia bastante dependendo do prompt.
-
-### Leonardo AI
-
-O Leonardo é voltado para criações artísticas e tem uma curva de aprendizado um pouco maior, mas os resultados são impressionantes. É muito usado por criadores de conteúdo, jogos e design.
-
-**O que o plano grátis oferece:** tokens diários que se renovam automaticamente, acesso a vários modelos base e alguns modelos treinados pela comunidade.
-
-**Limitações:** os tokens do plano free limitam o volume de criações por dia, e os melhores modelos consomem mais tokens.
-
-### Ideogram
-
-O Ideogram resolveu um dos maiores problemas das IAs de imagem: gerar texto legível dentro das imagens. Para criar thumbnails, capas, posts com frases ou qualquer arte que precise de texto, ele é atualmente o melhor da categoria no plano gratuito.
-
-**O que o plano grátis oferece:** gerações gratuitas diárias com qualidade competitiva e suporte a texto em imagens.
-
-**Limitações:** volume de gerações gratuitas menor que o de concorrentes, sem upscaling no plano free.
-
----
-
-## IAs Gratuitas para Escrita e Produtividade
-
-Para quem precisa criar apresentações, relatórios ou conteúdo profissional, há boas opções sem custo. Você pode encontrar um panorama mais completo dessas ferramentas no nosso artigo sobre as [7 melhores ferramentas de IA para produtividade](/blog/melhores-ferramentas-de-ia-produtividade-2026).
-
-### Gamma
-
-O Gamma cria apresentações, documentos e páginas web a partir de um simples prompt de texto. O resultado é visivelmente melhor do que o que a maioria das pessoas consegue fazer no PowerPoint em horas de trabalho.
-
-**O que o plano grátis oferece:** um número limitado de criações por mês com todas as funcionalidades principais ativas.
-
-**Limitações:** exportação com marca d'água no plano gratuito, limite mensal de projetos.
-
----
-
-## IAs Gratuitas para Programação
-
-### GitHub Copilot
-
-O GitHub Copilot foi por muito tempo exclusivo de planos pagos, mas em 2024 a Microsoft lançou um plano gratuito real — não apenas um trial — para desenvolvedores individuais.
-
-**O que o plano grátis oferece:** autocompletar de código no VS Code e outros editores, chat de IA para tirar dúvidas de código, suporte a múltiplas linguagens e acesso a modelos como GPT-4o e Claude Sonnet.
-
-**Limitações:** número de completions e mensagens de chat por mês, sem acesso a funcionalidades enterprise como política de exclusão de código treinado.
-
-Para desenvolvedores que querem comparar modelos diretamente ou avaliar custos antes de escalar, nosso [comparador de modelos de IA](/comparador) pode ajudar bastante na decisão.
-
----
-
-## Como Escolher a IA Gratuita Certa para Você
-
-Com tantas opções, a escolha mais importante é entender o que você precisa fazer. Aqui está um guia rápido:
-
-**Se você quer um assistente geral para o dia a dia:** comece pelo Google Gemini ou pelo ChatGPT free. Ambos têm planos generosos e cobrem a maioria dos casos de uso.
-
-**Se você trabalha muito com documentos e textos longos:** o Claude tem vantagem pelo contexto maior e pela qualidade nas análises de texto.
-
-**Se você precisa de imagens para conteúdo:** Ideogram para imagens com texto, Leonardo para arte e criação visual mais elaborada.
-
-**Se você é desenvolvedor:** GitHub Copilot free primeiro, depois avalie o DeepSeek para raciocínio técnico.
-
-**Se você quer integrar IA ao seu fluxo de trabalho no Office/Windows:** Microsoft Copilot é a escolha natural.
-
-Vale lembrar que você não precisa escolher apenas uma ferramenta. Muitos profissionais usam duas ou três em paralelo, cada uma para o que faz melhor. Se quiser entender melhor como essas IAs funcionam por baixo dos panos, nosso artigo sobre [o que é inteligência artificial](/blog/o-que-e-inteligencia-artificial-guia-completo-para-iniciantes) é um bom ponto de partida.
-
-Para quem está pensando em escalar o uso e eventualmente precisar de acesso via API, nossa [calculadora de custos de API](/calculadora) ajuda a estimar quanto você pagaria em diferentes volumes de uso antes de tomar uma decisão.
-
-Você também pode explorar um catálogo mais amplo de ferramentas no nosso [diretório de ferramentas de IA](/ferramentas).
-
----
+Quem for passar do grátis para a API encontra o custo por milhão de tokens na [calculadora](/calculadora). Um catálogo maior, incluindo ferramentas pagas, está no [guia de ferramentas](/ferramentas).
 
 ## Perguntas Frequentes
 
-### Quais IAs gratuitas não têm limite de uso?
+### Qual é a melhor IA gratuita em 2026?
 
-Nenhuma IA comercial séria oferece uso verdadeiramente ilimitado no plano gratuito — os custos computacionais são altos demais. O que varia é o quão generoso é o limite. O Google Gemini com o modelo Flash tende a ser o mais permissivo para uso casual. O Microsoft Copilot também costuma ter menos restrições visíveis para conversas comuns.
+Não há uma só. Para texto cotidiano, a FAQ da OpenAI descreve o ChatGPT Free com GPT-5.6 Luna. Para a conta Google, a página de planos do Gemini coloca o Flash-Lite no grátis. Para documento longo, o Claude Free inclui Sonnet e Haiku, com limite a cada 5 horas e a cada semana. Para código no editor, o GitHub Copilot Free oferece 2.000 completações por mês.
 
-### O ChatGPT gratuito ainda vale a pena em 2026?
+### O ChatGPT grátis tem GPT-6?
 
-Sim. Mesmo com o plano pago (ChatGPT Plus) tendo vantagens claras, o plano gratuito ainda dá acesso ao GPT-4o, que é um modelo de ponta. Para quem usa esporadicamente ou está começando a explorar IA, o plano free do ChatGPT continua sendo uma das melhores portas de entrada.
+Não, nas páginas conferidas no início de novembro de 2026. A FAQ do plano gratuito e a página de modelos dizem que Free e Go usam o GPT-5.6 Luna e não têm GPT-5.6 Sol. O GPT-6 está no rollout dos planos pagos elegíveis.
 
-### É seguro usar IAs gratuitas para trabalho profissional?
+### O Gemini grátis ainda libera o modelo Pro?
 
-Depende do tipo de dado e da política de privacidade de cada ferramenta. A maioria dos planos gratuitos usa as suas conversas para treinamento dos modelos, a menos que você configure o contrário nas configurações. Para dados sensíveis ou confidenciais, verifique sempre a política de privacidade da plataforma e considere desativar o histórico de conversas quando disponível.
+A página oficial de planos não lista Pro, Flash nem Gemini 4 Argon no Free. O que ela lista no grátis é o Flash-Lite, além de imagem, Deep Research, Gemini Live, Canvas e Gems.
 
-### Existe alguma IA gratuita que gere vídeos?
+### Dá para usar o Claude sem pagar?
 
-Sim, embora a qualidade ainda seja inferior à geração de imagens. O Runway ML tem um plano free com gerações limitadas. A Meta também disponibilizou acesso gratuito a ferramentas de vídeo via Meta AI. O espaço de geração de vídeo com IA gratuita está evoluindo rápido, então vale acompanhar lançamentos ao longo de 2026.
+Sim. O plano Free da Anthropic inclui Sonnet e Haiku, chat, busca, arquivos e Artefatos, com uso limitado a cada 5 horas e a cada semana. Opus, Fable e Claude Code não estão nesse plano.
 
----
+### Posso colar dado sigiloso de cliente no plano grátis?
+
+Este guia não trata isso como sim. No Claude, a tabela de preços marca treinamento como opt-out também no Free, o que ainda exige olhar a configuração da conta. No ChatGPT e no Gemini, a regra de uso das conversas não está resumida nas páginas de plano citadas aqui. Antes de colar contrato, prontuário ou dado de cliente, leia a política da ferramenta e tire o que for identificável.
 
 ## Fontes e Referências
 
-- [OpenAI — ChatGPT](https://chatgpt.com)
-- [Google Gemini](https://gemini.google.com)
-- [Anthropic Claude](https://claude.ai)
-- [GitHub Copilot Free](https://github.com/features/copilot)
+- [ChatGPT Free Tier FAQ — OpenAI Help Center](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq)
+- [GPT-6 and other models in ChatGPT — OpenAI Help Center](https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt)
+- [Google AI plans — Gemini](https://gemini.google/subscriptions/)
+- [Plans and pricing — Claude](https://claude.com/pricing)
+- [Plans for GitHub Copilot — GitHub Docs](https://docs.github.com/en/copilot/get-started/plans)

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
+import Link from 'next/link';
 import { useProgressiveReveal } from '@/hooks/useProgressiveReveal';
 import { PROMPTS, Prompt } from '@/data/prompts';
 import './prompts.css';
@@ -108,7 +109,9 @@ export default function PromptsClient({ breadcrumb }: { breadcrumb?: React.React
         <p>
           Mais de 100 prompts prontos e gratuitos neste banco de prompts para ChatGPT, Claude, Gemini
           e outros modelos de IA. Encontre por categoria, personalize as variáveis e copie o comando
-          ideal em segundos — sem cadastro.
+          ideal em segundos — sem cadastro. Para uma lista só de ChatGPT, com mais de 100 modelos em
+          português prontos para copiar, abra os{' '}
+          <Link href="/blog/prompts-prontos-para-chatgpt">prompts prontos para ChatGPT</Link>.
         </p>
       </div>
 

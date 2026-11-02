@@ -158,7 +158,9 @@ export default async function Home() {
           notícias diárias, tutoriais e ferramentas gratuitas para você usar IA com mais resultado.
           Para começar agora, veja a nossa lista com mais de 100{' '}
           <Link href="/blog/prompts-prontos-para-chatgpt" prefetch={false}>prompts para ChatGPT</Link>{' '}
-          prontos para copiar.
+          prontos para copiar. Para escolher a ferramenta, o{' '}
+          <Link href="/blog/melhores-ias-2026-ranking" prefetch={false}>ranking das melhores IAs em 2026</Link>{' '}
+          organiza por uso, com o que o plano grátis de cada uma inclui.
         </p>
 
         {/* Destaque maior: Verificador de IA (ferramenta de avaliação) */}

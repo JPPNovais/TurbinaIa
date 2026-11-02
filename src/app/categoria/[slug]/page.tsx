@@ -99,6 +99,14 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <span className="badge badge-secondary">{hub.icon} {articles.length} publicações</span>
         <h1 className="hub-title">{hub.heading}</h1>
         <p className="hub-intro">{hub.intro}</p>
+        {hub.slug === 'melhores-ias' && (
+          <p className="hub-intro">
+            O guia por tipo de uso está em{' '}
+            <Link href="/blog/melhores-ias-2026-ranking">Melhores IAs em 2026: ranking por uso (grátis e pagas)</Link>.
+            O que cada plano grátis inclui, com a página oficial de cada ferramenta, está em{' '}
+            <Link href="/blog/melhores-ias-gratuitas-2026">melhor IA gratuita em 2026</Link>.
+          </p>
+        )}
 
         {hub.tools.length > 0 && (
           <ul className="hub-tools" aria-label="Ferramentas relacionadas">

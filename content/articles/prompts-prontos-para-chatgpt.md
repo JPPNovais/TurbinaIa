@@ -12,17 +12,57 @@ tags:
 author: Redação Turbina IA
 isFeatured: true
 date: "2026-06-02"
-updatedAt: "2026-10-20"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80"
 ---
 
-Saber o que perguntar faz toda a diferença. Você pode ter acesso ao modelo de IA mais avançado do mundo e ainda assim obter respostas mediocres — não por culpa da ferramenta, mas pela forma como você se comunicou com ela. É por isso que bons prompts valem ouro.
+## Exemplos de prompt para ChatGPT
 
-**Resposta Rápida (TL;DR):** Os melhores prompts para ChatGPT combinam papel, contexto, tarefa e formato em uma só instrução. Abaixo estão mais de 100 prompts prontos para copiar, em português, organizados em 10 categorias — basta clicar em **Copiar**, trocar os [colchetes] pelos seus dados e colar no ChatGPT. Para ainda mais opções, acesse a nossa [biblioteca de prompts](/prompts).
+```
+Resuma a seguinte ata de reunião em até 5 pontos de ação, indicando responsável e prazo para cada um: [cole o texto da ata aqui]
+```
 
-Este guia reúne mais de 100 prompts prontos para ChatGPT organizados por categoria, todos com variáveis em colchetes para você adaptar ao seu contexto. Se quiser entender a fundo como construir prompts do zero, o [guia de prompt engineering](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) vai além do que listamos aqui. Mas se você precisa de algo para usar agora, está no lugar certo.
+```
+Você é um assistente de produtividade. Escreva um e-mail profissional para [nome do destinatário] solicitando [objetivo do e-mail]. O tom deve ser [formal/cordial/direto]. Limite a 150 palavras.
+```
 
-**Escolha a categoria:**
+```
+Explique [conceito] como se eu tivesse 15 anos, sem jargões técnicos. Em seguida, dê um exemplo prático do dia a dia.
+```
+
+```
+Você é um desenvolvedor sênior em [linguagem de programação]. Revise o código abaixo, aponte problemas de performance, segurança ou legibilidade e sugira melhorias com explicação: [cole o código]
+```
+
+```
+Você é um recrutador sênior da área de [área]. Reescreva meu currículo abaixo destacando resultados mensuráveis, com verbos de ação e palavras-chave da vaga de [cargo]. Mantenha em uma página. [cole o currículo]
+```
+
+```
+Você é social media de uma confeitaria artesanal. Escreva uma legenda de até 80 palavras para o Instagram anunciando o bolo de pote de maracujá, com tom divertido e uma chamada para encomendar pelo WhatsApp.
+```
+
+```
+Transforme as anotações soltas abaixo em um relatório semanal de status para meu gestor, com três blocos: o que foi entregue, o que está em andamento (com % estimado) e os bloqueios que precisam de decisão dele. Seja objetivo, no máximo 200 palavras. [cole suas anotações]
+```
+
+```
+Crie uma lista de tarefas priorizadas para a semana com base nos seguintes projetos em andamento: [liste os projetos e suas etapas]. Use o método de priorização por impacto e urgência.
+```
+
+```
+Redija uma mensagem de feedback construtivo para um colega de equipe sobre [comportamento ou situação específica]. Seja direto, respeitoso e orientado a soluções.
+```
+
+```
+Crie um plano de estudos de [duração] para aprender [assunto ou habilidade] do zero. Inclua recursos gratuitos recomendados e uma meta semanal clara.
+```
+
+**Resposta Rápida (TL;DR):** Os melhores prompts para ChatGPT (o mesmo que muita gente busca como chat gpt) combinam papel, contexto, tarefa e formato. Os 10 acima já dá para copiar. Abaixo há mais de 100 prompts prontos, em português, por área — clique em **Copiar**, troque os [colchetes] e cole no ChatGPT. Para filtrar por tarefa, use a [biblioteca de prompts](/prompts).
+
+Este guia reúne prompts prontos para o ChatGPT organizados por categoria, com variáveis em colchetes. Para montar um prompt do zero, o [guia de prompt engineering](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) aprofunda a técnica. Se a necessidade é usar agora, os modelos desta página bastam.
+
+## Lista de prompts para ChatGPT por área
 
 - [Trabalho e produtividade](#prompts-para-trabalho-e-produtividade) — 11 prompts
 - [E-mail](#prompts-para-e-mail) — 11 prompts
@@ -34,23 +74,25 @@ Este guia reúne mais de 100 prompts prontos para ChatGPT organizados por catego
 - [Escrita e criatividade](#prompts-para-escrita-e-criatividade) — 11 prompts
 - [Dia a dia](#prompts-para-o-dia-a-dia) — 11 prompts
 - [Negócios e empreendedorismo](#prompts-para-negocios-e-empreendedorismo) — 8 prompts
-- [Como escrever um bom prompt para o ChatGPT](#como-escrever-um-bom-prompt-para-o-chatgpt) — modelo para montar o seu
 
----
+## Estrutura de um bom prompt (papel + contexto + tarefa + formato)
 
-## Como Escrever um Bom Prompt para o ChatGPT
+Um prompt para o ChatGPT fica mais preciso com quatro partes:
 
-Antes de entrar nos exemplos, vale entender o que torna um prompt realmente funcional. Não é magia — é estrutura.
+**Papel** — quem o modelo deve ser: "Você é um especialista em finanças pessoais" define tom e nível técnico.
 
-**Papel** — diga ao modelo quem ele deve ser: "Você é um especialista em finanças pessoais" orienta o tom e o nível técnico da resposta.
+**Contexto** — para quem é, qual o objetivo e quais restrições existem.
 
-**Contexto** — forneça o cenário: para quem é, qual o objetivo, quais restrições existem.
+**Tarefa** — o verbo do pedido: redigir, resumir, listar, analisar, corrigir.
 
-**Tarefa** — seja específico sobre o que você quer: redigir, resumir, listar, analisar, corrigir.
+**Formato** — como a resposta deve vir: tópicos, tabela, parágrafo ou limite de palavras.
 
-**Formato** — indique como a resposta deve ser apresentada: tópicos, tabela, parágrafo corrido, máximo de palavras.
+Antes e depois, no mesmo pedido:
 
-Com esses quatro elementos, qualquer prompt fica mais preciso. Use o modelo abaixo como ponto de partida para criar os seus:
+- **Prompt fraco:** "faça um post sobre meu produto."
+- **Prompt com a estrutura:** papel (social media da confeitaria), contexto (bolo de pote de maracujá), tarefa (escrever a legenda) e formato (até 80 palavras, tom divertido, chamada para o WhatsApp). Esse é o sexto exemplo do topo desta página.
+
+## Modelo de prompt para ChatGPT (copie e adapte)
 
 ```
 Você é [papel, ex.: especialista em marketing digital com 10 anos de experiência].
@@ -60,7 +102,11 @@ Formato: [como a resposta deve vir: tópicos, tabela, até X palavras, tom Y].
 Se faltar alguma informação importante, faça até 3 perguntas antes de responder.
 ```
 
-Na prática, a diferença é grande: "faça um post sobre meu produto" gera um texto genérico; "Você é social media de uma confeitaria artesanal. Escreva uma legenda de até 80 palavras para o Instagram anunciando o bolo de pote de maracujá, com tom divertido e uma chamada para encomendar pelo WhatsApp" gera algo que você pode publicar. Os modelos abaixo já incorporam essa lógica — você só precisa preencher as lacunas.
+Troque cada colchete e cole no ChatGPT. Os prompts das áreas abaixo já nascem com essa lógica.
+
+## Prompts para ChatGPT em português
+
+Todos os prompts desta lista estão em português e funcionam no ChatGPT sem trocar o idioma da conta. Quem pesquisa "chat gpt" ou "prompts para chatgpt" cai no mesmo conjunto: trabalho, e-mail, estudos, marketing, programação, carreira, finanças, escrita, dia a dia e negócios. Cada bloco tem o botão **Copiar**.
 
 ---
 
@@ -576,7 +622,7 @@ Os melhores prompts para ChatGPT são os que dizem ao modelo quem ele deve ser, 
 
 ### Como fazer um prompt para o ChatGPT?
 
-Escreva em quatro partes: o papel ("Você é um recrutador sênior"), o contexto (para quem é, qual o objetivo, quais as restrições), a tarefa com um verbo claro (escreva, resuma, compare) e o formato da resposta (tópicos, tabela, número de palavras). Se faltar informação, peça ao ChatGPT para fazer perguntas antes de responder. O modelo na seção "Como escrever um bom prompt para o ChatGPT", acima, já vem com essa estrutura pronta para preencher.
+Escreva em quatro partes: o papel ("Você é um recrutador sênior"), o contexto (para quem é, qual o objetivo, quais as restrições), a tarefa com um verbo claro (escreva, resuma, compare) e o formato da resposta (tópicos, tabela, número de palavras). Se faltar informação, peça ao ChatGPT para fazer perguntas antes de responder. O bloco "Modelo de prompt para ChatGPT (copie e adapte)", acima, já vem com essa estrutura pronta para preencher.
 
 ### O que é um prompt de comando no ChatGPT?
 

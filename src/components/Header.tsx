@@ -9,6 +9,7 @@ import HoverPrefetchLink from './HoverPrefetchLink';
 const RECURSOS_ITEMS = [
   { href: '/verificador-ia', label: 'Verificador de IA', icon: '🔍' },
   { href: '/prompts', label: 'Prompts', icon: '💬' },
+  { href: '/blog/prompts-prontos-para-chatgpt', label: 'Prompts para ChatGPT', icon: '📋' },
   { href: '/gerador', label: 'Gerador de Artigos', icon: '✍️' },
   { href: '/glossario', label: 'Glossário de IA', icon: '📖' },
 ];

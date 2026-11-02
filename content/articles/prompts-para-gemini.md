@@ -1,7 +1,7 @@
 ---
 title: "+50 Prompts para o Gemini: Modelos Prontos para Copiar (2026)"
 seoTitle: "+50 Prompts para o Gemini Prontos para Copiar (2026)"
-description: "Prompts para o Gemini prontos para copiar: +50 modelos para Gmail e Docs, edição de fotos, Gems, Deep Research, estudo, código e marketing."
+description: "Prompts prontos para o Gemini: +50 exemplos para trabalho, estudo e marketing."
 category: tutoriais
 tags:
   - Gemini
@@ -12,9 +12,69 @@ tags:
 author: Redação Turbina IA
 isFeatured: true
 date: "2026-06-04"
-updatedAt: "2026-10-26"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80"
 ---
+
+## 10 prompts para Gemini para copiar
+
+```
+Escreva um e-mail profissional para [nome do destinatário] solicitando [objetivo do e-mail]. O tom deve ser [formal/amigável/assertivo]. Inclua uma chamada para ação clara no final. Limite a [X] parágrafos.
+```
+
+```
+Resuma o seguinte e-mail em 3 bullet points com os pontos mais importantes que precisam de ação minha:
+
+[Cole aqui o conteúdo do e-mail]
+```
+
+```
+Crie um sumário executivo de no máximo 200 palavras para o documento abaixo. Destaque o problema, a solução proposta e os próximos passos:
+
+[Cole o documento aqui]
+```
+
+```
+Com base nas tarefas abaixo, crie um plano de dia organizado em blocos de tempo de 90 minutos, priorizando pelo critério [urgência/importância/energia necessária]:
+
+[Liste as tarefas]
+```
+
+```
+[Anexe uma selfie com o rosto bem iluminado] Transforme esta foto em um retrato profissional para o LinkedIn. Mantenha meu rosto, meus traços e minha expressão exatamente como estão. Troque a roupa por [camisa social azul-marinho / blazer cinza], use um fundo de escritório cinza-claro desfocado e luz suave de estúdio vindo da esquerda. Enquadramento do peito para cima, formato quadrado, aparência de foto real e sem efeito de pintura.
+```
+
+```
+[Anexe a foto do produto] Coloque este [produto] sobre [superfície, ex.: uma bancada de madeira clara] em um cenário de [ambiente, ex.: cozinha moderna com luz natural da manhã]. O produto precisa ficar idêntico ao original — formato, cor, rótulo e proporções. Acrescente uma sombra realista e deixe espaço livre à direita para texto. Formato vertical 4:5, estilo de foto publicitária.
+```
+
+```
+Revise o texto abaixo corrigindo erros gramaticais, melhorando a clareza e ajustando o estilo para um público [técnico/leigo/executivo]. Mostre as alterações explicando brevemente cada mudança:
+
+[Cole o texto aqui]
+```
+
+```
+Sou iniciante em Google Sheets. Explique passo a passo como criar uma fórmula para [objetivo, ex.: calcular o total de vendas por vendedor em uma tabela com colunas Nome, Produto e Valor].
+```
+
+```
+Estou recebendo o seguinte erro ao executar meu código [linguagem]:
+
+[Cole a mensagem de erro]
+
+O código relevante é:
+
+[Cole o trecho de código]
+
+Explique a causa do erro e mostre como corrigi-lo.
+```
+
+```
+[Compartilhe uma foto do quadro branco ou das anotações à mão] Transcreva o conteúdo desta imagem e organize em um resumo de reunião com três partes: decisões tomadas, tarefas (com responsável, se aparecer) e dúvidas em aberto. Marque com [?] qualquer trecho que você não conseguiu ler com certeza.
+```
+
+A diferença prática entre um prompt de Gemini e um prompt de ChatGPT está no que vai junto com o texto. No Gemini, o pedido pode apontar para uma foto anexada, um documento longo colado de uma vez ou um app do Google (Gmail, Docs, Sheets) quando a conta tem o Gemini no Workspace. No ChatGPT, a estrutura papel + contexto + tarefa + formato também funciona — a [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) usa esse formato —, mas uma frase como "use o e-mail aberto no Gmail" só faz sentido no Gemini. Os dez modelos acima já separam o que é só texto do que depende de anexo.
 
 O Gemini responde bem a instruções claras, contexto detalhado e objetivos específicos. O problema é que a maioria das pessoas digita perguntas vagas e depois fica insatisfeita com o resultado. A diferença entre uma resposta mediana e uma resposta excelente quase sempre está na qualidade do prompt.
 

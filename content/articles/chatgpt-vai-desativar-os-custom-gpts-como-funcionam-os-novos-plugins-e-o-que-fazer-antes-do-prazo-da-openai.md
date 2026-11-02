@@ -1,7 +1,7 @@
 ---
-title: "ChatGPT Vai Desativar os Custom GPTs em 11 de Dezembro: o Que Você Perde e o Que Fazer Antes"
-seoTitle: "Migre seus GPTs para Plugins até 11 de dezembro"
-description: "Custom GPTs param em 11/12/2026. Passo a passo oficial para migrar para Plugins: o que passa, o que não passa e o que acontece com as conversas."
+title: "Custom GPTs serão desativados em 11/12: como migrar para plugins (passo a passo)"
+seoTitle: "Custom GPTs em 11/12: passo a passo para migrar"
+description: "Passo a passo: Custom GPTs param em 11/12/2026. O que acontece com os que não migrarem e como passar para plugins."
 category: ferramentas
 tags:
   - ChatGPT
@@ -15,11 +15,11 @@ updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80"
 ---
 
-Os Custom GPTs do ChatGPT têm data de aposentadoria marcada: **11 de dezembro de 2026**. A [FAQ oficial da OpenAI](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), atualizada no fim de outubro de 2026, mantém esse dia como a data padrão. Workspaces FedRAMP e workspaces Enterprise afetados com adiamento aprovado ficam para **11 de fevereiro de 2027**. Essa data extra não vale para todo mundo: vale o aviso da sua conta.
+> **Resposta rápida:** O prazo padrão é **11 de dezembro de 2026** (11/12). FedRAMP e workspaces Enterprise com adiamento aprovado ficam para **11 de fevereiro de 2027** — vale o aviso da sua conta, não a data genérica. **GPTs não migrados** deixam de abrir nessa data, junto com a página deles. A [FAQ da OpenAI](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq) diz que as conversas antigas continuam acessíveis e que não é preciso exportá-las. **Três passos para migrar:** (1) publique a versão final, porque rascunho não passa; (2) quando o botão existir, abra Meus GPTs no GPT que você criou e escolha **Migrar para plugin**; (3) teste um pedido que você já conhece e compartilhe de novo, porque o plugin nasce privado.
 
-Se você criou o GPT, o caminho oficial é migrar para um Plugin antes dessa data. Se você só usa um GPT de outra pessoa, não dá para migrar no lugar dela.
+Os Custom GPTs do ChatGPT têm data de aposentadoria marcada: **11 de dezembro de 2026**. A FAQ oficial, atualizada no fim de outubro de 2026, mantém esse dia como a data padrão. Workspaces FedRAMP e workspaces Enterprise afetados com adiamento aprovado ficam para **11 de fevereiro de 2027**. Essa data extra não vale para todo mundo: vale o aviso da sua conta.
 
-> **Resposta Rápida (TL;DR):** A aposentadoria padrão é 11 de dezembro de 2026. Quando a migração aparecer na sua conta, vá em Meus GPTs, abra o que você criou e escolha **Migrar para plugin**. A migração usa a última versão publicada: rascunho não passa. Instruções viram uma skill, arquivos de conhecimento viram arquivos de referência e apps conectados entram no plugin. Actions personalizadas e o modelo escolhido no GPT não passam. O plugin nasce privado. As conversas antigas continuam acessíveis depois da aposentadoria, segundo a própria FAQ — não é preciso exportá-las para preservá-las.
+Se você criou o GPT, o caminho oficial é migrar para um Plugin antes dessa data. Se você só usa um GPT de outra pessoa, não dá para migrar no lugar dela. O passo a passo completo, com o que passa e o que não passa, está nas seções abaixo.
 
 ## O que fazer agora, em ordem
 

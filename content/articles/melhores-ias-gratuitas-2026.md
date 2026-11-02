@@ -16,7 +16,7 @@ updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80"
 ---
 
-"Melhor IA gratuita" depende da tarefa. Em novembro de 2026, as páginas oficiais de ChatGPT, Gemini, Claude e GitHub Copilot descrevem planos grátis reais — e nenhum deles é ilimitado em tudo. Este guia usa só o que essas páginas dizem. Preço e modelo mudam; quando a dúvida for de centavo ou de versão, o [comparador de IAs](/comparador) é o lugar para cruzar a ficha atual.
+"Melhor IA gratuita" depende da tarefa. Em novembro de 2026, as páginas oficiais de ChatGPT, Gemini, Claude e GitHub Copilot descrevem planos grátis reais — e nenhum deles é ilimitado em tudo. Este guia usa só o que essas páginas dizem. O panorama por tipo de uso, grátis e pagas, está no [ranking de melhores IAs em 2026](/blog/melhores-ias-2026-ranking). Preço e modelo mudam; quando a dúvida for de centavo ou de versão, o [comparador de IAs](/comparador) é o lugar para cruzar a ficha atual. A lista completa de rankings fica em [Melhores IAs](/categoria/melhores-ias).
 
 > **Resposta Rápida (TL;DR):** Para conversa e texto no dia a dia, o plano gratuito do ChatGPT usa o GPT-5.6 Luna, com chats de texto do cotidiano sem um teto numérico publicado (há salvaguarda contra abuso) e limites à parte para arquivo, imagem, voz e análise de dados. O Gemini sem assinatura lista acesso ao modelo Flash-Lite, mais geração de imagem, Deep Research, Gemini Live, Canvas e Gems. O Claude gratuito inclui Sonnet e Haiku, com limite a cada 5 horas e a cada semana, e não inclui Opus nem Fable. Para código no editor, o GitHub Copilot Free existe, com sugestões inline limitadas a 2.000 por mês e escolha automática de modelo.
 

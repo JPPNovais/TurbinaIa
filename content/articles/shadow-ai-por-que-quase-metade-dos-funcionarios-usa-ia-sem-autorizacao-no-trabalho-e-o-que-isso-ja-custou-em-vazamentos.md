@@ -1,5 +1,6 @@
 ---
 title: "Shadow AI: Por Que Quase Metade dos Funcionários Usa IA Sem Autorização no Trabalho — e o Que Isso Já Custou em Vazamentos"
+seoTitle: "Shadow AI: Quase Metade Usa IA no Trabalho sem Autorização"
 description: "Pesquisas de 2026 mostram que quase metade dos funcionários usa IA não aprovada no trabalho. Veja os números, os riscos reais e como evitar virar estatística."
 category: tutoriais
 tags:
@@ -67,6 +68,8 @@ Terceiro, trate dado sensível como trataria papel confidencial: contrato, dado 
 Quarto, meça adoção de verdade em vez de confiar na política escrita. A lacuna que a IBM identificou — 68% das empresas violadas sem nenhuma governança formal de IA — não é falta de regra no papel; muitas dessas empresas provavelmente têm um documento de política de uso aceitável. O problema é que ninguém verifica se a prática bate com o texto. Uma auditoria trimestral simples, perguntando diretamente que ferramentas cada time usa no dia a dia, custa muito menos do que os US$ 5,39 milhões médios de uma violação ligada a Shadow AI.
 
 Por fim, vale entender o vocabulário técnico por trás dessas políticas — termos como "governança de IA", "controle de acesso" e "shadow IT" aparecem cada vez mais em contratos e treinamentos corporativos, e nosso [Glossário de IA](/glossario) traz definições diretas para quem precisa se atualizar rápido sem depender de jargão de fornecedor.
+
+**Para aprofundar:** [Por Que Metade das Pessoas Nunca Usou um Chatbot de IA](/blog/por-que-metade-dos-adultos-americanos-nunca-usou-um-chatbot-de-ia-segundo-a-pew-research) e [Por Que Tanta Gente Esconde que Usa IA no Trabalho](/blog/por-que-tanta-gente-esconde-que-usa-ia-no-trabalho-e-o-que-isso-esta-custando).
 
 ## Perguntas Frequentes
 

@@ -1,5 +1,6 @@
 ---
 title: "TSE Endurece Regras: Proibição de Recomendações e Rankings por IA nas Eleições Brasileiras"
+seoTitle: "TSE Proíbe Recomendação e Ranking de IA nas Eleições"
 description: "TSE proíbe IA de recomendar candidatos nas eleições de 2026: entenda as regras sobre deepfakes, transparência e responsabilidade de plataformas digitais."
 category: noticias
 tags:

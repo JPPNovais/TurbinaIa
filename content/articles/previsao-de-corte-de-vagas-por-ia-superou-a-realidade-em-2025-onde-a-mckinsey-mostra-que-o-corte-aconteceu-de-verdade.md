@@ -74,6 +74,8 @@ Esse cenário muda o que vale a pena fazer agora, independente do seu cargo:
 
 Nenhuma dessas medidas depende de a previsão de corte de vagas se confirmar ou não. Elas fazem sentido justamente porque o resultado observado pela McKinsey foi misto: parte das empresas não mudou nada, parte já está redesenhando funções em torno de agentes, e uma fração ainda espera cortar no próximo ano. Entender em qual desses três grupos a sua empresa está — e se posicionar antes dela decidir por você — é o uso mais prático possível desse dado.
 
+**No mesmo assunto:** [Microsoft Aposta no Copilot Só para o Trabalho](/blog/microsoft-desiste-da-corrida-pelo-chatbot-pessoal-e-aposta-tudo-num-copilot-so-para-o-trabalho), [Frontier Professional: Brasil Quase Dobra a Média Mundial](/blog/frontier-professional-por-que-o-brasil-tem-quase-o-dobro-da-media-mundial-desse-tipo-de-trabalhador-de-ia) e [Busca do Google Troca Links Azuis por Páginas do Gemini](/blog/google-search-substitui-links-azuis-por-paginas-geradas-com-gemini-35-flash-a-maior-mudanca-em-25-anos).
+
 ## Perguntas Frequentes
 
 ### A pesquisa da McKinsey significa que a IA não vai cortar vagas?

@@ -75,6 +75,8 @@ Faz sentido testar agora para quem lida com tarefas repetitivas de escrita, orga
 
 Já quem trabalha com informação sigilosa sob regras estritas de confidencialidade — área jurídica, saúde, dados financeiros de terceiros — tem motivo real para ir com calma: a cautela sobre privacidade citada por mais da metade dos não-usuários não é infundada nesses casos, e vale entender a política de retenção de dados da ferramenta específica antes de incorporá-la ao trabalho.
 
+**Veja também:** [IA Erra até 24% das Respostas sobre as Eleições 2026](/blog/ia-resiste-a-propaganda-estrangeira-mas-erra-em-ate-24-das-respostas-sobre-as-eleicoes-2026-no-brasil), [Por Que Tanta Gente Esconde que Usa IA no Trabalho](/blog/por-que-tanta-gente-esconde-que-usa-ia-no-trabalho-e-o-que-isso-esta-custando) e [Oito Estados dos EUA Processam a OpenAI pelo ChatGPT](/blog/oito-estados-dos-eua-processam-a-openai-por-danos-do-chatgpt-a-menores-e-adultos-vulneraveis).
+
 ## Perguntas Frequentes
 
 ### Quantos adultos americanos nunca usaram um chatbot de IA?

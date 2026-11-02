@@ -1,5 +1,6 @@
 ---
 title: "Google I/O 2026: Gemini 3.5, Agentes de IA e a Maior Revolução da Busca em 25 Anos"
+seoTitle: "Google I/O 2026: Gemini 3.5 e a Nova Busca com IA"
 description: "Google I/O 2026: Gemini 3.5 Flash, agentes de IA na busca, óculos inteligentes e US$ 180 bi em infraestrutura. Tudo o que foi realmente anunciado."
 category: noticias
 tags:

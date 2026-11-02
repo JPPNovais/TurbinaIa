@@ -1,5 +1,6 @@
 ---
 title: "Midjourney V8.2 Vira Padrão: O Que Muda na Personalização e Qualidade das Imagens Geradas"
+seoTitle: "Midjourney V8.2 Vira Padrão: O Que Muda nas Imagens"
 description: "Midjourney V8.2 já é o modelo padrão desde 24 de julho de 2026. Veja o que muda em estética, qualidade e personalização e como testar."
 category: ferramentas
 tags:
@@ -64,6 +65,8 @@ Para quem já é assinante, não há nenhuma etapa extra de ativação: como o m
 4. Registrar avaliações (ratings) de forma consistente — é esse histórico que alimenta a personalização mais precisa que a empresa promete.
 
 Não há mudança de plano ou de preço anunciada: as assinaturas seguem a mesma estrutura de horas rápidas e relaxadas já praticada pela Midjourney, sem valores em reais divulgados oficialmente para o mercado brasileiro além da conversão direta do dólar cobrado globalmente. Quem quer comparar o custo de gerar imagens com Midjourney frente a outras ferramentas de IA pode usar a [Calculadora de Custos](/calculadora) do Turbina IA para simular cenários de uso mensal.
+
+**Veja também:** [Como Criar Imagens com IA Grátis: Guia e Ferramentas 2026](/blog/como-criar-imagens-com-ia-gratis), [ChatGPT Images 2.5: 50% Mais Rápido e Desenho à Mão](/blog/chatgpt-images-25-modelo-de-imagem-fica-50-mais-rapido-e-ganha-recurso-de-desenhar-a-mao) e [GitHub Copilot Aposenta 6 Modelos de IA no Dia 19](/blog/github-copilot-aposenta-6-modelos-de-ia-no-dia-19-de-outubro-veja-o-que-muda-antes-do-prazo).
 
 ## Perguntas Frequentes
 

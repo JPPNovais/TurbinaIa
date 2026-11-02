@@ -1,5 +1,6 @@
 ---
 title: "Astra, Modelo Ainda Não Lançado da OpenAI, Resolve 10 Problemas Matemáticos Abertos há Décadas por US$ 2 Mil"
+seoTitle: "Astra da OpenAI: Modelo Não Lançado Resolve 10 Problemas"
 description: "OpenAI diz que seu modelo Astra resolveu 10 problemas matemáticos abertos há décadas, com provas verificáveis em Lean, por cerca de US$ 2 mil em computação."
 category: noticias
 tags:
@@ -77,6 +78,8 @@ O que se sabe é que Sam Altman demonstrou o Astra a formuladores de políticas 
 Para o leitor que não é matemático, o número mais relevante talvez não seja nenhum dos dez teoremas, mas o preço: cerca de US$ 2 mil em créditos de API para produzir resultados que resistiram a especialistas por décadas, segundo a taxa do GPT-5.6 Sol citada pela [SiliconANGLE](https://siliconangle.com/2026/08/02/openais-astra-solves-10-long-open-math-problems-publishes-proofs/). É um valor que qualquer laboratório universitário de porte médio consegue bancar — e que muda o cálculo de quem antes via pesquisa matemática de ponta como algo restrito a poucos centros com orçamento robusto. Quem quiser dimensionar o que esse tipo de gasto significa em créditos de API pode simular cenários na [Calculadora de Custos](/calculadora) do Turbina IA.
 
 Na prática, o detalhe que passou mais despercebido no noticiário é que a verificação formal — não a genialidade da prova em si — é o que torna esse anúncio diferente dos anteriores. Um modelo de linguagem pode "alucinar" uma demonstração convincente, mas um certificado em Lean não aceita atalhos: ou o argumento compila, ou não compila. É essa garantia de correção, mais do que a inteligência do sistema, que abre caminho para aplicar IA generativa em áreas onde erro não é tolerável — de criptografia a engenharia crítica. A pergunta que fica em aberto é se a comunidade matemática vai aceitar resultados anunciados por blog corporativo, ainda que verificáveis, como parte legítima do corpo de conhecimento da área, ou se vai insistir que só a revisão por pares tradicional confere esse status — questão que a própria Declaração de Leiden foi escrita para colocar em debate, segundo o [TheNextWeb](https://thenextweb.com/news/openai-astra-model-ten-math-proofs-non-sofic-groups).
+
+**No mesmo assunto:** [OpenAI Rompe Barreira de 80 Anos na Matemática com IA](/blog/openai-rompe-barreira-de-80-anos-na-matematica-com-ia-um-novo-horizonte-para-a-ciencia), [Fujitsu e OpenAI: Parceria de IA no Japão](/blog/fujitsu-e-openai-unem-forcas-para-revolucionar-a-transformacao-de-ia-nas-empresas-japonesas) e [GPT-Live-1: a Voz do ChatGPT que Fala e Escuta Junto](/blog/gpt-live-1-openai-lanca-voz-com-arquitetura-full-duplex-que-fala-e-escuta-ao-mesmo-tempo-no-chatgpt).
 
 ## Perguntas Frequentes
 

@@ -1,5 +1,6 @@
 ---
 title: "A Semana que Redefiniu a IA: Gemini, IPO da OpenAI e Desafios Globais em 2026"
+seoTitle: "Semana da IA: Gemini, IPO da OpenAI e Desafios"
 description: "Google I/O 2026, IPO da OpenAI e regulação global de IA: análise dos eventos que redefiniram o setor em maio de 2026 e o que esperar a seguir."
 category: noticias
 tags:

@@ -1,5 +1,6 @@
 ---
 title: "IA Resiste à Propaganda Estrangeira, mas Erra em Até 24% das Respostas Sobre as Eleições 2026 no Brasil"
+seoTitle: "IA Erra até 24% das Respostas sobre as Eleições 2026"
 description: "Testes da NewsGuard e da ONG Ekō mostram que chatbots barram desinformação geopolítica, mas falham feio quando o tema são as eleições brasileiras."
 category: noticias
 tags:
@@ -67,6 +68,8 @@ A explicação mais plausível para essa diferença de desempenho não é mister
 Isso não isenta as empresas de responsabilidade. Ao contrário: reforça que ferramentas amplamente usadas por eleitores brasileiros carregam um ponto cego conhecido, que já foi mapeado publicamente, e que segue sem correção visível dois meses antes da votação.
 
 Na prática, o conselho que sobra para quem usa chatbots para tirar dúvidas sobre a eleição é o mesmo que vale para qualquer apuração: nunca tratar a resposta de uma IA como fonte final. Comparar o que diferentes modelos dizem sobre a mesma pergunta — algo que dá para testar diretamente no [Comparador de IAs](/comparador) do Turbina IA — ajuda a identificar quando uma ferramenta específica está fora da curva. E formular a pergunta de um jeito que force o modelo a citar a fonte oficial, em vez de apenas responder de memória, reduz bastante o risco de alucinação; é um dos casos de uso descritos na seção de [prompts prontos](/prompts) do site.
+
+**No mesmo assunto:** [TSE Proíbe Recomendação e Ranking de IA nas Eleições](/blog/tse-endurece-regras-proibicao-de-recomendacoes-e-rankings-por-ia-nas-eleicoes-brasileiras).
 
 ## Perguntas Frequentes
 

@@ -1,5 +1,6 @@
 ---
 title: "Fujitsu e OpenAI Unem Forças para Revolucionar a Transformação de IA nas Empresas Japonesas"
+seoTitle: "Fujitsu e OpenAI: Parceria de IA no Japão"
 description: "Fujitsu e OpenAI firmam parceria estratégica para acelerar a transformação de IA nas empresas japonesas, com foco em manufatura, saúde e cibersegurança."
 category: noticias
 tags:
@@ -78,6 +79,8 @@ Outro desafio reside na lacuna de dados. Para alavancar totalmente a IA, as empr
 Por outro lado, as oportunidades são imensas. A parceria permitirá que as empresas japonesas acessem ferramentas de IA de ponta para otimizar o desenvolvimento de software, melhorar a produtividade em diversas funções e impulsionar a inovação em setores tradicionais. A automação de tarefas rotineiras, a análise preditiva e a criação de novos produtos e serviços baseados em IA podem gerar um crescimento econômico substancial e fortalecer a competitividade do Japão no cenário global.
 
 A Fujitsu já demonstrou resultados promissores com suas próprias inovações em IA, como a tecnologia de destilação de IA especializada, que reduziu em 70% os requisitos de memória GPU e custos operacionais, além de aumentar a velocidade de inferência em 11 vezes e melhorar a precisão em 43% em validações internas. Essas tecnologias mais sustentáveis já estão maduras para serem entregues aos clientes, indicando o potencial de impacto da parceria com a OpenAI. A Fujitsu também está focada em desenvolvimento de pilha completa para uma plataforma soberana, com ênfase em modelos de IA generativa leves e eficientes para implantação segura.
+
+**No mesmo assunto:** [O Paradoxo da Produtividade da IA](/blog/o-paradoxo-da-produtividade-da-ia-menos-horas-de-trabalho-mais-botsitting-e-novas-responsabilidades).
 
 ## Perguntas Frequentes
 

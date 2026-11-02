@@ -1,5 +1,6 @@
 ---
 title: "Claude Opus 5.5: Anthropic corta preço em 40% e lança modelo dez dias após pedir desaceleração da IA"
+seoTitle: "Claude Opus 5.5: Anthropic Corta o Preço em 40%"
 description: "Anthropic lança o Opus 5.5 com preço 40% menor e recorde em benchmarks, dez dias depois de Dario Amodei pedir para a indústria desacelerar."
 category: noticias
 tags:
@@ -80,6 +81,8 @@ Para desenvolvedores e empresas que já rodam produtos sobre a API da Anthropic,
 Já para o usuário final do [Claude](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026) — no plano pago ou gratuito — a mudança é menos visível no dia a dia, mas afeta indiretamente a velocidade das respostas e a frequência com que a Anthropic consegue lançar atualizações sem estourar o orçamento de infraestrutura. Modelos mais baratos de rodar tendem a se espalhar mais rápido pelos produtos do ecossistema — de assistentes de código a ferramentas de atendimento — porque baixam a barreira de custo para quem decide onde aplicá-los.
 
 Para quem usa o Claude para programar, o ganho aparece primeiro nos assistentes de código: os [prompts para programação](/blog/prompts-para-programacao) trazem modelos prontos para debug, testes e agentes como o Claude Code.
+
+**No mesmo assunto:** [Claude Haiku 5.5: Anthropic Corta o Preço em 90%](/blog/claude-haiku-55-anthropic-corta-preco-em-90-e-lanca-o-primeiro-modelo-haiku-com-esforco-ajustavel).
 
 ## Perguntas Frequentes
 

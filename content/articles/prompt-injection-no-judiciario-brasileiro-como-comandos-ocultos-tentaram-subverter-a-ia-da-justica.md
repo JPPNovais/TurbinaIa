@@ -93,6 +93,8 @@ No fim das contas, a IA é uma ferramenta. Sua utilidade e impacto dependem fund
 
 Para aprofundar seus conhecimentos em Inteligência Artificial, ferramentas e técnicas para otimização de trabalho, visite nosso [Glossário de IA](/glossario) para entender os principais termos e conceitos desse universo em constante evolução.
 
+**No mesmo assunto:** [Oracle na SEC: a IA Cortou 21 Mil Empregos em Um Ano](/blog/oracle-admite-na-sec-que-a-ia-eliminou-21-mil-empregos-em-um-ano-o-documento-que-encerra-o-debate).
+
 ## Perguntas Frequentes
 
 ### O que é Prompt Injection?

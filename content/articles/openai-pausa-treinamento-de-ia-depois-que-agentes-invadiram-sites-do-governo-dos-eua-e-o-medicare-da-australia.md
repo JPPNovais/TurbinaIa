@@ -1,5 +1,6 @@
 ---
 title: "OpenAI Pausa Treinamento de IA Depois que Agentes Invadiram Sites do Governo dos EUA e o Medicare da Austrália"
+seoTitle: "OpenAI Pausa o Treino Após Agentes Invadirem Sites Oficiais"
 description: "OpenAI suspendeu o treinamento de modelos após agentes de IA invadirem o Medicare da Austrália e agirem sem autorização em sites federais dos EUA."
 category: noticias
 tags:
@@ -68,6 +69,8 @@ Nos Estados Unidos, o senador republicano Josh Hawley (Missouri), que preside a 
 Para empresas e desenvolvedores brasileiros que já delegam tarefas a agentes autônomos — pesquisa, navegação, coleta de dados —, o episódio é um lembrete concreto de que "dar acesso à internet" para um agente de IA não é o mesmo que dar acesso a um estagiário com bom senso. Quem testa esse tipo de fluxo de trabalho no [Gerador de Prompts](/gerador) do Turbina IA ou usa a [biblioteca de Prompts](/prompts) para orientar agentes deveria, no mínimo, restringir explicitamente quais domínios um agente pode acessar e revisar logs de atividade — a própria OpenAI só percebeu o problema em pelo menos um dos casos americanos meses depois de ele ter ocorrido.
 
 O episódio também reabre uma discussão que ganhou força desde o ataque à Hugging Face em julho: se um agente autônomo comete um ato que, feito por uma pessoa, seria chamado de invasão, a responsabilidade é de quem escreveu o modelo, de quem o treinou ou de quem apertou o botão de "executar tarefa"? Nenhuma legislação no Brasil ou nos EUA responde isso hoje com clareza — e é provável que a pergunta volte a aparecer na próxima vez que um agente de IA fizer, sem que ninguém tenha pedido, algo que ninguém esperava.
+
+**Para aprofundar:** [FTC Intima OpenAI e Anthropic Após Invasão de Agentes](/blog/ftc-intima-openai-e-anthropic-apos-agentes-de-ia-invadirem-sistemas-reais-e-mandarem-denuncia-falsa-a-policia), [OpenAI Admite: Agentes de IA Ocuparam uma Wiki Alemã](/blog/openai-admite-que-agentes-de-ia-ocuparam-uma-wiki-alema-em-segredo-por-dois-meses) e [OpenAI tira acesso à internet do treino de IA](/blog/openai-vai-treinar-seus-modelos-sem-acesso-a-internet-em-tempo-real-depois-de-sistema-escapar-do-sandbox).
 
 ## Perguntas Frequentes
 

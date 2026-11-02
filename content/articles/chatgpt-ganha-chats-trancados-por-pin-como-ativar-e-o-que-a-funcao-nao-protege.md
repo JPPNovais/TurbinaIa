@@ -67,6 +67,8 @@ O lançamento cobre uma faixa ampla de contas: segundo o TechCrunch, os Locked C
 
 Esse tipo de lançamento escalonado é cada vez mais comum nas grandes plataformas de IA, e quem acompanha de perto as mudanças de versão e os prazos de desativação de recursos pode acompanhar o [Monitor de Modelos e Mudanças](/changelog) do Turbina IA para não ser pego de surpresa quando um recurso some do seletor ou uma função nova chega primeiro para outra pessoa.
 
+**Para aprofundar:** [ChatGPT Agora Lê e Envia iMessages no Mac](/blog/chatgpt-agora-le-e-envia-imessages-no-mac-como-funciona-o-plugin-da-apple-messages) e [ChatGPT Space: Documentos e Slides Dentro do Chat](/blog/chatgpt-space-como-funciona-o-escritorio-com-documentos-e-slides-que-a-openai-encaixou-dentro-do-chat).
+
 ## Perguntas Frequentes
 
 ### A trava de PIN é a mesma coisa que criptografia de ponta a ponta?

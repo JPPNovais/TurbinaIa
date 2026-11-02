@@ -1,5 +1,6 @@
 ---
 title: "NotebookLM Virou Gemini Notebook: Como Funciona o Novo Recurso que Executa Código Dentro das Suas Notas"
+seoTitle: "Gemini Notebook: o NotebookLM Agora Executa Código"
 description: "O Google renomeou o NotebookLM para Gemini Notebook e adicionou um 'computador na nuvem' que roda código nativamente. Veja o que mudou e quem já tem acesso."
 category: ferramentas
 tags:
@@ -76,6 +77,8 @@ Isso não invalida o recurso, mas muda a forma correta de usá-lo: tratar cada g
 Quem já usava o NotebookLM não precisa fazer nada — o link antigo redireciona sozinho e as notas continuam no lugar. Para quem nunca usou: o fluxo básico é enviar PDFs, links, transcrições ou planilhas como fontes, e a partir daí pedir resumos, tirar dúvidas pontuais ou gerar um Audio Overview — o resumo em formato de podcast que já era o recurso mais compartilhado da ferramenta antes da mudança de nome. Para quem tem AI Ultra ou Workspace elegível, o passo extra é simplesmente pedir uma análise que exija cálculo ou visualização; o ambiente de código entra em ação sem configuração manual.
 
 Vale lembrar que, mesmo com o novo nome, a proposta central não mudou: o Gemini Notebook responde só com base no que você enviou, não sai buscando dados soltos na internet como fariam [ChatGPT](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026) ou Perplexity em modo de pesquisa aberta. É um trade-off — menos abrangência, mais controle sobre a fonte — que continua sendo o principal motivo de gente usar a ferramenta para revisar bibliografia, organizar reuniões longas ou estruturar um projeto a partir de documentos próprios.
+
+**Veja também:** [Gemini Chega ao Windows com Atalho Alt+Space](/blog/gemini-chega-ao-windows-com-atalho-altspace-como-funciona-precos-e-o-que-ainda-falta).
 
 ## Perguntas Frequentes
 

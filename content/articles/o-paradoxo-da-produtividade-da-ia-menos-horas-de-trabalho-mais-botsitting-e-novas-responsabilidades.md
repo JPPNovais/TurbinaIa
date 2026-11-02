@@ -94,6 +94,8 @@ A evolução da IA está redefinindo o trabalho, mas o foco está na sinergia en
 
 Para desenvolver as habilidades de prompt engineering mencionadas neste artigo e usar a IA com mais eficiência, explore nossa biblioteca de [prompts prontos](/prompts). Acompanhe mais análises sobre inovações e tendências da IA no nosso [Monitor de Modelos](/changelog).
 
+**Veja também:** [Fujitsu e OpenAI: Parceria de IA no Japão](/blog/fujitsu-e-openai-unem-forcas-para-revolucionar-a-transformacao-de-ia-nas-empresas-japonesas).
+
 ## Perguntas Frequentes
 
 ### O que é "botsitting"?

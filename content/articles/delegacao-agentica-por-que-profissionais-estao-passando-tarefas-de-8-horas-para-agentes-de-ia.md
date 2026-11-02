@@ -1,5 +1,6 @@
 ---
 title: "Delegação Agêntica: Por Que Profissionais Estão Passando Tarefas de 8 Horas para Agentes de IA"
+seoTitle: "Delegação Agêntica: Tarefas de 8 Horas para Agentes de IA"
 description: "Estudo da OpenAI com dados do Codex mostra times de Direito, Financeiro e RH delegando tarefas longas a agentes. Entenda o que muda no trabalho."
 category: tutoriais
 tags:
@@ -69,6 +70,8 @@ Vale também acompanhar de perto os lançamentos de modelos com capacidade esten
 ## O que fica em aberto
 
 O estudo da OpenAI é, ao mesmo tempo, a evidência mais concreta até agora de que times reais estão confiando tarefas cada vez maiores a agentes — e um lembrete de que boa parte dessa evidência vem de dentro de casa. A pergunta que resta para 2026 não é mais se a delegação agêntica funciona para casos isolados. É se ela se sustenta fora do ambiente controlado de uma empresa que constrói a própria ferramenta, com seus próprios incentivos para que o número pareça bom.
+
+**Para aprofundar:** [Fim do Vibe Coding: IA em 60% do Código, Confiança em 20%](/blog/o-fim-do-vibe-coding-por-que-programadores-usam-ia-em-60-do-codigo-mas-so-confiam-sem-supervisao-em-20), [OpenAI Encerra o ChatGPT Atlas](/blog/openai-encerra-o-chatgpt-atlas-por-que-os-agentes-de-ia-estao-migrando-para-dentro-do-navegador-que-voce-ja-usa) e [Gemini 3.5 Flash: a IA do Google para a Era Agêntica](/blog/gemini-35-flash-a-nova-ia-do-google-acelera-a-era-agentica-com-poder-e-eficiencia).
 
 ## Perguntas Frequentes
 

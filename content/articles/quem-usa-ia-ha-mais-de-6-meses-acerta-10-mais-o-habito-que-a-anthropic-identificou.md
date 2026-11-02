@@ -67,6 +67,8 @@ O relatório não vem com um manual de uso, mas os números apontam para um cami
 
 Nenhum desses hábitos depende de acesso a um modelo mais caro ou mais novo. Depende de repetição e de um pouco de método — o que, aliás, é consistente com a própria explicação que a Anthropic oferece para o fenômeno: habilidade de usar IA bem parece ser uma habilidade que se constrói com uso, não um talento que a pessoa já tem ou não tem de fábrica.
 
+**No mesmo assunto:** [Claude Unifica a Memória Entre Chat e Cowork](/blog/claude-unifica-a-memoria-entre-chat-e-cowork-como-funciona-e-como-editar-o-que-a-ia-lembra-de-voce) e [De Planilha a Conselho Emocional](/blog/de-planilha-a-conselho-emocional-dados-da-anthropic-mostram-como-o-uso-da-ia-muda-no-fim-de-semana).
+
 ## Perguntas Frequentes
 
 ### O que significa "usuário veterano" no relatório da Anthropic?

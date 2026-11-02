@@ -11,7 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-07-17"
-updatedAt: "2026-10-19"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxPJTIwcXVlJTIwJUMzJUE5JTIwQ29udGV4dCUyMEVuZ2luZWVyaW5nJTIwZSUyMFBvciUyMHF1ZSUyMEVzdCVDMyVBMSUyMFN1YnN0aXR1aW5kbyUyMG8lMjBQcm9tcHQlMjBFbmdpbmVlcmluZyUyMGVtJTIwMjAyNiUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3ODQzMDk0MDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
@@ -32,6 +32,12 @@ Um exemplo que a própria Anthropic usa para ilustrar o problema: um agente de I
 O levantamento do arXiv, assinado por pesquisadores de instituições como a Academia Chinesa de Ciências, a Tsinghua e a Universidade de Pequim, mostra que o termo deixou de ser jargão de marketing e passou a descrever um problema de engenharia com literatura própria. Trabalhos mais recentes já propõem critérios formais para avaliar a qualidade do que é enviado ao modelo: **relevância, suficiência, isolamento, economia e proveniência**.
 
 ![Imagem ilustrativa sobre O que é 'Context Engineering' e Por que Está Substituindo o Prompt Engineering em 2026](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80)
+
+## Quem deu nome à prática
+
+O termo não nasceu no guia da Anthropic. Em 18 de junho de 2025, Tobi Lütke, CEO da Shopify, escreveu que preferia "context engineering" a "prompt engineering" para descrever o trabalho de quem constrói sistemas com IA. Uma semana depois, Andrej Karpathy — ex-OpenAI e ex-Tesla — descreveu a prática como "a arte e a ciência delicadas de preencher a janela de contexto com exatamente a informação certa para o próximo passo".
+
+Em 28 de julho de 2025, a [Gartner publicou a nota](https://www.gartner.com/en/documents/6781234) "Lead the Shift to Context Engineering as Prompt Engineering Fades", recomendando que líderes de tecnologia investissem em arquiteturas que entregam o dado certo, no momento certo, para o agente certo — em vez de treinar equipes só para redigir prompts. Em 29 de agosto de 2025, a [Cognizant anunciou](https://news.cognizant.com/2025-08-29-Cognizant-to-Deploy-1,000-Context-Engineers,-Powered-by-ContextFabric-TM-,-to-Industrialize-Agentic-AI) que treinaria 1.000 funcionários como engenheiros de contexto. O CEO Ravi Kumar S resumiu o motivo: na era dos modelos de linguagem, a vantagem competitiva está em quem controla o contexto, não em quem escreve a instrução mais bonita.
 
 ## Por que o prompt perfeito parou de ser o diferencial
 
@@ -84,7 +90,9 @@ Para agentes que rodam por muitos passos — pesquisa aprofundada, automações 
 | **Notas estruturadas (memória agêntica)** | O agente grava, periodicamente, anotações persistidas fora da janela de contexto atual | Tarefas que avançam por etapas distintas e precisam "lembrar" decisões anteriores |
 | **Arquitetura de subagentes** | Um agente explora dezenas de milhares de tokens e devolve só um resumo condensado (tipicamente 1.000–2.000 tokens) para o agente principal | Pesquisa ou exploração ampla que não precisa poluir o fio principal da tarefa |
 
-A compactação mais segura, segundo a Anthropic, é simplesmente descartar resultados de ferramentas já antigos e manter os arquivos mais recentemente acessados — uma forma de "arrumar a mesa" sem perder o fio da tarefa. As notas estruturadas são exatamente o que resolveria o problema do agente de Pokémon citado acima. Já a arquitetura de subagentes permite que uma exploração ampla e ruidosa aconteça "em outro cômodo", sem que o agente principal precise carregar tudo o que foi investigado, só a conclusão.
+A compactação mais segura, segundo a Anthropic, é simplesmente descartar resultados de ferramentas já antigos e manter os arquivos mais recentemente acessados — uma forma de "arrumar a mesa" sem perder o fio da tarefa. As notas estruturadas são exatamente o que resolveria o problema do agente de Pokémon citado acima. Já a arquitetura de subagentes permite que uma exploração ampla e ruidosa aconteça "em outro cômodo", sem que o agente principal precise carregar tudo o que foi investigado, só a conclusão. O relatório ["The 2026 State of AI Agents"](https://claude.com/resources/guides/the-2026-state-of-ai-agents-report), da própria Anthropic, descreve empresas saindo de pilotos isolados para agentes de ponta a ponta, com um agente coordenador que recebe dos auxiliares só um resumo — muitas vezes entre 1.000 e 2.000 tokens.
+
+Há uma quarta tática, a **recuperação just-in-time**: em vez de carregar um documento inteiro só porque ele pode ser útil, o agente guarda uma referência leve — um caminho de arquivo ou uma consulta salva — e só busca o conteúdo completo no momento em que precisa dele. É o mesmo princípio que permite a um agente de código percorrer um repositório sem colocar cada arquivo na conversa de uma vez.
 
 ### Para quem usa IA no dia a dia, sem programar agentes
 
@@ -145,7 +153,13 @@ Se sua equipe já colocou um agente em produção e está enfrentando respostas 
 
 Já para quem lidera adoção de IA dentro de uma empresa, o recado das fontes consultadas é convergente: a arquitetura de dados deixou de ser um projeto de TI separado do projeto de IA — ela é o projeto de IA. Como resume Irfan Khan, da SAP, [a única previsão confiável sobre os próximos meses de IA é que ninguém tem certeza do que vai acontecer](https://www.technologyreview.com/2026/03/10/1134083/building-a-strong-data-infrastructure-for-ai-agent-success/) — o que sobra como estratégia sólida é garantir que os modelos estejam ancorados em dados confiáveis, bem governados e contextualmente ricos, independente de qual modelo específico dominar o mercado daqui a um ano.
 
+**Leia também:** [A Armadilha do Resultado Perfeito](/blog/a-armadilha-do-resultado-perfeito-por-que-voce-checa-menos-os-erros-quando-a-ia-entrega-algo-bonito), [UnitedHealth Aposta US$ 3 Bilhões em IA](/blog/unitedhealth-aposta-us-3-bilhoes-em-ia-agentes-autonomos-ligam-para-medicos-e-transformam-o-plano-de-saude-americano) e [Prompt Engineering: Como Criar Prompts Melhores](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa).
+
 ## Perguntas Frequentes
+
+### O que é context engineering, em poucas palavras?
+
+É a prática de controlar e organizar tudo o que um modelo de IA recebe antes de gerar uma resposta — não só o pedido direto, mas histórico de conversa, documentos, resultados de ferramentas e instruções de sistema — para que a informação relevante não se perca no meio do ruído.
 
 ### Context engineering substitui completamente o prompt engineering?
 Não por completo. O prompt continua importando, mas seu peso relativo caiu porque modelos mais recentes exigem menos "mão na roda" e passaram a operar com acesso direto a dados e ferramentas específicas de cada organização, segundo especialistas [ouvidos pela BusinessThink da UNSW](https://www.businessthink.unsw.edu.au/articles/context-engineering-ai-agents-enterprise-ai). A própria Anthropic descreve context engineering como uma progressão do prompt engineering, não um substituto: a engenharia de contexto amplia o escopo do trabalho, não elimina a necessidade de escrever boas instruções.
@@ -175,3 +189,6 @@ Não. A parte de engenharia — poda automática, subagentes, compactação — 
 - [The foundational elements of AI architecture that IT leaders need to scale - MIT Technology Review](https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale/)
 - [Building a strong data infrastructure for AI agent success - MIT Technology Review](https://www.technologyreview.com/2026/03/10/1134083/building-a-strong-data-infrastructure-for-ai-agent-success/)
 - [Context engineering: The next AI arms race? - BusinessThink, UNSW](https://www.businessthink.unsw.edu.au/articles/context-engineering-ai-agents-enterprise-ai)
+- [Cognizant to Deploy 1,000 Context Engineers - Cognizant](https://news.cognizant.com/2025-08-29-Cognizant-to-Deploy-1,000-Context-Engineers,-Powered-by-ContextFabric-TM-,-to-Industrialize-Agentic-AI)
+- [Lead the Shift to Context Engineering as Prompt Engineering Fades - Gartner](https://www.gartner.com/en/documents/6781234)
+- [The 2026 State of AI Agents Report - Anthropic](https://claude.com/resources/guides/the-2026-state-of-ai-agents-report)

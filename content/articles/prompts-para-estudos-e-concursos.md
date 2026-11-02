@@ -24,6 +24,8 @@ Este artigo reúne 30 prompts práticos, organizados por tipo de uso, para você
 
 **Resposta Rápida (TL;DR):** Cole um dos prompts abaixo no ChatGPT, substitua o que está em [colchetes] pelo seu contexto real e execute. Os melhores usos são resumir matéria, gerar questões de simulado e criar plano de estudos semanal. Confirme sempre informações factuais em fontes oficiais — a IA pode cometer erros.
 
+Fora dos estudos, a lista de [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) reúne mais de 100 modelos de trabalho, escrita e programação.
+
 ---
 
 ## Como a IA Acelera os Estudos

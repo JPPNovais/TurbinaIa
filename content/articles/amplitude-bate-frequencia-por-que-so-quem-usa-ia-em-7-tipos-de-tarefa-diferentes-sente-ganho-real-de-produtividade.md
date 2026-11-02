@@ -1,5 +1,6 @@
 ---
 title: "Amplitude Bate Frequência: Por Que Só Quem Usa IA em 7 Tipos de Tarefa Diferentes Sente Ganho Real de Produtividade"
+seoTitle: "Amplitude Bate Frequência: IA em 7 Tipos de Tarefa"
 description: "Gallup ouviu 22 mil trabalhadores dos EUA: quem usa IA em 7 ou mais tipos de tarefa tem o dobro de ganho de produtividade de quem usa pouco. Entenda a lógica."
 category: tutoriais
 tags:
@@ -75,6 +76,8 @@ Na prática, o caminho sugerido pelos próprios dados é simples de descrever, m
 5. **Leve em conta o custo de escalar.** Ampliar o uso para tarefas mais pesadas, como análise de grandes volumes de dados, muda o consumo de tokens — a [Calculadora de Custos](/calculadora) do site dá uma estimativa de quanto isso pesa no orçamento antes de expandir o uso.
 
 Nenhum desses passos depende de acesso a uma ferramenta nova ou de orçamento adicional relevante — a maioria das plataformas já usadas no dia a dia cobre as sete categorias medidas pela Gallup. O que falta, segundo o próprio dado, é a decisão deliberada de testar fora do uso já dominado.
+
+**No mesmo assunto:** [Quem Aproveita a IA no Trabalho, Segundo a Gallup](/blog/o-que-realmente-separa-quem-aproveita-a-ia-no-trabalho-de-quem-fica-para-tras-segundo-a-gallup), [IA no Trabalho Aumenta E-mails e Reduz o Foco](/blog/ia-no-trabalho-aumenta-o-volume-de-e-mails-e-reduz-o-foco-mostram-tres-estudos-globais-de-2026) e [Frontier Professional: Brasil Quase Dobra a Média Mundial](/blog/frontier-professional-por-que-o-brasil-tem-quase-o-dobro-da-media-mundial-desse-tipo-de-trabalhador-de-ia).
 
 ## Perguntas Frequentes
 

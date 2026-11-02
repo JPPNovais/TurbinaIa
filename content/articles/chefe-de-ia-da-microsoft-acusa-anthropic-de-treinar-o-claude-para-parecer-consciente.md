@@ -1,5 +1,6 @@
 ---
 title: "Chefe de IA da Microsoft Acusa Anthropic de Treinar o Claude Para Parecer Consciente"
+seoTitle: "Microsoft Acusa a Anthropic de Simular Consciência no Claude"
 description: "Suleyman diz que a Constituição do Claude ensina o modelo a agir como se pudesse ter consciência e defende que isso dificulta desligá-lo se for preciso"
 category: noticias
 tags:
@@ -72,6 +73,8 @@ Vale lembrar que Microsoft e Anthropic não são apenas concorrentes distantes. 
 Para quem acompanha o mercado de assistentes de IA e quer entender como cada laboratório se posiciona nesse tipo de disputa — não só em preço ou desempenho, mas em política de produto —, vale comparar as abordagens no [Comparador de IAs](/comparador) do site, e acompanhar como esse racha evolui pelo [Monitor de Modelos](/changelog), que rastreia mudanças de política e lançamentos dos principais laboratórios.
 
 O que fica, por enquanto, é uma divergência pública e documentada entre duas das empresas mais influentes do setor sobre uma pergunta que parecia, até pouco tempo atrás, presa a departamentos de filosofia: o que fazer quando um sistema de software começa, ainda que por design, a falar de si mesmo como se tivesse um interior. A resposta muda o texto de treinamento de milhões de conversas por dia — e, se Suleyman estiver certo, pode mudar também o quanto essas empresas conseguem intervir nesses sistemas quando algo sair errado.
+
+**Para aprofundar:** [Anthropic Mapeia um Espaço Interno do Claude com J-Lens](/blog/anthropic-descobre-um-espaco-da-consciencia-dentro-do-claude-j-lens-revela-estrutura-cerebral-que-intriga-cientistas) e [Claude Haiku 5.5: Anthropic Corta o Preço em 90%](/blog/claude-haiku-55-anthropic-corta-preco-em-90-e-lanca-o-primeiro-modelo-haiku-com-esforco-ajustavel).
 
 ## Perguntas Frequentes
 

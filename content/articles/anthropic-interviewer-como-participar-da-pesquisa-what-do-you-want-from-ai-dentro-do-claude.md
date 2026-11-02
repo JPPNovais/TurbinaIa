@@ -1,5 +1,6 @@
 ---
 title: "Anthropic Interviewer: Como Participar da Pesquisa 'What Do You Want from AI?' Dentro do Claude"
+seoTitle: "Anthropic Interviewer: Como Entrar na Pesquisa no Claude"
 description: "Anthropic abre nova pesquisa com IA entrevistadora a usuários do Claude até 6 de outubro. Veja quem pode participar, como funciona e o que muda."
 category: ferramentas
 tags:
@@ -51,6 +52,8 @@ Esse tipo de achado é parte do que os pesquisadores chamam de tensões de "luz 
 ## Como participar, na prática
 
 Quem tem conta no Claude.ai ou no Claude Code há mais de duas semanas, em qualquer um dos planos Free, Pro ou Max, pode receber o convite para a entrevista até 6 de outubro. A Anthropic não detalhou publicamente se o convite aparece para todos os usuários elegíveis ou para uma amostra, então a orientação mais segura é conferir o próprio aplicativo ou site do Claude durante a janela do estudo. Antes de começar, cada participante recebe um termo de consentimento explicando como as respostas serão usadas — e só então decide se topa deixar a conversa pública ao final. Quem gosta de acompanhar terminologia nova do setor de IA pode consultar o [Glossário de IA](/glossario) do Turbina IA para entender termos como "índice econômico" ou "pesquisa qualitativa em escala" que aparecem com frequência nesse tipo de estudo.
+
+**Leia também:** [Claude Haiku 4.5 Sai do Seletor em 29/10: O Que Muda](/blog/claude-haiku-45-sai-do-seletor-de-modelos-em-29-de-outubro-o-que-muda-e-como-se-preparar) e [Claude Unifica a Memória Entre Chat e Cowork](/blog/claude-unifica-a-memoria-entre-chat-e-cowork-como-funciona-e-como-editar-o-que-a-ia-lembra-de-voce).
 
 ## Perguntas Frequentes
 

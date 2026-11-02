@@ -24,6 +24,8 @@ Este guia reúne 40 prompts para programação organizados por tarefa: escrever 
 
 **Resposta Rápida (TL;DR):** Um bom prompt de programação informa a linguagem e a versão, traz o código ou o erro relevante, explica o que deveria acontecer e pede um formato de saída (só a função, o diff ou a explicação linha a linha). Os 40 modelos abaixo cobrem escrever, debugar, refatorar, testar e documentar código, além de SQL, Git e agentes como Claude Code, Cursor e Copilot. Funcionam no ChatGPT, no Claude e no Gemini.
 
+Fora do código, a lista de [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) organiza mais de 100 modelos por tarefa. No Gemini, use os [prompts para o Gemini](/blog/prompts-para-gemini). Para a operação da empresa, há [prompts para negócios](/blog/prompts-para-negocios-e-empreendedores).
+
 **Escolha a categoria:**
 
 - [Escrever código](#prompts-para-escrever-codigo) — 7 prompts

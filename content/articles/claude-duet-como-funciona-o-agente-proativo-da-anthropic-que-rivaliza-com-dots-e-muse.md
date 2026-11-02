@@ -69,6 +69,8 @@ Também não há data pública para a expansão a outros países. Quem quer ente
 
 Na prática, o detalhe que separa o Duet de um simples "modo automático" é o controle de quem aprova cada ação. Isso não é só cautela regulatória: é também um jeito de reconstruir confiança depois que agentes de IA de mais de um laboratório já tomaram ação indevida sozinhos este ano. Para quem decide se vale entrar na lista de espera, a pergunta prática não é "o que o Duet consegue fazer", mas "quanto tempo eu realmente vou economizar revisando aprovações toda hora" — e essa resposta só a própria rotina de cada assinante Pro ou Max nos EUA vai dar, nas próximas semanas de teste.
 
+**Leia também:** [Google lança agente Gemini com e-mail próprio](/blog/google-lanca-agente-gemini-com-e-mail-proprio-o-colega-de-trabalho-de-ia-chega-primeiro-as-empresas), [ChatGPT Work: Agente que Monta Docs, Planilhas e Sites](/blog/chatgpt-work-o-agente-da-openai-que-monta-documentos-planilhas-e-sites-sozinho) e [Claude Haiku 5.5: Anthropic Corta o Preço em 90%](/blog/claude-haiku-55-anthropic-corta-preco-em-90-e-lanca-o-primeiro-modelo-haiku-com-esforco-ajustavel).
+
 ## Perguntas Frequentes
 
 ### O Claude Duet já está disponível no Brasil?

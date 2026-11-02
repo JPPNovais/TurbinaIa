@@ -50,10 +50,10 @@ function cutAtWord(text: string, max: number): string {
   return trimTrailingNoise(lastSpace > 0 ? slice.slice(0, lastSpace) : text.slice(0, max));
 }
 
-// Corte no meio da frase ganha reticências, como o próprio Google faz no SERP.
-function cutWithEllipsis(text: string, max: number): string {
-  if (text.length <= max) return text;
-  return `${cutAtWord(text, max - 1)}…`;
+// O <title> nunca leva reticências: "…" no meio da manchete derruba o clique.
+// O corte fica no limite da palavra, sem preposição ou aspa solta no fim.
+function cutClean(text: string, max: number): string {
+  return cutAtWord(text, max).replace(/[….]{2,}|…/g, '').replace(/\s{2,}/g, ' ').trim();
 }
 
 function withBrand(title: string): string {
@@ -68,12 +68,15 @@ function withBrand(title: string): string {
  *   2. o próprio título, se couber;
  *   3. o título sem o parêntese final — "(Testadas e Comparadas)";
  *   4. a parte antes de ":", "—" ou "?" (a "manchete" do título);
- *   5. corte no limite de palavra com reticências, sem preposição solta no fim.
+ *   5. corte no limite de palavra, sem reticências e sem preposição solta no fim.
  * A marca é acrescentada só quando ainda cabe.
  */
 export function buildArticleTitle(title: string, seoTitle?: string): string {
   const clean = title.replace(/\s+/g, ' ').trim();
-  if (seoTitle && seoTitle.trim()) return withBrand(seoTitle.trim());
+  if (seoTitle && seoTitle.trim()) {
+    const chosen = cutClean(seoTitle.trim(), TITLE_MAX);
+    return withBrand(chosen);
+  }
   if (clean.length <= TITLE_MAX) return withBrand(clean);
 
   const noParen = clean.replace(/\s*\([^)]*\)\s*$/, '').trim();
@@ -88,11 +91,11 @@ export function buildArticleTitle(title: string, seoTitle?: string): string {
       const rest = clean.slice(sep[0].length).trim();
       const joiner = sep[2] === '?' ? ' ' : ': ';
       const room = TITLE_MAX - head.length - joiner.length;
-      if (room >= 15) return `${head}${joiner}${cutWithEllipsis(rest, room)}`;
+      if (room >= 15) return cutClean(`${head}${joiner}${cutAtWord(rest, room)}`, TITLE_MAX);
     }
   }
 
-  return cutWithEllipsis(noParen, TITLE_MAX);
+  return cutClean(noParen, TITLE_MAX);
 }
 
 /** Corta a meta description no limite de palavra, com reticências. */

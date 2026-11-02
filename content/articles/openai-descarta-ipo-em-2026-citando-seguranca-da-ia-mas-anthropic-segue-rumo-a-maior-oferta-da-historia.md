@@ -70,6 +70,8 @@ Isso reforça um ponto que já vínhamos cobrindo por aqui: a discussão sobre a
 
 Fica também uma lição prática para quem depende desses laboratórios profissionalmente: cronogramas de lançamento e cronogramas financeiros de empresas de IA estão, hoje, mais sujeitos a decisões políticas e de segurança do que a métricas de produto isoladas. Isso vale tanto para quem planeja adotar um modelo novo em produção quanto para quem simplesmente acompanha o noticiário para se planejar.
 
+**Veja também:** [Dario Amodei Pede Para Desacelerar a IA](/blog/dario-amodei-pede-para-desacelerar-a-ia-altman-e-musk-concordam-trump-discorda) e [G7 2026: Altman, Amodei e Hassabis Pedem Fórum Global de IA](/blog/g7-2026-altman-amodei-e-hassabis-propoem-forum-global-de-ia-e-coalizao-liderada-pelos-eua-para-regular-modelos-de-fronteira).
+
 ## Perguntas Frequentes
 
 ### A OpenAI cancelou a IPO?

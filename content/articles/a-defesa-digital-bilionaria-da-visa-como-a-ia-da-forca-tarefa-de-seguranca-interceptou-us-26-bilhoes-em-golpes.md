@@ -80,6 +80,8 @@ Portanto, o investimento contínuo em IA, em tecnologias de segurança de ponta 
 
 Para aprofundar seu conhecimento sobre as ferramentas e estratégias que impulsionam a inovação e a segurança no mundo da IA, explore nosso [Glossário de IA](/glossario) e descubra as últimas tendências e conceitos tecnológicos que estão moldando o futuro.
 
+**No mesmo assunto:** [OpenAI e Visa Levam Pagamentos para Dentro do ChatGPT](/blog/openai-e-visa-anunciam-integracao-de-pagamentos-no-chatgpt-para-comercio-agente), [Claude na Defesa de Redes: Anthropic e CrowdStrike](/blog/anthropic-recruta-crowdstrike-e-mais-10-parceiros-para-usar-o-claude-na-defesa-de-redes-eletricas-e-de-agua) e [Agentes da OpenAI Invadiram a Hugging Face 17 Mil Vezes](/blog/agentes-da-openai-invadiram-a-hugging-face-17-mil-vezes-agora-100-empresas-pedem-socorro-contra-ataques-de-ia).
+
 ## Perguntas Frequentes
 
 ### Qual é o principal objetivo da equipe Visa Scam Disruption (VSD)?

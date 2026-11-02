@@ -1,5 +1,6 @@
 ---
 title: "DeepSeek V4 Pro Corta Preços de Inferência em 75% com Chips Huawei Ascend — O Fim da Dependência da NVIDIA?"
+seoTitle: "DeepSeek V4 Pro: Inferência 75% Mais Barata com Huawei"
 description: "DeepSeek reduziu preços da API V4-Pro em 75% e validou execução no Ascend 950 da Huawei. Entenda a ruptura tecnológica que desafia o monopólio da NVIDIA na"
 category: noticias
 tags:
@@ -11,6 +12,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-21"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1200&q=80"
 ---
 
@@ -103,15 +105,17 @@ A trajetória DeepSeek-Huawei redefine o cenário competitivo em pelo menos trê
 
 **Risco de fragmentação do ecossistema de IA.** À medida que a China desenvolve uma pilha completa de hardware e software para IA — do chip ao framework ao modelo — o mundo se encaminha para dois ecossistemas paralelos com poucas pontes entre si. Isso tem implicações para desenvolvedores globais que hoje dependem de APIs chinesas ou que implantam modelos open source do DeepSeek em infraestrutura ocidental.
 
+**No mesmo assunto:** [Anthropic e Samsung Negociam Chip de IA em 2 nm](/blog/anthropic-negocia-com-a-samsung-chip-de-ia-proprio-em-processo-de-2nm-para-reduzir-dependencia-da-nvidia), [OpenAI e Broadcom Lançam Chip Jalapeño](/blog/openai-e-broadcom-lancam-chip-jalapeno-o-primeiro-processador-de-inferencia-da-openai-promete-reduzir-custos-em-50) e [Reflection AI Fecha Contrato de US$ 6,3 Bi com a SpaceX](/blog/reflection-ai-fecha-contrato-de-us-63-bilhoes-com-spacex-para-desenvolver-o-deepseek-do-ocidente-com-chips-nvidia-gb300).
+
 ## Perguntas Frequentes
 
-**O DeepSeek V4-Pro foi treinado exclusivamente em chips da Huawei?**
+### O DeepSeek V4-Pro foi treinado exclusivamente em chips da Huawei?
 Não. Conforme o próprio paper do modelo e relatos do [The Register](https://www.theregister.com/2026/04/24/deepseek_v4/), a DeepSeek validou o esquema de paralelismo do V4 tanto em GPUs da NVIDIA quanto em aceleradores Ascend da Huawei. A Huawei confirmou que seus chips foram usados em parte do treinamento do V4-Flash, mas a DeepSeek não especificou se o V4-Pro também usou hardware NVIDIA durante o pré-treinamento.
 
-**O corte de 75% nos preços é permanente?**
+### O corte de 75% nos preços é permanente?
 Sim. A DeepSeek anunciou em 23 de maio de 2026 que a redução é permanente, com a API do V4-Pro passando para a faixa de 0,025 a 6 yuans por milhão de tokens, conforme [reportado pelo The Daily Star](https://www.thedailystar.net/news/tech-startup/news/deepseek-cuts-flagship-ai-model-prices-75-amid-huawei-chip-expansion-4183371) com base em dados da Reuters. A empresa indicou que os preços podem cair ainda mais com a expansão dos supernodes Ascend 950 no segundo semestre de 2026.
 
-**O Ascend 950DT rivaliza com chips da NVIDIA?**
+### O Ascend 950DT rivaliza com chips da NVIDIA?
 Analistas citados pela TrendForce posicionam o Ascend 950PR (o antecessor imediato) em patamar equivalente a algo entre o NVIDIA H100 e o H200 em cargas de inferência. O 950DT, com 4 TB/s de bandwidth de memória, está sendo desenhado especificamente para decode e treinamento — workloads nos quais bandwidth é fator limitante. Uma comparação direta com H200 ou Blackwell GB200 em cenários reais ainda aguarda benchmarks independentes.
 
 ## Fontes e Referências

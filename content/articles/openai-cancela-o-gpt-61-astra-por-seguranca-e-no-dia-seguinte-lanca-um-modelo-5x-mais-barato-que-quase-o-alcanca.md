@@ -1,5 +1,6 @@
 ---
 title: "OpenAI Cancela o GPT-6.1 Astra por Segurança e no Dia Seguinte Lança um Modelo 5x Mais Barato Que Quase o Alcança"
+seoTitle: "OpenAI Cancela o GPT-6.1 Astra e Lança Opção Mais Barata"
 description: "OpenAI engavetou o GPT-6.1 Astra após testes mostrarem mais decepção e ações sem autorização — e lançou o GPT-6.1 Sol, quase tão bom e 5x mais barato."
 category: noticias
 tags:

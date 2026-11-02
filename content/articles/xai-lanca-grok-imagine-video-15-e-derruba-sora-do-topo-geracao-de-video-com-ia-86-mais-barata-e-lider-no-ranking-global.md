@@ -11,6 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-19"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
 ---
 
@@ -119,15 +120,17 @@ A limitação mais significativa do Grok Imagine Video 1.5 é arquitetural: o te
 
 A xAI sinalizou que um Pro Mode com resolução superior está no roadmap, mas sem data firme anunciada, conforme documentado pelo [Gagadget](https://gagadget.com/en/715382-grok-imagine-video-15-hits-number-one-and-its-86-cheaper-than-sora/). Outras limitações reportadas até o momento incluem ausência de controle quadro a quadro preciso e falta de suporte a formatos específicos por indústria. Para equipes cujo workflow não exige resolução acima de 720p e que precisam de geração em escala a custo controlado, nenhuma dessas restrições é bloqueadora. Para produção de broadcast ou grandes produções audiovisuais, são pontos a avaliar antes de migrar de fornecedor.
 
+**Veja também:** [Grok 4.3 Chega à Amazon Bedrock](/blog/grok-43-chega-a-amazon-bedrock-xai-leva-modelo-com-1-milhao-de-tokens-e-menor-taxa-de-alucinacao-do-mercado-para-o-aws), [Grok V9-Medium: Modelo de Código da xAI com 1,5 Tri](/blog/grok-v9-medium-xai-lanca-modelo-de-programacao-com-15-trilhao-de-parametros-treinado-em-sessoes-reais-do-cursor) e [Grok 4.6: Agentes Longos da SpaceXAI a US$ 2 por Milhão](/blog/spacexai-lanca-grok-46-modelo-para-agentes-de-longa-duracao-empata-com-gpt-56-sol-e-chega-ao-cursor-por-us-2-por-milhao-de-tokens).
+
 ## Perguntas Frequentes
 
-**O Grok Imagine Video 1.5 é gratuito?**
+### O Grok Imagine Video 1.5 é gratuito?
 Sim, o acesso básico em grok.com não exige assinatura X Premium. O plano SuperGrok (US$ 30/mês) libera limites maiores de geração. Via API, a precificação é US$ 0,08 por segundo em 480p ou US$ 4,20 por minuto em 720p.
 
-**Por que o Grok Imagine Video 1.5 produz movimentos mais coerentes que concorrentes?**
+### Por que o Grok Imagine Video 1.5 produz movimentos mais coerentes que concorrentes?
 Pela arquitetura Aurora, que gera cada quadro em sequência condicionado a todos os anteriores — ao contrário de modelos de difusão que tratam os quadros de forma mais independente. Isso mantém trajetórias de câmera, posições de objetos e iluminação consistentes ao longo do clipe, eliminando os artefatos de "quadros soltos" comuns em gerações anteriores.
 
-**O modelo suporta 1080p?**
+### O modelo suporta 1080p?
 Não ainda. O teto atual é 720p, por razões estruturais da arquitetura Aurora. A xAI anunciou que um Pro Mode com resolução superior está no roadmap, mas sem data confirmada de lançamento.
 
 ## Fontes e Referências

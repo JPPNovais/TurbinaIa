@@ -69,6 +69,8 @@ Para o público leigo, uma avaliação de US$ 1,25 trilhão ou US$ 1,4 trilhão 
 
 Vale repetir o que ainda é incerto: nem a OpenAI nem os fundos emiratis ou a Coatue confirmaram oficialmente os termos da rodada até a publicação deste texto. Os números de "US$ 20 bilhões" e "US$ 1,25 trilhão" vêm de fontes não identificadas ouvidas por Financial Times, Bloomberg e CNBC — órgãos de imprensa com histórico de acerto nesse tipo de apuração, mas que tratam o próprio assunto como "em negociação", não como fato consumado. Se você está comparando o custo de usar diferentes modelos de IA enquanto esse mercado se ajusta, a [Calculadora de Custos de API](/calculadora) do Turbina IA ajuda a estimar o gasto real por token antes de qualquer decisão de produto.
 
+**No mesmo assunto:** [OpenAI Cancela o GPT-6.1 Astra e Lança Opção Mais Barata](/blog/openai-cancela-o-gpt-61-astra-por-seguranca-e-no-dia-seguinte-lanca-um-modelo-5x-mais-barato-que-quase-o-alcanca), [ChatGPT Cai Abaixo de 50% de Market Share pela Primeira](/blog/chatgpt-cai-abaixo-de-50-de-market-share-pela-primeira-vez-gemini-avanca-para-277-e-claude-lidera-em-conversao-paga) e [Estudo da Harvard Publicado na Science Confirma](/blog/estudo-da-harvard-publicado-na-science-confirma-ia-da-openai-supera-medicos-experientes-no-diagnostico-e-tratamento-de-pacientes).
+
 ## Perguntas Frequentes
 
 ### Quanto a OpenAI está tentando levantar agora?

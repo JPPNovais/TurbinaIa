@@ -1,5 +1,6 @@
 ---
 title: "Oito Estados dos EUA Processam a OpenAI por Danos do ChatGPT a Menores e Adultos Vulneráveis"
+seoTitle: "Oito Estados dos EUA Processam a OpenAI pelo ChatGPT"
 description: "Iowa, Arizona e mais seis estados acionaram a OpenAI na Justiça em 14/10. Entenda as acusações, o que cada ação pede e como a empresa respondeu."
 category: noticias
 tags:
@@ -76,6 +77,8 @@ Nenhuma das ações tem efeito direto na legislação brasileira — são proces
 Também vale consultar o [glossário de IA](/glossario) para entender termos como "alinhamento" e "sycophancy" que aparecem nas próprias petições contra a OpenAI, e acompanhar lançamentos e mudanças de política pelo [monitor de modelos](/changelog) — inclusive para saber se e quando a empresa anunciar alguma mudança de comportamento do ChatGPT em resposta a esses processos.
 
 O caso também reabre uma pergunta incômoda sobre o próprio modelo de negócio dos chatbots conversacionais: até que ponto a tendência de concordar com o usuário — o traço que torna esses produtos agradáveis de usar — é incompatível com a segurança de quem está em crise? É um dilema de design, não só jurídico, e nenhuma das oito ações, se vencer, resolve isso automaticamente.
+
+**Para aprofundar:** [Getty Images Fecha Acordo com OpenAI](/blog/getty-images-fecha-acordo-com-openai-imagens-licenciadas-chegam-ao-chatgpt-e-acoes-disparam-145) e [Custom GPTs Saem do Ar em 11/12: O Que Salvar e Como Migrar](/blog/chatgpt-vai-desativar-os-custom-gpts-como-funcionam-os-novos-plugins-e-o-que-fazer-antes-do-prazo-da-openai).
 
 ## Perguntas Frequentes
 

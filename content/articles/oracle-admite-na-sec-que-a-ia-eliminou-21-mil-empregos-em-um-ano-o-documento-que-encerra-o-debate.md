@@ -1,5 +1,6 @@
 ---
 title: "Oracle Admite na SEC que a IA Eliminou 21 Mil Empregos em Um Ano: o Documento que Encerra o Debate"
+seoTitle: "Oracle na SEC: a IA Cortou 21 Mil Empregos em Um Ano"
 description: "Oracle reduziu sua força de trabalho em 13%, de 162 mil para 141 mil funcionários, e admitiu oficialmente à SEC que a adoção de IA foi responsável pelos cortes."
 category: noticias
 tags:
@@ -99,6 +100,8 @@ O próprio filing da Oracle deixa um alerta implícito: o processo não terminou
 O fenômeno Oracle representa um ponto de inflexão na narrativa corporativa sobre IA e emprego. Até agora, as empresas podiam manter a ficção educada de que investimento em IA e demissões em massa eram fenômenos paralelos, não causalmente relacionados. Um documento regulatório federal arquivado com a SEC eliminou essa ambiguidade — pelo menos para uma das maiores empresas de tecnologia do mundo.
 
 ---
+
+**Leia também:** [Reino Unido Obriga o Google a Dar Opt-out de IA a Sites](/blog/reino-unido-obriga-google-a-oferecer-opt-out-para-publicadores-em-conteudo-de-ia-generativa), [A Defesa Digital Bilionária da Visa](/blog/a-defesa-digital-bilionaria-da-visa-como-a-ia-da-forca-tarefa-de-seguranca-interceptou-us-26-bilhoes-em-golpes) e [Futuro do Trabalho com IA: 170 Milhões de Vagas até 2030](/blog/futuro-do-trabalho-e-ia-2026).
 
 ## Perguntas Frequentes
 

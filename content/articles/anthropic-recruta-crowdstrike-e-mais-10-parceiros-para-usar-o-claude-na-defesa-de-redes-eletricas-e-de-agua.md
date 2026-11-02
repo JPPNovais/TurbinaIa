@@ -1,5 +1,6 @@
 ---
 title: "Anthropic Recruta CrowdStrike e Mais 10 Parceiros Para Usar o Claude na Defesa de Redes Elétricas e de Água"
+seoTitle: "Claude na Defesa de Redes: Anthropic e CrowdStrike"
 description: "Anthropic lança o Cyber Mission: Claude e engenheiros em campo para 11 parceiros de segurança e um scanner gratuito de vulnerabilidades em código aberto."
 category: noticias
 tags:
@@ -76,6 +77,8 @@ Cobertura independente do lançamento, publicada no mesmo dia pela [Axios](https
 Para quem opera uma usina ou uma estação de tratamento, o Cyber Mission não substitui o trabalho de segurança já feito pelos parceiros — ele tenta acelerar a parte mais lenta desse trabalho, que é identificar e priorizar falhas num volume de código e equipamento que nenhum time humano consegue revisar inteiro a tempo. Para mantenedores de projetos open source, o OSS Scanner significa relatórios de vulnerabilidade gratuitos, mas também a responsabilidade extra de filtrar o que vier com classificação errada, já que não há revisão humana antes do envio. Quem quiser acompanhar como a Anthropic e outros laboratórios vêm ajustando o uso de [agentes de IA](/glossario) em tarefas sensíveis como essa pode seguir as próximas atualizações de modelo no [Monitor de Modelos do Turbina IA](/changelog), e quem avalia qual IA usar para automatizar parte da própria rotina de segurança encontra um panorama comparativo das opções disponíveis no [Guia de Ferramentas de IA](/ferramentas).
 
 O que o anúncio não traz é tão relevante quanto o que traz: não há números de quantas vulnerabilidades o OSS Scanner já encontrou, não há cronograma de quando o CIDP vai aceitar novos parceiros além dos onze iniciais, e não há detalhe público sobre como a Anthropic mede, na prática, se um relatório gerado por IA realmente acelerou uma correção que antes levava meses. São lacunas que só a operação continuada do programa — e a cobertura que vier depois dela — deve preencher.
+
+**Leia também:** [OpenAI Lança GPT-5.5-Cyber e Patch the Planet](/blog/openai-lanca-gpt-55-cyber-e-patch-the-planet-a-ia-que-encontra-valida-e-corrige-vulnerabilidades-automaticamente) e [De Planilha a Conselho Emocional](/blog/de-planilha-a-conselho-emocional-dados-da-anthropic-mostram-como-o-uso-da-ia-muda-no-fim-de-semana).
 
 ## Perguntas Frequentes
 

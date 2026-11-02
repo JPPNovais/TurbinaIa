@@ -11,6 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-18"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=1200&q=80"
 ---
 
@@ -128,15 +129,17 @@ Tanto a [AWS](https://aws.amazon.com/about-aws/whats-new/2026/06/grok-amazon-bed
 - **Suporte ao cliente com agentes** — liderança no benchmark Tau2 Telecom, que simula cenários reais de atendimento
 - **Desenvolvimento web** — citado pela AWS como área de aplicação
 
+**Leia também:** [Grok 4.6: Agentes Longos da SpaceXAI a US$ 2 por Milhão](/blog/spacexai-lanca-grok-46-modelo-para-agentes-de-longa-duracao-empata-com-gpt-56-sol-e-chega-ao-cursor-por-us-2-por-milhao-de-tokens), [xAI Lança Grok Imagine Video 1.5 e Derruba Sora do Topo](/blog/xai-lanca-grok-imagine-video-15-e-derruba-sora-do-topo-geracao-de-video-com-ia-86-mais-barata-e-lider-no-ranking-global) e [GPT-5.6: Mais Raciocínio e Janela de 1,5 Milhão de Tokens](/blog/gpt-56-cientista-chefe-da-openai-confirma-salto-significativo-em-raciocinio-janela-de-15-milhao-de-tokens-e-avancos-em-agentes-de-ia).
+
 ## Perguntas Frequentes
 
-**O Grok 4.3 está disponível no Brasil via Amazon Bedrock?**
+### O Grok 4.3 está disponível no Brasil via Amazon Bedrock?
 A disponibilidade inicial é na região `us-west-2` (Oregon). A [documentação da AWS](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-grok-4-3.html) não lista regiões brasileiras entre as suportadas no lançamento. Empresas com requisitos de residência de dados no Brasil devem verificar a política de inferência geográfica do Bedrock antes de adotar o modelo.
 
-**O Grok 4.3 no Bedrock custa o mesmo que na API direta da xAI?**
+### O Grok 4.3 no Bedrock custa o mesmo que na API direta da xAI?
 Sim, a [xAI confirma](https://docs.x.ai/developers/models/grok-4.3) o mesmo preço-base: US$ 1,25/1M tokens de entrada e US$ 2,50/1M tokens de saída. A diferença está na infraestrutura: o Bedrock acrescenta a camada de governança da AWS (IAM, CloudTrail, criptografia gerenciada), que pode justificar o uso mesmo sem desconto adicional para organizações com exigências regulatórias.
 
-**O que diferencia o raciocínio "none" do "high" em termos práticos de custo?**
+### O que diferencia o raciocínio "none" do "high" em termos práticos de custo?
 No modo `none`, o modelo responde diretamente sem etapa interna de chain-of-thought — mais rápido e com menor consumo de tokens. No modo `high`, o modelo gera tokens de raciocínio interno antes de produzir a resposta final, o que eleva o custo por requisição mas melhora a qualidade em tarefas complexas. A [xAI documenta](https://docs.x.ai/developers/models/grok-4.3) que tokens de raciocínio são cobrados como tokens de saída normais. Para estimativas de custo por caso de uso, use a [Calculadora de Custos](/calculadora).
 
 ---

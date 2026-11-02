@@ -1,5 +1,6 @@
 ---
 title: "Decreto de Trump Garante Acesso Antecipado do Governo Americano a Modelos de IA Avançados: Implicações e Contexto"
+seoTitle: "Decreto de Trump: Governo dos EUA Acessa Modelos de IA Antes"
 description: "Decreto de Trump cria programa voluntário para empresas de IA compartilharem modelos avançados com o governo dos EUA até 30 dias antes do lançamento."
 category: noticias
 tags:

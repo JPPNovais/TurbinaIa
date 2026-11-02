@@ -1,5 +1,6 @@
 ---
 title: "SpaceXAI Lança Grok 4.6: Modelo para Agentes de Longa Duração Empata com GPT-5.6 Sol e Chega ao Cursor por US$ 2 por Milhão de Tokens"
+seoTitle: "Grok 4.6: Agentes Longos da SpaceXAI a US$ 2 por Milhão"
 description: "SpaceXAI lança o Grok 4.6, modelo para agentes e codificação de longa duração que empata com o GPT-5.6 Sol e já roda no Cursor."
 category: noticias
 tags:
@@ -74,6 +75,8 @@ Uma janela de 500 mil tokens ajuda porque permite manter mais contexto de um rep
 Para desenvolvedores que já usam Cursor no dia a dia, a chegada do Grok 4.6 como opção de modelo dentro do editor significa mais uma alternativa de custo-benefício a testar lado a lado com GPT-5.6 Sol e Fable 5 — vale comparar diretamente no [Comparador de IAs](/comparador) antes de trocar o modelo padrão de um fluxo de trabalho em produção.
 
 Uma forma prática de fazer essa comparação é rodar a mesma bateria de tarefas em cada modelo: os [prompts para programação](/blog/prompts-para-programacao) trazem modelos de debug, testes e agentes de código que servem para isso.
+
+**Leia também:** [Grok 4.3 Chega à Amazon Bedrock](/blog/grok-43-chega-a-amazon-bedrock-xai-leva-modelo-com-1-milhao-de-tokens-e-menor-taxa-de-alucinacao-do-mercado-para-o-aws) e [Grok V9-Medium: Modelo de Código da xAI com 1,5 Tri](/blog/grok-v9-medium-xai-lanca-modelo-de-programacao-com-15-trilhao-de-parametros-treinado-em-sessoes-reais-do-cursor).
 
 ## Perguntas Frequentes
 

@@ -1,5 +1,6 @@
 ---
 title: "Gemini 4 Argon: Google Bate Recorde em Programação, mas Só Libera o Modelo Para Times de Cibersegurança"
+seoTitle: "Gemini 4 Argon: Recorde em Código, Acesso Restrito"
 description: "Google lança o Gemini 4 Argon com recorde em benchmark de código, mas restringe o acesso ao programa Fairwind. Veja preços, números e quando chega ao público."
 category: noticias
 tags:
@@ -72,6 +73,8 @@ O Google não divulgou um calendário firme para a expansão do acesso a Gemini 
 Fica também a pergunta sobre o que acontece quando o CWE-bench v1 — hoje empatado entre três modelos — tiver uma nova rodada de testes depois que Argon estiver fora do ambiente controlado do Fairwind Program. Empate em laboratório é diferente de empate em uso real, com adversários reais tentando explorar as mesmas falhas que o modelo deveria corrigir primeiro.
 
 Para o desenvolvedor brasileiro que hoje paga por GPT-6 Astra ou Claude Opus 5.5 via API, o lançamento de Argon funciona, por ora, mais como um aviso do que como uma opção concreta: o preço por token chamou atenção, mas de nada serve enquanto o acesso continuar restrito a um punhado de parceiros de segurança. A diferença entre o que um modelo promete em benchmark e o que ele entrega no dia a dia de quem programa é justamente o tipo de lacuna que vale revisitar quando a API for liberada de fato.
+
+**Veja também:** [Google DeepMind Lança DiffusionGemma](/blog/google-deepmind-lanca-diffusiongemma-ia-de-geracao-de-texto-4x-mais-rapida-com-difusao-e-suporte-local).
 
 ## Perguntas Frequentes
 

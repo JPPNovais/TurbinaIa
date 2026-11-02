@@ -1,5 +1,6 @@
 ---
 title: "Terapia com IA: Por Que 'Companhia e Apoio Emocional' Virou o Uso Nº1 do ChatGPT em 2026, Segundo a Harvard Business Review"
+seoTitle: "Terapia com IA: Companhia Virou o Uso Nº 1 do ChatGPT"
 description: "HBR revela que terapia e companhia lideram o uso de IA generativa pelo 2º ano seguido. Entenda os dados, riscos e como usar com responsabilidade."
 category: tutoriais
 tags:
@@ -76,6 +77,8 @@ A pesquisadora em ciberpsicologia Rachel Wood, citada pela [APA](https://apa.org
 Vale ainda considerar o fator custo na decisão de qual ferramenta usar, já que planos gratuitos e pagos de diferentes modelos têm limites de uso distintos — a [Calculadora de Custos](/calculadora) do site ajuda a estimar esse gasto antes de assinar um plano premium só para conversas mais longas. E para quem está decidindo entre ChatGPT, Gemini ou outro assistente com esse propósito, o [Comparador de IAs](/comparador) reúne as diferenças relevantes entre os modelos disponíveis hoje.
 
 O quadro que emerge dos dados de 2026 não é de pânico nem de celebração. É de uma tecnologia que virou, para milhões de pessoas, a porta de entrada mais barata e mais disponível para falar sobre o que dói — com todos os riscos que isso implica quando quem responde do outro lado não é, de fato, alguém capaz de perceber quando a conversa deixou de ser desabafo e virou emergência.
+
+**Leia também:** [IA para o ENEM 2026: 7 em 10 Alunos Já Estudam com IA](/blog/ia-para-o-enem-2026-o-que-fazer-com-os-dados-que-mostram-7-em-cada-10-alunos-ja-usando-ia-para-estudar).
 
 ## Perguntas Frequentes
 

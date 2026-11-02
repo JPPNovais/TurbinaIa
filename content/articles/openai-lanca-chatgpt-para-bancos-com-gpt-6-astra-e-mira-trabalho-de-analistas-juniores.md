@@ -1,5 +1,6 @@
 ---
 title: "OpenAI Lança ChatGPT para Bancos com GPT-6 Astra e Mira Trabalho de Analistas Juniores"
+seoTitle: "ChatGPT para Bancos: OpenAI Mira Analistas com o GPT-6 Astra"
 description: "OpenAI lança ChatGPT for Financial Services com GPT-6 Astra, dados da PitchBook e LSEG, e parceria com Morgan Stanley. Veja o que muda para bancos."
 category: noticias
 tags:

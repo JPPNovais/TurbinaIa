@@ -11,6 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-22"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxBbmRyb2lkJTIwMTclMjBDaGVnYSUyMGNvbSUyMEdlbWluaSUyME9tbmklMkMlMjBMeXJpYSUyMDMlMjBlJTIwQXVkaW9MTSUzQSUyMEdvb2dsZSUyMFRyYW5zZm9ybWElMjBvJTIwU2lzdGVtYSUyME9wZXJhY2lvbmFsJTIwZW0lMjBQbGF0YWZvcm1hJTIwZGUlMjBJQSUyMEdlbmVyYXRpdmElMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgyMTU2NTUyfDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
@@ -82,15 +83,17 @@ A outra camada estratégica está no AppFunctions. Ao expor as funcionalidades d
 
 O Android 17 também endereça uma dívida técnica real: a partir do nível 37 da API, o sistema remove a opção de desabilitar redimensionamento e restrições de orientação em dispositivos de tela grande (sw > 600 dp). Com mais de 580 milhões de dispositivos de tela grande em uso e o próximo Googlebooks — a nova geração do ChromeOS construída sobre a pilha do Android — a Google está, na prática, forçando os desenvolvedores a tratarem adaptabilidade como requisito, não como bônus.
 
+**Veja também:** [Google Home com Gemini Volta, Plano Premium a US$ 99,99](/blog/google-relanca-o-home-speaker-apos-6-anos-com-gemini-ai-nativo-e-assinatura-premium-a-us-9999) e [Gemini Chega ao Windows com Atalho Alt+Space](/blog/gemini-chega-ao-windows-com-atalho-altspace-como-funciona-precos-e-o-que-ainda-falta).
+
 ## Perguntas Frequentes
 
-**O Android 17 está disponível para todos os Android?**
+### O Android 17 está disponível para todos os Android?
 Não imediatamente. O lançamento inicial foi para a maioria dos dispositivos Pixel compatíveis. Outros fabricantes receberão o Android 17 nos próximos meses, conforme confirmado pelo [blog de desenvolvedores da Google](https://developer.android.com/blog/posts/android-17-is-here). O código-fonte já está disponível no Android Open Source Project (AOSP).
 
-**O Lyria 3 gera músicas completas ou apenas fragmentos?**
+### O Lyria 3 gera músicas completas ou apenas fragmentos?
 Por enquanto, as faixas geradas no app Gemini têm 30 segundos de duração, com letra e arte de capa incluídas. O recurso está disponível para usuários com 18 anos ou mais, com limites de geração maiores para assinantes Gemini. Futuramente, o Lyria 3 deve suportar faixas mais longas e outros tipos de entrada de áudio além de voz.
 
-**O Gemini Omni substitui outras ferramentas de edição de vídeo?**
+### O Gemini Omni substitui outras ferramentas de edição de vídeo?
 Ainda não. O Gemini Omni Flash está posicionado como ferramenta de criação acessível e iterativa — ideal para remixar conteúdo existente e realizar edições criativas por linguagem natural. Fluxos de trabalho profissionais que exigem controle granular de linha do tempo, colorização precisa ou efeitos avançados continuam dependendo de software dedicado. A própria Google descreve o Omni como ponto de partida, não substituto.
 
 ## Fontes e Referências

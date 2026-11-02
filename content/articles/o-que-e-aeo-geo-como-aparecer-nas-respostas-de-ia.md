@@ -122,6 +122,8 @@ AEO e GEO não são modismos. São respostas a uma mudança real na forma como a
 
 ---
 
+**Para aprofundar:** [Como Aparecer nas Respostas do ChatGPT e Gemini](/blog/como-aparecer-nas-respostas-do-chatgpt).
+
 ## Perguntas Frequentes
 
 ### AEO e GEO são a mesma coisa?

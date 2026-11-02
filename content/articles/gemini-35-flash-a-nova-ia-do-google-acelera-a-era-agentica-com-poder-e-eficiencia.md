@@ -1,5 +1,6 @@
 ---
 title: "Gemini 3.5 Flash: A Nova IA do Google Acelera a Era Agêntica com Poder e Eficiência"
+seoTitle: "Gemini 3.5 Flash: a IA do Google para a Era Agêntica"
 description: "Gemini 3.5 Flash: o modelo do Google que supera o Gemini 3.1 Pro, é 4x mais rápido e impulsiona agentes de IA autônomos para tarefas complexas."
 category: noticias
 tags:

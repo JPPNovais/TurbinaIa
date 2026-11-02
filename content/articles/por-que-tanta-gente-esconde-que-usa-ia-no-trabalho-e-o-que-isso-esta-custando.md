@@ -76,6 +76,8 @@ No Brasil, o comportamento segue direção parecida, ainda que com menos foco no
 
 Para quem usa IA no trabalho hoje, o problema não costuma ser técnico — é de comunicação. Documentar o que foi feito com apoio de IA, guardar os prompts que geraram um bom resultado e ter um repositório pessoal de exemplos que funcionaram ajuda tanto a justificar o uso quanto a repetir o acerto depois; para organizar isso vale dar uma olhada nos modelos prontos disponíveis em [Prompts](/prompts) e no [Gerador de Prompts](/gerador) do Turbina IA. Para quem lidera equipes, a lição dos estudos é direta: punir ou ridicularizar quem admite o uso ensina todo mundo a escondê-lo — e o que fica invisível é exatamente o que a empresa não consegue medir, treinar ou proteger.
 
+**No mesmo assunto:** [Shadow AI: Quase Metade Usa IA no Trabalho sem Autorização](/blog/shadow-ai-por-que-quase-metade-dos-funcionarios-usa-ia-sem-autorizacao-no-trabalho-e-o-que-isso-ja-custou-em-vazamentos), [IA no Trabalho Aumenta E-mails e Reduz o Foco](/blog/ia-no-trabalho-aumenta-o-volume-de-e-mails-e-reduz-o-foco-mostram-tres-estudos-globais-de-2026) e [Quem Aproveita a IA no Trabalho, Segundo a Gallup](/blog/o-que-realmente-separa-quem-aproveita-a-ia-no-trabalho-de-quem-fica-para-tras-segundo-a-gallup).
+
 ## Perguntas Frequentes
 
 ### Por que os profissionais escondem que usam IA no trabalho?

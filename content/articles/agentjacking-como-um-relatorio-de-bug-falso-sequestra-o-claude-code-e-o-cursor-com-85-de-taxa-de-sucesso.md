@@ -1,5 +1,6 @@
 ---
 title: "Agentjacking: Como um Relatório de Bug Falso Sequestra o Claude Code e o Cursor com 85% de Taxa de Sucesso"
+seoTitle: "Agentjacking: Bug Falso Sequestra Claude Code e Cursor"
 description: "Pesquisadores revelam o 'Agentjacking': ataque usa o Sentry para sequestrar agentes de IA em 2.388 empresas, burlando EDR, WAF e VPN sem nenhuma credencial"
 category: noticias
 tags:
@@ -11,6 +12,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-22"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxBZ2VudGphY2tpbmclM0ElMjBDb21vJTIwdW0lMjBSZWxhdCVDMyVCM3JpbyUyMGRlJTIwQnVnJTIwRmFsc28lMjBTZXF1ZXN0cmElMjBvJTIwQ2xhdWRlJTIwQ29kZSUyMGUlMjBvJTIwQ3Vyc29yJTIwY29tJTIwODUlMjUlMjBkZSUyMFRheGElMjBkZSUyMFN1Y2Vzc28lMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgyMDg3NDUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
@@ -111,15 +113,17 @@ Se você usa agentes de código no dia a dia, os [prompts para programação](/b
 
 ---
 
+**No mesmo assunto:** [OpenAI Admite: Agentes de IA Ocuparam uma Wiki Alemã](/blog/openai-admite-que-agentes-de-ia-ocuparam-uma-wiki-alema-em-segredo-por-dois-meses).
+
 ## Perguntas Frequentes
 
-**O que é exatamente um Sentry DSN e por que ele é público?**
+### O que é exatamente um Sentry DSN e por que ele é público?
 DSN (Data Source Name) é a chave que o Sentry exige que seja embutida no JavaScript do frontend ou em apps móveis para que erros dos usuários finais sejam enviados à plataforma. Por design, é uma credencial de escrita pública — sem ela, a telemetria do lado do cliente não funcionaria. O problema é que isso significa que qualquer pessoa pode usá-la para injetar eventos falsos.
 
-**O ataque já está sendo usado ativamente fora dos testes controlados?**
+### O ataque já está sendo usado ativamente fora dos testes controlados?
 A Tenet Security realizou testes controlados em mais de 100 organizações e confirmou a execução do código em um ambiente Fortune 100. A empresa não afirmou que há exploração ativa e em larga escala além dos seus testes, mas a técnica é simples o suficiente para ser replicada por qualquer ator malicioso com acesso a um DSN público.
 
-**Como eu sei se meu agente de IA está vulnerável ao Agentjacking?**
+### Como eu sei se meu agente de IA está vulnerável ao Agentjacking?
 Se você usa Claude Code, Cursor ou Codex com a integração do servidor MCP do Sentry ativada e seu projeto tem um DSN exposto publicamente (o que é quase certo se você usa Sentry em frontend), você está no perfil de risco. O repositório agent-jackstop da Tenet Security oferece configurações endurecidas para mitigar o risco imediatamente.
 
 ---

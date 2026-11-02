@@ -74,6 +74,8 @@ Para quem ainda está decidindo se vale pagar por um plano Pro só para experime
 
 Para configurar tarefas para agentes como os Dots, vale a mesma regra dos bons prompts — papel, contexto, tarefa e formato. Veja exemplos nos nossos [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt).
 
+**Leia também:** [ChatGPT Troca Texto por Botões e Gráficos Interativos](/blog/chatgpt-troca-texto-por-botoes-e-graficos-interativos-como-funciona-a-intelligent-ui-do-gpt-6).
+
 ## Perguntas Frequentes
 
 ### O que é exatamente um "dot" da OpenAI?

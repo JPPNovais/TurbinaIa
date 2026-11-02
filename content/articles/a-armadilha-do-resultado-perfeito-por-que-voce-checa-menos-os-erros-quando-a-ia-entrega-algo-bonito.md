@@ -79,6 +79,8 @@ Terceiro, separe a etapa de geração da etapa de revisão como se fossem duas p
 
 Quarto, use as ferramentas certas para cada etapa. Para comparar como diferentes modelos se comportam nesse tipo de tarefa, o [Comparador de IAs](/comparador) do Turbina IA ajuda a decidir qual ferramenta vale mais a pena para o tipo de trabalho que você faz — já que "fluência" também depende de escolher o modelo certo para o problema certo.
 
+**Leia também:** [Quem Usa IA Há Mais de 6 Meses Acerta 10%](/blog/quem-usa-ia-ha-mais-de-6-meses-acerta-10-mais-o-habito-que-a-anthropic-identificou) e [Claude Unifica a Memória Entre Chat e Cowork](/blog/claude-unifica-a-memoria-entre-chat-e-cowork-como-funciona-e-como-editar-o-que-a-ia-lembra-de-voce).
+
 ## Perguntas Frequentes
 
 ### O que é "fluência em IA" segundo a Anthropic?

@@ -78,6 +78,8 @@ Há um detalhe que raramente aparece nessas notícias de troca de modelo: a mesm
 
 Se você tinha prompts salvos para o Haiku 4.5, vale testá-los de novo no modelo que ficar no seletor, porque o estilo das respostas muda entre gerações. A [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt), que funciona também no Claude, é um bom ponto de partida para refazer a sua biblioteca.
 
+**Leia também:** [Anthropic Interviewer: Como Entrar na Pesquisa no Claude](/blog/anthropic-interviewer-como-participar-da-pesquisa-what-do-you-want-from-ai-dentro-do-claude).
+
 ## Perguntas Frequentes
 
 ### O Claude Haiku 4.5 deixa de existir em 29 de outubro?

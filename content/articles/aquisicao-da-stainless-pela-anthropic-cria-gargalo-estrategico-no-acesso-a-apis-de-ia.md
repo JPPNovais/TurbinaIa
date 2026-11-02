@@ -1,5 +1,6 @@
 ---
 title: "Aquisição da Stainless pela Anthropic Cria Gargalo Estratégico no Acesso a APIs de IA"
+seoTitle: "Anthropic Compra a Stainless e Muda o Acesso a APIs de IA"
 description: "Anthropic compra a Stainless por US$ 300 mi e fecha o pipeline de SDKs para OpenAI e Google, criando um gargalo estratégico no acesso a APIs de IA."
 category: noticias
 tags:
@@ -78,6 +79,8 @@ No entanto, para desenvolvedores e empresas que dependiam da Stainless para outr
 A competição no mercado de APIs de IA continuará a ser feroz. Empresas como OpenAI e Google precisarão reagir, seja investindo em suas próprias capacidades de geração de SDKs, seja buscando parcerias estratégicas para preencher a lacuna deixada pela saída da Stainless do mercado aberto. O "gargalo competitivo" criado pela Anthropic sublinha que a infraestrutura subjacente, muitas vezes invisível, é tão vital quanto os modelos de IA mais avançados na determinação de quem liderará a próxima era da inteligência artificial.
 
 Para mais insights sobre o panorama geral da IA e como otimizar seus projetos, confira nosso [Comparador de IAs](/comparador).
+
+**Para aprofundar:** [Agent Skills: Anthropic doa padrão à Agentic AI Foundation](/blog/anthropic-entrega-o-padrao-agent-skills-a-uma-fundacao-neutra-o-que-muda-para-quem-usa-claude-chatgpt-ou-copilot).
 
 ## Perguntas Frequentes
 

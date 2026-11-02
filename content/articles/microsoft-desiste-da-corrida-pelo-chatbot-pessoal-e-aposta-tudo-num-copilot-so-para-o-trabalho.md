@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Desiste da Corrida pelo Chatbot Pessoal e Aposta Tudo num Copilot Só Para o Trabalho"
+seoTitle: "Microsoft Aposta no Copilot Só para o Trabalho"
 description: "Microsoft fundiu o Copilot pessoal ao corporativo e lançou Home, Code e Autopilot, cedendo o mercado de assistentes pessoais a ChatGPT e Gemini."
 category: noticias
 tags:
@@ -57,6 +58,8 @@ Para quem acompanha o mercado de [ferramentas de IA](/ferramentas) no dia a dia,
 Do ponto de vista de quem já paga por Copilot dentro da empresa, a mudança mais imediata é de interface: em vez de alternar entre o app pessoal e o Microsoft 365 Copilot, tudo passa a viver sob o mesmo teto, com Home, Code e Autopilot como abas de um único produto. Já quem usava a versão gratuita para tarefas pessoais — como gerar podcasts de pesquisa ou criar threads de chat em grupo — perde funcionalidades que não tinham equivalente direto em concorrentes como ChatGPT, e precisa decidir se vale a pena migrar para uma assinatura paga ou simplesmente trocar de ferramenta.
 
 A aposta da Microsoft em Autopilot também acelera uma tendência que já aparece em [outras plataformas de agentes](/glossario): a de cobrar pelo trabalho realizado pelo agente, não pelo acesso à interface de chat. Isso aproxima o modelo de negócio de IA corporativa do modelo de nuvem tradicional — pague pelo que consumir — e tende a pressionar empresas a monitorar de perto quanto cada agente autônomo está, de fato, custando por tarefa concluída, algo que ainda não tem padrão de mercado consolidado. Vale acompanhar o [Monitor de Modelos e Lançamentos](/changelog) do Turbina IA para saber quando a Microsoft publicar, enfim, uma tabela de preços de uso do Autopilot — até lá, o número que mais importa para orçamento de TI segue sendo uma incógnita.
+
+**Leia também:** [Frontier Professional: Brasil Quase Dobra a Média Mundial](/blog/frontier-professional-por-que-o-brasil-tem-quase-o-dobro-da-media-mundial-desse-tipo-de-trabalhador-de-ia) e [UnitedHealth Aposta US$ 3 Bilhões em IA](/blog/unitedhealth-aposta-us-3-bilhoes-em-ia-agentes-autonomos-ligam-para-medicos-e-transformam-o-plano-de-saude-americano).
 
 ## Perguntas Frequentes
 

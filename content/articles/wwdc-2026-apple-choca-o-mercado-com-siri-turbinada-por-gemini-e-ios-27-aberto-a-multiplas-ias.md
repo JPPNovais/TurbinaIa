@@ -1,5 +1,6 @@
 ---
 title: "WWDC 2026: Apple Choca o Mercado com Siri Turbinada por Gemini e iOS 27 Aberto a Múltiplas IAs"
+seoTitle: "WWDC 2026: Siri com Gemini e iOS 27 Aberto a Várias IAs"
 description: "WWDC 2026: Apple integra Gemini do Google na Siri e abre o iOS 27 para múltiplos modelos de IA, como o Claude, redefinindo o ecossistema móvel."
 category: noticias
 tags:

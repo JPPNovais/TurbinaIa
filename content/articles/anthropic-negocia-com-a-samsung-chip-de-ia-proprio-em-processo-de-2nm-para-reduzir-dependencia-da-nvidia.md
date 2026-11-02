@@ -1,5 +1,6 @@
 ---
 title: "Anthropic Negocia com a Samsung Chip de IA Próprio em Processo de 2nm para Reduzir Dependência da Nvidia"
+seoTitle: "Anthropic e Samsung Negociam Chip de IA em 2 nm"
 description: "Anthropic discute com a Samsung fabricar chip de IA próprio em processo de 2nm, buscando reduzir dependência da Nvidia."
 category: noticias
 tags:
@@ -63,6 +64,8 @@ A [SiliconANGLE](https://siliconangle.com/2026/07/02/anthropic-reportedly-talks-
 Vale reforçar: nenhuma das fontes consultadas confirma que o projeto avançou além da fase de conversas exploratórias. O [TheElec](https://www.thelec.net/news/articleView.html?idxno=11933) é explícito nesse ponto — embora a Anthropic já esteja conversando com múltiplas empresas de design de chips, o projeto ainda não avançou para as etapas de design detalhado, testes ou manufatura efetiva. Procurada pelo TheElec, a Samsung Electronics respondeu de forma lacônica: "não podemos comentar".
 
 Isso significa que, por ora, trata-se de um rumor de alto grau de credibilidade — ancorado em reportagens de veículos como The Information, TechCrunch e Bloomberg — mas ainda sem confirmação oficial de nenhuma das duas empresas envolvidas. Diante da velocidade com que o mercado de infraestrutura de IA tem evoluído, vale acompanhar os próximos desdobramentos diretamente pelo [Monitor de Modelos](/changelog), que rastreia atualizações e lançamentos relevantes no setor.
+
+**No mesmo assunto:** [OpenAI e Broadcom Lançam Chip Jalapeño](/blog/openai-e-broadcom-lancam-chip-jalapeno-o-primeiro-processador-de-inferencia-da-openai-promete-reduzir-custos-em-50), [DeepSeek V4 Pro: Inferência 75% Mais Barata com Huawei](/blog/deepseek-v4-pro-corta-precos-de-inferencia-em-75-com-chips-huawei-ascend-o-fim-da-dependencia-da-nvidia) e [Agent Skills: Anthropic doa padrão à Agentic AI Foundation](/blog/anthropic-entrega-o-padrao-agent-skills-a-uma-fundacao-neutra-o-que-muda-para-quem-usa-claude-chatgpt-ou-copilot).
 
 ## Perguntas Frequentes
 

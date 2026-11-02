@@ -33,11 +33,12 @@ const nextConfig: NextConfig = {
         destination: '/prompts',
         statusCode: 301,
       },
-      // Posts sobre context engineering consolidados em um só (out/2026): os três
-      // disputavam a mesma busca. O conteúdo único dos outros dois foi incorporado.
+      // Posts sobre context engineering consolidados em um só: disputavam a mesma
+      // busca. O conteúdo único dos outros foi incorporado ao guia de 2026.
       ...[
         'context-engineering-a-tecnica-que-esta-substituindo-o-prompt-engineering-em-times-de-ia',
         'engenharia-de-contexto-por-que-o-prompt-perfeito-parou-de-ser-suficiente-para-agentes-de-ia',
+        'o-que-e-context-engineering-a-tecnica-que-esta-substituindo-o-prompt-perfeito-na-ia',
       ].map((slug) => ({
         source: `/blog/${slug}`,
         destination: '/blog/o-que-e-context-engineering-e-por-que-esta-substituindo-o-prompt-engineering-em-2026',

@@ -1,5 +1,6 @@
 ---
 title: "Grok V9-Medium: xAI Lança Modelo de Programação com 1,5 Trilhão de Parâmetros Treinado em Sessões Reais do Cursor"
+seoTitle: "Grok V9-Medium: Modelo de Código da xAI com 1,5 Tri"
 description: "A xAI lança o Grok V9-Medium, modelo de 1,5T de parâmetros treinado em dados reais do Cursor, no mesmo dia em que a SpaceX fecha a aquisição por US$ 60 bi."
 category: noticias
 tags:
@@ -11,6 +12,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-18"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1717143587138-2532a35ce9b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxHcm9rJTIwVjktTWVkaXVtJTNBJTIweEFJJTIwTGFuJUMzJUE3YSUyME1vZGVsbyUyMGRlJTIwUHJvZ3JhbWElQzMlQTclQzMlQTNvJTIwY29tJTIwMSUyQzUlMjBUcmlsaCVDMyVBM28lMjBkZSUyMFBhciVDMyVBMm1ldHJvcyUyMFRyZWluYWRvJTIwZW0lMjBTZXNzJUMzJUI1ZXMlMjBSZWFpcyUyMGRvJTIwQ3Vyc29yJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc4MTc0MjQ2OHww&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
@@ -100,15 +102,17 @@ A imagem que emerge é a de uma estratégia de três frentes simultâneas: dados
 
 Para pôr o Grok V9-Medium à prova quando ele chegar ao seu editor, use a mesma bateria de tarefas em todos os modelos: os [prompts para programação](/blog/prompts-para-programacao) trazem modelos de debug, refatoração, testes e agentes de código prontos para isso.
 
+**Leia também:** [Grok 4.6: Agentes Longos da SpaceXAI a US$ 2 por Milhão](/blog/spacexai-lanca-grok-46-modelo-para-agentes-de-longa-duracao-empata-com-gpt-56-sol-e-chega-ao-cursor-por-us-2-por-milhao-de-tokens).
+
 ## Perguntas Frequentes
 
-**O Grok V9-Medium é o Grok 5?**
+### O Grok V9-Medium é o Grok 5?
 Não. O V9-Medium é o nome interno do modelo com 1,5 trilhão de parâmetros projetado para produção imediata, com foco em programação. O Grok 5 é o modelo flagship de fronteira da xAI, estimado em 6 trilhões de parâmetros totais em arquitetura Mixture-of-Experts, que ainda estava em treinamento no Colossus 2 em junho de 2026. São produtos distintos, com cronogramas e propósitos diferentes.
 
-**Por que os dados do Cursor são diferentes dos dados do GitHub para treinar modelos de código?**
+### Por que os dados do Cursor são diferentes dos dados do GitHub para treinar modelos de código?
 Repositórios do GitHub capturam o resultado final do código. O Cursor captura o processo: como o desenvolvedor descreveu o problema, como iterou sobre soluções parciais, o que rejeitou e por quê. Esse tipo de dado de interação ensina ao modelo os padrões de raciocínio dos engenheiros, não apenas a sintaxe — o que é crucial para tarefas reais de debug, refatoração e colaboração em grandes bases de código de produção.
 
-**O Cursor continuará suportando Claude e ChatGPT após a aquisição pela SpaceX?**
+### O Cursor continuará suportando Claude e ChatGPT após a aquisição pela SpaceX?
 Esta é a principal preocupação dos mais de um milhão de desenvolvedores que escolheram o Cursor justamente pela flexibilidade de usar múltiplos modelos. Até a data desta publicação, a SpaceX não se pronunciou publicamente sobre a política de suporte a modelos de terceiros após a integração. A resposta a essa pergunta terá impacto direto na adoção — ou rejeição — do Grok V9-Medium como modelo padrão na plataforma.
 
 ## Fontes e Referências

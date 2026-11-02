@@ -11,6 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-18"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1711919600878-b5d9e77d3357?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxTcGFjZVglMjBBZHF1aXJlJTIwbyUyMEN1cnNvciUyMHBvciUyMFVTJTI0JTIwNjAlMjBCaWxoJUMzJUI1ZXMlM0ElMjBPJTIwTWFpb3IlMjBEZWFsJTIwZGUlMjBTdGFydHVwJTIwZGUlMjBJQSUyMGRhJTIwSGlzdCVDMyVCM3JpYSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3ODE3ODY5MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
@@ -96,15 +97,17 @@ A Anthropic, com o Claude Code, e a OpenAI, com o Codex, são os rivais mais ime
 
 Tammy Madsen, professora da Universidade Santa Clara, disse à [Fortune](https://fortune.com/2026/06/16/elon-musk-spacex-ipo-ai-coding-startup-cursor-acquisition/) que não espera que Musk pare por aqui: "Seu foco sempre foi alto risco, alta recompensa. Não consigo dizer o que mais ele quer adicionar ao portfólio, mas não esperaria que ele parasse." Com uma moeda de aquisição que se valoriza por conta própria e uma tese de US$ 28 trilhões para justificar cada operação, o incentivo para continuar comprando é enorme.
 
+**Veja também:** [Reflection AI Fecha Contrato de US$ 6,3 Bi com a SpaceX](/blog/reflection-ai-fecha-contrato-de-us-63-bilhoes-com-spacex-para-desenvolver-o-deepseek-do-ocidente-com-chips-nvidia-gb300).
+
 ## Perguntas Frequentes
 
-**Por que a SpaceX pagou tanto pelo Cursor?**
+### Por que a SpaceX pagou tanto pelo Cursor?
 O Cursor é a plataforma de codificação com IA de crescimento mais rápido do mundo — US$ 4 bilhões em receita anualizada, presente em 67% da Fortune 500. Para a SpaceX, que prometeu a investidores do IPO um mercado endereçável de US$ 22,7 trilhões em aplicações enterprise de IA, o Cursor é o produto mais direto para entregar essa promessa. O pagamento em ações (não em caixa) e a valorização explosiva do papel no IPO tornaram o custo efetivo do negócio praticamente nulo para os acionistas da SpaceX.
 
-**O Cursor vai continuar funcionando normalmente após a aquisição?**
+### O Cursor vai continuar funcionando normalmente após a aquisição?
 Até o fechamento do negócio, previsto para o terceiro trimestre de 2026, nada muda operacionalmente. Após a integração, a grande incógnita é se a SpaceX forçará o uso do Grok (da xAI) como modelo base, substituindo o acesso atual a Claude e GPT-4. Por enquanto, nem a SpaceX nem o Cursor se pronunciaram sobre mudanças no produto.
 
-**É mesmo a maior aquisição de startup de IA da história?**
+### É mesmo a maior aquisição de startup de IA da história?
 Sim, com a ressalva indicada pelo próprio Olhar Digital: é a maior aquisição de uma startup de capital de risco externamente financiada. A incorporação da xAI pela própria SpaceX, anunciada em fevereiro de 2026, foi uma operação de fusão interna entre entidades controladas por Musk — estruturalmente diferente de uma aquisição de mercado. O deal do Cursor, a US$ 60 bilhões, supera qualquer aquisição anterior de startup no setor de IA por uma margem expressiva.
 
 ---

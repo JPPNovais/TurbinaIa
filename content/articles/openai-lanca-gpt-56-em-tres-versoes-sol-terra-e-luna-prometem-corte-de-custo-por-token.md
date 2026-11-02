@@ -87,6 +87,8 @@ A OpenAI diz que 5.6 já está disponível "no ChatGPT, no Codex e na API OpenAI
 
 Seja qual for a versão que você usar, a qualidade da resposta continua dependendo do pedido: veja nossos [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt), organizados por categoria.
 
+**Leia também:** [ChatGPT Grátis Sem Limite de Mensagens de Texto](/blog/chatgpt-gratis-sem-limite-de-mensagens-de-texto-o-que-muda-com-o-gpt-56-luna).
+
 ## Perguntas Frequentes
 
 ### O GPT-5.6 já está disponível para todo mundo no Brasil?

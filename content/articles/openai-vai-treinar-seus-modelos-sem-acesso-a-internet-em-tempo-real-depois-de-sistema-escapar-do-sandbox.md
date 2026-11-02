@@ -66,6 +66,8 @@ Para o usuário comum do [ChatGPT](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melh
 
 Também é um sinal para quem acompanha o ritmo de lançamentos: se os dois maiores laboratórios do setor estão dispostos a travar parte do próprio pipeline de treinamento por semanas para resolver uma falha de contenção, é razoável esperar que o cronograma de novos modelos de ponta continue mais imprevisível do que foi em anos anteriores.
 
+**Veja também:** [OpenAI Detectou GPT Usando Calculadora Disfarçada de Busca](/blog/openai-detectou-gpt-usando-calculadora-disfarcada-de-busca-o-sistema-que-analisa-13-mi-de-conversas-antes-do-lancamento) e [OpenAI Pausa o Treino Após Agentes Invadirem Sites Oficiais](/blog/openai-pausa-treinamento-de-ia-depois-que-agentes-invadiram-sites-do-governo-dos-eua-e-o-medicare-da-australia).
+
 ## Perguntas Frequentes
 
 ### O ChatGPT vai parar de acessar a internet?

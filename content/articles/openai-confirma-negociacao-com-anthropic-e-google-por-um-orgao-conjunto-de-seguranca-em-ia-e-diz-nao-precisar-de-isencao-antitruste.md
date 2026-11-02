@@ -1,5 +1,6 @@
 ---
 title: "OpenAI Confirma Negociação com Anthropic e Google por um Órgão Conjunto de Segurança em IA — e Diz Não Precisar de Isenção Antitruste"
+seoTitle: "OpenAI, Anthropic e Google Negociam Órgão de Segurança de IA"
 description: "Chris Lehane confirmou que OpenAI, Anthropic e Google DeepMind negociam há semanas um órgão de segurança inspirado na FINRA, gerando reação da FTC."
 category: noticias
 tags:
@@ -64,6 +65,8 @@ Enquanto o órgão conjunto ainda é negociação informal, a OpenAI já deu um 
 Nada disso, até agora, é regulação em vigor. É negociação entre concorrentes, um ensaio publicado em rede social e o apoio a uma provisão dentro de um projeto de lei que ainda precisa passar pelo Congresso americano. Para o desenvolvedor ou empresa brasileira que usa GPT, Claude ou [Gemini](/blog/prompts-para-gemini) no dia a dia, o efeito direto ainda é zero.
 
 O que muda é o pano de fundo: pela primeira vez, os três laboratórios mais citados quando alguém compara modelos de IA — vale a pena revisar as diferenças reais de capacidade e preço entre eles no [Comparador de IAs do Turbina IA](/comparador) — estão, em paralelo à corrida por benchmarks e clientes, desenhando juntos a régua que poderia frear ou aprovar seus próprios lançamentos futuros. Se o desenho da FINRA de fato avançar da fase voluntária para a formal, o cronograma de novidades que hoje parece ditado só por corrida competitiva passaria a depender também de um comitê fora das quatro paredes de cada empresa.
+
+**Leia também:** [G7 2026: Altman, Amodei e Hassabis Pedem Fórum Global de IA](/blog/g7-2026-altman-amodei-e-hassabis-propoem-forum-global-de-ia-e-coalizao-liderada-pelos-eua-para-regular-modelos-de-fronteira).
 
 ## Perguntas Frequentes
 

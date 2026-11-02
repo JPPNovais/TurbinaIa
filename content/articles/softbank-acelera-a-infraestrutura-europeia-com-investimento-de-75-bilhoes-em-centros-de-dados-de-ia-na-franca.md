@@ -1,5 +1,6 @@
 ---
 title: "SoftBank Acelera a Infraestrutura Europeia com Investimento de €75 Bilhões em Centros de Dados de IA na França"
+seoTitle: "SoftBank: €75 Bilhões em Data Centers de IA na França"
 description: "SoftBank investe €75 bilhões em data centers de IA na França, consolidando o país como hub europeu de infraestrutura para inteligência artificial."
 category: noticias
 tags:

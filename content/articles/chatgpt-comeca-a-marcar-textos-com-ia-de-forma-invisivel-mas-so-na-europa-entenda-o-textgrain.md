@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT Começa a Marcar Textos com IA de Forma Invisível, mas Só na Europa: Entenda o textGrain"
+seoTitle: "textGrain: ChatGPT Marca Textos com IA, Só na Europa"
 description: "OpenAI liga marca-d'água invisível no ChatGPT e no Codex na Europa. Veja como funciona o textGrain e compare com Claude e Gemini."
 category: ferramentas
 tags:

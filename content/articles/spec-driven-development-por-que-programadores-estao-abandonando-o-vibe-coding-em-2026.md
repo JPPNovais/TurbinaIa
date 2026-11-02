@@ -1,5 +1,6 @@
 ---
 title: "Spec-Driven Development: Por Que Programadores Estão Abandonando o Vibe Coding em 2026"
+seoTitle: "Spec-Driven Development: a Alternativa ao Vibe Coding"
 description: "Estudo da METR achou devs 19% mais lentos com IA sem estrutura. O GitHub respondeu com o Spec Kit. Entenda a virada para especificar antes de codar."
 category: tutoriais
 tags:
@@ -69,6 +70,8 @@ Reações ao método também não são unânimes: desenvolvedores relatam ganho 
 Não é preciso instalar o Spec Kit para experimentar a lógica por trás dele. O primeiro passo é escolher uma tarefa que hoje você resolveria em uma única mensagem para o agente — "adiciona um endpoint que lista os pedidos do usuário" — e quebrá-la em três blocos antes de mandar qualquer prompt de implementação: o que o recurso precisa fazer e por quê (a especificação), quais arquivos e bibliotecas ele vai tocar (o plano) e a lista de passos menores em que a tarefa se divide. Só depois disso peça ao agente para implementar, um passo por vez, revisando cada um antes de avançar para o próximo.
 
 Essa disciplina se aproxima do que já reunimos na [biblioteca de prompts](/prompts) do site para quem quer levar mais estrutura para a conversa com o agente: descrever a tarefa, listar restrições e critérios de aceite antes de pedir o código, em vez de negociar o resultado depois que ele já chegou pronto. Quem usa o GitHub Copilot ou o Claude Code no dia a dia pode instalar o próprio Spec Kit — é um pacote MIT, gratuito, mantido publicamente no GitHub — mas o ganho de previsibilidade já aparece antes disso, só de mudar a ordem em que a conversa com o agente acontece.
+
+**No mesmo assunto:** [Fim do Vibe Coding: IA em 60% do Código, Confiança em 20%](/blog/o-fim-do-vibe-coding-por-que-programadores-usam-ia-em-60-do-codigo-mas-so-confiam-sem-supervisao-em-20) e [Vibe Coding: 84% Usam IA e Só 29% Confiam no Código](/blog/paradoxo-do-vibe-coding-84-dos-programadores-usam-ia-mas-so-29-confiam-no-codigo-gerado).
 
 ## Perguntas Frequentes
 

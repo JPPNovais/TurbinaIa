@@ -82,6 +82,8 @@ A [NVIDIA](https://www.nvidia.com/pt-br/geforce/rtx-spark/) já delineou um rote
 
 Descubra mais sobre como a IA está moldando o futuro em nosso [Glossário de IA](/glossario).
 
+**No mesmo assunto:** [Machine Learning: O Que É e Como Funciona (Guia 2026)](/blog/o-que-e-machine-learning-aprendizado-de-maquina), [LineShine: Supercomputador Chinês de 2 Exaflops sem Nvidia](/blog/lineshine-china-desbanca-os-eua-com-supercomputador-de-2-exaflops-sem-nenhuma-gpu-da-nvidia) e [Noam Shazeer Deixa o Gemini e Vai para a OpenAI](/blog/noam-shazeer-co-inventor-do-transformer-e-lider-do-gemini-abandona-o-google-e-se-une-a-openai).
+
 ## Perguntas Frequentes
 
 ### O que é o chip NVIDIA RTX Spark?

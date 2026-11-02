@@ -1,5 +1,6 @@
 ---
 title: "Sony e Warner Chappell Processam a Anthropic por Até US$ 150 Mil por Música Usada para Treinar o Claude"
+seoTitle: "Sony e Warner Processam a Anthropic por Música"
 description: "Sony Music Publishing e Warner Chappell acionam a Anthropic na Justiça dos EUA por pirataria de letras usadas para treinar o Claude, pedindo até US$ 150 mil"
 category: noticias
 tags:
@@ -72,6 +73,8 @@ Vale entender também o conceito jurídico no centro de tudo isso: o "fair use" 
 ## O que vem a seguir
 
 O processo de Sony e Warner Chappell ainda está em fase inicial — não há decisão de mérito, e a Anthropic terá prazo para apresentar sua defesa formal. Histórico recente sugere que casos desse tipo tendem a se arrastar por anos antes de uma sentença, quando não terminam em acordo, como aconteceu no caso dos autores de livros. Mas o volume de processos simultâneos — livros, música de editoras majors, música de editoras independentes — está construindo um quadro em que a forma como uma empresa de IA obtém seus dados de treinamento pode pesar tanto quanto a qualidade do próprio modelo na hora de definir seu valor de mercado.
+
+**Leia também:** [Anthropic Ruma Rumo a US$ 1 Trilhão](/blog/anthropic-ruma-rumo-a-us-1-trilhao-o-ipo-confidencial-que-agita-o-mercado-de-ia) e [Anthropic Mapeia um Espaço Interno do Claude com J-Lens](/blog/anthropic-descobre-um-espaco-da-consciencia-dentro-do-claude-j-lens-revela-estrutura-cerebral-que-intriga-cientistas).
 
 ## Perguntas Frequentes
 

@@ -1,5 +1,6 @@
 ---
 title: "Zuckerberg, Musk e Huang Convencem Trump a Arquivar Fiscalização de IA Proposta por Hassabis"
+seoTitle: "Trump Arquiva Fiscalização de IA Pedida por Hassabis"
 description: "Trump recuou de um órgão fiscalizador de IA modelado na FINRA após Zuckerberg, Musk e Jensen Huang ligarem alertando sobre concentração de poder na OpenAI"
 category: noticias
 tags:
@@ -67,6 +68,8 @@ Isso não significa que o debate sobre pausar ou desacelerar o desenvolvimento d
 Para quem está começando a se situar nesse debate, vale a pena entender a diferença entre os termos que aparecem constantemente nessas discussões — "AGI", "alinhamento", "modelo de fronteira" — no [Glossário de IA](/glossario) do site, já que a confusão sobre definições (como a disputa entre Legg e Brockman sobre o que conta como AGI) é, ela mesma, parte do problema regulatório.
 
 O episódio também expõe uma tensão que provavelmente vai se repetir: baseado em interesses comerciais tão diferentes, dificilmente OpenAI, Anthropic, Google DeepMind, Meta, xAI e Nvidia vão concordar espontaneamente sobre quem fiscaliza quem. Sem uma exigência legal vinda do Congresso americano, propostas de autorregulação como a de Hassabis tendem a esbarrar exatamente no tipo de lobby que aconteceu nesta semana.
+
+**No mesmo assunto:** [G7 2026: Altman, Amodei e Hassabis Pedem Fórum Global de IA](/blog/g7-2026-altman-amodei-e-hassabis-propoem-forum-global-de-ia-e-coalizao-liderada-pelos-eua-para-regular-modelos-de-fronteira), [OpenAI, Anthropic e Google Negociam Órgão de Segurança de IA](/blog/openai-confirma-negociacao-com-anthropic-e-google-por-um-orgao-conjunto-de-seguranca-em-ia-e-diz-nao-precisar-de-isencao-antitruste) e [John Jumper, do AlphaFold, Sai do DeepMind para a Anthropic](/blog/john-jumper-nobel-de-quimica-e-criador-do-alphafold-deixa-o-google-deepmind-e-se-junta-a-anthropic).
 
 ## Perguntas Frequentes
 

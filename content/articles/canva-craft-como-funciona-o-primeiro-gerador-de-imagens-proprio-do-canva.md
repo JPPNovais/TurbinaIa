@@ -83,6 +83,8 @@ Duas peças do anúncio original seguem pendentes. A Canva prometeu duas versõe
 
 Enquanto isso não chega, o Craft já resolve o caso de uso mais comum: gerar uma imagem, ajustar no mesmo editor onde ela nasceu e publicar sem trocar de ferramenta. Esse é, no fim, o argumento comercial do Canva — não vencer a corrida pela imagem mais realista, mas ser o lugar onde a imagem gerada por IA já sai pronta para o trabalho.
 
+**Para aprofundar:** [CapCut Design Studio 2.0: Foto de Produto Vira Cenas](/blog/capcut-design-studio-20-como-a-nova-ferramenta-de-ia-transforma-uma-foto-de-produto-em-dezenas-de-cenas-para-vender-mais), [ChatGPT Agora Lê e Envia iMessages no Mac](/blog/chatgpt-agora-le-e-envia-imessages-no-mac-como-funciona-o-plugin-da-apple-messages) e [ChatGPT Agora Reserva Mesa em Restaurante Direto no Chat](/blog/chatgpt-agora-reserva-mesa-em-restaurante-direto-no-chat-como-funciona-a-integracao-com-yelp-opentable-e-resy).
+
 ## Perguntas Frequentes
 
 ### O Canva Craft é gratuito?

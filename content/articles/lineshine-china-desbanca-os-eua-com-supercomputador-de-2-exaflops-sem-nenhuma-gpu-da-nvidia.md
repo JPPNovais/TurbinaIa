@@ -1,5 +1,6 @@
 ---
 title: "LineShine: China Desbanca os EUA com Supercomputador de 2 Exaflops Sem Nenhuma GPU da Nvidia"
+seoTitle: "LineShine: Supercomputador Chinês de 2 Exaflops sem Nvidia"
 description: "O LineShine atingiu 2,198 exaflops usando apenas CPUs domésticas, desbancando o El Capitan e driblando as sanções dos EUA em semicondutores."
 category: noticias
 tags:
@@ -95,6 +96,8 @@ A China havia dominado o TOP500 no passado — chegou a ocupar quase metade dos 
 Para acompanhantes da corrida global em IA, é relevante lembrar que supercomputadores desta escala são a infraestrutura que viabiliza o treinamento dos maiores modelos de linguagem e sistemas de IA do planeta. Entender como o hardware evolui é fundamental para antecipar o que os modelos serão capazes de fazer; o nosso [Monitor de Modelos](/changelog) acompanha essa fronteira em tempo real.
 
 Ao mesmo tempo, especialistas independentes pedem cautela. Jack Dongarra, conforme reportado pela Al Jazeera, lembrou que o TOP500 avalia "um único benchmark" e não deve ser visto como "uma medida completa de liderança tecnológica". Desempenho em aplicações científicas reais, maturidade de software, confiabilidade e facilidade de uso são dimensões igualmente importantes — e mais difíceis de quantificar. The Register também aponta que a indústria chinesa de GPUs, embora crescente, ainda está de quatro a cinco anos atrás da Nvidia e da AMD em performance. O LineShine é uma vitória específica de alto impacto simbólico, não a eliminação de todas as lacunas tecnológicas.
+
+**Leia também:** [Kimi K3: Modelo Aberto da Moonshot com 2,8 Trilhões](/blog/kimi-k3-moonshot-lanca-o-maior-modelo-de-ia-de-codigo-aberto-do-mundo-com-28-trilhoes-de-parametros), [Microsoft e NVIDIA Elevam o Nível](/blog/microsoft-e-nvidia-elevam-o-nivel-lancamento-do-chip-rtx-spark-e-do-pc-dev-box-redefine-a-ia-na-ponta) e [China Restringe Viagem de Especialistas em IA](/blog/china-intensifica-restricoes-de-viagem-para-especialistas-em-ia-visando-proteger-tecnologia-estrategica).
 
 ## Perguntas Frequentes
 

@@ -81,6 +81,8 @@ O anúncio não trouxe uma lista de países para a pré-visualização, mas a es
 
 Para quem avalia contratar esse tipo de agente mais adiante, o cálculo de custo-benefício depende de uma variável que a Google ainda não detalhou publicamente: o consumo de tokens de um agente que fica ativo por horas ou dias, sem o controle manual de quando parar. É um exercício parecido com o que a [Calculadora de Custos](/calculadora) do Turbina IA ajuda a fazer para uso direto de modelos de linguagem — só que, no caso de um agente autônomo, o volume de chamadas tende a ser maior e menos previsível do que o de um chat tradicional.
 
+**No mesmo assunto:** [Busca do Google Troca Links Azuis por Páginas do Gemini](/blog/google-search-substitui-links-azuis-por-paginas-geradas-com-gemini-35-flash-a-maior-mudanca-em-25-anos) e [Gemini Chega ao Windows com Atalho Alt+Space](/blog/gemini-chega-ao-windows-com-atalho-altspace-como-funciona-precos-e-o-que-ainda-falta).
+
 ## Perguntas Frequentes
 
 ### O agente da Google já está disponível para qualquer empresa?

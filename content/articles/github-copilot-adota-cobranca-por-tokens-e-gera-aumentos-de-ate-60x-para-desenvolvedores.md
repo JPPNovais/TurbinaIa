@@ -1,5 +1,6 @@
 ---
 title: "GitHub Copilot Adota Cobrança por Tokens e Gera Aumentos de Até 60x para Desenvolvedores"
+seoTitle: "GitHub Copilot Cobra por Token e o Preço Sobe até 60x"
 description: "GitHub Copilot migrou para cobrança por tokens em junho de 2026, gerando aumentos de até 60x nos custos para desenvolvedores que usam recursos agênticos."
 category: noticias
 tags:

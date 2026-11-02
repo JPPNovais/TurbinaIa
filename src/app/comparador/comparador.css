@@ -354,6 +354,60 @@
   font-size: 1.02rem;
   line-height: 1.7;
 }
+.comparador-static {
+  max-width: 960px;
+  margin: 0 auto 2rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.comparador-static h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.comparador-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1.25rem;
+}
+
+.comparador-static table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.comparador-static caption {
+  caption-side: bottom;
+  text-align: left;
+  padding-top: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.comparador-static th,
+.comparador-static td {
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--border-color);
+  text-align: left;
+  vertical-align: top;
+}
+
+.comparador-static thead th {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.comparador-static tbody th {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
 .comparador-intro p + p { margin-top: 0.9rem; }
 .comparador-intro a { color: var(--primary); font-weight: 600; }
 .comparador-intro strong { color: var(--text-primary); }

@@ -42,7 +42,7 @@ const nextConfig: NextConfig = {
       ].map((slug) => ({
         source: `/blog/${slug}`,
         destination: '/blog/o-que-e-context-engineering-e-por-que-esta-substituindo-o-prompt-engineering-em-2026',
-        permanent: true,
+        statusCode: 301,
       })),
     ];
   },

@@ -3,17 +3,27 @@ import Link from 'next/link';
 import ComparatorClient from './ComparatorClient';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ToolFaq, { toolFaqJsonLd, type ToolFaqItem } from '@/components/ToolFaq';
+import { aiModels } from '@/data/ai-models';
 import { formatDateLong } from '@/lib/date';
 import { getPageLastModified, toLocalDateString } from '@/lib/page-dates';
 
-const OG_TITLE = 'Comparador de IAs: Comparação de Inteligências Artificiais';
-const OG_DESC = 'Comparação de IAs lado a lado em 2026: ChatGPT, Claude, Gemini e mais. Compare preços, prós, contras e notas em programação, escrita e raciocínio.';
+const OG_TITLE = 'Comparador de IAs: compare ChatGPT, Gemini e Claude lado a lado';
+const OG_DESC = 'Compare preços, limites e recursos das principais IAs em uma tabela. Grátis.';
+
+/** Rótulos curtos e “para quem”, só para modelos que o seletor da ferramenta já lista. */
+const STATIC_ROWS: { id: string; label: string; fit: string }[] = [
+  { id: 'openai-chatgpt-plus', label: 'ChatGPT', fit: 'Uso geral, criatividade e ecossistema' },
+  { id: 'google-gemini-3x-models', label: 'Gemini', fit: 'Contexto longo, multimodalidade e Google Workspace' },
+  { id: 'anthropic-claude-fable-5', label: 'Claude', fit: 'Programação, análise e textos longos' },
+  { id: 'meta-llama-muse-models', label: 'Llama e Muse', fit: 'Texto e código' },
+  { id: 'openai-chatgpt-images-2-0', label: 'ChatGPT Images', fit: 'Geração de imagem' },
+];
 const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Ferramenta Gratuita')}`;
 
 export const metadata: Metadata = {
-  title: 'Comparador de IAs Grátis: ChatGPT vs Gemini vs Claude (2026)',
+  title: OG_TITLE,
   description: OG_DESC,
-  keywords: ['comparador de IA', 'comparação de IAs', 'comparativo de IA', 'ChatGPT vs Claude', 'Gemini vs ChatGPT', 'melhor IA', 'melhor IA para programar', 'qual a melhor inteligência artificial'],
+  keywords: ['comparador de IAs', 'comparador de IA', 'comparação de IAs', 'comparativo de IA', 'ChatGPT vs Claude', 'Gemini vs ChatGPT', 'melhor IA', 'melhor IA para programar', 'qual a melhor inteligência artificial'],
   alternates: { canonical: '/comparador' },
   openGraph: {
     title: OG_TITLE + ' | Turbina IA',
@@ -94,7 +104,7 @@ export default function ComparadorPage() {
       <main className="container comparador-section">
         <Breadcrumbs items={[{ name: 'Comparador de IAs' }]} currentPath="/comparador" />
         <div className="comparador-header">
-          <h1>Comparador de IAs: Comparação de Inteligências Artificiais</h1>
+          <h1>{OG_TITLE}</h1>
           <p>
             Faça a comparação de IAs lado a lado: capacidades, preços, vantagens e limitações dos modelos de inteligência artificial mais populares de 2026. Selecione dois e tome a decisão certa para o seu projeto ou trabalho.
           </p>
@@ -136,6 +146,7 @@ export default function ComparadorPage() {
             <ul className="tool-toc">
               <li className="tool-toc-label">Nesta página:</li>
               <li><a href="#comparar">Comparar agora</a></li>
+              <li><a href="#tabela-comparador">Tabela</a></li>
               <li><a href="#como-escolher">Como escolher</a></li>
               <li><a href="#modelos-comparados">Modelos comparados</a></li>
               <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
@@ -147,6 +158,49 @@ export default function ComparadorPage() {
           <ComparatorClient />
         </div>
 
+        <section className="comparador-static" aria-labelledby="tabela-comparador">
+          <h2 id="tabela-comparador">Tabela do comparador de IAs</h2>
+          <p>
+            A tabela abaixo repete, em HTML, cinco opções que o seletor acima já compara: nome, empresa,
+            categoria e as notas de programação e custo-benefício gravadas na ferramenta (escala de 0 a 5).
+            A coluna “Para quem” é o mesmo resumo desta página. O preço em dólar fica na ficha de cada modelo,
+            dentro do comparador — a tabela só marca se essa ficha cita plano gratuito.
+          </p>
+          <div className="comparador-table-wrap">
+            <table>
+              <caption>ChatGPT, Gemini, Claude e outras IAs do comparador</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Modelo</th>
+                  <th scope="col">Empresa</th>
+                  <th scope="col">Categoria</th>
+                  <th scope="col">Para quem</th>
+                  <th scope="col">Programação</th>
+                  <th scope="col">Custo-benefício</th>
+                  <th scope="col">Plano gratuito na ficha</th>
+                </tr>
+              </thead>
+              <tbody>
+                {STATIC_ROWS.map((row) => {
+                  const model = aiModels.find((item) => item.id === row.id);
+                  if (!model) return null;
+                  return (
+                    <tr key={model.id}>
+                      <th scope="row">{row.label}</th>
+                      <td>{model.developer}</td>
+                      <td>{model.category}</td>
+                      <td>{row.fit}</td>
+                      <td>{model.score.coding.toFixed(1)}</td>
+                      <td>{model.score.value.toFixed(1)}</td>
+                      <td>{/gratuit/i.test(model.pricing) ? 'Sim' : 'Não'}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         {/* Conteúdo SEO rastreável abaixo da ferramenta */}
         <section style={{ marginTop: '3rem', marginBottom: '5rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.7, color: 'var(--text-secondary)' }}>
           <hr style={{ border: 0, height: 1, background: 'var(--border-color)', margin: '3rem 0' }} />
@@ -155,7 +209,7 @@ export default function ComparadorPage() {
             Comparação de IAs: como escolher a inteligência artificial certa
           </h2>
           <p style={{ marginBottom: '1rem' }}>
-            Com tantos modelos disponíveis, a pergunta "qual a melhor IA?" não tem resposta única — a escolha depende do que você precisa fazer. Este comparador reúne os principais modelos de IA do mercado para você avaliar, lado a lado, pontos como preço, raciocínio, escrita, programação e multimodalidade. Para uma análise mais aprofundada, leia também o nosso <Link href="/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026">comparativo ChatGPT vs Gemini vs Claude</Link>.
+            Com tantos modelos disponíveis, a pergunta “qual a melhor IA?” não tem resposta única — a escolha depende do que você precisa fazer. Este comparador reúne os principais modelos de IA do mercado para você avaliar, lado a lado, pontos como preço, raciocínio, escrita, programação e multimodalidade. Para uma análise mais aprofundada, leia também o nosso <Link href="/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026">comparativo ChatGPT vs Gemini vs Claude</Link>.
           </p>
 
           <h3 id="modelos-comparados" style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.75rem' }}>

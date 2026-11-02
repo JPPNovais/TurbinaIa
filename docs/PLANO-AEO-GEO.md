@@ -44,7 +44,7 @@ Artigos que ranqueiam e ensinam o tema (terreno aberto no Brasil):
 - Conversão para PRO/produto (quando lançar).
 
 ## Próximos passos sugeridos
-1. Publicar mais 2–3 artigos da Fase 1 (cluster AEO).
+1. Publicar o cluster AEO que está na fila do gerador (`scripts/pauta.js`): Schema para iniciantes, FAQ que a IA cita, AEO vs SEO, e como aparecer no Gemini, no Copilot e no Perplexity. A rotina automática pega essa fila antes de inventar pauta, com no máximo 1 notícia a cada 3 guias.
 2. Acompanhar no GSC quais termos de AEO começam a ranquear.
 3. Quando houver volume, lançar a versão PRO (monitoramento) — exige integração de API de IA + billing.
 

@@ -75,6 +75,8 @@ Esse tipo de gargalo não é exclusivo da Google. À medida que OpenAI, Anthropi
 
 O adiamento acontece em um momento particularmente sensível para a Google. Rivais como OpenAI e Anthropic não apenas avançam com seus próprios modelos, como agora atraem diretamente os pesquisadores que ajudaram a construir o Gemini. A eventual disponibilidade geral do Gemini 3.5 Pro — em julho, seja qual for a data exata — chega em um mercado que já não perdoa lançamentos que não sustentem, na prática, o que foi prometido em palco. Para desenvolvedores que já usam o Gemini 3.5 Flash em fluxos de automação, vale acompanhar como as mudanças no modelo "Pro" afetam prompts e integrações já existentes — um bom ponto de partida é testar variações no [Gerador de Prompts](/gerador) do site antes de migrar fluxos de produção para uma versão ainda em preview.
 
+**Para aprofundar:** [Google DeepMind Lança Gemma 4 12B](/blog/google-deepmind-lanca-gemma-4-12b-a-revolucao-do-modelo-multimodal-unificado-e-sem-encoder-para-ia-local) e [MWM IA: AI Mobile Squad Cria Apps Nativos com o Google](/blog/revolucao-mobile-mwm-ai-e-google-cloud-apresentam-ai-mobile-squad-para-criar-apps-nativos-em-minutos).
+
 ## Perguntas Frequentes
 
 ### O Gemini 3.5 Pro já tem data oficial de lançamento?

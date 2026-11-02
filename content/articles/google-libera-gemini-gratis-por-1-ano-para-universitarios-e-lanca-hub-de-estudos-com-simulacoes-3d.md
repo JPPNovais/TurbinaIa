@@ -1,5 +1,6 @@
 ---
 title: "Google Libera Gemini Grátis por 1 Ano para Universitários e Lança Hub de Estudos com Simulações 3D"
+seoTitle: "Gemini Grátis por 1 Ano para Universitários"
 description: "Google dá 12 meses grátis de plano pago do Gemini a universitários e lança hub de estudos com quizzes e simulações 3D. Veja como funciona no Brasil."
 category: ferramentas
 tags:
@@ -76,6 +77,8 @@ As novas ferramentas de estudo, por outro lado, não dependem da promoção — 
 O movimento chega no mesmo mês em que ferramentas concorrentes também miram o público universitário com ofertas de entrada gratuitas ou com desconto — um sinal de que a disputa por virar o assistente padrão de quem ainda está na faculdade ficou mais direta neste ano letivo. Na prática, o que o Google está comprando aqui é hábito: quem se acostuma a estudar com o Gemini Live, os cadernos e os quizzes durante a graduação tende a manter a assinatura — ou pelo menos a preferência pela marca — depois de formado. Para quem já usa outro assistente no dia a dia e está pensando em migrar (ou simplesmente manter os dois), comparar os planos lado a lado no nosso [Comparador de IAs](/comparador) ajuda a decidir se vale trocar de ferramenta ou só aproveitar a promoção.
 
 Para tirar proveito das simulações 3D e dos resumos automáticos sem ficar testando prompt por prompt, também vale espiar exemplos prontos na nossa biblioteca de [Prompts](/prompts) — a lógica de pedir "explique X em 3D" ou "monte um quiz de 10 questões sobre Y" funciona melhor quando o pedido já vem estruturado.
+
+**Leia também:** [Gemini Chega ao Windows com Atalho Alt+Space](/blog/gemini-chega-ao-windows-com-atalho-altspace-como-funciona-precos-e-o-que-ainda-falta) e [48% dos Estudantes Usam IA; Só 22% das Escolas Têm Regras](/blog/48-dos-estudantes-brasileiros-ja-usam-ia-toda-semana-para-estudar-e-so-22-das-escolas-tem-regras-claras).
 
 ## Perguntas Frequentes
 

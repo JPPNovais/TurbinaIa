@@ -1,5 +1,6 @@
 ---
 title: "Qualcomm Confirma Aquisição da Modular por US$ 3,9 Bilhões para Dominar o Software de IA em Data Centers"
+seoTitle: "Qualcomm Compra a Modular por US$ 3,9 Bilhões"
 description: "A Qualcomm vai adquirir a Modular Inc. por US$ 3,9 bilhões em ações para fortalecer sua plataforma de IA para data centers e edge computing."
 category: noticias
 tags:
@@ -103,6 +104,8 @@ Para empresas que estão avaliando quanto custa rodar modelos de IA em diferente
 A transação está sujeita a aprovações regulatórias habituais, e o prazo estimado para fechamento é a segunda metade de 2026. Embora não existam detalhes públicos sobre potenciais obstáculos regulatórios específicos, aquisições nesta faixa de valor passam obrigatoriamente pela análise do Departamento de Justiça dos EUA e podem envolver revisão em outras jurisdições.
 
 O mercado de chips de IA tem recebido escrutínio crescente de reguladores — a tentativa da NVIDIA de adquirir a ARM foi bloqueada em 2022, e a FTC tem monitorado ativamente consolidações no setor de semicondutores. No entanto, a Modular é uma empresa de software, não de hardware, o que tende a simplificar a análise concorrencial.
+
+**Veja também:** [Mistral AI, de €20 Bi, Aposta em Data Centers na Europa](/blog/mistral-ai-avaliada-em-20-bilhoes-aposta-em-mega-data-centers-para-dominio-europeu-da-ia), [Android 17 Chega com Gemini Omni, Lyria 3 e AudioLM](/blog/android-17-chega-com-gemini-omni-lyria-3-e-audiolm-google-transforma-o-sistema-operacional-em-plataforma-de-ia-generativa) e [OpenAI corta meta de captação em US$ 10 bilhões](/blog/openai-corta-meta-de-captacao-em-us-10-bilhoes-apos-tombo-das-acoes-de-ia).
 
 ## Perguntas Frequentes
 

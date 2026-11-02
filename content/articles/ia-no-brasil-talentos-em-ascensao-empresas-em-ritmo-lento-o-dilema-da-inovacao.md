@@ -1,5 +1,6 @@
 ---
 title: "IA no Brasil: Líder na América Latina em Adoção, mas 72% das Empresas Ainda Engatinham"
+seoTitle: "IA no Brasil: Líder na América Latina, 72% Engatinham"
 description: "71% dos profissionais brasileiros usam IA no trabalho, líder global, mas 72% das empresas ainda estão no estágio inicial. Veja o paradoxo da inovação no Brasil."
 category: noticias
 tags:

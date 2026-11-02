@@ -74,6 +74,8 @@ Para planejar o resto da programação — roteiro de viagem, cardápio da seman
 
 E se você está decidindo entre o ChatGPT e o Gemini — que já vem integrado ao Google Maps — para esse tipo de tarefa, o [comparador de IAs](/comparador) mostra recursos e planos dos dois lado a lado.
 
+**No mesmo assunto:** [ChatGPT Slides: como criar e exportar apresentações](/blog/chatgpt-slides-comeca-a-chegar-para-quem-paga-como-criar-apresentacoes-no-chat-e-exportar-para-o-powerpoint).
+
 ## Perguntas Frequentes
 
 ### O ChatGPT cobra alguma taxa para fazer a reserva do restaurante?

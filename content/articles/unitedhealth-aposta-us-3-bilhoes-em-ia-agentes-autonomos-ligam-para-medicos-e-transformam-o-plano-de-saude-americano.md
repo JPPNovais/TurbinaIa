@@ -11,6 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-19"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1721369967228-759150528943?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxVbml0ZWRIZWFsdGglMjBBcG9zdGElMjBVUyUyNCUyMDMlMjBCaWxoJUMzJUI1ZXMlMjBlbSUyMElBJTNBJTIwQWdlbnRlcyUyMEF1dCVDMyVCNG5vbW9zJTIwTGlnYW0lMjBwYXJhJTIwTSVDMyVBOWRpY29zJTIwZSUyMFRyYW5zZm9ybWFtJTIwbyUyMFBsYW5vJTIwZGUlMjBTYSVDMyVCQWRlJTIwQW1lcmljYW5vJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc4MTg5MjAxOXww&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
@@ -96,15 +97,17 @@ Para acompanhar as ferramentas de IA que estão chegando ao mercado e comparar s
 
 ---
 
+**No mesmo assunto:** [Gemini 3.5 Flash: a IA do Google para a Era Agêntica](/blog/gemini-35-flash-a-nova-ia-do-google-acelera-a-era-agentica-com-poder-e-eficiencia), [Google I/O 2026: Gemini 3.5 e a Nova Busca com IA](/blog/google-io-2026-como-a-ia-redefine-a-busca-e-a-experiencia-online) e [O Que é Inteligência Artificial? Guia para Iniciantes 2026](/blog/o-que-e-inteligencia-artificial-guia-completo-para-iniciantes).
+
 ## Perguntas Frequentes
 
-**O que é o Optum Real da UnitedHealth?**
+### O que é o Optum Real da UnitedHealth?
 O Optum Real é um sistema de IA que permite a médicos e equipes de faturamento verificar em tempo real se um procedimento médico será coberto pelo plano de saúde do paciente, antes de realizá-lo. Segundo a Bloomberg, o sistema processou cerca de um bilhão de transações desde seu lançamento em 2025 e deve alcançar 2,5 bilhões até o final de 2026.
 
-**Por que a UnitedHealth está investindo tanto em IA agora?**
+### Por que a UnitedHealth está investindo tanto em IA agora?
 Após um colapso de lucros em 2025 — com ações caindo mais de um terço — a empresa colocou a IA no centro de sua estratégia de recuperação. A automação de processos administrativos, que custam ao setor US$ 80 bilhões ao ano, é vista como a principal alavanca para cortar despesas e melhorar a experiência dos segurados.
 
-**Quais são os riscos do uso de IA em planos de saúde?**
+### Quais são os riscos do uso de IA em planos de saúde?
 O principal risco documentado é o uso de algoritmos enviesados ou com alta taxa de erro para negar coberturas. Um processo judicial citado pelo CBS News acusa a UnitedHealth de usar um algoritmo com 90% de taxa de erro para recusar internações de idosos. Há também o risco de que os pacientes não saibam quando e como a IA está influenciando decisões sobre seu cuidado.
 
 ---

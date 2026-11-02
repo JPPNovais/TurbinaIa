@@ -1,7 +1,8 @@
 ---
-title: "27 Prompts para Negócios e Empreendedores: IA para Crescer sua Empresa (2026)"
-seoTitle: "27 Prompts para Negócios e Empreendedores (2026)"
-description: "Prompts para negócios prontos para usar no ChatGPT: plano estratégico, vendas, finanças, gestão e validação de ideias para empreendedores."
+title: "31 Prompts para Negócios e Empreendedores: IA para Crescer sua Empresa (2026)"
+seoTitle: "31 Prompts para Negócios e Empreendedores (2026)"
+updatedAt: "2026-11-02"
+description: "Prompts para negócios no ChatGPT: plano, vendas, e-commerce, finanças, gestão e validação de ideias para empreendedores."
 category: tutoriais
 tags:
   - Prompts
@@ -21,7 +22,7 @@ Administrar um negócio sempre exigiu fazer muito com pouco. Mas a partir de 202
 
 O problema é que a maioria das pessoas usa a IA de forma superficial — pedindo textos genéricos que qualquer concorrente também poderia gerar. A diferença está em saber exatamente o que pedir e como estruturar a solicitação.
 
-Este guia reúne 27 prompts testados para as áreas que mais importam no dia a dia de quem tem empresa: estratégia, vendas, finanças, produtividade e validação de ideias. Todos foram escritos para serem copiados, adaptados com as informações do seu negócio e usados agora.
+Este guia reúne 31 prompts testados para as áreas que mais importam no dia a dia de quem tem empresa: estratégia, vendas, e-commerce, finanças, produtividade e validação de ideias. Todos foram escritos para serem copiados, adaptados com as informações do seu negócio e usados agora. Para escolher o modelo e estimar o custo da API, use o [comparador de IAs](/comparador) e a [calculadora de custos](/calculadora).
 
 ---
 
@@ -92,6 +93,28 @@ Escreva uma mensagem de reativação para clientes que não compram há [períod
 
 ```
 Monte um FAQ de atendimento para uma empresa de [segmento] com as 8 perguntas mais comuns que clientes fazem antes de contratar e as respostas recomendadas. Tom: claro, direto, sem termos técnicos.
+```
+
+---
+
+## Prompts de vendas para e-commerce
+
+Na loja virtual o texto precisa caber na ficha, no e-mail de carrinho e no chat — e não pode prometer desconto ou prazo que a loja não oferece. Os quatro prompts abaixo cobrem ficha de produto, carrinho abandonado, objeção de preço ou frete e anúncio de remarketing. Para headlines e páginas de venda, use os [prompts de copywriting](/blog/prompts-para-copywriting-e-redacao); para anúncios e redes, os [prompts de marketing digital](/blog/prompts-para-marketing-digital). Quem monta a loja no código tem os [prompts para programação](/blog/prompts-para-programacao), e quem prefere o Gemini tem os [prompts para o Gemini](/blog/prompts-para-gemini).
+
+```
+Escreva a ficha de um produto para e-commerce. Produto: [nome]. Preço: [preço]. Público: [quem compra]. Diferenciais reais: [liste 3]. Inclua: título com até 70 caracteres, parágrafo de abertura com o benefício principal, 5 bullets de características e um bloco "para quem é / para quem não é". Tom: claro, sem adjetivos vazios. Não invente especificações que eu não informei.
+```
+
+```
+Escreva um e-mail de carrinho abandonado para a loja [nome da loja]. O cliente deixou [produto] no carrinho há [horas] horas. Inclua: assunto com até 45 caracteres, corpo de até 90 palavras, o que estava no carrinho, uma razão concreta para concluir a compra (use só o que eu informar: [prazo, estoque, frete ou "nenhum motivo extra"]) e um único botão com o texto [texto do botão]. Sem desconto, a menos que eu informe um: [cupom ou "nenhum"].
+```
+
+```
+Um cliente da loja [nome] comentou: "[objeção, por exemplo achei caro, o frete ficou alto ou vi mais barato em outro site]". Produto: [nome e preço]. O que é verdade sobre a oferta: [prazo de entrega, garantia, o que está incluso]. Escreva 3 respostas curtas para o chat da loja, honestas, sem pressionar, cada uma com no máximo 4 linhas e uma pergunta no final.
+```
+
+```
+Crie 3 variações de texto para anúncio de remarketing de e-commerce. Loja: [nome]. Produto visto: [produto]. Benefício principal: [benefício]. Oferta real, se houver: [oferta ou "nenhuma"]. Para cada variação, entregue: título (até 40 caracteres), descrição (até 90 caracteres) e texto do botão. Não prometa escassez nem desconto que eu não tenha informado.
 ```
 
 ---

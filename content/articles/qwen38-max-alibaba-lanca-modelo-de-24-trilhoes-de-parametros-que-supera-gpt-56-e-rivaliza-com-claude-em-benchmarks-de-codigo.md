@@ -1,5 +1,6 @@
 ---
 title: "Qwen3.8-Max: Alibaba Lança Modelo de 2,4 Trilhões de Parâmetros que Supera GPT-5.6 e Rivaliza com Claude em Benchmarks de Código"
+seoTitle: "Qwen3.8-Max: 2,4 Trilhões de Parâmetros e Foco em Código"
 description: "Alibaba lança Qwen3.8-Max, modelo de 2,4 trilhões de parâmetros que promete rivalizar com Claude e superar o GPT-5.6 em código."
 category: noticias
 tags:
@@ -69,6 +70,8 @@ Nitish Tyagi, analista sênior principal da Gartner, ouvido pelo InfoWorld, resu
 Resta a pergunta que Jena, da Kanerika, colocou sobre a mesa e que ainda não tem resposta pública: quanto do trabalho de 16 dias do Qwen3.8-Max realmente sobreviveu a uma revisão de código humana — e o quanto disso é, de fato, reprodutível fora dos laboratórios da própria Alibaba.
 
 Para saber se um modelo novo como o Qwen3.8-Max resolve o seu tipo de problema, e não só o dos benchmarks, rode os mesmos prompts em mais de um modelo: os [prompts para programação](/blog/prompts-para-programacao) têm modelos de debug, refatoração e testes que servem como bateria de comparação.
+
+**Para aprofundar:** [SubQ Promete Resolver o Maior Gargalo dos LLMs](/blog/subq-promete-resolver-o-maior-gargalo-dos-llms-startup-lanca-modelo-com-janela-de-12-milhoes-de-tokens-e-atencao-1000x-mais-eficiente) e [Kimi K3: Modelo Aberto da Moonshot com 2,8 Trilhões](/blog/kimi-k3-moonshot-lanca-o-maior-modelo-de-ia-de-codigo-aberto-do-mundo-com-28-trilhoes-de-parametros).
 
 ## Perguntas Frequentes
 

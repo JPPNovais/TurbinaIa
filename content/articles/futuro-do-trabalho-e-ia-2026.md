@@ -1,5 +1,6 @@
 ---
 title: "IA e o Futuro do Trabalho: 170 Milhões de Empregos Criados até 2030, mas 92 Milhões em Risco"
+seoTitle: "Futuro do Trabalho com IA: 170 Milhões de Vagas até 2030"
 description: "Dados do WEF, McKinsey e OIT revelam o impacto real da IA no mercado de trabalho em 2025-2026: automação, novas profissões e o que fazer agora."
 category: noticias
 tags:

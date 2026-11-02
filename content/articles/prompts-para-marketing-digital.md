@@ -20,6 +20,8 @@ Quem trabalha com marketing sabe que a maior parte do tempo não vai para a estr
 
 **Resposta Rápida (TL;DR):** Os melhores prompts para marketing digital dizem à IA qual papel assumir, para quem é a peça, qual o objetivo (clique, lead, venda) e o formato — canal, tamanho e número de variações. Os 40 modelos abaixo já seguem essa estrutura e cobrem anúncios, redes sociais, SEO, e-mail e planejamento: copie, preencha os colchetes e ajuste o resultado. Funcionam no ChatGPT, no Gemini e no Claude.
 
+Headlines e páginas de venda estão nos [prompts de copywriting](/blog/prompts-para-copywriting-e-redacao). No dia a dia do ChatGPT, a lista de [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) cobre outras tarefas, e quem usa o Google tem os [prompts para o Gemini](/blog/prompts-para-gemini). Para estimar a API, use a [calculadora de custos](/calculadora).
+
 O problema é que a maioria dos profissionais ainda usa prompts genéricos — "crie um post sobre meu produto" — e depois reclama que o resultado parece robótico. A diferença está no nível de detalhe que você entrega antes de apertar Enter.
 
 Este guia reúne 40 prompts testados para as principais áreas do marketing digital. Todos usam variáveis em `[colchetes]` para você substituir com os dados do seu negócio.

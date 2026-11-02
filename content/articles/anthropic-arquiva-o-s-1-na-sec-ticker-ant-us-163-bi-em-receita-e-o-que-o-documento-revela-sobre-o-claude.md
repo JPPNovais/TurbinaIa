@@ -70,6 +70,8 @@ Para o usuário comum, nada muda de imediato: o Claude continua funcionando como
 
 Também é um teste de mercado para um argumento que a própria Anthropic defende desde a fundação: que é possível construir uma empresa de IA de ponta sem abandonar princípios de segurança em nome de crescimento acelerado. Se investidores aceitarem pagar um prêmio de trilhão de dólares por uma companhia que reserva controle de voto aos fundadores e dedica parte do patrimônio pessoal deles à filantropia, isso valida — ao menos financeiramente — a tese de que governança diferenciada não é incompatível com avaliação de mercado. Se o mercado reagir com desconto, a lição será a oposta. Quem quiser entender melhor termos como "S-1" ou "lock-up period" antes de acompanhar as próximas etapas pode consultar o [Glossário de IA](/glossario) do Turbina IA, que também cobre jargão de mercado ligado ao setor.
 
+**Leia também:** [Anthropic Mapeia um Espaço Interno do Claude com J-Lens](/blog/anthropic-descobre-um-espaco-da-consciencia-dentro-do-claude-j-lens-revela-estrutura-cerebral-que-intriga-cientistas), [Anthropic Interviewer: Como Entrar na Pesquisa no Claude](/blog/anthropic-interviewer-como-participar-da-pesquisa-what-do-you-want-from-ai-dentro-do-claude) e [Claude Haiku 4.5 Sai do Seletor em 29/10: O Que Muda](/blog/claude-haiku-45-sai-do-seletor-de-modelos-em-29-de-outubro-o-que-muda-e-como-se-preparar).
+
 ## Perguntas Frequentes
 
 ### O que é um formulário S-1 e por que ele importa tanto?

@@ -78,6 +78,8 @@ Três coisas valem acompanhamento nas próximas semanas. Primeiro, se a OpenAI d
 
 Por ora, o episódio expõe uma divisão que pouca gente esperava ver tão claramente: não é governo contra empresas de tecnologia, nem uma empresa contra as outras — é um grupo de CEOs concorrentes pedindo mais controle sobre o próprio setor, e um governo dizendo que não é hora de desacelerar.
 
+**Para aprofundar:** [G7 2026: Altman, Amodei e Hassabis Pedem Fórum Global de IA](/blog/g7-2026-altman-amodei-e-hassabis-propoem-forum-global-de-ia-e-coalizao-liderada-pelos-eua-para-regular-modelos-de-fronteira), [OpenAI Descarta IPO em 2026 Citando Segurança da IA](/blog/openai-descarta-ipo-em-2026-citando-seguranca-da-ia-mas-anthropic-segue-rumo-a-maior-oferta-da-historia) e [Trump e Xi Abrem Canal de Incidentes de IA, Sem Acordo Amplo](/blog/trump-convence-xi-a-rebatizar-ia-de-superinteligencia-e-os-dois-criam-canal-para-incidentes-sem-acordo-de-seguranca).
+
 ## Perguntas Frequentes
 
 ### O que é o plano "Pace the Frontier" de Dario Amodei?

@@ -1,5 +1,6 @@
 ---
 title: "OpenAI e Visa Anunciam Integração de Pagamentos no ChatGPT para Comércio Agente"
+seoTitle: "OpenAI e Visa Levam Pagamentos para Dentro do ChatGPT"
 description: "Pagamentos no ChatGPT: Visa e OpenAI integram transações seguras em agentes de IA para uma nova era do comércio digital com controle do usuário."
 category: noticias
 tags:

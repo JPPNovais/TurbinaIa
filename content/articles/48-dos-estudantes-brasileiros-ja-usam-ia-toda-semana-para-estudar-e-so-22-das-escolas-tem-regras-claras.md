@@ -1,5 +1,6 @@
 ---
 title: "48% dos Estudantes Brasileiros Já Usam IA Toda Semana para Estudar — e Só 22% das Escolas Têm Regras Claras"
+seoTitle: "48% dos Estudantes Usam IA; Só 22% das Escolas Têm Regras"
 description: "Pisa 2025 e Cetic.br mostram que quase metade dos alunos usa chatbots de IA toda semana para estudar, enquanto a maioria das escolas ainda não tem regras."
 category: tutoriais
 tags:
@@ -79,6 +80,8 @@ Outro risco documentado é o da desigualdade de acesso à orientação: escolas 
 O próprio Pisa 2025 trouxe um dado que reforça essa preocupação: a média de leitura entre os países da OCDE caiu de 489 pontos em 2015 para 461 em 2025, a queda mais acentuada entre as três áreas avaliadas, segundo cobertura da [CNN Brasil](https://www.cnnbrasil.com.br/educacao/pisa-2025-brasil-esta-abaixo-de-media-mundial-em-aprendizado/) sobre o relatório. Andreas Schleicher, diretor de Educação e Competências da OCDE, associou o recuo justamente às habilidades que mais importam num mundo de conteúdo gerado por IA — avaliar a confiabilidade de uma informação, cruzar dados de fontes diferentes e pensar criticamente sobre o que se lê. É o tipo de habilidade que um chatbot não substitui e que o uso raso da ferramenta, sem mediação, tende a corroer em vez de fortalecer.
 
 Para efeito de comparação internacional, o ritmo de adoção também acelera fora da escola: nos Estados Unidos, a fatia de trabalhadores adultos que usa IA no trabalho subiu de 16% para 21% em um ano, segundo o [Pew Research Center](https://www.pewresearch.org/short-reads/2025/10/06/about-1-in-5-us-workers-now-use-ai-in-their-job-up-since-last-year/) — uma trajetória de crescimento parecida com a observada entre estudantes brasileiros, ainda que os públicos não sejam diretamente comparáveis.
+
+**Leia também:** [IA para o ENEM 2026: 7 em 10 Alunos Já Estudam com IA](/blog/ia-para-o-enem-2026-o-que-fazer-com-os-dados-que-mostram-7-em-cada-10-alunos-ja-usando-ia-para-estudar), [Gemini Grátis por 1 Ano para Universitários](/blog/google-libera-gemini-gratis-por-1-ano-para-universitarios-e-lanca-hub-de-estudos-com-simulacoes-3d) e [IA no Trabalho Economiza 1 a 2 Horas por Semana, Diz Censo](/blog/ia-no-trabalho-economiza-so-1-a-2-horas-por-semana-mostra-censo-dos-eua-como-medir-o-seu-ganho-real).
 
 ## Perguntas Frequentes
 

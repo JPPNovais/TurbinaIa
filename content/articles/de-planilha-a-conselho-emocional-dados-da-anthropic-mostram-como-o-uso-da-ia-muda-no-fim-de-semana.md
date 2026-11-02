@@ -72,6 +72,8 @@ Nenhum desses números muda o que a IA consegue fazer. Mudam é o retrato de qua
 
 Para quem quer ir além da conversa solta e organizar prompts que realmente funcionam para essas situações do dia a dia — desde pedir uma segunda opinião sobre um sintoma até planejar investimento —, a [Biblioteca de Prompts](/prompts) do site reúne exemplos testados por categoria de uso.
 
+**Para aprofundar:** [Terapia com IA: Companhia Virou o Uso Nº 1 do ChatGPT](/blog/terapia-com-ia-por-que-companhia-e-apoio-emocional-virou-o-uso-n1-do-chatgpt-em-2026-segundo-a-harvard-business-review), [Quem Usa IA Há Mais de 6 Meses Acerta 10%](/blog/quem-usa-ia-ha-mais-de-6-meses-acerta-10-mais-o-habito-que-a-anthropic-identificou) e [Anthropic Arquiva S-1 na SEC: Ticker ANT e Receita](/blog/anthropic-arquiva-o-s-1-na-sec-ticker-ant-us-163-bi-em-receita-e-o-que-o-documento-revela-sobre-o-claude).
+
 ## Perguntas Frequentes
 
 ### O que é o Anthropic Economic Index?

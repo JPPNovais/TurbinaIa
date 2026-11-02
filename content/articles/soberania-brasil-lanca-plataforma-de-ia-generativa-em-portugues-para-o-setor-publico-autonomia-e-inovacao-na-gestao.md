@@ -1,5 +1,6 @@
 ---
 title: "SoberanIA: Brasil lança primeiro ecossistema de IA generativa em português para o setor público"
+seoTitle: "SoberanIA: IA Generativa em Português para o Setor Público"
 description: "SoberanIA: Brasil lança LLM de 30 bi de parâmetros em português para o setor público, com apoio do MCTI e parceiros como Serpro e AWS."
 category: noticias
 tags:
@@ -114,6 +115,8 @@ O governador Fonteles sintetizou esse ponto no lançamento: *"O dado sensível e
 Questões como adesão real dos municípios, capacidade de suporte técnico para órgãos de menor porte, e o alinhamento com a regulamentação de IA em tramitação no Congresso Nacional serão determinantes para a escala da iniciativa. O tema da ética e regulação de IA ganhou ainda mais atenção com as [novas diretrizes globais do Papa Leão XIV na encíclica Magnifica Humanitas](/blog/papa-leao-xiv-lanca-enciclica-magnifica-humanitas-novas-diretrizes-eticas-para-a-ia-global), que reforçam a soberania de dados como valor central.
 
 ---
+
+**Para aprofundar:** [Mistral AI, de €20 Bi, Aposta em Data Centers na Europa](/blog/mistral-ai-avaliada-em-20-bilhoes-aposta-em-mega-data-centers-para-dominio-europeu-da-ia).
 
 ## Perguntas Frequentes
 

@@ -80,7 +80,12 @@ const faqLd = {
 export default async function PromptsPage() {
   // /prompts é o hub do tema: além da biblioteca interativa, lista no HTML do
   // servidor todas as coleções e guias de prompts publicados no blog.
-  const promptArticles = getHubArticles(await getAllArticlesMetadata(), 'prompts');
+  const CHATGPT_PROMPTS = 'prompts-prontos-para-chatgpt';
+  const promptArticles = getHubArticles(await getAllArticlesMetadata(), 'prompts').sort((a, b) => {
+    if (a.slug === CHATGPT_PROMPTS) return -1;
+    if (b.slug === CHATGPT_PROMPTS) return 1;
+    return 0;
+  });
 
   return (
     <>

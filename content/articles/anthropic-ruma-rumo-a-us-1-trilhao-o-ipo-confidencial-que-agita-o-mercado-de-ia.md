@@ -65,6 +65,8 @@ A entrada de empresas de IA como a Anthropic no mercado de ações também valid
 
 Este IPO, juntamente com os de outras gigantes da IA, provavelmente redefinirá a dinâmica competitiva, empurrando as empresas a inovar ainda mais e a buscar diferenciação em um mercado em rápida evolução. O monitoramento contínuo dessas tendências e a avaliação crítica das novas ferramentas serão essenciais para profissionais e entusiastas da IA. A aquisição estratégica da Stainless pela Anthropic, por exemplo, ilustra como a empresa está [criando barreiras no acesso a APIs de IA](/blog/aquisicao-da-stainless-pela-anthropic-cria-gargalo-estrategico-no-acesso-a-apis-de-ia) para ampliar seu domínio antes do IPO. Para comparar os modelos disponíveis e seus custos, utilize o [Comparador de IAs do Turbina IA](/comparador).
 
+**Leia também:** [Justiça dos EUA Barra Boicote do Pentágono à Anthropic](/blog/juiza-dos-eua-bloqueia-boicote-do-pentagono-a-anthropic-depois-que-empresa-recusou-liberar-claude-para-armas-autonomas).
+
 ## Perguntas Frequentes
 
 ### O que é um IPO confidencial?

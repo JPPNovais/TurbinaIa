@@ -1,5 +1,6 @@
 ---
 title: "Anthropic Suspende Acesso Global a Fable 5 e Mythos 5 por Ordem de Segurança Nacional dos EUA"
+seoTitle: "Anthropic Suspende Fable 5 e Mythos 5 por Ordem dos EUA"
 description: "Anthropic suspende Fable 5 e Mythos 5 por ordem de segurança nacional dos EUA: o que aconteceu, o que a empresa diz e o que muda para desenvolvedores."
 category: noticias
 tags:
@@ -12,6 +13,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-13"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80"
 ---
 
@@ -64,15 +66,17 @@ A suspensão abrupta do Fable 5 e Mythos 5 gerou uma onda de discussão e frustr
 
 Para a comunidade técnica, este evento ressalta a importância de os desenvolvedores e empresas acompanharem de perto o cenário regulatório e considerarem a resiliência de suas arquiteturas de IA frente a possíveis intervenções. A necessidade de diversificar o uso de modelos e provedores, bem como de entender as políticas de uso e exportação de cada ferramenta, torna-se cada vez mais evidente. Use o [Comparador de IAs do Turbina IA](/comparador) para avaliar alternativas disponíveis e seus limites de uso.
 
+**Leia também:** [OpenAI Descarta IPO em 2026 Citando Segurança da IA](/blog/openai-descarta-ipo-em-2026-citando-seguranca-da-ia-mas-anthropic-segue-rumo-a-maior-oferta-da-historia).
+
 ## Perguntas Frequentes
 
-**1. Por que a Anthropic suspendeu o acesso a Fable 5 e Mythos 5?**
+### 1. Por que a Anthropic suspendeu o acesso a Fable 5 e Mythos 5?
 A Anthropic suspendeu o acesso por ordem do governo dos EUA, que citou preocupações de segurança nacional relacionadas a um método de "jailbreak" em Fable 5.
 
-**2. O que a Anthropic disse sobre as vulnerabilidades?**
+### 2. O que a Anthropic disse sobre as vulnerabilidades?
 A Anthropic discorda da gravidade das vulnerabilidades, afirmando que são menores, já conhecidas e que outros modelos públicos de IA também conseguem detectá-las sem a necessidade de um bypass.
 
-**3. Todos os modelos da Anthropic foram afetados?**
+### 3. Todos os modelos da Anthropic foram afetados?
 Não, apenas Fable 5 e Mythos 5 foram afetados. O acesso a todos os outros modelos da Anthropic permanece inalterado.
 
 ## Fontes e Referências

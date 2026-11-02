@@ -69,6 +69,8 @@ A colaboração com o Google DeepMind e o investimento massivo da Hyundai sublin
 
 Para saber mais sobre como a IA está transformando diversos setores, explore nosso [Glossário de IA](/glossario). Se quiser avaliar os modelos de IA usados em robótica e automação, o [Comparador de IAs](/comparador) reúne as principais opções disponíveis.
 
+**Para aprofundar:** [Qwen-Robot: a IA Embarcada da Alibaba para o Mundo Físico](/blog/alibaba-lanca-qwen-robot-a-familia-de-modelos-de-ia-embarcada-que-leva-a-ia-para-o-mundo-fisico).
+
 ## Perguntas Frequentes
 
 ### O que são os robôs Atlas da Boston Dynamics?

@@ -1,5 +1,6 @@
 ---
 title: "Estudo Black Duck 2026: 97% dos Desenvolvedores Usam IA para Programar, mas Apenas 1 em 3 Tem Governança do Código Gerado"
+seoTitle: "97% dos Devs Usam IA; Só 1 em 3 Governa o Código"
 description: "Pesquisa com 831 profissionais revela que adoção de IA no desenvolvimento é quase total, mas governança do código gerado fica perigosamente para trás."
 category: noticias
 tags:
@@ -127,6 +128,8 @@ A mensagem central do estudo é que as equipes que aprendem a "operacionalizar" 
 Como alertou Gemmiti, da Black Duck: "Quando a IA pode descobrir e explorar vulnerabilidades de forma autônoma em velocidade de máquina, a janela que as equipes têm para identificar e corrigir problemas não apenas encolhe — ela efetivamente desaparece. O único caminho viável é combater essa velocidade de ataque impulsionada por IA com uma defesa igualmente impulsionada por IA."
 
 Na escala de um desenvolvedor ou de um time pequeno, um primeiro passo de governança é revisar o código gerado com o mesmo rigor do código humano: os [prompts para programação](/blog/prompts-para-programacao) incluem um modelo de code review de diffs gerados por IA, que procura exatamente os erros que agentes costumam cometer.
+
+**No mesmo assunto:** [GitHub Copilot Cobra por Token e o Preço Sobe até 60x](/blog/github-copilot-adota-cobranca-por-tokens-e-gera-aumentos-de-ate-60x-para-desenvolvedores) e [IA para Desenvolvedores: Ferramentas e Oportunidades](/blog/a-evolucao-continua-da-ia-novas-ferramentas-e-oportunidades-para-desenvolvedores-em-2026).
 
 ## Perguntas Frequentes
 

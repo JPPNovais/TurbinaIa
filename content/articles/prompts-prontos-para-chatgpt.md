@@ -1,6 +1,6 @@
 ---
 title: "+100 Prompts para ChatGPT Prontos para Copiar em Português (2026)"
-seoTitle: "+100 Prompts para ChatGPT Prontos para Copiar em Português"
+seoTitle: "Prompts para ChatGPT: +100 Prontos para Copiar"
 description: "+100 prompts para ChatGPT prontos para copiar, em português: trabalho, e-mail, estudos, marketing, programação, carreira, finanças e dia a dia."
 category: tutoriais
 tags:

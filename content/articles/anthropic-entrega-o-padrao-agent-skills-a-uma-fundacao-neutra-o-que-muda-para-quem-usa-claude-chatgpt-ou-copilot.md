@@ -66,6 +66,8 @@ Esse cálculo não é exclusivo da IA. A doação do MCP à AAIF em dezembro já
 
 Para desenvolvedores, o efeito prático é poder escrever instruções reutilizáveis uma vez e levá-las a vários assistentes. Os [prompts para programação](/blog/prompts-para-programacao) trazem um modelo para gerar o arquivo de instruções de um agente de código (CLAUDE.md ou AGENTS.md), que segue a mesma lógica.
 
+**Veja também:** [Claude Duet: o Agente Proativo da Anthropic Explicado](/blog/claude-duet-como-funciona-o-agente-proativo-da-anthropic-que-rivaliza-com-dots-e-muse).
+
 ## Perguntas Frequentes
 
 ### O que exatamente a Anthropic doou para a Agentic AI Foundation?

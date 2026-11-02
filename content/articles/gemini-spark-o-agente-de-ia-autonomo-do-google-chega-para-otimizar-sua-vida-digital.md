@@ -1,5 +1,6 @@
 ---
 title: "Gemini Spark: O Agente de IA Autônomo do Google que Trabalha 24/7 por Você"
+seoTitle: "Gemini Spark: Agente do Google que Trabalha o Dia Inteiro"
 description: "Conheça o Gemini Spark, anunciado no Google I/O 2026: o agente de IA pessoal do Google que opera na nuvem continuamente, gerenciando e-mails e tarefas."
 category: noticias
 tags:

@@ -1,5 +1,6 @@
 ---
 title: "Reino Unido Obriga Google a Oferecer Opt-out para Publicadores em Conteúdo de IA Generativa"
+seoTitle: "Reino Unido Obriga o Google a Dar Opt-out de IA a Sites"
 description: "CMA do Reino Unido obriga Google a dar opt-out a publicadores: bloqueie seu conteúdo de resumos de IA e treinamento de modelos sem perder ranking."
 category: noticias
 tags:
@@ -84,6 +85,8 @@ A intervenção da CMA no Reino Unido representa um reconhecimento claro de que 
 O Google, por sua vez, deve encontrar um caminho que equilibre suas inovações em IA com as demandas regulatórias e as necessidades dos criadores de conteúdo. A empresa tem argumentado consistentemente que seus serviços beneficiam os usuários e que regras "pesadas" podem degradá-los. Os detalhes da conformidade e a implementação técnica do opt-out serão cruciais para determinar o sucesso dessas novas regras.
 
 Este é apenas o começo de uma longa jornada regulatória global para a IA. Para um panorama mais amplo sobre os desafios regulatórios e financeiros que marcaram esse período, leia nossa análise sobre [a semana que redefiniu o setor em maio de 2026](/blog/a-semana-que-redefiniu-a-ia-gemini-ipo-da-openai-e-desafios-globais-em-2026). A decisão do Reino Unido serve como um estudo de caso importante e pode influenciar futuras ações de reguladores em todo o mundo. A forma como o Google e os publicadores se adaptarão a este novo ambiente moldará fundamentalmente o futuro da busca e do consumo de conteúdo online.
+
+**Para aprofundar:** [Gemini Chega ao Windows com Atalho Alt+Space](/blog/gemini-chega-ao-windows-com-atalho-altspace-como-funciona-precos-e-o-que-ainda-falta).
 
 ## Perguntas Frequentes (FAQ)
 

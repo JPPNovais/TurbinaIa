@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT Work: o Agente da OpenAI Que Monta Documentos, Planilhas e Sites Sozinho"
+seoTitle: "ChatGPT Work: Agente que Monta Docs, Planilhas e Sites"
 description: "OpenAI lança o ChatGPT Work, agente com GPT-5.6 que cria planilhas, apresentações e sites. Veja preços, plugins e como testar."
 category: ferramentas
 tags:
@@ -99,6 +100,8 @@ O lançamento acontece num momento em que a corrida por agentes de trabalho aut�
 Para quem decide qual ferramenta adotar na empresa, o detalhe que costuma pesar mais do que o benchmark de lançamento é a superfície de conectores já disponível: de nada adianta um agente brilhante se ele não fala com o CRM ou a planilha que sua equipe já usa todos os dias.
 
 Com um agente como esse, quanto mais claro o pedido, melhor o resultado: veja os modelos dos nossos [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt), com papel, contexto, tarefa e formato já definidos.
+
+**Leia também:** [GPT-5.6: Mais Raciocínio e Janela de 1,5 Milhão de Tokens](/blog/gpt-56-cientista-chefe-da-openai-confirma-salto-significativo-em-raciocinio-janela-de-15-milhao-de-tokens-e-avancos-em-agentes-de-ia).
 
 ## Perguntas Frequentes
 

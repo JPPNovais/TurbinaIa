@@ -75,6 +75,8 @@ Para a esmagadora maioria dos usuários — aqueles que, segundo a própria Noti
 
 Já para quem construiu rotinas específicas dentro do Notion Mail — modelos de resposta elaborados, regras de etiqueta complexas, envios agendados recorrentes — o trabalho de migração é real e tem prazo curto. Vale aproveitar a troca também para revisar quais instruções e prompts fazem sentido levar para o agente de IA que vai assumir essa função; a seção de [Prompts](/prompts) do Turbina IA reúne modelos prontos que ajudam a estruturar esse tipo de automação sem começar do zero.
 
+**Leia também:** [Fim do Vibe Coding: IA em 60% do Código, Confiança em 20%](/blog/o-fim-do-vibe-coding-por-que-programadores-usam-ia-em-60-do-codigo-mas-so-confiam-sem-supervisao-em-20), [OpenAI Encerra o ChatGPT Atlas](/blog/openai-encerra-o-chatgpt-atlas-por-que-os-agentes-de-ia-estao-migrando-para-dentro-do-navegador-que-voce-ja-usa) e [Delegação Agêntica: Tarefas de 8 Horas para Agentes de IA](/blog/delegacao-agentica-por-que-profissionais-estao-passando-tarefas-de-8-horas-para-agentes-de-ia).
+
 ## Perguntas Frequentes
 
 ### Meus e-mails vão ser apagados quando o Notion Mail fechar?

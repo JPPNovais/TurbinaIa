@@ -86,6 +86,8 @@ Vale lembrar que esta não é a primeira vez que a indústria criativa negocia s
 
 Para quem já usa o ChatGPT no trabalho, nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) traz modelos prontos para copiar, inclusive de marketing e criação de conteúdo.
 
+**No mesmo assunto:** [ChatGPT Images 2.5: 50% Mais Rápido e Desenho à Mão](/blog/chatgpt-images-25-modelo-de-imagem-fica-50-mais-rapido-e-ganha-recurso-de-desenhar-a-mao).
+
 ## Perguntas Frequentes
 
 ### As imagens da Getty serão usadas para treinar modelos da OpenAI?

@@ -90,6 +90,8 @@ Antes de qualquer decisão, vale um inventário simples. Liste os GPTs que sua e
 
 Para equipes que usam GPTs para gerar conteúdo com um tom ou formato específico, uma alternativa mais simples do que esperar a migração automática é recriar a instrução como um prompt reutilizável enquanto o sistema de Plugins amadurece — algo que se aproxima do que já existe na [biblioteca de Prompts](/prompts) do Turbina IA e na nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt), com mais de 100 modelos prontos para copiar, para quem quer testar formatos prontos antes de investir tempo automatizando de novo. Isso não substitui um GPT com conhecimento próprio e Actions, mas evita que uma tarefa recorrente fique travada esperando um cronograma que, como já ficou claro nas últimas duas semanas, pode mudar de novo.
 
+**Veja também:** [OpenAI Encerra o Navegador ChatGPT Atlas em 9 de Agosto](/blog/openai-encerra-o-navegador-chatgpt-atlas-em-9-de-agosto-como-migrar-senhas-abas-e-favoritos-antes-do-prazo).
+
 ## Perguntas Frequentes
 
 ### Qual é o prazo para os Custom GPTs acabarem?

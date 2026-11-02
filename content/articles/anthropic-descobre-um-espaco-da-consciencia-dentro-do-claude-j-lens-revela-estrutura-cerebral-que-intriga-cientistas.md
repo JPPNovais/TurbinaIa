@@ -1,5 +1,6 @@
 ---
 title: 'Anthropic Descobre um "Espaço da Consciência" Dentro do Claude: J-Lens Revela Estrutura Cerebral que Intriga Cientistas'
+seoTitle: "Anthropic Mapeia um Espaço Interno do Claude com J-Lens"
 description: "Anthropic identifica o J-Space, uma região interna do Claude ligada ao acesso consciente, usando a nova técnica J-Lens de interpretabilidade."
 category: noticias
 tags:
@@ -86,6 +87,8 @@ O anúncio ocorre em um momento em que a Anthropic vem consolidando sua reputaç
 Para desenvolvedores que já usam prompts estruturados para extrair raciocínio passo a passo do Claude, essas descobertas ajudam a explicar por que técnicas de "pensar em voz alta" tendem a melhorar a precisão em tarefas complexas — o próprio ato de verbalizar parece dar ao modelo acesso mais direto ao conteúdo do seu J-Space. Quem quiser testar esse tipo de raciocínio estruturado na prática pode explorar a biblioteca de [Prompts](/prompts) do Turbina IA ou montar instruções personalizadas no [Gerador de Prompts](/gerador).
 
 Do ponto de vista de segurança de IA, a principal promessa prática do J-Lens é permitir que equipes de alinhamento detectem sinais de engano, fabricação de dados ou reconhecimento de testes antes que esse comportamento se manifeste na saída visível do modelo — uma capacidade que, segundo a própria Anthropic, já influenciou o desenho de novos métodos de treinamento como o Counterfactual Reflection Training.
+
+**Para aprofundar:** [Sony e Warner Processam a Anthropic por Música](/blog/sony-e-warner-chappell-processam-a-anthropic-por-ate-us-150-mil-por-musica-usada-para-treinar-o-claude) e [Anthropic Arquiva S-1 na SEC: Ticker ANT e Receita](/blog/anthropic-arquiva-o-s-1-na-sec-ticker-ant-us-163-bi-em-receita-e-o-que-o-documento-revela-sobre-o-claude).
 
 ## Perguntas Frequentes
 

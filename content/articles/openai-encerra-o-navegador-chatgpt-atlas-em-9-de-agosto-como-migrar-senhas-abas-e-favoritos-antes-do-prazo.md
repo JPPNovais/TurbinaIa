@@ -99,6 +99,8 @@ Para quem já testa fluxos de automação com esses agentes de navegação, vale
 
 Depois da migração, se você continua usando o ChatGPT no navegador, nossa [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) reúne mais de 100 modelos prontos para copiar.
 
+**No mesmo assunto:** [Custom GPTs Saem do Ar em 11/12: O Que Salvar e Como Migrar](/blog/chatgpt-vai-desativar-os-custom-gpts-como-funcionam-os-novos-plugins-e-o-que-fazer-antes-do-prazo-da-openai).
+
 ## Perguntas Frequentes
 
 ### Quando exatamente o ChatGPT Atlas para de funcionar?

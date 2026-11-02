@@ -1,5 +1,6 @@
 ---
 title: "CapCut Design Studio 2.0: como a nova ferramenta de IA transforma uma foto de produto em dezenas de cenas para vender mais"
+seoTitle: "CapCut Design Studio 2.0: Foto de Produto Vira Cenas"
 description: "CapCut lança Design Studio 2.0 com tela infinita e IA para gerar múltiplas cenas de produto a partir de uma única foto. Veja como usar."
 category: ferramentas
 tags:
@@ -89,6 +90,8 @@ Outro ponto de atenção: o recurso está descrito como disponível via CapCut W
 7. Exporte nas proporções necessárias para cada canal (1:1 para marketplace, 4:5 para Instagram, 16:9 para banner de site).
 
 Quem já testa prompts de imagem em outras ferramentas de IA pode aproveitar a seção de [Prompts](/prompts) da Turbina IA para adaptar descrições de cena ao formato de linguagem natural que o Design Studio 2.0 espera.
+
+**Para aprofundar:** [Canva Craft: o Novo Gerador de Imagens do Canva](/blog/canva-craft-como-funciona-o-primeiro-gerador-de-imagens-proprio-do-canva), [Suno Studio 2.0: DAW com IA para Assinantes Premier](/blog/suno-studio-20-a-daw-com-ia-que-transforma-teclado-em-musica-chegou-aos-assinantes-premier) e [ChatGPT Images 2.5: 50% Mais Rápido e Desenho à Mão](/blog/chatgpt-images-25-modelo-de-imagem-fica-50-mais-rapido-e-ganha-recurso-de-desenhar-a-mao).
 
 ## Perguntas Frequentes
 

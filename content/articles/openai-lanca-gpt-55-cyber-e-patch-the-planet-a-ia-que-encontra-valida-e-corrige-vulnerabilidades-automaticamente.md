@@ -131,6 +131,8 @@ Para mantenedores de projetos open-source, o Patch the Planet representa uma mud
 
 Na escala de um desenvolvedor, dá para aplicar a mesma lógica: os [prompts para programação](/blog/prompts-para-programacao) incluem modelos de code review com foco em segurança e de revisão de diffs gerados por IA, sempre com uma pessoa validando o resultado.
 
+**Leia também:** [GPT-6 Astra: Modelo de Cibersegurança da OpenAI](/blog/gpt-6-astra-openai-lanca-modelo-critico-em-ciberseguranca-e-altman-pede-desculpas-por-rollout-turbulento).
+
 ## Perguntas Frequentes
 
 ### Qualquer empresa pode acessar o GPT-5.5-Cyber?

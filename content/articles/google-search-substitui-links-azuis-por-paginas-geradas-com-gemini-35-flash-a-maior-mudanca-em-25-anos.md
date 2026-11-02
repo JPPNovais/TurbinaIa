@@ -1,5 +1,6 @@
 ---
 title: "Google Search Substitui Links Azuis por Páginas Geradas com Gemini 3.5 Flash: A Maior Mudança em 25 Anos"
+seoTitle: "Busca do Google Troca Links Azuis por Páginas do Gemini"
 description: "Google integra Gemini 3.5 Flash ao Search e cria agentes de informação, encerrando a era dos 10 links azuis. Entenda o que muda."
 category: noticias
 tags:
@@ -87,6 +88,8 @@ A cobertura em português também chama atenção para o impacto simbólico da m
 Fora dos Estados Unidos, a repercussão também girou em torno do impacto sobre veículos de notícia e criadores de conteúdo. O [Alura](https://www.alura.com.br/artigos/google-reformula-busca-pela-primeira-vez-em-25-anos) associa o anúncio à pressão competitiva crescente sobre o Google diante de ferramentas como o ChatGPT, da OpenAI, e o Claude, da Anthropic, que passaram a assumir parte das funções antes exclusivas dos mecanismos de busca tradicionais. Para efeito de comparação de escala, o [Google](https://blog.google/products-and-platforms/products/search/search-io-2026/) informou que as AI Overviews já somam mais de 2,5 bilhões de usuários mensais e que o AI Mode ultrapassa 1 bilhão — números que a própria [TechCrunch](https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/) contrasta com os 900 milhões de usuários semanais informados pelo ChatGPT, sugerindo que o Google concentra mais usuários únicos ao longo do mês, enquanto o produto da OpenAI teria uma frequência de engajamento maior por usuário.
 
 Do lado regulatório, o Alura destaca que a Autoridade de Concorrência e Mercados do Reino Unido (CMA) já vinha pressionando o Google para permitir que editores optem por sair das AI Overviews sem perder visibilidade na busca tradicional — um pedido que, segundo o levantamento, a empresa ainda não atendeu. Esse pano de fundo regulatório reforça que a transição para uma busca centrada em IA não é apenas uma questão de produto, mas também de disputa por tráfego, receita publicitária e regras de mercado entre big techs, veículos de mídia e reguladores em diferentes continentes.
+
+**No mesmo assunto:** [Corte de Vagas por IA: Previsão x Realidade (McKinsey)](/blog/previsao-de-corte-de-vagas-por-ia-superou-a-realidade-em-2025-onde-a-mckinsey-mostra-que-o-corte-aconteceu-de-verdade) e [Google I/O 2026: Gemini 3.5 e a Nova Busca com IA](/blog/google-io-2026-como-a-ia-redefine-a-busca-e-a-experiencia-online).
 
 ## Perguntas Frequentes
 

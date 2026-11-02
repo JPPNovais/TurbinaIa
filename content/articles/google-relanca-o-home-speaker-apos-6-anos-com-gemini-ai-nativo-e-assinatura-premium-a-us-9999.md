@@ -1,5 +1,6 @@
 ---
 title: "Google Relança o Home Speaker Após 6 Anos com Gemini AI Nativo e Assinatura Premium a US$ 99,99"
+seoTitle: "Google Home com Gemini Volta, Plano Premium a US$ 99,99"
 description: "Seis anos após o Nest Audio, o Google Home Speaker chega em 25 de junho com Gemini nativo, áudio 360°, NPU dedicada e planos premium a partir de US$ 10/mês."
 category: noticias
 tags:
@@ -11,6 +12,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-20"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1586125674857-4eb86880905d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxHb29nbGUlMjBSZWxhbiVDMyVBN2ElMjBvJTIwSG9tZSUyMFNwZWFrZXIlMjBBcCVDMyVCM3MlMjA2JTIwQW5vcyUyMGNvbSUyMEdlbWluaSUyMEFJJTIwTmF0aXZvJTIwZSUyMEFzc2luYXR1cmElMjBQcmVtaXVtJTIwYSUyMFVTJTI0JTIwOTklMkM5OSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3ODE5MTQ1Njd8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
@@ -91,15 +93,17 @@ Se o modelo de assinatura se sustentar — a pergunta que a TechCrunch coloca ex
 
 ---
 
+**Leia também:** [Android 17 Chega com Gemini Omni, Lyria 3 e AudioLM](/blog/android-17-chega-com-gemini-omni-lyria-3-e-audiolm-google-transforma-o-sistema-operacional-em-plataforma-de-ia-generativa) e [Meta One: Assinatura de IA a Partir de US$ 7,99](/blog/meta-lanca-meta-one-assinaturas-de-ia-a-partir-de-us-799-para-criadores-e-empresas).
+
 ## Perguntas Frequentes
 
-**O Google Home Speaker chegará ao Brasil?**
+### O Google Home Speaker chegará ao Brasil?
 Não há data confirmada para o Brasil. O lançamento em 25 de junho de 2026 abrange 18 países, todos na América do Norte, Europa, Ásia-Pacífico e Oceania. Usuários brasileiros precisam acompanhar anúncios futuros da Google Brasil.
 
-**O Google Assistant vai parar de funcionar nos dispositivos antigos?**
+### O Google Assistant vai parar de funcionar nos dispositivos antigos?
 O Gemini for Home substituirá o Google Assistant nos dispositivos compatíveis ao longo do tempo, sem custo para funções básicas. Recursos avançados como Gemini Live exigirão assinatura Google Home Premium. O cronograma exato de migração ainda não foi divulgado oficialmente.
 
-**Vale a pena assinar o Google Home Premium?**
+### Vale a pena assinar o Google Home Premium?
 Depende do seu uso. A maioria das melhorias conversacionais do Gemini — comandos de múltiplos passos, memória de curto prazo, correções de frase — estão disponíveis sem assinatura. O plano de US$ 10/mês faz mais sentido para quem quer Gemini Live para conversas abertas. O plano de US$ 20/mês justifica-se para quem tem câmeras Nest e quer resumos automáticos de atividade doméstica.
 
 ---

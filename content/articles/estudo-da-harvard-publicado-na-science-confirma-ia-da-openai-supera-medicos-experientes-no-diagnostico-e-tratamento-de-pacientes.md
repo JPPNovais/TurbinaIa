@@ -11,6 +11,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-19"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=1200&q=80"
 ---
 
@@ -107,15 +108,17 @@ A recomendação central do estudo é a realização urgente de **ensaios clíni
 
 O estudo de Harvard representa, portanto, um marco: não porque prova que a IA é superior aos médicos de forma definitiva e irrestrita, mas porque demonstra com rigor científico — em condições reais, com dados brutos, avaliação cega e publicação na Science — que os modelos de linguagem de última geração já atingiram um nível de desempenho que exige ser levado a sério pela medicina, pela regulação e pela sociedade.
 
+**Para aprofundar:** [ChatGPT para Adolescentes: Controles dos Pais e Idade](/blog/chatgpt-para-adolescentes-como-funcionam-os-controles-parentais-o-modo-estudo-e-a-previsao-de-idade-da-openai), [Astra da OpenAI: Modelo Não Lançado Resolve 10 Problemas](/blog/astra-modelo-ainda-nao-lancado-da-openai-resolve-10-problemas-matematicos-abertos-ha-decadas-por-us-2-mil) e [ChatGPT Cai Abaixo de 50% de Market Share pela Primeira](/blog/chatgpt-cai-abaixo-de-50-de-market-share-pela-primeira-vez-gemini-avanca-para-277-e-claude-lidera-em-conversao-paga).
+
 ## Perguntas Frequentes
 
-**O modelo de IA da OpenAI pode substituir médicos no diagnóstico?**
+### O modelo de IA da OpenAI pode substituir médicos no diagnóstico?
 Não, segundo os próprios autores do estudo. Os resultados indicam que a IA tem potencial para auxiliar médicos — especialmente na triagem inicial —, mas os pesquisadores enfatizam que ainda não existe estrutura formal de responsabilização e que os pacientes desejam ter humanos guiando decisões críticas de saúde.
 
-**Qual modelo da OpenAI foi avaliado no estudo de Harvard?**
+### Qual modelo da OpenAI foi avaliado no estudo de Harvard?
 O estudo avaliou principalmente o o1 preview, o primeiro modelo da OpenAI com capacidade de raciocínio passo a passo, e também o modelo 4o. O o1 se saiu melhor em quase todos os pontos de avaliação, especialmente na triagem inicial, onde superou os dois médicos humanos com 67% de acerto contra 55% e 50%.
 
-**Quais são as principais limitações do estudo?**
+### Quais são as principais limitações do estudo?
 O experimento foi realizado apenas com dados textuais, sem incluir imagens, radiografias ou exames físicos. Além disso, os médicos humanos com quem a IA foi comparada eram internistas — não especialistas em medicina de emergência —, o que segundo críticos pode ter subestimado o desempenho humano em condições reais de pronto-socorro.
 
 ## Fontes e Referências

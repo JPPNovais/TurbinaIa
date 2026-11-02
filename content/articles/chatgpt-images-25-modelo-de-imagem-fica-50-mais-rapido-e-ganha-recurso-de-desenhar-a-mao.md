@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT Images 2.5: Modelo de Imagem Fica 50% Mais Rápido e Ganha Recurso de Desenhar à Mão"
+seoTitle: "ChatGPT Images 2.5: 50% Mais Rápido e Desenho à Mão"
 description: "OpenAI lança ChatGPT Images 2.5 com Sketch, edições mais precisas e latência 50% menor. Veja o que muda, como usar e quem já pode testar."
 category: ferramentas
 tags:
@@ -67,6 +68,8 @@ A OpenAI não divulgou limite de gerações gratuitas por dia para o Images 2.5 
 Também não há, até o momento, uma tabela pública de preço por imagem para o uso via ChatGPT (fora da API, que é cobrada por token consumido, não por imagem gerada) — outro ponto que só fica claro na prática, de acordo com o volume e a complexidade de cada geração.
 
 Além das imagens, o ChatGPT rende mais com pedidos bem estruturados: confira nossos [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt), com modelos de marketing, redes sociais e criatividade.
+
+**No mesmo assunto:** [OpenAI Lança GPT-5.6 em Três Versões](/blog/openai-lanca-gpt-56-em-tres-versoes-sol-terra-e-luna-prometem-corte-de-custo-por-token).
 
 ## Perguntas Frequentes
 

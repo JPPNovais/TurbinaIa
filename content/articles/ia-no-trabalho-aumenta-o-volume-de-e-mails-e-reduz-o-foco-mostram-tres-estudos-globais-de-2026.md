@@ -66,6 +66,8 @@ Primeiro, medir produtividade pelo resultado entregue, não pela quantidade de i
 
 Vale notar que nenhum dos três estudos recomenda abandonar as ferramentas. A ADP reforça que usuários diários de IA seguem mais engajados e menos estressados que quem não usa — o problema não é a ferramenta, é a métrica errada aplicada a um tipo de trabalho que já não existe mais do jeito que existia antes da IA chegar. Quem decide qual tarefa delegar para a IA e qual merece atenção humana plena ainda está, por enquanto, fazendo esse julgamento sem dados confiáveis sobre o que realmente compensa — o [Glossário de IA](/glossario) do Turbina IA reúne os termos técnicos por trás desses relatórios para quem quiser ir direto à fonte, e o [Gerador de Prompts](/gerador) ajuda a transformar uma tarefa vaga num pedido objetivo, o que reduz o número de idas e voltas com a ferramenta.
 
+**Veja também:** [IA no Trabalho Economiza 1 a 2 Horas por Semana, Diz Censo](/blog/ia-no-trabalho-economiza-so-1-a-2-horas-por-semana-mostra-censo-dos-eua-como-medir-o-seu-ganho-real), [Por Que Tanta Gente Esconde que Usa IA no Trabalho](/blog/por-que-tanta-gente-esconde-que-usa-ia-no-trabalho-e-o-que-isso-esta-custando) e [Delegação Agêntica: Tarefas de 8 Horas para Agentes de IA](/blog/delegacao-agentica-por-que-profissionais-estao-passando-tarefas-de-8-horas-para-agentes-de-ia).
+
 ## Perguntas Frequentes
 
 ### A IA realmente aumenta a carga de trabalho em vez de reduzir?

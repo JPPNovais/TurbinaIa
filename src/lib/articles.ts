@@ -77,6 +77,14 @@ function extractFAQs(markdownContent: string): ArticleFAQ[] {
       currentQuestion = h3[1].replace(/[*_`]/g, '').trim();
       continue;
     }
+    // Alguns posts antigos gravaram a pergunta em negrito, na linha inteira,
+    // em vez de um H3. Sem isso o FAQ some do FAQPage.
+    const boldQuestion = line.match(/^\*\*(.+)\*\*\s*$/);
+    if (boldQuestion && /\?\s*$/.test(boldQuestion[1])) {
+      flush();
+      currentQuestion = boldQuestion[1].replace(/[*_`]/g, '').trim();
+      continue;
+    }
     if (currentQuestion) answerLines.push(line);
   }
   flush();

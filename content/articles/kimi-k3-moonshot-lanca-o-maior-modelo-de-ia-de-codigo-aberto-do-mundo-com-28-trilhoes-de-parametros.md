@@ -1,5 +1,6 @@
 ---
 title: "Kimi K3: Moonshot Lança o Maior Modelo de IA de Código Aberto do Mundo, com 2,8 Trilhões de Parâmetros"
+seoTitle: "Kimi K3: Modelo Aberto da Moonshot com 2,8 Trilhões"
 description: "Moonshot AI lança o Kimi K3, de 2,8 trilhões de parâmetros, o maior modelo de IA aberto já lançado, rivalizando com Claude e GPT-5.6."
 category: noticias
 tags:
@@ -88,6 +89,8 @@ Para desenvolvedores brasileiros, o efeito mais imediato é a pressão de preço
 A pergunta que fica em aberto é até onde vai essa corrida de eficiência. Se a Moonshot conseguiu chegar perto de Claude Opus 4.8 e GPT-5.5 sem acesso irrestrito aos chips mais avançados do mercado, o argumento de que só GPU em quantidade industrial garante liderança em IA começa a rachar — e isso interessa tanto a laboratórios rivais quanto a quem paga a conta no fim do mês.
 
 Para medir na prática se um modelo aberto como o K3 dá conta do seu código, os [prompts para programação](/blog/prompts-para-programacao) servem como bateria de testes: debug com entrada e saída esperadas, refatoração e testes unitários.
+
+**Veja também:** [Qwen3.8-Max: 2,4 Trilhões de Parâmetros e Foco em Código](/blog/qwen38-max-alibaba-lanca-modelo-de-24-trilhoes-de-parametros-que-supera-gpt-56-e-rivaliza-com-claude-em-benchmarks-de-codigo).
 
 ## Perguntas Frequentes
 

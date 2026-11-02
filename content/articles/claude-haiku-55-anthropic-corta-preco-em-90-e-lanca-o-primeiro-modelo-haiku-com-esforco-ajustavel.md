@@ -1,5 +1,6 @@
 ---
 title: "Claude Haiku 5.5: Anthropic Corta Preço em 90% e Lança o Primeiro Modelo Haiku com Esforço Ajustável"
+seoTitle: "Claude Haiku 5.5: Anthropic Corta o Preço em 90%"
 description: "Anthropic lança o Claude Haiku 5.5 com corte de até 90% no preço da API, 1 milhão de tokens de contexto e cinco níveis de esforço. Veja os números."
 category: noticias
 tags:
@@ -77,6 +78,8 @@ A própria Anthropic resume os casos de uso recomendados: tarefas de alto volume
 Para times que já rodam produtos de IA em escala — e sentem o preço por token pesando na planilha todo mês — a conta é simples de fazer antes de migrar: comparar o volume real de chamadas que cai na faixa de até 100 mil tokens (a grande maioria, segundo a própria Anthropic) contra o volume que passa disso, e simular os dois preços lado a lado. Quem ainda não testa prompts com o modelo pode fazer isso na própria [biblioteca de prompts](/prompts) do site, adaptando exemplos de uso prático para o novo preço.
 
 A [calculadora de custos de API](/calculadora) já aplica as duas faixas do Haiku 5.5 — até e acima de 100 mil tokens de prompt — e compara o resultado com o GPT-6 Luna e o Gemini Flash. E como o Claude entende os mesmos comandos que o ChatGPT, os [prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) também servem para testar o modelo.
+
+**No mesmo assunto:** [Claude Duet: o Agente Proativo da Anthropic Explicado](/blog/claude-duet-como-funciona-o-agente-proativo-da-anthropic-que-rivaliza-com-dots-e-muse) e [Claude Opus 5.5: Anthropic Corta o Preço em 40%](/blog/claude-opus-55-anthropic-corta-preco-em-40-e-lanca-modelo-dez-dias-apos-pedir-desaceleracao-da-ia).
 
 ## Perguntas Frequentes
 

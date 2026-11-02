@@ -1,6 +1,6 @@
 ---
 title: "Guia de Prompt Engineering 2026: Como Criar Prompts Perfeitos para ChatGPT, Claude e Gemini"
-seoTitle: "Guia de Prompt Engineering: Como Criar Prompts Perfeitos"
+seoTitle: "Prompt Engineering: Como Criar Prompts Melhores"
 description: "Domine prompt engineering com técnicas oficiais da Anthropic e OpenAI: chain-of-thought, few-shot, XML tags e mais. Guia prático com exemplos reais."
 category: tutoriais
 tags:
@@ -19,6 +19,8 @@ coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=f
 Uma pesquisa publicada no arXiv em 2025 mapeou **58 técnicas distintas de prompting para LLMs** — e a maioria das pessoas usa, no máximo, uma ou duas delas. A diferença entre um prompt genérico e um prompt bem engenheirado não é cosmética: é a diferença entre uma resposta que você descarta e uma que vai direto para o seu documento final. Plataformas de suporte ao cliente que adotaram prompt engineering estruturado relatam melhoras de 17% para 91% na taxa de resolução de problemas sem intervenção humana. Para escolher qual modelo usar em cada caso, compare os pontos fortes de cada um no [comparador de IAs do Turbina IA](/comparador).
 
 > **Resposta Rápida (TL;DR):** Prompts de alta performance combinam três elementos: **contexto claro** (quem, para quê, em qual cenário), **instrução direta com verbo de ação** (Escreva, Analise, Resuma) e **exemplos de formato esperado** (few-shot prompting). Adicionar a frase "pense passo a passo" a problemas lógicos (chain-of-thought) é a técnica individual com melhor custo-benefício documentada pela pesquisa acadêmica.
+
+Este guia ensina a escrever o prompt do zero. Quem quer copiar um modelo pronto e colar no ChatGPT deve ir à lista de [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt), com mais de 100 organizados por tarefa — é outra página, de outra intenção.
 
 ---
 

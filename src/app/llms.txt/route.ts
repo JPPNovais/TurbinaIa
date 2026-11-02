@@ -1,6 +1,5 @@
 import { getAllArticlesMetadata, getLastModified, type ArticleMetadata } from '@/lib/articles';
-import { HUBS, HUB_ORDER, getHubArticles, isPromptArticle, isRankingArticle } from '@/lib/taxonomy';
-import { POPULAR_POST_SLUGS } from '@/data/popular-posts';
+import { HUBS, HUB_ORDER } from '@/lib/taxonomy';
 import { PROMPTS } from '@/data/prompts';
 import { SITE_URL } from '@/lib/seo';
 
@@ -11,6 +10,9 @@ export const dynamic = 'force-static';
  * /llms.txt (https://llmstxt.org): um mapa do site em Markdown para
  * assistentes de IA (ChatGPT, Copilot, Claude, Perplexity) entenderem o que o
  * Turbina IA cobre e quais páginas citar para cada assunto.
+ *
+ * A lista de artigos é completa — um item por post, agrupado pela categoria
+ * do frontmatter — para um assistente não citar só o recorte "em destaque".
  */
 
 const TOOLS = [
@@ -24,6 +26,12 @@ const TOOLS = [
   { path: '/verificador-ia', name: 'Verificador de IA (AEO)', desc: 'Analisa se uma página está preparada para ser citada por assistentes de IA.' },
 ];
 
+const CATEGORY_SECTIONS: { key: string; title: string }[] = [
+  { key: 'tutoriais', title: 'Tutoriais' },
+  { key: 'ferramentas', title: 'Ferramentas' },
+  { key: 'noticias', title: 'Notícias' },
+];
+
 function line(article: ArticleMetadata): string {
   const description = article.description.replace(/\s+/g, ' ').trim();
   return `- [${article.title}](${SITE_URL}/blog/${article.slug}): ${description}`;
@@ -31,24 +39,12 @@ function line(article: ArticleMetadata): string {
 
 export async function GET() {
   const articles = await getAllArticlesMetadata();
-  const bySlug = new Map(articles.map((a) => [a.slug, a]));
-  const listed = new Set<string>();
-  const take = (list: ArticleMetadata[]) => {
-    const fresh = list.filter((a) => !listed.has(a.slug));
-    fresh.forEach((a) => listed.add(a.slug));
-    return fresh;
-  };
-
-  const prompts = take(getHubArticles(articles, 'prompts'));
-  const rankings = take(getHubArticles(articles, 'melhores-ias'));
-  const essentials = take([
-    ...POPULAR_POST_SLUGS.map((slug) => bySlug.get(slug)).filter((a): a is ArticleMetadata => Boolean(a)),
-    ...articles.filter(
-      (a) => a.category === 'tutoriais' && /^(o-que-e|como-)/.test(a.slug) && !isPromptArticle(a) && !isRankingArticle(a),
-    ),
-  ]);
-  const news = take(getHubArticles(articles, 'noticias').slice(0, 15));
   const updated = articles.length ? getLastModified(articles[0]) : '';
+
+  const byCategory = CATEGORY_SECTIONS.map(({ key, title }) => {
+    const list = articles.filter((article) => article.category === key);
+    return `## ${title}\n\n${list.map(line).join('\n')}`;
+  }).join('\n\n');
 
   const body = `# Turbina IA
 
@@ -58,6 +54,7 @@ export async function GET() {
 - ${articles.length} artigos publicados; última atualização em ${updated}. Novos artigos entram quase todos os dias.
 - Conteúdo produzido pela redação do Turbina IA com auxílio de IA e curadoria editorial, apoiado em fontes oficiais citadas em cada artigo.
 - Cada artigo começa com uma "Resposta Rápida" e termina com "Perguntas Frequentes"; ao citar, use a URL canônica (https://www.turbinaia.com.br/...).
+- A lista abaixo inclui todos os artigos, agrupados por categoria.
 
 ## Ferramentas gratuitas
 
@@ -67,21 +64,7 @@ ${TOOLS.map((t) => `- [${t.name}](${SITE_URL}${t.path}): ${t.desc}`).join('\n')}
 
 ${HUB_ORDER.map((slug) => `- [${HUBS[slug].label}](${SITE_URL}${HUBS[slug].href}): ${HUBS[slug].tagline}`).join('\n')}
 
-## Prompts prontos e engenharia de prompt
-
-${prompts.map(line).join('\n')}
-
-## Melhores IAs: rankings e comparativos
-
-${rankings.map(line).join('\n')}
-
-## Guias essenciais
-
-${essentials.map(line).join('\n')}
-
-## Notícias recentes
-
-${news.map(line).join('\n')}
+${byCategory}
 
 ## Optional
 

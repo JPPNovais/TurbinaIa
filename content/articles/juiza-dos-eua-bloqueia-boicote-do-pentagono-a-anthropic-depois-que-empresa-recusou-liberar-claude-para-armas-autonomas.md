@@ -1,5 +1,6 @@
 ---
 title: "Juíza dos EUA Bloqueia Boicote do Pentágono à Anthropic Depois que Empresa Recusou Liberar Claude para Armas Autônomas"
+seoTitle: "Justiça dos EUA Barra Boicote do Pentágono à Anthropic"
 description: "Juíza Rita Lin anula rótulo de 'risco à cadeia de suprimentos' imposto à Anthropic e diz que o Pentágono retaliou a empresa por defender limites ao uso"
 category: noticias
 tags:
@@ -71,6 +72,8 @@ O precedente interessa a qualquer empresa de tecnologia que venda para o governo
 Para quem acompanha como cada laboratório de IA ajusta suas políticas de uso e lançamentos ao longo do tempo, vale a pena manter o [Monitor de Modelos](/changelog) do Turbina IA na rotina — é onde essas mudanças de regra, quando afetam produtos comerciais, costumam aparecer primeiro. E para quem ainda tem dúvidas sobre termos como "guardrails" ou "políticas de uso" que aparecem direto nesse tipo de disputa, o [Glossário de IA](/glossario) do site traz definições diretas, sem jargão.
 
 Na prática, o que muda hoje é pontual: a Anthropic recupera o acesso a contratos federais que estavam suspensos por conta do rótulo. O que fica em aberto é maior — se um governo pode, no futuro, transformar discordância pública sobre segurança de IA em motivo para excluir um fornecedor do mercado público. A resposta definitiva depende do que uma corte de apelações decidir, provavelmente ainda em 2026 ou no início de 2027.
+
+**Para aprofundar:** [Microsoft Acusa a Anthropic de Simular Consciência no Claude](/blog/chefe-de-ia-da-microsoft-acusa-anthropic-de-treinar-o-claude-para-parecer-consciente) e [Anthropic Suspende Fable 5 e Mythos 5 por Ordem dos EUA](/blog/anthropic-suspende-acesso-global-a-fable-5-e-mythos-5-por-ordem-de-seguranca-nacional-dos-eua).
 
 ## Perguntas Frequentes
 

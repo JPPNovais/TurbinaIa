@@ -102,6 +102,8 @@ O número mais revelador até agora permanece o MRCR v2: 65,9 do SubQ em produç
 
 A pergunta que o relatório técnico prometido precisará responder é se os ganhos de eficiência se mantêm em tarefas de raciocínio complexo, geração criativa e múltiplos idiomas. Até lá, como sintetizou o MIT Technology Review, "o SubQ não vai substituir os modelos de topo existentes em todas as frentes, mas pode oferecer enormes ganhos de velocidade a uma fração do custo típico para certas tarefas". Em um setor onde custo e latência são barreiras de adoção reais, isso pode ser suficiente para uma posição de mercado relevante — mesmo que a revolução completa ainda precise de mais evidências.
 
+**No mesmo assunto:** [GPT-5.6: Mais Raciocínio e Janela de 1,5 Milhão de Tokens](/blog/gpt-56-cientista-chefe-da-openai-confirma-salto-significativo-em-raciocinio-janela-de-15-milhao-de-tokens-e-avancos-em-agentes-de-ia).
+
 ## Perguntas Frequentes
 
 ### O que é a janela de contexto de um LLM e por que 12 milhões de tokens é relevante?

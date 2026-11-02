@@ -1,5 +1,6 @@
 ---
 title: "GPT-6 Astra: OpenAI Lança Modelo 'Crítico' em Cibersegurança e Altman Pede Desculpas por Rollout Turbulento"
+seoTitle: "GPT-6 Astra: Modelo de Cibersegurança da OpenAI"
 description: "OpenAI lança o GPT-6 Astra, 1º modelo com risco crítico de cibersegurança; rollout falho fez Sam Altman pedir desculpas a assinantes pagantes."
 category: noticias
 tags:
@@ -80,6 +81,8 @@ Para o usuário comum, o Astra ainda não chegou de forma ampla — a liberaçã
 Na prática, o efeito imediato para o mercado brasileiro é indireto: mais pressão competitiva sobre Google e Anthropic para acelerar suas próprias divulgações de capacidade cibernética, e mais atenção de times de segurança corporativa para políticas de uso de IA generativa dentro da empresa — inclusive sobre quais modelos podem ou não acessar sistemas internos sem supervisão.
 
 Para quem usa o GPT-6 Astra no ChatGPT, onde ele virou o modelo padrão dos planos pagos, a [lista de prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) traz mais de 100 modelos prontos. Já quem pretende usá-lo pela API deve calcular o custo antes: a [calculadora de custos](/calculadora) mostra quanto ele custa frente ao GPT-6.1 Sol e aos concorrentes no mesmo volume de uso.
+
+**Veja também:** [ChatGPT para Bancos: OpenAI Mira Analistas com o GPT-6 Astra](/blog/openai-lanca-chatgpt-para-bancos-com-gpt-6-astra-e-mira-trabalho-de-analistas-juniores).
 
 ## Perguntas Frequentes
 

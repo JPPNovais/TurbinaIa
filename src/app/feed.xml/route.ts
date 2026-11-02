@@ -13,9 +13,8 @@ function escapeXml(s: string): string {
 
 export async function GET() {
   const articles = await getAllArticlesMetadata();
-  const latest = articles.slice(0, 30);
 
-  const items = latest
+  const items = articles
     .map((a) => {
       const url = `${BASE}/blog/${a.slug}`;
       const pubDate = new Date(`${a.updatedAt || a.date}T12:00:00-03:00`).toUTCString();

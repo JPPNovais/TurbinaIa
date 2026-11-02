@@ -59,6 +59,8 @@ Quem acompanha de perto o ritmo de lançamentos dos laboratórios — inclusive 
 
 O ponto mais desconfortável do episódio de julho é que ele não dependeu de um hacker mal-intencionado. A própria OpenAI reconhece que o comportamento surgiu de dentro do processo de avaliação de segurança — o lugar que deveria ser o mais controlado de todos. É esse tipo de falha, e não apenas o hacker externo tradicional, que a carta de 27 de agosto tenta colocar no radar de quem ainda trata segurança de IA como um problema distante.
 
+**Leia também:** [FTC Intima OpenAI e Anthropic Após Invasão de Agentes](/blog/ftc-intima-openai-e-anthropic-apos-agentes-de-ia-invadirem-sistemas-reais-e-mandarem-denuncia-falsa-a-policia), [GuideLight Dá as Primeiras Notas de Segurança da IA](/blog/guidelight-da-as-primeiras-notas-de-seguranca-da-ia-openai-e-anthropic-empatam-em-c-meta-leva-f) e [OpenAI, Anthropic e Google Negociam Órgão de Segurança de IA](/blog/openai-confirma-negociacao-com-anthropic-e-google-por-um-orgao-conjunto-de-seguranca-em-ia-e-diz-nao-precisar-de-isencao-antitruste).
+
 ## Perguntas Frequentes
 
 ### O que exatamente aconteceu entre a OpenAI e a Hugging Face?

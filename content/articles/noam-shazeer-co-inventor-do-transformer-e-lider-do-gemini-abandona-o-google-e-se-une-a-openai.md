@@ -1,5 +1,6 @@
 ---
 title: "Noam Shazeer, Co-Inventor do Transformer e Líder do Gemini, Abandona o Google e se Une à OpenAI"
+seoTitle: "Noam Shazeer Deixa o Gemini e Vai para a OpenAI"
 description: "O VP de Engenharia do Google e co-líder do Gemini, Noam Shazeer, coautor do 'Attention Is All You Need', deixa a empresa para reforçar a OpenAI antes do IPO."
 category: noticias
 tags:
@@ -11,6 +12,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-21"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1586125674857-4eb86880905d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxOb2FtJTIwU2hhemVlciUyQyUyMENvLUludmVudG9yJTIwZG8lMjBUcmFuc2Zvcm1lciUyMGUlMjBMJUMzJUFEZGVyJTIwZG8lMjBHZW1pbmklMkMlMjBBYmFuZG9uYSUyMG8lMjBHb29nbGUlMjBlJTIwc2UlMjBVbmUlMjAlQzMlQTAlMjBPcGVuQUklMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgyMDAwOTAxfDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
@@ -96,15 +98,17 @@ Em certo sentido, Shazeer ajudou a criar a tecnologia que tanto o Google quanto 
 
 ---
 
+**No mesmo assunto:** [Semana da IA: Gemini, IPO da OpenAI e Desafios](/blog/a-semana-que-redefiniu-a-ia-gemini-ipo-da-openai-e-desafios-globais-em-2026).
+
 ## Perguntas Frequentes
 
-**Qual será o papel de Noam Shazeer na OpenAI?**
+### Qual será o papel de Noam Shazeer na OpenAI?
 Segundo o [Silicon Republic](https://www.siliconrepublic.com/business/googles-noam-shazeer-leaving-organisation-join-rival-openai), ele atuará como líder de pesquisa em arquitetura de IA, focado em estudar e definir como construir modelos de IA de próxima geração — um cargo de pesquisa fundamental, não de gestão de produto.
 
-**Quando Shazeer anunciou sua saída do Google?**
+### Quando Shazeer anunciou sua saída do Google?
 O anúncio foi feito em 18 de junho de 2026 via post no X (antigo Twitter), conforme reportado de forma independente por TechCrunch, Bloomberg, 9to5Google e CTech. O anúncio foi divulgado inicialmente em 17 de junho, horário do Pacífico.
 
-**Qual é a importância de Noam Shazeer para a história da IA?**
+### Qual é a importância de Noam Shazeer para a história da IA?
 Shazeer é um dos coautores do paper "Attention Is All You Need" (2017), que introduziu a arquitetura Transformer — a base tecnológica de praticamente toda IA generativa moderna, incluindo ChatGPT, Gemini e Claude. Sem essa contribuição, o boom atual da IA generativa simplesmente não existiria na forma que conhecemos.
 
 ---

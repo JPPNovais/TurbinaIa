@@ -1,5 +1,6 @@
 ---
 title: "Alibaba Lança Qwen-Robot: A Família de Modelos de IA Embarcada que Leva a IA para o Mundo Físico"
+seoTitle: "Qwen-Robot: a IA Embarcada da Alibaba para o Mundo Físico"
 description: "A Alibaba Group introduz a série Qwen-Robot, marcando sua entrada na IA embarcada com modelos que capacitam robôs a perceber, raciocinar e interagir com o"
 category: noticias
 tags:
@@ -69,6 +70,8 @@ A [Tech in Asia](https://www.techinasia.com/alibaba-unveils-open-source-ai-model
 Embora as demonstrações da Alibaba, como um robô identificando uma fruta e colocando-a em uma cesta, ilustrem uma grande ambição, a verdadeira questão reside em quão bem essas demonstrações se traduzirão em produtos implantados em larga escala. A [PYMNTS.com](https://www.pymnts.com/ai/2026/alibaba-debuts-suite-of-ai-models-for-robots/) e o [MarketScreener](https://www.marketscreener.com/quote/stock/ALIBABA-GROUP-HOLDING-LIMI-25763048/news/Alibaba-Launches-Robotics-AI-Models-as-It-Ramps-Up-Physical-AI-Push-46908051/) indicam que a Alibaba ainda não detalhou preços, disponibilidade ou quais clientes terão acesso prioritário aos modelos Qwen-Robot. No entanto, a empresa já estabeleceu sua posição clara: abraçar a pilha completa de IA no momento em que a indústria reconhece os agentes, e não apenas os chatbots, como o verdadeiro prêmio.
 
 A aposta da Alibaba em IA embarcada é estratégica, complementando seu investimento massivo em IA — a empresa se comprometeu a investir ¥380 bilhões (US$ 52 bilhões) em IA nos próximos três anos. Com os modelos Qwen já acumulando 600 milhões de downloads globais desde 2023, a Alibaba busca solidificar sua liderança na corrida chinesa pela supremacia em IA e fortalecer sua posição no cenário tecnológico mundial.
+
+**No mesmo assunto:** [Hyundai e a Revolução Robótica](/blog/hyundai-e-a-revolucao-robotica-25-mil-robos-humanoides-atlas-com-ia-do-google-deepmind-chegam-as-fabricas), [Qwen3.8-Max: 2,4 Trilhões de Parâmetros e Foco em Código](/blog/qwen38-max-alibaba-lanca-modelo-de-24-trilhoes-de-parametros-que-supera-gpt-56-e-rivaliza-com-claude-em-benchmarks-de-codigo) e [Amazon Investe US$ 310 Mi na Odyssey, IA do Mundo Físico](/blog/amazon-investe-us-310-milhoes-na-odyssey-para-criar-ia-que-simula-o-mundo-fisico-em-tempo-real).
 
 ## Perguntas Frequentes
 

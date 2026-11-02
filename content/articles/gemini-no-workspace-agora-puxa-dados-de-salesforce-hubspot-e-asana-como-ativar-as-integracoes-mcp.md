@@ -1,5 +1,6 @@
 ---
 title: "Gemini no Workspace Agora Puxa Dados de Salesforce, HubSpot e Asana: Como Ativar as Integrações MCP"
+seoTitle: "Gemini no Workspace: Salesforce, HubSpot e Asana via MCP"
 description: "Gemini no Google Workspace conecta Salesforce, HubSpot, Asana e mais 4 ferramentas via MCP, protocolo criado pela Anthropic. Veja como ativar e usar."
 category: ferramentas
 tags:
@@ -78,6 +79,8 @@ Para times de vendas, o ganho mais direto é não perder o fio da conversa: ler 
 Nenhuma dessas tarefas é impossível sem a integração — todo mundo já fazia isso abrindo abas. A diferença é que o Gemini agora faz a ponte, e isso é o tipo de detalhe que raramente vira manchete, mas que muda a rotina de quem usa essas ferramentas todo dia. Para comparar como o Gemini se posiciona frente a outros assistentes de IA em tarefas do dia a dia, o [Comparador de IAs do Turbina IA](/comparador) traz um panorama lado a lado dos principais modelos disponíveis hoje.
 
 Para quem leva esse tipo de integração para sistemas próprios pela API do Gemini, em vez de usá-la dentro do Workspace, a [calculadora de custos de API](/calculadora) estima quanto cada modelo do Google custa por mês no seu volume de chamadas.
+
+**No mesmo assunto:** [Google Assistente Começa a Ser Desligado](/blog/google-assistente-comeca-a-ser-desligado-gemini-assume-celular-relogio-e-fones-veja-o-que-muda) e [Gemini Notebook: o NotebookLM Agora Executa Código](/blog/notebooklm-virou-gemini-notebook-como-funciona-o-novo-recurso-que-executa-codigo-dentro-das-suas-notas).
 
 ## Perguntas Frequentes
 

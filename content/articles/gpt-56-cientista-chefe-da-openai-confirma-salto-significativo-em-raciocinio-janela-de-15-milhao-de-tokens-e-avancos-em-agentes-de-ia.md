@@ -1,5 +1,6 @@
 ---
 title: "GPT-5.6: Cientista-Chefe da OpenAI Confirma Salto Significativo em Raciocínio, Janela de 1,5 Milhão de Tokens e Avanços em Agentes de IA"
+seoTitle: "GPT-5.6: Mais Raciocínio e Janela de 1,5 Milhão de Tokens"
 description: "Jakub Pachocki confirmou internamente que o GPT-5.6 é uma 'melhoria significativa'. Entenda o que esperar antes do lançamento previsto para o fim de junho"
 category: noticias
 tags:
@@ -11,6 +12,7 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-16"
+updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1675557009317-bb59e35aba82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxHUFQtNS42JTNBJTIwQ2llbnRpc3RhLUNoZWZlJTIwZGElMjBPcGVuQUklMjBDb25maXJtYSUyMFNhbHRvJTIwU2lnbmlmaWNhdGl2byUyMGVtJTIwUmFjaW9jJUMzJUFEbmlvJTJDJTIwSmFuZWxhJTIwZGUlMjAxJTJDNSUyME1pbGglQzMlQTNvJTIwZGUlMjBUb2tlbnMlMjBlJTIwQXZhbiVDMyVBN29zJTIwZW0lMjBBZ2VudGVzJTIwZGUlMjBJQSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3ODE2MzA2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
@@ -101,15 +103,17 @@ Enquanto isso, dá para tirar mais dos modelos atuais com prompts bem estruturad
 
 ---
 
+**Leia também:** [Grok 4.3 Chega à Amazon Bedrock](/blog/grok-43-chega-a-amazon-bedrock-xai-leva-modelo-com-1-milhao-de-tokens-e-menor-taxa-de-alucinacao-do-mercado-para-o-aws).
+
 ## Perguntas Frequentes
 
-**Quando o GPT-5.6 será lançado?**
+### Quando o GPT-5.6 será lançado?
 A janela mais provável é de 22 a 28 de junho de 2026, com 83% de probabilidade estimada pelo mercado de previsão Polymarket em 15 de junho. A OpenAI não fez nenhum anúncio oficial até a data desta publicação.
 
-**O GPT-5.6 terá mesmo 1,5 milhão de tokens de contexto?**
+### O GPT-5.6 terá mesmo 1,5 milhão de tokens de contexto?
 Essa informação ainda não foi confirmada oficialmente. Desenvolvedores que testaram o modelo relataram comportamento consistente com janela expandida, mas a OpenAI não publicou nenhuma documentação técnica ou model card para o GPT-5.6.
 
-**O GPT-5.6 vai custar mais caro que o GPT-5.5?**
+### O GPT-5.6 vai custar mais caro que o GPT-5.5?
 Rumores e fontes de desenvolvedores indicam que o preço deve ser mantido próximo ao do GPT-5.5 — ou até reduzido em comparação ao Claude Fable 5 da Anthropic, que custa US$ 10 por milhão de tokens de entrada e US$ 50 por milhão de saída.
 
 ---

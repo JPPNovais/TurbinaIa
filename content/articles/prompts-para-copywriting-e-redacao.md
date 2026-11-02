@@ -22,6 +22,8 @@ O problema é que a maioria das pessoas usa prompts genéricos e recebe de volta
 
 **Resposta Rápida (TL;DR):** Um bom prompt para copywriting diz à IA quem é o público, qual dor ou desejo ele tem, o que você vende, o que o leitor deve fazer depois de ler e o formato do texto — tamanho, tom e quantas versões. Os 40 modelos abaixo já trazem essa estrutura, com variáveis em `[colchetes]`: headlines, fórmulas como AIDA e PAS, páginas de vendas, storytelling, revisão e redação profissional. Funcionam no ChatGPT, no Gemini e no Claude.
 
+Para modelos gerais de trabalho, e-mail e estudo, a lista de [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) reúne mais de 100. Anúncios e redes sociais estão nos [prompts de marketing digital](/blog/prompts-para-marketing-digital); scripts de venda e loja virtual, nos [prompts para negócios](/blog/prompts-para-negocios-e-empreendedores). Se for chamar o modelo pela API, a [calculadora de custos](/calculadora) estima o gasto antes.
+
 **Escolha a categoria:**
 
 - [Headlines e títulos](#prompts-para-headlines-e-titulos) — 7 prompts

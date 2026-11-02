@@ -116,6 +116,8 @@ Para explorar mais sobre as últimas tendências e ferramentas em IA, visite nos
 
 Para quem está decidindo entre rodar um modelo aberto como o Gemma no próprio computador ou pagar por um modelo na nuvem, o [comparador de IAs](/comparador) coloca os principais assistentes lado a lado, e a [calculadora de custos de API](/calculadora) mostra quanto custariam o Gemini, o GPT e o Claude no mesmo volume de uso.
 
+**Leia também:** [Google DeepMind Lança DiffusionGemma](/blog/google-deepmind-lanca-diffusiongemma-ia-de-geracao-de-texto-4x-mais-rapida-com-difusao-e-suporte-local) e [Google Atrasa o Gemini 3.5 Pro para Julho](/blog/google-atrasa-o-gemini-35-pro-para-julho-data-de-1707-e-reconstrucao-da-arquitetura-ainda-sao-rumor-nao-confirmacao-oficial).
+
 ## Perguntas Frequentes
 
 ### O que torna o Gemma 4 12B "sem encoder"?

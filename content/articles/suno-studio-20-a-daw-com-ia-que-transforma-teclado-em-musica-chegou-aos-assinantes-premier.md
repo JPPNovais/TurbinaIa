@@ -1,5 +1,6 @@
 ---
 title: "Suno Studio 2.0: A DAW com IA que Transforma Teclado em Música Chegou aos Assinantes Premier"
+seoTitle: "Suno Studio 2.0: DAW com IA para Assinantes Premier"
 description: "Suno lançou o Studio 2.0 com suporte a MIDI, chat de IA na timeline, plugins personalizados e separação de stems. Veja o que mudou e quem já tem acesso."
 category: ferramentas
 tags:
@@ -57,6 +58,8 @@ Nesse cenário, dar aos assinantes Premier uma DAW de verdade — não só um ge
 ## Como experimentar
 
 Quem já assina o Premier encontra o Studio 2.0 direto na conta, sem precisar reinstalar nada — é tudo baseado em navegador. Para quem está no plano Grátis ou Pro, o caminho é fazer upgrade; vale lembrar que o Pro continua sendo suficiente para quem só quer gerar músicas prontas com direitos comerciais, sem mexer em MIDI ou stems. Se você já usa outras ferramentas de IA no dia a dia e quer comparar onde cada uma se encaixa melhor, o [comparador de IAs](/comparador) do Turbina IA ajuda a visualizar as diferenças entre modelos e assinaturas.
+
+**Para aprofundar:** [Midjourney V8.2 Vira Padrão: O Que Muda nas Imagens](/blog/midjourney-v82-vira-padrao-o-que-muda-na-personalizacao-e-qualidade-das-imagens-geradas), [CapCut Design Studio 2.0: Foto de Produto Vira Cenas](/blog/capcut-design-studio-20-como-a-nova-ferramenta-de-ia-transforma-uma-foto-de-produto-em-dezenas-de-cenas-para-vender-mais) e [ChatGPT Images 2.5: 50% Mais Rápido e Desenho à Mão](/blog/chatgpt-images-25-modelo-de-imagem-fica-50-mais-rapido-e-ganha-recurso-de-desenhar-a-mao).
 
 ## Perguntas Frequentes
 

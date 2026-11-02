@@ -1,5 +1,6 @@
 ---
 title: "China Intensifica Restrições de Viagem para Especialistas em IA Visando Proteger Tecnologia Estratégica"
+seoTitle: "China Restringe Viagem de Especialistas em IA"
 description: "Pequim impõe restrições de viagem a talentos de IA da Alibaba e DeepSeek para proteger tecnologia estratégica na corrida global contra os EUA."
 category: noticias
 tags:

@@ -24,6 +24,8 @@ Este artigo reúne mais de 50 prompts prontos, organizados por categoria, com va
 
 **Resposta Rápida (TL;DR):** Os melhores prompts para o Gemini têm quatro partes: o **papel** que ele deve assumir, o **contexto** (cole o texto, o e-mail ou anexe a foto), a **tarefa** com um verbo claro e o **formato** da resposta. Os modelos abaixo já seguem essa estrutura: copie, troque o que está entre [colchetes] e cole no [Gemini](https://gemini.google.com). Se você usa o Google no trabalho, comece pelos de Gmail e Docs; se quer editar imagens, pelos de fotos.
 
+A maior parte também funciona no ChatGPT: a lista de [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) traz mais de 100. Para código, veja os [prompts para programação](/blog/prompts-para-programacao); para anúncios, os [prompts de marketing digital](/blog/prompts-para-marketing-digital).
+
 **Escolha a categoria:**
 
 - [Produtividade e Google Workspace](#prompts-de-produtividade-e-google-workspace) — 10 prompts

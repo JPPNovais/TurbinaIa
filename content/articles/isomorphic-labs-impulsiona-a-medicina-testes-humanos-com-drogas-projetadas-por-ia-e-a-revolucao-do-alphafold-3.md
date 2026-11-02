@@ -87,6 +87,8 @@ Contudo, desafios persistem. A translação de modelos computacionais para resul
 
 Para comparar os principais modelos de IA disponíveis no mercado, incluindo os usados em aplicações biomédicas, confira o [Comparador de IAs](/comparador).
 
+**Veja também:** [A Defesa Digital Bilionária da Visa](/blog/a-defesa-digital-bilionaria-da-visa-como-a-ia-da-forca-tarefa-de-seguranca-interceptou-us-26-bilhoes-em-golpes).
+
 ## Perguntas Frequentes
 
 ### O que é Isomorphic Labs?

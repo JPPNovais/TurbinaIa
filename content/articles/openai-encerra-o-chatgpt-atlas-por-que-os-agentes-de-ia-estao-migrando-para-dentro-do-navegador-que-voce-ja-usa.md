@@ -73,6 +73,8 @@ O ponto em comum entre os quatro produtos é que todos tratam a ação autônoma
 
 Enquanto os agentes mudam de lugar, o jeito mais direto de produzir mais com o ChatGPT continua sendo um bom pedido: confira nossos [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) prontos para copiar.
 
+**No mesmo assunto:** [OpenAI Encerra o Navegador ChatGPT Atlas em 9 de Agosto](/blog/openai-encerra-o-navegador-chatgpt-atlas-em-9-de-agosto-como-migrar-senhas-abas-e-favoritos-antes-do-prazo).
+
 ## Perguntas Frequentes
 
 ### O que aconteceu com o ChatGPT Atlas?

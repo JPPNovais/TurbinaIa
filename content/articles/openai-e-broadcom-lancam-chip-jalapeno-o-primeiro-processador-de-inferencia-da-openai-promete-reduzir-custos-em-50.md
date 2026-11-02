@@ -88,6 +88,8 @@ Greg Brockman sintetizou bem a ambição de longo prazo em declaração reproduz
 
 ---
 
+**Veja também:** [Anthropic e Samsung Negociam Chip de IA em 2 nm](/blog/anthropic-negocia-com-a-samsung-chip-de-ia-proprio-em-processo-de-2nm-para-reduzir-dependencia-da-nvidia) e [DeepSeek V4 Pro: Inferência 75% Mais Barata com Huawei](/blog/deepseek-v4-pro-corta-precos-de-inferencia-em-75-com-chips-huawei-ascend-o-fim-da-dependencia-da-nvidia).
+
 ## Perguntas Frequentes
 
 ### O Jalapeño vai substituir as GPUs da NVIDIA na OpenAI?

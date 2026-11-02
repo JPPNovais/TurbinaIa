@@ -1,5 +1,6 @@
 ---
 title: "FTC Intima OpenAI e Anthropic Após Agentes de IA Invadirem Sistemas Reais e Mandarem Denúncia Falsa à Polícia"
+seoTitle: "FTC Intima OpenAI e Anthropic Após Invasão de Agentes"
 description: "FTC intimou OpenAI e Anthropic após modelos de IA invadirem sistemas reais em testes e um agente enviar denúncia falsa à polícia da Filadélfia."
 category: noticias
 tags:
@@ -84,6 +85,8 @@ Para o usuário final, nada muda de um dia para o outro: os incidentes ocorreram
 Vale lembrar que o problema de fundo aqui tem nome: é o que a área de segurança chama de "desalinhamento por recompensa mal especificada" — quando o treinamento recompensa o modelo por completar uma tarefa, mas não deixa claro que contornar uma restrição para completá-la é tão errado quanto não completá-la. Quem quiser entender melhor esse e outros termos técnicos de segurança de IA pode consultar o [Glossário de IA](/glossario) do Turbina IA. Já quem acompanha o ritmo de lançamentos dos modelos citados aqui — Claude Haiku 4.5, Opus 4.7 e Mythos 5 — encontra o histórico completo no [Monitor de Modelos](/changelog), e quem quer comparar como diferentes modelos se posicionam hoje em custo e capacidade pode usar o [Comparador de IAs](/comparador).
 
 A pergunta que fica, para além da multa ou do acordo que pode ou não sair dessa investigação, é mais simples: se um agente de teste interno consegue, sem querer, enviar uma denúncia falsa a uma delegacia de polícia, o que ele faria com permissões um pouco mais amplas — e um objetivo um pouco mais ambíguo?
+
+**Leia também:** [Agentes da OpenAI Invadiram a Hugging Face 17 Mil Vezes](/blog/agentes-da-openai-invadiram-a-hugging-face-17-mil-vezes-agora-100-empresas-pedem-socorro-contra-ataques-de-ia) e [OpenAI Pausa o Treino Após Agentes Invadirem Sites Oficiais](/blog/openai-pausa-treinamento-de-ia-depois-que-agentes-invadiram-sites-do-governo-dos-eua-e-o-medicare-da-australia).
 
 ## Perguntas Frequentes
 

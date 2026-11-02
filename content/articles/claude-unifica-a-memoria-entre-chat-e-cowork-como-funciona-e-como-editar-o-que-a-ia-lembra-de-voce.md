@@ -85,6 +85,8 @@ Para o usuário comum, o ganho é evitar o retrabalho de reexplicar contexto tod
 
 O contraponto é que memória mais persistente também exige mais atenção do usuário: revisar periodicamente os tópicos salvos deixou de ser opcional para quem lida com informação sensível de trabalho na mesma conta usada para conversas pessoais.
 
+**No mesmo assunto:** [Claude Haiku 4.5 Sai do Seletor em 29/10: O Que Muda](/blog/claude-haiku-45-sai-do-seletor-de-modelos-em-29-de-outubro-o-que-muda-e-como-se-preparar) e [Quem Usa IA Há Mais de 6 Meses Acerta 10%](/blog/quem-usa-ia-ha-mais-de-6-meses-acerta-10-mais-o-habito-que-a-anthropic-identificou).
+
 ## Perguntas Frequentes
 
 ### A memória do Claude funciona igual em todos os planos?

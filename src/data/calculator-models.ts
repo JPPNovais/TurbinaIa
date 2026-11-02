@@ -28,6 +28,14 @@ export const AI_MODELS: CalculatorModel[] = [
     description: 'O principal modelo de raciocínio da Google, voltado a engenharia de software, matemática e agentes de várias etapas. Disponível na API paga (não está no tier gratuito). Preço promocional de US$ 2,00/US$ 10,00 por milhão de tokens até 30 de novembro de 2026; a partir de 1º de dezembro de 2026 passa a US$ 4,00/US$ 20,00. O preço de saída inclui os tokens de raciocínio.',
   },
   {
+    name: 'Gemini 4 Carbon',
+    provider: 'Google',
+    inputPricePerM: 2.00,
+    outputPricePerM: 10.00,
+    contextWindow: '1M tokens',
+    description: 'Anunciado em 28 de outubro de 2026 como o modelo de fronteira mais recente da Google, com foco em cibersegurança (detecção e correção de vulnerabilidades) e tarefas de longo horizonte. Preço de lançamento igual ao do Gemini 4 Argon (US$ 2,00/US$ 10,00 por milhão de tokens), mas o acesso à API ainda está restrito a defensores de cibersegurança cadastrados no programa Fairwind — sem data de disponibilidade geral confirmada.',
+  },
+  {
     name: 'Gemini 3.1 Pro (Preview)',
     provider: 'Google',
     inputPricePerM: 2.00,

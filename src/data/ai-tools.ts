@@ -1519,7 +1519,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🌐',
     tagline: 'Navegador com IA integrada para pesquisa e automação de tarefas',
     description:
-      'Comet é um navegador com IA integrada (baseado no Chromium) que oferece recursos como "Sidebar Assistant" para fazer perguntas sobre o conteúdo da página, e "Agent mode" para controlar o navegador e completar tarefas multi-etapa automaticamente. Foca em produtividade e pesquisa, e se tornou gratuito em todas as plataformas no Q2 2026. Lançado para iOS em 18 de março de 2026.',
+      'Comet é um navegador com IA integrada (baseado no Chromium) que oferece recursos como "Sidebar Assistant" para fazer perguntas sobre o conteúdo da página, e "Agent mode" para controlar o navegador e completar tarefas multi-etapa automaticamente. Lançado em julho de 2025 como exclusividade do plano Max (US$ 200/mês), tornou-se gratuito para qualquer conta em todas as regiões em 2 de outubro de 2025 — ainda na versão desktop (Windows/macOS). Chegou ao Android em novembro de 2025 e ao iPhone em 18 de março de 2026, com sincronização de histórico entre dispositivos. Pesquisas de segurança independentes (Brave, em agosto e outubro de 2025, e Guardio, em agosto de 2025) encontraram falhas de injeção de prompt que permitiam a execução de instruções escondidas em páginas maliciosas; a Perplexity publicou mitigações em outubro de 2025, mas recomenda-se revisar manualmente qualquer ação sensível (login, pagamento, envio de dados) antes de confirmar.',
     useCases: [
       'Pesquisar e interagir com conteúdo da web sem sair da página',
       'Automatizar tarefas de navegação e preenchimento de formulários',
@@ -1527,10 +1527,10 @@ export const AI_TOOLS: AITool[] = [
       'Gerar respostas e interações em tempo real com IA',
     ],
     pricing: 'Grátis',
-    pricingDetails: 'Plano Grátis: Tornou-se gratuito em todas as plataformas no Q2 2026. Inicialmente lançado em Julho de 2025 para Windows/macOS, Novembro de 2025 para Android, e Março de 2026 para iOS. Integra-se com os planos Perplexity Pro e Max para recursos avançados como Perplexity Computer.',
+    pricingDetails: 'Plano Grátis: navegador completo, assistente básico, busca com IA e resumo de páginas/abas, gratuito desde 2 de outubro de 2025 em qualquer país, para desktop (Windows/macOS), Android (desde novembro de 2025) e iPhone (desde 18 de março de 2026). Recursos agênticos avançados (tarefas em segundo plano, automações mais longas, modelos premium) ficam nos planos Perplexity Pro (US$ 20/mês, ou US$ 17/mês anual) e Max (US$ 200/mês), que também dão acesso ao Perplexity Computer. Comet Plus, add-on de US$ 5/mês com acesso a conteúdo de editoras parceiras (lançado em agosto de 2025, com 80% da receita repassada aos parceiros), vem incluído automaticamente nos planos Pro e Max.',
     url: 'https://comet.ai',
     tags: ['navegador', 'pesquisa', 'agente', 'automação', 'produtividade', 'web'],
-    updatedAt: '2026-09',
+    updatedAt: '2026-11',
   },
   {
     id: 'elicit',

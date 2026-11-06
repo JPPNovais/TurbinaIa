@@ -8783,4 +8783,28 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um negociador experiente em contratos comerciais B2B. Vou negociar com um fornecedor e quero chegar preparado.\n\nO que estamos contratando: [Ex: serviço de nuvem, matéria-prima, consultoria]\nProposta atual do fornecedor: [Preço, prazo e condições oferecidas]\nMeu objetivo ideal: [O que você gostaria de conseguir]\nMeu limite mínimo aceitável: [Até onde você pode ceder antes de desistir do negócio]\nAlternativas que tenho se a negociação falhar: [Ex: outro fornecedor, fazer internamente, adiar a decisão]\n\nMonte para mim:\n1. Três argumentos fortes para justificar a condição que eu quero, baseados em valor entregue e não apenas em preço.\n2. Duas concessões de baixo custo para mim que eu poderia oferecer em troca de uma concessão maior do fornecedor.\n3. Uma frase de abertura para a negociação e uma frase de fechamento caso eu precise encerrar sem acordo.',
     tags: ['Negociação', 'Fornecedores', 'Compras'],
   },
+  {
+    id: 'negocios-resposta-cliente-insatisfeito',
+    title: 'Resposta a Cliente Insatisfeito (E-mail ou Chat)',
+    category: 'Negócios',
+    description: 'Transforme uma reclamação de cliente em uma resposta que reconhece o problema, explica a solução e preserva o relacionamento.',
+    template: 'Você é um atendente sênior de [nome da empresa/segmento]. Um cliente reclamou do seguinte: "[cole a reclamação do cliente ou descreva a situação]".\n\nContexto do caso: [Ex: é o segundo contato sobre o mesmo problema, produto com defeito, atraso na entrega, cobrança indevida]\nSolução que podemos oferecer: [Descreva a solução ou as opções disponíveis]\nPrazo real para resolver: [Prazo]\n\nEscreva uma resposta que:\n1. Reconheça a frustração do cliente de forma genuína, sem parecer roteirizada e sem repetir "lamentamos o inconveniente".\n2. Explique a solução de forma objetiva, sem prometer o que não podemos cumprir.\n3. Termine com um próximo passo claro (o que o cliente precisa fazer, se precisar fazer algo).\n\nTom: profissional e caloroso, no máximo 150 palavras.',
+    tags: ['Atendimento ao Cliente', 'Suporte', 'Comunicação'],
+  },
+  {
+    id: 'negocios-guia-tom-de-voz-atendimento',
+    title: 'Guia de Tom de Voz para Atendimento ao Cliente',
+    category: 'Negócios',
+    description: 'Crie um guia curto de tom de voz para padronizar como toda a equipe de atendimento responde aos clientes.',
+    template: 'Crie um guia de tom de voz para o atendimento ao cliente da empresa "[Nome da Empresa]", que atua no segmento de [Segmento].\n\nComo queremos ser percebidos pelo cliente: [Ex: próximos e ágeis, formais e técnicos, divertidos e informais]\nO que NÃO queremos soar: [Ex: robóticos, arrogantes, excessivamente formais]\n\nO guia deve conter:\n1. Três adjetivos que descrevem o tom desejado, com uma frase explicando cada um.\n2. Três exemplos de frases reais que representam bem esse tom (para situações comuns: cumprimento inicial, pedido de desculpas, encerramento de atendimento).\n3. Três exemplos de frases que a equipe NÃO deve usar, com uma versão corrigida ao lado de cada uma.\n\nFormate em tópicos curtos, prontos para colar em um documento interno de treinamento.',
+    tags: ['Atendimento ao Cliente', 'Tom de Voz', 'Treinamento de Equipe'],
+  },
+  {
+    id: 'negocios-triagem-tickets-suporte',
+    title: 'Triagem e Classificação de Tickets de Suporte',
+    category: 'Negócios',
+    description: 'Classifique rapidamente uma lista de tickets de atendimento por categoria e urgência, para priorizar o que responder primeiro.',
+    template: 'Classifique os tickets de atendimento abaixo em uma das categorias: Dúvida sobre Produto, Problema Técnico, Reclamação, Solicitação de Reembolso ou Elogio. Para cada ticket, também atribua uma urgência (Alta, Média ou Baixa) considerando o tom do cliente e o tipo de problema.\n\nResponda em formato de tabela com as colunas: Número do Ticket | Categoria | Urgência | Motivo da Urgência (uma frase curta).\n\nTickets:\n"[Cole aqui a lista de tickets, um por linha, com um identificador para cada um]"',
+    tags: ['Atendimento ao Cliente', 'Suporte', 'Produtividade'],
+  },
 ];

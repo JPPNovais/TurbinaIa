@@ -13,6 +13,32 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'estudo-detectores-ia-taxa-erro-2026-11',
+    date: '2026-11',
+    title: 'Estudos de Stanford e da Universidade da Flórida encontram taxas de erro de até 68,6% em detectores de texto por IA',
+    developer: 'Universidade Stanford / Universidade da Flórida',
+    category: 'Pesquisa',
+    description: 'Um estudo da Universidade Stanford mediu taxa média de falso positivo de 61,3% ao testar sete detectores de texto por IA (como GPTZero, Turnitin e Copyleaks) em redações de pessoas que escrevem em inglês como segunda língua, enquanto uma pesquisa de 2026 da Universidade da Flórida mediu taxas de erro entre 0,05% e 68,6% dependendo da ferramenta e do tipo de texto avaliado.',
+    highlights: [
+      'Textos simples e com vocabulário repetitivo, comuns entre não-nativos no idioma, são sistematicamente mal classificados como "gerados por IA".',
+      'Nenhum resultado desses detectores deve ser tratado como prova isolada de uso de IA — apenas como um sinal a mais entre vários.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'google-gemini-4-carbon-ciberseguranca-2026-10',
+    date: '2026-10',
+    title: 'Google lança o Gemini 4 Carbon com foco em cibersegurança, mas restringe acesso a especialistas',
+    developer: 'Google',
+    category: 'Lançamento',
+    description: 'Em 28 de outubro de 2026, o Google anunciou o Gemini 4 Carbon, seu modelo de fronteira com foco declarado em cibersegurança e tarefas de longo horizonte — detecção de vulnerabilidades, validação e correção de código. Diferente de lançamentos anteriores da família Gemini, o acesso começa restrito a defensores cadastrados no programa Fairwind, antes de se expandir para desenvolvedores, empresas e consumidores em geral, sem data fixa anunciada para essa segunda fase.',
+    highlights: [
+      'É o segundo modelo da geração Gemini 4, chegando só duas semanas depois da disponibilidade geral do Gemini 4 Argon, em 13 de outubro.',
+      'Preço de lançamento de US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de saída — igual ao do antecessor Gemini 4 Argon.',
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'openai-corta-meta-captacao-10-bi-2026-10',
     date: '2026-10',
     title: 'OpenAI reduz em US$ 10 bilhões a meta de sua rodada de financiamento',

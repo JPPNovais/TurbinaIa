@@ -267,7 +267,7 @@ async function main() {
   console.log(`🔗 Slug:    ${slug}`);
   console.log(`📌 Título:  "${title}"`);
   console.log(`🏷️  Categoria: ${category}  |  🖼️  Capa: ...${coverImageUrl.slice(-40)}`);
-  console.log(`📊 ~${words} palavras  |  🔗 ${internalLinks} links internos  |  ❓ ${faqHeadings} perguntas no FAQ`);
+  console.log(`📊 ~${words} palavras  |  🔗 ${blogLinks} links para outros posts  |  ❓ ${faqHeadings} perguntas no FAQ`);
 }
 
 main().catch((error) => {

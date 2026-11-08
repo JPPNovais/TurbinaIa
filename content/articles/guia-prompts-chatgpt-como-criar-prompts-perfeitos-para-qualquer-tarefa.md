@@ -185,7 +185,7 @@ Cada modelo tem características distintas que afetam como os prompts devem ser 
 
 **Melhor para:** documentos longos, análise detalhada, revisão crítica, código com explicações.
 
-Claude processa janelas de contexto extensas com alta fidelidade. A Anthropic documenta que o modelo segue instruções de forma literal — se você não delimitar o escopo, ele vai além do solicitado. **Sempre defina tamanho máximo e restrições de formato.** Para entender a evolução recente da Anthropic e o que esperar dos modelos Claude mais avançados, confira a [análise sobre Claude Opus 4.8 e a estratégia da Anthropic](/blog/anthropic-supera-openai-em-valor-de-mercado-e-impulsiona-ia-de-ponta-com-claude-opus-48-e-mythos).
+Claude processa janelas de contexto extensas com alta fidelidade. A Anthropic documenta que o modelo segue instruções de forma literal — se você não delimitar o escopo, ele vai além do solicitado. **Sempre defina tamanho máximo e restrições de formato.** Para entender a evolução recente da Anthropic e o que esperar dos modelos Claude mais avançados, confira a análise sobre Claude Opus 4.8 e a estratégia da Anthropic.
 
 Técnicas que funcionam melhor no Claude:
 - Tags XML para separar contexto, instruções e exemplos
@@ -211,7 +211,7 @@ Técnicas que funcionam melhor no ChatGPT:
 
 **Melhor para:** pesquisa com fontes recentes, tarefas multimodais (texto + imagem), síntese de informações da web.
 
-Por ter integração nativa com a busca do Google, o Gemini é especialmente útil para tarefas que exigem dados atualizados. Defina sempre o escopo temporal ("dados de 2025") e solicite links para as fontes ("inclua URLs para cada afirmação"). O lançamento do [Gemini 3.5 Flash](/blog/gemini-35-flash-a-nova-ia-do-google-acelera-a-era-agentica-com-poder-e-eficiencia) trouxe melhorias relevantes no raciocínio multimodal que impactam diretamente como os prompts são interpretados.
+Por ter integração nativa com a busca do Google, o Gemini é especialmente útil para tarefas que exigem dados atualizados. Defina sempre o escopo temporal ("dados de 2025") e solicite links para as fontes ("inclua URLs para cada afirmação"). O lançamento do Gemini 3.5 Flash trouxe melhorias relevantes no raciocínio multimodal que impactam diretamente como os prompts são interpretados.
 
 Técnicas que funcionam melhor no Gemini:
 - Definir o escopo de pesquisa e período temporal
@@ -232,6 +232,8 @@ Para aprofundar sua prática de prompting, explore os recursos do próprio site:
 ---
 
 Para ver essa estrutura aplicada a tarefas reais, confira mais de 100 [prompts prontos para o ChatGPT](/blog/prompts-prontos-para-chatgpt), organizados por categoria e prontos para copiar.
+
+**Leia também:** [+50 Prompts para o Gemini Prontos para Copiar (2026)](/blog/prompts-para-gemini).
 
 ## Perguntas Frequentes
 

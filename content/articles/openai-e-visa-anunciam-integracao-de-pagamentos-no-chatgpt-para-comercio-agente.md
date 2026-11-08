@@ -14,6 +14,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-11"
 coverImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A Inteligência Artificial (IA) está mudando o funcionamento do comércio global, e uma parceria estratégica entre a gigante de pagamentos Visa e a pioneira em IA OpenAI promete acelerar essa mudança. As empresas anunciaram a integração das ferramentas de pagamento da Visa diretamente nos produtos da OpenAI, incluindo o ChatGPT, abrindo caminho para uma nova era de "comércio agente", onde assistentes de IA poderão realizar compras em nome dos usuários de forma segura e controlada.

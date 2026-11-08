@@ -16,6 +16,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-14"
 coverImage: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A paisagem da Inteligência Artificial está em constante evolução, com inovações que prometem descentralizar o processamento e levar o poder da IA diretamente para as mãos de desenvolvedores e usuários. Recentemente, a [NVIDIA](https://www.nvidia.com/) e a [Microsoft](https://www.microsoft.com/) anunciaram um marco significativo nesse caminho com o lançamento do chip **RTX Spark** e do **Surface RTX Spark Dev Box**. Essas novidades, reveladas durante as conferências Computex e Microsoft Build de 2026, sinalizam uma nova era para o desenvolvimento de IA na ponta, combinando hardware de alto desempenho com um ecossistema de software otimizado para a plataforma Windows-on-Arm.

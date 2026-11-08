@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-22"
 coverImage: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxTdWJRJTIwUHJvbWV0ZSUyMFJlc29sdmVyJTIwbyUyME1haW9yJTIwR2FyZ2FsbyUyMGRvcyUyMExMTXMlM0ElMjBTdGFydHVwJTIwTGFuJUMzJUE3YSUyME1vZGVsbyUyMGNvbSUyMEphbmVsYSUyMGRlJTIwMTIlMjBNaWxoJUMzJUI1ZXMlMjBkZSUyMFRva2VucyUyMGUlMjBBdGVuJUMzJUE3JUMzJUEzbyUyMDEuMDAweCUyME1haXMlMjBFZmljaWVudGUlMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgyMTQwOTA5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 No dia 5 de maio de 2026, uma startup sediada em Miami chamada Subquadratic saiu do modo *stealth* com uma afirmação extraordinária: havia resolvido, matematicamente, o principal gargalo que limita os modelos de linguagem de grande escala há quase uma década. O modelo, batizado de SubQ 1M-Preview, não apenas amplia a janela de contexto — ele propõe reescrever a física computacional por trás de como a atenção em LLMs funciona. A declaração gerou fascínio e ceticismo em proporções iguais. Um mês depois, com avaliações conduzidas por terceiros publicadas, o debate ficou substancialmente mais sério.

@@ -14,6 +14,7 @@ isFeatured: false
 date: "2026-06-20"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 John Jumper, o químico computacional que liderou o desenvolvimento do AlphaFold e dividiu o Prêmio Nobel de Química de 2024, anunciou na sexta-feira, 19 de junho de 2026, que está deixando o Google DeepMind após quase nove anos. Seu próximo destino: a Anthropic, uma das rivais mais acirradas do Google na corrida pela inteligência artificial de fronteira. A notícia, confirmada por [Bloomberg](https://www.bloomberg.com/news/articles/2026-06-19/nobel-winner-john-jumper-to-leave-google-deepmind-for-anthropic) e [TechCrunch](https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/), marca o maior movimento de talento individual já registrado no setor de IA — e lança uma sombra significativa sobre o futuro da liderança científica do Google.

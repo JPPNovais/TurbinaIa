@@ -10,6 +10,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-23"
 coverImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Era junho de 2022 quando a Getty Images ergueu uma das barreiras mais simbólicas da indústria criativa contra a inteligência artificial: proibiu completamente obras geradas por IA de seu acervo. Menos de quatro anos depois, na noite de 21 de junho de 2026, a mesma empresa anunciou uma parceria multianual com a OpenAI — a empresa que mais personifica a revolução que a Getty jurou resistir. O mercado reagiu com uma das valorizações mais explosivas do ano: as ações da Getty Images (NYSE: GETY) subiram até 200% nas primeiras horas da segunda-feira e fecharam o dia com alta de 145%, conforme reportado pela [Bloomberg](https://www.bloomberg.com/news/articles/2026-06-22/getty-images-soars-200-in-early-trading-after-openai-deal).

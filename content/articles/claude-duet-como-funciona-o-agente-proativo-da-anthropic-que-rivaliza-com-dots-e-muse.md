@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-25"
 coverImage: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na semana de 21 de outubro, quem assina o Claude Pro ou Max nos Estados Unidos começou a ver uma tela de espera diferente dentro do aplicativo: um convite para testar um agente que manda mensagem por conta própria, antes mesmo de alguém abrir o chat. É o [Claude Duet](https://claude.com/product/claude-duet), a aposta mais recente da Anthropic num território que OpenAI e Meta já disputam há semanas — o de agentes que não esperam comando, mas checam o e-mail, o Slack e a agenda sozinhos e só avisam o usuário quando algo exige decisão.

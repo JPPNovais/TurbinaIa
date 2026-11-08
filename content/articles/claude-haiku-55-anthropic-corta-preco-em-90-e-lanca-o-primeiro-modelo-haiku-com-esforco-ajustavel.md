@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-11"
 coverImage: "https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Um milhão de tokens de entrada no Claude Haiku 5.5 custa US$ 0,10. Há duas semanas, o mesmo volume no Haiku 4.5 custava US$ 1 — dez vezes mais. A Anthropic anunciou o novo modelo em 7 de outubro, e o número que mais chamou atenção não foi um benchmark, foi a tabela de preços: [a empresa cortou o custo de lista em até 90% para prompts de até 100 mil tokens](https://www.anthropic.com/claude-haiku-5-5), igualando o piso cobrado pela OpenAI no GPT-6 Luna, segundo a [VentureBeat](https://venturebeat.com/technology/anthropic-launches-claude-haiku-5-5-with-90-api-price-reduction-matching-gpt-6-luna).

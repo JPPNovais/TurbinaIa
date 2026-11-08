@@ -103,8 +103,6 @@ Enquanto isso, dá para tirar mais dos modelos atuais com prompts bem estruturad
 
 ---
 
-**Leia também:** [Grok 4.3 Chega à Amazon Bedrock](/blog/grok-43-chega-a-amazon-bedrock-xai-leva-modelo-com-1-milhao-de-tokens-e-menor-taxa-de-alucinacao-do-mercado-para-o-aws).
-
 ## Perguntas Frequentes
 
 ### Quando o GPT-5.6 será lançado?

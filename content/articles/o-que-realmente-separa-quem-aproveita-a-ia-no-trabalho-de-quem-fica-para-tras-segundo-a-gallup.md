@@ -85,7 +85,7 @@ Na prática, isso costuma significar três coisas simples. Primeiro, tratar erro
 
 Ferramentas como o [Comparador de IAs](/comparador) ajudam a escolher o modelo certo para cada tipo de tarefa, e a [Calculadora de Custos](/calculadora) dá uma ideia realista de quanto custa rodar IA generativa em volume antes de bater de frente com a planilha do financeiro. Mas, pelos próprios números da Gallup, a ferramenta certa pesa menos do que o contexto em que ela é usada.
 
-**Veja também:** [Amplitude Bate Frequência: IA em 7 Tipos de Tarefa](/blog/amplitude-bate-frequencia-por-que-so-quem-usa-ia-em-7-tipos-de-tarefa-diferentes-sente-ganho-real-de-produtividade), [Por Que Tanta Gente Esconde que Usa IA no Trabalho](/blog/por-que-tanta-gente-esconde-que-usa-ia-no-trabalho-e-o-que-isso-esta-custando) e [97% dos Devs Usam IA; Só 1 em 3 Governa o Código](/blog/estudo-black-duck-2026-97-dos-desenvolvedores-usam-ia-para-programar-mas-apenas-1-em-3-tem-governanca-do-codigo-gerado).
+**Veja também:** [Amplitude Bate Frequência: IA em 7 Tipos de Tarefa](/blog/amplitude-bate-frequencia-por-que-so-quem-usa-ia-em-7-tipos-de-tarefa-diferentes-sente-ganho-real-de-produtividade), [Por Que Tanta Gente Esconde que Usa IA no Trabalho](/blog/por-que-tanta-gente-esconde-que-usa-ia-no-trabalho-e-o-que-isso-esta-custando) e 97% dos Devs Usam IA; Só 1 em 3 Governa o Código.
 
 ## Perguntas Frequentes
 

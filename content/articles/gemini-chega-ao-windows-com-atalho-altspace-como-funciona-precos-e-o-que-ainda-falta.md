@@ -62,7 +62,7 @@ O lançamento fecha uma lacuna que a Google vinha deixando aberta havia tempo: u
 
 Na prática, o app não traz nenhuma capacidade de IA que não existisse antes no navegador — o que ele entrega é velocidade de acesso. Para times que já usam o Gemini para resumir documentos do Drive ou revisar e-mails do Gmail, cortar o passo de abrir uma aba tende a significar uso mais frequente, não uso mais poderoso. Já quem depende do Spark para automações vai continuar precisando do celular, do Mac ou do navegador até a Google decidir levar o agente para o Windows — e não há data anunciada para isso.
 
-**Leia também:** [Gemini Grátis por 1 Ano para Universitários](/blog/google-libera-gemini-gratis-por-1-ano-para-universitarios-e-lanca-hub-de-estudos-com-simulacoes-3d) e [Gemini 4 Argon: Recorde em Código, Acesso Restrito](/blog/gemini-4-argon-google-bate-recorde-em-programacao-mas-so-libera-o-modelo-para-times-de-ciberseguranca).
+**Leia também:** [Gemini Grátis por 1 Ano para Universitários](/blog/google-libera-gemini-gratis-por-1-ano-para-universitarios-e-lanca-hub-de-estudos-com-simulacoes-3d) e Gemini 4 Argon: Recorde em Código, Acesso Restrito.
 
 ## Perguntas Frequentes
 

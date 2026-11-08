@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-12"
 coverImage: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Uma falha num sistema de controle industrial pode ficar sem correção por anos — às vezes décadas — porque a usina, a estação de tratamento de água ou a subestação elétrica que ela controla não pode simplesmente ser desligada para aplicar um patch. Foi esse problema específico que a Anthropic decidiu atacar em 8 de outubro, ao anunciar o [Cyber Mission](https://www.anthropic.com/news/anthropic-cyber-mission), um programa que coloca o Claude e engenheiros da própria empresa a serviço de onze companhias de segurança que já protegem redes elétricas, sistemas de água e transporte nos Estados Unidos e em outros países.

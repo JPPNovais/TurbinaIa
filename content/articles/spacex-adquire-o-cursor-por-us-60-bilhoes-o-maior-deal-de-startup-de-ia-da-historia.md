@@ -97,8 +97,6 @@ A Anthropic, com o Claude Code, e a OpenAI, com o Codex, são os rivais mais ime
 
 Tammy Madsen, professora da Universidade Santa Clara, disse à [Fortune](https://fortune.com/2026/06/16/elon-musk-spacex-ipo-ai-coding-startup-cursor-acquisition/) que não espera que Musk pare por aqui: "Seu foco sempre foi alto risco, alta recompensa. Não consigo dizer o que mais ele quer adicionar ao portfólio, mas não esperaria que ele parasse." Com uma moeda de aquisição que se valoriza por conta própria e uma tese de US$ 28 trilhões para justificar cada operação, o incentivo para continuar comprando é enorme.
 
-**Veja também:** [Reflection AI Fecha Contrato de US$ 6,3 Bi com a SpaceX](/blog/reflection-ai-fecha-contrato-de-us-63-bilhoes-com-spacex-para-desenvolver-o-deepseek-do-ocidente-com-chips-nvidia-gb300).
-
 ## Perguntas Frequentes
 
 ### Por que a SpaceX pagou tanto pelo Cursor?

@@ -14,6 +14,7 @@ isFeatured: false
 date: "2026-06-20"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na última quarta-feira, 17 de junho, às margens do resort de Évian-les-Bains, no sopé dos Alpes franceses com vista para o Lago Leman, os três homens que lideram a corrida global pela inteligência artificial mais avançada do mundo se sentaram à mesa com presidentes, primeiros-ministros e ministros de finanças. O resultado: uma proposta sem precedentes — e carregada de contradições — para criar um fórum internacional de governança de IA sob tutela americana, em um momento em que o próprio governo dos Estados Unidos havia acabado de cortar o acesso mundial aos modelos mais poderosos de uma das empresas presentes.

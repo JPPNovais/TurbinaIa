@@ -10,6 +10,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-10"
 coverImage: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A partir de 8 de outubro de 2026, um funcionário que usa o Google Workspace pode, em teoria, mandar uma tarefa por e-mail para um colega que não é uma pessoa. É um agente de Inteligência Artificial com endereço de e-mail próprio, agenda própria e espaço no Drive — criado para parecer, na prática, mais um membro da equipe do que um chatbot. A Google apresentou o recurso no evento Gemini at Work 2026, segundo o [TechCrunch](https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/), e a novidade também foi confirmada pela [Bloomberg](https://www.bloomberg.com/news/articles/2026-10-08/google-launches-universal-gemini-ai-agent-for-workplace).

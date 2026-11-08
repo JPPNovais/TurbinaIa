@@ -74,7 +74,7 @@ Quarto, vale checar se o idioma e a região da sua conta já têm o Gemini liber
 
 A Google aposta que a base de 1 bilhão de usuários do Gemini absorve a transição sem fricção relevante, mas a decisão de desligar um produto usado por uma década antes de fechar todas as lacunas de paridade é, na prática, uma aposta em cima da própria pressa. Se as reclamações sobre timers, rotinas e o modo Intérprete se acumularem nas próximas semanas, a pressão para acelerar correções vai cair diretamente sobre a equipe do Gemini — porque quem depende dessas funções todos os dias não quer precisar improvisar uma solução alternativa no meio da rotina.
 
-**Veja também:** [textGrain: ChatGPT Marca Textos com IA, Só na Europa](/blog/chatgpt-comeca-a-marcar-textos-com-ia-de-forma-invisivel-mas-so-na-europa-entenda-o-textgrain) e [WWDC 2026: Siri com Gemini e iOS 27 Aberto a Várias IAs](/blog/wwdc-2026-apple-choca-o-mercado-com-siri-turbinada-por-gemini-e-ios-27-aberto-a-multiplas-ias).
+**Veja também:** [textGrain: ChatGPT Marca Textos com IA, Só na Europa](/blog/chatgpt-comeca-a-marcar-textos-com-ia-de-forma-invisivel-mas-so-na-europa-entenda-o-textgrain) e WWDC 2026: Siri com Gemini e iOS 27 Aberto a Várias IAs.
 
 ## Perguntas Frequentes
 

@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-07-20"
 coverImage: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na quinta-feira, 9 de julho, a OpenAI abriu para o público geral algo que já vinha sendo testado, sob supervisão do governo americano, desde o fim de junho: a família GPT-5.6, dividida em três modelos batizados de Sol, Terra e Luna. Não é só um upgrade de número de versão. É a primeira vez que a empresa formaliza publicamente uma arquitetura em camadas — um modelo para tarefa pesada, um para o dia a dia e um para volume — com preços bem diferentes entre si por milhão de tokens processados.

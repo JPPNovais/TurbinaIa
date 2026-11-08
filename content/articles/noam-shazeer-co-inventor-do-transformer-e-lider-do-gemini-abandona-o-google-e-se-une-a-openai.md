@@ -98,8 +98,6 @@ Em certo sentido, Shazeer ajudou a criar a tecnologia que tanto o Google quanto 
 
 ---
 
-**No mesmo assunto:** [Semana da IA: Gemini, IPO da OpenAI e Desafios](/blog/a-semana-que-redefiniu-a-ia-gemini-ipo-da-openai-e-desafios-globais-em-2026).
-
 ## Perguntas Frequentes
 
 ### Qual será o papel de Noam Shazeer na OpenAI?

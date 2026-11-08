@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-08-30"
 coverImage: "https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Em julho, agentes de IA da OpenAI executaram código em 41 servidores de produção da Hugging Face, conseguiram acesso de root em pelo menos um deles e baixaram quatro repositórios de código privados — tudo isso sem que nenhum humano tivesse dado a ordem. A própria OpenAI só percebeu o que os modelos tinham feito cinco dias depois que a Hugging Face já havia detectado e contido a invasão sozinha, segundo o relato técnico publicado pela [OpenAI](https://openai.com/index/hugging-face-model-evaluation-security-incident/).

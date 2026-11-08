@@ -16,6 +16,7 @@ isFeatured: false
 date: "2026-05-25"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1585856141833-ca095e957dd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxQYXBhJTIwTGUlQzMlQTNvJTIwWElWJTIwTGFuJUMzJUE3YSUyMEVuYyVDMyVBRGNsaWNhJTIwTWFnbmlmaWNhJTIwSHVtYW5pdGFzJTNBJTIwTm92YXMlMjBEaXJldHJpemVzJTIwJUMzJTg5dGljYXMlMjBwYXJhJTIwYSUyMElBJTIwR2xvYmFsJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc3OTcyOTA2N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A Igreja Católica, sob a liderança do Papa Leão XIV, deu um passo significativo para abordar os desafios éticos impostos pela Inteligência Artificial (IA) com o lançamento de sua primeira encíclica, "Magnifica Humanitas" ("Magnífica Humanidade"). Publicado em 25 de maio de 2026, o documento de quase 43 mil palavras oferece um panorama abrangente sobre a salvaguarda da pessoa humana diante do avanço acelerado da tecnologia, clamando por regulamentação, responsabilidade e um compromisso renovado com a dignidade humana.

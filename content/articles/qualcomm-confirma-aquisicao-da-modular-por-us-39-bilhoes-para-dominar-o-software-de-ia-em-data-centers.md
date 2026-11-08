@@ -105,7 +105,7 @@ A transação está sujeita a aprovações regulatórias habituais, e o prazo es
 
 O mercado de chips de IA tem recebido escrutínio crescente de reguladores — a tentativa da NVIDIA de adquirir a ARM foi bloqueada em 2022, e a FTC tem monitorado ativamente consolidações no setor de semicondutores. No entanto, a Modular é uma empresa de software, não de hardware, o que tende a simplificar a análise concorrencial.
 
-**Veja também:** [Mistral AI, de €20 Bi, Aposta em Data Centers na Europa](/blog/mistral-ai-avaliada-em-20-bilhoes-aposta-em-mega-data-centers-para-dominio-europeu-da-ia), [Android 17 Chega com Gemini Omni, Lyria 3 e AudioLM](/blog/android-17-chega-com-gemini-omni-lyria-3-e-audiolm-google-transforma-o-sistema-operacional-em-plataforma-de-ia-generativa) e [OpenAI corta meta de captação em US$ 10 bilhões](/blog/openai-corta-meta-de-captacao-em-us-10-bilhoes-apos-tombo-das-acoes-de-ia).
+**Leia também:** [Machine Learning: O Que É e Como Funciona (Guia 2026)](/blog/o-que-e-machine-learning-aprendizado-de-maquina) e [Melhores IAs em 2026: ranking grátis e pagas](/blog/melhores-ias-2026-ranking).
 
 ## Perguntas Frequentes
 

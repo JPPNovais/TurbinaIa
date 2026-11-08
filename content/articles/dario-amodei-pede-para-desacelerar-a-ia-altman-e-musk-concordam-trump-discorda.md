@@ -10,6 +10,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-14"
 coverImage: "https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 No sábado, 12 de setembro, o CEO de uma das empresas mais valiosas do Vale do Silício publicou um ensaio de quase 4 mil palavras pedindo a seus concorrentes diretos que façam algo raro no setor de tecnologia: ir mais devagar. Dario Amodei, da Anthropic, intitulou o texto ["We Must Pace the Frontier"](https://darioamodei.com/post/we-must-pace-the-frontier) — "Precisamos pautar o ritmo da fronteira" — e, em poucas horas, recebeu apoio público de dois rivais que raramente concordam em qualquer coisa: Sam Altman, da OpenAI, e Elon Musk, dono da xAI.

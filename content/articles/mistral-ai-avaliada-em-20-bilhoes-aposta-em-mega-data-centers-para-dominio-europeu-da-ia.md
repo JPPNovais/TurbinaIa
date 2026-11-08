@@ -15,6 +15,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-15"
 coverImage: "https://images.unsplash.com/photo-1718241905916-1f9786324de9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxNaXN0cmFsJTIwQUklMjBBdmFsaWFkYSUyMGVtJTIwJUUyJTgyJUFDMjAlMjBCaWxoJUMzJUI1ZXMlMjBBcG9zdGElMjBlbSUyME1lZ2ElMjBEYXRhJTIwQ2VudGVycyUyMHBhcmElMjBEb20lQzMlQURuaW8lMjBFdXJvcGV1JTIwZGElMjBJQSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3ODE1Mzc5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A Mistral AI, a promissora startup francesa de inteligência artificial, está em negociações avançadas para uma nova rodada de financiamento que a avaliaria em impressionantes €20 bilhões. Esse valuation, que representa quase o dobro de seu valor há apenas nove meses, sublinha a aposta ambiciosa da empresa em construir uma infraestrutura de data centers de larga escala para garantir a soberania da IA na Europa. A estratégia da Mistral AI não se limita a aprimorar seus modelos, mas visa competir diretamente com gigantes globais ao investir massivamente em sua própria capacidade computacional.

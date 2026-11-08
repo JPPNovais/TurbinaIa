@@ -107,7 +107,7 @@ A IA ajuda a classificar palavras-chave por intenção: informativa (*"o que é 
 
 ### Construção de autoridade temática (topical authority)
 
-Em vez de escrever artigos isolados, a IA pode ajudar a planejar um **cluster de conteúdo**: um artigo pilar abrangente (como este) e vários artigos de suporte cobrindo subtópicos específicos. O Google interpreta esse padrão como sinal de especialidade no assunto. Para nichos de IA e tecnologia, artigos que cobrem temas como [o impacto da IA no mercado de trabalho](/blog/futuro-do-trabalho-e-ia-2026) ou inovações de grandes players são exemplos de conteúdo com alta demanda de busca.
+Em vez de escrever artigos isolados, a IA pode ajudar a planejar um **cluster de conteúdo**: um artigo pilar abrangente (como este) e vários artigos de suporte cobrindo subtópicos específicos. O Google interpreta esse padrão como sinal de especialidade no assunto. Para nichos de IA e tecnologia, artigos que cobrem temas como o impacto da IA no mercado de trabalho ou inovações de grandes players são exemplos de conteúdo com alta demanda de busca.
 
 ### Otimização de snippets destacados
 

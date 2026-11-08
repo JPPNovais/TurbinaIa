@@ -53,7 +53,7 @@ Tanto o [TechTimes](https://www.techtimes.com/articles/307436/20260601/github-co
 
 ### Impacto para Usuários Individuais e Corporativos
 
-Para os usuários individuais, o impacto é imediato e palpável. Muitos sentem que o "paraíso" da precificação fixa, onde podiam usar o Copilot como um "Netflix" de código, acabou. Esse cenário faz parte de uma tendência mais ampla sobre o [futuro do trabalho com IA em 2026](/blog/futuro-do-trabalho-e-ia-2026), em que desenvolvedores precisam aprender a gerenciar custos de IA como uma nova disciplina profissional. A falta de previsibilidade nos custos é um ponto central da frustração, já que é difícil estimar quantos créditos uma sessão de codificação consumirá, especialmente com os recursos "agentic". Quando os créditos acabam, os recursos premium do Copilot são pausados, a menos que o usuário compre créditos adicionais ou faça upgrade para um plano superior.
+Para os usuários individuais, o impacto é imediato e palpável. Muitos sentem que o "paraíso" da precificação fixa, onde podiam usar o Copilot como um "Netflix" de código, acabou. Esse cenário faz parte de uma tendência mais ampla sobre o futuro do trabalho com IA em 2026, em que desenvolvedores precisam aprender a gerenciar custos de IA como uma nova disciplina profissional. A falta de previsibilidade nos custos é um ponto central da frustração, já que é difícil estimar quantos créditos uma sessão de codificação consumirá, especialmente com os recursos "agentic". Quando os créditos acabam, os recursos premium do Copilot são pausados, a menos que o usuário compre créditos adicionais ou faça upgrade para um plano superior.
 
 No cenário corporativo, embora haja a vantagem do agrupamento de créditos e controles de orçamento, as empresas também precisarão adaptar suas estratégias. O GitHub enfatiza que esse é um passo em direção à "economia de computação em nuvem" para ferramentas de codificação de IA, sugerindo que as empresas devem aplicar as mesmas práticas de governança de custos que usam para a nuvem. Isso inclui monitoramento, alertas e otimização para gerenciar o consumo do Copilot de forma mais ativa do que antes.
 
@@ -71,13 +71,15 @@ Os novos controles de orçamento para administradores e o agrupamento de crédit
 
 No entanto, a era do acesso ilimitado "all-you-can-eat" para a maioria dos recursos avançados do Copilot parece ter chegado ao fim. Desenvolvedores agora precisam ser mais intencionais sobre como e com que frequência usam os recursos do Copilot que consomem créditos. Essa mudança reflete uma tendência mais ampla no mercado de IA, onde o custo computacional real da execução de modelos avançados está sendo repassado aos usuários, marcando uma transição dos modelos de negócios de software como serviço (SaaS) para os de computação em nuvem (CaaS).
 
-A comunidade agora aguarda para ver como essa mudança se estabilizará. Será que os desenvolvedores se adaptarão, ou a frustração levará a uma migração em massa para outras ferramentas e modelos de IA? A previsibilidade e a comunicação transparente dos custos serão cruciais para que o GitHub Copilot mantenha sua relevância e valor no longo prazo. Vale lembrar que o Claude Opus 4.8, um dos modelos disponíveis no Copilot, foi lançado pela Anthropic exatamente nesse período — o que explica em parte o aumento do consumo de tokens, como discutimos ao cobrir o [lançamento do Claude Opus 4.8 e a valorização da Anthropic](/blog/anthropic-supera-openai-em-valor-de-mercado-e-impulsiona-ia-de-ponta-com-claude-opus-48-e-mythos).
+A comunidade agora aguarda para ver como essa mudança se estabilizará. Será que os desenvolvedores se adaptarão, ou a frustração levará a uma migração em massa para outras ferramentas e modelos de IA? A previsibilidade e a comunicação transparente dos custos serão cruciais para que o GitHub Copilot mantenha sua relevância e valor no longo prazo. Vale lembrar que o Claude Opus 4.8, um dos modelos disponíveis no Copilot, foi lançado pela Anthropic exatamente nesse período — o que explica em parte o aumento do consumo de tokens, como discutimos ao cobrir o lançamento do Claude Opus 4.8 e a valorização da Anthropic.
 
 ![Gráficos de análise de custos e dados de uso de ferramentas de IA por desenvolvedores](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80)
 
 Para entender melhor as diferentes ferramentas de IA disponíveis e comparar seus recursos e modelos de precificação, você pode visitar nosso [comparador de modelos de IA](/comparador). Para estimar o impacto financeiro direto no seu uso, experimente também nossa [calculadora de custo de APIs](/calculadora).
 
 Com a cobrança por token, prompts mais enxutos viram economia direta: os [prompts para programação](/blog/prompts-para-programacao) mostram como dar ao modelo só o contexto necessário — o trecho de código, o erro e o resultado esperado — em vez de colar arquivos inteiros.
+
+**Leia também:** [GitHub Copilot Aposenta 6 Modelos de IA no Dia 19 de Outubro: Veja o Que Muda Antes do Prazo](/blog/github-copilot-aposenta-6-modelos-de-ia-no-dia-19-de-outubro-veja-o-que-muda-antes-do-prazo).
 
 ## Perguntas Frequentes (FAQ)
 

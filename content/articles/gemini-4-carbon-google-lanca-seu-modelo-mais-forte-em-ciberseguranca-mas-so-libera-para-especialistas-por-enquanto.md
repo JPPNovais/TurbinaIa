@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 No dia 28 de outubro, o Google anunciou o que chamou de seu modelo de IA mais avançado até hoje. Só que, diferente de todo lançamento anterior da família [Gemini](/blog/prompts-para-gemini), quase ninguém pôde testá-lo. O Gemini 4 Carbon chegou com a porta trancada para o público geral e a chave entregue primeiro a um grupo seleto: times de defesa cibernética.

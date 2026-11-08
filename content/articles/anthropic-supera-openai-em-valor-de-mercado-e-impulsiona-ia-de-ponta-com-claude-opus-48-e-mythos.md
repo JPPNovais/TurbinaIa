@@ -15,6 +15,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-29"
 coverImage: "https://images.unsplash.com/photo-1655720828018-edd2daec9349?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A Anthropic, desenvolvedora da família de modelos Claude, consolidou sua posição como um dos principais players do setor ao superar a rival OpenAI em valor de mercado. Esse marco financeiro é acompanhado pelo lançamento estratégico do Claude Opus 4.8 e pela preparação para uma liberação mais ampla do seu modelo de segurança cibernética de nível “Mythos”, o que promete redefinir as capacidades da IA em diversos domínios.

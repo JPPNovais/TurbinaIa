@@ -14,6 +14,7 @@ isFeatured: false
 date: "2026-06-22"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxBZ2VudGphY2tpbmclM0ElMjBDb21vJTIwdW0lMjBSZWxhdCVDMyVCM3JpbyUyMGRlJTIwQnVnJTIwRmFsc28lMjBTZXF1ZXN0cmElMjBvJTIwQ2xhdWRlJTIwQ29kZSUyMGUlMjBvJTIwQ3Vyc29yJTIwY29tJTIwODUlMjUlMjBkZSUyMFRheGElMjBkZSUyMFN1Y2Vzc28lMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgyMDg3NDUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 Imagine que um desenvolvedor pede ao seu agente de IA favorito para investigar os erros abertos no painel do Sentry. O agente faz a consulta, lê os resultados e executa as etapas recomendadas — exatamente como foi treinado para fazer. O problema é que uma dessas "recomendações" não veio da aplicação. Foi plantada ali por um atacante que não violou nenhum servidor, não roubou nenhuma senha e não precisou de nenhuma autenticação especial. Bastou uma chave pública disponível no código-fonte de qualquer site.

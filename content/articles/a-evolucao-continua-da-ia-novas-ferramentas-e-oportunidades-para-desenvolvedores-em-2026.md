@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-23"
 coverImage: "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxBJTIwRXZvbHUlQzMlQTclQzMlQTNvJTIwQ29udCVDMyVBRG51YSUyMGRhJTIwSUElM0ElMjBOb3ZhcyUyMEZlcnJhbWVudGFzJTIwZSUyME9wb3J0dW5pZGFkZXMlMjBwYXJhJTIwRGVzZW52b2x2ZWRvcmVzJTIwZW0lMjAyMDI2JTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc3OTU3MzM5OXww&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 Escrever software em 2026 é uma atividade diferente da que era há apenas dois anos. A pergunta deixou de ser "devo usar IA para programar?" e passou a ser "quais ferramentas combino e como organizo meu fluxo de trabalho?". Para a maioria dos desenvolvedores, a IA saiu da categoria de curiosidade e virou parte da rotina — tão presente quanto o controle de versão ou o terminal.

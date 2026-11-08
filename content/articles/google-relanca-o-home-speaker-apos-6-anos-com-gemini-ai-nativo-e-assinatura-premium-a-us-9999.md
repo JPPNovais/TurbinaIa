@@ -14,6 +14,7 @@ isFeatured: false
 date: "2026-06-20"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1586125674857-4eb86880905d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxHb29nbGUlMjBSZWxhbiVDMyVBN2ElMjBvJTIwSG9tZSUyMFNwZWFrZXIlMjBBcCVDMyVCM3MlMjA2JTIwQW5vcyUyMGNvbSUyMEdlbWluaSUyMEFJJTIwTmF0aXZvJTIwZSUyMEFzc2luYXR1cmElMjBQcmVtaXVtJTIwYSUyMFVTJTI0JTIwOTklMkM5OSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3ODE5MTQ1Njd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 Em setembro de 2020, o Google lançou o Nest Audio e praticamente saiu do mercado de alto-falantes inteligentes. Por seis anos, os concorrentes — especialmente a Amazon com seus Echo — evoluíram suas plataformas enquanto os dispositivos da Alphabet envelheciam com atualizações cosméticas e um Google Assistant cada vez mais limitado. Na quarta-feira, 17 de junho de 2026, o silêncio terminou. O Google anunciou o [novo Google Home Speaker](https://blog.google/products-and-platforms/devices/google-nest/google-home-speaker-gemini-features/) por US$ 99,99, disponível para pré-venda imediata e com chegada às prateleiras em 25 de junho. É o primeiro dispositivo de áudio da empresa construído do zero para o Gemini — e pode ser a aposta mais importante do Google na corrida pela IA do lar.

@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-25"
 coverImage: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxHZW1pbmklMjAzLjUlMjBGbGFzaCUzQSUyMEElMjBOb3ZhJTIwSUElMjBkbyUyMEdvb2dsZSUyMEFjZWxlcmElMjBhJTIwRXJhJTIwQWclQzMlQUFudGljYSUyMGNvbSUyMFBvZGVyJTIwZSUyMEVmaWNpJUMzJUFBbmNpYSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3Nzk3MTYzMTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A inteligência artificial continua a evoluir em um ritmo acelerado, e o Google acaba de lançar uma de suas inovações mais promissoras: o Gemini 3.5 Flash. Anunciado no Google I/O 2026, este novo modelo promete não apenas mais velocidade e eficiência, mas também um salto significativo em direção à "Era Agêntica", onde as IAs não apenas respondem a comandos, mas atuam de forma autônoma para atingir objetivos complexos.

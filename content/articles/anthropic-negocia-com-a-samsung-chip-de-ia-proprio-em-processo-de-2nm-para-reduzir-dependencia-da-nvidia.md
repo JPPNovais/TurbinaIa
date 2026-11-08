@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-07-03"
 coverImage: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A corrida por hardware proprietário no setor de inteligência artificial ganhou um novo capítulo nesta semana. Segundo o [TechCrunch](https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/), a Anthropic, criadora do chatbot Claude, está em conversas com a Samsung Electronics para explorar a fabricação de um chip de IA próprio, utilizando o processo de 2 nanômetros (2nm) da fabricante sul-coreana. A notícia, revelada originalmente pelo veículo especializado The Information, foi confirmada de forma independente pela [Bloomberg](https://www.bloomberg.com/news/articles/2026-07-02/anthropic-in-talks-with-samsung-for-custom-ai-chip-information-mr3l34t4), que cita fontes familiarizadas com o assunto.

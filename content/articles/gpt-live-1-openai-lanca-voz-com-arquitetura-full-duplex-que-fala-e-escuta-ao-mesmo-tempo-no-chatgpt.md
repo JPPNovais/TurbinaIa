@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-07-10"
 coverImage: "https://images.unsplash.com/photo-1676272682018-b1435bad1cf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxHUFQtTGl2ZS0xJTNBJTIwT3BlbkFJJTIwTGFuJUMzJUE3YSUyMFZveiUyMGNvbSUyMEFycXVpdGV0dXJhJTIwRnVsbC1EdXBsZXglMjBxdWUlMjBGYWxhJTIwZSUyMEVzY3V0YSUyMGFvJTIwTWVzbW8lMjBUZW1wbyUyMG5vJTIwQ2hhdEdQVCUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3ODM3MDY5Njl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A OpenAI eliminou nesta semana um dos maiores atritos da conversa por voz com inteligência artificial: a pausa mecânica entre o fim da fala do usuário e o início da resposta do assistente. Em 8 de julho de 2026, a empresa anunciou o [GPT-Live](https://openai.com/index/introducing-gpt-live/), uma nova geração de modelos de voz que abandona a lógica de "turnos" — falar, esperar, ouvir, responder — em favor de uma arquitetura full-duplex, na qual o sistema escuta e fala simultaneamente, como em uma conversa humana real.

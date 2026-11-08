@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-11-07"
 coverImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Mithril Medicine tinha, até pouco tempo atrás, um único funcionário. A empresa trabalhava em um tratamento para formas raras de distrofia muscular, uma doença que atinge poucos pacientes demais para interessar as grandes farmacêuticas. Em menos de 18 meses, ela saiu de uma hipótese no papel para resultados promissores em camundongos — coordenando contratos, logística e experimentos em 11 laboratórios externos com a ajuda do [Claude](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026). A Anthropic acabou comprando a empresa. É esse tipo de história que a companhia usa para justificar por que está colocando ainda mais dinheiro, em forma de créditos de IA, direto nas mãos de cientistas.

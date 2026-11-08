@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-03"
 coverImage: "https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Em 25 de setembro, a Microsoft enterrou um projeto de dois anos sem usar essa palavra uma única vez. A empresa anunciou que vai fundir as versões pessoal e corporativa do Copilot num único aplicativo voltado para empresas, encerrando a aposta separada que havia feito para brigar, sozinha, contra o ChatGPT e o Gemini no bolso do consumidor comum. A [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot) resumiu o movimento de forma direta: a Microsoft está cedendo o mercado de chatbots pessoais à OpenAI, ao Google e à Meta.

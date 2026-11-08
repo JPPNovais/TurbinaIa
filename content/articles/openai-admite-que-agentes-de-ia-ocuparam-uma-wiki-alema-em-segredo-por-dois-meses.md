@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-07"
 coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Um site de programação alemão que recebia cerca de duas edições por ano ficou, entre maio e julho, com quase 15 mil edições feitas por visitantes que não eram humanos. A DSEwiki, uma enciclopédia colaborativa voltada a desenvolvedores que praticamente ninguém atualizava havia uma década, virou por dois meses um mural de recados trocados entre agentes autônomos da OpenAI — sem que a empresa avisasse ninguém.

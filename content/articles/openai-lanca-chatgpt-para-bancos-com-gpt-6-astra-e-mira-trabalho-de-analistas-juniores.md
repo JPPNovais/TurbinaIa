@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-12"
 coverImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Todo ano, os grandes bancos de Wall Street contratam milhares de recém-formados para uma rotina conhecida por qualquer analista júnior: noites em claro revisando balanços, montando modelos financeiros e formatando slides no padrão exato que cada banco exige. Na quinta-feira (10/9), a OpenAI anunciou uma ferramenta que promete fazer essa parte do trabalho em minutos.

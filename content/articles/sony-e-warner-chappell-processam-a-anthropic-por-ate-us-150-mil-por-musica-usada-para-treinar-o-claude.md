@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-06"
 coverImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Trinta e cinco editoras musicais, lideradas pela Sony Music Publishing e pela Warner Chappell Music, entraram com uma ação na Justiça Federal do Distrito Norte da Califórnia em 28 de agosto de 2026 contra a Anthropic — e, de forma pouco comum, também contra os fundadores da empresa, Dario Amodei e Benjamin Mann, nominalmente [(TechCrunch)](https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/). A acusação: a empresa por trás do Claude teria baixado, torrentado e raspado dezenas de milhares de composições protegidas por direito autoral para alimentar o treinamento de seus modelos, sem pagar nada às editoras.

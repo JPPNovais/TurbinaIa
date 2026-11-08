@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-06"
 coverImage: "https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A corrida para dominar o futuro da inteligência artificial está migrando dos laboratórios de pesquisa para Wall Street, e a Anthropic, desenvolvedora do assistente de IA Claude, acaba de dar um passo monumental. A empresa protocolou um pedido confidencial para sua Oferta Pública Inicial (IPO) nos Estados Unidos, com uma avaliação que se aproxima de US$ 1 trilhão. Este movimento não apenas a posiciona como uma das startups mais valiosas do mundo, mas também intensifica a rivalidade com outras gigantes da IA, como a OpenAI, na disputa por capital no mercado público.

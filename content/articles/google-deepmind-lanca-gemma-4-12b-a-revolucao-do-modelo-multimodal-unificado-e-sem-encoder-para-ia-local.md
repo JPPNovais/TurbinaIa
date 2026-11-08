@@ -14,6 +14,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-15"
 coverImage: "https://images.unsplash.com/photo-1640158615573-cd28feb1bf4e?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A Inteligência Artificial continua sua trajetória acelerada de inovação, e a Google DeepMind acaba de apresentar um marco significativo: o lançamento do Gemma 4 12B. Este novo modelo, que integra a já proeminente família Gemma, destaca-se por sua arquitetura multimodal unificada e, mais notavelmente, por ser "sem encoder" – uma característica que redefine a eficiência e o acesso à IA de ponta. Projetado para levar a inteligência multimodal de alto desempenho diretamente para laptops e dispositivos de consumo, o Gemma 4 12B não apenas amplia as capacidades dos modelos abertos, mas também estabelece um novo padrão para o desenvolvimento de IA local e agentiva.

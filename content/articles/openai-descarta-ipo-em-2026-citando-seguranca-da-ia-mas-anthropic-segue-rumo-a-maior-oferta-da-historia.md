@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-13"
 coverImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Sam Altman passou uma hora sentado com a editora-chefe da Fortune, Alyson Shontell, na última sexta-feira (11). Quando ela perguntou se a OpenAI vai abrir capital em 2026, a resposta foi seca: "eu diria que não em 2026". Na sequência, o motivo apresentado não teve nada a ver com números de receita ou apetite de mercado — teve a ver com medo.

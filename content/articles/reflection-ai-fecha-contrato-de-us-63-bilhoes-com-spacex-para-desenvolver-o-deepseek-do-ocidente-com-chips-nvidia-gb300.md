@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-23"
 coverImage: "https://images.unsplash.com/photo-1775994121020-86426451f8bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxSZWZsZWN0aW9uJTIwQUklMjBGZWNoYSUyMENvbnRyYXRvJTIwZGUlMjBVUyUyNCUyMDYlMkMzJTIwQmlsaCVDMyVCNWVzJTIwY29tJTIwU3BhY2VYJTIwcGFyYSUyMERlc2Vudm9sdmVyJTIwbyUyMERlZXBTZWVrJTIwZG8lMjBPY2lkZW50ZSUyMGNvbSUyMENoaXBzJTIwTnZpZGlhJTIwR0IzMDAlMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgyMTczNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A corrida pela supremacia em inteligência artificial ganhou um novo capítulo bilionário esta semana. A SpaceX assinou um contrato de computação com a Reflection AI, startup dedicada a modelos de código aberto, no valor de até US$ 6,3 bilhões — tornando-a o mais recente e estrategicamente relevante cliente externo da infraestrutura Colossus, o datacenter originalmente construído para o chatbot Grok de Elon Musk.

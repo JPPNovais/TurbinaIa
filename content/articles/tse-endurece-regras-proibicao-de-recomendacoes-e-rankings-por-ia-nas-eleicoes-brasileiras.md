@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-13"
 coverImage: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxUU0UlMjBFbmR1cmVjZSUyMFJlZ3JhcyUzQSUyMFByb2liaSVDMyVBNyVDMyVBM28lMjBkZSUyMFJlY29tZW5kYSVDMyVBNyVDMyVCNWVzJTIwZSUyMFJhbmtpbmdzJTIwcG9yJTIwSUElMjBuYXMlMjBFbGVpJUMzJUE3JUMzJUI1ZXMlMjBCcmFzaWxlaXJhcyUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3ODEzNjc3NTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 As eleições brasileiras de 2026 prometem ser um marco na história da democracia digital do país. Pela primeira vez, o pleito será conduzido sob um robusto arcabouço de regras estabelecidas pelo Tribunal Superior Eleitoral (TSE) para o uso da Inteligência Artificial (IA) em campanhas. O objetivo é claro: garantir a integridade do processo eleitoral e proteger a autonomia do eleitor frente aos avanços tecnológicos, especialmente proibindo que sistemas de IA recomendem ou ranqueiem candidatos.

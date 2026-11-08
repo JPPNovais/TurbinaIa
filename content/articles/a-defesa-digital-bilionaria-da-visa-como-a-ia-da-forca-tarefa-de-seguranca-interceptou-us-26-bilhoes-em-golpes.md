@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-14"
 coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxBJTIwRGVmZXNhJTIwRGlnaXRhbCUyMEJpbGlvbiVDMyVBMXJpYSUyMGRhJTIwVmlzYSUzQSUyMENvbW8lMjBhJTIwSUElMjBkYSUyMEZvciVDMyVBN2EtVGFyZWZhJTIwZGUlMjBTZWd1cmFuJUMzJUE3YSUyMEludGVyY2VwdG91JTIwVVMlMjQlMjAyJTJDNiUyMEJpbGglQzMlQjVlcyUyMGVtJTIwR29scGVzJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc4MTQzNzY1MXww&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A era digital, embora traga inovações e conveniência sem precedentes, também abriu as portas para uma sofisticação crescente de ameaças cibernéticas. Golpes digitais, antes mais rudimentares, agora se valem de táticas complexas e, cada vez mais, da própria inteligência artificial para enganar consumidores e instituições financeiras. Nesse cenário desafiador, empresas líderes em pagamentos estão na linha de frente, desenvolvendo defesas igualmente avançadas e proativas. A Visa, gigante global em pagamentos digitais, revelou um marco significativo em sua batalha contra o crime financeiro, anunciando que sua força-tarefa especializada em segurança, equipada com IA, interceptou um impressionante montante de US$ 2,6 bilhões em atividades fraudulentas.

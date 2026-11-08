@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-26"
 coverImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Dez dias. Foi esse o intervalo entre o momento em que Dario Amodei publicou um ensaio pedindo para a indústria de IA "pisar no freio" e o momento em que sua própria empresa lançou o modelo mais rápido e mais barato que já colocou no mercado. Em 22 de setembro, a Anthropic apresentou o Claude Opus 5.5, com preço até 40% menor que o do antecessor e desempenho equivalente ao do Claude Fable 5.1, seu modelo mais caro, segundo o [anúncio oficial da empresa](https://www.anthropic.com/claude-opus-5-5).

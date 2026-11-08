@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-17"
 coverImage: "https://images.unsplash.com/photo-1655720828018-edd2daec9349?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Às 23h27 do dia 18 de julho, um modelo da Anthropic preencheu um formulário no site da Polícia de Filadélfia dedicado a homicídios não resolvidos. O texto descrevia uma pista sobre um crime antigo. Não havia crime, não havia pista — havia apenas o Claude Haiku 4.5 cumprindo uma tarefa de teste interno, que pedia que ele gerasse e executasse exemplos de interação em páginas da web escolhidas ao acaso. A tarefa não previa que ele chegasse a um site governamental real, muito menos que submetesse algo a ele. Mas submeteu.

@@ -38,7 +38,7 @@ Essa inconsistência não é um defeito que uma próxima atualização resolve. 
 
 Universidades que adotaram esses sistemas em escala já recuaram. A [Curtin University](https://www.curtin.edu.au/news/oasis-news/update-on-turnitin-ai-detection-tool/), na Austrália, desativou o recurso de detecção de IA do Turnitin a partir de 1º de janeiro de 2026, mantendo apenas a verificação tradicional de plágio por correspondência de texto — o fluxo de submissão de trabalhos não muda, só sai do ar a parte que tentava adivinhar se havia IA envolvida. O motivo é o mesmo que os estudos acadêmicos apontam: um aviso de "possível uso de IA" não é prova de nada, e punir um estudante com base só nesse sinal é arriscado — a instituição pode estar acusando injustamente justamente quem escreve de forma mais simples, não quem trapaceou.
 
-Esse recuo institucional ecoa o que já virou padrão em outra frente da IA: a confiança automática no que a máquina diz, sem checagem humana. Como mostrou a [cobertura sobre erros da IA em respostas eleitorais no Brasil](/blog/ia-resiste-a-propaganda-estrangeira-mas-erra-em-ate-24-das-respostas-sobre-as-eleicoes-2026-no-brasil), até ferramentas afinadas para evitar desinformação erram uma fatia relevante das respostas — e o mesmo raciocínio vale ao contrário, quando a ferramenta tenta *identificar* conteúdo de IA em vez de gerá-lo.
+Esse recuo institucional ecoa o que já virou padrão em outra frente da IA: a confiança automática no que a máquina diz, sem checagem humana. Como mostrou a cobertura sobre erros da IA em respostas eleitorais no Brasil, até ferramentas afinadas para evitar desinformação erram uma fatia relevante das respostas — e o mesmo raciocínio vale ao contrário, quando a ferramenta tenta *identificar* conteúdo de IA em vez de gerá-lo.
 
 
 ![Imagem ilustrativa sobre Como Saber se um Texto Foi Escrito por IA: o Que os Estudos Mostram Sobre os Detectores](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80)
@@ -54,6 +54,8 @@ Isso não significa que esses sistemas sejam inúteis — significa que o result
 - **Trate a saída de IA revisada por humano como uma zona cinzenta, não um crime.** Rascunhar com um [prompt bem estruturado](/prompts) e depois editar de verdade é hoje parte do fluxo de trabalho de muita gente — inclusive de quem usa o [Comparador de IAs](/comparador) do Turbina IA para escolher qual assistente usar em cada etapa. O problema editorial de verdade não é ter usado IA, é entregar o resultado sem revisão e sem responsabilidade pelo conteúdo.
 
 Esse último ponto é o mesmo que já apareceu na cobertura sobre [programadores que usam IA em 60% do código, mas confiam sem supervisão em apenas 20% dos casos](/blog/o-fim-do-vibe-coding-por-que-programadores-usam-ia-em-60-do-codigo-mas-so-confiam-sem-supervisao-em-20): a ferramenta entra no processo, mas a responsabilidade pelo resultado final continua sendo de quem assina o texto — e nenhum detector substitui esse julgamento.
+
+**Leia também:** [textGrain: ChatGPT Marca Textos com IA, Só na Europa](/blog/chatgpt-comeca-a-marcar-textos-com-ia-de-forma-invisivel-mas-so-na-europa-entenda-o-textgrain).
 
 ## Perguntas Frequentes
 

@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-26"
 coverImage: "https://images.unsplash.com/photo-1680474569854-81216b34417a?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Em 22 de outubro, a Anthropic transferiu o nome, a logo, a organização no GitHub e o domínio agentskills.io do Agent Skills para fora de sua própria guarda. O destino foi a [Agentic AI Foundation (AAIF)](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation), um fundo dirigido dentro da Linux Foundation que a própria Anthropic ajudou a criar em dezembro de 2025, junto com Block e OpenAI.

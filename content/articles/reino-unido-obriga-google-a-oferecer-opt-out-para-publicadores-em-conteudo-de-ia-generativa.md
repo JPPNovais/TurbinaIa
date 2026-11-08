@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-03"
 coverImage: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A Inteligência Artificial Generativa nos mecanismos de busca reacendeu um debate direto sobre valor e controle de conteúdo. Em 3 de junho de 2026, o Reino Unido agiu: a Autoridade de Concorrência e Mercados (CMA) impôs ao Google a obrigação de permitir que publicadores recusem o uso de seus artigos em resumos gerados por IA e no treinamento de modelos — a primeira decisão vinculativa desse tipo contra uma grande plataforma no país. A medida redefine as regras entre criadores de conteúdo e as plataformas que os distribuem.

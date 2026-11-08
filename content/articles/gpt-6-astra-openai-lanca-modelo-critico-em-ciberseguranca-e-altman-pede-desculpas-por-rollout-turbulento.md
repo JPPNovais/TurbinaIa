@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-05"
 coverImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na quinta-feira (3), empresas inscritas num programa fechado de cibersegurança da OpenAI já estavam testando o modelo mais avançado que a empresa já lançou. Assinantes pagantes do [ChatGPT](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026) Plus e Pro — que normalmente recebem acesso antecipado a cada novidade — ficaram de fora e viram contas empresariais passarem na frente. Um dia depois, o próprio Sam Altman precisou postar um pedido de desculpas público.

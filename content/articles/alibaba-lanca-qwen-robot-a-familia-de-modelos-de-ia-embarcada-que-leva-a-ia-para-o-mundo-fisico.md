@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-16"
 coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A Alibaba Group Holding, gigante chinesa da tecnologia, anunciou oficialmente o lançamento da Qwen-Robot Suite, sua primeira família completa de modelos de inteligência artificial (IA) desenvolvida especificamente para robôs. Este movimento estratégico posiciona a empresa na vanguarda de uma corrida global para transcender os limites da IA conversacional, impulsionando-a para o mundo físico através da "IA embarcada" (embodied AI).

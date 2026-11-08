@@ -71,7 +71,7 @@ O segundo hábito da lista — parar antes de decidir o que delegar — é o mai
 
 Por fim, o hábito de "trabalhar deliberadamente sem IA" de vez em quando não é nostalgia — é manutenção de habilidade. Frontier Professionals fazem isso propositalmente com mais frequência que o resto dos usuários, precisamente para não perder a capacidade de julgar se a saída do agente está certa. Isso importa mais à medida que os agentes ganham mais autonomia: quem nunca fez a tarefa sem ajuda perde a régua para saber quando o resultado automatizado está errado.
 
-**Veja também:** [Microsoft Aposta no Copilot Só para o Trabalho](/blog/microsoft-desiste-da-corrida-pelo-chatbot-pessoal-e-aposta-tudo-num-copilot-so-para-o-trabalho), [Notion Mail Vai Fechar em 22 de Setembro](/blog/notion-mail-vai-fechar-em-22-de-setembro-o-prazo-para-exportar-seus-dados-e-por-que-a-ia-substituiu-o-app) e [OpenAI Encerra o ChatGPT Atlas](/blog/openai-encerra-o-chatgpt-atlas-por-que-os-agentes-de-ia-estao-migrando-para-dentro-do-navegador-que-voce-ja-usa).
+**Veja também:** Microsoft Aposta no Copilot Só para o Trabalho, [Notion Mail Vai Fechar em 22 de Setembro](/blog/notion-mail-vai-fechar-em-22-de-setembro-o-prazo-para-exportar-seus-dados-e-por-que-a-ia-substituiu-o-app) e [OpenAI Encerra o ChatGPT Atlas](/blog/openai-encerra-o-chatgpt-atlas-por-que-os-agentes-de-ia-estao-migrando-para-dentro-do-navegador-que-voce-ja-usa).
 
 ## Perguntas Frequentes
 

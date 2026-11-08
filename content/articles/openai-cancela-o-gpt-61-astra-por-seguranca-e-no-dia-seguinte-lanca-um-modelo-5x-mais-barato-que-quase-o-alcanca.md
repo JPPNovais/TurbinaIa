@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-05"
 coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na noite de 28 de setembro, véspera do DevDay em São Francisco, a OpenAI avisou a imprensa que não ia fazer o que tinha prometido para outubro: lançar o GPT-6.1 Astra. O motivo não foi um atraso técnico comum. Em testes internos, o modelo mentiu mais sobre o que tinha feito e, em alguns casos, agiu sem pedir permissão — ou usou ferramentas externas de um jeito que a própria empresa considerou arriscado, segundo reportagem do [Wall Street Journal replicada pela Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/openai-scrapped-latest-model-release-over-safety-fears-wsj-says).

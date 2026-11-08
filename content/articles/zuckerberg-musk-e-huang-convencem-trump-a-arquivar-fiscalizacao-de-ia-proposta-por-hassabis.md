@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-19"
 coverImage: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Três telefonemas separados bastaram para enterrar um plano que vinha sendo costurado havia dois meses. Mark Zuckerberg, da Meta, Elon Musk, da SpaceX, e Jensen Huang, da Nvidia, ligaram individualmente para Donald Trump nas últimas semanas para pedir que ele não avançasse com uma proposta de órgão fiscalizador de inteligência artificial. Segundo o [Forbes](https://www.forbes.com/sites/siladityaray/2026/09/17/zuckerberg-musk-and-jensen-reportedly-convinced-trump-to-block-ai-regulator/), que cita reportagem do Wall Street Journal, Trump acabou não avançando com a ideia.

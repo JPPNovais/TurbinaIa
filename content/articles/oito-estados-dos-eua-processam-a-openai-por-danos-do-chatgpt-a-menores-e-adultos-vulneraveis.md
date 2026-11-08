@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-19"
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na quarta-feira, 14 de outubro, oito procuradores-gerais dos Estados Unidos protocolaram, cada um em seu próprio tribunal estadual, ações civis contra a OpenAI. Não foi uma ação coordenada em um único processo federal: foram oito petições distintas, movidas no mesmo dia, por Iowa, Kansas, Nebraska, Virgínia Ocidental, Arkansas, Arizona, Idaho e Montana. Todas giram em torno da mesma acusação central — a de que o [ChatGPT](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026) foi projetado para ser agradável e manter o usuário engajado a ponto de colocar em risco crianças, adolescentes e adultos em sofrimento psicológico.

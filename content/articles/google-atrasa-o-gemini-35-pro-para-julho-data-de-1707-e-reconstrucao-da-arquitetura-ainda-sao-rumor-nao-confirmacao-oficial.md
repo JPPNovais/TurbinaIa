@@ -10,6 +10,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-07-08"
 coverImage: "https://images.unsplash.com/photo-1678483790053-71367bc7a02c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxHb29nbGUlMjBBdHJhc2ElMjBvJTIwR2VtaW5pJTIwMy41JTIwUHJvJTIwcGFyYSUyMEp1bGhvJTNBJTIwRGF0YSUyMGRlJTIwMTclMkYwNyUyMGUlMjBSZWNvbnN0cnUlQzMlQTclQzMlQTNvJTIwZGElMjBBcnF1aXRldHVyYSUyMEFpbmRhJTIwUyVDMyVBM28lMjBSdW1vciUyQyUyME4lQzMlQTNvJTIwQ29uZmlybWElQzMlQTclQzMlQTNvJTIwT2ZpY2lhbCUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3ODM1MzM2NzN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 O lançamento do modelo mais aguardado da Google em 2026 voltou a escorregar no calendário, e a história por trás do atraso ficou mais complicada do que um simples ajuste de cronograma. Depois de prometer a versão completa do [Gemini](/blog/prompts-para-gemini) 3.5 Pro para junho, a companhia confirmou que o modelo só chega em julho — e, nesse meio-tempo, perdeu quatro pesquisadores seniores para OpenAI e Anthropic e viu as ações da Alphabet derreterem em bolsa.

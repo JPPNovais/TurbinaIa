@@ -14,6 +14,7 @@ isFeatured: false
 date: "2026-06-18"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1717143587138-2532a35ce9b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxHcm9rJTIwVjktTWVkaXVtJTNBJTIweEFJJTIwTGFuJUMzJUE3YSUyME1vZGVsbyUyMGRlJTIwUHJvZ3JhbWElQzMlQTclQzMlQTNvJTIwY29tJTIwMSUyQzUlMjBUcmlsaCVDMyVBM28lMjBkZSUyMFBhciVDMyVBMm1ldHJvcyUyMFRyZWluYWRvJTIwZW0lMjBTZXNzJUMzJUI1ZXMlMjBSZWFpcyUyMGRvJTIwQ3Vyc29yJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc4MTc0MjQ2OHww&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 No dia 16 de junho de 2026, dois eventos chegaram juntos — e a coincidência era tudo menos acidental. Na mesma manhã em que a SpaceX assinou o acordo definitivo de aquisição da Anysphere, empresa criadora do editor de código com IA Cursor, por [US$ 60 bilhões em ações](https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/), o Grok V9-Medium — o mais novo modelo de fundação da xAI, com 1,5 trilhão de parâmetros e treinado diretamente em dados reais de desenvolvedores que usam o Cursor — entrava em sua janela de lançamento público. A convergência não foi coincidência: foi a conclusão de uma arquitetura estratégica que Elon Musk vem montando desde pelo menos abril deste ano.

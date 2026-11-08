@@ -13,6 +13,7 @@ isFeatured: false
 date: "2026-06-22"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxBbmRyb2lkJTIwMTclMjBDaGVnYSUyMGNvbSUyMEdlbWluaSUyME9tbmklMkMlMjBMeXJpYSUyMDMlMjBlJTIwQXVkaW9MTSUzQSUyMEdvb2dsZSUyMFRyYW5zZm9ybWElMjBvJTIwU2lzdGVtYSUyME9wZXJhY2lvbmFsJTIwZW0lMjBQbGF0YWZvcm1hJTIwZGUlMjBJQSUyMEdlbmVyYXRpdmElMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgyMTU2NTUyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 Na terça-feira, 16 de junho de 2026, a Google lançou o Android 17 — e com ele deixou um recado inequívoco para a indústria: o sistema operacional mobile deixou de ser apenas uma plataforma de apps para se tornar, nas palavras da própria empresa, um **sistema de inteligência**. O lançamento veio acompanhado do habitual Pixel Drop de junho, que trouxe aos dispositivos Pixel acesso imediato ao [Gemini](/blog/prompts-para-gemini) Omni para criação e edição de vídeos, ao modelo musical Lyria 3 para geração de trilhas sonoras e ao AudioLM para tradução de voz em tempo real. Não é coincidência: enquanto a Apple se prepara para o lançamento público das melhorias de IA para a Siri e o iOS 27 em setembro, a Google já colocou sua aposta no campo.

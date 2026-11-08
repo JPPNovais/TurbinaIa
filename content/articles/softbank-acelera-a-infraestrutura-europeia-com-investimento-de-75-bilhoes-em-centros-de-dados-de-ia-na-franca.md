@@ -14,6 +14,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-02"
 coverImage: "https://images.unsplash.com/photo-1680474569854-81216b34417a?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 O setor tecnológico europeu está prestes a mudar de escala com um anúncio monumental do SoftBank Group Corp., o conglomerado japonês de investimentos. A empresa confirmou um compromisso de até €75 bilhões (equivalente a cerca de US$87 bilhões ou S$111,6 bilhões) para desenvolver e operar 5 gigawatts (GW) de capacidade de centros de dados de Inteligência Artificial na França, um projeto que se configura como o maior investimento em infraestrutura de IA da SoftBank na Europa.

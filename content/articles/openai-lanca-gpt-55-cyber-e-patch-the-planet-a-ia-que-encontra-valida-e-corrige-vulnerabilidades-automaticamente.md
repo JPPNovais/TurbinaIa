@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-23"
 coverImage: "https://images.unsplash.com/photo-1676272682018-b1435bad1cf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxPcGVuQUklMjBMYW4lQzMlQTdhJTIwR1BULTUuNS1DeWJlciUyMGUlMjBQYXRjaCUyMHRoZSUyMFBsYW5ldCUzQSUyMEElMjBJQSUyMHF1ZSUyMEVuY29udHJhJTJDJTIwVmFsaWRhJTIwZSUyMENvcnJpZ2UlMjBWdWxuZXJhYmlsaWRhZGVzJTIwQXV0b21hdGljYW1lbnRlJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc4MjIxODA2NXww&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 Por décadas, encontrar vulnerabilidades de software exigiu expertise rara, horas de análise manual e um olhar clínico sobre bases de código enormes e complexas. Os modelos de linguagem de última geração inverteram essa equação de forma dramática: agora, a IA encontra brechas mais rápido do que as equipes de segurança conseguem corrigi-las. O gargalo deixou de ser a descoberta — passou a ser a correção. É exatamente esse problema que a OpenAI declarou guerra em 22 e 23 de junho de 2026, com a maior expansão já anunciada do seu programa de cibersegurança Daybreak.

@@ -56,9 +56,9 @@ Para quem usa IA no trabalho em equipe, a Anthropic também vende assentos de Te
 
 ## Vale a pena ficar no grátis?
 
-Depende do que se espera fazer. Para perguntas pontuais, resumos de texto, ajuda com e-mail ou um rascunho rápido, o Sonnet gratuito costuma bastar — é o mesmo motor que já apareceu em testes práticos cobertos em [outros lançamentos recentes da Anthropic](/blog/claude-haiku-55-anthropic-corta-preco-em-90-e-lanca-o-primeiro-modelo-haiku-com-esforco-ajustavel), só que com um teto de uso mais apertado. Quem depende do Claude para programar todo dia, processa documentos longos repetidamente ou não aceita esperar a cota renovar sente a diferença rápido — aí o cálculo pende para o Pro.
+Depende do que se espera fazer. Para perguntas pontuais, resumos de texto, ajuda com e-mail ou um rascunho rápido, o Sonnet gratuito costuma bastar — é o mesmo motor que já apareceu em testes práticos cobertos em outros lançamentos recentes da Anthropic, só que com um teto de uso mais apertado. Quem depende do Claude para programar todo dia, processa documentos longos repetidamente ou não aceita esperar a cota renovar sente a diferença rápido — aí o cálculo pende para o Pro.
 
-Também ajuda entender o contexto de negócio por trás dessas fronteiras entre planos: no S-1 arquivado na SEC para abrir capital, a Anthropic revelou que a receita da empresa passa, em boa parte, pelas assinaturas pagas do Claude e pelos contratos empresariais — não pela publicidade, caminho que a concorrência vem explorando ([detalhes do documento no Turbina IA](/blog/anthropic-arquiva-o-s-1-na-sec-ticker-ant-us-163-bi-em-receita-e-o-que-o-documento-revela-sobre-o-claude)). Isso explica por que a empresa prefere ampliar o pacote grátis a abrir espaço para anúncios: o modelo de receita está em converter uso recorrente em assinatura, não em vender atenção do usuário para terceiros.
+Também ajuda entender o contexto de negócio por trás dessas fronteiras entre planos: no S-1 arquivado na SEC para abrir capital, a Anthropic revelou que a receita da empresa passa, em boa parte, pelas assinaturas pagas do Claude e pelos contratos empresariais — não pela publicidade, caminho que a concorrência vem explorando (detalhes do documento no Turbina IA). Isso explica por que a empresa prefere ampliar o pacote grátis a abrir espaço para anúncios: o modelo de receita está em converter uso recorrente em assinatura, não em vender atenção do usuário para terceiros.
 
 Se o objetivo é só testar o que o Claude consegue fazer por conta própria — sem depender de recursos manuais no chat — dá para comparar como ele se posiciona frente a outros modelos no [comparador de IAs](/comparador) do Turbina IA, e também explorar a [biblioteca de prompts](/prompts) para aproveitar melhor o pacote gratuito desde a primeira conversa.
 
@@ -73,6 +73,8 @@ Criar uma conta no Claude é simples: basta acessar claude.ai, informar e-mail o
 1. **Organize por Projects.** O plano Free permite até 5 Projects — pastas com contexto e instruções fixas. Usar um por tema (trabalho, estudo, projetos pessoais) evita repetir o mesmo contexto em toda conversa, o que economiza mensagens.
 2. **Ative conectores só quando precisar.** Ligar o Claude ao Google Drive ou ao Notion é útil, mas cada consulta a um documento externo consome parte da cota da mesma forma que uma pergunta direta — vale desligar o que não está em uso.
 3. **Reserve as skills para tarefas repetitivas.** Em vez de explicar do zero como quer um relatório formatado toda vez, uma skill configurada uma única vez economiza instruções — e, por tabela, mensagens — nas conversas seguintes.
+
+**Leia também:** [Melhor IA Gratuita em 2026: ChatGPT, Gemini e Claude](/blog/melhores-ias-gratuitas-2026).
 
 ## Perguntas Frequentes
 

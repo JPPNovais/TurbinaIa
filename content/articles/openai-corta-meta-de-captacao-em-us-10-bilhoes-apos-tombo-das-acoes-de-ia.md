@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-31"
 coverImage: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Há um mês, a OpenAI buscava investidores dispostos a pagar US$ 1,4 trilhão pela empresa. Nesta sexta-feira (30), segundo o [Financial Times, citado pela Bloomberg](https://www.bloomberg.com/news/articles/2026-10-31/openai-funding-goal-cut-by-10-billion-as-ai-stocks-dip-ft-says), a conta encolheu de novo: a meta da rodada em andamento caiu outros US$ 10 bilhões, para cerca de US$ 20 bilhões, com a avaliação da empresa travada em US$ 1,25 trilhão.

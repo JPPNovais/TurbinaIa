@@ -30,6 +30,12 @@ export interface ArticleMetadata {
   readingTime: string;
   wordCount: number;
   isFeatured?: boolean;
+  /**
+   * `noindex: true` no frontmatter tira o post do Google e de todas as listas
+   * do site (home, temas, sitemap, RSS, llms.txt, relacionados), mas a página
+   * continua no ar para quem tem o link. Para voltar, basta apagar o campo.
+   */
+  noindex?: boolean;
 }
 
 export interface Article extends ArticleMetadata {
@@ -204,6 +210,7 @@ function buildMetadata(slug: string, data: Record<string, unknown>, content: str
     readingTime: calculateReadingTime(wordCount),
     wordCount,
     isFeatured: !!data.isFeatured,
+    noindex: data.noindex === true,
   };
 }
 
@@ -223,7 +230,23 @@ function ensureDirectoryExists() {
 // lista inteira de novo (160 leituras x 180 páginas). Em dev, sempre relê.
 let metadataCache: ArticleMetadata[] | null = null;
 
+/**
+ * Posts que aparecem no site: tudo menos os marcados com `noindex: true`.
+ * Toda lista (home, temas, sitemap, RSS, llms.txt, relacionados) usa esta
+ * função, então um post escondido some de todas de uma vez.
+ */
 export async function getAllArticlesMetadata(): Promise<ArticleMetadata[]> {
+  const articles = await loadAllArticlesMetadata();
+  return articles.filter((article) => !article.noindex);
+}
+
+/** Slugs de todos os posts, inclusive os escondidos: a página continua sendo gerada. */
+export async function getAllArticleSlugs(): Promise<string[]> {
+  const articles = await loadAllArticlesMetadata();
+  return articles.map((article) => article.slug);
+}
+
+async function loadAllArticlesMetadata(): Promise<ArticleMetadata[]> {
   if (metadataCache && process.env.NODE_ENV === 'production') return metadataCache;
   ensureDirectoryExists();
   const fileNames = fs.readdirSync(articlesDirectory);

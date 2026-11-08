@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-08-29"
 coverImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Às 17h01 de uma sexta-feira de fevereiro, o prazo dado pelo secretário de Defesa dos Estados Unidos, Pete Hegseth, à Anthropic simplesmente venceu. A empresa tinha até aquele horário para liberar o [Claude](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026), seu modelo de IA, para qualquer uso militar sem restrições — incluindo vigilância em massa e armas autônomas. A Anthropic não cedeu. Na mesma sexta-feira, o governo Trump determinou que agências federais parassem de usar os produtos da empresa e Hegseth a rotulou como "risco à cadeia de suprimentos" nacional, um estigma que na prática bloqueava contratos militares. Seis meses depois, uma juíza federal decidiu que aquela retaliação foi ilegal.

@@ -84,7 +84,7 @@ O Gemini é a aposta do Google na corrida das IAs conversacionais, e a empresa n
 
 ## Claude (Anthropic)
 
-A Anthropic foi fundada por ex-pesquisadores da OpenAI com um foco declarado em segurança e alinhamento de IA — e isso se reflete diretamente no comportamento do Claude. Em 2026, após a [Anthropic superar a OpenAI em valor de mercado](/blog/anthropic-supera-openai-em-valor-de-mercado-e-impulsiona-ia-de-ponta-com-claude-opus-48-e-mythos), o Claude se consolidou como o favorito técnico de desenvolvedores e escritores profissionais.
+A Anthropic foi fundada por ex-pesquisadores da OpenAI com um foco declarado em segurança e alinhamento de IA — e isso se reflete diretamente no comportamento do Claude. Em 2026, após a Anthropic superar a OpenAI em valor de mercado, o Claude se consolidou como o favorito técnico de desenvolvedores e escritores profissionais.
 
 **Pontos fortes:**
 

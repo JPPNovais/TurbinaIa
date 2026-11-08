@@ -97,7 +97,7 @@ Para acompanhantes da corrida global em IA, é relevante lembrar que supercomput
 
 Ao mesmo tempo, especialistas independentes pedem cautela. Jack Dongarra, conforme reportado pela Al Jazeera, lembrou que o TOP500 avalia "um único benchmark" e não deve ser visto como "uma medida completa de liderança tecnológica". Desempenho em aplicações científicas reais, maturidade de software, confiabilidade e facilidade de uso são dimensões igualmente importantes — e mais difíceis de quantificar. The Register também aponta que a indústria chinesa de GPUs, embora crescente, ainda está de quatro a cinco anos atrás da Nvidia e da AMD em performance. O LineShine é uma vitória específica de alto impacto simbólico, não a eliminação de todas as lacunas tecnológicas.
 
-**Leia também:** [Kimi K3: Modelo Aberto da Moonshot com 2,8 Trilhões](/blog/kimi-k3-moonshot-lanca-o-maior-modelo-de-ia-de-codigo-aberto-do-mundo-com-28-trilhoes-de-parametros), [Microsoft e NVIDIA Elevam o Nível](/blog/microsoft-e-nvidia-elevam-o-nivel-lancamento-do-chip-rtx-spark-e-do-pc-dev-box-redefine-a-ia-na-ponta) e [China Restringe Viagem de Especialistas em IA](/blog/china-intensifica-restricoes-de-viagem-para-especialistas-em-ia-visando-proteger-tecnologia-estrategica).
+**Leia também:** [O Que é Inteligência Artificial? Guia para Iniciantes 2026](/blog/o-que-e-inteligencia-artificial-guia-completo-para-iniciantes) e [Melhores IAs em 2026: ranking grátis e pagas](/blog/melhores-ias-2026-ranking).
 
 ## Perguntas Frequentes
 

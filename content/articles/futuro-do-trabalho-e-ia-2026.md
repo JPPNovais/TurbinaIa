@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: true
 date: "2026-05-21"
 coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A inteligência artificial está redesenhando o mercado de trabalho global em uma velocidade sem precedentes. O [Fórum Econômico Mundial (WEF)](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) projeta que **170 milhões de novos empregos serão criados até 2030** — ao mesmo tempo em que **92 milhões de funções serão eliminadas**, resultando em um saldo positivo líquido de 78 milhões de postos. Mas esses números escondem uma realidade mais complexa e urgente: a transição exige ação imediata de trabalhadores, empresas e governos.

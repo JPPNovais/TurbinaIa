@@ -153,7 +153,7 @@ Se sua equipe já colocou um agente em produção e está enfrentando respostas 
 
 Já para quem lidera adoção de IA dentro de uma empresa, o recado das fontes consultadas é convergente: a arquitetura de dados deixou de ser um projeto de TI separado do projeto de IA — ela é o projeto de IA. Como resume Irfan Khan, da SAP, [a única previsão confiável sobre os próximos meses de IA é que ninguém tem certeza do que vai acontecer](https://www.technologyreview.com/2026/03/10/1134083/building-a-strong-data-infrastructure-for-ai-agent-success/) — o que sobra como estratégia sólida é garantir que os modelos estejam ancorados em dados confiáveis, bem governados e contextualmente ricos, independente de qual modelo específico dominar o mercado daqui a um ano.
 
-**Leia também:** [A Armadilha do Resultado Perfeito](/blog/a-armadilha-do-resultado-perfeito-por-que-voce-checa-menos-os-erros-quando-a-ia-entrega-algo-bonito), [UnitedHealth Aposta US$ 3 Bilhões em IA](/blog/unitedhealth-aposta-us-3-bilhoes-em-ia-agentes-autonomos-ligam-para-medicos-e-transformam-o-plano-de-saude-americano) e [Prompt Engineering: Como Criar Prompts Melhores](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa).
+**Leia também:** [A Armadilha do Resultado Perfeito](/blog/a-armadilha-do-resultado-perfeito-por-que-voce-checa-menos-os-erros-quando-a-ia-entrega-algo-bonito), UnitedHealth Aposta US$ 3 Bilhões em IA e [Prompt Engineering: Como Criar Prompts Melhores](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa).
 
 ## Perguntas Frequentes
 

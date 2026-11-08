@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-28"
 coverImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na sexta-feira (26), diante de repórteres na Casa Branca, Donald Trump anunciou que parou de usar a sigla "IA". "Superinteligência, SI, eu não chamo mais de IA", disse ele, explicando que a palavra "artificial" soa como algo falso e que prefere um nome que, na visão dele, reflita "uma inteligência muito forte". Foi o desfecho de três dias de visita de Estado de Xi Jinping a Washington — e, segundo o próprio presidente americano, Xi "gostou da ideia de mudar o nome para SI também", [segundo reportagem da UPI](https://www.upi.com/Top_News/US/2026/09/26/White-House-Trump-Xi-agree-super-intelligence-dialogue/1951790465468/).

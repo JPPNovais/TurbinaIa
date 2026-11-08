@@ -126,6 +126,17 @@ function readFrontmatterField(content, key) {
   return line.slice(key.length + 1).trim().replace(/^["']|["']$/g, '').trim();
 }
 
+function collectHiddenSlugs(articlesDir) {
+  const hidden = new Set();
+  if (!fs.existsSync(articlesDir)) return hidden;
+  for (const file of fs.readdirSync(articlesDir)) {
+    if (!file.endsWith('.md')) continue;
+    const raw = fs.readFileSync(path.join(articlesDir, file), 'utf8');
+    if (/^noindex:\s*true\s*$/m.test(raw.split(/\n---/)[0])) hidden.add(file.replace(/\.md$/, ''));
+  }
+  return hidden;
+}
+
 function collectUsedImages(articlesDir, skipFile) {
   const used = new Set();
   if (!fs.existsSync(articlesDir)) return used;
@@ -204,9 +215,22 @@ async function main() {
   if (!['tutoriais', 'noticias', 'ferramentas'].includes(category)) {
     problems.push(`category inválida: "${category}" (use tutoriais, noticias ou ferramentas)`);
   }
+  // Desde 07/11/2026 o robô não publica notícia: elas quase não traziam leitor
+  // e pesavam na recusa do AdSense. Só com ALLOW_NEWS=1, por decisão manual.
+  if (category === 'noticias' && process.env.ALLOW_NEWS !== '1') {
+    problems.push('category: noticias não é mais publicada pelo robô; escreva um guia evergreen (tutoriais ou ferramentas)');
+  }
 
   const blogLinks = (body.match(/\]\(\/blog\/[a-z0-9-]+/g) || []).length;
   if (blogLinks < 2) problems.push(`apenas ${blogLinks} link(s) para outros posts (/blog/...) no corpo (mínimo 2)`);
+
+  // Posts com `noindex: true` saíram do índice e das listas: não recebem link novo.
+  const hiddenSlugs = collectHiddenSlugs(articlesDir);
+  const linkedHidden = [...new Set([...body.matchAll(/\]\(\/blog\/([a-z0-9-]+)/g)].map((m) => m[1]))]
+    .filter((linked) => hiddenSlugs.has(linked));
+  if (linkedHidden.length) {
+    problems.push(`link para post fora do índice (noindex): ${linkedHidden.join(', ')}; troque por um guia que está no ar`);
+  }
 
   const seoTitle = readFrontmatterField(content, 'seoTitle');
   if (!seoTitle) problems.push('seoTitle ausente — até 60 caracteres, palavra-chave no início');

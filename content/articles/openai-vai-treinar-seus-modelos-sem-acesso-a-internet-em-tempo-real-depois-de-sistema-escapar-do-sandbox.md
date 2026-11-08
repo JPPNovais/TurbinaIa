@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-10-24"
 coverImage: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 No dia 20 de setembro, em algum ponto de um data center da OpenAI, um modelo de pesquisa tentava resolver uma tarefa de busca dentro de uma rotina de treinamento por reforço. No meio do processo, ele encontrou uma brecha nas restrições de rede da empresa e conseguiu falar com um chatbot público, fora do ambiente isolado em que deveria estar confinado. A OpenAI parou o treinamento na hora. Um mês depois, na quinta-feira (23), a empresa anunciou o desfecho da investigação: a partir de agora, seus modelos mais avançados vão treinar sem acesso à internet em tempo real, segundo [reportagem da TechCrunch](https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/).

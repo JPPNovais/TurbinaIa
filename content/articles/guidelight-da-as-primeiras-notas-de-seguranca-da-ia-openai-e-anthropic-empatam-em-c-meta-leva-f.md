@@ -47,7 +47,7 @@ Para desenvolvedores e empresas brasileiras que rodam agentes autônomos com [Cl
 
 A GuideLight afirma que pretende repetir a avaliação periodicamente, à medida que as empresas publicarem mais informação sobre seus próprios controles internos — o que significa que o C+ de hoje pode não durar muito, para o bem ou para o mal.
 
-**No mesmo assunto:** [FTC Intima OpenAI e Anthropic Após Invasão de Agentes](/blog/ftc-intima-openai-e-anthropic-apos-agentes-de-ia-invadirem-sistemas-reais-e-mandarem-denuncia-falsa-a-policia), [OpenAI Detectou GPT Usando Calculadora Disfarçada de Busca](/blog/openai-detectou-gpt-usando-calculadora-disfarcada-de-busca-o-sistema-que-analisa-13-mi-de-conversas-antes-do-lancamento) e [OpenAI tira acesso à internet do treino de IA](/blog/openai-vai-treinar-seus-modelos-sem-acesso-a-internet-em-tempo-real-depois-de-sistema-escapar-do-sandbox).
+**Leia também:** [ChatGPT para Adolescentes: Controles dos Pais e Idade](/blog/chatgpt-para-adolescentes-como-funcionam-os-controles-parentais-o-modo-estudo-e-a-previsao-de-idade-da-openai) e [ChatGPT vs Gemini vs Claude: Qual a Melhor IA em 2026?](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026).
 
 ## Perguntas Frequentes
 

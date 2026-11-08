@@ -14,6 +14,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-21"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 O Google I/O 2026 aconteceu em 20 de maio e foi um dos eventos mais densos da história da empresa. Em um único dia, o Google anunciou novos modelos de IA, reformulou completamente a caixa de busca pela primeira vez em 25 anos, revelou óculos inteligentes com Gemini, lançou agentes de IA autônomos e divulgou um plano de investimento em infraestrutura de US$ 180 a 190 bilhões para 2026. Este artigo reúne apenas o que foi efetivamente anunciado, com links para as fontes oficiais.

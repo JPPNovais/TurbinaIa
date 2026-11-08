@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-07-27"
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na noite de 16 de julho, a startup chinesa Moonshot AI publicou um único tuíte que bagunçou a semana de quem acompanha inteligência artificial: "Introducing Kimi K3: Open Frontier Intelligence". Embaixo do slogan, três números que resumem a ambição do lançamento — 2,8 trilhões de parâmetros, 1 milhão de tokens de contexto e uma arquitetura batizada de Kimi Delta Attention. Menos de 24 horas depois, [Bloomberg](https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals) e [South China Morning Post](https://www.scmp.com/tech/tech-trends/article/3360885/moonshot-ai-unveils-worlds-largest-open-source-ai-model-china-narrows-gap-us-rivals) já tratavam o K3 como o maior modelo de pesos abertos já lançado por qualquer laboratório, chinês ou americano.

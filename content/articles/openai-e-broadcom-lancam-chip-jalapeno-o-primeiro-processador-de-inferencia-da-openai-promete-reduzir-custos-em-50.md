@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-26"
 coverImage: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na quarta-feira, 24 de junho de 2026, a OpenAI deu um passo que o setor de inteligência artificial aguardava há anos: a empresa revelou ao mundo o Jalapeño, seu primeiro processador de IA desenvolvido internamente, criado em parceria com a gigante de semicondutores Broadcom. O anúncio marca uma virada estratégica profunda para a criadora do [ChatGPT](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026) — não mais apenas uma empresa de modelos e produtos, mas uma companhia que agora controla cada camada do seu próprio stack tecnológico, do silício ao software.

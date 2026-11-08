@@ -105,7 +105,7 @@ A trajetória DeepSeek-Huawei redefine o cenário competitivo em pelo menos trê
 
 **Risco de fragmentação do ecossistema de IA.** À medida que a China desenvolve uma pilha completa de hardware e software para IA — do chip ao framework ao modelo — o mundo se encaminha para dois ecossistemas paralelos com poucas pontes entre si. Isso tem implicações para desenvolvedores globais que hoje dependem de APIs chinesas ou que implantam modelos open source do DeepSeek em infraestrutura ocidental.
 
-**No mesmo assunto:** [Anthropic e Samsung Negociam Chip de IA em 2 nm](/blog/anthropic-negocia-com-a-samsung-chip-de-ia-proprio-em-processo-de-2nm-para-reduzir-dependencia-da-nvidia), [OpenAI e Broadcom Lançam Chip Jalapeño](/blog/openai-e-broadcom-lancam-chip-jalapeno-o-primeiro-processador-de-inferencia-da-openai-promete-reduzir-custos-em-50) e [Reflection AI Fecha Contrato de US$ 6,3 Bi com a SpaceX](/blog/reflection-ai-fecha-contrato-de-us-63-bilhoes-com-spacex-para-desenvolver-o-deepseek-do-ocidente-com-chips-nvidia-gb300).
+**Leia também:** [Melhores IAs em 2026: ranking grátis e pagas](/blog/melhores-ias-2026-ranking) e [ChatGPT vs Gemini vs Claude: Qual a Melhor IA em 2026?](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026).
 
 ## Perguntas Frequentes
 

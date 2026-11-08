@@ -24,7 +24,7 @@ O Comet nasceu em julho de 2025 como uma aposta ousada da Perplexity: em vez de 
 
 Por ser baseado em Chromium, o Comet é compatível com a maior parte das extensões que já existem para o Google Chrome — então quem troca de navegador não perde gerenciador de senhas, bloqueador de rastreadores ou ferramentas de produtividade que já usa. A diferença fica num painel lateral, sempre visível, onde roda o assistente de IA da Perplexity.
 
-Esse assistente não se limita a conversar. Segundo a própria Perplexity, ele consegue resumir e-mails e eventos de calendário, organizar e fechar abas, navegar por páginas em nome do usuário, rascunhar respostas e até ajudar em compras online. Na prática, é a mesma lógica de agentes autônomos que a OpenAI explorou com os [Dots no ChatGPT](/blog/openai-lanca-os-dots-no-chatgpt-como-funcionam-os-agentes-sempre-ativos-que-ja-chegam-ao-brasil) e que a Anthropic levou para o [Claude Duet](/blog/claude-duet-como-funciona-o-agente-proativo-da-anthropic-que-rivaliza-com-dots-e-muse) — só que, no caso do Comet, o agente já vive dentro do navegador em vez de depender de uma extensão ou de um app separado.
+Esse assistente não se limita a conversar. Segundo a própria Perplexity, ele consegue resumir e-mails e eventos de calendário, organizar e fechar abas, navegar por páginas em nome do usuário, rascunhar respostas e até ajudar em compras online. Na prática, é a mesma lógica de agentes autônomos que a OpenAI explorou com os [Dots no ChatGPT](/blog/openai-lanca-os-dots-no-chatgpt-como-funcionam-os-agentes-sempre-ativos-que-ja-chegam-ao-brasil) e que a Anthropic levou para o Claude Duet — só que, no caso do Comet, o agente já vive dentro do navegador em vez de depender de uma extensão ou de um app separado.
 
 
 ![Imagem ilustrativa sobre Comet, o Navegador de IA da Perplexity: Como Usar de Graça e o Que Muda no Pro](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80)
@@ -78,6 +78,8 @@ A Perplexity respondeu publicamente em 22 de outubro de 2025, com um comunicado 
 Para quem já pesquisa bastante e usa IA no dia a dia, o Comet resolve uma fricção real: elimina a troca constante entre a aba do navegador e a aba do chat de IA. Para quem só navega e raramente usa assistentes, a vantagem é menor, e os riscos de segurança documentados pesam mais na balança.
 
 Se você está decidindo entre o Comet e outras formas de usar IA no navegador, vale comparar os modelos por trás de cada opção no [comparador de IAs do Turbina IA](/comparador) e testar [prompts prontos](/prompts) para tarefas de pesquisa antes de liberar qualquer agente para agir por conta própria. Quem já usa várias ferramentas de IA no trabalho também pode conferir o [guia completo de ferramentas de IA](/ferramentas) para decidir onde o Comet encaixa na rotina.
+
+**Leia também:** [As 7 Melhores Ferramentas de IA para Produtividade em 2026 (Testadas e Comparadas)](/blog/melhores-ferramentas-de-ia-produtividade-2026).
 
 ## Perguntas Frequentes
 

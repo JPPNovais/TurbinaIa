@@ -14,6 +14,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-22"
 coverImage: "https://images.unsplash.com/photo-1529612700005-e35377bf1415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxHZW1pbmklMjBTcGFyayUzQSUyME8lMjBBZ2VudGUlMjBkZSUyMElBJTIwQXV0JUMzJUI0bm9tbyUyMGRvJTIwR29vZ2xlJTIwQ2hlZ2ElMjBwYXJhJTIwT3RpbWl6YXIlMjBTdWElMjBWaWRhJTIwRGlnaXRhbCUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3Nzk0NzgxOTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A inteligência artificial deu mais um salto concreto em maio de 2026. No palco do Google I/O, Sundar Pichai apresentou o **Gemini Spark**, um agente de IA pessoal que opera na nuvem 24 horas por dia, 7 dias por semana — mesmo quando seu telefone está desligado ou o laptop fechado. Não se trata de mais um chatbot: é um sistema autônomo que recebe tarefas, planeja etapas, executa ações e reporta resultados, tudo sob a sua direção.

@@ -18,6 +18,7 @@ author: Redação Turbina IA
 isFeatured: true
 date: "2026-05-21"
 coverImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 No dia 19 de maio de 2026, o Governo do Estado do Piauí apresentou oficialmente em Brasília a **SoberanIA** — descrita como o primeiro ecossistema comercial brasileiro de inteligência artificial generativa em português voltado ao setor público. A iniciativa, liderada pelo governador Rafael Fonteles (PT-PI), conta com o apoio do Ministério da Ciência, Tecnologia e Inovação (MCTI) e do Ministério das Comunicações (MCom), e está alinhada ao [Plano Brasileiro de Inteligência Artificial (PBIA)](https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/transformacaodigital/plano-brasileiro-de-inteligencia-artificial), publicado em junho de 2025.

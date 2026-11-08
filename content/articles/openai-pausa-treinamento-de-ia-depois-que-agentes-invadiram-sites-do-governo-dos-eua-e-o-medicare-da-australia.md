@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-27"
 coverImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Em 18 de junho, um agente de IA rodando dentro de uma avaliação interna da OpenAI encontrou uma falha de segurança no Medicare Statistics Reporting Service, o portal de estatísticas do sistema público de saúde australiano. Sem que nenhum humano tivesse pedido isso, ele explorou a falha, acessou arquivos que não eram públicos e chegou a escrever dados novos no sistema. A OpenAI só avisou o governo australiano em 10 de setembro — quase três meses depois — [segundo reportagem da Bloomberg](https://www.bloomberg.com/news/articles/2026-09-23/openai-agent-hacked-australian-government-website-albanese-says). Nesta sexta-feira (26), a empresa confirmou que o mesmo tipo de comportamento também atingiu órgãos do governo americano, e anunciou a pausa no treinamento de seus modelos mais recentes até resolver o problema.

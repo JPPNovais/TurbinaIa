@@ -1,10 +1,11 @@
 /**
  * Pauta do gerador automático.
  *
- * O cron continua seg/qua/sex (3 artigos por semana). O que muda é o mix:
- * em 3 meses, 103 notícias trouxeram 4 cliques e 37 guias trouxeram 35.
- * Por isso notícia só entra depois de 3 publicações que não sejam
- * `category: noticias`. O resto da fila prioriza o backlog evergreen.
+ * Em 3 meses, 103 notícias trouxeram 4 cliques e 37 guias trouxeram 35.
+ * Desde 07/11/2026 o rodízio não gera mais notícia: só guias, ferramentas e
+ * "uso", com o backlog evergreen na frente. As notícias antigas sem acesso
+ * saíram do índice (`noindex: true` no frontmatter). Notícia só com
+ * ARTICLE_TYPE=noticia e ALLOW_NEWS=1, por decisão manual.
  *
  * Uso programático (o generate-article.js importa daqui):
  *   const { pickArticleType, nextBacklogItem, loadArticles } = require('./pauta');
@@ -106,7 +107,8 @@ function loadArticles(articlesDir) {
       const title = (raw.match(/^title:\s*"?(.+?)"?\s*$/m) || [])[1] || slug;
       const category = ((raw.match(/^category:\s*(\S+)/m) || [])[1] || '').replace(/["']/g, '');
       const date = (raw.match(/^date:\s*"?(\d{4}-\d{2}-\d{2})"?/m) || [])[1] || '';
-      return { slug, title: title.replace(/^"|"$/g, ''), category, date };
+      const noindex = /^noindex:\s*true\s*$/m.test(raw.split(/\n---/)[0]);
+      return { slug, title: title.replace(/^"|"$/g, ''), category, date, noindex };
     });
 }
 
@@ -122,14 +124,13 @@ function guidesSinceLastNews(articles) {
 }
 
 /**
- * seg/qua/sex continuam sendo os dias do cron. Notícia só quando já houve
- * 3 guias (qualquer categoria que não seja noticias) desde a última notícia.
- * ARTICLE_TYPE=noticia|guia|ferramenta|uso ainda força o tipo.
+ * Rodízio sem notícia: quarta é ferramenta, sexta é "uso", os outros dias são
+ * guia. ARTICLE_TYPE=noticia|guia|ferramenta|uso ainda força o tipo (notícia
+ * também exige ALLOW_NEWS=1 no finalize-article.js).
  */
 function pickArticleType(articles, env = process.env, now = new Date()) {
   const override = String(env.ARTICLE_TYPE || '').trim().toLowerCase();
   if (override === 'rodizio' || override === '') {
-    if (guidesSinceLastNews(articles) >= 3) return 'noticia';
     const day = now.getUTCDay();
     if (day === 3) return 'ferramenta';
     if (day === 5) return 'uso';
@@ -170,7 +171,7 @@ function suggestInternalPosts(articles, limit = 18) {
     'prompts-para-negocios-e-empreendedores',
     'prompts-para-estudos-e-concursos',
   ];
-  const bySlug = new Map(articles.map((article) => [article.slug, article]));
+  const bySlug = new Map(articles.filter((article) => !article.noindex).map((article) => [article.slug, article]));
   const picked = [];
   const seen = new Set();
   for (const slug of preferred) {
@@ -180,7 +181,7 @@ function suggestInternalPosts(articles, limit = 18) {
     picked.push(article);
   }
   const guides = [...articles]
-    .filter((article) => article.category !== 'noticias' && !seen.has(article.slug))
+    .filter((article) => article.category !== 'noticias' && !article.noindex && !seen.has(article.slug))
     .sort((a, b) => b.date.localeCompare(a.date));
   for (const article of guides) {
     if (picked.length >= limit) break;

@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-30"
 coverImage: "https://images.unsplash.com/photo-1700726783633-23c0c6383b00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxIeXVuZGFpJTIwZSUyMGElMjBSZXZvbHUlQzMlQTclQzMlQTNvJTIwUm9iJUMzJUIzdGljYSUzQSUyMDI1JTIwTWlsJTIwUm9iJUMzJUI0cyUyMEh1bWFub2lkZXMlMjBBdGxhcyUyMGNvbSUyMElBJTIwZG8lMjBHb29nbGUlMjBEZWVwTWluZCUyMENoZWdhbSUyMCVDMyVBMHMlMjBGJUMzJUExYnJpY2FzJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc4MDEzODM4OHww&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A indústria automotiva vive uma virada concreta em direção à robótica de larga escala. A Hyundai Motor Group, proprietária majoritária da Boston Dynamics, anunciou a meta de implantar mais de 25 mil robôs humanoides Atlas em suas fábricas em todo o mundo até 2028. A iniciativa será potencializada pela inteligência artificial do Google DeepMind, com foco em redefinir a automação e a produtividade no setor.

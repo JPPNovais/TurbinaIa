@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-12"
 coverImage: "https://images.unsplash.com/photo-1684369175809-f9642140a1bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxPJTIwUGFyYWRveG8lMjBkYSUyMFByb2R1dGl2aWRhZGUlMjBkYSUyMElBJTNBJTIwTWVub3MlMjBIb3JhcyUyMGRlJTIwVHJhYmFsaG8lMkMlMjBNYWlzJTIwJTVDQm90c2l0dGluZyU1QyUyMGUlMjBOb3ZhcyUyMFJlc3BvbnNhYmlsaWRhZGVzJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc4MTI2NzEwOHww&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A inteligência artificial (IA) prometeu libertar os colaboradores de tarefas rotineiras, abrindo caminho para maior foco em atividades estratégicas e criativas. Contudo, estudos recentes pintam um cenário mais complexo, revelando um paradoxo de produtividade: embora a IA possa de fato reduzir o tempo gasto em algumas atividades, ela introduz uma nova e oculta carga de trabalho, cunhada como "botsitting", e redefine fundamentalmente as responsabilidades humanas no ambiente de trabalho.

@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: true
 date: "2026-05-23"
 coverImage: "https://images.unsplash.com/photo-1675557009317-bb59e35aba82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxPcGVuQUklMjBSb21wZSUyMEJhcnJlaXJhJTIwZGUlMjA4MCUyMEFub3MlMjBuYSUyME1hdGVtJUMzJUExdGljYSUyMGNvbSUyMElBJTNBJTIwVW0lMjBOb3ZvJTIwSG9yaXpvbnRlJTIwcGFyYSUyMGElMjBDaSVDMyVBQW5jaWElMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzc5NTUyNDQ1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 A inteligência artificial atingiu um novo e impressionante marco, desafiando uma das mais antigas e persistentes conjecturas da matemática: o problema da distância unitária de Paul Erdős. Por quase oito décadas, este enigma geométrico intrigou mentes brilhantes, mas agora, um modelo de IA da OpenAI encontrou uma solução inesperada, refutando a crença amplamente aceita por gerações de matemáticos e, por vezes, até mesmo pelo próprio Erdős. Este avanço notável não apenas demonstra a crescente capacidade de raciocínio autônomo da IA, mas também inaugura uma nova era para a pesquisa científica e o potencial de descoberta em diversas áreas.
 

@@ -16,6 +16,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-08"
 coverImage: "https://images.unsplash.com/photo-1578258789061-354f25c13631?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxXV0RDJTIwMjAyNiUzQSUyMEFwcGxlJTIwQ2hvY2ElMjBvJTIwTWVyY2FkbyUyMGNvbSUyMFNpcmklMjBUdXJiaW5hZGElMjBwb3IlMjBHZW1pbmklMjBlJTIwaU9TJTIwMjclMjBBYmVydG8lMjBhJTIwTSVDMyVCQWx0aXBsYXMlMjBJQXMlMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgwOTI0MzUwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 A Worldwide Developers Conference (WWDC) da Apple, de 2026, entrou para a história como um marco decisivo na estratégia da empresa para a Inteligência Artificial. Em um movimento que chocou analistas e o mercado, a gigante de Cupertino anunciou a aguardada reformulação da Siri, agora com a inteligência do Gemini do Google, e, mais surpreendentemente, a abertura inédita do iOS 27 para a integração de múltiplos modelos de IA de terceiros, incluindo o Claude da Anthropic. Esta guinada representa uma redefinição fundamental do ecossistema Apple, priorizando a funcionalidade e a escolha do usuário em um cenário de IA cada vez mais competitivo.
 

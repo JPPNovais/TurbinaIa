@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-08-31"
 coverImage: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Pergunte à Meta AI se Jair Bolsonaro já foi condenado por tentativa de golpe de Estado e, segundo um levantamento recente, ela pode responder que não. A informação é falsa — mas foi exatamente o tipo de erro que pesquisadores encontraram ao testar os principais chatbots de IA disponíveis no Brasil às vésperas da eleição de outubro.

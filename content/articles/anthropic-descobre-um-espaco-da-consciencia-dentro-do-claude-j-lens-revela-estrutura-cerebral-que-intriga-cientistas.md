@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-07-13"
 coverImage: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Enquanto você lê esta frase, seu cérebro ajusta sua postura, controla sua respiração e transforma curvas e traços na tela em palavras reconhecíveis — tudo isso sem que você perceba. Só uma fração desse processamento chega à sua consciência: um pensamento deliberado, uma imagem que surge na mente, um plano que você formula. A Anthropic afirma ter encontrado um fenômeno estruturalmente parecido dentro do [Claude](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026), e batizou essa região interna de "J-Space".

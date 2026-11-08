@@ -13,6 +13,7 @@ isFeatured: false
 date: "2026-06-19"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Em 16 de junho de 2026, a [xAI](https://x.ai/news/grok-imagine-video-1-5) moveu o Grok Imagine Video 1.5 de preview para disponibilidade geral — e com isso reconfigurou o mapa competitivo de geração de vídeo por inteligência artificial. O modelo agora ocupa o primeiro lugar no Image-to-Video Arena, o principal ranking independente da categoria, superando em votação cega nomes como Sora 2, Veo 3.1, Seedance 2.0 e Kling. A chegada ao topo acontece no momento em que a OpenAI descontinuou o aplicativo Sora para consumidores e o Google cobra até US$ 24 por minuto por sua oferta equivalente — enquanto a xAI pratica US$ 4,20 por minuto, 86% abaixo da tarifa premium da concorrente direta.

@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-08-17"
 coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Em 12 de agosto, a SpaceXAI — nome que a xAI adotou após a fusão com a empresa de foguetes de Elon Musk — colocou o Grok 4.6 no ar com um número específico em destaque: 500 mil tokens de contexto, suficientes para o modelo acompanhar uma tarefa de programação ou pesquisa por horas sem perder o fio da meada. Não é um modelo maior. É um ajuste fino sobre o Grok 4.5, e a aposta da empresa é que isso baste para encostar no topo da corrida agêntica.

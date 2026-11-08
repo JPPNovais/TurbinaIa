@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-08-18"
 coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Duas das maiores empresas de inteligência artificial do mundo protagonizam, neste momento, histórias financeiras opostas. A OpenAI acelera os preparativos para uma abertura de capital que pode avaliá-la em até US$ 1 trilhão — mesmo projetando um prejuízo de cerca de US$ 14 bilhões só em 2026. Já a Anthropic, rival direta em modelos de linguagem, projeta a investidores que deve fechar o segundo trimestre com seu primeiro lucro operacional trimestral, dois anos antes do que a própria empresa previa. As duas trajetórias, reveladas quase simultaneamente em agosto, resumem o momento estranho em que o setor de IA se encontra: crescimento de receita recorde convivendo com queima de caixa em escala nunca vista.

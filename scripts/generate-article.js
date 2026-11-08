@@ -28,7 +28,7 @@ try {
 
 const { postprocessArticle } = require('./article-postprocess');
 const { enhanceSeo } = require('./seo-enhance');
-const { loadArticles, pickArticleType, nextBacklogItem, formatPostList, guidesSinceLastNews } = require('./pauta');
+const { loadArticles, pickArticleType, nextBacklogItem, formatPostList } = require('./pauta');
 const ai = require('./llm');
 
 const apiKey = process.env.CLAUDE_CODE_OAUTH_TOKEN || process.env.GEMINI_API_KEY;
@@ -276,10 +276,9 @@ function getRecentArticleTitles(daysBack = 30) {
   return titles;
 }
 
-// Rodízio (cron seg/qua/sex, 3 por semana — o ritmo não muda):
-//   notícia só depois de 3 publicações que não sejam category:noticias;
-//   nos outros dias, guia evergreen. O backlog em scripts/pauta.js vem primeiro.
-// Override manual: ARTICLE_TYPE=noticia|guia|ferramenta|uso.
+// Rodízio sem notícia desde 07/11/2026 (ver scripts/pauta.js): guia evergreen,
+//   ferramenta às quartas e "uso" às sextas. O backlog em scripts/pauta.js vem primeiro.
+// Override manual: ARTICLE_TYPE=noticia|guia|ferramenta|uso (notícia só por decisão manual).
 const ARTICLE_TYPES = {
   noticia: {
     label: 'Notícia quente',
@@ -322,7 +321,6 @@ async function run() {
 
   console.log('⚡ Iniciando o Gerador de Artigos Turbina IA ⚡');
   console.log(`🗞️  Tipo de pauta desta edição: ${typeSpec.label} (${articleType})`);
-  console.log(`📐 Guias desde a última notícia: ${guidesSinceLastNews(catalog)} (notícia só a partir de 3)`);
   if (backlogItem) console.log(`📌 Backlog: ${backlogItem.id}`);
 
   // Step 1: Backlog evergreen primeiro; senão, sugestão da IA.

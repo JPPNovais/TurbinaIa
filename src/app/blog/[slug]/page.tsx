@@ -10,7 +10,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ArticleInteractions from '@/components/ArticleInteractions';
 import NewsletterInline from '@/components/NewsletterInline';
 import PromptCollections from '@/components/PromptCollections';
-import { getArticleData, getAllArticlesMetadata, getLastModified } from '@/lib/articles';
+import { getArticleData, getAllArticlesMetadata, getAllArticleSlugs, getLastModified } from '@/lib/articles';
 import { formatDateLong } from '@/lib/date';
 import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, buildArticleTitle, clampDescription, jsonLd } from '@/lib/seo';
 import { getPrimaryHub, getRelatedArticles, isPromptArticle } from '@/lib/taxonomy';
@@ -39,10 +39,9 @@ function splitAtMiddleSection(html: string): [string, string] | null {
 
 // Generate static params for SSG
 export async function generateStaticParams() {
-  const articles = await getAllArticlesMetadata();
-  return articles.map((article) => ({
-    slug: article.slug,
-  }));
+  // Inclui os posts com `noindex: true`: saem das listas, mas a página fica no ar.
+  const slugs = await getAllArticleSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 // Dynamic SEO Metadata for each article
@@ -69,6 +68,8 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     alternates: {
       canonical: `/blog/${resolvedParams.slug}`,
     },
+    // Post escondido: fora do índice, mas os links dele continuam valendo.
+    ...(article.noindex ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title: article.title,
       description,

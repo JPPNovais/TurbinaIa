@@ -113,7 +113,7 @@ Essa tensão é real, mas também calculada. Até que os chips Trainium estejam 
 
 ---
 
-**Leia também:** [Mistral AI, de €20 Bi, Aposta em Data Centers na Europa](/blog/mistral-ai-avaliada-em-20-bilhoes-aposta-em-mega-data-centers-para-dominio-europeu-da-ia) e [Qwen-Robot: a IA Embarcada da Alibaba para o Mundo Físico](/blog/alibaba-lanca-qwen-robot-a-familia-de-modelos-de-ia-embarcada-que-leva-a-ia-para-o-mundo-fisico).
+**Leia também:** [Machine Learning: O Que É e Como Funciona (Guia 2026)](/blog/o-que-e-machine-learning-aprendizado-de-maquina).
 
 ## Perguntas Frequentes
 

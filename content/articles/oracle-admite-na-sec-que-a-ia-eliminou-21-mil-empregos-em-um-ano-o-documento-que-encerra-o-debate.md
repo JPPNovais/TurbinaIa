@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-24"
 coverImage: "https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxPcmFjbGUlMjBBZG1pdGUlMjBuYSUyMFNFQyUyMHF1ZSUyMGElMjBJQSUyMEVsaW1pbm91JTIwMjElMjBNaWwlMjBFbXByZWdvcyUyMGVtJTIwVW0lMjBBbm8lM0ElMjBvJTIwRG9jdW1lbnRvJTIwcXVlJTIwRW5jZXJyYSUyMG8lMjBEZWJhdGUlMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgyMzAyOTY3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 Durante anos, o debate sobre se a inteligência artificial eliminaria empregos em massa foi tratado como especulação acadêmica ou alarmismo de futurologistas. Em 22 de junho de 2026, esse debate ganhou uma âncora factual difícil de ignorar: a Oracle Corporation, uma das maiores empresas de tecnologia do mundo, depositou seu relatório anual na Securities and Exchange Commission (SEC) admitindo, com a linguagem precisa que reguladores exigem, que a IA foi responsável pela demissão de 21 mil funcionários em doze meses.

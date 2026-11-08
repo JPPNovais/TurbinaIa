@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-08-10"
 coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Dez problemas. Décadas em aberto. Um deles parado desde 1978, outro desde 1980, um terceiro sem solução havia 27 anos. E, segundo a OpenAI, um custo total de computação de aproximadamente **US$ 2 mil** para chegar a todos eles. É esse o número que a empresa colocou em destaque ao anunciar, em 1º de agosto, que uma versão interna e ainda não lançada do seu próximo modelo, batizado de **Astra**, produziu novos resultados matemáticos em áreas como teoria de grupos, geometria de altas dimensões e complexidade computacional, segundo reportagem da [SiliconANGLE](https://siliconangle.com/2026/08/02/openais-astra-solves-10-long-open-math-problems-publishes-proofs/).

@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-30"
 coverImage: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A Isomorphic Labs, empresa derivada da Google DeepMind, anunciou o início dos testes clínicos em humanos para medicamentos oncológicos projetados inteiramente por inteligência artificial. O avanço consolida a IA como força central na descoberta de drogas e destaca as capacidades do AlphaFold 3, modelo que demonstrou duplicar a precisão na previsão de interações moleculares cruciais para o design de fármacos.

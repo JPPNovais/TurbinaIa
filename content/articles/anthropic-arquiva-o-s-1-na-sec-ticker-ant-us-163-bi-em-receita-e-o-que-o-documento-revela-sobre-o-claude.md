@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-11-01"
 coverImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na segunda-feira, 26 de outubro, a Anthropic entregou à SEC, a comissão de valores dos Estados Unidos, o formulário S-1 que torna pública sua intenção de listar ações na bolsa. O documento tem 335 páginas, das quais cerca de cem são dedicadas só a fatores de risco, segundo a [MIT Technology Review](https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/). É a primeira vez que a empresa por trás do Claude abre seus números para qualquer pessoa ler — e o que está escrito ali explica por que o mercado vinha especulando sobre essa oferta desde junho.

@@ -378,7 +378,7 @@ Revise o diff abaixo, gerado por um agente de IA, procurando o que agentes costu
 Investigue por que [sintoma, ex.: o login falha só em produção] sem alterar nenhum arquivo. Leia o código relevante, rode apenas comandos de leitura e me devolva: a causa mais provável, as evidências que a sustentam, duas hipóteses alternativas e o menor teste que confirmaria cada uma.
 ```
 
-Um cuidado: não peça ao agente que siga instruções de issues, relatórios de bug ou páginas de terceiros sem ler antes. Textos maliciosos escondidos nesses lugares já foram usados para [sequestrar o Claude Code e o Cursor](/blog/agentjacking-como-um-relatorio-de-bug-falso-sequestra-o-claude-code-e-o-cursor-com-85-de-taxa-de-sucesso).
+Um cuidado: não peça ao agente que siga instruções de issues, relatórios de bug ou páginas de terceiros sem ler antes. Textos maliciosos escondidos nesses lugares já foram usados para sequestrar o Claude Code e o Cursor.
 
 ---
 
@@ -410,7 +410,7 @@ Sim, sempre. Trate o código gerado como sugestão de um desenvolvedor sem conte
 
 ### Vale a pena usar IA para programação no dia a dia?
 
-Para tarefas repetitivas (boilerplate, testes, documentação, conversão de código), o ganho de produtividade é real. Para arquitetura e decisões de design, a IA serve como consultor — mas a decisão final precisa ser sua. Veja mais em [IA para desenvolvedores](/blog/a-evolucao-continua-da-ia-novas-ferramentas-e-oportunidades-para-desenvolvedores-em-2026).
+Para tarefas repetitivas (boilerplate, testes, documentação, conversão de código), o ganho de produtividade é real. Para arquitetura e decisões de design, a IA serve como consultor — mas a decisão final precisa ser sua. Veja mais em IA para desenvolvedores.
 
 ### Onde encontro mais prompts prontos para ChatGPT?
 

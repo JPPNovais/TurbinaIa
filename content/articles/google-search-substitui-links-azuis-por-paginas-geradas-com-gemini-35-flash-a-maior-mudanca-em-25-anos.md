@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-07-06"
 coverImage: "https://images.unsplash.com/photo-1624953587687-daf255b6b80a?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Por mais de duas décadas, digitar uma pergunta no Google significava basicamente a mesma coisa: uma caixa de texto simples, um "Enter" e uma lista de dez links azuis para escolher. Em 19 de maio de 2026, durante o Google I/O, essa lógica começou a ser oficialmente desmontada. A empresa anunciou que o [Gemini 3.5 Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/) passa a ser o modelo padrão do AI Mode para todos os usuários do mundo, ao mesmo tempo em que revela o que classifica como a maior reformulação da caixa de busca em mais de 25 anos.

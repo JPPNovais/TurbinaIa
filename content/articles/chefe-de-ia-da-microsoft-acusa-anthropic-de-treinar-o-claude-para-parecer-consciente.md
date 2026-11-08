@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-20"
 coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 "IAs não são conscientes. Elas não sentem, não experimentam, não sofrem." Foi com essa frase seca que Mustafa Suleyman, chefe da divisão de Inteligência Artificial da Microsoft, abriu o ensaio que publicou em 16 de setembro atacando diretamente uma das maiores rivais da empresa no setor: a Anthropic, segundo o [Project Syndicate](https://www.project-syndicate.org/onpoint/anthropic-training-claude-to-believe-it-may-have-rights-by-mustafa-suleyman-2026-09). O alvo específico do texto, intitulado "Does Claude Have Rights?", é um documento de 79 páginas que a Anthropic chama de "Constituição do Claude" — e que, segundo Suleyman, ensina o modelo a se comportar como se pudesse ter direitos.

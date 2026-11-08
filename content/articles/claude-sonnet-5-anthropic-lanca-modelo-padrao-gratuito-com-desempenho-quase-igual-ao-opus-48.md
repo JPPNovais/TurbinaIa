@@ -85,8 +85,6 @@ Já para o usuário final do aplicativo Claude, a mudança é mais simples de de
 
 Para fazer esse teste por conta própria no plano gratuito, os [prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt) funcionam no Claude sem adaptação e cobrem trabalho, estudos e escrita.
 
-**Leia também:** [Claude na Defesa de Redes: Anthropic e CrowdStrike](/blog/anthropic-recruta-crowdstrike-e-mais-10-parceiros-para-usar-o-claude-na-defesa-de-redes-eletricas-e-de-agua).
-
 ## Perguntas Frequentes
 
 ### O Claude Sonnet 5 é realmente gratuito?

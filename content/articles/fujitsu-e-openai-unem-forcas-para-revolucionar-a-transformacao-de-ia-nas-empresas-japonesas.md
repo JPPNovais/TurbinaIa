@@ -14,6 +14,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-27"
 coverImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 A Fujitsu, gigante japonesa de tecnologia da informação e comunicação, e a OpenAI, líder global em pesquisa e desenvolvimento de inteligência artificial, anunciaram em 27 de maio de 2026, uma colaboração estratégica para acelerar a transformação impulsionada pela IA no setor empresarial japonês. Esta parceria marca um momento decisivo na integração da indústria de IA japonesa com laboratórios de ponta dos EUA, prometendo reformular o panorama tecnológico do país.

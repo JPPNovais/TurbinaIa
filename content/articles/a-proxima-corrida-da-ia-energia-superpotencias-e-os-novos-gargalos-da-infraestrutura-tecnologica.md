@@ -14,6 +14,7 @@ isFeatured: false
 date: "2026-05-23"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxBJTIwUHIlQzMlQjN4aW1hJTIwQ29ycmlkYSUyMGRhJTIwSUElM0ElMjBFbmVyZ2lhJTJDJTIwU3VwZXJwb3QlQzMlQUFuY2lhcyUyMGUlMjBvcyUyME5vdm9zJTIwR2FyZ2Fsb3MlMjBkYSUyMEluZnJhZXN0cnV0dXJhJTIwVGVjbm9sJUMzJUIzZ2ljYSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5fGVufDB8MHx8fDE3Nzk1MzIzNTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A inteligência artificial (IA) generativa está no centro de uma revolução tecnológica que promete transformar indústrias e a vida cotidiana. Por trás da euforia, porém, surge um desafio concreto e crescente: a demanda insaciável por energia e os gargalos na infraestrutura tecnológica global. Esse cenário impõe dilemas financeiros e ambientais, ao mesmo tempo em que redefine a corrida por supremacia tecnológica e eleva países com energia limpa abundante a novos patamares de protagonismo.

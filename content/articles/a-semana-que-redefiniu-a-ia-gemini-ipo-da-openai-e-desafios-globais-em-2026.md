@@ -16,6 +16,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-24"
 coverImage: "https://images.unsplash.com/photo-1675557009285-b55f562641b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxBJTIwU2VtYW5hJTIwcXVlJTIwUmVkZWZpbml1JTIwYSUyMElBJTNBJTIwR2VtaW5pJTJDJTIwSVBPJTIwZGElMjBPcGVuQUklMjBlJTIwRGVzYWZpb3MlMjBHbG9iYWlzJTIwZW0lMjAyMDI2JTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc3OTYzODc5OHww&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A última semana de maio de 2026 foi uma das mais movimentadas da história recente da Inteligência Artificial: o Google lançou novos modelos e agentes no I/O, a OpenAI avançou com planos de abertura de capital e os debates regulatórios ganharam força em múltiplas jurisdições. A corrida pela liderança em IA deixou de ser apenas técnica — tornou-se também financeira, jurídica e política, com os grandes players consolidando apostas em um futuro cada vez mais orientado por agentes autônomos.

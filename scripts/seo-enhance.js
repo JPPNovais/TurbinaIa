@@ -162,10 +162,14 @@ function insertInternalLinks(body, existingSlugs, currentSlug, max = 3) {
   return lines.join('\n');
 }
 
+// Só posts no índice: os marcados com `noindex: true` não recebem link novo.
 function loadExistingSlugs(articlesDir) {
   try {
     return new Set(
-      fs.readdirSync(articlesDir).filter((f) => f.endsWith('.md')).map((f) => f.replace(/\.md$/, '')),
+      fs.readdirSync(articlesDir)
+        .filter((f) => f.endsWith('.md'))
+        .filter((f) => !/^noindex:\s*true\s*$/m.test(fs.readFileSync(path.join(articlesDir, f), 'utf8').split(/\n---/)[0]))
+        .map((f) => f.replace(/\.md$/, '')),
     );
   } catch {
     return new Set();

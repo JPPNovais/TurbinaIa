@@ -50,7 +50,7 @@ Além da criação do aplicativo em si, a plataforma integra toda a infraestrutu
 
 A iniciativa da MWM AI com o Google Cloud se alinha com a estratégia mais ampla do Google Cloud de impulsionar a era da IA agêntica. Em abril de 2026, o Google Cloud anunciou um investimento de US$ 750 milhões para acelerar o desenvolvimento, a adoção e a implementação da IA agêntica em seu ecossistema global de parceiros. Esse fundo visa apoiar consultorias, integradores de sistemas, fornecedores de software e parceiros de canal na criação de soluções avançadas baseadas nos modelos Gemini.
 
-A IA agêntica é um conceito que descreve sistemas capazes de executar tarefas complexas de forma autônoma, coordenar múltiplas etapas de trabalho e interagir com aplicativos empresariais sem intervenção humana constante. Se você é desenvolvedor e quer entender as oportunidades abertas por esse movimento, confira nossa análise sobre [IA para desenvolvedores em 2026](/blog/a-evolucao-continua-da-ia-novas-ferramentas-e-oportunidades-para-desenvolvedores-em-2026). Esse tipo de IA vai além de simples assistentes, tornando-se agentes que "fazem" em vez de apenas "sugerem". O investimento do Google Cloud e a parceria com a MWM AI são um testemunho desse movimento em direção a sistemas de IA mais proativos e autônomos. Grégoire Peiron, Diretor do Google Cloud France, Startups / Digital Natives, observou que a MWM é um exemplo notável de como a expertise móvel francesa pode ser amplificada pela pilha de IA do Google Cloud, impulsionando a indústria para a era agêntica.
+A IA agêntica é um conceito que descreve sistemas capazes de executar tarefas complexas de forma autônoma, coordenar múltiplas etapas de trabalho e interagir com aplicativos empresariais sem intervenção humana constante. Se você é desenvolvedor e quer entender as oportunidades abertas por esse movimento, confira nossa análise sobre IA para desenvolvedores em 2026. Esse tipo de IA vai além de simples assistentes, tornando-se agentes que "fazem" em vez de apenas "sugerem". O investimento do Google Cloud e a parceria com a MWM AI são um testemunho desse movimento em direção a sistemas de IA mais proativos e autônomos. Grégoire Peiron, Diretor do Google Cloud France, Startups / Digital Natives, observou que a MWM é um exemplo notável de como a expertise móvel francesa pode ser amplificada pela pilha de IA do Google Cloud, impulsionando a indústria para a era agêntica.
 
 ## O Cenário Atual do Desenvolvimento de Aplicativos com IA
 
@@ -81,7 +81,7 @@ A capacidade de gerar aplicativos nativos em Swift para Apple e Kotlin para Andr
 
 O MWM AI Mobile Squad está disponível para os usuários através de um modelo de assinatura com um teste gratuito, e cada aplicativo criado já vem pronto para publicação nas lojas de aplicativos, com recursos de monetização e análise integrados. Isso reforça a visão de que a plataforma não é apenas uma ferramenta de criação, mas um ecossistema completo para construir e escalar um negócio de aplicativos.
 
-**No mesmo assunto:** [Gemini 3.5 Flash: a IA do Google para a Era Agêntica](/blog/gemini-35-flash-a-nova-ia-do-google-acelera-a-era-agentica-com-poder-e-eficiencia).
+**Leia também:** [+40 Prompts para Programação Prontos para Devs (2026)](/blog/prompts-para-programacao).
 
 ## Perguntas Frequentes
 

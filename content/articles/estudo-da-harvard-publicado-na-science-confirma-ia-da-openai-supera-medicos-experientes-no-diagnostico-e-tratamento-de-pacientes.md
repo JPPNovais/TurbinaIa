@@ -13,6 +13,7 @@ isFeatured: false
 date: "2026-06-19"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Um resultado que surpreendeu até os próprios pesquisadores responsáveis por ele: o modelo de inteligência artificial o1 preview da OpenAI superou médicos experientes em diagnósticos de emergência em todas as etapas de um experimento clínico conduzido em um pronto-socorro real de Boston. A pesquisa foi liderada por especialistas da Harvard Medical School e do Beth Israel Deaconess Medical Center e publicada em abril de 2026 na [Science](https://www.science.org/), uma das revistas científicas mais rigorosas e prestigiadas do planeta — ao lado de Nature, o principal termômetro do que a comunidade científica global considera resultado sólido e verificável.

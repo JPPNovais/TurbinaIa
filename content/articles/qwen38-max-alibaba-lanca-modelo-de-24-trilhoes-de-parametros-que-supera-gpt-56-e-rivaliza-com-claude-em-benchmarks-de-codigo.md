@@ -71,7 +71,7 @@ Resta a pergunta que Jena, da Kanerika, colocou sobre a mesa e que ainda não te
 
 Para saber se um modelo novo como o Qwen3.8-Max resolve o seu tipo de problema, e não só o dos benchmarks, rode os mesmos prompts em mais de um modelo: os [prompts para programação](/blog/prompts-para-programacao) têm modelos de debug, refatoração e testes que servem como bateria de comparação.
 
-**Para aprofundar:** [SubQ Promete Resolver o Maior Gargalo dos LLMs](/blog/subq-promete-resolver-o-maior-gargalo-dos-llms-startup-lanca-modelo-com-janela-de-12-milhoes-de-tokens-e-atencao-1000x-mais-eficiente) e [Kimi K3: Modelo Aberto da Moonshot com 2,8 Trilhões](/blog/kimi-k3-moonshot-lanca-o-maior-modelo-de-ia-de-codigo-aberto-do-mundo-com-28-trilhoes-de-parametros).
+**Leia também:** [Melhores IAs em 2026: ranking grátis e pagas](/blog/melhores-ias-2026-ranking).
 
 ## Perguntas Frequentes
 

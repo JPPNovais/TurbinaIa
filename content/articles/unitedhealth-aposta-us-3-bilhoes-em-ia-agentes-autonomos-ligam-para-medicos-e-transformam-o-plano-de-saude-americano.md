@@ -13,6 +13,7 @@ isFeatured: false
 date: "2026-06-19"
 updatedAt: "2026-11-02"
 coverImage: "https://images.unsplash.com/photo-1721369967228-759150528943?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxVbml0ZWRIZWFsdGglMjBBcG9zdGElMjBVUyUyNCUyMDMlMjBCaWxoJUMzJUI1ZXMlMjBlbSUyMElBJTNBJTIwQWdlbnRlcyUyMEF1dCVDMyVCNG5vbW9zJTIwTGlnYW0lMjBwYXJhJTIwTSVDMyVBOWRpY29zJTIwZSUyMFRyYW5zZm9ybWFtJTIwbyUyMFBsYW5vJTIwZGUlMjBTYSVDMyVCQWRlJTIwQW1lcmljYW5vJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc4MTg5MjAxOXww&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 Imagine uma enfermeira dirigindo até a casa de um paciente enquanto, no alto-falante do carro, uma voz sintética lê em voz alta o resumo do prontuário médico daquele paciente — gerado automaticamente por inteligência artificial. Ou um agente de IA discando para o consultório de um cardiologista para agendar uma consulta em nome de um segurado, sem intervenção humana. Esse não é um cenário de ficção científica: é a realidade que a [UnitedHealth Group](https://www.modernhealthcare.com/insurance/mh-unitedhealth-ai-optum-sandeep-dadlani/) está implementando agora, enquanto despeja US$ 3 bilhões em inteligência artificial ao longo de 2026 e 2027. A maior operadora de saúde dos Estados Unidos transformou a IA no eixo central de sua estratégia de recuperação após um ano catastrófico — e as implicações para dezenas de milhões de americanos são enormes.

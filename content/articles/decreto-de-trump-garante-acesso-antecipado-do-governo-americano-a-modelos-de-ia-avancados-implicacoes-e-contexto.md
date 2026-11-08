@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-02"
 coverImage: "https://images.unsplash.com/photo-1658761492656-a088d80f65c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxEZWNyZXRvJTIwZGUlMjBUcnVtcCUyMEdhcmFudGUlMjBBY2Vzc28lMjBBbnRlY2lwYWRvJTIwZG8lMjBHb3Zlcm5vJTIwQW1lcmljYW5vJTIwYSUyME1vZGVsb3MlMjBkZSUyMElBJTIwQXZhbiVDMyVBN2Fkb3MlM0ElMjBJbXBsaWNhJUMzJUE3JUMzJUI1ZXMlMjBlJTIwQ29udGV4dG8lMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgwNDI2MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A corrida global pela supremacia em Inteligência Artificial (IA) atingiu um novo patamar com a recente medida do governo dos Estados Unidos. Em 2 de junho de 2026, o presidente Donald Trump assinou um decreto executivo que visa dar ao governo federal acesso antecipado a modelos de IA avançados, antes que sejam disponibilizados ao público em geral. Este movimento, embora voluntário na sua essência, sublinha a crescente preocupação com a segurança cibernética e a segurança nacional diante do rápido avanço da IA.

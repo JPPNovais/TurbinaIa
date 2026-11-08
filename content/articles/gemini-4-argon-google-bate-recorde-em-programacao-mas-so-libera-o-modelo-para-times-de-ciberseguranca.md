@@ -12,6 +12,7 @@ isFeatured: false
 date: "2026-10-04"
 updatedAt: "2026-10-26"
 coverImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 No fim da tarde de 30 de setembro, o Google publicou uma tabela de benchmarks que faltava desde que a OpenAI apresentou o GPT-6 Astra: um modelo da casa batendo o rival em tarefas reais de programação, não só em testes sintéticos. O nome é Gemini 4 Argon, e o número que chamou atenção foi 77,9% no DeepSWE v1.1, um benchmark que mede a capacidade de corrigir bugs reais em repositórios de código com múltiplos arquivos — acima dos 74,2% do Claude Opus 5.5 e dos 74,1% do GPT-6 Astra, segundo o próprio [anúncio do Google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/).

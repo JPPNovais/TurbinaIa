@@ -13,6 +13,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-05-27"
 coverImage: "https://images.unsplash.com/photo-1713540161756-c0db69f472da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxDaGluYSUyMEludGVuc2lmaWNhJTIwUmVzdHJpJUMzJUE3JUMzJUI1ZXMlMjBkZSUyMFZpYWdlbSUyMHBhcmElMjBFc3BlY2lhbGlzdGFzJTIwZW0lMjBJQSUyMFZpc2FuZG8lMjBQcm90ZWdlciUyMFRlY25vbG9naWElMjBFc3RyYXQlQzMlQTlnaWNhJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTc3OTg4NDU3MHww&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 A China está elevando o nível de suas estratégias para proteger a inovação em inteligência artificial, impondo restrições de viagem a profissionais de elite que atuam em empresas privadas do setor. A medida, que já abrange gigantes como [Alibaba](https://www.straitstimes.com/asia/east-asia/china-expands-travel-curbs-to-top-ai-talent-at-private-firms) e [DeepSeek](https://www.businesstimes.com.sg/singapore-economy/china-expands-travel-curbs-to-top-ai-talent-at-private-firms), sinaliza uma escalada nos esforços de Pequim para salvaguardar sua tecnologia e intensificar a corrida global pela supremacia em IA, especialmente em relação aos Estados Unidos.

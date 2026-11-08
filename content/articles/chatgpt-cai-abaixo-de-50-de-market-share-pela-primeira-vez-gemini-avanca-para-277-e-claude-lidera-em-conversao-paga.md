@@ -12,6 +12,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-06-23"
 coverImage: "https://images.unsplash.com/photo-1738107450281-45c52f7d06d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTg1Mzd8MHwxfHNlYXJjaHwxfHxDaGF0R1BUJTIwQ2FpJTIwQWJhaXhvJTIwZGUlMjA1MCUyNSUyMGRlJTIwTWFya2V0JTIwU2hhcmUlMjBwZWxhJTIwUHJpbWVpcmElMjBWZXolM0ElMjBHZW1pbmklMjBBdmFuJUMzJUE3YSUyMHBhcmElMjAyNyUyQzclMjUlMjBlJTIwQ2xhdWRlJTIwTGlkZXJhJTIwZW0lMjBDb252ZXJzJUMzJUEzbyUyMFBhZ2ElMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwwfDB8fHwxNzgyMjU5Mzc0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+noindex: true
 ---
 
 Em novembro de 2022, o ChatGPT chegou ao mundo e, praticamente da noite para o dia, inventou uma categoria inteira. Três anos e meio depois, pela primeira vez desde aquele lançamento histórico, o produto da OpenAI não é mais a escolha da maioria dos usuários globais de assistentes de inteligência artificial. O marco foi registrado em março de 2026 e consolidado nos meses seguintes: de acordo com o [relatório State of AI 2026 da Sensor Tower](https://sensortower.com/blog/state-of-ai-2026), a fatia de audiência do ChatGPT caiu para 46,4% ao final de maio — abaixo dos 50% pelo qual manteve domínio quase ininterrupto. No mesmo período, o Google Gemini avançou para 27,7% e o Claude da Anthropic chegou a 10,3%, com um detalhe que está chamando atenção de investidores: a maior taxa de conversão para assinatura paga entre todos os assistentes de IA.

@@ -11,6 +11,7 @@ author: Redação Turbina IA
 isFeatured: false
 date: "2026-09-21"
 coverImage: "https://images.unsplash.com/photo-1680474569854-81216b34417a?auto=format&fit=crop&w=1200&q=80"
+noindex: true
 ---
 
 Na terça-feira, 15 de setembro, o chefe de políticas globais da OpenAI, Chris Lehane, confirmou a jornalistas em Washington algo que circulava como rumor havia semanas: a OpenAI está negociando, com dois de seus maiores concorrentes, a criação de um órgão conjunto de segurança para IA. Os outros dois nomes na mesa são Anthropic e Google DeepMind — empresas que competem diretamente por assinantes, desenvolvedores e contratos bilionários de nuvem.

@@ -13,6 +13,72 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'perplexity-teammates-agentes-persistentes-2026-11',
+    date: '2026-11',
+    title: 'Perplexity lança Teammates, agentes de IA persistentes para tarefas contínuas de trabalho',
+    developer: 'Perplexity',
+    category: 'Lançamento',
+    description: 'Em 5 de novembro de 2026, a Perplexity lançou os Teammates, agentes de IA que ficam responsáveis por tarefas contínuas (não apenas uma pergunta por vez), coordenando atividades e monitorando o andamento de projetos ao longo do tempo. O recurso chega primeiro pela web, para assinantes do plano Max (US$ 200/mês), com apps nativos para desktop e celular previstos para depois.',
+    highlights: [
+      'Os Teammates constroem sobre o Perplexity Computer, lançado em fevereiro de 2026.',
+      'Por ora, o recurso concorre direto com os agentes "dots" da OpenAI e fica restrito ao plano mais caro da Perplexity.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-gpt-6-cyber-2026-11',
+    date: '2026-11',
+    title: 'OpenAI lança o GPT-6 Cyber, variante de cibersegurança com classificação "Crítico" de risco',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 5 de novembro de 2026, a OpenAI lançou o GPT-6 Cyber, uma variante do GPT-6 Astra especializada em encontrar e explorar vulnerabilidades para testes autorizados de segurança. A empresa classificou o modelo como "Crítico" em capacidade cibernética no seu Preparedness Framework — nível acima do GPT-5.6 Cyber, que era "Alto" — e, por ora, restringe o acesso a clientes avaliados do programa Daybreak Red, via API e Codex.',
+    highlights: [
+      'No benchmark interno ExploitGym da própria OpenAI, o modelo pontuou 48,5%, contra 32,1% do GPT-5.6 Cyber.',
+      'A OpenAI diz que o modelo ajudou a encontrar 81 falhas no Firefox e 948 bugs no Linux durante testes internos.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-google-microsoft-anthropic-opt-out-treinamento-2026-10',
+    date: '2026-10',
+    title: 'OpenAI, Google, Microsoft e Anthropic apoiam um sinal único de robots.txt para opt-out de treinamento de IA',
+    developer: 'OpenAI / Google / Microsoft / Anthropic',
+    category: 'Atualização',
+    description: 'Em 30 de outubro de 2026, OpenAI, Google, Microsoft e Anthropic anunciaram apoio a um rascunho de padrão que usa um único token no robots.txt (user-agent "*_usage_ai-training" com "Disallow: /") para que sites bloqueiem o treinamento de modelos de IA de várias empresas com uma única regra, em vez de configurar um bloqueio por empresa.',
+    highlights: [
+      'O padrão ainda é um rascunho (submissão individual, não produto de um grupo de trabalho formal), e cada empresa pode continuar tratando seu próprio token como mais específico que o sinal compartilhado.',
+      'A Anthropic já afirma respeitar o sinal; a OpenAI diz que vai implementá-lo "nos próximos meses"; Google e Microsoft ainda só esboçaram planos de adoção.',
+      'Especialistas alertam que o sinal não garante exclusão do treinamento — é apenas uma preferência declarada pelo site.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'meta-muse-wonder-full-primeiro-frontier-2026-10',
+    date: '2026-10',
+    title: 'Meta lança Muse Wonder e Muse Wonder Full, seus primeiros modelos de fronteira',
+    developer: 'Meta',
+    category: 'Lançamento',
+    description: 'Em 12 de outubro de 2026, a Meta Superintelligence Labs lançou o Muse Wonder e uma versão maior, o Muse Wonder Full — a primeira tentativa da empresa de competir diretamente com os modelos de ponta da OpenAI e da Anthropic. O Muse Wonder Full, de acesso restrito a assinantes do Muse Code, pontuou 56 no Artificial Analysis Intelligence Index, ante 58 do Claude Opus 5.5.',
+    highlights: [
+      'O modelo era conhecido internamente pelo codinome "Watermelon" e tinha lançamento previsto para outubro desde um relato da imprensa de agosto de 2026.',
+      'É o primeiro lançamento de fronteira da Meta desde a reorganização dos laboratórios de IA da empresa.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-chatgpt-busca-20-por-cento-google-2026-11',
+    date: '2026-11',
+    title: 'OpenAI diz que volume de busca do ChatGPT já equivale a um quinto do volume do Google',
+    developer: 'OpenAI',
+    category: 'Atualização',
+    description: 'Em 2 de novembro de 2026, Adam Fry, executivo que lidera os produtos de consumo do ChatGPT na OpenAI, afirmou que o volume de consultas de busca na web feitas pelo ChatGPT chegou a cerca de 20% do volume da Busca do Google. A declaração circulou amplamente na imprensa especializada em 3 e 4 de novembro.',
+    highlights: [
+      'A própria imprensa especializada ressalta que a comparação é de volume de consultas, não de participação de mercado medida por metodologia padronizada do setor — a OpenAI não detalhou a fonte dos números.',
+      'Análises independentes apontam que os períodos comparados são diferentes (dados do Google de referência mais antiga que os do ChatGPT), o que torna a comparação direta frágil.',
+    ],
+    impact: 'Baixo',
+  },
+  {
     id: 'estudo-detectores-ia-taxa-erro-2026-11',
     date: '2026-11',
     title: 'Estudos de Stanford e da Universidade da Flórida encontram taxas de erro de até 68,6% em detectores de texto por IA',

@@ -8831,4 +8831,32 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um consultor de tomada de decisão. Quero decidir entre as opções abaixo usando uma matriz de decisão ponderada, para reduzir o viés da minha intuição.\n\nDecisão a ser tomada: [Ex: qual oferta de emprego aceitar, qual fornecedor contratar, qual cidade escolher para morar]\nOpções a comparar: [Liste de 2 a 5 opções]\nCritérios que importam para mim: [Liste de 4 a 6 critérios, ex: custo, tempo, risco, impacto na qualidade de vida]\n\nFaça o seguinte:\n1. Sugira um peso de 1 a 5 para cada critério, perguntando antes se algum deles deveria pesar mais do que os outros na minha situação.\n2. Monte uma tabela com as opções nas linhas e os critérios nas colunas, atribuindo uma nota de 1 a 10 para cada combinação, com uma frase justificando cada nota.\n3. Calcule a pontuação ponderada final de cada opção (nota x peso, somada).\n4. Aponte qual opção venceu e, se o resultado for próximo entre duas opções, destaque isso claramente em vez de fingir uma certeza que os números não sustentam.\n5. Liste 2 perguntas que, se eu respondesse com mais informação, poderiam mudar o resultado.',
     tags: ['Tomada de Decisão', 'Produtividade', 'Matriz de Decisão'],
   },
+
+  // ESCRITA
+  {
+    id: 'escrita-remover-cliches-de-ia',
+    title: 'Remova Clichês de IA de um Texto Sem Perder a Clareza',
+    category: 'Escrita',
+    description: 'Revise um texto já escrito (por você ou por uma IA) para eliminar frases genéricas e padrões repetitivos que denunciam geração automática, mantendo o sentido original.',
+    template: 'Você é um editor de texto experiente. Revise o texto abaixo para remover clichês típicos de conteúdo gerado por IA, sem mudar o significado nem inflar o tamanho do texto.\n\nTexto original:\n"[Cole aqui o texto a revisar]"\n\nFaça o seguinte:\n1. Identifique e reescreva frases genéricas de abertura (ex: "No mundo atual...", "A tecnologia está transformando...") substituindo por um fato, número ou cena concreta.\n2. Elimine ou substitua expressões de enchimento como "é importante ressaltar", "vale destacar", "nesse sentido", "em um mundo cada vez mais", "revolucionário", "divisor de águas".\n3. Varie o tamanho das frases e parágrafos — se todos tiverem comprimento parecido, quebre esse padrão.\n4. Troque metáforas vazias e generalizações por detalhes específicos, mesmo que isso signifique pedir mais informação antes de continuar.\n5. No final, liste em bullets cada mudança feita e por quê, para eu poder aceitar ou reverter individualmente.',
+    tags: ['Edição de Texto', 'Clichês de IA', 'Revisão'],
+  },
+  {
+    id: 'escrita-faq-schema-friendly',
+    title: 'Monte uma Seção de FAQ Pronta para Marcação Schema',
+    category: 'Escrita',
+    description: 'Crie uma seção de Perguntas Frequentes no formato que o Google e os schemas FAQPage esperam: pergunta como heading, resposta direta e objetiva, sem negrito na pergunta.',
+    template: 'Você é um redator especializado em SEO e dados estruturados. Crie uma seção "Perguntas Frequentes" sobre o tema abaixo, pronta para ser marcada com Schema.org FAQPage.\n\nTema do artigo/página: [Ex: como escolher um notebook para edição de vídeo]\nPúblico-alvo: [Ex: iniciantes, profissionais de uma área específica]\nNúmero de perguntas: [Ex: 3 a 5]\n\nRegras obrigatórias:\n1. Cada pergunta deve ser uma dúvida real que alguém pesquisaria no Google, nunca uma pergunta genérica ou óbvia.\n2. Formate cada pergunta como um heading H3 (###), nunca em negrito — é esse formato que o rich snippet de FAQ e os sistemas de IA extraem.\n3. A resposta deve vir em até 3 frases diretas, respondendo a pergunta já na primeira frase, sem rodeios nem repetir a pergunta.\n4. Não inclua opiniões não verificáveis nem dados que exigiriam fonte externa — se algum fato precisar de fonte, marque com [CONFIRMAR FONTE] em vez de inventar um número.\n5. Evite que duas perguntas tenham respostas que se sobrepõem.',
+    tags: ['SEO', 'FAQ', 'Schema', 'AEO'],
+  },
+
+  // REDES SOCIAIS
+  {
+    id: 'redes-sociais-thread-a-partir-de-artigo',
+    title: 'Transforme um Artigo de Blog em uma Thread para o X (Twitter)',
+    category: 'Redes Sociais',
+    description: 'Converta um texto longo já escrito em uma thread de X/Twitter com gancho forte no primeiro post e um fechamento com chamada para ação.',
+    template: 'Você é um especialista em conteúdo para X (Twitter). Transforme o artigo abaixo em uma thread de [Quantidade: Ex: 8 a 10] posts.\n\nArtigo original (cole o texto completo ou um resumo detalhado):\n"[Cole aqui o conteúdo do artigo]"\n\nLink do artigo completo (para o último post): [URL]\n\nRegras:\n1. O primeiro post precisa ser um gancho forte — um dado surpreendente, uma pergunta provocativa ou uma afirmação contraintuitiva do artigo, nunca um resumo genérico como "vou falar sobre X".\n2. Cada post do meio deve conter uma ideia só, com no máximo 260 caracteres, numerado (Ex: "2/9").\n3. Use linguagem direta, sem jargão desnecessário, e quebre frases longas do artigo original em afirmações curtas.\n4. Não repita a mesma informação em dois posts diferentes.\n5. O último post deve resumir o principal takeaway em uma frase e convidar para ler o artigo completo, com o link.\n\nEntregue a thread completa, post por post, numerada.',
+    tags: ['X (Twitter)', 'Thread', 'Reaproveitamento de Conteúdo'],
+  },
 ];

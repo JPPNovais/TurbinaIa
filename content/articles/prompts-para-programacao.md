@@ -1,6 +1,6 @@
 ---
 title: "+40 Prompts para Programação: Modelos Prontos para Devs (2026)"
-seoTitle: "+40 Prompts para Programação Prontos para Devs (2026)"
+seoTitle: "Prompts para Programação: +40 Prontos para Copiar (2026)"
 description: "Prompts para programação prontos para copiar: +40 modelos para escrever, debugar, testar e documentar código, SQL, Git e agentes como Claude Code."
 category: tutoriais
 tags:

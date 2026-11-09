@@ -1,7 +1,7 @@
 ---
 title: "40 Prompts para Copywriting e Redação: Escreva Melhor com IA (2026)"
-seoTitle: "40 Prompts para Copywriting e Redação Prontos (2026)"
-description: "Prompts para copywriting e redação prontos para copiar: 40 modelos para headlines, AIDA e PAS, páginas de vendas, storytelling, revisão e LinkedIn."
+seoTitle: "Prompts para Copywriting: 40 Modelos Prontos para Copiar"
+description: "40 prompts de copywriting para copiar no ChatGPT, em português: headlines, AIDA e PAS, página de vendas, storytelling, revisão e LinkedIn."
 category: tutoriais
 tags:
   - Prompts
@@ -406,7 +406,7 @@ A regra prática é: se o primeiro resultado ficou 60% bom, vale iterar. Mude um
 
 ### Como evitar que os textos gerados soem "artificiais"?
 
-Três ajustes simples: (1) instrua o modelo a evitar construções específicas que você reconhece como "IA" — liste-as no prompt; (2) peça que use contrações, frases curtas e linguagem coloquial quando o tom permitir; (3) sempre edite o texto final — a IA gera o rascunho, você dá a voz. Adicionar exemplos reais do seu negócio, dados próprios e histórias concretas é o que humaniza o conteúdo.
+Três ajustes simples: (1) instrua o modelo a evitar construções específicas que você reconhece como "IA" — liste-as no prompt; (2) peça que use contrações, frases curtas e linguagem coloquial quando o tom permitir; (3) sempre edite o texto final — a IA gera o rascunho, você dá a voz. Adicionar exemplos reais do seu negócio, dados próprios e histórias concretas é o que humaniza o conteúdo. Sobre os detectores de texto de IA, o que os estudos medem (e onde erram) está em [como saber se um texto foi escrito por IA](/blog/como-saber-se-um-texto-foi-escrito-por-ia-o-que-os-estudos-mostram-sobre-os-detectores).
 
 ### Posso usar esses prompts para qualquer nicho ou são específicos para marketing?
 

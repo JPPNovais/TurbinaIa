@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT Ganha Chats Trancados por PIN: Como Ativar e o Que a Função Não Protege"
-seoTitle: "ChatGPT Locked Chats: como trancar conversas com PIN"
+seoTitle: "Como trancar conversas do ChatGPT com PIN (Locked Chats)"
 description: "O ChatGPT lançou os Locked Chats, que escondem conversas com PIN ou biometria. Veja como ativar, em quais planos já funciona e o que a trava não protege."
 category: ferramentas
 tags:

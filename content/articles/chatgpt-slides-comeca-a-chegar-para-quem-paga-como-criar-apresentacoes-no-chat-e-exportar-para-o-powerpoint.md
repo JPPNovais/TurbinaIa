@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT Slides Começa a Chegar Para Quem Paga: Como Criar Apresentações no Chat e Exportar Para o PowerPoint"
-seoTitle: "ChatGPT Slides: como criar e exportar apresentações"
+seoTitle: "ChatGPT Slides: como criar e exportar para PowerPoint"
 description: "OpenAI liberou o ChatGPT Slides em 16 de outubro para Pro, Business e Enterprise. Veja como funciona, quem já tem acesso e como exportar o resultado."
 category: ferramentas
 tags:

@@ -120,6 +120,10 @@ Reescreva esta mensagem de atendimento para seguir o nosso tom de voz: [cole o g
 Escreva uma mensagem de ausência/fora do horário comercial para o nosso chat de atendimento, informando que retornaremos no próximo horário útil e incluindo uma forma alternativa de contato para casos urgentes: [descreva a forma alternativa, se houver].
 ```
 
+```
+Monte respostas prontas (macros) para as 5 perguntas mais comuns que recebemos no atendimento da [nome da empresa]: [liste as perguntas]. Para cada uma, escreva uma versão curta para chat (até 3 frases) e uma versão para e-mail (até 80 palavras), no tom: [descreva o tom]. Onde a resposta depender de dado do cliente, como prazo ou número do pedido, deixe um campo entre colchetes em vez de inventar.
+```
+
 ---
 
 ## Prompts para Triagem, Resumo e Pós-Atendimento

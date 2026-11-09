@@ -1,7 +1,7 @@
 ---
 title: "Custom GPTs serão desativados em 11/12: como migrar para plugins (passo a passo)"
-seoTitle: "Custom GPTs em 11/12: passo a passo para migrar"
-description: "Passo a passo: Custom GPTs param em 11/12/2026. O que acontece com os que não migrarem e como passar para plugins."
+seoTitle: "Custom GPTs acabam em 11/12: o que fazer e como migrar"
+description: "Custom GPTs param de abrir em 11/12/2026. O que acontece com os seus, quem pode migrar e o passo a passo para virar plugin antes do prazo."
 category: ferramentas
 tags:
   - ChatGPT

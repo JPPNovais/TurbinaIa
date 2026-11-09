@@ -17,7 +17,7 @@ const OG_DESC = `Calcule o custo da API do ChatGPT, Claude e Gemini: informe tok
 const OG_IMAGE = `https://www.turbinaia.com.br/api/og?title=${encodeURIComponent(OG_TITLE)}&desc=${encodeURIComponent(OG_DESC)}&badge=${encodeURIComponent('Calculadora Gratuita')}`;
 
 export const metadata: Metadata = {
-  title: 'Calculadora de Custo de API de IA: ChatGPT, Claude e Gemini',
+  title: 'Calculadora de Custo de API: ChatGPT, Claude e Gemini em R$',
   description: OG_DESC,
   keywords: ['calculadora custo API', 'preço API ChatGPT', 'custo API Claude', 'preço API Gemini', 'custo por token', 'quanto custa API OpenAI'],
   alternates: { canonical: '/calculadora' },

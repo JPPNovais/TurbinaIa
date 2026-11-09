@@ -39,7 +39,7 @@ A coluna de plano grátis segue o [guia de IAs gratuitas](/blog/melhores-ias-gra
 
 **Pesquisa ligada à conta Google.** Gemini sem assinatura, no Flash-Lite, com Deep Research, Gemini Live, Canvas, Gems e geração de imagem. A página de planos não coloca Flash, Pro nem Gemini 4 Argon nesse plano.
 
-**Documento longo.** Claude Free, a US$ 0, com Sonnet e Haiku, chat, arquivos e Artefatos, e uso limitado a cada 5 horas e a cada semana. Opus e Fable ficam de fora.
+**Documento longo.** Claude Free, a US$ 0, com Sonnet e Haiku, chat, arquivos e Artefatos, e uso limitado a cada 5 horas e a cada semana. Opus e Fable ficam de fora. O que dá para fazer dentro desse limite está no guia do [Claude grátis em 2026](/blog/claude-gratis-em-2026-o-que-o-plano-sem-custo-da-anthropic-permite-fazer).
 
 Nenhuma das três é "ilimitada em tudo". O detalhe de cada ficha, com o que não entra, está no guia de [melhor IA gratuita em 2026](/blog/melhores-ias-gratuitas-2026).
 
@@ -67,6 +67,8 @@ O ranking por uso, em uma frase cada:
 3. **Melhor para documento longo no grátis:** Claude Free.
 4. **Melhor para código no editor no grátis:** GitHub Copilot Free.
 5. **Quando o plano pago entra:** no Claude, a página de preços mostra Pro, Max e Ultra com os valores da tabela. No Gemini, o Ultra está em US$ 99,99 ou US$ 199,99 por mês. No ChatGPT, Go, Plus e Pro existem, sem um dólar repetido aqui.
+
+Para pesquisar navegando, sem trocar de aba para o chat, o [Comet, navegador de IA da Perplexity](/blog/comet-o-navegador-de-ia-da-perplexity-como-usar-de-graca-e-o-que-muda-no-pro) é gratuito nos recursos básicos; o guia separa o que fica no Pro.
 
 Preço e modelo mudam. Na próxima revisão mensal, a data desta página sobe junto com o guia de IAs gratuitas. Até lá, a fonte é o link da linha, não um print antigo.
 

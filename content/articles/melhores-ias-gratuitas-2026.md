@@ -55,7 +55,7 @@ Na [tabela de preços da Anthropic](https://claude.com/pricing), o plano Free cu
 
 No Free também entram chat na web, no desktop e no celular, busca, criação de arquivo, execução de código, memória, conectores, Artefatos, Design, Slides e Docs, voz e até 5 Projects. Claude Code, Research e os créditos mensais de API começam nos planos pagos. Treinamento do modelo, na mesma tabela, está como opt-out também no Free — ou seja, a configuração existe; não é um "sempre treina" automático.
 
-Para texto longo, o Claude é a opção gratuita com essa ficha. Para decidir entre os três assistentes numa tarefa específica, o [comparativo ChatGPT vs Gemini vs Claude](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026) detalha o critério, não só o preço.
+Para texto longo, o Claude é a opção gratuita com essa ficha. O que cabe no limite de 5 horas, na prática, está no guia do [Claude grátis em 2026](/blog/claude-gratis-em-2026-o-que-o-plano-sem-custo-da-anthropic-permite-fazer). Para decidir entre os três assistentes numa tarefa específica, o [comparativo ChatGPT vs Gemini vs Claude](/blog/chatgpt-vs-gemini-vs-claude-qual-a-melhor-ia-em-2026) detalha o critério, não só o preço.
 
 ## Código
 

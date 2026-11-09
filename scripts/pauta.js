@@ -19,8 +19,11 @@ const path = require('path');
  * ou o título de um artigo já publicado — assim a rotina não reescreve
  * o que já existe.
  *
- * Os quatro primeiros são os pendentes de docs/PLANO-AEO-GEO.md.
- * Os seguintes são pedidos com demanda de busca e ainda sem página própria.
+ * Ordem (revisão de 09/11/2026, Search Console 11/10–07/11): listas de
+ * prompts por área e recortes de "melhor IA" vêm antes, porque são o tipo de
+ * post que recebe clique (prompts-para-gemini, copywriting, marketing,
+ * programação). Os guias de AEO pendentes de docs/PLANO-AEO-GEO.md ficam no
+ * fim: o pilar de AEO teve 14 impressões e 0 clique no mesmo período.
  */
 const BACKLOG = [
   {
@@ -38,24 +41,10 @@ const BACKLOG = [
     note: 'Guia de AEO. Explique o formato H3 + resposta direta, o que entra no FAQPage e o que não deve ir para a FAQ. Aponte o verificador de IA do site.',
   },
   {
-    id: 'aeo-vs-seo',
-    title: 'AEO vs SEO na prática: o que muda na página quando o objetivo é ser citado por uma IA',
-    seoHint: 'AEO vs SEO: o que muda na página',
-    coveredBy: /aeo-vs-seo|aeo-versus-seo/i,
-    note: 'Comparativo. SEO continua valendo; AEO muda o formato da resposta (definição no início, FAQ, fontes). Linkar o pilar de AEO e o guia de aparecer no ChatGPT.',
-  },
-  {
-    id: 'aparecer-gemini-copilot',
-    title: 'Como aparecer nas respostas do Gemini e do Copilot (e do Perplexity)',
-    seoHint: 'Como aparecer nas respostas do Gemini e do Copilot',
-    coveredBy: /aparecer-nas-respostas-do-gemini|aparecer-nas-respostas-do-copilot|otimizar-para-o-perplexity/i,
-    note: 'Guia de AEO. O post de aparecer no ChatGPT já existe: diferencie Gemini, Copilot e Perplexity e linke aquele guia em vez de repeti-lo. Não invente um “algoritmo” desses produtos.',
-  },
-  {
     id: 'prompts-chatgpt-atendimento',
     title: 'Prompts para ChatGPT de atendimento: modelos para e-mail, chat e objeção',
     seoHint: 'Prompts para ChatGPT de atendimento ao cliente',
-    coveredBy: /prompts-para-chatgpt-de-atendimento|prompts-atendimento-ao-cliente/i,
+    coveredBy: /prompts-para-chatgpt-de-atendimento|prompts-de-chatgpt-para-atendimento|prompts-(para-)?atendimento-ao-cliente/i,
     note: 'Lista de prompts por área, no mesmo formato dos posts prompts-para-… (blocos de código copiáveis, variáveis em colchetes). Linkar a lista geral de prompts para ChatGPT.',
   },
   {
@@ -71,6 +60,13 @@ const BACKLOG = [
     seoHint: 'Prompts de vendas para e-commerce',
     coveredBy: /prompts-de-vendas-para-e-commerce|prompts-vendas-ecommerce/i,
     note: 'O post prompts-para-negocios-e-empreendedores já tem uma seção curta com esse H2. Este guia aprofunda (Mercado Livre, Shopee, ficha, anúncio) e linka aquela seção. Não copie os mesmos quatro prompts.',
+  },
+  {
+    id: 'prompts-whatsapp-vendas',
+    title: 'Prompts para WhatsApp de vendas: prospecção, follow-up e resposta a objeção',
+    seoHint: 'Prompts para WhatsApp de vendas e prospecção',
+    coveredBy: /prompts?-(para|de)-whatsapp|prospeccao-(de-clientes-)?(via|no|pelo)-whatsapp/i,
+    note: 'Busca vista no Search Console em 01–07/11/2026 ("prompt para prospecção de clientes via whatsapp"). Mensagens curtas, com variáveis em colchetes. Lembre de pedir consentimento antes de mandar mensagem a quem não é cliente e de não colar dado pessoal no chat. Linkar prompts-para-negocios-e-empreendedores e o guia de atendimento.',
   },
   {
     id: 'melhor-ia-gratuita',
@@ -92,6 +88,20 @@ const BACKLOG = [
     seoHint: 'Melhor IA gratuita para programar',
     coveredBy: /melhor-ia-gratuita-para-programar/i,
     note: 'Comparativo. Linkar melhores-ias-gratuitas-2026 e prompts-para-programacao. Não copie limite de plano sem a página oficial.',
+  },
+  {
+    id: 'aeo-vs-seo',
+    title: 'AEO vs SEO na prática: o que muda na página quando o objetivo é ser citado por uma IA',
+    seoHint: 'AEO vs SEO: o que muda na página',
+    coveredBy: /aeo-vs-seo|aeo-versus-seo/i,
+    note: 'Comparativo. SEO continua valendo; AEO muda o formato da resposta (definição no início, FAQ, fontes). Linkar o pilar de AEO e o guia de aparecer no ChatGPT.',
+  },
+  {
+    id: 'aparecer-gemini-copilot',
+    title: 'Como aparecer nas respostas do Gemini e do Copilot (e do Perplexity)',
+    seoHint: 'Como aparecer nas respostas do Gemini e do Copilot',
+    coveredBy: /aparecer-nas-respostas-do-gemini|aparecer-nas-respostas-do-copilot|otimizar-para-o-perplexity/i,
+    note: 'Guia de AEO. O post de aparecer no ChatGPT já existe: diferencie Gemini, Copilot e Perplexity e linke aquele guia em vez de repeti-lo. Não invente um “algoritmo” desses produtos.',
   },
 ];
 

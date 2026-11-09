@@ -162,7 +162,7 @@ Tenho estas demandas para hoje e só [X horas] livres: [liste as demandas com pr
 
 ## Prompts para E-mail
 
-E-mail é onde o ChatGPT mais economiza tempo no trabalho: de pedidos e cobranças a respostas difíceis que você vem adiando.
+E-mail é onde o ChatGPT mais economiza tempo no trabalho: de pedidos e cobranças a respostas difíceis que você vem adiando. Para responder cliente (reclamação, chat e escalonamento), veja os [prompts de ChatGPT para atendimento ao cliente](/blog/20-prompts-de-chatgpt-para-atendimento-ao-cliente-e-mail-chat-e-reclamacoes-2026).
 
 ```
 Você é um assistente de produtividade. Escreva um e-mail profissional para [nome do destinatário] solicitando [objetivo do e-mail]. O tom deve ser [formal/cordial/direto]. Limite a 150 palavras.

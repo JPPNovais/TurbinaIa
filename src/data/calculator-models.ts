@@ -167,6 +167,14 @@ export const AI_MODELS: CalculatorModel[] = [
   },
   // Mistral AI
   {
+    name: 'Mistral Large 4',
+    provider: 'Mistral AI',
+    inputPricePerM: 1.36,
+    outputPricePerM: 4.18,
+    contextWindow: '1M tokens (preview)',
+    description: 'Lançado em prévia pública em 6 de outubro de 2026 ("le Chonk"), é o novo modelo principal da Mistral AI, treinado em infraestrutura própria na Europa. A Mistral anuncia janela de contexto de 1M de tokens, mas listagens de terceiros registram algo entre 512K e 524K de tokens expostos nesta fase de prévia. Entrada em cache a US$ 0,14/M.',
+  },
+  {
     name: 'Mistral Large 3',
     provider: 'Mistral AI',
     inputPricePerM: 0.50,

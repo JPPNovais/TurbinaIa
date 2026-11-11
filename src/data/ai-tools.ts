@@ -891,7 +891,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎨',
     tagline: 'Studio criativo de IA para gerar imagens e assets 3D',
     description:
-      'Leonardo.ai é um estúdio criativo completo que oferece geração de imagens de alta qualidade, incluindo pintura digital, concept art e assets 3D. É conhecido por seus modelos customizáveis e interface amigável, permitindo aos artistas ter mais controle sobre suas criações. Adquirido pela Canva em Julho de 2024.',
+      'Leonardo.ai é um estúdio criativo completo que oferece geração de imagens de alta qualidade, incluindo pintura digital, concept art e assets 3D. É conhecido por seus modelos customizáveis e interface amigável, permitindo aos artistas ter mais controle sobre suas criações. Adquirido pela Canva em Julho de 2024. Segundo a central de ajuda da Canva, o acesso ao plano Leonardo.Ai Essential embutido no Canva Business está sendo descontinuado: quem assinou o Business antes de 31 de agosto de 2026 perde esse acesso em 30 de setembro de 2026, e assinaturas Business novas a partir daquela data já não incluem o Leonardo.Ai — a ferramenta continua disponível normalmente como assinatura própria, fora do Canva.',
     useCases: [
       'Gerar imagens para arte conceitual e ilustrações',
       'Criar assets 3D para jogos e design',
@@ -902,7 +902,7 @@ export const AI_TOOLS: AITool[] = [
     pricingDetails: 'Plano Grátis: 150 tokens diários que não acumulam, gerações públicas, uso não comercial; Plano Essential: US$ 12/mês (US$ 10/mês anual) para 8.500 tokens/mês, uso comercial, gerações privadas, 10 modelos de IA pessoais, 2 gerações simultâneas; Plano Premium: US$ 30/mês (US$ 24/mês anual) para 25.000 tokens/mês, prioridade de infraestrutura, mais gerações simultâneas, acesso à API; Plano Ultimate: US$ 60/mês (US$ 48/mês anual) para 60.000 tokens/mês, prioridade máxima, máximo de gerações. Team Starter: US$ 72/mês (3 assentos, 75.000 tokens compartilhados). Plano Enterprise: sob consulta. API com US$ 5 de crédito inicial (não expira).',
     url: 'https://leonardo.ai',
     tags: ['imagem', 'geração', 'arte', 'design', '3d', 'customizável'],
-    updatedAt: '2026-08',
+    updatedAt: '2026-11',
   },
 
   // Vídeo

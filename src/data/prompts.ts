@@ -8859,4 +8859,44 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um especialista em conteúdo para X (Twitter). Transforme o artigo abaixo em uma thread de [Quantidade: Ex: 8 a 10] posts.\n\nArtigo original (cole o texto completo ou um resumo detalhado):\n"[Cole aqui o conteúdo do artigo]"\n\nLink do artigo completo (para o último post): [URL]\n\nRegras:\n1. O primeiro post precisa ser um gancho forte — um dado surpreendente, uma pergunta provocativa ou uma afirmação contraintuitiva do artigo, nunca um resumo genérico como "vou falar sobre X".\n2. Cada post do meio deve conter uma ideia só, com no máximo 260 caracteres, numerado (Ex: "2/9").\n3. Use linguagem direta, sem jargão desnecessário, e quebre frases longas do artigo original em afirmações curtas.\n4. Não repita a mesma informação em dois posts diferentes.\n5. O último post deve resumir o principal takeaway em uma frase e convidar para ler o artigo completo, com o link.\n\nEntregue a thread completa, post por post, numerada.',
     tags: ['X (Twitter)', 'Thread', 'Reaproveitamento de Conteúdo'],
   },
+
+  // NEGÓCIOS
+  {
+    id: 'negocios-followup-proposta-sem-cobranca',
+    title: 'Escreva um Follow-up de Proposta Comercial sem Parecer Cobrança',
+    category: 'Negócios',
+    description: 'Crie uma mensagem de acompanhamento para uma proposta B2B que já foi enviada, trazendo algo novo em vez de só perguntar se a pessoa já decidiu.',
+    template: 'Você é um consultor de vendas B2B. Enviei uma proposta comercial e preciso fazer o follow-up sem soar como cobrança.\n\nProposta enviada em: [Data ou "há X dias"]\nProduto/serviço: [Nome e o que resolve]\nContato: [Nome e cargo]\nInformação nova que posso usar (se houver): [Ex: um caso de outro cliente, um dado do setor, uma condição que mudou — ou "nenhuma, só quero retomar"]\n\nEscreva uma mensagem de até 5 linhas que:\n1. Não comece com "só retomando" ou "você viu minha mensagem".\n2. Traga a informação nova listada acima como gancho, se houver; se não houver, reduza a pergunta para algo fácil de responder (sim/não) em vez de perguntar genericamente "o que achou?".\n3. Termine com uma pergunta aberta, nunca um fechamento forçado.\n4. Não inclua desconto, prazo ou condição que eu não tenha informado.\n\nDepois, sugira em uma frase quando seria o momento certo de enviar o próximo follow-up caso este também não tenha resposta.',
+    tags: ['Vendas B2B', 'Follow-up', 'Propostas Comerciais'],
+  },
+
+  // IA & AUTOMAÇÃO
+  {
+    id: 'ia-automacao-resumo-lancamento-ia',
+    title: 'Resuma um Anúncio de Lançamento de IA em 3 Frases para o Time',
+    category: 'IA & Automação',
+    description: 'Transforme um anúncio longo de lançamento de modelo ou ferramenta de IA em um resumo curto e prático para compartilhar com colegas que não têm tempo de ler o texto completo.',
+    template: 'Você é um analista que acompanha lançamentos de IA para manter um time atualizado sem sobrecarregar ninguém de leitura.\n\nCole abaixo o texto do anúncio ou release de lançamento:\n"[Cole aqui o anúncio, post ou matéria sobre o lançamento]"\n\nContexto do meu time: [Ex: equipe de marketing, dev, atendimento — o que é relevante para eles]\n\nGere um resumo com exatamente esta estrutura:\n1. Uma frase dizendo o que foi lançado e por quem, sem adjetivo de empolgação.\n2. Uma frase dizendo o que muda na prática para quem usa a ferramenta hoje (preço, limite, recurso novo, disponibilidade).\n3. Uma frase dizendo se isso é relevante para o contexto do meu time listado acima, e por quê — ou dizendo claramente que não é relevante agora.\n\nNão inclua nenhum número, preço ou data que não esteja explicitamente no texto colado. Se o anúncio não deixar claro quando o recurso chega para todo mundo, diga isso em vez de supor uma data.',
+    tags: ['Curadoria de Notícias', 'IA', 'Comunicação Interna'],
+  },
+
+  // PRODUTIVIDADE
+  {
+    id: 'produtividade-checklist-revisao-texto-ia',
+    title: 'Checklist de Revisão Antes de Publicar um Texto Gerado por IA',
+    category: 'Produtividade',
+    description: 'Gere uma lista de verificação personalizada para revisar um texto escrito com ajuda de IA antes de publicar, focando nos pontos que mais geram erro de fato ou tom.',
+    template: 'Você é um editor que revisa textos escritos com apoio de IA antes da publicação.\n\nTipo de texto: [Ex: post de blog, e-mail para cliente, resposta em rede social, relatório interno]\nQuem vai ler: [Público-alvo]\nO que não pode estar errado de forma alguma: [Ex: preço, prazo, nome de pessoa, dado numérico, promessa contratual]\n\nCole o texto a revisar:\n"[Cole aqui o texto gerado]"\n\nGere uma checklist de verificação em até 8 itens, cada um como uma pergunta de sim/não que eu deveria responder antes de publicar (ex: "Todo número citado tem uma fonte que eu confirmei manualmente?"). Priorize os itens relacionados ao que eu marquei como "não pode estar errado". Depois da checklist, aplique-a ao texto colado e aponte, item por item, onde encontrou risco real — sem inventar um problema só para preencher a lista.',
+    tags: ['Revisão de Conteúdo', 'Checklist', 'Controle de Qualidade'],
+  },
+
+  // CARREIRA
+  {
+    id: 'carreira-resposta-entrevista-uso-de-ia',
+    title: 'Prepare Respostas sobre Uso de IA no Trabalho para uma Entrevista de Emprego',
+    category: 'Carreira',
+    description: 'Monte respostas honestas e bem estruturadas para quando o entrevistador perguntar como você usa ferramentas de IA no dia a dia de trabalho.',
+    template: 'Você é um preparador de entrevistas de emprego. Vou ser perguntado sobre como uso ferramentas de IA no trabalho e quero respostas honestas, não um discurso genérico de "a IA aumenta minha produtividade".\n\nCargo para o qual estou me candidatando: [Cargo]\nFerramentas de IA que uso de verdade no trabalho: [Liste, ex: ChatGPT para rascunho de e-mail, Copilot para código, Claude para resumir documento]\nUma situação real em que a IA ajudou: [Descreva brevemente]\nUma situação real em que a IA errou ou não serviu e você precisou corrigir: [Descreva brevemente, ou "ainda não tive uma clara"]\n\nMonte 3 respostas curtas (até 5 frases cada) para perguntas prováveis de entrevista sobre o tema: (1) "Como você usa IA no seu trabalho hoje?"; (2) "Como você garante que o que a IA gera está certo?"; (3) "Você tem preocupação em depender demais de IA?". Baseie as respostas só nas informações que eu dei — não invente ferramenta, resultado ou métrica que eu não mencionei.',
+    tags: ['Entrevista de Emprego', 'Uso de IA no Trabalho', 'Carreira'],
+  },
 ];

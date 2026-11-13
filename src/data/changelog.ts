@@ -13,6 +13,71 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'mistral-studio-managed-agents-preview-2026-11',
+    date: '2026-11',
+    title: 'Mistral abre em preview público agentes gerenciados, apps e workflows no Mistral Studio',
+    developer: 'Mistral AI',
+    category: 'Lançamento',
+    description: 'Em 5 de novembro de 2026, a Mistral ampliou o Mistral Studio com agentes gerenciados (com skills, sandbox de execução de código, subagentes e hooks para lógica customizada), um construtor de workflows por linguagem natural e uma ferramenta de linha de comando para publicar apps. Os recursos já funcionam no Mistral Cloud; implantação em nuvem privada e on-premises chega ao final de novembro de 2026.',
+    highlights: [
+      'Os agentes gerenciados são construídos em Python com o SDK mistralai-agents e podem rodar no próprio processo do desenvolvedor, ser hospedados com "agents serve" ou executados pela própria Mistral com "agents deploy".',
+      'A Mistral avisa que API, comportamento e limites ainda podem mudar durante o preview — só os apps de Studio dentro do Vibe Code Web já estão em disponibilidade geral.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'moonshot-kimi-k31-pro-open-weights-2026-11',
+    date: '2026-11',
+    title: 'Moonshot AI libera pesos abertos do Kimi K3.1 Pro, modelo de 2,8 trilhões de parâmetros',
+    developer: 'Moonshot AI',
+    category: 'Lançamento',
+    description: 'Em 4 de novembro de 2026, a Moonshot AI publicou no Hugging Face os pesos abertos do Kimi K3.1 Pro, um modelo de mistura de especialistas com 2,8 trilhões de parâmetros (104 bilhões ativados por vez) e janela de contexto de 1.048.576 tokens, sob uma licença própria da Kimi. O modelo já estava disponível via API desde 23 de outubro de 2026.',
+    highlights: [
+      'A Moonshot diz ter removido material relacionado a ataques cibernéticos do treinamento antes da liberação aberta dos pesos.',
+      'A empresa afirma que o modelo quase empata com o Claude Opus 5.5 em um teste interno de programação — números reportados pela própria Moonshot, sem verificação independente publicada.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-gpt-image-26-flare-sunburst-2026-11',
+    date: '2026-11',
+    title: 'OpenAI lança GPT-Image 2.6 Flare e Sunburst, com geração até 50% mais rápida',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 4 de novembro de 2026, a OpenAI lançou a geração de imagens 2.6 — como "ChatGPT Images 2.6" no chat e como os modelos GPT-Image-2.6 Flare (foco em velocidade) e GPT-Image-2.6 Sunburst (foco em detalhe e precisão de edição) na API. A empresa diz que os dois modelos geram imagens até 50% mais rápido que a geração anterior.',
+    highlights: [
+      'O lançamento inclui saída em GIF animado, exportação em SVG e edição guiada por marcação sobre a imagem.',
+      'Cobertura de terceiros diverge em detalhes como o ganho de velocidade exato e eventuais mudanças de preço — a página oficial da OpenAI é a referência mais confiável para esses números.',
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'cognition-swe-2-flash-2026-11',
+    date: '2026-11',
+    title: 'Cognition lança SWE-2 Flash, modelo de código que a empresa diz ser 100% treinado nos EUA',
+    developer: 'Cognition',
+    category: 'Lançamento',
+    description: 'Em 4 de novembro de 2026, a Cognition (criadora do Devin) lançou o SWE-2 Flash, um modelo de codificação que a empresa apresenta como o modelo de código aberto americano com melhor desempenho em avaliações de referência do setor. Já está disponível no Devin Desktop e via linha de comando; os pesos ainda não foram liberados publicamente.',
+    highlights: [
+      'A Cognition diz estar montando um programa para compartilhar os pesos de forma segura com parceiros do setor e pesquisadores, sem data definida.',
+      'Benchmarks comparativos divulgados pela empresa (como a pontuação de 89,2 contra concorrentes abertos) são autorreportados e não foram confirmados por avaliação independente.',
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'ricursive-ripple-65b-preview-2026-11',
+    date: '2026-11',
+    title: 'Ricursive Intelligence lança Ripple-65B Preview, modelo de código aberto sob licença Apache 2.0',
+    developer: 'Ricursive Intelligence',
+    category: 'Lançamento',
+    description: 'Em 4 de novembro de 2026, a Ricursive Intelligence lançou o Ripple-65B Preview, um modelo denso de 65 bilhões de parâmetros treinado em 12 trilhões de tokens, com janela de contexto de 1 milhão de tokens, liberado sob licença Apache 2.0 com pesos disponíveis no Hugging Face e acesso via provedores de API como Together AI, GMI Cloud e OpenRouter.',
+    highlights: [
+      'A empresa reporta 80,5 pontos no Terminal-Bench 2.1 e 79,1 no SWE-bench Pro v2.0 Hard — números autorreportados, sem avaliação independente publicada até o momento.',
+      'Cobertura especializada nota que, fora dos benchmarks de codificação em terminal, o modelo costuma ficar atrás de modelos abertos maiores em tarefas gerais.',
+    ],
+    impact: 'Baixo',
+  },
+  {
     id: 'perplexity-teammates-agentes-persistentes-2026-11',
     date: '2026-11',
     title: 'Perplexity lança Teammates, agentes de IA persistentes para tarefas contínuas de trabalho',

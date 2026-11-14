@@ -13,6 +13,71 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-chatgpt-business-agents-beta-2026-11',
+    date: '2026-11',
+    title: 'OpenAI lança em beta os Business Agents, perfis de empresa dentro do ChatGPT',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 10 de novembro de 2026, a OpenAI anunciou os "Business Agents": agentes verificados que representam uma marca e conversam com o usuário dentro do próprio ChatGPT, junto de "Businesses in ChatGPT", um hub onde empresas reivindicam e verificam um perfil com métricas de menção e clique. O lançamento começa em beta só para empresas de e-commerce e serviços online elegíveis nos Estados Unidos.',
+    highlights: [
+      'As conversas com um Business Agent ficam identificadas e separadas das respostas independentes do ChatGPT; a marca fornece contexto e instruções próprias para orientar o comportamento do agente.',
+      'A OpenAI já testava anúncios patrocinados dentro do ChatGPT desde setembro de 2026 e não descarta cobrar pelo recurso no futuro — por ora, hub e agentes são gratuitos para as empresas participantes.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'github-copilot-opus-5-gpt-5-6-terra-deprecation-2026-11',
+    date: '2026-11',
+    title: 'GitHub Copilot vai descontinuar Claude Opus 5, Opus 4.8 e GPT-5.6 Terra em 16 de novembro',
+    developer: 'GitHub',
+    category: 'Descontinuado',
+    description: 'Em 15 de outubro de 2026, o GitHub avisou que vai descontinuar o Claude Opus 5, o Claude Opus 4.8 e o GPT-5.6 Terra em todas as experiências do Copilot a partir de 16 de novembro de 2026, com migração recomendada para Claude Opus 5.5, GPT-6.1 Sol ou GPT-6 Luna.',
+    highlights: [
+      'Assinantes do plano anual individual que já tinham o Opus 4.8 selecionado podem continuar usando o modelo mesmo após a data de corte, segundo cobertura de terceiros sobre o aviso oficial do GitHub.',
+      'A troca de modelo é automática no seletor para quem usava um dos três descontinuados; não é preciso reconfigurar integrações manualmente.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'gemini-4-carbon-general-availability-github-copilot-2026-11',
+    date: '2026-11',
+    title: 'Google libera o Gemini 4 Carbon ao público e o modelo chega ao GitHub Copilot',
+    developer: 'Google',
+    category: 'Lançamento',
+    description: 'Em 10 de novembro de 2026, o Google tornou o Gemini 4 Carbon disponível de forma geral pela API Gemini — menos de duas semanas depois de liberar o modelo só a um grupo restrito de defensores de cibersegurança do programa Fairwind. No mesmo dia, o GitHub anunciou a disponibilidade geral do Carbon no Copilot, voltado a codificação complexa, tarefas de agente e trabalho com foco em segurança.',
+    highlights: [
+      'No Copilot, o acesso ao Carbon fica restrito aos planos Pro+, Business, Enterprise e Max — Copilot Free e Copilot Pro não aparecem na lista de planos com acesso.',
+      'Administradores de workspace Business e Enterprise podem controlar o acesso ao modelo pela política de modelos do Copilot; preço introdutório de API mantém US$ 2/M tokens de entrada e US$ 10/M de saída até 1º de dezembro de 2026.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'google-pixel-drop-gemini-intelligence-november-2026',
+    date: '2026-11',
+    title: 'Pixel Drop de novembro leva a "Gemini Intelligence" ao Pixel 10 e a um celular da Motorola',
+    developer: 'Google',
+    category: 'Atualização',
+    description: 'Em 10 de novembro de 2026, o Google anunciou o Pixel Drop de novembro, que expande o sistema "Gemini Intelligence" para toda a linha Pixel 10 (Pixel 10, Pro, Pro XL e Pro Fold) e, por acordo de licenciamento, para o primeiro celular parceiro fora da linha Pixel — o "motorola signature 27", com pré-venda nos EUA a partir de 19 de novembro.',
+    highlights: [
+      'O destaque da atualização é o Rambler, recurso de digitação por voz que remove automaticamente vícios de fala ("é", "tipo", repetições) e formata a transcrição em tempo real.',
+      'A atualização também chega junto do Android 17 QPR2, com widgets personalizados ("Create My Widget") e resumo de conversas em mais seis idiomas — o rollout é escalonado e pode levar dias ou semanas para chegar a cada aparelho.',
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'anthropic-claude-fable-mythos-5-2-2026-11',
+    date: '2026-11',
+    title: 'Anthropic lança Claude Fable 5.2 e Mythos 5.2, com API 20% mais barata e saída 30% mais rápida',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Em 9 de novembro de 2026, a Anthropic lançou o Claude Fable 5.2 — disponível em todos os planos pagos (Pro, Max, Ultra, Team e Enterprise) e via API, AWS, Google Cloud e Azure — e sua contraparte restrita Claude Mythos 5.2, com acesso limitado a organizações verificadas pelos programas de cibersegurança e ciências da vida da empresa.',
+    highlights: [
+      'A Anthropic diz que os dois modelos geram respostas até 30% mais rápido que o Fable 5.1 e o Mythos 5.1 em todos os níveis de esforço de raciocínio.',
+      'O preço padrão de API do Fable 5.2 cai cerca de 20% em relação ao Fable 5.1, para US$ 8/M tokens de entrada e US$ 40/M de saída, segundo cobertura da SD Times.',
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'mistral-studio-managed-agents-preview-2026-11',
     date: '2026-11',
     title: 'Mistral abre em preview público agentes gerenciados, apps e workflows no Mistral Studio',

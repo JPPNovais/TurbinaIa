@@ -8899,4 +8899,42 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um preparador de entrevistas de emprego. Vou ser perguntado sobre como uso ferramentas de IA no trabalho e quero respostas honestas, não um discurso genérico de "a IA aumenta minha produtividade".\n\nCargo para o qual estou me candidatando: [Cargo]\nFerramentas de IA que uso de verdade no trabalho: [Liste, ex: ChatGPT para rascunho de e-mail, Copilot para código, Claude para resumir documento]\nUma situação real em que a IA ajudou: [Descreva brevemente]\nUma situação real em que a IA errou ou não serviu e você precisou corrigir: [Descreva brevemente, ou "ainda não tive uma clara"]\n\nMonte 3 respostas curtas (até 5 frases cada) para perguntas prováveis de entrevista sobre o tema: (1) "Como você usa IA no seu trabalho hoje?"; (2) "Como você garante que o que a IA gera está certo?"; (3) "Você tem preocupação em depender demais de IA?". Baseie as respostas só nas informações que eu dei — não invente ferramenta, resultado ou métrica que eu não mencionei.',
     tags: ['Entrevista de Emprego', 'Uso de IA no Trabalho', 'Carreira'],
   },
+
+  // EDUCAÇÃO
+  {
+    id: 'educacao-simulado-prova-pergunta-a-pergunta',
+    title: 'Simulado de Prova Pergunta a Pergunta com IA',
+    category: 'Educação',
+    description: 'Transforme qualquer chat de IA em um simulado interativo: uma pergunta por vez, sem entregar a resposta de cara, com explicação do erro antes de seguir para a próxima.',
+    template: 'Você é um professor particular preparando um aluno para uma prova. NÃO explique a matéria inteira de uma vez — simule um teste de verdade.\n\nMatéria ou prova: [Ex: Revolução Francesa, Lei de Ohm, concurso para Técnico do INSS]\nNível de dificuldade: [Ex: ensino médio, vestibular, concurso público nível médio]\nNúmero de questões no simulado: [Ex: 10]\nFormato preferido: [Múltipla escolha / Dissertativa curta / Misto]\n\nRegras do simulado:\n1. Faça UMA pergunta por vez e espere minha resposta antes de continuar.\n2. Depois que eu responder, diga se acertei ou errei e explique o porquê em até 3 frases, sem me dar a resposta da próxima pergunta.\n3. Se eu errar, antes de passar para a próxima questão, me dê uma dica de qual conceito eu deveria revisar.\n4. No final das [Número] perguntas, mostre minha pontuação e liste, em ordem de prioridade, os 3 pontos que eu mais preciso revisar.\n\nComece pela primeira pergunta agora.',
+    tags: ['Simulado', 'Estudos', 'Revisão', 'Concursos'],
+  },
+  {
+    id: 'educacao-plano-estudo-repeticao-espacada',
+    title: 'Plano de Estudos com Repetição Espaçada',
+    category: 'Educação',
+    description: 'Gere um cronograma de revisão baseado em repetição espaçada para fixar um conteúdo antes de uma prova, vestibular ou concurso.',
+    template: 'Você é um especialista em técnicas de estudo baseadas em repetição espaçada (spaced repetition).\n\nConteúdo a estudar: [Ex: os 5 capítulos de Direito Administrativo do edital]\nData da prova: [Data]\nData de hoje: [Data]\nTempo disponível por dia: [Ex: 1h30 nos dias de semana, 3h no fim de semana]\nNível de domínio atual em cada tópico: [Ex: Capítulo 1 - já estudei uma vez; Capítulo 3 - nunca vi]\n\nMonte um cronograma dia a dia até a data da prova, aplicando repetição espaçada: cada tópico deve ser revisado mais de uma vez, com o intervalo entre as revisões aumentando conforme eu demonstrar domínio (ex.: revisar em 1 dia, depois 3 dias, depois 7 dias). Priorize os tópicos que eu disse que domino menos. Para cada dia, liste: o que estudar, se é estudo novo ou revisão, e quanto tempo dedicar. Termine com um resumo de quantas vezes cada tópico será revisado até a prova.',
+    tags: ['Plano de Estudos', 'Repetição Espaçada', 'Concursos', 'Vestibular'],
+  },
+
+  // PRODUTIVIDADE
+  {
+    id: 'produtividade-roteiro-audio-resumo',
+    title: 'Transforme um Documento Longo em Roteiro de Áudio-Resumo',
+    category: 'Produtividade',
+    description: 'Condense um PDF, relatório ou apostila longa em um roteiro narrado para ouvir no trajeto, no estilo dos resumos em áudio gerados por ferramentas como o Gemini Notebook.',
+    template: 'Você é um roteirista que transforma documentos densos em resumos narrados, fáceis de ouvir sem precisar olhar a tela.\n\nTipo de documento: [Ex: apostila de concurso, relatório de trabalho, artigo acadêmico]\nDuração aproximada desejada do áudio: [Ex: 5 minutos, 10 minutos]\nFoco do resumo: [Ex: só os pontos que podem cair na prova, só as decisões tomadas na reunião]\n\nCole abaixo o conteúdo a resumir:\n"[Cole aqui o texto do documento]"\n\nEscreva um roteiro em português, em tom de conversa (como se estivesse explicando para um colega), dividido em blocos curtos de 2 a 4 frases. Comece com uma frase que resuma o assunto em uma linha. Não use linguagem de lista com marcadores — escreva como fala corrida, porque o texto será lido em voz alta. Termine com os 2 ou 3 pontos mais importantes para não esquecer.',
+    tags: ['Resumo', 'Áudio', 'Produtividade', 'Estudos'],
+  },
+
+  // NEGÓCIOS
+  {
+    id: 'negocios-guia-voz-marca-agente-ia',
+    title: 'Guia de Voz de Marca para um Agente de IA de Atendimento',
+    category: 'Negócios',
+    description: 'Escreva as instruções de tom, limites e regras de resposta que uma empresa deveria dar a um agente de IA que conversa com clientes em seu nome.',
+    template: 'Você é um consultor de branding ajudando uma empresa a escrever o guia de instruções para um agente de IA que vai conversar com clientes em nome da marca (por exemplo, em um chat de atendimento ou em um agente de IA verificado dentro de um app de terceiros).\n\nNome da empresa: [Nome]\nO que a empresa vende: [Produto/Serviço]\nTom de voz desejado: [Ex: formal e técnico, descontraído e próximo, direto e objetivo]\n3 palavras que NÃO descrevem a marca: [Ex: informal, engraçadinho, agressivo]\nAssuntos que o agente NUNCA deve responder sozinho (deve escalar para um humano): [Ex: cancelamento de contrato, reclamação sobre cobrança indevida, qualquer pedido de reembolso acima de determinado valor]\n\nEscreva um guia de instruções com estas seções: (1) Tom de voz, com 3 exemplos de frase "assim sim" e "assim não"; (2) Como se apresentar na primeira mensagem; (3) O que o agente pode prometer ou afirmar sobre o produto; (4) Lista do que deve ser escalado para um humano, e a frase exata que o agente deve usar para fazer essa escalada; (5) Como o agente deve admitir quando não sabe uma resposta, sem inventar informação.',
+    tags: ['Agentes de IA', 'Atendimento', 'Branding', 'Negócios'],
+  },
 ];

@@ -13,6 +13,58 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'google-deepmind-alphaproof-code-signal-2026-11',
+    date: '2026-11',
+    title: 'Google DeepMind usa IA para gerar 6,5 milhões de linhas de prova matemática sobre a criptografia do Signal',
+    developer: 'Google DeepMind',
+    category: 'Pesquisa',
+    description: 'Em 10 de novembro de 2026, o Google DeepMind apresentou o AlphaProof Code, sistema de agentes de IA que gerou cerca de 6,5 milhões de linhas de prova formal, verificadas automaticamente pelo provador Lean, confirmando garantias de segurança de dois componentes centrais da biblioteca criptográfica do Signal — o handshake pós-quântico PQXDH e o Triple Ratchet —, segundo o blog oficial do DeepMind.',
+    highlights: [
+      'Para testar o sistema, os pesquisadores reintroduziram de propósito dois bugs já corrigidos no código do Signal; nos dois casos, o framework gerou provas matemáticas mostrando que a versão alterada ficava insegura.',
+      'O trabalho é uma prova de conceito que não cobre o aplicativo Signal por completo e levou cerca de quatro semanas, contra os anos que a equipe estima que levaria só com revisão humana. Artefatos de verificação e especificações em Lean foram abertos para reprodução independente.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'claude-meetings-connectors-whiteboards-sheets-2026-11',
+    date: '2026-11',
+    title: 'Anthropic lança Claude Meetings, Whiteboards, Sheets e conectores interativos',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Em 10 de novembro de 2026, a Anthropic lançou em beta o Claude Meetings, que entra como participante em chamadas do Google Meet para executar tarefas em tempo real e gerar notas e itens de ação depois da reunião, disponível para planos Team e Enterprise. Na mesma leva chegaram o Claude Whiteboards e o Claude Sheets, também em beta, além de conectores interativos que abrem apps como Adobe, Atlassian e HubSpot dentro do Claude.',
+    highlights: [
+      'No lançamento, o Claude Meetings funciona só com o Google Meet; a Anthropic diz que vai estender o recurso a outras plataformas de videochamada depois.',
+      'O Claude Data (antigo Claude Dashboards) também saiu do beta e passou a ficar disponível de forma geral na mesma rodada de anúncios.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-retire-advanced-standard-voice-chatgpt-2026-11',
+    date: '2026-11',
+    title: 'OpenAI vai desativar as vozes Advanced e Standard do ChatGPT em 11 de dezembro',
+    developer: 'OpenAI',
+    category: 'Descontinuado',
+    description: 'Em 10 de novembro de 2026, a OpenAI avisou que vai retirar os modos de voz Advanced e Standard do ChatGPT em 11 de dezembro de 2026, migrando quem usa qualquer um dos dois para o Live Voice (GPT-Live), lançado em julho. A empresa diz que o uso de voz no ChatGPT quase dobrou desde o lançamento do Live Voice e que quase todo mundo que usa voz hoje já está no modelo novo.',
+    highlights: [
+      'Chamadas de voz com vídeo e compartilhamento de tela continuam no Advanced Voice por enquanto — a OpenAI não deu prazo para levar esses recursos ao Live Voice.',
+      'Conversas feitas pelos modos antigos continuam no histórico do ChatGPT e podem ser retomadas por texto ou voz; conversas por voz com Custom GPTs também migram para o Live Voice na mesma data.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'anthropic-ipo-roadshow-price-range-2026-11',
+    date: '2026-11',
+    title: 'Anthropic inicia roadshow do IPO e define faixa de preço entre US$ 70 e US$ 78 por ação',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'Em 10 de novembro de 2026, a Anthropic deu início ao roadshow de marketing da sua oferta pública inicial, com 825 milhões de ações Classe A e faixa de preço estimada entre US$ 70 e US$ 78 — as ações devem ser listadas na Nasdaq sob o ticker "ANT".',
+    highlights: [
+      'A expectativa de parte da imprensa financeira é que a precificação e o início das negociações ocorram antes do feriado de Ação de Graças nos EUA, na semana de 16 de novembro.',
+      'O roadshow chega poucos dias depois de a empresa confirmar, no S-1 arquivado na SEC, receita anualizada de US$ 16,3 bilhões.',
+    ],
+    impact: 'Alto',
+  },
+  {
     id: 'openai-chatgpt-business-agents-beta-2026-11',
     date: '2026-11',
     title: 'OpenAI lança em beta os Business Agents, perfis de empresa dentro do ChatGPT',

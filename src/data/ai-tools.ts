@@ -587,7 +587,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '💡',
     tagline: 'Assistente de código do Google com janela de contexto de 1M tokens',
     description:
-      'Gemini Code Assist é o assistente de programação da Google, disponível para VS Code, JetBrains e Gemini Cloud Assist. Usa o Gemini 3.1 Pro com contexto de até 1 milhão de tokens, ideal para analisar codebases inteiras. As extensões IDE e CLI para planos individuais (Individual, Google AI Pro, Google AI Ultra) serão descontinuadas em 18 de junho de 2026, em favor da migração para o Google Antigravity.',
+      'Gemini Code Assist é o assistente de programação da Google, disponível para VS Code, JetBrains e Gemini Cloud Assist. Usa o Gemini 3.1 Pro com contexto de até 1 milhão de tokens, ideal para analisar codebases inteiras. As extensões IDE e CLI para planos individuais (Individual, Google AI Pro, Google AI Ultra) foram descontinuadas em 18 de junho de 2026, segundo a documentação oficial de descontinuação do Google (developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals); quem usava de graça foi direcionado ao Google Antigravity, que tem seu próprio plano Individual sem custo. Os planos Standard e Enterprise, pagos, não foram afetados pela mudança.',
     useCases: [
       'Completar código com contexto de até 1M tokens',
       'Analisar e explicar bases de código complexas',
@@ -595,10 +595,10 @@ export const AI_TOOLS: AITool[] = [
       'Revisar código e identificar vulnerabilidades de segurança',
     ],
     pricing: 'Pago',
-    pricingDetails: 'Plano Standard Edition: US$ 19/usuário/mês (US$ 22.80/usuário/mês anual) inclui local codebase awareness, code transformation, agent mode, Gemini CLI, BigQuery Data insights, enterprise security; Plano Enterprise Edition: US$ 45/usuário/mês (US$ 54/usuário/mês anual) inclui personalização de código (repositórios privados), Gemini em Apigee e Gemini Cloud Assist, aumento de limites de uso de agente. Nota: Extensões IDE e CLI para planos individuais serão descontinuadas em 18 de junho de 2026, em favor da migração para o Google Antigravity.',
+    pricingDetails: 'Plano Standard Edition: US$ 19/usuário/mês (US$ 22.80/usuário/mês anual) inclui local codebase awareness, code transformation, agent mode, Gemini CLI, BigQuery Data insights, enterprise security; Plano Enterprise Edition: US$ 45/usuário/mês (US$ 54/usuário/mês anual) inclui personalização de código (repositórios privados), Gemini em Apigee e Gemini Cloud Assist, aumento de limites de uso de agente. Nota: as extensões IDE e CLI para planos individuais (Individual, Google AI Pro, Google AI Ultra) foram descontinuadas em 18 de junho de 2026; quem usava de graça passou a usar o Google Antigravity.',
     url: 'https://cloud.google.com/gemini/docs/codeassist/overview',
     tags: ['google', 'vscode', 'jetbrains', 'gemini', 'cloud', 'enterprise', 'contexto longo'],
-    updatedAt: '2026-08',
+    updatedAt: '2026-11',
   },
   {
     id: 'google-antigravity',
@@ -608,7 +608,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '⚙️',
     tagline: 'Editor de código agentic com IA da Google, baseado em VS Code',
     description:
-      'Google Antigravity é um novo editor de código agentic da Google (fork do VS Code) que usa agentes de IA para planear tarefas, escrever código, instalar pacotes via terminal e testar aplicações no navegador. Oferece acesso a modelos Gemini 3.1 Pro, Flash, Claude Sonnet 4.6 e Claude Opus 4.7, sendo um ótimo ponto de partida para desenvolvedores iniciantes. Recebeu acesso prioritário com o novo plano Google AI Ultra. Teve uma reestruturação de preços em Março e Maio de 2026. Em 10 de setembro de 2026, o período de preview terminou e o Antigravity passou a "Generally Available", com o plano Individual gratuito mantendo Tab completions e Command requests ilimitados e limites semanais básicos para os modelos de agente (incluindo o novo Gemini 3.8 Flash, adicionado em 1º de setembro).',
+      'Google Antigravity é um novo editor de código agentic da Google (fork do VS Code) que usa agentes de IA para planear tarefas, escrever código, instalar pacotes via terminal e testar aplicações no navegador. Recebeu acesso prioritário com o novo plano Google AI Ultra. Teve uma reestruturação de preços em Março e Maio de 2026. Em 10 de setembro de 2026, o período de preview terminou e o Antigravity passou a "Generally Available", com o plano Individual gratuito mantendo Tab completions e Command requests ilimitados e limites semanais básicos para os modelos de agente (incluindo o novo Gemini 3.8 Flash, adicionado em 1º de setembro). Em 2 de novembro de 2026, a Google removeu Claude Sonnet 4.6, Claude Opus 4.6 e GPT-OSS-120B do seletor de modelos — os substitutos, Claude Sonnet 5.5 e Claude Opus 5.5, ficaram restritos aos planos pagos AI Pro e AI Ultra, sem acesso pelo plano Individual gratuito.',
     useCases: [
       'Desenvolvimento de software completo com agentes autônomos',
       'Instalar dependências e gerenciar ambientes de forma automatizada',
@@ -616,11 +616,11 @@ export const AI_TOOLS: AITool[] = [
       'Experimentar modelos de IA avançados para codificação',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: Acesso a todos os modelos com limites de taxa, cota atualiza a cada 5 horas para alguns modelos, disponível durante o public preview; Plano AI Pro: US$ 20/mês (cota incluída); Novo Plano AI Ultra: US$ 100/mês (lançado em Mai 2026) 5x a cota do Pro; Plano AI Ultra Max: US$ 200/mês (preço reduzido de US$ 250/mês) 20x a cota do Pro. Créditos adicionais a US$ 0.01 por crédito (US$ 25 por 2.500 créditos ou US$ 199 por 20.000 créditos em massa).',
+    pricingDetails: 'Plano Individual (grátis): Tab completions e Command requests ilimitados, acesso a modelos como Gemini 3.1 Pro e Flash com limites de taxa semanais para o agente completo; desde 2 de novembro de 2026 não inclui mais Claude Opus/Sonnet 5.5, restritos aos planos pagos. Plano AI Pro: US$ 20/mês (cota incluída, acesso a Claude Opus 5.5 e Sonnet 5.5); Plano AI Ultra: US$ 100/mês (5x a cota do Pro); Plano AI Ultra Max: US$ 200/mês (preço reduzido de US$ 250/mês) 20x a cota do Pro. Créditos adicionais a US$ 0.01 por crédito (US$ 25 por 2.500 créditos ou US$ 199 por 20.000 créditos em massa).',
     url: 'https://ai.google/labs/antigravity',
     tags: ['ide', 'editor', 'agente', 'autônomo', 'google', 'vscode', 'desenvolvimento'],
     popularityRank: 25,
-    updatedAt: '2026-09',
+    updatedAt: '2026-11',
   },
   {
     id: 'deepseek-coder',

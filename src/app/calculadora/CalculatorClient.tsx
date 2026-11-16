@@ -270,6 +270,14 @@ export default function CalculatorClient({ breadcrumb, intro }: CalculatorClient
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '0.35rem', lineHeight: '1.4' }}>
                       {model.description}
                     </p>
+                    <p className="price-checked">
+                      {model.pricesCheckedAt
+                        ? <>Preço conferido em {formatDateMedium(model.pricesCheckedAt)}</>
+                        : <>Data de conferência não informada — confira o preço</>}
+                      {model.pricingUrl && (
+                        <> na <a href={model.pricingUrl} target="_blank" rel="noopener noreferrer">página oficial</a></>
+                      )}
+                    </p>
                     {!model.fits && (
                       <p className="cost-warning">
                         Entrada + saída passam da janela de contexto deste modelo ({model.contextWindow}).

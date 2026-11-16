@@ -175,6 +175,29 @@
   line-height: 1.6;
 }
 
+/* Planos e preços (com data da conferência nas páginas oficiais) */
+.model-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.model-pricing-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.model-pricing-checked {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.model-pricing-checked a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 /* Score Metrics */
 .metrics-section {
   display: flex;

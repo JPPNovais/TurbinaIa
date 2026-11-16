@@ -76,6 +76,9 @@ const FAQS: ToolFaqItem[] = [
 export default function ComparadorPage() {
   const lastModified = getPageLastModified('/comparador');
   const updatedOn = lastModified ? toLocalDateString(lastModified) : undefined;
+  // Conferência de preços mais antiga entre as fichas: vale para o comparador inteiro.
+  const checkDates = aiModels.map((m) => m.pricesCheckedAt).filter((d): d is string => Boolean(d)).sort();
+  const pricesCheckedOn = checkDates.length === aiModels.length ? checkDates[0] : undefined;
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -111,6 +114,9 @@ export default function ComparadorPage() {
           {updatedOn && (
             <p className="tool-updated">
               Atualizado em <time dateTime={updatedOn}>{formatDateLong(updatedOn)}</time>
+              {pricesCheckedOn && (
+                <> · preços conferidos nas páginas oficiais em <time dateTime={pricesCheckedOn}>{formatDateLong(pricesCheckedOn)}</time></>
+              )}
             </p>
           )}
         </div>

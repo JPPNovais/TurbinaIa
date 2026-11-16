@@ -2,7 +2,51 @@
 
 import { useState } from 'react';
 import { aiModels, AIModel } from '@/data/ai-models';
+import { formatDateLong } from '@/lib/date';
 import './comparador.css';
+
+/** Primeiro trecho do texto de preços, para o selo do topo da ficha. */
+function pricingHeadline(pricing: string): string {
+  return pricing.split(/\. |\(/)[0];
+}
+
+/** Domínio de uma URL de fonte, sem quebrar a ficha se a URL vier malformada. */
+function hostOf(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return url;
+  }
+}
+
+/** Planos e preços da ficha, com a data em que foram conferidos nas páginas oficiais. */
+function PricingBlock({ model }: { model: AIModel }) {
+  return (
+    <div className="model-pricing">
+      <h3 className="select-label">Planos e preços</h3>
+      <p className="model-pricing-text">{model.pricing}</p>
+      <p className="model-pricing-checked">
+        {model.pricesCheckedAt ? (
+          <>Preços conferidos em <time dateTime={model.pricesCheckedAt}>{formatDateLong(model.pricesCheckedAt)}</time></>
+        ) : (
+          <>Data de conferência não informada — confira os preços no site oficial</>
+        )}
+        {model.pricingSources && model.pricingSources.length > 0 && (
+          <>
+            {' '}nas páginas oficiais:{' '}
+            {model.pricingSources.map((url, i) => (
+              <span key={url}>
+                {i > 0 && ', '}
+                <a href={url} target="_blank" rel="noopener noreferrer">{hostOf(url)}</a>
+              </span>
+            ))}
+          </>
+        )}
+        .
+      </p>
+    </div>
+  );
+}
 
 export default function ComparatorClient() {
   const [modelAId, setModelAId] = useState<string>('chatgpt-plus');
@@ -181,10 +225,12 @@ export default function ComparatorClient() {
             <div className="model-meta">
               <span className="model-badge">🏭 {modelA.developer}</span>
               <span className="model-badge">🏷️ {modelA.category}</span>
-              <span className="model-badge">💰 {modelA.pricing.split('(')[0]}</span>
+              <span className="model-badge">💰 {pricingHeadline(modelA.pricing)}</span>
             </div>
             <p className="model-description">{modelA.description}</p>
           </div>
+
+          <PricingBlock model={modelA} />
 
           <div className="metrics-section">
             <h3 className="select-label">Notas e Atributos</h3>
@@ -268,10 +314,12 @@ export default function ComparatorClient() {
             <div className="model-meta">
               <span className="model-badge">🏭 {modelB.developer}</span>
               <span className="model-badge">🏷️ {modelB.category}</span>
-              <span className="model-badge">💰 {modelB.pricing.split('(')[0]}</span>
+              <span className="model-badge">💰 {pricingHeadline(modelB.pricing)}</span>
             </div>
             <p className="model-description">{modelB.description}</p>
           </div>
+
+          <PricingBlock model={modelB} />
 
           <div className="metrics-section">
             <h3 className="select-label">Notas e Atributos</h3>

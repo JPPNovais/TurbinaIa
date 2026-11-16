@@ -6,7 +6,7 @@ import ToolFaq, { toolFaqJsonLd, type ToolFaqItem } from '@/components/ToolFaq';
 import { AI_MODELS, type CalculatorModel } from '@/data/calculator-models';
 import { USD_BRL } from '@/data/exchange-rate';
 import { DEFAULT_SCENARIO, DEFAULT_USD_BRL, formatMoney, requestCostUsd } from '@/lib/api-cost';
-import { formatDateLong } from '@/lib/date';
+import { formatDateLong, formatDateMedium } from '@/lib/date';
 import { getPageLastModified, toLocalDateString } from '@/lib/page-dates';
 
 // Os números do texto, da tabela e do FAQ saem de src/data/calculator-models.ts
@@ -79,6 +79,9 @@ function providerPriceAnswer(provider: string, company: string): string {
 export default function CalculatorPage() {
   const lastModified = getPageLastModified('/calculadora');
   const updatedOn = lastModified ? toLocalDateString(lastModified) : undefined;
+  // Data da conferência mais antiga entre os modelos: vale para a tabela inteira.
+  const checkDates = AI_MODELS.map((m) => m.pricesCheckedAt).filter((d): d is string => Boolean(d)).sort();
+  const pricesCheckedOn = checkDates.length === AI_MODELS.length ? checkDates[0] : undefined;
 
   const mainModels = MAIN_PROVIDERS.flatMap(({ provider }) => modelsOf(provider)).sort(byMonthlyCost);
   const exampleCheapest = mainModels[0];
@@ -156,7 +159,12 @@ export default function CalculatorPage() {
     <section className="calculadora-intro" aria-labelledby="como-calcular">
       {updatedOn && (
         <p className="tool-updated" style={{ textAlign: 'center' }}>
-          Atualizado em <time dateTime={updatedOn}>{formatDateLong(updatedOn)}</time> · preços conferidos nas páginas oficiais das provedoras
+          Atualizado em <time dateTime={updatedOn}>{formatDateLong(updatedOn)}</time> ·{' '}
+          {pricesCheckedOn ? (
+            <>preços conferidos nas páginas oficiais das provedoras em <time dateTime={pricesCheckedOn}>{formatDateLong(pricesCheckedOn)}</time></>
+          ) : (
+            <>confira a data de conferência de cada preço na tabela</>
+          )}
         </p>
       )}
       <nav aria-label="Nesta página">
@@ -227,6 +235,7 @@ export default function CalculatorPage() {
                   <th scope="col">Entrada</th>
                   <th scope="col">Saída</th>
                   <th scope="col">Exemplo / mês</th>
+                  <th scope="col">Conferido em</th>
                 </tr>
               </thead>
               <tbody>
@@ -237,6 +246,13 @@ export default function CalculatorPage() {
                     <td>{usd(model.inputPricePerM)}</td>
                     <td>{usd(model.outputPricePerM)}</td>
                     <td>{usd(monthlyUsd(model))}</td>
+                    <td>
+                      {model.pricesCheckedAt ? (
+                        model.pricingUrl ? (
+                          <a href={model.pricingUrl} target="_blank" rel="noopener noreferrer">{formatDateMedium(model.pricesCheckedAt)}</a>
+                        ) : formatDateMedium(model.pricesCheckedAt)
+                      ) : 'consultar site oficial'}
+                    </td>
                   </tr>
                 ))}
               </tbody>

@@ -1,7 +1,7 @@
 ---
 title: "+50 Prompts para o Gemini: Modelos Prontos para Copiar (2026)"
 seoTitle: "+50 Prompts para o Gemini Prontos para Copiar (2026)"
-description: "Prompts prontos para o Gemini: +50 exemplos para trabalho, estudo e marketing."
+description: "+50 prompts para o Gemini prontos para copiar, em português: editar fotos, Google Workspace, Gems, Deep Research, estudos, marketing e código."
 category: tutoriais
 tags:
   - Gemini

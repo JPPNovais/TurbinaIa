@@ -75,6 +75,8 @@ Este guia reúne prompts prontos para o ChatGPT organizados por categoria, com v
 - [Dia a dia](#prompts-para-o-dia-a-dia) — 11 prompts
 - [Negócios e empreendedorismo](#prompts-para-negocios-e-empreendedorismo) — 8 prompts
 
+Listas completas por profissão, em posts separados: [atendimento ao cliente](/blog/20-prompts-de-chatgpt-para-atendimento-ao-cliente-e-mail-chat-e-reclamacoes-2026), [RH e recrutamento](/blog/prompts-para-chatgpt-de-rh-descricao-de-vaga-triagem-de-curriculos-e-feedback), [WhatsApp de vendas](/blog/prompts-para-whatsapp-de-vendas-prospeccao-follow-up-e-resposta-a-objecao), [e-commerce](/blog/prompts-de-vendas-para-e-commerce-ficha-de-produto-carrinho-abandonado-e-anuncio-de-marketplace), [marketing digital](/blog/prompts-para-marketing-digital), [copywriting](/blog/prompts-para-copywriting-e-redacao) e [programação](/blog/prompts-para-programacao).
+
 ## Estrutura de um bom prompt (papel + contexto + tarefa + formato)
 
 Um prompt para o ChatGPT fica mais preciso com quatro partes:

@@ -88,6 +88,8 @@ Para o passo a passo de prompt de imagem, o texto [como criar imagens com IA gr�
 
 **Código no editor.** GitHub Copilot Free, se você não estiver numa organização que já fornece Copilot. Duas mil completações por mês e modelo automático.
 
+Para recortes por tarefa, há os comparativos de [melhor IA gratuita para estudar](/blog/melhor-ia-gratuita-para-estudar-chatgpt-gemini-e-claude-no-resumo-e-no-simulado) e de [melhor IA gratuita para programar](/blog/melhor-ia-gratuita-para-programar-em-2026-copilot-chatgpt-claude-e-gemini-no-codigo).
+
 Dá para usar mais de um. O que não dá é tratar o plano grátis de junho de 2026 como se ainda fosse o de novembro: GPT-4o no ChatGPT e Gemini 1.5 Flash saíram desta ficha porque as páginas oficiais atuais descrevem outros modelos.
 
 Quem for passar do grátis para a API encontra o custo por milhão de tokens na [calculadora](/calculadora). Um catálogo maior, incluindo ferramentas pagas, está no [guia de ferramentas](/ferramentas).

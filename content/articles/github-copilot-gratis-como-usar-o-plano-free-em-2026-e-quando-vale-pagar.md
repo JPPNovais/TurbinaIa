@@ -72,6 +72,8 @@ Professores e mantenedores de projetos open source verificados continuam com ace
 
 ## Vale a pena migrar para o Copilot Pro?
 
+Antes de pagar, compare com as alternativas sem custo: o comparativo de [melhor IA gratuita para programar](/blog/melhor-ia-gratuita-para-programar-em-2026-copilot-chatgpt-claude-e-gemini-no-codigo) põe o Copilot Free lado a lado com ChatGPT, Claude e Gemini no código.
+
 O sinal mais claro de que o Free não é mais suficiente é bem prático: a cota de 50 requisições some antes do meio do mês, não o limite de completions. Isso costuma acontecer com quem usa o Agent Mode para tarefas maiores — refatorar vários arquivos, escrever testes a partir de uma especificação — porque cada rodada de agente consome várias requisições de uma vez, e o teto de 5 por sessão no Free faz a cota girar rápido.
 
 Antes de assinar, dá para estimar o impacto real: quem já paga por tokens de API de outros modelos pode comparar ordens de grandeza no [comparador de IAs do Turbina IA](/comparador) e usar a [calculadora de custo por token](/calculadora) para entender como o consumo de tokens do Agent Mode se traduz em Créditos de IA no Pro. Vale lembrar que a virada para cobrança por uso foi exatamente o que [elevou a conta de quem usa o Copilot de forma intensiva](/blog/github-copilot-adota-cobranca-por-tokens-e-gera-aumentos-de-ate-60x-para-desenvolvedores) — então migrar para o Pro resolve o teto de requisições, mas troca por uma conta que varia com o quanto (e como) você usa o Agent Mode.

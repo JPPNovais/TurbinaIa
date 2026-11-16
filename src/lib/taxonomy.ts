@@ -131,6 +131,10 @@ export const PROMPT_COLLECTIONS: PromptCollection[] = [
   { slug: 'prompts-para-programacao', label: 'programação', group: 'area', covers: 'código, debug, testes e agentes de código' },
   { slug: 'prompts-para-estudos-e-concursos', label: 'estudos e concursos', group: 'area', covers: 'resumos, simulados e plano de estudos' },
   { slug: 'prompts-para-negocios-e-empreendedores', label: 'negócios', group: 'area', covers: 'estratégia, vendas, finanças e gestão' },
+  { slug: '20-prompts-de-chatgpt-para-atendimento-ao-cliente-e-mail-chat-e-reclamacoes-2026', label: 'atendimento ao cliente', group: 'area', covers: 'reclamações, chat, objeções e escalonamento' },
+  { slug: 'prompts-para-whatsapp-de-vendas-prospeccao-follow-up-e-resposta-a-objecao', label: 'WhatsApp de vendas', group: 'area', covers: 'prospecção, follow-up e objeção' },
+  { slug: 'prompts-de-vendas-para-e-commerce-ficha-de-produto-carrinho-abandonado-e-anuncio-de-marketplace', label: 'e-commerce', group: 'area', covers: 'ficha de produto, carrinho abandonado e marketplace' },
+  { slug: 'prompts-para-chatgpt-de-rh-descricao-de-vaga-triagem-de-curriculos-e-feedback', label: 'RH e recrutamento', group: 'area', covers: 'descrição de vaga, triagem e feedback' },
 ];
 
 /** Ordem de exibição (home, rodapé, llms.txt). */

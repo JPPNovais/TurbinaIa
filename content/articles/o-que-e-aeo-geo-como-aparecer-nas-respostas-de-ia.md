@@ -61,7 +61,7 @@ As três práticas coexistem, mas cada uma serve a um contexto diferente. A tabe
 | **Links importam?** | Muito | Moderadamente | Menos — autoridade importa mais |
 | **Quando surgiu** | Anos 1990-2000 | ~2015 (snippets) / 2023 (AI Overviews) | 2023-2024 |
 
-Os três não são excludentes. Na prática, um conteúdo bem feito para GEO geralmente também se sai bem em AEO e ainda mantém bom desempenho no SEO clássico. A diferença está na ênfase e nas escolhas editoriais.
+Os três não são excludentes. Na prática, um conteúdo bem feito para GEO geralmente também se sai bem em AEO e ainda mantém bom desempenho no SEO clássico. A diferença está na ênfase e nas escolhas editoriais. O que muda na página, item por item, está em [AEO vs SEO na prática](/blog/aeo-vs-seo-o-que-muda-na-pratica-quando-o-objetivo-e-ser-citado-por-uma-ia).
 
 ## Por Que Isso Importa Agora
 

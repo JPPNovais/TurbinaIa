@@ -12,12 +12,15 @@ tags:
 author: Redação Turbina IA
 isFeatured: true
 date: "2026-06-03"
+updatedAt: "2026-11-16"
 coverImage: "https://images.unsplash.com/photo-1655720828018-edd2daec9349?auto=format&fit=crop&w=1200&q=80"
 ---
 
 Você digita algumas palavras e, segundos depois, aparece uma imagem que parece ter saído de um estúdio profissional. Isso não é mágica — é geração de imagens por inteligência artificial, e está ao alcance de qualquer pessoa com acesso à internet, sem precisar pagar nada.
 
 Seja para criar ilustrações para um post, experimentar conceitos visuais ou simplesmente se divertir, as ferramentas de IA para imagens estão cada vez mais acessíveis. Neste guia você vai entender como elas funcionam, quais são as melhores opções gratuitas e como tirar o máximo delas com prompts bem escritos.
+
+**Resposta Rápida (TL;DR):** Para criar uma imagem ou fazer uma foto com IA de graça, abra um gerador gratuito (o ChatGPT Free e o Gemini sem plano já criam imagens, com limite diário), descreva a cena com sujeito, ambiente, estilo, luz e enquadramento e peça ajustes um detalhe por vez. Para editar uma foto sua, anexe a imagem e diga o que deve continuar igual. Os prompts prontos estão na seção [Como fazer foto com IA](#como-fazer-foto-com-ia-prompts-para-copiar).
 
 ---
 
@@ -51,6 +54,8 @@ Antes de detalhar cada opção, veja um resumo rápido das principais ferramenta
 | Ideogram | Ideogram | Texto em imagens | Sim |
 | Adobe Firefly | Firefly | Uso comercial seguro | Sim (créditos mensais) |
 | Microsoft Copilot | DALL·E 3 | Integrado ao assistente de chat | Sim |
+
+Modelos e cotas desta tabela são os da revisão de junho de 2026 e mudam com frequência. O que o plano grátis do ChatGPT e do Gemini inclui hoje, com a página oficial de cada um, está no comparativo de [melhores IAs gratuitas](/blog/melhores-ias-gratuitas-2026).
 
 ### Bing Image Creator (DALL·E 3)
 
@@ -161,6 +166,39 @@ Palavras-chave que costumam melhorar resultados:
 
 ---
 
+## Como fazer foto com IA: prompts para copiar
+
+Os prompts abaixo funcionam em português no ChatGPT, no Gemini e nos geradores da lista. Troque o que está entre [colchetes]. Quando o prompt pede para anexar uma foto, use uma imagem sua ou com autorização de quem aparece nela.
+
+**Foto realista do zero:**
+```
+Crie uma fotografia realista de [sujeito, ex.: uma mulher de 30 anos tomando café] em [ambiente, ex.: uma varanda com plantas], luz [natural da manhã / golden hour / de estúdio], enquadramento [meio corpo / close / plano aberto], lente [50 mm / grande angular], profundidade de campo rasa. Sem texto e sem marca d'água na imagem. Proporção [1:1 / 4:5 / 16:9].
+```
+
+**Foto de produto para loja ou anúncio:**
+```
+[Anexe a foto do produto] Coloque este [produto] sobre [superfície, ex.: mármore branco] em um cenário de [ambiente], com luz suave de estúdio e sombra natural. O produto deve continuar idêntico ao original: formato, cor, rótulo e proporções. Fundo [limpo / desfocado]. Formato quadrado, pronto para [Instagram / marketplace].
+```
+
+**Retrato profissional a partir de uma selfie:**
+```
+[Anexe uma selfie bem iluminada] Transforme esta foto em um retrato profissional para [LinkedIn / currículo]. Mantenha meu rosto, meus traços e minha expressão exatamente como estão. Troque a roupa por [roupa] e o fundo por [fundo neutro cinza / escritório desfocado]. Luz de estúdio suave, enquadramento do peito para cima.
+```
+
+**Mudar o estilo de uma foto:**
+```
+[Anexe a foto] Redesenhe esta foto no estilo [aquarela / desenho a lápis / animação 3D / ilustração de livro infantil], mantendo a composição, as poses e as roupas. Cores [suaves / vibrantes] e nenhum texto na imagem.
+```
+
+**Ajuste fino sem refazer tudo:**
+```
+Na imagem que você acabou de gerar, mude apenas [o detalhe, ex.: a cor do casaco para verde-oliva] e mantenha todo o resto exatamente igual: rosto, fundo, luz e enquadramento.
+```
+
+O último é o que mais economiza tentativas: corrija um detalhe por vez na mesma conversa, em vez de pedir uma imagem nova a cada ajuste. Mais modelos de edição de foto (restauração, figura colecionável, Workspace) estão nos [prompts para o Gemini](/blog/prompts-para-gemini#prompts-para-criar-e-editar-fotos-no-gemini), e quem usa imagem para vender tem os [prompts de vendas para e-commerce](/blog/prompts-de-vendas-para-e-commerce-ficha-de-produto-carrinho-abandonado-e-anuncio-de-marketplace).
+
+---
+
 ## Direitos de Uso e Cuidados
 
 Antes de publicar ou usar comercialmente imagens geradas por IA, vale entender algumas questões práticas:
@@ -178,6 +216,10 @@ Antes de publicar ou usar comercialmente imagens geradas por IA, vale entender a
 ---
 
 ## Perguntas Frequentes
+
+### Como fazer foto com IA grátis?
+
+Abra um gerador com plano gratuito, como o ChatGPT Free ou o Gemini, e descreva a foto com sujeito, ambiente, luz, enquadramento e proporção. Para editar uma foto sua, anexe a imagem e diga o que deve continuar igual (rosto, produto, enquadramento) e o que deve mudar. Os planos grátis têm limite diário de imagens.
 
 ### É preciso saber desenhar ou ter conhecimento técnico para usar geradores de IA?
 

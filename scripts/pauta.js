@@ -24,6 +24,12 @@ const path = require('path');
  * post que recebe clique (prompts-para-gemini, copywriting, marketing,
  * programação). Os guias de AEO pendentes de docs/PLANO-AEO-GEO.md ficam no
  * fim: o pilar de AEO teve 14 impressões e 0 clique no mesmo período.
+ *
+ * Revisão de 16/11/2026 (Search Console 08–14/11): os itens de prompts e de
+ * "melhor IA gratuita" acima já saíram. Entra o custo de API em reais, que
+ * tem busca ("valor api claude", posição 10; "consumo api gemini") e aponta
+ * para a /calculadora, que está entre as páginas com clique. O guia de AEO
+ * restante continua no fim.
  */
 const BACKLOG = [
   {
@@ -97,6 +103,13 @@ const BACKLOG = [
     note: 'Comparativo. SEO continua valendo; AEO muda o formato da resposta (definição no início, FAQ, fontes). Linkar o pilar de AEO e o guia de aparecer no ChatGPT.',
   },
   {
+    id: 'custo-api-reais',
+    title: 'Quanto custa a API do ChatGPT, do Claude e do Gemini em reais: exemplos por tarefa',
+    seoHint: 'Quanto custa a API do Claude, GPT e Gemini em R$',
+    coveredBy: /quanto-custa-a-api|custo-da-api|preco-da-api|api-.*em-reais/i,
+    note: 'Buscas vistas no Search Console em 08–14/11/2026: "valor api claude" (posição 10), "consumo api gemini", "gemini consumo de tokens". Use só os preços de src/data/calculator-models.ts e o câmbio de src/data/exchange-rate.ts, citando a data. Mostre 3 ou 4 tarefas comuns (resumir PDF, atendimento por chat, gerar post) com tokens de entrada e saída estimados e o custo em R$. Explique token em uma frase e linke a /calculadora e o /comparador. Não invente preço nem limite de plano.',
+  },
+  {
     id: 'aparecer-gemini-copilot',
     title: 'Como aparecer nas respostas do Gemini e do Copilot (e do Perplexity)',
     seoHint: 'Como aparecer nas respostas do Gemini e do Copilot',
@@ -165,7 +178,7 @@ function nextBacklogItem(articles) {
 }
 
 /** Lista curta de posts reais para o modelo linkar. Só entram slugs que existem. */
-function suggestInternalPosts(articles, limit = 18) {
+function suggestInternalPosts(articles, limit = 24) {
   const preferred = [
     'prompts-prontos-para-chatgpt',
     'melhores-ias-gratuitas-2026',
@@ -180,6 +193,12 @@ function suggestInternalPosts(articles, limit = 18) {
     'prompts-para-programacao',
     'prompts-para-negocios-e-empreendedores',
     'prompts-para-estudos-e-concursos',
+    '20-prompts-de-chatgpt-para-atendimento-ao-cliente-e-mail-chat-e-reclamacoes-2026',
+    'prompts-para-whatsapp-de-vendas-prospeccao-follow-up-e-resposta-a-objecao',
+    'prompts-de-vendas-para-e-commerce-ficha-de-produto-carrinho-abandonado-e-anuncio-de-marketplace',
+    'prompts-para-chatgpt-de-rh-descricao-de-vaga-triagem-de-curriculos-e-feedback',
+    'melhor-ia-gratuita-para-estudar-chatgpt-gemini-e-claude-no-resumo-e-no-simulado',
+    'melhor-ia-gratuita-para-programar-em-2026-copilot-chatgpt-claude-e-gemini-no-codigo',
   ];
   const bySlug = new Map(articles.filter((article) => !article.noindex).map((article) => [article.slug, article]));
   const picked = [];

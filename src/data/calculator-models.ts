@@ -115,12 +115,12 @@ export const AI_MODELS: CalculatorModel[] = [
   },
   // Anthropic
   {
-    name: 'Claude Fable 5.1',
+    name: 'Claude Fable 5.2',
     provider: 'Anthropic',
-    inputPricePerM: 10.00,
-    outputPricePerM: 50.00,
+    inputPricePerM: 8.00,
+    outputPricePerM: 40.00,
     contextWindow: '1M tokens',
-    description: 'O modelo mais capaz da Anthropic com acesso geral, para raciocínio exigente e trabalho agêntico longo, com 1M de tokens de contexto e até 128K de saída. O raciocínio fica sempre ligado e é cobrado como saída.',
+    description: 'O modelo mais capaz da Anthropic com acesso geral, lançado em 9 de novembro de 2026 no lugar do Fable 5.1, com cerca de 20% de corte no preço (o Fable 5.1 custava US$ 10,00/US$ 50,00) e saída até 30% mais rápida. Contexto de 1M de tokens e até 128K de saída; leitura de cache a US$ 0,20/M. O raciocínio fica sempre ligado e é cobrado como saída.',
   },
   {
     name: 'Claude Opus 5.5',

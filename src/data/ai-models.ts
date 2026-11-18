@@ -27,7 +27,7 @@ export const aiModels: AIModel[] = [
     name: 'ChatGPT (GPT-6 Astra, GPT-6.1 Sol, GPT-6 Sol, GPT-6 Luna e GPT-5.6)',
     developer: 'OpenAI',
     category: 'Texto & Código',
-    pricing: 'Plano gratuito disponível; Go US$ 8/mês; Plus US$ 20/mês; Pro US$ 100, US$ 200 ou US$ 500/mês. Business: US$ 20 por usuário/mês no plano anual ou US$ 25 no mensal, a partir de 2 usuários. Enterprise e Edu: preço sob consulta — consultar site oficial. No ChatGPT, os planos gratuito e Go dão acesso ao GPT-6 Luna; Plus e Pro dão acesso ao GPT-6 Astra, ao GPT-6.1 Sol e ao GPT-6 Sol, com limites ampliados no Pro. No Codex, os planos Pro não têm limite de 5 horas e o Pro de US$ 500 inclui o modo Ultrafast. API, por milhão de tokens de entrada/saída, para prompts de até 272 mil tokens: GPT-6 Astra US$ 10/US$ 50; GPT-6.1 Sol US$ 2/US$ 10; GPT-6.1 Terra US$ 1/US$ 5; GPT-6 Sol US$ 2/US$ 10; GPT-6 Luna US$ 0,10/US$ 0,50; GPT-5.6 Sol US$ 4/US$ 20, preço promocional até 30 de novembro de 2026. Acima de 272 mil tokens de entrada vale a faixa de contexto longo, por exemplo US$ 20/US$ 75 no GPT-6 Astra. Batch e Flex custam metade. Janela de contexto de 1,05M de tokens e saída de até 128 mil tokens nos modelos GPT-6 e GPT-6.1.',
+    pricing: 'Plano gratuito disponível; Go US$ 8/mês; Plus US$ 20/mês; Pro US$ 100, US$ 200 ou US$ 500/mês. Business: US$ 20 por usuário/mês no plano anual ou US$ 25 no mensal, a partir de 2 usuários. Enterprise e Edu: preço sob consulta — consultar site oficial. No ChatGPT, os planos gratuito e Go dão acesso ao GPT-6 Luna; Plus e Pro dão acesso ao GPT-6 Astra, ao GPT-6.1 Sol e ao GPT-6 Sol, com limites ampliados no Pro. No Codex, os planos Pro não têm limite de 5 horas e o Pro de US$ 500 inclui o modo Ultrafast. API, por milhão de tokens de entrada/saída, para prompts de até 272 mil tokens: GPT-6.2 Astra US$ 8/US$ 40; GPT-6.2 Sol US$ 2/US$ 10; GPT-6 Astra US$ 10/US$ 50; GPT-6.1 Sol US$ 2/US$ 10; GPT-6.1 Terra US$ 1/US$ 5; GPT-6 Sol US$ 2/US$ 10; GPT-6 Luna US$ 0,10/US$ 0,50; GPT-5.6 Sol US$ 4/US$ 20, preço promocional até 30 de novembro de 2026. Acima de 272 mil tokens de entrada vale a faixa de contexto longo, por exemplo US$ 20/US$ 75 no GPT-6 Astra. Batch e Flex custam metade. Janela de contexto de 1,05M de tokens e saída de até 128 mil tokens nos modelos GPT-6 e GPT-6.1.',
     pros: [
       'GPT-5.6 Sol (versão de agosto de 2026, lançado em 6 de agosto de 2026) é o modelo principal atualizado da OpenAI para usuários Plus e Pro no chat padrão, oferecendo fatos mais confiáveis, respostas mais focadas, maior consistência e um novo slider para escolher o esforço de raciocínio (Instant a High).',
       'GPT-5.6 Luna (versão de agosto de 2026, lançado em 6 de agosto de 2026) é o novo modelo padrão para usuários dos planos Free e Go no chat padrão, com acesso a chats de texto ilimitados (sujeito a limites de uso indevido) e um novo "Think button" para raciocínio mais profundo em perguntas difíceis (disponível a partir da semana de 10 de agosto de 2026).',
@@ -104,11 +104,11 @@ export const aiModels: AIModel[] = [
       value: 4.9
     },
     affiliateUrl: 'https://chatgpt.com',
-    pricesCheckedAt: '2026-11-16',
+    pricesCheckedAt: '2026-11-18',
     pricingSources: [
       'https://chatgpt.com/pricing',
       'https://developers.openai.com/codex/pricing',
-      'https://platform.openai.com/docs/pricing',
+      'https://developers.openai.com/api/docs/pricing',
     ],
     description: 'ChatGPT Plus, agora impulsionado pela nova família GPT-5.6 (Sol, Terra, Luna) e anteriormente GPT-5.5 Instant, representa o ápice da inteligência artificial generativa da OpenAI. Lançado em 6 de agosto de 2026, uma versão atualizada do GPT-5.6 Sol é o modelo principal para planos pagos no chat padrão, destacando-se em raciocínio, codificação e compreensão visual, com capacidades avançadas de agente e o novo modo "ultra" para tarefas complexas, além de um slider para ajustar o esforço de raciocínio. O GPT-5.6 Luna (também atualizado em 6 de agosto de 2026) é o novo padrão para usuários Free e Go, oferecendo chats ilimitados e um "Think button" para perguntas mais difíceis (disponível a partir da semana de 10 de agosto de 2026). O GPT-5.6 Terra e as versões de julho de Sol e Luna continuam acessíveis via ChatGPT Work e Codex para todos os usuários, e os preços de API de Terra e Luna foram reduzidos em 30 de julho de 2026. A plataforma oferece uma pesquisa na web aprimorada, sistemas de memória aprimorados e o modo de voz avançado para interações em tempo real. Novos recursos incluem tarefas agendadas, gerenciamento de sessões ativas, suporte a uploads de arquivos e Projetos na voz do ChatGPT (a partir de 7 de agosto de 2026), e a substituição da interface Canvas por blocos de código e escrita diretos no chat. Em 7 de agosto de 2026, o ChatGPT também ganhou a capacidade de ajudar com reservas de restaurantes. Em 22 de julho de 2026, a OpenAI lançou o Presence para empresas implantarem agentes de IA confiáveis. Em 23 de julho de 2026, foi lançado o Health in ChatGPT para usuários dos EUA. Embora haja um plano gratuito (com anúncios nos EUA), os recursos completos estão disponíveis com a assinatura Plus de US$ 20/mês, com novos planos Go, Pro US$100 e Pro US$200 oferecendo diferentes níveis de capacidade. Modelos anteriores como GPT-5.2, GPT-5, GPT-5.1, GPT-4.5 e GPT-4o foram aposentados da interface principal em 2026. O DALL·E GPT oficial será retirado em 30 de agosto de 2026. A criação de novos chats em grupo foi descontinuada em 9 de julho de 2026. A geração de vídeo Sora, antes presente, teve seu aplicativo desativado em 26 de abril de 2026 e a API está programada para ser desativada em 24 de setembro de 2026, sem planos de integração com o ChatGPT, exceto para o plano Pro US$200. O Atlas, para capacidades de agente baseadas em navegador, foi desativado em 9 de agosto de 2026, com seus recursos migrados para uma extensão do Chrome, o app de desktop do ChatGPT e um navegador remoto na nuvem. A OpenAI continua a evoluir sua plataforma com aplicativos de desktop e móveis, suporte a múltiplos idiomas e o novo Privacy Filter para detecção de PII, transformando o ChatGPT em um "super-assistente" com recursos de agente. A integração com PowerPoint foi lançada em 21 de maio de 2026 e se tornou geralmente disponível para uso Business em julho de 2026.'
   },
@@ -179,10 +179,11 @@ export const aiModels: AIModel[] = [
       value: 4.9
     },
     affiliateUrl: 'https://claude.ai',
-    pricesCheckedAt: '2026-11-16',
+    pricesCheckedAt: '2026-11-18',
     pricingSources: [
       'https://claude.com/pricing',
       'https://platform.claude.com/docs/en/about-claude/pricing',
+      'https://platform.claude.com/docs/en/models/overview',
     ],
     description: 'A família Claude da Anthropic agora é liderada pelo Claude Opus 5.5 (lançado em 22 de setembro de 2026), que substitui o Opus 5 (lançado em 24 de julho de 2026) como topo de linha em todos os planos e na API, com desempenho equivalente ao Claude Fable 5.1 (lançado em 1º de setembro de 2026, sucedendo o Fable 5) por cerca de 40% menos custo e respostas mais de 30% mais rápidas. Seis dias depois, em 28 de setembro de 2026, a Anthropic lançou o Claude Sonnet 5.5, substituindo o Sonnet 5 como modelo de nível médio, e em 7 de outubro de 2026 lançou o Claude Haiku 5.5, primeiro Haiku com níveis de esforço ajustáveis e janela de contexto ampliada para 1M tokens. A linha também mantém disponíveis Opus 5 e Haiku 4.5. O Claude Fable 5.1 supera Fable 5, Opus 5 e GPT-5.6 Sol em vários benchmarks e corta o preço de cache reads em 75% (de US$ 1.00 para US$ 0.25/milhão de tokens), reduzindo o custo de tarefas agenticas em até 45%; suas salvaguardas de biologia (aprimoradas em 7 de agosto de 2026, já na geração Fable 5) e de cibersegurança (com ~60% menos falsos positivos no Claude Code) seguem entre as mais rígidas do mercado. Seu acesso foi brevemente suspenso por regulamentações governamentais em junho de 2026 e, desde 20 de julho de 2026, é um complemento pago via créditos de uso para assinantes Pro e Team Standard, e incluído com limites nos planos Max e Team Premium. O Claude Sonnet 5 (lançado em 30 de junho de 2026) é o novo padrão para planos gratuitos e Pro. O Claude Opus 4.8 (lançado em 28 de maio de 2026) é o modelo Opus mais capaz, com recursos como Dynamic Workflows e Effort Control. Todos esses modelos oferecem uma vasta janela de contexto de 1 milhão de tokens (exceto Haiku 4.5 com 200K). A plataforma integra ferramentas externas via MCP v2 e oferece Claude Code para desenvolvimento autônomo, com novos recursos como "Artifacts" para dashboards interativos. O modo de voz foi significativamente aprimorado com suporte multilíngue e seletor de modelo. Novos recursos incluem Managed Agents Memory, Claude Cowork (agora em web e mobile, expandido em 7 de julho e agosto de 2026), Microsoft 365 write tools e o "Reflect" para insights de uso (lançado em 9 de julho de 2026). A Anthropic também anunciou uma parceria estratégica com a AMD em 22 de julho de 2026 e atualizou sua política de privacidade em 8 de julho de 2026. Em agosto de 2026, adicionou varredura de segurança beta para habilidades e plugins e ambientes auto-hospedados em beta público para Claude Code. A Anthropic oferece uma variedade de planos, desde o gratuito até o Enterprise (agora com conformidade HIPAA autogerenciável, mas com requisitos de ativação e exclusões de cobertura para alguns serviços como Cowork), com preços de API competitivos e otimizações. Em 11 de agosto de 2026, a Anthropic tornou permanente o preço introdutório do Sonnet 5 (US$ 2/US$ 10 por milhão de tokens), cancelando o aumento para US$ 3/US$ 15 que estava previsto para 1º de setembro de 2026. No entanto, a complexidade da precificação, especialmente com o Fable 5.1 como metered add-on, o uso de um novo tokenizer para Sonnet 5 que pode aumentar o consumo de tokens, a latência do Opus 5 no esforço máximo e a aposentadoria do Opus 4.1, são considerações importantes. Além disso, o aumento de 50% nos limites de uso semanais para planos pagos expirará em 19 de agosto de 2026.'
   },
@@ -191,7 +192,7 @@ export const aiModels: AIModel[] = [
     name: 'Gemini 3.x Models (Gemini 3.1 Pro, Gemini 3.5 Flash, Gemini 3.5 Flash-Lite, Gemini 3.6 Flash, Gemini 3.7 Flash, Gemini 3.8 Flash, Gemini AI Pro, Gemini AI Ultra)',
     developer: 'Google',
     category: 'Texto & Código',
-    pricing: 'Plano gratuito disponível; Google AI Plus US$ 4,99/mês; Google AI Pro US$ 19,99/mês; Google AI Ultra US$ 99,99 ou US$ 199,99/mês. No Brasil: AI Plus R$ 24,99/mês, AI Pro R$ 96,99/mês e AI Ultra R$ 779,90 ou R$ 999,90/mês. O gratuito dá acesso ao modelo Flash-Lite e 15 GB de armazenamento. Plus: Gemini 4 Hydrogen, o dobro dos limites do gratuito e 400 GB. Pro: Gemini 4 Argon e o modelo Pro, 4x os limites do gratuito e 5 TB. Ultra: Gemini 4 Carbon, 5x os limites do AI Pro no plano de US$ 99,99 ou 20x no de US$ 199,99, e a partir de 20 TB. Gemini Enterprise: a partir de US$ 21 por licença/mês na edição Business e US$ 30 nas edições Standard e Plus. API no tier pago, por milhão de tokens de entrada/saída: Gemini 4 Carbon e Gemini 4 Argon US$ 2/US$ 10 até 30 de novembro de 2026 e US$ 4/US$ 20 a partir de 1º de dezembro; Gemini 4 Hydrogen US$ 1,50/US$ 7,50; Gemini 3.8 Flash e 3.6 Flash US$ 0,75/US$ 3,75 até 31 de dezembro de 2026 e US$ 1,50/US$ 7,50 depois; Gemini 3.1 Pro Preview US$ 2/US$ 12 para prompts de até 200 mil tokens e US$ 4/US$ 18 acima; Gemini 3.5 Flash-Lite US$ 0,30/US$ 2,50; Gemini 3.1 Flash-Lite US$ 0,25/US$ 1,50. Os tokens de raciocínio são cobrados como saída. Contexto de 1.048.576 tokens nesses modelos. O Gemini 3.5 Flash e o 3.7 Flash saíram do Google AI Studio e suas chamadas de API são redirecionadas para o 3.6 Flash e o 3.8 Flash.',
+    pricing: 'Plano gratuito disponível; Google AI Plus US$ 4,99/mês; Google AI Pro US$ 19,99/mês; Google AI Ultra US$ 99,99 ou US$ 199,99/mês. No Brasil: AI Plus R$ 24,99/mês, AI Pro R$ 96,99/mês e AI Ultra R$ 779,90 ou R$ 999,90/mês. O gratuito dá acesso ao modelo Flash-Lite e 15 GB de armazenamento. Plus: Gemini 4 Hydrogen, o dobro dos limites do gratuito e 400 GB. Pro: Gemini 4 Argon e o modelo Pro, 4x os limites do gratuito e 5 TB. Ultra: Gemini 4 Carbon, 5x os limites do AI Pro no plano de US$ 99,99 ou 20x no de US$ 199,99, e a partir de 20 TB. Gemini Enterprise: a partir de US$ 30 por licença/mês; preço de cada edição (Business, Standard e Plus): consultar site oficial. API no tier pago, por milhão de tokens de entrada/saída: Gemini 4 Carbon e Gemini 4 Argon US$ 2/US$ 10 até 30 de novembro de 2026 e US$ 4/US$ 20 a partir de 1º de dezembro; Gemini 4 Hydrogen US$ 1,50/US$ 7,50; Gemini 3.8 Flash e 3.6 Flash US$ 0,75/US$ 3,75 até 31 de dezembro de 2026 e US$ 1,50/US$ 7,50 depois; Gemini 3.1 Pro Preview US$ 2/US$ 12 para prompts de até 200 mil tokens e US$ 4/US$ 18 acima; Gemini 3.5 Flash-Lite US$ 0,30/US$ 2,50; Gemini 3.1 Flash-Lite US$ 0,25/US$ 1,50. Os tokens de raciocínio são cobrados como saída. Contexto de 1.048.576 tokens nesses modelos. A partir de 1º de dezembro de 2026, as chamadas ao Gemini 2.5 Pro na API passam a ser atendidas pelo Gemini 3.8 Flash e cobradas pelo preço dele.',
     pros: [
       'Modelos Gemini 3.x oferecem uma vasta janela de contexto de até 1 milhão de tokens em todos os tiers, ideal para processar grandes volumes de informações em texto, imagem, áudio e vídeo.',
       'Gemini 3.5 Flash e 3.6 Flash são modelos de produção de ponta do Google, otimizados para tarefas de alto volume com velocidade e custo-benefício.',
@@ -239,11 +240,11 @@ export const aiModels: AIModel[] = [
       value: 4.7
     },
     affiliateUrl: 'https://aistudio.google.com',
-    pricesCheckedAt: '2026-11-16',
+    pricesCheckedAt: '2026-11-18',
     pricingSources: [
       'https://gemini.google/subscriptions/',
       'https://gemini.google/br/subscriptions/',
-      'https://ai.google.dev/gemini-api/docs/pricing',
+      'https://aistudio.google.com/docs/pricing',
     ],
     description: 'A família Gemini do Google é liderada pelos novos modelos Gemini 3.x, incluindo Gemini 3.1 Pro (o flagship para raciocínio e trabalho de agente), Gemini 3.5 Flash (otimizado para velocidade/custo-benefício), Gemini 3.6 Flash (lançado em 21 de julho de 2026, ainda mais eficiente e com custo de saída reduzido) Gemini 3.5 Flash-Lite (o mais custo-eficiente) e o novo Gemini 3.7 Flash (lançado em 13 de agosto de 2026, voltado a codificação e agentes, com preço introdutório de US$ 0.75/US$ 3.75 por milhão de tokens até 31 de dezembro de 2026). Em 2 de setembro de 2026, o Gemini 3.8 Flash sucedeu o 3.7 Flash como o "workhorse" mais recente, com ganhos em engenharia de software e tarefas agênticas de terminal, mantendo o mesmo preço promocional. Todos os modelos 3.x oferecem uma vasta janela de contexto de 1 milhão de tokens. Modelos anteriores como Gemini 2.0 Flash e 2.0 Flash-Lite foram desativados em 1º de junho de 2026, e Gemini 2.5 Pro e Gemini 3 Flash foram depreciados no GitHub Copilot em 31 de julho de 2026, com o Gemini 2.5 Flash programado para ser desativado em 16 de outubro de 2026, marcando uma transição contínua para a geração 3.x e exigindo migrações. A plataforma Gemini se integra profundamente com o ecossistema Google, com o Gemini agora incluído nos planos do Workspace, e oferece recursos como Personal Intelligence e o futuro Project Astra para agentes de IA autônomos. Os planos de assinatura foram reestruturados no I/O 2026, com novos tiers como Google AI Plus (agora US$ 4.99/mês), AI Pro e AI Ultra (a partir de US$ 99.99/mês) oferecendo acesso expandido a modelos e recursos avançados a preços competitivos. Novos modelos Robotics ER 2 e ER 2 Streaming foram lançados em 30 de julho de 2026. O Gemini Spark para macOS e o modo de voz aprimorado com interação com a tela também foram lançados em junho e julho de 2026. No entanto, os custos da API para contextos muito longos nos modelos Pro podem ser mais altos, e os "thinking tokens" são faturados como saída. O Gemini 3.5 Pro, ainda não lançado, enfrenta atrasos e desafios. Na API, a Google já avançou para a geração Gemini 4: o Gemini 4 Argon chegou à disponibilidade geral em 13 de outubro de 2026 com foco em raciocínio e engenharia de software, e o Gemini 4 Carbon, anunciado em 28 de outubro de 2026 com foco em cibersegurança, chegou à API paga em 10 de novembro de 2026 e aparece como incluído no plano Google AI Ultra.'
   },
@@ -252,7 +253,7 @@ export const aiModels: AIModel[] = [
     name: 'Meta Muse Spark 1.3, Muse Spark 1.2, Muse Code, Muse Image, Muse Video, Llama 3.3 70B, Llama 3.2 (Vision), Llama 3.1 (405B), Muse Glimmer',
     developer: 'Meta',
     category: 'Texto & Código',
-    pricing: 'Pesos Llama e Muse Glimmer gratuitos para download; API do Muse Spark a US$ 1,25/US$ 4,25 por milhão de tokens no modo Standard. Meta Model API, por milhão de tokens de entrada/saída: Muse Spark 1.3, 1.2 e 1.1 no modo Standard a US$ 1,25/US$ 4,25, com cache a US$ 0,15; modo Contributor, só no 1.3 e no 1.2, a US$ 0,10/US$ 0,20, em troca de a Meta poder usar prompts e respostas para treinar modelos. Contexto de 1.048.576 tokens no Muse Spark. Muse Glimmer 30B, modelo de pesos abertos, roda no seu hardware ou via Together AI a US$ 0,35/US$ 1,50, com 128K de contexto. Pesos dos modelos Llama: download gratuito sob a licença comunitária Llama; empresas com mais de 700 milhões de usuários ativos mensais precisam pedir licença à Meta. Llama via API de terceiros: o preço varia por provedor — consultar o site de cada um; o Llama 3.3 70B saiu da API serverless da Together AI em 22 de outubro de 2026. Meta AI para consumidores e eventuais assinaturas: consultar site oficial.',
+    pricing: 'Pesos Llama e Muse Glimmer gratuitos para download; API do Muse Spark a US$ 1,25/US$ 4,25 por milhão de tokens no modo Standard. Meta Model API, por milhão de tokens de entrada/saída: Muse Spark 1.3, 1.2 e 1.1 no modo Standard a US$ 1,25/US$ 4,25, com cache a US$ 0,15; modo Contributor, só no 1.3 e no 1.2, a US$ 0,10/US$ 0,20, em troca de a Meta poder usar prompts e respostas para treinar modelos. Contexto de 1.048.576 tokens no Muse Spark. Muse Glimmer 30B, modelo de pesos abertos, roda no seu hardware ou via Together AI a US$ 0,35/US$ 1,50, com 128K de contexto. Pesos dos modelos Llama: download gratuito sob a licença comunitária Llama; empresas com mais de 700 milhões de usuários ativos mensais precisam pedir licença à Meta. Llama via API de terceiros: o preço varia por provedor — consultar o site de cada um; o Llama 3.3 70B não aparece mais na lista de modelos serverless da Together AI. Meta AI para consumidores e eventuais assinaturas: consultar site oficial.',
     pros: [
       'Meta Muse Spark 1.3 (lançado em 2 de setembro de 2026) é a atualização mais recente e mais avançada da Meta, com raciocínio máximo aprimorado para tarefas de raciocínio complexas e agênticas e maior usabilidade no mundo real, disponível via Muse Code e Meta Model API desde o lançamento, com preços de API idênticos ao Muse Spark 1.2.',
       'Meta Muse Spark 1.2 (lançado em 5 de agosto de 2026) é um modelo de atualização focado em codificação para o Muse Spark 1.1, com entrada multimodal e saída apenas de texto, potencializando o Muse Code.',
@@ -293,7 +294,7 @@ export const aiModels: AIModel[] = [
       value: 4.6
     },
     affiliateUrl: 'https://llama.meta.com/',
-    pricesCheckedAt: '2026-11-16',
+    pricesCheckedAt: '2026-11-18',
     pricingSources: [
       'https://dev.meta.ai/docs/pricing-rate-limits',
       'https://dev.meta.ai/docs/models',
@@ -307,7 +308,7 @@ export const aiModels: AIModel[] = [
     name: 'ChatGPT Images (GPT Image 2.0)',
     developer: 'OpenAI',
     category: 'Geração de Imagem',
-    pricing: 'Incluso no ChatGPT, com criação limitada de imagens no plano gratuito e limites maiores nos planos pagos; Plus US$ 20/mês. Quantidade de imagens por plano: consultar site oficial. API do GPT Image 2: de US$ 0,005 a US$ 0,211 por imagem em 1024×1024, 1024×1536 ou 1536×1024, conforme a qualidade escolhida, baixa, média ou alta; em tokens, US$ 8 por milhão de tokens de imagem na entrada e US$ 30 na saída. O GPT Image 2 já está marcado como descontinuado, com desligamento previsto para 10 de fevereiro de 2027; os substitutos indicados, GPT Image 2.6 Sunburst e GPT Image 2.6 Flare, têm o mesmo preço por token.',
+    pricing: 'Incluso no ChatGPT, com criação limitada de imagens no plano gratuito e limites maiores nos planos pagos; Plus US$ 20/mês. Quantidade de imagens por plano: consultar site oficial. API do GPT Image 2: de US$ 0,005 a US$ 0,211 por imagem em 1024×1024, 1024×1536 ou 1536×1024, conforme a qualidade escolhida, baixa, média ou alta; em tokens, US$ 8 por milhão de tokens de imagem na entrada e US$ 30 na saída. O GPT Image 2 já está marcado como descontinuado, com desligamento previsto para 26 de fevereiro de 2027; os substitutos indicados, GPT Image 2.6 Sunburst e GPT Image 2.6 Flare, têm o mesmo preço por token.',
     pros: [
       'ChatGPT Images 2.0 (gpt-image-2, lançado em 21 de abril de 2026) é o modelo padrão de geração de imagens da OpenAI, com qualidade aprimorada em relação ao GPT Image 1.5, e é o modelo #1 classificado para texto-para-imagem em agosto de 2026.',
       'GPT Image 2.0 razões antes de renderizar (pesquisando, planejando layout, auto-verificando), tornando-o o modelo mais forte para imagens com muito texto e estruturadas.',
@@ -335,12 +336,12 @@ export const aiModels: AIModel[] = [
       value: 4.9
     },
     affiliateUrl: 'https://chatgpt.com',
-    pricesCheckedAt: '2026-11-16',
+    pricesCheckedAt: '2026-11-18',
     pricingSources: [
       'https://chatgpt.com/pricing',
-      'https://platform.openai.com/docs/pricing',
+      'https://developers.openai.com/api/docs/pricing',
       'https://developers.openai.com/api/docs/guides/image-generation',
-      'https://platform.openai.com/docs/deprecations',
+      'https://developers.openai.com/api/docs/deprecations',
     ],
     description: 'ChatGPT Images, agora impulsionado pelos modelos GPT Image 2.0 (lançado em abril de 2026), é a ferramenta de geração de imagens de última geração da OpenAI. É o modelo #1 classificado para texto-para-imagem em agosto de 2026, e se destaca por sua capacidade de interpretar prompts complexos e conversacionais, criando imagens de alta qualidade com renderização aprimorada de texto e uma forte correspondência com a descrição. O GPT Image 2.0 razões antes de renderizar, tornando-o forte para imagens textuais. O DALL·E GPT oficial será retirado em 30 de agosto de 2026, com os usuários sendo direcionados ao ChatGPT Images. DALL-E 2 e DALL-E 3 foram oficialmente descontinuados em 12 de maio de 2026, e os modelos GPT Image 1.5, gpt-image-1-mini e chatgpt-image-latest serão descontinuados em 1º de dezembro de 2026 (e gpt-image-1 em 23 de outubro de 2026), com o GPT Image 2.0 se tornando o modelo consolidado. Integrado perfeitamente ao ChatGPT, permite a criação e modificação de imagens por meio de conversação, oferecendo uma experiência de usuário intuitiva e edição multi-turno. O GPT Image 2.0 também removeu a cobrança por tokens de texto de saída e reduziu o custo de saída de imagem. Embora seja uma ferramenta poderosa para designers e criadores de conteúdo, o GPT Image 2.0 pode, em certas situações, não alcançar o fotorrealismo de concorrentes como o Midjourney, e ainda pode ter desafios com tipografia complexa. O acesso completo aos recursos exige uma assinatura do ChatGPT Plus, e os custos da API podem ser consideráveis para produção em larga escala.'
   },
@@ -395,7 +396,7 @@ export const aiModels: AIModel[] = [
       value: 4.7
     },
     affiliateUrl: 'https://midjourney.com',
-    pricesCheckedAt: '2026-11-16',
+    pricesCheckedAt: '2026-11-18',
     pricingSources: [
       'https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans',
     ],
@@ -442,7 +443,7 @@ export const aiModels: AIModel[] = [
       value: 4.8
     },
     affiliateUrl: 'https://stability.ai',
-    pricesCheckedAt: '2026-11-16',
+    pricesCheckedAt: '2026-11-18',
     pricingSources: [
       'https://platform.stability.ai/pricing',
       'https://stability.ai/license',
@@ -487,7 +488,7 @@ export const aiModels: AIModel[] = [
       value: 4.7
     },
     affiliateUrl: 'https://www.make.com',
-    pricesCheckedAt: '2026-11-16',
+    pricesCheckedAt: '2026-11-18',
     pricingSources: [
       'https://www.make.com/en/pricing',
       'https://help.make.com/adjustments-to-plans-and-pricing',

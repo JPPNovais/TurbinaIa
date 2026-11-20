@@ -13,6 +13,71 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'anthropic-ipo-pricing-nasdaq-debut-2026-11',
+    date: '2026-11',
+    title: 'Anthropic precifica IPO em US$ 83 por ação e debuta na Nasdaq sob o ticker ANT',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'Em 18 de novembro de 2026, a Anthropic fixou o preço de sua oferta pública inicial em US$ 83 por ação, acima da faixa de US$ 70 a US$ 78 anunciada dias antes, avaliando a empresa em cerca de US$ 1,5 trilhão. As ações começaram a ser negociadas na Nasdaq Global Select Market em 19 de novembro sob o símbolo "ANT".',
+    highlights: [
+      'A oferta veio acompanhada de uma colocação privada adicional de US$ 26 bilhões em ações Classe N ao mesmo preço da IPO.',
+      'A precificação acima da faixa esperada ocorreu em meio a uma queda geral das ações de tecnologia nos EUA na mesma semana.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'microsoft-ignite-2026-copilot-work-os-2026-11',
+    date: '2026-11',
+    title: 'Microsoft Ignite 2026 reposiciona o Copilot como "sistema operacional do trabalho"',
+    developer: 'Microsoft',
+    category: 'Lançamento',
+    description: 'No Ignite 2026 (17 a 20 de novembro), a Microsoft apresentou o Copilot apoiado em três pilares — Copilot, Microsoft IQ e Agent 365 — e lançou o Copilot Workspaces, um espaço compartilhado entre pessoas e agentes, além de tornar a VM Azure Cobalt 200 disponível de forma geral, com até 50% mais desempenho que a geração anterior.',
+    highlights: [
+      'O Microsoft IQ passou a conectar Fabric, Foundry, GitHub e a infraestrutura do Azure numa camada única de dados e contexto para agentes corporativos.',
+      'A Microsoft também anunciou o Azure Catalyst, reunindo ferramentas agênticas do Azure e do GitHub para modernizar aplicações e bancos de dados legados.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'openai-gpt-6-2-astra-sol-2026-11',
+    date: '2026-11',
+    title: 'OpenAI lança GPT-6.2 Astra e GPT-6.2 Sol, com API do Astra 20% mais barata',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 17 de novembro de 2026, a OpenAI lançou o GPT-6.2 Astra (modelo de fronteira para tarefas longas e complexas) e o GPT-6.2 Sol (modelo eficiente para o uso do dia a dia), quase dois meses depois de cancelar o GPT-6.1 Astra por preocupações de segurança. Ambos já estão disponíveis no ChatGPT Work, no Codex e via API para assinantes Plus, Pro, Enterprise e Edu.',
+    highlights: [
+      'A API do GPT-6.2 Astra custa 20% menos que a do GPT-6 Astra: US$ 8/M tokens de entrada e US$ 40/M tokens de saída.',
+      'Segundo a OpenAI, o GPT-6.2 Sol chega a meio ponto percentual do Astra no benchmark FrontierCode 2.0 de programação, a cerca de um quinto do custo — números ainda não replicados de forma independente.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'google-gemini-gems-to-skills-2026-11',
+    date: '2026-11',
+    title: 'Google começa a migrar os Gems do Gemini para o novo formato Skills',
+    developer: 'Google',
+    category: 'Atualização',
+    description: 'A partir de 17 de novembro de 2026, o Google começou a converter automaticamente os Gems de contas pessoais do app Gemini em "skills", conforme cronograma detalhado na própria central de ajuda do Google. Diferente dos Gems — chatbots autônomos com instruções e arquivos próprios —, as skills podem ser chamadas dentro de qualquer conversa do Gemini digitando "/".',
+    highlights: [
+      'Contas de trabalho e de escola (Google Workspace) só recebem a migração em 2027; até lá, Gems continuam funcionando normalmente nesses ambientes.',
+      'Fontes divergem sobre o acesso: uma reportagem diz que as skills já valem para todas as contas gratuitas, enquanto outra afirma que o recurso ainda está restrito a assinantes do Google AI Pro e Ultra — vale conferir dentro da própria conta.',
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'reddit-shuts-down-rss-feeds-2026-11',
+    date: '2026-11',
+    title: 'Reddit encerra feeds RSS públicos em 13 de novembro para dificultar scraping de IA',
+    developer: 'Reddit',
+    category: 'Descontinuado',
+    description: 'O Reddit encerrou seus feeds RSS públicos em 13 de novembro de 2026, alegando que o recurso virou um meio comum de scraping em massa e abuso automatizado por bots de IA. A empresa também vai fechar o acesso público à sua Data API até março de 2027, tendo parado de aceitar novas solicitações de acesso em 31 de outubro de 2026.',
+    highlights: [
+      'Segundo o próprio Reddit, não há substituto para quem usava RSS fora de uma comunidade que modera; moderadores foram orientados a migrar alertas para o Discord.',
+      'A medida chamou atenção da imprensa por contradição aparente: o Reddit culpa bots de scraping enquanto mantém acordos de licenciamento de conteúdo com Google e OpenAI.',
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'google-deepmind-alphaproof-code-signal-2026-11',
     date: '2026-11',
     title: 'Google DeepMind usa IA para gerar 6,5 milhões de linhas de prova matemática sobre a criptografia do Signal',

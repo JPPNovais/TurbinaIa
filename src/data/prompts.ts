@@ -8961,4 +8961,30 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um assistente de produtividade me ajudando a preparar o contexto para um agente de IA que vai acompanhar uma reunião e gerar notas e tarefas depois.\n\nTipo de reunião: [Ex: alinhamento semanal de equipe, apresentação para cliente, retrospectiva de projeto]\nParticipantes e papéis: [Ex: eu (gerente de projeto), dev líder, cliente]\nDecisões que PRECISAM sair claras na ata: [Ex: data de entrega, quem fica responsável por cada parte, orçamento aprovado]\nAlgo que NÃO deve aparecer nas notas compartilhadas: [Ex: comentário informal sobre outro fornecedor, valor interno de custo]\n\nEscreva um briefing de uma página para orientar o agente de IA antes da reunião, com estas seções: (1) o objetivo da reunião em uma frase; (2) os termos e nomes próprios que o agente deve reconhecer corretamente (produtos, siglas internas, nomes de clientes); (3) o formato exato da lista de itens de ação que eu quero receber no final (responsável, prazo, descrição); (4) o que explicitamente deixar de fora do resumo compartilhado com participantes externos.',
     tags: ['Reuniões', 'Produtividade', 'Agentes de IA', 'Organização'],
   },
+
+  // CARREIRA (currículo e carta de apresentação)
+  {
+    id: 'career-carta-apresentacao-especifica',
+    title: 'Carta de Apresentação Específica (Sem Clichês de IA)',
+    category: 'Carreira',
+    description: 'Escreva uma carta de apresentação ancorada em pontos concretos da vaga e da sua trajetória, evitando as frases genéricas que recrutadores reconhecem de cara como texto de IA.',
+    template: 'Quero uma carta de apresentação para a vaga abaixo, sem frases genéricas como "tenho grande interesse em contribuir com a empresa" ou "sou um profissional dinâmico e proativo".\n\nDescrição da vaga: [Cole o texto completo do anúncio]\nNome da empresa e algo específico sobre ela que você sabe (produto, notícia recente, valor declarado): [Descreva]\nMinha experiência mais relevante para essa vaga: [Descreva com números/resultados, se tiver]\nPor que quero essa vaga especificamente (não genérico): [Descreva em 1-2 frases]\n\nEscreva a carta em 3 parágrafos: (1) abertura que menciona algo concreto da vaga ou da empresa, nunca uma frase que serviria para qualquer candidatura; (2) um parágrafo central ligando minha experiência real a um requisito específico do anúncio; (3) fechamento direto, sem floreio, com um próximo passo claro. Não invente nenhuma experiência que eu não tenha listado acima.',
+    tags: ['Carta de Apresentação', 'Carreira', 'Job Search'],
+  },
+  {
+    id: 'career-curriculo-checklist-anti-generico',
+    title: 'Checklist Anti-Genérico para Currículo Feito com IA',
+    category: 'Carreira',
+    description: 'Audite um currículo já revisado por IA para identificar frases genéricas, exageros e textos que não se sustentam numa entrevista, antes de enviá-lo.',
+    template: 'Você vai revisar meu currículo como um recrutador cético, que já viu muitos currículos genéricos gerados por IA e sabe reconhecer os sinais.\n\nMeu currículo atual: [Cole o texto completo]\n\nAnalise e aponte, item por item:\n1. Frases genéricas que poderiam estar no currículo de qualquer pessoa (ex.: "profissional dinâmico", "forte capacidade de trabalho em equipe") e sugira a versão específica, baseada no que eu realmente fiz.\n2. Afirmações sem número ou resultado concreto por trás (ex.: "melhorei processos" sem dizer quanto ou como).\n3. Qualquer trecho que pareça exagerado ou implausível diante do tempo de experiência que descrevi.\n4. Repetições de palavras-chave sem contexto real de uso.\n\nNão reescreva o currículo inteiro — liste só os problemas encontrados, trecho por trecho, para que eu mesmo corrija com minhas palavras.',
+    tags: ['Currículo', 'IA', 'Revisão', 'Carreira'],
+  },
+  {
+    id: 'career-bullets-resultado-numerico',
+    title: 'Bullets de Currículo com Verbo de Ação e Resultado Numérico',
+    category: 'Carreira',
+    description: 'Transforme uma lista solta de tarefas em bullets de currículo no formato verbo de ação + o que fez + resultado numérico, sem inventar nenhuma informação nova.',
+    template: 'Aqui está minha experiência profissional em bullets soltos, sem formatação:\n[Liste suas atividades e conquistas em texto livre, com qualquer número que você tenha — tempo, percentual, quantidade de pessoas, valor]\n\nReescreva cada bullet seguindo o padrão: verbo de ação no passado + o que foi feito + resultado numérico (quando eu tiver fornecido um número). Não use adjetivos genéricos como "proativo", "dinâmico" ou "excelente". Não acrescente nenhuma informação, número ou conquista que eu não tenha escrito acima — se um bullet não tiver número disponível, reescreva só com verbo de ação e o que foi feito, sem inventar uma métrica.',
+    tags: ['Currículo', 'Redação', 'Carreira'],
+  },
 ];

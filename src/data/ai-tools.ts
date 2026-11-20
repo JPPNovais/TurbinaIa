@@ -1159,10 +1159,10 @@ export const AI_TOOLS: AITool[] = [
       'Gerar clipes de vídeo a partir de texto com Dreamina Seedance 2.0',
     ],
     pricing: 'Freemium',
-    pricingDetails: 'Plano Grátis: Ferramentas básicas de corte, legendas automáticas por IA, remoção de fundo em clipes curtos, avatar de voz básico, exportação em 1080p; Plano Standard: a partir de US$ 10/mês; Plano Pro: US$ 19.99/mês ou US$ 179.99/ano (compra direta no site costuma ser 20-30% mais barata que via App Store/Google Play) inclui exportação 4K/HDR, kit completo de IA (avatares, clonagem de voz, texto-para-vídeo, rastreamento de câmera, isolamento vocal), 1TB de armazenamento em nuvem e 1.200 pontos de IA/mês (algumas ferramentas generativas consomem créditos à parte); Plano Team: preço customizado com recursos de colaboração.',
+    pricingDetails: 'Plano Grátis: Ferramentas básicas de corte, legendas automáticas por IA, remoção de fundo em clipes curtos, avatar de voz básico, exportação em 1080p; Plano Standard: a partir de US$ 10/mês; Plano Pro: US$ 19.99/mês ou US$ 179.99/ano (compra direta no site costuma ser 20-30% mais barata que via App Store/Google Play) inclui exportação 4K/HDR, kit completo de IA (avatares, clonagem de voz, texto-para-vídeo, rastreamento de câmera, isolamento vocal), 1TB de armazenamento em nuvem e 1.200 pontos de IA/mês (algumas ferramentas generativas consomem créditos à parte); Plano Ultra: US$ 79/mês, acima do Pro, com cota maior de pontos de IA e armazenamento; Plano Team: preço customizado com recursos de colaboração.',
     url: 'https://www.capcut.com',
     tags: ['vídeo', 'edição', 'tiktok', 'legendas', 'avatar', 'clonagem de voz', 'bytedance', 'redes sociais'],
-    updatedAt: '2026-08',
+    updatedAt: '2026-11',
   },
   {
     id: 'spud',

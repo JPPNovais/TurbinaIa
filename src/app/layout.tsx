@@ -19,6 +19,32 @@ const outfit = Outfit({
   variable: '--font-display',
 });
 
+const adClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || 'ca-pub-placeholder';
+const hasAdClient = adClientId !== 'ca-pub-placeholder';
+
+// O script do AdSense entra só depois do evento `load` (no ocioso seguinte), para
+// não disputar CPU e rede com o LCP. A fila `adsbygoogle` já existe antes, então
+// pushes feitos antes do script carregar são processados quando ele chegar.
+// O flag global impede injeção dupla.
+const adsenseDeferScript = `(function(){
+  window.adsbygoogle = window.adsbygoogle || [];
+  function inject(){
+    if (window.__tiaAdsInjected) return;
+    window.__tiaAdsInjected = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClientId}';
+    s.crossOrigin = 'anonymous';
+    document.head.appendChild(s);
+  }
+  function schedule(){
+    if ('requestIdleCallback' in window) window.requestIdleCallback(inject, { timeout: 2000 });
+    else setTimeout(inject, 200);
+  }
+  if (document.readyState === 'complete') schedule();
+  else window.addEventListener('load', schedule, { once: true });
+})();`;
+
 export const metadata: Metadata = {
   title: 'Turbina IA - O Portal Definitivo de Inteligência Artificial',
   description: 'Notícias diárias, tutoriais de monetização, guias práticos e tendências sobre Inteligência Artificial. Turbine seus conhecimentos e produtividade.',
@@ -29,6 +55,9 @@ export const metadata: Metadata = {
   verification: {
     google: 'EP3JHK-_xrYKdBTEfycV8vruws7Y3O9Mj71XlhAOBGQ',
   },
+  // O crawler do AdSense não executa JS e o script do AdSense só é injetado após
+  // o `load`: esta meta mantém o pub ID no HTML estático para a verificação.
+  ...(hasAdClient && { other: { 'google-adsense-account': adClientId } }),
   alternates: {
     canonical: '/',
     types: {
@@ -60,7 +89,6 @@ export default function RootLayout({
   // As imagens vêm direto do CDN do Unsplash: abre a conexão junto com o HTML.
   preconnect('https://images.unsplash.com');
 
-  const adClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || 'ca-pub-placeholder';
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
   const organizationLd = {
@@ -106,15 +134,9 @@ export default function RootLayout({
         {children}
         <Footer />
         <CookieBanner />
-        {adClientId !== 'ca-pub-placeholder' && (
-          // Tag <script> crua (não o <Script> do Next): o crawler do AdSense não
-          // executa JS, então precisa da tag literal no HTML do servidor. O React 19
-          // renderiza scripts async nativamente como tag real no SSR.
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClientId}`}
-            crossOrigin="anonymous"
-          />
+        {hasAdClient && (
+          // Anúncios automáticos e blocos manuais dependem deste script; ver adsenseDeferScript.
+          <script id="adsense-defer" dangerouslySetInnerHTML={{ __html: adsenseDeferScript }} />
         )}
         {gaMeasurementId && (
           <>

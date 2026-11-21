@@ -12,13 +12,13 @@ tags:
 author: Redação Turbina IA
 isFeatured: true
 date: "2026-11-02"
-updatedAt: "2026-11-02"
+updatedAt: "2026-11-21"
 coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
 ---
 
-Não existe uma única melhor IA em 2026. O que muda é a tarefa: conversa do dia a dia, documento longo, código no editor ou imagem. Este ranking usa só o que as páginas oficiais descrevem no início de novembro de 2026, o mesmo recorte do guia de [melhores IAs gratuitas](/blog/melhores-ias-gratuitas-2026). Quando a página oficial não deixa um preço de plano pago inequívoco, a célula fica em branco e o link aponta para a fonte.
+Não existe uma única melhor IA em 2026. O que muda é a tarefa: conversa do dia a dia, documento longo, código no editor ou imagem. Este ranking usa só o que as páginas oficiais descrevem: os planos grátis seguem o guia de [melhores IAs gratuitas](/blog/melhores-ias-gratuitas-2026), e os preços dos planos pagos de ChatGPT, Gemini e Claude foram conferidos em 18 de novembro de 2026, os mesmos do [comparador de IAs](/comparador). Quando a página oficial não deixa um preço inequívoco, a célula diz isso e o link aponta para a fonte.
 
-> **Resposta Rápida (TL;DR):** Para texto cotidiano, o plano gratuito do ChatGPT. Para a conta Google, o Gemini sem assinatura. Para documento longo, o Claude Free. Para código no editor, o GitHub Copilot Free. Imagem, no que estas páginas confirmam, entra no ChatGPT Free e no Gemini sem plano — com limite próprio, não ilimitado. O preço do plano pago só entra na tabela quando a página oficial consultada nesta revisão mostra o valor.
+> **Resposta Rápida (TL;DR):** Para texto cotidiano, o plano gratuito do ChatGPT. Para a conta Google, o Gemini sem assinatura. Para documento longo, o Claude Free. Para código no editor, o GitHub Copilot Free. Imagem, no que estas páginas confirmam, entra no ChatGPT Free e no Gemini sem plano — com limite próprio, não ilimitado. Se for pagar, o plano mais barato dos três é o Google AI Plus (R$ 24,99/mês no Brasil); os planos "padrão" ficam perto de US$ 20/mês. A comparação plano a plano está em [qual IA assinar em 2026](/blog/qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro).
 
 A lista de rankings do site está em [Melhores IAs](/categoria/melhores-ias). Para cruzar a ficha atual de cada modelo, use o [comparador de IAs](/comparador). A [página inicial](/) reúne os tutoriais e as ferramentas grátis.
 
@@ -26,16 +26,16 @@ A lista de rankings do site está em [Melhores IAs](/categoria/melhores-ias). Pa
 
 | IA | Melhor para | Plano grátis | Preço do plano pago |
 |---|---|---|---|
-| [ChatGPT](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq) | Texto do dia a dia | GPT-5.6 Luna; chats de texto sem teto numérico publicado; arquivo, imagem, voz e análise de dados com limite próprio | A página de preços lista Go, Plus e Pro. O valor em dólar não entra aqui: a leitura de 2/11/2026 não isolou um número único por plano |
-| [Gemini](https://gemini.google/subscriptions/) | Pesquisa, imagem e rotina Google | Flash-Lite; geração e edição de imagem; Deep Research; Gemini Live; Canvas; Gems; 15 GB no Google | Ultra: US$ 99,99/mês (5 vezes o limite do Pro) ou US$ 199,99/mês (20 vezes). Plus e Pro existem na mesma página; o valor deles não ficou explícito nesta leitura |
+| [ChatGPT](https://chatgpt.com/pricing) | Texto do dia a dia | GPT-6 Luna; arquivo, imagem, voz e análise de dados com limite próprio | Go: US$ 8/mês. Plus: US$ 20/mês. Pro: US$ 100, US$ 200 ou US$ 500/mês |
+| [Gemini](https://gemini.google/br/subscriptions/) | Pesquisa, imagem e rotina Google | Flash-Lite; geração e edição de imagem; Deep Research; Gemini Live; Canvas; Gems; 15 GB no Google | No Brasil: AI Plus R$ 24,99/mês; AI Pro R$ 96,99/mês; AI Ultra R$ 779,90 ou R$ 999,90/mês. Nos EUA: US$ 4,99, US$ 19,99 e US$ 99,99 ou US$ 199,99 |
 | [Claude](https://claude.com/pricing) | Documento longo e arquivo | US$ 0. Sonnet e Haiku. Limite a cada 5 horas e a cada semana. Sem Opus e sem Fable | Pro: US$ 20/mês, ou US$ 17/mês no anual (US$ 200 à vista). Max: US$ 100/mês. Ultra: US$ 200/mês |
 | [GitHub Copilot](https://docs.github.com/en/copilot/get-started/plans) | Código no editor | 2.000 completações por mês; escolha de modelo só automática; para quem não recebe Copilot de uma organização | Não fixado nesta revisão. A tabela de planos do GitHub é a fonte |
 
-A coluna de plano grátis segue o [guia de IAs gratuitas](/blog/melhores-ias-gratuitas-2026), que cita a FAQ do ChatGPT Free, a página de planos do Gemini, a tabela da Anthropic e a documentação do GitHub. A coluna de preço pago foi conferida de novo em 2 de novembro de 2026 nessas mesmas páginas, menos a do Copilot, que permanece só com o dado do plano Free já publicado naquele guia.
+A coluna de plano grátis segue o [guia de IAs gratuitas](/blog/melhores-ias-gratuitas-2026); o modelo do ChatGPT grátis foi atualizado pela página de preços da OpenAI. A coluna de preço pago foi conferida em 18 de novembro de 2026 nas páginas de planos de OpenAI, Google e Anthropic. O Copilot permanece só com o dado do plano Free já publicado naquele guia.
 
 ## Qual a melhor IA grátis
 
-**Texto e pergunta do dia a dia.** ChatGPT Free, com o GPT-5.6 Luna e chat de texto sem um número máximo publicado. A OpenAI condiciona isso a salvaguardas contra abuso. Arquivo, imagem, voz e análise de dados estouram antes, em outro limite.
+**Texto e pergunta do dia a dia.** ChatGPT Free, com o GPT-6 Luna, o mesmo modelo do plano Go. Arquivo, imagem, voz e análise de dados têm limite próprio, separado do chat de texto.
 
 **Pesquisa ligada à conta Google.** Gemini sem assinatura, no Flash-Lite, com Deep Research, Gemini Live, Canvas, Gems e geração de imagem. A página de planos não coloca Flash, Pro nem Gemini 4 Argon nesse plano.
 
@@ -66,7 +66,7 @@ O ranking por uso, em uma frase cada:
 2. **Melhor para quem já vive no Google:** Gemini sem assinatura.
 3. **Melhor para documento longo no grátis:** Claude Free.
 4. **Melhor para código no editor no grátis:** GitHub Copilot Free.
-5. **Quando o plano pago entra:** no Claude, a página de preços mostra Pro, Max e Ultra com os valores da tabela. No Gemini, o Ultra está em US$ 99,99 ou US$ 199,99 por mês. No ChatGPT, Go, Plus e Pro existem, sem um dólar repetido aqui.
+5. **Quando o plano pago entra:** o mais barato é o Google AI Plus (R$ 24,99/mês); depois vêm ChatGPT Go (US$ 8/mês) e o trio Plus, AI Pro e Claude Pro, perto de US$ 20/mês. O detalhe de cada um está em [qual IA assinar em 2026](/blog/qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro).
 
 Para pesquisar navegando, sem trocar de aba para o chat, o [Comet, navegador de IA da Perplexity](/blog/comet-o-navegador-de-ia-da-perplexity-como-usar-de-graca-e-o-que-muda-no-pro) é gratuito nos recursos básicos; o guia separa o que fica no Pro.
 
@@ -76,7 +76,7 @@ Preço e modelo mudam. Na próxima revisão mensal, a data desta página sobe ju
 
 ### Qual a melhor IA em 2026?
 
-Depende do uso. Para texto cotidiano, a FAQ da OpenAI descreve o ChatGPT Free com o GPT-5.6 Luna. Para a conta Google, a página de planos do Gemini coloca o Flash-Lite no grátis. Para documento longo, o Claude Free inclui Sonnet e Haiku. Para código no editor, o GitHub Copilot Free oferece 2.000 completações por mês.
+Depende do uso. Para texto cotidiano, o ChatGPT Free usa o GPT-6 Luna. Para a conta Google, a página de planos do Gemini coloca o Flash-Lite no grátis. Para documento longo, o Claude Free inclui Sonnet e Haiku. Para código no editor, o GitHub Copilot Free oferece 2.000 completações por mês.
 
 ### Qual o melhor IA gratuito?
 
@@ -92,11 +92,13 @@ No recorte desta página, o ChatGPT Free e o Gemini sem assinatura incluem gera�
 
 ### As IAs pagas valem mais que as grátis?
 
-Vale quando o limite do grátis aparece no meio da tarefa. No Claude, o Pro custa US$ 20 por mês (US$ 17 no anual) e libera Opus, que o Free não tem. No Gemini, o Ultra começa em US$ 99,99 por mês. No ChatGPT, a página de preços separa Go, Plus e Pro do Free, sem um valor copiado para esta tabela.
+Vale quando o limite do grátis aparece no meio da tarefa. No Claude, o Pro custa US$ 20 por mês (US$ 17 no anual) e libera Opus, que o Free não tem. No ChatGPT, o Plus custa US$ 20 e libera o GPT-6 Astra. No Gemini, o AI Pro custa R$ 96,99 no Brasil e libera o Gemini 4 Argon. Para gastar menos, há o ChatGPT Go (US$ 8) e o Google AI Plus (R$ 24,99).
 
 ## Fontes e Referências
 
+- [ChatGPT — planos e preços](https://chatgpt.com/pricing)
 - [ChatGPT Free Tier FAQ — OpenAI Help Center](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq)
 - [Google AI plans — Gemini](https://gemini.google/subscriptions/)
+- [Planos do Google AI no Brasil](https://gemini.google/br/subscriptions/)
 - [Plans and pricing — Claude](https://claude.com/pricing)
 - [Plans for GitHub Copilot — GitHub Docs](https://docs.github.com/en/copilot/get-started/plans)

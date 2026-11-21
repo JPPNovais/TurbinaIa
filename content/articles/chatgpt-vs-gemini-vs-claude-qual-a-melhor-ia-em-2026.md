@@ -1,6 +1,7 @@
 ---
 title: "ChatGPT vs Gemini vs Claude: Qual a Melhor IA em 2026?"
-description: "ChatGPT, Gemini ou Claude: descubra qual a melhor IA para você em 2026 com comparativo completo de recursos, preços e casos de uso."
+seoTitle: "ChatGPT vs Gemini vs Claude: qual a melhor IA em 2026"
+description: "ChatGPT, Gemini ou Claude em 2026: planos, preços conferidos, modelos de cada plano, contexto e qual escolher para escrever, programar e pesquisar."
 category: ferramentas
 tags:
   - ChatGPT
@@ -11,159 +12,140 @@ tags:
 author: Redação Turbina IA
 isFeatured: true
 date: "2026-06-03"
+updatedAt: "2026-11-21"
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
 ---
 
-Se você já se pegou abrindo três abas ao mesmo tempo — uma com ChatGPT, outra com Gemini e outra com Claude — para ver qual responde melhor, saiba que não está sozinho. Em 2026, a disputa entre os grandes modelos de linguagem nunca esteve tão acirrada, e a diferença entre eles importa mais do que nunca dependendo do que você precisa fazer.
+ChatGPT, Gemini e Claude fazem quase as mesmas coisas em 2026: conversam em português, leem arquivos, escrevem, programam e raciocinam em várias etapas. A diferença está no plano que você paga, no modelo que cada plano libera e no ecossistema em que você já trabalha. Este comparativo usa os preços e os modelos por plano conferidos nas páginas oficiais em 18 de novembro de 2026, os mesmos do [comparador de IAs](/comparador).
 
-Este guia compara os três assistentes de IA mais populares do mundo de forma honesta: onde cada um brilha, onde tropeça e, principalmente, qual vale o seu tempo (e dinheiro).
+> **Resposta Rápida (TL;DR):** Para uso geral e o maior leque de recursos no mesmo app, o **ChatGPT**. Para quem vive no Gmail, no Drive e no Android, ou quer o plano pago mais barato, o **Gemini**: o Google AI Plus custa R$ 24,99/mês no Brasil. Para textos longos, revisão cuidadosa e código, o **Claude**. Os três têm plano grátis. Teste o mesmo pedido nos três antes de pagar. Se for assinar, o guia [qual IA assinar em 2026](/blog/qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro) compara plano a plano.
 
-## Resposta Rápida (TL;DR)
-
-**ChatGPT** é a escolha mais versátil e com o ecossistema de plugins mais maduro — ideal para uso geral e produtividade do dia a dia. **Gemini** se destaca quando integração com o Google Workspace e busca em tempo real são prioridade. **Claude** é o favorito de quem trabalha com textos longos, código ou precisa de respostas mais cuidadosas e detalhadas. Para a maioria das pessoas, testar os três no plano gratuito antes de pagar por qualquer um é o caminho mais inteligente.
-
-## Comparativo Rápido
+## Comparativo rápido (novembro de 2026)
 
 | Critério | ChatGPT | Gemini | Claude |
 |---|---|---|---|
-| **Empresa** | OpenAI | Google DeepMind | Anthropic |
-| **Modelo principal** | GPT-4o / o3 | Gemini 2.0 / 2.5 | Claude Opus / Sonnet |
-| **Pontos fortes** | Versatilidade, plugins, DALL-E | Integração Google, busca em tempo real | Textos longos, código, raciocínio |
-| **Janela de contexto** | Até ~128k tokens | Até ~1M tokens (Gemini 1.5+) | Até ~200k tokens |
-| **Plano pago** | ~US$ 20/mês (Plus) | ~US$ 20/mês (Advanced) | ~US$ 20/mês (Pro) |
-| **Melhor para** | Uso geral, criatividade | Pesquisa, integração com Google | Análise, escrita técnica, código |
+| **Empresa** | OpenAI | Google | Anthropic |
+| **Modelo no plano grátis** | GPT-6 Luna (também no Go) | Flash-Lite | Sonnet e Haiku, com limite a cada 5 horas e por semana |
+| **Plano pago de entrada** | Go: US$ 8/mês | AI Plus: US$ 4,99/mês (R$ 24,99 no Brasil) | Pro: US$ 20/mês, ou US$ 17/mês no anual |
+| **Plano "padrão"** | Plus: US$ 20/mês | AI Pro: US$ 19,99/mês (R$ 96,99 no Brasil) | Pro: US$ 20/mês |
+| **Modelos dos planos pagos** | Plus e Pro: GPT-6 Astra, GPT-6.1 Sol e GPT-6 Sol | Plus: Gemini 4 Hydrogen; Pro: Gemini 4 Argon; Ultra: Gemini 4 Carbon | Pro: inclui Opus e Claude Code; Fable à parte, por créditos |
+| **Planos mais caros** | Pro: US$ 100, 200 ou 500/mês | AI Ultra: US$ 99,99 ou 199,99/mês (R$ 779,90 ou R$ 999,90) | Max US$ 100/mês; Ultra US$ 200/mês |
+| **Contexto na API** | 1,05M de tokens (GPT-6 e GPT-6.1) | 1.048.576 tokens | 1M de tokens nos modelos atuais |
+| **Ponto forte** | Versatilidade, imagem no mesmo chat, voz | Integração Google, armazenamento incluso | Documento longo, escrita e código |
 
-Para uma comparação técnica ainda mais detalhada entre modelos, vale usar o [comparador de modelos de IA](/comparador) do Turbina IA — você filtra por contexto, preço e capacidades em segundos.
-
----
+Preços em dólar são os das páginas oficiais; em reais, só o Google publica valor para o Brasil. OpenAI e Anthropic cobram em dólar no cartão, com IOF e câmbio do dia. Para cruzar outros modelos e critérios, use o [comparador de IAs](/comparador). Para o custo da API, que é cobrada à parte da assinatura, a [calculadora de custos](/calculadora) faz a conta em reais.
 
 ## ChatGPT (OpenAI)
 
-O ChatGPT foi o assistente que colocou a IA generativa no mapa em 2022 e desde então não parou de evoluir. Hoje, com os modelos GPT-4o e a linha de raciocínio avançado "o3", ele continua sendo o padrão de mercado pelo qual os outros são medidos.
+O ChatGPT é o assistente mais usado e o que reúne mais funções no mesmo aplicativo: chat, voz, imagem, análise de arquivos e agentes. O plano gratuito e o Go usam o GPT-6 Luna. Plus e Pro liberam o GPT-6 Astra, o GPT-6.1 Sol e o GPT-6 Sol, com limites maiores no Pro.
 
-**Pontos fortes:**
+**Onde se destaca:**
 
-- **Ecossistema maduro:** A loja de GPTs personalizados e a integração com ferramentas externas via plugins dão ao ChatGPT uma flexibilidade que os concorrentes ainda estão tentando alcançar.
-- **Geração de imagens nativa:** A integração com DALL-E permite criar imagens diretamente na conversa, sem precisar trocar de ferramenta.
-- **Modelos de raciocínio:** A linha "o" da OpenAI trouxe capacidade de "pensar em voz alta" antes de responder, o que melhora muito tarefas de lógica e matemática.
-- **Interface mais madura:** Depois de anos de iteração, a experiência de uso do ChatGPT — tanto no app mobile quanto na web — é extremamente polida.
+- **Tudo no mesmo lugar:** texto, imagem (o ChatGPT Images vem incluso, com limite menor no grátis), voz e arquivos sem trocar de ferramenta.
+- **Escada de planos:** do Go a US$ 8 ao Pro a US$ 500, dá para pagar só o que se usa.
+- **Programação:** o Codex é a ferramenta de programação da OpenAI; nos planos Pro, ele não tem o limite de 5 horas.
 
-**Pontos fracos:**
+**Onde tropeça:**
 
-- **Alucinações ainda acontecem:** Como todo modelo de linguagem, o ChatGPT pode inventar fatos com aparente confiança. Sempre vale checar informações críticas.
-- **Contexto menor que o Gemini:** Para processar documentos muito extensos de uma só vez, o Gemini leva vantagem.
-- **Custo pode subir:** As funcionalidades mais avançadas ficam no plano Plus ou nos modelos de API, que têm preços variáveis.
+- **Erros com confiança:** como qualquer modelo, pode inventar dados. Confira o que for crítico.
+- **Preço em dólar:** Plus e Pro são cobrados em dólar, sem preço oficial em reais.
 
-**Casos de uso ideais:** Brainstorming, criação de conteúdo, automação de tarefas cotidianas, geração de imagens, análise de dados com o Code Interpreter e quem já usa o ecossistema OpenAI.
-
-Se você está começando agora, o guia sobre [como usar o ChatGPT](/blog/como-usar-chatgpt-guia-completo-para-iniciantes) é um bom ponto de partida para aproveitar todo o potencial da ferramenta.
-
----
+**Para quem:** uso geral, criação de conteúdo, imagem e quem quer um app só. Começando agora? Veja o guia de [como usar o ChatGPT](/blog/como-usar-chatgpt-guia-completo-para-iniciantes) e a lista de [prompts prontos para ChatGPT](/blog/prompts-prontos-para-chatgpt).
 
 ## Gemini (Google)
 
 ![Comparação entre interfaces de assistentes de IA modernos](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80)
 
-O Gemini é a aposta do Google na corrida das IAs conversacionais, e a empresa não poupou recursos. Com acesso direto ao buscador, ao Google Drive, ao Gmail e ao Google Docs, o Gemini tem uma vantagem estrutural que os concorrentes simplesmente não conseguem replicar — pelo menos não com a mesma profundidade de integração.
+O Gemini vale mais para quem já está no Google: Gmail, Drive, Docs, Android. Os planos de assinatura são do Google AI e incluem armazenamento: 15 GB no grátis, 400 GB no AI Plus, 5 TB no AI Pro e a partir de 20 TB no AI Ultra.
 
-**Pontos fortes:**
+**Onde se destaca:**
 
-- **Busca em tempo real:** Por estar integrado ao Google Search, o Gemini consegue trazer informações atualizadas sem depender apenas do treinamento, o que é crucial para notícias, preços e eventos recentes.
-- **Janela de contexto gigante:** Com até 1 milhão de tokens nos modelos mais recentes, o Gemini consegue processar livros inteiros, repositórios de código ou grandes arquivos de uma só vez.
-- **Integração nativa com Google Workspace:** Se você usa Gmail, Docs, Sheets ou Drive no dia a dia, a sinergia com o Gemini Advanced é difícil de bater.
-- **Multimodalidade avançada:** Análise de vídeo, áudio e imagens com qualidade alta, reflexo direto da infraestrutura do Google.
+- **Plano pago mais barato:** o AI Plus, com o Gemini 4 Hydrogen e o dobro dos limites do grátis, sai por R$ 24,99/mês no Brasil.
+- **Preço em reais:** é o único dos três com tabela oficial em reais.
+- **Ecossistema:** a integração com os apps do Google é o diferencial que os concorrentes não copiam.
 
-**Pontos fracos:**
+**Onde tropeça:**
 
-- **Personalidade mais neutra:** Para quem prefere respostas com mais "voz" e criatividade, o Gemini pode parecer um pouco genérico comparado ao Claude ou ao ChatGPT.
-- **Integração fora do ecossistema Google é limitada:** Se você não usa os produtos do Google, boa parte do diferencial se perde.
+- **Grátis mais enxuto no modelo:** o plano sem custo fica no Flash-Lite; o Gemini 4 Argon só entra no AI Pro.
+- **Fora do Google, perde parte da vantagem:** quem não usa Gmail e Drive aproveita menos a integração.
 
-**Casos de uso ideais:** Pesquisa com dados atualizados, profissionais que vivem no Google Workspace, análise de documentos extensos e projetos que exigem multimodalidade robusta.
-
----
+**Para quem:** pesquisa, rotina no Google Workspace e quem quer pagar pouco. Prompts específicos: [prompts para Gemini](/blog/prompts-para-gemini).
 
 ## Claude (Anthropic)
 
-A Anthropic foi fundada por ex-pesquisadores da OpenAI com um foco declarado em segurança e alinhamento de IA — e isso se reflete diretamente no comportamento do Claude. Em 2026, após a Anthropic superar a OpenAI em valor de mercado, o Claude se consolidou como o favorito técnico de desenvolvedores e escritores profissionais.
+O Claude é o preferido de muita gente que escreve e programa. O grátis tem Sonnet e Haiku, com limite de uso a cada 5 horas e por semana. O Pro libera o Opus e o Claude Code. Max e Ultra multiplicam os limites e incluem créditos de API todo mês: US$ 100 no Max e US$ 200 no Ultra.
 
-**Pontos fortes:**
+**Onde se destaca:**
 
-- **Qualidade de escrita superior:** O Claude tem uma capacidade de produzir texto com coerência, nuance e fluidez que frequentemente supera os concorrentes em avaliações humanas.
-- **Excelente para código:** Entre os três, o Claude (especialmente o Sonnet e o Opus) é frequentemente citado por desenvolvedores como o mais preciso na geração e revisão de código.
-- **Janela de contexto grande:** Com até 200k tokens, processa documentos, contratos e bases de código inteiros sem perder o fio da meada.
-- **Menos propenso a "bajular":** A Anthropic treinou o Claude para discordar com educação quando necessário, o que o torna mais confiável para feedback honesto.
+- **Documento longo e escrita:** bom para contrato, relatório e texto extenso, com contexto de 1M de tokens nos modelos atuais da API.
+- **Código:** o Claude Code vem no Pro; o passo a passo está em [Claude Code: como instalar e usar](/blog/claude-code-como-instalar-e-usar-a-ia-da-anthropic-para-programar-no-terminal).
+- **Créditos de API nos planos altos:** Max e Ultra já trazem crédito mensal para usar a API.
 
-**Pontos fracos:**
+**Onde tropeça:**
 
-- **Sem geração de imagens nativa:** O Claude não tem uma ferramenta visual integrada como o DALL-E no ChatGPT.
-- **Sem acesso à internet em tempo real no plano básico:** A busca em tempo real não é tão fluida quanto no Gemini.
-- **Menos plugins de terceiros:** O ecossistema de integrações ainda é menor que o da OpenAI.
+- **Limite do grátis aparece cedo:** em tarefa longa, a janela de 5 horas pesa. O que cabe no plano sem custo está em [Claude grátis em 2026](/blog/claude-gratis-em-2026-o-que-o-plano-sem-custo-da-anthropic-permite-fazer).
+- **Fable cobrado à parte no Pro:** o modelo mais caro da linha usa créditos de uso no Pro.
 
-**Casos de uso ideais:** Escrita técnica, análise de contratos e documentos longos, desenvolvimento de software, revisão de código e quem precisa de respostas reflexivas e bem fundamentadas.
+**Para quem:** escrita profissional, análise de documentos e programação.
 
----
+## Comparação direta por tarefa
 
-## Comparação Direta: Escrita, Código, Raciocínio e Multimodalidade
+### Escrita
 
-![Redes neurais e processamento de linguagem natural](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80)
+Os três escrevem bem em português, e a diferença aparece mais no estilo do que na correção. O Claude costuma manter a coerência em textos longos; o ChatGPT varia mais o tom; o Gemini tende a respostas mais neutras. O teste prático, com prompts iguais para os três, está no guia [melhor IA para escrever textos](/blog/melhor-ia-para-escrever-textos-chatgpt-claude-ou-gemini).
 
-### Escrita Criativa e Profissional
+### Código
 
-Para **escrita criativa** (contos, roteiros, copy de marketing), o ChatGPT e o Claude dividem o pódio — o primeiro com mais energia e variedade de estilos, o segundo com mais coerência em textos longos. O Gemini é competente, mas tende a ser mais seguro e menos ousado criativamente.
+No chat, os três respondem a pedido de código. Para programar no terminal ou no editor, o Claude Code (incluso no Claude Pro) e o Codex (da OpenAI) são as ferramentas próprias de cada empresa; o que cada plano do ChatGPT libera no Codex está na página de preços do Codex. No plano gratuito, o comparativo está em [melhor IA gratuita para programar](/blog/melhor-ia-gratuita-para-programar-em-2026-copilot-chatgpt-claude-e-gemini-no-codigo).
 
-Para **escrita profissional** (relatórios, e-mails formais, artigos), o Claude é frequentemente apontado como o mais confiável pela precisão do argumento e pela qualidade estrutural do texto. Um bom [guia de prompts](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) faz diferença independentemente de qual ferramenta você escolher.
+### Pesquisa e estudo
 
-### Código e Programação
+O Gemini se apoia na busca do Google e o ChatGPT tem busca na web; os dois trazem informação recente. Para estudar, o teste com resumo e simulado está em [melhor IA gratuita para estudar](/blog/melhor-ia-gratuita-para-estudar-chatgpt-gemini-e-claude-no-resumo-e-no-simulado).
 
-O Claude Sonnet e o Claude Opus têm ganho terreno consistente entre desenvolvedores, especialmente para tarefas de revisão, refatoração e explicação de código complexo. O ChatGPT com o modelo o3 também é muito forte em raciocínio lógico aplicado à programação. O Gemini se beneficia da integração com o Google Colab e ambientes Python, mas em geração de código puro, costuma ficar atrás dos outros dois.
+### Imagem
 
-### Raciocínio e Lógica
+ChatGPT e Gemini geram imagem no próprio chat, inclusive no grátis, com limite. O passo a passo está em [como criar imagens com IA grátis](/blog/como-criar-imagens-com-ia-gratis).
 
-A linha de modelos "o" da OpenAI (o1, o3) introduziu uma abordagem de raciocínio passo a passo que melhorou significativamente o desempenho em matemática e lógica formal. O Claude Opus 4 também avançou muito nessa área. O Gemini 2.5 Pro, com seu modo de "pensamento", compete de perto. Para tarefas cotidianas de raciocínio, os três são comparáveis; para benchmarks extremos, a OpenAI ainda lidera marginalmente.
+## Qual escolher? Recomendação por perfil
 
-### Multimodalidade (Imagens, Áudio, Vídeo)
+**Estudante:** comece pelos planos grátis dos três. Universitários podem ter Gemini grátis por tempo limitado; veja as condições em [Gemini grátis para universitários](/blog/google-libera-gemini-gratis-por-1-ano-para-universitarios-e-lanca-hub-de-estudos-com-simulacoes-3d).
 
-O **Gemini** tem a vantagem mais clara aqui, especialmente para vídeo e áudio, graças à infraestrutura do Google DeepMind. O **ChatGPT** tem geração de imagens com DALL-E integrada. O **Claude** processa imagens bem, mas não gera — e ainda não trabalha com vídeo diretamente.
+**Programador:** Claude Pro, que inclui o Claude Code, ou o ChatGPT com o Codex (sem limite de 5 horas nos planos Pro). Se for integrar por API, compare o custo por tarefa na [calculadora](/calculadora) e no guia de [quanto custa a API do ChatGPT, do Claude e do Gemini em reais](/blog/quanto-custa-a-api-do-chatgpt-do-claude-e-do-gemini-em-reais-exemplos-por-tarefa).
 
----
+**Marketing e conteúdo:** ChatGPT pela imagem e pela variedade de tom; Claude para texto longo. Prompts prontos: [copywriting](/blog/prompts-para-copywriting-e-redacao) e [marketing digital](/blog/prompts-para-marketing-digital).
 
-## Qual Escolher? Recomendação por Perfil
+**Quem vive no Google:** Gemini. O AI Plus é a porta de entrada mais barata, e o AI Pro libera o Gemini 4 Argon com 5 TB.
 
-**Estudante:** Comece com as versões gratuitas dos três para entender as diferenças. Para pesquisas com fontes atualizadas, o Gemini tem vantagem. Para redigir trabalhos e entender textos complexos, o Claude se destaca. Confira também nossa lista das [melhores IAs gratuitas](/blog/melhores-ias-gratuitas-2026) para maximizar o que você tem sem gastar nada.
-
-**Programador:** Claude Sonnet ou Opus para revisão e geração de código. ChatGPT com o3 para debugging lógico e raciocínio matemático. Se você usa APIs e quer comparar custos antes de decidir qual integrar no seu projeto, a [calculadora de custos de API](/calculadora) do Turbina IA é uma ferramenta indispensável.
-
-**Profissional de marketing:** ChatGPT pela versatilidade, integração com DALL-E para assets visuais e o ecossistema de GPTs especializados. Para campanhas que exigem textos longos muito bem escritos, o Claude é uma excelente alternativa.
-
-**Empresa:** Depende do stack. Se a organização vive no Google Workspace, o Gemini Advanced faz sentido. Para desenvolvimento de software e análise de documentos, o Claude via API é difícil de bater. Para automação geral e integração com ferramentas externas, o ChatGPT Enterprise tem o ecossistema mais completo. Use o [comparador de modelos de IA](/comparador) para avaliar tecnicamente qual modelo encaixa melhor na sua necessidade antes de assinar qualquer plano corporativo.
-
-Para quem ainda está descobrindo o mundo das IAs, o artigo sobre [o que é inteligência artificial](/blog/o-que-e-inteligencia-artificial-guia-completo-para-iniciantes) oferece uma base sólida antes de mergulhar nas diferenças entre os modelos.
-
----
+Para ver outras IAs além destas três, o [ranking das melhores IAs em 2026](/blog/melhores-ias-2026-ranking) organiza por uso.
 
 ## Perguntas Frequentes
 
-### O ChatGPT ainda é o melhor assistente de IA em 2026?
+### Qual é melhor, ChatGPT, Gemini ou Claude?
 
-O ChatGPT continua sendo o mais popular e o mais versátil para uso geral, mas "o melhor" depende da tarefa. Para código e textos longos, o Claude frequentemente supera. Para pesquisa com dados em tempo real e integração com Google, o Gemini leva vantagem. A competição em 2026 está muito mais equilibrada do que em 2022 quando o ChatGPT era dominante.
+Depende da tarefa. O ChatGPT é o mais versátil, o Gemini é o melhor para quem usa o Google e tem o plano pago mais barato, e o Claude se destaca em texto longo e código. Os três têm plano grátis, então dá para testar o mesmo pedido antes de pagar.
 
-### Vale a pena pagar pelo plano Plus, Advanced ou Pro?
+### Vale a pena pagar ChatGPT Plus, Google AI Pro ou Claude Pro?
 
-Sim, se você usa a ferramenta com frequência no trabalho ou nos estudos. Os planos pagos (todos em torno de US$ 20/mês) desbloqueiam modelos mais capazes, limites de uso maiores e funcionalidades exclusivas. Para uso casual e exploração, os planos gratuitos ainda são surpreendentemente generosos.
+Vale quando o limite do grátis atrapalha o trabalho. Os três planos "padrão" custam perto de US$ 20 por mês: ChatGPT Plus US$ 20, Google AI Pro US$ 19,99 (R$ 96,99 no Brasil) e Claude Pro US$ 20, ou US$ 17 no anual. Há opções mais baratas: ChatGPT Go a US$ 8 e Google AI Plus a R$ 24,99.
 
-### O Gemini tem acesso à internet e os outros não?
+### Qual tem a maior janela de contexto?
 
-O Gemini tem integração mais profunda com o Google Search por padrão. O ChatGPT também tem busca na web disponível nos planos pagos. O Claude tem acesso limitado à web em algumas configurações. Para tarefas que exigem informações muito recentes, o Gemini ainda tem a integração mais fluida.
+Na API, os três estão na faixa de 1 milhão de tokens: 1,05M no GPT-6 e GPT-6.1, 1.048.576 nos Gemini atuais e 1M nos Claude atuais. No aplicativo, o limite prático depende do plano.
+
+### A assinatura inclui a API?
+
+Não, em regra. A API é cobrada por token em conta de desenvolvedor. A exceção são os planos Max e Ultra do Claude, que incluem US$ 100 e US$ 200 por mês em créditos de API. Para estimar o gasto, use a [calculadora de custos de IA](/calculadora).
 
 ### Posso usar os três ao mesmo tempo?
 
-Sim, e muitos profissionais fazem exatamente isso. Uma estratégia comum é usar o ChatGPT para brainstorming e geração de imagens, o Claude para escrita e código, e o Gemini para pesquisas com fontes atualizadas. Os planos gratuitos permitem testar essa abordagem antes de decidir em qual investir.
-
----
+Sim. Muita gente usa o ChatGPT para ideias e imagem, o Claude para escrita e código e o Gemini para pesquisa. Com os planos grátis dá para montar essa rotina sem pagar nada.
 
 ## Fontes e Referências
 
-- [OpenAI — ChatGPT e modelos GPT](https://openai.com)
-- [Google DeepMind — Gemini](https://deepmind.google/technologies/gemini/)
-- [Anthropic — Claude](https://www.anthropic.com)
-- [LMSYS Chatbot Arena — Rankings independentes de modelos](https://chat.lmsys.org)
+- [ChatGPT — planos e preços](https://chatgpt.com/pricing)
+- [Google AI — planos (Brasil)](https://gemini.google/br/subscriptions/)
+- [Claude — planos e preços](https://claude.com/pricing)
+- [OpenAI API — preços](https://developers.openai.com/api/docs/pricing)
+- [Codex — preços](https://developers.openai.com/codex/pricing)
+- [Gemini API — preços](https://aistudio.google.com/docs/pricing)
+- [Claude API — preços](https://platform.claude.com/docs/en/about-claude/pricing)

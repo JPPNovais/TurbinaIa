@@ -386,7 +386,7 @@ Os que mais economizam tempo são os de headlines com ângulos variados, as fór
 
 ### Qual IA é melhor para copywriting?
 
-ChatGPT, Claude e Gemini escrevem bem em português, e a diferença entre eles aparece mais no estilo do que na qualidade. O caminho mais seguro é rodar o mesmo prompt nos três e ficar com o que soa mais próximo da voz da sua marca. Para comparar planos, preços e recursos lado a lado, use o [comparador de IAs](/comparador).
+ChatGPT, Claude e Gemini escrevem bem em português, e a diferença entre eles aparece mais no estilo do que na qualidade. O caminho mais seguro é rodar o mesmo prompt nos três e ficar com o que soa mais próximo da voz da sua marca; o guia [melhor IA para escrever textos](/blog/melhor-ia-para-escrever-textos-chatgpt-claude-ou-gemini) traz um teste de 3 prompts para isso. Para comparar planos, preços e recursos lado a lado, use o [comparador de IAs](/comparador).
 
 ### Esses prompts funcionam no ChatGPT, no Gemini e no Claude?
 

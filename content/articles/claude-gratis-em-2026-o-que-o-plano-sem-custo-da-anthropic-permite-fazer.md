@@ -74,7 +74,7 @@ Criar uma conta no Claude é simples: basta acessar claude.ai, informar e-mail o
 2. **Ative conectores só quando precisar.** Ligar o Claude ao Google Drive ou ao Notion é útil, mas cada consulta a um documento externo consome parte da cota da mesma forma que uma pergunta direta — vale desligar o que não está em uso.
 3. **Reserve as skills para tarefas repetitivas.** Em vez de explicar do zero como quer um relatório formatado toda vez, uma skill configurada uma única vez economiza instruções — e, por tabela, mensagens — nas conversas seguintes.
 
-**Leia também:** [Melhor IA Gratuita em 2026: ChatGPT, Gemini e Claude](/blog/melhores-ias-gratuitas-2026).
+**Leia também:** [Melhor IA Gratuita em 2026: ChatGPT, Gemini e Claude](/blog/melhores-ias-gratuitas-2026). Se o limite do grátis já atrapalha, veja se o Claude Pro compensa no guia [qual IA assinar em 2026](/blog/qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro).
 
 ## Perguntas Frequentes
 

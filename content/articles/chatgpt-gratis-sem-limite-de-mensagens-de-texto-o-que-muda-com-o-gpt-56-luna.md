@@ -68,7 +68,7 @@ Para quem quer ir além do chat livre e já usa o ChatGPT para tarefas específi
 
 A OpenAI não deu prazo para expandir o "ilimitado" a outras funções, e o texto do anúncio deixa claro que o recurso pode ser ajustado se houver abuso em larga escala. Ainda assim, o movimento sinaliza uma aposta da empresa: manter o usuário gratuito engajado no ecossistema ChatGPT por mais tempo, mesmo sem pagar nada, apostando que uma fração deles eventualmente migra para os planos pagos quando esbarrar nos limites de arquivo, imagem ou voz que continuam de pé.
 
-Com mais mensagens disponíveis no plano grátis, vale ter à mão bons modelos de pedido: reunimos mais de 100 [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) em português, prontos para copiar.
+Com mais mensagens disponíveis no plano grátis, vale ter à mão bons modelos de pedido: reunimos mais de 100 [prompts para ChatGPT](/blog/prompts-prontos-para-chatgpt) em português, prontos para copiar. Para saber quando vale sair do grátis, o guia [qual IA assinar em 2026](/blog/qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro) compara Go, Plus e os planos de Gemini e Claude.
 
 ## Perguntas Frequentes
 

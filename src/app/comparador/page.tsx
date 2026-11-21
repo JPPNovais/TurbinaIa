@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 const FAQS: ToolFaqItem[] = [
   {
     question: 'Qual é a melhor IA em 2026?',
-    answer: 'Não existe uma única "melhor IA": depende do uso. O ChatGPT é o mais versátil, o Gemini se integra ao Google e lida bem com contexto longo, e o Claude se destaca em código e textos extensos. Use o comparador acima para avaliar lado a lado segundo a sua necessidade.',
+    answer: 'Não existe uma única "melhor IA": depende do uso. O ChatGPT é o mais versátil, o Gemini se integra ao Google e lida bem com contexto longo, e o Claude se destaca em código e textos extensos. Use o comparador acima para avaliar lado a lado segundo a sua necessidade, ou veja o [ranking das melhores IAs em 2026](/blog/melhores-ias-2026-ranking), organizado por uso.',
   },
   {
     question: 'Qual a diferença entre ChatGPT, Gemini e Claude?',
@@ -58,6 +58,10 @@ const FAQS: ToolFaqItem[] = [
   {
     question: 'Qual a melhor IA gratuita?',
     answer: 'ChatGPT, Gemini e Claude têm planos gratuitos com limites diários de uso, suficientes para tarefas do dia a dia. A diferença está nos recursos liberados de graça (imagens, pesquisa, arquivos) e no tamanho desses limites. O ranking completo, com outras ferramentas gratuitas, está em [melhores IAs gratuitas de 2026](/blog/melhores-ias-gratuitas-2026).',
+  },
+  {
+    question: 'Qual IA vale a pena assinar?',
+    answer: 'Depende do uso. Os planos padrão custam perto de US$ 20 por mês: ChatGPT Plus US$ 20, Claude Pro US$ 20 (US$ 17 no anual) e Google AI Pro R$ 96,99 no Brasil. O mais barato dos três é o Google AI Plus, a R$ 24,99 por mês. A comparação plano a plano está no guia [qual IA assinar em 2026](/blog/qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro).',
   },
   {
     question: 'Quais IAs o comparador compara?',

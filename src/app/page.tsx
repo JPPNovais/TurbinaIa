@@ -157,10 +157,12 @@ export default async function Home() {
           <strong>Em resumo:</strong> o Turbina IA é o portal brasileiro de Inteligência Artificial —
           notícias diárias, tutoriais e ferramentas gratuitas para você usar IA com mais resultado.
           Para começar agora, veja a nossa lista com mais de 100{' '}
-          <Link href="/blog/prompts-prontos-para-chatgpt" prefetch={false}>prompts para ChatGPT</Link>{' '}
-          prontos para copiar. Para escolher a ferramenta, o{' '}
+          <Link href="/blog/prompts-prontos-para-chatgpt" prefetch={false}>prompts prontos para ChatGPT</Link>{' '}
+          para copiar. Para escolher a ferramenta, o{' '}
           <Link href="/blog/melhores-ias-2026-ranking" prefetch={false}>ranking das melhores IAs em 2026</Link>{' '}
-          organiza por uso, com o que o plano grátis de cada uma inclui.
+          organiza por uso, com o que o plano grátis de cada uma inclui. Se for pagar, o guia{' '}
+          <Link href="/blog/qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro" prefetch={false}>qual IA assinar</Link>{' '}
+          compara os planos de ChatGPT, Gemini e Claude.
         </p>
 
         {/* Destaque maior: Verificador de IA (ferramenta de avaliação) */}

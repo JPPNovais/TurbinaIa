@@ -180,7 +180,7 @@ Um exemplo concreto de uso: capturar um lead via Typeform, inserir em uma planil
 | **Notion AI** | Não (IA completa) | US$ 20/usuário/mês (Business) | Documentação e base de conhecimento |
 | **Zapier** | Sim (100 tarefas) | US$ 19,99/mês (Professional) | Automação entre apps sem código |
 
-Para comparar modelos de IA com ainda mais detalhes — incluindo janela de contexto, benchmarks e custo por token — acesse o [Comparador de IAs](/comparador) do Turbina IA. Se você usa APIs diretamente, a [Calculadora de Custos](/calculadora) ajuda a estimar o gasto mensal por volume de requisições. Explore também o [catálogo completo de ferramentas de IA](/ferramentas) para descobrir opções além das sete listadas aqui.
+Para comparar modelos de IA com ainda mais detalhes — incluindo janela de contexto, benchmarks e custo por token — acesse o [Comparador de IAs](/comparador) do Turbina IA. Se você usa APIs diretamente, a [Calculadora de Custos](/calculadora) ajuda a estimar o gasto mensal por volume de requisições. Explore também o [catálogo completo de ferramentas de IA](/ferramentas) para descobrir opções além das sete listadas aqui. Para escolher o assistente principal, o [ranking das melhores IAs em 2026](/blog/melhores-ias-2026-ranking) separa as opções por uso, com o que o plano grátis de cada uma inclui.
 
 ---
 

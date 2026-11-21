@@ -127,7 +127,7 @@ export default function CalculatorPage() {
     {
       question: 'A assinatura do ChatGPT Plus, do Claude Pro ou do Google AI Pro inclui a API?',
       answer:
-        'Não. As assinaturas dão acesso aos aplicativos de chat; a API é cobrada à parte, por token, em uma conta de desenvolvedor de cada empresa (OpenAI, Anthropic ou Google). Por isso esta calculadora mostra o custo de uso via API, não o preço dos planos. Para comparar os planos, use o [comparador de IAs](/comparador).',
+        'Em regra, não. As assinaturas dão acesso aos aplicativos de chat; a API é cobrada à parte, por token, em uma conta de desenvolvedor de cada empresa (OpenAI, Anthropic ou Google). A exceção são os planos Max e Ultra do Claude, que incluem US$ 100 e US$ 200 por mês em créditos de API. Por isso esta calculadora mostra o custo de uso via API, não o preço dos planos. Para comparar os planos, veja o guia [qual IA assinar em 2026](/blog/qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro) ou o [comparador de IAs](/comparador).',
     },
     {
       question: 'A calculadora de custos de IA é gratuita?',

@@ -32,6 +32,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/blog/melhores-ias-2026-ranking" className="footer-link" prefetch={false}>
+                  Ranking das melhores IAs 2026
+                </Link>
+              </li>
+              <li>
                 <Link href="/categoria/tutoriais" className="footer-link" prefetch={false}>
                   Tutoriais
                 </Link>

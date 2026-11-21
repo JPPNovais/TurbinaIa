@@ -92,7 +92,7 @@ Para recortes por tarefa, há os comparativos de [melhor IA gratuita para estuda
 
 Dá para usar mais de um. O que não dá é tratar o plano grátis de junho de 2026 como se ainda fosse o de novembro: GPT-4o no ChatGPT e Gemini 1.5 Flash saíram desta ficha porque as páginas oficiais atuais descrevem outros modelos.
 
-Quem for passar do grátis para a API encontra o custo por milhão de tokens na [calculadora](/calculadora). Um catálogo maior, incluindo ferramentas pagas, está no [guia de ferramentas](/ferramentas).
+Quem for passar do grátis para a API encontra o custo por milhão de tokens na [calculadora](/calculadora). Um catálogo maior, incluindo ferramentas pagas, está no [guia de ferramentas](/ferramentas). Se o grátis não bastar, o guia [qual IA assinar em 2026](/blog/qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro) compara os planos pagos de ChatGPT, Gemini e Claude, do Google AI Plus de R$ 24,99 aos planos topo de linha.
 
 ## Perguntas Frequentes
 

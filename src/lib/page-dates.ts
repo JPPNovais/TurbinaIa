@@ -86,11 +86,11 @@ interface StaticPageDates {
 
 export const STATIC_PAGE_DATES: Record<string, StaticPageDates> = {
   '/prompts': { sources: ['src/app/prompts', 'src/data/prompts.ts'] },
-  '/comparador': { sources: ['src/app/comparador', 'src/data/ai-models.ts'], reviewedAt: '2026-11-16' },
+  '/comparador': { sources: ['src/app/comparador', 'src/data/ai-models.ts'], reviewedAt: '2026-11-21' },
   '/ferramentas': { sources: ['src/app/ferramentas', 'src/data/ai-tools.ts'] },
   '/calculadora': {
     sources: ['src/app/calculadora', 'src/data/calculator-models.ts', 'src/data/exchange-rate.ts', 'src/lib/api-cost.ts'],
-    reviewedAt: '2026-11-16',
+    reviewedAt: '2026-11-21',
   },
   '/verificador-ia': { sources: ['src/app/verificador-ia', 'src/app/api/aeo-check'] },
   '/gerador': { sources: ['src/app/gerador'] },

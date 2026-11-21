@@ -13,6 +13,45 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-chatgpt-wallet-2026-11',
+    date: '2026-11',
+    title: 'OpenAI lança o ChatGPT Wallet para compras feitas por agentes "dots"',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 13 de novembro de 2026, a OpenAI lançou o ChatGPT Wallet, recurso que permite aos agentes "dots" fazer compras em nome do usuário dentro do ChatGPT, em parceria com bandeiras de cartão como American Express, Mastercard e Visa. O usuário cadastra o cartão uma vez e aprova cada compra individualmente antes da conclusão.',
+    highlights: [
+      'Por ora, o Wallet só está disponível para assinantes do plano Pro nos EUA, dentro das conversas com um dot — não funciona no chat padrão, no ChatGPT Work nem no Codex.',
+      'Segundo a OpenAI, o modelo nunca vê o número real do cartão: a transação usa um token de pagamento, e cada compra exige revisão do item, do valor e do cartão escolhido antes da aprovação (com Face ID, Touch ID ou equivalente).',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'google-gemini-4-neon-2026-11',
+    date: '2026-11',
+    title: 'Google lança o Gemini 4 Neon, modelo intermediário entre o Carbon e o Hydrogen',
+    developer: 'Google',
+    category: 'Lançamento',
+    description: 'Em 18 de novembro de 2026, o Google lançou o Gemini 4 Neon, posicionado como opção de meio-termo entre o Gemini 4 Carbon (voltado às tarefas mais longas e complexas) e o Gemini 4 Hydrogen (modelo rápido do dia a dia). O Neon já está disponível na API Gemini via Google AI Studio, no Gemini para empresas, no Google Antigravity e, dentro do app Gemini, para assinantes dos planos Google AI Pro e Ultra.',
+    highlights: [
+      'A API cobra US$ 3 por milhão de tokens de entrada e US$ 15 por milhão de tokens de saída, com desconto de 95% (US$ 0,15/M) para tokens em cache — não há acesso gratuito ao modelo.',
+      'No app Gemini, o modelo aparece como a opção "Análise mais profunda" no seletor, segundo reportagens que acompanharam o lançamento.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'microsoft-mai-models-ignite-2026-11',
+    date: '2026-11',
+    title: 'Microsoft anuncia nova geração de modelos MAI próprios no Ignite 2026',
+    developer: 'Microsoft',
+    category: 'Lançamento',
+    description: 'Durante o Ignite 2026, em 17 de novembro, a Microsoft anunciou um novo lote de modelos MAI desenvolvidos internamente, cobrindo código (MAI Code 2), cibersegurança (MAI Cyber 2) e geração de imagem (MAI Image 2.7), entre outros voltados a voz e transcrição. A empresa diz que os modelos foram ajustados para custo-benefício, competindo em preço com modelos da OpenAI e da Anthropic.',
+    highlights: [
+      'A cobertura da imprensa diverge sobre o número exato de modelos anunciados (relatos falam em seis ou sete) e sobre preços específicos — os detalhes variam conforme o modelo e ainda não estão totalmente consolidados nas fontes disponíveis.',
+      'O acesso inicial passa pelo Microsoft Foundry, com expectativa de disponibilização futura também em plataformas de terceiros como Fireworks AI, Baseten e OpenRouter.',
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'anthropic-ipo-pricing-nasdaq-debut-2026-11',
     date: '2026-11',
     title: 'Anthropic precifica IPO em US$ 83 por ação e debuta na Nasdaq sob o ticker ANT',

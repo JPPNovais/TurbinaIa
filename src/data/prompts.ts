@@ -8987,4 +8987,30 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Aqui está minha experiência profissional em bullets soltos, sem formatação:\n[Liste suas atividades e conquistas em texto livre, com qualquer número que você tenha — tempo, percentual, quantidade de pessoas, valor]\n\nReescreva cada bullet seguindo o padrão: verbo de ação no passado + o que foi feito + resultado numérico (quando eu tiver fornecido um número). Não use adjetivos genéricos como "proativo", "dinâmico" ou "excelente". Não acrescente nenhuma informação, número ou conquista que eu não tenha escrito acima — se um bullet não tiver número disponível, reescreva só com verbo de ação e o que foi feito, sem inventar uma métrica.',
     tags: ['Currículo', 'Redação', 'Carreira'],
   },
+
+  // REDES SOCIAIS (novos)
+  {
+    id: 'social-resposta-comentario-sem-robotico',
+    title: 'Resposta a Comentário sem Soar Robótico',
+    category: 'Redes Sociais',
+    description: 'Gere uma resposta curta e natural para um comentário específico recebido numa postagem, sem repetir frases genéricas de agradecimento em todo comentário.',
+    template: 'Responda este comentário recebido na minha postagem sobre [tema da postagem]: "[cole o comentário aqui]".\n\nContexto da marca/perfil: [o que a empresa ou perfil vende/faz]\nTom de voz: [ex.: amigável e direto, bem-humorado, formal]\n\nRegras:\n- Resposta de até 2 frases, sem repetir literalmente o que a pessoa escreveu.\n- Não prometa prazo, desconto, reembolso ou solução que eu não tenha autorizado.\n- Se o comentário for uma reclamação, reconheça o problema em público e peça para a pessoa continuar a conversa em um canal privado (direct ou WhatsApp oficial) — não tente resolver o caso todo na própria resposta pública.\n- Evite abrir a resposta sempre com a mesma palavra (ex.: "Oi", "Olá") se eu colar vários comentários em sequência.',
+    tags: ['Redes Sociais', 'Atendimento', 'Comentários', 'Engajamento'],
+  },
+  {
+    id: 'social-triagem-lote-comentarios',
+    title: 'Triagem em Lote de Comentários por Categoria',
+    category: 'Redes Sociais',
+    description: 'Classifique um volume grande de comentários em elogio, dúvida ou reclamação e receba uma sugestão de resposta padrão para cada grupo, útil em lançamentos ou campanhas com muita interação.',
+    template: 'Classifique os comentários abaixo em três grupos — elogio, dúvida e reclamação — e sugira uma resposta curta e natural para cada grupo (não precisa ser uma resposta por comentário individual, só uma por grupo):\n\n[Cole a lista de comentários, um por linha]\n\nContexto: [o que a empresa/perfil vende ou faz]\n\nRegras:\n- Para o grupo "reclamação", a resposta sugerida deve sempre direcionar a pessoa para um canal privado de atendimento, nunca tentar resolver o caso específico em público.\n- Para o grupo "dúvida", aponte se a resposta pode ser respondida com uma informação objetiva ou se depende de dado que eu preciso confirmar antes.\n- Para o grupo "elogio", a resposta deve variar o texto entre os comentários desse grupo, nunca repetir a mesma frase.\n- Ao final, liste quantos comentários caíram em cada grupo.',
+    tags: ['Redes Sociais', 'Atendimento', 'Produtividade', 'Comentários'],
+  },
+  {
+    id: 'social-checklist-transparencia-conteudo-ia',
+    title: 'Checklist de Transparência para Conteúdo de IA em Redes Sociais',
+    category: 'Redes Sociais',
+    description: 'Antes de publicar uma imagem ou vídeo gerado por IA, confira com a IA se o conteúdo provavelmente se encaixa nas regras de rótulo de conteúdo sintético da Meta e do TikTok, e receba um texto de divulgação pronto quando for o caso.',
+    template: 'Vou descrever uma peça de conteúdo que pretendo postar nas redes sociais e você vai me ajudar a decidir se ela precisa de aviso de conteúdo gerado por IA.\n\nDescrição da peça: [descreva a imagem/vídeo: o que aparece, se foi 100% gerado por IA ou só editado com IA, se a cena parece realista ou claramente estilizada/cartoon]\nRede(s) onde vou postar: [Instagram, TikTok, Facebook, outra]\n\nCom base só no que eu descrevi:\n1. Diga se esse tipo de conteúdo tende a se encaixar na categoria "imagem, áudio ou vídeo realista gerado por IA" (que normalmente exige aviso) ou na categoria de conteúdo claramente estilizado/editorial (que normalmente não exige).\n2. Deixe claro que a palavra final é da política de cada plataforma, não da sua análise — eu devo confirmar na central de ajuda da rede antes de postar algo que pareça realista.\n3. Se a resposta for "provavelmente precisa de aviso", escreva uma frase curta e natural de divulgação para eu incluir na legenda, nada de aviso formal e seco.\n4. Não decida por mim se devo ou não publicar — só me ajude a identificar o risco antes de eu decidir.',
+    tags: ['Redes Sociais', 'IA Generativa', 'Transparência', 'Boas Práticas'],
+  },
 ];

@@ -30,6 +30,16 @@ const path = require('path');
  * tem busca ("valor api claude", posição 10; "consumo api gemini") e aponta
  * para a /calculadora, que está entre as páginas com clique. O guia de AEO
  * restante continua no fim.
+ *
+ * Revisão de 21/11/2026 (Search Console 28d até 16/11): a fila tinha zerado
+ * (todos os itens publicados). Entram 9 temas para as próximas 4 semanas, só
+ * guias e listas, sem notícia. Prioridade: (1) listas de prompts, o tipo de
+ * post com mais clique (prompts-para-gemini, marketing, copywriting); (2)
+ * recortes "melhor IA para X" que alimentam o ranking e o /comparador, com
+ * busca vista no GSC ("ia gratuita para criar imagens" e variações, ~15
+ * consultas em posição 50–148, sem página de escolha de ferramenta); (3) um
+ * guia de economia na API que aponta para a /calculadora. Já publicados em
+ * 21/11 e fora da fila: qual-ia-assinar-… e melhor-ia-para-escrever-textos-….
  */
 const BACKLOG = [
   {
@@ -116,6 +126,70 @@ const BACKLOG = [
     coveredBy: /aparecer-nas-respostas-do-gemini|aparecer-nas-respostas-do-copilot|otimizar-para-o-perplexity/i,
     note: 'Guia de AEO. O post de aparecer no ChatGPT já existe: diferencie Gemini, Copilot e Perplexity e linke aquele guia em vez de repeti-lo. Não invente um “algoritmo” desses produtos.',
   },
+  // --- Revisão de 21/11/2026: próximas 4 semanas ---
+  {
+    id: 'prompts-para-claude',
+    title: 'Prompts para Claude: modelos para texto longo, análise de documento e código',
+    seoHint: 'Prompts para Claude: modelos prontos para copiar',
+    coveredBy: /prompts-para-(o-)?claude/i,
+    note: 'Lista no formato dos posts prompts-para-… (blocos de código copiáveis, variáveis em colchetes), espelhando prompts-para-gemini, que tem clique. Foque no que o Claude faz bem: documento longo, revisão, código. Plano e modelo só com src/data/ai-models.ts. Linkar prompts-para-gemini, prompts-prontos-para-chatgpt, claude-gratis-em-2026 e o /comparador.',
+  },
+  {
+    id: 'melhor-ia-imagens',
+    title: 'Melhor IA para criar imagens em 2026: ChatGPT, Gemini, Midjourney e Stable Diffusion',
+    seoHint: 'Melhor IA para criar imagens em 2026 (grátis e paga)',
+    coveredBy: /melhor-ia-para-(criar-|gerar-)?image/i,
+    note: 'Busca vista no Search Console (28d até 16/11/2026): "ia gratuita para criar imagens", "melhor ia para criar imagens gratuitos", "ias gratuitas para gerar imagens", em posição 50–148. Comparativo de ferramenta (qual usar), não tutorial: o passo a passo já está em como-criar-imagens-com-ia-gratis — linke em vez de repetir. Tabela com plano grátis e preço só de src/data/ai-models.ts (ChatGPT Images, Midjourney, Stable Diffusion, Gemini), citando a data de pricesCheckedAt. Linkar o ranking e o /comparador.',
+  },
+  {
+    id: 'prompts-excel-planilhas',
+    title: 'Prompts para Excel e planilhas no ChatGPT: fórmulas, tabela dinâmica e análise de dados',
+    seoHint: 'Prompts para Excel no ChatGPT: fórmulas e análise',
+    coveredBy: /prompts-para-(excel|planilha)/i,
+    note: 'Lista de prompts por tarefa (PROCV/XLOOKUP, SOMASES, tabela dinâmica, limpeza de dados, gráfico, Google Sheets). Cada prompt pede a fórmula e a explicação. Avise para não colar dado pessoal ou sigiloso. Linkar prompts-prontos-para-chatgpt e prompts-para-negocios-e-empreendedores.',
+  },
+  {
+    id: 'gemini-gratis',
+    title: 'Gemini grátis em 2026: o que o plano sem custo do Google inclui e quando vale o AI Plus',
+    seoHint: 'Gemini grátis em 2026: o que inclui e quando pagar',
+    coveredBy: /gemini-gratis-em-|gemini-gratuito-em-|plano-gratis-do-gemini/i,
+    note: 'Espelha claude-gratis-em-2026. Use só o que src/data/ai-models.ts e a página oficial dizem (gratuito: Flash-Lite e 15 GB; AI Plus R$ 24,99; AI Pro R$ 96,99), com a data de pricesCheckedAt. Linkar melhores-ias-gratuitas-2026, qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro e prompts-para-gemini.',
+  },
+  {
+    id: 'prompts-imagens',
+    title: 'Prompts para gerar imagens com IA: 30 modelos por estilo para ChatGPT e Gemini',
+    seoHint: 'Prompts para gerar imagens com IA: 30 modelos',
+    coveredBy: /prompts-para-(gerar-|criar-)?imagens?/i,
+    note: 'Lista de prompts copiáveis por estilo (foto de produto, retrato, ilustração, logo, post de rede social), com a estrutura sujeito + estilo + luz + enquadramento. Não repita os prompts de foto que já estão em como-criar-imagens-com-ia-gratis; linke aquele guia e o de melhor IA para imagens.',
+  },
+  {
+    id: 'melhor-ia-resumir-pdf',
+    title: 'Melhor IA para resumir PDF e documentos longos: ChatGPT, Claude, Gemini e NotebookLM',
+    seoHint: 'Melhor IA para resumir PDF e documentos longos',
+    coveredBy: /melhor-ia-para-resumir|resumir-pdf/i,
+    note: 'Comparativo “melhor IA para X”. Critérios: tamanho do arquivo, contexto (só os números de src/data/ai-models.ts), limite do plano grátis, citação da página de origem. Inclua 3 prompts de resumo copiáveis. Linkar o ranking, melhor-ia-gratuita-para-estudar e a /calculadora (para quem resume em volume pela API).',
+  },
+  {
+    id: 'economizar-api',
+    title: 'Como reduzir o custo da API de IA: modelo menor, cache, Batch e prompt mais curto',
+    seoHint: 'Como reduzir o custo da API de IA (cache e Batch)',
+    coveredBy: /reduzir-o-custo-da-api|economizar-na-api|baratear-a-api/i,
+    note: 'Complementa quanto-custa-a-api-do-chatgpt-do-claude-e-do-gemini-em-reais (não repita a tabela de preços). Use só o que está em src/data/ai-models.ts e calculator-models.ts: Batch com 50% de desconto (OpenAI e Anthropic), Flex pela metade (OpenAI), leitura de cache do Claude, faixa de contexto longo que encarece o prompt acima do limite. Exemplos com src/lib/api-cost.ts e câmbio de src/data/exchange-rate.ts. Linkar a /calculadora em cada exemplo.',
+  },
+  {
+    id: 'prompts-professores',
+    title: 'Prompts para professores: plano de aula, atividade, avaliação e correção com IA',
+    seoHint: 'Prompts para professores: plano de aula e avaliação',
+    coveredBy: /prompts-para-professor/i,
+    note: 'Lista por tarefa com blocos copiáveis (plano de aula pela BNCC, atividade por nível, rubrica, feedback ao aluno, comunicado aos pais). Lembre de não colar dado de aluno. Linkar prompts-para-estudos-e-concursos e melhor-ia-gratuita-para-estudar.',
+  },
+  {
+    id: 'alternativas-chatgpt',
+    title: 'Alternativas ao ChatGPT em 2026: Gemini, Claude, Copilot, Perplexity e DeepSeek',
+    seoHint: 'Alternativas ao ChatGPT em 2026 (grátis e pagas)',
+    coveredBy: /alternativas-ao-chatgpt|concorrentes-do-chatgpt/i,
+    note: 'Busca vista no Search Console: "ias como claude", "concorrente do chatgpt gratuito". Não repita a ficha de melhores-ias-gratuitas-2026 nem o comparativo triplo: organize por motivo da troca (preço, privacidade, documento longo, pesquisa com fonte, código). Plano e preço só de src/data/ai-models.ts. Linkar o ranking, o /comparador e qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro.',
+  },
 ];
 
 function loadArticles(articlesDir) {
@@ -181,7 +255,11 @@ function nextBacklogItem(articles) {
 function suggestInternalPosts(articles, limit = 24) {
   const preferred = [
     'prompts-prontos-para-chatgpt',
+    'melhores-ias-2026-ranking',
     'melhores-ias-gratuitas-2026',
+    'qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro',
+    'melhor-ia-para-escrever-textos-chatgpt-claude-ou-gemini',
+    'quanto-custa-a-api-do-chatgpt-do-claude-e-do-gemini-em-reais-exemplos-por-tarefa',
     'como-aparecer-nas-respostas-do-chatgpt',
     'o-que-e-aeo-geo-como-aparecer-nas-respostas-de-ia',
     'guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa',

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 interface AdSenseProps {
   adSlot: string;
@@ -15,25 +15,6 @@ export default function AdSense({
   fullWidthResponsive = true,
   style = { display: 'block' }
 }: AdSenseProps) {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsClient(true);
-    }, 0);
-
-    try {
-      const win = window as typeof window & { adsbygoogle?: object[] };
-      if (typeof window !== 'undefined' && win.adsbygoogle) {
-        (win.adsbygoogle = win.adsbygoogle || []).push({});
-      }
-    } catch (e) {
-      console.warn('AdSense placement failed, script might be blocked or not loaded yet', e);
-    }
-
-    return () => clearTimeout(timer);
-  }, []);
-
   const adClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || 'ca-pub-placeholder';
 
   // Interruptor de exibição dos blocos. Enquanto o site está em revisão pelo
@@ -41,15 +22,24 @@ export default function AdSense({
   // Ligue (NEXT_PUBLIC_ADS_ENABLED=true) só depois da conta ser aprovada.
   // O script de aprovação carrega no layout independentemente disto.
   const adsEnabled = process.env.NEXT_PUBLIC_ADS_ENABLED === 'true';
+  const isActive = adClientId !== 'ca-pub-placeholder' && adsEnabled;
 
-  // If there's no active AdSense client ID, or ads aren't enabled yet, hide the
-  // ad blocks completely to reclaim space
-  if (adClientId === 'ca-pub-placeholder' || !adsEnabled) {
+  // O <ins> já vem no HTML do servidor (com a altura reservada abaixo), então o
+  // push roda depois de ele existir. Antes o bloco só aparecia após a hidratação:
+  // empurrava o conteúdo para baixo (CLS) e o push acontecia antes do <ins>.
+  useEffect(() => {
+    if (!isActive || process.env.NODE_ENV === 'development') return;
+    try {
+      const win = window as typeof window & { adsbygoogle?: object[] };
+      (win.adsbygoogle = win.adsbygoogle || []).push({});
+    } catch (e) {
+      console.warn('AdSense placement failed, script might be blocked or not loaded yet', e);
+    }
+  }, [isActive]);
+
+  // Sem cliente real ou com os blocos desligados, não ocupa espaço nenhum.
+  if (!isActive) {
     return null;
-  }
-
-  if (!isClient) {
-    return null; // Return null during hydration to avoid CLS while checking environment
   }
 
   // If in development mode (with a real key), render a simulated ad slot for previewing

@@ -14,6 +14,22 @@ interface StaticPage {
 
 // O lastmod de cada página vem de STATIC_PAGE_DATES (src/lib/page-dates.ts).
 
+/**
+ * O Next 16 escreve `url` e `images` no XML sem escapar nada
+ * (node_modules/next/dist/build/webpack/loaders/metadata/resolve-route-data.js).
+ * As capas do Unsplash têm `?auto=format&fit=crop`, e um `&` cru deixava o
+ * sitemap.xml inteiro inválido. Se uma versão futura do Next passar a escapar,
+ * remova esta função (senão vira `&amp;amp;`).
+ */
+function xmlEscape(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
 const STATIC_PAGES: StaticPage[] = [
   { path: '/prompts', changeFrequency: 'weekly', priority: 0.95 },
   { path: '/comparador', changeFrequency: 'weekly', priority: 0.95 },
@@ -38,7 +54,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: getLastModified(article),
     changeFrequency: 'monthly',
     priority: article.category === 'noticias' ? 0.6 : 0.8,
-    ...(article.coverImage ? { images: [article.coverImage] } : {}),
+    ...(article.coverImage ? { images: [xmlEscape(article.coverImage)] } : {}),
   }));
 
   // Páginas de tema: mudam quando entra um post novo nelas.

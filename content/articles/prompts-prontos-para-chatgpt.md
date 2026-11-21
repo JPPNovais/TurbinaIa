@@ -1,7 +1,7 @@
 ---
-title: "+100 Prompts para ChatGPT Prontos para Copiar em Português (2026)"
-seoTitle: "Prompts para ChatGPT: +100 Prontos para Copiar"
-description: "+100 prompts para ChatGPT prontos para copiar, em português: trabalho, e-mail, estudos, marketing, programação, carreira, finanças e dia a dia."
+title: "Prompts Prontos para ChatGPT: Lista com +100 Exemplos e Modelo para Copiar (2026)"
+seoTitle: "Prompts Prontos para ChatGPT: Lista e Modelos para Copiar"
+description: "Lista de +100 prompts prontos para ChatGPT em português, com modelo de prompt para copiar e adaptar: trabalho, e-mail, estudos, marketing e código."
 category: tutoriais
 tags:
   - Prompts
@@ -12,11 +12,15 @@ tags:
 author: Redação Turbina IA
 isFeatured: true
 date: "2026-06-02"
-updatedAt: "2026-11-02"
+updatedAt: "2026-11-21"
 coverImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80"
 ---
 
-## Exemplos de prompt para ChatGPT
+Esta é uma lista de prompts prontos para ChatGPT em português: mais de 100 exemplos separados por área e um modelo de prompt em branco para você preencher. Os 10 primeiros, logo abaixo, são os que resolvem as tarefas mais comuns: resumir, escrever e-mail, explicar um assunto, revisar código e organizar a semana.
+
+**Resposta Rápida (TL;DR):** Um bom prompt para ChatGPT tem quatro partes: papel, contexto, tarefa e formato. Copie um dos 10 exemplos abaixo, troque o que está entre [colchetes] e cole no chat. Para montar o seu, use o [modelo de prompt para ChatGPT](#modelo-de-prompt-para-chatgpt-copie-e-adapte). A lista completa por área vem em seguida, e a [biblioteca de prompts](/prompts) filtra mais de 400 modelos por tarefa.
+
+## Exemplos de prompt para ChatGPT (os 10 mais úteis)
 
 ```
 Resuma a seguinte ata de reunião em até 5 pontos de ação, indicando responsável e prazo para cada um: [cole o texto da ata aqui]
@@ -57,8 +61,6 @@ Redija uma mensagem de feedback construtivo para um colega de equipe sobre [comp
 ```
 Crie um plano de estudos de [duração] para aprender [assunto ou habilidade] do zero. Inclua recursos gratuitos recomendados e uma meta semanal clara.
 ```
-
-**Resposta Rápida (TL;DR):** Os melhores prompts para ChatGPT (o mesmo que muita gente busca como chat gpt) combinam papel, contexto, tarefa e formato. Os 10 acima já dá para copiar. Abaixo há mais de 100 prompts prontos, em português, por área — clique em **Copiar**, troque os [colchetes] e cole no ChatGPT. Para filtrar por tarefa, use a [biblioteca de prompts](/prompts).
 
 Este guia reúne prompts prontos para o ChatGPT organizados por categoria, com variáveis em colchetes. Para montar um prompt do zero, o [guia de prompt engineering](/blog/guia-prompts-chatgpt-como-criar-prompts-perfeitos-para-qualquer-tarefa) aprofunda a técnica. Se a necessidade é usar agora, os modelos desta página bastam.
 
@@ -636,7 +638,7 @@ Sim. Todos os prompts desta página estão em português e funcionam no ChatGPT,
 
 ### Os prompts funcionam em outros modelos além do ChatGPT?
 
-Sim. A maioria dos prompts desta lista funciona bem no Gemini, Claude e outros modelos de linguagem modernos. Pequenos ajustes de tom podem ser necessários — o Claude, por exemplo, tende a seguir instruções de formato com mais precisão, enquanto o Gemini responde bem a contextos com dados factuais.
+Sim. A maioria dos prompts desta lista funciona no Gemini, no Claude e em outros modelos de linguagem atuais, às vezes com pequenos ajustes de tom. Para o Gemini há uma lista própria de [prompts para Gemini](/blog/prompts-para-gemini). Para escolher em qual IA usar cada tipo de tarefa, veja o [ranking das melhores IAs em 2026](/blog/melhores-ias-2026-ranking) ou compare os planos e modelos lado a lado no [comparador de IAs](/comparador).
 
 ### Qual é o tamanho ideal de um prompt?
 

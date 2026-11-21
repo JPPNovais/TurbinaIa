@@ -156,7 +156,11 @@ export function isPromptArticle(article: ArticleMetadata): boolean {
 
 export function isRankingArticle(article: ArticleMetadata): boolean {
   if (article.category === 'noticias') return false;
-  return /(^|-)melhores-|(^|-)vs-|ranking|comparativo/.test(article.slug) || RANKING_TITLE.test(article.title);
+  // "melhor-ia-para-…" e "qual-ia-assinar-…" também são guias de escolha de IA.
+  return (
+    /(^|-)melhores-|(^|-)vs-|ranking|comparativo|^melhor-ia-|^qual-ia-/.test(article.slug) ||
+    RANKING_TITLE.test(article.title)
+  );
 }
 
 export function articleInHub(article: ArticleMetadata, slug: HubSlug): boolean {

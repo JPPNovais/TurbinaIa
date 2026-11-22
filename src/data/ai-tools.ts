@@ -1263,7 +1263,7 @@ export const AI_TOOLS: AITool[] = [
     emoji: '🎵',
     tagline: 'Transcrição de áudio open source e altamente precisa',
     description:
-      'Whisper é o modelo de reconhecimento automático de fala (ASR) da OpenAI, disponível como open source. Suporta transcrição e tradução em mais de 99 idiomas com precisão excepcional, mesmo em áudios com sotaque ou ruído de fundo. Modelos mais recentes baseados em GPT-4o (Transcribe, Transcribe with Diarization, Mini Transcribe, Realtime-Whisper) oferecem maior precisão e recursos adicionais, como identificação de locutor.',
+      'Whisper é o modelo de reconhecimento automático de fala (ASR) da OpenAI, disponível como open source. Suporta transcrição e tradução em mais de 99 idiomas com precisão excepcional, mesmo em áudios com sotaque ou ruído de fundo. Em agosto de 2026, a OpenAI anunciou a descontinuação, na API, do Whisper-1 e de toda a família GPT-4o Transcribe (Transcribe, Mini Transcribe e Transcribe with Diarization), substituídos pelos modelos GPT-Transcribe e GPT-Live-Transcribe.',
     useCases: [
       'Transcrever reuniões, entrevistas e podcasts',
       'Converter áudios de WhatsApp em texto',
@@ -1271,10 +1271,10 @@ export const AI_TOOLS: AITool[] = [
       'Traduzir áudios em idiomas estrangeiros',
     ],
     pricing: 'Grátis',
-    pricingDetails: 'Plano Grátis: Open source e gratuito para uso local. API da OpenAI: GPT-4o Transcribe a US$ 0.006/minuto. GPT-4o Transcribe with Diarization a US$ 0.006/minuto. GPT-4o Mini Transcribe a US$ 0.003/minuto. GPT-Realtime-Whisper (streaming STT) a US$ 0.017/minuto. Modelos mais antigos como Whisper-1 também custam US$ 0.006/minuto.',
+    pricingDetails: 'Plano Grátis: Open source e gratuito para uso local (Whisper original). API da OpenAI: Whisper-1, GPT-4o Transcribe, GPT-4o Mini Transcribe e GPT-4o Transcribe with Diarization foram descontinuados (aviso em 26/08/2026, desligamento em 26/02/2027). Os substitutos recomendados são GPT-Transcribe, a US$ 0,0045/minuto para transcrição de arquivo, e GPT-Live-Transcribe, a US$ 0,017/minuto para transcrição em streaming.',
     url: 'https://openai.com/research/whisper',
     tags: ['transcrição', 'reconhecimento de voz', 'open source', 'áudio', 'legendas', 'stt'],
-    updatedAt: '2026-08',
+    updatedAt: '2026-11',
   },
   {
     id: 'fliki',

@@ -8849,6 +8849,30 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Você é um redator especializado em SEO e dados estruturados. Crie uma seção "Perguntas Frequentes" sobre o tema abaixo, pronta para ser marcada com Schema.org FAQPage.\n\nTema do artigo/página: [Ex: como escolher um notebook para edição de vídeo]\nPúblico-alvo: [Ex: iniciantes, profissionais de uma área específica]\nNúmero de perguntas: [Ex: 3 a 5]\n\nRegras obrigatórias:\n1. Cada pergunta deve ser uma dúvida real que alguém pesquisaria no Google, nunca uma pergunta genérica ou óbvia.\n2. Formate cada pergunta como um heading H3 (###), nunca em negrito — é esse formato que o rich snippet de FAQ e os sistemas de IA extraem.\n3. A resposta deve vir em até 3 frases diretas, respondendo a pergunta já na primeira frase, sem rodeios nem repetir a pergunta.\n4. Não inclua opiniões não verificáveis nem dados que exigiriam fonte externa — se algum fato precisar de fonte, marque com [CONFIRMAR FONTE] em vez de inventar um número.\n5. Evite que duas perguntas tenham respostas que se sobrepõem.',
     tags: ['SEO', 'FAQ', 'Schema', 'AEO'],
   },
+  {
+    id: 'escrita-carta-recomendacao',
+    title: 'Escreva uma Carta de Recomendação Profissional',
+    category: 'Escrita',
+    description: 'Redija uma carta de recomendação sincera e específica para um ex-colega, estagiário ou funcionário, evitando elogios genéricos que não dizem nada sobre a pessoa.',
+    template: 'Você é um profissional experiente escrevendo uma carta de recomendação para [Nome da pessoa], que trabalhou como [cargo] em [empresa/time], sob sua supervisão ou em parceria direta, por [período de tempo].\n\nContexto que você tem sobre essa pessoa:\n- Uma situação concreta em que ela se destacou: [descreva brevemente o que aconteceu e o resultado]\n- Uma habilidade ou característica que a diferencia: [ex: resolve problemas sob pressão, escreve documentação clara, aprende rápido]\n- Para que tipo de vaga ou programa a carta se destina: [ex: vaga de analista sênior, bolsa de pós-graduação, processo seletivo de estágio]\n\nEscreva a carta em [1 página / até 300 palavras], com:\n1. Como e por quanto tempo você conheceu a pessoa, em que contexto.\n2. O exemplo concreto do primeiro ponto, sem inflar o que não foi informado.\n3. Uma frase direta recomendando a pessoa para a situação descrita.\n4. Seus dados de contato para confirmação, no formato [nome, cargo, e-mail].\n\nEvite elogios vagos como "excelente profissional" ou "grande potencial" sem um exemplo que sustente a afirmação.',
+    tags: ['Carreira', 'Carta de Recomendação', 'RH'],
+  },
+  {
+    id: 'escrita-nota-de-imprensa',
+    title: 'Redija uma Nota de Imprensa (Press Release) de Lançamento',
+    category: 'Escrita',
+    description: 'Estruture um press release no formato que jornalistas esperam: a informação mais importante primeiro, citação de porta-voz e dados de contato, sem adjetivos vazios.',
+    template: 'Você é um assessor de imprensa experiente. Escreva uma nota de imprensa sobre o seguinte lançamento ou anúncio:\n\nO que está sendo anunciado: [produto, serviço, parceria, resultado ou evento]\nEmpresa/organização: [nome]\nO que muda na prática para quem é afetado: [explique em 1-2 frases, sem adjetivo, só o fato]\nData em que a informação pode ser publicada: [data ou "imediata"]\nPorta-voz disponível para citação: [nome e cargo]\n\nEstruture a nota assim:\n1. Título direto, sem clickbait, com o fato principal (até 15 palavras).\n2. Primeiro parágrafo (lead) respondendo o quê, quem, quando e por quê, em até 3 frases.\n3. Um parágrafo de contexto explicando por que esse anúncio importa para quem lê.\n4. Uma citação entre aspas do porta-voz, escrita em linguagem natural (como alguém falaria, não como um anúncio).\n5. Um parágrafo final "Sobre [a empresa]" com 2-3 frases objetivas.\n6. Dados de contato para a imprensa no final.\n\nNão use superlativos não comprováveis como "revolucionário", "líder de mercado" ou "pioneiro" a menos que eu tenha informado um dado que sustente a afirmação.',
+    tags: ['Press Release', 'Assessoria de Imprensa', 'Comunicação'],
+  },
+  {
+    id: 'escrita-newsletter-curadoria',
+    title: 'Monte uma Newsletter Semanal de Curadoria',
+    category: 'Escrita',
+    description: 'Transforme uma lista de links e notas soltas em uma newsletter organizada, com uma manchete que resume a edição e um tom de voz consistente.',
+    template: 'Você é o editor de uma newsletter sobre [tema/nicho da newsletter], enviada [frequência, ex: toda sexta-feira] para [descreva o público, ex: profissionais de marketing, desenvolvedores júnior].\n\nMateriais desta edição (links, notas ou resumos que você já levantou):\n[Cole aqui a lista de itens, um por linha, com uma frase de contexto de onde veio cada um]\n\nMonte a edição desta semana com:\n1. Um título de edição que resuma o fio condutor da semana (não liste os assuntos, encontre o que os conecta).\n2. Uma introdução pessoal de 2-3 frases, no tom [Ex: direto e informal / analítico], comentando por que esses itens importam juntos.\n3. Cada item do material em uma seção curta (até 60 palavras), terminando com uma frase de "por que isso importa" — não apenas um resumo do que o link diz.\n4. Uma seção final "Vale seu tempo" com 1 recomendação rápida fora do tema principal (ferramenta, artigo, vídeo).\n5. Um P.S. convidando a responder o e-mail com uma pergunta ou sugestão de pauta.\n\nNão use frases de abertura genéricas como "mais uma semana movimentada no mundo de..." — comece direto pelo fato mais interessante da edição.',
+    tags: ['Newsletter', 'Curadoria', 'E-mail Marketing'],
+  },
 
   // REDES SOCIAIS
   {

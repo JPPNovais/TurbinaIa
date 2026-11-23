@@ -706,11 +706,11 @@ export const AI_TOOLS: AITool[] = [
       'Integrar em aplicações próprias via API',
     ],
     pricing: 'Grátis',
-    pricingDetails: 'Plano Grátis: Open source e gratuito para uso local. DreamStudio (API e web UI) oferece 25 créditos gratuitos para começar, e custa US$ 10 por 1.000 créditos. Stable Image Core (US$ 0.01/imagem), Stable Diffusion 3.5 Large (aprox. US$ 0.065/imagem), Stable Image Ultra (aprox. US$ 0.08/imagem).',
+    pricingDetails: 'Plano Grátis: Open source e gratuito para uso local, sob a Stability AI Community License para quem fatura menos de US$ 1 milhão por ano. DreamStudio (API e web UI) oferece 25 créditos gratuitos para começar, e cada crédito custa US$ 0.01. Stable Image Core (3 créditos, US$ 0.03/imagem), Stable Diffusion 3.5 Large (6.5 créditos, aprox. US$ 0.065/imagem), Stable Image Ultra (8 créditos, aprox. US$ 0.08/imagem).',
     url: 'https://stability.ai',
     tags: ['imagem', 'open source', 'local', 'gratuito', 'customizável', 'comunidade'],
     popularityRank: 16,
-    updatedAt: '2026-08',
+    updatedAt: '2026-11',
   },
   {
     id: 'ideogram',

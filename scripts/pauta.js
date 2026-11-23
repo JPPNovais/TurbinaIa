@@ -40,6 +40,14 @@ const path = require('path');
  * consultas em posição 50–148, sem página de escolha de ferramenta); (3) um
  * guia de economia na API que aponta para a /calculadora. Já publicados em
  * 21/11 e fora da fila: qual-ia-assinar-… e melhor-ia-para-escrever-textos-….
+ *
+ * Revisão de 23/11/2026 (Search Console 15–21/11): apareceram ~30 buscas de
+ * preço de plano do Claude ("quanto custa o claude", "claude valores",
+ * "claude mensalidade em reais", "planos claude code"), várias em posição
+ * 3–11, caindo no claude-gratis-em-2026 (que ganhou tabela em reais). O
+ * gemini-gratis passa a pedir a mesma seção de preço, e entra logo depois um
+ * guia de planos do ChatGPT no mesmo formato. Os dois passam à frente das
+ * listas de prompts de Excel e de imagens.
  */
 const BACKLOG = [
   {
@@ -142,18 +150,25 @@ const BACKLOG = [
     note: 'Busca vista no Search Console (28d até 16/11/2026): "ia gratuita para criar imagens", "melhor ia para criar imagens gratuitos", "ias gratuitas para gerar imagens", em posição 50–148. Comparativo de ferramenta (qual usar), não tutorial: o passo a passo já está em como-criar-imagens-com-ia-gratis — linke em vez de repetir. Tabela com plano grátis e preço só de src/data/ai-models.ts (ChatGPT Images, Midjourney, Stable Diffusion, Gemini), citando a data de pricesCheckedAt. Linkar o ranking e o /comparador.',
   },
   {
+    id: 'gemini-gratis',
+    title: 'Gemini grátis em 2026: o que o plano sem custo do Google inclui e quando vale o AI Plus',
+    seoHint: 'Gemini grátis em 2026: o que inclui e quando pagar',
+    coveredBy: /gemini-gratis-em-|gemini-gratuito-em-|plano-gratis-do-gemini/i,
+    note: 'Espelha claude-gratis-em-2026. Use só o que src/data/ai-models.ts e a página oficial dizem (gratuito: Flash-Lite e 15 GB; AI Plus R$ 24,99; AI Pro R$ 96,99), com a data de pricesCheckedAt. Inclua uma seção "Quanto custa o Gemini em reais" com a tabela dos planos (o Google publica preço em R$ no Brasil, então não converta) e uma pergunta de FAQ "Quanto custa o Gemini Pro?". Linkar melhores-ias-gratuitas-2026, claude-gratis-em-2026-o-que-o-plano-sem-custo-da-anthropic-permite-fazer, qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro e prompts-para-gemini.',
+  },
+  {
+    id: 'chatgpt-planos',
+    title: 'Planos do ChatGPT em 2026: o que o grátis, o Go, o Plus e o Pro incluem e quanto custam em reais',
+    seoHint: 'Planos do ChatGPT: Grátis, Go, Plus e Pro em reais',
+    coveredBy: /planos-do-chatgpt|chatgpt-go-plus-pro|quanto-custa-o-chatgpt/i,
+    note: 'Mesmo formato do claude-gratis-em-2026 (que recebe buscas de preço de plano em posição 3–11): tabela plano a plano e uma tabela em reais. Use só src/data/ai-models.ts (pricing e pricesCheckedAt) e converta pelo câmbio de src/data/exchange-rate.ts citando a data da PTAX e avisando que IOF e impostos ficam de fora; se o plano tiver preço oficial em R$, use esse. Não repita o comparativo de qual-ia-assinar: aqui é só o ChatGPT, com o que cada plano libera (modelos, limites, Codex). FAQ com "Quanto custa o ChatGPT Plus em reais?" e "O ChatGPT Go vale a pena?". Linkar qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro, claude-gratis-em-2026-o-que-o-plano-sem-custo-da-anthropic-permite-fazer, chatgpt-gratis-sem-limite-de-mensagens-de-texto-o-que-muda-com-o-gpt-56-luna e o /comparador.',
+  },
+  {
     id: 'prompts-excel-planilhas',
     title: 'Prompts para Excel e planilhas no ChatGPT: fórmulas, tabela dinâmica e análise de dados',
     seoHint: 'Prompts para Excel no ChatGPT: fórmulas e análise',
     coveredBy: /prompts-para-(excel|planilha)/i,
     note: 'Lista de prompts por tarefa (PROCV/XLOOKUP, SOMASES, tabela dinâmica, limpeza de dados, gráfico, Google Sheets). Cada prompt pede a fórmula e a explicação. Avise para não colar dado pessoal ou sigiloso. Linkar prompts-prontos-para-chatgpt e prompts-para-negocios-e-empreendedores.',
-  },
-  {
-    id: 'gemini-gratis',
-    title: 'Gemini grátis em 2026: o que o plano sem custo do Google inclui e quando vale o AI Plus',
-    seoHint: 'Gemini grátis em 2026: o que inclui e quando pagar',
-    coveredBy: /gemini-gratis-em-|gemini-gratuito-em-|plano-gratis-do-gemini/i,
-    note: 'Espelha claude-gratis-em-2026. Use só o que src/data/ai-models.ts e a página oficial dizem (gratuito: Flash-Lite e 15 GB; AI Plus R$ 24,99; AI Pro R$ 96,99), com a data de pricesCheckedAt. Linkar melhores-ias-gratuitas-2026, qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro e prompts-para-gemini.',
   },
   {
     id: 'prompts-imagens',

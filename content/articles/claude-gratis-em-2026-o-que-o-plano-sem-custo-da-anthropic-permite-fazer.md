@@ -1,7 +1,7 @@
 ---
 title: "Claude Grátis em 2026: o Que o Plano Sem Custo da Anthropic Permite Fazer"
-seoTitle: "Claude Grátis em 2026: o Que o Plano Inclui"
-description: "O Claude gratuito já libera criação de arquivos, conectores e skills, mas não inclui Opus nem Claude Code. Veja os limites reais do plano sem custo."
+seoTitle: "Claude Grátis em 2026: Limites, Planos e Preços"
+description: "O Claude grátis libera Sonnet, arquivos e conectores, mas não Opus nem Claude Code. Veja os limites e quanto custam Pro, Max e Ultra em reais."
 category: ferramentas
 tags:
   - Claude
@@ -10,12 +10,13 @@ tags:
 author: Redação Turbina IA
 isFeatured: false
 date: "2026-11-05"
+updatedAt: "2026-11-23"
 coverImage: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80"
 ---
 
 Criar e editar planilhas, conectar o chat ao Google Drive e usar skills prontas para PDF e PowerPoint: nada disso custava zero antes de fevereiro de 2026. A Anthropic liberou esse pacote para quem usa o Claude sem pagar justamente quando a OpenAI começou a testar anúncios no ChatGPT gratuito — um contraste que a própria empresa não deixou passar em branco, repetindo em vários canais que o Claude continuaria "sem anúncios à vista" ([MacRumors](https://www.macrumors.com/2026/02/11/anthropic-claude-more-free-features/)).
 
-> **Resposta Rápida (TL;DR):** O plano grátis do Claude dá acesso aos modelos Sonnet e Haiku, com uso limitado renovado a cada 5 horas e por semana, além de até 5 Projects, busca na web, memória entre conversas, conectores, skills e criação de arquivos. Não inclui Opus, Claude Code, Research nem prioridade em horários de pico — para isso é preciso o plano Pro, a partir de US$ 20/mês.
+> **Resposta Rápida (TL;DR):** O plano grátis do Claude dá acesso aos modelos Sonnet e Haiku, com uso limitado renovado a cada 5 horas e por semana, além de até 5 Projects, busca na web, memória entre conversas, conectores, skills e criação de arquivos. Não inclui Opus, Claude Code, Research nem prioridade em horários de pico — para isso é preciso o plano Pro, que custa US$ 20/mês no mensal ou US$ 17/mês no anual (cerca de R$ 118 e R$ 100 pela PTAX de 19/11/2026, antes de IOF e impostos). O Max sai por US$ 100/mês e o Ultra por US$ 200/mês.
 
 ## O que está disponível sem pagar nada
 
@@ -43,13 +44,27 @@ A mesma central de ajuda resume a proposta do Pro em uma frase: pelo menos cinco
 | Plano | Preço | Modelos | Claude Code | Uso por sessão |
 |---|---|---|---|---|
 | Free | US$ 0 | Sonnet, Haiku | Não | Limitado, renovado a cada 5h |
-| Pro | US$ 20/mês (ou US$ 17/mês anual) | Sonnet, Haiku, Opus | Sim (teto compartilhado) | Pelo menos 5x o do Free |
-| Max | US$ 100/mês | Todos os modelos | Sim | Maior que o Pro |
-| Ultra | US$ 200/mês | Todos os modelos | Sim | O maior entre os planos individuais |
+| Pro | US$ 20/mês (ou US$ 17/mês no anual, US$ 200 cobrados de uma vez) | Sonnet, Haiku, Opus; Fable só com créditos de uso | Sim (teto compartilhado) | Pelo menos 5x o do Free |
+| Max | US$ 100/mês | Todos, com Fable até metade do limite semanal | Sim | 5x o do Pro, a cada 5h e por semana |
+| Ultra | US$ 200/mês | Todos, com Fable até metade do limite semanal | Sim | 10x o do Pro por semana, sem limite de 5h para contas verificadas |
 
-*Valores e recursos conforme a página oficial de preços da Anthropic; ambos os planos individuais só estão disponíveis em regiões suportadas ([Claude Pricing](https://claude.com/pricing)).*
+*Valores e recursos conforme a página oficial de preços da Anthropic, conferida em 23/11/2026. Os preços não incluem impostos, e Max e Ultra só têm cobrança mensal ([Claude Pricing](https://claude.com/pricing)).*
 
-Para quem usa IA no trabalho em equipe, a Anthropic também vende assentos de Team — US$ 20 por pessoa/mês na cobrança anual no nível padrão, chegando a US$ 100 por pessoa/mês no nível premium, para times de 2 a 150 integrantes — e um plano Enterprise com piso de 20 assentos e cobrança de uso adicional nas tarifas da API.
+Para quem usa IA no trabalho em equipe, a Anthropic também vende assentos de Team para times de 2 a 150 pessoas: o assento padrão custa US$ 20 por pessoa/mês na cobrança anual ou US$ 25 na mensal, e o premium, com 5x o uso do padrão, US$ 100 no anual ou US$ 125 no mensal. O Enterprise cobra US$ 20 por assento/mês, com mínimo de 20 assentos e cobrança anual, mais o uso nas tarifas da API ([Claude Pricing](https://claude.com/pricing)).
+
+### Quanto custa o Claude em reais
+
+A Anthropic cobra em dólar. Convertendo pela PTAX de venda do Banco Central de 19/11/2026 (R$ 5,8889 por dólar), os valores ficam assim, **antes do IOF e de impostos** cobrados pelo cartão:
+
+| Plano | Preço oficial | Em reais (PTAX 19/11/2026) |
+|---|---|---|
+| Pro mensal | US$ 20/mês | cerca de R$ 118/mês |
+| Pro anual | US$ 200/ano (US$ 17/mês) | cerca de R$ 1.178/ano (R$ 100/mês) |
+| Max | US$ 100/mês | cerca de R$ 589/mês |
+| Ultra | US$ 200/mês | cerca de R$ 1.178/mês |
+| Team padrão | US$ 20 (anual) ou US$ 25 (mensal) por pessoa/mês | cerca de R$ 118 ou R$ 147 por pessoa/mês |
+
+O valor final na fatura muda com o câmbio do dia do fechamento e com o IOF da sua operadora. Para comparar com o ChatGPT Plus e o Google AI Pro, que tem preço em reais no Brasil, veja o guia [qual IA assinar em 2026](/blog/qual-ia-assinar-chatgpt-plus-claude-pro-ou-google-ai-pro).
 
 
 ![Imagem ilustrativa sobre Claude Grátis em 2026: o Que o Plano Sem Custo da Anthropic Permite Fazer](https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80)
@@ -85,6 +100,14 @@ A Anthropic não divulga um número fixo de mensagens. A empresa descreve o limi
 ### O plano grátis do Claude dá acesso ao Claude Code?
 
 Não. O acesso ao Claude Code, o agente de linha de comando para programação, é um benefício listado especificamente para assinantes do plano Pro ou superior, com uso compartilhado entre o chat e o terminal ([Central de Ajuda do Claude](https://support.claude.com/en/articles/8325606-what-is-the-pro-plan)).
+
+### Quanto custa o Claude Pro em reais?
+
+O Pro custa US$ 20 por mês na cobrança mensal ou US$ 200 por ano (US$ 17 por mês) no anual. Pela PTAX de 19/11/2026, isso dá cerca de R$ 118 por mês ou R$ 1.178 por ano, antes do IOF e de impostos. A cobrança é em dólar no cartão ([Claude Pricing](https://claude.com/pricing)).
+
+### Quanto custa o Claude Code?
+
+O Claude Code não tem preço separado: ele está incluído em todos os planos pagos, a partir do Pro (US$ 20/mês ou US$ 17/mês no anual), e divide o mesmo limite de uso do chat. O passo a passo de instalação está no guia do [Claude Code](/blog/claude-code-como-instalar-e-usar-a-ia-da-anthropic-para-programar-no-terminal) ([Claude Pricing](https://claude.com/pricing)).
 
 ### Dá para criar arquivos como Word e Excel sem pagar pelo Claude?
 

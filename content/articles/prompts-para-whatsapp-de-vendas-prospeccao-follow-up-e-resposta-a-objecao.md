@@ -1,7 +1,7 @@
 ---
 title: "Prompts para WhatsApp de Vendas: Prospecção, Follow-up e Resposta a Objeção"
-seoTitle: "Prompts para WhatsApp de Vendas: Guia Completo 2026"
-description: "Prompts prontos para prospecção, follow-up e resposta a objeção no WhatsApp de vendas, com as regras de opt-in que o ChatGPT não sabe sozinho."
+seoTitle: "Prompts para Prospecção de Clientes no WhatsApp"
+description: "Prompts prontos para prospecção de clientes via WhatsApp, follow-up e resposta a objeção, com as regras de opt-in que o ChatGPT não sabe sozinho."
 category: tutoriais
 tags:
   - Prompts
@@ -36,7 +36,7 @@ No Brasil, a LGPD reforça essa régua. A primeira multa aplicada pela ANPD — 
 
 ![Imagem ilustrativa sobre Prompts para WhatsApp de Vendas: Prospecção, Follow-up e Resposta a Objeção](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80)
 
-## Prospecção: a primeira mensagem para quem já deu permissão
+## Prompt para prospecção de clientes via WhatsApp: a primeira mensagem
 
 Uma mensagem de prospecção no WhatsApp não é um e-mail encurtado. O formato pede frase curta, sem a introdução formal de "Prezado(a)", e uma pergunta real no final em vez de um convite genérico para "conhecer mais".
 

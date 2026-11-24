@@ -44,6 +44,16 @@ export const AI_MODELS: CalculatorModel[] = [
     pricingUrl: 'https://aistudio.google.com/docs/pricing',
   },
   {
+    name: 'Gemini 4 Neon',
+    provider: 'Google',
+    inputPricePerM: 3.00,
+    outputPricePerM: 15.00,
+    contextWindow: '1M tokens',
+    description: 'Lançado em 18 de novembro de 2026, fica entre o Gemini 4 Hydrogen (mais rápido e cotidiano) e o Gemini 4 Carbon (projetos mais difíceis e de longo horizonte), voltado a programação, análise de dados e cibersegurança, com 1.048.576 tokens de contexto. Disponível via Gemini API, Google AI Studio e Vertex AI, e no app Gemini para assinantes do Google AI Pro e Ultra; não está no tier gratuito. Leitura de cache a US$ 0,15 por milhão de tokens. O preço de saída inclui os tokens de raciocínio.',
+    pricesCheckedAt: '2026-11-24',
+    pricingUrl: 'https://aistudio.google.com/docs/pricing',
+  },
+  {
     name: 'Gemini 4 Hydrogen',
     provider: 'Google',
     inputPricePerM: 1.50,

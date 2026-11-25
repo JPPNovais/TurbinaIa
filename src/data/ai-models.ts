@@ -27,7 +27,7 @@ export const aiModels: AIModel[] = [
     name: 'ChatGPT (GPT-6 Astra, GPT-6.1 Sol, GPT-6 Sol, GPT-6 Luna e GPT-5.6)',
     developer: 'OpenAI',
     category: 'Texto & Código',
-    pricing: 'Plano gratuito disponível; Go US$ 8/mês; Plus US$ 20/mês; Pro US$ 100, US$ 200 ou US$ 500/mês. Business: US$ 20 por usuário/mês no plano anual ou US$ 25 no mensal, a partir de 2 usuários. Enterprise e Edu: preço sob consulta — consultar site oficial. No ChatGPT, os planos gratuito e Go dão acesso ao GPT-6 Luna; Plus e Pro dão acesso ao GPT-6 Astra, ao GPT-6.1 Sol e ao GPT-6 Sol, com limites ampliados no Pro. No Codex, os planos Pro não têm limite de 5 horas e o Pro de US$ 500 inclui o modo Ultrafast. API, por milhão de tokens de entrada/saída, para prompts de até 272 mil tokens: GPT-6.2 Astra US$ 8/US$ 40; GPT-6.2 Sol US$ 2/US$ 10; GPT-6 Astra US$ 10/US$ 50; GPT-6.1 Sol US$ 2/US$ 10; GPT-6.1 Terra US$ 1/US$ 5; GPT-6 Sol US$ 2/US$ 10; GPT-6 Luna US$ 0,10/US$ 0,50; GPT-5.6 Sol US$ 4/US$ 20, preço promocional até 30 de novembro de 2026. Acima de 272 mil tokens de entrada vale a faixa de contexto longo, por exemplo US$ 20/US$ 75 no GPT-6 Astra. Batch e Flex custam metade. Janela de contexto de 1,05M de tokens e saída de até 128 mil tokens nos modelos GPT-6 e GPT-6.1.',
+    pricing: 'Plano gratuito disponível; Go US$ 8/mês; Plus US$ 20/mês; Pro US$ 100, US$ 200 ou US$ 500/mês. Business: US$ 20 por usuário/mês no plano anual ou US$ 25 no mensal, a partir de 2 usuários; a OpenAI está implantando também um assento Premium, com mais uso que o Standard e sem limite de 5 horas — preço do assento Premium: consultar site oficial. Enterprise e Edu: preço sob consulta — consultar site oficial. No ChatGPT, os planos gratuito e Go dão acesso ao GPT-6 Luna; Plus e Pro dão acesso ao GPT-6 Astra, ao GPT-6.1 Sol e ao GPT-6 Sol, com limites ampliados no Pro. No Codex, os planos Pro não têm limite de 5 horas e o Pro de US$ 500 inclui o modo Ultrafast. API, por milhão de tokens de entrada/saída, para prompts de até 272 mil tokens: GPT-6.2 Astra US$ 8/US$ 40; GPT-6.2 Sol US$ 2/US$ 10; GPT-6 Astra US$ 10/US$ 50; GPT-6.1 Sol US$ 2/US$ 10; GPT-6.1 Terra US$ 1/US$ 5; GPT-6 Sol US$ 2/US$ 10; GPT-6 Luna US$ 0,10/US$ 0,50; GPT-5.6 Sol US$ 4/US$ 20, preço promocional até 30 de novembro de 2026. Acima de 272 mil tokens de entrada vale a faixa de contexto longo, por exemplo US$ 20/US$ 75 no GPT-6 Astra. Batch e Flex custam metade. Janela de contexto de 1,05M de tokens e saída de até 128 mil tokens nos modelos GPT-6 e GPT-6.1.',
     pros: [
       'GPT-5.6 Sol (versão de agosto de 2026, lançado em 6 de agosto de 2026) é o modelo principal atualizado da OpenAI para usuários Plus e Pro no chat padrão, oferecendo fatos mais confiáveis, respostas mais focadas, maior consistência e um novo slider para escolher o esforço de raciocínio (Instant a High).',
       'GPT-5.6 Luna (versão de agosto de 2026, lançado em 6 de agosto de 2026) é o novo modelo padrão para usuários dos planos Free e Go no chat padrão, com acesso a chats de texto ilimitados (sujeito a limites de uso indevido) e um novo "Think button" para raciocínio mais profundo em perguntas difíceis (disponível a partir da semana de 10 de agosto de 2026).',
@@ -104,7 +104,7 @@ export const aiModels: AIModel[] = [
       value: 4.9
     },
     affiliateUrl: 'https://chatgpt.com',
-    pricesCheckedAt: '2026-11-18',
+    pricesCheckedAt: '2026-11-25',
     pricingSources: [
       'https://chatgpt.com/pricing',
       'https://developers.openai.com/codex/pricing',
@@ -117,7 +117,7 @@ export const aiModels: AIModel[] = [
     name: 'Claude Opus 5.5, Claude Sonnet 5.5, Claude Haiku 5.5, Claude Fable 5.2, Claude Opus 5, Claude Sonnet 5, Claude Haiku 4.5',
     developer: 'Anthropic',
     category: 'Texto & Código',
-    pricing: 'Plano gratuito disponível; Pro US$ 20/mês ou US$ 17/mês no plano anual; Max US$ 100/mês; Ultra US$ 200/mês. No anual do Pro, os US$ 200 são cobrados de uma vez. O gratuito tem uso limitado a cada 5 horas e por semana, sem Opus e sem Fable. Pro: inclui Claude Code e Opus; o Fable é pago à parte com créditos de uso. Max: 5x o uso do Pro a cada 5 horas e por semana, Fable incluído até metade do limite semanal e US$ 100/mês em créditos de API. Ultra: 10x o uso semanal do Pro, sem limite de 5 horas para contas verificadas, Fable até metade do limite semanal e US$ 200/mês em créditos de API. Team, de 2 a 150 pessoas: assento Standard por US$ 20/usuário/mês no anual ou US$ 25 no mensal; assento Premium por US$ 100 no anual ou US$ 125 no mensal, com 5x o uso do Standard e Fable até metade do limite semanal. Enterprise: US$ 20 por assento/mês no plano anual, mínimo de 20 assentos, mais o uso cobrado pelas tarifas da API. API, por milhão de tokens de entrada/saída: Claude Fable 5.2 US$ 8/US$ 40; Fable 5.1 US$ 10/US$ 50; Opus 5.5 US$ 4/US$ 20; Opus 5 US$ 5/US$ 25; Sonnet 5.5 e Sonnet 5 US$ 2/US$ 10; Haiku 5.5 US$ 0,10/US$ 0,50 para prompts de até 100 mil tokens e US$ 0,50/US$ 2,50 acima disso; Haiku 4.5 US$ 1/US$ 5. Leitura de cache: US$ 0,20 no Fable 5.2 e no Opus 5.5, US$ 0,10 no Sonnet 5.5. Modo Fast: Fable 5.2 a US$ 16/US$ 80 e Opus 5.5 a US$ 8/US$ 40. Batch API com 50% de desconto. Contexto de 1M de tokens e saída de até 128 mil tokens nos modelos atuais.',
+    pricing: 'Plano gratuito disponível; Pro US$ 20/mês ou US$ 17/mês no plano anual; Max US$ 100/mês; Ultra US$ 200/mês. No anual do Pro, os US$ 200 são cobrados de uma vez. O gratuito tem uso limitado a cada 5 horas e por semana, sem Opus e sem Fable. Pro: inclui Claude Code e Opus; o Fable é pago à parte com créditos de uso. Max: 5x o uso do Pro a cada 5 horas e por semana, Fable incluído até metade do limite semanal e US$ 100/mês em créditos de API. Ultra: 10x o uso semanal do Pro, sem limite de 5 horas para contas verificadas, Fable até metade do limite semanal e US$ 200/mês em créditos de API. Team, de 2 a 150 pessoas: assento Standard por US$ 20/usuário/mês no anual ou US$ 25 no mensal; assento Premium por US$ 100 no anual ou US$ 125 no mensal, com 5x o uso do Standard e Fable até metade do limite semanal; o Team inclui até US$ 500/mês em créditos de API compartilhados. Enterprise: US$ 20 por assento/mês no plano anual, mínimo de 20 assentos, mais o uso cobrado pelas tarifas da API. API, por milhão de tokens de entrada/saída: Claude Fable 5.2 US$ 8/US$ 40; Fable 5.1 US$ 10/US$ 50; Opus 5.5 US$ 4/US$ 20; Opus 5 US$ 5/US$ 25; Sonnet 5.5 e Sonnet 5 US$ 2/US$ 10; Haiku 5.5 US$ 0,10/US$ 0,50 para prompts de até 100 mil tokens e US$ 0,50/US$ 2,50 acima disso; Haiku 4.5 US$ 1/US$ 5. Leitura de cache: US$ 0,20 no Fable 5.2 e no Opus 5.5, US$ 0,10 no Sonnet 5.5. Modo Fast: Fable 5.2 a US$ 16/US$ 80 e Opus 5.5 a US$ 8/US$ 40. Batch API com 50% de desconto. Contexto de 1M de tokens e saída de até 128 mil tokens nos modelos atuais.',
     pros: [
       'Claude Fable 5.2 (lançado em 9 de novembro de 2026, junto com a variante restrita Mythos 5.2) substitui o Fable 5.1 como topo de linha da Anthropic para tarefas agênticas longas, com saída até 30% mais rápida e preço de API cerca de 20% menor (US$ 8.00/US$ 40.00 por milhão de tokens de entrada/saída, contra US$ 10.00/US$ 50.00 do Fable 5.1); disponível em todos os planos pagos (Pro, Max, Ultra, Team, Enterprise) e via API, AWS, Google Cloud e Azure.',
       'Claude Opus 5.5 (lançado em 22 de setembro de 2026, primeiro modelo da nova família 5.5) substitui o Opus 5 como topo de linha em todos os planos e na API, com desempenho equivalente ao Claude Fable 5.1 em boa parte das tarefas, cerca de 40% mais barato para rodar e respostas mais de 30% mais rápidas.',
@@ -179,7 +179,7 @@ export const aiModels: AIModel[] = [
       value: 4.9
     },
     affiliateUrl: 'https://claude.ai',
-    pricesCheckedAt: '2026-11-18',
+    pricesCheckedAt: '2026-11-25',
     pricingSources: [
       'https://claude.com/pricing',
       'https://platform.claude.com/docs/en/about-claude/pricing',
@@ -192,7 +192,7 @@ export const aiModels: AIModel[] = [
     name: 'Gemini 3.x Models (Gemini 3.1 Pro, Gemini 3.5 Flash, Gemini 3.5 Flash-Lite, Gemini 3.6 Flash, Gemini 3.7 Flash, Gemini 3.8 Flash, Gemini AI Pro, Gemini AI Ultra)',
     developer: 'Google',
     category: 'Texto & Código',
-    pricing: 'Plano gratuito disponível; Google AI Plus US$ 4,99/mês; Google AI Pro US$ 19,99/mês; Google AI Ultra US$ 99,99 ou US$ 199,99/mês. No Brasil: AI Plus R$ 24,99/mês, AI Pro R$ 96,99/mês e AI Ultra R$ 779,90 ou R$ 999,90/mês. O gratuito dá acesso ao modelo Flash-Lite e 15 GB de armazenamento. Plus: Gemini 4 Hydrogen, o dobro dos limites do gratuito e 400 GB. Pro: Gemini 4 Argon e o modelo Pro, 4x os limites do gratuito e 5 TB. Ultra: Gemini 4 Carbon, 5x os limites do AI Pro no plano de US$ 99,99 ou 20x no de US$ 199,99, e a partir de 20 TB. Gemini Enterprise: a partir de US$ 30 por licença/mês; preço de cada edição (Business, Standard e Plus): consultar site oficial. API no tier pago, por milhão de tokens de entrada/saída: Gemini 4 Carbon e Gemini 4 Argon US$ 2/US$ 10 até 30 de novembro de 2026 e US$ 4/US$ 20 a partir de 1º de dezembro; Gemini 4 Neon US$ 3/US$ 15; Gemini 4 Hydrogen US$ 1,50/US$ 7,50; Gemini 3.8 Flash e 3.6 Flash US$ 0,75/US$ 3,75 até 31 de dezembro de 2026 e US$ 1,50/US$ 7,50 depois; Gemini 3.1 Pro Preview US$ 2/US$ 12 para prompts de até 200 mil tokens e US$ 4/US$ 18 acima; Gemini 3.5 Flash-Lite US$ 0,30/US$ 2,50; Gemini 3.1 Flash-Lite US$ 0,25/US$ 1,50. Os tokens de raciocínio são cobrados como saída. Contexto de 1.048.576 tokens nesses modelos. A partir de 1º de dezembro de 2026, as chamadas ao Gemini 2.5 Pro na API passam a ser atendidas pelo Gemini 3.8 Flash e cobradas pelo preço dele.',
+    pricing: 'Plano gratuito disponível; Google AI Plus US$ 4,99/mês; Google AI Pro US$ 19,99/mês; Google AI Ultra US$ 99,99 ou US$ 199,99/mês. No Brasil: AI Plus R$ 24,99/mês, AI Pro R$ 96,99/mês e AI Ultra R$ 779,90 ou R$ 999,90/mês. O gratuito tem seleção automática de modelo e 15 GB de armazenamento. Plus: Gemini 4 Hydrogen, o dobro dos limites do gratuito e 400 GB. Pro: Gemini 4 Neon e Gemini 4 Hydrogen, 4x os limites do gratuito e 5 TB. Ultra: acesso máximo ao Gemini 4 Carbon, ao Gemini 4 Neon e ao Gemini 4 Hydrogen, 5x os limites do AI Pro no plano de US$ 99,99 ou 20x no de US$ 199,99, e a partir de 20 TB. Gemini Enterprise: a partir de US$ 30 por licença/mês; preço de cada edição (Business, Standard e Plus): consultar site oficial. API no tier pago, por milhão de tokens de entrada/saída: Gemini 4 Carbon e Gemini 4 Argon US$ 2/US$ 10 até 30 de novembro de 2026 e US$ 4/US$ 20 a partir de 1º de dezembro; Gemini 4 Neon US$ 3/US$ 15; Gemini 4 Hydrogen US$ 1,50/US$ 7,50; Gemini 3.8 Flash e 3.6 Flash US$ 0,75/US$ 3,75 até 31 de dezembro de 2026 e US$ 1,50/US$ 7,50 depois; Gemini 3.1 Pro Preview US$ 2/US$ 12 para prompts de até 200 mil tokens e US$ 4/US$ 18 acima; Gemini 3.5 Flash-Lite US$ 0,30/US$ 2,50; Gemini 3.1 Flash-Lite US$ 0,25/US$ 1,50. Os tokens de raciocínio são cobrados como saída. Contexto de 1.048.576 tokens nesses modelos. A partir de 1º de dezembro de 2026, as chamadas ao Gemini 2.5 Pro na API passam a ser atendidas pelo Gemini 3.8 Flash e cobradas pelo preço dele.',
     pros: [
       'Modelos Gemini 3.x oferecem uma vasta janela de contexto de até 1 milhão de tokens em todos os tiers, ideal para processar grandes volumes de informações em texto, imagem, áudio e vídeo.',
       'Gemini 3.5 Flash e 3.6 Flash são modelos de produção de ponta do Google, otimizados para tarefas de alto volume com velocidade e custo-benefício.',
@@ -241,9 +241,9 @@ export const aiModels: AIModel[] = [
       value: 4.7
     },
     affiliateUrl: 'https://aistudio.google.com',
-    pricesCheckedAt: '2026-11-24',
+    pricesCheckedAt: '2026-11-25',
     pricingSources: [
-      'https://gemini.google/subscriptions/',
+      'https://gemini.google/us/subscriptions/?hl=en',
       'https://gemini.google/br/subscriptions/',
       'https://aistudio.google.com/docs/pricing',
     ],
@@ -254,7 +254,7 @@ export const aiModels: AIModel[] = [
     name: 'Meta Muse Spark 1.3, Muse Spark 1.2, Muse Code, Muse Image, Muse Video, Llama 3.3 70B, Llama 3.2 (Vision), Llama 3.1 (405B), Muse Glimmer',
     developer: 'Meta',
     category: 'Texto & Código',
-    pricing: 'Pesos Llama e Muse Glimmer gratuitos para download; API do Muse Spark a US$ 1,25/US$ 4,25 por milhão de tokens no modo Standard. Meta Model API, por milhão de tokens de entrada/saída: Muse Spark 1.3, 1.2 e 1.1 no modo Standard a US$ 1,25/US$ 4,25, com cache a US$ 0,15; modo Contributor, só no 1.3 e no 1.2, a US$ 0,10/US$ 0,20, em troca de a Meta poder usar prompts e respostas para treinar modelos. Contexto de 1.048.576 tokens no Muse Spark. Muse Glimmer 30B, modelo de pesos abertos, roda no seu hardware ou via Together AI a US$ 0,35/US$ 1,50, com 128K de contexto. Pesos dos modelos Llama: download gratuito sob a licença comunitária Llama; empresas com mais de 700 milhões de usuários ativos mensais precisam pedir licença à Meta. Llama via API de terceiros: o preço varia por provedor — consultar o site de cada um; o Llama 3.3 70B não aparece mais na lista de modelos serverless da Together AI. Meta AI para consumidores e eventuais assinaturas: consultar site oficial.',
+    pricing: 'Pesos Llama e Muse Glimmer gratuitos para download; API do Muse Spark a US$ 1,25/US$ 4,25 por milhão de tokens no modo Standard. Meta Model API, por milhão de tokens de entrada/saída: Muse Wonder 1.0, o modelo mais capaz da Meta, em preview, a US$ 4/US$ 20, com cache a US$ 0,20, só no modo Standard; Muse Ember 1.0, modelo econômico para alto volume, a US$ 0,10/US$ 0,50 em requisições de até 200 mil tokens de entrada e US$ 0,30/US$ 1,50 acima disso, só no modo Standard; Muse Spark 1.3, 1.2 e 1.1 no modo Standard a US$ 1,25/US$ 4,25, com cache a US$ 0,15; modo Contributor, só no 1.3 e no 1.2, a US$ 0,10/US$ 0,20, em troca de a Meta poder usar prompts e respostas para treinar modelos. Contexto de 1.048.576 tokens no Muse Wonder, no Muse Spark e no Muse Ember. Muse Glimmer 30B, modelo de pesos abertos, roda no seu hardware ou via Together AI a US$ 0,35/US$ 1,50, com 128K de contexto. Pesos dos modelos Llama: download gratuito sob a licença comunitária Llama; empresas com mais de 700 milhões de usuários ativos mensais precisam pedir licença à Meta. Llama via API de terceiros: o preço varia por provedor — consultar o site de cada um; o Llama 3.3 70B não aparece mais na lista de modelos serverless da Together AI. Meta AI para consumidores e eventuais assinaturas: consultar site oficial.',
     pros: [
       'Meta Muse Spark 1.3 (lançado em 2 de setembro de 2026) é a atualização mais recente e mais avançada da Meta, com raciocínio máximo aprimorado para tarefas de raciocínio complexas e agênticas e maior usabilidade no mundo real, disponível via Muse Code e Meta Model API desde o lançamento, com preços de API idênticos ao Muse Spark 1.2.',
       'Meta Muse Spark 1.2 (lançado em 5 de agosto de 2026) é um modelo de atualização focado em codificação para o Muse Spark 1.1, com entrada multimodal e saída apenas de texto, potencializando o Muse Code.',
@@ -295,7 +295,7 @@ export const aiModels: AIModel[] = [
       value: 4.6
     },
     affiliateUrl: 'https://llama.meta.com/',
-    pricesCheckedAt: '2026-11-18',
+    pricesCheckedAt: '2026-11-25',
     pricingSources: [
       'https://dev.meta.ai/docs/pricing-rate-limits',
       'https://dev.meta.ai/docs/models',
@@ -337,7 +337,7 @@ export const aiModels: AIModel[] = [
       value: 4.9
     },
     affiliateUrl: 'https://chatgpt.com',
-    pricesCheckedAt: '2026-11-18',
+    pricesCheckedAt: '2026-11-25',
     pricingSources: [
       'https://chatgpt.com/pricing',
       'https://developers.openai.com/api/docs/pricing',
@@ -397,7 +397,7 @@ export const aiModels: AIModel[] = [
       value: 4.7
     },
     affiliateUrl: 'https://midjourney.com',
-    pricesCheckedAt: '2026-11-18',
+    pricesCheckedAt: '2026-11-25',
     pricingSources: [
       'https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans',
     ],
@@ -444,7 +444,7 @@ export const aiModels: AIModel[] = [
       value: 4.8
     },
     affiliateUrl: 'https://stability.ai',
-    pricesCheckedAt: '2026-11-18',
+    pricesCheckedAt: '2026-11-25',
     pricingSources: [
       'https://platform.stability.ai/pricing',
       'https://stability.ai/license',
@@ -489,7 +489,7 @@ export const aiModels: AIModel[] = [
       value: 4.7
     },
     affiliateUrl: 'https://www.make.com',
-    pricesCheckedAt: '2026-11-18',
+    pricesCheckedAt: '2026-11-25',
     pricingSources: [
       'https://www.make.com/en/pricing',
       'https://help.make.com/adjustments-to-plans-and-pricing',

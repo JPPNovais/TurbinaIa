@@ -13,6 +13,71 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'openai-csam-image-classifier-2026-11',
+    date: '2026-11',
+    title: 'OpenAI lança classificador de imagens contra abuso sexual infantil e novos alertas no ChatGPT',
+    developer: 'OpenAI',
+    category: 'Lançamento',
+    description: 'Em 16 de novembro de 2026, a OpenAI anunciou um classificador de imagens para identificar material de abuso sexual infantil, incluindo imagens geradas por IA, e passou a oferecer acesso gratuito via API a organizações avaliadas, como entidades de proteção à infância e outras empresas de tecnologia. O ChatGPT também ganhou avisos que interrompem tentativas de sexualizar crianças e explicam o dano causado.',
+    highlights: [
+      'Investigadores autorizados de segurança infantil passam a ter acesso a ferramentas de IA para revisar registros de chat extensos, e a OpenAI publicou orientação para desenvolvedores identificarem esse tipo de abuso.',
+      'A medida amplia o Child Safety Blueprint divulgado pela OpenAI em abril de 2026; a organização Common Sense Media classificou a tecnologia da empresa como "risco inaceitável" para adolescentes.',
+    ],
+    impact: 'Alto',
+  },
+  {
+    id: 'openai-science-at-the-frontier-2026-11',
+    date: '2026-11',
+    title: 'Estudo da OpenAI mapeia como cientistas usam o ChatGPT em pesquisa acadêmica',
+    developer: 'OpenAI',
+    category: 'Pesquisa',
+    description: 'A equipe de Pesquisa Econômica da OpenAI publicou em 16 de novembro de 2026 o relatório "Science at the Frontier", baseado em cerca de 580 mil mensagens de 1.819 cientistas que participaram do piloto de verão do ChatGPT for Academic Researchers, entre 20 de agosto e 22 de setembro, complementado por uma pesquisa com 251 participantes.',
+    highlights: [
+      'Segundo a OpenAI, 68% dos cientistas usaram o ChatGPT para desenvolver ideias de pesquisa — a categoria de uso mais comum — e os 10% mais ativos responderam por 42% de toda a atividade de mensagens científicas.',
+      'Na pesquisa qualitativa, os 251 cientistas estimaram que o trabalho levaria 1,9 vez mais tempo sem a ferramenta; a própria OpenAI alerta que esse número vem de autorrelato e pode não se generalizar para toda a comunidade científica.',
+    ],
+    impact: 'Baixo',
+  },
+  {
+    id: 'anthropic-claude-for-manufacturing-2026-11',
+    date: '2026-11',
+    title: 'Anthropic lança o plugin Claude for Manufacturing com 17 skills e 4 conectores',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Em 12 de novembro de 2026, a Anthropic lançou o Claude for Manufacturing, plugin com 17 skills voltadas a vendas, qualidade, operações, cadeia de suprimentos, design e configuração de fábrica, além de conectores para Autodesk Fusion, Infor, Microsoft 365 e Oracle NetSuite, disponível para os planos Team e Enterprise.',
+    highlights: [
+      'Segundo a Anthropic, algumas skills executam uma tarefa única e outras encadeiam várias etapas até que uma pessoa revise o resultado; a empresa descreve o pacote como ponto de partida, com novas skills de manufatura previstas para os próximos meses.',
+      'O conector do Infor é de apenas leitura — alterações nesse sistema continuam exigindo o plugin próprio do Infor —, e o plugin também funciona com sistemas que não têm conector dedicado, mantendo o software do fabricante como fonte oficial dos dados.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'anthropic-personal-finance-2026-11',
+    date: '2026-11',
+    title: 'Anthropic lança o Personal Finance no Claude, em beta para assinantes nos EUA',
+    developer: 'Anthropic',
+    category: 'Lançamento',
+    description: 'Em 5 de novembro de 2026, a Anthropic lançou o Personal Finance dentro do Claude, recurso em beta que permite conectar contas bancárias e de cartão via Plaid para fazer perguntas sobre gastos e saldos. O acesso inicial é só leitura e vale para assinantes dos planos Pro, Max e Ultra nos Estados Unidos, sem custo adicional sobre a assinatura.',
+    highlights: [
+      'A conexão é feita pelo login direto com a instituição financeira via Plaid — o Claude não recebe a senha do banco — e o usuário pode desconectar a conta quando quiser; segundo a Anthropic, o Claude não consegue mover, gerenciar ou investir dinheiro, e o recurso não foi desenhado para dar recomendação de investimento.',
+      'A Anthropic diz que as conversas no Personal Finance não entram no treinamento dos modelos e que não há anúncios nem recomendação patrocinada de cartão, empréstimo ou conta — a empresa também não vende esses produtos financeiros próprios.',
+    ],
+    impact: 'Médio',
+  },
+  {
+    id: 'anthropic-claude-enterprise-security-updates-2026-11',
+    date: '2026-11',
+    title: 'Anthropic dá a times de segurança mais visibilidade e controle sobre o Claude Enterprise',
+    developer: 'Anthropic',
+    category: 'Atualização',
+    description: 'Em 5 de novembro de 2026, a Anthropic lançou um painel de segurança para o Claude Enterprise que compara as configurações da conta com as recomendações da própria empresa, reunindo em uma única tela os controles de chat, Cowork e Claude Code. A mesma atualização deu a administradores Enterprise a opção de configurar e gerenciar sua própria lista de IPs permitidos, sem depender da Anthropic para isso.',
+    highlights: [
+      'A lista de IPs permitidos restringe o acesso à maior parte dos produtos Claude apenas aos endereços aprovados pela própria empresa cliente.',
+      'A atualização de visibilidade se soma à Claude Compliance API, lançada em maio de 2026, que disponibiliza conteúdo de conversas, arquivos enviados e projetos para sistemas de segurança e compliance aprovados pelo cliente.',
+    ],
+    impact: 'Baixo',
+  },
+  {
     id: 'openai-chatgpt-wallet-2026-11',
     date: '2026-11',
     title: 'OpenAI lança o ChatGPT Wallet para compras feitas por agentes "dots"',

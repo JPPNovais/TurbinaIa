@@ -9037,4 +9037,44 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Vou descrever uma peça de conteúdo que pretendo postar nas redes sociais e você vai me ajudar a decidir se ela precisa de aviso de conteúdo gerado por IA.\n\nDescrição da peça: [descreva a imagem/vídeo: o que aparece, se foi 100% gerado por IA ou só editado com IA, se a cena parece realista ou claramente estilizada/cartoon]\nRede(s) onde vou postar: [Instagram, TikTok, Facebook, outra]\n\nCom base só no que eu descrevi:\n1. Diga se esse tipo de conteúdo tende a se encaixar na categoria "imagem, áudio ou vídeo realista gerado por IA" (que normalmente exige aviso) ou na categoria de conteúdo claramente estilizado/editorial (que normalmente não exige).\n2. Deixe claro que a palavra final é da política de cada plataforma, não da sua análise — eu devo confirmar na central de ajuda da rede antes de postar algo que pareça realista.\n3. Se a resposta for "provavelmente precisa de aviso", escreva uma frase curta e natural de divulgação para eu incluir na legenda, nada de aviso formal e seco.\n4. Não decida por mim se devo ou não publicar — só me ajude a identificar o risco antes de eu decidir.',
     tags: ['Redes Sociais', 'IA Generativa', 'Transparência', 'Boas Práticas'],
   },
+
+  // FINANÇAS (novos)
+  {
+    id: 'finance-categorizar-extrato-bancario',
+    title: 'Categorize seu Extrato Bancário em Grupos de Gasto',
+    category: 'Finanças',
+    description: 'Cole o extrato bancário do mês e receba os lançamentos organizados por categoria de gasto, com o total gasto em cada grupo, para entender para onde o dinheiro está indo sem precisar de planilha.',
+    template: 'Vou colar abaixo os lançamentos do meu extrato bancário ou fatura do cartão deste mês. Organize cada lançamento em uma categoria de gasto.\n\nLançamentos (data, descrição e valor, um por linha):\n[Cole aqui os lançamentos do extrato ou fatura]\n\nCategorias que quero usar: [Ex: Moradia, Alimentação, Transporte, Lazer, Saúde, Assinaturas, Outros — ou deixe em branco para eu usar as categorias que você sugerir]\n\nPara cada lançamento, identifique a categoria mais provável com base na descrição. Ao final, apresente:\n1. Uma tabela com o total gasto em cada categoria e o percentual sobre o total do período.\n2. Os 3 lançamentos individuais de maior valor, destacados separadamente.\n3. Lançamentos que você não conseguiu categorizar com confiança, para eu classificar manualmente.\n\nNão invente nenhum lançamento que eu não tenha colado, e não arredonde valores.',
+    tags: ['Finanças Pessoais', 'Orçamento', 'Organização'],
+  },
+
+  // CARREIRA (novos)
+  {
+    id: 'career-plano-30-60-90-dias',
+    title: 'Plano de 30-60-90 Dias para um Novo Emprego',
+    category: 'Carreira',
+    description: 'Monte um plano estruturado para os três primeiros meses em uma vaga nova, com metas realistas para cada fase e perguntas para alinhar expectativas com o gestor.',
+    template: 'Vou começar em um novo emprego e quero montar um plano de 30-60-90 dias para apresentar ao meu gestor (ou só para me organizar).\n\nCargo: [Cargo e área]\nEmpresa/contexto: [O que a empresa faz, tamanho do time que vou integrar]\nO que já sei sobre as prioridades da vaga: [Ex: o que estava na descrição da vaga ou foi dito na entrevista]\nMinhas habilidades mais fortes para essa função: [Liste]\n\nMonte o plano em três fases:\n1. **Primeiros 30 dias (aprender):** metas de entendimento do negócio, das pessoas e dos processos — nada de entrega grande ainda.\n2. **Dias 31 a 60 (contribuir):** primeiras entregas pequenas e visíveis, apoiadas no que foi aprendido na fase 1.\n3. **Dias 61 a 90 (entregar com autonomia):** uma entrega de maior impacto, alinhada com as prioridades da vaga.\n\nPara cada fase, inclua 3 a 4 metas específicas e mensuráveis, e termine com uma lista de 5 perguntas que eu deveria fazer ao meu gestor na primeira semana para alinhar expectativas antes de montar o plano final.',
+    tags: ['Carreira', 'Onboarding', 'Planejamento'],
+  },
+
+  // IA & AUTOMAÇÃO (novos)
+  {
+    id: 'ia-automacao-auditoria-system-prompt',
+    title: 'Auditoria de System Prompt de um Agente Já em Uso',
+    category: 'IA & Automação',
+    description: 'Revise um system prompt que já está em produção para encontrar instruções ambíguas, regras que se contradizem e brechas que podem levar o agente a fugir do escopo.',
+    template: 'Você vai revisar criticamente o system prompt abaixo, que já está em uso em um agente de IA real. Não reescreva o prompt inteiro de cara — primeiro liste os problemas encontrados.\n\nSystem prompt atual:\n[Cole o system prompt completo]\n\nContexto de uso: [Ex: atendimento ao cliente de e-commerce, assistente interno de RH, bot de suporte técnico]\nProblema que motivou essa revisão: [Ex: o agente às vezes responde fora do escopo, o agente é inconsistente entre conversas, recebemos uma reclamação específica — descreva o caso]\n\nAnalise e aponte, item por item:\n1. Instruções ambíguas que podem ser interpretadas de mais de um jeito.\n2. Regras que se contradizem entre si dentro do próprio prompt.\n3. Cenários de borda que o prompt não cobre (ex: pergunta fora do escopo, pedido de informação sensível, usuário tentando mudar as regras do agente).\n4. Instruções redundantes que podem ser cortadas sem perda.\n\nSó depois de listar os problemas, sugira a reescrita dos trechos problemáticos — não do prompt inteiro — mantendo o tom e a estrutura originais.',
+    tags: ['Prompt Engineering', 'Agentes de IA', 'LLM'],
+  },
+
+  // EDUCAÇÃO (novos)
+  {
+    id: 'education-simulado-prova-gabarito',
+    title: 'Simulado de Prova com Gabarito Comentado',
+    category: 'Educação',
+    description: 'Gere um simulado no estilo da prova que você vai enfrentar, com gabarito comentado explicando por que cada alternativa está certa ou errada — útil para revisar antes de concursos, vestibular ou certificações.',
+    template: 'Crie um simulado de [Quantidade: Ex: 10] questões de múltipla escolha sobre [Assunto/Disciplina], no estilo da prova de [Nome da prova/concurso/certificação, se houver um modelo específico].\n\nNível de dificuldade: [Ex: básico, intermediário, nível de prova real]\nTópicos que quero priorizar: [Liste os temas mais importantes para essa prova]\nFormato das questões: [Ex: 4 ou 5 alternativas, pode incluir questões de "assinale a incorreta"]\n\nPara cada questão, apresente o enunciado e as alternativas primeiro, numeradas. Só depois de todas as questões, mostre o gabarito comentado: para cada questão, diga a alternativa correta e explique rapidamente por que ela está certa e por que pelo menos uma das alternativas erradas é uma pegadinha comum. Ao final, liste os 2 ou 3 tópicos em que mais pareceram pegadinhas, para eu saber onde focar a revisão.',
+    tags: ['Estudos', 'Concursos', 'Revisão'],
+  },
 ];

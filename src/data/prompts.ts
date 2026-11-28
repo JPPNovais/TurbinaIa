@@ -9077,4 +9077,44 @@ Por favor, comece a criar meu plano de mentoria adaptativa, considerando minha [
     template: 'Crie um simulado de [Quantidade: Ex: 10] questões de múltipla escolha sobre [Assunto/Disciplina], no estilo da prova de [Nome da prova/concurso/certificação, se houver um modelo específico].\n\nNível de dificuldade: [Ex: básico, intermediário, nível de prova real]\nTópicos que quero priorizar: [Liste os temas mais importantes para essa prova]\nFormato das questões: [Ex: 4 ou 5 alternativas, pode incluir questões de "assinale a incorreta"]\n\nPara cada questão, apresente o enunciado e as alternativas primeiro, numeradas. Só depois de todas as questões, mostre o gabarito comentado: para cada questão, diga a alternativa correta e explique rapidamente por que ela está certa e por que pelo menos uma das alternativas erradas é uma pegadinha comum. Ao final, liste os 2 ou 3 tópicos em que mais pareceram pegadinhas, para eu saber onde focar a revisão.',
     tags: ['Estudos', 'Concursos', 'Revisão'],
   },
+
+  // CARREIRA (novos 2)
+  {
+    id: 'career-adaptar-currículo-ats',
+    title: 'Adaptar Currículo para Passar pelo Filtro ATS',
+    category: 'Carreira',
+    description: 'Ajuste seu currículo para a vaga específica, destacando as palavras-chave que os sistemas automáticos de triagem (ATS) usados por grandes empresas procuram antes de um recrutador humano ver o documento.',
+    template: 'Vou te passar a descrição de uma vaga e o texto do meu currículo atual. Quero adaptar o currículo para essa vaga específica, priorizando os termos que um sistema de triagem automática (ATS) provavelmente busca.\n\nDescrição da vaga:\n[Cole a descrição completa da vaga]\n\nMeu currículo atual:\n[Cole o texto do currículo]\n\nFaça o seguinte:\n1. Liste as 10 a 15 palavras-chave e habilidades mais repetidas na descrição da vaga (ferramentas, certificações, verbos de ação, requisitos).\n2. Aponte quais dessas palavras-chave já aparecem no meu currículo e quais estão faltando.\n3. Reescreva só as seções de resumo profissional e experiência (sem inventar nenhuma experiência ou habilidade que eu não tenha), incorporando as palavras-chave que fazem sentido de forma natural, nunca forçada ou repetitiva.\n4. Avise se a vaga pede algum requisito que meu currículo não comprova — não tente mascarar essa lacuna.',
+    tags: ['Currículo', 'ATS', 'Carreira', 'Entrevista'],
+  },
+
+  // FINANÇAS (novos 2)
+  {
+    id: 'financas-orcamento-50-30-20',
+    title: 'Orçamento Pessoal pela Regra 50-30-20',
+    category: 'Finanças',
+    description: 'Organize sua renda mensal nas três categorias da regra 50-30-20 (necessidades, desejos e poupança/dívidas) e receba sugestões realistas de ajuste quando algum gasto estiver fora da proporção recomendada.',
+    template: 'Quero organizar meu orçamento mensal usando a regra 50-30-20 (50% necessidades, 30% desejos, 20% poupança e dívidas).\n\nRenda líquida mensal: [Valor]\nMeus gastos fixos e variáveis do último mês (liste o quanto lembrar, não precisa ser exato):\n[Liste cada gasto com valor aproximado, ex: aluguel, mercado, transporte, streaming, lazer, parcelas de dívida]\n\nFaça o seguinte:\n1. Classifique cada gasto que eu listei em necessidade, desejo ou poupança/dívida, explicando casos ambíguos (ex: plano de internet pode ser necessidade, mas um upgrade de velocidade pode ser desejo).\n2. Some cada categoria e compare com a proporção ideal de 50-30-20 para a minha renda.\n3. Aponte em que categoria estou mais desproporcional e sugira 2 ou 3 ajustes realistas e específicos (não genéricos como "gaste menos") para aproximar da meta no próximo mês.\n4. Não considere essa análise como recomendação de investimento — é só organização de orçamento doméstico.',
+    tags: ['Orçamento', 'Finanças Pessoais', 'Planejamento'],
+  },
+
+  // NEGÓCIOS (novos 2)
+  {
+    id: 'negocios-roteiro-ligacao-fria',
+    title: 'Roteiro de Ligação Fria (Cold Call) para Prospecção',
+    category: 'Negócios',
+    description: 'Monte um roteiro curto para ligações de prospecção comercial, com abertura que não soa a script, resposta pronta para as objeções mais comuns e um próximo passo claro antes de desligar.',
+    template: 'Crie um roteiro de ligação fria (cold call) para prospectar "[Tipo de cliente/cargo, ex: donos de clínica odontológica, gerentes de RH]" para o meu produto/serviço "[Nome e descrição curta]".\n\nO que meu produto resolve: [Problema principal que resolve]\nDuração ideal da ligação: [Ex: até 3 minutos até conseguir agendar algo]\nObjeção mais comum que já recebo: [Ex: "não tenho orçamento agora", "já uso outro fornecedor", "me manda um e-mail"]\n\nMonte o roteiro em blocos:\n1. Abertura (até 15 segundos, que não pareça script e já diga por que estou ligando).\n2. Pergunta de qualificação rápida para saber se vale continuar a conversa.\n3. Proposta de valor em uma frase, ligada à dor do tipo de cliente.\n4. Resposta pronta para a objeção que citei, sem ser insistente.\n5. Fechamento pedindo um próximo passo concreto (agendar 15 minutos, enviar material específico).\n\nTom: direto e respeitoso com o tempo da pessoa, nunca agressivo.',
+    tags: ['Vendas', 'Prospecção', 'Cold Call', 'B2B'],
+  },
+
+  // IA & AUTOMAÇÃO (novos 2)
+  {
+    id: 'ia-automacao-meta-prompt',
+    title: 'Meta-Prompt: Peça à IA para Melhorar seu Próprio Prompt',
+    category: 'IA & Automação',
+    description: 'Em vez de tentar acertar o prompt de primeira, use a própria IA para identificar ambiguidades e lacunas no que você escreveu antes de gerar a resposta final — útil quando o resultado costuma sair genérico ou fora do esperado.',
+    template: 'Antes de responder à tarefa, avalie o prompt abaixo como se você fosse um especialista em prompt engineering revisando o pedido de um colega.\n\nPrompt original:\n[Cole o prompt que você pretende usar]\n\nFaça, nesta ordem:\n1. Aponte o que está ambíguo, vago ou que pode ser interpretado de mais de uma forma.\n2. Liste as informações de contexto que faltam e que mudariam a resposta (ex: público-alvo, tom, formato de saída, restrições de tamanho).\n3. Reescreva o prompt de forma mais específica, mantendo a intenção original — não mude o que eu quero, só deixe mais claro como eu quero.\n4. Só depois de mostrar o prompt revisado, pergunte se devo seguir com ele ou ajustar algo antes de gerar a resposta final.',
+    tags: ['Prompt Engineering', 'Produtividade', 'LLM'],
+  },
 ];

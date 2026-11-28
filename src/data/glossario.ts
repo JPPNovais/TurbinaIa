@@ -4405,4 +4405,20 @@ export const GLOSSARIO: GlossarioTerm[] = [
     example: 'No lançamento, o Antigravity rodava com Gemini 3, Claude Sonnet e GPT-OSS; na versão 2.0, anunciada na Google I/O de 2026, ganhou aplicativo de desktop renovado, uma CLI própria e um SDK para quem quer construir agentes personalizados sobre a plataforma.',
     relatedTerms: ['Agente de Código (Code Agent)', 'Vibe Coding', 'Agent Harness (Harness de Agente)'],
   },
+  {
+    id: 'synthid',
+    term: 'SynthID',
+    category: 'Segurança & Ética',
+    definition: 'Tecnologia de marca d\'água do Google DeepMind para identificar conteúdo gerado por IA. Em imagem e vídeo, a marca é embutida diretamente nos pixels (ou em cada quadro) de forma invisível ao olho humano e resiste a recortes e outras edições; em texto, funciona ajustando a probabilidade estatística dos tokens escolhidos pelo modelo, o que a torna mais difícil de detectar em textos curtos ou muito reescritos. O próprio Google afirma que o SynthID não é à prova de burla: detecta principalmente conteúdo de modelos que já integram a marca, não impede ataques motivados e não substitui outras camadas de verificação.',
+    example: 'Uma imagem criada pelo Nano Banana Pro carrega o SynthID nos pixels; a ferramenta "Sobre esta imagem" do Google Search ou do Chrome consegue apontar que aquele arquivo foi gerado por IA mesmo depois de compartilhado várias vezes.',
+    relatedTerms: ['Marca d\'água de IA (AI Watermarking)', 'C2PA (Content Credentials)', 'textGrain (Marca d\'Água de Texto)'],
+  },
+  {
+    id: 'c2pa-content-credentials',
+    term: 'C2PA (Content Credentials)',
+    category: 'Segurança & Ética',
+    definition: 'Padrão técnico mantido pela coalizão C2PA (Adobe, Google, OpenAI, Microsoft, fabricantes de câmera, entre outros) para registrar a proveniência de um arquivo digital: um "manifesto" assinado guarda afirmações sobre como o conteúdo foi criado ou editado — incluindo se uma IA generativa participou — e um hash amarra esse manifesto aos pixels da imagem. Diferente de uma marca d\'água como o SynthID, o C2PA não embute nada no próprio pixel: é metadado, então pode ser removido por uma captura de tela, uma reconversão de arquivo ou boa parte dos uploads de redes sociais. O padrão também não atesta se o conteúdo é verdadeiro — só de onde ele diz que veio.',
+    example: 'Ao gerar uma imagem num app compatível com C2PA, o arquivo sai com Content Credentials indicando o modelo de IA usado e a data de criação; se alguém tira um print dessa imagem, essas credenciais costumam se perder.',
+    relatedTerms: ['SynthID', 'Marca d\'água de IA (AI Watermarking)', 'Deepfake'],
+  },
 ];

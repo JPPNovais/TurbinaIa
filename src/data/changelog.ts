@@ -13,6 +13,19 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: 'claude-code-dont-ask-again-secrets-leak-2026-11',
+    date: '2026-11',
+    title: 'Pesquisa encontra milhares de segredos expostos por aprovações "Don\'t Ask Again" do Claude Code',
+    developer: 'Anthropic',
+    category: 'Pesquisa',
+    description: 'Em novembro de 2026, a empresa de segurança Apiiro publicou uma pesquisa mostrando que a opção "Yes, and don\'t ask again" do Claude Code — que salva o comando aprovado como regra permanente em .claude/settings.local.json, dentro da pasta do projeto — vinha gravando senhas e chaves de API em texto puro quando o comando aprovado continha esse tipo de dado.',
+    highlights: [
+      'A contagem de segredos expostos em repositórios públicos do GitHub varia bastante entre as coberturas do caso — de pouco mais de 1.100 a cerca de 2.500 segredos distintos —, então trate o número exato com cautela até uma confirmação oficial da Anthropic.',
+      'Apagar o arquivo ou reescrever o histórico do Git não revoga sozinho uma credencial que já ficou pública; quem usa esse atalho no Claude Code deveria revisar se o arquivo foi commitado e trocar qualquer segredo encontrado nele.',
+    ],
+    impact: 'Médio',
+  },
+  {
     id: 'openai-csam-image-classifier-2026-11',
     date: '2026-11',
     title: 'OpenAI lança classificador de imagens contra abuso sexual infantil e novos alertas no ChatGPT',
